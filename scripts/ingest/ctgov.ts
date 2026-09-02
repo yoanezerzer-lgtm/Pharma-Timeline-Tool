@@ -1,4 +1,5 @@
 import { fetchJson } from './http.js';
+import type { IngestContext } from './context.js';
 import { toDateValue } from '../../src/lib/dates.js';
 import type { Trial, Phase } from '../../src/schema/index.js';
 
@@ -205,34 +206,39 @@ export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
  * This is what lets the code resolver use a deliberately loose regex: a token
  * that is not a real study identifier simply returns nothing.
  */
+/** The identifier-lookup URL. Shared with the test seeder. */
+export function lookupByIdUrl(identifier: string): string {
+  return `${CTGOV_BASE}?query.id=${encodeURIComponent(identifier)}&pageSize=5&format=json`;
+}
+
+/** The intervention-search URL for one page. Shared with the test seeder. */
+export function searchByInterventionUrl(intervention: string, pageToken?: string): string {
+  return (
+    `${CTGOV_BASE}?query.intr=${encodeURIComponent(intervention)}` +
+    `&pageSize=100&format=json${pageToken ? `&pageToken=${pageToken}` : ''}`
+  );
+}
+
 export async function lookupById(
-  slug: string,
-  identifier: string,
-  refresh = false
+  ctx: IngestContext,
+  identifier: string
 ): Promise<CtgovStudy[]> {
-  const url = `${CTGOV_BASE}?query.id=${encodeURIComponent(identifier)}&pageSize=5&format=json`;
-  const body = await fetchJson<CtgovResponse>(url, { slug, kind: 'ctgov-id', refresh });
+  const url = lookupByIdUrl(identifier);
+  const body = await fetchJson<CtgovResponse>(url, { ctx, kind: 'ctgov-id' });
   return body?.studies ?? [];
 }
 
 /** Every registered study naming the drug as an intervention, paged through. */
 export async function searchByIntervention(
-  slug: string,
-  intervention: string,
-  refresh = false
+  ctx: IngestContext,
+  intervention: string
 ): Promise<CtgovStudy[]> {
   const studies: CtgovStudy[] = [];
   let pageToken: string | undefined;
 
   do {
-    const url =
-      `${CTGOV_BASE}?query.intr=${encodeURIComponent(intervention)}` +
-      `&pageSize=100&format=json${pageToken ? `&pageToken=${pageToken}` : ''}`;
-    const body = await fetchJson<CtgovResponse>(url, {
-      slug,
-      kind: 'ctgov-search',
-      refresh,
-    });
+    const url = searchByInterventionUrl(intervention, pageToken);
+    const body = await fetchJson<CtgovResponse>(url, { ctx, kind: 'ctgov-search' });
     if (!body) break;
     studies.push(...(body.studies ?? []));
     pageToken = body.nextPageToken;

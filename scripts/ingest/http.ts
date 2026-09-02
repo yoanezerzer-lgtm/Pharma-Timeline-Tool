@@ -1,8 +1,9 @@
 import { mkdirSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { createHash } from 'node:crypto';
+import { DEFAULT_RAW_DIR, type IngestContext } from './context.js';
 
-export const RAW_DIR = join(process.cwd(), 'data', 'raw');
+export { DEFAULT_RAW_DIR };
 
 /** An HTTP failure that will not change if the request is repeated. */
 export class NonRetryableHttpError extends Error {
@@ -12,21 +13,31 @@ export class NonRetryableHttpError extends Error {
   }
 }
 
-export function drugRawDir(slug: string): string {
-  return join(RAW_DIR, slug);
+export function drugRawDir(slug: string, rawDir: string = DEFAULT_RAW_DIR): string {
+  return join(rawDir, slug);
 }
 
-function cachePath(slug: string, kind: string, key: string): string {
+/**
+ * Where a given request's response is cached.
+ *
+ * Exported so test helpers can seed the cache using the real hashing rule
+ * rather than a duplicate of it — a copy would drift and the seeding would
+ * silently stop matching.
+ */
+export function cachePathFor(
+  slug: string,
+  kind: string,
+  key: string,
+  rawDir: string = DEFAULT_RAW_DIR
+): string {
   const hash = createHash('sha1').update(key).digest('hex').slice(0, 16);
-  return join(drugRawDir(slug), kind, `${hash}.json`);
+  return join(drugRawDir(slug, rawDir), kind, `${hash}.json`);
 }
 
 export interface FetchOptions {
-  slug: string;
+  ctx: IngestContext;
   /** Cache subdirectory, e.g. "ctgov". */
   kind: string;
-  /** Bypass the cache and re-request. */
-  refresh?: boolean;
 }
 
 /** Simple sequential throttle. Both APIs are public and rate-limited by IP. */
@@ -54,9 +65,9 @@ export async function fetchJson<T>(
   opts: FetchOptions,
   retries = 3
 ): Promise<T | null> {
-  const path = cachePath(opts.slug, opts.kind, url);
+  const path = cachePathFor(opts.ctx.slug, opts.kind, url, opts.ctx.rawDir);
 
-  if (!opts.refresh && existsSync(path)) {
+  if (!opts.ctx.refresh && existsSync(path)) {
     const cached = JSON.parse(readFileSync(path, 'utf8')) as { ok: boolean; body: T | null };
     return cached.ok ? cached.body : null;
   }

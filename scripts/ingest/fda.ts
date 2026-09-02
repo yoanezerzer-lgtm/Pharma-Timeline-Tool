@@ -1,4 +1,5 @@
 import { fetchJson } from './http.js';
+import type { IngestContext } from './context.js';
 import { toDateValue } from '../../src/lib/dates.js';
 import type { Milestone, MilestoneType, DateValue } from '../../src/schema/index.js';
 
@@ -92,21 +93,27 @@ export interface FdaStageResult {
  * The application number is the stable key — brand-name search is ambiguous
  * (multiple applications share a brand across dosage forms and sponsors).
  */
-export async function runFdaStage(
-  slug: string,
-  applicationNumber: string,
+/** The Drugs@FDA request URL for an application. Shared with the test seeder. */
+export function drugsFdaUrl(
   applicationType: 'NDA' | 'BLA' | 'ANDA',
-  refresh = false
-): Promise<FdaStageResult> {
+  applicationNumber: string
+): string {
   const search = encodeURIComponent(
     `application_number:"${applicationType}${applicationNumber}"`
   );
-  const queryUrl = `${OPENFDA_BASE}?search=${search}&limit=1`;
+  return `${OPENFDA_BASE}?search=${search}&limit=1`;
+}
+
+export async function runFdaStage(
+  ctx: IngestContext,
+  applicationNumber: string,
+  applicationType: 'NDA' | 'BLA' | 'ANDA'
+): Promise<FdaStageResult> {
+  const queryUrl = drugsFdaUrl(applicationType, applicationNumber);
 
   const body = await fetchJson<{ results?: DrugsFdaResult[] }>(queryUrl, {
-    slug,
+    ctx,
     kind: 'openfda',
-    refresh,
   });
 
   const application = body?.results?.[0];

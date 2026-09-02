@@ -1,6 +1,7 @@
 import { readFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import { downloadFile, drugRawDir } from './http.js';
+import type { IngestContext } from './context.js';
 
 export interface FetchedDoc {
   url: string;
@@ -45,11 +46,11 @@ export function isRelevantDoc(type: string): boolean {
 }
 
 export async function runDocsStage(
-  slug: string,
-  documentUrls: { url: string; type: string; submission: string }[],
-  refresh = false
+  ctx: IngestContext,
+  documentUrls: { url: string; type: string; submission: string }[]
 ): Promise<FetchedDoc[]> {
-  const docsDir = join(drugRawDir(slug), 'docs');
+  const { refresh } = ctx;
+  const docsDir = join(drugRawDir(ctx.slug, ctx.rawDir), 'docs');
   mkdirSync(docsDir, { recursive: true });
 
   const relevant = documentUrls.filter((d) => isRelevantDoc(d.type));

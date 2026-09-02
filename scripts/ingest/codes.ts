@@ -1,4 +1,5 @@
 import { lookupById, studyMatchesDrug, studyIdentifiers, type CtgovStudy } from './ctgov.js';
+import type { IngestContext } from './context.js';
 import { pageForOffset } from './docs.js';
 
 /**
@@ -154,8 +155,34 @@ export function extractCandidates(text: string): Candidate[] {
 
 export interface ResolvedCode {
   candidate: Candidate;
+  /** Other identifiers in the documents that resolved to this same study. */
+  aliases: Candidate[];
   study: CtgovStudy;
   nctId: string;
+}
+
+/**
+ * Picks the mention best suited to being shown as the citation for a trial.
+ *
+ * Candidates are *looked up* in NCT-first order, because exact identifiers are
+ * cheapest to confirm. But that ordering says nothing about which mention is
+ * most useful to a human checking the source: an NCT ID usually appears in a
+ * bare list of registrations, while a protocol number appears in the sentence
+ * that actually describes the study. So citation choice is scored separately,
+ * by how much study context surrounds the mention.
+ *
+ * Ordering is fully deterministic — the pipeline must produce byte-identical
+ * output across runs.
+ */
+export function bestCitation(candidates: Candidate[]): Candidate {
+  return [...candidates].sort((a, b) => {
+    if (b.contextHits !== a.contextHits) return b.contextHits - a.contextHits;
+    if (b.occurrences !== a.occurrences) return b.occurrences - a.occurrences;
+    const aIsNct = /^NCT\d{8}$/.test(a.token);
+    const bIsNct = /^NCT\d{8}$/.test(b.token);
+    if (aIsNct !== bIsNct) return aIsNct ? 1 : -1;
+    return a.token.localeCompare(b.token);
+  })[0];
 }
 
 export interface ResolveReport {
@@ -175,16 +202,15 @@ export interface ResolveReport {
  * most promising tokens first.
  */
 export async function resolveCandidates(
-  slug: string,
+  ctx: IngestContext,
   candidates: Candidate[],
   drugNames: string[],
-  maxLookups = 400,
-  refresh = false
+  maxLookups = 400
 ): Promise<ResolveReport> {
   const resolved: ResolvedCode[] = [];
   const rejected: Candidate[] = [];
   const skipped: Candidate[] = [];
-  const seenNct = new Set<string>();
+  const byNct = new Map<string, ResolvedCode>();
   let lookups = 0;
 
   for (const cand of candidates) {
@@ -194,7 +220,7 @@ export async function resolveCandidates(
     }
 
     lookups++;
-    const studies = await lookupById(slug, cand.token, refresh);
+    const studies = await lookupById(ctx, cand.token);
 
     // The registry can return near-matches, so require both that the study is
     // for this drug and that it genuinely carries the identifier we searched.
@@ -210,9 +236,23 @@ export async function resolveCandidates(
     }
 
     const nctId = match.protocolSection?.identificationModule?.nctId;
-    if (!nctId || seenNct.has(nctId)) continue;
-    seenNct.add(nctId);
-    resolved.push({ candidate: cand, study: match, nctId });
+    if (!nctId) continue;
+
+    // Several identifiers routinely point at one study. Keep them all rather
+    // than letting whichever resolved first decide how the trial is cited.
+    const existing = byNct.get(nctId);
+    if (existing) {
+      existing.aliases.push(cand);
+      continue;
+    }
+    const entry: ResolvedCode = { candidate: cand, aliases: [], study: match, nctId };
+    byNct.set(nctId, entry);
+    resolved.push(entry);
+  }
+
+  // Promote the most informative mention to be the citation.
+  for (const entry of resolved) {
+    entry.candidate = bestCitation([entry.candidate, ...entry.aliases]);
   }
 
   return { resolved, rejected, skipped, lookups };

@@ -68,8 +68,15 @@ Flags:
 | `--dry-run` | Report what would change without writing. |
 
 Every response is cached under `data/raw/<slug>/`, so re-runs are cheap and mostly
-offline. The same script runs in CI via the **Ingest drug data** workflow
-(`workflow_dispatch`), which opens a pull request with the data diff.
+offline. Re-running when nothing has changed is a true no-op — the record is written
+byte-for-byte identically, including the ingest timestamp.
+
+The same script runs in CI via the **Ingest drug data** workflow (`workflow_dispatch`),
+which pushes the result to a branch and opens a pull request with the data diff.
+Opening a PR from Actions needs the repository setting *Settings → Actions → General →
+Workflow permissions → "Allow GitHub Actions to create and approve pull requests"*,
+which is off by default. If it is off, the workflow still pushes the data and prints a
+link to open the PR by hand rather than failing.
 
 To add a drug, add an entry to `scripts/ingest/registry.ts` — the application number and
 the intervention names to match — and run the pipeline.
@@ -83,6 +90,11 @@ the intervention names to match — and run the pipeline.
 | `codes` | Regex candidate identifiers, then validates each against ClinicalTrials.gov. |
 | `ctgov` | Fetches full registry records, plus every trial registered for the drug, to separate the filing from later work. |
 | `merge` | Writes `data/drugs/<slug>.json`, preserving human-verified fields. |
+
+Orchestration lives in `scripts/ingest/run.ts` as `runIngest()`, with every I/O path
+injectable; `cli.ts` only parses arguments and prints. That split is what lets
+`tests/ingest.e2e.test.ts` run the whole pipeline against a pre-seeded cache with no
+network — the stages wired together are where the interesting failures live.
 
 ## Trust model
 
@@ -101,6 +113,15 @@ person has checked it.
 - **Dates keep their precision.** ClinicalTrials.gov often gives month- or year-only
   dates, so `DateValue` records how precise the source actually was and the chart fades
   those bar edges instead of implying a specific day.
+
+## Tests
+
+`npm test` runs everything offline. Alongside the per-stage unit tests there is an
+end-to-end run (`tests/ingest.e2e.test.ts`) that seeds a fake cache and drives the real
+pipeline, checking the things unit tests structurally cannot: that document codes join
+to registry records, that label section 14 drives the pivotal flag, that re-running is
+byte-identical, and that a human-verified field survives a re-run with the disagreement
+reported.
 
 ## Current status
 
