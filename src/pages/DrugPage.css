@@ -1,0 +1,186 @@
+.drug {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+}
+
+.drug__breadcrumb {
+  font-size: 12px;
+  color: var(--text-3);
+  margin-bottom: 1.5rem;
+}
+
+.drug__breadcrumb a {
+  color: var(--text-2);
+}
+
+.drug__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.drug__head h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+  color: var(--text-1);
+}
+
+.drug__inn {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--text-3);
+}
+
+.drug__mechanism {
+  margin: 0.4rem 0 0;
+  color: var(--text-2);
+  font-size: 14px;
+}
+
+.drug__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.drug__facts dt {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-3);
+}
+
+.drug__facts dd {
+  margin: 0.15rem 0 0;
+  font-size: 13.5px;
+  color: var(--text-1);
+  font-variant-numeric: tabular-nums;
+}
+
+.drug__warning {
+  margin: 1.5rem 0 0;
+  padding: 0.85rem 1rem;
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--warn-fg);
+}
+
+.drug__warning code {
+  background: var(--bg-2);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.drug__summary {
+  margin: 1.5rem 0 0;
+  max-width: 72ch;
+  line-height: 1.65;
+  color: var(--text-1);
+}
+
+.drug__chart-section {
+  margin-top: 2.5rem;
+}
+
+.drug h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.drug__note-section {
+  margin-top: 1.5rem;
+  max-width: 72ch;
+}
+
+.drug__note-section h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-3);
+  margin: 0 0 0.4rem;
+}
+
+.drug__note-section p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.drug__milestones,
+.drug__sources {
+  margin-top: 3rem;
+}
+
+.drug__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.drug__table th {
+  text-align: left;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-3);
+  padding: 0 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.drug__table td {
+  padding: 0.45rem 0.75rem 0.45rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-1);
+}
+
+.drug__table tr.is-major td {
+  font-weight: 600;
+}
+
+.drug__table .nums {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--text-2);
+}
+
+.drug__table .muted {
+  color: var(--text-3);
+}
+
+.drug__sources ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.drug__missing {
+  padding: 3rem 0;
+  color: var(--text-2);
+}
+
+@media (max-width: 700px) {
+  .drug__head {
+    flex-direction: column;
+  }
+  .drug__facts {
+    gap: 1rem;
+  }
+}

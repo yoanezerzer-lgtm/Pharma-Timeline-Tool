@@ -1,0 +1,109 @@
+name: Ingest drug data
+
+# Run on demand. The pipeline reads public APIs (openFDA, ClinicalTrials.gov)
+# and public FDA PDFs — no API keys, no secrets, no per-run cost.
+on:
+  workflow_dispatch:
+    inputs:
+      drug:
+        description: 'Drug slug from scripts/ingest/registry.ts (e.g. upadacitinib)'
+        required: true
+        type: string
+      refresh:
+        description: 'Ignore the on-disk cache and re-fetch everything'
+        required: false
+        type: boolean
+        default: false
+      max_lookups:
+        description: 'Cap on ClinicalTrials.gov identifier lookups'
+        required: false
+        type: string
+        default: '400'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run ingestion
+        run: |
+          npm run ingest -- \
+            --drug "${{ inputs.drug }}" \
+            --max-lookups "${{ inputs.max_lookups }}" \
+            ${{ inputs.refresh && '--refresh' || '' }}
+
+      - name: Validate result
+        run: npm run validate
+
+      - name: Push the data and open a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRUG: ${{ inputs.drug }}
+          BASE: ${{ github.ref_name }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- data/drugs; then
+            echo "No data changes — the sources agree with what is already committed."
+            exit 0
+          fi
+
+          BRANCH="ingest/${DRUG}-$(date +%Y%m%d-%H%M%S)"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/drugs
+          git commit -m "Ingest data for ${DRUG}"
+          git push -u origin "$BRANCH"
+
+          BODY=$(cat <<EOF
+          Automated ingestion run for \`${DRUG}\`.
+
+          Data comes from openFDA Drugs@FDA, the FDA approval package PDFs, and
+          ClinicalTrials.gov. Nothing here was produced by a language model.
+
+          Review the diff before merging. Every field is marked \`verified: false\`
+          until a person checks it, and trial roles are assigned by rule — a trial
+          named in section 14 of the approved label is marked pivotal — not by
+          inference.
+
+          Any field already marked \`verified: true\` was preserved; conflicts are
+          listed in the workflow log.
+          EOF
+          )
+
+          # Opening a pull request from Actions requires the repository setting
+          # "Allow GitHub Actions to create and approve pull requests", which is
+          # off by default. The data is already pushed by this point, so a refusal
+          # must not fail the run — print the link and let a human click it.
+          if gh pr create \
+              --title "Ingest: ${DRUG}" \
+              --body "$BODY" \
+              --base "$BASE" \
+              --head "$BRANCH" 2>/tmp/pr-error.txt; then
+            echo "Pull request opened."
+          else
+            echo "::warning::Could not open the pull request automatically."
+            sed 's/^/  /' /tmp/pr-error.txt
+            echo ""
+            echo "The data is safely pushed to branch: $BRANCH"
+            echo "Open the pull request here:"
+            echo "  ${REPO_URL}/compare/${BASE}...${BRANCH}?expand=1"
+            echo ""
+            echo "To let this step open pull requests by itself, enable"
+            echo "Settings -> Actions -> General -> Workflow permissions ->"
+            echo "\"Allow GitHub Actions to create and approve pull requests\"."
+          fi

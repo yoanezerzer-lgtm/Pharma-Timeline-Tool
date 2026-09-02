@@ -1,0 +1,171 @@
+.drawer__scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.32);
+  z-index: 50;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(480px, 100vw);
+  overflow-y: auto;
+  background: var(--bg-elevated);
+  border-left: 1px solid var(--border);
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.16);
+  z-index: 51;
+  padding: 1.25rem 1.4rem 3rem;
+}
+
+.drawer__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.drawer__eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  font-weight: 600;
+}
+
+.drawer__title {
+  margin: 0.2rem 0 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: var(--text-1);
+}
+
+.drawer__close {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--text-3);
+  cursor: pointer;
+  padding: 0 0.25rem;
+  border-radius: 4px;
+}
+
+.drawer__close:hover {
+  color: var(--text-1);
+  background: var(--row-hover);
+}
+
+.drawer__full-title {
+  margin: 0.6rem 0 1.2rem;
+  color: var(--text-2);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.drawer__section {
+  margin-bottom: 1.4rem;
+}
+
+.drawer__section h3 {
+  margin: 0 0 0.5rem;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  font-weight: 700;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.drawer__section h4 {
+  margin: 0.6rem 0 0.3rem;
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.drawer__facts {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 0.3rem 0.75rem;
+  margin: 0;
+  font-size: 13px;
+}
+
+.drawer__facts dt {
+  color: var(--text-3);
+}
+
+.drawer__facts dd {
+  margin: 0;
+  color: var(--text-1);
+}
+
+.drawer__list {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-1);
+}
+
+.drawer__list li {
+  margin-bottom: 0.25rem;
+}
+
+.drawer__prose {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-1);
+}
+
+.drawer__cite {
+  color: var(--text-3);
+}
+
+.drawer__empty {
+  margin-top: 1.5rem;
+  padding: 0.75rem 0.85rem;
+  background: var(--bg-2);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-3);
+}
+
+/* Provenance badge */
+.prov {
+  display: inline-block;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+  vertical-align: 1px;
+  white-space: nowrap;
+}
+
+.prov.is-verified {
+  background: var(--verified-bg);
+  color: var(--verified-fg);
+}
+
+.prov.is-unverified {
+  background: var(--unverified-bg);
+  color: var(--unverified-fg);
+}
+
+@media (max-width: 560px) {
+  .drawer {
+    width: 100vw;
+  }
+  .drawer__facts {
+    grid-template-columns: 1fr;
+    gap: 0 0;
+  }
+  .drawer__facts dt {
+    margin-top: 0.5rem;
+  }
+}
