@@ -1,0 +1,110 @@
+/* Light palette is the base; dark redefines only the tokens. Every colour is
+   defined here on :root so nothing depends on a media query alone. */
+:root {
+  color-scheme: light dark;
+
+  --bg-1: #ffffff;
+  --bg-2: #f4f5f7;
+  --bg-elevated: #ffffff;
+
+  --text-1: #14171f;
+  --text-2: #4a5061;
+  --text-3: #838a9c;
+
+  --border: #dfe2e8;
+  --border-subtle: #eceef2;
+
+  --accent: #b0304a;
+
+  --row-hover: #f2f4f7;
+  --row-selected: #fdeef1;
+
+  /* Sequential ramp: later phases read as heavier. */
+  --phase-1: #b9c6d6;
+  --phase-12: #93a9c4;
+  --phase-2: #6b8db2;
+  --phase-23: #4a719d;
+  --phase-3: #2d5687;
+  --phase-4: #7c8ba0;
+  --bar-default: #a8b0bd;
+
+  --verified-bg: #e2f2e6;
+  --verified-fg: #1f6b38;
+  --unverified-bg: #f2ecd9;
+  --unverified-fg: #7a6218;
+
+  --warn-bg: #fdf6e3;
+  --warn-border: #e8d9a8;
+  --warn-fg: #5f4c12;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg-1: #14161b;
+    --bg-2: #1b1e25;
+    --bg-elevated: #1a1d24;
+
+    --text-1: #e9ecf2;
+    --text-2: #b0b7c5;
+    --text-3: #7c8494;
+
+    --border: #2c313b;
+    --border-subtle: #23272f;
+
+    --accent: #e8697f;
+
+    --row-hover: #1f232b;
+    --row-selected: #2a1f25;
+
+    --phase-1: #46586e;
+    --phase-12: #56708f;
+    --phase-2: #6a8cb0;
+    --phase-23: #7fa3c8;
+    --phase-3: #98bce0;
+    --phase-4: #6b7686;
+    --bar-default: #4d545f;
+
+    --verified-bg: #1d3324;
+    --verified-fg: #7fce97;
+    --unverified-bg: #332d1a;
+    --unverified-fg: #d9bd6a;
+
+    --warn-bg: #2a2415;
+    --warn-border: #4a3f22;
+    --warn-fg: #dcc98d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-1);
+  color: var(--text-1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

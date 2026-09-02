@@ -1,0 +1,290 @@
+.gantt {
+  position: relative;
+  margin: 0 0 1rem;
+}
+
+.gantt__scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* The chart enforces a minimum px-per-year, so narrow screens scroll here
+     rather than compressing years into illegibility. */
+  -webkit-overflow-scrolling: touch;
+}
+
+.gantt__svg {
+  display: block;
+  font-family: inherit;
+}
+
+/* ---- Axis ---- */
+.gantt__year {
+  fill: var(--text-3);
+  font-size: 11px;
+  text-anchor: middle;
+  font-variant-numeric: tabular-nums;
+}
+
+.gantt__gridline {
+  stroke: var(--border-subtle);
+  stroke-width: 1;
+}
+
+.gantt__approval-rule {
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 3;
+  opacity: 0.7;
+}
+
+/* ---- Lanes ---- */
+.gantt__group-label {
+  fill: var(--text-2);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gantt__group-rule {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+/* ---- Rows ---- */
+.gantt__row {
+  cursor: pointer;
+  outline: none;
+}
+
+.gantt__row-hit {
+  fill: transparent;
+}
+
+.gantt__row:hover .gantt__row-hit,
+.gantt__row:focus-visible .gantt__row-hit {
+  fill: var(--row-hover);
+}
+
+.gantt__row:focus-visible .gantt__row-hit {
+  stroke: var(--accent);
+  stroke-width: 1;
+}
+
+.gantt__row.is-selected .gantt__row-hit {
+  fill: var(--row-selected);
+}
+
+.gantt__row-label {
+  fill: var(--text-2);
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.gantt__row.is-selected .gantt__row-label,
+.gantt__row:hover .gantt__row-label {
+  fill: var(--text-1);
+}
+
+/* ---- Bars ---- */
+.gantt__bar {
+  fill: var(--bar-default);
+  transition: filter 120ms ease;
+}
+
+.gantt__row:hover .gantt__bar {
+  filter: brightness(1.12);
+}
+
+.gantt__bar.phase-early_phase1,
+.gantt__bar.phase-phase1 {
+  fill: var(--phase-1);
+}
+.gantt__bar.phase-phase1_2 {
+  fill: var(--phase-12);
+}
+.gantt__bar.phase-phase2 {
+  fill: var(--phase-2);
+}
+.gantt__bar.phase-phase2_3 {
+  fill: var(--phase-23);
+}
+.gantt__bar.phase-phase3 {
+  fill: var(--phase-3);
+}
+.gantt__bar.phase-phase4 {
+  fill: var(--phase-4);
+}
+.gantt__bar.phase-na {
+  fill: var(--bar-default);
+}
+
+/* Role is carried by the outline, so it reads independently of phase colour. */
+.gantt__bar.role-pivotal {
+  stroke: var(--text-1);
+  stroke-width: 1.5;
+}
+
+.gantt__bar.role-not_in_filing {
+  opacity: 0.4;
+  stroke: var(--border);
+  stroke-width: 1;
+  stroke-dasharray: 3 2;
+}
+
+/* A month- or year-precision edge fades out instead of ending hard, so the
+   chart never implies a day the source did not give. */
+.gantt__bar.fuzzy-start {
+  mask: linear-gradient(to right, rgba(0, 0, 0, 0.45), #000 10px);
+}
+.gantt__bar.fuzzy-end {
+  mask: linear-gradient(to left, rgba(0, 0, 0, 0.45), #000 10px);
+}
+.gantt__bar.fuzzy-start.fuzzy-end {
+  mask: linear-gradient(to right, rgba(0, 0, 0, 0.45), #000 10px, #000 calc(100% - 10px), rgba(0, 0, 0, 0.45));
+}
+
+.gantt__primary-completion {
+  stroke: var(--bg-1);
+  stroke-width: 2;
+}
+
+/* ---- Milestones ---- */
+.gantt__diamond {
+  fill: var(--bg-1);
+  stroke: var(--text-2);
+  stroke-width: 1.5;
+}
+
+.gantt__diamond.is-major {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
+
+.gantt__milestone-leader {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.gantt__milestone-label {
+  fill: var(--text-3);
+  font-size: 10.5px;
+}
+
+.gantt__milestone-label.is-major {
+  fill: var(--text-1);
+  font-weight: 600;
+}
+
+/* ---- Tooltip ---- */
+.gantt__tooltip {
+  position: fixed;
+  z-index: 40;
+  pointer-events: none;
+  max-width: 340px;
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.gantt__tooltip-title {
+  font-weight: 650;
+  color: var(--text-1);
+}
+
+.gantt__tooltip-sub {
+  color: var(--text-3);
+  margin: 0.15rem 0 0.45rem;
+  font-size: 11.5px;
+}
+
+.gantt__tooltip-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.1rem 0.6rem;
+  margin: 0;
+}
+
+.gantt__tooltip-facts dt {
+  color: var(--text-3);
+}
+
+.gantt__tooltip-facts dd {
+  margin: 0;
+  color: var(--text-1);
+  font-variant-numeric: tabular-nums;
+}
+
+.gantt__tooltip-hint {
+  margin-top: 0.45rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-3);
+  font-size: 11px;
+}
+
+/* ---- Legend & notes ---- */
+.gantt__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  margin-top: 0.75rem;
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.gantt__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.gantt__swatch {
+  width: 18px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--phase-3);
+  display: inline-block;
+}
+
+.gantt__swatch.role-pivotal {
+  border: 1.5px solid var(--text-1);
+}
+
+.gantt__swatch.role-supportive {
+  background: var(--phase-2);
+}
+
+.gantt__swatch.role-not_in_filing {
+  opacity: 0.4;
+  border: 1px dashed var(--border);
+}
+
+.gantt__swatch-tick {
+  width: 2px;
+  height: 12px;
+  background: var(--text-2);
+  display: inline-block;
+}
+
+.gantt__swatch-diamond {
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.gantt__legend-note {
+  color: var(--text-3);
+  font-style: italic;
+}
+
+.gantt__undated {
+  margin: 0.6rem 0 0;
+  font-size: 12px;
+  color: var(--text-3);
+}

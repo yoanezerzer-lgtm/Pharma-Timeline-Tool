@@ -1,0 +1,81 @@
+name: Ingest drug data
+
+# Run on demand. The pipeline reads public APIs (openFDA, ClinicalTrials.gov)
+# and public FDA PDFs — no API keys, no secrets, no per-run cost.
+on:
+  workflow_dispatch:
+    inputs:
+      drug:
+        description: 'Drug slug from scripts/ingest/registry.ts (e.g. upadacitinib)'
+        required: true
+        type: string
+      refresh:
+        description: 'Ignore the on-disk cache and re-fetch everything'
+        required: false
+        type: boolean
+        default: false
+      max_lookups:
+        description: 'Cap on ClinicalTrials.gov identifier lookups'
+        required: false
+        type: string
+        default: '400'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run ingestion
+        run: |
+          npm run ingest -- \
+            --drug "${{ inputs.drug }}" \
+            --max-lookups "${{ inputs.max_lookups }}" \
+            ${{ inputs.refresh && '--refresh' || '' }}
+
+      - name: Validate result
+        run: npm run validate
+
+      - name: Open a pull request with the data diff
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- data/drugs; then
+            echo "No data changes — nothing to open a PR for."
+            exit 0
+          fi
+
+          BRANCH="ingest/${{ inputs.drug }}-$(date +%Y%m%d-%H%M%S)"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/drugs
+          git commit -m "Ingest data for ${{ inputs.drug }}"
+          git push -u origin "$BRANCH"
+
+          gh pr create \
+            --title "Ingest: ${{ inputs.drug }}" \
+            --body "Automated ingestion run for \`${{ inputs.drug }}\`.
+
+          Data comes from openFDA Drugs@FDA, the FDA approval package PDFs, and
+          ClinicalTrials.gov. Review the diff before merging — every field is
+          marked \`verified: false\` until a person checks it, and trial roles are
+          assigned by rule (label section 14 for pivotal), not by inference.
+
+          Any field already marked \`verified: true\` was preserved; conflicts are
+          listed in the workflow log." \
+            --base "${{ github.ref_name }}" \
+            --head "$BRANCH"
