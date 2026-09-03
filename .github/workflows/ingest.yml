@@ -51,18 +51,33 @@ jobs:
 
       # Diagnostic: the extracted document text is deliberately gitignored (it
       # never belongs in a diff), which means nobody can actually see what the
-      # pipeline read from a real label — only what it concluded. Uploading it
-      # here is what makes a role-classification mismatch debuggable from real
-      # evidence instead of another guess. Small (~1-2 MB of text), so this
-      # stays on rather than being a one-off.
-      - name: Upload extracted document text
+      # pipeline read from a real label — only what it concluded. A build
+      # artifact (tried first) downloads from Azure blob storage, which isn't
+      # reachable from every environment that needs to read it — a plain git
+      # branch is. Pushing it here is what makes a role-classification
+      # mismatch debuggable from real evidence instead of another guess.
+      - name: Push extracted document text to a diagnostic branch
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: raw-doc-text-${{ inputs.drug }}
-          path: data/raw/**/docs/*.txt
-          retention-days: 14
-          if-no-files-found: warn
+        env:
+          DRUG: ${{ inputs.drug }}
+        run: |
+          set -euo pipefail
+          if ! compgen -G "data/raw/*/docs/*.txt" > /dev/null; then
+            echo "No extracted document text to push."
+            exit 0
+          fi
+          BRANCH="diag/raw-text-${DRUG}-$(date +%Y%m%d-%H%M%S)"
+          ORIGINAL_REF="$(git rev-parse --abbrev-ref HEAD)"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -f data/raw/*/docs/*.txt
+          git commit -m "Diagnostic: extracted document text for ${DRUG}"
+          git push -u origin "$BRANCH"
+          echo "Pushed extracted text to branch: $BRANCH"
+          # The later "Push the data" step needs to branch from main, not from
+          # this diagnostic branch — restore the checkout before it runs.
+          git checkout "$ORIGINAL_REF"
 
       - name: Push the data and open a pull request
         env:
