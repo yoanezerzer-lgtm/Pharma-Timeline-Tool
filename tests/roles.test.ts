@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { extractLabelSection14, classifyRole } from '../scripts/ingest/roles.js';
+import { extractLabelSection14, diagnoseSection14, classifyRole } from '../scripts/ingest/roles.js';
 import { mapPhase } from '../scripts/ingest/ctgov.js';
 import type { Trial } from '../src/schema/index.js';
 
@@ -34,6 +34,31 @@ describe('extractLabelSection14', () => {
 
   it('returns null when the heading is absent rather than guessing a span', () => {
     expect(extractLabelSection14('Some unrelated document text.')).toBeNull();
+  });
+
+  it('tolerates a period after the section number', () => {
+    // Some labels render the heading as "14. CLINICAL STUDIES" rather than "14 CLINICAL STUDIES".
+    const withPeriod = labelText.replace('14 CLINICAL STUDIES', '14. CLINICAL STUDIES');
+    const section = extractLabelSection14(withPeriod);
+    expect(section).not.toBeNull();
+    expect(section).toContain('SELECT-COMPARE');
+  });
+});
+
+describe('diagnoseSection14', () => {
+  it('reports the phrase as absent when it never appears', () => {
+    expect(diagnoseSection14('Nothing relevant in here.')).toEqual({ phrasePresent: false });
+  });
+
+  it('reports the phrase as present with a page and snippet when the heading did not match', () => {
+    // A modern combined label might describe the section differently than the
+    // numbered PLR heading — the diagnostic should still find the phrase and
+    // say roughly where, even though extractLabelSection14 would return null.
+    const text = '<<<PAGE 45>>>\nSee the CLINICAL STUDIES summary below for efficacy data.';
+    const diag = diagnoseSection14(text);
+    expect(diag.phrasePresent).toBe(true);
+    expect(diag.page).toBe(45);
+    expect(diag.snippet).toContain('CLINICAL STUDIES');
   });
 });
 

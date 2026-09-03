@@ -39,7 +39,7 @@ function parseArgs(argv: string[]): Args {
       get('--steps')?.split(',').map((s) => s.trim()) ?? ALL_STEPS
     ),
     refresh: argv.includes('--refresh'),
-    maxLookups: Number(get('--max-lookups') ?? 400),
+    maxLookups: Number(get('--max-lookups') ?? 3000),
     dryRun: argv.includes('--dry-run'),
   };
 }

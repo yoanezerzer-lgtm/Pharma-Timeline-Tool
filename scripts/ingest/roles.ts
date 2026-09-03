@@ -1,5 +1,5 @@
 import type { Trial, TrialRole, Provenance } from '../../src/schema/index.js';
-import { stripPageMarkers } from './docs.js';
+import { stripPageMarkers, pageForOffset } from './docs.js';
 
 /**
  * Assigns each trial its part in the marketing application, using rules rather
@@ -23,14 +23,54 @@ import { stripPageMarkers } from './docs.js';
  */
 export function extractLabelSection14(labelText: string): string | null {
   const text = stripPageMarkers(labelText);
-  const start = /\b14\s+CLINICAL\s+STUDIES\b/i.exec(text);
+  const start = findSection14Heading(text);
   if (!start) return null;
   const after = text.slice(start.index);
-  const end = /\b1[56]\s+(REFERENCES|HOW\s+SUPPLIED)\b/i.exec(after);
+  const end = /\b1[56]\.?\s+(REFERENCES|HOW\s+SUPPLIED)\b/i.exec(after);
   const section = end ? after.slice(0, end.index) : after;
   // A plausible section 14 is at least a few paragraphs; anything shorter
   // suggests the heading matched a table of contents entry instead.
   return section.length > 400 ? section : null;
+}
+
+/** Tolerates a period after the number ("14. CLINICAL STUDIES"), which some labels use. */
+function findSection14Heading(strippedText: string): RegExpExecArray | null {
+  return /\b14\.?\s+CLINICAL\s+STUDIES\b/i.exec(strippedText);
+}
+
+export interface Section14Diagnostics {
+  /** True if "CLINICAL STUDIES" appears anywhere, even without the numbered heading. */
+  phrasePresent: boolean;
+  page?: number;
+  /** Text around the first occurrence, so a failed run's log shows what was actually extracted. */
+  snippet?: string;
+}
+
+/**
+ * Explains why the numbered heading could not be located.
+ *
+ * Not used for classification — a loose match here is not trustworthy enough
+ * to base a pivotal determination on. It exists purely so a run that fails to
+ * find section 14 leaves behind something more useful than "not found": either
+ * the phrase never appears (the wrong document, or a badly extracted one), or
+ * it appears but not as a numbered heading (a different label structure worth
+ * looking at directly).
+ */
+export function diagnoseSection14(labelText: string): Section14Diagnostics {
+  const stripped = stripPageMarkers(labelText);
+  const phrase = /CLINICAL\s+STUDIES/i.exec(stripped);
+  if (!phrase) return { phrasePresent: false };
+
+  // Best-effort page lookup against the marker-containing text; approximate
+  // is fine since this is a diagnostic, not a citation.
+  const rawPhrase = /CLINICAL\s+STUDIES/i.exec(labelText);
+  const page = rawPhrase ? pageForOffset(labelText, rawPhrase.index) : undefined;
+
+  return {
+    phrasePresent: true,
+    page,
+    snippet: stripped.slice(Math.max(0, phrase.index - 60), phrase.index + 100).trim(),
+  };
 }
 
 export interface RoleContext {

@@ -1,13 +1,13 @@
 import { readFileSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { Drug, type Drug as DrugType, type Trial } from '../../src/schema/index.js';
+import { Drug, type Drug as DrugType, type Trial, type Milestone } from '../../src/schema/index.js';
 import { makeContext, type IngestContext } from './context.js';
 import type { DrugSpec } from './registry.js';
 import { runFdaStage, type FdaStageResult } from './fda.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
 import { extractCandidates, resolveCandidates, type ResolveReport } from './codes.js';
 import { studyToTrial, searchByIntervention, ctgovStudyUrl, studyMatchesDrug } from './ctgov.js';
-import { applyRoles, extractLabelSection14 } from './roles.js';
+import { applyRoles, extractLabelSection14, diagnoseSection14 } from './roles.js';
 import { mergeDrug, type Conflict } from './merge.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
@@ -69,7 +69,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     rawDir,
     drugsDir = defaultDrugsDir(),
     refresh = false,
-    maxLookups = 400,
+    maxLookups = 3000,
     dryRun = false,
     now = new Date(),
     log = () => {},
@@ -102,7 +102,6 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     .filter((d) => /review/i.test(d.type))
     .map((d) => d.text)
     .join('\n');
-  const labelDoc = docs.find((d) => /label/i.test(d.type));
   const allDocText = docs.map((d) => d.text).join('\n');
 
   // --- codes ---------------------------------------------------------------
@@ -126,6 +125,19 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
       `        ${resolution.resolved.length} resolved, ${resolution.rejected.length} rejected, ` +
         `${resolution.skipped.length} skipped (${resolution.lookups} lookups)`
     );
+
+    // The lookup budget is a runtime guard, not a cost control — every lookup
+    // is a free, fast registry query. A skip means a candidate identifier was
+    // never checked at all, which can silently leave a real trial out of the
+    // dossier. Worth a loud warning, not just a number buried in the summary line.
+    if (resolution.skipped.length > 0) {
+      warn(
+        `${resolution.skipped.length} of ${candidates.length} candidate identifiers were ` +
+          `never checked against ClinicalTrials.gov — the lookup budget (--max-lookups ` +
+          `${maxLookups}) ran out first. Some real trials may be missing. Raise --max-lookups ` +
+          `and re-run; lookups are free.`
+      );
+    }
 
     for (const r of resolution.resolved) {
       const trial = studyToTrial(r.study, ctgovStudyUrl(r.nctId));
@@ -162,11 +174,44 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   }
 
   // --- roles ---------------------------------------------------------------
-  const labelSection14 = labelDoc ? extractLabelSection14(labelDoc.text) : null;
-  if (labelDoc && !labelSection14) {
+  // A mature drug carries a label document per approved supplement, and
+  // openFDA's array order isn't chronological. Try them newest-first and use
+  // whichever one actually yields a locatable section 14 — the most recent
+  // label is usually the most complete (it accumulates every indication
+  // approved so far), but an individual document can still extract badly
+  // (an odd layout, a partial supplement label), so falling through to older
+  // ones is cheap insurance rather than betting the whole run on one document.
+  const labelDocsByRecency = [...docs.filter((d) => /label/i.test(d.type))].sort(
+    (a, b) => submissionDate(b.submission, fda.milestones).localeCompare(submissionDate(a.submission, fda.milestones))
+  );
+
+  let labelSection14: string | null = null;
+  let labelDoc: FetchedDoc | undefined;
+  for (const candidate of labelDocsByRecency) {
+    const section = extractLabelSection14(candidate.text);
+    if (section) {
+      labelSection14 = section;
+      labelDoc = candidate;
+      break;
+    }
+  }
+
+  if (labelDocsByRecency.length > 0 && !labelSection14) {
+    // None of the label documents yielded a locatable section 14. Diagnose the
+    // most recent one so the log says something more useful than "not found" —
+    // this is the field where PDF text extraction is most likely to misbehave.
+    const diag = diagnoseSection14(labelDocsByRecency[0].text);
     warn(
-      'could not locate section 14 in the label; pivotal classification falls ' +
-        'back to review citation only.'
+      `could not locate section 14 in any of ${labelDocsByRecency.length} label document(s) ` +
+        `checked. ` +
+        (diag.phrasePresent
+          ? `The phrase "CLINICAL STUDIES" does appear (page ${diag.page ?? 'unknown'} of ` +
+            `${labelDocsByRecency[0].submission}) but not as a numbered heading — extracted ` +
+            `text nearby: "${diag.snippet}"`
+          : `The phrase "CLINICAL STUDIES" does not appear anywhere in the extracted text of ` +
+            `the most recent label (${labelDocsByRecency[0].submission}) — the PDF text layer ` +
+            `may not have extracted correctly.`) +
+        ' Pivotal classification falls back to review citation only.'
     );
   }
 
@@ -238,6 +283,16 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     droppedTrials: merged.droppedTrials,
     warnings,
   };
+}
+
+/**
+ * The approval date of the submission a document belongs to, for sorting
+ * label documents newest-first. Empty string sorts last for a submission we
+ * have no milestone for (shouldn't normally happen, since documents come from
+ * submissions that were themselves used to build milestones).
+ */
+function submissionDate(submission: string, milestones: Milestone[]): string {
+  return milestones.find((m) => m.submissionNumber === submission)?.date.value ?? '';
 }
 
 function withoutStamp(d: DrugType): Omit<DrugType, 'lastIngestedAt'> {

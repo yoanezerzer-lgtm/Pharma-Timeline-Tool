@@ -64,7 +64,7 @@ Flags:
 | --- | --- |
 | `--steps fda,docs,codes,ctgov,merge` | Run only some stages. |
 | `--refresh` | Ignore the on-disk cache and re-fetch. |
-| `--max-lookups 400` | Cap registry lookups on a long review document. |
+| `--max-lookups 3000` | Safety cap on registry lookups, not a cost control — each lookup is free. Only worth raising if the log reports skipped candidates. |
 | `--dry-run` | Report what would change without writing. |
 
 Every response is cached under `data/raw/<slug>/`, so re-runs are cheap and mostly
@@ -106,7 +106,14 @@ person has checked it.
   registry stops returning is kept, not deleted.
 - **Roles are rules, not guesses.** A trial named in label section 14 is marked
   `PIVOTAL`, because that is a fact about the document. Everything else is a weaker
-  heuristic, marked unverified, for a person to correct.
+  heuristic, marked unverified, for a person to correct. A mature drug carries one label
+  document per approved supplement; since openFDA doesn't return them in date order, the
+  pipeline tries them newest-first and uses whichever one actually yields a locatable
+  section 14, rather than betting the whole run on a single document that might extract
+  badly. **This is still a drug-wide flag, not yet per-indication** — a trial pivotal for
+  the original approval and one pivotal for a later supplement both just read `PIVOTAL`.
+  Attributing each trial to the specific approval(s) it supported is the next real piece
+  of work.
 - **Narrative is human-authored.** `takeaways`, `limitations`, and the drug summary are
   never generated. They stay empty until written, and the UI omits empty sections rather
   than showing a shell.

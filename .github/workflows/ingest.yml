@@ -15,10 +15,12 @@ on:
         type: boolean
         default: false
       max_lookups:
-        description: 'Cap on ClinicalTrials.gov identifier lookups'
+        description: >-
+          Safety cap on registry lookups, not a cost control (each lookup is free).
+          Leave this alone unless a run's log says candidates were skipped.
         required: false
         type: string
-        default: '400'
+        default: '3000'
 
 permissions:
   contents: write
