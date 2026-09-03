@@ -97,6 +97,40 @@ describe('extractLabelSection14', () => {
     expect(section).not.toBeNull();
     expect(section).toContain('No further headings here');
   });
+
+  it('skips a table-of-contents mention of the heading and finds the real section', () => {
+    // Reproduces a real pipeline failure found against the actual Rinvoq label
+    // (211675/218347, supplement 034/008), which classified zero trials as
+    // pivotal despite the label plainly naming five of them.
+    //
+    // The label's table of contents is extracted as one run of jumbled,
+    // interleaved two-column text that happens to end in the exact heading
+    // string — "...13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility
+    // listed. 14 CLINICAL STUDIES Reference ID: 5826084" — immediately
+    // followed by "FULL PRESCRIBING INFORMATION WARNING: ...", the start of
+    // the document body, not of section 14. Taking the *first* regex match
+    // anchors there instead of on the real heading further down. From that
+    // false start, pdfjs's habit of spacing out chemical-formula subscripts
+    // ("C 17 H 19 F 3 N 6 O", from section 11 DESCRIPTION, encountered before
+    // the real section 14 heading) then false-matches the section-end
+    // boundary regex — "17 H" reads as a "1[5-8]" heading followed by an
+    // all-caps run — truncating the captured span before it ever reaches the
+    // real section 14 text, so it contains none of the real trial names.
+    const text =
+      '13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility listed. ' +
+      '14 CLINICAL STUDIES Reference ID: 5826084\n' +
+      'FULL PRESCRIBING INFORMATION WARNING: SERIOUS INFECTIONS ' +
+      filler.repeat(6) +
+      '11 DESCRIPTION Upadacitinib has a molecular formula of C 17 H 19 F 3 N 6 O. ' +
+      filler.repeat(3) +
+      '14 CLINICAL STUDIES Trial M13-545 (SELECT-COMPARE) established efficacy. ' +
+      filler.repeat(3) +
+      '16 HOW SUPPLIED Tablets are supplied in bottles.';
+    const section = extractLabelSection14(text);
+    expect(section).not.toBeNull();
+    expect(section).toContain('SELECT-COMPARE');
+    expect(section).not.toContain('Tablets are supplied');
+  });
 });
 
 describe('diagnoseSection14', () => {
