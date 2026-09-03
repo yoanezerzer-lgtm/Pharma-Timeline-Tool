@@ -6,6 +6,7 @@ import { runIngest } from '../scripts/ingest/run.js';
 import type { DrugSpec } from '../scripts/ingest/registry.js';
 import { Drug, type Drug as DrugType } from '../src/schema/index.js';
 import { seedCache, readFixture, OPENFDA_211675 } from './helpers/seedCache.js';
+import { academicStudy, observationalStudy } from './fixtures/studies.js';
 
 /**
  * The dress rehearsal: the whole pipeline, start to finish, with no network.
@@ -310,5 +311,65 @@ describe('label selection when the newest label fails to parse', () => {
         (w) => w.includes('could not locate section 14 in any of 2 label document(s)')
       )
     ).toBe(true);
+  });
+});
+
+/**
+ * Regression coverage for the exact false positives a manual review caught on
+ * the real Rinvoq run: an academic investigator-initiated study and a company
+ * observational registry both ended up marked PIVOTAL because their trial
+ * identifiers appeared somewhere within the captured section 14 span with no
+ * real document citation behind them. Both are registered against upadacitinib
+ * (so the ctgov stage legitimately pulls them in) but neither is evidence
+ * AbbVie's own application rests on.
+ */
+describe('sponsor and study-type guard, full pipeline', () => {
+  it('excludes an academic study and an observational registry from pivotal, even when named in the section 14 span', async () => {
+    const ws = makeWorkspace();
+
+    // Simulate the section 14 span naming both false positives alongside a
+    // real, sponsor-run, cited trial — the same shape as the production span,
+    // regardless of exactly how each identifier ended up inside it.
+    seedCache({
+      slug: SPEC.slug,
+      rawDir: ws.rawDir,
+      applicationType: SPEC.applicationType,
+      applicationNumber: SPEC.applicationNumber,
+      intervention: SPEC.inn,
+      openFdaResponse: OPENFDA_211675,
+      documents: [
+        {
+          url: REVIEW_URL,
+          text: readFixture('review-excerpt.txt'),
+        },
+        {
+          url: LABEL_URL,
+          // Inserted before "16 HOW SUPPLIED" — the fixture's existing end
+          // boundary — so this text genuinely falls inside the captured
+          // section 14 span, not merely appended after the whole document.
+          text: readFixture('label-excerpt.txt').replace(
+            '16 HOW SUPPLIED',
+            '14.9 Postmarketing Data Real-world and investigator-initiated data are ' +
+              'also referenced, including the ACUTE study (NCT07258771) and the UPDATE ' +
+              'registry (NCT05327920). 16 HOW SUPPLIED'
+          ),
+        },
+      ],
+    });
+
+    const result = await run(ws);
+    const byNct = (nctId: string) => result.drug.trials.find((t) => t.nctId === nctId);
+
+    const academic = byNct(academicStudy.protocolSection!.identificationModule!.nctId!);
+    expect(academic).toBeDefined();
+    expect(academic!.role).not.toBe('PIVOTAL');
+
+    const observational = byNct(observationalStudy.protocolSection!.identificationModule!.nctId!);
+    expect(observational).toBeDefined();
+    expect(observational!.role).not.toBe('PIVOTAL');
+
+    // The real pivotal trials in the same span are unaffected by the guard.
+    const compare = result.drug.trials.find((t) => t.protocolNumber === 'M13-545');
+    expect(compare!.role).toBe('PIVOTAL');
   });
 });

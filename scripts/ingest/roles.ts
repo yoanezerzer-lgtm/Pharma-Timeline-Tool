@@ -26,7 +26,7 @@ export function extractLabelSection14(labelText: string): string | null {
   const start = findSection14Heading(text);
   if (!start) return null;
   const after = text.slice(start.index);
-  const end = /\b1[56]\.?\s+(REFERENCES|HOW\s+SUPPLIED)\b/i.exec(after);
+  const end = findSection14End(after);
   const section = end ? after.slice(0, end.index) : after;
   // A plausible section 14 is at least a few paragraphs; anything shorter
   // suggests the heading matched a table of contents entry instead.
@@ -36,6 +36,24 @@ export function extractLabelSection14(labelText: string): string | null {
 /** Tolerates a period after the number ("14. CLINICAL STUDIES"), which some labels use. */
 function findSection14Heading(strippedText: string): RegExpExecArray | null {
   return /\b14\.?\s+CLINICAL\s+STUDIES\b/i.exec(strippedText);
+}
+
+/**
+ * Finds where section 14 ends: the next top-level PLR heading (15 REFERENCES,
+ * 16 HOW SUPPLIED, 17 PATIENT COUNSELING, or occasionally an 18 appendix).
+ *
+ * Recognising the general shape — a section number followed by an ALL-CAPS
+ * title — rather than two fixed title strings is what makes this hold up on a
+ * label whose later sections are titled slightly differently, or that skips
+ * a References section and jumps straight to 16 or 17. Missing this boundary
+ * is the more dangerous failure: the captured "section 14" then runs into
+ * later content (postmarketing commitments, references) and can attribute
+ * trials named there to the approved evidence base. Requiring a genuinely
+ * capitalised run of 6+ characters keeps incidental digits in body text
+ * ("15 mg once daily") from being mistaken for a heading.
+ */
+function findSection14End(afterHeading: string): RegExpExecArray | null {
+  return /\b1[5-8]\.?\s+[A-Z][A-Z0-9 ,/-]{5,70}\b/.exec(afterHeading);
 }
 
 export interface Section14Diagnostics {
@@ -80,6 +98,8 @@ export interface RoleContext {
   reviewText: string;
   labelUrl?: string;
   reviewUrl?: string;
+  /** The applicant's name, e.g. "AbbVie Inc.", for the sponsor-match guard below. */
+  sponsorName?: string;
 }
 
 function identifiersOf(trial: Trial): string[] {
@@ -88,9 +108,57 @@ function identifiersOf(trial: Trial): string[] {
   );
 }
 
+function escapeRegExp(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * True when any needle appears in the haystack as a whole word/token, not
+ * merely as a substring.
+ *
+ * A plain `.includes()` check is unsafe for trial acronyms: several real
+ * AbbVie post-marketing studies are literally acronymed "UPDATE" and "ACUTE"
+ * — ordinary English words that appear constantly in unrelated prose (any
+ * mention of "an update to labeling" or "acute exacerbation" would otherwise
+ * match). Word-boundary matching fixes that. A short acronym like a two-letter
+ * disease abbreviation ("CD" for Crohn's disease) can still collide at a true
+ * word boundary — that residual risk is why classifyRole additionally
+ * requires a document citation or a sponsor/study-type match before trusting
+ * a section 14 mention with no citation behind it.
+ */
 function mentions(haystack: string, needles: string[]): boolean {
-  const lower = haystack.toLowerCase();
-  return needles.some((n) => lower.includes(n.toLowerCase()));
+  return needles.some((n) => new RegExp(`\\b${escapeRegExp(n)}\\b`, 'i').test(haystack));
+}
+
+const CORPORATE_SUFFIX = /\b(inc|incorporated|corp|corporation|co|company|ltd|limited|llc|plc|gmbh|sa)\b/g;
+
+function normalizeSponsor(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[.,]/g, ' ')
+    .replace(CORPORATE_SUFFIX, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * A cheap, real-world check learned directly from manual review: a trial that
+ * actually supported this application is the applicant's own registrational
+ * study, which is definitionally interventional. A different company's
+ * observational registry, or an academic investigator-initiated study, is
+ * never that evidence — even when it studies the same drug and its NCT number
+ * happens to turn up inside the text captured as "section 14."
+ *
+ * Missing data (no sponsor recorded, no sponsor name to compare against) is
+ * treated as inconclusive rather than disqualifying — this guards against a
+ * specific, observed failure mode, not a general trust requirement.
+ */
+function looksLikeSponsorTrial(trial: Trial, sponsorName: string | undefined): boolean {
+  if (trial.studyType && trial.studyType.toUpperCase() === 'OBSERVATIONAL') return false;
+  if (!sponsorName || !trial.sponsor) return true;
+  const a = normalizeSponsor(trial.sponsor);
+  const b = normalizeSponsor(sponsorName);
+  return a.length > 0 && b.length > 0 && (a.includes(b) || b.includes(a));
 }
 
 export interface RoleAssignment {
@@ -100,19 +168,32 @@ export interface RoleAssignment {
 
 export function classifyRole(trial: Trial, ctx: RoleContext): RoleAssignment {
   const ids = identifiersOf(trial);
+  const namedInSection14 =
+    !!ctx.labelSection14 && ids.length > 0 && mentions(ctx.labelSection14, ids);
 
-  // 1. Named in label section 14 → part of the approved evidence base.
-  if (ctx.labelSection14 && ids.length > 0 && mentions(ctx.labelSection14, ids)) {
-    return {
-      role: 'PIVOTAL',
-      provenance: {
-        sourceUrl: ctx.labelUrl,
-        sourceLabel: 'Approved label, section 14 (Clinical Studies)',
-        extractedBy: 'rule',
-        verified: false,
-        quote: 'Trial identifier appears in section 14 of the approved label.',
-      },
-    };
+  if (namedInSection14) {
+    // `citedIn` only proves the identifier's string appears *somewhere* in the
+    // FDA paperwork (it's populated by a document-wide scan, not one scoped to
+    // section 14) — it does not by itself prove the specific occurrence inside
+    // the captured section 14 span is genuine. extractLabelSection14's end
+    // boundary can still run past the real section 14 on an unusual label, so
+    // a bare mention there — cited elsewhere or not — always needs the trial
+    // to actually look like the applicant's own study before it's trusted.
+    if (looksLikeSponsorTrial(trial, ctx.sponsorName)) {
+      return {
+        role: 'PIVOTAL',
+        provenance: {
+          sourceUrl: ctx.labelUrl,
+          sourceLabel: 'Approved label, section 14 (Clinical Studies)',
+          extractedBy: 'rule',
+          verified: false,
+          quote: 'Trial identifier appears within the captured section 14 span, and ' +
+            'the trial is sponsor-run and interventional.',
+        },
+      };
+    }
+    // Named in the captured span but not the applicant's own interventional
+    // trial and no direct citation — falls through rather than being trusted.
   }
 
   // 2. Cited in the review but not in section 14 → supporting evidence.

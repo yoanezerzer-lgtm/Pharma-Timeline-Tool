@@ -220,6 +220,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     reviewText,
     labelUrl: labelDoc?.url,
     reviewUrl: reviewDoc?.url,
+    sponsorName: fda.application.sponsor_name ?? spec.sponsor,
   });
 
   // Deterministic order keeps the committed JSON diff-friendly across runs.
