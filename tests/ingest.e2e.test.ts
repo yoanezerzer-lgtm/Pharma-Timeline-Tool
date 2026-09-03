@@ -212,3 +212,103 @@ describe('re-running over curated data', () => {
     ]);
   });
 });
+
+/**
+ * Regression coverage for a real production failure: a mature drug's most
+ * recent label document failed to yield a locatable section 14 (likely a PDF
+ * extraction quirk on that specific document), and — because label selection
+ * used to be "whichever one happens to appear first in openFDA's array
+ * order" — every trial in the whole run came back non-pivotal. There was
+ * nothing wrong with the older label; it was just never tried.
+ */
+describe('label selection when the newest label fails to parse', () => {
+  const OLD_LABEL_URL = 'https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/211675s000lbl.pdf';
+  const NEW_LABEL_URL = 'https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/211675s002lbl.pdf';
+
+  // Deliberately unsorted (newest submission listed first, as openFDA's array
+  // order is not chronological) and the newest one's application_docs points
+  // at a label with no locatable section 14 — standing in for a document that
+  // extracted badly.
+  const OPENFDA_MULTI_LABEL = {
+    results: [
+      {
+        application_number: 'NDA211675',
+        sponsor_name: 'ABBVIE INC',
+        submissions: [
+          {
+            submission_type: 'SUPPL',
+            submission_number: '2',
+            submission_status: 'AP',
+            submission_status_date: '20240101',
+            submission_class_code_description: 'Efficacy-New Indication',
+            application_docs: [{ id: '2', type: 'Label', url: NEW_LABEL_URL }],
+          },
+          {
+            submission_type: 'ORIG',
+            submission_number: '1',
+            submission_status: 'AP',
+            submission_status_date: '20190816',
+            submission_class_code_description: 'Type 1 - New Molecular Entity',
+            application_docs: [{ id: '1', type: 'Label', url: OLD_LABEL_URL }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const UNPARSEABLE_LABEL_TEXT =
+    'A modern combined label discussing dosing, adverse reactions, and drug ' +
+    'interactions across several indications, with no numbered heading in this excerpt.';
+
+  function makeMultiLabelWorkspace(oldLabelText: string, newLabelText: string) {
+    const root = mkdtempSync(join(tmpdir(), 'ingest-e2e-multilabel-'));
+    const rawDir = join(root, 'raw');
+    const drugsDir = join(root, 'drugs');
+    mkdirSync(rawDir, { recursive: true });
+    mkdirSync(drugsDir, { recursive: true });
+
+    seedCache({
+      slug: SPEC.slug,
+      rawDir,
+      applicationType: SPEC.applicationType,
+      applicationNumber: SPEC.applicationNumber,
+      intervention: SPEC.inn,
+      openFdaResponse: OPENFDA_MULTI_LABEL,
+      documents: [
+        { url: OLD_LABEL_URL, text: oldLabelText },
+        { url: NEW_LABEL_URL, text: newLabelText },
+      ],
+    });
+
+    return { rawDir, drugsDir };
+  }
+
+  it('falls back to an older label when the newest one has no locatable section 14', async () => {
+    const ws = makeMultiLabelWorkspace(readFixture('label-excerpt.txt'), UNPARSEABLE_LABEL_TEXT);
+    const result = await run(ws);
+
+    // Despite the most recent label failing, pivotal status still comes through
+    // via the older one that actually has a locatable section 14.
+    expect(result.foundLabelSection14).toBe(true);
+    const pivotal = result.drug.trials.filter((t) => t.role === 'PIVOTAL').map((t) => t.protocolNumber);
+    expect(pivotal).toContain('M13-545');
+    expect(result.warnings.some((w) => w.includes('could not locate section 14 in any of'))).toBe(
+      false
+    );
+  });
+
+  it('reports diagnostics when every label document fails', async () => {
+    const ws = makeMultiLabelWorkspace(
+      'Also no numbered heading in this one.',
+      UNPARSEABLE_LABEL_TEXT
+    );
+    const result = await run(ws);
+
+    expect(result.foundLabelSection14).toBe(false);
+    expect(
+      result.warnings.some(
+        (w) => w.includes('could not locate section 14 in any of 2 label document(s)')
+      )
+    ).toBe(true);
+  });
+});
