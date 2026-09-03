@@ -133,6 +133,13 @@ export const Trial = z.object({
   role: TrialRole.default('UNKNOWN'),
   status: z.string().optional(),
   sponsor: z.string().optional(),
+  /**
+   * CT.gov's own classification: INTERVENTIONAL or OBSERVATIONAL. A trial
+   * supporting a marketing application is definitionally interventional — an
+   * observational registry, however drug-relevant, is not the evidence an
+   * approval rests on. Used as a guard against misclassifying one as pivotal.
+   */
+  studyType: z.string().optional(),
 
   startDate: DateValue.optional(),
   primaryCompletionDate: DateValue.optional(),

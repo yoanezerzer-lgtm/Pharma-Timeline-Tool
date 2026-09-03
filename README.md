@@ -113,7 +113,13 @@ person has checked it.
   badly. **This is still a drug-wide flag, not yet per-indication** — a trial pivotal for
   the original approval and one pivotal for a later supplement both just read `PIVOTAL`.
   Attributing each trial to the specific approval(s) it supported is the next real piece
-  of work.
+  of work. A trial named inside the captured section 14 span is not trusted on that alone:
+  a manual review of the first real run caught two AbbVie-run observational registries and
+  two academic investigator-initiated studies that had been swept in this way. Both signals
+  come straight from the registry record — the pipeline now also requires the trial's own
+  sponsor to plausibly match the applicant, and its study type to be interventional, before
+  trusting a bare section-14 mention with no other evidence behind it. Missing sponsor data
+  is treated as inconclusive, not disqualifying, so this only blocks a confirmed mismatch.
 - **Narrative is human-authored.** `takeaways`, `limitations`, and the drug summary are
   never generated. They stay empty until written, and the UI omits empty sections rather
   than showing a shell.

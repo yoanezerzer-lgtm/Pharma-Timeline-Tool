@@ -17,6 +17,8 @@ export function makeStudy(opts: {
   enrollment: number;
   title: string;
   intervention?: string;
+  sponsor?: string;
+  studyType?: string;
 }): CtgovStudy {
   return {
     protocolSection: {
@@ -38,8 +40,9 @@ export function makeStudy(opts: {
           ? { date: opts.completionDate, type: 'ACTUAL' }
           : undefined,
       },
-      sponsorCollaboratorsModule: { leadSponsor: { name: 'AbbVie' } },
+      sponsorCollaboratorsModule: { leadSponsor: { name: opts.sponsor ?? 'AbbVie' } },
       designModule: {
+        studyType: opts.studyType ?? 'INTERVENTIONAL',
         phases: opts.phases,
         enrollmentInfo: { count: opts.enrollment, type: 'ACTUAL' },
         designInfo: {
@@ -149,8 +152,35 @@ export const otherDrugStudy = makeStudy({
   title: 'A study of adalimumab', intervention: 'Adalimumab',
 });
 
+/**
+ * An academic, investigator-initiated study of the drug — the real shape of
+ * the false positives a manual review caught. Uses upadacitinib, is
+ * registered against it, but is run by a hospital, not AbbVie, and would
+ * never be cited as evidence supporting AbbVie's own application.
+ */
+export const academicStudy = makeStudy({
+  nctId: 'NCT07258771', orgStudyId: 'HUM00266952', acronym: 'ACUTE',
+  phases: ['PHASE4'], startDate: '2026-01', enrollment: 60,
+  title: 'Upadacitinib Combined With Corticosteroids for Acute Severe Ulcerative Colitis',
+  sponsor: 'Berinstein, Jeffrey', studyType: 'INTERVENTIONAL',
+});
+register(academicStudy, ['NCT07258771', 'HUM00266952', 'ACUTE']);
+
+/**
+ * A company-run observational registry — real evidence about the drug in
+ * practice, but definitionally not a trial supporting the marketing
+ * application. The second real shape of false positive a manual review caught.
+ */
+export const observationalStudy = makeStudy({
+  nctId: 'NCT05327920', orgStudyId: 'P22-125', acronym: 'UPDATE',
+  phases: [], startDate: '2022-04', enrollment: 500,
+  title: 'Impact of Upadacitinib Treatment on Inflammation in Real-World Practice',
+  sponsor: 'AbbVie', studyType: 'OBSERVATIONAL',
+});
+register(observationalStudy, ['NCT05327920', 'P22-125', 'UPDATE']);
+
 /** Everything the intervention search returns. */
 export const ALL_REGISTERED: CtgovStudy[] = [
   selectCompare, selectNext, selectMono, selectEarly, selectBeyond,
-  balanceI, balanceII, phase1, registryOnly,
+  balanceI, balanceII, phase1, registryOnly, academicStudy, observationalStudy,
 ];
