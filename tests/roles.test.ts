@@ -1,7 +1,12 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { extractLabelSection14, diagnoseSection14, classifyRole } from '../scripts/ingest/roles.js';
+import {
+  extractLabelSection14,
+  diagnoseSection14,
+  classifyRole,
+  extractTrialAliases,
+} from '../scripts/ingest/roles.js';
 import { mapPhase } from '../scripts/ingest/ctgov.js';
 import type { Trial } from '../src/schema/index.js';
 
@@ -252,5 +257,101 @@ describe('mapPhase', () => {
     expect(mapPhase(undefined)).toBe('NA');
     expect(mapPhase([])).toBe('NA');
     expect(mapPhase(['NA'])).toBe('NA');
+  });
+});
+
+/**
+ * Regression coverage for a real production failure: a mature, multi-indication
+ * label had renamed every historical RA trial to a generic scheme ("Trial
+ * RA-I") that appears nowhere in the registry record (not the NCT ID, not the
+ * sponsor protocol number, not the original acronym). Nothing in section 14
+ * matched any known identifier, so every trial fell through to SUPPORTIVE or
+ * lower — the whole run came back with zero pivotal trials. The real review
+ * document (quoted verbatim below, from the actual FDA paperwork) does pair
+ * the generic name with the NCT number, just never inside the label itself.
+ */
+describe('extractTrialAliases', () => {
+  // Verbatim from the real ingest run's citedIn quote.
+  const realReviewQuote =
+    'oses have been studied, the recommended dosage of RINVOQ is 15 mg once daily. ' +
+    'Trial RA-I (NCT02706873) was a 24-week monotherapy trial in 947 patients with ' +
+    'moderately to severely active rheum';
+
+  it('pairs a generic trial name with its NCT number from real review text', () => {
+    const aliases = extractTrialAliases(realReviewQuote);
+    expect(aliases.get('NCT02706873')).toEqual(['RA-I']);
+  });
+
+  it('recognises "Study" as well as "Trial"', () => {
+    const aliases = extractTrialAliases('Study RA-II (NCT01234567) enrolled 500 subjects.');
+    expect(aliases.get('NCT01234567')).toEqual(['RA-II']);
+  });
+
+  it('collects multiple distinct aliases for the same NCT without duplicating', () => {
+    const text =
+      'Trial RA-I (NCT02706873) was described earlier. ' +
+      'Elsewhere, Study RA-I (NCT02706873) is referenced again. ' +
+      'Trial PsA-II (NCT09999999) is a different study.';
+    const aliases = extractTrialAliases(text);
+    expect(aliases.get('NCT02706873')).toEqual(['RA-I']);
+    expect(aliases.get('NCT09999999')).toEqual(['PsA-II']);
+  });
+
+  it('finds nothing in unrelated text', () => {
+    expect(extractTrialAliases('No such pairing appears here at all.').size).toBe(0);
+  });
+});
+
+describe('classifyRole — generic label naming, resolved via alias', () => {
+  it('marks pivotal a trial the label names only by its generic alias', () => {
+    // The label's own section 14 never repeats the NCT number, protocol
+    // number, or acronym — only the generic name the review already paired
+    // with this trial's NCT ID.
+    const reviewText =
+      'Trial RA-I (NCT02706873) was a 24-week monotherapy trial in 947 patients.';
+    const labelSection14 =
+      'In Trial RA-I, subjects receiving upadacitinib 15 mg achieved significantly ' +
+      'higher ACR20 response rates than those receiving methotrexate alone at Week 24.';
+
+    const t = trial({
+      nctId: 'NCT02706873',
+      protocolNumber: 'M13-545',
+      acronym: 'SELECT-EARLY',
+      sponsor: 'AbbVie',
+    });
+
+    const ctx = {
+      labelSection14,
+      reviewText,
+      sponsorName: 'AbbVie Inc.',
+      trialAliases: extractTrialAliases(reviewText),
+    };
+
+    expect(classifyRole(t, ctx).role).toBe('PIVOTAL');
+  });
+
+  it('does not mark pivotal without the alias map, proving the fix is load-bearing', () => {
+    const labelSection14 =
+      'In Trial RA-I, subjects receiving upadacitinib 15 mg achieved significantly ' +
+      'higher ACR20 response rates than those receiving methotrexate alone at Week 24.';
+    const t = trial({ nctId: 'NCT02706873', protocolNumber: 'M13-545', sponsor: 'AbbVie' });
+    const ctxWithoutAliases = { labelSection14, reviewText: '', sponsorName: 'AbbVie Inc.' };
+    expect(classifyRole(t, ctxWithoutAliases).role).not.toBe('PIVOTAL');
+  });
+
+  it('still applies the sponsor/study-type guard to an alias-resolved match', () => {
+    // An alias match is not a trusted shortcut around the guard — an academic
+    // study named generically in the label is exactly as untrustworthy as one
+    // named by its real identifiers.
+    const reviewText = 'Trial X-9 (NCT07258771) was an investigator-initiated study.';
+    const labelSection14 = 'Trial X-9 examined outcomes in hospitalised patients.';
+    const t = trial({ nctId: 'NCT07258771', sponsor: 'Berinstein, Jeffrey' });
+    const ctx = {
+      labelSection14,
+      reviewText,
+      sponsorName: 'AbbVie Inc.',
+      trialAliases: extractTrialAliases(reviewText),
+    };
+    expect(classifyRole(t, ctx).role).not.toBe('PIVOTAL');
   });
 });

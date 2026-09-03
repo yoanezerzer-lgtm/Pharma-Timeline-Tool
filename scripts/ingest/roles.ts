@@ -100,12 +100,43 @@ export interface RoleContext {
   reviewUrl?: string;
   /** The applicant's name, e.g. "AbbVie Inc.", for the sponsor-match guard below. */
   sponsorName?: string;
+  /** NCT ID -> generic names the label uses for it. See extractTrialAliases(). */
+  trialAliases?: Map<string, string[]>;
 }
 
-function identifiersOf(trial: Trial): string[] {
-  return [trial.nctId, trial.protocolNumber, trial.acronym].filter(
+/**
+ * Finds "Trial <name> (NCT........)" / "Study <name> (NCT........)" pairings
+ * anywhere in the document corpus.
+ *
+ * A label that has accumulated indications over years of supplements often
+ * stops naming historical trials by their original sponsor protocol number or
+ * acronym and switches to a generic scheme instead — "Trial RA-I," "Trial
+ * RA-II" — that appears nowhere in the registry record. That generic name is
+ * still paired with the real NCT number somewhere in the FDA paperwork
+ * (typically the review), even when the label's own section 14 text never
+ * repeats the NCT number itself. Extracting that pairing wherever it occurs
+ * is what lets classifyRole recognise the generic name later, including
+ * inside the label's own text where the "real" identifiers never appear.
+ */
+export function extractTrialAliases(text: string): Map<string, string[]> {
+  const stripped = stripPageMarkers(text);
+  const pattern = /\b(?:Trial|Study)\s+([A-Za-z][A-Za-z0-9-]{0,20})\s*\(\s*(NCT\d{8})\s*\)/g;
+  const aliases = new Map<string, string[]>();
+  for (const m of stripped.matchAll(pattern)) {
+    const [, name, nctId] = m;
+    const list = aliases.get(nctId) ?? [];
+    if (!list.includes(name)) list.push(name);
+    aliases.set(nctId, list);
+  }
+  return aliases;
+}
+
+function identifiersOf(trial: Trial, aliases: Map<string, string[]> | undefined): string[] {
+  const base = [trial.nctId, trial.protocolNumber, trial.acronym].filter(
     (s): s is string => !!s
   );
+  const extra = trial.nctId ? aliases?.get(trial.nctId) ?? [] : [];
+  return [...base, ...extra];
 }
 
 function escapeRegExp(s: string): string {
@@ -167,7 +198,9 @@ export interface RoleAssignment {
 }
 
 export function classifyRole(trial: Trial, ctx: RoleContext): RoleAssignment {
-  const ids = identifiersOf(trial);
+  const knownAliases = trial.nctId ? ctx.trialAliases?.get(trial.nctId) ?? [] : [];
+  const ids = identifiersOf(trial, ctx.trialAliases);
+  const matchedAlias = knownAliases.find((a) => mentions(ctx.labelSection14 ?? '', [a]));
   const namedInSection14 =
     !!ctx.labelSection14 && ids.length > 0 && mentions(ctx.labelSection14, ids);
 
@@ -187,8 +220,12 @@ export function classifyRole(trial: Trial, ctx: RoleContext): RoleAssignment {
           sourceLabel: 'Approved label, section 14 (Clinical Studies)',
           extractedBy: 'rule',
           verified: false,
-          quote: 'Trial identifier appears within the captured section 14 span, and ' +
-            'the trial is sponsor-run and interventional.',
+          quote: matchedAlias
+            ? `The label refers to this trial as "${matchedAlias}" rather than by its ` +
+              'registered identifiers; that name was resolved from a pairing found ' +
+              'elsewhere in the FDA paperwork. Sponsor-run and interventional.'
+            : 'Trial identifier appears within the captured section 14 span, and ' +
+              'the trial is sponsor-run and interventional.',
         },
       };
     }

@@ -33,6 +33,13 @@ export const DRUG_SPECS: DrugSpec[] = [
   },
 ];
 
+/**
+ * Case-insensitive on purpose: the workflow dispatch form is free text, and a
+ * capitalized drug name ("Upadacitinib") is a natural, easy thing to type
+ * that would otherwise fail with "unknown drug" despite being an exact match
+ * in every way that matters.
+ */
 export function getSpec(slug: string): DrugSpec | undefined {
-  return DRUG_SPECS.find((d) => d.slug === slug);
+  const needle = slug.toLowerCase();
+  return DRUG_SPECS.find((d) => d.slug === needle);
 }
