@@ -49,6 +49,21 @@ jobs:
       - name: Validate result
         run: npm run validate
 
+      # Diagnostic: the extracted document text is deliberately gitignored (it
+      # never belongs in a diff), which means nobody can actually see what the
+      # pipeline read from a real label — only what it concluded. Uploading it
+      # here is what makes a role-classification mismatch debuggable from real
+      # evidence instead of another guess. Small (~1-2 MB of text), so this
+      # stays on rather than being a one-off.
+      - name: Upload extracted document text
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-doc-text-${{ inputs.drug }}
+          path: data/raw/**/docs/*.txt
+          retention-days: 14
+          if-no-files-found: warn
+
       - name: Push the data and open a pull request
         env:
           GH_TOKEN: ${{ github.token }}
