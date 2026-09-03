@@ -120,6 +120,13 @@ person has checked it.
   sponsor to plausibly match the applicant, and its study type to be interventional, before
   trusting a bare section-14 mention with no other evidence behind it. Missing sponsor data
   is treated as inconclusive, not disqualifying, so this only blocks a confirmed mismatch.
+  A label that has accumulated indications over years of supplements can also stop naming a
+  historical trial by its sponsor protocol number or acronym and switch to a generic scheme
+  instead ("Trial RA-I") that appears nowhere in the registry record — the pairing to the
+  real NCT number typically survives only in the review, not the label. The pipeline scans
+  the whole document corpus for that pairing and treats the generic name as an additional,
+  equally-guarded identifier, rather than requiring the label to repeat an identifier it may
+  no longer use.
 - **Narrative is human-authored.** `takeaways`, `limitations`, and the drug summary are
   never generated. They stay empty until written, and the UI omits empty sections rather
   than showing a shell.

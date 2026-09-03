@@ -373,3 +373,67 @@ describe('sponsor and study-type guard, full pipeline', () => {
     expect(compare!.role).toBe('PIVOTAL');
   });
 });
+
+/**
+ * Regression coverage for the second real production failure: after the
+ * sponsor/study-type guard shipped, a real run came back with *zero* pivotal
+ * trials rather than the expected 18. Root cause, confirmed by inspecting the
+ * actual pushed data: the current (2026) label has accumulated seven
+ * indications and renamed historical RA trials to a generic scheme ("Trial
+ * RA-I") that appears nowhere in the registry record — only the review pairs
+ * that name with the real NCT number, and the label's own section 14 text
+ * never repeats it. Reproduces that exact shape end to end.
+ */
+describe('generic label naming, full pipeline', () => {
+  it('recovers a pivotal trial the label names only by a generic alias', async () => {
+    const ws = makeWorkspace();
+
+    seedCache({
+      slug: SPEC.slug,
+      rawDir: ws.rawDir,
+      applicationType: SPEC.applicationType,
+      applicationNumber: SPEC.applicationNumber,
+      intervention: SPEC.inn,
+      openFdaResponse: OPENFDA_211675,
+      documents: [
+        {
+          // The review pairs the generic name with the real NCT — this is
+          // where extractTrialAliases finds the mapping.
+          url: REVIEW_URL,
+          text:
+            readFixture('review-excerpt.txt') +
+            ' Trial RA-I (NCT02706873) was a 24-week monotherapy trial in 947 patients ' +
+            'with moderately to severely active rheumatoid arthritis.',
+        },
+        {
+          // A standalone label — not derived from label-excerpt.txt, which
+          // already names this trial by its real protocol number and acronym
+          // elsewhere in that fixture. Section 14 here refers to the trial
+          // only by the generic name; nothing else in this text mentions its
+          // NCT ID, protocol number, or acronym.
+          url: LABEL_URL,
+          text:
+            '14 CLINICAL STUDIES 14.1 Rheumatoid Arthritis Study M13-545 (SELECT-COMPARE) ' +
+            'compared upadacitinib to placebo and to adalimumab in 1629 subjects on a stable ' +
+            'background of methotrexate. In Trial RA-I, subjects receiving upadacitinib 15 mg ' +
+            'once daily achieved significantly higher ACR20 response rates than those ' +
+            'receiving methotrexate alone at Week 24, with durable responses maintained ' +
+            'through Week 48 of continued treatment in this population of adults with ' +
+            'moderately to severely active rheumatoid arthritis and an inadequate response to ' +
+            'prior methotrexate therapy. 16 HOW SUPPLIED Tablets are supplied as purple ' +
+            'biconvex tablets in bottles of 30.',
+        },
+      ],
+    });
+
+    const result = await run(ws);
+    const selectEarly = result.drug.trials.find((t) => t.nctId === 'NCT02706873');
+
+    expect(selectEarly).toBeDefined();
+    expect(selectEarly!.role).toBe('PIVOTAL');
+    // The other trials in the fixture, matched the ordinary way, still work —
+    // the alias path is additive, not a replacement.
+    const compare = result.drug.trials.find((t) => t.protocolNumber === 'M13-545');
+    expect(compare!.role).toBe('PIVOTAL');
+  });
+});

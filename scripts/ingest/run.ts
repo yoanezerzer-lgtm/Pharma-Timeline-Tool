@@ -7,7 +7,7 @@ import { runFdaStage, type FdaStageResult } from './fda.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
 import { extractCandidates, resolveCandidates, type ResolveReport } from './codes.js';
 import { studyToTrial, searchByIntervention, ctgovStudyUrl, studyMatchesDrug } from './ctgov.js';
-import { applyRoles, extractLabelSection14, diagnoseSection14 } from './roles.js';
+import { applyRoles, extractLabelSection14, diagnoseSection14, extractTrialAliases } from './roles.js';
 import { mergeDrug, type Conflict } from './merge.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
@@ -215,12 +215,21 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     );
   }
 
+  // A label that has accumulated indications over years of supplements often
+  // renames historical trials to a generic scheme ("Trial RA-I") that appears
+  // nowhere in the registry record — the pairing to the real NCT number lives
+  // in the review, not the label itself. Scanning the whole corpus (not just
+  // the label) is what lets applyRoles recognise that generic name even
+  // though only the review states the pairing explicitly.
+  const trialAliases = extractTrialAliases(allDocText);
+
   let trials = applyRoles([...trialsById.values()], {
     labelSection14,
     reviewText,
     labelUrl: labelDoc?.url,
     reviewUrl: reviewDoc?.url,
     sponsorName: fda.application.sponsor_name ?? spec.sponsor,
+    trialAliases,
   });
 
   // Deterministic order keeps the committed JSON diff-friendly across runs.
