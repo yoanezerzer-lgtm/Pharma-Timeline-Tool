@@ -109,13 +109,18 @@ export function drugsFdaUrl(
 /**
  * The Drugs@FDA request URL for a brand name, when the application number
  * isn't known up front — the common case for a newly approved drug, where
- * a press release names the drug but not its NDA/BLA number. openFDA
- * indexes `openfda.brand_name` from the label itself, so this is exact-match
- * reliable for a single-product brand; a genuinely ambiguous brand (shared
- * across unrelated applications) would need the number specified directly.
+ * a press release names the drug but not its NDA/BLA number.
+ *
+ * Searches `products.brand_name`, not `openfda.brand_name`. The `openfda.*`
+ * fields are a *derived* cross-reference built from a separate labeling (SPL)
+ * feed, which can lag days to weeks behind a fresh approval — confirmed
+ * directly against Mimrylo, approved a week before this was first tried,
+ * whose `openfda.brand_name` search came back empty even though the
+ * application itself was already in Drugs@FDA. `products[].brand_name` is
+ * part of the raw submission record and is populated at approval time.
  */
 export function drugsFdaUrlByBrand(brandName: string): string {
-  const search = encodeURIComponent(`openfda.brand_name:"${brandName}"`);
+  const search = encodeURIComponent(`products.brand_name:"${brandName}"`);
   return `${OPENFDA_BASE}?search=${search}&limit=1`;
 }
 
