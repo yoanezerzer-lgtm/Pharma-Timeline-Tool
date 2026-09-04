@@ -245,6 +245,27 @@ describe('extractIndicationList', () => {
     expect(extractIndicationList(text)).toEqual([]);
   });
 
+  it('handles "indicated in combination with..." as well as "indicated for"', () => {
+    // Real Foundayo (orforglipron) label text: no "for" after "indicated" at
+    // all, unlike Mimrylo's phrasing — a second common FDA shape.
+    const text =
+      '1 INDICATIONS AND USAGE FOUNDAYO is indicated in combination with a ' +
+      'reduced-calorie diet and increased physical activity to reduce excess ' +
+      'body weight and maintain weight reduction long term in adults with ' +
+      'obesity or adults with overweight in the presence of at least one ' +
+      'weight-related comorbid condition. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text)).toEqual([
+      {
+        number: 1,
+        name:
+          'In combination with a reduced-calorie diet and increased physical ' +
+          'activity to reduce excess body weight and maintain weight reduction ' +
+          'long term in adults with obesity or adults with overweight in the ' +
+          'presence of at least one weight-related comorbid condition',
+      },
+    ]);
+  });
+
   it('skips a table-of-contents mention of section 1 and finds the real section', () => {
     // Reproduces a real pipeline failure found against the actual Mimrylo
     // label: its "FULL PRESCRIBING INFORMATION: CONTENTS" table of contents
