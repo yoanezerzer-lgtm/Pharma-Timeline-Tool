@@ -1,5 +1,5 @@
 import { Drug } from '../schema/index.js';
-import type { Drug as DrugType, Trial, Indication, TrialRole } from '../schema/index.js';
+import type { Drug as DrugType, Trial, Indication, TrialRole, Milestone } from '../schema/index.js';
 
 /**
  * Loads every committed drug record at build time and validates it.
@@ -77,4 +77,21 @@ export function summaryRole(trial: Trial): TrialRole {
     if (ROLE_RANK.indexOf(r.role) < ROLE_RANK.indexOf(best)) best = r.role;
   }
   return best;
+}
+
+/**
+ * Filters out routine administrative supplements — labeling wording changes,
+ * manufacturing (CMC) updates — that clutter the regulatory lane without
+ * telling a reader anything about the drug's approval history. openFDA
+ * classifies every approved submission this way (`submission_class_code_description`,
+ * carried through as `Milestone.description`); an "Efficacy" supplement is
+ * the kind that plausibly reflects a new approved use, so that's what's kept.
+ * A milestone with no `description` at all (hand-authored seed data, or an
+ * openFDA record missing the field) is kept rather than guessed at — there's
+ * no positive signal here that it's noise.
+ */
+export function isMeaningfulMilestone(m: Milestone): boolean {
+  if (m.type !== 'FDA_SUPPLEMENT') return true;
+  if (!m.description) return true;
+  return /efficacy/i.test(m.description);
 }
