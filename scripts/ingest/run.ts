@@ -426,7 +426,7 @@ function buildDrugRecord(
     sources: [
       {
         id: 'openfda',
-        label: `openFDA Drugs@FDA — ${spec.applicationType} ${spec.applicationNumber}`,
+        label: `openFDA Drugs@FDA — ${fda.applicationType} ${fda.applicationNumber}`,
         url: fda.queryUrl,
         type: 'other',
       },

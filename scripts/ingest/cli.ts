@@ -54,10 +54,11 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  console.log(
-    `\nIngesting ${spec.brandName} (${spec.inn}) — ` +
-      `${spec.applicationType} ${spec.applicationNumber}\n`
-  );
+  const knownApplication =
+    spec.applicationType && spec.applicationNumber
+      ? `${spec.applicationType} ${spec.applicationNumber}`
+      : 'application number not yet known — resolving by brand name';
+  console.log(`\nIngesting ${spec.brandName} (${spec.inn}) — ${knownApplication}\n`);
 
   const result = await runIngest({
     spec,
