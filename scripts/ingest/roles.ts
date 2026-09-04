@@ -255,6 +255,12 @@ export interface RoleContext {
   reviewUrl?: string;
   /** The applicant's name, e.g. "AbbVie Inc.", for the sponsor-match guard below. */
   sponsorName?: string;
+  /**
+   * Other companies already confirmed to be legitimate co-developers or
+   * licensors for this drug's trials — see looksLikeSponsorTrial. Comes from
+   * the registry entry, a human-supplied fact.
+   */
+  knownTrialSponsors?: string[];
   /** NCT ID -> generic names the label uses for it. See extractTrialAliases(). */
   trialAliases?: Map<string, string[]>;
 }
@@ -338,13 +344,31 @@ function normalizeSponsor(name: string): string {
  * Missing data (no sponsor recorded, no sponsor name to compare against) is
  * treated as inconclusive rather than disqualifying — this guards against a
  * specific, observed failure mode, not a general trust requirement.
+ *
+ * A trial's registered sponsor can legitimately differ from the NDA/BLA
+ * applicant under a licensing or co-development deal — the original
+ * developer runs and registers the trial, a different company later licenses
+ * the drug and files the application. `knownTrialSponsors` (from the drug's
+ * registry entry, a human-supplied fact — see DrugSpec) names companies
+ * already confirmed to be legitimate co-developers for this specific drug,
+ * so a match against one of them counts the same as matching the applicant.
  */
-function looksLikeSponsorTrial(trial: Trial, sponsorName: string | undefined): boolean {
+function looksLikeSponsorTrial(
+  trial: Trial,
+  sponsorName: string | undefined,
+  knownTrialSponsors?: string[]
+): boolean {
   if (trial.studyType && trial.studyType.toUpperCase() === 'OBSERVATIONAL') return false;
-  if (!sponsorName || !trial.sponsor) return true;
+  if (!trial.sponsor) return true;
   const a = normalizeSponsor(trial.sponsor);
-  const b = normalizeSponsor(sponsorName);
-  return a.length > 0 && b.length > 0 && (a.includes(b) || b.includes(a));
+  const candidates = [sponsorName, ...(knownTrialSponsors ?? [])].filter(
+    (s): s is string => !!s
+  );
+  if (candidates.length === 0) return true;
+  return candidates.some((c) => {
+    const b = normalizeSponsor(c);
+    return a.length > 0 && b.length > 0 && (a.includes(b) || b.includes(a));
+  });
 }
 
 /**
@@ -394,7 +418,21 @@ export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignme
     // this indication's span) — it does not by itself prove the specific
     // occurrence here is genuine. A bare mention always needs the trial to
     // actually look like the applicant's own study before it's trusted.
-    if (!looksLikeSponsorTrial(trial, ctx.sponsorName)) continue;
+    //
+    // Acronym or Phase alone can't safely stand in for that: a real academic,
+    // investigator-initiated trial can be interventional and informally named
+    // too (see the "ACUTE"/"UPDATE" fixtures below — both use ordinary
+    // English words as acronyms, both interventional, both bare-mentioned
+    // right next to their own NCT numbers, and both still illegitimate). What
+    // actually distinguishes a licensing/co-development structure — the
+    // original developer holds the trial's ClinicalTrials.gov sponsor record
+    // while a different company holds the NDA, as with rusfertide's pivotal
+    // VERIFY trial (Protagonist Therapeutics ran it; Takeda licensed it and
+    // filed) — is that the relationship is a known, named fact, not something
+    // derivable from the label text itself. `knownTrialSponsors` lets a
+    // registry entry record that fact once, the same way `pressReleaseUrl`
+    // records a fact the pipeline has no way to find on its own.
+    if (!looksLikeSponsorTrial(trial, ctx.sponsorName, ctx.knownTrialSponsors)) continue;
 
     if (!PIVOTAL_PHASES.has(trial.phase)) {
       phaseWarnings.push(

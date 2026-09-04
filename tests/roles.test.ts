@@ -480,6 +480,40 @@ describe('classifyTrialRoles — sponsor and study-type guard', () => {
     const t = trial({ nctId: 'NCT07258771', sponsor: 'Berinstein, Jeffrey' });
     expect(classifyTrialRoles(t, ctx).roles).toEqual([]);
   });
+
+  it('accepts a trial run by a known co-developer even when the applicant differs', () => {
+    // Real Mimrylo case: rusfertide's pivotal VERIFY trial is registered
+    // under its originator (Protagonist Therapeutics), while Takeda holds
+    // the NDA under a licensing deal. A registry-supplied knownTrialSponsors
+    // entry is what makes that legitimate structure distinguishable from an
+    // unrelated third party — acronym or interventional status alone can't
+    // (see the ACUTE/UPDATE cases above, which are both and are still
+    // illegitimate).
+    const t = trial({
+      nctId: 'NCT05210790',
+      acronym: 'VERIFY',
+      sponsor: 'Protagonist Therapeutics, Inc.',
+      studyType: 'INTERVENTIONAL',
+    });
+    const verifySpan = ctxFor(
+      '14 CLINICAL STUDIES VERIFY The efficacy of MIMRYLO was evaluated in a study of ' +
+        'patients with polycythemia vera [NCT05210790].',
+      {
+        sponsorName: 'Takeda Pharmaceuticals U.S.A., Inc.',
+        knownTrialSponsors: ['Protagonist Therapeutics, Inc.'],
+      }
+    );
+    expect(pivotalFor(t, verifySpan)).toBe(true);
+  });
+
+  it('still rejects a differing sponsor that is not on the known-co-developer list', () => {
+    const t = trial({ nctId: 'NCT09999999', sponsor: 'Some Other Company' });
+    const withMention = ctxFor('See NCT09999999 for supporting data.', {
+      sponsorName: 'AbbVie Inc.',
+      knownTrialSponsors: ['Protagonist Therapeutics, Inc.'],
+    });
+    expect(pivotalFor(t, withMention)).toBe(false);
+  });
 });
 
 describe('mapPhase', () => {
