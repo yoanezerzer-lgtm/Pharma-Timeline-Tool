@@ -178,20 +178,32 @@ export function extractIndicationList(labelText: string): IndicationListEntry[] 
  * USAGE" to "2 DOSAGE AND ADMINISTRATION" with one plain sentence between
  * them, no heading to reuse.
  *
- * Reproduces the label's own "is indicated for ..." clause verbatim (minus a
+ * Reproduces the label's own "is indicated ..." clause verbatim (minus a
  * fixed set of FDA boilerplate lead-ins — "the treatment of", "management
  * of", and so on — stripped because they're never disease-specific) rather
  * than trying to shorten it to a single disease name. Picking which part of
  * the sentence is "the" indication would be a judgement call; reusing the
  * label's own words isn't. It's still marked unverified like everything else
  * the pipeline extracts, so a person can rename it.
+ *
+ * Doesn't require the word "for" after "indicated" — confirmed necessary
+ * against Foundayo's real label, which reads "is indicated in combination
+ * with a reduced-calorie diet and increased physical activity to reduce
+ * excess body weight...", a second common FDA phrasing alongside "indicated
+ * for the treatment of X".
+ *
+ * Stops at the first period, not at the next numbered heading. Also
+ * confirmed necessary against Foundayo: its indication sentence is followed
+ * by a separate "Limitations of Use" sentence, still inside section 1 —
+ * capturing everything up to the section-2 heading would have pulled that
+ * in too. An indication statement is one sentence; the period is a better
+ * boundary than the next heading, and simpler.
  */
 function extractUnnumberedIndication(window: string): IndicationListEntry[] {
-  const m = /\bis\s+indicated\s+for\s+([^.]*?)\.?(?=\s*2\.?\s*DOSAGE\s+AND\s+ADMINISTRATION\b|\s*$)/i.exec(
-    window
-  );
+  const m = /\bis\s+indicated\s+([^.]*)/i.exec(window);
   if (!m) return [];
   let name = m[1].replace(/\s+/g, ' ').trim();
+  name = name.replace(/^for\s+/i, '');
   name = name.replace(
     /^(the\s+)?(treatment(\s+and\s+(maintenance|prevention))?|management|reduction\s+of\s+risk|reducing\s+the\s+risk|prevention)\s+(of|for)\s+/i,
     ''
