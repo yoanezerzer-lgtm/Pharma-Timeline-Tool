@@ -1,19 +1,23 @@
 .index {
-  max-width: 1080px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
+  padding: 5rem 1.5rem 4rem;
+}
+
+.index__head {
+  text-align: center;
 }
 
 .index__head h1 {
-  margin: 0 0 0.5rem;
-  font-size: 1.9rem;
+  margin: 0 0 0.6rem;
+  font-size: 2.1rem;
   letter-spacing: -0.02em;
   color: var(--text-1);
 }
 
 .index__lede {
-  margin: 0 0 2.5rem;
-  max-width: 58ch;
+  margin: 0 auto 2.5rem;
+  max-width: 52ch;
   color: var(--text-2);
   line-height: 1.6;
 }
@@ -42,9 +46,9 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-3);
+  text-align: left;
 }
 
-.index__field input,
 .index__field select {
   padding: 0.55rem 0.65rem;
   border: 1px solid var(--border);
@@ -78,69 +82,15 @@
   margin: 0.75rem 0 0;
   font-size: 12.5px;
   color: var(--text-3);
-}
-
-.index__browse {
-  margin-top: 2.5rem;
-}
-
-.index__browse h2 {
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-3);
-  font-weight: 700;
-  margin: 0 0 0.85rem;
-}
-
-.index__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.index__list a {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.65rem 0.85rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 120ms ease;
-}
-
-.index__list a:hover {
-  border-color: var(--accent);
-}
-
-.index__list-drug {
-  font-weight: 600;
-  color: var(--text-1);
-  font-size: 13.5px;
-}
-
-.index__list-indication {
-  color: var(--text-2);
-  font-size: 13px;
-}
-
-.index__list-empty {
-  color: var(--text-3);
-  font-size: 13px;
-  padding: 0.5rem 0;
+  text-align: center;
 }
 
 .index__foot {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--border-subtle);
   font-size: 12px;
   line-height: 1.6;
   color: var(--text-3);
-  max-width: 68ch;
+  text-align: center;
 }

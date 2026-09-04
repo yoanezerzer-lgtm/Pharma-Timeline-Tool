@@ -1,4 +1,4 @@
-import type { Drug, Trial, Provenance } from '../../src/schema/index.js';
+import type { Drug, Trial, Indication, Provenance } from '../../src/schema/index.js';
 
 /**
  * Merges a freshly ingested record onto whatever is already committed.
@@ -117,6 +117,21 @@ function trialKey(t: Trial): string {
   return (t.nctId ?? t.protocolNumber ?? t.acronym ?? t.id).toLowerCase();
 }
 
+/**
+ * Carries forward `pressReleaseUrl` from the existing record — the only
+ * per-indication field ingestion never produces itself, since there's no
+ * public registry of sponsor press releases to pull one from automatically.
+ * Everything else about an indication (name, slug, approvalDate) is fine to
+ * take fresh from each run; this one field is always a person's addition.
+ */
+function mergeIndications(existing: Indication[], incoming: Indication[]): Indication[] {
+  const existingBySlug = new Map(existing.map((i) => [i.slug, i]));
+  return incoming.map((inc) => {
+    const prior = existingBySlug.get(inc.slug);
+    return prior?.pressReleaseUrl ? { ...inc, pressReleaseUrl: prior.pressReleaseUrl } : inc;
+  });
+}
+
 export function mergeDrug(existing: Drug | null, incoming: Drug): MergeResult {
   if (!existing) {
     return {
@@ -158,6 +173,7 @@ export function mergeDrug(existing: Drug | null, incoming: Drug): MergeResult {
       ...incoming,
       // Human-authored drug-level prose survives re-ingestion.
       summary: existing.summary || incoming.summary,
+      indications: mergeIndications(existing.indications, incoming.indications),
       trials,
     },
     conflicts,

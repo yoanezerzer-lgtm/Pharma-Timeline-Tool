@@ -1,5 +1,11 @@
 import { useMemo } from 'react';
-import { getDrug, getIndication, trialsForIndication, isFullyUnverified } from '../lib/drugs.js';
+import {
+  getDrug,
+  getIndication,
+  trialsForIndication,
+  isFullyUnverified,
+  isMeaningfulMilestone,
+} from '../lib/drugs.js';
 import { navigate, indicationHref, indicationTrialHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
@@ -50,9 +56,13 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
   }
 
   const unverified = isFullyUnverified(drug);
-  const scopedMilestones = drug.milestones.filter(
-    (m) => m.type === 'FDA_APPROVAL' || !m.indication || m.indication === indication.name
-  );
+  // Not scoped to this specific indication — openFDA's own data doesn't say
+  // which indication a given supplement was for, only whether it was an
+  // "Efficacy" filing at all (see isMeaningfulMilestone). Administrative
+  // labeling/manufacturing supplements are filtered out everywhere; which
+  // approval-worthy supplement corresponds to *this* indication has to stay
+  // a human judgement call for now.
+  const scopedMilestones = drug.milestones.filter(isMeaningfulMilestone);
 
   return (
     <main className="drug">
@@ -72,6 +82,16 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
           <p className="drug__mechanism">
             {indication.name} — {drug.mechanism ?? drug.modality}
           </p>
+          {indication.pressReleaseUrl && (
+            <a
+              className="drug__press-release"
+              href={indication.pressReleaseUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sponsor's announcement of this approval ↗
+            </a>
+          )}
         </div>
         <dl className="drug__facts">
           <div>

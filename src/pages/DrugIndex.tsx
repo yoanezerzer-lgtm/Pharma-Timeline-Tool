@@ -1,22 +1,17 @@
 import { useMemo, useState, type FormEvent } from 'react';
-import { drugs } from '../lib/drugs.js';
+import { drugs, getDrug } from '../lib/drugs.js';
 import { navigate, indicationHref } from '../lib/router.js';
 import './DrugIndex.css';
 
 export function DrugIndex() {
-  const [drugQuery, setDrugQuery] = useState('');
+  const [drugSlug, setDrugSlug] = useState('');
   const [indicationSlug, setIndicationSlug] = useState('');
 
-  const matchedDrug = useMemo(() => {
-    const q = drugQuery.trim().toLowerCase();
-    if (!q) return null;
-    return drugs.find((d) => d.brandName.toLowerCase() === q || d.inn.toLowerCase() === q) ?? null;
-  }, [drugQuery]);
-
+  const matchedDrug = useMemo(() => (drugSlug ? getDrug(drugSlug) ?? null : null), [drugSlug]);
   const indications = matchedDrug?.indications ?? [];
 
   function handleDrugChange(value: string) {
-    setDrugQuery(value);
+    setDrugSlug(value);
     setIndicationSlug('');
   }
 
@@ -40,20 +35,19 @@ export function DrugIndex() {
 
       <form className="index__search" onSubmit={handleSubmit}>
         <div className="index__field">
-          <label htmlFor="drug-search">Drug</label>
-          <input
-            id="drug-search"
-            list="drug-options"
-            value={drugQuery}
+          <label htmlFor="drug-select">Drug</label>
+          <select
+            id="drug-select"
+            value={drugSlug}
             onChange={(e) => handleDrugChange(e.target.value)}
-            placeholder="e.g. Rinvoq"
-            autoComplete="off"
-          />
-          <datalist id="drug-options">
+          >
+            <option value="">Select a drug…</option>
             {drugs.map((d) => (
-              <option key={d.slug} value={d.brandName} />
+              <option key={d.slug} value={d.slug}>
+                {d.brandName} ({d.inn})
+              </option>
             ))}
-          </datalist>
+          </select>
         </div>
 
         <div className="index__field">
@@ -80,33 +74,11 @@ export function DrugIndex() {
         </button>
       </form>
 
-      {drugQuery && !matchedDrug && (
-        <p className="index__hint">No drug matches “{drugQuery}” yet — try the list below.</p>
-      )}
       {matchedDrug && indications.length === 0 && (
         <p className="index__hint">
           {matchedDrug.brandName} has no indications on record yet — run the ingest pipeline.
         </p>
       )}
-
-      <section className="index__browse">
-        <h2>Or browse everything indexed so far</h2>
-        <ul className="index__list">
-          {drugs.flatMap((d) =>
-            d.indications.map((i) => (
-              <li key={`${d.slug}-${i.slug}`}>
-                <a href={indicationHref(d.slug, i.slug)}>
-                  <span className="index__list-drug">{d.brandName}</span>
-                  <span className="index__list-indication">{i.name}</span>
-                </a>
-              </li>
-            ))
-          )}
-          {drugs.every((d) => d.indications.length === 0) && (
-            <li className="index__list-empty">Nothing ingested yet.</li>
-          )}
-        </ul>
-      </section>
 
       <footer className="index__foot">
         <p>

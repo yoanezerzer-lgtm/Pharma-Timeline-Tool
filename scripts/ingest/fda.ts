@@ -91,7 +91,9 @@ export interface FdaStageResult {
  * Looks up an application in openFDA by application number.
  *
  * The application number is the stable key — brand-name search is ambiguous
- * (multiple applications share a brand across dosage forms and sponsors).
+ * in general (multiple applications can share a brand across dosage forms and
+ * sponsors). It's still the right fallback when the number isn't known up
+ * front: see drugsFdaUrlByBrand below.
  */
 /** The Drugs@FDA request URL for an application. Shared with the test seeder. */
 export function drugsFdaUrl(
@@ -104,14 +106,39 @@ export function drugsFdaUrl(
   return `${OPENFDA_BASE}?search=${search}&limit=1`;
 }
 
+/**
+ * The Drugs@FDA request URL for a brand name, when the application number
+ * isn't known up front — the common case for a newly approved drug, where
+ * a press release names the drug but not its NDA/BLA number. openFDA
+ * indexes `openfda.brand_name` from the label itself, so this is exact-match
+ * reliable for a single-product brand; a genuinely ambiguous brand (shared
+ * across unrelated applications) would need the number specified directly.
+ */
+export function drugsFdaUrlByBrand(brandName: string): string {
+  const search = encodeURIComponent(`openfda.brand_name:"${brandName}"`);
+  return `${OPENFDA_BASE}?search=${search}&limit=1`;
+}
+
+/** Splits openFDA's own "NDA218330"-shaped application_number into its parts. */
+function parseApplicationNumber(
+  raw: string
+): { type: 'NDA' | 'BLA' | 'ANDA'; number: string } | null {
+  const m = /^(NDA|BLA|ANDA)(\d+)$/.exec(raw);
+  return m ? { type: m[1] as 'NDA' | 'BLA' | 'ANDA', number: m[2] } : null;
+}
+
 export async function runFdaStage(
   ctx: IngestContext,
-  applicationNumber: string,
-  applicationType: 'NDA' | 'BLA' | 'ANDA'
+  applicationNumber: string | undefined,
+  applicationType: 'NDA' | 'BLA' | 'ANDA' | undefined,
+  brandName: string
 ): Promise<FdaStageResult> {
-  const queryUrl = drugsFdaUrl(applicationType, applicationNumber);
+  const lookupUrl =
+    applicationNumber && applicationType
+      ? drugsFdaUrl(applicationType, applicationNumber)
+      : drugsFdaUrlByBrand(brandName);
 
-  const body = await fetchJson<{ results?: DrugsFdaResult[] }>(queryUrl, {
+  const body = await fetchJson<{ results?: DrugsFdaResult[] }>(lookupUrl, {
     ctx,
     kind: 'openfda',
   });
@@ -119,14 +146,39 @@ export async function runFdaStage(
   const application = body?.results?.[0];
   if (!application) {
     throw new Error(
-      `openFDA returned no application for ${applicationType}${applicationNumber}. ` +
-        `Check the number, or the application may predate Drugs@FDA coverage.`
+      applicationNumber && applicationType
+        ? `openFDA returned no application for ${applicationType}${applicationNumber}. ` +
+          `Check the number, or the application may predate Drugs@FDA coverage.`
+        : `openFDA returned no application for brand name "${brandName}". Check the spelling, ` +
+          `or add the exact applicationNumber/applicationType to the registry entry instead.`
     );
   }
 
+  // When we looked up by brand, recover the real application number/type
+  // from the result — everything downstream (queryUrl, milestones) needs it.
+  let resolvedNumber = applicationNumber;
+  let resolvedType = applicationType;
+  if (!resolvedNumber || !resolvedType) {
+    const parsed = application.application_number
+      ? parseApplicationNumber(application.application_number)
+      : null;
+    if (!parsed) {
+      throw new Error(
+        `openFDA found an application for brand name "${brandName}" but its own ` +
+          `application_number ("${application.application_number ?? 'missing'}") didn't parse ` +
+          `as NDA/BLA/ANDA + digits. Add applicationNumber/applicationType to the registry ` +
+          `entry directly instead.`
+      );
+    }
+    resolvedNumber = parsed.number;
+    resolvedType = parsed.type;
+  }
+  const queryUrl =
+    applicationNumber && applicationType ? lookupUrl : drugsFdaUrl(resolvedType, resolvedNumber);
+
   const submissions = application.submissions ?? [];
   const milestones = submissions
-    .map((s) => submissionToMilestone(s, applicationType, queryUrl))
+    .map((s) => submissionToMilestone(s, resolvedType, queryUrl))
     .filter((m): m is Milestone => m !== null)
     .sort((a, b) => a.date.value.localeCompare(b.date.value));
 
@@ -143,8 +195,8 @@ export async function runFdaStage(
 
   return {
     application,
-    applicationNumber,
-    applicationType,
+    applicationNumber: resolvedNumber,
+    applicationType: resolvedType,
     milestones,
     documentUrls,
     queryUrl,

@@ -114,6 +114,45 @@
   margin-bottom: 0.25rem;
 }
 
+.drawer__endpoints {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.drawer__endpoints li {
+  margin-bottom: 0;
+}
+
+.endpoint-tag {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  vertical-align: 1px;
+  white-space: nowrap;
+}
+
+.endpoint-tag--efficacy {
+  background: var(--tag-efficacy-bg);
+  color: var(--tag-efficacy-fg);
+}
+
+.endpoint-tag--safety {
+  background: var(--tag-safety-bg);
+  color: var(--tag-safety-fg);
+}
+
+.endpoint-tag--pk {
+  background: var(--tag-pk-bg);
+  color: var(--tag-pk-fg);
+}
+
 .drawer__prose {
   font-size: 13px;
   line-height: 1.55;

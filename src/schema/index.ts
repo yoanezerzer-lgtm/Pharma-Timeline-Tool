@@ -273,6 +273,14 @@ export const Indication = z.object({
   slug: z.string().regex(/^[a-z0-9-]+$/),
   approvalDate: DateValue.optional(),
   submissionNumber: z.string().optional(),
+  /**
+   * The sponsor's own announcement of this approval, when someone has found
+   * and added one. A press release routinely names the trials behind an
+   * approval in plain language — a second, independent check on section 14
+   * — but there's no public registry of them to pull from automatically;
+   * finding the right one is a manual step, always `extractedBy: 'human'`.
+   */
+  pressReleaseUrl: z.string().url().optional(),
 });
 export type Indication = z.infer<typeof Indication>;
 

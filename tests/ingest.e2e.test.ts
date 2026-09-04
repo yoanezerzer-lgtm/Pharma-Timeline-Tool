@@ -45,8 +45,8 @@ function makeWorkspace(): { rawDir: string; drugsDir: string } {
   seedCache({
     slug: SPEC.slug,
     rawDir,
-    applicationType: SPEC.applicationType,
-    applicationNumber: SPEC.applicationNumber,
+    applicationType: SPEC.applicationType!,
+    applicationNumber: SPEC.applicationNumber!,
     intervention: SPEC.inn,
     openFdaResponse: OPENFDA_211675,
     documents: [
@@ -275,8 +275,8 @@ describe('label selection when the newest label fails to parse', () => {
     seedCache({
       slug: SPEC.slug,
       rawDir,
-      applicationType: SPEC.applicationType,
-      applicationNumber: SPEC.applicationNumber,
+      applicationType: SPEC.applicationType!,
+      applicationNumber: SPEC.applicationNumber!,
       intervention: SPEC.inn,
       openFdaResponse: OPENFDA_MULTI_LABEL,
       documents: [
@@ -339,8 +339,8 @@ describe('sponsor and study-type guard, full pipeline', () => {
     seedCache({
       slug: SPEC.slug,
       rawDir: ws.rawDir,
-      applicationType: SPEC.applicationType,
-      applicationNumber: SPEC.applicationNumber,
+      applicationType: SPEC.applicationType!,
+      applicationNumber: SPEC.applicationNumber!,
       intervention: SPEC.inn,
       openFdaResponse: OPENFDA_211675,
       documents: [
@@ -397,8 +397,8 @@ describe('generic label naming, full pipeline', () => {
     seedCache({
       slug: SPEC.slug,
       rawDir: ws.rawDir,
-      applicationType: SPEC.applicationType,
-      applicationNumber: SPEC.applicationNumber,
+      applicationType: SPEC.applicationType!,
+      applicationNumber: SPEC.applicationNumber!,
       intervention: SPEC.inn,
       openFdaResponse: OPENFDA_211675,
       documents: [

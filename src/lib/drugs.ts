@@ -1,5 +1,5 @@
 import { Drug } from '../schema/index.js';
-import type { Drug as DrugType, Trial, Indication, TrialRole } from '../schema/index.js';
+import type { Drug as DrugType, Trial, Indication, TrialRole, Milestone } from '../schema/index.js';
 
 /**
  * Loads every committed drug record at build time and validates it.
@@ -77,4 +77,24 @@ export function summaryRole(trial: Trial): TrialRole {
     if (ROLE_RANK.indexOf(r.role) < ROLE_RANK.indexOf(best)) best = r.role;
   }
   return best;
+}
+
+/**
+ * Filters out supplements that aren't a new approved use — labeling wording
+ * changes, manufacturing (CMC) updates, and (confirmed against the real
+ * Drugs@FDA "Supplements" table) even most "Efficacy" supplements, which
+ * cover things like "Efficacy-New Patient Population" or "Efficacy-Labeling
+ * Change With Clinical Data" — an existing indication's label being updated
+ * with new trial data, not a new one being added. openFDA's own
+ * `submission_class_code_description` (carried through as
+ * `Milestone.description`) distinguishes exactly one class that means "this
+ * added a new indication": "Efficacy-New Indication". A milestone with no
+ * `description` at all (hand-authored seed data, or an openFDA record
+ * missing the field) is kept rather than guessed at — there's no positive
+ * signal here that it's noise.
+ */
+export function isMeaningfulMilestone(m: Milestone): boolean {
+  if (m.type !== 'FDA_SUPPLEMENT') return true;
+  if (!m.description) return true;
+  return /new indication/i.test(m.description);
 }

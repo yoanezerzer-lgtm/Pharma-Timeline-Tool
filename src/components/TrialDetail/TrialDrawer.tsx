@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import type { Trial, Provenance } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
 import { roleFor, summaryRole } from '../../lib/drugs.js';
+import { categorizeEndpoint, ENDPOINT_CATEGORY_LABEL } from '../../lib/endpoints.js';
 import { ROLE_LABEL } from '../Gantt/Gantt.js';
 import './TrialDrawer.css';
 
@@ -185,26 +186,23 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
 
         {(trial.primaryEndpoints.length > 0 || trial.resultsSummary) && (
           <section className="drawer__section">
-            <h3>Endpoints &amp; results</h3>
+            <h3>Primary endpoints</h3>
             {trial.primaryEndpoints.length > 0 && (
-              <>
-                <h4>Primary</h4>
-                <ul className="drawer__list">
-                  {trial.primaryEndpoints.map((e, i) => (
-                    <li key={i}>{e}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {trial.secondaryEndpoints.length > 0 && (
-              <>
-                <h4>Key secondary</h4>
-                <ul className="drawer__list">
-                  {trial.secondaryEndpoints.map((e, i) => (
-                    <li key={i}>{e}</li>
-                  ))}
-                </ul>
-              </>
+              <ul className="drawer__list drawer__endpoints">
+                {trial.primaryEndpoints.map((e, i) => {
+                  const category = categorizeEndpoint(e);
+                  return (
+                    <li key={i}>
+                      <span
+                        className={`endpoint-tag endpoint-tag--${category.toLowerCase()}`}
+                      >
+                        {ENDPOINT_CATEGORY_LABEL[category]}
+                      </span>
+                      {e}
+                    </li>
+                  );
+                })}
+              </ul>
             )}
             {trial.resultsSummary && <p className="drawer__prose">{trial.resultsSummary}</p>}
           </section>
