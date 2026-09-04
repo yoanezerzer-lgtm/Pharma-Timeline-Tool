@@ -119,6 +119,25 @@ export interface IndicationListEntry {
 }
 
 /**
+ * Finds where section 1 actually begins, not its table-of-contents mention.
+ *
+ * Same fix as findSection14Heading above, for the same reason: a label's ToC
+ * lists "1 INDICATIONS AND USAGE" immediately followed by "2 DOSAGE AND
+ * ADMINISTRATION" with nothing in between, and that always comes before the
+ * real section in reading order — confirmed directly against Mimrylo's real
+ * label, whose ToC mention left extractIndicationList reading an empty
+ * window and reporting no indication at all for a drug that has one.
+ */
+function findIndicationsHeading(strippedText: string): { index: number } | null {
+  const pattern = /\b1\s+INDICATIONS\s+AND\s+USAGE\b/gi;
+  let last: RegExpMatchArray | null = null;
+  for (const m of strippedText.matchAll(pattern)) {
+    last = m;
+  }
+  return last && last.index !== undefined ? { index: last.index } : null;
+}
+
+/**
  * Extracts the drug's own indication list from section 1 (Indications and
  * Usage) of the label.
  *
@@ -135,7 +154,7 @@ export interface IndicationListEntry {
  */
 export function extractIndicationList(labelText: string): IndicationListEntry[] {
   const stripped = stripPageMarkers(labelText);
-  const start = /\b1\s+INDICATIONS\s+AND\s+USAGE\b/i.exec(stripped);
+  const start = findIndicationsHeading(stripped);
   if (!start) return [];
   const afterStart = stripped.slice(start.index);
   const end = /\b2\.?\s+DOSAGE\s+AND\s+ADMINISTRATION\b/i.exec(afterStart);

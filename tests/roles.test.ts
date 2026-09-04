@@ -244,6 +244,30 @@ describe('extractIndicationList', () => {
     const text = '1 INDICATIONS AND USAGE Some unparseable layout. 2 DOSAGE AND ADMINISTRATION';
     expect(extractIndicationList(text)).toEqual([]);
   });
+
+  it('skips a table-of-contents mention of section 1 and finds the real section', () => {
+    // Reproduces a real pipeline failure found against the actual Mimrylo
+    // label: its "FULL PRESCRIBING INFORMATION: CONTENTS" table of contents
+    // lists "1 INDICATIONS AND USAGE 2 DOSAGE AND ADMINISTRATION" back to
+    // back with no description in between. Taking the *first* regex match —
+    // the same bug extractLabelSection14 already had to be fixed for above —
+    // anchors there and reads an empty window, reporting no indication at
+    // all for a drug that has one.
+    const text =
+      'HIGHLIGHTS OF PRESCRIBING INFORMATION ' +
+      '----INDICATIONS AND USAGE---- MIMRYLO is indicated for the treatment ' +
+      'of erythrocytosis in adults with polycythemia vera (PV). (1) ' +
+      'FULL PRESCRIBING INFORMATION: CONTENTS* ' +
+      '1 INDICATIONS AND USAGE 2 DOSAGE AND ADMINISTRATION 2.1 Recommended Dosage ' +
+      '14 CLINICAL STUDIES ' +
+      'FULL PRESCRIBING INFORMATION ' +
+      '1 INDICATIONS AND USAGE MIMRYLO is indicated for the treatment of ' +
+      'erythrocytosis in adults with polycythemia vera (PV). ' +
+      '2 DOSAGE AND ADMINISTRATION 2.1 Recommended Dosage';
+    expect(extractIndicationList(text)).toEqual([
+      { number: 1, name: 'Erythrocytosis in adults with polycythemia vera (PV)' },
+    ]);
+  });
 });
 
 describe('splitSection14ByIndication', () => {
