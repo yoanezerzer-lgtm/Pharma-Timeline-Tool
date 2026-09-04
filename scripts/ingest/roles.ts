@@ -191,11 +191,16 @@ export function extractIndicationList(labelText: string): IndicationListEntry[] 
  * with a reduced-calorie diet and increased physical activity to reduce
  * excess body weight...", a second common FDA phrasing alongside "indicated
  * for the treatment of X".
+ *
+ * Stops at the first period, not at the next numbered heading. Also
+ * confirmed necessary against Foundayo: its indication sentence is followed
+ * by a separate "Limitations of Use" sentence, still inside section 1 —
+ * capturing everything up to the section-2 heading would have pulled that
+ * in too. An indication statement is one sentence; the period is a better
+ * boundary than the next heading, and simpler.
  */
 function extractUnnumberedIndication(window: string): IndicationListEntry[] {
-  const m = /\bis\s+indicated\s+([^.]*?)\.?(?=\s*2\.?\s*DOSAGE\s+AND\s+ADMINISTRATION\b|\s*$)/i.exec(
-    window
-  );
+  const m = /\bis\s+indicated\s+([^.]*)/i.exec(window);
   if (!m) return [];
   let name = m[1].replace(/\s+/g, ' ').trim();
   name = name.replace(/^for\s+/i, '');
