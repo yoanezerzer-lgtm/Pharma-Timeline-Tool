@@ -218,6 +218,32 @@ describe('extractIndicationList', () => {
   it('returns nothing when section 1 cannot be located', () => {
     expect(extractIndicationList('Some unrelated document text.')).toEqual([]);
   });
+
+  it('falls back to the indicated-for clause when section 1 has no numbering at all', () => {
+    // Real Mimrylo (rusfertide) label text: unlike Rinvoq, Takeda never
+    // numbers section 1 with "1.1" even for its one approved indication.
+    const text =
+      '1 INDICATIONS AND USAGE MIMRYLO is indicated for the treatment of ' +
+      'erythrocytosis in adults with polycythemia vera (PV). ' +
+      '2 DOSAGE AND ADMINISTRATION 2.1 Recommended Dosage';
+    expect(extractIndicationList(text)).toEqual([
+      { number: 1, name: 'Erythrocytosis in adults with polycythemia vera (PV)' },
+    ]);
+  });
+
+  it('strips the FDA boilerplate lead-in but leaves the rest of the clause verbatim', () => {
+    const text =
+      '1 INDICATIONS AND USAGE DRUGX is indicated for the management of ' +
+      'moderate to severe plaque psoriasis. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text)).toEqual([
+      { number: 1, name: 'Moderate to severe plaque psoriasis' },
+    ]);
+  });
+
+  it('still returns nothing when even the fallback phrasing is absent', () => {
+    const text = '1 INDICATIONS AND USAGE Some unparseable layout. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text)).toEqual([]);
+  });
 });
 
 describe('splitSection14ByIndication', () => {

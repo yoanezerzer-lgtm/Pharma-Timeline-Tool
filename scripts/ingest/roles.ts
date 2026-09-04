@@ -148,7 +148,37 @@ export function extractIndicationList(labelText: string): IndicationListEntry[] 
     const name = m[2].replace(/\s+/g, ' ').replace(/\s*-\s*/g, '-').trim();
     if (name.length >= 3) entries.push({ number, name });
   }
-  return entries;
+  return entries.length > 0 ? entries : extractUnnumberedIndication(window);
+}
+
+/**
+ * Fallback for a label with exactly one approved indication and no "1.N"
+ * subsection numbering at all. AbbVie's Rinvoq numbers from the very first
+ * approval (see the doc comment above), but that isn't a universal FDA
+ * convention — Takeda's Mimrylo label goes straight from "1 INDICATIONS AND
+ * USAGE" to "2 DOSAGE AND ADMINISTRATION" with one plain sentence between
+ * them, no heading to reuse.
+ *
+ * Reproduces the label's own "is indicated for ..." clause verbatim (minus a
+ * fixed set of FDA boilerplate lead-ins — "the treatment of", "management
+ * of", and so on — stripped because they're never disease-specific) rather
+ * than trying to shorten it to a single disease name. Picking which part of
+ * the sentence is "the" indication would be a judgement call; reusing the
+ * label's own words isn't. It's still marked unverified like everything else
+ * the pipeline extracts, so a person can rename it.
+ */
+function extractUnnumberedIndication(window: string): IndicationListEntry[] {
+  const m = /\bis\s+indicated\s+for\s+([^.]*?)\.?(?=\s*2\.?\s*DOSAGE\s+AND\s+ADMINISTRATION\b|\s*$)/i.exec(
+    window
+  );
+  if (!m) return [];
+  let name = m[1].replace(/\s+/g, ' ').trim();
+  name = name.replace(
+    /^(the\s+)?(treatment(\s+and\s+(maintenance|prevention))?|management|reduction\s+of\s+risk|reducing\s+the\s+risk|prevention)\s+(of|for)\s+/i,
+    ''
+  );
+  if (name.length < 3) return [];
+  return [{ number: 1, name: name.charAt(0).toUpperCase() + name.slice(1) }];
 }
 
 export interface IndicationSpan {
