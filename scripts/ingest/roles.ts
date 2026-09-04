@@ -33,9 +33,30 @@ export function extractLabelSection14(labelText: string): string | null {
   return section.length > 400 ? section : null;
 }
 
-/** Tolerates a period after the number ("14. CLINICAL STUDIES"), which some labels use. */
-function findSection14Heading(strippedText: string): RegExpExecArray | null {
-  return /\b14\.?\s+CLINICAL\s+STUDIES\b/i.exec(strippedText);
+/**
+ * Tolerates a period after the number ("14. CLINICAL STUDIES"), which some
+ * labels use.
+ *
+ * Returns the *last* match, not the first. A label's table of contents lists
+ * every heading up front, often as one run of jumbled, interleaved
+ * multi-column text — confirmed against a real Rinvoq label, whose extracted
+ * ToC ends in the literal string "14 CLINICAL STUDIES" immediately followed
+ * by "Reference ID: ..." and the start of the actual document body, not of
+ * section 14. Anchoring on the first match latches onto that ToC line and
+ * then reads everything from there — sections 1 through 13 included — as if
+ * it were section 14, discarding the real section entirely (and, if a
+ * false end-of-section match turns up in that discarded stretch, truncating
+ * the span before ever reaching the real content). The heading's own
+ * appearance at the start of the actual section always comes later in
+ * reading order than any ToC mention of it.
+ */
+function findSection14Heading(strippedText: string): { index: number } | null {
+  const pattern = /\b14\.?\s+CLINICAL\s+STUDIES\b/gi;
+  let last: RegExpMatchArray | null = null;
+  for (const m of strippedText.matchAll(pattern)) {
+    last = m;
+  }
+  return last && last.index !== undefined ? { index: last.index } : null;
 }
 
 /**
