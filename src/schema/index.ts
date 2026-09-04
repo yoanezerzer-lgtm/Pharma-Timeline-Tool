@@ -78,6 +78,26 @@ export const TrialRole = z.enum([
 ]);
 export type TrialRole = z.infer<typeof TrialRole>;
 
+/**
+ * A trial's part in the evidence base for one specific indication.
+ *
+ * A drug's role isn't one fact — Rinvoq's RA-I trial is pivotal for the
+ * rheumatoid arthritis indication and irrelevant to atopic dermatitis. Keying
+ * role by indication (rather than one role per trial) is what makes an
+ * indication-scoped page show only the trials that actually supported that
+ * approval, instead of every trial cited anywhere in the drug's history.
+ * `indication`, when set, must match an entry in `Drug.indications[].name`.
+ * Unset means a drug-wide classification not tied to one approval — a PK or
+ * dose-finding study cited in the review without a specific indication
+ * attributed.
+ */
+export const IndicationRole = z.object({
+  indication: z.string().optional(),
+  role: TrialRole,
+  provenance: Provenance,
+});
+export type IndicationRole = z.infer<typeof IndicationRole>;
+
 export const Arm = z.object({
   label: z.string(),
   type: z.string().optional(),
@@ -130,7 +150,15 @@ export const Trial = z.object({
   title: z.string(),
   briefTitle: z.string().optional(),
   phase: Phase,
-  role: TrialRole.default('UNKNOWN'),
+  /**
+   * What this trial supported, per indication. Empty means the trial is
+   * registered against the drug but was never cited in support of any
+   * approved indication — the old drug-wide `NOT_IN_FILING` state, now
+   * implicit rather than a value that has to be kept in sync with this array.
+   * An entry with no `indication` is a drug-wide classification (a PK or
+   * dose-finding study not tied to one approved use).
+   */
+  roles: z.array(IndicationRole).default([]),
   status: z.string().optional(),
   sponsor: z.string().optional(),
   /**
@@ -241,9 +269,12 @@ export const Source = z.object({
 
 export const Indication = z.object({
   name: z.string(),
+  /** URL-safe id for routing, e.g. "rheumatoid-arthritis". Stable across re-ingestion. */
+  slug: z.string().regex(/^[a-z0-9-]+$/),
   approvalDate: DateValue.optional(),
   submissionNumber: z.string().optional(),
 });
+export type Indication = z.infer<typeof Indication>;
 
 export const Drug = z.object({
   slug: z

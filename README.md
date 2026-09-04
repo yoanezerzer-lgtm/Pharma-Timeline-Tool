@@ -4,7 +4,8 @@ A browsable repository of how medicines actually got approved: every clinical tr
 behind a marketing application, traced from the FDA approval package and plotted from
 phase 1 through to approval and subsequent label expansions.
 
-Click a drug, read its development timeline as a Gantt chart, click any trial for its
+Search a drug and an approved indication to see exactly which trials supported that
+specific approval, read the timeline as a Gantt chart, and click any trial for its
 cohort, population, design, and endpoints.
 
 ## Why this works
@@ -104,29 +105,39 @@ person has checked it.
 - **Two rules are load-bearing.** A field marked `verified: true` is *never* overwritten
   by a later ingest run — conflicts are reported instead. And a curated trial the
   registry stops returning is kept, not deleted.
-- **Roles are rules, not guesses.** A trial named in label section 14 is marked
-  `PIVOTAL`, because that is a fact about the document. Everything else is a weaker
-  heuristic, marked unverified, for a person to correct. A mature drug carries one label
-  document per approved supplement; since openFDA doesn't return them in date order, the
-  pipeline tries them newest-first and uses whichever one actually yields a locatable
-  section 14, rather than betting the whole run on a single document that might extract
-  badly. **This is still a drug-wide flag, not yet per-indication** — a trial pivotal for
-  the original approval and one pivotal for a later supplement both just read `PIVOTAL`.
-  Attributing each trial to the specific approval(s) it supported is the next real piece
-  of work. A trial named inside the captured section 14 span is not trusted on that alone:
-  a manual review of the first real run caught two AbbVie-run observational registries and
+- **Roles are per indication, and are rules, not guesses.** A drug's evidence base isn't
+  one flat list — Rinvoq's five original rheumatoid arthritis trials say nothing about its
+  atopic dermatitis approval four years later. `Trial.roles` is an array keyed by
+  indication name, not a single drug-wide field, so a trial can be `PIVOTAL` for one
+  indication and simply absent from another's.
+
+  The split relies on a structural fact about the label, not inference: section 1
+  (Indications and Usage) numbers its subsections by indication from the very first
+  approval — "1.1 Rheumatoid Arthritis" — even when there's only one yet, while section 14
+  (Clinical Studies) only starts numbering its own subsections once a second indication
+  exists. Reusing section 1's numbering to interpret section 14's "14.N" subsections is
+  what recovers each indication's own trial roster, rather than treating the whole of
+  section 14 as one undifferentiated span. A mature drug carries one label document per
+  approved supplement; since openFDA doesn't return them in date order, the pipeline tries
+  them newest-first and uses whichever one actually yields a locatable section 14.
+
+  A trial named inside an indication's section 14 span is not trusted on that alone: a
+  manual review of the first real run caught two AbbVie-run observational registries and
   two academic investigator-initiated studies that had been swept in this way. Both signals
-  come straight from the registry record — the pipeline now also requires the trial's own
+  come straight from the registry record — the pipeline also requires the trial's own
   sponsor to plausibly match the applicant, and its study type to be interventional, before
   trusting a bare section-14 mention with no other evidence behind it. Missing sponsor data
   is treated as inconclusive, not disqualifying, so this only blocks a confirmed mismatch.
-  A label that has accumulated indications over years of supplements can also stop naming a
-  historical trial by its sponsor protocol number or acronym and switch to a generic scheme
-  instead ("Trial RA-I") that appears nowhere in the registry record — the pairing to the
-  real NCT number typically survives only in the review, not the label. The pipeline scans
-  the whole document corpus for that pairing and treats the generic name as an additional,
-  equally-guarded identifier, rather than requiring the label to repeat an identifier it may
-  no longer use.
+  A pivotal trial outside oncology is essentially always Phase 3 (or the combined Phase
+  2/3 confirmatory design some programs use); one that isn't still gets marked `PIVOTAL`
+  since the label says so, but the run logs a warning for a person to check rather than
+  trusting it silently. A label that has accumulated indications over years of supplements
+  can also stop naming a historical trial by its sponsor protocol number or acronym and
+  switch to a generic scheme instead ("Trial RA-I") that appears nowhere in the registry
+  record — the pairing to the real NCT number typically survives only in the review, not
+  the label. The pipeline scans the whole document corpus for that pairing and treats the
+  generic name as an additional, equally-guarded identifier, rather than requiring the
+  label to repeat an identifier it may no longer use.
 - **Narrative is human-authored.** `takeaways`, `limitations`, and the drug summary are
   never generated. They stay empty until written, and the UI omits empty sections rather
   than showing a shell.
@@ -145,10 +156,11 @@ reported.
 
 ## Current status
 
-The committed `upadacitinib` record is **hand-authored placeholder geometry**, marked
-`extractedBy: 'seed', verified: false` throughout, so the interface had something to
-render before the first pipeline run. The site shows a banner saying so. Running the
-ingest replaces it wholesale.
+The committed `upadacitinib` record is real, pipeline-ingested data — 162 trials across
+9 approved indications, each attributed to the specific indication(s) it supports.
+Nothing on it has been human-checked yet (`verified: false` throughout), so the site
+still shows a banner saying so; re-running the ingest is safe and will only ever refine
+it, never regress it, thanks to the merge rule above.
 
 Not yet built:
 

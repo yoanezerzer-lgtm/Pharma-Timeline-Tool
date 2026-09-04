@@ -1,12 +1,15 @@
 import { useEffect } from 'react';
 import type { Trial, Provenance } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
+import { roleFor, summaryRole } from '../../lib/drugs.js';
 import { ROLE_LABEL } from '../Gantt/Gantt.js';
 import './TrialDrawer.css';
 
 interface Props {
   trial: Trial;
   onClose: () => void;
+  /** When set, the eyebrow shows this trial's role for one specific indication. */
+  indication?: string;
 }
 
 const PHASE_TEXT: Record<Trial['phase'], string> = {
@@ -61,7 +64,7 @@ function Fact({
   );
 }
 
-export function TrialDrawer({ trial, onClose }: Props) {
+export function TrialDrawer({ trial, onClose, indication }: Props) {
   // Escape closes the drawer, matching the expectation for an overlay panel.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -75,6 +78,8 @@ export function TrialDrawer({ trial, onClose }: Props) {
   const registryUrl = trial.nctId
     ? `https://clinicaltrials.gov/study/${trial.nctId}`
     : null;
+  const role = indication ? roleFor(trial, indication) ?? 'NOT_IN_FILING' : summaryRole(trial);
+  const otherIndications = trial.roles.filter((r) => r.indication && r.indication !== indication);
 
   return (
     <>
@@ -83,7 +88,8 @@ export function TrialDrawer({ trial, onClose }: Props) {
         <header className="drawer__head">
           <div>
             <div className="drawer__eyebrow">
-              {PHASE_TEXT[trial.phase]} · {ROLE_LABEL[trial.role]}
+              {PHASE_TEXT[trial.phase]} · {ROLE_LABEL[role]}
+              {indication ? ` for ${indication}` : ''}
             </div>
             <h2 className="drawer__title">
               {trial.acronym ?? trial.protocolNumber ?? trial.nctId ?? trial.id}
@@ -115,6 +121,11 @@ export function TrialDrawer({ trial, onClose }: Props) {
             {trial.sponsor && <Fact label="Sponsor" value={trial.sponsor} />}
             {trial.status && <Fact label="Status" value={trial.status} />}
           </dl>
+          {otherIndications.length > 0 && (
+            <p className="drawer__note">
+              Also cited for {otherIndications.map((r) => r.indication).join(', ')}.
+            </p>
+          )}
         </section>
 
         <section className="drawer__section">

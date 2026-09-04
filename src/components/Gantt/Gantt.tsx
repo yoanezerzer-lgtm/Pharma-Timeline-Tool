@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState, useEffect } from 'react';
-import type { Trial, Milestone } from '../../schema/index.js';
+import type { Trial, Milestone, TrialRole } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
+import { roleFor, summaryRole } from '../../lib/drugs.js';
 import {
   computeLayout,
   BAR_H,
@@ -16,6 +17,15 @@ interface GanttProps {
   milestones: Milestone[];
   selectedTrialId: string | null;
   onSelectTrial: (id: string) => void;
+  /** When set, bar colour and tooltip show this trial's role for one specific
+   *  indication rather than its best role across the whole drug. */
+  indication?: string;
+}
+
+/** The role to show for a trial in the current view — indication-scoped when one is given. */
+function displayRole(trial: Trial, indication: string | undefined): TrialRole {
+  if (!indication) return summaryRole(trial);
+  return roleFor(trial, indication) ?? 'NOT_IN_FILING';
 }
 
 interface HoverState {
@@ -29,7 +39,13 @@ function barLabel(t: Trial): string {
   return t.acronym ?? t.protocolNumber ?? t.nctId ?? t.id;
 }
 
-export function Gantt({ trials, milestones, selectedTrialId, onSelectTrial }: GanttProps) {
+export function Gantt({
+  trials,
+  milestones,
+  selectedTrialId,
+  onSelectTrial,
+  indication,
+}: GanttProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [availableWidth, setAvailableWidth] = useState(1000);
   const [hover, setHover] = useState<HoverState | null>(null);
@@ -143,7 +159,7 @@ export function Gantt({ trials, milestones, selectedTrialId, onSelectTrial }: Ga
                       className={[
                         'gantt__bar',
                         `phase-${bar.trial.phase.toLowerCase()}`,
-                        `role-${bar.trial.role.toLowerCase()}`,
+                        `role-${displayRole(bar.trial, indication).toLowerCase()}`,
                         bar.fuzzyStart ? 'fuzzy-start' : '',
                         bar.fuzzyEnd ? 'fuzzy-end' : '',
                       ]
@@ -211,7 +227,9 @@ export function Gantt({ trials, milestones, selectedTrialId, onSelectTrial }: Ga
         </svg>
       </div>
 
-      {hover && <BarTooltip bar={hover.bar} x={hover.clientX} y={hover.clientY} />}
+      {hover && (
+        <BarTooltip bar={hover.bar} x={hover.clientX} y={hover.clientY} indication={indication} />
+      )}
 
       {layout.undated.length > 0 && (
         <p className="gantt__undated">
@@ -225,7 +243,17 @@ export function Gantt({ trials, milestones, selectedTrialId, onSelectTrial }: Ga
   );
 }
 
-function BarTooltip({ bar, x, y }: { bar: BarLayout; x: number; y: number }) {
+function BarTooltip({
+  bar,
+  x,
+  y,
+  indication,
+}: {
+  bar: BarLayout;
+  x: number;
+  y: number;
+  indication: string | undefined;
+}) {
   const t = bar.trial;
   return (
     <div className="gantt__tooltip" style={{ left: x + 14, top: y + 14 }} role="tooltip">
@@ -246,14 +274,14 @@ function BarTooltip({ bar, x, y }: { bar: BarLayout; x: number; y: number }) {
           </>
         )}
         <dt>Role</dt>
-        <dd>{ROLE_LABEL[t.role]}</dd>
+        <dd>{ROLE_LABEL[displayRole(t, indication)]}</dd>
       </dl>
       <div className="gantt__tooltip-hint">Click for full detail</div>
     </div>
   );
 }
 
-export const ROLE_LABEL: Record<Trial['role'], string> = {
+export const ROLE_LABEL: Record<TrialRole, string> = {
   PIVOTAL: 'Pivotal',
   SUPPORTIVE: 'Supportive',
   DOSE_FINDING: 'Dose-finding',

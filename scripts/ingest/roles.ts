@@ -1,4 +1,4 @@
-import type { Trial, TrialRole, Provenance } from '../../src/schema/index.js';
+import type { Trial, TrialRole, IndicationRole } from '../../src/schema/index.js';
 import { stripPageMarkers, pageForOffset } from './docs.js';
 
 /**
@@ -112,9 +112,94 @@ export function diagnoseSection14(labelText: string): Section14Diagnostics {
   };
 }
 
+export interface IndicationListEntry {
+  /** The "1.N" subsection number, matching the same N in "14.N". */
+  number: number;
+  name: string;
+}
+
+/**
+ * Extracts the drug's own indication list from section 1 (Indications and
+ * Usage) of the label.
+ *
+ * This — not section 14's own subsection headings — is the reliable source
+ * of indication names. Section 1 numbers its subsections by indication from
+ * the very first approval ("1.1 Rheumatoid Arthritis"), even when there is
+ * only one; confirmed against Rinvoq's actual original 2019 label, whose
+ * section 1 already read "1.1 Rheumatoid Arthritis" while section 14 was a
+ * bare, unnumbered "14 CLINICAL STUDIES" — AbbVie only started numbering
+ * section 14's own subsections once a second indication existed. Reusing
+ * section 1's numbering to interpret "14.N" (splitSection14ByIndication
+ * below) means never having to parse section 14's own less consistently
+ * formatted subsection titles for the name itself.
+ */
+export function extractIndicationList(labelText: string): IndicationListEntry[] {
+  const stripped = stripPageMarkers(labelText);
+  const start = /\b1\s+INDICATIONS\s+AND\s+USAGE\b/i.exec(stripped);
+  if (!start) return [];
+  const afterStart = stripped.slice(start.index);
+  const end = /\b2\.?\s+DOSAGE\s+AND\s+ADMINISTRATION\b/i.exec(afterStart);
+  const window = end ? afterStart.slice(0, end.index) : afterStart.slice(0, 2000);
+
+  const entries: IndicationListEntry[] = [];
+  const pattern = /\b1\.\s*(\d+)\s+([A-Z][A-Za-z0-9 ,''’/-]*?)(?=\s+1\.\s*\d+\s+[A-Z]|\s*$)/g;
+  for (const m of window.matchAll(pattern)) {
+    const number = Number(m[1]);
+    const name = m[2].replace(/\s+/g, ' ').replace(/\s*-\s*/g, '-').trim();
+    if (name.length >= 3) entries.push({ number, name });
+  }
+  return entries;
+}
+
+export interface IndicationSpan {
+  indication: string;
+  text: string;
+}
+
+function flexibleNamePattern(name: string): string {
+  return escapeRegExp(name).replace(/ /g, '\\s+').replace(/-/g, '\\s*-\\s*');
+}
+
+/**
+ * Splits section 14 into one span per indication, using the indication list
+ * above (not section 14's own subsection text) to identify which "14.N"
+ * belongs to which indication.
+ *
+ * A label with only one approved indication has no "14.N" heading at all —
+ * see extractIndicationList's doc comment — so the whole section is that
+ * one indication's span. With more than one indication, a real subsection
+ * heading is found by searching for "14.N" immediately followed by that
+ * indication's own name (allowing for OCR whitespace/hyphen variance) — not
+ * just any "14.N", which would also match an in-text cross-reference like
+ * "[see Clinical Studies (14.2)]" appearing inside a different indication's
+ * own discussion.
+ */
+export function splitSection14ByIndication(
+  section14Text: string,
+  indicationList: IndicationListEntry[]
+): IndicationSpan[] {
+  if (indicationList.length === 0) return [];
+  if (indicationList.length === 1) {
+    return [{ indication: indicationList[0].name, text: section14Text }];
+  }
+
+  const boundaries: { index: number; indication: string }[] = [];
+  for (const { number, name } of indicationList) {
+    const pattern = new RegExp(`\\b14\\.\\s*${number}\\s+${flexibleNamePattern(name)}`, 'i');
+    const m = pattern.exec(section14Text);
+    if (m) boundaries.push({ index: m.index, indication: name });
+  }
+  boundaries.sort((a, b) => a.index - b.index);
+
+  return boundaries.map((b, i) => ({
+    indication: b.indication,
+    text: section14Text.slice(b.index, boundaries[i + 1]?.index ?? section14Text.length),
+  }));
+}
+
 export interface RoleContext {
-  /** Section 14 of the label, when it could be located. */
-  labelSection14: string | null;
+  /** Section 14, split into one span per indication. Empty when it could not be located or split. */
+  indicationSections: IndicationSpan[];
   /** Full text of the medical/statistical reviews. */
   reviewText: string;
   labelUrl?: string;
@@ -213,48 +298,86 @@ function looksLikeSponsorTrial(trial: Trial, sponsorName: string | undefined): b
   return a.length > 0 && b.length > 0 && (a.includes(b) || b.includes(a));
 }
 
+/**
+ * A pivotal trial supporting an approved indication is, outside oncology
+ * (not yet in scope), essentially always Phase 3 — the confirmatory trial
+ * design a marketing application actually rests on. A trial named in an
+ * indication's section 14 span that isn't Phase 3 (or the combined Phase
+ * 2/3 design some programs use for their confirmatory trial) is unusual
+ * enough to flag rather than trust silently; see PHASE_MISMATCH_WARNING
+ * below, surfaced by the caller rather than failing classification outright,
+ * since a genuine exception (accelerated approval, a different disease area
+ * later) shouldn't be misclassified as a bug in this rule.
+ */
+const PIVOTAL_PHASES: ReadonlySet<Trial['phase']> = new Set(['PHASE3', 'PHASE2_3']);
+
 export interface RoleAssignment {
-  role: TrialRole;
-  provenance: Provenance;
+  roles: IndicationRole[];
+  /** Set when a PIVOTAL role was assigned to a non-Phase-3 trial — worth a human look. */
+  phaseWarnings: string[];
 }
 
-export function classifyRole(trial: Trial, ctx: RoleContext): RoleAssignment {
+/**
+ * Classifies one trial's part in the marketing application, per indication.
+ *
+ * A trial can be pivotal for one indication and irrelevant to another —
+ * Rinvoq's original five rheumatoid arthritis trials say nothing about its
+ * atopic dermatitis approval four years later. Checking each indication's own
+ * section 14 span independently, rather than the whole of section 14 at
+ * once, is what keeps an indication-scoped page down to the handful of
+ * trials that actually supported it instead of every trial cited anywhere
+ * in the drug's history.
+ */
+export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignment {
   const knownAliases = trial.nctId ? ctx.trialAliases?.get(trial.nctId) ?? [] : [];
   const ids = identifiersOf(trial, ctx.trialAliases);
-  const matchedAlias = knownAliases.find((a) => mentions(ctx.labelSection14 ?? '', [a]));
-  const namedInSection14 =
-    !!ctx.labelSection14 && ids.length > 0 && mentions(ctx.labelSection14, ids);
+  const phaseWarnings: string[] = [];
+  const roles: IndicationRole[] = [];
 
-  if (namedInSection14) {
+  for (const span of ctx.indicationSections) {
+    if (ids.length === 0) continue;
+    const matchedAlias = knownAliases.find((a) => mentions(span.text, [a]));
+    const namedHere = mentions(span.text, ids);
+    if (!namedHere) continue;
+
     // `citedIn` only proves the identifier's string appears *somewhere* in the
     // FDA paperwork (it's populated by a document-wide scan, not one scoped to
-    // section 14) — it does not by itself prove the specific occurrence inside
-    // the captured section 14 span is genuine. extractLabelSection14's end
-    // boundary can still run past the real section 14 on an unusual label, so
-    // a bare mention there — cited elsewhere or not — always needs the trial
-    // to actually look like the applicant's own study before it's trusted.
-    if (looksLikeSponsorTrial(trial, ctx.sponsorName)) {
-      return {
-        role: 'PIVOTAL',
-        provenance: {
-          sourceUrl: ctx.labelUrl,
-          sourceLabel: 'Approved label, section 14 (Clinical Studies)',
-          extractedBy: 'rule',
-          verified: false,
-          quote: matchedAlias
-            ? `The label refers to this trial as "${matchedAlias}" rather than by its ` +
-              'registered identifiers; that name was resolved from a pairing found ' +
-              'elsewhere in the FDA paperwork. Sponsor-run and interventional.'
-            : 'Trial identifier appears within the captured section 14 span, and ' +
-              'the trial is sponsor-run and interventional.',
-        },
-      };
+    // this indication's span) — it does not by itself prove the specific
+    // occurrence here is genuine. A bare mention always needs the trial to
+    // actually look like the applicant's own study before it's trusted.
+    if (!looksLikeSponsorTrial(trial, ctx.sponsorName)) continue;
+
+    if (!PIVOTAL_PHASES.has(trial.phase)) {
+      phaseWarnings.push(
+        `${trial.nctId ?? trial.id} is named in the ${span.indication} section 14 span but is ` +
+          `${trial.phase}, not Phase 3 — marked PIVOTAL anyway since the label says so, but worth ` +
+          `a human check.`
+      );
     }
-    // Named in the captured span but not the applicant's own interventional
-    // trial and no direct citation — falls through rather than being trusted.
+
+    roles.push({
+      indication: span.indication,
+      role: 'PIVOTAL',
+      provenance: {
+        sourceUrl: ctx.labelUrl,
+        sourceLabel: `Approved label, section 14 (Clinical Studies — ${span.indication})`,
+        extractedBy: 'rule',
+        verified: false,
+        quote: matchedAlias
+          ? `The label refers to this trial as "${matchedAlias}" rather than by its ` +
+            'registered identifiers; that name was resolved from a pairing found ' +
+            'elsewhere in the FDA paperwork. Sponsor-run and interventional.'
+          : `Trial identifier appears within the ${span.indication} section 14 span, and ` +
+            'the trial is sponsor-run and interventional.',
+      },
+    });
   }
 
-  // 2. Cited in the review but not in section 14 → supporting evidence.
+  if (roles.length > 0) return { roles, phaseWarnings };
+
+  // Not named in any indication's section 14 span. Cited in the review
+  // without a specific indication attributed — supporting evidence, not
+  // (yet) tied to one approval.
   const inReview = ids.length > 0 && mentions(ctx.reviewText, ids);
   if (inReview) {
     const byPhase: Partial<Record<Trial['phase'], TrialRole>> = {
@@ -267,30 +390,35 @@ export function classifyRole(trial: Trial, ctx: RoleContext): RoleAssignment {
       PHASE4: 'POST_MARKETING',
     };
     return {
-      role: byPhase[trial.phase] ?? 'SUPPORTIVE',
-      provenance: {
-        sourceUrl: ctx.reviewUrl,
-        sourceLabel: 'FDA review (cited, not in label section 14)',
-        extractedBy: 'rule',
-        verified: false,
-      },
+      roles: [
+        {
+          role: byPhase[trial.phase] ?? 'SUPPORTIVE',
+          provenance: {
+            sourceUrl: ctx.reviewUrl,
+            sourceLabel: 'FDA review (cited, not in a label section 14 indication span)',
+            extractedBy: 'rule',
+            verified: false,
+          },
+        },
+      ],
+      phaseWarnings,
     };
   }
 
-  // 3. Registered against the drug but never cited in the approval package.
-  return {
-    role: 'NOT_IN_FILING',
-    provenance: {
-      sourceLabel: 'Registered on ClinicalTrials.gov; not cited in the approval package',
-      extractedBy: 'rule',
-      verified: false,
-    },
-  };
+  // Registered against the drug but never cited in the approval package —
+  // no roles recorded at all. That absence is the "not in filing" state.
+  return { roles: [], phaseWarnings };
 }
 
-export function applyRoles(trials: Trial[], ctx: RoleContext): Trial[] {
-  return trials.map((t) => {
-    const { role, provenance } = classifyRole(t, ctx);
-    return { ...t, role, provenance: { ...t.provenance, role: provenance } };
+export function applyRoles(
+  trials: Trial[],
+  ctx: RoleContext
+): { trials: Trial[]; phaseWarnings: string[] } {
+  const phaseWarnings: string[] = [];
+  const out = trials.map((t) => {
+    const { roles, phaseWarnings: w } = classifyTrialRoles(t, ctx);
+    phaseWarnings.push(...w);
+    return { ...t, roles };
   });
+  return { trials: out, phaseWarnings };
 }

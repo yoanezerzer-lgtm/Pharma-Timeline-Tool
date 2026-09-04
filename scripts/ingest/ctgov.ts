@@ -116,7 +116,7 @@ function slugifyId(study: CtgovStudy): string {
     .replace(/^-|-$/g, '');
 }
 
-/** Converts a registry record into a Trial, leaving role and narrative unset. */
+/** Converts a registry record into a Trial, leaving roles and narrative unset. */
 export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
   const ps = study.protocolSection;
   const idm = ps?.identificationModule;
@@ -145,7 +145,7 @@ export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
     title: idm?.officialTitle ?? idm?.briefTitle ?? 'Untitled study',
     briefTitle: idm?.briefTitle,
     phase: mapPhase(design?.phases),
-    role: 'UNKNOWN',
+    roles: [],
     status: status?.overallStatus,
     sponsor: ps?.sponsorCollaboratorsModule?.leadSponsor?.name,
     studyType: design?.studyType,
