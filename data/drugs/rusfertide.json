@@ -1,0 +1,765 @@
+{
+  "slug": "rusfertide",
+  "brandName": "Mimrylo",
+  "inn": "rusfertide",
+  "modality": "Peptide (hepcidin mimetic)",
+  "sponsor": "Takeda Pharmaceuticals U.S.A., Inc.",
+  "mechanism": "Hepcidin mimetic peptide that limits iron availability for red blood cell production",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Erythrocytosis in adults with polycythemia vera (PV)",
+      "slug": "erythrocytosis-in-adults-with-polycythemia-vera-pv",
+      "approvalDate": {
+        "value": "2026-08-28",
+        "precision": "day"
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220605",
+      "applicationType": "NDA",
+      "sponsor": "TAKEDA PHARMACEUTICALS U.S.A., INC.",
+      "originalApprovalDate": {
+        "value": "2026-08-28",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "ptg-300-04",
+      "nctId": "NCT04057040",
+      "protocolNumber": "PTG-300-04",
+      "title": "A Phase 2 Study of the Hepcidin Mimetic PTG-300 in Patients With Phlebotomy-Requiring Polycythemia Vera",
+      "briefTitle": "Hepcidin Mimetic in Patients With Polycythemia Vera (REVIVE)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Protagonist Therapeutics, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-10-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-02-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-06-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 70,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Dose finding PTG-300 (Part 1); PTG-300 (Part 2); Open label extension PTG-300 (Part 3)",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Dose finding PTG-300 (Part 1); Placebo (Part 2); Open label extension PTG-300 (Part 3)",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of responders during the blinded randomized withdrawal period (Week 29 to Week 41)."
+      ],
+      "secondaryEndpoints": [
+        "Change in rate of phlebotomy events between Week 17 through Week 29 (inclusive; 12 weeks) compared to each subject's historical rate.",
+        "Change in rate of phlebotomy events between Week 1 through Week 29 (inclusive; 28 weeks) compared to each subject's historical rate.",
+        "Proportion of subjects achieving a response at Week 29, with response defined as having achieved the absence of \"phlebotomy eligibility\" during the efficacy evaluation phase beginning at Week 17 and continuing to Week 29.",
+        "Proportion of subjects with reduction in the rate of phlebotomy events beginning at the Week 17 visit and continuing to Week 29 (12 weeks) compared to each subject's historical rate."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04057040",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04057040",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04057040",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04057040",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04057040",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220605Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "polycythemia vera based on a pooled analyses of data from studies PTG-300-11 (VERIFY) and PTG-300-04 (REVIVE) / PTG-300-21 (THRIVE). Provide at least 3 years of follow-up for enrolled subjec",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    },
+    {
+      "id": "ptg-300-06",
+      "nctId": "NCT04202965",
+      "protocolNumber": "PTG-300-06",
+      "title": "Open-label Study of PTG-300 in Subjects With Hereditary Hemochromatosis",
+      "briefTitle": "PTG-300 in Subjects With Hereditary Hemochromatosis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Protagonist Therapeutics, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-03-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-10-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-02-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 16,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "PTG-300",
+          "type": "EXPERIMENTAL",
+          "description": "PTG-300 Subcutaneous"
+        }
+      ],
+      "primaryEndpoints": [
+        "Effect of PTG-300 on Transferrin Saturation",
+        "Effect of PTG-300 on Serum Iron"
+      ],
+      "secondaryEndpoints": [
+        "Effect of PTG-300 on Phlebotomy Frequency"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04202965",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04202965",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04202965",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04202965",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04202965",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      }
+    },
+    {
+      "id": "pacific",
+      "nctId": "NCT04767802",
+      "protocolNumber": "PTG-300-08",
+      "acronym": "PACIFIC",
+      "title": "A Phase 2 Study of the Hepcidin Mimetic PTG-300 in Patients With Polycythemia Vera and Elevated Hematocrit (PACIFIC)",
+      "briefTitle": "PTG-300 in Patients With Polycythemia Vera and Elevated Hematocrit",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Protagonist Therapeutics, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-02-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-03-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-03-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "PTG-300",
+          "type": "EXPERIMENTAL",
+          "description": "Evaluate PTG-300's efficacy and safety in subjects with PV and baseline elevated hematocrit."
+        }
+      ],
+      "primaryEndpoints": [
+        "Evaluate PTG-300's efficacy in subjects with PV and baseline elevated hematocrit."
+      ],
+      "secondaryEndpoints": [
+        "Safety of PTG-300"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04767802",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04767802",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04767802",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04767802",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04767802",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      }
+    },
+    {
+      "id": "verify",
+      "nctId": "NCT05210790",
+      "protocolNumber": "PTG-300-11",
+      "acronym": "VERIFY",
+      "title": "A Phase 3 Study of the Hepcidin Mimetic Rusfertide (PTG-300) in Patients With Polycythemia Vera",
+      "briefTitle": "A Phase 3 Study of Rusfertide in Patients With Polycythemia Vera",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Erythrocytosis in adults with polycythemia vera (PV)",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Erythrocytosis in adults with polycythemia vera (PV))",
+            "quote": "Trial identifier appears within the Erythrocytosis in adults with polycythemia vera (PV) section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Protagonist Therapeutics, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-04-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-02-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 293,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Rusfertide",
+          "type": "EXPERIMENTAL",
+          "description": "Rusfertide (32 Weeks) - Rusfertide (124 Weeks Open-label)"
+        },
+        {
+          "label": "Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Placebo (32 Weeks) - Rusfertide (124 Weeks Open-label)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of subjects achieving a response who receive rusfertide compared to placebo."
+      ],
+      "secondaryEndpoints": [
+        "Comparison of mean number of phlebotomies between rusfertide and placebo.",
+        "Proportion of subjects with HCT values <45% for rusfertide and placebo.",
+        "Comparison mean change from baseline in total fatigue score based on PROMIS Short Form between rusfertide and placebo.",
+        "Comparison of mean change from baseline in total MFSAF total score."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05210790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05210790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05210790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05210790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05210790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220605Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "ertide in patients with polycythemia vera based on a pooled analyses of data from studies PTG-300-11 (VERIFY) and PTG-300-04 (REVIVE) / PTG-300-21 (THRIVE). Provide at least 3 years of follo",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    },
+    {
+      "id": "thrive",
+      "nctId": "NCT06033586",
+      "protocolNumber": "PTG-300-21",
+      "acronym": "THRIVE",
+      "title": "An Extension Study to Evaluate the Long-term Safety of Rusfertide (PTG-300) in Subjects With Polycythemia Vera (THRIVE)",
+      "briefTitle": "Study to Evaluate the Long-term Safety of Rusfertide (PTG-300) in Subjects With Polycythemia Vera",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Protagonist Therapeutics, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-04-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-04-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 46,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Open-label rusfertide",
+          "type": "EXPERIMENTAL",
+          "description": "Open-label rusfertide"
+        }
+      ],
+      "primaryEndpoints": [
+        "Hematocrit",
+        "Phlebotomies"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06033586",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06033586",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06033586",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06033586",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06033586",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220605Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "d on a pooled analyses of data from studies PTG-300-11 (VERIFY) and PTG-300-04 (REVIVE) / PTG-300-21 (THRIVE). Provide at least 3 years of follow-up for enrolled subjects treated with the ru",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    },
+    {
+      "id": "tak-121-2001",
+      "nctId": "NCT07648030",
+      "protocolNumber": "TAK-121-2001",
+      "title": "A Phase 2 Open-label Trial to Evaluate the Efficacy and Safety of Rusfertide in Japanese Patients With Polycythemia Vera",
+      "briefTitle": "A Study of Rusfertide in Japanese Adults With Polycythemia Vera",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Takeda",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-07-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-10-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-05-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 9,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Rusfertide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive rusfertide (TAK-121) injections, subcutaneously once a week for 52 weeks (Part 1) followed by 182 weeks long-term extension (Part 2)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving a Response Starting at Week 20 through Week 32"
+      ],
+      "secondaryEndpoints": [
+        "Mean Number of Phlebotomies through Week 32",
+        "Percentage of Participants with All Hematocrit Values Less Than 45%",
+        "Median Time to First Hematocrit Value 45% Or More After Enrollment",
+        "Percentage of Participants with At Least One Hematocrit Value 48% Or More",
+        "Percentage of Participants who Maintain Absence of Phlebotomy Eligibility",
+        "Percentage of Participants Achieving Absence of Phlebotomy Eligibility (Durable Response) for 52 Weeks",
+        "Mean Number of Phlebotomies through Week 52",
+        "Median Time to First Hematocrit Value 45% Or More after Week 32 through Week 52",
+        "Median Time to First Phlebotomy after Week 32 through Week 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07648030",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07648030",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07648030",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07648030",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07648030",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      }
+    },
+    {
+      "id": "tak-121-2002",
+      "nctId": "NCT07765602",
+      "protocolNumber": "TAK-121-2002",
+      "title": "A Phase 2 Open-Label Trial to Evaluate the Efficacy and Safety of the Hepcidin Mimetic Rusfertide (TAK-121) in Chinese Patients With Polycythemia Vera",
+      "briefTitle": "A Study of Rusfertide in Adults With Polycythemia Vera in China",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Takeda",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2027-03-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-07-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-08-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Rusfertide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive rusfertide (TAK-121), subcutaneously (SC) once weekly for 52 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving a Response Starting at Week 20 Through Week 32"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Hematocrit Over Time",
+        "Percentage of Participants Maintaining Hematocrit <45% During Week 0 to Week 32 and Week 0 to Week 52",
+        "Median Time to First Hematocrit ≥45% After Enrollment",
+        "Percentage of Participants With at Least One Hematocrit ≥48% During Week 0 to Week 32",
+        "Percentage of Participants With Treatment Emergent Adverse Events (TEAEs)",
+        "Percentage of Participants With Adverse Events of Special Interest (AESIs)",
+        "Plasma Concentration-Time Data for Rusfertide",
+        "Number of Participants With Anti-Rusfertide Antibodies"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07765602",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07765602",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07765602",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07765602",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07765602",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-08-28",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220605%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — undefined undefined",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220605%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220605Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-09-04T18:39:14.246Z"
+}
