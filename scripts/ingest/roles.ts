@@ -119,6 +119,25 @@ export interface IndicationListEntry {
 }
 
 /**
+ * Finds where section 1 actually begins, not its table-of-contents mention.
+ *
+ * Same fix as findSection14Heading above, for the same reason: a label's ToC
+ * lists "1 INDICATIONS AND USAGE" immediately followed by "2 DOSAGE AND
+ * ADMINISTRATION" with nothing in between, and that always comes before the
+ * real section in reading order — confirmed directly against Mimrylo's real
+ * label, whose ToC mention left extractIndicationList reading an empty
+ * window and reporting no indication at all for a drug that has one.
+ */
+function findIndicationsHeading(strippedText: string): { index: number } | null {
+  const pattern = /\b1\s+INDICATIONS\s+AND\s+USAGE\b/gi;
+  let last: RegExpMatchArray | null = null;
+  for (const m of strippedText.matchAll(pattern)) {
+    last = m;
+  }
+  return last && last.index !== undefined ? { index: last.index } : null;
+}
+
+/**
  * Extracts the drug's own indication list from section 1 (Indications and
  * Usage) of the label.
  *
@@ -135,7 +154,7 @@ export interface IndicationListEntry {
  */
 export function extractIndicationList(labelText: string): IndicationListEntry[] {
   const stripped = stripPageMarkers(labelText);
-  const start = /\b1\s+INDICATIONS\s+AND\s+USAGE\b/i.exec(stripped);
+  const start = findIndicationsHeading(stripped);
   if (!start) return [];
   const afterStart = stripped.slice(start.index);
   const end = /\b2\.?\s+DOSAGE\s+AND\s+ADMINISTRATION\b/i.exec(afterStart);
@@ -148,7 +167,37 @@ export function extractIndicationList(labelText: string): IndicationListEntry[] 
     const name = m[2].replace(/\s+/g, ' ').replace(/\s*-\s*/g, '-').trim();
     if (name.length >= 3) entries.push({ number, name });
   }
-  return entries;
+  return entries.length > 0 ? entries : extractUnnumberedIndication(window);
+}
+
+/**
+ * Fallback for a label with exactly one approved indication and no "1.N"
+ * subsection numbering at all. AbbVie's Rinvoq numbers from the very first
+ * approval (see the doc comment above), but that isn't a universal FDA
+ * convention — Takeda's Mimrylo label goes straight from "1 INDICATIONS AND
+ * USAGE" to "2 DOSAGE AND ADMINISTRATION" with one plain sentence between
+ * them, no heading to reuse.
+ *
+ * Reproduces the label's own "is indicated for ..." clause verbatim (minus a
+ * fixed set of FDA boilerplate lead-ins — "the treatment of", "management
+ * of", and so on — stripped because they're never disease-specific) rather
+ * than trying to shorten it to a single disease name. Picking which part of
+ * the sentence is "the" indication would be a judgement call; reusing the
+ * label's own words isn't. It's still marked unverified like everything else
+ * the pipeline extracts, so a person can rename it.
+ */
+function extractUnnumberedIndication(window: string): IndicationListEntry[] {
+  const m = /\bis\s+indicated\s+for\s+([^.]*?)\.?(?=\s*2\.?\s*DOSAGE\s+AND\s+ADMINISTRATION\b|\s*$)/i.exec(
+    window
+  );
+  if (!m) return [];
+  let name = m[1].replace(/\s+/g, ' ').trim();
+  name = name.replace(
+    /^(the\s+)?(treatment(\s+and\s+(maintenance|prevention))?|management|reduction\s+of\s+risk|reducing\s+the\s+risk|prevention)\s+(of|for)\s+/i,
+    ''
+  );
+  if (name.length < 3) return [];
+  return [{ number: 1, name: name.charAt(0).toUpperCase() + name.slice(1) }];
 }
 
 export interface IndicationSpan {
@@ -206,6 +255,12 @@ export interface RoleContext {
   reviewUrl?: string;
   /** The applicant's name, e.g. "AbbVie Inc.", for the sponsor-match guard below. */
   sponsorName?: string;
+  /**
+   * Other companies already confirmed to be legitimate co-developers or
+   * licensors for this drug's trials — see looksLikeSponsorTrial. Comes from
+   * the registry entry, a human-supplied fact.
+   */
+  knownTrialSponsors?: string[];
   /** NCT ID -> generic names the label uses for it. See extractTrialAliases(). */
   trialAliases?: Map<string, string[]>;
 }
@@ -289,13 +344,31 @@ function normalizeSponsor(name: string): string {
  * Missing data (no sponsor recorded, no sponsor name to compare against) is
  * treated as inconclusive rather than disqualifying — this guards against a
  * specific, observed failure mode, not a general trust requirement.
+ *
+ * A trial's registered sponsor can legitimately differ from the NDA/BLA
+ * applicant under a licensing or co-development deal — the original
+ * developer runs and registers the trial, a different company later licenses
+ * the drug and files the application. `knownTrialSponsors` (from the drug's
+ * registry entry, a human-supplied fact — see DrugSpec) names companies
+ * already confirmed to be legitimate co-developers for this specific drug,
+ * so a match against one of them counts the same as matching the applicant.
  */
-function looksLikeSponsorTrial(trial: Trial, sponsorName: string | undefined): boolean {
+function looksLikeSponsorTrial(
+  trial: Trial,
+  sponsorName: string | undefined,
+  knownTrialSponsors?: string[]
+): boolean {
   if (trial.studyType && trial.studyType.toUpperCase() === 'OBSERVATIONAL') return false;
-  if (!sponsorName || !trial.sponsor) return true;
+  if (!trial.sponsor) return true;
   const a = normalizeSponsor(trial.sponsor);
-  const b = normalizeSponsor(sponsorName);
-  return a.length > 0 && b.length > 0 && (a.includes(b) || b.includes(a));
+  const candidates = [sponsorName, ...(knownTrialSponsors ?? [])].filter(
+    (s): s is string => !!s
+  );
+  if (candidates.length === 0) return true;
+  return candidates.some((c) => {
+    const b = normalizeSponsor(c);
+    return a.length > 0 && b.length > 0 && (a.includes(b) || b.includes(a));
+  });
 }
 
 /**
@@ -345,7 +418,21 @@ export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignme
     // this indication's span) — it does not by itself prove the specific
     // occurrence here is genuine. A bare mention always needs the trial to
     // actually look like the applicant's own study before it's trusted.
-    if (!looksLikeSponsorTrial(trial, ctx.sponsorName)) continue;
+    //
+    // Acronym or Phase alone can't safely stand in for that: a real academic,
+    // investigator-initiated trial can be interventional and informally named
+    // too (see the "ACUTE"/"UPDATE" fixtures below — both use ordinary
+    // English words as acronyms, both interventional, both bare-mentioned
+    // right next to their own NCT numbers, and both still illegitimate). What
+    // actually distinguishes a licensing/co-development structure — the
+    // original developer holds the trial's ClinicalTrials.gov sponsor record
+    // while a different company holds the NDA, as with rusfertide's pivotal
+    // VERIFY trial (Protagonist Therapeutics ran it; Takeda licensed it and
+    // filed) — is that the relationship is a known, named fact, not something
+    // derivable from the label text itself. `knownTrialSponsors` lets a
+    // registry entry record that fact once, the same way `pressReleaseUrl`
+    // records a fact the pipeline has no way to find on its own.
+    if (!looksLikeSponsorTrial(trial, ctx.sponsorName, ctx.knownTrialSponsors)) continue;
 
     if (!PIVOTAL_PHASES.has(trial.phase)) {
       phaseWarnings.push(

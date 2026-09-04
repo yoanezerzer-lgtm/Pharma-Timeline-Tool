@@ -21,6 +21,15 @@ export interface DrugSpec {
    */
   applicationNumber?: string;
   applicationType?: 'NDA' | 'BLA' | 'ANDA';
+  /**
+   * Other companies confirmed to be legitimate co-developers or licensors of
+   * this drug — a trial registered under one of these counts as the
+   * applicant's own for pivotal classification, even though its
+   * ClinicalTrials.gov sponsor name differs from this entry's own `sponsor`.
+   * Needed when the company that ran the pivotal trials isn't the one that
+   * holds the marketing application (see roles.ts's looksLikeSponsorTrial).
+   */
+  knownTrialSponsors?: string[];
   /** Names to match against ClinicalTrials.gov interventions, including code names. */
   interventionNames: string[];
 }
@@ -51,6 +60,11 @@ export const DRUG_SPECS: DrugSpec[] = [
     // PTG-300 is Protagonist's development code; early trials (including the
     // pivotal Phase 3 VERIFY study, NCT05210790) are registered under it.
     interventionNames: ['rusfertide', 'Mimrylo', 'PTG-300'],
+    // Protagonist Therapeutics discovered and originally developed
+    // rusfertide; Takeda licensed it for commercialization ahead of this
+    // approval. VERIFY and rusfertide's other trials are still registered
+    // under Protagonist on ClinicalTrials.gov, not Takeda.
+    knownTrialSponsors: ['Protagonist Therapeutics, Inc.', 'Protagonist Therapeutics'],
   },
 ];
 

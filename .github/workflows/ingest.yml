@@ -88,7 +88,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          if git diff --quiet -- data/drugs; then
+          if [ -z "$(git status --porcelain -- data/drugs)" ]; then
             echo "No data changes — the sources agree with what is already committed."
             exit 0
           fi

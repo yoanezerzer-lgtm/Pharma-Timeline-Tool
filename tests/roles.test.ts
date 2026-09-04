@@ -218,6 +218,56 @@ describe('extractIndicationList', () => {
   it('returns nothing when section 1 cannot be located', () => {
     expect(extractIndicationList('Some unrelated document text.')).toEqual([]);
   });
+
+  it('falls back to the indicated-for clause when section 1 has no numbering at all', () => {
+    // Real Mimrylo (rusfertide) label text: unlike Rinvoq, Takeda never
+    // numbers section 1 with "1.1" even for its one approved indication.
+    const text =
+      '1 INDICATIONS AND USAGE MIMRYLO is indicated for the treatment of ' +
+      'erythrocytosis in adults with polycythemia vera (PV). ' +
+      '2 DOSAGE AND ADMINISTRATION 2.1 Recommended Dosage';
+    expect(extractIndicationList(text)).toEqual([
+      { number: 1, name: 'Erythrocytosis in adults with polycythemia vera (PV)' },
+    ]);
+  });
+
+  it('strips the FDA boilerplate lead-in but leaves the rest of the clause verbatim', () => {
+    const text =
+      '1 INDICATIONS AND USAGE DRUGX is indicated for the management of ' +
+      'moderate to severe plaque psoriasis. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text)).toEqual([
+      { number: 1, name: 'Moderate to severe plaque psoriasis' },
+    ]);
+  });
+
+  it('still returns nothing when even the fallback phrasing is absent', () => {
+    const text = '1 INDICATIONS AND USAGE Some unparseable layout. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text)).toEqual([]);
+  });
+
+  it('skips a table-of-contents mention of section 1 and finds the real section', () => {
+    // Reproduces a real pipeline failure found against the actual Mimrylo
+    // label: its "FULL PRESCRIBING INFORMATION: CONTENTS" table of contents
+    // lists "1 INDICATIONS AND USAGE 2 DOSAGE AND ADMINISTRATION" back to
+    // back with no description in between. Taking the *first* regex match —
+    // the same bug extractLabelSection14 already had to be fixed for above —
+    // anchors there and reads an empty window, reporting no indication at
+    // all for a drug that has one.
+    const text =
+      'HIGHLIGHTS OF PRESCRIBING INFORMATION ' +
+      '----INDICATIONS AND USAGE---- MIMRYLO is indicated for the treatment ' +
+      'of erythrocytosis in adults with polycythemia vera (PV). (1) ' +
+      'FULL PRESCRIBING INFORMATION: CONTENTS* ' +
+      '1 INDICATIONS AND USAGE 2 DOSAGE AND ADMINISTRATION 2.1 Recommended Dosage ' +
+      '14 CLINICAL STUDIES ' +
+      'FULL PRESCRIBING INFORMATION ' +
+      '1 INDICATIONS AND USAGE MIMRYLO is indicated for the treatment of ' +
+      'erythrocytosis in adults with polycythemia vera (PV). ' +
+      '2 DOSAGE AND ADMINISTRATION 2.1 Recommended Dosage';
+    expect(extractIndicationList(text)).toEqual([
+      { number: 1, name: 'Erythrocytosis in adults with polycythemia vera (PV)' },
+    ]);
+  });
 });
 
 describe('splitSection14ByIndication', () => {
@@ -429,6 +479,40 @@ describe('classifyTrialRoles — sponsor and study-type guard', () => {
   it('falls through to no roles at all — not a false pivotal — for a rejected trial', () => {
     const t = trial({ nctId: 'NCT07258771', sponsor: 'Berinstein, Jeffrey' });
     expect(classifyTrialRoles(t, ctx).roles).toEqual([]);
+  });
+
+  it('accepts a trial run by a known co-developer even when the applicant differs', () => {
+    // Real Mimrylo case: rusfertide's pivotal VERIFY trial is registered
+    // under its originator (Protagonist Therapeutics), while Takeda holds
+    // the NDA under a licensing deal. A registry-supplied knownTrialSponsors
+    // entry is what makes that legitimate structure distinguishable from an
+    // unrelated third party — acronym or interventional status alone can't
+    // (see the ACUTE/UPDATE cases above, which are both and are still
+    // illegitimate).
+    const t = trial({
+      nctId: 'NCT05210790',
+      acronym: 'VERIFY',
+      sponsor: 'Protagonist Therapeutics, Inc.',
+      studyType: 'INTERVENTIONAL',
+    });
+    const verifySpan = ctxFor(
+      '14 CLINICAL STUDIES VERIFY The efficacy of MIMRYLO was evaluated in a study of ' +
+        'patients with polycythemia vera [NCT05210790].',
+      {
+        sponsorName: 'Takeda Pharmaceuticals U.S.A., Inc.',
+        knownTrialSponsors: ['Protagonist Therapeutics, Inc.'],
+      }
+    );
+    expect(pivotalFor(t, verifySpan)).toBe(true);
+  });
+
+  it('still rejects a differing sponsor that is not on the known-co-developer list', () => {
+    const t = trial({ nctId: 'NCT09999999', sponsor: 'Some Other Company' });
+    const withMention = ctxFor('See NCT09999999 for supporting data.', {
+      sponsorName: 'AbbVie Inc.',
+      knownTrialSponsors: ['Protagonist Therapeutics, Inc.'],
+    });
+    expect(pivotalFor(t, withMention)).toBe(false);
   });
 });
 
