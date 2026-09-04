@@ -66,6 +66,20 @@ export const DRUG_SPECS: DrugSpec[] = [
     // under Protagonist on ClinicalTrials.gov, not Takeda.
     knownTrialSponsors: ['Protagonist Therapeutics, Inc.', 'Protagonist Therapeutics'],
   },
+  {
+    slug: 'orforglipron',
+    brandName: 'Foundayo',
+    inn: 'orforglipron',
+    modality: 'Small molecule',
+    sponsor: 'Eli Lilly and Company',
+    mechanism: 'Oral, non-peptide GLP-1 receptor agonist',
+    // Application number not known up front — approved April 2026, too
+    // recent to have looked up the exact NDA number by hand. Left unset so
+    // the pipeline resolves it from openFDA's own brand-name search instead.
+    // LY3502970 is Lilly's development code; the pivotal Phase 3 ATTAIN-1
+    // trial (NCT05869903) is registered under it.
+    interventionNames: ['orforglipron', 'Foundayo', 'LY3502970'],
+  },
 ];
 
 /**
