@@ -35,7 +35,7 @@ const MERGEABLE_FIELDS = [
   'title',
   'briefTitle',
   'phase',
-  'role',
+  'roles',
   'status',
   'sponsor',
   'startDate',

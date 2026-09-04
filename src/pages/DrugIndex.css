@@ -18,90 +18,121 @@
   line-height: 1.6;
 }
 
-.index__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+.index__search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   gap: 1rem;
-}
-
-.tile {
-  display: block;
-  padding: 1.1rem 1.2rem 1rem;
+  padding: 1.25rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 10px;
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 120ms ease, transform 120ms ease, box-shadow 120ms ease;
 }
 
-.tile:hover {
-  border-color: var(--accent);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-}
-
-.tile__head {
+.index__field {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1 1 220px;
+  min-width: 180px;
 }
 
-.tile__name {
-  margin: 0;
-  font-size: 1.15rem;
-  color: var(--text-1);
-}
-
-.tile__year {
-  font-size: 12px;
-  color: var(--text-3);
-  font-variant-numeric: tabular-nums;
-}
-
-.tile__inn {
-  font-size: 12.5px;
-  color: var(--text-3);
-  margin-top: 0.1rem;
-}
-
-.tile__mechanism {
-  margin: 0.6rem 0 0.9rem;
-  font-size: 13px;
-  line-height: 1.45;
-  color: var(--text-2);
-  min-height: 2.6em;
-}
-
-.tile__stats {
-  display: flex;
-  gap: 1.2rem;
-  margin: 0 0 0.9rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.tile__stats dt {
+.index__field label {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-3);
 }
 
-.tile__stats dd {
-  margin: 0.1rem 0 0;
-  font-size: 13px;
+.index__field input,
+.index__field select {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-1);
   color: var(--text-1);
-  font-variant-numeric: tabular-nums;
+  font-size: 14px;
 }
 
-.tile__foot {
+.index__field select:disabled {
+  color: var(--text-3);
+}
+
+.index__submit {
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  border: 1px solid var(--text-1);
+  background: var(--text-1);
+  color: var(--bg-1);
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.index__submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.index__hint {
+  margin: 0.75rem 0 0;
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.index__browse {
+  margin-top: 2.5rem;
+}
+
+.index__browse h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  font-weight: 700;
+  margin: 0 0 0.85rem;
+}
+
+.index__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.index__list a {
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
-  font-size: 11px;
+  gap: 1rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 120ms ease;
+}
+
+.index__list a:hover {
+  border-color: var(--accent);
+}
+
+.index__list-drug {
+  font-weight: 600;
+  color: var(--text-1);
+  font-size: 13.5px;
+}
+
+.index__list-indication {
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+.index__list-empty {
   color: var(--text-3);
+  font-size: 13px;
+  padding: 0.5rem 0;
 }
 
 .index__foot {

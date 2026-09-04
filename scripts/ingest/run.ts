@@ -7,7 +7,15 @@ import { runFdaStage, type FdaStageResult } from './fda.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
 import { extractCandidates, resolveCandidates, type ResolveReport } from './codes.js';
 import { studyToTrial, searchByIntervention, ctgovStudyUrl, studyMatchesDrug } from './ctgov.js';
-import { applyRoles, extractLabelSection14, diagnoseSection14, extractTrialAliases } from './roles.js';
+import {
+  applyRoles,
+  extractLabelSection14,
+  diagnoseSection14,
+  extractTrialAliases,
+  extractIndicationList,
+  splitSection14ByIndication,
+  type IndicationListEntry,
+} from './roles.js';
 import { mergeDrug, type Conflict } from './merge.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
@@ -187,11 +195,13 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
 
   let labelSection14: string | null = null;
   let labelDoc: FetchedDoc | undefined;
+  let indicationList: IndicationListEntry[] = [];
   for (const candidate of labelDocsByRecency) {
     const section = extractLabelSection14(candidate.text);
     if (section) {
       labelSection14 = section;
       labelDoc = candidate;
+      indicationList = extractIndicationList(candidate.text);
       break;
     }
   }
@@ -223,29 +233,54 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   // though only the review states the pairing explicitly.
   const trialAliases = extractTrialAliases(allDocText);
 
-  let trials = applyRoles([...trialsById.values()], {
-    labelSection14,
+  const indicationSections =
+    labelSection14 && indicationList.length > 0
+      ? splitSection14ByIndication(labelSection14, indicationList)
+      : [];
+
+  if (labelSection14 && indicationList.length === 0) {
+    warn(
+      'section 14 was located, but the indication list could not be read from section 1 ' +
+        '(Indications and Usage). Pivotal classification falls back to review citation only.'
+    );
+  } else if (indicationSections.length < indicationList.length) {
+    warn(
+      `only found ${indicationSections.length} of ${indicationList.length} known indications' ` +
+        `section 14 subsections. Missing: ${indicationList
+          .filter((e) => !indicationSections.some((s) => s.indication === e.name))
+          .map((e) => e.name)
+          .join(', ')}.`
+    );
+  }
+
+  const { trials: rolesApplied, phaseWarnings } = applyRoles([...trialsById.values()], {
+    indicationSections,
     reviewText,
     labelUrl: labelDoc?.url,
     reviewUrl: reviewDoc?.url,
     sponsorName: fda.application.sponsor_name ?? spec.sponsor,
     trialAliases,
   });
+  phaseWarnings.forEach(warn);
 
   // Deterministic order keeps the committed JSON diff-friendly across runs.
-  trials = trials.sort((a, b) => {
+  const trials = rolesApplied.sort((a, b) => {
     const ap = a.startDate?.value ?? '9999';
     const bp = b.startDate?.value ?? '9999';
     return ap.localeCompare(bp) || a.id.localeCompare(b.id);
   });
 
-  const pivotal = trials.filter((t) => t.role === 'PIVOTAL').length;
-  log(`[roles] ${pivotal} pivotal, ${trials.length - pivotal} other`);
+  const pivotal = trials.filter((t) => t.roles.some((r) => r.role === 'PIVOTAL')).length;
+  log(
+    `[roles] ${indicationSections.length} indication(s) found, ${pivotal} trial(s) pivotal for ` +
+      `at least one, ${trials.length - pivotal} other`
+  );
 
   // --- merge ---------------------------------------------------------------
-  const incoming = buildDrugRecord(spec, fda, trials, docs);
+  const incoming = buildDrugRecord(spec, fda, trials, docs, indicationList);
   const existing = loadExisting(drugsDir, spec.slug);
   const merged = mergeDrug(existing, incoming);
+  merged.drug.trials = dedupeTrialIds(merged.drug.trials);
 
   // Only advance the ingest timestamp when something else actually changed.
   // Stamping every run would make each re-run produce a diff, which in turn
@@ -305,6 +340,29 @@ function submissionDate(submission: string, milestones: Milestone[]): string {
   return milestones.find((m) => m.submissionNumber === submission)?.date.value ?? '';
 }
 
+/**
+ * Guarantees every trial's `id` is unique, even when two genuinely different
+ * trials share whatever slugifyId() derived it from — confirmed against real
+ * Rinvoq data, where AbbVie reused the acronym "UPDATE" across two unrelated
+ * post-marketing studies (NCT05327920 and NCT05669794), and a trial curated
+ * before it had a registry match can share a protocol number with a trial a
+ * later run resolves under its own NCT ID. `id` is what routing and
+ * cross-references key off, so a collision here is silent data loss in the
+ * UI — whichever trial's URL is visited resolves to only one of them — not
+ * merely a cosmetic annoyance. Deterministic given the same input order, so
+ * this does not break the pipeline's byte-identical-rerun guarantee.
+ */
+export function dedupeTrialIds(trials: Trial[]): Trial[] {
+  const seen = new Map<string, number>();
+  return trials.map((t) => {
+    const count = seen.get(t.id) ?? 0;
+    seen.set(t.id, count + 1);
+    if (count === 0) return t;
+    const suffix = t.nctId ? t.nctId.toLowerCase() : String(count);
+    return { ...t, id: `${t.id}-${suffix}` };
+  });
+}
+
 function withoutStamp(d: DrugType): Omit<DrugType, 'lastIngestedAt'> {
   const { lastIngestedAt: _ignored, ...rest } = d;
   return rest;
@@ -314,13 +372,36 @@ function stableJson(value: unknown): string {
   return JSON.stringify(value);
 }
 
+/** URL-safe id for routing, e.g. "Non-radiographic Axial Spondyloarthritis" -> "non-radiographic-axial-spondyloarthritis". */
+export function slugifyIndication(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/'/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 function buildDrugRecord(
   spec: DrugSpec,
   fda: FdaStageResult,
   trials: Trial[],
-  docs: FetchedDoc[]
+  docs: FetchedDoc[],
+  indicationList: IndicationListEntry[]
 ): DrugType {
   const original = fda.milestones.find((m) => m.type === 'FDA_APPROVAL');
+
+  // openFDA's own submission classification ("Efficacy", "Labeling",
+  // "Manufacturing (CMC)") is not the indication — it does not say which
+  // disease a supplement was for. Real indication names only exist in the
+  // label's own section 1 numbering (see extractIndicationList). The first
+  // indication (1.1) is dated by the original approval; a later indication's
+  // exact approval date isn't reliably derivable from openFDA data alone, so
+  // it's left unset rather than guessed at.
+  const indications = indicationList.map((entry) => ({
+    name: entry.name,
+    slug: slugifyIndication(entry.name),
+    approvalDate: entry.number === 1 ? original?.date : undefined,
+  }));
 
   return {
     slug: spec.slug,
@@ -330,13 +411,7 @@ function buildDrugRecord(
     sponsor: spec.sponsor,
     mechanism: spec.mechanism,
     summary: '',
-    indications: fda.milestones
-      .filter((m) => m.type === 'FDA_APPROVAL' || m.type === 'FDA_SUPPLEMENT')
-      .map((m) => ({
-        name: m.description ?? m.label,
-        approvalDate: m.date,
-        submissionNumber: m.submissionNumber,
-      })),
+    indications,
     regulatory: {
       us: {
         applicationNumber: spec.applicationNumber,

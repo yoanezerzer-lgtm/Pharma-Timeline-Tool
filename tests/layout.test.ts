@@ -4,7 +4,7 @@ import type { Trial, Milestone } from '../src/schema/index.js';
 
 function trial(o: Partial<Trial>): Trial {
   return {
-    id: 't', title: 'x', phase: 'PHASE3', role: 'UNKNOWN', arms: [],
+    id: 't', title: 'x', phase: 'PHASE3', roles: [], arms: [],
     primaryEndpoints: [], secondaryEndpoints: [], metPrimaryEndpoint: null,
     takeaways: [], limitations: [], publications: [], provenance: {}, ...o,
   };

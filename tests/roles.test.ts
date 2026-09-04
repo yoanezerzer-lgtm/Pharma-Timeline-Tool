@@ -4,8 +4,11 @@ import { join } from 'node:path';
 import {
   extractLabelSection14,
   diagnoseSection14,
-  classifyRole,
+  classifyTrialRoles,
   extractTrialAliases,
+  extractIndicationList,
+  splitSection14ByIndication,
+  type RoleContext,
 } from '../scripts/ingest/roles.js';
 import { mapPhase } from '../scripts/ingest/ctgov.js';
 import type { Trial } from '../src/schema/index.js';
@@ -15,10 +18,26 @@ const reviewText = readFileSync(join(process.cwd(), 'tests/fixtures/review-excer
 
 function trial(o: Partial<Trial>): Trial {
   return {
-    id: 't', title: 'x', phase: 'PHASE3', role: 'UNKNOWN', arms: [],
+    id: 't', title: 'x', phase: 'PHASE3', roles: [], arms: [],
     primaryEndpoints: [], secondaryEndpoints: [], metPrimaryEndpoint: null,
     takeaways: [], limitations: [], publications: [], provenance: {}, ...o,
   };
+}
+
+const RA = 'Rheumatoid Arthritis';
+
+/** Builds a RoleContext with a single indication's section 14 span. */
+function ctxFor(section14: string | null, overrides: Partial<RoleContext> = {}): RoleContext {
+  return {
+    indicationSections: section14 ? [{ indication: RA, text: section14 }] : [],
+    reviewText: '',
+    ...overrides,
+  };
+}
+
+/** Convenience: the role assigned for RA, or undefined if the trial has no roles at all. */
+function pivotalFor(t: Trial, ctx: RoleContext): boolean {
+  return classifyTrialRoles(t, ctx).roles.some((r) => r.role === 'PIVOTAL');
 }
 
 describe('extractLabelSection14', () => {
@@ -150,32 +169,176 @@ describe('diagnoseSection14', () => {
   });
 });
 
-describe('classifyRole', () => {
-  const ctx = { labelSection14: extractLabelSection14(labelText), reviewText };
+/**
+ * Reproduces the actual structure of the real, current (multi-indication)
+ * Rinvoq label, confirmed against the genuine extracted text: section 1's
+ * ToC-style subsection list, immediately followed by section 2's own
+ * subsection list (which must not be mistaken for more indications), then
+ * section 14's own subsection headings using the same numbering.
+ */
+describe('extractIndicationList', () => {
+  const multiIndicationLabel =
+    '1 INDICATIONS AND USAGE 1.1 Rheumatoid Arthritis 1.2 Psoriatic Arthritis ' +
+    "1.3 Atopic Dermatitis 1.4 Ulcerative Colitis 1.5 Crohn's Disease " +
+    '2 DOSAGE AND ADMINISTRATION 2.1 Recommended Evaluations 2.2 Important Administration Instructions ' +
+    '3 DOSAGE FORMS AND STRENGTHS';
 
-  it('marks a trial named in label section 14 as pivotal', () => {
-    const r = classifyRole(trial({ protocolNumber: 'M13-545' }), ctx);
-    expect(r.role).toBe('PIVOTAL');
-    expect(r.provenance.extractedBy).toBe('rule');
-    expect(r.provenance.verified).toBe(false);
+  it('reads the numbered indication list from section 1, not section 2', () => {
+    const list = extractIndicationList(multiIndicationLabel);
+    expect(list).toEqual([
+      { number: 1, name: 'Rheumatoid Arthritis' },
+      { number: 2, name: 'Psoriatic Arthritis' },
+      { number: 3, name: 'Atopic Dermatitis' },
+      { number: 4, name: 'Ulcerative Colitis' },
+      { number: 5, name: "Crohn's Disease" },
+    ]);
+  });
+
+  it('tolerates OCR-inserted spaces around the period and hyphens', () => {
+    // Real extracted Rinvoq label text: "1. 8 Polyarticular..." and
+    // "Non - radiographic Axial Spondyloarthritis" (spaced hyphen).
+    const text =
+      '1 INDICATIONS AND USAGE 1.1 Rheumatoid Arthritis ' +
+      '1. 8 Non - radiographic Axial Spondyloarthritis ' +
+      '2 DOSAGE AND ADMINISTRATION';
+    const list = extractIndicationList(text);
+    expect(list).toEqual([
+      { number: 1, name: 'Rheumatoid Arthritis' },
+      { number: 8, name: 'Non-radiographic Axial Spondyloarthritis' },
+    ]);
+  });
+
+  it('reads a single indication even though only one is approved', () => {
+    // Confirmed against Rinvoq's real original 2019 label: section 1 already
+    // reads "1.1 Rheumatoid Arthritis" even with nothing else approved yet.
+    const text = '1 INDICATIONS AND USAGE 1.1 Rheumatoid Arthritis 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text)).toEqual([{ number: 1, name: 'Rheumatoid Arthritis' }]);
+  });
+
+  it('returns nothing when section 1 cannot be located', () => {
+    expect(extractIndicationList('Some unrelated document text.')).toEqual([]);
+  });
+});
+
+describe('splitSection14ByIndication', () => {
+  it('attributes the whole section to the one indication when there is only one', () => {
+    // A fresh, single-indication label's section 14 has no "14.N" numbering
+    // at all (see extractIndicationList's doc comment) — the split must not
+    // require a heading it will never find.
+    const section14 = 'Trial RA-I (NCT02706873) established efficacy in RA patients.';
+    const spans = splitSection14ByIndication(section14, [{ number: 1, name: RA }]);
+    expect(spans).toEqual([{ indication: RA, text: section14 }]);
+  });
+
+  it('splits a multi-indication section 14 by its real subsection headings', () => {
+    const section14 =
+      '14.1 Rheumatoid Arthritis Trial RA-I (NCT02706873) established efficacy. ' +
+      '14.2 Psoriatic Arthritis Trial PsA-I (NCT03104400) established efficacy.';
+    const spans = splitSection14ByIndication(section14, [
+      { number: 1, name: RA },
+      { number: 2, name: 'Psoriatic Arthritis' },
+    ]);
+    expect(spans).toHaveLength(2);
+    expect(spans[0].indication).toBe(RA);
+    expect(spans[0].text).toContain('NCT02706873');
+    expect(spans[0].text).not.toContain('NCT03104400');
+    expect(spans[1].indication).toBe('Psoriatic Arthritis');
+    expect(spans[1].text).toContain('NCT03104400');
+  });
+
+  it('is not fooled by a bracketed cross-reference to another indication’s subsection', () => {
+    // "[see Clinical Studies (14.2)]" is a citation, not a heading — it must
+    // not be read as the start of the Psoriatic Arthritis span, which would
+    // otherwise fragment the Rheumatoid Arthritis trial's own text.
+    const section14 =
+      '14.1 Rheumatoid Arthritis Trial RA-I (NCT02706873) established efficacy ' +
+      'consistent with prior Janus kinase inhibitor experience [see Clinical Studies (14.2)]. ' +
+      '14.2 Psoriatic Arthritis Trial PsA-I (NCT03104400) established efficacy.';
+    const spans = splitSection14ByIndication(section14, [
+      { number: 1, name: RA },
+      { number: 2, name: 'Psoriatic Arthritis' },
+    ]);
+    expect(spans).toHaveLength(2);
+    expect(spans[0].text).toContain('NCT02706873');
+    expect(spans[0].text).not.toContain('NCT03104400');
+  });
+
+  it('tolerates OCR-spaced subsection numbers like "14. 6"', () => {
+    const section14 =
+      '14.1 Rheumatoid Arthritis Trial RA-I (NCT02706873) established efficacy. ' +
+      "14. 6 Ankylosing Spondylitis Trial AS-I (NCT03568318) established efficacy.";
+    const spans = splitSection14ByIndication(section14, [
+      { number: 1, name: RA },
+      { number: 6, name: 'Ankylosing Spondylitis' },
+    ]);
+    expect(spans).toHaveLength(2);
+    expect(spans[1].text).toContain('NCT03568318');
+  });
+
+  it('reproduces the real Rinvoq label span split, confirmed against the actual extracted text', () => {
+    // Verbatim shape of the real 2026 Rinvoq label (211675/218347, supplement
+    // 034/008): the RA span must contain Trial RA-I's identifier and stop
+    // before Psoriatic Arthritis's trial identifiers begin.
+    const section14 =
+      '14.1 Rheumatoid Arthritis The efficacy and safety of RINVOQ 15 mg once daily were ' +
+      'assessed in five Phase 3 randomized, double-blind, multicenter trials in patients ' +
+      'with moderately to severely active rheumatoid arthritis. Trial RA-I (NCT02706873) ' +
+      'was a 24-week monotherapy trial in 947 patients. ' +
+      '14.2 Psoriatic Arthritis The efficacy and safety of RINVOQ were assessed in Trial ' +
+      'PsA-I (NCT03104400) and Trial PsA-II (NCT03104374).';
+    const list = extractIndicationList(
+      '1 INDICATIONS AND USAGE 1.1 Rheumatoid Arthritis 1.2 Psoriatic Arthritis ' +
+        '2 DOSAGE AND ADMINISTRATION'
+    );
+    const spans = splitSection14ByIndication(section14, list);
+    expect(spans[0].indication).toBe(RA);
+    expect(spans[0].text).toContain('NCT02706873');
+    expect(spans[0].text).not.toContain('NCT03104400');
+  });
+});
+
+describe('classifyTrialRoles', () => {
+  const ctx = ctxFor(extractLabelSection14(labelText), { reviewText });
+
+  it('marks a trial named in label section 14 as pivotal, for that indication', () => {
+    const r = classifyTrialRoles(trial({ protocolNumber: 'M13-545' }), ctx);
+    expect(r.roles).toHaveLength(1);
+    expect(r.roles[0]).toMatchObject({ indication: RA, role: 'PIVOTAL' });
+    expect(r.roles[0].provenance.extractedBy).toBe('rule');
+    expect(r.roles[0].provenance.verified).toBe(false);
   });
 
   it('classifies a review-cited phase 1 trial as pharmacokinetic', () => {
-    expect(classifyRole(trial({ protocolNumber: 'M13-838', phase: 'PHASE1' }), ctx).role).toBe('PK');
+    const r = classifyTrialRoles(trial({ protocolNumber: 'M13-838', phase: 'PHASE1' }), ctx);
+    expect(r.roles[0]?.role).toBe('PK');
   });
 
   it('classifies a review-cited phase 2 trial as dose-finding', () => {
-    expect(classifyRole(trial({ protocolNumber: 'M13-537', phase: 'PHASE2' }), ctx).role).toBe(
-      'DOSE_FINDING'
-    );
+    const r = classifyTrialRoles(trial({ protocolNumber: 'M13-537', phase: 'PHASE2' }), ctx);
+    expect(r.roles[0]?.role).toBe('DOSE_FINDING');
   });
 
-  it('marks a trial absent from the approval package as not in the filing', () => {
-    expect(classifyRole(trial({ protocolNumber: 'M99-999' }), ctx).role).toBe('NOT_IN_FILING');
+  it('records no roles for a trial absent from the approval package — the "not in filing" state', () => {
+    const r = classifyTrialRoles(trial({ protocolNumber: 'M99-999' }), ctx);
+    expect(r.roles).toEqual([]);
   });
 
   it('leaves every assignment unverified for a human to confirm', () => {
-    expect(classifyRole(trial({ protocolNumber: 'M13-545' }), ctx).provenance.verified).toBe(false);
+    const r = classifyTrialRoles(trial({ protocolNumber: 'M13-545' }), ctx);
+    expect(r.roles[0].provenance.verified).toBe(false);
+  });
+
+  it('flags a PIVOTAL assignment on a non-Phase-3 trial for human review', () => {
+    const r = classifyTrialRoles(trial({ protocolNumber: 'M13-545', phase: 'PHASE2' }), ctx);
+    expect(r.roles[0]?.role).toBe('PIVOTAL');
+    expect(r.phaseWarnings).toHaveLength(1);
+    expect(r.phaseWarnings[0]).toContain('PHASE2');
+  });
+
+  it('does not warn when a PIVOTAL trial is Phase 2/3, the other accepted confirmatory design', () => {
+    const r = classifyTrialRoles(trial({ protocolNumber: 'M13-545', phase: 'PHASE2_3' }), ctx);
+    expect(r.roles[0]?.role).toBe('PIVOTAL');
+    expect(r.phaseWarnings).toEqual([]);
   });
 });
 
@@ -187,7 +350,7 @@ describe('classifyRole', () => {
  * observational studies, or run by an academic sponsor rather than the
  * applicant. Both signals are already on the registry record.
  */
-describe('classifyRole — sponsor and study-type guard', () => {
+describe('classifyTrialRoles — sponsor and study-type guard', () => {
   // A span that names a real trial (with a citation) and also happens to
   // mention two others with no citation at all — an academic one and an
   // industry one — reproducing exactly how the four false positives arrived:
@@ -196,7 +359,7 @@ describe('classifyRole — sponsor and study-type guard', () => {
     'Trial M13-545 (SELECT-COMPARE, NCT02629159) established efficacy. ' +
     'Postmarketing commitments include an observational study (NCT05327920) ' +
     'and an academic investigator-initiated study (NCT07258771).';
-  const ctx = { labelSection14: span, reviewText: '', sponsorName: 'AbbVie Inc.' };
+  const ctx = ctxFor(span, { sponsorName: 'AbbVie Inc.' });
 
   it('rejects an academic (non-applicant) sponsor with no document citation', () => {
     const t = trial({
@@ -204,7 +367,7 @@ describe('classifyRole — sponsor and study-type guard', () => {
       sponsor: 'Berinstein, Jeffrey',
       studyType: 'INTERVENTIONAL',
     });
-    expect(classifyRole(t, ctx).role).not.toBe('PIVOTAL');
+    expect(pivotalFor(t, ctx)).toBe(false);
   });
 
   it('rejects an observational study even when the sponsor name matches', () => {
@@ -213,7 +376,7 @@ describe('classifyRole — sponsor and study-type guard', () => {
       sponsor: 'AbbVie',
       studyType: 'OBSERVATIONAL',
     });
-    expect(classifyRole(t, ctx).role).not.toBe('PIVOTAL');
+    expect(pivotalFor(t, ctx)).toBe(false);
   });
 
   it('accepts a sponsor-run interventional trial even without a document citation', () => {
@@ -222,20 +385,18 @@ describe('classifyRole — sponsor and study-type guard', () => {
       sponsor: 'AbbVie',
       studyType: 'INTERVENTIONAL',
     });
-    const withMention = {
-      labelSection14: 'Also see the AbbVie study (NCT09999999) for supporting data.',
-      reviewText: '',
+    const withMention = ctxFor('Also see the AbbVie study (NCT09999999) for supporting data.', {
       sponsorName: 'AbbVie Inc.',
-    };
-    expect(classifyRole(t, withMention).role).toBe('PIVOTAL');
+    });
+    expect(pivotalFor(t, withMention)).toBe(true);
   });
 
   it('does not let a document citation bypass the sponsor/study-type guard', () => {
     // citedIn is populated by a document-wide identifier scan, not one scoped
-    // to section 14 — the same identifier can genuinely appear in the PDF
-    // corpus (say, in a postmarketing-commitments paragraph) without that
-    // occurrence being pivotal evidence. A citation existing must not excuse
-    // a trial that otherwise fails the sponsor/study-type check.
+    // to an indication's span — the same identifier can genuinely appear in
+    // the PDF corpus (say, in a postmarketing-commitments paragraph) without
+    // that occurrence being pivotal evidence. A citation existing must not
+    // excuse a trial that otherwise fails the sponsor/study-type check.
     const t = trial({
       nctId: 'NCT07258771',
       sponsor: 'Berinstein, Jeffrey',
@@ -244,7 +405,7 @@ describe('classifyRole — sponsor and study-type guard', () => {
         citedIn: { extractedBy: 'regex', verified: false, page: 12, quote: 'the ACUTE study...' },
       },
     });
-    expect(classifyRole(t, ctx).role).not.toBe('PIVOTAL');
+    expect(pivotalFor(t, ctx)).toBe(false);
   });
 
   it('does not block on a matching sponsor whose corporate suffix differs', () => {
@@ -252,27 +413,22 @@ describe('classifyRole — sponsor and study-type guard', () => {
     // the same company despite the suffix — this is the common case, not an
     // edge case, since CT.gov rarely repeats the legal suffix.
     const t = trial({ nctId: 'NCT09999999', sponsor: 'AbbVie', studyType: 'INTERVENTIONAL' });
-    const withMention = {
-      labelSection14: 'See NCT09999999 for supporting data.',
-      reviewText: '',
+    const withMention = ctxFor('See NCT09999999 for supporting data.', {
       sponsorName: 'AbbVie Inc.',
-    };
-    expect(classifyRole(t, withMention).role).toBe('PIVOTAL');
+    });
+    expect(pivotalFor(t, withMention)).toBe(true);
   });
 
   it('treats a missing sponsor name on either side as inconclusive, not disqualifying', () => {
     const t = trial({ nctId: 'NCT09999999', studyType: 'INTERVENTIONAL' });
-    const withMention = {
-      labelSection14: 'See NCT09999999 for supporting data.',
-      reviewText: '',
-      // sponsorName intentionally omitted
-    };
-    expect(classifyRole(t, withMention).role).toBe('PIVOTAL');
+    // sponsorName intentionally omitted
+    const withMention = ctxFor('See NCT09999999 for supporting data.');
+    expect(pivotalFor(t, withMention)).toBe(true);
   });
 
-  it('falls through to NOT_IN_FILING rather than a false pivotal, for a rejected trial', () => {
+  it('falls through to no roles at all — not a false pivotal — for a rejected trial', () => {
     const t = trial({ nctId: 'NCT07258771', sponsor: 'Berinstein, Jeffrey' });
-    expect(classifyRole(t, ctx).role).toBe('NOT_IN_FILING');
+    expect(classifyTrialRoles(t, ctx).roles).toEqual([]);
   });
 });
 
@@ -336,7 +492,7 @@ describe('extractTrialAliases', () => {
   });
 });
 
-describe('classifyRole — generic label naming, resolved via alias', () => {
+describe('classifyTrialRoles — generic label naming, resolved via alias', () => {
   it('marks pivotal a trial the label names only by its generic alias', () => {
     // The label's own section 14 never repeats the NCT number, protocol
     // number, or acronym — only the generic name the review already paired
@@ -354,14 +510,13 @@ describe('classifyRole — generic label naming, resolved via alias', () => {
       sponsor: 'AbbVie',
     });
 
-    const ctx = {
-      labelSection14,
+    const ctx = ctxFor(labelSection14, {
       reviewText,
       sponsorName: 'AbbVie Inc.',
       trialAliases: extractTrialAliases(reviewText),
-    };
+    });
 
-    expect(classifyRole(t, ctx).role).toBe('PIVOTAL');
+    expect(pivotalFor(t, ctx)).toBe(true);
   });
 
   it('does not mark pivotal without the alias map, proving the fix is load-bearing', () => {
@@ -369,8 +524,8 @@ describe('classifyRole — generic label naming, resolved via alias', () => {
       'In Trial RA-I, subjects receiving upadacitinib 15 mg achieved significantly ' +
       'higher ACR20 response rates than those receiving methotrexate alone at Week 24.';
     const t = trial({ nctId: 'NCT02706873', protocolNumber: 'M13-545', sponsor: 'AbbVie' });
-    const ctxWithoutAliases = { labelSection14, reviewText: '', sponsorName: 'AbbVie Inc.' };
-    expect(classifyRole(t, ctxWithoutAliases).role).not.toBe('PIVOTAL');
+    const ctxWithoutAliases = ctxFor(labelSection14, { sponsorName: 'AbbVie Inc.' });
+    expect(pivotalFor(t, ctxWithoutAliases)).toBe(false);
   });
 
   it('still applies the sponsor/study-type guard to an alias-resolved match', () => {
@@ -380,12 +535,11 @@ describe('classifyRole — generic label naming, resolved via alias', () => {
     const reviewText = 'Trial X-9 (NCT07258771) was an investigator-initiated study.';
     const labelSection14 = 'Trial X-9 examined outcomes in hospitalised patients.';
     const t = trial({ nctId: 'NCT07258771', sponsor: 'Berinstein, Jeffrey' });
-    const ctx = {
-      labelSection14,
+    const ctx = ctxFor(labelSection14, {
       reviewText,
       sponsorName: 'AbbVie Inc.',
       trialAliases: extractTrialAliases(reviewText),
-    };
-    expect(classifyRole(t, ctx).role).not.toBe('PIVOTAL');
+    });
+    expect(pivotalFor(t, ctx)).toBe(false);
   });
 });

@@ -9,7 +9,7 @@ function trial(overrides: Partial<Trial> = {}): Trial {
     protocolNumber: 'M13-545',
     title: 'A study',
     phase: 'PHASE3',
-    role: 'UNKNOWN',
+    roles: [],
     arms: [],
     primaryEndpoints: [],
     secondaryEndpoints: [],

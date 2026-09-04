@@ -112,30 +112,34 @@ describe('full ingestion pipeline, offline', () => {
 
   // --- roles ---------------------------------------------------------------
 
-  it('marks trials named in label section 14 as pivotal', () => {
+  it('marks trials named in label section 14 as pivotal, for Rheumatoid Arthritis', () => {
     expect(result.foundLabelSection14).toBe(true);
-    const pivotal = drug.trials.filter((t) => t.role === 'PIVOTAL').map((t) => t.protocolNumber);
+    const pivotal = drug.trials
+      .filter((t) => t.roles.some((r) => r.role === 'PIVOTAL'))
+      .map((t) => t.protocolNumber);
     expect(pivotal.sort()).toEqual(['M13-542', 'M13-545', 'M13-549', 'M14-465', 'M14-653']);
   });
 
   it('does not mark a review-only trial as pivotal', () => {
     const balance = drug.trials.find((t) => t.protocolNumber === 'M13-537')!;
-    expect(balance.role).toBe('DOSE_FINDING');
+    expect(balance.roles[0]?.role).toBe('DOSE_FINDING');
   });
 
   it('classifies a review-cited phase 1 trial as pharmacokinetic', () => {
-    expect(drug.trials.find((t) => t.protocolNumber === 'M13-838')!.role).toBe('PK');
+    expect(drug.trials.find((t) => t.protocolNumber === 'M13-838')!.roles[0]?.role).toBe('PK');
   });
 
   it('marks a registered trial that the approval package never cites', () => {
     const measureUp = drug.trials.find((t) => t.protocolNumber === 'M16-045');
     expect(measureUp).toBeDefined();
-    expect(measureUp!.role).toBe('NOT_IN_FILING');
+    expect(measureUp!.roles).toEqual([]);
   });
 
-  it('leaves every role unverified for a person to confirm', () => {
+  it('leaves every role assignment unverified for a person to confirm', () => {
     for (const t of drug.trials) {
-      expect(t.provenance.role?.verified).toBe(false);
+      for (const r of t.roles) {
+        expect(r.provenance.verified).toBe(false);
+      }
     }
   });
 
@@ -291,7 +295,9 @@ describe('label selection when the newest label fails to parse', () => {
     // Despite the most recent label failing, pivotal status still comes through
     // via the older one that actually has a locatable section 14.
     expect(result.foundLabelSection14).toBe(true);
-    const pivotal = result.drug.trials.filter((t) => t.role === 'PIVOTAL').map((t) => t.protocolNumber);
+    const pivotal = result.drug.trials
+      .filter((t) => t.roles.some((r) => r.role === 'PIVOTAL'))
+      .map((t) => t.protocolNumber);
     expect(pivotal).toContain('M13-545');
     expect(result.warnings.some((w) => w.includes('could not locate section 14 in any of'))).toBe(
       false
@@ -362,15 +368,15 @@ describe('sponsor and study-type guard, full pipeline', () => {
 
     const academic = byNct(academicStudy.protocolSection!.identificationModule!.nctId!);
     expect(academic).toBeDefined();
-    expect(academic!.role).not.toBe('PIVOTAL');
+    expect(academic!.roles.some((r) => r.role === 'PIVOTAL')).toBe(false);
 
     const observational = byNct(observationalStudy.protocolSection!.identificationModule!.nctId!);
     expect(observational).toBeDefined();
-    expect(observational!.role).not.toBe('PIVOTAL');
+    expect(observational!.roles.some((r) => r.role === 'PIVOTAL')).toBe(false);
 
     // The real pivotal trials in the same span are unaffected by the guard.
     const compare = result.drug.trials.find((t) => t.protocolNumber === 'M13-545');
-    expect(compare!.role).toBe('PIVOTAL');
+    expect(compare!.roles.some((r) => r.role === 'PIVOTAL')).toBe(true);
   });
 });
 
@@ -413,6 +419,8 @@ describe('generic label naming, full pipeline', () => {
           // NCT ID, protocol number, or acronym.
           url: LABEL_URL,
           text:
+            '1 INDICATIONS AND USAGE 1.1 Rheumatoid Arthritis 2 DOSAGE AND ADMINISTRATION ' +
+            '2.1 Recommended Dosage in Rheumatoid Arthritis 3 DOSAGE FORMS AND STRENGTHS ' +
             '14 CLINICAL STUDIES 14.1 Rheumatoid Arthritis Study M13-545 (SELECT-COMPARE) ' +
             'compared upadacitinib to placebo and to adalimumab in 1629 subjects on a stable ' +
             'background of methotrexate. In Trial RA-I, subjects receiving upadacitinib 15 mg ' +
@@ -430,10 +438,10 @@ describe('generic label naming, full pipeline', () => {
     const selectEarly = result.drug.trials.find((t) => t.nctId === 'NCT02706873');
 
     expect(selectEarly).toBeDefined();
-    expect(selectEarly!.role).toBe('PIVOTAL');
+    expect(selectEarly!.roles.some((r) => r.role === 'PIVOTAL')).toBe(true);
     // The other trials in the fixture, matched the ordinary way, still work —
     // the alias path is additive, not a replacement.
     const compare = result.drug.trials.find((t) => t.protocolNumber === 'M13-545');
-    expect(compare!.role).toBe('PIVOTAL');
+    expect(compare!.roles.some((r) => r.role === 'PIVOTAL')).toBe(true);
   });
 });
