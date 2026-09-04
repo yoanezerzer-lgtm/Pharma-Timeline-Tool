@@ -92,7 +92,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
 
   // --- fda -----------------------------------------------------------------
   log('[fda]   openFDA Drugs@FDA');
-  const fda = await runFdaStage(ctx, spec.applicationNumber, spec.applicationType);
+  const fda = await runFdaStage(ctx, spec.applicationNumber, spec.applicationType, spec.brandName);
   log(
     `        ${fda.milestones.length} approved submissions, ${fda.documentUrls.length} documents linked`
   );
@@ -414,8 +414,8 @@ function buildDrugRecord(
     indications,
     regulatory: {
       us: {
-        applicationNumber: spec.applicationNumber,
-        applicationType: spec.applicationType,
+        applicationNumber: fda.applicationNumber,
+        applicationType: fda.applicationType,
         sponsor: fda.application.sponsor_name ?? spec.sponsor,
         originalApprovalDate: original?.date,
       },

@@ -82,6 +82,16 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
           <p className="drug__mechanism">
             {indication.name} — {drug.mechanism ?? drug.modality}
           </p>
+          {indication.pressReleaseUrl && (
+            <a
+              className="drug__press-release"
+              href={indication.pressReleaseUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sponsor's announcement of this approval ↗
+            </a>
+          )}
         </div>
         <dl className="drug__facts">
           <div>

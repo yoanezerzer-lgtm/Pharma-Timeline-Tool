@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { mergeDrug } from '../scripts/ingest/merge.js';
-import type { Drug, Trial } from '../src/schema/index.js';
+import type { Drug, Trial, Indication } from '../src/schema/index.js';
 
 function trial(overrides: Partial<Trial> = {}): Trial {
   return {
@@ -22,7 +22,7 @@ function trial(overrides: Partial<Trial> = {}): Trial {
   };
 }
 
-function drug(trials: Trial[], summary = ''): Drug {
+function drug(trials: Trial[], summary = '', indications: Indication[] = []): Drug {
   return {
     slug: 'upadacitinib',
     brandName: 'Rinvoq',
@@ -30,7 +30,7 @@ function drug(trials: Trial[], summary = ''): Drug {
     modality: 'Small molecule',
     sponsor: 'AbbVie Inc.',
     summary,
-    indications: [],
+    indications,
     regulatory: { us: { applicationNumber: '211675', applicationType: 'NDA' } },
     trials,
     milestones: [],
@@ -110,5 +110,19 @@ describe('mergeDrug', () => {
     const result = mergeDrug(existing, drug([trial({ id: 'new-slug', phase: 'PHASE3' })]));
     expect(result.drug.trials).toHaveLength(1);
     expect(result.drug.trials[0].phase).toBe('PHASE2');
+  });
+
+  it('preserves a hand-added press release URL across a re-run', () => {
+    // The pipeline itself never produces this field — there's no public
+    // registry of sponsor press releases — so a re-run must not silently
+    // wipe out one a person found and added.
+    const ra: Indication = { name: 'Rheumatoid Arthritis', slug: 'rheumatoid-arthritis' };
+    const existing = drug([trial()], '', [
+      { ...ra, pressReleaseUrl: 'https://www.abbvie.com/press/rinvoq-ra-approval' },
+    ]);
+    const result = mergeDrug(existing, drug([trial()], '', [ra]));
+    expect(result.drug.indications[0].pressReleaseUrl).toBe(
+      'https://www.abbvie.com/press/rinvoq-ra-approval'
+    );
   });
 });
