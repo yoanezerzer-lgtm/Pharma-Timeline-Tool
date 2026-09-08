@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { dedupeTrialIds } from '../scripts/ingest/run.js';
+import { dedupeTrialIds, slugifyIndication } from '../scripts/ingest/run.js';
 import type { Trial } from '../src/schema/index.js';
 
 function trial(o: Partial<Trial>): Trial {
@@ -54,3 +54,39 @@ describe('dedupeTrialIds', () => {
     expect(second).toEqual(first);
   });
 });
+
+describe('slugifyIndication', () => {
+  it('leaves a short, numbered-style indication name untouched', () => {
+    expect(slugifyIndication('Non-radiographic Axial Spondyloarthritis')).toBe(
+      'non-radiographic-axial-spondyloarthritis'
+    );
+  });
+
+  it('caps a long verbatim indication sentence at 60 characters', () => {
+    // Real Foundayo (orforglipron) indication text — slugified in full this
+    // ran to 260 characters, unusable as a URL segment.
+    const name =
+      'In combination with a reduced-calorie diet and increased physical ' +
+      'activity to reduce excess body weight and maintain weight reduction ' +
+      'long term in adults with obesity or adults with overweight in the ' +
+      'presence of at least one weight-related comorbid condition';
+    const slug = slugifyIndication(name);
+    expect(slug.length).toBeLessThanOrEqual(60);
+    expect(slug).toBe('in-combination-with-a-reduced-calorie-diet-and-increased');
+  });
+
+  it('cuts at a word boundary, never mid-word', () => {
+    const slug = slugifyIndication(name60Plus());
+    expect(slug.endsWith('-')).toBe(false);
+    expect(name60Plus().toLowerCase().replace(/[^a-z0-9]+/g, '-')).toContain(slug);
+  });
+
+  it('is deterministic given the same input, preserving idempotent re-runs', () => {
+    const name = 'Erythrocytosis in adults with polycythemia vera (PV)';
+    expect(slugifyIndication(name)).toBe(slugifyIndication(name));
+  });
+});
+
+function name60Plus(): string {
+  return 'Treatment of a moderately long hypothetical indication name used only to test truncation';
+}

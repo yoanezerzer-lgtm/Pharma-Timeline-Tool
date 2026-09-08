@@ -373,13 +373,28 @@ function stableJson(value: unknown): string {
   return JSON.stringify(value);
 }
 
+/**
+ * Numbered indications ("1.1 Rheumatoid Arthritis") are already short — this
+ * cap only bites on the unnumbered-indication fallback (extractIndicationList
+ * in roles.ts), which reuses a label's full indication sentence verbatim.
+ * Confirmed necessary against Foundayo's real label: its indication sentence
+ * slugified to 260 characters. The display name stays the full sentence —
+ * only the URL needs to be short.
+ */
+const MAX_INDICATION_SLUG_LENGTH = 60;
+
 /** URL-safe id for routing, e.g. "Non-radiographic Axial Spondyloarthritis" -> "non-radiographic-axial-spondyloarthritis". */
 export function slugifyIndication(name: string): string {
-  return name
+  const full = name
     .toLowerCase()
     .replace(/'/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
+  if (full.length <= MAX_INDICATION_SLUG_LENGTH) return full;
+  // Cut at the last word boundary within the limit, not mid-word.
+  const truncated = full.slice(0, MAX_INDICATION_SLUG_LENGTH);
+  const lastHyphen = truncated.lastIndexOf('-');
+  return lastHyphen > 0 ? truncated.slice(0, lastHyphen) : truncated;
 }
 
 function buildDrugRecord(
