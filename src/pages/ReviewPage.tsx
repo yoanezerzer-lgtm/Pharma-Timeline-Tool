@@ -125,6 +125,7 @@ function DrugReview({ slug }: { slug: string }) {
   );
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [exportError, setExportError] = useState<string | null>(null);
+  const [showNotCited, setShowNotCited] = useState(false);
 
   useEffect(() => {
     if (drug) saveDraft(slug, drug);
@@ -144,6 +145,8 @@ function DrugReview({ slug }: { slug: string }) {
 
   const stats = drugStats(drug);
   const hasDraft = serializeDrug(drug) !== serializeDrug(committed);
+  const citedTrials = drug.trials.filter((t) => summaryRole(t) !== 'NOT_IN_FILING');
+  const notCitedTrials = drug.trials.filter((t) => summaryRole(t) === 'NOT_IN_FILING');
 
   function updateTrial(updated: Trial) {
     setDrug((d) => (d ? replaceTrial(d, updated.id, updated) : d));
@@ -243,48 +246,97 @@ function DrugReview({ slug }: { slug: string }) {
       </p>
 
       <ul className="review__trials">
-        {drug.trials.map((t) => {
-          const tStats = trialStats(t);
-          const isOpen = expandedId === t.id;
-          const complete = tStats.total > 0 && tStats.verified === tStats.total;
-          const role = summaryRole(t);
-          return (
-            <li key={t.id} className="review__trial">
-              <div className="review__trial-head">
-                <button
-                  type="button"
-                  className="review__trial-toggle"
-                  onClick={() => setExpandedId(isOpen ? null : t.id)}
-                  aria-expanded={isOpen}
-                >
-                  <span className="review__trial-name">
-                    {t.acronym ?? t.protocolNumber ?? t.id}
-                  </span>
-                  <span className="review__trial-title">{t.briefTitle ?? t.title}</span>
-                </button>
-                {t.nctId && (
-                  <a
-                    className="review__trial-nct"
-                    href={`https://clinicaltrials.gov/study/${t.nctId}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    ({t.nctId})
-                  </a>
-                )}
-                <span className={`review__role-badge role-${role.toLowerCase()}`}>
-                  {ROLE_LABEL[role]}
-                </span>
-                <span className={`review__trial-stat ${complete ? 'is-complete' : ''}`}>
-                  {tStats.total === 0 ? 'nothing tracked' : `${tStats.verified}/${tStats.total}`}
-                </span>
-              </div>
-              {isOpen && <TrialReview trial={t} onChange={updateTrial} />}
-            </li>
-          );
-        })}
+        {citedTrials.map((t) => (
+          <TrialRow
+            key={t.id}
+            trial={t}
+            isOpen={expandedId === t.id}
+            onToggle={() => setExpandedId(expandedId === t.id ? null : t.id)}
+            onChange={updateTrial}
+          />
+        ))}
       </ul>
+
+      {notCitedTrials.length > 0 && (
+        <div className="review__not-cited">
+          <button
+            type="button"
+            className="review__btn-ghost review__not-cited-toggle"
+            onClick={() => setShowNotCited((v) => !v)}
+          >
+            {showNotCited ? 'Hide' : 'Show'} {notCitedTrials.length} trial
+            {notCitedTrials.length === 1 ? '' : 's'} not cited in the filing
+          </button>
+          <p className="review__not-cited-note">
+            Registered against this drug but not named in the approval package — later
+            indications, other regions, or post-marketing work. Nothing to verify against
+            this approval, but kept here (not deleted) in case a future indication or
+            region cites one of them.
+          </p>
+          {showNotCited && (
+            <ul className="review__trials">
+              {notCitedTrials.map((t) => (
+                <TrialRow
+                  key={t.id}
+                  trial={t}
+                  isOpen={expandedId === t.id}
+                  onToggle={() => setExpandedId(expandedId === t.id ? null : t.id)}
+                  onChange={updateTrial}
+                />
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
     </main>
+  );
+}
+
+function TrialRow({
+  trial: t,
+  isOpen,
+  onToggle,
+  onChange,
+}: {
+  trial: Trial;
+  isOpen: boolean;
+  onToggle: () => void;
+  onChange: (t: Trial) => void;
+}) {
+  const tStats = trialStats(t);
+  const complete = tStats.total > 0 && tStats.verified === tStats.total;
+  const role = summaryRole(t);
+  return (
+    <li className="review__trial">
+      <div className="review__trial-head">
+        <button
+          type="button"
+          className="review__trial-toggle"
+          onClick={onToggle}
+          aria-expanded={isOpen}
+        >
+          <span className="review__trial-name">{t.acronym ?? t.protocolNumber ?? t.id}</span>
+          <span className="review__trial-title">{t.briefTitle ?? t.title}</span>
+        </button>
+        {t.nctId && (
+          <a
+            className="review__trial-nct"
+            href={`https://clinicaltrials.gov/study/${t.nctId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ({t.nctId})
+          </a>
+        )}
+        <span className={`review__role-badge role-${role.toLowerCase()}`}>
+          {ROLE_LABEL[role]}
+        </span>
+        <span className={`review__trial-stat ${complete ? 'is-complete' : ''}`}>
+          {tStats.total === 0 ? 'nothing tracked' : `${tStats.verified}/${tStats.total}`}
+        </span>
+      </div>
+      {isOpen && <TrialReview trial={t} onChange={onChange} />}
+    </li>
   );
 }
 
