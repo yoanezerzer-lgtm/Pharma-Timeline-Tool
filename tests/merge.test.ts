@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { mergeDrug } from '../scripts/ingest/merge.js';
+import { mergeDrug, canonicalJson } from '../scripts/ingest/merge.js';
 import type { Drug, Trial, Indication } from '../src/schema/index.js';
 
 function trial(overrides: Partial<Trial> = {}): Trial {
@@ -18,6 +18,7 @@ function trial(overrides: Partial<Trial> = {}): Trial {
     limitations: [],
     publications: [],
     provenance: {},
+    changeLog: [],
     ...overrides,
   };
 }
@@ -123,6 +124,104 @@ describe('mergeDrug', () => {
     const result = mergeDrug(existing, drug([trial()], '', [ra]));
     expect(result.drug.indications[0].pressReleaseUrl).toBe(
       'https://www.abbvie.com/press/rinvoq-ra-approval'
+    );
+  });
+
+  describe('changeLog', () => {
+    it('records an entry when an unverified field actually changes', () => {
+      const existing = drug([trial({ phase: 'PHASE2' })]);
+      const now = new Date('2026-01-01T00:00:00.000Z');
+      const result = mergeDrug(existing, drug([trial({ phase: 'PHASE3' })]), now);
+      expect(result.drug.trials[0].changeLog).toEqual([
+        { field: 'phase', previousValue: 'PHASE2', newValue: 'PHASE3', detectedAt: now.toISOString() },
+      ]);
+    });
+
+    it('never records an entry purely from object key reordering', () => {
+      // Regression: plain JSON.stringify is key-order-sensitive, so a
+      // semantically identical `roles` provenance object built with its keys
+      // in a different order than before used to register as "changed",
+      // polluting the review queue with noise. Confirmed as a real bug via
+      // the offline end-to-end idempotency test.
+      const role = (keysReversed: boolean) => [
+        {
+          role: 'PIVOTAL' as const,
+          indication: 'Rheumatoid Arthritis',
+          provenance: keysReversed
+            ? { verified: false, extractedBy: 'rule' as const, sourceUrl: 'https://x', quote: 'q' }
+            : { sourceUrl: 'https://x', quote: 'q', extractedBy: 'rule' as const, verified: false },
+        },
+      ];
+      const existing = drug([trial({ roles: role(false) })]);
+      const result = mergeDrug(existing, drug([trial({ roles: role(true) })]));
+      expect(result.drug.trials[0].changeLog).toEqual([]);
+      expect(result.updatedTrials).toEqual([]);
+    });
+
+    it('does not record a changeLog entry for a verified field — that is a Conflict instead', () => {
+      const existing = drug([
+        trial({
+          enrollment: { count: 1629, type: 'ACTUAL' },
+          provenance: { enrollment: { extractedBy: 'human', verified: true } },
+        }),
+      ]);
+      const result = mergeDrug(existing, drug([trial({ enrollment: { count: 9999, type: 'ACTUAL' } })]));
+      expect(result.drug.trials[0].changeLog).toEqual([]);
+    });
+
+    it('replaces a prior unacknowledged entry for the same field rather than stacking it', () => {
+      const withPendingChange = trial({
+        phase: 'PHASE3',
+        changeLog: [
+          { field: 'phase', previousValue: 'PHASE1', newValue: 'PHASE2', detectedAt: '2025-01-01T00:00:00.000Z' },
+        ],
+      });
+      const existing = drug([withPendingChange]);
+      const now = new Date('2026-01-01T00:00:00.000Z');
+      const result = mergeDrug(existing, drug([trial({ phase: 'PHASE4' })]), now);
+      expect(result.drug.trials[0].changeLog).toEqual([
+        { field: 'phase', previousValue: 'PHASE3', newValue: 'PHASE4', detectedAt: now.toISOString() },
+      ]);
+    });
+
+    it('carries forward a pending entry for a field that did not change this run', () => {
+      const existing = drug([
+        trial({
+          phase: 'PHASE3',
+          changeLog: [
+            { field: 'status', previousValue: 'RECRUITING', newValue: 'COMPLETED', detectedAt: '2025-01-01T00:00:00.000Z' },
+          ],
+        }),
+      ]);
+      const result = mergeDrug(existing, drug([trial({ phase: 'PHASE3' })]));
+      expect(result.drug.trials[0].changeLog).toHaveLength(1);
+      expect(result.drug.trials[0].changeLog[0].field).toBe('status');
+    });
+
+    it('gives a brand-new trial no changeLog — there is nothing to diff against', () => {
+      const existing = drug([]);
+      const result = mergeDrug(existing, drug([trial()]));
+      expect(result.drug.trials[0].changeLog).toEqual([]);
+    });
+  });
+});
+
+describe('canonicalJson', () => {
+  it('treats differently-ordered keys as equal', () => {
+    expect(canonicalJson({ a: 1, b: 2 })).toBe(canonicalJson({ b: 2, a: 1 }));
+  });
+
+  it('still distinguishes genuinely different values', () => {
+    expect(canonicalJson({ a: 1 })).not.toBe(canonicalJson({ a: 2 }));
+  });
+
+  it('preserves array order, which is meaningful', () => {
+    expect(canonicalJson([1, 2])).not.toBe(canonicalJson([2, 1]));
+  });
+
+  it('sorts keys at every nesting level', () => {
+    expect(canonicalJson({ z: { b: 1, a: 2 }, a: 1 })).toBe(
+      canonicalJson({ a: 1, z: { a: 2, b: 1 } })
     );
   });
 });

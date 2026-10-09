@@ -1,4 +1,4 @@
-import type { Drug, Trial, Provenance } from '../schema/index.js';
+import type { Drug, Trial, Provenance, FieldChange } from '../schema/index.js';
 
 /**
  * The review workflow's one job: let a person turn `verified: false` into
@@ -31,6 +31,16 @@ export function drugStats(drug: Drug): VerificationStats {
   return drug.trials.map(trialStats).reduce(addStats, { verified: 0, total: 0 });
 }
 
+/** A field's pending change, if the last ingest run moved it before anyone looked. */
+export function pendingChange(trial: Trial, field: string): FieldChange | undefined {
+  return trial.changeLog.find((c) => c.field === field);
+}
+
+/** How many fields across the whole drug changed since they were last looked at. */
+export function drugPendingChangeCount(drug: Drug): number {
+  return drug.trials.reduce((n, t) => n + t.changeLog.length, 0);
+}
+
 /** The reviewable fields on a trial: whichever ones the pipeline actually tracked. */
 export function reviewableFields(trial: Trial): string[] {
   return Object.keys(trial.provenance);
@@ -41,20 +51,28 @@ export function fieldValue(trial: Trial, field: string): unknown {
   return (trial as unknown as Record<string, unknown>)[field];
 }
 
-/** Flips a tracked field's verified flag without touching its value. */
+/**
+ * Flips a tracked field's verified flag without touching its value.
+ *
+ * Confirming a field this way addresses any pending change notice on it the
+ * same way editing it does — a person has now looked at the current value,
+ * whether or not they changed it.
+ */
 export function setFieldVerified(trial: Trial, field: string, verified: boolean): Trial {
   const existing = trial.provenance[field];
   if (!existing) return trial;
   return {
     ...trial,
     provenance: { ...trial.provenance, [field]: { ...existing, verified } },
+    changeLog: verified ? trial.changeLog.filter((c) => c.field !== field) : trial.changeLog,
   };
 }
 
 /**
  * Records a human correction to a field's value. Correcting a value is
  * itself a form of verification — there is no "edited but still unverified"
- * state — so this always sets `extractedBy: 'human'` and `verified: true`.
+ * state — so this always sets `extractedBy: 'human'` and `verified: true`,
+ * and clears any pending change notice on the field.
  */
 export function correctField(trial: Trial, field: string, value: unknown): Trial {
   const prior = trial.provenance[field];
@@ -65,7 +83,13 @@ export function correctField(trial: Trial, field: string, value: unknown): Trial
       ...trial.provenance,
       [field]: { ...prior, extractedBy: 'human', verified: true },
     },
+    changeLog: trial.changeLog.filter((c) => c.field !== field),
   };
+}
+
+/** Dismisses a pending change notice without editing or verifying the field. */
+export function acknowledgeChange(trial: Trial, field: string): Trial {
+  return { ...trial, changeLog: trial.changeLog.filter((c) => c.field !== field) };
 }
 
 /** Flips one role's verified flag without touching the role or indication it names. */

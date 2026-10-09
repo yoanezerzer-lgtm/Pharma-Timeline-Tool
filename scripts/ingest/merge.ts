@@ -1,4 +1,4 @@
-import type { Drug, Trial, Indication, Provenance } from '../../src/schema/index.js';
+import type { Drug, Trial, Indication, Provenance, FieldChange } from '../../src/schema/index.js';
 
 /**
  * Merges a freshly ingested record onto whatever is already committed.
@@ -10,6 +10,33 @@ import type { Drug, Trial, Indication, Provenance } from '../../src/schema/index
  *
  * Conflicts against verified values are reported, not applied.
  */
+
+/**
+ * JSON.stringify with object keys sorted at every level, so two values that
+ * are semantically identical compare equal regardless of the order their
+ * properties happened to be constructed in. Plain JSON.stringify is
+ * order-sensitive — confirmed as a real bug via the offline end-to-end test:
+ * re-running ingestion with no actual source change still reported a
+ * `roles[].provenance` field as "changed", purely because one code path
+ * built that object's keys in a different order than another. Array order
+ * is left alone — that one is meaningful.
+ */
+export function canonicalJson(value: unknown): string {
+  return JSON.stringify(sortKeysDeep(value));
+}
+
+function sortKeysDeep(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(sortKeysDeep);
+  if (value !== null && typeof value === 'object') {
+    return Object.keys(value as Record<string, unknown>)
+      .sort()
+      .reduce<Record<string, unknown>>((acc, key) => {
+        acc[key] = sortKeysDeep((value as Record<string, unknown>)[key]);
+        return acc;
+      }, {});
+  }
+  return value;
+}
 
 export interface Conflict {
   trialId: string;
@@ -64,18 +91,20 @@ function isVerified(p: Provenance | undefined): boolean {
 
 function mergeTrial(
   existing: Trial,
-  incoming: Trial
+  incoming: Trial,
+  now: Date
 ): { trial: Trial; conflicts: Conflict[]; changed: boolean } {
   const merged: Trial = { ...existing };
   const conflicts: Conflict[] = [];
   let changed = false;
+  const changedFields = new Set<string>();
 
   for (const field of MERGEABLE_FIELDS) {
     const incomingValue = incoming[field];
     if (incomingValue === undefined) continue;
 
     const existingValue = existing[field];
-    const same = JSON.stringify(existingValue) === JSON.stringify(incomingValue);
+    const same = canonicalJson(existingValue) === canonicalJson(incomingValue);
 
     if (isVerified(existing.provenance[field])) {
       // A person has signed off on this value. Keep it, and surface the
@@ -94,6 +123,7 @@ function mergeTrial(
     if (!same) {
       (merged as Record<string, unknown>)[field] = incomingValue;
       changed = true;
+      changedFields.add(field);
     }
   }
 
@@ -108,6 +138,18 @@ function mergeTrial(
     if (isVerified(prov)) provenance[field] = prov;
   }
   merged.provenance = provenance;
+
+  // A field that moved again before its last change was looked at gets its
+  // entry replaced, not stacked — the reviewer only ever needs to see where
+  // the committed value actually is right now versus what it used to be.
+  const carried = existing.changeLog.filter((c) => !changedFields.has(c.field));
+  const fresh: FieldChange[] = [...changedFields].map((field) => ({
+    field,
+    previousValue: existing[field as keyof Trial],
+    newValue: incoming[field as keyof Trial],
+    detectedAt: now.toISOString(),
+  }));
+  merged.changeLog = [...carried, ...fresh];
 
   return { trial: merged, conflicts, changed };
 }
@@ -132,7 +174,7 @@ function mergeIndications(existing: Indication[], incoming: Indication[]): Indic
   });
 }
 
-export function mergeDrug(existing: Drug | null, incoming: Drug): MergeResult {
+export function mergeDrug(existing: Drug | null, incoming: Drug, now: Date = new Date()): MergeResult {
   if (!existing) {
     return {
       drug: incoming,
@@ -157,7 +199,7 @@ export function mergeDrug(existing: Drug | null, incoming: Drug): MergeResult {
       return inc;
     }
     matchedKeys.add(key);
-    const { trial, conflicts: c, changed } = mergeTrial(prior, inc);
+    const { trial, conflicts: c, changed } = mergeTrial(prior, inc, now);
     conflicts.push(...c);
     if (changed) updatedTrials.push(trial.id);
     return trial;

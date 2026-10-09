@@ -15,6 +15,9 @@ import {
   correctRole,
   replaceTrial,
   serializeDrug,
+  pendingChange,
+  drugPendingChangeCount,
+  acknowledgeChange,
 } from '../lib/review.js';
 import { reviewHref, reviewDrugHref } from '../lib/router.js';
 import './ReviewPage.css';
@@ -69,6 +72,7 @@ function ReviewIndex() {
         {drugs.map((d) => {
           const stats = drugStats(d);
           const pct = stats.total > 0 ? Math.round((stats.verified / stats.total) * 100) : 0;
+          const pendingChanges = drugPendingChangeCount(d);
           return (
             <li key={d.slug}>
               <a href={reviewDrugHref(d.slug)} className="review__drug-row">
@@ -77,6 +81,11 @@ function ReviewIndex() {
                   <div className="review__drug-inn">{d.inn}</div>
                 </div>
                 <div className="review__drug-progress">
+                  {pendingChanges > 0 && (
+                    <span className="review__changed-badge">
+                      {pendingChanges} changed
+                    </span>
+                  )}
                   <div className="review__bar">
                     <div className="review__bar-fill" style={{ width: `${pct}%` }} />
                   </div>
@@ -145,6 +154,7 @@ function DrugReview({ slug }: { slug: string }) {
 
   const stats = drugStats(drug);
   const hasDraft = serializeDrug(drug) !== serializeDrug(committed);
+  const pendingChanges = drugPendingChangeCount(drug);
   const citedTrials = drug.trials.filter((t) => summaryRole(t) !== 'NOT_IN_FILING');
   const notCitedTrials = drug.trials.filter((t) => summaryRole(t) === 'NOT_IN_FILING');
 
@@ -205,6 +215,11 @@ function DrugReview({ slug }: { slug: string }) {
             {stats.total === 0
               ? 'Nothing from the pipeline is tracked for this drug.'
               : `${stats.verified} of ${stats.total} tracked fields verified`}
+            {pendingChanges > 0 && (
+              <span className="review__changed-badge">
+                {pendingChanges} changed since last review
+              </span>
+            )}
             {hasDraft && <span className="review__draft-flag">unsaved draft</span>}
           </p>
         </div>
@@ -331,6 +346,9 @@ function TrialRow({
         <span className={`review__role-badge role-${role.toLowerCase()}`}>
           {ROLE_LABEL[role]}
         </span>
+        {t.changeLog.length > 0 && (
+          <span className="review__changed-badge">{t.changeLog.length} changed</span>
+        )}
         <span className={`review__trial-stat ${complete ? 'is-complete' : ''}`}>
           {tStats.total === 0 ? 'nothing tracked' : `${tStats.verified}/${tStats.total}`}
         </span>
@@ -356,6 +374,7 @@ function TrialReview({ trial, onChange }: { trial: Trial; onChange: (t: Trial) =
           field={field}
           onVerify={(v) => onChange(setFieldVerified(trial, field, v))}
           onCorrect={(value) => onChange(correctField(trial, field, value))}
+          onAcknowledge={() => onChange(acknowledgeChange(trial, field))}
         />
       ))}
       {trial.roles.map((role, i) => (
@@ -384,11 +403,13 @@ function FieldRow({
   field,
   onVerify,
   onCorrect,
+  onAcknowledge,
 }: {
   trial: Trial;
   field: string;
   onVerify: (v: boolean) => void;
   onCorrect: (value: unknown) => void;
+  onAcknowledge: () => void;
 }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState('');
@@ -396,6 +417,7 @@ function FieldRow({
 
   const prov = trial.provenance[field];
   const value = fieldValue(trial, field);
+  const change = pendingChange(trial, field);
 
   function startEdit() {
     setDraft(JSON.stringify(value, null, 2));
@@ -437,6 +459,25 @@ function FieldRow({
           {typeof prov?.page === 'number' && ` · p. ${prov.page}`}
         </span>
       </div>
+
+      {change && (
+        <div className="review__change-notice">
+          <div className="review__change-diff">
+            <span className="review__change-was">
+              <FieldValueDisplay value={change.previousValue} />
+            </span>
+            <span className="review__change-arrow" aria-hidden="true">
+              →
+            </span>
+            <span className="review__change-now">
+              <FieldValueDisplay value={change.newValue} />
+            </span>
+          </div>
+          <button type="button" className="review__btn-ghost review__btn-small" onClick={onAcknowledge}>
+            Acknowledge
+          </button>
+        </div>
+      )}
 
       {prov?.quote && <p className="review__quote">&ldquo;{prov.quote}&rdquo;</p>}
 
