@@ -93,7 +93,17 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
               {indication ? ` for ${indication}` : ''}
             </div>
             <h2 className="drawer__title">
-              {trial.acronym ?? trial.protocolNumber ?? trial.nctId ?? trial.id}
+              {trial.acronym ?? trial.protocolNumber ?? trial.title}
+              {trial.nctId && registryUrl && (
+                <a
+                  className="drawer__title-nct"
+                  href={registryUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ({trial.nctId})
+                </a>
+              )}
             </h2>
           </div>
           <button className="drawer__close" onClick={onClose} aria-label="Close">
