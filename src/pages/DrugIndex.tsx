@@ -2,21 +2,62 @@ import { useMemo, useState } from 'react';
 import { drugs, trialsForIndication } from '../lib/drugs.js';
 import { indicationHref, reviewHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
+import { drugStats } from '../lib/review.js';
 import './DrugIndex.css';
+
+function approvalYears(drugList: typeof drugs): number[] {
+  const years = new Set<number>();
+  for (const d of drugList) {
+    for (const i of d.indications) {
+      if (i.approvalDate) years.add(Number(i.approvalDate.value.slice(0, 4)));
+    }
+  }
+  return [...years].sort((a, b) => b - a);
+}
+
+function mostRecentApproval(drugList: typeof drugs): string | null {
+  let latest: string | null = null;
+  for (const d of drugList) {
+    for (const i of d.indications) {
+      if (i.approvalDate && (!latest || i.approvalDate.value > latest)) {
+        latest = i.approvalDate.value;
+      }
+    }
+  }
+  return latest;
+}
 
 export function DrugIndex() {
   const [query, setQuery] = useState('');
+  const [sponsor, setSponsor] = useState<string | null>(null);
+  const [year, setYear] = useState<number | null>(null);
+
+  const sponsors = useMemo(() => [...new Set(drugs.map((d) => d.sponsor))].sort(), []);
+  const years = useMemo(() => approvalYears(drugs), []);
+
+  const totalIndications = useMemo(
+    () => drugs.reduce((n, d) => n + d.indications.length, 0),
+    []
+  );
+  const totalTrials = useMemo(() => drugs.reduce((n, d) => n + d.trials.length, 0), []);
+  const latestApproval = useMemo(() => mostRecentApproval(drugs), []);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return drugs;
     return drugs.filter((d) => {
+      if (sponsor && d.sponsor !== sponsor) return false;
+      if (year && !d.indications.some((i) => i.approvalDate?.value.startsWith(String(year)))) {
+        return false;
+      }
+      if (!q) return true;
       const haystack = [d.brandName, d.inn, d.sponsor, ...d.indications.map((i) => i.name)]
         .join(' ')
         .toLowerCase();
       return haystack.includes(q);
     });
-  }, [query]);
+  }, [query, sponsor, year]);
+
+  const filtersActive = sponsor !== null || year !== null;
 
   return (
     <main className="index">
@@ -28,6 +69,25 @@ export function DrugIndex() {
           drug has ever run.
         </p>
       </header>
+
+      <dl className="index__stats">
+        <div>
+          <dt>Drugs tracked</dt>
+          <dd>{drugs.length}</dd>
+        </div>
+        <div>
+          <dt>Approved indications</dt>
+          <dd>{totalIndications}</dd>
+        </div>
+        <div>
+          <dt>Trials catalogued</dt>
+          <dd>{totalTrials}</dd>
+        </div>
+        <div>
+          <dt>Most recent approval</dt>
+          <dd>{latestApproval ? formatDate({ value: latestApproval, precision: 'day' }) : '—'}</dd>
+        </div>
+      </dl>
 
       <div className="index__search">
         <label htmlFor="drug-filter" className="index__search-label">
@@ -43,46 +103,101 @@ export function DrugIndex() {
         />
       </div>
 
+      <div className="index__filters">
+        <div className="index__filter-group">
+          <span className="index__filter-label">Sponsor</span>
+          <div className="index__chips">
+            {sponsors.map((s) => (
+              <button
+                key={s}
+                type="button"
+                className={s === sponsor ? 'index__chip is-active' : 'index__chip'}
+                onClick={() => setSponsor(s === sponsor ? null : s)}
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="index__filter-group">
+          <span className="index__filter-label">Approval year</span>
+          <div className="index__chips">
+            {years.map((y) => (
+              <button
+                key={y}
+                type="button"
+                className={y === year ? 'index__chip is-active' : 'index__chip'}
+                onClick={() => setYear(y === year ? null : y)}
+              >
+                {y}
+              </button>
+            ))}
+          </div>
+        </div>
+        {filtersActive && (
+          <button
+            type="button"
+            className="index__filter-clear"
+            onClick={() => {
+              setSponsor(null);
+              setYear(null);
+            }}
+          >
+            Clear filters
+          </button>
+        )}
+      </div>
+
       {filtered.length === 0 ? (
-        <p className="index__hint">No drugs match “{query}”.</p>
+        <p className="index__hint">No drugs match the current search and filters.</p>
       ) : (
         <div className="index__grid">
-          {filtered.map((d) => (
-            <article key={d.slug} className="drug-card">
-              <header className="drug-card__head">
-                <h2>
-                  {d.brandName} <span className="drug-card__inn">({d.inn})</span>
-                </h2>
-                <p className="drug-card__meta">
-                  {d.mechanism ?? d.modality} · {d.sponsor}
-                </p>
-              </header>
+          {filtered.map((d) => {
+            const stats = drugStats(d);
+            const pct = stats.total > 0 ? Math.round((stats.verified / stats.total) * 100) : 0;
+            return (
+              <article key={d.slug} className="drug-card">
+                <header className="drug-card__head">
+                  <h2>
+                    {d.brandName} <span className="drug-card__inn">({d.inn})</span>
+                  </h2>
+                  <p className="drug-card__meta">
+                    {d.mechanism ?? d.modality} · {d.sponsor}
+                  </p>
+                  <div className="drug-card__verification" title={`${stats.verified} of ${stats.total} fields verified`}>
+                    <div className="drug-card__verification-bar">
+                      <div className="drug-card__verification-fill" style={{ width: `${pct}%` }} />
+                    </div>
+                    <span className="drug-card__verification-label">{pct}% verified</span>
+                  </div>
+                </header>
 
-              {d.indications.length === 0 ? (
-                <p className="index__hint index__hint--card">
-                  No indications on record yet — run the ingest pipeline.
-                </p>
-              ) : (
-                <ul className="drug-card__indications">
-                  {d.indications.map((i) => {
-                    const trialCount = trialsForIndication(d, i.name).length;
-                    return (
-                      <li key={i.slug}>
-                        <a href={indicationHref(d.slug, i.slug)} className="drug-card__indication">
-                          <span className="drug-card__indication-name">{i.name}</span>
-                          <span className="drug-card__indication-meta">
-                            {i.approvalDate ? formatDate(i.approvalDate) : 'Date not determined'}
-                            {' · '}
-                            {trialCount} {trialCount === 1 ? 'trial' : 'trials'}
-                          </span>
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-            </article>
-          ))}
+                {d.indications.length === 0 ? (
+                  <p className="index__hint index__hint--card">
+                    No indications on record yet — run the ingest pipeline.
+                  </p>
+                ) : (
+                  <ul className="drug-card__indications">
+                    {d.indications.map((i) => {
+                      const trialCount = trialsForIndication(d, i.name).length;
+                      return (
+                        <li key={i.slug}>
+                          <a href={indicationHref(d.slug, i.slug)} className="drug-card__indication">
+                            <span className="drug-card__indication-name">{i.name}</span>
+                            <span className="drug-card__indication-meta">
+                              {i.approvalDate ? formatDate(i.approvalDate) : 'Date not determined'}
+                              {' · '}
+                              {trialCount} {trialCount === 1 ? 'trial' : 'trials'}
+                            </span>
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </article>
+            );
+          })}
         </div>
       )}
 
