@@ -5,6 +5,7 @@
 }
 
 .index__head {
+  position: relative;
   text-align: center;
 }
 
@@ -13,6 +14,24 @@
   font-size: 2.1rem;
   letter-spacing: -0.02em;
   color: var(--text-1);
+}
+
+.index__add-drug {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.index__add-drug:hover {
+  opacity: 0.9;
 }
 
 .index__lede {
@@ -278,5 +297,10 @@
   }
   .index__filters {
     flex-direction: column;
+  }
+  .index__add-drug {
+    position: static;
+    display: inline-block;
+    margin-bottom: 1rem;
   }
 }
