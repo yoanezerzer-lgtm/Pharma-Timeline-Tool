@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { drugs, getDrug } from '../lib/drugs.js';
+import { summaryRole } from '../lib/drugs.js';
+import { ROLE_LABEL } from '../components/Gantt/Gantt.js';
 import { Drug } from '../schema/index.js';
 import type { Drug as DrugType, Trial, TrialRole } from '../schema/index.js';
 import {
@@ -245,22 +247,38 @@ function DrugReview({ slug }: { slug: string }) {
           const tStats = trialStats(t);
           const isOpen = expandedId === t.id;
           const complete = tStats.total > 0 && tStats.verified === tStats.total;
+          const role = summaryRole(t);
           return (
             <li key={t.id} className="review__trial">
-              <button
-                type="button"
-                className="review__trial-head"
-                onClick={() => setExpandedId(isOpen ? null : t.id)}
-                aria-expanded={isOpen}
-              >
-                <span className="review__trial-name">
-                  {t.acronym ?? t.protocolNumber ?? t.nctId ?? t.id}
+              <div className="review__trial-head">
+                <button
+                  type="button"
+                  className="review__trial-toggle"
+                  onClick={() => setExpandedId(isOpen ? null : t.id)}
+                  aria-expanded={isOpen}
+                >
+                  <span className="review__trial-name">
+                    {t.acronym ?? t.protocolNumber ?? t.id}
+                  </span>
+                  <span className="review__trial-title">{t.briefTitle ?? t.title}</span>
+                </button>
+                {t.nctId && (
+                  <a
+                    className="review__trial-nct"
+                    href={`https://clinicaltrials.gov/study/${t.nctId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ({t.nctId})
+                  </a>
+                )}
+                <span className={`review__role-badge role-${role.toLowerCase()}`}>
+                  {ROLE_LABEL[role]}
                 </span>
-                <span className="review__trial-title">{t.briefTitle ?? t.title}</span>
                 <span className={`review__trial-stat ${complete ? 'is-complete' : ''}`}>
                   {tStats.total === 0 ? 'nothing tracked' : `${tStats.verified}/${tStats.total}`}
                 </span>
-              </button>
+              </div>
               {isOpen && <TrialReview trial={t} onChange={updateTrial} />}
             </li>
           );
