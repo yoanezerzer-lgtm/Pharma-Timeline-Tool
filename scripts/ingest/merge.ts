@@ -160,17 +160,23 @@ function trialKey(t: Trial): string {
 }
 
 /**
- * Carries forward `pressReleaseUrl` from the existing record — the only
- * per-indication field ingestion never produces itself, since there's no
- * public registry of sponsor press releases to pull one from automatically.
- * Everything else about an indication (name, slug, approvalDate) is fine to
- * take fresh from each run; this one field is always a person's addition.
+ * Carries forward `pressReleaseUrl` and `fdaAnnouncementUrl` from the
+ * existing record — the only per-indication fields ingestion never produces
+ * itself, since there's no public registry of either press releases or FDA
+ * announcements to pull from automatically. Everything else about an
+ * indication (name, slug, approvalDate) is fine to take fresh from each
+ * run; these two fields are always a person's addition.
  */
 function mergeIndications(existing: Indication[], incoming: Indication[]): Indication[] {
   const existingBySlug = new Map(existing.map((i) => [i.slug, i]));
   return incoming.map((inc) => {
     const prior = existingBySlug.get(inc.slug);
-    return prior?.pressReleaseUrl ? { ...inc, pressReleaseUrl: prior.pressReleaseUrl } : inc;
+    if (!prior) return inc;
+    return {
+      ...inc,
+      ...(prior.pressReleaseUrl ? { pressReleaseUrl: prior.pressReleaseUrl } : {}),
+      ...(prior.fdaAnnouncementUrl ? { fdaAnnouncementUrl: prior.fdaAnnouncementUrl } : {}),
+    };
   });
 }
 
