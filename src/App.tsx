@@ -2,6 +2,7 @@ import { useRoute } from './lib/router.js';
 import { DrugIndex } from './pages/DrugIndex.js';
 import { IndicationPage } from './pages/IndicationPage.js';
 import { ReviewPage } from './pages/ReviewPage.js';
+import { IngestPage } from './pages/IngestPage.js';
 
 export function App() {
   const route = useRoute();
@@ -16,5 +17,6 @@ export function App() {
   }
   if (route.name === 'review') return <ReviewPage />;
   if (route.name === 'review-drug') return <ReviewPage slug={route.slug} />;
+  if (route.name === 'ingest') return <IngestPage />;
   return <DrugIndex />;
 }
