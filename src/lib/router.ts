@@ -16,7 +16,8 @@ export type Route =
       trialId: string | null;
     }
   | { name: 'review' }
-  | { name: 'review-drug'; slug: string };
+  | { name: 'review-drug'; slug: string }
+  | { name: 'ingest' };
 
 export function parseHash(hash: string): Route {
   const path = hash.replace(/^#/, '').replace(/^\/+/, '');
@@ -27,6 +28,9 @@ export function parseHash(hash: string): Route {
   }
   if (section === 'review') {
     return slug ? { name: 'review-drug', slug } : { name: 'review' };
+  }
+  if (section === 'ingest') {
+    return { name: 'ingest' };
   }
   return { name: 'index' };
 }
@@ -59,4 +63,8 @@ export function reviewHref(): string {
 
 export function reviewDrugHref(slug: string): string {
   return `#/review/${slug}`;
+}
+
+export function ingestHref(): string {
+  return '#/ingest';
 }

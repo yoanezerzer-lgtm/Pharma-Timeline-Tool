@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { drugs, trialsForIndication } from '../lib/drugs.js';
-import { indicationHref, reviewHref } from '../lib/router.js';
+import { indicationHref, reviewHref, ingestHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { drugStats } from '../lib/review.js';
 import './DrugIndex.css';
@@ -210,6 +210,8 @@ export function DrugIndex() {
         </p>
         <p>
           <a href={reviewHref()}>Review extracted data</a>
+          {' · '}
+          <a href={ingestHref()}>Add a drug</a>
         </p>
       </footer>
     </main>
