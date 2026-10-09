@@ -1,6 +1,6 @@
 import { useMemo, useState, type FormEvent } from 'react';
 import { drugs, getDrug } from '../lib/drugs.js';
-import { navigate, indicationHref } from '../lib/router.js';
+import { navigate, indicationHref, reviewHref } from '../lib/router.js';
 import './DrugIndex.css';
 
 export function DrugIndex() {
@@ -86,6 +86,9 @@ export function DrugIndex() {
           ClinicalTrials.gov. No data is generated or inferred by a language model —
           structured fields come from the registries and approval documents, and narrative
           fields are written by hand.
+        </p>
+        <p>
+          <a href={reviewHref()}>Review extracted data</a>
         </p>
       </footer>
     </main>

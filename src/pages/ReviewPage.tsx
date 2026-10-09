@@ -1,0 +1,456 @@
+import { useEffect, useState } from 'react';
+import { drugs, getDrug } from '../lib/drugs.js';
+import { Drug } from '../schema/index.js';
+import type { Drug as DrugType, Trial, TrialRole } from '../schema/index.js';
+import {
+  drugStats,
+  trialStats,
+  reviewableFields,
+  fieldValue,
+  setFieldVerified,
+  correctField,
+  setRoleVerified,
+  correctRole,
+  replaceTrial,
+  serializeDrug,
+} from '../lib/review.js';
+import { reviewHref, reviewDrugHref } from '../lib/router.js';
+import './ReviewPage.css';
+
+const FIELD_LABEL: Record<string, string> = {
+  nctId: 'Registry ID',
+  protocolNumber: 'Protocol number',
+  acronym: 'Acronym',
+  title: 'Title',
+  briefTitle: 'Brief title',
+  phase: 'Phase',
+  status: 'Status',
+  sponsor: 'Sponsor',
+  startDate: 'Start date',
+  primaryCompletionDate: 'Primary completion',
+  completionDate: 'Completion',
+  enrollment: 'Enrollment',
+  design: 'Design',
+  population: 'Population',
+  arms: 'Arms',
+  primaryEndpoints: 'Primary endpoints',
+  secondaryEndpoints: 'Secondary endpoints',
+  citedIn: 'Cited in FDA review',
+};
+
+function fieldLabel(field: string): string {
+  return FIELD_LABEL[field] ?? field;
+}
+
+interface Props {
+  slug?: string;
+}
+
+export function ReviewPage({ slug }: Props) {
+  if (!slug) return <ReviewIndex />;
+  return <DrugReview slug={slug} />;
+}
+
+function ReviewIndex() {
+  return (
+    <main className="review">
+      <header className="review__head">
+        <p className="review__eyebrow">Verification</p>
+        <h1>Review extracted data</h1>
+        <p className="review__lede">
+          Every field the pipeline writes is marked <code>verified: false</code> until a
+          person checks it against the source documents. Pick a drug to start reviewing it,
+          field by field.
+        </p>
+      </header>
+      <ul className="review__drug-list">
+        {drugs.map((d) => {
+          const stats = drugStats(d);
+          const pct = stats.total > 0 ? Math.round((stats.verified / stats.total) * 100) : 0;
+          return (
+            <li key={d.slug}>
+              <a href={reviewDrugHref(d.slug)} className="review__drug-row">
+                <div>
+                  <div className="review__drug-name">{d.brandName}</div>
+                  <div className="review__drug-inn">{d.inn}</div>
+                </div>
+                <div className="review__drug-progress">
+                  <div className="review__bar">
+                    <div className="review__bar-fill" style={{ width: `${pct}%` }} />
+                  </div>
+                  <span className="review__progress-text">
+                    {stats.total === 0 ? 'nothing tracked' : `${stats.verified}/${stats.total} verified`}
+                  </span>
+                </div>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </main>
+  );
+}
+
+function draftKey(slug: string): string {
+  return `review-draft:${slug}`;
+}
+
+/** Restores an in-progress review from this browser, validated against the current schema. */
+function loadDraft(slug: string, fallback: DrugType): DrugType {
+  try {
+    const raw = localStorage.getItem(draftKey(slug));
+    if (!raw) return fallback;
+    const parsed = Drug.safeParse(JSON.parse(raw));
+    return parsed.success && parsed.data.slug === slug ? parsed.data : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveDraft(slug: string, drug: DrugType): void {
+  try {
+    localStorage.setItem(draftKey(slug), JSON.stringify(drug));
+  } catch {
+    // Private browsing, full quota, or a disabled storage API — the draft
+    // just won't survive a reload. Download/copy still work either way.
+  }
+}
+
+function DrugReview({ slug }: { slug: string }) {
+  const committed = getDrug(slug);
+  const [drug, setDrug] = useState<DrugType | null>(() =>
+    committed ? loadDraft(slug, committed) : null
+  );
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [exportError, setExportError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (drug) saveDraft(slug, drug);
+  }, [drug, slug]);
+
+  if (!committed) {
+    return (
+      <main className="review">
+        <p className="review__missing">
+          No drug record found for &ldquo;{slug}&rdquo;.{' '}
+          <a href={reviewHref()}>Back to review index</a>
+        </p>
+      </main>
+    );
+  }
+  if (!drug) return null;
+
+  const stats = drugStats(drug);
+  const hasDraft = serializeDrug(drug) !== serializeDrug(committed);
+
+  function updateTrial(updated: Trial) {
+    setDrug((d) => (d ? replaceTrial(d, updated.id, updated) : d));
+  }
+
+  function handleDiscard() {
+    try {
+      localStorage.removeItem(draftKey(slug));
+    } catch {
+      // Nothing to clean up if storage was never reachable.
+    }
+    setDrug(committed!);
+    setExportError(null);
+  }
+
+  function handleDownload() {
+    const parsed = Drug.safeParse(drug);
+    if (!parsed.success) {
+      setExportError(
+        parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')
+      );
+      return;
+    }
+    setExportError(null);
+    const blob = new Blob([serializeDrug(parsed.data)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${slug}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  async function handleCopy() {
+    try {
+      await navigator.clipboard.writeText(serializeDrug(drug!));
+    } catch {
+      // No clipboard permission in this context — download is the fallback.
+    }
+  }
+
+  return (
+    <main className="review">
+      <nav className="review__breadcrumb">
+        <a href={reviewHref()}>Review</a>
+        <span aria-hidden="true"> / </span>
+        <span>{drug.brandName}</span>
+      </nav>
+
+      <header className="review__drug-head">
+        <div>
+          <h1>
+            {drug.brandName} <span className="review__inn">({drug.inn})</span>
+          </h1>
+          <p className="review__progress-line">
+            {stats.total === 0
+              ? 'Nothing from the pipeline is tracked for this drug.'
+              : `${stats.verified} of ${stats.total} tracked fields verified`}
+            {hasDraft && <span className="review__draft-flag">unsaved draft</span>}
+          </p>
+        </div>
+        <div className="review__actions">
+          {hasDraft && (
+            <button type="button" className="review__btn-ghost" onClick={handleDiscard}>
+              Discard draft
+            </button>
+          )}
+          <button type="button" className="review__btn-ghost" onClick={handleCopy}>
+            Copy JSON
+          </button>
+          <button type="button" className="review__btn-primary" onClick={handleDownload}>
+            Download {slug}.json
+          </button>
+        </div>
+      </header>
+
+      {exportError && (
+        <div className="review__error" role="alert">
+          Can&rsquo;t export — the edited record doesn&rsquo;t match the schema: {exportError}
+        </div>
+      )}
+
+      <p className="review__instructions">
+        Check each field against{' '}
+        {drug.sources.length > 0
+          ? drug.sources.map((s, i) => (
+              <span key={s.id}>
+                <a href={s.url} target="_blank" rel="noopener noreferrer">
+                  {s.label}
+                </a>
+                {i < drug.sources.length - 1 ? ', ' : ''}
+              </span>
+            ))
+          : 'the source documents'}
+        , correct it if it&rsquo;s wrong, then mark it verified. When you&rsquo;re done,
+        download the file and commit it over <code>data/drugs/{slug}.json</code>.
+      </p>
+
+      <ul className="review__trials">
+        {drug.trials.map((t) => {
+          const tStats = trialStats(t);
+          const isOpen = expandedId === t.id;
+          const complete = tStats.total > 0 && tStats.verified === tStats.total;
+          return (
+            <li key={t.id} className="review__trial">
+              <button
+                type="button"
+                className="review__trial-head"
+                onClick={() => setExpandedId(isOpen ? null : t.id)}
+                aria-expanded={isOpen}
+              >
+                <span className="review__trial-name">
+                  {t.acronym ?? t.protocolNumber ?? t.nctId ?? t.id}
+                </span>
+                <span className="review__trial-title">{t.briefTitle ?? t.title}</span>
+                <span className={`review__trial-stat ${complete ? 'is-complete' : ''}`}>
+                  {tStats.total === 0 ? 'nothing tracked' : `${tStats.verified}/${tStats.total}`}
+                </span>
+              </button>
+              {isOpen && <TrialReview trial={t} onChange={updateTrial} />}
+            </li>
+          );
+        })}
+      </ul>
+    </main>
+  );
+}
+
+function TrialReview({ trial, onChange }: { trial: Trial; onChange: (t: Trial) => void }) {
+  const fields = reviewableFields(trial);
+  return (
+    <div className="review__trial-body">
+      {fields.length === 0 && trial.roles.length === 0 && (
+        <p className="review__trial-empty">
+          Nothing from the pipeline is tracked for this trial.
+        </p>
+      )}
+      {fields.map((field) => (
+        <FieldRow
+          key={field}
+          trial={trial}
+          field={field}
+          onVerify={(v) => onChange(setFieldVerified(trial, field, v))}
+          onCorrect={(value) => onChange(correctField(trial, field, value))}
+        />
+      ))}
+      {trial.roles.map((role, i) => (
+        <RoleRow
+          key={i}
+          role={role}
+          onVerify={(v) => onChange(setRoleVerified(trial, i, v))}
+          onCorrect={(patch) => onChange(correctRole(trial, i, patch))}
+        />
+      ))}
+    </div>
+  );
+}
+
+function FieldValueDisplay({ value }: { value: unknown }) {
+  if (value === null || value === undefined) {
+    return <span className="review__empty-value">—</span>;
+  }
+  if (typeof value === 'string') return <span>{value}</span>;
+  if (typeof value === 'number' || typeof value === 'boolean') return <span>{String(value)}</span>;
+  return <pre className="review__value-json">{JSON.stringify(value, null, 2)}</pre>;
+}
+
+function FieldRow({
+  trial,
+  field,
+  onVerify,
+  onCorrect,
+}: {
+  trial: Trial;
+  field: string;
+  onVerify: (v: boolean) => void;
+  onCorrect: (value: unknown) => void;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState('');
+  const [parseError, setParseError] = useState<string | null>(null);
+
+  const prov = trial.provenance[field];
+  const value = fieldValue(trial, field);
+
+  function startEdit() {
+    setDraft(JSON.stringify(value, null, 2));
+    setParseError(null);
+    setEditing(true);
+  }
+
+  function save() {
+    try {
+      onCorrect(JSON.parse(draft));
+      setEditing(false);
+      setParseError(null);
+    } catch {
+      setParseError('Not valid JSON — a text value needs quotes, e.g. "Phase 3".');
+    }
+  }
+
+  return (
+    <div className={`review__field ${prov?.verified ? 'is-verified' : ''}`}>
+      <div className="review__field-head">
+        <label className="review__verify">
+          <input
+            type="checkbox"
+            checked={prov?.verified ?? false}
+            onChange={(e) => onVerify(e.target.checked)}
+          />
+          {fieldLabel(field)}
+        </label>
+        <span className="review__prov-meta">
+          {prov?.extractedBy}
+          {prov?.sourceUrl && (
+            <>
+              {' · '}
+              <a href={prov.sourceUrl} target="_blank" rel="noopener noreferrer">
+                source
+              </a>
+            </>
+          )}
+          {typeof prov?.page === 'number' && ` · p. ${prov.page}`}
+        </span>
+      </div>
+
+      {prov?.quote && <p className="review__quote">&ldquo;{prov.quote}&rdquo;</p>}
+
+      {editing ? (
+        <div className="review__edit">
+          <textarea
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            rows={Math.min(12, draft.split('\n').length + 1)}
+            spellCheck={false}
+          />
+          {parseError && <p className="review__parse-error">{parseError}</p>}
+          <div className="review__edit-actions">
+            <button type="button" className="review__btn-primary review__btn-small" onClick={save}>
+              Save
+            </button>
+            <button
+              type="button"
+              className="review__btn-ghost review__btn-small"
+              onClick={() => setEditing(false)}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      ) : (
+        <button type="button" className="review__value" onClick={startEdit}>
+          <FieldValueDisplay value={value} />
+          <span className="review__edit-hint">edit</span>
+        </button>
+      )}
+    </div>
+  );
+}
+
+const TRIAL_ROLES: TrialRole[] = [
+  'PIVOTAL',
+  'SUPPORTIVE',
+  'DOSE_FINDING',
+  'PK',
+  'SAFETY',
+  'POST_MARKETING',
+  'NOT_IN_FILING',
+  'UNKNOWN',
+];
+
+function RoleRow({
+  role,
+  onVerify,
+  onCorrect,
+}: {
+  role: Trial['roles'][number];
+  onVerify: (v: boolean) => void;
+  onCorrect: (patch: { indication?: string; role: TrialRole }) => void;
+}) {
+  return (
+    <div className={`review__field ${role.provenance.verified ? 'is-verified' : ''}`}>
+      <div className="review__field-head">
+        <label className="review__verify">
+          <input
+            type="checkbox"
+            checked={role.provenance.verified}
+            onChange={(e) => onVerify(e.target.checked)}
+          />
+          Role{role.indication ? ` — ${role.indication}` : ''}
+        </label>
+        <span className="review__prov-meta">{role.provenance.extractedBy}</span>
+      </div>
+      {role.provenance.quote && (
+        <p className="review__quote">&ldquo;{role.provenance.quote}&rdquo;</p>
+      )}
+      <select
+        className="review__role-select"
+        value={role.role}
+        onChange={(e) =>
+          onCorrect({ indication: role.indication, role: e.target.value as TrialRole })
+        }
+      >
+        {TRIAL_ROLES.map((r) => (
+          <option key={r} value={r}>
+            {r}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+}

@@ -6,7 +6,7 @@ import {
   isFullyUnverified,
   isMeaningfulMilestone,
 } from '../lib/drugs.js';
-import { navigate, indicationHref, indicationTrialHref } from '../lib/router.js';
+import { navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
@@ -119,7 +119,8 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
         <div className="drug__warning" role="status">
           <strong>Unverified data.</strong> Nothing on this page has been checked against
           the source documents yet — every field is marked <code>verified: false</code> until
-          a person confirms it.
+          a person confirms it.{' '}
+          <a href={reviewDrugHref(drug.slug)}>Review it</a>.
         </div>
       )}
 
