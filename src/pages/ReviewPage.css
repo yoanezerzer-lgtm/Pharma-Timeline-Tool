@@ -207,6 +207,26 @@
   border-top: 1px solid var(--border-subtle);
 }
 
+.review__not-cited {
+  margin-top: 1.5rem;
+}
+
+.review__not-cited-toggle {
+  width: 100%;
+}
+
+.review__not-cited-note {
+  margin: 0.6rem 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-3);
+  max-width: 62ch;
+}
+
+.review__not-cited .review__trials {
+  margin-top: 1rem;
+}
+
 .review__trial {
   border-bottom: 1px solid var(--border-subtle);
 }
