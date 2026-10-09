@@ -62,6 +62,9 @@ export function DrugIndex() {
   return (
     <main className="index">
       <header className="index__head">
+        <a href={ingestHref()} className="index__add-drug">
+          + Add a drug
+        </a>
         <h1>Drug Development Timelines</h1>
         <p className="index__lede">
           Browse approved indications and see exactly which clinical trials supported each
@@ -210,8 +213,6 @@ export function DrugIndex() {
         </p>
         <p>
           <a href={reviewHref()}>Review extracted data</a>
-          {' · '}
-          <a href={ingestHref()}>Add a drug</a>
         </p>
       </footer>
     </main>
