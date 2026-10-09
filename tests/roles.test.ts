@@ -20,7 +20,7 @@ function trial(o: Partial<Trial>): Trial {
   return {
     id: 't', title: 'x', phase: 'PHASE3', roles: [], arms: [],
     primaryEndpoints: [], secondaryEndpoints: [], metPrimaryEndpoint: null,
-    takeaways: [], limitations: [], publications: [], provenance: {}, ...o,
+    takeaways: [], limitations: [], publications: [], provenance: {}, changeLog: [], ...o,
   };
 }
 

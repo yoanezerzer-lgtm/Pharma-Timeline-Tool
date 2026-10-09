@@ -16,7 +16,7 @@ import {
   splitSection14ByIndication,
   type IndicationListEntry,
 } from './roles.js';
-import { mergeDrug, type Conflict } from './merge.js';
+import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 export type Step = (typeof ALL_STEPS)[number];
@@ -280,14 +280,14 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   // --- merge ---------------------------------------------------------------
   const incoming = buildDrugRecord(spec, fda, trials, docs, indicationList);
   const existing = loadExisting(drugsDir, spec.slug);
-  const merged = mergeDrug(existing, incoming);
+  const merged = mergeDrug(existing, incoming, now);
   merged.drug.trials = dedupeTrialIds(merged.drug.trials);
 
   // Only advance the ingest timestamp when something else actually changed.
   // Stamping every run would make each re-run produce a diff, which in turn
   // would make the workflow open a pull request even when nothing moved.
   const contentUnchanged =
-    existing !== null && stableJson(withoutStamp(existing)) === stableJson(withoutStamp(merged.drug));
+    existing !== null && canonicalJson(withoutStamp(existing)) === canonicalJson(withoutStamp(merged.drug));
   merged.drug.lastIngestedAt = contentUnchanged
     ? existing.lastIngestedAt
     : now.toISOString();
@@ -367,10 +367,6 @@ export function dedupeTrialIds(trials: Trial[]): Trial[] {
 function withoutStamp(d: DrugType): Omit<DrugType, 'lastIngestedAt'> {
   const { lastIngestedAt: _ignored, ...rest } = d;
   return rest;
-}
-
-function stableJson(value: unknown): string {
-  return JSON.stringify(value);
 }
 
 /**

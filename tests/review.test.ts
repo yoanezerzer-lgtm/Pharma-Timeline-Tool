@@ -10,6 +10,9 @@ import {
   correctRole,
   replaceTrial,
   serializeDrug,
+  pendingChange,
+  drugPendingChangeCount,
+  acknowledgeChange,
 } from '../src/lib/review.js';
 import type { Drug, Trial } from '../src/schema/index.js';
 
@@ -27,6 +30,7 @@ function trial(o: Partial<Trial> = {}): Trial {
     limitations: [],
     publications: [],
     provenance: {},
+    changeLog: [],
     ...o,
   };
 }
@@ -182,5 +186,69 @@ describe('serializeDrug', () => {
     const serialized = serializeDrug(d);
     expect(serialized).toBe(JSON.stringify(d, null, 2) + '\n');
     expect(serialized.endsWith('\n')).toBe(true);
+  });
+});
+
+describe('pendingChange / drugPendingChangeCount', () => {
+  const change = { field: 'phase', previousValue: 'PHASE2', newValue: 'PHASE3', detectedAt: '2026-01-01T00:00:00.000Z' };
+
+  it('finds a pending change for a field by name', () => {
+    const t = trial({ changeLog: [change] });
+    expect(pendingChange(t, 'phase')).toEqual(change);
+    expect(pendingChange(t, 'sponsor')).toBeUndefined();
+  });
+
+  it('sums pending changes across every trial in the drug', () => {
+    const a = trial({ id: 'a', changeLog: [change] });
+    const b = trial({ id: 'b', changeLog: [change, { ...change, field: 'status' }] });
+    expect(drugPendingChangeCount(drug([a, b]))).toBe(3);
+  });
+});
+
+describe('acknowledgeChange', () => {
+  it('removes the entry for that field, leaving others untouched', () => {
+    const t = trial({
+      changeLog: [
+        { field: 'phase', previousValue: 'A', newValue: 'B', detectedAt: '2026-01-01T00:00:00.000Z' },
+        { field: 'status', previousValue: 'C', newValue: 'D', detectedAt: '2026-01-01T00:00:00.000Z' },
+      ],
+    });
+    const result = acknowledgeChange(t, 'phase');
+    expect(result.changeLog).toHaveLength(1);
+    expect(result.changeLog[0].field).toBe('status');
+  });
+});
+
+describe('setFieldVerified and correctField clear pending change notices', () => {
+  const change = { field: 'sponsor', previousValue: 'Old Co', newValue: 'New Co', detectedAt: '2026-01-01T00:00:00.000Z' };
+
+  it('setFieldVerified(true) clears the matching changeLog entry', () => {
+    const t = trial({
+      sponsor: 'New Co',
+      provenance: { sponsor: { extractedBy: 'api', verified: false } },
+      changeLog: [change],
+    });
+    const result = setFieldVerified(t, 'sponsor', true);
+    expect(result.changeLog).toEqual([]);
+  });
+
+  it('setFieldVerified(false) leaves the changeLog entry — nothing was confirmed', () => {
+    const t = trial({
+      sponsor: 'New Co',
+      provenance: { sponsor: { extractedBy: 'api', verified: true } },
+      changeLog: [change],
+    });
+    const result = setFieldVerified(t, 'sponsor', false);
+    expect(result.changeLog).toEqual([change]);
+  });
+
+  it('correctField clears the matching changeLog entry', () => {
+    const t = trial({
+      sponsor: 'Old Co',
+      provenance: { sponsor: { extractedBy: 'api', verified: false } },
+      changeLog: [change],
+    });
+    const result = correctField(t, 'sponsor', 'Corrected Co');
+    expect(result.changeLog).toEqual([]);
   });
 });

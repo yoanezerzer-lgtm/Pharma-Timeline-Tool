@@ -198,6 +198,7 @@ export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
     provenance: Object.fromEntries(
       ['phase', 'startDate', 'primaryCompletionDate', 'enrollment', 'design'].map(prov)
     ),
+    changeLog: [],
   };
 }
 

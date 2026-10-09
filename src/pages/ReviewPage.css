@@ -141,6 +141,19 @@
   border-radius: 999px;
 }
 
+.review__changed-badge {
+  margin-left: 0.5rem;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--warn-fg);
+  background: var(--warn-bg);
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 .review__actions {
   display: flex;
   gap: 0.5rem;
@@ -380,6 +393,52 @@
   color: var(--text-2);
   border-left: 2px solid var(--border);
   padding-left: 0.6rem;
+}
+
+.review__change-notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.45rem;
+  padding: 0.45rem 0.6rem;
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  border-radius: 6px;
+}
+
+.review__change-diff {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  font-size: 12px;
+  color: var(--warn-fg);
+}
+
+.review__change-was {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.review__change-was,
+.review__change-now {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 22ch;
+}
+
+.review__change-arrow {
+  flex-shrink: 0;
+}
+
+.review__change-was pre,
+.review__change-now pre {
+  margin: 0;
+  white-space: pre-wrap;
+  max-height: 4.5em;
+  overflow: auto;
 }
 
 .review__value {

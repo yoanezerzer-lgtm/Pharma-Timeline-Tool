@@ -136,6 +136,19 @@ export const Enrollment = z.object({
   type: z.enum(['ACTUAL', 'ESTIMATED']).default('ACTUAL'),
 });
 
+/**
+ * One field whose value moved between ingest runs, before a person had a
+ * chance to look at the new one. See Trial.changeLog.
+ */
+export const FieldChange = z.object({
+  field: z.string(),
+  previousValue: z.unknown(),
+  newValue: z.unknown(),
+  /** ISO timestamp of the ingest run that found the change. */
+  detectedAt: z.string(),
+});
+export type FieldChange = z.infer<typeof FieldChange>;
+
 export const Trial = z.object({
   /** Stable local id, used for routing and cross-references. */
   id: z.string().min(1),
@@ -193,6 +206,16 @@ export const Trial = z.object({
 
   /** Per-field provenance, keyed by field name (e.g. "role", "startDate"). */
   provenance: z.record(z.string(), Provenance).default({}),
+
+  /**
+   * Fields that changed on a later ingest run after a person already saw
+   * this trial, and haven't been looked at since. Only unverified fields
+   * generate an entry — a verified field's incoming change is a Conflict
+   * (see merge.ts), reported separately and never silently applied.
+   * Clearing an entry (by editing the field, marking it verified, or
+   * dismissing it outright) is the review workflow's job, not ingestion's.
+   */
+  changeLog: z.array(FieldChange).default([]),
 });
 export type Trial = z.infer<typeof Trial>;
 
