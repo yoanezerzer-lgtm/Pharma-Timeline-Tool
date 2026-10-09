@@ -304,6 +304,16 @@ export const Indication = z.object({
    * finding the right one is a manual step, always `extractedBy: 'human'`.
    */
   pressReleaseUrl: z.string().url().optional(),
+  /**
+   * The FDA's own press announcement of this approval, distinct from the
+   * sponsor's — FDA publishes these at its own discretion for approvals it
+   * considers notable (a first-in-class drug, a rare disease, and so on),
+   * so one won't exist for every approval. Like pressReleaseUrl, there's no
+   * API or registry of these to search automatically — openFDA's own data
+   * is the structured Drugs@FDA record, not its newsroom — so this is
+   * always a manual addition, same workflow as the sponsor's release.
+   */
+  fdaAnnouncementUrl: z.string().url().optional(),
 });
 export type Indication = z.infer<typeof Indication>;
 

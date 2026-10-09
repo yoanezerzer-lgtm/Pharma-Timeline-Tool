@@ -127,6 +127,24 @@ describe('mergeDrug', () => {
     );
   });
 
+  it('preserves a hand-added FDA announcement URL across a re-run, independently of the press release', () => {
+    const ra: Indication = { name: 'Rheumatoid Arthritis', slug: 'rheumatoid-arthritis' };
+    const existing = drug([trial()], '', [
+      {
+        ...ra,
+        pressReleaseUrl: 'https://www.abbvie.com/press/rinvoq-ra-approval',
+        fdaAnnouncementUrl: 'https://www.fda.gov/news-events/press-announcements/example',
+      },
+    ]);
+    const result = mergeDrug(existing, drug([trial()], '', [ra]));
+    expect(result.drug.indications[0].pressReleaseUrl).toBe(
+      'https://www.abbvie.com/press/rinvoq-ra-approval'
+    );
+    expect(result.drug.indications[0].fdaAnnouncementUrl).toBe(
+      'https://www.fda.gov/news-events/press-announcements/example'
+    );
+  });
+
   describe('changeLog', () => {
     it('records an entry when an unverified field actually changes', () => {
       const existing = drug([trial({ phase: 'PHASE2' })]);

@@ -43,6 +43,12 @@
   font-size: 14px;
 }
 
+.drug__announcements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+}
+
 .drug__press-release {
   display: inline-block;
   margin-top: 0.5rem;
