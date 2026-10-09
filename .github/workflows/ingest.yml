@@ -6,8 +6,39 @@ on:
   workflow_dispatch:
     inputs:
       drug:
-        description: 'Drug slug from scripts/ingest/registry.ts (e.g. upadacitinib)'
+        description: >-
+          Drug slug. An existing one from scripts/ingest/registry.ts (e.g.
+          upadacitinib) re-runs ingestion for that drug. A new slug (use the
+          INN, lowercase — e.g. aprocitentan) ingests a brand-new drug, as
+          long as the fields below are filled in.
         required: true
+        type: string
+      brand_name:
+        description: 'New drug only: the FDA-approved brand name (e.g. Winrevair)'
+        required: false
+        type: string
+      inn:
+        description: 'New drug only: the INN / generic name (e.g. sotatercept)'
+        required: false
+        type: string
+      sponsor:
+        description: 'New drug only: the applicant of record, as written on the label (e.g. Merck Sharp & Dohme LLC)'
+        required: false
+        type: string
+      modality:
+        description: 'New drug only: e.g. "Small molecule", "Monoclonal antibody", "Peptide"'
+        required: false
+        type: string
+      mechanism:
+        description: 'New drug only, optional: one line, e.g. "Selective Janus kinase (JAK1) inhibitor"'
+        required: false
+        type: string
+      application:
+        description: >-
+          New drug only, optional: "NDA 211675", "BLA 761342", etc. Leave
+          blank for a newly approved drug — the pipeline looks the
+          application up by brand name instead.
+        required: false
         type: string
       refresh:
         description: 'Ignore the on-disk cache and re-fetch everything'
@@ -40,10 +71,32 @@ jobs:
       - run: npm ci
 
       - name: Run ingestion
+        env:
+          APPLICATION: ${{ inputs.application }}
         run: |
+          set -euo pipefail
+
+          APP_TYPE=""
+          APP_NUMBER=""
+          if [ -n "$APPLICATION" ]; then
+            if ! echo "$APPLICATION" | grep -qE '^(NDA|BLA|ANDA)[[:space:]]+[A-Za-z0-9-]+$'; then
+              echo "::error::'application' must look like 'NDA 211675', 'BLA 761342', or 'ANDA 212345' — or leave it blank."
+              exit 1
+            fi
+            APP_TYPE="${APPLICATION%% *}"
+            APP_NUMBER="${APPLICATION#* }"
+          fi
+
           npm run ingest -- \
             --drug "${{ inputs.drug }}" \
             --max-lookups "${{ inputs.max_lookups }}" \
+            --brand-name "${{ inputs.brand_name }}" \
+            --inn "${{ inputs.inn }}" \
+            --sponsor "${{ inputs.sponsor }}" \
+            --modality "${{ inputs.modality }}" \
+            --mechanism "${{ inputs.mechanism }}" \
+            --application-type "$APP_TYPE" \
+            --application-number "$APP_NUMBER" \
             ${{ inputs.refresh && '--refresh' || '' }}
 
       - name: Validate result
