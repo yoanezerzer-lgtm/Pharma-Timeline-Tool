@@ -41,6 +41,22 @@ export function drugPendingChangeCount(drug: Drug): number {
   return drug.trials.reduce((n, t) => n + t.changeLog.length, 0);
 }
 
+/**
+ * True when a trial's place in the filing is independently confirmed by two
+ * separate FDA documents, not just one: the approved label (a role's own
+ * `quote`, from the section 14 citation) and the medical/statistical review
+ * (`citedIn`, a citation found anywhere in that document's text). Either one
+ * alone is a single source; agreeing with each other, from two documents
+ * nobody cross-authored together, is real corroboration — not a new
+ * inference, just surfacing two facts the pipeline already extracted
+ * separately as one combined signal.
+ */
+export function crossConfirmed(trial: Trial): boolean {
+  const hasLabelCitation = trial.roles.some((r) => !!r.provenance.quote);
+  const hasReviewCitation = !!trial.provenance.citedIn?.quote;
+  return hasLabelCitation && hasReviewCitation;
+}
+
 /** The reviewable fields on a trial: whichever ones the pipeline actually tracked. */
 export function reviewableFields(trial: Trial): string[] {
   return Object.keys(trial.provenance);

@@ -13,6 +13,7 @@ import {
   pendingChange,
   drugPendingChangeCount,
   acknowledgeChange,
+  crossConfirmed,
 } from '../src/lib/review.js';
 import type { Drug, Trial } from '../src/schema/index.js';
 
@@ -250,5 +251,37 @@ describe('setFieldVerified and correctField clear pending change notices', () =>
     });
     const result = correctField(t, 'sponsor', 'Corrected Co');
     expect(result.changeLog).toEqual([]);
+  });
+});
+
+describe('crossConfirmed', () => {
+  it('is true when both a role citation and a review citation exist', () => {
+    const t = trial({
+      roles: [{ indication: 'RA', role: 'PIVOTAL', provenance: { extractedBy: 'rule', verified: false, quote: 'named in section 14' } }],
+      provenance: { citedIn: { extractedBy: 'regex', verified: false, quote: 'named in the review' } },
+    });
+    expect(crossConfirmed(t)).toBe(true);
+  });
+
+  it('is false with only a label citation and no review citation', () => {
+    const t = trial({
+      roles: [{ indication: 'RA', role: 'PIVOTAL', provenance: { extractedBy: 'rule', verified: false, quote: 'named in section 14' } }],
+    });
+    expect(crossConfirmed(t)).toBe(false);
+  });
+
+  it('is false with only a review citation and no role quote', () => {
+    const t = trial({
+      roles: [{ indication: 'RA', role: 'PIVOTAL', provenance: { extractedBy: 'rule', verified: false } }],
+      provenance: { citedIn: { extractedBy: 'regex', verified: false, quote: 'named in the review' } },
+    });
+    expect(crossConfirmed(t)).toBe(false);
+  });
+
+  it('is false for a trial with no roles at all', () => {
+    const t = trial({
+      provenance: { citedIn: { extractedBy: 'regex', verified: false, quote: 'named in the review' } },
+    });
+    expect(crossConfirmed(t)).toBe(false);
   });
 });

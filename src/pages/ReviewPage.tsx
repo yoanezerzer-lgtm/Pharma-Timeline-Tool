@@ -18,6 +18,7 @@ import {
   pendingChange,
   drugPendingChangeCount,
   acknowledgeChange,
+  crossConfirmed,
 } from '../lib/review.js';
 import { reviewHref, reviewDrugHref } from '../lib/router.js';
 import './ReviewPage.css';
@@ -346,6 +347,11 @@ function TrialRow({
         <span className={`review__role-badge role-${role.toLowerCase()}`}>
           {ROLE_LABEL[role]}
         </span>
+        {crossConfirmed(t) && (
+          <span className="review__confirmed-badge" title="Named in both the label's section 14 and the FDA review — two independent documents">
+            ✓ 2 sources
+          </span>
+        )}
         {t.changeLog.length > 0 && (
           <span className="review__changed-badge">{t.changeLog.length} changed</span>
         )}
