@@ -236,6 +236,75 @@
   font-weight: 600;
 }
 
+.ingest__merged {
+  margin: 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.ingest__merge-row {
+  margin-top: 0.75rem;
+}
+
+.ingest__merge-row .ingest__submit {
+  padding: 0.5rem 1.1rem;
+  font-size: 13px;
+}
+
+.ingest__retry {
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--text-3);
+  background: none;
+  color: var(--text-2);
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.ingest__progress {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13.5px;
+  color: var(--text-2);
+}
+
+.ingest__progress-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ingest__spinner {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: ingest-spin 0.8s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes ingest-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ingest__steps {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 12.5px;
+  color: var(--text-2);
+}
+
 @media (max-width: 560px) {
   .ingest__grid {
     grid-template-columns: 1fr;

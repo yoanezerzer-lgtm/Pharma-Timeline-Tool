@@ -1,10 +1,16 @@
-import { useEffect, useState, type FormEvent } from 'react';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import {
   dispatchIngestWorkflow,
   findLatestRun,
+  getRun,
+  getRunSteps,
+  mergePullRequest,
+  resolveIngestOutcome,
   GitHubApiError,
   NEW_TOKEN_URL,
-  WORKFLOW_RUNS_URL,
+  type PullRequestSummary,
+  type RunStep,
+  type WorkflowRun,
 } from '../lib/github.js';
 import './IngestPage.css';
 
@@ -28,13 +34,28 @@ function saveToken(token: string): void {
 }
 
 const APPLICATION_PATTERN = /^(NDA|BLA|ANDA)\s+\S+$/i;
+const POLL_MS = 3000;
 
-type Status =
+type Phase =
   | { kind: 'idle' }
   | { kind: 'submitting' }
-  | { kind: 'dispatched' }
-  | { kind: 'found-run'; url: string }
+  | { kind: 'locating-run' }
+  | { kind: 'running'; run: WorkflowRun; steps: RunStep[] }
+  | { kind: 'run-failed'; run: WorkflowRun }
+  | { kind: 'resolving-outcome' }
+  | { kind: 'no-changes' }
+  | { kind: 'pr-ready'; pr: PullRequestSummary }
+  | { kind: 'merging'; pr: PullRequestSummary }
+  | { kind: 'merged'; pr: PullRequestSummary }
+  | { kind: 'merge-failed'; pr: PullRequestSummary; message: string }
   | { kind: 'error'; message: string };
+
+function stepIcon(step: RunStep): string {
+  if (step.status !== 'completed') return '⏳';
+  if (step.conclusion === 'success') return '✅';
+  if (step.conclusion === 'skipped') return '⊘';
+  return '❌';
+}
 
 export function IngestPage() {
   const [token, setToken] = useState(loadToken);
@@ -50,24 +71,63 @@ export function IngestPage() {
   const [application, setApplication] = useState('');
   const [refresh, setRefresh] = useState(false);
   const [formError, setFormError] = useState<string | null>(null);
-  const [status, setStatus] = useState<Status>({ kind: 'idle' });
+  const [phase, setPhase] = useState<Phase>({ kind: 'idle' });
+
+  // The slug a run was started for — resolveIngestOutcome needs it, and the
+  // form's own `drug` state shouldn't drive an in-flight run if edited.
+  const slugRef = useRef('');
 
   useEffect(() => {
-    if (status.kind !== 'dispatched') return;
-    const dispatchedAt = new Date();
+    if (phase.kind !== 'running') return;
     let cancelled = false;
-    findLatestRun(token, dispatchedAt)
-      .then((run) => {
+    const timer = setTimeout(async () => {
+      try {
+        const [fresh, steps] = await Promise.all([
+          getRun(token, phase.run.id),
+          getRunSteps(token, phase.run.id).catch(() => phase.steps),
+        ]);
         if (cancelled) return;
-        setStatus(run ? { kind: 'found-run', url: run.htmlUrl } : { kind: 'dispatched' });
+        if (fresh.status === 'completed') {
+          setPhase(fresh.conclusion === 'success' ? { kind: 'resolving-outcome' } : { kind: 'run-failed', run: fresh });
+        } else {
+          setPhase({ kind: 'running', run: fresh, steps });
+        }
+      } catch (err) {
+        if (cancelled) return;
+        setPhase({
+          kind: 'error',
+          message: err instanceof GitHubApiError ? err.message : 'Lost contact with GitHub while watching the run.',
+        });
+      }
+    }, POLL_MS);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [phase, token]);
+
+  useEffect(() => {
+    if (phase.kind !== 'resolving-outcome') return;
+    let cancelled = false;
+    resolveIngestOutcome(token, slugRef.current)
+      .then((outcome) => {
+        if (cancelled) return;
+        setPhase(outcome.kind === 'no-changes' ? { kind: 'no-changes' } : { kind: 'pr-ready', pr: outcome.pr });
       })
-      .catch(() => {
-        // Couldn't locate the specific run — the generic link already shown is enough.
+      .catch((err) => {
+        if (cancelled) return;
+        setPhase({
+          kind: 'error',
+          message:
+            err instanceof GitHubApiError
+              ? err.message
+              : 'The run finished, but looking up the resulting branch or pull request failed.',
+        });
       });
     return () => {
       cancelled = true;
     };
-  }, [status.kind, token]);
+  }, [phase.kind, token]);
 
   function handleSaveToken(e: FormEvent) {
     e.preventDefault();
@@ -110,7 +170,8 @@ export function IngestPage() {
       return;
     }
 
-    setStatus({ kind: 'submitting' });
+    slugRef.current = slug;
+    setPhase({ kind: 'submitting' });
     try {
       await dispatchIngestWorkflow(token, {
         drug: slug,
@@ -122,16 +183,43 @@ export function IngestPage() {
         application: application.trim() || undefined,
         refresh,
       });
-      setStatus({ kind: 'dispatched' });
+      setPhase({ kind: 'locating-run' });
+      const run = await findLatestRun(token, new Date());
+      if (run) {
+        setPhase({ kind: 'running', run, steps: [] });
+      } else {
+        setPhase({
+          kind: 'error',
+          message: 'Started, but couldn’t find the run to track it. It may still be running — check the Actions tab.',
+        });
+      }
     } catch (err) {
-      setStatus({
+      setPhase({
         kind: 'error',
         message: err instanceof GitHubApiError ? err.message : 'Could not reach GitHub. Check your connection and try again.',
       });
     }
   }
 
-  const submitting = status.kind === 'submitting' || status.kind === 'dispatched' || status.kind === 'found-run';
+  async function handleMerge(pr: PullRequestSummary) {
+    setPhase({ kind: 'merging', pr });
+    try {
+      await mergePullRequest(token, pr.number);
+      setPhase({ kind: 'merged', pr });
+    } catch (err) {
+      setPhase({
+        kind: 'merge-failed',
+        pr,
+        message: err instanceof GitHubApiError ? err.message : 'Could not reach GitHub to merge the pull request.',
+      });
+    }
+  }
+
+  function startOver() {
+    setPhase({ kind: 'idle' });
+  }
+
+  const submitting = phase.kind !== 'idle' && phase.kind !== 'error';
 
   return (
     <main className="ingest">
@@ -144,11 +232,10 @@ export function IngestPage() {
       <header className="ingest__head">
         <h1>Add a drug</h1>
         <p className="ingest__lede">
-          Kicks off the real ingest pipeline — openFDA Drugs@FDA, ClinicalTrials.gov, and the
-          FDA's own approval documents. Nothing here is written or inferred by a language
-          model; this just starts the same deterministic process from your browser instead of
-          GitHub's Actions tab. It opens a pull request for you to review and merge — nothing
-          is published automatically.
+          Runs the real ingest pipeline — openFDA Drugs@FDA, ClinicalTrials.gov, and the FDA's
+          own approval documents. Nothing here is written or inferred by a language model.
+          Everything below, including reviewing and merging the result, happens on this page —
+          GitHub is only where the work actually runs.
         </p>
       </header>
 
@@ -156,9 +243,8 @@ export function IngestPage() {
         <section className="ingest__token-setup">
           <h2>Connect a GitHub token</h2>
           <p>
-            Triggering this from the website means your browser calls GitHub's API directly —
-            there's no server in between. You'll need a personal access token scoped to just
-            this repository:
+            This page calls GitHub's API directly from your browser — there's no server in
+            between. You'll need a personal access token scoped to just this repository:
           </p>
           <ol>
             <li>
@@ -169,7 +255,13 @@ export function IngestPage() {
               .
             </li>
             <li>Under "Repository access," choose "Only select repositories" and pick Pharma-Timeline-Tool.</li>
-            <li>Under "Permissions" → "Repository permissions," set <strong>Actions</strong> to <strong>Read and write</strong>.</li>
+            <li>
+              Under "Permissions" → "Repository permissions," set <strong>Actions</strong>,{' '}
+              <strong>Contents</strong>, and <strong>Pull requests</strong> each to{' '}
+              <strong>Read and write</strong>. (Actions runs the pipeline; Contents and Pull
+              requests let this page open and merge the result without sending you back to
+              GitHub.)
+            </li>
             <li>Generate it, copy the token, and paste it below.</li>
           </ol>
           <p className="ingest__token-note">
@@ -257,28 +349,98 @@ export function IngestPage() {
             {formError && <p className="ingest__error">{formError}</p>}
 
             <button type="submit" className="ingest__submit" disabled={submitting}>
-              {submitting ? 'Starting…' : 'Run ingest'}
+              {phase.kind === 'idle' || phase.kind === 'error' ? 'Run ingest' : 'Running…'}
             </button>
           </form>
 
-          {status.kind === 'error' && <p className="ingest__error">{status.message}</p>}
+          {phase.kind === 'error' && (
+            <p className="ingest__error">
+              {phase.message} <button type="button" className="ingest__retry" onClick={startOver}>Start over</button>
+            </p>
+          )}
 
-          {(status.kind === 'dispatched' || status.kind === 'found-run') && (
-            <div className="ingest__success" role="status">
-              <strong>Started.</strong> It takes a minute or two to fetch and parse the real
-              documents. When it finishes, it opens a pull request with the result for you to
-              review and merge.
-              <div>
-                {status.kind === 'found-run' ? (
-                  <a href={status.url} target="_blank" rel="noopener noreferrer">
-                    Watch this run on GitHub ↗
-                  </a>
-                ) : (
-                  <a href={WORKFLOW_RUNS_URL} target="_blank" rel="noopener noreferrer">
-                    View recent runs on GitHub ↗
-                  </a>
-                )}
+          {(phase.kind === 'submitting' || phase.kind === 'locating-run') && (
+            <div className="ingest__progress" role="status">
+              <span className="ingest__spinner" aria-hidden="true" />
+              {phase.kind === 'submitting' ? 'Starting the run…' : 'Finding the run…'}
+            </div>
+          )}
+
+          {phase.kind === 'running' && (
+            <div className="ingest__progress" role="status">
+              <div className="ingest__progress-head">
+                <span className="ingest__spinner" aria-hidden="true" />
+                Pipeline running ({phase.run.status === 'queued' ? 'queued' : 'in progress'})…
               </div>
+              {phase.steps.length > 0 && (
+                <ul className="ingest__steps">
+                  {phase.steps.map((s) => (
+                    <li key={s.name}>
+                      <span aria-hidden="true">{stepIcon(s)}</span> {s.name}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
+
+          {phase.kind === 'run-failed' && (
+            <div className="ingest__error">
+              The pipeline run failed.{' '}
+              <a href={phase.run.htmlUrl} target="_blank" rel="noopener noreferrer">
+                View the log on GitHub ↗
+              </a>{' '}
+              for what went wrong.
+              <div>
+                <button type="button" className="ingest__retry" onClick={startOver}>Start over</button>
+              </div>
+            </div>
+          )}
+
+          {phase.kind === 'resolving-outcome' && (
+            <div className="ingest__progress" role="status">
+              <span className="ingest__spinner" aria-hidden="true" />
+              Run finished — checking for the result…
+            </div>
+          )}
+
+          {phase.kind === 'no-changes' && (
+            <div className="ingest__success" role="status">
+              <strong>Done — no changes.</strong> The sources already agree with what's
+              committed, so there's nothing to review.
+              <div>
+                <button type="button" className="ingest__retry" onClick={startOver}>Run another</button>
+              </div>
+            </div>
+          )}
+
+          {(phase.kind === 'pr-ready' || phase.kind === 'merging' || phase.kind === 'merged' || phase.kind === 'merge-failed') && (
+            <div className="ingest__success" role="status">
+              <strong>Pull request ready.</strong> "{phase.pr.title}" — {phase.pr.changedFiles}{' '}
+              file{phase.pr.changedFiles === 1 ? '' : 's'} changed.
+              <div>
+                <a href={phase.pr.htmlUrl} target="_blank" rel="noopener noreferrer">
+                  Review the diff on GitHub ↗
+                </a>
+              </div>
+              {phase.kind === 'merged' ? (
+                <p className="ingest__merged">Merged. The site will pick it up on its next deploy.</p>
+              ) : (
+                <div className="ingest__merge-row">
+                  <button
+                    type="button"
+                    className="ingest__submit"
+                    onClick={() => handleMerge(phase.pr)}
+                    disabled={phase.kind === 'merging'}
+                  >
+                    {phase.kind === 'merging' ? 'Merging…' : 'Merge this pull request'}
+                  </button>
+                  {phase.kind === 'merge-failed' && <p className="ingest__error">{phase.message}</p>}
+                </div>
+              )}
+              {(phase.kind === 'merged' || phase.kind === 'merge-failed') && (
+                <button type="button" className="ingest__retry" onClick={startOver}>Run another</button>
+              )}
             </div>
           )}
         </>
