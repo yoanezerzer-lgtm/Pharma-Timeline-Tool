@@ -13,6 +13,14 @@
       "approvalDate": {
         "value": "2026-04-01",
         "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934Orig1s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
+        "verified": false
       }
     }
   ],
@@ -204,7 +212,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "17681",
@@ -302,7 +311,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "17787",
@@ -437,7 +447,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "17783",
@@ -535,7 +546,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18210",
@@ -665,7 +677,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18277",
@@ -765,7 +778,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "17610",
@@ -876,7 +890,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "17785",
@@ -976,7 +991,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18453",
@@ -1082,7 +1098,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18507",
@@ -1177,7 +1194,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18506",
@@ -1271,7 +1289,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "achieve-4",
@@ -1374,7 +1393,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18527",
@@ -1483,7 +1503,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "attain-1",
@@ -1575,6 +1596,95 @@
         "Percent Change From Baseline in Body Weight (Primary and Additional Treatment Periods: Participants With Prediabetes at Randomization)",
         "Time to Onset of Type 2 Diabetes (Primary and Additional Treatment Periods: Participants With Prediabetes at Randomization)"
       ],
+      "postedResults": [
+        {
+          "title": "Percent Change From Baseline in Body Weight (Primary Treatment Period)",
+          "timeFrame": "Baseline, Week 72",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "percent change",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "6 mg Orforglipron"
+            },
+            {
+              "id": "OG002",
+              "title": "12 mg Orforglipron"
+            },
+            {
+              "id": "OG003",
+              "title": "36 mg Orforglipron"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-0.87",
+              "spread": "0.247"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-7.82",
+              "spread": "0.302"
+            },
+            {
+              "groupId": "OG002",
+              "value": "-9.27",
+              "spread": "0.335"
+            },
+            {
+              "groupId": "OG003",
+              "value": "-12.35",
+              "spread": "0.364"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<.001",
+              "method": "Mixed Models Analysis",
+              "paramType": "LS Mean Difference (Net)",
+              "paramValue": "-6.95",
+              "ciPct": "95",
+              "ciLower": "-7.71",
+              "ciUpper": "-6.18"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<.001",
+              "method": "Mixed Models Analysis",
+              "paramType": "LS Mean Difference (Net)",
+              "paramValue": "-8.40",
+              "ciPct": "95",
+              "ciLower": "-9.22",
+              "ciUpper": "-7.58"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "pValue": "<.001",
+              "method": "Mixed Models Analysis",
+              "paramType": "LS Mean Difference (Net)",
+              "paramValue": "-11.48",
+              "ciPct": "95",
+              "ciLower": "-12.35",
+              "ciUpper": "-10.61"
+            }
+          ]
+        }
+      ],
       "metPrimaryEndpoint": null,
       "takeaways": [],
       "limitations": [],
@@ -1610,6 +1720,12 @@
           "extractedBy": "api",
           "verified": false
         },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05869903?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
           "sourceLabel": "FDA approval package",
@@ -1618,7 +1734,102 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "changeLog": [
+        {
+          "field": "postedResults",
+          "newValue": [
+            {
+              "title": "Percent Change From Baseline in Body Weight (Primary Treatment Period)",
+              "timeFrame": "Baseline, Week 72",
+              "paramType": "LEAST_SQUARES_MEAN",
+              "unitOfMeasure": "percent change",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Placebo"
+                },
+                {
+                  "id": "OG001",
+                  "title": "6 mg Orforglipron"
+                },
+                {
+                  "id": "OG002",
+                  "title": "12 mg Orforglipron"
+                },
+                {
+                  "id": "OG003",
+                  "title": "36 mg Orforglipron"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "-0.87",
+                  "spread": "0.247"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "-7.82",
+                  "spread": "0.302"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "-9.27",
+                  "spread": "0.335"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "-12.35",
+                  "spread": "0.364"
+                }
+              ],
+              "analyses": [
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG001"
+                  ],
+                  "pValue": "<.001",
+                  "method": "Mixed Models Analysis",
+                  "paramType": "LS Mean Difference (Net)",
+                  "paramValue": "-6.95",
+                  "ciPct": "95",
+                  "ciLower": "-7.71",
+                  "ciUpper": "-6.18"
+                },
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG002"
+                  ],
+                  "pValue": "<.001",
+                  "method": "Mixed Models Analysis",
+                  "paramType": "LS Mean Difference (Net)",
+                  "paramValue": "-8.40",
+                  "ciPct": "95",
+                  "ciLower": "-9.22",
+                  "ciUpper": "-7.58"
+                },
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG003"
+                  ],
+                  "pValue": "<.001",
+                  "method": "Mixed Models Analysis",
+                  "paramType": "LS Mean Difference (Net)",
+                  "paramValue": "-11.48",
+                  "ciPct": "95",
+                  "ciLower": "-12.35",
+                  "ciUpper": "-10.61"
+                }
+              ]
+            }
+          ],
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        }
+      ]
     },
     {
       "id": "attain-2",
@@ -1713,6 +1924,95 @@
         "Percent Change From Baseline in Triglycerides (Pooled Doses of Orforglipron 6 mg, 12 mg and 36 mg)",
         "Change From Baseline in Short Form-36 Health Survey Version 2 (SF-36v2) Acute Form (Physical-Component and Mental-Component) Scores (Pooled Doses of Orforglipron 6 mg, 12 mg and 36 mg)"
       ],
+      "postedResults": [
+        {
+          "title": "Percent Change From Baseline in Body Weight",
+          "timeFrame": "Baseline, Week 72",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "percent change",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "6 mg Orforglipron QD"
+            },
+            {
+              "id": "OG002",
+              "title": "12 mg Orforglipron QD"
+            },
+            {
+              "id": "OG003",
+              "title": "36 mg Orforglipron QD"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-2.21",
+              "spread": "0.215"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-5.50",
+              "spread": "0.356"
+            },
+            {
+              "groupId": "OG002",
+              "value": "-7.78",
+              "spread": "0.411"
+            },
+            {
+              "groupId": "OG003",
+              "value": "-10.54",
+              "spread": "0.466"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<.001",
+              "method": "Mixed Models Analysis",
+              "paramType": "LS Mean Difference (Net)",
+              "paramValue": "-3.28",
+              "ciPct": "95",
+              "ciLower": "-4.10",
+              "ciUpper": "-2.47"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<.001",
+              "method": "Mixed Models Analysis",
+              "paramType": "LS Mean Difference (Net)",
+              "paramValue": "-5.56",
+              "ciPct": "95",
+              "ciLower": "-6.48",
+              "ciUpper": "-4.65"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "pValue": "<.001",
+              "method": "Mixed Models Analysis",
+              "paramType": "LS Mean Difference (Net)",
+              "paramValue": "-8.33",
+              "ciPct": "95",
+              "ciLower": "-9.34",
+              "ciUpper": "-7.32"
+            }
+          ]
+        }
+      ],
       "metPrimaryEndpoint": null,
       "takeaways": [],
       "limitations": [],
@@ -1748,6 +2048,12 @@
           "extractedBy": "api",
           "verified": false
         },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05872620?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
           "sourceLabel": "FDA approval package",
@@ -1756,7 +2062,102 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "changeLog": [
+        {
+          "field": "postedResults",
+          "newValue": [
+            {
+              "title": "Percent Change From Baseline in Body Weight",
+              "timeFrame": "Baseline, Week 72",
+              "paramType": "LEAST_SQUARES_MEAN",
+              "unitOfMeasure": "percent change",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Placebo"
+                },
+                {
+                  "id": "OG001",
+                  "title": "6 mg Orforglipron QD"
+                },
+                {
+                  "id": "OG002",
+                  "title": "12 mg Orforglipron QD"
+                },
+                {
+                  "id": "OG003",
+                  "title": "36 mg Orforglipron QD"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "-2.21",
+                  "spread": "0.215"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "-5.50",
+                  "spread": "0.356"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "-7.78",
+                  "spread": "0.411"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "-10.54",
+                  "spread": "0.466"
+                }
+              ],
+              "analyses": [
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG001"
+                  ],
+                  "pValue": "<.001",
+                  "method": "Mixed Models Analysis",
+                  "paramType": "LS Mean Difference (Net)",
+                  "paramValue": "-3.28",
+                  "ciPct": "95",
+                  "ciLower": "-4.10",
+                  "ciUpper": "-2.47"
+                },
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG002"
+                  ],
+                  "pValue": "<.001",
+                  "method": "Mixed Models Analysis",
+                  "paramType": "LS Mean Difference (Net)",
+                  "paramValue": "-5.56",
+                  "ciPct": "95",
+                  "ciLower": "-6.48",
+                  "ciUpper": "-4.65"
+                },
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG003"
+                  ],
+                  "pValue": "<.001",
+                  "method": "Mixed Models Analysis",
+                  "paramType": "LS Mean Difference (Net)",
+                  "paramValue": "-8.33",
+                  "ciPct": "95",
+                  "ciLower": "-9.34",
+                  "ciUpper": "-7.32"
+                }
+              ]
+            }
+          ],
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        }
+      ]
     },
     {
       "id": "18624",
@@ -1861,7 +2262,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18633",
@@ -1961,7 +2363,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "attain-j",
@@ -2086,7 +2489,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "achieve-1",
@@ -2201,7 +2605,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18610",
@@ -2308,7 +2713,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "achieve-3",
@@ -2352,50 +2758,50 @@
       },
       "arms": [
         {
-          "label": "Orforglipron Dose 1",
+          "label": "12 mg Orforglipron",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally."
+          "description": "Participants initiated treatment with a 1 mg once-daily oral dose of orforglipron and increased the dose every 4 weeks until the targeted dose of 12 mg once-daily was reached, after which this dose was to be continued for the remainder of the 52-week treatment period."
         },
         {
-          "label": "Orforglipron Dose 2",
+          "label": "36 mg Orforglipron",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally."
+          "description": "Participants initiated treatment with a 1 mg once-daily oral dose of orforglipron and increased the dose every 4 weeks until the targeted dose of 36 mg once-daily was reached, after which this dose was to be continued for the remainder of the 52-week treatment period."
         },
         {
-          "label": "Semaglutide Dose 1",
+          "label": "7 mg Semaglutide",
           "type": "ACTIVE_COMPARATOR",
-          "description": "Participants will receive semaglutide orally."
+          "description": "Participants initiated treatment with a 3 mg once-daily oral dose of semaglutide and increased the dose every 4 weeks until the targeted dose of 7 mg once-daily was reached, after which this dose was to be continued for the remainder of the 52-week treatment period."
         },
         {
-          "label": "Semaglutide Dose 2",
+          "label": "14 mg Semaglutide",
           "type": "ACTIVE_COMPARATOR",
-          "description": "Participants will receive semaglutide orally."
+          "description": "Participants initiated treatment with a 3 mg once-daily oral dose of semaglutide and increased the dose every 4 weeks until the targeted dose of 14 mg once-daily was reached, after which this dose was to be continued for the remainder of the 52-week treatment period."
         }
       ],
       "primaryEndpoints": [
-        "Change from Baseline in Hemoglobin A1c (HbA1c)"
+        "Change From Baseline in Hemoglobin A1c (HbA1c) [Non-inferiority of 36 mg Orforglipron Versus 14 mg Semaglutide and 12 mg Orforglipron Versus 7 mg Semaglutide]"
       ],
       "secondaryEndpoints": [
-        "Change from Baseline in HbA1c",
-        "Percentage of Participants Who Achieved HbA1c <7.0% 53 millimole/mole (mmol/mol)",
-        "Percentage of Participants Who Achieved HbA1c ≤6.5% (48 mmol/mol)",
-        "Percentage Change from Baseline in Body Weight",
-        "Change from Baseline in Body Weight",
-        "Percentage of Participants Who Achieved HbA1c <5.7% (39 mmol/mol)",
-        "Change from Baseline in Fasting Serum Glucose",
-        "Change from Baseline in Daily Average 7-point Self-monitored Blood Glucose (SMBG)",
-        "Percentage of Participants Who Achieved Weight Loss of ≥5%",
-        "Percentage of Participants Who Achieved Weight Loss of ≥10%",
-        "Percentage of Participants Who Achieved Weight Loss of ≥15%",
-        "Change from Baseline in Systolic Blood Pressure (SBP)",
-        "Change from Baseline in Diastolic Blood Pressure (DBP)",
-        "Percentage Change from Baseline in Total Cholesterol",
-        "Percentage Change from Baseline in High Density Lipoprotein (HDL)-Cholesterol",
-        "Percentage Change from Baseline in Low Density Lipoprotein (LDL)-Cholesterol",
-        "Percentage Change from Baseline in Very Low Density Lipoprotein (VLDL)-Cholesterol",
-        "Percentage Change from Baseline in Non-HDL-Cholesterol",
-        "Percentage Change from Baseline in Triglycerides",
-        "Change from Baseline in Short Form 36 Version 2 (SF-36-v2) Acute Form Domain Summary Scores"
+        "Change From Baseline in Hemoglobin A1c (HbA1c) [Non-inferiority of 12 mg Orforglipron Versus 14 mg Semaglutide, Superiority of 12 mg and 36 mg Orforglipron Versus 7 mg and 14 mg Semaglutide]",
+        "Percentage of Participants Who Achieved HbA1c <7.0% [53 Millimoles/Mole (mmol/Mol)]",
+        "Percentage of Participants Who Achieved HbA1c <=6.5% (48 mmol/Mol)",
+        "Percentage of Participants Who Achieved HbA1c <5.7% (39 mmol/Mol)",
+        "Percent Change From Baseline in Body Weight",
+        "Change From Baseline in Body Weight",
+        "Change From Baseline in Fasting Serum Glucose",
+        "Change From Baseline in Daily Average 7-point Self-monitored Blood Glucose (SMBG)",
+        "Percentage of Participants Who Achieved Weight Loss of >=5%",
+        "Percentage of Participants Who Achieved Weight Loss of >=10%",
+        "Percentage of Participants Who Achieved Weight Loss of >=15%",
+        "Change From Baseline in Systolic Blood Pressure (SBP)",
+        "Change From Baseline in Diastolic Blood Pressure (DBP)",
+        "Percent Change From Baseline in Total Serum Cholesterol",
+        "Percent Change From Baseline in Serum Low Density Lipoprotein (LDL) Cholesterol",
+        "Percent Change From Baseline in Serum Non High Density Lipoprotein (Non-HDL) Cholesterol",
+        "Percent Change From Baseline in Serum Triglycerides",
+        "Percent Change From Baseline in Serum High Density Lipoprotein (HDL) Cholesterol",
+        "Percent Change From Baseline in Serum Very Low Density Lipoprotein (VLDL) Cholesterol",
+        "Change From Baseline in Short Form 36 Version 2 (SF-36-v2) Acute Form (Physical Component and Mental Component Scores)"
       ],
       "metPrimaryEndpoint": null,
       "takeaways": [],
@@ -2432,7 +2838,115 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": [
+        {
+          "field": "arms",
+          "previousValue": [
+            {
+              "label": "Orforglipron Dose 1",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive orforglipron orally."
+            },
+            {
+              "label": "Orforglipron Dose 2",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive orforglipron orally."
+            },
+            {
+              "label": "Semaglutide Dose 1",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants will receive semaglutide orally."
+            },
+            {
+              "label": "Semaglutide Dose 2",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants will receive semaglutide orally."
+            }
+          ],
+          "newValue": [
+            {
+              "label": "12 mg Orforglipron",
+              "type": "EXPERIMENTAL",
+              "description": "Participants initiated treatment with a 1 mg once-daily oral dose of orforglipron and increased the dose every 4 weeks until the targeted dose of 12 mg once-daily was reached, after which this dose was to be continued for the remainder of the 52-week treatment period."
+            },
+            {
+              "label": "36 mg Orforglipron",
+              "type": "EXPERIMENTAL",
+              "description": "Participants initiated treatment with a 1 mg once-daily oral dose of orforglipron and increased the dose every 4 weeks until the targeted dose of 36 mg once-daily was reached, after which this dose was to be continued for the remainder of the 52-week treatment period."
+            },
+            {
+              "label": "7 mg Semaglutide",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants initiated treatment with a 3 mg once-daily oral dose of semaglutide and increased the dose every 4 weeks until the targeted dose of 7 mg once-daily was reached, after which this dose was to be continued for the remainder of the 52-week treatment period."
+            },
+            {
+              "label": "14 mg Semaglutide",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants initiated treatment with a 3 mg once-daily oral dose of semaglutide and increased the dose every 4 weeks until the targeted dose of 14 mg once-daily was reached, after which this dose was to be continued for the remainder of the 52-week treatment period."
+            }
+          ],
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "primaryEndpoints",
+          "previousValue": [
+            "Change from Baseline in Hemoglobin A1c (HbA1c)"
+          ],
+          "newValue": [
+            "Change From Baseline in Hemoglobin A1c (HbA1c) [Non-inferiority of 36 mg Orforglipron Versus 14 mg Semaglutide and 12 mg Orforglipron Versus 7 mg Semaglutide]"
+          ],
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "Change from Baseline in HbA1c",
+            "Percentage of Participants Who Achieved HbA1c <7.0% 53 millimole/mole (mmol/mol)",
+            "Percentage of Participants Who Achieved HbA1c ≤6.5% (48 mmol/mol)",
+            "Percentage Change from Baseline in Body Weight",
+            "Change from Baseline in Body Weight",
+            "Percentage of Participants Who Achieved HbA1c <5.7% (39 mmol/mol)",
+            "Change from Baseline in Fasting Serum Glucose",
+            "Change from Baseline in Daily Average 7-point Self-monitored Blood Glucose (SMBG)",
+            "Percentage of Participants Who Achieved Weight Loss of ≥5%",
+            "Percentage of Participants Who Achieved Weight Loss of ≥10%",
+            "Percentage of Participants Who Achieved Weight Loss of ≥15%",
+            "Change from Baseline in Systolic Blood Pressure (SBP)",
+            "Change from Baseline in Diastolic Blood Pressure (DBP)",
+            "Percentage Change from Baseline in Total Cholesterol",
+            "Percentage Change from Baseline in High Density Lipoprotein (HDL)-Cholesterol",
+            "Percentage Change from Baseline in Low Density Lipoprotein (LDL)-Cholesterol",
+            "Percentage Change from Baseline in Very Low Density Lipoprotein (VLDL)-Cholesterol",
+            "Percentage Change from Baseline in Non-HDL-Cholesterol",
+            "Percentage Change from Baseline in Triglycerides",
+            "Change from Baseline in Short Form 36 Version 2 (SF-36-v2) Acute Form Domain Summary Scores"
+          ],
+          "newValue": [
+            "Change From Baseline in Hemoglobin A1c (HbA1c) [Non-inferiority of 12 mg Orforglipron Versus 14 mg Semaglutide, Superiority of 12 mg and 36 mg Orforglipron Versus 7 mg and 14 mg Semaglutide]",
+            "Percentage of Participants Who Achieved HbA1c <7.0% [53 Millimoles/Mole (mmol/Mol)]",
+            "Percentage of Participants Who Achieved HbA1c <=6.5% (48 mmol/Mol)",
+            "Percentage of Participants Who Achieved HbA1c <5.7% (39 mmol/Mol)",
+            "Percent Change From Baseline in Body Weight",
+            "Change From Baseline in Body Weight",
+            "Change From Baseline in Fasting Serum Glucose",
+            "Change From Baseline in Daily Average 7-point Self-monitored Blood Glucose (SMBG)",
+            "Percentage of Participants Who Achieved Weight Loss of >=5%",
+            "Percentage of Participants Who Achieved Weight Loss of >=10%",
+            "Percentage of Participants Who Achieved Weight Loss of >=15%",
+            "Change From Baseline in Systolic Blood Pressure (SBP)",
+            "Change From Baseline in Diastolic Blood Pressure (DBP)",
+            "Percent Change From Baseline in Total Serum Cholesterol",
+            "Percent Change From Baseline in Serum Low Density Lipoprotein (LDL) Cholesterol",
+            "Percent Change From Baseline in Serum Non High Density Lipoprotein (Non-HDL) Cholesterol",
+            "Percent Change From Baseline in Serum Triglycerides",
+            "Percent Change From Baseline in Serum High Density Lipoprotein (HDL) Cholesterol",
+            "Percent Change From Baseline in Serum Very Low Density Lipoprotein (VLDL) Cholesterol",
+            "Change From Baseline in Short Form 36 Version 2 (SF-36-v2) Acute Form (Physical Component and Mental Component Scores)"
+          ],
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        }
+      ]
     },
     {
       "id": "achieve-j",
@@ -2543,7 +3057,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18596",
@@ -2638,7 +3153,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "achieve-5",
@@ -2682,44 +3198,43 @@
       },
       "arms": [
         {
-          "label": "Orforglipron Dose 1",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally."
-        },
-        {
-          "label": "Orforglipron Dose 2",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally."
-        },
-        {
-          "label": "Orforglipron Dose 3",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally."
-        },
-        {
           "label": "Placebo",
           "type": "PLACEBO_COMPARATOR",
-          "description": "Participants will receive placebo orally."
+          "description": "Participants received matching placebo administered orally once daily (QD) and insulin glargine therapy (100 Units per milliliter (U/mL)) administered subcutaneously (SC) QD, over a period of 40 weeks."
+        },
+        {
+          "label": "3 mg Orforglipron QD",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received oral orforglipron, initiated at 1 milligram (mg) and increased every 4 weeks until reaching to a maintenance dose of 3 mg QD and insulin glargine therapy 100 U/mL administered SC QD, over a period of 40 weeks."
+        },
+        {
+          "label": "12 mg Orforglipron QD",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received oral orforglipron, initiated at 1 mg and increasing every 4 weeks until reaching to a maintenance dose of 12 mg QD and insulin glargine therapy 100 U/mL administered SC QD, over a period of 40 weeks."
+        },
+        {
+          "label": "36 mg Orforglipron QD",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received oral orforglipron, initiated at 1 mg and increasing every 4 weeks until reaching to a maintenance dose of 36 mg QD and insulin glargine therapy 100 U/mL administered SC QD, over a period of 40 weeks."
         }
       ],
       "primaryEndpoints": [
-        "Orforglipron Dose 1, 2: Change from Baseline in Hemoglobin A1c (HbA1c)"
+        "Change From Baseline in Hemoglobin A1c (HbA1c)"
       ],
       "secondaryEndpoints": [
-        "Orforglipron Dose 3: Change from Baseline in HbA1c",
-        "Percentage of Participants Who Achieved HbA1c <7.0% (53 millimoles per mole (mmol/mol))",
-        "Percentage of Participants Who Achieved HbA1c ≤6.5% (48 mmol/mol)",
-        "Change from Baseline in Fasting Serum Glucose",
-        "Percentage Change from Baseline in Body Weight",
-        "Change from Baseline in Body Weight",
-        "Percentage Change from Baseline in non-HDL (non-high-density lipoprotein) Cholesterol",
-        "Percentage Change from Baseline in Triglycerides",
-        "Change from Baseline in Systolic Blood Pressure",
-        "Change from Baseline in Daily Insulin Glargine Dose",
-        "Percentage of Participants Who Achieved Weight Loss of ≥5%",
-        "Percentage of Participants Who Achieved Weight Loss of ≥10%",
-        "Percentage of Participants Who Achieved Weight Loss of ≥15% from Baseline",
-        "Change from Baseline in Short Form 36-Version 2 (SF-36v2) Acute Form Domain and Summary Scores"
+        "Percentage of Participants With an HbA1c Target Value of < 7.0% (53 mmol/Mol)",
+        "Percentage of Participants With an HbA1c Target Value of < 6.5% (48 mmol/Mol)",
+        "Change From Baseline in Fasting Serum Glucose (FSG)",
+        "Percent Change From Baseline in Body Weight",
+        "Change From Baseline in Body Weight (kg)",
+        "Percent Change From Baseline in Non-HDL (Non-high-density Lipoprotein) Cholesterol",
+        "Percent Change From Baseline in Triglycerides",
+        "Change From Baseline in Systolic Blood Pressure (mmHg)",
+        "Change From Baseline in Daily Insulin Glargine Dose (IU/Day)",
+        "Percentage of Participants With Greater Than or Equal to (≥) 5% Body Weight Reduction",
+        "Percentage of Participants With Greater Than or Equal to (≥) 10% Body Weight Reduction",
+        "Percentage of Participants With Greater Than or Equal to (≥) 15% Body Weight Reduction",
+        "Change From Baseline in Short Form-36 Health Survey Version 2 (SF-36v2) Acute Form (Physical-Component and Mental-Component) Scores"
       ],
       "metPrimaryEndpoint": null,
       "takeaways": [],
@@ -2756,7 +3271,102 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": [
+        {
+          "field": "arms",
+          "previousValue": [
+            {
+              "label": "Orforglipron Dose 1",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive orforglipron orally."
+            },
+            {
+              "label": "Orforglipron Dose 2",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive orforglipron orally."
+            },
+            {
+              "label": "Orforglipron Dose 3",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive orforglipron orally."
+            },
+            {
+              "label": "Placebo",
+              "type": "PLACEBO_COMPARATOR",
+              "description": "Participants will receive placebo orally."
+            }
+          ],
+          "newValue": [
+            {
+              "label": "Placebo",
+              "type": "PLACEBO_COMPARATOR",
+              "description": "Participants received matching placebo administered orally once daily (QD) and insulin glargine therapy (100 Units per milliliter (U/mL)) administered subcutaneously (SC) QD, over a period of 40 weeks."
+            },
+            {
+              "label": "3 mg Orforglipron QD",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received oral orforglipron, initiated at 1 milligram (mg) and increased every 4 weeks until reaching to a maintenance dose of 3 mg QD and insulin glargine therapy 100 U/mL administered SC QD, over a period of 40 weeks."
+            },
+            {
+              "label": "12 mg Orforglipron QD",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received oral orforglipron, initiated at 1 mg and increasing every 4 weeks until reaching to a maintenance dose of 12 mg QD and insulin glargine therapy 100 U/mL administered SC QD, over a period of 40 weeks."
+            },
+            {
+              "label": "36 mg Orforglipron QD",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received oral orforglipron, initiated at 1 mg and increasing every 4 weeks until reaching to a maintenance dose of 36 mg QD and insulin glargine therapy 100 U/mL administered SC QD, over a period of 40 weeks."
+            }
+          ],
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "primaryEndpoints",
+          "previousValue": [
+            "Orforglipron Dose 1, 2: Change from Baseline in Hemoglobin A1c (HbA1c)"
+          ],
+          "newValue": [
+            "Change From Baseline in Hemoglobin A1c (HbA1c)"
+          ],
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "Orforglipron Dose 3: Change from Baseline in HbA1c",
+            "Percentage of Participants Who Achieved HbA1c <7.0% (53 millimoles per mole (mmol/mol))",
+            "Percentage of Participants Who Achieved HbA1c ≤6.5% (48 mmol/mol)",
+            "Change from Baseline in Fasting Serum Glucose",
+            "Percentage Change from Baseline in Body Weight",
+            "Change from Baseline in Body Weight",
+            "Percentage Change from Baseline in non-HDL (non-high-density lipoprotein) Cholesterol",
+            "Percentage Change from Baseline in Triglycerides",
+            "Change from Baseline in Systolic Blood Pressure",
+            "Change from Baseline in Daily Insulin Glargine Dose",
+            "Percentage of Participants Who Achieved Weight Loss of ≥5%",
+            "Percentage of Participants Who Achieved Weight Loss of ≥10%",
+            "Percentage of Participants Who Achieved Weight Loss of ≥15% from Baseline",
+            "Change from Baseline in Short Form 36-Version 2 (SF-36v2) Acute Form Domain and Summary Scores"
+          ],
+          "newValue": [
+            "Percentage of Participants With an HbA1c Target Value of < 7.0% (53 mmol/Mol)",
+            "Percentage of Participants With an HbA1c Target Value of < 6.5% (48 mmol/Mol)",
+            "Change From Baseline in Fasting Serum Glucose (FSG)",
+            "Percent Change From Baseline in Body Weight",
+            "Change From Baseline in Body Weight (kg)",
+            "Percent Change From Baseline in Non-HDL (Non-high-density Lipoprotein) Cholesterol",
+            "Percent Change From Baseline in Triglycerides",
+            "Change From Baseline in Systolic Blood Pressure (mmHg)",
+            "Change From Baseline in Daily Insulin Glargine Dose (IU/Day)",
+            "Percentage of Participants With Greater Than or Equal to (≥) 5% Body Weight Reduction",
+            "Percentage of Participants With Greater Than or Equal to (≥) 10% Body Weight Reduction",
+            "Percentage of Participants With Greater Than or Equal to (≥) 15% Body Weight Reduction",
+            "Change From Baseline in Short Form-36 Health Survey Version 2 (SF-36v2) Acute Form (Physical-Component and Mental-Component) Scores"
+          ],
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        }
+      ]
     },
     {
       "id": "18631",
@@ -2865,7 +3475,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "achieve-2",
@@ -2985,7 +3596,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18621",
@@ -3075,7 +3687,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "18617",
@@ -3229,7 +3842,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27239",
@@ -3327,7 +3941,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "attain-osa",
@@ -3338,7 +3953,7 @@
       "briefTitle": "A Master Protocol for Orforglipron in Participants With Obstructive Sleep Apnea and Obesity or Overweight",
       "phase": "PHASE3",
       "roles": [],
-      "status": "ACTIVE_NOT_RECRUITING",
+      "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
       "startDate": {
@@ -3346,16 +3961,16 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2026-11-01",
-        "precision": "month"
+        "value": "2026-07-21",
+        "precision": "day"
       },
       "completionDate": {
-        "value": "2027-01-01",
-        "precision": "month"
+        "value": "2026-07-30",
+        "precision": "day"
       },
       "enrollment": {
-        "count": 600,
-        "type": "ESTIMATED"
+        "count": 712,
+        "type": "ACTUAL"
       },
       "design": {
         "allocation": "RANDOMIZED",
@@ -3428,7 +4043,51 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "ACTIVE_NOT_RECRUITING",
+          "newValue": "COMPLETED",
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2026-11-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-07-21",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2027-01-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-07-30",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 600,
+            "type": "ESTIMATED"
+          },
+          "newValue": {
+            "count": 712,
+            "type": "ACTUAL"
+          },
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        }
+      ]
     },
     {
       "id": "18868",
@@ -3534,7 +4193,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "advance",
@@ -3623,7 +4283,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27312",
@@ -3717,7 +4378,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27228",
@@ -3808,7 +4470,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27352",
@@ -3907,7 +4570,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27223",
@@ -3999,7 +4663,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27359",
@@ -4099,7 +4764,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27360",
@@ -4199,7 +4865,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27266",
@@ -4331,7 +4998,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27361",
@@ -4448,7 +5116,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27362",
@@ -4567,7 +5236,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "attain-oa-pain",
@@ -4578,7 +5248,7 @@
       "briefTitle": "A Study of Orforglipron (LY3502970) in Participants With Obesity or Overweight and Osteoarthritis (OA) of the Knee",
       "phase": "PHASE3",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
       "startDate": {
@@ -4688,7 +5358,15 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        }
+      ]
     },
     {
       "id": "restrain-sui",
@@ -4798,7 +5476,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "attain-pad",
@@ -4897,7 +5576,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "27771",
@@ -4993,7 +5673,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "achieve-ram",
@@ -5089,7 +5770,139 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "attain-now",
+      "nctId": "NCT07794579",
+      "protocolNumber": "27823",
+      "acronym": "ATTAIN-NOW",
+      "title": "A Phase 3, Randomized, Double-blind, Placebo-controlled Study to Investigate the Efficacy and Safety of Once-Daily Oral Orforglipron Compared With Placebo in Individuals With Overweight at Risk of Development of Obesity-Related Complications or Progression to Class 1 Obesity",
+      "briefTitle": "A Study of Orforglipron in Participants With Overweight at Risk of Development of Obesity-Related Complications or Progression to Class 1 Obesity",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Eli Lilly and Company",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-08-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2030-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 2001,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Orforglipron",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive orforglipron orally"
+        },
+        {
+          "label": "Orforglipron to Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive orforglipron orally followed by placebo orally"
+        },
+        {
+          "label": "Placebo to Orforglipron",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive placebo orally followed by orforglipron orally"
+        }
+      ],
+      "primaryEndpoints": [
+        "Time to Onset of Obesity Related Complications or Class 1 Obesity"
+      ],
+      "secondaryEndpoints": [
+        "Percent Change from Baseline in Body Weight",
+        "Time to Onset of Waist-to-Height Ratio ≥0.6",
+        "Change from Baseline in Waist Circumference",
+        "Time to Onset of Class 1 Obesity",
+        "Time to First Occurrence of Composite Endpoint of Type 2 Diabetes, Hypertension, Dyslipidemia",
+        "Time to Onset of Type 2 Diabetes",
+        "Percent Change from Baseline in Total Fat Mass",
+        "Change from Baseline in Systolic Blood Pressure",
+        "Change from Baseline in Glycated Hemoglobin (HbA1c)",
+        "Percent Change from Baseline in Triglycerides",
+        "Change from Baseline in Impact of Weight on Quality of Life-Lite Clinical Trials Version (IWQOL-Lite-CT) Score",
+        "Pharmacokinetics (PK): Steady-State Area Under the Curve (AUC) of Orforglipron"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "NOT_YET_RECRUITING",
+          "newValue": "RECRUITING",
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "startDate",
+          "previousValue": {
+            "value": "2026-09-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-08-26",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        }
+      ]
     },
     {
       "id": "achieve-peds",
@@ -5197,118 +6010,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
-    },
-    {
-      "id": "attain-now",
-      "nctId": "NCT07794579",
-      "protocolNumber": "27823",
-      "acronym": "ATTAIN-NOW",
-      "title": "A Phase 3, Randomized, Double-blind, Placebo-controlled Study to Investigate the Efficacy and Safety of Once-Daily Oral Orforglipron Compared With Placebo in Individuals With Overweight at Risk of Development of Obesity-Related Complications or Progression to Class 1 Obesity",
-      "briefTitle": "A Study of Orforglipron in Participants With Overweight at Risk of Development of Obesity-Related Complications or Progression to Class 1 Obesity",
-      "phase": "PHASE3",
-      "roles": [],
-      "status": "NOT_YET_RECRUITING",
-      "sponsor": "Eli Lilly and Company",
-      "studyType": "INTERVENTIONAL",
-      "startDate": {
-        "value": "2026-09-01",
-        "precision": "month"
       },
-      "primaryCompletionDate": {
-        "value": "2029-08-01",
-        "precision": "month"
-      },
-      "completionDate": {
-        "value": "2030-09-01",
-        "precision": "month"
-      },
-      "enrollment": {
-        "count": 2001,
-        "type": "ESTIMATED"
-      },
-      "design": {
-        "allocation": "RANDOMIZED",
-        "masking": "DOUBLE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Orforglipron",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally"
-        },
-        {
-          "label": "Orforglipron to Placebo",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally followed by placebo orally"
-        },
-        {
-          "label": "Placebo to Orforglipron",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will receive placebo orally followed by orforglipron orally"
-        }
-      ],
-      "primaryEndpoints": [
-        "Time to Onset of Obesity Related Complications or Class 1 Obesity"
-      ],
-      "secondaryEndpoints": [
-        "Percent Change from Baseline in Body Weight",
-        "Time to Onset of Waist-to-Height Ratio ≥0.6",
-        "Change from Baseline in Waist Circumference",
-        "Time to Onset of Class 1 Obesity",
-        "Time to First Occurrence of Composite Endpoint of Type 2 Diabetes, Hypertension, Dyslipidemia",
-        "Time to Onset of Type 2 Diabetes",
-        "Percent Change from Baseline in Total Fat Mass",
-        "Change from Baseline in Systolic Blood Pressure",
-        "Change from Baseline in Glycated Hemoglobin (HbA1c)",
-        "Percent Change from Baseline in Triglycerides",
-        "Change from Baseline in Impact of Weight on Quality of Life-Lite Clinical Trials Version (IWQOL-Lite-CT) Score",
-        "Pharmacokinetics (PK): Steady-State Area Under the Curve (AUC) of Orforglipron"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07794579",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      }
+      "changeLog": []
     },
     {
       "id": "cibi3042a101",
@@ -5318,11 +6021,11 @@
       "briefTitle": "IBI3042 Study in Healthy Participants and Overweight or Obese Participants",
       "phase": "PHASE1",
       "roles": [],
-      "status": "NOT_YET_RECRUITING",
+      "status": "RECRUITING",
       "sponsor": "Innovent Biologics (Suzhou) Co. Ltd.",
       "studyType": "INTERVENTIONAL",
       "startDate": {
-        "value": "2026-09-01",
+        "value": "2026-09-07",
         "precision": "day"
       },
       "primaryCompletionDate": {
@@ -5441,7 +6144,27 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "NOT_YET_RECRUITING",
+          "newValue": "RECRUITING",
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "startDate",
+          "previousValue": {
+            "value": "2026-09-01",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-09-07",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-10T04:59:54.037Z"
+        }
+      ]
     },
     {
       "id": "paths-t2d",
@@ -5536,7 +6259,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "r01dk148554",
@@ -5629,7 +6353,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "attain-cn",
@@ -5733,7 +6458,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     }
   ],
   "milestones": [
@@ -5802,5 +6528,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-09-08T23:22:41.478Z"
+  "lastIngestedAt": "2026-10-10T04:59:54.037Z"
 }
