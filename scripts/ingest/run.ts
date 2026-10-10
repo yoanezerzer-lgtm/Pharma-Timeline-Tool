@@ -17,6 +17,7 @@ import {
   type IndicationListEntry,
 } from './roles.js';
 import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
+import { dateIndications } from './indicationDates.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 export type Step = (typeof ALL_STEPS)[number];
@@ -264,14 +265,20 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   });
   phaseWarnings.forEach(warn);
 
+  // Posted results are only shown for trials in a filing; keeping them for
+  // every registered study would multiply the data each page downloads.
+  const trimmed = rolesApplied.map((t) => (t.roles.length > 0 ? t : withoutPostedResults(t)));
+
   // Deterministic order keeps the committed JSON diff-friendly across runs.
-  const trials = rolesApplied.sort((a, b) => {
+  const trials = trimmed.sort((a, b) => {
     const ap = a.startDate?.value ?? '9999';
     const bp = b.startDate?.value ?? '9999';
     return ap.localeCompare(bp) || a.id.localeCompare(b.id);
   });
 
   const pivotal = trials.filter((t) => t.roles.some((r) => r.role === 'PIVOTAL')).length;
+  const withResults = trials.filter((t) => t.postedResults?.length).length;
+  log(`[results] ${withResults} cited trial(s) have primary results posted to ClinicalTrials.gov`);
   log(
     `[roles] ${indicationSections.length} indication(s) found, ${pivotal} trial(s) pivotal for ` +
       `at least one, ${trials.length - pivotal} other`
@@ -369,6 +376,12 @@ function withoutStamp(d: DrugType): Omit<DrugType, 'lastIngestedAt'> {
   return rest;
 }
 
+export function withoutPostedResults(trial: Trial): Trial {
+  const { postedResults: _results, ...rest } = trial;
+  const { postedResults: _prov, ...provenance } = trial.provenance;
+  return { ...rest, provenance };
+}
+
 /**
  * Numbered indications ("1.1 Rheumatoid Arthritis") are already short — this
  * cap only bites on the unnumbered-indication fallback (extractIndicationList
@@ -402,18 +415,20 @@ function buildDrugRecord(
 ): DrugType {
   const original = fda.milestones.find((m) => m.type === 'FDA_APPROVAL');
 
-  // openFDA's own submission classification ("Efficacy", "Labeling",
-  // "Manufacturing (CMC)") is not the indication — it does not say which
-  // disease a supplement was for. Real indication names only exist in the
-  // label's own section 1 numbering (see extractIndicationList). The first
-  // indication (1.1) is dated by the original approval; a later indication's
-  // exact approval date isn't reliably derivable from openFDA data alone, so
-  // it's left unset rather than guessed at.
-  const indications = indicationList.map((entry) => ({
-    name: entry.name,
-    slug: slugifyIndication(entry.name),
-    approvalDate: entry.number === 1 ? original?.date : undefined,
-  }));
+  // openFDA's submission class doesn't say which disease a supplement was
+  // for; the labels do. See dateIndications for how, and when it declines.
+  const labels = docs.filter((d) => /label/i.test(d.type));
+  const approvals = dateIndications(indicationList.map((e) => e.name), labels, fda.milestones);
+  const indications = indicationList.map((entry) => {
+    const approval = approvals.get(entry.name);
+    return {
+      name: entry.name,
+      slug: slugifyIndication(entry.name),
+      approvalDate: approval?.date ?? (entry.number === 1 && labels.length === 0 ? original?.date : undefined),
+      submissionNumber: approval?.submission,
+      approvalProvenance: approval?.provenance,
+    };
+  });
 
   return {
     slug: spec.slug,

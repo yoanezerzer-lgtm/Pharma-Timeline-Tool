@@ -113,6 +113,43 @@ export const Publication = z.object({
   url: z.string().url().optional(),
 });
 
+/**
+ * One primary outcome's results exactly as the sponsor posted them to
+ * ClinicalTrials.gov. Values stay strings ("71.4", "<0.001") — they are
+ * quoted, never computed on.
+ */
+export const PostedOutcome = z.object({
+  title: z.string(),
+  timeFrame: z.string().optional(),
+  paramType: z.string().optional(),
+  unitOfMeasure: z.string().optional(),
+  groups: z.array(z.object({ id: z.string(), title: z.string() })),
+  measurements: z.array(
+    z.object({
+      groupId: z.string(),
+      /** Class/category title when the outcome is broken down (e.g. by timepoint). */
+      category: z.string().optional(),
+      value: z.string(),
+      spread: z.string().optional(),
+      lowerLimit: z.string().optional(),
+      upperLimit: z.string().optional(),
+    })
+  ),
+  analyses: z.array(
+    z.object({
+      groupIds: z.array(z.string()),
+      pValue: z.string().optional(),
+      method: z.string().optional(),
+      paramType: z.string().optional(),
+      paramValue: z.string().optional(),
+      ciPct: z.string().optional(),
+      ciLower: z.string().optional(),
+      ciUpper: z.string().optional(),
+    })
+  ),
+});
+export type PostedOutcome = z.infer<typeof PostedOutcome>;
+
 export const Population = z.object({
   minAge: z.string().optional(),
   maxAge: z.string().optional(),
@@ -194,7 +231,10 @@ export const Trial = z.object({
   primaryEndpoints: z.array(z.string()).default([]),
   secondaryEndpoints: z.array(z.string()).default([]),
 
-  /** Whether the trial met its primary endpoint. null when not established. */
+  /** Primary-outcome results posted to ClinicalTrials.gov, when the sponsor has posted any. */
+  postedResults: z.array(PostedOutcome).optional(),
+
+  /** Whether the trial met its primary endpoint. null when not established. Human-set. */
   metPrimaryEndpoint: z.boolean().nullable().default(null),
   resultsSummary: z.string().optional(),
 
@@ -291,11 +331,20 @@ export const Source = z.object({
 });
 
 export const Indication = z.object({
+  /** The label's own wording — sometimes a whole sentence when the label doesn't number its indications. */
   name: z.string(),
+  /**
+   * A short name a person chose for display ("Chronic weight management"),
+   * when `name` is too long to show as-is. Never produced by ingestion;
+   * preserved across re-runs like pressReleaseUrl.
+   */
+  displayName: z.string().optional(),
   /** URL-safe id for routing, e.g. "rheumatoid-arthritis". Stable across re-ingestion. */
   slug: z.string().regex(/^[a-z0-9-]+$/),
   approvalDate: DateValue.optional(),
+  /** The submission that added this indication — where approvalDate comes from. */
   submissionNumber: z.string().optional(),
+  approvalProvenance: Provenance.optional(),
   /**
    * The sponsor's own announcement of this approval, when someone has found
    * and added one. A press release routinely names the trials behind an

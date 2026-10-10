@@ -74,6 +74,7 @@ const MERGEABLE_FIELDS = [
   'arms',
   'primaryEndpoints',
   'secondaryEndpoints',
+  'postedResults',
 ] as const;
 
 /** Human-authored fields ingestion never touches, verified or not. */
@@ -160,12 +161,12 @@ function trialKey(t: Trial): string {
 }
 
 /**
- * Carries forward `pressReleaseUrl` and `fdaAnnouncementUrl` from the
- * existing record — the only per-indication fields ingestion never produces
+ * Carries forward `displayName`, `pressReleaseUrl` and `fdaAnnouncementUrl`
+ * from the existing record — the per-indication fields ingestion never produces
  * itself, since there's no public registry of either press releases or FDA
  * announcements to pull from automatically. Everything else about an
  * indication (name, slug, approvalDate) is fine to take fresh from each
- * run; these two fields are always a person's addition.
+ * run; these fields are always a person's addition.
  */
 function mergeIndications(existing: Indication[], incoming: Indication[]): Indication[] {
   const existingBySlug = new Map(existing.map((i) => [i.slug, i]));
@@ -174,6 +175,7 @@ function mergeIndications(existing: Indication[], incoming: Indication[]): Indic
     if (!prior) return inc;
     return {
       ...inc,
+      ...(prior.displayName ? { displayName: prior.displayName } : {}),
       ...(prior.pressReleaseUrl ? { pressReleaseUrl: prior.pressReleaseUrl } : {}),
       ...(prior.fdaAnnouncementUrl ? { fdaAnnouncementUrl: prior.fdaAnnouncementUrl } : {}),
     };

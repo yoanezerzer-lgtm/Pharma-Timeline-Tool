@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import {
+  setWriteUp,
+  setIndicationDisplayName,
   trialStats,
   drugStats,
   reviewableFields,
@@ -283,5 +285,35 @@ describe('crossConfirmed', () => {
       provenance: { citedIn: { extractedBy: 'regex', verified: false, quote: 'named in the review' } },
     });
     expect(crossConfirmed(t)).toBe(false);
+  });
+});
+
+describe('setIndicationDisplayName', () => {
+  const long = 'In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight';
+  const withIndication = (): Drug => ({ ...drug([]), indications: [{ name: long, slug: 'weight' }] });
+
+  it('sets a short name without touching the label wording', () => {
+    const result = setIndicationDisplayName(withIndication(), 'weight', '  Chronic weight management ');
+    expect(result.indications[0]).toEqual({ name: long, slug: 'weight', displayName: 'Chronic weight management' });
+  });
+
+  it('clears the short name when given an empty string or the label wording itself', () => {
+    const named = setIndicationDisplayName(withIndication(), 'weight', 'Chronic weight management');
+    expect(setIndicationDisplayName(named, 'weight', '').indications[0]).not.toHaveProperty('displayName');
+    expect(setIndicationDisplayName(named, 'weight', long).indications[0]).not.toHaveProperty('displayName');
+  });
+});
+
+describe('setWriteUp', () => {
+  it('records the human interpretation and drops blank lines and an empty summary', () => {
+    const t = setWriteUp(trial(), {
+      metPrimaryEndpoint: true,
+      resultsSummary: '   ',
+      takeaways: ['Head-to-head vs adalimumab ', '', '  '],
+      limitations: [],
+    });
+    expect(t.metPrimaryEndpoint).toBe(true);
+    expect(t).not.toHaveProperty('resultsSummary');
+    expect(t.takeaways).toEqual(['Head-to-head vs adalimumab']);
   });
 });

@@ -67,6 +67,22 @@
   font-variant-numeric: tabular-nums;
 }
 
+.drug__label-wording {
+  margin: 0.35rem 0 0;
+  max-width: 70ch;
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.drug__label-wording span {
+  font-weight: 600;
+}
+
+.drug__fact-source {
+  margin-left: 0.4rem;
+  font-size: 11px;
+}
+
 .drug__warning {
   margin: 1.5rem 0 0;
   padding: 0.85rem 1rem;
@@ -104,6 +120,10 @@
 }
 
 .drug__indication-switch a {
+  max-width: 32ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
   border: 1px solid var(--border);

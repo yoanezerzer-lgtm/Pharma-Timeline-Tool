@@ -143,3 +143,31 @@ export function replaceTrial(drug: Drug, trialId: string, updated: Trial): Drug 
 export function serializeDrug(drug: Drug): string {
   return JSON.stringify(drug, null, 2) + '\n';
 }
+
+/** Sets (or, given an empty string, clears) a person-chosen short name for one indication. */
+export function setIndicationDisplayName(drug: Drug, indicationSlug: string, displayName: string): Drug {
+  const trimmed = displayName.trim();
+  return {
+    ...drug,
+    indications: drug.indications.map((i) => {
+      if (i.slug !== indicationSlug) return i;
+      const { displayName: _previous, ...rest } = i;
+      return trimmed && trimmed !== i.name ? { ...rest, displayName: trimmed } : rest;
+    }),
+  };
+}
+
+export type WriteUp = Pick<Trial, 'metPrimaryEndpoint' | 'resultsSummary' | 'takeaways' | 'limitations'>;
+
+/**
+ * Updates the human-written interpretation of a trial. These fields are never
+ * produced by ingestion (merge.ts carries them forward untouched), so there is
+ * no provenance to verify — writing them is the verification.
+ */
+export function setWriteUp(trial: Trial, patch: Partial<WriteUp>): Trial {
+  const next = { ...trial, ...patch };
+  if (!next.resultsSummary?.trim()) delete next.resultsSummary;
+  next.takeaways = next.takeaways.map((t) => t.trim()).filter(Boolean);
+  next.limitations = next.limitations.map((t) => t.trim()).filter(Boolean);
+  return next;
+}

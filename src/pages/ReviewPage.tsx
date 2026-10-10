@@ -3,7 +3,7 @@ import { summaryRole, ROLE_LABEL } from '../lib/drugs.js';
 import { drugIndex, useDrug } from '../lib/catalog.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
 import { Drug } from '../schema/index.js';
-import type { Drug as DrugType, Trial, TrialRole } from '../schema/index.js';
+import type { Drug as DrugType, Indication, Trial, TrialRole } from '../schema/index.js';
 import {
   drugStats,
   trialStats,
@@ -19,7 +19,10 @@ import {
   drugPendingChangeCount,
   acknowledgeChange,
   crossConfirmed,
+  setIndicationDisplayName,
+  setWriteUp,
 } from '../lib/review.js';
+import { formatDate } from '../lib/dates.js';
 import { reviewHref, reviewDrugHref } from '../lib/router.js';
 import './ReviewPage.css';
 
@@ -42,6 +45,7 @@ const FIELD_LABEL: Record<string, string> = {
   primaryEndpoints: 'Primary endpoints',
   secondaryEndpoints: 'Secondary endpoints',
   citedIn: 'Cited in FDA review',
+  postedResults: 'Posted results (primary outcomes)',
 };
 
 function fieldLabel(field: string): string {
@@ -258,6 +262,22 @@ function DrugReviewLoaded({ slug, committed }: { slug: string; committed: DrugTy
         download the file and commit it over <code>data/drugs/{slug}.json</code>.
       </p>
 
+      {drug.indications.length > 0 && (
+        <section className="review__indications">
+          <h2 className="review__section-title">Indications</h2>
+          <ul>
+            {drug.indications.map((i) => (
+              <IndicationRow
+                key={i.slug}
+                indication={i}
+                onRename={(name) => setDrug((d) => setIndicationDisplayName(d, i.slug, name))}
+              />
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <h2 className="review__section-title">Trials</h2>
       <ul className="review__trials">
         {citedTrials.map((t) => (
           <TrialRow
@@ -388,7 +408,53 @@ function TrialReview({ trial, onChange }: { trial: Trial; onChange: (t: Trial) =
           onCorrect={(patch) => onChange(correctRole(trial, i, patch))}
         />
       ))}
+      <WriteUpEditor trial={trial} onChange={(patch) => onChange(setWriteUp(trial, patch))} />
     </div>
+  );
+}
+
+const lines = (text: string) => text.split('\n');
+
+function WriteUpEditor({ trial, onChange }: { trial: Trial; onChange: (patch: Parameters<typeof setWriteUp>[1]) => void }) {
+  // Local drafts committed on blur, so typing isn't fought by trimming.
+  const [summary, setSummary] = useState(trial.resultsSummary ?? '');
+  const [takeaways, setTakeaways] = useState(trial.takeaways.join('\n'));
+  const [limitations, setLimitations] = useState(trial.limitations.join('\n'));
+  const met = trial.metPrimaryEndpoint === null ? '' : String(trial.metPrimaryEndpoint);
+  return (
+    <fieldset className="review__writeup">
+      <legend>Your write-up</legend>
+      <p className="review__writeup-note">
+        Written by you, not extracted — shown on the trial's detail panel once filled in.
+      </p>
+      <label>
+        Met primary endpoint?
+        <select
+          value={met}
+          onChange={(e) => onChange({ metPrimaryEndpoint: e.target.value === '' ? null : e.target.value === 'true' })}
+        >
+          <option value="">Not determined</option>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </label>
+      <label>
+        Results summary
+        <textarea rows={2} value={summary} onChange={(e) => setSummary(e.target.value)} onBlur={() => onChange({ resultsSummary: summary })} />
+      </label>
+      <label>
+        <span className="review__writeup-label">
+          Takeaways <span>(one per line)</span>
+        </span>
+        <textarea rows={3} value={takeaways} onChange={(e) => setTakeaways(e.target.value)} onBlur={() => onChange({ takeaways: lines(takeaways) })} />
+      </label>
+      <label>
+        <span className="review__writeup-label">
+          Limitations <span>(one per line)</span>
+        </span>
+        <textarea rows={3} value={limitations} onChange={(e) => setLimitations(e.target.value)} onBlur={() => onChange({ limitations: lines(limitations) })} />
+      </label>
+    </fieldset>
   );
 }
 
@@ -566,5 +632,38 @@ function RoleRow({
         ))}
       </select>
     </div>
+  );
+}
+
+function IndicationRow({ indication, onRename }: { indication: Indication; onRename: (name: string) => void }) {
+  // Committed on blur, not per keystroke: the setter trims, which would eat
+  // the space while someone is still typing "Chronic weight…".
+  const [draft, setDraft] = useState(indication.displayName ?? '');
+  const source = indication.approvalProvenance;
+  return (
+    <li className="review__indication">
+      <div className="review__indication-wording">{indication.name}</div>
+      <div className="review__indication-meta">
+        {indication.approvalDate ? `Approved ${formatDate(indication.approvalDate)}` : 'Approval date not determined'}
+        {source?.sourceUrl && (
+          <>
+            {' · '}
+            <a href={source.sourceUrl} target="_blank" rel="noopener noreferrer" title={source.quote}>
+              {source.sourceLabel ?? 'source'} ↗
+            </a>
+          </>
+        )}
+      </div>
+      <label className="review__indication-name">
+        Short display name
+        <input
+          value={draft}
+          placeholder="Optional — shown instead of the label wording"
+          onChange={(e) => setDraft(e.target.value)}
+          onBlur={() => onRename(draft)}
+          onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.blur()}
+        />
+      </label>
+    </li>
   );
 }

@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { drugIndex } from '../lib/catalog.js';
 import { indicationHref, reviewHref, ingestHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
+import { indicationLabel } from '../lib/drugs.js';
 import './DrugIndex.css';
 
 const approvalDates = drugIndex.flatMap((d) => d.indications.flatMap((i) => (i.approvalDate ? [i.approvalDate] : [])));
@@ -25,7 +26,7 @@ export function DrugIndex() {
       if (sponsor && d.sponsor !== sponsor) return false;
       if (year && !d.indications.some((i) => i.approvalDate?.value.startsWith(year))) return false;
       if (!q) return true;
-      return [d.brandName, d.inn, d.sponsor, ...d.indications.map((i) => i.name)]
+      return [d.brandName, d.inn, d.sponsor, ...d.indications.flatMap((i) => [i.name, i.displayName ?? ''])]
         .join(' ')
         .toLowerCase()
         .includes(q);
@@ -146,7 +147,9 @@ export function DrugIndex() {
                     {d.indications.map((i) => (
                       <li key={i.slug}>
                         <a href={indicationHref(d.slug, i.slug)} className="drug-card__indication">
-                          <span className="drug-card__indication-name">{i.name}</span>
+                          <span className="drug-card__indication-name" title={i.name}>
+                            {indicationLabel(i)}
+                          </span>
                           <span className="drug-card__indication-meta">
                             {i.approvalDate ? formatDate(i.approvalDate) : 'Date not determined'}
                             {' · '}

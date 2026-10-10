@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { PostedResults } from './PostedResults.js';
 import type { Trial, Provenance } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
 import { roleFor, summaryRole, ROLE_LABEL } from '../../lib/drugs.js';
@@ -214,6 +215,22 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
               </ul>
             )}
             {trial.resultsSummary && <p className="drawer__prose">{trial.resultsSummary}</p>}
+          </section>
+        )}
+
+        {(trial.postedResults?.length || trial.metPrimaryEndpoint !== null) && (
+          <section className="drawer__section">
+            <h3>
+              Results
+              {trial.metPrimaryEndpoint !== null && (
+                <span className={`drawer__met ${trial.metPrimaryEndpoint ? 'is-met' : 'is-not-met'}`}>
+                  {trial.metPrimaryEndpoint ? 'Met primary endpoint' : 'Did not meet primary endpoint'}
+                </span>
+              )}
+            </h3>
+            {trial.postedResults?.length ? (
+              <PostedResults outcomes={trial.postedResults} sourceUrl={trial.provenance.postedResults?.sourceUrl} />
+            ) : null}
           </section>
         )}
 

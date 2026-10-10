@@ -225,6 +225,10 @@
 }
 
 .drug-card__indication-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-size: 13.5px;
   font-weight: 600;
   color: var(--text-1);
