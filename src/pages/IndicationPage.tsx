@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import {
   getIndication,
+  indicationLabel,
   trialsForIndication,
   isFullyUnverified,
   isMeaningfulMilestone,
@@ -57,7 +58,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         <p className="drug__missing">
           {drug.brandName} has no indication “{indicationSlug}” on record.{' '}
           <a href={indicationHref(drug.slug, drug.indications[0]?.slug ?? '')}>
-            {drug.indications[0] ? `See ${drug.indications[0].name} instead` : 'Back to search'}
+            {drug.indications[0] ? `See ${indicationLabel(drug.indications[0])} instead` : 'Back to search'}
           </a>
         </p>
       </main>
@@ -65,13 +66,18 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
   }
 
   const unverified = isFullyUnverified(drug);
-  // Not scoped to this specific indication — openFDA's own data doesn't say
-  // which indication a given supplement was for, only whether it was an
-  // "Efficacy" filing at all (see isMeaningfulMilestone). Administrative
-  // labeling/manufacturing supplements are filtered out everywhere; which
-  // approval-worthy supplement corresponds to *this* indication has to stay
-  // a human judgement call for now.
-  const scopedMilestones = drug.milestones.filter(isMeaningfulMilestone);
+  // The supplement that added this indication (dated from the labels at
+  // ingest) is shown as this page's approval; other indications' efficacy
+  // supplements and administrative ones stay hidden.
+  const ownSubmission = indication.submissionNumber;
+  const label = indicationLabel(indication);
+  const scopedMilestones = drug.milestones
+    .filter((m) => isMeaningfulMilestone(m) || m.submissionNumber === ownSubmission)
+    .map((m) =>
+      m.type === 'FDA_SUPPLEMENT' && m.submissionNumber === ownSubmission
+        ? { ...m, label: `FDA approval — ${label}`, shortLabel: 'Approved for this use' }
+        : m
+    );
 
   return (
     <main className="drug">
@@ -83,8 +89,13 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             {drug.brandName} <span className="drug__inn">({drug.inn})</span>
           </h1>
           <p className="drug__mechanism">
-            {indication.name} — {drug.mechanism ?? drug.modality}
+            {label} — {drug.mechanism ?? drug.modality}
           </p>
+          {label !== indication.name && (
+            <p className="drug__label-wording">
+              <span>Label wording:</span> {indication.name}
+            </p>
+          )}
           {(indication.pressReleaseUrl || indication.fdaAnnouncementUrl) && (
             <div className="drug__announcements">
               {indication.pressReleaseUrl && (
@@ -123,7 +134,20 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           </div>
           <div>
             <dt>Approved for this use</dt>
-            <dd>{indication.approvalDate ? formatDate(indication.approvalDate) : 'Date not determined'}</dd>
+            <dd>
+              {indication.approvalDate ? formatDate(indication.approvalDate) : 'Date not determined'}
+              {indication.approvalProvenance?.sourceUrl && (
+                <a
+                  className="drug__fact-source"
+                  href={indication.approvalProvenance.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={indication.approvalProvenance.quote}
+                >
+                  {indication.submissionNumber ?? 'label'} ↗
+                </a>
+              )}
+            </dd>
           </div>
           <div>
             <dt>Trials supporting this approval</dt>
@@ -148,8 +172,9 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
               key={i.slug}
               href={indicationHref(drug.slug, i.slug)}
               className={i.slug === indication.slug ? 'is-active' : undefined}
+              title={i.name}
             >
-              {i.name}
+              {indicationLabel(i)}
             </a>
           ))}
         </nav>
@@ -163,7 +188,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         </p>
       ) : (
         <section className="drug__chart-section">
-          <h2>Trials supporting the {indication.name} approval</h2>
+          <h2>Trials supporting {label.length > 60 ? 'this' : `the ${label}`} approval</h2>
           <Gantt
             trials={scopedTrials}
             milestones={scopedMilestones}
@@ -185,7 +210,10 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           </thead>
           <tbody>
             {scopedMilestones.map((m) => (
-              <tr key={m.id} className={m.type === 'FDA_APPROVAL' ? 'is-major' : undefined}>
+              <tr
+                key={m.id}
+                className={m.type === 'FDA_APPROVAL' || m.submissionNumber === ownSubmission ? 'is-major' : undefined}
+              >
                 <td className="nums">{formatDate(m.date)}</td>
                 <td>{m.label}</td>
               </tr>

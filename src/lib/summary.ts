@@ -16,7 +16,7 @@ export interface DrugSummary {
   modality: string;
   mechanism?: string;
   trialCount: number;
-  indications: { name: string; slug: string; approvalDate?: DateValue; trialCount: number }[];
+  indications: { name: string; displayName?: string; slug: string; approvalDate?: DateValue; trialCount: number }[];
   verification: VerificationStats;
   pendingChanges: number;
 }
@@ -32,6 +32,7 @@ export function summarize(drug: Drug): DrugSummary {
     trialCount: drug.trials.length,
     indications: drug.indications.map((i) => ({
       name: i.name,
+      displayName: i.displayName,
       slug: i.slug,
       approvalDate: i.approvalDate,
       trialCount: trialsForIndication(drug, i.name).length,

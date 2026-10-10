@@ -24,6 +24,11 @@ export function isFullyUnverified(drug: DrugType): boolean {
   return provenances.length > 0 && provenances.every((p) => !p.verified);
 }
 
+/** What to show for an indication: a person's short name if one was set, else the label's wording. */
+export function indicationLabel(i: { name: string; displayName?: string }): string {
+  return i.displayName || i.name;
+}
+
 export function getIndication(drug: DrugType, slug: string): Indication | undefined {
   return drug.indications.find((i) => i.slug === slug);
 }

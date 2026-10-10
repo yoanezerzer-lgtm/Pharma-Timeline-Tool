@@ -145,6 +145,13 @@ describe('mergeDrug', () => {
     );
   });
 
+  it('preserves a hand-written indication display name across a re-run', () => {
+    const ra: Indication = { name: 'Rheumatoid Arthritis', slug: 'rheumatoid-arthritis' };
+    const existing = drug([trial()], '', [{ ...ra, displayName: 'RA' }]);
+    const result = mergeDrug(existing, drug([trial()], '', [ra]));
+    expect(result.drug.indications[0].displayName).toBe('RA');
+  });
+
   describe('changeLog', () => {
     it('records an entry when an unverified field actually changes', () => {
       const existing = drug([trial({ phase: 'PHASE2' })]);

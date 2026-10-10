@@ -1,7 +1,7 @@
 import { fetchJson } from './http.js';
 import type { IngestContext } from './context.js';
 import { toDateValue } from '../../src/lib/dates.js';
-import type { Trial, Phase } from '../../src/schema/index.js';
+import type { Trial, Phase, PostedOutcome } from '../../src/schema/index.js';
 
 const CTGOV_BASE = 'https://clinicaltrials.gov/api/v2/studies';
 
@@ -53,6 +53,39 @@ export interface CtgovStudy {
       secondaryOutcomes?: { measure?: string }[];
     };
   };
+  resultsSection?: CtgovResultsSection;
+}
+
+interface CtgovMeasurement {
+  groupId?: string;
+  value?: string;
+  spread?: string;
+  lowerLimit?: string;
+  upperLimit?: string;
+}
+
+export interface CtgovOutcomeMeasure {
+  type?: string;
+  title?: string;
+  timeFrame?: string;
+  paramType?: string;
+  unitOfMeasure?: string;
+  groups?: { id?: string; title?: string }[];
+  classes?: { title?: string; categories?: { title?: string; measurements?: CtgovMeasurement[] }[] }[];
+  analyses?: {
+    groupIds?: string[];
+    pValue?: string;
+    statisticalMethod?: string;
+    paramType?: string;
+    paramValue?: string;
+    ciPctValue?: string;
+    ciLowerLimit?: string;
+    ciUpperLimit?: string;
+  }[];
+}
+
+export interface CtgovResultsSection {
+  outcomeMeasuresModule?: { outcomeMeasures?: CtgovOutcomeMeasure[] };
 }
 
 interface CtgovResponse {
@@ -116,6 +149,43 @@ function slugifyId(study: CtgovStudy): string {
     .replace(/^-|-$/g, '');
 }
 
+/**
+ * The primary outcomes' posted results, copied as-is. Class and category
+ * titles (a timepoint, a response threshold) are joined into one label per
+ * measurement so a broken-down outcome still reads as a flat table.
+ */
+export function postedPrimaryResults(study: CtgovStudy): PostedOutcome[] {
+  const measures = study.resultsSection?.outcomeMeasuresModule?.outcomeMeasures ?? [];
+  return measures
+    .filter((m) => m.type === 'PRIMARY' && m.title)
+    .map((m) => ({
+      title: m.title!,
+      timeFrame: m.timeFrame,
+      paramType: m.paramType,
+      unitOfMeasure: m.unitOfMeasure,
+      groups: (m.groups ?? []).flatMap((g) => (g.id ? [{ id: g.id, title: g.title ?? g.id }] : [])),
+      measurements: (m.classes ?? []).flatMap((c) =>
+        (c.categories ?? []).flatMap((cat) =>
+          (cat.measurements ?? []).flatMap((x) => {
+            if (!x.groupId || x.value === undefined) return [];
+            const category = [c.title, cat.title].filter(Boolean).join(' — ') || undefined;
+            return [{ groupId: x.groupId, category, value: x.value, spread: x.spread, lowerLimit: x.lowerLimit, upperLimit: x.upperLimit }];
+          })
+        )
+      ),
+      analyses: (m.analyses ?? []).map((a) => ({
+        groupIds: a.groupIds ?? [],
+        pValue: a.pValue,
+        method: a.statisticalMethod,
+        paramType: a.paramType,
+        paramValue: a.paramValue,
+        ciPct: a.ciPctValue,
+        ciLower: a.ciLowerLimit,
+        ciUpper: a.ciUpperLimit,
+      })),
+    }));
+}
+
 /** Converts a registry record into a Trial, leaving roles and narrative unset. */
 export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
   const ps = study.protocolSection;
@@ -136,6 +206,7 @@ export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
   ];
 
   const enrollmentCount = design?.enrollmentInfo?.count;
+  const postedResults = postedPrimaryResults(study);
 
   return {
     id: slugifyId(study),
@@ -190,14 +261,25 @@ export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
       .map((o) => o.measure)
       .filter((m): m is string => !!m),
 
+    ...(postedResults.length > 0 ? { postedResults } : {}),
     metPrimaryEndpoint: null,
     takeaways: [],
     limitations: [],
     publications: [],
 
-    provenance: Object.fromEntries(
-      ['phase', 'startDate', 'primaryCompletionDate', 'enrollment', 'design'].map(prov)
-    ),
+    provenance: {
+      ...Object.fromEntries(['phase', 'startDate', 'primaryCompletionDate', 'enrollment', 'design'].map(prov)),
+      ...(postedResults.length > 0
+        ? {
+            postedResults: {
+              sourceUrl: `${sourceUrl}?tab=results`,
+              sourceLabel: 'ClinicalTrials.gov — posted results',
+              extractedBy: 'api' as const,
+              verified: false,
+            },
+          }
+        : {}),
+    },
     changeLog: [],
   };
 }

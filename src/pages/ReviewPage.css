@@ -536,3 +536,119 @@
     display: none;
   }
 }
+
+.review__section-title {
+  margin: 2rem 0 0.75rem;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+}
+
+.review__indications ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.review__indication {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-elevated);
+}
+
+.review__indication-wording {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.review__indication-meta {
+  margin-top: 0.2rem;
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.review__indication-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.7rem;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-3);
+}
+
+.review__indication-name input {
+  max-width: 360px;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-1);
+  color: var(--text-1);
+  font: inherit;
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.review__writeup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0.9rem 1rem 1rem;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+}
+
+.review__writeup legend {
+  padding: 0 0.35rem;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-3);
+}
+
+.review__writeup-note {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.review__writeup label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.review__writeup label span {
+  font-weight: 400;
+  color: var(--text-3);
+}
+
+.review__writeup select,
+.review__writeup textarea {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-1);
+  color: var(--text-1);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.review__writeup select {
+  max-width: 220px;
+}

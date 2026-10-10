@@ -119,22 +119,30 @@ export interface IndicationListEntry {
 }
 
 /**
- * Finds where section 1 actually begins, not its table-of-contents mention.
- *
- * Same fix as findSection14Heading above, for the same reason: a label's ToC
- * lists "1 INDICATIONS AND USAGE" immediately followed by "2 DOSAGE AND
- * ADMINISTRATION" with nothing in between, and that always comes before the
- * real section in reading order — confirmed directly against Mimrylo's real
- * label, whose ToC mention left extractIndicationList reading an empty
- * window and reporting no indication at all for a drug that has one.
+ * Every "1 INDICATIONS AND USAGE" heading in the label, each cut off at the
+ * following "2 DOSAGE AND ADMINISTRATION". A label has at least two: the
+ * table of contents and the real section. Which one parses best varies by
+ * label (see extractIndicationList), so callers get all of them in order.
  */
-function findIndicationsHeading(strippedText: string): { index: number } | null {
-  const pattern = /\b1\s+INDICATIONS\s+AND\s+USAGE\b/gi;
-  let last: RegExpMatchArray | null = null;
-  for (const m of strippedText.matchAll(pattern)) {
-    last = m;
+function sectionOneWindows(strippedText: string): string[] {
+  const windows: string[] = [];
+  for (const m of strippedText.matchAll(/\b1\s+INDICATIONS\s+AND\s+USAGE\b/gi)) {
+    const afterStart = strippedText.slice(m.index);
+    const end = /\b2\.?\s+DOSAGE\s+AND\s+ADMINISTRATION\b/i.exec(afterStart);
+    windows.push(end ? afterStart.slice(0, end.index) : afterStart.slice(0, 2000));
   }
-  return last && last.index !== undefined ? { index: last.index } : null;
+  return windows;
+}
+
+function numberedEntries(window: string): IndicationListEntry[] {
+  const entries: IndicationListEntry[] = [];
+  const pattern = /\b1\.\s*(\d+)\s+([A-Z][A-Za-z0-9 ,'‘’/-]*?)(?=\s+1\.\s*\d+\s+[A-Z]|\s*$)/g;
+  for (const m of window.matchAll(pattern)) {
+    const number = Number(m[1]);
+    const name = m[2].replace(/\s+/g, ' ').replace(/\s*-\s*/g, '-').trim();
+    if (name.length >= 3) entries.push({ number, name });
+  }
+  return entries;
 }
 
 /**
@@ -153,21 +161,24 @@ function findIndicationsHeading(strippedText: string): { index: number } | null 
  * formatted subsection titles for the name itself.
  */
 export function extractIndicationList(labelText: string): IndicationListEntry[] {
-  const stripped = stripPageMarkers(labelText);
-  const start = findIndicationsHeading(stripped);
-  if (!start) return [];
-  const afterStart = stripped.slice(start.index);
-  const end = /\b2\.?\s+DOSAGE\s+AND\s+ADMINISTRATION\b/i.exec(afterStart);
-  const window = end ? afterStart.slice(0, end.index) : afterStart.slice(0, 2000);
-
-  const entries: IndicationListEntry[] = [];
-  const pattern = /\b1\.\s*(\d+)\s+([A-Z][A-Za-z0-9 ,''’/-]*?)(?=\s+1\.\s*\d+\s+[A-Z]|\s*$)/g;
-  for (const m of window.matchAll(pattern)) {
-    const number = Number(m[1]);
-    const name = m[2].replace(/\s+/g, ' ').replace(/\s*-\s*/g, '-').trim();
-    if (name.length >= 3) entries.push({ number, name });
+  const windows = sectionOneWindows(stripPageMarkers(labelText));
+  if (windows.length === 0) return [];
+  // The table of contents lists the names back to back ("1.1 Rheumatoid
+  // Arthritis 1.2 Psoriatic Arthritis"); the real section runs each name
+  // straight into prose ("1.1 Rheumatoid Arthritis RINVOQ® is indicated..."),
+  // which the name pattern can't always end cleanly. Confirmed against
+  // Rinvoq's supplement labels: reading only the real section returned one
+  // long sentence for every label but the newest. Read every copy and keep
+  // the most complete numbered list.
+  let best: IndicationListEntry[] = [];
+  for (const w of windows) {
+    const entries = numberedEntries(w);
+    if (entries.length > best.length) best = entries;
   }
-  return entries.length > 0 ? entries : extractUnnumberedIndication(window);
+  // An unnumbered single indication only has prose to read, and the table of
+  // contents copy is empty for it (confirmed against Mimrylo) — use the last
+  // heading, which is the real section.
+  return best.length > 0 ? best : extractUnnumberedIndication(windows[windows.length - 1]);
 }
 
 /**
