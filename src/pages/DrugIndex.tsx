@@ -1,63 +1,36 @@
 import { useMemo, useState } from 'react';
-import { drugs, trialsForIndication } from '../lib/drugs.js';
+import { drugIndex } from '../lib/catalog.js';
 import { indicationHref, reviewHref, ingestHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
-import { drugStats } from '../lib/review.js';
 import './DrugIndex.css';
 
-function approvalYears(drugList: typeof drugs): number[] {
-  const years = new Set<number>();
-  for (const d of drugList) {
-    for (const i of d.indications) {
-      if (i.approvalDate) years.add(Number(i.approvalDate.value.slice(0, 4)));
-    }
-  }
-  return [...years].sort((a, b) => b - a);
-}
-
-function mostRecentApproval(drugList: typeof drugs): string | null {
-  let latest: string | null = null;
-  for (const d of drugList) {
-    for (const i of d.indications) {
-      if (i.approvalDate && (!latest || i.approvalDate.value > latest)) {
-        latest = i.approvalDate.value;
-      }
-    }
-  }
-  return latest;
-}
+const approvalDates = drugIndex.flatMap((d) => d.indications.flatMap((i) => (i.approvalDate ? [i.approvalDate] : [])));
+const sponsors = [...new Set(drugIndex.map((d) => d.sponsor))].sort();
+const years = [...new Set(approvalDates.map((a) => a.value.slice(0, 4)))].sort().reverse();
+const latestApproval = approvalDates.reduce<(typeof approvalDates)[number] | null>(
+  (latest, a) => (!latest || a.value > latest.value ? a : latest),
+  null
+);
+const totalIndications = drugIndex.reduce((n, d) => n + d.indications.length, 0);
+const totalTrials = drugIndex.reduce((n, d) => n + d.trialCount, 0);
 
 export function DrugIndex() {
   const [query, setQuery] = useState('');
-  const [sponsor, setSponsor] = useState<string | null>(null);
-  const [year, setYear] = useState<number | null>(null);
-
-  const sponsors = useMemo(() => [...new Set(drugs.map((d) => d.sponsor))].sort(), []);
-  const years = useMemo(() => approvalYears(drugs), []);
-
-  const totalIndications = useMemo(
-    () => drugs.reduce((n, d) => n + d.indications.length, 0),
-    []
-  );
-  const totalTrials = useMemo(() => drugs.reduce((n, d) => n + d.trials.length, 0), []);
-  const latestApproval = useMemo(() => mostRecentApproval(drugs), []);
+  const [sponsor, setSponsor] = useState('');
+  const [year, setYear] = useState('');
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return drugs.filter((d) => {
+    return drugIndex.filter((d) => {
       if (sponsor && d.sponsor !== sponsor) return false;
-      if (year && !d.indications.some((i) => i.approvalDate?.value.startsWith(String(year)))) {
-        return false;
-      }
+      if (year && !d.indications.some((i) => i.approvalDate?.value.startsWith(year))) return false;
       if (!q) return true;
-      const haystack = [d.brandName, d.inn, d.sponsor, ...d.indications.map((i) => i.name)]
+      return [d.brandName, d.inn, d.sponsor, ...d.indications.map((i) => i.name)]
         .join(' ')
-        .toLowerCase();
-      return haystack.includes(q);
+        .toLowerCase()
+        .includes(q);
     });
   }, [query, sponsor, year]);
-
-  const filtersActive = sponsor !== null || year !== null;
 
   return (
     <main className="index">
@@ -76,7 +49,7 @@ export function DrugIndex() {
       <dl className="index__stats">
         <div>
           <dt>Drugs tracked</dt>
-          <dd>{drugs.length}</dd>
+          <dd>{drugIndex.length}</dd>
         </div>
         <div>
           <dt>Approved indications</dt>
@@ -88,76 +61,65 @@ export function DrugIndex() {
         </div>
         <div>
           <dt>Most recent approval</dt>
-          <dd>{latestApproval ? formatDate({ value: latestApproval, precision: 'day' }) : '—'}</dd>
+          <dd>{latestApproval ? formatDate(latestApproval) : '—'}</dd>
         </div>
       </dl>
 
-      <div className="index__search">
-        <label htmlFor="drug-filter" className="index__search-label">
-          Search by drug, sponsor, or indication
-        </label>
-        <input
-          id="drug-filter"
-          type="search"
-          className="index__search-input"
-          placeholder="e.g. Rinvoq, Takeda, polycythemia…"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-      </div>
-
-      <div className="index__filters">
-        <div className="index__filter-group">
-          <span className="index__filter-label">Sponsor</span>
-          <div className="index__chips">
+      <div className="index__controls">
+        <div className="index__control index__control--search">
+          <label htmlFor="drug-filter">Search by drug, sponsor, or indication</label>
+          <input
+            id="drug-filter"
+            type="search"
+            placeholder="e.g. Rinvoq, Takeda, polycythemia…"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </div>
+        <div className="index__control">
+          <label htmlFor="sponsor-filter">Sponsor</label>
+          <select id="sponsor-filter" value={sponsor} onChange={(e) => setSponsor(e.target.value)}>
+            <option value="">All sponsors</option>
             {sponsors.map((s) => (
-              <button
-                key={s}
-                type="button"
-                className={s === sponsor ? 'index__chip is-active' : 'index__chip'}
-                onClick={() => setSponsor(s === sponsor ? null : s)}
-              >
+              <option key={s} value={s}>
                 {s}
-              </button>
+              </option>
             ))}
-          </div>
+          </select>
         </div>
-        <div className="index__filter-group">
-          <span className="index__filter-label">Approval year</span>
-          <div className="index__chips">
+        <div className="index__control">
+          <label htmlFor="year-filter">Approval year</label>
+          <select id="year-filter" value={year} onChange={(e) => setYear(e.target.value)}>
+            <option value="">All years</option>
             {years.map((y) => (
-              <button
-                key={y}
-                type="button"
-                className={y === year ? 'index__chip is-active' : 'index__chip'}
-                onClick={() => setYear(y === year ? null : y)}
-              >
+              <option key={y} value={y}>
                 {y}
-              </button>
+              </option>
             ))}
-          </div>
+          </select>
         </div>
-        {filtersActive && (
-          <button
-            type="button"
-            className="index__filter-clear"
-            onClick={() => {
-              setSponsor(null);
-              setYear(null);
-            }}
-          >
-            Clear filters
-          </button>
-        )}
       </div>
 
       {filtered.length === 0 ? (
-        <p className="index__hint">No drugs match the current search and filters.</p>
+        <p className="index__hint">
+          No drugs match the current search and filters.{' '}
+          <button
+            type="button"
+            className="index__clear"
+            onClick={() => {
+              setQuery('');
+              setSponsor('');
+              setYear('');
+            }}
+          >
+            Clear all
+          </button>
+        </p>
       ) : (
         <div className="index__grid">
           {filtered.map((d) => {
-            const stats = drugStats(d);
-            const pct = stats.total > 0 ? Math.round((stats.verified / stats.total) * 100) : 0;
+            const { verified, total } = d.verification;
+            const pct = total > 0 ? Math.round((verified / total) * 100) : 0;
             return (
               <article key={d.slug} className="drug-card">
                 <header className="drug-card__head">
@@ -167,7 +129,7 @@ export function DrugIndex() {
                   <p className="drug-card__meta">
                     {d.mechanism ?? d.modality} · {d.sponsor}
                   </p>
-                  <div className="drug-card__verification" title={`${stats.verified} of ${stats.total} fields verified`}>
+                  <div className="drug-card__verification" title={`${verified} of ${total} fields verified`}>
                     <div className="drug-card__verification-bar">
                       <div className="drug-card__verification-fill" style={{ width: `${pct}%` }} />
                     </div>
@@ -181,21 +143,18 @@ export function DrugIndex() {
                   </p>
                 ) : (
                   <ul className="drug-card__indications">
-                    {d.indications.map((i) => {
-                      const trialCount = trialsForIndication(d, i.name).length;
-                      return (
-                        <li key={i.slug}>
-                          <a href={indicationHref(d.slug, i.slug)} className="drug-card__indication">
-                            <span className="drug-card__indication-name">{i.name}</span>
-                            <span className="drug-card__indication-meta">
-                              {i.approvalDate ? formatDate(i.approvalDate) : 'Date not determined'}
-                              {' · '}
-                              {trialCount} {trialCount === 1 ? 'trial' : 'trials'}
-                            </span>
-                          </a>
-                        </li>
-                      );
-                    })}
+                    {d.indications.map((i) => (
+                      <li key={i.slug}>
+                        <a href={indicationHref(d.slug, i.slug)} className="drug-card__indication">
+                          <span className="drug-card__indication-name">{i.name}</span>
+                          <span className="drug-card__indication-meta">
+                            {i.approvalDate ? formatDate(i.approvalDate) : 'Date not determined'}
+                            {' · '}
+                            {i.trialCount} {i.trialCount === 1 ? 'trial' : 'trials'}
+                          </span>
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 )}
               </article>

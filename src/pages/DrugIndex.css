@@ -74,91 +74,56 @@
   font-variant-numeric: tabular-nums;
 }
 
-.index__search {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  max-width: 420px;
-  margin: 0 auto 1.5rem;
-}
-
-.index__search-label {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-3);
-}
-
-.index__search-input {
-  padding: 0.65rem 0.8rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--bg-elevated);
-  color: var(--text-1);
-  font-size: 14px;
-}
-
-.index__search-input::placeholder {
-  color: var(--text-3);
-}
-
-.index__filters {
+.index__controls {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 1.25rem;
+  gap: 0.75rem;
   max-width: 760px;
   margin: 0 auto 2.5rem;
 }
 
-.index__filter-group {
+.index__control {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.35rem;
+  flex: 1 1 160px;
 }
 
-.index__filter-label {
+.index__control--search {
+  flex: 2 1 280px;
+}
+
+.index__control label {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-3);
 }
 
-.index__chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
-.index__chip {
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
+.index__control input,
+.index__control select {
+  height: 2.5rem;
+  padding: 0 0.75rem;
   border: 1px solid var(--border);
+  border-radius: 8px;
   background: var(--bg-elevated);
-  color: var(--text-2);
-  font-size: 12px;
-  cursor: pointer;
+  color: var(--text-1);
+  font: inherit;
+  font-size: 14px;
 }
 
-.index__chip:hover {
-  border-color: var(--text-3);
+.index__control input::placeholder {
+  color: var(--text-3);
 }
 
-.index__chip.is-active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-
-.index__filter-clear {
-  align-self: center;
-  padding: 0.3rem 0;
-  background: none;
+.index__clear {
+  padding: 0;
   border: none;
+  background: none;
   color: var(--accent);
-  font-size: 12px;
-  cursor: pointer;
+  font: inherit;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .index__hint {
@@ -294,9 +259,6 @@
   }
   .index__stats {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .index__filters {
-    flex-direction: column;
   }
   .index__add-drug {
     position: static;

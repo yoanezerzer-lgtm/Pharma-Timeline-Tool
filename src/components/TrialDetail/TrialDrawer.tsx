@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
 import type { Trial, Provenance } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
-import { roleFor, summaryRole } from '../../lib/drugs.js';
+import { roleFor, summaryRole, ROLE_LABEL } from '../../lib/drugs.js';
 import { categorizeEndpoint, ENDPOINT_CATEGORY_LABEL } from '../../lib/endpoints.js';
-import { ROLE_LABEL } from '../Gantt/Gantt.js';
 import './TrialDrawer.css';
 
 interface Props {

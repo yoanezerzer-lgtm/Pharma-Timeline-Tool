@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState, useEffect } from 'react';
 import type { Trial, Milestone, TrialRole } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
-import { roleFor, summaryRole } from '../../lib/drugs.js';
+import { roleFor, summaryRole, ROLE_LABEL } from '../../lib/drugs.js';
 import {
   computeLayout,
   BAR_H,
@@ -280,17 +280,6 @@ function BarTooltip({
     </div>
   );
 }
-
-export const ROLE_LABEL: Record<TrialRole, string> = {
-  PIVOTAL: 'Pivotal',
-  SUPPORTIVE: 'Supportive',
-  DOSE_FINDING: 'Dose-finding',
-  PK: 'Pharmacokinetics',
-  SAFETY: 'Safety',
-  POST_MARKETING: 'Post-marketing',
-  NOT_IN_FILING: 'Not in original filing',
-  UNKNOWN: 'Unclassified',
-};
 
 function GanttLegend() {
   return (

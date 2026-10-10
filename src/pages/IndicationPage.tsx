@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import {
-  getDrug,
   getIndication,
   trialsForIndication,
   isFullyUnverified,
@@ -10,6 +9,9 @@ import { navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '.
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
+import { BackLink } from '../components/BackLink/BackLink.js';
+import { useDrug } from '../lib/catalog.js';
+import type { Drug } from '../schema/index.js';
 import './IndicationPage.css';
 
 interface Props {
@@ -19,11 +21,27 @@ interface Props {
 }
 
 export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
-  const drug = getDrug(slug);
-  const indication = drug ? getIndication(drug, indicationSlug) : undefined;
+  const state = useDrug(slug);
+  if (state.status === 'ready') {
+    return <IndicationView drug={state.drug} indicationSlug={indicationSlug} trialId={trialId} />;
+  }
+  return (
+    <main className="drug">
+      <BackLink href="#/" label="All drugs" />
+      <p className="drug__missing">
+        {state.status === 'loading' && 'Loading…'}
+        {state.status === 'missing' && `No drug record found for “${slug}”.`}
+        {state.status === 'error' && 'Couldn’t load this drug’s data — check your connection and reload.'}
+      </p>
+    </main>
+  );
+}
+
+function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicationSlug: string; trialId: string | null }) {
+  const indication = getIndication(drug, indicationSlug);
 
   const scopedTrials = useMemo(
-    () => (drug && indication ? trialsForIndication(drug, indication.name) : []),
+    () => (indication ? trialsForIndication(drug, indication.name) : []),
     [drug, indication]
   );
 
@@ -32,19 +50,10 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
     [scopedTrials, trialId]
   );
 
-  if (!drug) {
-    return (
-      <main className="drug">
-        <p className="drug__missing">
-          No drug record found for “{slug}”. <a href="#/">Back to search</a>
-        </p>
-      </main>
-    );
-  }
-
   if (!indication) {
     return (
       <main className="drug">
+        <BackLink href="#/" label="All drugs" />
         <p className="drug__missing">
           {drug.brandName} has no indication “{indicationSlug}” on record.{' '}
           <a href={indicationHref(drug.slug, drug.indications[0]?.slug ?? '')}>
@@ -66,13 +75,7 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
 
   return (
     <main className="drug">
-      <nav className="drug__breadcrumb">
-        <a href="#/">Search</a>
-        <span aria-hidden="true"> / </span>
-        <a href={indicationHref(drug.slug, indication.slug)}>{drug.brandName}</a>
-        <span aria-hidden="true"> / </span>
-        <span>{indication.name}</span>
-      </nav>
+      <BackLink href="#/" label="All drugs" />
 
       <header className="drug__head">
         <div>

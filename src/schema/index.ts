@@ -347,8 +347,3 @@ export const Drug = z.object({
   lastIngestedAt: z.string().optional(),
 });
 export type Drug = z.infer<typeof Drug>;
-
-/** Parse and validate a drug record, throwing a readable error on bad data. */
-export function parseDrug(input: unknown): Drug {
-  return Drug.parse(input);
-}

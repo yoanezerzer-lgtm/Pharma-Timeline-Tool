@@ -1,8 +1,11 @@
+import { lazy, Suspense } from 'react';
 import { useRoute } from './lib/router.js';
 import { DrugIndex } from './pages/DrugIndex.js';
 import { IndicationPage } from './pages/IndicationPage.js';
-import { ReviewPage } from './pages/ReviewPage.js';
-import { IngestPage } from './pages/IngestPage.js';
+
+// Tooling pages most visitors never open — split out of the main bundle.
+const ReviewPage = lazy(() => import('./pages/ReviewPage.js').then((m) => ({ default: m.ReviewPage })));
+const IngestPage = lazy(() => import('./pages/IngestPage.js').then((m) => ({ default: m.IngestPage })));
 
 export function App() {
   const route = useRoute();
@@ -15,8 +18,10 @@ export function App() {
       />
     );
   }
-  if (route.name === 'review') return <ReviewPage />;
-  if (route.name === 'review-drug') return <ReviewPage slug={route.slug} />;
-  if (route.name === 'ingest') return <IngestPage />;
-  return <DrugIndex />;
+  if (route.name === 'index') return <DrugIndex />;
+  return (
+    <Suspense fallback={null}>
+      {route.name === 'ingest' ? <IngestPage /> : <ReviewPage slug={route.name === 'review-drug' ? route.slug : undefined} />}
+    </Suspense>
+  );
 }
