@@ -14,6 +14,14 @@
         "value": "2026-08-28",
         "precision": "day"
       },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
+        "verified": false
+      },
       "fdaAnnouncementUrl": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder"
     }
   ],
@@ -21,7 +29,7 @@
     "us": {
       "applicationNumber": "220605",
       "applicationType": "NDA",
-      "sponsor": "TAKEDA PHARMACEUTICALS U.S.A., INC.",
+      "sponsor": "TAKEDA PHARMS AM",
       "originalApprovalDate": {
         "value": "2026-08-28",
         "precision": "day"
@@ -130,7 +138,8 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "ptg-300-06",
@@ -220,7 +229,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "pacific",
@@ -310,7 +320,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "verify",
@@ -428,7 +439,8 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "thrive",
@@ -525,7 +537,8 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "tak-121-2001",
@@ -622,7 +635,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     },
     {
       "id": "tak-121-2002",
@@ -718,7 +732,8 @@
           "extractedBy": "api",
           "verified": false
         }
-      }
+      },
+      "changeLog": []
     }
   ],
   "milestones": [
@@ -762,5 +777,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-09-04T18:42:02.730Z"
+  "lastIngestedAt": "2026-10-10T04:59:56.657Z"
 }
