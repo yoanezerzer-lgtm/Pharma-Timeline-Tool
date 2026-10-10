@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { drugs, getDrug } from '../lib/drugs.js';
-import { summaryRole } from '../lib/drugs.js';
-import { ROLE_LABEL } from '../components/Gantt/Gantt.js';
+import { summaryRole, ROLE_LABEL } from '../lib/drugs.js';
+import { drugIndex, useDrug } from '../lib/catalog.js';
+import { BackLink } from '../components/BackLink/BackLink.js';
 import { Drug } from '../schema/index.js';
 import type { Drug as DrugType, Trial, TrialRole } from '../schema/index.js';
 import {
@@ -60,6 +60,7 @@ export function ReviewPage({ slug }: Props) {
 function ReviewIndex() {
   return (
     <main className="review">
+      <BackLink href="#/" label="All drugs" />
       <header className="review__head">
         <p className="review__eyebrow">Verification</p>
         <h1>Review extracted data</h1>
@@ -70,10 +71,10 @@ function ReviewIndex() {
         </p>
       </header>
       <ul className="review__drug-list">
-        {drugs.map((d) => {
-          const stats = drugStats(d);
+        {drugIndex.map((d) => {
+          const stats = d.verification;
           const pct = stats.total > 0 ? Math.round((stats.verified / stats.total) * 100) : 0;
-          const pendingChanges = drugPendingChangeCount(d);
+          const pendingChanges = d.pendingChanges;
           return (
             <li key={d.slug}>
               <a href={reviewDrugHref(d.slug)} className="review__drug-row">
@@ -129,29 +130,29 @@ function saveDraft(slug: string, drug: DrugType): void {
 }
 
 function DrugReview({ slug }: { slug: string }) {
-  const committed = getDrug(slug);
-  const [drug, setDrug] = useState<DrugType | null>(() =>
-    committed ? loadDraft(slug, committed) : null
+  const state = useDrug(slug);
+  if (state.status === 'ready') return <DrugReviewLoaded key={slug} slug={slug} committed={state.drug} />;
+  return (
+    <main className="review">
+      <BackLink href={reviewHref()} label="All drugs under review" />
+      <p className="review__missing">
+        {state.status === 'loading' && 'Loading…'}
+        {state.status === 'missing' && `No drug record found for “${slug}”.`}
+        {state.status === 'error' && 'Couldn’t load this drug’s data — check your connection and reload.'}
+      </p>
+    </main>
   );
+}
+
+function DrugReviewLoaded({ slug, committed }: { slug: string; committed: DrugType }) {
+  const [drug, setDrug] = useState<DrugType>(() => loadDraft(slug, committed));
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [exportError, setExportError] = useState<string | null>(null);
   const [showNotCited, setShowNotCited] = useState(false);
 
   useEffect(() => {
-    if (drug) saveDraft(slug, drug);
+    saveDraft(slug, drug);
   }, [drug, slug]);
-
-  if (!committed) {
-    return (
-      <main className="review">
-        <p className="review__missing">
-          No drug record found for &ldquo;{slug}&rdquo;.{' '}
-          <a href={reviewHref()}>Back to review index</a>
-        </p>
-      </main>
-    );
-  }
-  if (!drug) return null;
 
   const stats = drugStats(drug);
   const hasDraft = serializeDrug(drug) !== serializeDrug(committed);
@@ -160,7 +161,7 @@ function DrugReview({ slug }: { slug: string }) {
   const notCitedTrials = drug.trials.filter((t) => summaryRole(t) === 'NOT_IN_FILING');
 
   function updateTrial(updated: Trial) {
-    setDrug((d) => (d ? replaceTrial(d, updated.id, updated) : d));
+    setDrug((d) => replaceTrial(d, updated.id, updated));
   }
 
   function handleDiscard() {
@@ -169,7 +170,7 @@ function DrugReview({ slug }: { slug: string }) {
     } catch {
       // Nothing to clean up if storage was never reachable.
     }
-    setDrug(committed!);
+    setDrug(committed);
     setExportError(null);
   }
 
@@ -193,7 +194,7 @@ function DrugReview({ slug }: { slug: string }) {
 
   async function handleCopy() {
     try {
-      await navigator.clipboard.writeText(serializeDrug(drug!));
+      await navigator.clipboard.writeText(serializeDrug(drug));
     } catch {
       // No clipboard permission in this context — download is the fallback.
     }
@@ -201,11 +202,7 @@ function DrugReview({ slug }: { slug: string }) {
 
   return (
     <main className="review">
-      <nav className="review__breadcrumb">
-        <a href={reviewHref()}>Review</a>
-        <span aria-hidden="true"> / </span>
-        <span>{drug.brandName}</span>
-      </nav>
+      <BackLink href={reviewHref()} label="All drugs under review" />
 
       <header className="review__drug-head">
         <div>

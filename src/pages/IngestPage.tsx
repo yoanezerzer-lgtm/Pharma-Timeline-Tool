@@ -12,6 +12,7 @@ import {
   type RunStep,
   type WorkflowRun,
 } from '../lib/github.js';
+import { BackLink } from '../components/BackLink/BackLink.js';
 import './IngestPage.css';
 
 const TOKEN_STORAGE_KEY = 'ingest-github-token';
@@ -223,11 +224,7 @@ export function IngestPage() {
 
   return (
     <main className="ingest">
-      <nav className="ingest__breadcrumb">
-        <a href="#/">Search</a>
-        <span aria-hidden="true"> / </span>
-        <span>Add a drug</span>
-      </nav>
+      <BackLink href="#/" label="All drugs" />
 
       <header className="ingest__head">
         <h1>Add a drug</h1>
