@@ -109,3 +109,8 @@ export function readoutToApprovalMonths(trials: Trial[], indicationName: string,
   const [ly, lm] = last.value.split('-').map(Number);
   return (ay - ly) * 12 + (am - lm);
 }
+
+/** A trial's short name: the registry acronym, else what the label calls it, else its protocol number. */
+export function trialShortName(t: Pick<Trial, 'acronym' | 'labelName' | 'protocolNumber' | 'nctId' | 'id'>): string {
+  return t.acronym ?? t.labelName ?? t.protocolNumber ?? t.nctId ?? t.id;
+}

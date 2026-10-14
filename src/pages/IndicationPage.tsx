@@ -17,6 +17,9 @@ import { useDrug } from '../lib/catalog.js';
 import type { Drug, Milestone, Source } from '../schema/index.js';
 import './IndicationPage.css';
 
+/** FDAAA 801: registration on ClinicalTrials.gov became mandatory for most trials in late 2007. */
+const REGISTRATION_REQUIRED = '2007-09-27';
+
 interface Props {
   slug: string;
   indicationSlug: string;
@@ -81,6 +84,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         : m
     );
 
+  const labelUrl = newestLabelUrl(drug);
   const lagMonths = readoutToApprovalMonths(scopedTrials, indication.name, indication.approvalDate);
   const sourceGroups = groupSources(drug.sources, drug.milestones);
   const ownSources = sourceGroups.find((g) => g.submission === ownSubmission);
@@ -187,11 +191,31 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
       )}
 
       {scopedTrials.length === 0 ? (
-        <p className="drug__missing">
-          No trials are currently attributed to this indication — either the label doesn't
-          number its section 14 subsections in a way this pipeline could parse, or the
-          section wasn't located at all. Check the ingest log.
-        </p>
+        <div className="drug__no-trials">
+          <h2>Trials supporting this approval</h2>
+          {indication.approvalDate && indication.approvalDate.value < REGISTRATION_REQUIRED ? (
+            <p>
+              No registered trial is linked to this approval. It was approved in{' '}
+              {indication.approvalDate.value.slice(0, 4)}, before trials had to be registered on
+              ClinicalTrials.gov (from 2007), so the trials behind it generally have no registry
+              record to link to.
+            </p>
+          ) : (
+            <p>
+              No registered trial could be matched to this approval. Usually either the label
+              describes the trials without their ClinicalTrials.gov numbers, or they were run by
+              an organization other than {drug.sponsor} (a cooperative research group, for
+              example), which this site doesn't yet count as the applicant's own.
+            </p>
+          )}
+          {labelUrl && (
+            <p>
+              <a href={labelUrl} target="_blank" rel="noopener noreferrer">
+                Read the label's clinical studies section ↗
+              </a>
+            </p>
+          )}
+        </div>
       ) : (
         <section className="drug__chart-section">
           <h2>Trials supporting {label.length > 60 ? 'this' : `the ${label}`} approval</h2>
@@ -329,4 +353,15 @@ function SourceGroupRow({ group, highlight }: { group: SourceGroup; highlight?: 
       </span>
     </li>
   );
+}
+
+/** The most recently approved label among the sources ("Label (SUPPL-34)"), by its supplement's date. */
+function newestLabelUrl(drug: Drug): string | undefined {
+  const dateOf = (label: string) => {
+    const sub = /\(([A-Z]+-\d+)\)$/.exec(label)?.[1];
+    return drug.milestones.find((m) => m.submissionNumber === sub)?.date.value ?? '';
+  };
+  return drug.sources
+    .filter((src) => src.type === 'fda_label')
+    .sort((a, b) => dateOf(b.label).localeCompare(dateOf(a.label)))[0]?.url;
 }

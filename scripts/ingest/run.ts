@@ -15,6 +15,7 @@ import {
   extractIndicationList,
   splitSection14ByIndication,
   runByApplicant,
+  extractLabelTrialNames,
   type IndicationListEntry,
   type IndicationSpan,
 } from './roles.js';
@@ -285,7 +286,26 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   if (kept.length < rolesApplied.length) {
     log(`[trim]  dropped ${rolesApplied.length - kept.length} uncited trial(s) not run by the applicant`);
   }
-  const trimmed = kept.map((t) => (t.roles.length > 0 ? t : withoutPostedResults(t)));
+  const labelNames = labelSection14 ? extractLabelTrialNames(labelSection14) : new Map<string, string>();
+  const trimmed = kept.map((t) => {
+    const base = t.roles.length > 0 ? t : withoutPostedResults(t);
+    const labelName = base.nctId ? labelNames.get(base.nctId) : undefined;
+    if (!labelName || labelName === base.acronym) return base;
+    return {
+      ...base,
+      labelName,
+      provenance: {
+        ...base.provenance,
+        labelName: {
+          sourceUrl: labelDoc?.url,
+          sourceLabel: 'Approved label, section 14',
+          quote: `${labelName} (${base.nctId})`,
+          extractedBy: 'regex' as const,
+          verified: false,
+        },
+      },
+    };
+  });
 
   // Deterministic order keeps the committed JSON diff-friendly across runs.
   const trials = trimmed.sort((a, b) => {

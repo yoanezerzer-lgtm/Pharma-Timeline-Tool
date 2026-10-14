@@ -8,6 +8,7 @@ import {
   extractTrialAliases,
   extractIndicationList,
   normalizeSponsor,
+  extractLabelTrialNames,
   splitSection14ByIndication,
   type RoleContext,
 } from '../scripts/ingest/roles.js';
@@ -675,5 +676,21 @@ describe('extractIndicationList — other label layouts', () => {
       { number: 1, name: 'Major Depressive Disorder' },
       { number: 2, name: 'Generalized Anxiety Disorder' },
     ]);
+  });
+});
+
+describe('extractLabelTrialNames', () => {
+  it('reads the name the label writes before each NCT number, in each layout labels use', () => {
+    const text =
+      '14 CLINICAL STUDIES KEYNOTE-006 (NCT01866319), a randomized trial. Four trials [PsO - 1 (NCT02684370), PsO - 2 (NCT02684357)]. ' +
+      '964 in PsA - 1 [NCT03675308]. Induction trials (CD - 1; NCT03105128 and CD - 2; NCT03104413). Trial (NCT09999999) and Study (NCT08888888).';
+    expect(Object.fromEntries(extractLabelTrialNames(text))).toEqual({
+      NCT01866319: 'KEYNOTE-006',
+      NCT02684370: 'PsO-1',
+      NCT02684357: 'PsO-2',
+      NCT03675308: 'PsA-1',
+      NCT03105128: 'CD-1',
+      NCT03104413: 'CD-2',
+    });
   });
 });
