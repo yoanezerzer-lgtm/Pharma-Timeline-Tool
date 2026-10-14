@@ -20,6 +20,8 @@ interface GanttProps {
   /** When set, bar colour and tooltip show this trial's role for one specific
    *  indication rather than its best role across the whole drug. */
   indication?: string;
+  /** Supplement to emphasise like an original approval (see computeLayout). */
+  majorSubmission?: string;
 }
 
 /** The role to show for a trial in the current view — indication-scoped when one is given. */
@@ -45,6 +47,7 @@ export function Gantt({
   selectedTrialId,
   onSelectTrial,
   indication,
+  majorSubmission,
 }: GanttProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [availableWidth, setAvailableWidth] = useState(1000);
@@ -63,8 +66,8 @@ export function Gantt({
   }, []);
 
   const layout = useMemo(
-    () => computeLayout(trials, milestones, availableWidth),
-    [trials, milestones, availableWidth]
+    () => computeLayout(trials, milestones, availableWidth, majorSubmission),
+    [trials, milestones, availableWidth, majorSubmission]
   );
 
   return (

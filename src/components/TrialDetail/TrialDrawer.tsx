@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { PostedResults } from './PostedResults.js';
+import { registryText, maskingText } from '../../lib/registryText.js';
 import type { Trial, Provenance } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
 import { roleFor, summaryRole, ROLE_LABEL } from '../../lib/drugs.js';
@@ -130,7 +131,7 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
               <Fact label="Protocol" value={trial.protocolNumber} />
             )}
             {trial.sponsor && <Fact label="Sponsor" value={trial.sponsor} />}
-            {trial.status && <Fact label="Status" value={trial.status} />}
+            {trial.status && <Fact label="Status" value={registryText(trial.status)} />}
           </dl>
           {otherIndications.length > 0 && (
             <p className="drawer__note">
@@ -180,10 +181,10 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
               />
             )}
             {trial.design?.allocation && (
-              <Fact label="Allocation" value={trial.design.allocation} />
+              <Fact label="Allocation" value={registryText(trial.design.allocation)} />
             )}
-            {trial.design?.masking && <Fact label="Masking" value={trial.design.masking} />}
-            {trial.design?.model && <Fact label="Model" value={trial.design.model} />}
+            {trial.design?.masking && <Fact label="Masking" value={maskingText(trial.design.masking)} />}
+            {trial.design?.model && <Fact label="Model" value={registryText(trial.design.model)} />}
           </dl>
           {trial.population?.keyCriteria.length ? (
             <ul className="drawer__list">

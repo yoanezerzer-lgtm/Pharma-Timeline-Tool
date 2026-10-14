@@ -97,7 +97,9 @@ function trialSpan(t: Trial): { start: number; end: number } | null {
 export function computeLayout(
   trials: Trial[],
   milestones: Milestone[],
-  availableWidth: number
+  availableWidth: number,
+  /** A supplement to draw as prominently as the original approval — the one that added the indication in view. */
+  majorSubmission?: string
 ): GanttLayout {
   const dated = trials.filter((t) => trialSpan(t) !== null);
   const undated = trials.filter((t) => trialSpan(t) === null);
@@ -221,7 +223,10 @@ export function computeLayout(
       milestone: m,
       x,
       y: regulatoryLaneY,
-      isMajor: m.type === 'FDA_APPROVAL' || m.type === 'EC_DECISION',
+      isMajor:
+        m.type === 'FDA_APPROVAL' ||
+        m.type === 'EC_DECISION' ||
+        (majorSubmission !== undefined && m.submissionNumber === majorSubmission),
       labelRow,
       labelText,
       labelAnchor,

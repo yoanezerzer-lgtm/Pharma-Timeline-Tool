@@ -5,14 +5,16 @@ import {
   trialsForIndication,
   isFullyUnverified,
   isMeaningfulMilestone,
+  readoutToApprovalMonths,
 } from '../lib/drugs.js';
+import { IndicationTimeline } from '../components/IndicationTimeline/IndicationTimeline.js';
 import { navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
 import { useDrug } from '../lib/catalog.js';
-import type { Drug } from '../schema/index.js';
+import type { Drug, Milestone, Source } from '../schema/index.js';
 import './IndicationPage.css';
 
 interface Props {
@@ -79,8 +81,12 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         : m
     );
 
+  const lagMonths = readoutToApprovalMonths(scopedTrials, indication.name, indication.approvalDate);
+  const sourceGroups = groupSources(drug.sources, drug.milestones);
+  const ownSources = sourceGroups.find((g) => g.submission === ownSubmission);
+
   return (
-    <main className="drug">
+    <main className={`drug${selectedTrial ? ' has-drawer' : ''}`}>
       <BackLink href="#/" label="All drugs" />
 
       <header className="drug__head">
@@ -91,6 +97,14 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           <p className="drug__mechanism">
             {label} — {drug.mechanism ?? drug.modality}
           </p>
+          {drug.indications.length > 1 && (
+            <p className="drug__other-indications">
+              One of {drug.indications.length} approved indications ·{' '}
+              <a href="#approved-indications" onClick={scrollTo('approved-indications')}>
+                see all
+              </a>
+            </p>
+          )}
           {label !== indication.name && (
             <p className="drug__label-wording">
               <span>Label wording:</span> {indication.name}
@@ -153,31 +167,23 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             <dt>Trials supporting this approval</dt>
             <dd>{scopedTrials.length}</dd>
           </div>
+          {lagMonths !== undefined && (
+            <div title="From the latest primary completion date among this indication's pivotal trials (ClinicalTrials.gov) to its approval.">
+              <dt>Last pivotal readout to approval</dt>
+              <dd>
+                {lagMonths} month{lagMonths === 1 ? '' : 's'}
+              </dd>
+            </div>
+          )}
         </dl>
       </header>
 
       {unverified && (
-        <div className="drug__warning" role="status">
-          <strong>Unverified data.</strong> Nothing on this page has been checked against
-          the source documents yet — every field is marked <code>verified: false</code> until
-          a person confirms it.{' '}
-          <a href={reviewDrugHref(drug.slug)}>Review it</a>.
-        </div>
-      )}
-
-      {drug.indications.length > 1 && (
-        <nav className="drug__indication-switch" aria-label="Other approved indications">
-          {drug.indications.map((i) => (
-            <a
-              key={i.slug}
-              href={indicationHref(drug.slug, i.slug)}
-              className={i.slug === indication.slug ? 'is-active' : undefined}
-              title={i.name}
-            >
-              {indicationLabel(i)}
-            </a>
-          ))}
-        </nav>
+        <p className="drug__status" role="status">
+          <span className="drug__status-badge">Unverified</span>
+          Extracted automatically and not yet checked against the source documents.{' '}
+          <a href={reviewDrugHref(drug.slug)}>Review it</a>
+        </p>
       )}
 
       {scopedTrials.length === 0 ? (
@@ -194,9 +200,20 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             milestones={scopedMilestones}
             selectedTrialId={trialId}
             indication={indication.name}
+            majorSubmission={ownSubmission}
             onSelectTrial={(id) => navigate(indicationTrialHref(drug.slug, indication.slug, id))}
           />
         </section>
+      )}
+
+      {drug.indications.length > 1 && (
+        <div id="approved-indications">
+          <IndicationTimeline
+            indications={drug.indications}
+            currentSlug={indication.slug}
+            hrefFor={(slug) => indicationHref(drug.slug, slug)}
+          />
+        </div>
       )}
 
       <section className="drug__milestones">
@@ -226,18 +243,23 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         <section className="drug__sources">
           <h2>Sources</h2>
           <p className="drug__sources-note">
-            The approval package and full label — everything this page's classifications
-            were read from — so you can check them yourself.
+            The FDA documents everything on this page was read from, so you can check them yourself.
           </p>
-          <ul>
-            {drug.sources.map((s) => (
-              <li key={s.id}>
-                <a href={s.url} target="_blank" rel="noopener noreferrer">
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          {ownSources && (
+            <ul className="drug__sources-own">
+              <SourceGroupRow group={ownSources} highlight />
+            </ul>
+          )}
+          <details className="drug__sources-all">
+            <summary>
+              All {drug.sources.length} source documents, by submission
+            </summary>
+            <ul>
+              {sourceGroups.map((g) => (
+                <SourceGroupRow key={g.submission ?? 'other'} group={g} />
+              ))}
+            </ul>
+          </details>
         </section>
       )}
 
@@ -249,5 +271,62 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         />
       )}
     </main>
+  );
+}
+
+// A hash link would change the route (the router reads location.hash), so scroll instead.
+function scrollTo(id: string) {
+  return (e: React.MouseEvent) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+}
+
+interface SourceGroup {
+  submission?: string;
+  date?: Milestone['date'];
+  sources: Source[];
+}
+
+/** Sources grouped by the submission in their label ("Label (SUPPL-22)"), newest first; others last. */
+function groupSources(sources: Source[], milestones: Milestone[]): SourceGroup[] {
+  const groups = new Map<string, SourceGroup>();
+  const other: Source[] = [];
+  for (const s of sources) {
+    const submission = /\(([A-Z]+-\d+)\)$/.exec(s.label)?.[1];
+    if (!submission) {
+      other.push(s);
+      continue;
+    }
+    const g = groups.get(submission) ?? {
+      submission,
+      date: milestones.find((m) => m.submissionNumber === submission)?.date,
+      sources: [],
+    };
+    g.sources.push(s);
+    groups.set(submission, g);
+  }
+  const sorted = [...groups.values()].sort((a, b) => (b.date?.value ?? '').localeCompare(a.date?.value ?? ''));
+  return other.length > 0 ? [...sorted, { sources: other }] : sorted;
+}
+
+function SourceGroupRow({ group, highlight }: { group: SourceGroup; highlight?: boolean }) {
+  return (
+    <li className={`drug__source-group${highlight ? ' is-own' : ''}`}>
+      <span className="drug__source-sub">
+        {highlight ? 'This approval' : group.submission ?? 'Other'}
+        {group.date && <span className="nums"> · {formatDate(group.date)}</span>}
+      </span>
+      <span>
+        {group.sources.map((s, i) => (
+          <span key={s.id}>
+            {i > 0 && ' · '}
+            <a href={s.url} target="_blank" rel="noopener noreferrer">
+              {group.submission ? s.label.replace(` (${group.submission})`, '') : s.label}
+            </a>
+          </span>
+        ))}
+      </span>
+    </li>
   );
 }

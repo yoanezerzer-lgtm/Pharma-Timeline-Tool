@@ -18,7 +18,10 @@ export function App() {
       />
     );
   }
-  if (route.name === 'index') return <DrugIndex />;
+  // Keyed by the hash so opening a different filtered link ("#/?view=table")
+  // while already on the page starts from that link's filters. Typing in the
+  // filters uses replaceState, which doesn't re-render App, so no remount then.
+  if (route.name === 'index') return <DrugIndex key={window.location.hash} />;
   return (
     <Suspense fallback={null}>
       {route.name === 'ingest' ? <IngestPage /> : <ReviewPage slug={route.name === 'review-drug' ? route.slug : undefined} />}

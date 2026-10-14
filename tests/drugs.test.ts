@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { isMeaningfulMilestone } from '../src/lib/drugs.js';
-import type { Milestone } from '../src/schema/index.js';
+import { isMeaningfulMilestone, readoutToApprovalMonths } from '../src/lib/drugs.js';
+import type { Milestone, Trial, DateValue } from '../src/schema/index.js';
 
 function milestone(o: Partial<Milestone>): Milestone {
   return {
@@ -38,5 +38,30 @@ describe('isMeaningfulMilestone', () => {
 
   it('keeps a supplement with no classification rather than guessing it is noise', () => {
     expect(isMeaningfulMilestone(milestone({ description: undefined }))).toBe(true);
+  });
+});
+
+describe('readoutToApprovalMonths', () => {
+  const day = (value: string): DateValue => ({ value, precision: 'day' });
+  const trial = (role: 'PIVOTAL' | 'SUPPORTIVE', completion?: DateValue): Trial =>
+    ({
+      roles: [{ indication: 'RA', role, provenance: { extractedBy: 'rule', verified: false } }],
+      primaryCompletionDate: completion,
+    }) as Trial;
+
+  it('measures from the latest pivotal readout before approval', () => {
+    const trials = [trial('PIVOTAL', day('2017-10-27')), trial('PIVOTAL', day('2018-01-15')), trial('SUPPORTIVE', day('2019-01-01'))];
+    expect(readoutToApprovalMonths(trials, 'RA', day('2019-08-16'))).toBe(19);
+  });
+
+  it('ignores a pivotal trial still running after approval', () => {
+    const trials = [trial('PIVOTAL', day('2018-02-01')), trial('PIVOTAL', day('2027-06-01'))];
+    expect(readoutToApprovalMonths(trials, 'RA', day('2019-08-16'))).toBe(18);
+  });
+
+  it('is undefined without a dated approval or any usable readout', () => {
+    expect(readoutToApprovalMonths([trial('PIVOTAL', day('2018-01-01'))], 'RA', undefined)).toBeUndefined();
+    expect(readoutToApprovalMonths([trial('PIVOTAL', { value: '2018-01-01', precision: 'year' })], 'RA', day('2019-08-16'))).toBeUndefined();
+    expect(readoutToApprovalMonths([trial('SUPPORTIVE', day('2018-01-01'))], 'RA', day('2019-08-16'))).toBeUndefined();
   });
 });

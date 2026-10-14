@@ -78,7 +78,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto 2.5rem;
 }
 
@@ -93,7 +93,12 @@
   flex: 2 1 280px;
 }
 
-.index__control label {
+.index__control--view {
+  flex: 0 0 auto;
+}
+
+.index__control label,
+.index__control-label {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -264,9 +269,130 @@
   .index__stats {
     grid-template-columns: repeat(2, 1fr);
   }
+  .index__table .index__table-sponsor {
+    display: none;
+  }
   .index__add-drug {
     position: static;
     display: inline-block;
     margin-bottom: 1rem;
   }
+}
+
+.index__view-toggle {
+  display: flex;
+  height: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.index__view-toggle button {
+  padding: 0 0.9rem;
+  border: none;
+  background: var(--bg-elevated);
+  color: var(--text-2);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.index__view-toggle button + button {
+  border-left: 1px solid var(--border);
+}
+
+.index__view-toggle button[aria-pressed='true'] {
+  background: var(--text-1);
+  color: var(--bg-1);
+}
+
+.drug-card__unreviewed {
+  margin: 0.6rem 0 0;
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.drug-card__more {
+  width: 100%;
+  padding: 0.45rem 0.7rem;
+  border: 1px dashed var(--border);
+  border-radius: 7px;
+  background: none;
+  color: var(--text-2);
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.drug-card__more:hover {
+  border-color: var(--text-3);
+  color: var(--text-1);
+}
+
+.index__table-wrap {
+  overflow-x: auto;
+}
+
+.index__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.index__table th {
+  padding: 0 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.index__table th button {
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.index__table th[aria-sort='ascending'],
+.index__table th[aria-sort='descending'] {
+  color: var(--text-1);
+}
+
+.index__table td {
+  padding: 0.55rem 0.75rem 0.55rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+  color: var(--text-1);
+}
+
+.index__table tbody tr:hover {
+  background: var(--row-hover);
+}
+
+.index__table .nums {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--text-2);
+}
+
+.index__table .is-num {
+  text-align: right;
+}
+
+.index__table-drug {
+  font-weight: 600;
+}
+
+.index__table-inn,
+.index__table-sponsor {
+  color: var(--text-3);
 }
