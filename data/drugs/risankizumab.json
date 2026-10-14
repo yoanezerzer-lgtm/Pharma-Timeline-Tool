@@ -893,6 +893,7 @@
       "id": "m16-008",
       "nctId": "NCT02684370",
       "protocolNumber": "M16-008",
+      "labelName": "PsO-1",
       "title": "BI 655066/ABBV-066 (Risankizumab) Versus Ustekinumab and Placebo Comparators in a Randomized Double Blind trIal for Maintenance Use in Moderate to Severe Plaque Type Psoriasis (UltIMMa-1)",
       "briefTitle": "BI 655066 (Risankizumab) Compared to Placebo and Active Comparator (Ustekinumab) in Patients With Moderate to Severe Chronic Plaque Psoriasis",
       "phase": "PHASE3",
@@ -1110,14 +1111,28 @@
           "quote": "weeks. 14 CLINICAL STUDIES Four multicenter, randomized, double-blind studies [ULTIMMA-1 (NCT02684370), ULTIMMA-2 (NCT02684357), IMMHANCE (NCT02672852), and IMMVENT (NCT02694523)] enrolled 21",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsO-1 (NCT02684370)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "PsO-1",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "m15-992",
       "nctId": "NCT02672852",
       "protocolNumber": "M15-992",
+      "labelName": "PsO-3",
       "title": "BI 655066 / ABBV-066 (Risankizumab) Versus Placebo In a Multicenter Randomized Double-blind Study in Patients With Moderate to Severe Chronic Plaque Psoriasis Evaluating the Efficacy and Safety With Randomized Withdrawal and Re-treatment (IMMhance)",
       "briefTitle": "BI 655066 / ABBV-066 (Risankizumab) in Moderate to Severe Plaque Psoriasis With Randomized Withdrawal and Re-treatment",
       "phase": "PHASE3",
@@ -1365,14 +1380,28 @@
           "quote": "omized, double-blind studies [ULTIMMA-1 (NCT02684370), ULTIMMA-2 (NCT02684357), IMMHANCE (NCT02672852), and IMMVENT (NCT02694523)] enrolled 2109 subjects 18 years of age and older with modera",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsO-3 (NCT02672852)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "PsO-3",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "m15-995",
       "nctId": "NCT02684357",
       "protocolNumber": "M15-995",
+      "labelName": "PsO-2",
       "title": "BI 655066 Versus Ustekinumab and Placebo Comparators in a Randomized Double Blind trIal for Maintenance Use in Moderate to Severe Plaque Type Psoriasis-2 (UltIMMa-2)",
       "briefTitle": "BI 655066 Versus Placebo & Active Comparator (Ustekinumab) in Patients With Moderate to Severe Chronic Plaque Psoriasis",
       "phase": "PHASE3",
@@ -1593,14 +1622,28 @@
           "quote": "S Four multicenter, randomized, double-blind studies [ULTIMMA-1 (NCT02684370), ULTIMMA-2 (NCT02684357), IMMHANCE (NCT02672852), and IMMVENT (NCT02694523)] enrolled 2109 subjects 18 years of a",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsO-2 (NCT02684357)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "PsO-2",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "m16-010",
       "nctId": "NCT02694523",
       "protocolNumber": "M16-010",
+      "labelName": "PsO-4",
       "title": "BI 655066/ABBV-066 (Risankizumab) Versus Adalimumab in a Randomized, Double Blind, Parallel Group Trial in Moderate to Severe Plaque Psoriasis to Assess Safety and Efficacy After 16 Weeks of Treatment and After Inadequate Adalimumab Treatment Response (IMMvent)",
       "briefTitle": "BI 655066/ABBV-066 (Risankizumab) Compared to Active Comparator (Adalimumab) in Patients With Moderate to Severe Chronic Plaque Psoriasis",
       "phase": "PHASE3",
@@ -1844,9 +1887,22 @@
           "quote": "s [ULTIMMA-1 (NCT02684370), ULTIMMA-2 (NCT02684357), IMMHANCE (NCT02672852), and IMMVENT (NCT02694523)] enrolled 2109 subjects 18 years of age and older with moderate to severe plaque psorias",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsO-4 (NCT02694523)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "PsO-4",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "m16-002",
@@ -2714,6 +2770,7 @@
       "id": "m16-006",
       "nctId": "NCT03105128",
       "protocolNumber": "M16-006",
+      "labelName": "CD-1",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo Controlled Induction Study of the Efficacy and Safety of Risankizumab in Subjects With Moderately to Severely Active Crohn's Disease",
       "briefTitle": "A Study of the Efficacy and Safety of Risankizumab in Participants With Moderately to Severely Active Crohn's Disease",
       "phase": "PHASE3",
@@ -3155,9 +3212,22 @@
           "quote": "’s Disease Induction Trials (Trials CD-1 and CD-2) In two 12-week induction trials (CD-1; NCT03105128 and CD-2; NCT03104413), subjects with moderately to severely active Crohn’s disease were",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "CD-1 (NCT03105128)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "CD-1",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "m16-178",
@@ -3560,6 +3630,7 @@
       "id": "m15-991",
       "nctId": "NCT03104413",
       "protocolNumber": "M15-991",
+      "labelName": "CD-2",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Induction Study to Assess the Efficacy and Safety of Risankizumab in Subjects With Moderately to Severely Active Crohn's Disease Who Failed Prior Biologic Treatment",
       "briefTitle": "A Study to Assess the Efficacy and Safety of Risankizumab in Participants With Moderately to Severely Active Crohn's Disease Who Failed Prior Biologic Treatment",
       "phase": "PHASE3",
@@ -4001,14 +4072,28 @@
           "quote": "rials (Trials CD-1 and CD-2) In two 12-week induction trials (CD-1; NCT03105128 and CD-2; NCT03104413), subjects with moderately to severely active Crohn’s disease were randomized to receive",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "CD-2 (NCT03104413)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "CD-2",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "m16-067",
       "nctId": "NCT03398148",
       "protocolNumber": "M16-067",
+      "labelName": "UC-1",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo Controlled Induction Study to Evaluate the Efficacy and Safety of Risankizumab in Subjects With Moderately to Severely Active Ulcerative Colitis",
       "briefTitle": "A Multicenter, Randomized, Double-Blind, Placebo Controlled Induction Study to Evaluate the Efficacy and Safety of Risankizumab in Participants With Moderately to Severely Active Ulcerative Colitis",
       "phase": "PHASE2_3",
@@ -4354,9 +4439,22 @@
           "quote": "4.4 Ulcerative Colitis Induction Trial (Trial UC-1) In the 12-week induction trial (UC-1; NCT03398148), 966 subjects with moderately to severely active ulcerative colitis were randomized and",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "UC-1 (NCT03398148)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "UC-1",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "fortify",
@@ -5086,6 +5184,7 @@
       "nctId": "NCT03671148",
       "protocolNumber": "M15-998",
       "acronym": "KEEPsAKE2",
+      "labelName": "PsA-2",
       "title": "A Phase 3, Randomized, Double-Blind Study Comparing Risankizumab to Placebo in Subjects With Active Psoriatic Arthritis Including Those Who Have a History of Inadequate Response or Intolerance to Biologic Therapy(Ies) (KEEPsAKE 2)",
       "briefTitle": "A Study Comparing Risankizumab to Placebo in Participants With Active Psoriatic Arthritis Including Those Who Have a History of Inadequate Response or Intolerance to Biologic Therapy(Ies)",
       "phase": "PHASE3",
@@ -5255,15 +5354,29 @@
           "quote": "...................................................................................... 44 M15-998..........................................................................................",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsA-2 (NCT03671148)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "PsA-2",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "keepsake-1",
       "nctId": "NCT03675308",
       "protocolNumber": "M16-011",
       "acronym": "KEEPsAKE 1",
+      "labelName": "PsA-1",
       "title": "A Phase 3, Randomized, Double-Blind, Study Comparing Risankizumab to Placebo in Subjects With Active Psoriatic Arthritis (PsA) Who Have a History of Inadequate Response to or Intolerance to at Least One Disease Modifying Anti-Rheumatic Drug (DMARD) Therapy (KEEPsAKE 1)",
       "briefTitle": "A Study Comparing Risankizumab to Placebo in Participants With Active Psoriatic Arthritis (PsA) Who Have a History of Inadequate Response to or Intolerance to at Least One Disease Modifying Anti-Rheumatic Drug (DMARD) Therapy",
       "phase": "PHASE3",
@@ -5436,9 +5549,22 @@
           "quote": "evant Individual Trials Used to Support Efficacy...................................... 44 M16-011..........................................................................................",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsA-1 (NCT03675308)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "PsA-1",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "m15-990",
@@ -8354,6 +8480,7 @@
       "nctId": "NCT05969223",
       "protocolNumber": "M23-702",
       "acronym": "UnlIMMited",
+      "labelName": "PsO-5",
       "title": "A Phase 4 Multicenter, Randomized, Double-Blind Study of Risankizumab for the Treatment of Adult Subjects With Moderate to Severe Genital Psoriasis or Moderate to Severe Scalp Psoriasis",
       "briefTitle": "Study to Assess the Safety and Efficacy of Subcutaneously Injected Risankizumab in Adult Participants With Genital or Scalp Psoriasis",
       "phase": "PHASE4",
@@ -8594,9 +8721,22 @@
           "quote": "as assessed in a multicenter, randomized, double-blind, placebo- controlled trial [PsO-5 (NCT05969223)] that enrolled subjects 18 years of age and older with moderate-to-severe plaque psorias",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsO-5 (NCT05969223)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "PsO-5",
+          "detectedAt": "2026-10-14T17:41:07.047Z"
+        }
+      ]
     },
     {
       "id": "commodus",
@@ -11914,5 +12054,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-14T14:51:06.996Z"
+  "lastIngestedAt": "2026-10-14T17:41:07.047Z"
 }
