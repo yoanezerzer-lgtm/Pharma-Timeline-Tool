@@ -1,0 +1,2311 @@
+{
+  "slug": "escitalopram",
+  "brandName": "Lexapro",
+  "inn": "escitalopram",
+  "modality": "Small molecule",
+  "sponsor": "AbbVie Inc.",
+  "mechanism": "Selective serotonin reuptake inhibitor (SSRI)",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Major Depressive Disorder",
+      "slug": "major-depressive-disorder",
+      "approvalDate": {
+        "value": "2002-08-14",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2002/21323ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      }
+    },
+    {
+      "name": "Generalized Anxiety Disorder",
+      "slug": "generalized-anxiety-disorder",
+      "approvalDate": {
+        "value": "2003-12-18",
+        "precision": "day"
+      },
+      "submissionNumber": "SUPPL-3",
+      "approvalProvenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/21323se1-003,se8-007,21365se8-001,se1-004ltr.pdf",
+        "sourceLabel": "Approval letter (SUPPL-3)",
+        "quote": "Named in the SUPPL-3 approval letter; first listed in the label on or before SUPPL-3, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "021323",
+      "applicationType": "NDA",
+      "sponsor": "ABBVIE",
+      "originalApprovalDate": {
+        "value": "2002-08-14",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "1-2",
+      "nctId": "NCT00149071",
+      "protocolNumber": "1,2",
+      "title": "Treatment of Therapy-Resistant Major Depression With Transcranial Stimulation rTMS in Combination With Escitalopram",
+      "briefTitle": "Transcranial Magnetic Stimulation (rTMS) Accelerates the Response to Escitalopram in Major Depression",
+      "phase": "NA",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Hillerod Hospital, Denmark",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2004-03-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2006-01-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 61,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "FACTORIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "A",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "rTMS"
+        },
+        {
+          "label": "B",
+          "type": "SHAM_COMPARATOR",
+          "description": "sham rTMS"
+        }
+      ],
+      "primaryEndpoints": [
+        "depression scores"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00149071",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00149071",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00149071",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00149071",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00149071",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "sct-md-32",
+      "nctId": "NCT00107120",
+      "protocolNumber": "SCT-MD-32",
+      "title": "A Double-blind Flexible Dose Study of Escitalopram in Pediatric Patients With Major Depressive Disorder",
+      "briefTitle": "The Safety and Efficacy of Escitalopram in Pediatric Patients With Major Depressive Disorder",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Forest Laboratories",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2005-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2007-05-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 312,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Escitalopram",
+          "type": "EXPERIMENTAL",
+          "description": "Escitalopram 10mg once daily for three weeks, 10-20mg once daily for up to the remaining 5 weeks"
+        },
+        {
+          "label": "2",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo once daily for up to 8 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Children's Depression Rating Scale - Revised (CDRS-R) Total Score"
+      ],
+      "secondaryEndpoints": [
+        "Clinical Global Impressions - Improvement"
+      ],
+      "postedResults": [
+        {
+          "title": "Change in Children's Depression Rating Scale - Revised (CDRS-R) Total Score",
+          "timeFrame": "Baseline to end of week 8",
+          "paramType": "MEAN",
+          "unitOfMeasure": "Change in total score at endpoint",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Escitalopram"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-22.4",
+              "spread": "1.1"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-18.4",
+              "spread": "1.1"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.022",
+              "method": "ANCOVA",
+              "paramType": "Least Square Means Difference",
+              "paramValue": "-3.4",
+              "ciPct": "95",
+              "ciLower": "-6.2",
+              "ciUpper": "-0.5"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00107120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00107120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00107120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00107120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00107120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00107120?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 2,
+          "quote": "........................................................................... 6 3.1.1 Study SCT-MD-32 .........................................................................................",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "227",
+      "nctId": "NCT00289523",
+      "protocolNumber": "227",
+      "title": "Biomarkers for Rapid Identification of Treatment Effectiveness in Major Depression (BRITE-MD), a Prospective, Randomized, Multi-center Study to Determine the Efficacy of Selected EEG and Genotype Biomarkers for Predicting Response to Antidepressant Therapy With Escitalopram, Bupropion XL, or a Combination Treatment Regimen.",
+      "briefTitle": "EEG Biomarkers for Predicting Response to Antidepressant Therapy",
+      "phase": "NA",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Medtronic - MITG",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2006-01-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2007-07-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2007-07-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 375,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "minAge": "21 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Escitalopram"
+        },
+        {
+          "label": "Bupropion XL"
+        },
+        {
+          "label": "Combination Therapy",
+          "description": "Escitalopram and Bupropion XL"
+        }
+      ],
+      "primaryEndpoints": [
+        "1. To confirm prospectively the accuracy of an EEG biomarker as a leading indicator of SSRI antidepressant treatment response;"
+      ],
+      "secondaryEndpoints": [
+        "1. To confirm prospectively the accuracy of an EEG biomarker as a leading indicator of remission;"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00289523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00289523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00289523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00289523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00289523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "101",
+      "nctId": "NCT00433121",
+      "protocolNumber": "101",
+      "title": "Discontinuation of Antipsychotics and Antidepressants Among Patients With Dementia and BPSD Living in Nursing Homes - an Open Study.",
+      "briefTitle": "Discontinuation of Antipsychotics and Antidepressants Among Patients With BPSD",
+      "phase": "PHASE4",
+      "roles": [
+        {
+          "role": "POST_MARKETING",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Sykehuset Innlandet HF",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2006-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2007-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "A",
+          "type": "EXPERIMENTAL",
+          "description": "Discontinuation of neuroleptic or anti depressants"
+        }
+      ],
+      "primaryEndpoints": [
+        "Changes in Neuropsychiatric Inventory",
+        "Changes in weight",
+        "Changes in Cornell's Depression Scale",
+        "Changes in UPDRS subscale",
+        "Changes in \"Quality of Live - Alzheimer Disease\""
+      ],
+      "secondaryEndpoints": [
+        "Changes in Severe Impairment Battery",
+        "Changes in Lawton's PADL",
+        "Oxazepam given p.n.",
+        "Drop outs"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00433121",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00433121",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00433121",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00433121",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00433121",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "lexapro",
+      "nctId": "NCT01814098",
+      "protocolNumber": "CR016381",
+      "acronym": "Lexapro",
+      "title": "Escitalopram in the Long-term Treatment of Major Depressive Disorder With Associated Anxiety Symptom",
+      "briefTitle": "An Efficacy and Safety Study of Escitalopram Long-Term Treatment in Major Depressive Disorder With Associated Anxiety Symptoms",
+      "phase": "PHASE4",
+      "roles": [
+        {
+          "role": "POST_MARKETING",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Xian-Janssen Pharmaceutical Ltd.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2009-07-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2011-05-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2011-11-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 318,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Escitalopram",
+          "type": "EXPERIMENTAL",
+          "description": "Escitalopram tablets will be administered orally at 10 milligram per day (mg/day). The dose may be increased to maximum of 20 mg/day depending on Investigators discretion for 24 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With Remission According to Montgomery-Asbery Depression Rating Scale (MADRS) and Hamilton Anxiety Scale (HAM-A)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Showing Response",
+        "Change From Baseline in MADRS Total Score at Week 24",
+        "Change From Baseline of Single Rating Item in MADRS Total Score at Week 24",
+        "Change From Baseline in Hamilton Depression Rating Scale (HAMD)-17 Score at Week 24",
+        "Change From Baseline in Hamilton Anxiety Scale (HAM-A) Score at Week 24",
+        "Change From Baseline of Single Rating Item in HAM-A at Week 24",
+        "Change From Baseline in Clinical Global Impression Score (CGI-S) at Week 24",
+        "Change From Baseline in Short Form-12 (SF-12) Score at Week 24"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01814098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01814098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01814098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01814098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01814098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bold",
+      "nctId": "NCT01082237",
+      "protocolNumber": "1RC1MH088438",
+      "acronym": "BOLD",
+      "title": "Biomarkers for Outcomes In Late-life Depression",
+      "briefTitle": "Biomarkers for Outcomes In Late-life Depression (BOLD)",
+      "phase": "PHASE4",
+      "roles": [
+        {
+          "role": "POST_MARKETING",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "University of California, Los Angeles",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2009-10-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2012-10-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2012-10-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 80,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "62 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "escitalopram",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "All subjects will receive escitalopram (ESC), brand name Lexapro (Forest Laboratories, Inc., New York) throughout the study. Dosing will start at 5 mg/d, be titrated to 10 mg after 4 days, and continue at 10 mg/d thereafter; an additional dose titration to 20 mg will be pursued at week 8 for those not significantly better (\\<50% improvement on IDS-30 at week 8 visit) and as tolerated."
+        }
+      ],
+      "primaryEndpoints": [
+        "Score on Hamilton Depression Rating Scale (HAM-D)"
+      ],
+      "secondaryEndpoints": [
+        "Score on Inventory of Depressive Symptomatology-Clinician Rated (IDS-C30)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01082237",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01082237",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01082237",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01082237",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01082237",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "escitalopram",
+      "nctId": "NCT01841125",
+      "protocolNumber": "ADD_E_2010",
+      "acronym": "Escitalopram",
+      "title": "A 12-Week Randomized, Double-blind, Parallel-group, Placebo-controlled Trial With and Open-label, 12-week Extension, Multicenter to Evaluation of the Efficacy of Escitalopram for the Treatment of Depression in Alzheimer's Disease",
+      "briefTitle": "Escitalopram for the Treatment of Depression in Alzheimer's Disease",
+      "phase": "PHASE4",
+      "roles": [
+        {
+          "role": "POST_MARKETING",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Konkuk University Medical Center",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2011-11-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2014-07-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2014-07-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 84,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "50 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "escitalopram",
+          "type": "EXPERIMENTAL",
+          "description": "escitalopram 15mg"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "placebo 15mg"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in CSDD(Cornell scale for depression in dementia) from baseline after 12 weeks of between treatment groups"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in CSDD(Cornell scale for depression in dementia) at week 4, 8, 16 and 24.",
+        "Change from baseline in K-MMSE at week 12 and 24.",
+        "Change from baseline in ADAS-Cog at week 12 and 24.",
+        "Change from baseline in NPIQ at week 12 and 24.",
+        "Change from baseline in S-IADL at week 12 and 24.",
+        "Change from baseline in GDS-15 at week 4, 8, 12, 16 and 24.",
+        "Change from baseline in CDR at week 12 and 24.",
+        "Change from baseline in CDR sum of box at week 12 and 24.",
+        "Change from baseline in Pittsburgh Sleep Quality Index at week 12 and 24."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01841125",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01841125",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01841125",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01841125",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01841125",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "m11-733",
+      "nctId": "NCT01741142",
+      "protocolNumber": "M11-733",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled Study of the Efficacy and Safety of ABT-436 in Major Depressive Disorder",
+      "briefTitle": "Efficacy and Safety Study of ABT-436 in Major Depressive Disorder",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "AbbVie (prior sponsor, Abbott)",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2012-01-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2013-10-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2015-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 19,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ABT-436",
+          "type": "EXPERIMENTAL",
+          "description": "Subject receiving ABT-436"
+        },
+        {
+          "label": "Escitalopram",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Subject receiving escitalopram."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subject receiving placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Primary efficacy variable will be change from baseline to Week 6 visit on Montgomery-Asberg Depression Rating Scale (MADRS) total score."
+      ],
+      "secondaryEndpoints": [
+        "Secondary efficacy variables include change from Baseline to Week 6 on clinician-rated Hamilton Depression Rating Scale."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01741142",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01741142",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01741142",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01741142",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01741142",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rosie",
+      "nctId": "NCT02407821",
+      "protocolNumber": "01",
+      "acronym": "RoSIE",
+      "title": "A Pilot Study to Evaluate the Feasibility and Safety of Performing a Double Blind, Placebo-controlled, Randomized Controlled Trial of the Routine Use of SSRI's at the Initiation of End-stage Renal Disease Treatment",
+      "briefTitle": "The Routine Use of SSRI's at the Initiation of End-stage Renal Disease Treatment (RoSIE)",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "TERMINATED",
+      "sponsor": "University Health Network, Toronto",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-01-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2017-01-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 25,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "25 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Escitalopram",
+          "type": "ACTIVE_COMPARATOR"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of consecutive incident dialysis patients that are eligible",
+        "Proportion of eligible patients that will consent to randomization",
+        "Proportion of randomized patients that comply with their group assignment"
+      ],
+      "secondaryEndpoints": [
+        "Serious adverse events",
+        "Number of patients withdrawn from the study drug due to QTc prolongation",
+        "Completion rate for all secondary outcome measures (KDQoL, HUI-III, PHQ-9, Handgrip and 2-Minute Walk Test)",
+        "Death",
+        "Hospital-free days"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02407821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02407821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02407821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02407821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02407821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "sct-md-60",
+      "nctId": "NCT03924323",
+      "protocolNumber": "SCT-MD-60",
+      "title": "A Randomized, Multicenter, Double-Blind, Flexibly-dosed, Efficacy and Safety Study of Escitalopram in the Treatment of Children and Adolescents With Generalized Anxiety Disorder",
+      "briefTitle": "A Study of Escitalopram in the Treatment of Children and Adolescents With Generalized Anxiety Disorder",
+      "phase": "PHASE4",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AbbVie",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-05-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-09-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-09-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 273,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "7 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Escitalopram 10 mg/day",
+          "type": "EXPERIMENTAL",
+          "description": "Oral administration with the possibility of dose escalation to 20 mg/day at the investigator's discretion"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Matching oral administration of placebo once daily"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Pediatric Anxiety Rating Scale (PARS) Severity Score"
+      ],
+      "secondaryEndpoints": [
+        "Response Rate on the PARS",
+        "Remission Rate on the PARS",
+        "Change on the Clinical Global Impression of Severity (CGI-S)",
+        "Change on the Children's Global Assessment Scale (CGAS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03924323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03924323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03924323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03924323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03924323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "precise",
+      "nctId": "NCT04623099",
+      "protocolNumber": "Strawn PrEcISE",
+      "acronym": "PrEcISE",
+      "title": "Pharmacogenetically-guided Escitalopram Treatment for Pediatric Anxiety: Aiming to Improve Safety and Efficacy (PrEcISE)",
+      "briefTitle": "Pharmacogenetically-guided Escitalopram Treatment for Pediatric Anxiety: Aiming to Improve Safety and Efficacy (PrEcISE)",
+      "phase": "PHASE4",
+      "roles": [
+        {
+          "role": "POST_MARKETING",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "University of Cincinnati",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-06-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-12-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 132,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Standard dosing",
+          "type": "OTHER",
+          "description": "Patients randomized to standard dosing (std) will initiate escitalopram at 5 mg daily and will then increase to 20 mg/day at week 4."
+        },
+        {
+          "label": "Pharmacogenetically-guided escitalopram dosing",
+          "type": "EXPERIMENTAL",
+          "description": "Patients randomized to PGx-guided treatment, escitalopram titration will be based on CYP2C19 phenotype and predicted escitalopram exposure. In poor metabolizers (PM), escitalopram will be initiated at 5 mg daily and increased to 10 mg daily at week 4."
+        }
+      ],
+      "primaryEndpoints": [
+        "Pediatric Anxiety Rating Scale severity score"
+      ],
+      "secondaryEndpoints": [
+        "Tolerability-Activation"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04623099",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04623099",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04623099",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04623099",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04623099",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "mdd",
+      "nctId": "NCT07328373",
+      "protocolNumber": "WSM_MDD",
+      "acronym": "MDD",
+      "title": "Neurobiological and Genomic Predictors of Relapse After Discontinuation of Antidepressant Treatment in Major Depressive Disorder: An Observational Prospective Study",
+      "briefTitle": "Neurobiological and Genomic Predictors of Relapse in Depression",
+      "phase": "NA",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "Mehmet Kemal Arikan",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2025-01-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-10-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-02-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 204,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depression-Relapsed Prospectively Followed",
+          "description": "This cohort includes patients whose long-term outcome is unknown at the start of the study. They are enrolled, treated, and monitored over time. At the study's conclusion, they will be retrospectively categorized as \"Relapsers\"."
+        },
+        {
+          "label": "Healthy Control",
+          "description": "This group is composed of individuals with no history of psychiatric illness. Data is collected at a single time point to establish a healthy baseline for all biomarkers."
+        },
+        {
+          "label": "Recurrent Depression Retrospectively Defined",
+          "description": "Group A (Retrospective / Known Phenotype): This group consists of patients with a confirmed history of recurrent depression. Recurrence defined as no relapse within 1 year after discontinuation of medication. Data for this group is collected at a single time point (Baseline/T0)."
+        },
+        {
+          "label": "Non-Recurrent Depression Retrospectively Defined",
+          "description": "This group consists of patients with a confirmed history of a single depressive episode or no relapse within 1 year after discontinuation of medication. Data for this group is collected at a single time point (Baseline/T0)."
+        },
+        {
+          "label": "Depression-Non-Relapsers Prospectively Followed",
+          "description": "This cohort includes patients whose long-term outcome is unknown at the start of the study. They are enrolled, treated, and monitored over time. At the study's conclusion, they will be retrospectively \"Non-Relapsers\" (in Remission)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Relapse rate"
+      ],
+      "secondaryEndpoints": [
+        "Severity of Depression - Baseline (T0)",
+        "Severity of Depression - Treatment Response (T1)",
+        "Severity of Depression - End of Treatment (T2)",
+        "Severity of Depression - End of Study (T3)",
+        "QEEG absolute power- Baseline (T0)",
+        "QEEG absolute power at Treatment Response (T1)",
+        "QEEG absolute power - End of Treatment (T2)",
+        "QEEG absolute power - Last Relapse Control - End of the Study (T3)",
+        "P300 amplitude - Baseline (T0)",
+        "P300 amplitude at Treatment Response (T1)",
+        "P300 amplitude- End of Treatment (T2)",
+        "P300 amplitude- Last Relapse Control - End of the Study (T3)",
+        "REM latency - Baseline (T0)",
+        "REM latency - End of Treatment (T2)",
+        "REM Latency Last Relapse Control - End of the Study (T3)",
+        "DNA Genome Analysis - Baseline (T0)",
+        "RNA Sequencing - Baseline (T0)",
+        "RNA Sequencing - End of Treatment (T2)",
+        "RNA Sequencing - End of Study (T3)",
+        "Micro RNA Sequencing - Baseline (T0)",
+        "Micro RNA Sequencing - End of Treatment (T2)",
+        "Micro RNA Sequencing - End of Study (T3)",
+        "DNA Methylation - Baseline (T0)",
+        "DNA Methylation - End of Treatment (T2)",
+        "DNA Methylation - End of Study (T3)",
+        "DNA Length - Baseline (T0)",
+        "DNA Length - End of Treatment (T2)",
+        "DNA Length - End of Study (T3)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07328373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07328373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07328373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07328373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07328373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2002-08-14",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 3 - New Dosage Form",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-1",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2002-08-29",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-2",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2002-12-13",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-2",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-3",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2003-12-18",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-3",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-7",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2003-12-18",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-7",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-10",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2004-04-08",
+        "precision": "day"
+      },
+      "label": "Supplement approved — supplement",
+      "shortLabel": "+Supplement",
+      "description": "Supplement",
+      "submissionNumber": "SUPPL-10",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-15",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2004-05-20",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-15",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-14",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2005-01-11",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-14",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-20",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2005-02-18",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-20",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-25",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2007-08-02",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-25",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-28",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2008-09-18",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-28",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-29",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2008-10-11",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-29",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-32",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2009-01-30",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-32",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-30",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2009-03-19",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-30",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-31",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2009-03-19",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-31",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-35",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2011-03-11",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-35",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-33",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2011-05-12",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-33",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-40",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2012-12-03",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-40",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-39",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2013-03-07",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-39",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-43",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2013-05-29",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-43",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-45",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2014-07-08",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-45",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-44",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2014-10-31",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-44",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-46",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2016-01-28",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-46",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-47",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2017-01-04",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-47",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-51",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2019-01-11",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-51",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-52",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2020-08-28",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-52",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-53",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2021-09-20",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-53",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-55",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2023-05-12",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-55",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-57",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2023-08-18",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-57",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-58",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2024-04-19",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-58",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 021323",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021323%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (SUPPL-3)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2003/21323se1-003,se8-007,21365se8-001,se1-004_lexapro_lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (SUPPL-3)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/21323se1-003,se8-007,21365se8-001,se1-004ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-2",
+      "label": "Review (SUPPL-3)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-3",
+      "label": "Letter (SUPPL-52)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/021323Orig1s052, 021365Orig1s037ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-4",
+      "label": "Label (SUPPL-52)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2020/021323s052,021365s037lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-5",
+      "label": "Label (SUPPL-44)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2014/021323s044,021365s032lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-6",
+      "label": "Pediatric Clinical Pharmacology Review (SUPPL-44)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/21323_Escitalopram_clinpharm_PREA.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-7",
+      "label": "Pediatric Statistical Review (SUPPL-44)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/21323_Escitalopram_statistical_PREA.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-8",
+      "label": "Letter (SUPPL-44)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2014/021323Orig1s044,021365Orig1s032ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-9",
+      "label": "Letter (SUPPL-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2002/21323se8-001and21440ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-10",
+      "label": "Label (SUPPL-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2002/21-440.pdf_Lexapro_Prntlbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-11",
+      "label": "Pediatric Medical Review (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/21323_escitalopram_clinical_PREA.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-12",
+      "label": "Pediatric Clinical Pharmacology Review (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/21323_Escitalopram_clinpharm_PREA.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-13",
+      "label": "Pediatric Statistical Review (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/21323_Escitalopram_statistical_PREA.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-14",
+      "label": "Letter (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2002/21323ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-15",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2002/21323lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-16",
+      "label": "Letter (SUPPL-28)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2008/021323s028,s029,021365s018,s019ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-17",
+      "label": "Label (SUPPL-28)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2008/021323s28s29,021365s18s19lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-18",
+      "label": "Label (SUPPL-40)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2012/021323s040lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-19",
+      "label": "Letter (SUPPL-40)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2012/020822Org1s043,021046Orig1s020,021323Orig1s040,021365Orig1s030ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-20",
+      "label": "Label (SUPPL-32)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2009/021323s032,021365s023lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-21",
+      "label": "Letter (SUPPL-32)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/020822s037,021046s015,021323s032,021365s023ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-22",
+      "label": "Review (SUPPL-30)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/021323Orig1S030_s031.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-23",
+      "label": "Letter (SUPPL-30)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/021323s030,s031,021365s021,s022ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-24",
+      "label": "Label (SUPPL-30)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2009/021323s030s031,021365s021s022lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-25",
+      "label": "Letter (SUPPL-14)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2005/21323s014,21365s007ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-26",
+      "label": "Letter (SUPPL-20)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2005/20822s029,21046s009,21323s020,21365s012ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-27",
+      "label": "Label (SUPPL-57)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021323s057,021365s040lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-28",
+      "label": "Letter (SUPPL-57)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/021323Orig1s057,021365Orig1s040ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-29",
+      "label": "Letter (SUPPL-55)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/021323Orig1s055,021365Orig1s039ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-30",
+      "label": "Label (SUPPL-55)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021323s055,021365s039lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-31",
+      "label": "Label (SUPPL-47)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2017/021323s047lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-32",
+      "label": "Letter (SUPPL-47)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/020822Orig1s047,021323Orig1s047,021365Orig1s035,022567Orig1s020ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-33",
+      "label": "Letter (SUPPL-53)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/020822Orig1s052, 021365Orig1s038, 021323Orig1s053, 022567Orig1s022, 204168Orig1s007ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-34",
+      "label": "Label (SUPPL-53)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/021365s038,021323s053lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-35",
+      "label": "Letter (SUPPL-45)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2014/020822Orig1s046,021323Orig1s045,021365Orig1s033ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-36",
+      "label": "Label (SUPPL-45)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2014/021323Orig1s045,021365Orig1s033lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-37",
+      "label": "Label (SUPPL-51)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2019/021323s051,021365s036lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-38",
+      "label": "Letter (SUPPL-51)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/020822Oirg1s051,021323Orig1s051,021365Orig1s036ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-39",
+      "label": "Letter (SUPPL-29)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2008/021323s029, 021365s019ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-40",
+      "label": "Label (SUPPL-35)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2011/021323s035,021365s025lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-41",
+      "label": "Letter (SUPPL-35)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2011/021323s035,021365s025ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-42",
+      "label": "Letter (SUPPL-33)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2011/021323s033,021365s024ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-43",
+      "label": "Label (SUPPL-33)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2011/021323s033,021365s024lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-44",
+      "label": "Label (SUPPL-25)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2007/021323s025lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-45",
+      "label": "Letter (SUPPL-25)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2007/020822s034, 021046s013, 021323s025, 021365s016ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-46",
+      "label": "Letter (SUPPL-31)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/021323s030,s031,021365s021,s022ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-47",
+      "label": "Review (SUPPL-31)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/021323Orig1S030_s031.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-48",
+      "label": "Label (SUPPL-31)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2009/021323s030s031,021365s021s022lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-49",
+      "label": "Letter (SUPPL-15)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2004/20822slr027,21046slr007,21323slr015,21365slr008ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-50",
+      "label": "Letter (SUPPL-58)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/020822Orig1s055; 021365Orig1s041; 021323Orig1s058; 022567Orig1s025; 204168Orig1s012ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-51",
+      "label": "Label (SUPPL-58)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021323s058lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-52",
+      "label": "Label (SUPPL-7)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2003/21323se1-003,se8-007,21365se8-001,se1-004_lexapro_lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-53",
+      "label": "Review (SUPPL-7)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S007&021365_S001_LEXAPRO_TABS.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-54",
+      "label": "Letter (SUPPL-7)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/21323se1-003,se8-007,21365se8-001,se1-004ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-14T14:51:12.833Z"
+}
