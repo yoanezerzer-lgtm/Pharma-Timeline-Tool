@@ -14,7 +14,9 @@ import {
   extractTrialAliases,
   extractIndicationList,
   splitSection14ByIndication,
+  runByApplicant,
   type IndicationListEntry,
+  type IndicationSpan,
 } from './roles.js';
 import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
 import { dateIndications } from './indicationDates.js';
@@ -194,17 +196,28 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     (a, b) => submissionDate(b.submission, fda.milestones).localeCompare(submissionDate(a.submission, fda.milestones))
   );
 
+  // Prefer the newest label whose section 14 actually splits into every
+  // indication it lists, not just the newest with a section 14 at all.
+  // Confirmed necessary against Skyrizi: its newest label (SUPPL-45) has a
+  // section 14 that won't split by indication, which left every trial without
+  // an indication-scoped role, while the label before it splits cleanly.
+  // Falls back to whichever label split best.
   let labelSection14: string | null = null;
   let labelDoc: FetchedDoc | undefined;
   let indicationList: IndicationListEntry[] = [];
+  let indicationSections: IndicationSpan[] = [];
   for (const candidate of labelDocsByRecency) {
     const section = extractLabelSection14(candidate.text);
-    if (section) {
+    if (!section) continue;
+    const list = extractIndicationList(candidate.text);
+    const spans = list.length > 0 ? splitSection14ByIndication(section, list) : [];
+    if (labelSection14 === null || spans.length > indicationSections.length) {
       labelSection14 = section;
       labelDoc = candidate;
-      indicationList = extractIndicationList(candidate.text);
-      break;
+      indicationList = list;
+      indicationSections = spans;
     }
+    if (list.length > 0 && spans.length === list.length) break;
   }
 
   if (labelDocsByRecency.length > 0 && !labelSection14) {
@@ -234,11 +247,6 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   // though only the review states the pairing explicitly.
   const trialAliases = extractTrialAliases(allDocText);
 
-  const indicationSections =
-    labelSection14 && indicationList.length > 0
-      ? splitSection14ByIndication(labelSection14, indicationList)
-      : [];
-
   if (labelSection14 && indicationList.length === 0) {
     warn(
       'section 14 was located, but the indication list could not be read from section 1 ' +
@@ -265,9 +273,19 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   });
   phaseWarnings.forEach(warn);
 
-  // Posted results are only shown for trials in a filing; keeping them for
-  // every registered study would multiply the data each page downloads.
-  const trimmed = rolesApplied.map((t) => (t.roles.length > 0 ? t : withoutPostedResults(t)));
+  // Uncited trials are kept for future indications or regions — which only
+  // ever come from the applicant's own program. Keytruda has ~2,700
+  // registered trials, ~2,400 of them uncited academic studies; keeping those
+  // made an 11.7 MB record. Posted results are likewise only kept for trials
+  // in a filing, which is all the site shows them for.
+  const sponsorName = fda.application.sponsor_name ?? spec.sponsor;
+  const kept = rolesApplied.filter(
+    (t) => t.roles.length > 0 || runByApplicant(t, sponsorName, spec.knownTrialSponsors)
+  );
+  if (kept.length < rolesApplied.length) {
+    log(`[trim]  dropped ${rolesApplied.length - kept.length} uncited trial(s) not run by the applicant`);
+  }
+  const trimmed = kept.map((t) => (t.roles.length > 0 ? t : withoutPostedResults(t)));
 
   // Deterministic order keeps the committed JSON diff-friendly across runs.
   const trials = trimmed.sort((a, b) => {
@@ -418,7 +436,8 @@ function buildDrugRecord(
   // openFDA's submission class doesn't say which disease a supplement was
   // for; the labels do. See dateIndications for how, and when it declines.
   const labels = docs.filter((d) => /label/i.test(d.type));
-  const approvals = dateIndications(indicationList.map((e) => e.name), labels, fda.milestones);
+  const letters = docs.filter((d) => /letter/i.test(d.type));
+  const approvals = dateIndications(indicationList.map((e) => e.name), labels, fda.milestones, letters);
   const indications = indicationList.map((entry) => {
     const approval = approvals.get(entry.name);
     return {

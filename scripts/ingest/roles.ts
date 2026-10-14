@@ -136,7 +136,10 @@ function sectionOneWindows(strippedText: string): string[] {
 
 function numberedEntries(window: string): IndicationListEntry[] {
   const entries: IndicationListEntry[] = [];
-  const pattern = /\b1\.\s*(\d+)\s+([A-Z][A-Za-z0-9 ,'‘’/-]*?)(?=\s+1\.\s*\d+\s+[A-Z]|\s*$)/g;
+  // A name ends at the next subsection number of any section, not just
+  // section 1: some tables of contents are two-column, interleaving them
+  // ("1.1 Major Depressive Disorder 7.11 Sumatriptan" — Lexapro's labels).
+  const pattern = /\b1\.\s*(\d+)\s+([A-Z][A-Za-z0-9 ,'‘’/-]*?)(?=\s+\d+\.\s*\d+\s+[A-Z]|\s*$)/g;
   for (const m of window.matchAll(pattern)) {
     const number = Number(m[1]);
     const name = m[2].replace(/\s+/g, ' ').replace(/\s*-\s*/g, '-').trim();
@@ -211,16 +214,41 @@ export function extractIndicationList(labelText: string): IndicationListEntry[] 
  * boundary than the next heading, and simpler.
  */
 function extractUnnumberedIndication(window: string): IndicationListEntry[] {
-  const m = /\bis\s+indicated\s+([^.]*)/i.exec(window);
+  const m = /\bis\s+indicated\s+([\s\S]*)/i.exec(window);
   if (!m) return [];
-  let name = m[1].replace(/\s+/g, ' ').trim();
+  const clause = m[1];
+  // A bulleted list after "is indicated for the treatment of:" is several
+  // indications, one per bullet — Lexapro's current label lists MDD and GAD
+  // this way. Each bullet ends at its own period.
+  const bullets = clause.includes('•') ? clause.split('•').slice(1) : [clause];
+  return bullets.flatMap((b) => {
+    const name = cleanIndicationClause(b.split('.')[0]);
+    return name.length >= 3 ? [name] : [];
+  }).map((name, i) => ({ number: i + 1, name }));
+}
+
+function cleanIndicationClause(text: string): string {
+  let name = text.replace(/\s+/g, ' ').trim();
   name = name.replace(/^for\s+/i, '');
   name = name.replace(
-    /^(the\s+)?(treatment(\s+and\s+(maintenance|prevention))?|management|reduction\s+of\s+risk|reducing\s+the\s+risk|prevention)\s+(of|for)\s+/i,
+    /^(the\s+)?(treatment(\s+and\s+(maintenance|prevention))?|management|reduction\s+of\s+risk|reducing\s+the\s+risk|prevention)\s+(of|for)\s*:?\s*/i,
     ''
   );
-  if (name.length < 3) return [];
-  return [{ number: 1, name: name.charAt(0).toUpperCase() + name.slice(1) }];
+  return name.charAt(0).toUpperCase() + name.slice(1);
+}
+
+/**
+ * The whole Indications section of a label written before FDA's 2006
+ * numbered format ("INDICATIONS AND USAGE Major Depressive Disorder Lexapro
+ * is indicated for…", no "1" and no subsections), as one block of text. Too
+ * loose to list indications from, but enough to tell whether a known one is
+ * mentioned — which is all dating an indication needs from an old label.
+ */
+export function legacyIndicationsText(labelText: string): string | null {
+  const stripped = stripPageMarkers(labelText);
+  if (/\b1\s+INDICATIONS\s+AND\s+USAGE\b/.test(stripped)) return null;
+  const m = /\bINDICATIONS\s+AND\s+USAGE\b([\s\S]*?)\bCONTRAINDICATIONS\b/.exec(stripped);
+  return m ? m[1] : null;
 }
 
 export interface IndicationSpan {
@@ -347,10 +375,15 @@ function mentions(haystack: string, needles: string[]): boolean {
 
 const CORPORATE_SUFFIX = /\b(inc|incorporated|corp|corporation|co|company|ltd|limited|llc|plc|gmbh|sa)\b/g;
 
-function normalizeSponsor(name: string): string {
+// "&" and "and" are dropped because openFDA and the registry disagree on
+// them: Drugs@FDA lists Keytruda's applicant as "MERCK SHARP DOHME" while
+// ClinicalTrials.gov says "Merck Sharp & Dohme LLC". Keeping the "&" made
+// every Merck trial look like someone else's, so none could be pivotal.
+export function normalizeSponsor(name: string): string {
   return name
     .toLowerCase()
-    .replace(/[.,]/g, ' ')
+    .replace(/[.,&]/g, ' ')
+    .replace(/\band\b/g, ' ')
     .replace(CORPORATE_SUFFIX, ' ')
     .replace(/\s+/g, ' ')
     .trim();
@@ -376,12 +409,21 @@ function normalizeSponsor(name: string): string {
  * already confirmed to be legitimate co-developers for this specific drug,
  * so a match against one of them counts the same as matching the applicant.
  */
-function looksLikeSponsorTrial(
+export function looksLikeSponsorTrial(
   trial: Trial,
   sponsorName: string | undefined,
   knownTrialSponsors?: string[]
 ): boolean {
   if (trial.studyType && trial.studyType.toUpperCase() === 'OBSERVATIONAL') return false;
+  return runByApplicant(trial, sponsorName, knownTrialSponsors);
+}
+
+/** Whether the applicant (or a known co-developer) ran this trial, whatever its design. */
+export function runByApplicant(
+  trial: Trial,
+  sponsorName: string | undefined,
+  knownTrialSponsors?: string[]
+): boolean {
   if (!trial.sponsor) return true;
   const a = normalizeSponsor(trial.sponsor);
   const candidates = [sponsorName, ...(knownTrialSponsors ?? [])].filter(
