@@ -814,6 +814,7 @@
       "nctId": "NCT02629159",
       "protocolNumber": "M14-465",
       "acronym": "SELECT-COMPARE",
+      "labelName": "RA-IV",
       "title": "A Phase 3, Randomized, Double-Blind Study Comparing Upadacitinib (ABT-494) to Placebo and to Adalimumab in Subjects With Moderately to Severely Active Rheumatoid Arthritis Who Are on a Stable Background of Methotrexate (MTX) and Who Have an Inadequate Response to MTX (MTX-IR)",
       "briefTitle": "A Study Comparing Upadacitinib (ABT-494) to Placebo and to Adalimumab in Adults With Rheumatoid Arthritis Who Are on a Stable Dose of Methotrexate and Who Have an Inadequate Response to Methotrexate",
       "phase": "PHASE3",
@@ -1081,6 +1082,13 @@
           "quote": "28- CRP ≤3.2, DAS28 -CRP<2.6, and change from baseline in HAQ-DI at Week 12. Trial RA-IV (NCT02629159) was a 48-week trial in 1629 patients with moderately to severely active rheumatoid arthr",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "RA-IV (NCT02629159)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -1255,6 +1263,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "RA-IV",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -1263,6 +1276,7 @@
       "nctId": "NCT02675426",
       "protocolNumber": "M13-549",
       "acronym": "SELECT-NEXT",
+      "labelName": "RA-III",
       "title": "A Phase 3, Randomized, Double-Blind Study Comparing Upadacitinib (ABT-494) to Placebo in Subjects With Moderately to Severely Active Rheumatoid Arthritis Who Are on a Stable Dose of Conventional Synthetic Disease-Modifying Anti-Rheumatic Drugs (csDMARDs) and Have an Inadequate Response to csDMARDs",
       "briefTitle": "A Study Comparing Upadacitinib (ABT-494) to Placebo in Adults With Rheumatoid Arthritis on a Stable Dose of Conventional Synthetic Disease-Modifying Antirheumatic Drugs (csDMARDs) Who Have an Inadequate Response to csDMARDs Alone",
       "phase": "PHASE3",
@@ -1533,6 +1547,13 @@
           "quote": "ing information, please visit https://www.fda.gov/drugsatfda Trial RA-III (NCT02675426) was a 12-week trial in 661 patients with moderately to severely active rheumatoid arthri",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "RA-III (NCT02675426)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -1707,6 +1728,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "RA-III",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -1715,6 +1741,7 @@
       "nctId": "NCT02706873",
       "protocolNumber": "M13-545",
       "acronym": "SELECT-EARLY",
+      "labelName": "RA-I",
       "title": "A Phase 3, Randomized, Double-Blind Study Comparing Upadacitinib (ABT-494) Once Daily Monotherapy to Methotrexate (MTX) Monotherapy in MTX-Naïve Subjects With Moderately to Severely Active Rheumatoid Arthritis",
       "briefTitle": "A Study to Compare Upadacitinib (ABT-494) Monotherapy to Methotrexate (MTX) Monotherapy in Adults With Rheumatoid Arthritis (RA) Who Have Not Previously Taken Methotrexate",
       "phase": "PHASE3",
@@ -2136,6 +2163,13 @@
           "quote": "oses have been studied, the recommended dosage of RINVOQ is 15 mg once daily. Trial RA-I (NCT02706873) was a 24-week monotherapy trial in 947 patients with moderately to severely active rheum",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "RA-I (NCT02706873)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -2446,6 +2480,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "RA-I",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -2454,6 +2493,7 @@
       "nctId": "NCT02706847",
       "protocolNumber": "M13-542",
       "acronym": "SELECT-BEYOND",
+      "labelName": "RA-V",
       "title": "A Phase 3, Randomized, Double-Blind Study Comparing Upadacitinib (ABT-494) to Placebo on Stable Conventional Synthetic Disease-Modifying Anti-Rheumatic Drugs (csDMARDs) in Subjects With Moderately to Severely Active Rheumatoid Arthritis With Inadequate Response or Intolerance to Biologic DMARDs (bDMARDs)",
       "briefTitle": "A Study to Compare Upadacitinib (ABT-494) to Placebo in Adults With Rheumatoid Arthritis on Stable Dose of Conventional Synthetic Disease-Modifying Antirheumatic Drugs (csDMARDs) With an Inadequate Response or Intolerance to Biologic DMARDs",
       "phase": "PHASE3",
@@ -2721,6 +2761,13 @@
           "quote": "m baseline in HAQ-DI at Week 12, and change from baseline in mTSS at Week 26. Trial RA-V (NCT02706847) was a 12-week trial in 499 patients with moderately to severely active rheumatoid arthri",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "RA-V (NCT02706847)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -2895,6 +2942,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "RA-V",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -3285,6 +3337,7 @@
       "nctId": "NCT02706951",
       "protocolNumber": "M15-555",
       "acronym": "SELECT-MONOTHERAPY",
+      "labelName": "RA-II",
       "title": "A Phase 3, Randomized, Double-Blind Study Comparing Upadacitinib (ABT-494) Monotherapy to Methotrexate (MTX) in Adults With Moderately to Severely Active Rheumatoid Arthritis With Inadequate Response to MTX",
       "briefTitle": "A Study Comparing Upadacitinib (ABT-494) Monotherapy to Methotrexate (MTX) Monotherapy in Adults With Rheumatoid Arthritis (RA) Who Have an Inadequate Response to MTX (SELECT-MONOTHERAPY)",
       "phase": "PHASE3",
@@ -3553,6 +3606,13 @@
           "quote": "rom baseline in van der Heijde-modified total Sharp Score (mTSS) at Week 24. Trial RA-II (NCT02706951) was a 14-week monotherapy trial in 648 patients with moderately to severely active rheum",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "RA-II (NCT02706951)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -3727,6 +3787,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "RA-II",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -3853,6 +3918,7 @@
       "id": "m14-234",
       "nctId": "NCT02819635",
       "protocolNumber": "M14-234",
+      "labelName": "UC-3",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Safety and Efficacy of Upadacitinib (ABT-494) for Induction and Maintenance Therapy in Subjects With Moderately to Severely Active Ulcerative Colitis",
       "briefTitle": "A Study to Evaluate the Safety and Efficacy of Upadacitinib (ABT-494) for Induction and Maintenance Therapy in Participants With Moderately to Severely Active Ulcerative Colitis (UC)",
       "phase": "PHASE2_3",
@@ -4243,6 +4309,13 @@
           "quote": "UC-1, UC-2) and a randomized, double-blind, placebo controlled, dose-finding study (UC-4; NCT02819635). Long term safety up to 52-weeks was evaluated in patients who responded to induction th",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "UC-3 (NCT02819635)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -4494,6 +4567,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "UC-3",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -4966,6 +5044,7 @@
       "nctId": "NCT03104400",
       "protocolNumber": "M15-572",
       "acronym": "SELECT - PsA 1",
+      "labelName": "PsA-I",
       "title": "A Phase 3, Randomized, Double-Blind, Study Comparing Upadacitinib (ABT-494) to Placebo and to Adalimumab in Subjects With Active Psoriatic Arthritis Who Have a History of Inadequate Response to at Least One Non-Biologic Disease Modifying Anti-Rheumatic Drug (DMARD) - SELECT - PsA 1",
       "briefTitle": "A Study Comparing Upadacitinib (ABT-494) to Placebo and to Adalimumab in Participants With Psoriatic Arthritis Who Have an Inadequate Response to at Least One Non-Biologic Disease Modifying Anti-Rheumatic Drug (DMARD)",
       "phase": "PHASE3",
@@ -5189,6 +5268,13 @@
           "quote": "ling information, please visit https://www.fda.gov/drugsatfda Trial PsA-I (NCT03104400) was a 24-week trial in 1705 patients with moderately to severely active psoriatic arthri",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsA-I (NCT03104400)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -5305,6 +5391,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "PsA-I",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -5313,6 +5404,7 @@
       "nctId": "NCT03104374",
       "protocolNumber": "M15-554",
       "acronym": "SELECT - PsA 2",
+      "labelName": "PsA-II",
       "title": "A Phase 3, Randomized, Double-Blind, Study Comparing Upadacitinib (ABT-494) to Placebo in Subjects With Active Psoriatic Arthritis Who Have a History of Inadequate Response to at Least One Biologic Disease Modifying Anti-Rheumatic Drug (bDMARD)",
       "briefTitle": "A Study Comparing Upadacitinib (ABT-494) to Placebo in Participants With Active Psoriatic Arthritis Who Have a History of Inadequate Response to at Least One Biologic Disease Modifying Anti-Rheumatic Drug",
       "phase": "PHASE3",
@@ -5515,6 +5607,13 @@
           "quote": "t was the proportion of patients who achieved an ACR20 response at Week 12. Trial PsA-II (NCT03104374) was a 24-week trial in 642 patients with moderately to severely active psoriatic arthrit",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PsA-II (NCT03104374)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -5621,6 +5720,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "PsA-II",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -5735,6 +5839,7 @@
       "nctId": "NCT03178487",
       "protocolNumber": "M16-098",
       "acronym": "SELECT-AXIS 1",
+      "labelName": "AS-I",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Study Evaluating the Safety and Efficacy of Upadacitinib in Subjects With Active Ankylosing Spondylitis",
       "briefTitle": "A Study Evaluating the Safety and Efficacy of Upadacitinib in Adults With Active Ankylosing Spondylitis",
       "phase": "PHASE2",
@@ -5906,6 +6011,13 @@
           "quote": "ivity Index (BASDAI) ≥4 and Patient’s Assessment of Total Back Pain score ≥4. Trial AS-I (NCT03178487) was a 14-week trial in 187 ankylosing spondylitis patients with an inadequate response t",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "AS-I (NCT03178487)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -5989,6 +6101,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "AS-I",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -5996,6 +6113,7 @@
       "id": "m14-431",
       "nctId": "NCT03345836",
       "protocolNumber": "M14-431",
+      "labelName": "CD-1",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Induction Study of the Efficacy and Safety of Upadacitinib (ABT-494) in Subjects With Moderately to Severely Active Crohn's Disease Who Have Inadequately Responded to or Are Intolerant to Biologic Therapy",
       "briefTitle": "A Study of the Efficacy and Safety of Upadacitinib (ABT-494) in Participants With Moderately to Severely Active Crohn's Disease Who Have Inadequately Responded to or Are Intolerant to Biologic Therapy",
       "phase": "PHASE3",
@@ -6292,6 +6410,13 @@
           "quote": "5 Crohn’s Disease Induction Trials (Studies CD-1 and CD-2) In two induction trials, CD-1 (NCT03345836) and CD-2 (NCT03345849), patients were randomized 2:1 to receive RINVOQ 45 mg or placebo",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "CD-1 (NCT03345836)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -6479,6 +6604,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "CD-1",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -6487,6 +6617,7 @@
       "nctId": "NCT03345849",
       "protocolNumber": "M14-433",
       "acronym": "U-EXCEL",
+      "labelName": "CD-2",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Induction Study of the Efficacy and Safety of Upadacitinib (ABT-494) in Subjects With Moderately to Severely Active Crohn's Disease Who Have Inadequately Responded to or Are Intolerant to Conventional and/or Biologic Therapies",
       "briefTitle": "A Study of the Efficacy and Safety of Upadacitinib in Participants With Moderately to Severely Active Crohn's Disease Who Have Inadequately Responded to or Are Intolerant to Conventional and/or Biologic Therapies",
       "phase": "PHASE3",
@@ -6750,6 +6881,13 @@
           "quote": "tion Trials (Studies CD-1 and CD-2) In two induction trials, CD-1 (NCT03345836) and CD-2 (NCT03345849), patients were randomized 2:1 to receive RINVOQ 45 mg or placebo once daily for 12 weeks",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "CD-2 (NCT03345849)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -6923,6 +7061,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "CD-2",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -7034,6 +7177,7 @@
       "nctId": "NCT03345823",
       "protocolNumber": "M14-430",
       "acronym": "U-ENDURE",
+      "labelName": "CD-3",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Maintenance and Long-Term Extension Study of the Efficacy and Safety of Upadacitinib (ABT-494) in Subjects With Crohn's Disease Who Completed the Studies M14-431 or M14-433",
       "briefTitle": "A Maintenance and Long-Term Extension Study of the Efficacy and Safety of Upadacitinib (ABT-494) in Participants With Crohn's Disease Who Completed the Studies M14-431 or M14-433",
       "phase": "PHASE3",
@@ -7189,6 +7333,13 @@
           "quote": "uction has not been established. Maintenance Study (CD-3) The efficacy analysis for CD-3 (NCT03345823) evaluated 343 patients who responded to 12 weeks of RINVOQ 45 mg once daily induction tr",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "CD-3 (NCT03345823)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -7221,6 +7372,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "CD-3",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -8177,6 +8333,7 @@
       "nctId": "NCT03569293",
       "protocolNumber": "M16-045",
       "acronym": "Measure Up 1",
+      "labelName": "AD-3",
       "title": "A Phase 3 Randomized, Placebo-Controlled, Double-Blind Study to Evaluate Upadacitinib in Adolescent and Adult Subjects With Moderate to Severe Atopic Dermatitis",
       "briefTitle": "Evaluation of Upadacitinib in Adolescent and Adult Patients With Moderate to Severe Atopic Dermatitis (Eczema)",
       "phase": "PHASE3",
@@ -8477,6 +8634,13 @@
           "quote": "inib Concentrations Categorized by Treatment Group and Time from Previous Dose from Study M16-045 ....................................................................................47 Ta",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "AD-3 (NCT03569293)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -8651,6 +8815,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "AD-3",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -9057,6 +9226,7 @@
       "nctId": "NCT03725202",
       "protocolNumber": "M16-852",
       "acronym": "SELECT-GCA",
+      "labelName": "GCA",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Safety and Efficacy of Upadacitinib in Subjects With Giant Cell Arteritis: SELECT-GCA",
       "briefTitle": "A Study to Evaluate the Safety and Efficacy of Upadacitinib in Participants With Giant Cell Arteritis",
       "phase": "PHASE3",
@@ -9280,6 +9450,13 @@
           "quote": "Arteritis The efficacy and safety of RINVOQ 15 mg once daily were assessed in Trial GCA (NCT03725202), a Phase 3 randomized, double-blind, multicenter, placebo-controlled study in patients 5",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "GCA (NCT03725202)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -9386,6 +9563,11 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "labelName",
+          "newValue": "GCA",
+          "detectedAt": "2026-10-14T17:41:12.923Z"
         }
       ]
     },
@@ -24301,5 +24483,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-14T14:51:11.922Z"
+  "lastIngestedAt": "2026-10-14T17:41:12.923Z"
 }
