@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { summaryRole, ROLE_LABEL } from '../lib/drugs.js';
+import { summaryRole, ROLE_LABEL, trialShortName } from '../lib/drugs.js';
 import { drugIndex, useDrug } from '../lib/catalog.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
 import { Drug } from '../schema/index.js';
@@ -46,6 +46,7 @@ const FIELD_LABEL: Record<string, string> = {
   secondaryEndpoints: 'Secondary endpoints',
   citedIn: 'Cited in FDA review',
   postedResults: 'Posted results (primary outcomes)',
+  labelName: 'Name in label',
 };
 
 function fieldLabel(field: string): string {
@@ -348,7 +349,7 @@ function TrialRow({
           onClick={onToggle}
           aria-expanded={isOpen}
         >
-          <span className="review__trial-name">{t.acronym ?? t.protocolNumber ?? t.id}</span>
+          <span className="review__trial-name">{trialShortName(t)}</span>
           <span className="review__trial-title">{t.briefTitle ?? t.title}</span>
         </button>
         {t.nctId && (

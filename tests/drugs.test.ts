@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { isMeaningfulMilestone, readoutToApprovalMonths } from '../src/lib/drugs.js';
+import { isMeaningfulMilestone, readoutToApprovalMonths, trialShortName } from '../src/lib/drugs.js';
 import type { Milestone, Trial, DateValue } from '../src/schema/index.js';
 
 function milestone(o: Partial<Milestone>): Milestone {
@@ -63,5 +63,13 @@ describe('readoutToApprovalMonths', () => {
     expect(readoutToApprovalMonths([trial('PIVOTAL', day('2018-01-01'))], 'RA', undefined)).toBeUndefined();
     expect(readoutToApprovalMonths([trial('PIVOTAL', { value: '2018-01-01', precision: 'year' })], 'RA', day('2019-08-16'))).toBeUndefined();
     expect(readoutToApprovalMonths([trial('SUPPORTIVE', day('2018-01-01'))], 'RA', day('2019-08-16'))).toBeUndefined();
+  });
+});
+
+describe('trialShortName', () => {
+  it('prefers the registry acronym, then the label name, then the protocol number', () => {
+    expect(trialShortName({ id: 'x', acronym: 'SELECT-COMPARE', labelName: 'RA-I', protocolNumber: 'M13-545' })).toBe('SELECT-COMPARE');
+    expect(trialShortName({ id: 'x', labelName: 'KEYNOTE-006', protocolNumber: '3475-006' })).toBe('KEYNOTE-006');
+    expect(trialShortName({ id: 'x', protocolNumber: '3475-006' })).toBe('3475-006');
   });
 });

@@ -343,6 +343,30 @@ export function extractTrialAliases(text: string): Map<string, string[]> {
   return aliases;
 }
 
+const GENERIC_NAMES = new Set(['trial', 'study', 'studies', 'trials', 'protocol']);
+
+/**
+ * The name the label itself gives each trial in section 14, read from the
+ * name written directly before its NCT number: "KEYNOTE-006 (NCT01866319)",
+ * "PsO - 1 (NCT02684370)", "CD - 1; NCT03105128". Merck and AbbVie leave the registry's acronym
+ * blank for many trials, so without this the chart shows "3475-006" where
+ * the label and every physician say KEYNOTE-006. First name per NCT wins.
+ */
+export function extractLabelTrialNames(section14Text: string): Map<string, string> {
+  const stripped = stripPageMarkers(section14Text);
+  // Separators seen on real labels: "KEYNOTE-006 (NCT…)", "PsA - 1 [NCT…]",
+  // "(CD - 1; NCT…)" (Skyrizi uses all three).
+  const pattern = /\b([A-Z][A-Za-z0-9]*(?:\s*-\s*[A-Za-z0-9]+)*)\s*[([;]\s*(NCT\d{8})/g;
+  const names = new Map<string, string>();
+  for (const m of stripped.matchAll(pattern)) {
+    const name = m[1].replace(/\s*-\s*/g, '-');
+    const nctId = m[2];
+    if (names.has(nctId) || GENERIC_NAMES.has(name.toLowerCase()) || name.length < 3) continue;
+    names.set(nctId, name);
+  }
+  return names;
+}
+
 function identifiersOf(trial: Trial, aliases: Map<string, string[]> | undefined): string[] {
   const base = [trial.nctId, trial.protocolNumber, trial.acronym].filter(
     (s): s is string => !!s

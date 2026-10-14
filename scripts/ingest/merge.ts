@@ -59,6 +59,7 @@ const MERGEABLE_FIELDS = [
   'nctId',
   'protocolNumber',
   'acronym',
+  'labelName',
   'title',
   'briefTitle',
   'phase',

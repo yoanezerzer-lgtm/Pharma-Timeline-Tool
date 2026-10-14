@@ -197,6 +197,8 @@ export const Trial = z.object({
   protocolNumber: z.string().optional(),
   /** Trial acronym, e.g. "SELECT-NEXT". */
   acronym: z.string().optional(),
+  /** What the approved label calls the trial in section 14 ("KEYNOTE-006"), when the registry has no acronym for it. */
+  labelName: z.string().optional(),
   title: z.string(),
   briefTitle: z.string().optional(),
   phase: Phase,

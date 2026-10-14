@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState, useEffect } from 'react';
 import type { Trial, Milestone, TrialRole } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
-import { roleFor, summaryRole, ROLE_LABEL } from '../../lib/drugs.js';
+import { roleFor, summaryRole, ROLE_LABEL, trialShortName } from '../../lib/drugs.js';
 import {
   computeLayout,
   BAR_H,
@@ -38,7 +38,7 @@ interface HoverState {
 
 /** Short label for a bar: acronym if there is one, else protocol number or NCT. */
 function barLabel(t: Trial): string {
-  return t.acronym ?? t.protocolNumber ?? t.nctId ?? t.id;
+  return trialShortName(t);
 }
 
 export function Gantt({

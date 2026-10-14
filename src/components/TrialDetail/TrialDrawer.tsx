@@ -3,7 +3,7 @@ import { PostedResults } from './PostedResults.js';
 import { registryText, maskingText } from '../../lib/registryText.js';
 import type { Trial, Provenance } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
-import { roleFor, summaryRole, ROLE_LABEL } from '../../lib/drugs.js';
+import { roleFor, summaryRole, ROLE_LABEL, trialShortName } from '../../lib/drugs.js';
 import { categorizeEndpoint, ENDPOINT_CATEGORY_LABEL } from '../../lib/endpoints.js';
 import './TrialDrawer.css';
 
@@ -94,7 +94,7 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
               {indication ? ` for ${indication}` : ''}
             </div>
             <h2 className="drawer__title">
-              {trial.acronym ?? trial.protocolNumber ?? trial.title}
+              {trialShortName(trial)}
               {trial.nctId && registryUrl && (
                 <a
                   className="drawer__title-nct"
