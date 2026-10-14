@@ -306,3 +306,14 @@
   margin-top: 0.75rem;
   font-size: 12px;
 }
+
+/* Wide screens: the drawer sits beside the page instead of over it, so the
+   chart stays visible and clicking another bar switches trials directly. */
+@media (min-width: 1280px) {
+  .drawer__scrim {
+    display: none;
+  }
+  .drawer {
+    box-shadow: none;
+  }
+}

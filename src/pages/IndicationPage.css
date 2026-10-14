@@ -237,6 +237,13 @@
   color: var(--text-2);
 }
 
+@media (min-width: 1280px) {
+  .drug.has-drawer {
+    margin-right: 480px;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 700px) {
   .drug__head {
     flex-direction: column;

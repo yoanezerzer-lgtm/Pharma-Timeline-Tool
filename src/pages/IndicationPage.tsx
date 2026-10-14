@@ -86,7 +86,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
   const ownSources = sourceGroups.find((g) => g.submission === ownSubmission);
 
   return (
-    <main className="drug">
+    <main className={`drug${selectedTrial ? ' has-drawer' : ''}`}>
       <BackLink href="#/" label="All drugs" />
 
       <header className="drug__head">
