@@ -909,6 +909,7 @@
       "id": "p08719",
       "nctId": "NCT01704287",
       "protocolNumber": "P08719",
+      "labelName": "KEYNOTE-002",
       "title": "Randomized, Phase II Study of Pembrolizumab (MK-3475) Versus Chemotherapy in Patients With Advanced Melanoma (KEYNOTE 002)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) Versus Chemotherapy in Participants With Advanced Melanoma (MK-3475-002/P08719/KEYNOTE-002)",
       "phase": "PHASE2",
@@ -1290,9 +1291,22 @@
           "quote": "single agent in 2799 patients in three randomized, open-label, active-controlled trials (KEYNOTE-002, KEYNOTE-006, and KEYNOTE-010), which enrolled 912 patients with melanoma and 682 patient",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-002 (NCT01704287)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-002",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "treatment",
@@ -1584,6 +1598,7 @@
       "id": "3475-012",
       "nctId": "NCT01848834",
       "protocolNumber": "3475-012",
+      "labelName": "KEYNOTE-012",
       "title": "A Phase Ib Multi-Cohort Study of MK-3475 in Subjects With Advanced Solid Tumors",
       "briefTitle": "Study of Pembrolizumab (MK-3475) in Participants With Advanced Solid Tumors (MK-3475-012/KEYNOTE-012)",
       "phase": "PHASE1",
@@ -1895,14 +1910,28 @@
           "quote": "recurrent or metastatic HNSCC The efficacy of KEYTRUDA was investigated in KEYNOTE - 012 (NCT01848834) , a multicenter, non - randomized, open - label, multi - cohort study that enrolled 174",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-012 (NCT01848834)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-012",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-010",
       "nctId": "NCT01905657",
       "protocolNumber": "3475-010",
+      "labelName": "KEYNOTE-010",
       "title": "A Phase II/III Randomized Trial of Two Doses of MK-3475 (SCH900475) Versus Docetaxel in Previously Treated Subjects With Non-Small Cell Lung Cancer",
       "briefTitle": "Study of Two Doses of Pembrolizumab (MK-3475) Versus Docetaxel in Previously Treated Participants With Non-Small Cell Lung Cancer (MK-3475-010/KEYNOTE-010)",
       "phase": "PHASE2_3",
@@ -2333,14 +2362,28 @@
           "quote": "in three randomized, open-label, active-controlled trials (KEYNOTE-002, KEYNOTE-006, and KEYNOTE-010), which enrolled 912 patients with melanoma and 682 patients with NSCLC, and one single-a",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-010 (NCT01905657)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-010",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-006",
       "nctId": "NCT01866319",
       "protocolNumber": "3475-006",
+      "labelName": "KEYNOTE-006",
       "title": "A Multicenter, Randomized, Controlled, Three-Arm, Phase III Study to Evaluate the Safety and Efficacy of Two Dosing Schedules of Pembrolizumab (MK-3475) Compared to Ipilimumab in Patients With Advanced Melanoma",
       "briefTitle": "Study to Evaluate the Safety and Efficacy of Two Different Dosing Schedules of Pembrolizumab (MK-3475) Compared to Ipilimumab in Participants With Advanced Melanoma (MK-3475-006/KEYNOTE-006)",
       "phase": "PHASE3",
@@ -2624,9 +2667,22 @@
           "quote": "a Ipilimumab - Naive Melanoma The efficacy of KEYTRUDA was investigated in KEYNOTE - 006 (NCT01866319) , a randomized (1:1:1), open - label, multicenter, active - controlled trial in 834 pati",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-006 (NCT01866319)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-006",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-013",
@@ -4470,6 +4526,7 @@
       "id": "3475-024",
       "nctId": "NCT02142738",
       "protocolNumber": "3475-024",
+      "labelName": "KEYNOTE-024",
       "title": "A Randomized Open-Label Phase III Trial of Pembrolizumab Versus Platinum Based Chemotherapy in 1L Subjects With PD-L1 Strong Metastatic Non-Small Cell Lung Cancer",
       "briefTitle": "Study of Pembrolizumab (MK-3475) Compared to Platinum-Based Chemotherapies in Participants With Metastatic Non-Small Cell Lung Cancer (MK-3475-024/KEYNOTE-024)",
       "phase": "PHASE3",
@@ -4651,14 +4708,28 @@
           "quote": "motherapy: KEYNOTE - 024 The efficacy of KEYTRUDA was also investigated in KEYNOTE - 024 (NCT02142738), a randomized, multicenter, open - label, active - controlled trial in 305 previously un",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-024 (NCT02142738)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-024",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-045",
       "nctId": "NCT02256436",
       "protocolNumber": "3475-045",
+      "labelName": "KEYNOTE-045",
       "title": "A Phase III Randomized Clinical Trial of Pembrolizumab (MK-3475) Versus Paclitaxel, Docetaxel or Vinflunine in Subjects With Recurrent or Progressive Metastatic Urothelial Cancer",
       "briefTitle": "A Study of Pembrolizumab (MK-3475) Versus Paclitaxel, Docetaxel, or Vinflunine for Participants With Advanced Urothelial Cancer (MK-3475-045/KEYNOTE-045)",
       "phase": "PHASE3",
@@ -5064,9 +5135,22 @@
           "quote": "Treated Urothelial Carcinoma The efficacy of KEYTRUDA was investigated in KEYNOTE - 045 (NCT02256436), a multicenter, rand omized (1:1), active - controlled trial in 542 patients with locall",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-045 (NCT02256436)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-045",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-055",
@@ -5178,6 +5262,7 @@
       "id": "3475-042",
       "nctId": "NCT02220894",
       "protocolNumber": "3475-042",
+      "labelName": "KEYNOTE-042",
       "title": "A Randomized, Open Label, Phase III Study of Overall Survival Comparing Pembrolizumab (MK-3475) Versus Platinum Based Chemotherapy in Treatment Naïve Subjects With PD-L1 Positive Advanced or Metastatic Non-Small Cell Lung Cancer (Keynote 042)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) Versus Platinum-Based Chemotherapy for Participants With Programmed Cell Death-Ligand 1 (PD-L1)-Positive Advanced or Metastatic Non-Small Cell Lung Cancer (MK-3475-042/KEYNOTE-042)",
       "phase": "PHASE3",
@@ -5437,9 +5522,22 @@
           "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-042 (NCT02220894)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-042",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-040",
@@ -5555,6 +5653,7 @@
       "id": "nci-2014-00848",
       "nctId": "NCT02267603",
       "protocolNumber": "NCI-2014-00848",
+      "labelName": "KEYNOTE-017",
       "title": "A Phase II Study of MK-3475 in Patients With Advanced Merkel Cell Carcinoma (MCC)",
       "briefTitle": "Pembrolizumab in Treating Patients With Advanced Merkel Cell Cancer",
       "phase": "PHASE2",
@@ -5702,9 +5801,22 @@
           "quote": "4. 1 3 Merkel Cell Carcinoma The efficacy of KEYTRUDA was investigated in KEYNOTE - 0 17 (NCT02267603), a multicenter, non - randomized, open - label trial that enrolled 50 patients with recu",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-017 (NCT02267603)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-017",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-031",
@@ -6091,6 +6203,7 @@
       "id": "3475-052",
       "nctId": "NCT02335424",
       "protocolNumber": "3475-052",
+      "labelName": "KEYNOTE-052",
       "title": "A Phase II Clinical Trial of Pembrolizumab (MK-3475) in Subjects With Advanced/Unresectable or Metastatic Urothelial Cancer",
       "briefTitle": "Study of Pembrolizumab (MK-3475) in Participants With Advanced Urothelial Cancer (MK-3475-052/KEYNOTE-052)",
       "phase": "PHASE2",
@@ -6289,14 +6402,28 @@
           "quote": "-Ineligible Patients with Urothelial Carcinoma The safety of KEYTRUDA was investigated in KEYNOTE-052, a single-arm trial that enrolled 370 patients with locally advanced or metastatic urothe",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-052 (NCT02335424)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-052",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-048",
       "nctId": "NCT02358031",
       "protocolNumber": "3475-048",
+      "labelName": "KEYNOTE-689",
       "title": "A Phase 3 Clinical Trial of Pembrolizumab (MK-3475) in First Line Treatment of Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma",
       "briefTitle": "A Study of Pembrolizumab (MK-3475) for First Line Treatment of Recurrent or Metastatic Squamous Cell Cancer of the Head and Neck (MK-3475-048/KEYNOTE-048)",
       "phase": "PHASE3",
@@ -7043,14 +7170,28 @@
           "quote": "KEYNOTE-055), and two randomized, open-label, active-controlled trials (KEYNOTE - 040 and KEYNOTE-048 single agent arms), which enrolled 909 patients with HNSCC; in two non- randomized, open-",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-689 (NCT02358031)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-689",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-051",
       "nctId": "NCT02332668",
       "protocolNumber": "3475-051",
+      "labelName": "KEYNOTE-051",
       "title": "A Phase I/II Study of Pembrolizumab (MK-3475) in Children With Advanced Melanoma or a PD-L1 Positive Advanced, Relapsed or Refractory Solid Tumor or Lymphoma (KEYNOTE-051)",
       "briefTitle": "A Study of Pembrolizumab (MK-3475) in Pediatric Participants With an Advanced Solid Tumor or Lymphoma (MK-3475-051/KEYNOTE-051)",
       "phase": "PHASE1_2",
@@ -7201,9 +7342,22 @@
           "quote": "lti-cohort trials: KEYNOTE-164 (NCT02460198), KEYNOTE-158 (NCT02628067), and KEYNOTE-051 (NCT02332668). All trials excluded patients with autoimmune disease or a medical condition that requir",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-051 (NCT02332668)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-051",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "201412118",
@@ -7578,6 +7732,7 @@
       "id": "3475-087",
       "nctId": "NCT02453594",
       "protocolNumber": "3475-087",
+      "labelName": "KEYNOTE-087",
       "title": "A Phase II Clinical Trial of MK-3475 (Pembrolizumab) in Subjects With Relapsed or Refractory (R/R) Classical Hodgkin Lymphoma (cHL)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) in Participants With Relapsed or Refractory Classical Hodgkin Lymphoma (MK-3475-087/KEYNOTE-087)",
       "phase": "PHASE2",
@@ -7820,9 +7975,22 @@
           "quote": "KEYNOTE - 204 KEYNOTE - 087 The efficacy of KEYTRUDA was investigated in KEYNOTE - 087 ( NCT02453594), a multicenter, non - randomized, open - label trial in 210 patients with relapsed or re",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-087 (NCT02453594)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-087",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-086",
@@ -8052,6 +8220,7 @@
       "id": "3475-054",
       "nctId": "NCT02362594",
       "protocolNumber": "3475-054",
+      "labelName": "KEYNOTE-054",
       "title": "Adjuvant Immunotherapy With Anti-PD-1 Monoclonal Antibody Pembrolizumab (MK-3475) Versus Placebo After Complete Resection of High-risk Stage III Melanoma: A Randomized, Double- Blind Phase 3 Trial of the EORTC Melanoma Group",
       "briefTitle": "Study of Pembrolizumab (MK-3475) Versus Placebo After Complete Resection of High-Risk Stage III Melanoma (MK-3475-054/1325-MG/KEYNOTE-054)",
       "phase": "PHASE3",
@@ -8266,9 +8435,22 @@
           "quote": "IC melanoma were similar to those occurring in 1011 patients with Stage III melanoma from KEYNOTE-054 or the 2799 patients with melanoma or NSCLC treated with KEYTRUDA as a single agent. Adju",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-054 (NCT02362594)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-054",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "e7080-a001-111",
@@ -8680,6 +8862,7 @@
       "id": "3475-164",
       "nctId": "NCT02460198",
       "protocolNumber": "3475-164",
+      "labelName": "KEYNOTE-164",
       "title": "A Phase II Study of Pembrolizumab (MK-3475) as Monotherapy in Subjects With Previously Treated Locally Advanced Unresectable or Metastatic (Stage IV) Mismatched Repair Deficient or Microsatellite Instability-High Colorectal Carcinoma (KEYNOTE-164)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) as Monotherapy in Participants With Previously-Treated Locally Advanced Unresectable or Metastatic Colorectal Cancer (MK-3475-164/KEYNOTE-164)",
       "phase": "PHASE2",
@@ -8831,9 +9014,22 @@
           "quote": "TRUDA was investigated in 504 patients with MSI-H or dMMR cancer enrolled in KEYNOTE-158, KEYNOTE-164, and KEYNOTE-051 [see Clinical Studies (14.7)]. The median duration of exposure to KEYTRU",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-164 (NCT02460198)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-164",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-119",
@@ -9167,6 +9363,7 @@
       "nctId": "NCT02504372",
       "protocolNumber": "3475-091",
       "acronym": "PEARLS",
+      "labelName": "KEYNOTE-091",
       "title": "A Randomized, Phase 3 Trial With Anti-PD-1 Monoclonal Antibody Pembrolizumab (MK-3475) Versus Placebo for Patients With Early Stage NSCLC After Resection and Completion of Standard Adjuvant Therapy (PEARLS)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) vs Placebo for Participants With Non-small Cell Lung Cancer After Resection With or Without Standard Adjuvant Therapy (MK-3475-091/KEYNOTE-091)",
       "phase": "PHASE3",
@@ -9377,9 +9574,22 @@
           "quote": "6B We remind you of your postmarketing commitment: 4396-1 Complete EORTC/ETOP Study 1419 (KEYNOTE-091/PEARLS; NCT02504372) to further characterize the clinical benefit of pembrolizumab as adj",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-091 (NCT02504372)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-091",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "1248-001",
@@ -9484,6 +9694,7 @@
       "id": "3475-177",
       "nctId": "NCT02563002",
       "protocolNumber": "3475-177",
+      "labelName": "KEYNOTE-177",
       "title": "A Phase III Study of Pembrolizumab (MK-3475) vs. Chemotherapy in Microsatellite Instability-High (MSI-H) or Mismatch Repair Deficient (dMMR) Stage IV Colorectal Carcinoma (KEYNOTE-177)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) vs Standard Therapy in Participants With Microsatellite Instability-High (MSI-H) or Mismatch Repair Deficient (dMMR) Stage IV Colorectal Carcinoma (MK-3475-177/KEYNOTE-177)",
       "phase": "PHASE3",
@@ -9692,14 +9903,28 @@
           "quote": "air Deficient Colorectal Cancer Among the 153 patients with MSI-H or dMMR CRC enrolled in KEYNOTE-177 [see Clinical Studies (14.8)] treated with KEYTRUDA, the median duration of exposure to K",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-177 (NCT02563002)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-177",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-181",
       "nctId": "NCT02564263",
       "protocolNumber": "3475-181",
+      "labelName": "KEYNOTE-181",
       "title": "A Phase III Randomized Open-Label Study of Single Agent Pembrolizumab vs Physicians' Choice of Single Agent Docetaxel, Paclitaxel, or Irinotecan in Subjects With Advanced/Metastatic Adenocarcinoma and Squamous Cell Carcinoma of the Esophagus That Have Progressed After First-Line Standard Therapy (KEYNOTE-181)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) Versus Investigator's Choice Standard Therapy for Participants With Advanced Esophageal/ Esophagogastric Junction Carcinoma That Progressed After First-Line Therapy (MK-3475-181/KEYNOTE-181)",
       "phase": "PHASE3",
@@ -9959,14 +10184,28 @@
           "quote": "or Metastatic Esophageal Cancer Among the 314 patients with esophageal cancer enrolled in KEYNOTE-181 [see Clinical Studies (14.10)] treated with KEYTRUDA, the median duration of exposure to",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-181 (NCT02564263)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-181",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-170",
       "nctId": "NCT02576990",
       "protocolNumber": "3475-170",
+      "labelName": "KEYNOTE-170",
       "title": "A Phase II Study of Pembrolizumab (MK-3475) in Subjects With Relapsed or Refractory Primary Mediastinal Large B-cell Lymphoma (rrPMBCL) or Relapsed or Refractory Richter Syndrome (rrRS)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) in Participants With Relapsed or Refractory Primary Mediastinal Large B-cell Lymphoma or Relapsed or Refractory Richter Syndrome (MK-3475-170/KEYNOTE-170)",
       "phase": "PHASE2",
@@ -10122,14 +10361,28 @@
           "quote": "Grades, 2.4% Grade 3-4). PMBCL Among the 53 patients with PMBCL who received KEYTRUDA in KEYNOTE-170 [see Clinical Studies (14.5)], the median duration of exposure to KEYTRUDA was 3.5 months",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-170 (NCT02576990)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-170",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-180",
       "nctId": "NCT02559687",
       "protocolNumber": "3475-180",
+      "labelName": "KEYNOTE-180",
       "title": "A Phase II Study of Pembrolizumab Monotherapy in Third Line Previously Treated Subjects With Advanced/Metastatic Adenocarcinoma or Squamous Cell Carcinoma of the Esophagus or Advanced/Metastatic Siewert Type I Adenocarcinoma of the Esophagogastric Junction (KEYNOTE-180)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) in Previously-Treated Participants With Advanced Carcinoma of the Esophagus or Esophagogastric Junction (MK-3475-180/KEYNOTE-180)",
       "phase": "PHASE2",
@@ -10265,14 +10518,28 @@
           "quote": "TRUDA: Control: KEYNOTE - 180 The efficacy of KEYTRUDA was investigated in KEYNOTE - 180 (NCT02559687), a multicenter, non - randomized, open - label trial that enrolled 121 patients with loc",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-180 (NCT02559687)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-180",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-158",
       "nctId": "NCT02628067",
       "protocolNumber": "3475-158",
+      "labelName": "KEYNOTE-158",
       "title": "A Clinical Trial of Pembrolizumab (MK-3475) Evaluating Predictive Biomarkers in Subjects With Advanced Solid Tumors (KEYNOTE 158)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) in Participants With Advanced Solid Tumors (MK-3475-158/KEYNOTE-158)",
       "phase": "PHASE2",
@@ -10417,9 +10684,22 @@
           "quote": "safety of KEYTRUDA was investigated in 504 patients with MSI-H or dMMR cancer enrolled in KEYNOTE-158, KEYNOTE-164, and KEYNOTE-051 [see Clinical Studies (14.7)]. The median duration of expos",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-158 (NCT02628067)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-158",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "ucci-hn-15-01",
@@ -10606,6 +10886,7 @@
       "id": "3475-189",
       "nctId": "NCT02578680",
       "protocolNumber": "3475-189",
+      "labelName": "KEYNOTE-189",
       "title": "A Randomized, Double-Blind, Phase III Study of Platinum+Pemetrexed Chemotherapy With or Without Pembrolizumab (MK-3475) in First Line Metastatic Non-squamous Non-small Cell Lung Cancer Subjects (KEYNOTE-189)",
       "briefTitle": "Study of Pemetrexed+Platinum Chemotherapy With or Without Pembrolizumab (MK-3475) in Participants With First Line Metastatic Nonsquamous Non-small Cell Lung Cancer (MK-3475-189/KEYNOTE-189)",
       "phase": "PHASE3",
@@ -10815,9 +11096,22 @@
           "quote": "combination with pemetrexed and platinum chemotherapy was investigated in KEYNOTE - 189 ( NCT02578680 ), a randomized, multicenter, double - blind, active - controlled trial conducted in 616",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-189 (NCT02578680)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-189",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-173",
@@ -10949,6 +11243,7 @@
       "id": "3475-057",
       "nctId": "NCT02625961",
       "protocolNumber": "3475-057",
+      "labelName": "KEYNOTE-057",
       "title": "A Phase II Clinical Trial to Study the Efficacy and Safety of Pembrolizumab (MK-3475) and Pembrolizumab in Combination With Other Investigational Agents in Subjects With High Risk Non-muscle-Invasive Bladder Cancer (NMIBC) Unresponsive to Bacillus Calmette-Guerin (BCG) Therapy",
       "briefTitle": "Study of Pembrolizumab (MK-3475) and Pembrolizumab With Other Investigational Agents in Participants With High Risk Non-muscle Invasive Bladder Cancer (MK-3475-057/KEYNOTE-057)",
       "phase": "PHASE2",
@@ -11066,9 +11361,22 @@
           "quote": "uscle Invasive Bladder Cancer The efficacy of KEYTRUDA was investigated in KEYNOTE - 057 (NCT02625961 ), a multicenter, open - label, single - arm trial in 96 patients with Bacillus Calmette",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-057 (NCT02625961)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-057",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-189-japan-extension",
@@ -11885,6 +12193,7 @@
       "id": "3475-204",
       "nctId": "NCT02684292",
       "protocolNumber": "3475-204",
+      "labelName": "KEYNOTE-204",
       "title": "A Phase III, Randomized, Open-label, Clinical Trial to Compare Pembrolizumab With Brentuximab Vedotin in Subjects With Relapsed or Refractory Classical Hodgkin Lymphoma",
       "briefTitle": "Study of Pembrolizumab (MK-3475) vs. Brentuximab Vedotin in Participants With Relapsed or Refractory Classical Hodgkin Lymphoma (MK-3475-204/KEYNOTE-204)",
       "phase": "PHASE3",
@@ -11993,9 +12302,22 @@
           "quote": "ls (KEYNOTE-013 and KEYNOTE-087) and one randomized, open-label, active-controlled trial (KEYNOTE-204), which enrolled 389 patients with cHL; in a randomized, open- label, active-controlled t",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-204 (NCT02684292)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-204",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-240",
@@ -12260,6 +12582,7 @@
       "id": "3475-407",
       "nctId": "NCT02775435",
       "protocolNumber": "3475-407",
+      "labelName": "KEYNOTE-407",
       "title": "A Randomized, Double-Blind, Phase III Study of Carboplatin-Paclitaxel/Nab-Paclitaxel Chemotherapy With or Without Pembrolizumab (MK-3475) in First Line Metastatic Squamous Non-small Cell Lung Cancer Subjects (KEYNOTE-407)",
       "briefTitle": "A Study of Carboplatin-Paclitaxel/Nab-Paclitaxel Chemotherapy With or Without Pembrolizumab (MK-3475) in Adults With First Line Metastatic Squamous Non-small Cell Lung Cancer (MK-3475-407/KEYNOTE-407)",
       "phase": "PHASE3",
@@ -12469,9 +12792,22 @@
           "quote": "ice of either paclitaxel or paclitaxel protein - bound was investigated in KEYNOTE - 407 (NCT02775435), a randomized, multi - center, double - blind, placebo - controlled trial conducted in 5",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-407 (NCT02775435)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-407",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-199",
@@ -12707,6 +13043,7 @@
       "id": "3475-355",
       "nctId": "NCT02819518",
       "protocolNumber": "3475-355",
+      "labelName": "KEYNOTE-355",
       "title": "A Randomized, Double-Blind, Phase III Study of Pembrolizumab (MK-3475) Plus Chemotherapy vs Placebo Plus Chemotherapy for Previously Untreated Locally Recurrent Inoperable or Metastatic Triple Negative Breast Cancer - (KEYNOTE-355)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) Plus Chemotherapy vs. Placebo Plus Chemotherapy for Previously Untreated Locally Recurrent Inoperable or Metastatic Triple Negative Breast Cancer (MK-3475-355/KEYNOTE-355)",
       "phase": "PHASE3",
@@ -13200,9 +13537,22 @@
           "quote": "paclitaxel, paclitaxel protein-bound, or gemcitabine and carboplatin was investigated in KEYNOTE-355, a multicenter, double-blind, randomized (2:1), placebo-controlled trial in patients with",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-355 (NCT02819518)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-355",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-042-china-extension",
@@ -13662,6 +14012,7 @@
       "id": "3475-361",
       "nctId": "NCT02853305",
       "protocolNumber": "3475-361",
+      "labelName": "KEYNOTE-361",
       "title": "A Phase III Randomized, Controlled Clinical Trial of Pembrolizumab With or Without Platinum-Based Combination Chemotherapy Versus Chemotherapy in Subjects With Advanced or Metastatic Urothelial Carcinoma",
       "briefTitle": "Study of Pembrolizumab With or Without Platinum-based Combination Chemotherapy Versus Chemotherapy Alone in Urothelial Carcinoma (MK-3475-361/KEYNOTE-361)",
       "phase": "PHASE3",
@@ -13992,14 +14343,28 @@
           "quote": "with locally advanced or metastatic urothelial carcinoma was investigated in KEYNOTE-361 (NCT02853305), a multicenter, randomized, open-label, active-controlled study in 1010 previously untre",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-361 (NCT02853305)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-361",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-426",
       "nctId": "NCT02853331",
       "protocolNumber": "3475-426",
+      "labelName": "KEYNOTE-426",
       "title": "A Phase III Randomized, Open-label Study to Evaluate Efficacy and Safety of Pembrolizumab (MK-3475) in Combination With Axitinib Versus Sunitinib Monotherapy as a First-line Treatment for Locally Advanced or Metastatic Renal Cell Carcinoma (mRCC) (KEYNOTE-426)",
       "briefTitle": "Study to Evaluate the Efficacy and Safety of Pembrolizumab (MK-3475) in Combination With Axitinib Versus Sunitinib Monotherapy in Participants With Renal Cell Carcinoma (MK-3475-426/KEYNOTE-426)",
       "phase": "PHASE3",
@@ -14218,9 +14583,22 @@
           "quote": "tients with HNSCC; in combination with axitinib in a randomized, active-controlled trial (KEYNOTE-426), which enrolled 429 patients with RCC; and in post-marketing use. Across all trials, KEY",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-426 (NCT02853331)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-426",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-427",
@@ -14327,6 +14705,7 @@
       "nctId": "NCT02811861",
       "protocolNumber": "E7080-G000-307",
       "acronym": "CLEAR",
+      "labelName": "KEYNOTE-581",
       "title": "A Multicenter, Open-label, Randomized, Phase 3 Trial to Compare the Efficacy and Safety of Lenvatinib in Combination With Everolimus or Pembrolizumab Versus Sunitinib Alone in First-Line Treatment of Subjects With Advanced Renal Cell Carcinoma (CLEAR)",
       "briefTitle": "Lenvatinib/Everolimus or Lenvatinib/Pembrolizumab Versus Sunitinib Alone as Treatment of Advanced Renal Cell Carcinoma",
       "phase": "PHASE3",
@@ -14524,9 +14903,22 @@
           "quote": "patotoxicity. In combination with lenvatinib in the first-line treatment of advanced RCC (KEYNOTE-581) The safety of KEYTRUDA was evaluated in KEYNOTE-581 [see Clinical Studies (14.14)]. Pati",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-581 (NCT02811861)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-581",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-365",
@@ -15518,6 +15910,7 @@
       "id": "3475-522",
       "nctId": "NCT03036488",
       "protocolNumber": "3475-522",
+      "labelName": "KEYNOTE-522",
       "title": "A Phase III, Randomized, Double-blind Study to Evaluate Pembrolizumab Plus Chemotherapy vs Placebo Plus Chemotherapy as Neoadjuvant Therapy and Pembrolizumab vs Placebo as Adjuvant Therapy for Triple Negative Breast Cancer (TNBC)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) Plus Chemotherapy vs Placebo Plus Chemotherapy as Neoadjuvant Therapy and Pembrolizumab vs Placebo as Adjuvant Therapy in Participants With Triple Negative Breast Cancer (TNBC) (MK-3475-522/KEYNOTE-522)",
       "phase": "PHASE3",
@@ -15634,9 +16027,22 @@
           "quote": "gery and continued adjuvant treatment with KEYTRUDA as a single agent was investigated in KEYNOTE-522, a randomized (2:1), multicenter, double-blind, placebo-controlled trial in patients with",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-522 (NCT03036488)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-522",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-412",
@@ -15922,6 +16328,7 @@
       "id": "3475-394",
       "nctId": "NCT03062358",
       "protocolNumber": "3475-394",
+      "labelName": "KEYNOTE-394",
       "title": "A Phase III Randomized Double-blind Study of Pembrolizumab Plus Best Supportive Care vs. Placebo Plus Best Supportive Care as Second-Line Therapy in Asian Subjects With Previously Systemically Treated Advanced Hepatocellular Carcinoma (KEYNOTE-394)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) or Placebo Given With Best Supportive Care in Asian Participants With Previously Treated Advanced Hepatocellular Carcinoma (MK-3475-394/KEYNOTE-394)",
       "phase": "PHASE3",
@@ -16088,9 +16495,22 @@
           "quote": "arcinoma Previously Treated HCC The efficacy of KEYTRUDA was investigated in KEYNOTE-394 (NCT03062358), a multicenter, randomized, placebo-controlled, double-blind trial conducted in Asia in",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-394 (NCT03062358)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-394",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-604",
@@ -16411,6 +16831,7 @@
       "id": "3475-564",
       "nctId": "NCT03142334",
       "protocolNumber": "3475-564",
+      "labelName": "KEYNOTE-564",
       "title": "A Phase 3, Randomized, Double-Blind, Placebo-Controlled Clinical Trial of Pembrolizumab (MK-3475) as Monotherapy in the Adjuvant Treatment of Renal Cell Carcinoma Post Nephrectomy (KEYNOTE-564)",
       "briefTitle": "Safety and Efficacy Study of Pembrolizumab (MK-3475) as Monotherapy in the Adjuvant Treatment of Renal Cell Carcinoma Post Nephrectomy (MK-3475-564/KEYNOTE-564)",
       "phase": "PHASE3",
@@ -16580,9 +17001,22 @@
           "quote": "). Adjuvant treatment of RCC The safety of KEYTRUDA as a single agent was investigated in KEYNOTE-564, a randomized (1:1) double-blind placebo-controlled trial in which 984 patients who had u",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-564 (NCT03142334)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-564",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3814a-062",
@@ -16847,6 +17281,7 @@
       "id": "3475-590",
       "nctId": "NCT03189719",
       "protocolNumber": "3475-590",
+      "labelName": "KEYNOTE-590",
       "title": "A Randomized, Double-Blind, Placebo-Controlled Phase III Clinical Trial of Pembrolizumab (MK-3475) in Combination With Cisplatin and 5-Fluorouracil Versus Placebo in Combination With Cisplatin and 5-Fluorouracil as First-Line Treatment in Subjects With Advanced/Metastatic Esophageal Carcinoma (KEYNOTE-590)",
       "briefTitle": "First-line Esophageal Carcinoma Study With Pembrolizumab Plus Chemo vs. Chemo (MK-3475-590/KEYNOTE-590)",
       "phase": "PHASE3",
@@ -17300,9 +17735,22 @@
           "quote": "eal Junction Cancer KEYNOTE-590 The efficacy of KEYTRUDA was investigated in KEYNOTE-590 (NCT03189719), a multicenter, randomized, placebo-controlled trial that enrolled 749 patients with met",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-590 (NCT03189719)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-590",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-668",
@@ -18064,6 +18512,7 @@
       "id": "3475-629",
       "nctId": "NCT03284424",
       "protocolNumber": "3475-629",
+      "labelName": "KEYNOTE-629",
       "title": "A Phase 2, Open-Label, Single Arm Study to Evaluate the Safety and Efficacy of Pembrolizumab in Participants With Recurrent or Metastatic Cutaneous Squamous Cell Carcinoma (R/M cSCC)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) in Adults With Recurrent/Metastatic Cutaneous Squamous Cell Carcinoma (cSCC) or Locally Advanced Unresectable cSCC (MK-3475-629/KEYNOTE-629)",
       "phase": "PHASE2",
@@ -18215,9 +18664,22 @@
           "quote": "ents with advanced cSCC (recurrent or metastatic or locally advanced disease) enrolled in KEYNOTE-629 [see Clinical Studies (14.17)] , the median duration of exposure to KEYTRUDA was 6.9 mont",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-629 (NCT03284424)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-629",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "7162-002",
@@ -19781,6 +20243,7 @@
       "id": "3475-671",
       "nctId": "NCT03425643",
       "protocolNumber": "3475-671",
+      "labelName": "KEYNOTE-671",
       "title": "A Phase III, Randomized, Double-blind Trial of Platinum Doublet Chemotherapy +/-Pembrolizumab (MK-3475) as Neoadjuvant/Adjuvant Therapy for Participants With Resectable Stage II, IIIA, and Resectable IIIB (T3-4N2) Non-small Cell Lung Cancer (NSCLC) (KEYNOTE-671)",
       "briefTitle": "Efficacy and Safety of Pembrolizumab (MK-3475) With Platinum Doublet Chemotherapy as Neoadjuvant/Adjuvant Therapy for Participants With Resectable Stage II, IIIA, and Resectable IIIB (T3-4N2) Non-small Cell Lung Cancer (MK-3475-671/KEYNOTE-671)",
       "phase": "PHASE3",
@@ -19993,9 +20456,22 @@
           "quote": "inued adjuvant treatment with KEYTRUDA as a single agent was investigated in KEYNOTE-671 (NCT03425643), a multicenter, randomized, double-blind, placebo-controlled trial conducted in 797 pati",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-671 (NCT03425643)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-671",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "people",
@@ -20235,6 +20711,7 @@
       "id": "e7080-g000-309",
       "nctId": "NCT03517449",
       "protocolNumber": "E7080-G000-309",
+      "labelName": "KEYNOTE-775",
       "title": "A Multicenter, Open-label, Randomized, Phase 3 Trial to Compare the Efficacy and Safety of Lenvatinib in Combination With Pembrolizumab Versus Treatment of Physician's Choice in Participants With Advanced Endometrial Cancer",
       "briefTitle": "Lenvatinib in Combination With Pembrolizumab Versus Treatment of Physician's Choice in Participants With Advanced Endometrial Cancer (MK-3475-775/E7080-G000-309 Per Merck Standard Convention [KEYNOTE-775])",
       "phase": "PHASE3",
@@ -20549,9 +21026,22 @@
           "quote": "The efficacy of KEYTRUDA in combination with lenvatinib was investigated in KEYNOTE-775 (NCT03517449), a multicenter, open-label, randomized, active-controlled trial that enrolled 827 patien",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-775 (NCT03517449)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-775",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-161",
@@ -21216,6 +21706,7 @@
       "id": "3475-716",
       "nctId": "NCT03553836",
       "protocolNumber": "3475-716",
+      "labelName": "KEYNOTE-716",
       "title": "Adjuvant Therapy With Pembrolizumab Versus Placebo in Resected High-risk Stage II Melanoma: A Randomized, Double-blind Phase 3 Study (KEYNOTE-716)",
       "briefTitle": "Safety and Efficacy of Pembrolizumab Compared to Placebo in Resected High-risk Stage II Melanoma (MK-3475-716/KEYNOTE-716)",
       "phase": "PHASE3",
@@ -21379,9 +21870,22 @@
           "quote": "age IIB or IIC Melanoma Among the 969 patients with Stage IIB or IIC melanoma enrolled in KEYNOTE-716 [see Clinical Studies (14.1)] treated with KEYTRUDA, the median duration of exposure to K",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-716 (NCT03553836)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-716",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "7690-046",
@@ -21599,6 +22103,7 @@
       "id": "3475-811",
       "nctId": "NCT03615326",
       "protocolNumber": "3475-811",
+      "labelName": "KEYNOTE-811",
       "title": "A Phase III, Randomized, Double-blind Trial Comparing Trastuzumab Plus Chemotherapy and Pembrolizumab With Trastuzumab Plus Chemotherapy and Placebo as First-line Treatment in Participants With HER2 Positive Advanced Gastric or Gastroesophageal Junction Adenocarcinoma (KEYNOTE 811)",
       "briefTitle": "Pembrolizumab/Placebo Plus Trastuzumab Plus Chemotherapy in Human Epidermal Growth Factor Receptor 2 Positive (HER2+) Advanced Gastric or Gastroesophageal Junction (GEJ) Adenocarcinoma (MK-3475-811/KEYNOTE-811)",
       "phase": "PHASE3",
@@ -21818,9 +22323,22 @@
           "quote": "uzumab plus fluoropyrimidine and platinum chemotherapy was investigated in KEYNOTE - 811 (NCT03615326), a multicenter, randomized, double - blind, placebo - controlled trial that was designed",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-811 (NCT03615326)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-811",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "4280-003",
@@ -22048,6 +22566,7 @@
       "id": "3475-826",
       "nctId": "NCT03635567",
       "protocolNumber": "3475-826",
+      "labelName": "KEYNOTE-826",
       "title": "A Phase 3 Randomized, Double-Blind, Placebo-Controlled Trial of Pembrolizumab (MK-3475) Plus Chemotherapy Versus Chemotherapy Plus Placebo for the First-Line Treatment of Persistent, Recurrent, or Metastatic Cervical Cancer (KEYNOTE-826)",
       "briefTitle": "Efficacy and Safety Study of First-line Treatment With Pembrolizumab (MK-3475) Plus Chemotherapy Versus Placebo Plus Chemotherapy in Women With Persistent, Recurrent, or Metastatic Cervical Cancer (MK-3475-826/KEYNOTE-826)",
       "phase": "PHASE3",
@@ -22446,9 +22965,22 @@
           "quote": "cisplatin or paclitaxel and carboplatin, with or without bevacizumab, was investigated in KEYNOTE-826, a multicenter, double-blind, randomized (1:1), placebo-controlled trial in patients with",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-826 (NCT03635567)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-826",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "keynote-782",
@@ -22549,6 +23081,7 @@
       "id": "3475-859",
       "nctId": "NCT03675737",
       "protocolNumber": "3475-859",
+      "labelName": "KEYNOTE-859",
       "title": "A Phase 3, Randomized, Double-blind Clinical Study of Pembrolizumab (MK-3475) Plus Chemotherapy Versus Placebo Plus Chemotherapy as First-line Treatment in Participants With HER2 Negative, Previously Untreated, Unresectable or Metastatic Gastric Orgastroesophageal Junction Adenocarcinoma (KEYNOTE-859)",
       "briefTitle": "Pembrolizumab (MK-3475) Plus Chemotherapy Versus Placebo Plus Chemotherapy in Participants Gastric or Gastroesophageal Junction (GEJ) Adenocarcinoma (MK-3475-859/KEYNOTE-859)",
       "phase": "PHASE3",
@@ -22811,9 +23344,22 @@
           "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-859 (NCT03675737)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-859",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-859-china-extension",
@@ -24471,6 +25017,7 @@
       "id": "3475-913",
       "nctId": "NCT03783078",
       "protocolNumber": "3475-913",
+      "labelName": "KEYNOTE-913",
       "title": "A Phase 3 Open-label, Single Arm Study to Evaluate the Safety and Efficacy of Pembrolizumab (MK-3475) as First Line Therapy in Participants With Advanced Merkel Cell Carcinoma (KEYNOTE-913)",
       "briefTitle": "Pembrolizumab (MK-3475) as First-line Therapy for Advanced Merkel Cell Carcinoma (MK-3475-913)",
       "phase": "PHASE3",
@@ -24606,9 +25153,22 @@
           "quote": "hyperbilirubinemia (10%). MCC Among the 105 patients with MCC enrolled in KEYNOTE-017 and KEYNOTE-913 [see Clinical Studies (14.13)] , the median duration of exposure to KEYTRUDA was 6.3 mont",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-913 (NCT03783078)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-913",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "7902-003",
@@ -26789,6 +27349,7 @@
       "id": "3475-905",
       "nctId": "NCT03924895",
       "protocolNumber": "3475-905",
+      "labelName": "KEYNOTE-905",
       "title": "A Randomized Phase 3 Study Evaluating Cystectomy With Perioperative Pembrolizumab and Cystectomy With Perioperative Enfortumab Vedotin and Pembrolizumab Versus Cystectomy Alone in Participants Who Are Cisplatin-Ineligible or Decline Cisplatin With Muscle-Invasive Bladder Cancer (KEYNOTE-905/EV-303)",
       "briefTitle": "Perioperative Pembrolizumab (MK-3475) Plus Cystectomy or Perioperative Pembrolizumab Plus Enfortumab Vedotin Plus Cystectomy Versus Cystectomy Alone in Participants Who Are Cisplatin-ineligible or Decline Cisplatin With Muscle-invasive Bladder Cancer (MK-3475-905/KEYNOTE-905/EV-303)",
       "phase": "PHASE3",
@@ -26968,9 +27529,22 @@
           "quote": "ent and continued after radical cystectomy (RC) as adjuvant treatment was investigated in KEYNOTE-905, an open-label, multicenter, randomized, active-controlled trial in patients with previou",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-905 (NCT03924895)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-905",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-641",
@@ -29191,6 +29765,7 @@
       "nctId": "NCT04223856",
       "protocolNumber": "SGN22E-003",
       "acronym": "EV-302",
+      "labelName": "KEYNOTE-A39",
       "title": "An Open-label, Randomized, Controlled Phase 3 Study of Enfortumab Vedotin in Combination With Pembrolizumab Versus Chemotherapy Alone in Previously Untreated Locally Advanced or Metastatic Urothelial Cancer",
       "briefTitle": "Enfortumab Vedotin and Pembrolizumab vs. Chemotherapy Alone in Untreated Locally Advanced or Metastatic Urothelial Cancer",
       "phase": "PHASE3",
@@ -29413,9 +29988,22 @@
           "quote": "efficacy of KEYTRUDA in combination with enfortumab vedotin was evaluated in KEYNOTE-A39 (NCT04223856), an open-label, randomized, multicenter trial that enrolled 886 patients with locally ad",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-A39 (NCT04223856)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-A39",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "1",
@@ -29519,6 +30107,7 @@
       "id": "3475-a18",
       "nctId": "NCT04221945",
       "protocolNumber": "3475-A18",
+      "labelName": "KEYNOTE-A18",
       "title": "A Randomized, Phase 3, Double-Blind Study of Chemoradiotherapy With or Without Pembrolizumab for the Treatment of High-risk, Locally Advanced Cervical Cancer (KEYNOTE-A18/ENGOT-cx11/GOG-3047)",
       "briefTitle": "Study of Chemoradiotherapy With or Without Pembrolizumab (MK-3475) For The Treatment of Locally Advanced Cervical Cancer (MK-3475-A18/KEYNOTE-A18/ENGOT-cx11/GOG-3047)",
       "phase": "PHASE3",
@@ -29741,9 +30330,22 @@
           "quote": "adverse reactions and laboratory abnormalities, respectively, in patients on KEYTRUDA in KEYNOTE-A18. Table 41: Adverse Reactions Occurring in ≥10% of Patients with FIGO 2014 Stage III-IVA C",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-A18 (NCT04221945)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-A18",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "3475-992",
@@ -32065,6 +32667,7 @@
       "id": "3475-b21",
       "nctId": "NCT04634877",
       "protocolNumber": "3475-B21",
+      "labelName": "KEYNOTE-B21",
       "title": "A Phase 3, Randomized, Double-Blind Study of Pembrolizumab Versus Placebo in Combination With Adjuvant Chemotherapy With or Without Radiotherapy for the Treatment of Newly Diagnosed High-Risk Endometrial Cancer After Surgery With Curative Intent (KEYNOTE-B21 / ENGOT-en11 / GOG-3053)",
       "briefTitle": "Study of Pembrolizumab (MK-3475) in Combination With Adjuvant Chemotherapy With or Without Radiotherapy in Participants With Newly Diagnosed Endometrial Cancer After Surgery With Curative Intent (MK-3475-B21 / KEYNOTE-B21 / ENGOT-en11 / GOG-3053)",
       "phase": "PHASE3",
@@ -32182,9 +32785,22 @@
           "quote": "scribing Information (Section 14.17). The updates include the negative trial results from KEYNOTE-B21, which show a lack of effectiveness of adjuvant pembrolizumab treatment in patients with",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-B21 (NCT04634877)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-B21",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "101",
@@ -35294,6 +35910,7 @@
       "id": "3475-b96",
       "nctId": "NCT05116189",
       "protocolNumber": "3475-B96",
+      "labelName": "KEYNOTE-B96",
       "title": "A Phase 3, Randomized, Double-Blind Study of Pembrolizumab Versus Placebo in Combination With Paclitaxel With or Without Bevacizumab for the Treatment of Platinum-resistant Recurrent Ovarian Cancer (KEYNOTE-B96/ENGOT-ov65)",
       "briefTitle": "Pembrolizumab/Placebo Plus Paclitaxel With or Without Bevacizumab for Platinum-resistant Recurrent Ovarian Cancer (MK-3475-B96/KEYNOTE-B96/ENGOT-ov65).",
       "phase": "PHASE3",
@@ -35508,9 +36125,22 @@
           "quote": "noma whose tumors express Reference ID: 5775987 PD-L1 (CPS ≥1) enrolled in KEYNOTE-B96 [see Clinical Studies (14.21)]. Among patients who received KEYTRUDA, the median duration",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-B96 (NCT05116189)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "KEYNOTE-B96",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "kandlelit-001",
@@ -35850,6 +36480,7 @@
       "id": "6482-022",
       "nctId": "NCT05239728",
       "protocolNumber": "6482-022",
+      "labelName": "LITESPARK-022",
       "title": "A Multicenter, Double-blind, Randomized Phase 3 Study to Compare the Efficacy and Safety of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab in the Adjuvant Treatment of Clear Cell Renal Cell Carcinoma (ccRCC) Post Nephrectomy (MK-6482-022)",
       "briefTitle": "A Study of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab in Participants With Clear Cell Renal Cell Carcinoma Post Nephrectomy (MK-6482-022)",
       "phase": "PHASE3",
@@ -35965,9 +36596,22 @@
           "quote": "d per NCI CTCAE v4.03 In combination with belzutifan for the adjuvant treatment of ccRCC (LITESPARK-022) The safety of KEYTRUDA in combination with belzutifan versus KEYTRUDA in combination wit",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "LITESPARK-022 (NCT05239728)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "LITESPARK-022",
+          "detectedAt": "2026-10-14T17:41:13.074Z"
+        }
+      ]
     },
     {
       "id": "7684a-007",
@@ -50301,5 +50945,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-14T14:51:08.390Z"
+  "lastIngestedAt": "2026-10-14T17:41:13.074Z"
 }
