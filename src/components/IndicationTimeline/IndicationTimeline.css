@@ -1,0 +1,128 @@
+.ind-timeline {
+  margin-top: 2rem;
+  --ind-cols: minmax(140px, 260px) 1fr 6.5rem;
+}
+
+.ind-timeline__count {
+  margin-left: 0.3rem;
+  font-weight: 500;
+  color: var(--text-3);
+}
+
+.ind-timeline__axis,
+.ind-timeline__row {
+  display: grid;
+  grid-template-columns: var(--ind-cols);
+  align-items: center;
+  gap: 1rem;
+}
+
+.ind-timeline__axis {
+  padding: 0 0.6rem 0.3rem;
+}
+
+.ind-timeline__years {
+  position: relative;
+  height: 1rem;
+}
+
+.ind-timeline__years span {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 10.5px;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.ind-timeline__rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.ind-timeline__row {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+.ind-timeline__row:hover {
+  background: var(--row-hover);
+  text-decoration: none;
+}
+
+.ind-timeline__row.is-current {
+  background: var(--row-selected);
+  color: var(--text-1);
+  font-weight: 600;
+}
+
+.ind-timeline__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ind-timeline__track {
+  position: relative;
+  height: 14px;
+}
+
+.ind-timeline__track::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 1px solid var(--border);
+}
+
+.ind-timeline__gridline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid var(--border-subtle);
+}
+
+.ind-timeline__dot {
+  position: absolute;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--phase-3);
+  /* Surface ring keeps the dot readable where it sits on a gridline. */
+  box-shadow: 0 0 0 2px var(--bg-1);
+  transform: translate(-50%, -50%);
+}
+
+.is-current .ind-timeline__dot {
+  width: 11px;
+  height: 11px;
+  background: var(--accent);
+}
+
+.ind-timeline__date {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .ind-timeline {
+    --ind-cols: 1fr 6rem;
+  }
+  /* No room for a meaningful track on a phone; the date column carries it. */
+  .ind-timeline__track,
+  .ind-timeline__years {
+    display: none;
+  }
+  .ind-timeline__axis {
+    display: none;
+  }
+}

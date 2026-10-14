@@ -329,6 +329,7 @@ export const Source = z.object({
   type: z.enum(['fda_review', 'fda_label', 'fda_letter', 'registry', 'epar', 'publication', 'other']),
   retrievedAt: z.string().optional(),
 });
+export type Source = z.infer<typeof Source>;
 
 export const Indication = z.object({
   /** The label's own wording — sometimes a whole sentence when the label doesn't number its indications. */

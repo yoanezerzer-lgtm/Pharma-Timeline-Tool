@@ -83,22 +83,64 @@
   font-size: 11px;
 }
 
-.drug__warning {
-  margin: 1.5rem 0 0;
-  padding: 0.85rem 1rem;
-  background: var(--warn-bg);
-  border: 1px solid var(--warn-border);
-  border-radius: 8px;
-  font-size: 13px;
-  line-height: 1.55;
-  color: var(--warn-fg);
+.drug__other-indications {
+  margin: 0.3rem 0 0;
+  font-size: 12.5px;
+  color: var(--text-3);
 }
 
-.drug__warning code {
-  background: var(--bg-2);
-  padding: 0.1rem 0.3rem;
-  border-radius: 3px;
-  font-size: 12px;
+.drug__status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.5rem;
+  margin: 1rem 0 0;
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.drug__status-badge {
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: var(--unverified-bg);
+  color: var(--unverified-fg);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.drug__source-group {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 13px;
+  list-style: none;
+}
+
+.drug__source-group.is-own {
+  margin-bottom: 0.75rem;
+  border-bottom: none;
+}
+
+.drug__source-sub {
+  color: var(--text-2);
+}
+
+.drug__source-group.is-own .drug__source-sub {
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.drug__sources-all summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.drug__sources-all ul {
+  margin: 0.5rem 0 0;
+  padding: 0;
 }
 
 .drug__summary {
@@ -110,31 +152,6 @@
 
 .drug__chart-section {
   margin-top: 2.5rem;
-}
-
-.drug__indication-switch {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.5rem;
-}
-
-.drug__indication-switch a {
-  max-width: 32ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  font-size: 12.5px;
-  color: var(--text-2);
-}
-
-.drug__indication-switch a.is-active {
-  background: var(--text-1);
-  color: var(--bg-1);
-  border-color: var(--text-1);
 }
 
 .drug__sources-note {
@@ -215,13 +232,6 @@
   color: var(--text-3);
 }
 
-.drug__sources ul {
-  margin: 0;
-  padding-left: 1.1rem;
-  font-size: 13px;
-  line-height: 1.7;
-}
-
 .drug__missing {
   padding: 3rem 0;
   color: var(--text-2);
@@ -234,4 +244,13 @@
   .drug__facts {
     gap: 1rem;
   }
+  .drug__source-group {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+.drug__sources-own {
+  margin: 0;
+  padding: 0;
 }
