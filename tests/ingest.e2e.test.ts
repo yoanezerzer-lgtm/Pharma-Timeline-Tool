@@ -366,9 +366,10 @@ describe('sponsor and study-type guard, full pipeline', () => {
     const result = await run(ws);
     const byNct = (nctId: string) => result.drug.trials.find((t) => t.nctId === nctId);
 
+    // Not pivotal, and — having no role and not being the applicant's own
+    // study — not kept at all (see the trim in run.ts).
     const academic = byNct(academicStudy.protocolSection!.identificationModule!.nctId!);
-    expect(academic).toBeDefined();
-    expect(academic!.roles.some((r) => r.role === 'PIVOTAL')).toBe(false);
+    expect(academic).toBeUndefined();
 
     const observational = byNct(observationalStudy.protocolSection!.identificationModule!.nctId!);
     expect(observational).toBeDefined();

@@ -7,6 +7,7 @@ import {
   classifyTrialRoles,
   extractTrialAliases,
   extractIndicationList,
+  normalizeSponsor,
   splitSection14ByIndication,
   type RoleContext,
 } from '../scripts/ingest/roles.js';
@@ -646,5 +647,33 @@ describe('classifyTrialRoles — generic label naming, resolved via alias', () =
       trialAliases: extractTrialAliases(reviewText),
     });
     expect(pivotalFor(t, ctx)).toBe(false);
+  });
+});
+
+describe('normalizeSponsor', () => {
+  it('treats the openFDA and registry spellings of the same company as equal', () => {
+    expect(normalizeSponsor('MERCK SHARP DOHME')).toBe(normalizeSponsor('Merck Sharp & Dohme LLC'));
+    expect(normalizeSponsor('Johnson and Johnson')).toBe(normalizeSponsor('Johnson & Johnson'));
+    expect(normalizeSponsor('AbbVie Inc.')).toBe('abbvie');
+  });
+});
+
+describe('extractIndicationList — other label layouts', () => {
+  it('splits a bulleted unnumbered list into one indication per bullet (Lexapro 2023+)', () => {
+    const text =
+      '1 INDICATIONS AND USAGE Lexapro is indicated for the treatment of: • major depressive disorder (MDD) in adults and pediatric patients 12 years of age and older. • generalized anxiety disorder (GAD) in adults and pediatric patients 7 years of age and older. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text).map((e) => e.name)).toEqual([
+      'Major depressive disorder (MDD) in adults and pediatric patients 12 years of age and older',
+      'Generalized anxiety disorder (GAD) in adults and pediatric patients 7 years of age and older',
+    ]);
+  });
+
+  it('reads a two-column table of contents that interleaves other sections (Lexapro 2009–2022)', () => {
+    const text =
+      '1 INDICATIONS AND USAGE 7.10 Pimozide and Celexa 1.1 Major Depressive Disorder 7.11 Sumatriptan 1.2 Generalized Anxiety Disorder 7.12 Theophylline 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text)).toEqual([
+      { number: 1, name: 'Major Depressive Disorder' },
+      { number: 2, name: 'Generalized Anxiety Disorder' },
+    ]);
   });
 });
