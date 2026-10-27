@@ -20,6 +20,8 @@ const Checked = {
   /** Who or what confirmed it, e.g. "approval letter, Claude review 2026-10". */
   checkedBy: z.string().optional(),
   note: z.string().optional(),
+  /** The passages that confirmed it, each verified word for word against the source. */
+  evidence: z.array(z.object({ sourceUrl: z.string(), quote: z.string(), page: z.number().optional() })).optional(),
 };
 
 export const ReferenceIndication = z.object({

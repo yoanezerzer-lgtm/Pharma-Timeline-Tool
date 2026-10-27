@@ -102,6 +102,14 @@ jobs:
       - name: Validate result
         run: npm run validate
 
+      # A new drug gets a reference file with its answers as baseline, for the
+      # overnight agent to check. An existing one keeps its own.
+      - name: Start a reference file for a new drug
+        env:
+          DRUG: ${{ inputs.drug }}
+        run: |
+          if [ ! -f "data/reference/${DRUG}.json" ]; then npm run -s qc -- --snapshot "$DRUG"; fi
+
       # Reported here, enforced by CI on the pull request.
       - name: Data quality report
         run: npm run -s qc | tee -a "$GITHUB_STEP_SUMMARY" || true
@@ -154,7 +162,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add data/drugs
+          git add data/drugs data/reference
           git commit -m "Ingest data for ${DRUG}"
           git push -u origin "$BRANCH"
 

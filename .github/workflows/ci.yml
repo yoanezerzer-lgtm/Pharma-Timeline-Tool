@@ -4,12 +4,17 @@ on:
   push:
     branches: ['**']
   pull_request:
+    # labeled/unlabeled: re-run the reference guard when correct-reference is added.
+    types: [opened, synchronize, reopened, labeled, unlabeled]
 
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The reference guard compares the PR against its base branch.
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -31,6 +36,14 @@ jobs:
 
       # Rule checks plus accuracy against data/reference. Errors and
       # mismatches on confirmed facts fail the build; warnings only report.
+      # Confirmed facts can't change in a PR, and new ones arrive in a PR of
+      # their own, so no change is graded against answers it wrote itself.
+      - name: Reference set guard
+        if: github.event_name == 'pull_request'
+        env:
+          ALLOW_REFERENCE_CORRECTION: ${{ contains(github.event.pull_request.labels.*.name, 'correct-reference') }}
+        run: npx tsx scripts/qc/guard.ts "origin/${{ github.base_ref }}"
+
       - name: Data quality checks
         run: |
           set -o pipefail

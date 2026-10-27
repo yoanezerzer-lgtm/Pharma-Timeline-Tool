@@ -5,3 +5,6 @@ dist/
 
 # Cached source documents and API responses. Regenerate with `npm run ingest`.
 data/raw/
+
+# Overnight verification working files (queue, answer key, verdicts).
+.verify/
