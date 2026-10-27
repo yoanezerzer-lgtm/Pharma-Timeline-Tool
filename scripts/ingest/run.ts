@@ -444,6 +444,20 @@ export function slugifyIndication(name: string): string {
   return lastHyphen > 0 ? truncated.slice(0, lastHyphen) : truncated;
 }
 
+/**
+ * Truncation can give two indications the same slug — Keytruda's MSI-H
+ * cancer and MSI-H colorectal cancer both cut to the same 50 characters,
+ * leaving the second page unreachable. Later ones get "-2", "-3".
+ */
+export function uniqueSlugs(slugs: string[]): string[] {
+  const seen = new Map<string, number>();
+  return slugs.map((s) => {
+    const n = (seen.get(s) ?? 0) + 1;
+    seen.set(s, n);
+    return n === 1 ? s : `${s}-${n}`;
+  });
+}
+
 function buildDrugRecord(
   spec: DrugSpec,
   fda: FdaStageResult,
@@ -458,11 +472,12 @@ function buildDrugRecord(
   const labels = docs.filter((d) => /label/i.test(d.type));
   const letters = docs.filter((d) => /letter/i.test(d.type));
   const approvals = dateIndications(indicationList.map((e) => e.name), labels, fda.milestones, letters);
-  const indications = indicationList.map((entry) => {
+  const slugs = uniqueSlugs(indicationList.map((e) => slugifyIndication(e.name)));
+  const indications = indicationList.map((entry, k) => {
     const approval = approvals.get(entry.name);
     return {
       name: entry.name,
-      slug: slugifyIndication(entry.name),
+      slug: slugs[k],
       approvalDate: approval?.date ?? (entry.number === 1 && labels.length === 0 ? original?.date : undefined),
       submissionNumber: approval?.submission,
       approvalProvenance: approval?.provenance,

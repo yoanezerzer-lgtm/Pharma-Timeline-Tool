@@ -1,0 +1,442 @@
+{
+  "slug": "pembrolizumab",
+  "indications": [
+    {
+      "name": "Melanoma",
+      "approvalDate": "2014-09-04",
+      "submission": "ORIG-1",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Non-Small Cell Lung Cancer",
+      "approvalDate": "2015-10-02",
+      "submission": "SUPPL-5",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Malignant Pleural Mesothelioma",
+      "approvalDate": "2024-09-17",
+      "submission": "SUPPL-161",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Head and Neck Squamous Cell Cancer",
+      "approvalDate": "2016-08-05",
+      "submission": "SUPPL-9",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Classical Hodgkin Lymphoma",
+      "approvalDate": "2017-03-14",
+      "submission": "SUPPL-15",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Primary Mediastinal Large B-Cell Lymphoma",
+      "approvalDate": "2018-06-13",
+      "submission": "SUPPL-30",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Urothelial Cancer",
+      "approvalDate": "2017-05-18",
+      "submission": "SUPPL-18",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
+      "approvalDate": "2017-05-23",
+      "submission": "SUPPL-14",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
+      "approvalDate": "2020-06-29",
+      "submission": "SUPPL-84",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Gastric Cancer",
+      "approvalDate": "2017-09-22",
+      "submission": "SUPPL-24",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Esophageal Cancer",
+      "approvalDate": "2019-07-30",
+      "submission": "SUPPL-56",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Cervical Cancer",
+      "approvalDate": "2018-06-12",
+      "submission": "SUPPL-34",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Hepatocellular Carcinoma",
+      "approvalDate": "2018-11-09",
+      "submission": "SUPPL-42",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Biliary Tract Cancer",
+      "approvalDate": "2023-10-31",
+      "submission": "SUPPL-144",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Merkel Cell Carcinoma",
+      "approvalDate": "2018-12-19",
+      "submission": "SUPPL-45",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Renal Cell Carcinoma",
+      "approvalDate": "2019-04-19",
+      "submission": "SUPPL-54",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Endometrial Carcinoma",
+      "approvalDate": "2019-09-17",
+      "submission": "SUPPL-65",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Tumor Mutational Burden-High Cancer",
+      "approvalDate": "2020-06-16",
+      "submission": "SUPPL-71",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Cutaneous Squamous Cell Carcinoma",
+      "approvalDate": "2020-06-24",
+      "submission": "SUPPL-92",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Triple-Negative Breast Cancer",
+      "approvalDate": "2020-11-13",
+      "submission": "SUPPL-88",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Ovarian Cancer",
+      "approvalDate": "2026-02-10",
+      "submission": "SUPPL-186",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    }
+  ],
+  "pivotal": [
+    {
+      "indication": "Melanoma",
+      "trial": "NCT01704287",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Head and Neck Squamous Cell Cancer",
+      "trial": "NCT01848834",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Non-Small Cell Lung Cancer",
+      "trial": "NCT01905657",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Melanoma",
+      "trial": "NCT01866319",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Non-Small Cell Lung Cancer",
+      "trial": "NCT02142738",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Urothelial Cancer",
+      "trial": "NCT02256436",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Non-Small Cell Lung Cancer",
+      "trial": "NCT02220894",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Urothelial Cancer",
+      "trial": "NCT02335424",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Head and Neck Squamous Cell Cancer",
+      "trial": "NCT02358031",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
+      "trial": "NCT02332668",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Classical Hodgkin Lymphoma",
+      "trial": "NCT02453594",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Melanoma",
+      "trial": "NCT02362594",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
+      "trial": "NCT02460198",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Non-Small Cell Lung Cancer",
+      "trial": "NCT02504372",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
+      "trial": "NCT02563002",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Esophageal Cancer",
+      "trial": "NCT02564263",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Primary Mediastinal Large B-Cell Lymphoma",
+      "trial": "NCT02576990",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Esophageal Cancer",
+      "trial": "NCT02559687",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
+      "trial": "NCT02628067",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Cervical Cancer",
+      "trial": "NCT02628067",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Endometrial Carcinoma",
+      "trial": "NCT02628067",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Tumor Mutational Burden-High Cancer",
+      "trial": "NCT02628067",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Non-Small Cell Lung Cancer",
+      "trial": "NCT02578680",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Urothelial Cancer",
+      "trial": "NCT02625961",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Classical Hodgkin Lymphoma",
+      "trial": "NCT02684292",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Non-Small Cell Lung Cancer",
+      "trial": "NCT02775435",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Triple-Negative Breast Cancer",
+      "trial": "NCT02819518",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Urothelial Cancer",
+      "trial": "NCT02853305",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Renal Cell Carcinoma",
+      "trial": "NCT02853331",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Triple-Negative Breast Cancer",
+      "trial": "NCT03036488",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Hepatocellular Carcinoma",
+      "trial": "NCT03062358",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Renal Cell Carcinoma",
+      "trial": "NCT03142334",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Esophageal Cancer",
+      "trial": "NCT03189719",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Cutaneous Squamous Cell Carcinoma",
+      "trial": "NCT03284424",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Non-Small Cell Lung Cancer",
+      "trial": "NCT03425643",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Melanoma",
+      "trial": "NCT03553836",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Gastric Cancer",
+      "trial": "NCT03615326",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Cervical Cancer",
+      "trial": "NCT03635567",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Gastric Cancer",
+      "trial": "NCT03675737",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Merkel Cell Carcinoma",
+      "trial": "NCT03783078",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Urothelial Cancer",
+      "trial": "NCT03924895",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Biliary Tract Cancer",
+      "trial": "NCT04003636",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Cervical Cancer",
+      "trial": "NCT04221945",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Endometrial Carcinoma",
+      "trial": "NCT04634877",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Renal Cell Carcinoma",
+      "trial": "NCT04704219",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Urothelial Cancer",
+      "trial": "NCT04700124",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Ovarian Cancer",
+      "trial": "NCT05116189",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Renal Cell Carcinoma",
+      "trial": "NCT05239728",
+      "pivotal": true,
+      "status": "baseline"
+    }
+  ]
+}

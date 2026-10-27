@@ -29,6 +29,13 @@ jobs:
       - name: Validate committed drug records
         run: npm run validate
 
+      # Rule checks plus accuracy against data/reference. Errors and
+      # mismatches on confirmed facts fail the build; warnings only report.
+      - name: Data quality checks
+        run: |
+          set -o pipefail
+          npm run -s qc | tee -a "$GITHUB_STEP_SUMMARY"
+
       - name: Build
         run: npm run build
         env:

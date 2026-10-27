@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { dedupeTrialIds, slugifyIndication } from '../scripts/ingest/run.js';
+import { dedupeTrialIds, slugifyIndication, uniqueSlugs } from '../scripts/ingest/run.js';
 import type { Trial } from '../src/schema/index.js';
 
 function trial(o: Partial<Trial>): Trial {
@@ -90,3 +90,12 @@ describe('slugifyIndication', () => {
 function name60Plus(): string {
   return 'Treatment of a moderately long hypothetical indication name used only to test truncation';
 }
+
+describe('uniqueSlugs', () => {
+  it('suffixes a slug that truncation made identical to an earlier one (Keytruda MSI-H)', () => {
+    const cancer = slugifyIndication('Microsatellite Instability-High or Mismatch Repair Deficient Cancer');
+    const crc = slugifyIndication('Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer');
+    expect(cancer).toBe(crc);
+    expect(uniqueSlugs([cancer, 'melanoma', crc])).toEqual([cancer, 'melanoma', `${cancer}-2`]);
+  });
+});

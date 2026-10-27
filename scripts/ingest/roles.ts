@@ -523,6 +523,26 @@ export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignme
     // records a fact the pipeline has no way to find on its own.
     if (!looksLikeSponsorTrial(trial, ctx.sponsorName, ctx.knownTrialSponsors)) continue;
 
+    // A Phase 4 study runs after approval by definition, so the label naming
+    // it means it updated that section, not that the approval rested on it
+    // (Skyrizi's UnlIMMited, started 2023, in the 2019 psoriasis section).
+    if (trial.phase === 'PHASE4') {
+      roles.push({
+        indication: span.indication,
+        role: 'SUPPORTIVE',
+        provenance: {
+          sourceUrl: ctx.labelUrl,
+          sourceLabel: `Approved label, section 14 (Clinical Studies — ${span.indication})`,
+          extractedBy: 'rule',
+          verified: false,
+          quote:
+            `Named within the ${span.indication} section 14 span, but a Phase 4 (post-approval) ` +
+            'study, so supporting rather than pivotal.',
+        },
+      });
+      continue;
+    }
+
     if (!PIVOTAL_PHASES.has(trial.phase)) {
       phaseWarnings.push(
         `${trial.nctId ?? trial.id} is named in the ${span.indication} section 14 span but is ` +

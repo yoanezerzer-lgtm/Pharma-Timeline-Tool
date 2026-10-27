@@ -1,0 +1,97 @@
+{
+  "slug": "risankizumab",
+  "indications": [
+    {
+      "name": "Plaque Psoriasis",
+      "approvalDate": "2019-04-23",
+      "submission": "ORIG-1",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Psoriatic Arthritis",
+      "approvalDate": "2022-01-21",
+      "submission": "SUPPL-14",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Crohn’s Disease",
+      "approvalDate": "2022-06-16",
+      "submission": "SUPPL-16",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    },
+    {
+      "name": "Ulcerative Colitis",
+      "approvalDate": "2024-06-18",
+      "submission": "SUPPL-29",
+      "status": "confirmed",
+      "checkedBy": "FDA approval letters and Drugs@FDA submission dates, Claude review 2026-10"
+    }
+  ],
+  "pivotal": [
+    {
+      "indication": "Plaque Psoriasis",
+      "trial": "NCT02684370",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Plaque Psoriasis",
+      "trial": "NCT02672852",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Plaque Psoriasis",
+      "trial": "NCT02684357",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Plaque Psoriasis",
+      "trial": "NCT02694523",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Crohn’s Disease",
+      "trial": "NCT03105128",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Crohn’s Disease",
+      "trial": "NCT03104413",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Ulcerative Colitis",
+      "trial": "NCT03398148",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Psoriatic Arthritis",
+      "trial": "NCT03671148",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Psoriatic Arthritis",
+      "trial": "NCT03675308",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Plaque Psoriasis",
+      "trial": "NCT05969223",
+      "pivotal": false,
+      "status": "confirmed",
+      "checkedBy": "ClinicalTrials.gov phase and start date, Claude review 2026-10",
+      "note": "Phase 4 study started 2023; cannot have supported the 2019 approval."
+    }
+  ]
+}
