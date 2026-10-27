@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { Drug, type Trial } from '../src/schema/index.js';
 import { checkDrug } from '../scripts/qc/checks.js';
 import { Reference, scoreAgainstReference, snapshotReference } from '../scripts/qc/reference.js';
+import { guardReference } from '../scripts/qc/guard.js';
 
 function trial(o: Partial<Trial>): Trial {
   return {
@@ -108,5 +109,30 @@ describe('reference set', () => {
     const ref = Reference.parse(JSON.parse(readFileSync(join(REF_DIR, file), 'utf8')));
     expect(`${ref.slug}.json`).toBe(file);
     expect(readdirSync(join(process.cwd(), 'data', 'drugs'))).toContain(file);
+  });
+});
+
+describe('reference guard', () => {
+  const ref = (status: 'confirmed' | 'baseline', pivotal = true) =>
+    Reference.parse({ slug: 'd', pivotal: [{ indication: 'RA', trial: 'NCT00000001', pivotal, status }] });
+  const run = (base: Reference, head: Reference, changedFiles: string[], allowCorrection = false) =>
+    guardReference({ base: new Map([['d', base]]), head: new Map([['d', head]]), changedFiles, allowCorrection });
+
+  it('allows confirmations in a PR of their own', () => {
+    expect(run(ref('baseline'), ref('confirmed'), ['data/reference/d.json'])).toEqual([]);
+  });
+
+  it('rejects confirmations bundled with other changes', () => {
+    expect(run(ref('baseline'), ref('confirmed'), ['data/reference/d.json', 'scripts/ingest/roles.ts'])).toHaveLength(1);
+  });
+
+  it('rejects changing or removing a confirmed fact unless a person labelled the PR', () => {
+    expect(run(ref('confirmed'), ref('confirmed', false), ['data/reference/d.json'])).toHaveLength(1);
+    expect(run(ref('confirmed'), Reference.parse({ slug: 'd' }), ['data/reference/d.json'])).toHaveLength(1);
+    expect(run(ref('confirmed'), ref('confirmed', false), ['data/reference/d.json'], true)).toEqual([]);
+  });
+
+  it('lets baseline entries change freely, as ingest runs do', () => {
+    expect(run(ref('baseline'), ref('baseline', false), ['data/drugs/d.json', 'data/reference/d.json'])).toEqual([]);
   });
 });

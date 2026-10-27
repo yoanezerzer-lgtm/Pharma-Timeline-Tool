@@ -4,6 +4,9 @@
  * This file owns argument parsing, printing, and exit codes. All decisions
  * live in run.ts, which is testable without a network or a terminal.
  */
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { Drug } from '../../src/schema/index.js';
 import { getSpec, DRUG_SPECS, type DrugSpec } from './registry.js';
 import { runIngest, ALL_STEPS } from './run.js';
 
@@ -119,10 +122,32 @@ function buildNewSpec(slug: string, args: NewDrugArgs): DrugSpec {
   };
 }
 
+/**
+ * A drug already on the site but not in registry.ts (added through the
+ * workflow form) re-runs from its own committed record, so a refresh needs
+ * nothing but its slug.
+ */
+function specFromRecord(slug: string, dir = join(process.cwd(), 'data', 'drugs')): DrugSpec | undefined {
+  const path = join(dir, `${slug}.json`);
+  if (!existsSync(path)) return undefined;
+  const drug = Drug.parse(JSON.parse(readFileSync(path, 'utf8')));
+  return {
+    slug: drug.slug,
+    brandName: drug.brandName,
+    inn: drug.inn,
+    modality: drug.modality,
+    sponsor: drug.sponsor,
+    mechanism: drug.mechanism,
+    applicationNumber: drug.regulatory.us.applicationNumber,
+    applicationType: drug.regulatory.us.applicationType,
+    interventionNames: [drug.inn, drug.brandName],
+  };
+}
+
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
 
-  const spec = getSpec(args.slug) ?? buildNewSpec(args.slug.toLowerCase(), args.newDrug);
+  const spec = getSpec(args.slug) ?? specFromRecord(args.slug.toLowerCase()) ?? buildNewSpec(args.slug.toLowerCase(), args.newDrug);
 
   const knownApplication =
     spec.applicationType && spec.applicationNumber
