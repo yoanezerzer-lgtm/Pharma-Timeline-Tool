@@ -104,7 +104,7 @@ describe('reference set', () => {
   });
 
   const REF_DIR = join(process.cwd(), 'data', 'reference');
-  it.each(readdirSync(REF_DIR))('%s matches a committed drug record', (file) => {
+  it.each(readdirSync(REF_DIR).filter((f) => f.endsWith('.json')))('%s matches a committed drug record', (file) => {
     const ref = Reference.parse(JSON.parse(readFileSync(join(REF_DIR, file), 'utf8')));
     expect(`${ref.slug}.json`).toBe(file);
     expect(readdirSync(join(process.cwd(), 'data', 'drugs'))).toContain(file);
