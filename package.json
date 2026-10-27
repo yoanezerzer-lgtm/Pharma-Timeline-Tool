@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "ingest": "tsx scripts/ingest/cli.ts",
-    "validate": "tsx scripts/validate.ts"
+    "validate": "tsx scripts/validate.ts",
+    "qc": "tsx scripts/qc/cli.ts"
   },
   "dependencies": {
     "react": "^18.3.1",

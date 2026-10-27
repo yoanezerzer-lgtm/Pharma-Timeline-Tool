@@ -408,6 +408,13 @@ describe('classifyTrialRoles', () => {
     expect(r.phaseWarnings[0]).toContain('PHASE2');
   });
 
+  it('marks a Phase 4 study named in section 14 supporting, not pivotal (Skyrizi UnlIMMited)', () => {
+    const r = classifyTrialRoles(trial({ protocolNumber: 'M13-545', phase: 'PHASE4' }), ctx);
+    expect(r.roles).toHaveLength(1);
+    expect(r.roles[0]).toMatchObject({ indication: RA, role: 'SUPPORTIVE' });
+    expect(r.phaseWarnings).toEqual([]);
+  });
+
   it('does not warn when a PIVOTAL trial is Phase 2/3, the other accepted confirmatory design', () => {
     const r = classifyTrialRoles(trial({ protocolNumber: 'M13-545', phase: 'PHASE2_3' }), ctx);
     expect(r.roles[0]?.role).toBe('PIVOTAL');

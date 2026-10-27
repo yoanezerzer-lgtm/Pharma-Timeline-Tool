@@ -102,6 +102,10 @@ jobs:
       - name: Validate result
         run: npm run validate
 
+      # Reported here, enforced by CI on the pull request.
+      - name: Data quality report
+        run: npm run -s qc | tee -a "$GITHUB_STEP_SUMMARY" || true
+
       # Diagnostic: the extracted document text is deliberately gitignored (it
       # never belongs in a diff), which means nobody can actually see what the
       # pipeline read from a real label — only what it concluded. A build
