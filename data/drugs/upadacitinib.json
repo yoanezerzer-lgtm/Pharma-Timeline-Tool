@@ -1089,6 +1089,13 @@
           "quote": "RA-IV (NCT02629159)",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://prnewswire.com/news-releases/upadacitinib-meets-all-primary-and-ranked-secondary-endpoints-including-superiority-versus-adalimumab-in-phase-3-study-in-rheumatoid-arthritis-300626157.html",
+          "sourceLabel": "PR Newswire: Upadacitinib Meets All Primary and Ranked Secondary Endpoints Including Superiority Versus Adalimumab in Phase 3 Study in Rheumatoid Arthritis",
+          "quote": "News Releases view all Close menu News Products Contact Send a Release Client Login Resources Blog Journalists RSS 3 News in Focus 5 Business & Money 5 Science & Tech 5 Lifestyle & Health 1 Policy & Public Interest 1 People & Culture Send a Release Client Login Resources Blog Journalists RSS Explore Our Platform Plan …",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -1269,7 +1276,11 @@
           "newValue": "RA-IV",
           "detectedAt": "2026-10-14T17:41:12.923Z"
         }
-      ]
+      ],
+      "readoutDate": {
+        "value": "2018-04-09",
+        "precision": "day"
+      }
     },
     {
       "id": "select-next",
