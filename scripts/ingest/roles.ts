@@ -397,6 +397,23 @@ function mentions(haystack: string, needles: string[]): boolean {
   return needles.some((n) => new RegExp(`\\b${escapeRegExp(n)}\\b`, 'i').test(haystack));
 }
 
+/**
+ * Whether the first mention of the trial in this span sits right under a
+ * "Lack of Effectiveness" heading. Keytruda's label keeps KEYNOTE-B21 in the
+ * endometrial carcinoma section to report that it failed; a trial the label
+ * presents as not effective is not what the approval rests on.
+ */
+function reportedAsLackOfEffectiveness(spanText: string, ids: string[]): boolean {
+  const mention = Math.min(
+    ...ids.map((n) => spanText.search(new RegExp(`\\b${escapeRegExp(n)}\\b`, 'i'))).filter((i) => i >= 0)
+  );
+  for (const m of spanText.matchAll(/Lack of Effectiveness/gi)) {
+    const gap = mention - m.index;
+    if (gap > 0 && gap < 400) return true;
+  }
+  return false;
+}
+
 const CORPORATE_SUFFIX = /\b(inc|incorporated|corp|corporation|co|company|ltd|limited|llc|plc|gmbh|sa)\b/g;
 
 // "&" and "and" are dropped because openFDA and the registry disagree on
@@ -501,6 +518,7 @@ export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignme
     const matchedAlias = knownAliases.find((a) => mentions(span.text, [a]));
     const namedHere = mentions(span.text, ids);
     if (!namedHere) continue;
+    if (reportedAsLackOfEffectiveness(span.text, ids)) continue;
 
     // `citedIn` only proves the identifier's string appears *somewhere* in the
     // FDA paperwork (it's populated by a document-wide scan, not one scoped to
