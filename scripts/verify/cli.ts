@@ -10,7 +10,7 @@
  *       passes in data/reference/, and writes .verify/report.md.
  *
  * Source text is read from data/raw/<slug>/docs/, as fetched from the
- * ingest workflow's diag/raw-text-<slug>-* branches.
+ * ingest workflow's diag/raw-text-<slug> branches.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';

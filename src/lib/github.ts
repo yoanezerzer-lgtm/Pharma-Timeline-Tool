@@ -167,17 +167,12 @@ function toPr(p: Record<string, unknown>): PullRequestSummary {
   };
 }
 
-/**
- * The workflow names its branch `ingest/<slug>-<timestamp>`. Finding it (and
- * the pull request on it) this way means this page never has to guess an
- * exact branch name — only the predictable prefix.
- */
+/** The workflow pushes each drug's data to `ingest/<slug>`, replaced on every run. */
 async function findIngestBranch(token: string, slug: string): Promise<string | null> {
+  const branch = `ingest/${slug}`;
   const res = await githubRequest(token, `/repos/${OWNER}/${REPO}/branches?per_page=100`);
   const branches = (await res.json()) as Array<{ name: string }>;
-  const prefix = `ingest/${slug}-`;
-  const matches = branches.filter((b) => b.name.startsWith(prefix)).sort((a, b) => (a.name < b.name ? 1 : -1));
-  return matches[0]?.name ?? null;
+  return branches.some((b) => b.name === branch) ? branch : null;
 }
 
 async function findOpenPrForBranch(token: string, branch: string): Promise<PullRequestSummary | null> {

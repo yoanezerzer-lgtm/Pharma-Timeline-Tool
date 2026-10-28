@@ -31,24 +31,23 @@ DATE=$(date -u +%F)
 ## 2. Get the source documents
 
 The documents are read from the text the ingest workflow extracted, which it
-pushes to `diag/raw-text-<slug>-<timestamp>` branches. This environment can't
-reach the FDA website directly; GitHub Actions can.
+pushes to one `diag/raw-text-<slug>` branch per drug, replaced on every run.
+This environment can't reach the FDA website directly; GitHub Actions can.
 
 For each drug with a file in `data/reference/`:
 
-1. Find its newest diagnostic branch:
-   `git ls-remote --heads origin "diag/raw-text-<slug>-*" | sort -k2 | tail -1`
+1. Fetch its diagnostic branch and check its age:
+   `git fetch --depth 1 origin diag/raw-text-<slug> && git log -1 --format=%cs FETCH_HEAD`
 2. If there is none, or it is more than 30 days old, run the **Ingest drug
    data** workflow (`ingest.yml`) on `main` with only `drug: <slug>` set, using
    the GitHub tools. Wait for the new diagnostic branch to appear, checking
-   with `git ls-remote` (a run takes 5–15 minutes; Keytruda is the slowest).
+   with `git ls-remote` and the commit date (a run takes 5–15 minutes; Keytruda is the slowest).
    If the run fails, note it for the summary and carry on with the other
    drugs.
 3. Unpack its text:
-   `git fetch --depth 1 origin <branch> && git archive FETCH_HEAD data/raw/<slug> | tar -x`
+   `git fetch --depth 1 origin diag/raw-text-<slug> && git archive FETCH_HEAD data/raw/<slug> | tar -x`
 
-A refresh run may also push an `ingest/<slug>-<timestamp>` branch with new
-data. If it did, open a pull request for it into `main`. Merge it if CI
+A refresh run may also update the `ingest/<slug>` branch with new data. If it did, open a pull request for it into `main`. Merge it if CI
 passes. If CI fails, leave it open and say why in the summary.
 
 ## 3. Run the checks
@@ -157,9 +156,8 @@ the release page; your job is only to find the page.
    from `origin/main`), push it, and run the **Find trial readouts**
    workflow (`readouts.yml`) with `ref` = that branch and `drug` = each slug
    you added links for, one run per drug.
-6. Each run pushes a `readouts/<slug>-<timestamp>` branch when it recorded a
-   readout, and a `diag/readouts-<slug>-<timestamp>` branch with what it
-   read. Read `data/raw/<slug>/readouts/summary.json` on the diag branch: a
+6. Each run updates the `readouts/<slug>` branch when it recorded a
+   readout, and the `diag/readouts-<slug>` branch with what it read. Read `data/raw/<slug>/readouts/summary.json` on the diag branch: a
    candidate that produced no readout is listed with `"candidates": 0`
    (unreadable page or no date) or simply no readout (no sentence naming
    the trial with a result in it). Mention those in the summary.
