@@ -1,10 +1,10 @@
-import type { DateValue, Drug, Indication, PostedOutcome, Provenance, Trial } from '../schema/index.js';
+import type { DateValue, Drug, Indication, PostedOutcome, Provenance, Trial, TrialRole } from '../schema/index.js';
 import { toTime } from './dates.js';
 import { roleFor, trialShortName, trialsForIndication } from './drugs.js';
 
 /**
- * The comparison page's logic: what each program shows, the shared time axis
- * and the evidence table. Pure, so it's tested without a browser.
+ * The comparison page's logic: what each program shows, the shared calendar
+ * axis and the evidence table. Pure, so it's tested without a browser.
  */
 
 export interface ProgramRef {
@@ -22,13 +22,11 @@ export function programRefString(r: ProgramRef): string {
   return `${r.slug}:${r.indicationSlug}`;
 }
 
-export function programTrials(drug: Drug, indication: Indication, pivotalOnly: boolean): Trial[] {
-  return trialsForIndication(drug, indication.name).filter((t) => !pivotalOnly || roleFor(t, indication.name) === 'PIVOTAL');
-}
-
 export interface Lane {
   trialId: string;
   name: string;
+  /** Its part in this indication's approval: pivotal, supportive and so on. */
+  role: TrialRole;
   start?: number;
   primaryCompletion?: number;
   readout?: number;
@@ -49,21 +47,22 @@ export interface ProgramView {
   lanes: Lane[];
 }
 
-export function programView(drug: Drug, indication: Indication, pivotalOnly: boolean): ProgramView {
-  const trials = programTrials(drug, indication, pivotalOnly);
+/** Every trial the label cites for this indication: pivotal ones first, then the rest, each by start date. */
+export function programView(drug: Drug, indication: Indication): ProgramView {
   const t = (d?: DateValue) => (d ? toTime(d) : undefined);
   const approval = t(indication.approvalDate);
-  const lanes = trials
+  const lanes = trialsForIndication(drug, indication.name)
     .map((tr) => ({
       trialId: tr.id,
       name: trialShortName(tr),
+      role: roleFor(tr, indication.name) ?? ('UNKNOWN' as const),
       start: t(tr.startDate),
       primaryCompletion: t(tr.primaryCompletionDate),
       readout: t(tr.readoutDate),
       readoutKey: tr.provenance.readoutDate?.sourceUrl,
       afterApproval: approval !== undefined && tr.primaryCompletionDate !== undefined && t(tr.primaryCompletionDate)! > approval,
     }))
-    .sort((a, b) => (a.start ?? Infinity) - (b.start ?? Infinity));
+    .sort((a, b) => Number(b.role === 'PIVOTAL') - Number(a.role === 'PIVOTAL') || (a.start ?? Infinity) - (b.start ?? Infinity));
   return { key: `${drug.slug}:${indication.slug}`, drug, indication, approval, lanes };
 }
 
@@ -78,8 +77,6 @@ function programSpan(p: ProgramView): [number, number] | undefined {
   return times.length > 0 ? [Math.min(...times), Math.max(...times)] : undefined;
 }
 
-export type AxisMode = 'calendar' | 'aligned';
-
 export interface Tick {
   /** 0–100, across the chart. */
   at: number;
@@ -88,77 +85,31 @@ export interface Tick {
 }
 
 export interface Axis {
-  mode: AxisMode;
-  /** Calendar was asked for, but the programs don't overlap in time. */
-  autoAligned: boolean;
-  /** Position (0–100) of a time on a program's chart. */
-  position: (time: number, approval: number | undefined) => number;
+  /** Position (0–100) of a time on the charts. */
+  position: (time: number) => number;
   ticks: Tick[];
 }
 
-/**
- * Both charts share one axis. Calendar dates put both programs on the same
- * real-date scale; when they don't overlap (Keytruda in 2014 next to a 2026
- * approval) that squeezes each into a sliver, so the axis aligns at approval
- * instead and says so. Aligned needs an approval date on both.
- */
-export function buildAxis(programs: ProgramView[], requested: AxisMode): Axis {
-  const spans = programs.map(programSpan);
-  const allHaveApproval = programs.every((p) => p.approval !== undefined);
-  const overlap =
-    spans.length < 2 || !spans[0] || !spans[1] || (spans[0][0] <= spans[1][1] && spans[1][0] <= spans[0][1]);
-  const mode: AxisMode = !allHaveApproval ? 'calendar' : requested === 'aligned' || !overlap ? 'aligned' : 'calendar';
-  const autoAligned = requested === 'calendar' && mode === 'aligned';
-
-  if (mode === 'calendar') {
-    const known = spans.filter((s): s is [number, number] => !!s);
-    const from = known.length ? Math.min(...known.map((s) => s[0])) - QUARTER : Date.UTC(2000, 0, 1);
-    const to = known.length ? Math.max(...known.map((s) => s[1])) + QUARTER : Date.UTC(2001, 0, 1);
-    const pos = (t: number) => ((t - from) / (to - from)) * 100;
-    const years = (to - from) / (12 * MONTH);
-    const ticks: Tick[] = [];
-    for (let y = new Date(from).getUTCFullYear(); y <= new Date(to).getUTCFullYear(); y++) {
-      for (let q = 0; q < 4; q++) {
-        const t = Date.UTC(y, q * 3, 1);
-        if (t < from || t > to) continue;
-        // Quarters while they fit; beyond ten years, years only.
-        if (q > 0 && years > 10) continue;
-        ticks.push({ at: pos(t), label: q === 0 ? String(y) : `Q${q + 1}`, major: q === 0 });
-      }
-    }
-    return { mode, autoAligned, position: (t) => pos(t), ticks };
-  }
-
-  // Aligned: months before each program's own approval.
-  const before = programs.map((p, i) => {
-    const s = spans[i];
-    return s && p.approval !== undefined ? (s[0] - p.approval) / MONTH : 0;
-  });
-  // Trials that completed after the approval (later label updates) extend the axis past it.
-  const after = programs.map((p, i) => {
-    const sp = spans[i];
-    return sp && p.approval !== undefined ? (sp[1] - p.approval) / MONTH : 0;
-  });
-  const earliestM = Math.min(-12, ...before);
-  const latest = Math.max(0, ...after);
-  // Labels every 1, 2 or 3 years so they never crowd; minor ticks a quarter of that apart.
-  const span = latest - earliestM;
-  const labelEvery = span > 120 ? 36 : span > 60 ? 24 : 12;
-  const step = labelEvery / 4;
-  const fromM = Math.floor(earliestM / labelEvery) * labelEvery;
-  const toM = latest > 0 ? Math.ceil((latest + 3) / labelEvery) * labelEvery : 3;
-  const posM = (m: number) => ((m - fromM) / (toM - fromM)) * 100;
+/** One real-date axis for both charts: years labelled, quarters marked while they fit. */
+export function buildAxis(programs: ProgramView[]): Axis {
+  const known = programs.map(programSpan).filter((s): s is [number, number] => !!s);
+  const from = known.length ? Math.min(...known.map((s) => s[0])) - QUARTER : Date.UTC(2000, 0, 1);
+  const to = known.length ? Math.max(...known.map((s) => s[1])) + QUARTER : Date.UTC(2001, 0, 1);
+  const pos = (t: number) => ((t - from) / (to - from)) * 100;
+  const years = (to - from) / (12 * MONTH);
+  // Label every year while there's room, then every second or fifth.
+  const labelEvery = years > 24 ? 5 : years > 12 ? 2 : 1;
   const ticks: Tick[] = [];
-  for (let m = fromM; m <= toM; m += step) {
-    const major = m % labelEvery === 0;
-    ticks.push({ at: posM(m), label: major ? (m === 0 ? 'Approval' : m > 0 ? `+${m} mo` : `${m} mo`) : '', major });
+  for (let y = new Date(from).getUTCFullYear(); y <= new Date(to).getUTCFullYear(); y++) {
+    for (let q = 0; q < 4; q++) {
+      const t = Date.UTC(y, q * 3, 1);
+      if (t < from || t > to) continue;
+      if (q > 0 && years > 10) continue;
+      const major = q === 0 && y % labelEvery === 0;
+      ticks.push({ at: pos(t), label: major ? String(y) : '', major });
+    }
   }
-  return {
-    mode,
-    autoAligned,
-    position: (t, approval) => posM(approval === undefined ? 0 : (t - approval) / MONTH),
-    ticks,
-  };
+  return { position: pos, ticks };
 }
 
 /** Whole months from one time to another, or undefined when either is missing. */

@@ -68,56 +68,40 @@ describe('program views', () => {
     expect(parseProgramRef(null)).toBeUndefined();
   });
 
-  it('shows pivotal trials only unless asked for all, earliest start first', () => {
-    expect(programView(ra, ra.indications[0], true).lanes.map((l) => l.name)).toEqual(['SELECT-COMPARE', 'SELECT-NEXT']);
-    expect(programView(ra, ra.indications[0], false).lanes).toHaveLength(3);
+  it('shows every cited trial with its role, pivotal ones first, earliest start first', () => {
+    const v = programView(ra, ra.indications[0]);
+    expect(v.lanes.map((l) => [l.name, l.role])).toEqual([
+      ['SELECT-COMPARE', 'PIVOTAL'],
+      ['SELECT-NEXT', 'PIVOTAL'],
+      ['SELECT-LTE', 'SUPPORTIVE'],
+    ]);
   });
 });
 
 describe('buildAxis', () => {
-  const a = programView(ra, ra.indications[0], true);
-  const b = programView(psa, psa.indications[0], true);
-  const k = programView(old, old.indications[0], true);
+  const a = programView(ra, ra.indications[0]);
+  const b = programView(psa, psa.indications[0]);
+  const k = programView(old, old.indications[0]);
 
-  it('puts overlapping programs on one calendar axis with quarter ticks', () => {
-    const axis = buildAxis([a, b], 'calendar');
-    expect(axis.mode).toBe('calendar');
-    expect(axis.autoAligned).toBe(false);
-    expect(axis.ticks.some((t) => t.label === 'Q3')).toBe(true);
+  it('puts both programs on one calendar axis, years labelled and quarters marked', () => {
+    const axis = buildAxis([a, b]);
     expect(axis.ticks.filter((t) => t.major).map((t) => t.label)).toContain('2018');
-    const approval = a.approval!;
-    expect(axis.position(approval, approval)).toBeGreaterThan(axis.position(a.lanes[0].start!, approval));
+    expect(axis.ticks.some((t) => !t.major)).toBe(true);
+    expect(axis.position(a.approval!)).toBeGreaterThan(axis.position(a.lanes[0].start!));
+    expect(axis.position(b.approval!)).toBeLessThanOrEqual(100);
   });
 
-  it('aligns at approval when the programs are years apart, and says so', () => {
-    const axis = buildAxis([k, b], 'calendar');
-    expect(axis.mode).toBe('aligned');
-    expect(axis.autoAligned).toBe(true);
-    // Each program's approval lands at the same place.
-    expect(axis.position(k.approval!, k.approval)).toBeCloseTo(axis.position(b.approval!, b.approval));
-    expect(axis.ticks.some((t) => t.label === 'Approval')).toBe(true);
-  });
-
-  it('extends the aligned axis past approval when a trial completed after it', () => {
-    const d = drug('k', 'M', '2014-09-04', [trial({ id: 'a', roles: pivotal('M'), startDate: day('2015-07-01'), primaryCompletionDate: day('2017-10-02') })]);
-    const v = programView(d, d.indications[0], true);
-    const axis = buildAxis([v], 'aligned');
-    expect(axis.position(v.lanes[0].primaryCompletion!, v.approval)).toBeLessThanOrEqual(100);
-    expect(axis.ticks.some((t) => t.label === '+36 mo' || t.label === '+48 mo')).toBe(true);
-    // Labels stay at least a year apart.
+  it('spaces year labels out when the programs span many years', () => {
+    const axis = buildAxis([k, b]);
     const labelled = axis.ticks.filter((t) => t.label);
-    expect(labelled.length).toBeLessThanOrEqual(8);
-  });
-
-  it('stays on calendar dates when a program has no approval date to align on', () => {
-    const undated = programView(drug('x', 'Y', undefined, []), drug('x', 'Y', undefined, []).indications[0], true);
-    expect(buildAxis([k, undated], 'aligned').mode).toBe('calendar');
+    expect(labelled.length).toBeLessThanOrEqual(12);
+    expect(axis.ticks.some((t) => !t.major)).toBe(false);
   });
 });
 
 describe('evidence table', () => {
-  const a = programView(ra, ra.indications[0], true);
-  const b = programView(psa, psa.indications[0], true);
+  const a = programView(ra, ra.indications[0]);
+  const b = programView(psa, psa.indications[0]);
 
   it('lists every arm as posted, drug arms before the control', () => {
     const r = resultSummary(ra.trials.find((t) => t.id === 'compare')!, ['upadacitinib', 'Rinvoq']);
@@ -135,10 +119,10 @@ describe('evidence table', () => {
   });
 
   it('marks trials completed after the approval as later label updates, and keeps "NA" as posted', () => {
-    const later = programView(old, old.indications[0], true);
+    const later = programView(old, old.indications[0]);
     expect(later.lanes[0].afterApproval).toBe(false);
     const d = drug('k', 'M', '2014-09-04', [trial({ id: 'a', roles: pivotal('M'), primaryCompletionDate: day('2017-10-02'), postedResults: [{ title: 'RFS', unitOfMeasure: 'Months', groups: [{ id: 'g', title: 'Pembrolizumab' }], measurements: [{ groupId: 'g', value: 'NA' }], analyses: [] }] })]);
-    expect(programView(d, d.indications[0], true).lanes[0].afterApproval).toBe(true);
+    expect(programView(d, d.indications[0]).lanes[0].afterApproval).toBe(true);
     expect(resultSummary(d.trials[0])?.arms[0].value).toBe('NA');
   });
 
@@ -151,19 +135,19 @@ describe('evidence table', () => {
     const csv = evidenceCsv(evidenceRows([a]), [a]);
     const lines = csv.trim().split('\n');
     expect(lines[0]).toContain('Announcement source');
-    expect(lines).toHaveLength(3);
+    expect(lines).toHaveLength(4);
     expect(csv).toContain('https://www.prnewswire.com/x-1.html');
     expect(csv).toContain('https://clinicaltrials.gov/study/NCT02629159');
     expect(csv).toContain(',Upadacitinib 15 mg: 70.5%; Placebo: 36.4%,');
     // The endpoint has no comma; a label with one is quoted.
-    const withComma = evidenceCsv(evidenceRows([programView(psa, { ...psa.indications[0], displayName: 'Arthritis, psoriatic' }, true)]), [programView(psa, psa.indications[0], true)]);
+    const withComma = evidenceCsv(evidenceRows([programView(psa, { ...psa.indications[0], displayName: 'Arthritis, psoriatic' })]), [programView(psa, psa.indications[0])]);
     expect(withComma).toContain('"Arthritis, psoriatic"');
   });
 });
 
 describe('readoutCards', () => {
   it('shows one card per release, with months to the announcement and to approval', () => {
-    const cards = readoutCards([programView(ra, ra.indications[0], true)]);
+    const cards = readoutCards([programView(ra, ra.indications[0])]);
     expect(cards).toHaveLength(1);
     expect(cards[0]).toMatchObject({ trials: ['SELECT-COMPARE'], completionToAnnouncement: 5, announcementToApproval: 16 });
   });
@@ -174,7 +158,7 @@ describe('readoutCards', () => {
       trial({ id: 'p1', acronym: 'PsA 1', primaryCompletionDate: day('2019-09-26'), roles: pivotal('PsA'), readoutDate: day('2019-10-22'), provenance: { readoutDate: shared } }),
       trial({ id: 'p2', acronym: 'PsA 2', primaryCompletionDate: day('2019-07-23'), roles: pivotal('PsA'), readoutDate: day('2019-10-22'), provenance: { readoutDate: shared } }),
     ]);
-    const cards = readoutCards([programView(d, d.indications[0], true)]);
+    const cards = readoutCards([programView(d, d.indications[0])]);
     expect(cards).toHaveLength(1);
     expect(cards[0].trials.sort()).toEqual(['PsA 1', 'PsA 2']);
   });
