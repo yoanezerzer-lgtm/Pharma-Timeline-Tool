@@ -52,7 +52,7 @@ function sentences(text: string): string[] {
   return text
     .split(/\n+/)
     .flatMap((line) => line.split(/(?<=[.!?])\s+(?=[A-Z"“(])/))
-    .map((s) => s.replace(/\s+/g, ' ').trim())
+    .map((s) => s.replace(/\s+/g, ' ').replace(/^[-–•·*]\s+/, '').trim())
     .filter((s) => s.length > 0 && s.length <= MAX_SENTENCE);
 }
 

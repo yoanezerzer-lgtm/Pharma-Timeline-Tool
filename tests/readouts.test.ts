@@ -53,7 +53,7 @@ describe('pickReadout', () => {
     const page = htmlToText(
       '<nav><a>News Releases</a> <a>Send a Release</a> <a>Client Login</a></nav>' +
         '<h1>Upadacitinib Meets All Primary and Ranked Secondary Endpoints</h1>' +
-        '<ul><li>In SELECT-PsA 1, upadacitinib met both primary endpoints, with 71 percent of patients achieving ACR20 at week 12 (1)</li><li>All ranked secondary endpoints were also achieved</li></ul>'
+        '<ul><li>- In SELECT-PsA 1, upadacitinib met both primary endpoints, with 71 percent of patients achieving ACR20 at week 12 (1)</li><li>All ranked secondary endpoints were also achieved</li></ul>'
     );
     const r = pickReadout(psa1, [release('2019-10-22', page)], {});
     expect(r?.provenance.quote).toBe('In SELECT-PsA 1, upadacitinib met both primary endpoints, with 71 percent of patients achieving ACR20 at week 12 (1)');
