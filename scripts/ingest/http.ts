@@ -3,10 +3,8 @@ import { dirname, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { DEFAULT_RAW_DIR, type IngestContext } from './context.js';
 
-export { DEFAULT_RAW_DIR };
-
 /** An HTTP failure that will not change if the request is repeated. */
-export class NonRetryableHttpError extends Error {
+class NonRetryableHttpError extends Error {
   constructor(message: string) {
     super(message);
     this.name = 'NonRetryableHttpError';
@@ -34,7 +32,7 @@ export function cachePathFor(
   return join(drugRawDir(slug, rawDir), kind, `${hash}.json`);
 }
 
-export interface FetchOptions {
+interface FetchOptions {
   ctx: IngestContext;
   /** Cache subdirectory, e.g. "ctgov". */
   kind: string;

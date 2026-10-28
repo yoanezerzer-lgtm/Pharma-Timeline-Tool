@@ -9,7 +9,7 @@
  * anything else as efficacy — the overwhelming majority of primary endpoints
  * in an interventional trial, by design.
  */
-export type EndpointCategory = 'EFFICACY' | 'SAFETY' | 'PK';
+type EndpointCategory = 'EFFICACY' | 'SAFETY' | 'PK';
 
 export const ENDPOINT_CATEGORY_LABEL: Record<EndpointCategory, string> = {
   EFFICACY: 'Efficacy',

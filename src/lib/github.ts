@@ -13,7 +13,6 @@ const REPO = 'Pharma-Timeline-Tool';
 const WORKFLOW_ID = 'ingest.yml';
 const BRANCH = 'main';
 
-export const WORKFLOW_RUNS_URL = `https://github.com/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_ID}`;
 export const NEW_TOKEN_URL = 'https://github.com/settings/personal-access-tokens/new';
 
 export class GitHubApiError extends Error {
@@ -24,7 +23,7 @@ export class GitHubApiError extends Error {
   }
 }
 
-export interface IngestInputs {
+interface IngestInputs {
   drug: string;
   brandName?: string;
   inn?: string;
@@ -189,7 +188,7 @@ async function findOpenPrForBranch(token: string, branch: string): Promise<PullR
   return getPullRequest(token, prs[0].number as number);
 }
 
-export async function getPullRequest(token: string, pullNumber: number): Promise<PullRequestSummary> {
+async function getPullRequest(token: string, pullNumber: number): Promise<PullRequestSummary> {
   const res = await githubRequest(token, `/repos/${OWNER}/${REPO}/pulls/${pullNumber}`);
   return toPr((await res.json()) as Record<string, unknown>);
 }
@@ -219,7 +218,7 @@ async function createPrForBranch(token: string, branch: string, drug: string): P
   return toPr((await res.json()) as Record<string, unknown>);
 }
 
-export type IngestOutcome =
+type IngestOutcome =
   | { kind: 'no-changes' }
   | { kind: 'pr-ready'; pr: PullRequestSummary };
 

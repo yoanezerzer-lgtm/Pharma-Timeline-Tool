@@ -68,21 +68,21 @@ export function normalize(s: string): string {
 }
 
 /** The 1-indexed page a character offset falls on, from the extractor's page markers. */
-export function pageAt(text: string, offset: number): number | undefined {
+function pageAt(text: string, offset: number): number | undefined {
   let page: number | undefined;
   for (const m of text.slice(0, offset).matchAll(/<<<PAGE (\d+)>>>/g)) page = Number(m[1]);
   return page;
 }
 
 /** What a trial can be called in FDA documents. */
-export function identifiersOf(t: Trial): string[] {
+function identifiersOf(t: Trial): string[] {
   return [t.nctId, t.acronym, t.labelName, t.protocolNumber].filter((x): x is string => !!x && x.length >= 3);
 }
 
 const sameName = (a: string, b: string) => normalize(a).toLowerCase() === normalize(b).toLowerCase();
 
 /** This label's section 14 text for one indication, or undefined if the label has no such span. */
-export function labelSpanFor(doc: SourceDoc, indication: string): string | undefined {
+function labelSpanFor(doc: SourceDoc, indication: string): string | undefined {
   if (doc.kind !== 'label') return undefined;
   const section = extractLabelSection14(doc.text);
   if (!section) return undefined;
@@ -141,11 +141,11 @@ export function findPassages(trial: Trial, indication: string, sources: SourceDo
   ];
 }
 
-export type QuoteCheck =
+type QuoteCheck =
   | { ok: true; kind: SourceKind; inIndicationSpan: boolean }
   | { ok: false; reason: string };
 
-export const MIN_QUOTE_LENGTH = 40;
+const MIN_QUOTE_LENGTH = 40;
 
 /**
  * The code half of every confirmation: the quote must be in the cited

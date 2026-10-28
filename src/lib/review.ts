@@ -18,7 +18,7 @@ function addStats(a: VerificationStats, b: VerificationStats): VerificationStats
 }
 
 /** Every provenance record attached to a trial: its own fields, plus each role's. */
-export function trialProvenances(trial: Trial): Provenance[] {
+function trialProvenances(trial: Trial): Provenance[] {
   return [...Object.values(trial.provenance), ...trial.roles.map((r) => r.provenance)];
 }
 
@@ -157,7 +157,7 @@ export function setIndicationDisplayName(drug: Drug, indicationSlug: string, dis
   };
 }
 
-export type WriteUp = Pick<Trial, 'metPrimaryEndpoint' | 'resultsSummary' | 'takeaways' | 'limitations'>;
+type WriteUp = Pick<Trial, 'metPrimaryEndpoint' | 'resultsSummary' | 'takeaways' | 'limitations'>;
 
 /**
  * Updates the human-written interpretation of a trial. These fields are never

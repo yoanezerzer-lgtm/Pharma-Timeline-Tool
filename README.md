@@ -121,23 +121,16 @@ person has checked it.
   approved supplement; since openFDA doesn't return them in date order, the pipeline tries
   them newest-first and uses whichever one actually yields a locatable section 14.
 
-  A trial named inside an indication's section 14 span is not trusted on that alone: a
-  manual review of the first real run caught two AbbVie-run observational registries and
-  two academic investigator-initiated studies that had been swept in this way. Both signals
-  come straight from the registry record — the pipeline also requires the trial's own
-  sponsor to plausibly match the applicant, and its study type to be interventional, before
-  trusting a bare section-14 mention with no other evidence behind it. Missing sponsor data
-  is treated as inconclusive, not disqualifying, so this only blocks a confirmed mismatch.
-  A pivotal trial outside oncology is essentially always Phase 3 (or the combined Phase
-  2/3 confirmatory design some programs use); one that isn't still gets marked `PIVOTAL`
-  since the label says so, but the run logs a warning for a person to check rather than
-  trusting it silently. A label that has accumulated indications over years of supplements
-  can also stop naming a historical trial by its sponsor protocol number or acronym and
-  switch to a generic scheme instead ("Trial RA-I") that appears nowhere in the registry
-  record — the pairing to the real NCT number typically survives only in the review, not
-  the label. The pipeline scans the whole document corpus for that pairing and treats the
-  generic name as an additional, equally-guarded identifier, rather than requiring the
-  label to repeat an identifier it may no longer use.
+  A trial named inside an indication's section 14 span still has to be interventional
+  and run by the applicant (or a known co-developer) before it's marked pivotal; a
+  non-phase-3 pivotal trial outside oncology is flagged for a person to check. When a
+  label switches to generic trial names ("Trial RA-I"), the pipeline finds the pairing
+  to the NCT number elsewhere in the approval package.
+- **Approvals come from approval letters.** One indication is often several FDA
+  approvals (Keytruda's melanoma: 2014, then adjuvant use in 2019 and 2021). Each
+  letter's opening paragraph is the source for that approval's date and exact wording;
+  a pivotal trial is linked to it only when the letter names the trial, or when the
+  indication has had a single approval.
 - **Narrative is human-authored.** `takeaways`, `limitations`, and the drug summary are
   never generated. They stay empty until written, and the UI omits empty sections rather
   than showing a shell.
@@ -156,11 +149,19 @@ reported.
 
 ## Current status
 
-The committed `upadacitinib` record is real, pipeline-ingested data — 162 trials across
-9 approved indications, each attributed to the specific indication(s) it supports.
-Nothing on it has been human-checked yet (`verified: false` throughout), so the site
-still shows a banner saying so; re-running the ingest is safe and will only ever refine
-it, never regress it, thanks to the merge rule above.
+Six drugs are ingested (Rinvoq, Skyrizi, Keytruda, Lexapro, Foundayo, rusfertide). The
+site shows each drug's timeline, each indication's trials and approvals, and a page
+comparing two approvals side by side.
+
+Checks that run on every change and overnight:
+
+- `npm run qc` — rule checks on every record, scored against the reference set in
+  `data/reference/`; CI refuses changes to confirmed reference entries.
+- `npm run verify` — the overnight agent checks each claim against its source document
+  and quotes the passage (see `docs/agents/nightly-verify.md`). Code checks every quote
+  verbatim; the agent never writes data.
+- The readout finder (`.github/workflows/readouts.yml`) records when each pivotal trial's
+  primary result was first announced, from the sponsor's own release.
 
 Not yet built:
 

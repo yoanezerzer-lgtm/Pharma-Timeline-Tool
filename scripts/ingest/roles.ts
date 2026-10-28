@@ -77,7 +77,7 @@ function findSection14End(afterHeading: string): RegExpExecArray | null {
   return /\b1[5-8]\.?\s+[A-Z][A-Z0-9 ,/-]{5,70}\b/.exec(afterHeading);
 }
 
-export interface Section14Diagnostics {
+interface Section14Diagnostics {
   /** True if "CLINICAL STUDIES" appears anywhere, even without the numbered heading. */
   phrasePresent: boolean;
   page?: number;
@@ -450,7 +450,7 @@ export function normalizeSponsor(name: string): string {
  * already confirmed to be legitimate co-developers for this specific drug,
  * so a match against one of them counts the same as matching the applicant.
  */
-export function looksLikeSponsorTrial(
+function looksLikeSponsorTrial(
   trial: Trial,
   sponsorName: string | undefined,
   knownTrialSponsors?: string[]
@@ -490,7 +490,7 @@ export function runByApplicant(
  */
 const PIVOTAL_PHASES: ReadonlySet<Trial['phase']> = new Set(['PHASE3', 'PHASE2_3']);
 
-export interface RoleAssignment {
+interface RoleAssignment {
   roles: IndicationRole[];
   /** Set when a PIVOTAL role was assigned to a non-Phase-3 trial — worth a human look. */
   phaseWarnings: string[];

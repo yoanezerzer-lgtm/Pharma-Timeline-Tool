@@ -45,7 +45,7 @@ export interface Conflict {
   incomingValue: unknown;
 }
 
-export interface MergeResult {
+interface MergeResult {
   drug: Drug;
   conflicts: Conflict[];
   addedTrials: string[];

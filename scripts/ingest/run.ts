@@ -24,9 +24,8 @@ import { dateIndications } from './indicationDates.js';
 import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
-export type Step = (typeof ALL_STEPS)[number];
 
-export interface IngestOptions {
+interface IngestOptions {
   spec: DrugSpec;
   steps?: Set<string>;
   rawDir?: string;
@@ -40,7 +39,7 @@ export interface IngestOptions {
   log?: (message: string) => void;
 }
 
-export interface IngestResult {
+interface IngestResult {
   drug: DrugType;
   outPath: string | null;
   written: boolean;
@@ -57,7 +56,7 @@ export interface IngestResult {
   warnings: string[];
 }
 
-export function defaultDrugsDir(): string {
+function defaultDrugsDir(): string {
   return join(process.cwd(), 'data', 'drugs');
 }
 

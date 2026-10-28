@@ -108,16 +108,12 @@ function withoutExclusions(s: string): string {
 }
 
 /** Whether the letter's paragraph is about this indication: every key word of its name appears in it. */
-export function purposeMatches(purpose: string, indicationName: string): boolean {
+function purposeMatches(purpose: string, indicationName: string): boolean {
   const want = keyWords(indicationName);
   if (want.size === 0) return false;
   const have = keyWords(expandAbbreviations(withoutExclusions(purpose)));
   for (const w of want) if (!have.has(w)) return false;
   return true;
-}
-
-export interface ApprovalLetter extends LabelDoc {
-  purpose?: string;
 }
 
 /**

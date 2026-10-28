@@ -1,19 +1,19 @@
 import type { Trial, Milestone, Phase } from '../../schema/index.js';
 import { toTime, toEndTime } from '../../lib/dates.js';
 
-export const GUTTER_W = 236;
+const GUTTER_W = 236;
 export const ROW_H = 28;
 export const BAR_H = 14;
-export const GROUP_H = 30;
+const GROUP_H = 30;
 export const AXIS_H = 40;
 export const TOP_PAD = 8;
-export const BOTTOM_PAD = 16;
-export const RIGHT_PAD = 28;
+const BOTTOM_PAD = 16;
+const RIGHT_PAD = 28;
 /** Minimum horizontal pixels per year, so short programs stay readable. */
-export const MIN_PX_PER_YEAR = 64;
+const MIN_PX_PER_YEAR = 64;
 
 /** Display order and labels for the phase lanes. */
-export const PHASE_ORDER: Phase[] = [
+const PHASE_ORDER: Phase[] = [
   'EARLY_PHASE1',
   'PHASE1',
   'PHASE1_2',
@@ -24,7 +24,7 @@ export const PHASE_ORDER: Phase[] = [
   'NA',
 ];
 
-export const PHASE_LABEL: Record<Phase, string> = {
+const PHASE_LABEL: Record<Phase, string> = {
   EARLY_PHASE1: 'Early Phase 1',
   PHASE1: 'Phase 1',
   PHASE1_2: 'Phase 1/2',
@@ -47,14 +47,14 @@ export interface BarLayout {
   fuzzyEnd: boolean;
 }
 
-export interface GroupLayout {
+interface GroupLayout {
   phase: Phase;
   label: string;
   y: number;
   bars: BarLayout[];
 }
 
-export interface MilestoneLayout {
+interface MilestoneLayout {
   milestone: Milestone;
   x: number;
   y: number;
@@ -68,7 +68,7 @@ export interface MilestoneLayout {
   labelX: number;
 }
 
-export interface GanttLayout {
+interface GanttLayout {
   width: number;
   height: number;
   plotLeft: number;
