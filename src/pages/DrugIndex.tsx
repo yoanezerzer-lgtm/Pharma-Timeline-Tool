@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { drugIndex } from '../lib/catalog.js';
-import { indicationHref, reviewHref, ingestHref } from '../lib/router.js';
+import { compareHref, indicationHref, reviewHref, ingestHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel } from '../lib/drugs.js';
 import type { DrugSummary } from '../lib/summary.js';
@@ -68,9 +68,14 @@ export function DrugIndex() {
   return (
     <main className="index">
       <header className="index__head">
-        <a href={ingestHref()} className="index__add-drug">
-          + Add a drug
-        </a>
+        <div className="index__head-actions">
+          <a href={compareHref()} className="index__compare">
+            Compare programs
+          </a>
+          <a href={ingestHref()} className="index__add-drug">
+            + Add a drug
+          </a>
+        </div>
         <h1>Drug Development Timelines</h1>
         <p className="index__lede">
           Browse approved indications and see exactly which clinical trials supported each

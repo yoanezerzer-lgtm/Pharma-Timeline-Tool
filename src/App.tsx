@@ -5,6 +5,7 @@ import { IndicationPage } from './pages/IndicationPage.js';
 
 // Tooling pages most visitors never open — split out of the main bundle.
 const ReviewPage = lazy(() => import('./pages/ReviewPage.js').then((m) => ({ default: m.ReviewPage })));
+const ComparePage = lazy(() => import('./pages/ComparePage.js').then((m) => ({ default: m.ComparePage })));
 const IngestPage = lazy(() => import('./pages/IngestPage.js').then((m) => ({ default: m.IngestPage })));
 
 export function App() {
@@ -22,6 +23,13 @@ export function App() {
   // while already on the page starts from that link's filters. Typing in the
   // filters uses replaceState, which doesn't re-render App, so no remount then.
   if (route.name === 'index') return <DrugIndex key={window.location.hash} />;
+  if (route.name === 'compare') {
+    return (
+      <Suspense fallback={null}>
+        <ComparePage />
+      </Suspense>
+    );
+  }
   return (
     <Suspense fallback={null}>
       {route.name === 'ingest' ? <IngestPage /> : <ReviewPage slug={route.name === 'review-drug' ? route.slug : undefined} />}

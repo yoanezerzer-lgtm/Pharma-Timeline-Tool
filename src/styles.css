@@ -33,6 +33,9 @@
   --unverified-bg: #f2ecd9;
   --unverified-fg: #7a6218;
 
+  /* Results announced: orange, so it never reads as the accent or a role. */
+  --readout: #c2410c;
+
   --warn-bg: #fdf6e3;
   --warn-border: #e8d9a8;
   --warn-fg: #5f4c12;
@@ -76,6 +79,8 @@
     --verified-fg: #7fce97;
     --unverified-bg: #332d1a;
     --unverified-fg: #d9bd6a;
+
+    --readout: #f0915a;
 
     --warn-bg: #2a2415;
     --warn-border: #4a3f22;
