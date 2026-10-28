@@ -701,3 +701,31 @@ describe('extractLabelTrialNames', () => {
     });
   });
 });
+
+describe('classifyTrialRoles — a trial the label reports as not effective', () => {
+  // From the Keytruda label (125514s194lbl.pdf), page 176: KEYNOTE-B21 sits in
+  // the endometrial carcinoma section under a "Lack of Effectiveness" heading.
+  const endometrial =
+    'Lack of Effectiveness for Adjuvant Treatment of Patients with Endometrial Carcinoma The efficacy of KEYTRUDA ' +
+    'in combination with carboplatin and paclitaxel, with or without radiation, was investigated in KEYNOTE - B21 ' +
+    '(NCT04634877), a randomized, multicenter, double-blind, placebo- controlled trial in 1,095 patients with newly ' +
+    'diagnosed, high - risk endometrial cancer with no evidence of disease on imaging following curative intent ' +
+    'surgery. The trial did not meet the prespecified primary endpoint for investigator- assessed DFS, with a HR of ' +
+    '1.02 (95% CI: 0.79, 1.32). In Combination with Lenvatinib for the Treatment of Advanced Endometrial Carcinoma ' +
+    'That Is pMMR or Not MSI-H The efficacy of KEYTRUDA in combination with lenvatinib was investigated in ' +
+    'KEYNOTE-775 (NCT03517449), a multicenter, open-label, randomized, active-controlled trial that enrolled 827 ' +
+    'patients with advanced endometrial carcinoma who had been previously treated with at least one prior ' +
+    'platinum- based chemotherapy regimen in any setting.';
+  const ctx = ctxFor(endometrial, { sponsorName: 'MERCK SHARP DOHME' });
+  const merck = { sponsor: 'Merck Sharp & Dohme LLC', studyType: 'INTERVENTIONAL' as const };
+
+  it('does not mark it pivotal', () => {
+    const b21 = trial({ nctId: 'NCT04634877', labelName: 'KEYNOTE-B21', ...merck });
+    expect(pivotalFor(b21, ctx)).toBe(false);
+  });
+
+  it('still marks the trial that follows it in the same section pivotal', () => {
+    const k775 = trial({ nctId: 'NCT03517449', labelName: 'KEYNOTE-775', ...merck });
+    expect(pivotalFor(k775, ctx)).toBe(true);
+  });
+});
