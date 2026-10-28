@@ -1,4 +1,4 @@
-import type { DateValue, DatePrecision } from '../schema/index.js';
+import type { DateValue } from '../schema/index.js';
 
 /**
  * Normalizes a partial date string into a DateValue, recording how precise the
@@ -69,4 +69,3 @@ export function isApproximate(d: DateValue | undefined): boolean {
   return !!d && d.precision !== 'day';
 }
 
-export type { DateValue, DatePrecision };

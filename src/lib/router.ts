@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
  * does not offer for project sites. Routes look like
  * `#/drug/upadacitinib/indication/rheumatoid-arthritis`.
  */
-export type Route =
+type Route =
   | { name: 'index' }
   | {
       name: 'indication';
@@ -20,7 +20,7 @@ export type Route =
   | { name: 'review-drug'; slug: string }
   | { name: 'ingest' };
 
-export function parseHash(hash: string): Route {
+function parseHash(hash: string): Route {
   // Anything after "?" is page state (filters, selections), not the route.
   const path = hash.replace(/^#/, '').split('?')[0].replace(/^\/+/, '');
   const [section, slug, sub1, sub1Value, sub2, sub2Value] = path.split('/');

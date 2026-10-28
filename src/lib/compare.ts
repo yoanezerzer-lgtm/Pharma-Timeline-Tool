@@ -150,7 +150,7 @@ export function monthsBetween(from: number | undefined, to: number | undefined):
 
 const CONTROL = /\b(placebo|control|vehicle|sham|standard of care|best supportive care)\b/i;
 
-export interface Arm {
+interface Arm {
   label: string;
   value: string;
   /** 0–100 when the measure is a percentage of patients, for a bar. */
@@ -242,7 +242,7 @@ export function endpointsDiffer(rows: EvidenceRow[]): boolean {
   return kinds.size > 1;
 }
 
-export interface ReadoutCard {
+interface ReadoutCard {
   key: string;
   drug: string;
   indication: string;

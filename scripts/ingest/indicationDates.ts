@@ -7,7 +7,7 @@ export interface LabelDoc {
   text: string;
 }
 
-export interface IndicationApproval {
+interface IndicationApproval {
   date: DateValue;
   submission: string;
   provenance: Provenance;

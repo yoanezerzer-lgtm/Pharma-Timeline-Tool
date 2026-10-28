@@ -6,7 +6,7 @@ import type { CtgovStudy } from '../../scripts/ingest/ctgov.js';
  * These mirror the shape ClinicalTrials.gov v2 actually returns, trimmed to the
  * fields the pipeline reads.
  */
-export function makeStudy(opts: {
+function makeStudy(opts: {
   nctId: string;
   orgStudyId: string;
   acronym?: string;
@@ -139,17 +139,10 @@ const phase1 = makeStudy({
 register(phase1, ['NCT01234567', 'M13-838']);
 
 /** Registered against the drug but cited nowhere in the approval package. */
-export const registryOnly = makeStudy({
+const registryOnly = makeStudy({
   nctId: 'NCT03569293', orgStudyId: 'M16-045', acronym: 'Measure Up 1',
   phases: ['PHASE3'], startDate: '2018-08', enrollment: 847,
   title: 'Upadacitinib in moderate to severe atopic dermatitis',
-});
-
-/** A study for a different drug entirely — must never be attributed to Rinvoq. */
-export const otherDrugStudy = makeStudy({
-  nctId: 'NCT09999999', orgStudyId: 'X99-999',
-  phases: ['PHASE3'], startDate: '2016-01', enrollment: 100,
-  title: 'A study of adalimumab', intervention: 'Adalimumab',
 });
 
 /**

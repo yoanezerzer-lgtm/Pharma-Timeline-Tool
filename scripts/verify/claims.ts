@@ -141,16 +141,16 @@ function registryAgrees(trial: Trial, drug: Drug): boolean {
   );
 }
 
-export type Outcome = 'confirmed' | 'rejected' | 'disagreement' | 'unclear' | 'unanswered' | 'decoy-caught' | 'decoy-missed';
+type Outcome = 'confirmed' | 'rejected' | 'disagreement' | 'unclear' | 'unanswered' | 'decoy-caught' | 'decoy-missed';
 
-export interface ClaimResult {
+interface ClaimResult {
   claim: Claim;
   outcome: Outcome;
   detail: string;
   evidence: { sourceUrl: string; quote: string }[];
 }
 
-export interface ApplyResult {
+interface ApplyResult {
   results: ClaimResult[];
   /** True when a planted false claim came back supported; nothing was recorded. */
   voided: boolean;

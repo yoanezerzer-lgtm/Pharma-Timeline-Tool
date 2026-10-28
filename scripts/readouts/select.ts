@@ -16,7 +16,7 @@ export interface Release {
   text: string;
 }
 
-export interface Readout {
+interface Readout {
   date: DateValue;
   provenance: Provenance;
 }
@@ -57,7 +57,7 @@ function sentences(text: string): string[] {
 }
 
 /** The sentence in the release that names the trial and reports a result, if there is one. */
-export function resultSentence(release: Release, patterns: RegExp[]): string | undefined {
+function resultSentence(release: Release, patterns: RegExp[]): string | undefined {
   const candidates = [release.title, ...sentences(release.text)];
   return candidates.find((s) => patterns.some((p) => p.test(s)) && RESULT_WORDS.test(s) && !(NOT_A_RESULT.test(s) && !/\bmet\b|top-?line|achieved/i.test(s)));
 }

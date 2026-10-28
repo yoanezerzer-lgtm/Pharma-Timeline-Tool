@@ -26,7 +26,7 @@ function writeCacheEntry(
   writeFileSync(path, JSON.stringify({ ok: true, body }, null, 2));
 }
 
-export interface SeedOptions {
+interface SeedOptions {
   slug: string;
   rawDir: string;
   applicationType: 'NDA' | 'BLA' | 'ANDA';

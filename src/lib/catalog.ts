@@ -10,7 +10,7 @@ export const drugIndex = rawIndex as DrugSummary[];
 const loaders = import.meta.glob<{ default: unknown }>('../../data/drugs/*.json');
 const cache = new Map<string, Promise<Drug | undefined>>();
 
-export function loadDrug(slug: string): Promise<Drug | undefined> {
+function loadDrug(slug: string): Promise<Drug | undefined> {
   let pending = cache.get(slug);
   if (!pending) {
     const loader = loaders[`../../data/drugs/${slug}.json`];

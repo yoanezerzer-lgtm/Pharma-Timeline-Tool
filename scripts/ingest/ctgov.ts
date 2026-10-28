@@ -64,7 +64,7 @@ interface CtgovMeasurement {
   upperLimit?: string;
 }
 
-export interface CtgovOutcomeMeasure {
+interface CtgovOutcomeMeasure {
   type?: string;
   title?: string;
   timeFrame?: string;

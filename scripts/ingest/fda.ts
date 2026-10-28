@@ -5,14 +5,14 @@ import type { Milestone, MilestoneType, DateValue } from '../../src/schema/index
 
 const OPENFDA_BASE = 'https://api.fda.gov/drug/drugsfda.json';
 
-export interface ApplicationDoc {
+interface ApplicationDoc {
   id?: string;
   url: string;
   date?: string;
   type?: string;
 }
 
-export interface Submission {
+interface Submission {
   submission_type?: string; // "ORIG" | "SUPPL"
   submission_number?: string;
   submission_status?: string; // "AP" (approved), "TA" (tentative approval)
@@ -31,7 +31,7 @@ export interface DrugsFdaResult {
 }
 
 /** openFDA reports submission dates as YYYYMMDD. */
-export function parseFdaDate(raw: string | undefined): DateValue | undefined {
+function parseFdaDate(raw: string | undefined): DateValue | undefined {
   if (!raw || !/^\d{8}$/.test(raw)) return undefined;
   return toDateValue(`${raw.slice(0, 4)}-${raw.slice(4, 6)}-${raw.slice(6, 8)}`);
 }
@@ -42,7 +42,7 @@ export function parseFdaDate(raw: string | undefined): DateValue | undefined {
  * Only approved submissions become milestones — a pending or withdrawn
  * supplement is not a date on the development timeline.
  */
-export function submissionToMilestone(
+function submissionToMilestone(
   s: Submission,
   applicationType: 'NDA' | 'BLA' | 'ANDA',
   sourceUrl: string

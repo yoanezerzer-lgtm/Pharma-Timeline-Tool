@@ -24,7 +24,7 @@ const Checked = {
   evidence: z.array(z.object({ sourceUrl: z.string(), quote: z.string(), page: z.number().optional() })).optional(),
 };
 
-export const ReferenceIndication = z.object({
+const ReferenceIndication = z.object({
   name: z.string(),
   /** YYYY-MM-DD; null when the right answer is "no date can be proven". */
   approvalDate: z.string().nullable(),
@@ -32,7 +32,7 @@ export const ReferenceIndication = z.object({
   ...Checked,
 });
 
-export const ReferencePivotal = z.object({
+const ReferencePivotal = z.object({
   indication: z.string(),
   /** NCT number, or the trial's id when it has none. */
   trial: z.string(),

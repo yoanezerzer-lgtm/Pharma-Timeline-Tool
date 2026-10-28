@@ -20,7 +20,7 @@ export interface FetchedDoc {
  * text layer and will come back empty — the caller reports that rather than
  * silently producing zero trials.
  */
-export async function extractPdfText(pdfPath: string): Promise<string> {
+async function extractPdfText(pdfPath: string): Promise<string> {
   const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
   const data = new Uint8Array(readFileSync(pdfPath));
   const doc = await pdfjs.getDocument({ data, useSystemFonts: true }).promise;
@@ -41,7 +41,7 @@ export async function extractPdfText(pdfPath: string): Promise<string> {
 }
 
 /** Which approval-package documents are worth parsing for trial identifiers. */
-export function isRelevantDoc(type: string): boolean {
+function isRelevantDoc(type: string): boolean {
   return /review|label|letter/i.test(type);
 }
 

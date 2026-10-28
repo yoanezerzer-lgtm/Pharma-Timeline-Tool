@@ -15,7 +15,7 @@ import { pageForOffset } from './docs.js';
  * request and nothing else.
  */
 
-export const NCT_PATTERN = /\bNCT\d{8}\b/g;
+const NCT_PATTERN = /\bNCT\d{8}\b/g;
 
 const CANDIDATE_PATTERNS: RegExp[] = [
   // Letter-prefixed protocol numbers: M13-549, GS-US-380, ABT-494
