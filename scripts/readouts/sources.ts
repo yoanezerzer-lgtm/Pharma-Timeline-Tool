@@ -142,11 +142,18 @@ async function searchWire(
   const page = await fetchText(searchUrl, ctx);
   if (!page) return [];
   const links = [...new Set([...page.matchAll(linkPattern)].map((m) => new URL(m[1], base).toString()))].slice(0, max);
+  if (links.length === 0) {
+    // Keep what the search returned, to see why nothing matched.
+    mkdirSync(join(ctx.cacheDir, '..', 'texts'), { recursive: true });
+    writeFileSync(join(ctx.cacheDir, '..', 'texts', `search-${name.replace(/\W+/g, '-')}-${createHash('sha1').update(searchUrl).digest('hex').slice(0, 8)}.html.txt`), `${searchUrl}\n\n${page.slice(0, 60000)}`);
+  }
+  ctx.log(`    ${name}: ${links.length} links on the search page`);
   const out: Release[] = [];
   for (const link of links) {
     const html = await fetchText(link, ctx);
     if (!html) continue;
     const date = extractPublishedDate(html) ?? link.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//)?.slice(1).join('-');
+    if (!date) ctx.log(`      no publication date found: ${link}`);
     if (!date || date < w.from || date > w.to) continue;
     out.push({ url: link, source: name, date, title: titleOf(html), text: htmlToText(html) });
   }

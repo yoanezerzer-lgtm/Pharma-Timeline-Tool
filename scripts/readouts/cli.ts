@@ -22,7 +22,8 @@ const iso = (t: number) => new Date(t).toISOString().slice(0, 10);
 
 function searchName(t: Trial): string | undefined {
   const name = [t.acronym, t.labelName].find((n) => n && n.replace(/[^A-Za-z0-9]/g, '').length >= 4);
-  return name ?? t.nctId;
+  // Registry acronyms sometimes space their hyphens ("SELECT - PsA 1"); releases don't.
+  return name?.replace(/\s*-\s*/g, '-') ?? t.nctId;
 }
 
 interface TrialSummary {
@@ -69,6 +70,12 @@ async function main(): Promise<void> {
     const approvals = t.roles.filter((r) => r.role === 'PIVOTAL').map((r) => (r.indication ? approvalOf.get(r.indication) : undefined)).filter((d): d is string => !!d);
     const end = approvals.length > 0 ? approvals.sort().at(-1)! : iso(Math.min(Date.parse(pc.value) + 36 * MONTH, Date.now()));
     const window: Window = { from: iso(Date.parse(pc.value) - 31 * 86400000), to: end };
+    if (window.from > window.to) {
+      // A primary completion after the approval is a still-running extension's
+      // planned date, not the data the approval used: nothing to search for.
+      s.note = `primary completion ${pc.value} is after approval ${end}`;
+      continue;
+    }
     s.query = query;
     s.window = window;
     console.log(`  ${s.trial}: "${query}" ${window.from} → ${window.to}`);
