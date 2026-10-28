@@ -21,7 +21,89 @@
         "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2014-09-04",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Melanoma",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2014/125514Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1); wording from the label's section 1",
+            "quote": "Melanoma",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-6",
+          "date": {
+            "value": "2015-12-18",
+            "precision": "day"
+          },
+          "kind": "revision",
+          "statement": "These Prior Approval supplemental biologics applications provide for modifications of the approved indication for the treatment of patients with unresectable or metastatic melanoma approved on September 4, 2014, under the provisions of 21 CFR 601.70, to remove the following language (italicized) limiting the indication to patients with disease progression following ipilimumab and, if BRAF V600 mutation positive, a BRAF inhibitor and removing the statements that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2015/125514Orig1s004s006ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-6)",
+            "quote": "These Prior Approval supplemental biologics applications provide for modifications of the approved indication for the treatment of patients with unresectable or metastatic melanoma approved on September 4, 2014, under the provisions of 21 CFR 601.70, to remove the following language (italicized) limiting the indication to patients with disease progression following ipilimumab and, if BRAF V600 mutation positive, a BRAF inhibitor and removing the statements that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-4",
+          "date": {
+            "value": "2015-12-18",
+            "precision": "day"
+          },
+          "kind": "revision",
+          "statement": "These Prior Approval supplemental biologics applications provide for modifications of the approved indication for the treatment of patients with unresectable or metastatic melanoma approved on September 4, 2014, under the provisions of 21 CFR 601.70, to remove the following language (italicized) limiting the indication to patients with disease progression following ipilimumab and, if BRAF V600 mutation positive, a BRAF inhibitor and removing the statements that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2015/125514Orig1s004s006ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-4)",
+            "quote": "These Prior Approval supplemental biologics applications provide for modifications of the approved indication for the treatment of patients with unresectable or metastatic melanoma approved on September 4, 2014, under the provisions of 21 CFR 601.70, to remove the following language (italicized) limiting the indication to patients with disease progression following ipilimumab and, if BRAF V600 mutation positive, a BRAF inhibitor and removing the statements that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-40",
+          "date": {
+            "value": "2019-02-15",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the adjuvant treatment of patients with melanoma with involvement of lymph node(s) following complete resection.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/125514Orig1s040ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-40)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the adjuvant treatment of patients with melanoma with involvement of lymph node(s) following complete resection.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-112",
+          "date": {
+            "value": "2021-12-03",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for a new indication: for the adjuvant treatment of adult and pediatric (12 years and older) patients with Stage IIB or IIC melanoma following complete resection.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s112ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-112)",
+            "quote": "This Prior Approval supplemental biologics application provides for a new indication: for the adjuvant treatment of adult and pediatric (12 years and older) patients with Stage IIB or IIC melanoma following complete resection.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Non-Small Cell Lung Cancer",
@@ -37,7 +119,137 @@
         "quote": "Named in the SUPPL-5 approval letter; first listed in the label on or before SUPPL-5, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-5",
+          "date": {
+            "value": "2015-10-02",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with metastatic, PD-L1 positive, non-small cell lung cancer (NSCLC), as determined by an FDA-approved test, with disease progression on or after platinum-containing chemotherapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2015/125514Orig1s005ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-5)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with metastatic, PD-L1 positive, non-small cell lung cancer (NSCLC), as determined by an FDA-approved test, with disease progression on or after platinum-containing chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-8",
+          "date": {
+            "value": "2016-10-24",
+            "precision": "day"
+          },
+          "kind": "revision",
+          "statement": "Prior Approval supplemental biologics application S-8 provides for modifications of the approved indication for the treatment of patients with metastatic non-small cell lung cancer (NSCLC) whose tumors express PD-L1 [Tumor Proportion Score (TPS) ≥ 1%] as determined by an FDA-approved test, with disease progression on or after platinum-containing chemotherapy approved on October 2, 2015, under the provisions of 21 CFR 601.70, to remove the following language (italicized) that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2016/125514Orig1s008,125514Orig1s012ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-8)",
+            "quote": "Prior Approval supplemental biologics application S-8 provides for modifications of the approved indication for the treatment of patients with metastatic non-small cell lung cancer (NSCLC) whose tumors express PD-L1 [Tumor Proportion Score (TPS) ≥ 1%] as determined by an FDA-approved test, with disease progression on or after platinum-containing chemotherapy approved on October 2, 2015, under the provisions of 21 CFR 601.70, to remove the following language (italicized) that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-12",
+          "date": {
+            "value": "2016-10-24",
+            "precision": "day"
+          },
+          "kind": "revision",
+          "statement": "Prior Approval supplemental biologics application S-8 provides for modifications of the approved indication for the treatment of patients with metastatic non-small cell lung cancer (NSCLC) whose tumors express PD-L1 [Tumor Proportion Score (TPS) ≥ 1%] as determined by an FDA-approved test, with disease progression on or after platinum-containing chemotherapy approved on October 2, 2015, under the provisions of 21 CFR 601.70, to remove the following language (italicized) that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2016/125514Orig1s008,125514Orig1s012ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-12)",
+            "quote": "Prior Approval supplemental biologics application S-8 provides for modifications of the approved indication for the treatment of patients with metastatic non-small cell lung cancer (NSCLC) whose tumors express PD-L1 [Tumor Proportion Score (TPS) ≥ 1%] as determined by an FDA-approved test, with disease progression on or after platinum-containing chemotherapy approved on October 2, 2015, under the provisions of 21 CFR 601.70, to remove the following language (italicized) that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-16",
+          "date": {
+            "value": "2017-05-10",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the use of pembrolizumab, in combination with pemetrexed and carboplatin, for the first-line treatment of patients with metastatic non-squamous, non-small cell lung cancer.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/125514Orig1s016ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-16)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the use of pembrolizumab, in combination with pemetrexed and carboplatin, for the first-line treatment of patients with metastatic non-squamous, non-small cell lung cancer.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-41",
+          "date": {
+            "value": "2018-10-30",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for a new indication for the first-line treatment of patients with metastatic squamous non-small cell lung cancer, in combination with carboplatin and either paclitaxel or nab-paclitaxel.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/125514Orig1s041ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-41)",
+            "quote": "This Prior Approval supplemental biologics application provides for a new indication for the first-line treatment of patients with metastatic squamous non-small cell lung cancer, in combination with carboplatin and either paclitaxel or nab-paclitaxel.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-47",
+          "date": {
+            "value": "2019-04-11",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for KEYTRUDA, as a single agent, for the first-line treatment of patients with stage III non-small cell lung cancer (NSCLC), who are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC, and whose tumors express PD L1 [Tumor Proportion Score (TPS) ≥1%] as determined by an FDA-approved test, with no EGFR or ALK genomic tumor aberrations.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/125514Orig1s047ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-47)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for KEYTRUDA, as a single agent, for the first-line treatment of patients with stage III non-small cell lung cancer (NSCLC), who are not candidates for surgical resection or definitive chemoradiation, or metastatic NSCLC, and whose tumors express PD L1 [Tumor Proportion Score (TPS) ≥1%] as determined by an FDA-approved test, with no EGFR or ALK genomic tumor aberrations.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-128",
+          "date": {
+            "value": "2023-01-26",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval sBLA provides for the following new indication: Keytruda is a programmed death receptor-1 (PD-1)-blocking antibody indicated as a single agent, for adjuvant treatment following resection and platinum-based chemotherapy for adult patients with stage IB (T2a ≥4 cm), II, or IIIA non-small cell lung cancer.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s128ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-128)",
+            "quote": "This Prior Approval sBLA provides for the following new indication: Keytruda is a programmed death receptor-1 (PD-1)-blocking antibody indicated as a single agent, for adjuvant treatment following resection and platinum-based chemotherapy for adult patients with stage IB (T2a ≥4 cm), II, or IIIA non-small cell lung cancer.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-139",
+          "date": {
+            "value": "2023-10-16",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval sBLA provides for the following new indication: KEYTRUDA is a programmed death receptor-1 (PD-1)-blocking antibody indicated  for the treatment of patients with resectable (tumors ≥4 cm or node positive) NSCLC in combination with platinum-containing chemotherapy as neoadjuvant treatment, and then continued as a single agent as adjuvant treatment after surgery.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s139ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-139)",
+            "quote": "This Prior Approval sBLA provides for the following new indication: KEYTRUDA is a programmed death receptor-1 (PD-1)-blocking antibody indicated  for the treatment of patients with resectable (tumors ≥4 cm or node positive) NSCLC in combination with platinum-containing chemotherapy as neoadjuvant treatment, and then continued as a single agent as adjuvant treatment after surgery.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Malignant Pleural Mesothelioma",
@@ -53,7 +265,25 @@
         "quote": "Named in the SUPPL-161 approval letter; first listed in the label on or before SUPPL-161, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-161",
+          "date": {
+            "value": "2024-09-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval sBLA provides for a new indication for Keytruda (pembrolizumab), in combination with pemetrexed and platinum chemotherapy, as first-line treatment of adult patients with unresectable advanced or metastatic malignant pleural mesothelioma.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/125514Orig1s161ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-161)",
+            "quote": "This Prior Approval sBLA provides for a new indication for Keytruda (pembrolizumab), in combination with pemetrexed and platinum chemotherapy, as first-line treatment of adult patients with unresectable advanced or metastatic malignant pleural mesothelioma.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Head and Neck Squamous Cell Cancer",
@@ -69,7 +299,41 @@
         "quote": "Named in the SUPPL-9 approval letter; first listed in the label on or before SUPPL-9, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-9",
+          "date": {
+            "value": "2016-08-05",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with recurrent or metastatic squamous cell carcinoma of the head and neck with disease progression on or after platinum-containing chemotherapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2016/125514Orig1s009ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-9)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with recurrent or metastatic squamous cell carcinoma of the head and neck with disease progression on or after platinum-containing chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-52",
+          "date": {
+            "value": "2019-06-10",
+            "precision": "day"
+          },
+          "kind": "revision",
+          "statement": "This Prior Approval supplemental biologics application provides for modifications of the approved indication for the treatment of patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) with disease progression on or after platinum- containing chemotherapy approved on August 5, 2016, under the provisions of 21 CFR 601.41, to remove the following language (italicized) that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/125514Orig1s052ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-52)",
+            "quote": "This Prior Approval supplemental biologics application provides for modifications of the approved indication for the treatment of patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) with disease progression on or after platinum- containing chemotherapy approved on August 5, 2016, under the provisions of 21 CFR 601.41, to remove the following language (italicized) that This indication is approved under accelerated approval based on tumor response rate and durability of response.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Classical Hodgkin Lymphoma",
@@ -85,7 +349,25 @@
         "quote": "Named in the SUPPL-15 approval letter; first listed in the label on or before SUPPL-15, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-15",
+          "date": {
+            "value": "2017-03-14",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for a new indication for the treatment of adult and pediatric patients with refractory classical Hodgkin Lymphoma, or who have relapsed after 3 or more prior lines of therapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/125514Orig1s015ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-15)",
+            "quote": "This Prior Approval supplemental biologics application provides for a new indication for the treatment of adult and pediatric patients with refractory classical Hodgkin Lymphoma, or who have relapsed after 3 or more prior lines of therapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Primary Mediastinal Large B-Cell Lymphoma",
@@ -101,7 +383,25 @@
         "quote": "Named in the SUPPL-30 approval letter; first listed in the label on or before SUPPL-30, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-30",
+          "date": {
+            "value": "2018-06-13",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for a new indication for the treatment of adult and pediatric patients with refractory primary mediastinal large B-cell lymphoma (PMBCL), or who have relapsed after 2 or more prior lines of therapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/125514Orig1s030ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-30)",
+            "quote": "This Prior Approval supplemental biologics application provides for a new indication for the treatment of adult and pediatric patients with refractory primary mediastinal large B-cell lymphoma (PMBCL), or who have relapsed after 2 or more prior lines of therapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Urothelial Cancer",
@@ -117,7 +417,105 @@
         "quote": "Named in the SUPPL-18 approval letter; first listed in the label on or before SUPPL-14, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-18",
+          "date": {
+            "value": "2017-05-18",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the use of pembrolizumab for the treatment of patients with locally advanced or metastatic urothelial carcinoma who have disease progression during or following platinum-containing chemotherapy or within 12 months of neoadjuvant or adjuvant treatment with platinum-containing chemotherapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/125514Orig1s018ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-18)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the use of pembrolizumab for the treatment of patients with locally advanced or metastatic urothelial carcinoma who have disease progression during or following platinum-containing chemotherapy or within 12 months of neoadjuvant or adjuvant treatment with platinum-containing chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-17",
+          "date": {
+            "value": "2017-05-18",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the use of pembrolizumab for the treatment of patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/125514Orig1s017ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-17)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the use of pembrolizumab for the treatment of patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-43",
+          "date": {
+            "value": "2018-06-19",
+            "precision": "day"
+          },
+          "kind": "revision",
+          "statement": "This Prior Approval supplemental biologics application revises the indication of pembrolizumab for the treatment of patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/125514Orig1s043ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-43)",
+            "quote": "This Prior Approval supplemental biologics application revises the indication of pembrolizumab for the treatment of patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-136",
+          "date": {
+            "value": "2023-04-03",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for the following new indication for Keytruda: Keytruda, in combination with enfortumab vedotin, is indicated for the treatment of adult patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s136ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-136)",
+            "quote": "This Prior Approval supplemental biologics license application provides for the following new indication for Keytruda: Keytruda, in combination with enfortumab vedotin, is indicated for the treatment of adult patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-151",
+          "date": {
+            "value": "2023-12-15",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "Prior Approval sBLA 152 (S-152) provides for regular approval, following prior Accelerated Approval, for Keytruda in combination with enfortumab vedotin-ejfv for the treatment of adult patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s151, s152ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-151)",
+            "quote": "Prior Approval sBLA 152 (S-152) provides for regular approval, following prior Accelerated Approval, for Keytruda in combination with enfortumab vedotin-ejfv for the treatment of adult patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-152",
+          "date": {
+            "value": "2023-12-15",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "Prior Approval sBLA 152 (S-152) provides for regular approval, following prior Accelerated Approval, for Keytruda in combination with enfortumab vedotin-ejfv for the treatment of adult patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s151, s152ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-152)",
+            "quote": "Prior Approval sBLA 152 (S-152) provides for regular approval, following prior Accelerated Approval, for Keytruda in combination with enfortumab vedotin-ejfv for the treatment of adult patients with locally advanced or metastatic urothelial carcinoma who are not eligible for cisplatin-containing chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
@@ -133,7 +531,57 @@
         "quote": "Named in the SUPPL-14 approval letter; first listed in the label on or before SUPPL-14, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-14",
+          "date": {
+            "value": "2017-05-23",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of adult and pediatric patients with:  unresectable or metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient solid tumors that have progressed following prior treatment and who have no satisfactory alternative treatment options, or  metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient colorectal cancer that has progressed following treatment with a fluoropyrimidine, oxaliplatin, and irinotecan.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/125514Orig1s014ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-14)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of adult and pediatric patients with:  unresectable or metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient solid tumors that have progressed following prior treatment and who have no satisfactory alternative treatment options, or  metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient colorectal cancer that has progressed following treatment with a fluoropyrimidine, oxaliplatin, and irinotecan.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-84",
+          "date": {
+            "value": "2020-06-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for a new indication for pembrolizumab for the first-line treatment of patients with unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) colorectal cancer.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/125514Orig1s084ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-84)",
+            "quote": "This Prior Approval supplemental biologics application provides for a new indication for pembrolizumab for the first-line treatment of patients with unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) colorectal cancer.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-110",
+          "date": {
+            "value": "2022-03-21",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for the addition of a new indication of Keytruda, as a single agent, for the treatment of patients with advanced endometrial carcinoma that is MSI-H or dMMR, as determined by an FDA-approved test, who have disease progression following prior systemic therapy in any setting and are not candidates for curative surgery or radiation.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/125514Orig1s110ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-110)",
+            "quote": "This Prior Approval supplemental biologics license application provides for the addition of a new indication of Keytruda, as a single agent, for the treatment of patients with advanced endometrial carcinoma that is MSI-H or dMMR, as determined by an FDA-approved test, who have disease progression following prior systemic therapy in any setting and are not candidates for curative surgery or radiation.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
@@ -149,7 +597,41 @@
         "quote": "Named in the SUPPL-84 approval letter; first listed in the label on or before SUPPL-84, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-14",
+          "date": {
+            "value": "2017-05-23",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of adult and pediatric patients with:  unresectable or metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient solid tumors that have progressed following prior treatment and who have no satisfactory alternative treatment options, or  metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient colorectal cancer that has progressed following treatment with a fluoropyrimidine, oxaliplatin, and irinotecan.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/125514Orig1s014ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-14)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of adult and pediatric patients with:  unresectable or metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient solid tumors that have progressed following prior treatment and who have no satisfactory alternative treatment options, or  metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient colorectal cancer that has progressed following treatment with a fluoropyrimidine, oxaliplatin, and irinotecan.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-84",
+          "date": {
+            "value": "2020-06-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for a new indication for pembrolizumab for the first-line treatment of patients with unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) colorectal cancer.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/125514Orig1s084ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-84)",
+            "quote": "This Prior Approval supplemental biologics application provides for a new indication for pembrolizumab for the first-line treatment of patients with unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) colorectal cancer.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Gastric Cancer",
@@ -165,7 +647,73 @@
         "quote": "Named in the SUPPL-24 approval letter; first listed in the label on or before SUPPL-24, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-24",
+          "date": {
+            "value": "2017-09-22",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with recurrent locally advanced or metastatic gastric or gastroesophageal junction adenocarcinoma whose tumors express PD-L1 [Combined Positive Score (CPS) ≥ 1] as determined by an FDA-approved test, with disease progression on or after two or more prior lines of therapy including fluoropyrimidine- and platinum-containing chemotherapy and if appropriate, HER2/neu targeted therapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/125514Orig1s024ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-24)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with recurrent locally advanced or metastatic gastric or gastroesophageal junction adenocarcinoma whose tumors express PD-L1 [Combined Positive Score (CPS) ≥ 1] as determined by an FDA-approved test, with disease progression on or after two or more prior lines of therapy including fluoropyrimidine- and platinum-containing chemotherapy and if appropriate, HER2/neu targeted therapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-97",
+          "date": {
+            "value": "2021-05-05",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for a new indication: Keytruda, in combination with trastuzumab and fluoropyrimidine- and platinum- containing chemotherapy, for the first-line treatment of patients with locally advanced unresectable or metastatic HER2 positive gastric or gastroesophageal junction adenocarcinoma.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s097ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-97)",
+            "quote": "This Prior Approval supplemental biologics license application provides for a new indication: Keytruda, in combination with trastuzumab and fluoropyrimidine- and platinum- containing chemotherapy, for the first-line treatment of patients with locally advanced unresectable or metastatic HER2 positive gastric or gastroesophageal junction adenocarcinoma.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-143",
+          "date": {
+            "value": "2023-11-16",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for a new indication for pembrolizumab in combination with fluoropyrimidine- and platinum- containing chemotherapy for the first-line treatment of adults with locally advanced unresectable or metastatic HER2 negative gastric or gastroesophageal junction adenocarcinoma .",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s143ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-143)",
+            "quote": "This Prior Approval supplemental biologics license application provides for a new indication for pembrolizumab in combination with fluoropyrimidine- and platinum- containing chemotherapy for the first-line treatment of adults with locally advanced unresectable or metastatic HER2 negative gastric or gastroesophageal junction adenocarcinoma .",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-182",
+          "date": {
+            "value": "2025-05-22",
+            "precision": "day"
+          },
+          "kind": "revision",
+          "statement": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1) ] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by a…",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/125514Orig1s182ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-182)",
+            "quote": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1) ] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by a…",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Esophageal Cancer",
@@ -181,7 +729,73 @@
         "quote": "Named in the SUPPL-56 approval letter; first listed in the label on or before SUPPL-56, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-56",
+          "date": {
+            "value": "2019-07-30",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "These Prior Approval supplemental biologics applications provide for a new indication for the treatment of patients with recurrent locally advanced or metastatic squamous cell carcinoma of the esophagus whose tumors express PD-L1 [Combined Positive Score (CPS) ≥10] as determined by an FDA-approved test, with disease progression after one or more prior lines of systemic therapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/125514Orig1s055,s056ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-56)",
+            "quote": "These Prior Approval supplemental biologics applications provide for a new indication for the treatment of patients with recurrent locally advanced or metastatic squamous cell carcinoma of the esophagus whose tumors express PD-L1 [Combined Positive Score (CPS) ≥10] as determined by an FDA-approved test, with disease progression after one or more prior lines of systemic therapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-55",
+          "date": {
+            "value": "2019-07-30",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "These Prior Approval supplemental biologics applications provide for a new indication for the treatment of patients with recurrent locally advanced or metastatic squamous cell carcinoma of the esophagus whose tumors express PD-L1 [Combined Positive Score (CPS) ≥10] as determined by an FDA-approved test, with disease progression after one or more prior lines of systemic therapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/125514Orig1s055,s056ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-55)",
+            "quote": "These Prior Approval supplemental biologics applications provide for a new indication for the treatment of patients with recurrent locally advanced or metastatic squamous cell carcinoma of the esophagus whose tumors express PD-L1 [Combined Positive Score (CPS) ≥10] as determined by an FDA-approved test, with disease progression after one or more prior lines of systemic therapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-96",
+          "date": {
+            "value": "2021-03-22",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for a new indication for pembrolizumab, for the treatment of patients with locally advanced or metastatic esophageal or gastroesophageal junction (GEJ) (tumors with epicenter 1 to 5 centimeters above the GEJ) carcinoma that is not amendable to surgical resection or definitive chemoradiation, in combination with platinum- and fluoropyrimidine-based chemotherapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s096ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-96)",
+            "quote": "This Prior Approval supplemental biologics license application provides for a new indication for pembrolizumab, for the treatment of patients with locally advanced or metastatic esophageal or gastroesophageal junction (GEJ) (tumors with epicenter 1 to 5 centimeters above the GEJ) carcinoma that is not amendable to surgical resection or definitive chemoradiation, in combination with platinum- and fluoropyrimidine-based chemotherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-182",
+          "date": {
+            "value": "2025-05-22",
+            "precision": "day"
+          },
+          "kind": "revision",
+          "statement": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1) ] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by a…",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/125514Orig1s182ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-182)",
+            "quote": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1) ] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by a…",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Cervical Cancer",
@@ -197,7 +811,73 @@
         "quote": "Named in the SUPPL-34 approval letter; first listed in the label on or before SUPPL-34, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-34",
+          "date": {
+            "value": "2018-06-12",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application proposes the addition of a new indication for treatment of patients with recurrent or metastatic cervical cancer with disease progression on or after chemotherapy whose tumors express PD-L1 (CPS >1) as determined by an FDA- approved test.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/125514Orig1s034ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-34)",
+            "quote": "This Prior Approval supplemental biologics application proposes the addition of a new indication for treatment of patients with recurrent or metastatic cervical cancer with disease progression on or after chemotherapy whose tumors express PD-L1 (CPS >1) as determined by an FDA- approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-122",
+          "date": {
+            "value": "2021-10-13",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA -approved test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s121_s122ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-122)",
+            "quote": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA -approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-121",
+          "date": {
+            "value": "2021-10-13",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA -approved test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s121_s122ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-121)",
+            "quote": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA -approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-147",
+          "date": {
+            "value": "2024-01-12",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval supplemental biologics license application provides for priority approval, for KEYTRUDA, in combination with chemoradiotherapy (CR), is indicated for the treatment of patients with FIGO 2014 Stage III-IVA cervical cancer.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/125514Orig1s147ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-147)",
+            "quote": "This Prior Approval supplemental biologics license application provides for priority approval, for KEYTRUDA, in combination with chemoradiotherapy (CR), is indicated for the treatment of patients with FIGO 2014 Stage III-IVA cervical cancer.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Hepatocellular Carcinoma",
@@ -213,7 +893,41 @@
         "quote": "Named in the SUPPL-42 approval letter; first listed in the label on or before SUPPL-42, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-42",
+          "date": {
+            "value": "2018-11-09",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with hepatocellular carcinoma who have been previously treated with sorafenib.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/125514Orig1s042ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-42)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with hepatocellular carcinoma who have been previously treated with sorafenib.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-124",
+          "date": {
+            "value": "2024-01-25",
+            "precision": "day"
+          },
+          "kind": "conversion",
+          "statement": "This Prior Approval supplemental biologics license application provides for updates to Sections 1, 2, 6 and 14, of the Keytruda (pembrolizumab) Prescribing Information (PI) and the Medication Guide for conversion of the Hepatocellular Carcinoma (HCC) indication from accelerated approval to regular approval following fulfillment of postmarketing requirement (PMR) 3492-1.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/125514Orig1s124ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-124)",
+            "quote": "This Prior Approval supplemental biologics license application provides for updates to Sections 1, 2, 6 and 14, of the Keytruda (pembrolizumab) Prescribing Information (PI) and the Medication Guide for conversion of the Hepatocellular Carcinoma (HCC) indication from accelerated approval to regular approval following fulfillment of postmarketing requirement (PMR) 3492-1.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Biliary Tract Cancer",
@@ -229,7 +943,25 @@
         "quote": "Named in the SUPPL-144 approval letter; first listed in the label on or before SUPPL-144, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-144",
+          "date": {
+            "value": "2023-10-31",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides updates to the Keytruda (pembrolizumab) Prescribing Information (PI), and the Medication Guide based upon the final analysis from KEYNOTE-966, entitled, “A Phase 3 Randomized, Double Blind Study Of Pembrolizumab Plus Gemcitabine/Cisplatin Versus Placebo Plus Gemcitabine/Cisplatin as First-Line Therapy in Participants With Advanced and/or Unresectable Biliary Tract Carcinoma”, adding the following new indication: KEYTRUDA, in combination with gemcitabine and cisplatin, is indicated for the treatment of patients with locall…",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s144ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-144)",
+            "quote": "This Prior Approval supplemental biologics license application provides updates to the Keytruda (pembrolizumab) Prescribing Information (PI), and the Medication Guide based upon the final analysis from KEYNOTE-966, entitled, “A Phase 3 Randomized, Double Blind Study Of Pembrolizumab Plus Gemcitabine/Cisplatin Versus Placebo Plus Gemcitabine/Cisplatin as First-Line Therapy in Participants With Advanced and/or Unresectable Biliary Tract Carcinoma”, adding the following new indication: KEYTRUDA, in combination with gemcitabine and cisplatin, is indicated for the treatment of patients with locall…",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Merkel Cell Carcinoma",
@@ -245,7 +977,41 @@
         "quote": "Named in the SUPPL-45 approval letter; first listed in the label on or before SUPPL-45, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-45",
+          "date": {
+            "value": "2018-12-19",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of adult and pediatric patients with recurrent locally advanced or metastatic Merkel cell carcinoma.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/125514Orig1s045Ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-45)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of adult and pediatric patients with recurrent locally advanced or metastatic Merkel cell carcinoma.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-138",
+          "date": {
+            "value": "2023-10-12",
+            "precision": "day"
+          },
+          "kind": "conversion",
+          "statement": "This Prior Approval supplemental biologics license application provides for updates to Section 1, INDICATIONS AND USAGE, of the Keytruda (pembrolizumab) Prescribing Information for the conversion of the Merkel cell carcinoma (MCC) indication in both adult and pediatric patients from accelerated approval to regular approval.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s138ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-138)",
+            "quote": "This Prior Approval supplemental biologics license application provides for updates to Section 1, INDICATIONS AND USAGE, of the Keytruda (pembrolizumab) Prescribing Information for the conversion of the Merkel cell carcinoma (MCC) indication in both adult and pediatric patients from accelerated approval to regular approval.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Renal Cell Carcinoma",
@@ -261,7 +1027,57 @@
         "quote": "Named in the SUPPL-54 approval letter; first listed in the label on or before SUPPL-54, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-54",
+          "date": {
+            "value": "2019-04-19",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for a new indication, in combination with axitinib, for the first-line treatment of patients with advanced renal cell carcinoma.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/125514Orig1s054ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-54)",
+            "quote": "This Prior Approval supplemental biologics application provides for a new indication, in combination with axitinib, for the first-line treatment of patients with advanced renal cell carcinoma.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-102",
+          "date": {
+            "value": "2021-08-10",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for the following new indication: Keytruda, in combination with lenvatinib, is indicated for the first-line treatment of adult patients with advanced renal cell carcinoma (RCC).",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s102ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-102)",
+            "quote": "This Prior Approval supplemental biologics application provides for the following new indication: Keytruda, in combination with lenvatinib, is indicated for the first-line treatment of adult patients with advanced renal cell carcinoma (RCC).",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-192",
+          "date": {
+            "value": "2026-06-12",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval sBLA provides for the addition of the following indication based on Interim Analysis 1 (IA1) of MK-6482-022/LITESPARK-022, entitled, “A Multicenter, Double-blind, Randomized Phase 3 Study to Compare the Efficacy and Safety of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab, in the Adjuvant Treatment of Clear Cell Renal Cell Carcinoma (ccRCC) Post Nephrectomy (MK-6482-022)”: Pembrolizumab, in combination with belzutifan, is indicated for the adjuvant treatment of adult patients with ccRCC at intermediate-high or high risk of recurrence fo…",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s192ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-192)",
+            "quote": "This Prior Approval sBLA provides for the addition of the following indication based on Interim Analysis 1 (IA1) of MK-6482-022/LITESPARK-022, entitled, “A Multicenter, Double-blind, Randomized Phase 3 Study to Compare the Efficacy and Safety of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab, in the Adjuvant Treatment of Clear Cell Renal Cell Carcinoma (ccRCC) Post Nephrectomy (MK-6482-022)”: Pembrolizumab, in combination with belzutifan, is indicated for the adjuvant treatment of adult patients with ccRCC at intermediate-high or high risk of recurrence fo…",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Endometrial Carcinoma",
@@ -277,7 +1093,73 @@
         "quote": "Named in the SUPPL-65 approval letter; first listed in the label on or before SUPPL-65, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-65",
+          "date": {
+            "value": "2019-09-17",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval supplemental new drug application provides for the following indication: KEYTRUDA ® , in combination with lenvatinib, is indicated for the treatment of patients with advanced endometrial carcinoma that is not microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR), who have disease progression following prior systemic therapy and are not candidates for curative surgery or radiation.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/125514Orig1s065ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-65)",
+            "quote": "This Prior Approval supplemental new drug application provides for the following indication: KEYTRUDA ® , in combination with lenvatinib, is indicated for the treatment of patients with advanced endometrial carcinoma that is not microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR), who have disease progression following prior systemic therapy and are not candidates for curative surgery or radiation.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-105",
+          "date": {
+            "value": "2021-07-21",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for the following new indication: KEYTRUDA, in combination with lenvatinib, is indicated for the treatment of patients with advanced endometrial carcinoma that is not microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR), who have disease progression following prior systemic therapy in any setting and are not candidates for curative surgery or radiation.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s105ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-105)",
+            "quote": "This Prior Approval supplemental biologics application provides for the following new indication: KEYTRUDA, in combination with lenvatinib, is indicated for the treatment of patients with advanced endometrial carcinoma that is not microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR), who have disease progression following prior systemic therapy in any setting and are not candidates for curative surgery or radiation.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-110",
+          "date": {
+            "value": "2022-03-21",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for the addition of a new indication of Keytruda, as a single agent, for the treatment of patients with advanced endometrial carcinoma that is MSI-H or dMMR, as determined by an FDA-approved test, who have disease progression following prior systemic therapy in any setting and are not candidates for curative surgery or radiation.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/125514Orig1s110ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-110)",
+            "quote": "This Prior Approval supplemental biologics license application provides for the addition of a new indication of Keytruda, as a single agent, for the treatment of patients with advanced endometrial carcinoma that is MSI-H or dMMR, as determined by an FDA-approved test, who have disease progression following prior systemic therapy in any setting and are not candidates for curative surgery or radiation.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-155",
+          "date": {
+            "value": "2024-06-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application (S-155) provides for a new indication for KEYTRUDA, in combination with carboplatin and paclitaxel, followed by KEYTRUDA as a single agent, for the treatment of adult patients with primary advanced or recurrent endometrial carcinoma.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/125514Orig1s155ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-155)",
+            "quote": "This Prior Approval supplemental biologics license application (S-155) provides for a new indication for KEYTRUDA, in combination with carboplatin and paclitaxel, followed by KEYTRUDA as a single agent, for the treatment of adult patients with primary advanced or recurrent endometrial carcinoma.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Tumor Mutational Burden-High Cancer",
@@ -293,7 +1175,41 @@
         "quote": "Named in the SUPPL-71 approval letter; first listed in the label on or before SUPPL-92, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-71",
+          "date": {
+            "value": "2020-06-16",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "S-71 provides for a new indication for the treatment of adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [≥10 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-approved test, that have progressed following prior treatment and who have no satisfactory alternative treatment options.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/125514Orig1s071,s090ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-71)",
+            "quote": "S-71 provides for a new indication for the treatment of adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [≥10 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-approved test, that have progressed following prior treatment and who have no satisfactory alternative treatment options.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-90",
+          "date": {
+            "value": "2020-06-16",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "S-71 provides for a new indication for the treatment of adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [≥10 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-approved test, that have progressed following prior treatment and who have no satisfactory alternative treatment options.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/125514Orig1s071,s090ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-90)",
+            "quote": "S-71 provides for a new indication for the treatment of adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [≥10 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-approved test, that have progressed following prior treatment and who have no satisfactory alternative treatment options.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Cutaneous Squamous Cell Carcinoma",
@@ -309,7 +1225,57 @@
         "quote": "Named in the SUPPL-92 approval letter; first listed in the label on or before SUPPL-92, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-92",
+          "date": {
+            "value": "2020-06-24",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for an alternate dosage regimen of 400 mg every 6 weeks for adult patients with recurrent or metastatic cutaneous squamous cell carcinoma (cSCC) that is not curable by surgery or radiation.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/125514Orig1s092ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-92)",
+            "quote": "This Prior Approval supplemental biologics license application provides for an alternate dosage regimen of 400 mg every 6 weeks for adult patients with recurrent or metastatic cutaneous squamous cell carcinoma (cSCC) that is not curable by surgery or radiation.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-68",
+          "date": {
+            "value": "2020-06-24",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for KEYTRUDA, for the treatment of patients with recurrent or metastatic cutaneous squamous cell carcinoma (cSCC) that is not curable by surgery or radiation.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/125514Orig1s068ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-68)",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for KEYTRUDA, for the treatment of patients with recurrent or metastatic cutaneous squamous cell carcinoma (cSCC) that is not curable by surgery or radiation.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-100",
+          "date": {
+            "value": "2021-07-01",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics application provides for a new indication: For the treatment of patients with locally advanced cutaneous squamous cell carcinoma (cSCC) that is not curable by surgery or radiation.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s100ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-100)",
+            "quote": "This Prior Approval supplemental biologics application provides for a new indication: For the treatment of patients with locally advanced cutaneous squamous cell carcinoma (cSCC) that is not curable by surgery or radiation.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Triple-Negative Breast Cancer",
@@ -325,7 +1291,73 @@
         "quote": "Named in the SUPPL-88 approval letter; first listed in the label on or before SUPPL-105, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-88",
+          "date": {
+            "value": "2020-11-13",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval supplemental biologics license application provides for the use of pembrolizumab in combination with chemotherapy, for the treatment of patients with locally recurrent unresectable or metastatic triple negative breast cancer whose tumors express PD-L1 [Combined Positive Score (CPS) ≥10] as determined by an FDA approved test.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/125514Orig1s088ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-88)",
+            "quote": "This Prior Approval supplemental biologics license application provides for the use of pembrolizumab in combination with chemotherapy, for the treatment of patients with locally recurrent unresectable or metastatic triple negative breast cancer whose tumors express PD-L1 [Combined Positive Score (CPS) ≥10] as determined by an FDA approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-114",
+          "date": {
+            "value": "2021-07-26",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Prior Approval supplemental biologics application (S-089) provides for a new indication for the treatment of patients with high-risk, early-stage triple negative breast cancer, in combination with chemotherapy as neoadjuvant treatment, then as a single agent as adjuvant treatment after surgery.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s089s114ltr_.pdf",
+            "sourceLabel": "Approval letter (SUPPL-114)",
+            "quote": "Prior Approval supplemental biologics application (S-089) provides for a new indication for the treatment of patients with high-risk, early-stage triple negative breast cancer, in combination with chemotherapy as neoadjuvant treatment, then as a single agent as adjuvant treatment after surgery.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-89",
+          "date": {
+            "value": "2021-07-26",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Prior Approval supplemental biologics application (S-089) provides for a new indication for the treatment of patients with high-risk, early-stage triple negative breast cancer, in combination with chemotherapy as neoadjuvant treatment, then as a single agent as adjuvant treatment after surgery.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s089s114ltr_.pdf",
+            "sourceLabel": "Approval letter (SUPPL-89)",
+            "quote": "Prior Approval supplemental biologics application (S-089) provides for a new indication for the treatment of patients with high-risk, early-stage triple negative breast cancer, in combination with chemotherapy as neoadjuvant treatment, then as a single agent as adjuvant treatment after surgery.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-187",
+          "date": {
+            "value": "2026-06-24",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval sBLA provides for a new indication for KEYTRUDA, in combination with sacituzumab govitecan-hziy, for the first-line treatment of adult patients with unresectable locally advanced or metastatic TNBC whose tumors express PD-L1 (CPS ≥10) as determined by an FDA -authorized test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s187ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-187)",
+            "quote": "This Prior Approval sBLA provides for a new indication for KEYTRUDA, in combination with sacituzumab govitecan-hziy, for the first-line treatment of adult patients with unresectable locally advanced or metastatic TNBC whose tumors express PD-L1 (CPS ≥10) as determined by an FDA -authorized test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Ovarian Cancer",
@@ -341,7 +1373,25 @@
         "quote": "Named in the SUPPL-186 approval letter; first listed in the label on or before SUPPL-186, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-186",
+          "date": {
+            "value": "2026-02-10",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-186)",
+            "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -29293,6 +30343,16 @@
             "quote": "Trial identifier appears within the Biliary Tract Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-144",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s144ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-144)",
+              "quote": "This Prior Approval supplemental biologics license application provides updates to the Keytruda (pembrolizumab) Prescribing Information (PI), and the Medication Guide based upon the final analysis from KEYNOTE-966, entitled, “A Phase 3 Randomized, Double Blind Study Of Pembrolizumab Plus Gemcitabine/Cisplatin Versus Placebo Plus Gemcitabine/Cisplatin as First-Line Therapy in Participants With Advanced and/or Unresectable Biliary Tract Carcinoma”, adding the following new indication: KEYTRUDA, i…",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -29454,7 +30514,7 @@
               "indication": "Biliary Tract Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Biliary Tract Cancer)",
                 "quote": "Trial identifier appears within the Biliary Tract Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -29472,10 +30532,20 @@
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Biliary Tract Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-144",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s144ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-144)",
+                  "quote": "This Prior Approval supplemental biologics license application provides updates to the Keytruda (pembrolizumab) Prescribing Information (PI), and the Medication Guide based upon the final analysis from KEYNOTE-966, entitled, “A Phase 3 Randomized, Double Blind Study Of Pembrolizumab Plus Gemcitabine/Cisplatin Versus Placebo Plus Gemcitabine/Cisplatin as First-Line Therapy in Participants With Advanced and/or Unresectable Biliary Tract Carcinoma”, adding the following new indication: KEYTRUDA, i…",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-28T20:12:58.709Z"
         }
       ]
     },
@@ -37566,6 +38636,16 @@
             "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-186",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -37789,7 +38869,7 @@
               "indication": "Ovarian Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
                 "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -37807,10 +38887,20 @@
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-186",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-28T20:12:58.709Z"
         }
       ]
     },
@@ -38166,6 +39256,16 @@
             "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-192",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s192ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-192)",
+              "quote": "This Prior Approval sBLA provides for the addition of the following indication based on Interim Analysis 1 (IA1) of MK-6482-022/LITESPARK-022, entitled, “A Multicenter, Double-blind, Randomized Phase 3 Study to Compare the Efficacy and Safety of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab, in the Adjuvant Treatment of Clear Cell Renal Cell Carcinoma (ccRCC) Post Nephrectomy (MK-6482-022)”: Pembrolizumab, in combination with belzutifan, is indicated for th…",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -38290,7 +39390,7 @@
               "indication": "Renal Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
                 "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -38308,10 +39408,20 @@
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-192",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s192ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-192)",
+                  "quote": "This Prior Approval sBLA provides for the addition of the following indication based on Interim Analysis 1 (IA1) of MK-6482-022/LITESPARK-022, entitled, “A Multicenter, Double-blind, Randomized Phase 3 Study to Compare the Efficacy and Safety of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab, in the Adjuvant Treatment of Clear Cell Renal Cell Carcinoma (ccRCC) Post Nephrectomy (MK-6482-022)”: Pembrolizumab, in combination with belzutifan, is indicated for th…",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-28T20:12:58.709Z"
         }
       ]
     },
@@ -52728,5 +53838,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-28T19:34:08.758Z"
+  "lastIngestedAt": "2026-10-28T20:12:58.709Z"
 }
