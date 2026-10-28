@@ -49,6 +49,16 @@ describe('pickReadout', () => {
     expect(r?.provenance.quote).toContain('positive top-line results from SELECT-PsA 1');
   });
 
+  it('quotes a bullet line, not the menu text before it (a real PR Newswire page)', () => {
+    const page = htmlToText(
+      '<nav><a>News Releases</a> <a>Send a Release</a> <a>Client Login</a></nav>' +
+        '<h1>Upadacitinib Meets All Primary and Ranked Secondary Endpoints</h1>' +
+        '<ul><li>In SELECT-PsA 1, upadacitinib met both primary endpoints, with 71 percent of patients achieving ACR20 at week 12 (1)</li><li>All ranked secondary endpoints were also achieved</li></ul>'
+    );
+    const r = pickReadout(psa1, [release('2019-10-22', page)], {});
+    expect(r?.provenance.quote).toBe('In SELECT-PsA 1, upadacitinib met both primary endpoints, with 71 percent of patients achieving ACR20 at week 12 (1)');
+  });
+
   it('ignores announcements about starting or enrolling the trial', () => {
     const r = pickReadout(psa1, [release('2019-09-30', 'AbbVie completed enrollment in SELECT-PsA 1 and expects results from the study next year.')], {});
     expect(r).toBeUndefined();
@@ -79,6 +89,6 @@ describe('release pages', () => {
   });
 
   it('turns HTML into readable text without scripts or styles', () => {
-    expect(htmlToText('<html><head><style>p{}</style><script>var a=1</script></head><body><p>SELECT-PsA&nbsp;1 met&amp;passed</p><p>Next</p></body></html>')).toBe('SELECT-PsA 1 met&passed Next');
+    expect(htmlToText('<html><head><style>p{}</style><script>var a=1</script></head><body><p>SELECT-PsA&nbsp;1 met&amp;passed</p><p>Next  <b>line</b></p></body></html>')).toBe('SELECT-PsA 1 met&passed\nNext line');
   });
 });

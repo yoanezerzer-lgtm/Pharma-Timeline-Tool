@@ -65,16 +65,20 @@ async function fetchText(url: string, ctx: SourceContext, ua = BROWSER_UA): Prom
 
 const ENTITIES: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', ndash: '–', mdash: '—', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', reg: '®', trade: '™', copy: '©' };
 
+/** Readable text, one line per paragraph, heading or list item, so a bullet without a full stop stays its own line. */
 export function htmlToText(html: string): string {
   return html
     .replace(/<(script|style|noscript|svg)\b[\s\S]*?<\/\1>/gi, ' ')
     .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<\/?(p|div|li|ul|ol|h[1-6]|br|tr|table|section|article|header|footer|nav|blockquote)\b[^>]*>/gi, '\n')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
     .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
     .replace(/&([a-z]+);/gi, (m, n) => ENTITIES[n.toLowerCase()] ?? m)
-    .replace(/\s+/g, ' ')
-    .trim();
+    .split('\n')
+    .map((l) => l.replace(/\s+/g, ' ').trim())
+    .filter(Boolean)
+    .join('\n');
 }
 
 /** The page's own publication date, from its metadata; never guessed from the body. */
