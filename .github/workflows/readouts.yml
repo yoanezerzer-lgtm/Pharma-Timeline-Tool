@@ -1,0 +1,94 @@
+name: Find trial readouts
+
+# Searches SEC filings and newswires for the first public announcement of
+# each pivotal trial's primary result, and pushes the updated record to a
+# readouts/<slug>-<timestamp> branch for a pull request. The text it read
+# goes to a diag/readouts-<slug>-<timestamp> branch so every pick can be
+# checked against its source.
+
+on:
+  workflow_dispatch:
+    inputs:
+      drug:
+        description: Drug slug, e.g. upadacitinib
+        required: true
+        type: string
+      refresh:
+        description: Ignore cached search results
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  readouts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Find readouts
+        env:
+          DRUG: ${{ inputs.drug }}
+          REFRESH: ${{ inputs.refresh }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: |
+          set -euo pipefail
+          ARGS=("$DRUG")
+          if [ "$REFRESH" = "true" ]; then ARGS+=(--refresh); fi
+          npm run -s readouts -- "${ARGS[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Validate result
+        run: npm run validate
+
+      - name: Data quality report
+        run: npm run -s qc | tee -a "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Push what was read to a diagnostic branch
+        if: always()
+        env:
+          DRUG: ${{ inputs.drug }}
+        run: |
+          set -euo pipefail
+          if [ ! -f "data/raw/${DRUG}/readouts/summary.json" ]; then
+            echo "Nothing to push."
+            exit 0
+          fi
+          BRANCH="diag/readouts-${DRUG}-$(date +%Y%m%d-%H%M%S)"
+          ORIGINAL_REF="$(git rev-parse --abbrev-ref HEAD)"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git stash push -- data/drugs >/dev/null || true
+          git checkout -b "$BRANCH"
+          git add -f "data/raw/${DRUG}/readouts/summary.json"
+          git add -f "data/raw/${DRUG}/readouts/texts" 2>/dev/null || true
+          git commit -m "Diagnostic: readout search for ${DRUG}"
+          git push -u origin "$BRANCH"
+          git checkout "$ORIGINAL_REF"
+          git stash pop >/dev/null || true
+
+      - name: Push the updated record
+        env:
+          DRUG: ${{ inputs.drug }}
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- data/drugs)" ]; then
+            echo "No readout changes."
+            exit 0
+          fi
+          BRANCH="readouts/${DRUG}-$(date +%Y%m%d-%H%M%S)"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/drugs
+          git commit -m "Add trial readouts for ${DRUG}"
+          git push -u origin "$BRANCH"
+          echo "Pushed: $BRANCH"

@@ -224,6 +224,13 @@ export const Trial = z.object({
   startDate: DateValue.optional(),
   primaryCompletionDate: DateValue.optional(),
   completionDate: DateValue.optional(),
+  /**
+   * The first public announcement of the trial's primary result: the date
+   * of the sponsor's press release or SEC filing that reported it. Its
+   * provenance (`provenance.readoutDate`) carries the release's link and the
+   * sentence that names the trial.
+   */
+  readoutDate: DateValue.optional(),
 
   enrollment: Enrollment.optional(),
   design: Design.optional(),

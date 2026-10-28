@@ -92,19 +92,20 @@ export function isMeaningfulMilestone(m: Milestone): boolean {
 
 /**
  * Whole months from the latest primary completion among an indication's
- * pivotal trials to that indication's approval — the gap between the last
- * pivotal data and the decision. Undefined when either end is missing, only
- * known to the year, or the readout falls after approval (a long-term
- * extension still running, not the readout the filing used).
+ * pivotal trials to that indication's approval: from the last patient's
+ * primary-endpoint assessment to the decision. Undefined when either end is
+ * missing or only known to the year, or when the primary completion falls
+ * after approval (a long-term extension still running, not the data the
+ * filing used).
  */
-export function readoutToApprovalMonths(trials: Trial[], indicationName: string, approval?: DateValue): number | undefined {
+export function primaryCompletionToApprovalMonths(trials: Trial[], indicationName: string, approval?: DateValue): number | undefined {
   if (!approval || approval.precision === 'year') return undefined;
-  const readouts = trials
+  const completions = trials
     .filter((t) => roleFor(t, indicationName) === 'PIVOTAL')
     .map((t) => t.primaryCompletionDate)
     .filter((d): d is DateValue => !!d && d.precision !== 'year' && d.value <= approval.value);
-  if (readouts.length === 0) return undefined;
-  const last = readouts.reduce((a, b) => (b.value > a.value ? b : a));
+  if (completions.length === 0) return undefined;
+  const last = completions.reduce((a, b) => (b.value > a.value ? b : a));
   const [ay, am] = approval.value.split('-').map(Number);
   const [ly, lm] = last.value.split('-').map(Number);
   return (ay - ly) * 12 + (am - lm);

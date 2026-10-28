@@ -47,6 +47,14 @@ describe('mergeDrug', () => {
     expect(result.addedTrials).toEqual(['select-compare']);
   });
 
+  it('keeps a readout and its source when an ingest run, which never finds readouts, merges in', () => {
+    const src = { sourceUrl: 'https://www.prnewswire.com/news-releases/x-1.html', quote: 'SELECT-COMPARE met its primary endpoint.', extractedBy: 'regex' as const, verified: false };
+    const existing = drug([trial({ readoutDate: { value: '2018-01-15', precision: 'day' }, provenance: { readoutDate: src } })]);
+    const result = mergeDrug(existing, drug([trial()]));
+    expect(result.drug.trials[0].readoutDate?.value).toBe('2018-01-15');
+    expect(result.drug.trials[0].provenance.readoutDate).toEqual(src);
+  });
+
   it('never overwrites a human-verified field', () => {
     const existing = drug([
       trial({

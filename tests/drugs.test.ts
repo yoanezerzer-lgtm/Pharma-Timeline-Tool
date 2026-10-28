@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { isMeaningfulMilestone, readoutToApprovalMonths, trialShortName } from '../src/lib/drugs.js';
+import { isMeaningfulMilestone, primaryCompletionToApprovalMonths, trialShortName } from '../src/lib/drugs.js';
 import type { Milestone, Trial, DateValue } from '../src/schema/index.js';
 
 function milestone(o: Partial<Milestone>): Milestone {
@@ -41,7 +41,7 @@ describe('isMeaningfulMilestone', () => {
   });
 });
 
-describe('readoutToApprovalMonths', () => {
+describe('primaryCompletionToApprovalMonths', () => {
   const day = (value: string): DateValue => ({ value, precision: 'day' });
   const trial = (role: 'PIVOTAL' | 'SUPPORTIVE', completion?: DateValue): Trial =>
     ({
@@ -51,18 +51,18 @@ describe('readoutToApprovalMonths', () => {
 
   it('measures from the latest pivotal readout before approval', () => {
     const trials = [trial('PIVOTAL', day('2017-10-27')), trial('PIVOTAL', day('2018-01-15')), trial('SUPPORTIVE', day('2019-01-01'))];
-    expect(readoutToApprovalMonths(trials, 'RA', day('2019-08-16'))).toBe(19);
+    expect(primaryCompletionToApprovalMonths(trials, 'RA', day('2019-08-16'))).toBe(19);
   });
 
   it('ignores a pivotal trial still running after approval', () => {
     const trials = [trial('PIVOTAL', day('2018-02-01')), trial('PIVOTAL', day('2027-06-01'))];
-    expect(readoutToApprovalMonths(trials, 'RA', day('2019-08-16'))).toBe(18);
+    expect(primaryCompletionToApprovalMonths(trials, 'RA', day('2019-08-16'))).toBe(18);
   });
 
   it('is undefined without a dated approval or any usable readout', () => {
-    expect(readoutToApprovalMonths([trial('PIVOTAL', day('2018-01-01'))], 'RA', undefined)).toBeUndefined();
-    expect(readoutToApprovalMonths([trial('PIVOTAL', { value: '2018-01-01', precision: 'year' })], 'RA', day('2019-08-16'))).toBeUndefined();
-    expect(readoutToApprovalMonths([trial('SUPPORTIVE', day('2018-01-01'))], 'RA', day('2019-08-16'))).toBeUndefined();
+    expect(primaryCompletionToApprovalMonths([trial('PIVOTAL', day('2018-01-01'))], 'RA', undefined)).toBeUndefined();
+    expect(primaryCompletionToApprovalMonths([trial('PIVOTAL', { value: '2018-01-01', precision: 'year' })], 'RA', day('2019-08-16'))).toBeUndefined();
+    expect(primaryCompletionToApprovalMonths([trial('SUPPORTIVE', day('2018-01-01'))], 'RA', day('2019-08-16'))).toBeUndefined();
   });
 });
 
