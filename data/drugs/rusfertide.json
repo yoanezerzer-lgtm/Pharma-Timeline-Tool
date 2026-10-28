@@ -22,6 +22,24 @@
         "extractedBy": "rule",
         "verified": false
       },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-08-28",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Mimrylo (rusfertide) for injection for the treatment of erythrocytosis in adults with polycythemia vera (PV).",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220605Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Mimrylo (rusfertide) for injection for the treatment of erythrocytosis in adults with polycythemia vera (PV).",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
       "fdaAnnouncementUrl": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder"
     }
   ],
@@ -328,8 +346,8 @@
       "nctId": "NCT05210790",
       "protocolNumber": "PTG-300-11",
       "acronym": "VERIFY",
-      "title": "A Phase 3 Study of the Hepcidin Mimetic Rusfertide (PTG-300) in Patients With Polycythemia Vera",
-      "briefTitle": "A Phase 3 Study of Rusfertide in Patients With Polycythemia Vera",
+      "title": "A Phase 3 Study of the Hepcidin Mimetic Rusfertide (PTG-300; TAK-121) in Patients With Polycythemia Vera",
+      "briefTitle": "A Study of Rusfertide in Adults With Polycythemia Vera (PV)",
       "phase": "PHASE3",
       "roles": [
         {
@@ -341,6 +359,16 @@
             "quote": "Trial identifier appears within the Erythrocytosis in adults with polycythemia vera (PV) section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220605Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Mimrylo (rusfertide) for injection for the treatment of erythrocytosis in adults with polycythemia vera (PV).",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -348,7 +376,7 @@
       "sponsor": "Protagonist Therapeutics, Inc.",
       "studyType": "INTERVENTIONAL",
       "startDate": {
-        "value": "2022-04-01",
+        "value": "2022-04-11",
         "precision": "day"
       },
       "primaryCompletionDate": {
@@ -356,8 +384,8 @@
         "precision": "day"
       },
       "completionDate": {
-        "value": "2027-06-01",
-        "precision": "month"
+        "value": "2028-08-31",
+        "precision": "day"
       },
       "enrollment": {
         "count": 293,
@@ -377,24 +405,113 @@
       },
       "arms": [
         {
-          "label": "Rusfertide",
-          "type": "EXPERIMENTAL",
-          "description": "Rusfertide (32 Weeks) - Rusfertide (124 Weeks Open-label)"
+          "label": "Part 1a: Randomized, Double-Blind Period: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received their ongoing therapy for polycythemia vera (PV) along with rusfertide-matching placebo, subcutaneous (SC) injection, once weekly, from baseline up to Week 32."
         },
         {
-          "label": "Placebo",
+          "label": "Part 1a: Randomized, Double-Blind Period: Rusfertide",
           "type": "EXPERIMENTAL",
-          "description": "Placebo (32 Weeks) - Rusfertide (124 Weeks Open-label)"
+          "description": "Participants received their ongoing therapy for PV along with rusfertide once weekly, SC injection, from baseline up to Week 32. Rusfertide doses were titrated to maintain hematocrit less than (\\<) 45 percent (%). The starting dose was 19 milligrams (mg). The doses that were administered to Part 1a participants were 9.5, 19, 28, 41, 54, 69 and 82 mg."
+        },
+        {
+          "label": "Part 1b: Open-Label Treatment Period: Rusfertide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received rusfertide once weekly, SC injection, from Weeks 32 to 52. Rusfertide doses were titrated to maintain hematocrit \\< 45%. Participants who received rusfertide in Part 1a continued at their current dose unless dose adjustment was required. Participants who received placebo in Part 1a started rusfertide at 19 mg. The doses that were administered to Part 1b participants were 9.5, 19, 28, 41, 54, 69 and 82 mg."
+        },
+        {
+          "label": "Part 2: Long Term Extension Period: Rusfertide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received rusfertide once weekly, SC injection, from Weeks 52 to 156. Rusfertide doses were titrated to maintain hematocrit \\< 45%. The doses that were administered to Part 2 participants were 9.5, 19, 28, 41, 54, 69, 82, 95 and 108 mg. For weekly doses greater than (\\>) 90 mg, the dose of rusfertide was and will be divided into 2 doses administered 3 to 4 days apart."
+        },
+        {
+          "label": "Part 3: Treatment Extension Period: Rusfertide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive rusfertide once weekly, SC injection, from Week 156 to the end of the study (approximately 5 years). Rusfertide doses will be titrated to maintain hematocrit \\< 45%. The doses that will be administered to Part 3 participants are 9.5, 19, 28, 41, 54, 69, 82, 95 and 108 mg. For weekly doses \\> 90 mg, the dose of rusfertide will be divided into 2 doses administered 3 to 4 days apart."
         }
       ],
       "primaryEndpoints": [
-        "Proportion of subjects achieving a response who receive rusfertide compared to placebo."
+        "Part 1a: Percentage of Participants Who Achieved Response"
       ],
       "secondaryEndpoints": [
-        "Comparison of mean number of phlebotomies between rusfertide and placebo.",
-        "Proportion of subjects with HCT values <45% for rusfertide and placebo.",
-        "Comparison mean change from baseline in total fatigue score based on PROMIS Short Form between rusfertide and placebo.",
-        "Comparison of mean change from baseline in total MFSAF total score."
+        "Part 1a: Number of Phlebotomies",
+        "Part 1a: Percentage of Participants With All Hematocrit Values < 45%",
+        "Part 1a: Change From Baseline in the Patient Reported Outcomes Measurement Information System (PROMIS) Fatigue Short Form 8a Total T-score",
+        "Part 1a: Change From Baseline in the Myelofibrosis Symptom Assessment Form (MFSAF) Version 4.0 Total Symptom Score-7 (TSS7) Items",
+        "Part 1a: Change From Baseline in the PROMIS Fatigue Short Form 8a Total T-score Among Participants Who Have Moderate or Severe Symptoms at Baseline",
+        "Part 1a: Change From Baseline in the MFSAF Total Symptom Score-4 Items (TSS4) Among Participants Who Have Moderate or Severe Symptoms at Baseline",
+        "Part 1a: Change From Baseline in the Myeloproliferative Neoplasm Symptom Assessment Form (MPN-SAF) Problems With Concentration Among Participants Who Have Moderate or Severe Symptoms at Baseline",
+        "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the PROMIS Fatigue SF 8a Total T-score Among Participants Who Have Moderate or Severe Symptoms at Baseline",
+        "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the MFSAF TSS4 Among Participants Who Had Moderate or Severe Symptoms at Baseline",
+        "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the MPN-SAF Problems With Concentration Among Participants Who Had Moderate or Severe Symptoms at Baseline",
+        "Change From Baseline at Each Scheduled Assessment in Individual Questions and the Total Fatigue T-score Based on PROMIS Fatigue SF 8a",
+        "Change From Baseline at Each Scheduled Assessment in Individual Questions and the Total Fatigue T-score Based on PROMIS Fatigue Short Form 8a for Among Participants With Moderate or Severe Symptoms at Baseline",
+        "Change From Baseline at Each Scheduled Assessment in Individual Symptom Score and the Total Score Based on MFSAF v4.0 TSS4",
+        "Change From Baseline at Each Scheduled Assessment in Individual Symptom Score and the MFSAF v4.0 TSS4 Among Participants With Moderate or Severe Symptoms at Baseline",
+        "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the PROMIS Fatigue SF 8a Total T-score",
+        "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the MFSAF TSS4",
+        "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the MPN-SAF Problems With Concentration",
+        "Change From Baseline at Each Scheduled Assessment in Individual Symptom Score and the Total Score Based on MPN-SAF TSS 10",
+        "Change From Baseline in Patient Global Impression of Severity (PGI-S) at Each Scheduled Assessment",
+        "Percentage of Participants With at Least One Unit Improvement in the PGI-S From Baseline at Each Scheduled Assessment",
+        "Percentage of Participants With a Rating on the Patient Global Impression of Change (PGI-C) of Either \"Much Better\" or \"a Little Better\" at Each Scheduled Assessment",
+        "Mean PGI-C at Each Scheduled Assessment",
+        "Change From Baseline at Each Scheduled Assessment in Individual Symptom Score and the MFSAF v4.0 Total Symptom Score-7 Items (TSS7)",
+        "Change From Baseline in the Individual Domain Scores and the Total European Organization for Research and Treatment of Cancer Quality of Life Questionnaire (EORTC QLQ-C30) Score",
+        "Median Time to First Hematocrit Equal to or Greater Than 45% After Randomization",
+        "Median Time to Phlebotomy-eligible After Randomization",
+        "Percentage of Participants With at Least One Hematocrit Equal to or Greater Than 48%",
+        "Percentage of Participants Who Maintain Absence of Phlebotomy Eligibility",
+        "Phlebotomy Annualized Rate",
+        "Parts 1a + 1b: Percentage of Participants Originally Randomized to Rusfertide Achieving Absence of Phlebotomy Eligibility More Than 52 Weeks",
+        "Part 1b: Median Time to First Hematocrit Equal to or Greater Than 45%",
+        "Part 1b: Median Time to First Phlebotomy",
+        "Parts 1a + 1b: Percentage of Participants With All Hematocrit Values Less Than 45%",
+        "Parts 1a + 1b: Percentage of Participants Randomized to Placebo Who Meet the Phlebotomy Eligibility in Part 1a and Part 1b, Separately",
+        "Percentage of Participants With Treatment-emergent Adverse Events (TEAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Part 1a: Percentage of Participants Who Achieved Response",
+          "timeFrame": "From Weeks 20 to 32",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Part 1a: Randomized, Double-Blind Period: Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Part 1a: Randomized, Double-Blind Period: Rusfertide"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "32.9"
+            },
+            {
+              "groupId": "OG001",
+              "value": "76.9"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "6.42",
+              "ciPct": "95",
+              "ciLower": "3.81",
+              "ciUpper": "10.80"
+            }
+          ]
+        }
       ],
       "metPrimaryEndpoint": null,
       "takeaways": [],
@@ -431,6 +548,12 @@
           "extractedBy": "api",
           "verified": false
         },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05210790?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220605Orig1s000ltr.pdf",
           "sourceLabel": "FDA approval package",
@@ -440,7 +563,231 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "title",
+          "previousValue": "A Phase 3 Study of the Hepcidin Mimetic Rusfertide (PTG-300) in Patients With Polycythemia Vera",
+          "newValue": "A Phase 3 Study of the Hepcidin Mimetic Rusfertide (PTG-300; TAK-121) in Patients With Polycythemia Vera",
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        },
+        {
+          "field": "briefTitle",
+          "previousValue": "A Phase 3 Study of Rusfertide in Patients With Polycythemia Vera",
+          "newValue": "A Study of Rusfertide in Adults With Polycythemia Vera (PV)",
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Erythrocytosis in adults with polycythemia vera (PV)",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Erythrocytosis in adults with polycythemia vera (PV))",
+                "quote": "Trial identifier appears within the Erythrocytosis in adults with polycythemia vera (PV) section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Erythrocytosis in adults with polycythemia vera (PV)",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Erythrocytosis in adults with polycythemia vera (PV))",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Erythrocytosis in adults with polycythemia vera (PV) section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220605Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Mimrylo (rusfertide) for injection for the treatment of erythrocytosis in adults with polycythemia vera (PV).",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        },
+        {
+          "field": "startDate",
+          "previousValue": {
+            "value": "2022-04-01",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2022-04-11",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2027-06-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2028-08-31",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        },
+        {
+          "field": "arms",
+          "previousValue": [
+            {
+              "label": "Rusfertide",
+              "type": "EXPERIMENTAL",
+              "description": "Rusfertide (32 Weeks) - Rusfertide (124 Weeks Open-label)"
+            },
+            {
+              "label": "Placebo",
+              "type": "EXPERIMENTAL",
+              "description": "Placebo (32 Weeks) - Rusfertide (124 Weeks Open-label)"
+            }
+          ],
+          "newValue": [
+            {
+              "label": "Part 1a: Randomized, Double-Blind Period: Placebo",
+              "type": "PLACEBO_COMPARATOR",
+              "description": "Participants received their ongoing therapy for polycythemia vera (PV) along with rusfertide-matching placebo, subcutaneous (SC) injection, once weekly, from baseline up to Week 32."
+            },
+            {
+              "label": "Part 1a: Randomized, Double-Blind Period: Rusfertide",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received their ongoing therapy for PV along with rusfertide once weekly, SC injection, from baseline up to Week 32. Rusfertide doses were titrated to maintain hematocrit less than (\\<) 45 percent (%). The starting dose was 19 milligrams (mg). The doses that were administered to Part 1a participants were 9.5, 19, 28, 41, 54, 69 and 82 mg."
+            },
+            {
+              "label": "Part 1b: Open-Label Treatment Period: Rusfertide",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received rusfertide once weekly, SC injection, from Weeks 32 to 52. Rusfertide doses were titrated to maintain hematocrit \\< 45%. Participants who received rusfertide in Part 1a continued at their current dose unless dose adjustment was required. Participants who received placebo in Part 1a started rusfertide at 19 mg. The doses that were administered to Part 1b participants were 9.5, 19, 28, 41, 54, 69 and 82 mg."
+            },
+            {
+              "label": "Part 2: Long Term Extension Period: Rusfertide",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received rusfertide once weekly, SC injection, from Weeks 52 to 156. Rusfertide doses were titrated to maintain hematocrit \\< 45%. The doses that were administered to Part 2 participants were 9.5, 19, 28, 41, 54, 69, 82, 95 and 108 mg. For weekly doses greater than (\\>) 90 mg, the dose of rusfertide was and will be divided into 2 doses administered 3 to 4 days apart."
+            },
+            {
+              "label": "Part 3: Treatment Extension Period: Rusfertide",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive rusfertide once weekly, SC injection, from Week 156 to the end of the study (approximately 5 years). Rusfertide doses will be titrated to maintain hematocrit \\< 45%. The doses that will be administered to Part 3 participants are 9.5, 19, 28, 41, 54, 69, 82, 95 and 108 mg. For weekly doses \\> 90 mg, the dose of rusfertide will be divided into 2 doses administered 3 to 4 days apart."
+            }
+          ],
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        },
+        {
+          "field": "primaryEndpoints",
+          "previousValue": [
+            "Proportion of subjects achieving a response who receive rusfertide compared to placebo."
+          ],
+          "newValue": [
+            "Part 1a: Percentage of Participants Who Achieved Response"
+          ],
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "Comparison of mean number of phlebotomies between rusfertide and placebo.",
+            "Proportion of subjects with HCT values <45% for rusfertide and placebo.",
+            "Comparison mean change from baseline in total fatigue score based on PROMIS Short Form between rusfertide and placebo.",
+            "Comparison of mean change from baseline in total MFSAF total score."
+          ],
+          "newValue": [
+            "Part 1a: Number of Phlebotomies",
+            "Part 1a: Percentage of Participants With All Hematocrit Values < 45%",
+            "Part 1a: Change From Baseline in the Patient Reported Outcomes Measurement Information System (PROMIS) Fatigue Short Form 8a Total T-score",
+            "Part 1a: Change From Baseline in the Myelofibrosis Symptom Assessment Form (MFSAF) Version 4.0 Total Symptom Score-7 (TSS7) Items",
+            "Part 1a: Change From Baseline in the PROMIS Fatigue Short Form 8a Total T-score Among Participants Who Have Moderate or Severe Symptoms at Baseline",
+            "Part 1a: Change From Baseline in the MFSAF Total Symptom Score-4 Items (TSS4) Among Participants Who Have Moderate or Severe Symptoms at Baseline",
+            "Part 1a: Change From Baseline in the Myeloproliferative Neoplasm Symptom Assessment Form (MPN-SAF) Problems With Concentration Among Participants Who Have Moderate or Severe Symptoms at Baseline",
+            "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the PROMIS Fatigue SF 8a Total T-score Among Participants Who Have Moderate or Severe Symptoms at Baseline",
+            "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the MFSAF TSS4 Among Participants Who Had Moderate or Severe Symptoms at Baseline",
+            "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the MPN-SAF Problems With Concentration Among Participants Who Had Moderate or Severe Symptoms at Baseline",
+            "Change From Baseline at Each Scheduled Assessment in Individual Questions and the Total Fatigue T-score Based on PROMIS Fatigue SF 8a",
+            "Change From Baseline at Each Scheduled Assessment in Individual Questions and the Total Fatigue T-score Based on PROMIS Fatigue Short Form 8a for Among Participants With Moderate or Severe Symptoms at Baseline",
+            "Change From Baseline at Each Scheduled Assessment in Individual Symptom Score and the Total Score Based on MFSAF v4.0 TSS4",
+            "Change From Baseline at Each Scheduled Assessment in Individual Symptom Score and the MFSAF v4.0 TSS4 Among Participants With Moderate or Severe Symptoms at Baseline",
+            "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the PROMIS Fatigue SF 8a Total T-score",
+            "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the MFSAF TSS4",
+            "Part 1a: Percentage of Participants With a Meaningful Within-person Change at Week 32 in the MPN-SAF Problems With Concentration",
+            "Change From Baseline at Each Scheduled Assessment in Individual Symptom Score and the Total Score Based on MPN-SAF TSS 10",
+            "Change From Baseline in Patient Global Impression of Severity (PGI-S) at Each Scheduled Assessment",
+            "Percentage of Participants With at Least One Unit Improvement in the PGI-S From Baseline at Each Scheduled Assessment",
+            "Percentage of Participants With a Rating on the Patient Global Impression of Change (PGI-C) of Either \"Much Better\" or \"a Little Better\" at Each Scheduled Assessment",
+            "Mean PGI-C at Each Scheduled Assessment",
+            "Change From Baseline at Each Scheduled Assessment in Individual Symptom Score and the MFSAF v4.0 Total Symptom Score-7 Items (TSS7)",
+            "Change From Baseline in the Individual Domain Scores and the Total European Organization for Research and Treatment of Cancer Quality of Life Questionnaire (EORTC QLQ-C30) Score",
+            "Median Time to First Hematocrit Equal to or Greater Than 45% After Randomization",
+            "Median Time to Phlebotomy-eligible After Randomization",
+            "Percentage of Participants With at Least One Hematocrit Equal to or Greater Than 48%",
+            "Percentage of Participants Who Maintain Absence of Phlebotomy Eligibility",
+            "Phlebotomy Annualized Rate",
+            "Parts 1a + 1b: Percentage of Participants Originally Randomized to Rusfertide Achieving Absence of Phlebotomy Eligibility More Than 52 Weeks",
+            "Part 1b: Median Time to First Hematocrit Equal to or Greater Than 45%",
+            "Part 1b: Median Time to First Phlebotomy",
+            "Parts 1a + 1b: Percentage of Participants With All Hematocrit Values Less Than 45%",
+            "Parts 1a + 1b: Percentage of Participants Randomized to Placebo Who Meet the Phlebotomy Eligibility in Part 1a and Part 1b, Separately",
+            "Percentage of Participants With Treatment-emergent Adverse Events (TEAEs)"
+          ],
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        },
+        {
+          "field": "postedResults",
+          "newValue": [
+            {
+              "title": "Part 1a: Percentage of Participants Who Achieved Response",
+              "timeFrame": "From Weeks 20 to 32",
+              "paramType": "NUMBER",
+              "unitOfMeasure": "percentage of participants",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Part 1a: Randomized, Double-Blind Period: Placebo"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Part 1a: Randomized, Double-Blind Period: Rusfertide"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "32.9"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "76.9"
+                }
+              ],
+              "analyses": [
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG001"
+                  ],
+                  "pValue": "<0.0001",
+                  "method": "Cochran-Mantel-Haenszel",
+                  "paramType": "Odds Ratio (OR)",
+                  "paramValue": "6.42",
+                  "ciPct": "95",
+                  "ciLower": "3.81",
+                  "ciUpper": "10.80"
+                }
+              ]
+            }
+          ],
+          "detectedAt": "2026-10-28T20:13:02.850Z"
+        }
+      ]
     },
     {
       "id": "thrive",
@@ -777,5 +1124,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-14T14:51:20.546Z"
+  "lastIngestedAt": "2026-10-28T20:13:02.850Z"
 }

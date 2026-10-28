@@ -21,7 +21,41 @@
         "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2019-04-23",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Skyrizi is indicated for the treatment of moderate - to - severe plaque psoriasis in adults who are candid ates for systemic therapy or phototherapy.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/761105s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Skyrizi is indicated for the treatment of moderate - to - severe plaque psoriasis in adults who are candid ates for systemic therapy or phototherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-44",
+          "date": {
+            "value": "2026-06-12",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "These Prior Approval sBLAs provide for: BLA 761105/S-044: the use of risankizumab 55 mg/0.37 mL pre-filled syringe (PFS) to support expansion for use in pediatric patients 6 years of age and older in plaque psoriasis by subcutaneous injection BLA 761262/S-015: companion labeling for Skyrizi (risankizumab-rzaa) for intravenous injection",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761105Orig1s044;76126Orig1s015ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-44)",
+            "quote": "These Prior Approval sBLAs provide for: BLA 761105/S-044: the use of risankizumab 55 mg/0.37 mL pre-filled syringe (PFS) to support expansion for use in pediatric patients 6 years of age and older in plaque psoriasis by subcutaneous injection BLA 761262/S-015: companion labeling for Skyrizi (risankizumab-rzaa) for intravenous injection",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Psoriatic Arthritis",
@@ -37,7 +71,41 @@
         "quote": "Named in the SUPPL-14 approval letter; first listed in the label on or before SUPPL-14, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-14",
+          "date": {
+            "value": "2022-01-21",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for use of Skyrizi in the treatment of active psoriatic arthritis (PsA) in adults.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s014ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-14)",
+            "quote": "This Prior Approval supplemental biologics license application provides for use of Skyrizi in the treatment of active psoriatic arthritis (PsA) in adults.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-45",
+          "date": {
+            "value": "2026-06-26",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "These Prior Approval sBLAs provide for: BLA 761105/S-045: Expansion of the psoriatic arthritis indication to include pediatric patients 6 years of age and older BLA 761262/S-016: Labeling changes to align and harmonize the prescribing information between the two BLAs",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761105Orig1s045;761262Orig1s016ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-45)",
+            "quote": "These Prior Approval sBLAs provide for: BLA 761105/S-045: Expansion of the psoriatic arthritis indication to include pediatric patients 6 years of age and older BLA 761262/S-016: Labeling changes to align and harmonize the prescribing information between the two BLAs",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Crohn’s Disease",
@@ -53,7 +121,25 @@
         "quote": "Named in the SUPPL-16 approval letter; first listed in the label on or before SUPPL-16, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-16",
+          "date": {
+            "value": "2022-06-16",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-16)",
+            "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Ulcerative Colitis",
@@ -69,7 +155,25 @@
         "quote": "Named in the SUPPL-29 approval letter; first listed in the label on or before SUPPL-29, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-29",
+          "date": {
+            "value": "2024-06-18",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-29)",
+            "quote": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -2784,6 +2888,16 @@
             "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-16",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
+              "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -3226,6 +3340,46 @@
           "field": "labelName",
           "newValue": "CD-1",
           "detectedAt": "2026-10-14T17:41:07.047Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Crohn’s Disease",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Crohn’s Disease)",
+                "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Crohn’s Disease",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Crohn’s Disease)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-16",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:57.148Z"
         }
       ]
     },
@@ -3644,6 +3798,16 @@
             "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-16",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
+              "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -4086,6 +4250,46 @@
           "field": "labelName",
           "newValue": "CD-2",
           "detectedAt": "2026-10-14T17:41:07.047Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Crohn’s Disease",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Crohn’s Disease)",
+                "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Crohn’s Disease",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Crohn’s Disease)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-16",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:57.148Z"
         }
       ]
     },
@@ -4107,6 +4311,16 @@
             "quote": "Trial identifier appears within the Ulcerative Colitis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-29",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-29): the only approval of this indication",
+              "quote": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -4453,6 +4667,46 @@
           "field": "labelName",
           "newValue": "UC-1",
           "detectedAt": "2026-10-14T17:41:07.047Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Ulcerative Colitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ulcerative Colitis)",
+                "quote": "Trial identifier appears within the Ulcerative Colitis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Ulcerative Colitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ulcerative Colitis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Ulcerative Colitis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-29",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-29): the only approval of this indication",
+                  "quote": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:57.148Z"
         }
       ]
     },
@@ -5201,7 +5455,7 @@
           }
         }
       ],
-      "status": "COMPLETED",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
       "startDate": {
@@ -5213,8 +5467,8 @@
         "precision": "day"
       },
       "completionDate": {
-        "value": "2026-06-04",
-        "precision": "day"
+        "value": "2029-01-01",
+        "precision": "month"
       },
       "enrollment": {
         "count": 444,
@@ -5368,6 +5622,24 @@
           "field": "labelName",
           "newValue": "PsA-2",
           "detectedAt": "2026-10-14T17:41:07.047Z"
+        },
+        {
+          "field": "status",
+          "previousValue": "COMPLETED",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-10-28T20:12:57.148Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2026-06-04",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2029-01-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-10-28T20:12:57.148Z"
         }
       ]
     },
@@ -12054,5 +12326,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-14T17:41:07.047Z"
+  "lastIngestedAt": "2026-10-28T20:12:57.148Z"
 }

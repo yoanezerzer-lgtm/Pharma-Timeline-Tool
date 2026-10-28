@@ -21,7 +21,25 @@
         "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2002-08-14",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This new drug application provides for the use of Lexapro for the treatment of major depressive disorder.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2002/21323ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This new drug application provides for the use of Lexapro for the treatment of major depressive disorder.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Generalized Anxiety Disorder",
@@ -37,7 +55,41 @@
         "quote": "Named in the SUPPL-3 approval letter; first listed in the label on or before SUPPL-3, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-3",
+          "date": {
+            "value": "2003-12-18",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "These supplements provide for the following revisions to labeling: Under supplemental applications 21-323/S-007 & 21-365/S-001: efficacy study reports from Studies 99001 & 99003 as additional trials supporting the efficacy of escitalopram in the treatment of major depressive disorder.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/21323se1-003,se8-007,21365se8-001,se1-004ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-3)",
+            "quote": "These supplements provide for the following revisions to labeling: Under supplemental applications 21-323/S-007 & 21-365/S-001: efficacy study reports from Studies 99001 & 99003 as additional trials supporting the efficacy of escitalopram in the treatment of major depressive disorder.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-55",
+          "date": {
+            "value": "2023-05-12",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval supplemental new drug application provides for the expansion of the indication for generalized anxiety disorder (GAD) to include patients 7 to 17 years of age and inclusion of corresponding study information to applicable sections of the Prescribing Information (PI).",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/021323Orig1s055,021365Orig1s039ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-55)",
+            "quote": "This Prior Approval supplemental new drug application provides for the expansion of the indication for generalized anxiety disorder (GAD) to include patients 7 to 17 years of age and inclusion of corresponding study information to applicable sections of the Prescribing Information (PI).",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -2307,5 +2359,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-14T14:51:12.833Z"
+  "lastIngestedAt": "2026-10-28T20:12:59.639Z"
 }
