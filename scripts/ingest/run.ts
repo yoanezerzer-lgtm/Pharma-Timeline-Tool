@@ -21,6 +21,7 @@ import {
 } from './roles.js';
 import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
 import { dateIndications } from './indicationDates.js';
+import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 export type Step = (typeof ALL_STEPS)[number];
@@ -473,16 +474,25 @@ function buildDrugRecord(
   const letters = docs.filter((d) => /letter/i.test(d.type));
   const approvals = dateIndications(indicationList.map((e) => e.name), labels, fda.milestones, letters);
   const slugs = uniqueSlugs(indicationList.map((e) => slugifyIndication(e.name)));
+  // Every approval within each indication, from the letters; see approvals.ts.
+  const datedBy = new Map([...approvals].map(([name, a]) => [name, a.submission]));
+  const history = approvalsByIndication(indicationList.map((e) => e.name), letters, fda.milestones, datedBy);
   const indications = indicationList.map((entry, k) => {
     const approval = approvals.get(entry.name);
+    const own = history.get(entry.name) ?? [];
     return {
       name: entry.name,
       slug: slugs[k],
       approvalDate: approval?.date ?? (entry.number === 1 && labels.length === 0 ? original?.date : undefined),
       submissionNumber: approval?.submission,
       approvalProvenance: approval?.provenance,
+      ...(own.length > 0 ? { approvals: own } : {}),
     };
   });
+  const completeFor = new Set(
+    indications.filter((i) => historyComplete(i.approvals?.[0]?.date.value, letters, fda.milestones)).map((i) => i.name)
+  );
+  trials = linkRolesToApprovals(trials, history, letters, completeFor);
 
   return {
     slug: spec.slug,

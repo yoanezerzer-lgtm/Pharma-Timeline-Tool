@@ -25,7 +25,7 @@ const STOPWORDS = new Set([
  * Keytruda's labels). Population words and numbers are dropped for the same
  * reason — "GAD in adults" gained "and pediatric patients 7 years and older".
  */
-function keyWords(name: string): Set<string> {
+export function keyWords(name: string): Set<string> {
   const words = name
     // Abbreviations in parentheses ("(MDD)") come and go between label versions.
     .replace(/\([^)]*\)/g, ' ')

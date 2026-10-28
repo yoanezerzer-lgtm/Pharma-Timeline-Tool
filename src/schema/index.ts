@@ -95,6 +95,12 @@ export const IndicationRole = z.object({
   indication: z.string().optional(),
   role: TrialRole,
   provenance: Provenance,
+  /**
+   * The specific approval of this indication the trial supported (e.g.
+   * "SUPPL-40", Keytruda's 2019 adjuvant melanoma approval), when a source
+   * says so; see Indication.approvals. Its own provenance cites the passage.
+   */
+  approval: z.object({ submission: z.string(), provenance: Provenance }).optional(),
 });
 export type IndicationRole = z.infer<typeof IndicationRole>;
 
@@ -340,6 +346,22 @@ export const Source = z.object({
 });
 export type Source = z.infer<typeof Source>;
 
+/**
+ * One FDA approval of a use within an indication, from its approval letter:
+ * a new indication, a wider one (a new population, line of therapy or
+ * combination), a revised one (the letter doesn't say wider or narrower), or
+ * a conversion from accelerated to regular approval. `statement` is the
+ * letter's own sentence, unedited.
+ */
+export const Approval = z.object({
+  submission: z.string(),
+  date: DateValue,
+  kind: z.enum(['new', 'expansion', 'revision', 'conversion']),
+  statement: z.string(),
+  provenance: Provenance,
+});
+export type Approval = z.infer<typeof Approval>;
+
 export const Indication = z.object({
   /** The label's own wording — sometimes a whole sentence when the label doesn't number its indications. */
   name: z.string(),
@@ -355,6 +377,8 @@ export const Indication = z.object({
   /** The submission that added this indication — where approvalDate comes from. */
   submissionNumber: z.string().optional(),
   approvalProvenance: Provenance.optional(),
+  /** Every approval of a use within this indication, oldest first, from the approval letters. */
+  approvals: z.array(Approval).optional(),
   /**
    * The sponsor's own announcement of this approval, when someone has found
    * and added one. A press release routinely names the trials behind an
