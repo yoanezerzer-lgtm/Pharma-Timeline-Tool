@@ -45,12 +45,15 @@ export function namePatterns(t: Pick<Trial, 'acronym' | 'labelName' | 'nctId'>):
   return out;
 }
 
+// Longer than any real sentence: menu text or a table run together.
+const MAX_SENTENCE = 600;
+
 function sentences(text: string): string[] {
   return text
-    .replace(/\s+/g, ' ')
-    .split(/(?<=[.!?])\s+(?=[A-Z"“(])/)
-    .map((s) => s.trim())
-    .filter(Boolean);
+    .split(/\n+/)
+    .flatMap((line) => line.split(/(?<=[.!?])\s+(?=[A-Z"“(])/))
+    .map((s) => s.replace(/\s+/g, ' ').replace(/^[-–•·*]\s+/, '').trim())
+    .filter((s) => s.length > 0 && s.length <= MAX_SENTENCE);
 }
 
 /** The sentence in the release that names the trial and reports a result, if there is one. */

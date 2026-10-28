@@ -8,7 +8,12 @@ import type { Release } from './select.js';
  *
  * - SEC full-text search: 8-K filings (and their press-release exhibits)
  *   from US-listed companies. Dated, structured, free.
- * - PR Newswire and GlobeNewswire: the wires most sponsors put releases on.
+ * - Candidate links: release pages someone (the overnight agent, or a
+ *   person) found by searching the web. Newswire and company search pages
+ *   refuse or return nothing to automated requests (confirmed on PR
+ *   Newswire and GlobeNewswire), but a single release page can be read.
+ *   Code reads the date and the quote from the page itself, so a candidate
+ *   is only ever a link, never a value.
  *
  * Every response is cached under data/raw/<slug>/readouts/ so a run can be
  * repeated and the text it read can be inspected later.
@@ -60,16 +65,20 @@ async function fetchText(url: string, ctx: SourceContext, ua = BROWSER_UA): Prom
 
 const ENTITIES: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', ndash: '–', mdash: '—', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', reg: '®', trade: '™', copy: '©' };
 
+/** Readable text, one line per paragraph, heading or list item, so a bullet without a full stop stays its own line. */
 export function htmlToText(html: string): string {
   return html
     .replace(/<(script|style|noscript|svg)\b[\s\S]*?<\/\1>/gi, ' ')
     .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<\/?(p|div|li|ul|ol|h[1-6]|br|tr|table|section|article|header|footer|nav|blockquote)\b[^>]*>/gi, '\n')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
     .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
     .replace(/&([a-z]+);/gi, (m, n) => ENTITIES[n.toLowerCase()] ?? m)
-    .replace(/\s+/g, ' ')
-    .trim();
+    .split('\n')
+    .map((l) => l.replace(/\s+/g, ' ').trim())
+    .filter(Boolean)
+    .join('\n');
 }
 
 /** The page's own publication date, from its metadata; never guessed from the body. */
@@ -130,49 +139,26 @@ export async function searchEdgar(query: string, w: Window, ctx: SourceContext, 
   return out;
 }
 
-async function searchWire(
-  name: string,
-  searchUrl: string,
-  linkPattern: RegExp,
-  base: string,
-  w: Window,
-  ctx: SourceContext,
-  max: number
-): Promise<Release[]> {
-  const page = await fetchText(searchUrl, ctx);
-  if (!page) return [];
-  const links = [...new Set([...page.matchAll(linkPattern)].map((m) => new URL(m[1], base).toString()))].slice(0, max);
-  const out: Release[] = [];
-  for (const link of links) {
-    const html = await fetchText(link, ctx);
-    if (!html) continue;
-    const date = extractPublishedDate(html) ?? link.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//)?.slice(1).join('-');
-    if (!date || date < w.from || date > w.to) continue;
-    out.push({ url: link, source: name, date, title: titleOf(html), text: htmlToText(html) });
+const SOURCE_NAMES: [RegExp, string][] = [
+  [/(^|\.)prnewswire\.com$/, 'PR Newswire'],
+  [/(^|\.)businesswire\.com$/, 'Business Wire'],
+  [/(^|\.)globenewswire\.com$/, 'GlobeNewswire'],
+  [/(^|\.)sec\.gov$/, 'SEC filing'],
+];
+
+function sourceName(url: string): string {
+  const host = new URL(url).hostname.replace(/^www\./, '');
+  return SOURCE_NAMES.find(([p]) => p.test(host))?.[1] ?? host;
+}
+
+/** One release page, read as published: its own date, title and text. Undefined when it can't be read or carries no date. */
+export async function fetchRelease(url: string, ctx: SourceContext): Promise<Release | undefined> {
+  const html = await fetchText(url, ctx);
+  if (!html) return undefined;
+  const date = extractPublishedDate(html);
+  if (!date) {
+    ctx.log(`    ! no publication date on ${url}`);
+    return undefined;
   }
-  return out;
-}
-
-export function searchPrNewswire(query: string, w: Window, ctx: SourceContext, max = 8): Promise<Release[]> {
-  return searchWire(
-    'PR Newswire',
-    `https://www.prnewswire.com/search/news/?keyword=${encodeURIComponent(`"${query}"`)}&pagesize=25`,
-    /href=["']((?:https:\/\/www\.prnewswire\.com)?\/news-releases\/[^"'#?]+?-\d+\.html)["']/gi,
-    'https://www.prnewswire.com',
-    w,
-    ctx,
-    max
-  );
-}
-
-export function searchGlobeNewswire(query: string, w: Window, ctx: SourceContext, max = 8): Promise<Release[]> {
-  return searchWire(
-    'GlobeNewswire',
-    `https://www.globenewswire.com/search/keyword/${encodeURIComponent(`"${query}"`)}`,
-    /href=["']((?:https:\/\/www\.globenewswire\.com)?\/(?:en\/)?news-release\/\d{4}\/\d{2}\/\d{2}\/[^"'#?]+)["']/gi,
-    'https://www.globenewswire.com',
-    w,
-    ctx,
-    max
-  );
+  return { url, source: sourceName(url), date, title: titleOf(html), text: htmlToText(html) };
 }

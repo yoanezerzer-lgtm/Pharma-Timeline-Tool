@@ -132,6 +132,41 @@ Open a pull request into `main` with `.verify/report.md` as its description.
 Merge it once CI passes. If CI fails, leave it open and say why in the
 summary.
 
+## 6b. Find trial readouts
+
+A trial's readout is the first public announcement of its primary result,
+usually the sponsor's press release. Code reads the date and the quote from
+the release page; your job is only to find the page.
+
+1. List the pivotal trials with no `readoutDate` yet: in `data/drugs/<slug>.json`,
+   trials with a `PIVOTAL` role and no `readoutDate`. Take at most 15 tonight,
+   skipping any already listed in `data/readouts/candidates/<slug>.json`.
+2. For each, search the web: the sponsor, the trial name, and "top-line
+   results" or "primary endpoint", e.g. `AbbVie SELECT-PsA 1 top-line results`.
+   Look for the **earliest** release that reports the trial's primary result.
+   Not one announcing that the trial started or finished enrolling, and not
+   a later release repeating the data at a medical meeting.
+3. Only use the sponsor's own release: on PR Newswire, Business Wire,
+   GlobeNewswire, sec.gov, or the sponsor's own newsroom. News coverage
+   (BioSpace, Fierce, STAT, Endpoints, trade press) is not the announcement.
+4. Add each link to `data/readouts/candidates/<slug>.json`:
+   `{ "trial": "<the trial's acronym as in the record>", "url": "<release link>", "foundBy": "overnight agent <date>" }`.
+   Add nothing else: no dates, no quotes. When you find nothing reliable,
+   add nothing.
+5. Commit only the candidates files on `nightly/${DATE}-readouts` (branched
+   from `origin/main`), push it, and run the **Find trial readouts**
+   workflow (`readouts.yml`) with `ref` = that branch and `drug` = each slug
+   you added links for, one run per drug.
+6. Each run pushes a `readouts/<slug>-<timestamp>` branch when it recorded a
+   readout, and a `diag/readouts-<slug>-<timestamp>` branch with what it
+   read. Read `data/raw/<slug>/readouts/summary.json` on the diag branch: a
+   candidate that produced no readout is listed with `"candidates": 0`
+   (unreadable page or no date) or simply no readout (no sentence naming
+   the trial with a result in it). Mention those in the summary.
+7. Open a pull request for each `readouts/*` branch into `main`. Check that
+   each readout's quote really reports the trial's primary result, and
+   merge once CI passes.
+
 ## 7. Fix what the checks found
 
 For each QC error and each **disagreement** in the report, find the cause in
@@ -156,6 +191,8 @@ End the session with a short message for the owner:
 
 - the counts from `.verify/report.md`: confirmed, disagreements, unclear,
   rejected, and planted claims caught;
+- readouts recorded tonight, each with its date and release link, and the
+  trials you searched for but couldn't find;
 - the spot-check list from the report, each with its quote and link. The
   owner checks these;
 - disagreements and QC errors, each with what you did about it;
