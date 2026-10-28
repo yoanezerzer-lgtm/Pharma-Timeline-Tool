@@ -1,5 +1,5 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
-import type { Drug } from '../schema/index.js';
+import type { Drug, Trial } from '../schema/index.js';
 import { drugIndex, useDrug, type DrugState } from '../lib/catalog.js';
 import {
   buildAxis,
@@ -12,16 +12,16 @@ import {
   programView,
   readoutCards,
   type Axis,
-  type AxisMode,
   type EvidenceRow,
   type ProgramRef,
   type ProgramView,
 } from '../lib/compare.js';
 import { formatDate } from '../lib/dates.js';
-import { indicationLabel } from '../lib/drugs.js';
+import { indicationLabel, ROLE_LABEL } from '../lib/drugs.js';
 import { useConfirmations, type Confirmation } from '../lib/reference.js';
-import { indicationHref, indicationTrialHref } from '../lib/router.js';
+import { indicationHref } from '../lib/router.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
+import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import './ComparePage.css';
 
 interface ProgramOption {
@@ -63,15 +63,13 @@ function initialRefs(): [ProgramRef, ProgramRef] {
 
 export function ComparePage() {
   const [refs, setRefs] = useState<[ProgramRef, ProgramRef]>(initialRefs);
-  const [axisMode, setAxisMode] = useState<AxisMode>(() => (readParams().get('axis') === 'aligned' ? 'aligned' : 'calendar'));
-  const [pivotalOnly, setPivotalOnly] = useState<[boolean, boolean]>([true, true]);
   const [focusedReadout, setFocusedReadout] = useState<string | null>(null);
+  const [openTrial, setOpenTrial] = useState<{ program: string; trialId: string } | null>(null);
 
   useEffect(() => {
     const qs = new URLSearchParams({ a: programRefString(refs[0]), b: programRefString(refs[1]) });
-    if (axisMode === 'aligned') qs.set('axis', 'aligned');
     window.history.replaceState(null, '', `#/compare?${qs}`);
-  }, [refs, axisMode]);
+  }, [refs]);
 
   const states: [DrugState, DrugState] = [useDrug(refs[0].slug), useDrug(refs[1].slug)];
   const confirmations = [useConfirmations(refs[0]?.slug), useConfirmations(refs[1]?.slug)];
@@ -81,12 +79,12 @@ export function ComparePage() {
       states.map((s, i) => {
         if (s.status !== 'ready') return undefined;
         const indication = s.drug.indications.find((x) => x.slug === refs[i].indicationSlug);
-        return indication ? programView(s.drug, indication, pivotalOnly[i]) : undefined;
+        return indication ? programView(s.drug, indication) : undefined;
       }),
-    [states[0], states[1], refs, pivotalOnly]
+    [states[0], states[1], refs]
   );
   const ready = programs.filter((p): p is ProgramView => !!p);
-  const axis = useMemo(() => buildAxis(ready, axisMode), [ready.map((p) => p.key + p.lanes.length).join(), axisMode]);
+  const axis = useMemo(() => buildAxis(ready), [ready.map((p) => p.key + p.lanes.length).join()]);
   const rows = useMemo(() => evidenceRows(ready), [ready]);
   const cards = useMemo(() => readoutCards(ready), [ready]);
   const notFound = ready.flatMap((p) => p.lanes.filter((l) => l.readout === undefined).map((l) => `${l.name} (${p.drug.brandName})`));
@@ -96,6 +94,10 @@ export function ComparePage() {
     if (!r) return;
     setRefs((prev) => (i === 0 ? [r, prev[1]] : [prev[0], r]));
   };
+
+  const showTrial = (program: string, trialId: string) => setOpenTrial({ program, trialId });
+  const openProgram = ready.find((p) => p.key === openTrial?.program);
+  const selectedTrial: Trial | undefined = openProgram?.drug.trials.find((t) => t.id === openTrial?.trialId);
 
   const showReadout = (key: string) => {
     setFocusedReadout(key);
@@ -113,19 +115,11 @@ export function ComparePage() {
   };
 
   return (
-    <main className="compare">
+    <main className={`compare${selectedTrial ? ' has-drawer' : ''}`}>
       <BackLink href="#/" label="All drugs" />
       <div className="compare__head">
         <h1>Compare two programs</h1>
         <div className="compare__actions">
-          <div className="compare__toggle" role="group" aria-label="Timeline axis">
-            <button type="button" aria-pressed={axis.mode === 'calendar'} onClick={() => setAxisMode('calendar')}>
-              Calendar dates
-            </button>
-            <button type="button" aria-pressed={axis.mode === 'aligned'} onClick={() => setAxisMode('aligned')}>
-              Aligned at approval
-            </button>
-          </div>
           <button type="button" className="compare__button" onClick={exportCsv} disabled={rows.length === 0}>
             Export CSV
           </button>
@@ -133,10 +127,10 @@ export function ComparePage() {
       </div>
 
       <div className="compare__legend">
-        <span><span className="swatch swatch--bar" aria-hidden="true" />Trial, start to primary completion</span>
+        <span><span className="swatch swatch--bar" aria-hidden="true" />Pivotal trial, start to primary completion</span>
+        <span><span className="swatch swatch--support" aria-hidden="true" />Supporting trial</span>
         <span><span className="swatch swatch--readout" aria-hidden="true" />Results announced (select to read)</span>
         <span><span className="swatch swatch--approval" aria-hidden="true" />FDA approval</span>
-        {axis.autoAligned && <span role="status" className="compare__note">These programs are years apart, so both are shown aligned at approval.</span>}
       </div>
 
       <div className="compare__panes">
@@ -148,16 +142,15 @@ export function ComparePage() {
             state={states[i]}
             program={programs[i]}
             axis={axis}
-            pivotalOnly={pivotalOnly[i]}
-            onPivotalOnly={(v) => setPivotalOnly((prev) => (i === 0 ? [v, prev[1]] : [prev[0], v]))}
             onPick={(ref) => setRef(i, ref)}
             onReadout={showReadout}
+            onTrial={showTrial}
           />
         ))}
       </div>
 
       {ready.length > 0 && (
-        <EvidenceTable rows={rows} programs={ready} confirmations={confirmations} refs={refs} />
+        <EvidenceTable rows={rows} programs={ready} confirmations={confirmations} refs={refs} onTrial={showTrial} />
       )}
 
       {ready.length > 0 && (
@@ -198,6 +191,10 @@ export function ComparePage() {
             )}
           </div>
         </section>
+      )}
+
+      {selectedTrial && openProgram && (
+        <TrialDrawer trial={selectedTrial} indication={openProgram.indication.name} onClose={() => setOpenTrial(null)} />
       )}
     </main>
   );
@@ -319,38 +316,35 @@ function ProgramPane({
   state,
   program,
   axis,
-  pivotalOnly,
-  onPivotalOnly,
   onPick,
   onReadout,
+  onTrial,
 }: {
   index: 0 | 1;
   current: string;
   state: DrugState;
   program?: ProgramView;
   axis: Axis;
-  pivotalOnly: boolean;
-  onPivotalOnly: (v: boolean) => void;
   onPick: (ref: string) => void;
   onReadout: (key: string) => void;
+  onTrial: (program: string, trialId: string) => void;
 }) {
   // Only trials completed before the approval count toward it.
-  const lastCompletion = program ? Math.max(...program.lanes.filter((l) => !l.afterApproval).map((l) => l.primaryCompletion ?? -Infinity)) : undefined;
+  const pivotal = program?.lanes.filter((l) => l.role === 'PIVOTAL') ?? [];
+  const supporting = (program?.lanes.length ?? 0) - pivotal.length;
+  // Only pivotal trials completed before the approval count toward it.
+  const lastCompletion = Math.max(...pivotal.filter((l) => !l.afterApproval).map((l) => l.primaryCompletion ?? -Infinity));
   const later = program?.lanes.filter((l) => l.afterApproval).length ?? 0;
-  const months = program && Number.isFinite(lastCompletion) && lastCompletion! <= (program.approval ?? -Infinity)
+  const months = program && Number.isFinite(lastCompletion) && lastCompletion <= (program.approval ?? -Infinity)
     ? monthsBetween(lastCompletion, program.approval)
     : undefined;
-  const at = (t: number | undefined) => (t === undefined || !program ? undefined : axis.position(t, program.approval));
+  const at = (t: number | undefined) => (t === undefined ? undefined : axis.position(t));
   const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
     <section className="pane" aria-label={program ? `${program.drug.brandName}, ${indicationLabel(program.indication)}` : `Program ${index + 1}`}>
       <div className="pane__controls">
         <ProgramPicker index={index} current={current} onPick={onPick} />
-        <label className="pane__check">
-          <input type="checkbox" checked={pivotalOnly} onChange={(e) => onPivotalOnly(e.target.checked)} />
-          Pivotal only
-        </label>
       </div>
 
       {state.status === 'loading' && <p className="pane__status">Loading…</p>}
@@ -368,7 +362,7 @@ function ProgramPane({
               </p>
               <p className="pane__sub">
                 {program.indication.approvalDate ? `Approved ${formatDate(program.indication.approvalDate)}` : 'Approval date not established'} ·{' '}
-                {program.lanes.length} {pivotalOnly ? 'pivotal' : 'supporting'} trial{program.lanes.length === 1 ? '' : 's'}
+                {pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supporting` : ''}
               </p>
             </div>
             <div className="pane__metric">
@@ -384,7 +378,7 @@ function ProgramPane({
           </div>
 
           {program.lanes.length === 0 ? (
-            <p className="pane__status">No {pivotalOnly ? 'pivotal ' : ''}trials recorded for this indication.</p>
+            <p className="pane__status">No trials recorded for this indication.</p>
           ) : (
             <div className="chart">
               <div className="chart__axis" aria-hidden="true">
@@ -408,15 +402,24 @@ function ProgramPane({
                   const ro = at(l.readout);
                   return (
                     <div key={l.trialId} className="lane">
-                      <a className="lane__name" href={indicationTrialHref(program.drug.slug, program.indication.slug, l.trialId)} title={l.name}>
+                      <button
+                        type="button"
+                        className="lane__name"
+                        title={`${l.name}: ${ROLE_LABEL[l.role]}. Open trial details`}
+                        onClick={() => onTrial(program.key, l.trialId)}
+                      >
                         {l.name}
-                      </a>
+                      </button>
                       <div className="lane__track">
                         {s !== undefined && pc !== undefined && (
-                          <span
-                            className={`lane__bar${l.afterApproval ? ' lane__bar--later' : ''}`}
+                          <button
+                            type="button"
+                            tabIndex={-1}
+                            aria-hidden="true"
+                            className={`lane__bar${l.role !== 'PIVOTAL' ? ' lane__bar--support' : ''}${l.afterApproval ? ' lane__bar--later' : ''}`}
                             style={{ left: `${s}%`, width: `${Math.max(pc - s, 0.5)}%` }}
-                            title={l.afterApproval ? 'Completed after the first approval: supports a later label update' : undefined}
+                            title={l.afterApproval ? 'Completed after the first approval: supports a later label update' : `${l.name}: open trial details`}
+                            onClick={() => onTrial(program.key, l.trialId)}
                           />
                         )}
                         {pc !== undefined && ap !== undefined && ap > pc && (
@@ -462,11 +465,13 @@ function EvidenceTable({
   programs,
   confirmations,
   refs,
+  onTrial,
 }: {
   rows: EvidenceRow[];
   programs: ProgramView[];
   confirmations: Map<string, Confirmation>[];
   refs: ProgramRef[];
+  onTrial: (program: string, trialId: string) => void;
 }) {
   const [open, setOpen] = useState<string | null>(null);
   const confirmationFor = (r: EvidenceRow): Confirmation | undefined => {
@@ -517,7 +522,9 @@ function EvidenceTable({
                     )}
                   </td>
                   <td>
-                    <strong>{r.trial}</strong>
+                    <button type="button" className="evidence__trial" onClick={() => onTrial(r.program, r.trialId)}>
+                      {r.trial}
+                    </button>
                     {r.nctId && <div className="muted mono">{r.nctId}</div>}
                   </td>
                   <td className="is-num mono">{r.enrollment?.toLocaleString('en-US') ?? '—'}</td>
