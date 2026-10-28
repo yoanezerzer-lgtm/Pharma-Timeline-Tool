@@ -1089,6 +1089,13 @@
           "quote": "RA-IV (NCT02629159)",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://prnewswire.com/news-releases/upadacitinib-meets-all-primary-and-ranked-secondary-endpoints-including-superiority-versus-adalimumab-in-phase-3-study-in-rheumatoid-arthritis-300626157.html",
+          "sourceLabel": "PR Newswire: Upadacitinib Meets All Primary and Ranked Secondary Endpoints Including Superiority Versus Adalimumab in Phase 3 Study in Rheumatoid Arthritis",
+          "quote": "In SELECT-COMPARE, upadacitinib (15 mg, once-daily) met both primary endpoints, with 71 percent of patients achieving ACR20 and 29 percent achieving clinical remission at week 12 (1)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -1269,7 +1276,11 @@
           "newValue": "RA-IV",
           "detectedAt": "2026-10-14T17:41:12.923Z"
         }
-      ]
+      ],
+      "readoutDate": {
+        "value": "2018-04-09",
+        "precision": "day"
+      }
     },
     {
       "id": "select-next",
