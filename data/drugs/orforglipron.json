@@ -21,7 +21,25 @@
         "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-04-01",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Foundayo (orforglipron) tablets in combination with a reduced calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220934Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Foundayo (orforglipron) tablets in combination with a reduced calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -1524,6 +1542,16 @@
             "quote": "Trial identifier appears within the In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220934Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Foundayo (orforglipron) tablets in combination with a reduced calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -1828,6 +1856,46 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition)",
+                "quote": "Trial identifier appears within the In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220934Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Foundayo (orforglipron) tablets in combination with a reduced calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:13:00.721Z"
         }
       ]
     },
@@ -1849,6 +1917,16 @@
             "quote": "Trial identifier appears within the In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220934Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Foundayo (orforglipron) tablets in combination with a reduced calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -2156,6 +2234,46 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:54.037Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition)",
+                "quote": "Trial identifier appears within the In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the In combination with a reduced-calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220934Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Foundayo (orforglipron) tablets in combination with a reduced calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term in adults with obesity or adults with overweight in the presence of at least one weight-related comorbid condition.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:13:00.721Z"
         }
       ]
     },
@@ -3520,46 +3638,46 @@
       },
       "arms": [
         {
-          "label": "Orforglipron Dose 1",
+          "label": "Orforglipron 3 mg",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally."
+          "description": "Participants received orforglipron, administered orally once daily (QD), starting at a dose of 1 milligram (mg) and escalated at week 4 to a dose of 3 mg, which was then maintained up to week 40."
         },
         {
-          "label": "Orforglipron Dose 2",
+          "label": "Orforglipron 12 mg",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally."
+          "description": "Participants received orforglipron, administered orally QD, starting at a dose of 1 mg and escalated every 4 weeks (to 3 mg at week 4 and 6 mg at week 8) until reaching a dose of 12 mg at week 12, which was then maintained up to week 40."
         },
         {
-          "label": "Orforglipron Dose 3",
+          "label": "Orforglipron 36 mg",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally."
+          "description": "Participants received orforglipron, administered orally QD, starting at a dose of 1 mg and escalated every 4 weeks (to 3 mg at week 4, 6 mg at week 8, 12 mg at week 12, and 24 mg at week 16) until reaching a dose of 36 mg at week 20, which was then maintained up to week 40."
         },
         {
-          "label": "Dapagliflozin",
+          "label": "Dapagliflozin 10 mg",
           "type": "ACTIVE_COMPARATOR",
-          "description": "Participants will receive dapagliflozin orally."
+          "description": "Participants received dapagliflozin, administered orally QD, at a fixed dose of 10 mg starting at randomization, which was maintained up to week 40."
         }
       ],
       "primaryEndpoints": [
-        "Change from Baseline in Hemoglobin A1c: (HbA1c)"
+        "Change From Baseline in HbA1c [Noninferiority Analysis]"
       ],
       "secondaryEndpoints": [
-        "Change from Baseline in HbA1c",
-        "Percentage of Participants Who Achieved HbA1c <7.0% (53 millimole/mole(mmol/mol))",
-        "Percentage of Participants Who Achieved HbA1c ≤6.5% (48 mmol/mol)",
-        "Percentage Change from Baseline in Body Weight",
-        "Change from Baseline in Body Weight",
-        "Percentage Change from Baseline in Non-High-Density Lipoprotein (non-HDL)-Cholesterol",
-        "Percentage Change from Baseline in Triglycerides",
-        "Change from Baseline in Systolic Blood Pressure (SBP)",
-        "Change from Baseline in Fasting Serum Glucose",
-        "Percentage of Participants Who Achieved Weight Loss of ≥5% from Baseline",
-        "Percentage of Participants Who Achieved Weight Loss of ≥10% from baseline",
-        "Percentage of Participants Who Achieved Weight Loss of ≥15% from baseline",
-        "Change from Baseline in Diastolic Blood Pressure (DBP)",
-        "Percentage Change from Baseline in Total Cholesterol",
-        "Change from Baseline in Short Form 36 Version 2 (SF-36-v2) Acute Form Domain Summary Scores",
-        "Change from Baseline in Diabetes Treatment Satisfaction Questionnaire-Change (DTSQc) Scores"
+        "Change From Baseline in HbA1c [Superiority Analysis]",
+        "Percentage of Participants With an HbA1c Target Value of < 7.0% (53 mmol/Mol)",
+        "Percentage of Participants With an HbA1c Target Value of ≤6.5% (48 mmol/Mol)",
+        "Percent Change From Baseline in Body Weight",
+        "Change From Baseline in Body Weight",
+        "Percent Change From Baseline in Non-High-Density Lipoprotein (Non-HDL) Cholesterol",
+        "Percent Change From Baseline in Triglycerides",
+        "Change From Baseline in Systolic Blood Pressure (SBP)",
+        "Change From Baseline in Fasting Serum Glucose (FSG)",
+        "Percentage of Participants With ≥ 5% Body Weight Reduction",
+        "Percentage of Participants With ≥ 10% Body Weight Reduction",
+        "Percentage of Participants With ≥ 15% Body Weight Reduction",
+        "Change From Baseline in Diastolic Blood Pressure (DBP)",
+        "Percent Change From Baseline in Total Cholesterol",
+        "Change From Baseline in Short Form-36 Health Survey Version 2 (SF-36v2) Acute Form (Physical-Component and Mental-Component) Scores",
+        "Diabetes Treatment Satisfaction Questionnaire-Change Version (DTSQc): Total Score of Treatment Satisfaction"
       ],
       "metPrimaryEndpoint": null,
       "takeaways": [],
@@ -3597,7 +3715,106 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "arms",
+          "previousValue": [
+            {
+              "label": "Orforglipron Dose 1",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive orforglipron orally."
+            },
+            {
+              "label": "Orforglipron Dose 2",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive orforglipron orally."
+            },
+            {
+              "label": "Orforglipron Dose 3",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive orforglipron orally."
+            },
+            {
+              "label": "Dapagliflozin",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants will receive dapagliflozin orally."
+            }
+          ],
+          "newValue": [
+            {
+              "label": "Orforglipron 3 mg",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received orforglipron, administered orally once daily (QD), starting at a dose of 1 milligram (mg) and escalated at week 4 to a dose of 3 mg, which was then maintained up to week 40."
+            },
+            {
+              "label": "Orforglipron 12 mg",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received orforglipron, administered orally QD, starting at a dose of 1 mg and escalated every 4 weeks (to 3 mg at week 4 and 6 mg at week 8) until reaching a dose of 12 mg at week 12, which was then maintained up to week 40."
+            },
+            {
+              "label": "Orforglipron 36 mg",
+              "type": "EXPERIMENTAL",
+              "description": "Participants received orforglipron, administered orally QD, starting at a dose of 1 mg and escalated every 4 weeks (to 3 mg at week 4, 6 mg at week 8, 12 mg at week 12, and 24 mg at week 16) until reaching a dose of 36 mg at week 20, which was then maintained up to week 40."
+            },
+            {
+              "label": "Dapagliflozin 10 mg",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants received dapagliflozin, administered orally QD, at a fixed dose of 10 mg starting at randomization, which was maintained up to week 40."
+            }
+          ],
+          "detectedAt": "2026-10-28T20:13:00.721Z"
+        },
+        {
+          "field": "primaryEndpoints",
+          "previousValue": [
+            "Change from Baseline in Hemoglobin A1c: (HbA1c)"
+          ],
+          "newValue": [
+            "Change From Baseline in HbA1c [Noninferiority Analysis]"
+          ],
+          "detectedAt": "2026-10-28T20:13:00.721Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "Change from Baseline in HbA1c",
+            "Percentage of Participants Who Achieved HbA1c <7.0% (53 millimole/mole(mmol/mol))",
+            "Percentage of Participants Who Achieved HbA1c ≤6.5% (48 mmol/mol)",
+            "Percentage Change from Baseline in Body Weight",
+            "Change from Baseline in Body Weight",
+            "Percentage Change from Baseline in Non-High-Density Lipoprotein (non-HDL)-Cholesterol",
+            "Percentage Change from Baseline in Triglycerides",
+            "Change from Baseline in Systolic Blood Pressure (SBP)",
+            "Change from Baseline in Fasting Serum Glucose",
+            "Percentage of Participants Who Achieved Weight Loss of ≥5% from Baseline",
+            "Percentage of Participants Who Achieved Weight Loss of ≥10% from baseline",
+            "Percentage of Participants Who Achieved Weight Loss of ≥15% from baseline",
+            "Change from Baseline in Diastolic Blood Pressure (DBP)",
+            "Percentage Change from Baseline in Total Cholesterol",
+            "Change from Baseline in Short Form 36 Version 2 (SF-36-v2) Acute Form Domain Summary Scores",
+            "Change from Baseline in Diabetes Treatment Satisfaction Questionnaire-Change (DTSQc) Scores"
+          ],
+          "newValue": [
+            "Change From Baseline in HbA1c [Superiority Analysis]",
+            "Percentage of Participants With an HbA1c Target Value of < 7.0% (53 mmol/Mol)",
+            "Percentage of Participants With an HbA1c Target Value of ≤6.5% (48 mmol/Mol)",
+            "Percent Change From Baseline in Body Weight",
+            "Change From Baseline in Body Weight",
+            "Percent Change From Baseline in Non-High-Density Lipoprotein (Non-HDL) Cholesterol",
+            "Percent Change From Baseline in Triglycerides",
+            "Change From Baseline in Systolic Blood Pressure (SBP)",
+            "Change From Baseline in Fasting Serum Glucose (FSG)",
+            "Percentage of Participants With ≥ 5% Body Weight Reduction",
+            "Percentage of Participants With ≥ 10% Body Weight Reduction",
+            "Percentage of Participants With ≥ 15% Body Weight Reduction",
+            "Change From Baseline in Diastolic Blood Pressure (DBP)",
+            "Percent Change From Baseline in Total Cholesterol",
+            "Change From Baseline in Short Form-36 Health Survey Version 2 (SF-36v2) Acute Form (Physical-Component and Mental-Component) Scores",
+            "Diabetes Treatment Satisfaction Questionnaire-Change Version (DTSQc): Total Score of Treatment Satisfaction"
+          ],
+          "detectedAt": "2026-10-28T20:13:00.721Z"
+        }
+      ]
     },
     {
       "id": "18621",
@@ -5677,6 +5894,134 @@
       "changeLog": []
     },
     {
+      "id": "achieve-peds",
+      "nctId": "NCT07668336",
+      "protocolNumber": "18654",
+      "acronym": "ACHIEVE-PEDS",
+      "title": "A Phase 3, Randomized, Open-Label Study to Investigate the Efficacy, Safety, and Pharmacokinetics of Once-Daily Oral Orforglipron Compared With Once-Weekly Dulaglutide in Pediatric Participants 10 to Less Than 18 Years of Age With Type 2 Diabetes",
+      "briefTitle": "A Study of Orforglipron (LY3502970) Compared With Dulaglutide in Pediatric Participants With Type 2 Diabetes",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Eli Lilly and Company",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-07-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-03-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2030-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 170,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "10 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Orforglipron",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive orforglipron orally"
+        },
+        {
+          "label": "Dulaglutide",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive dulaglutide subcutaneously (SC)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from Baseline in Hemoglobin A1c (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change from Baseline in HbA1c",
+        "Percentage of Participants with HbA1c ≤6.5%",
+        "Percent Change from Baseline in Body Mass Index (BMI)",
+        "Change from Baseline in Glucose Time in Range Between 70 and 180 mg/dL",
+        "Percent Change from Baseline in Body Weight",
+        "Change from Baseline in Blood Pressure",
+        "Percent Change from Baseline in Total Cholesterol",
+        "Change from Baseline in Waist Circumference",
+        "Change from Baseline in Tanner Staging",
+        "Change from Baseline in Homeostatic Model Assessment of Beta-cell (HOMA2-B)",
+        "Change from Baseline in the EQ-5D-Y-5L",
+        "Number of Participants by Acceptability Response Category",
+        "Pharmacokinetics (PK): Area Under the Concentration Versus Time Curve (AUC) of Orforglipron"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "NOT_YET_RECRUITING",
+          "newValue": "RECRUITING",
+          "detectedAt": "2026-10-28T20:13:00.721Z"
+        },
+        {
+          "field": "startDate",
+          "previousValue": {
+            "value": "2026-09-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-07-08",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-28T20:13:00.721Z"
+        }
+      ]
+    },
+    {
       "id": "achieve-ram",
       "nctId": "NCT07613307",
       "protocolNumber": "27746",
@@ -5903,115 +6248,6 @@
           "detectedAt": "2026-10-10T04:59:54.037Z"
         }
       ]
-    },
-    {
-      "id": "achieve-peds",
-      "nctId": "NCT07668336",
-      "protocolNumber": "18654",
-      "acronym": "ACHIEVE-PEDS",
-      "title": "A Phase 3, Randomized, Open-Label Study to Investigate the Efficacy, Safety, and Pharmacokinetics of Once-Daily Oral Orforglipron Compared With Once-Weekly Dulaglutide in Pediatric Participants 10 to Less Than 18 Years of Age With Type 2 Diabetes",
-      "briefTitle": "A Study of Orforglipron (LY3502970) Compared With Dulaglutide in Pediatric Participants With Type 2 Diabetes",
-      "phase": "PHASE3",
-      "roles": [],
-      "status": "NOT_YET_RECRUITING",
-      "sponsor": "Eli Lilly and Company",
-      "studyType": "INTERVENTIONAL",
-      "startDate": {
-        "value": "2026-09-01",
-        "precision": "month"
-      },
-      "primaryCompletionDate": {
-        "value": "2030-03-01",
-        "precision": "month"
-      },
-      "completionDate": {
-        "value": "2030-03-01",
-        "precision": "month"
-      },
-      "enrollment": {
-        "count": 170,
-        "type": "ESTIMATED"
-      },
-      "design": {
-        "allocation": "RANDOMIZED",
-        "masking": "NONE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "10 Years",
-        "maxAge": "17 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Orforglipron",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will receive orforglipron orally"
-        },
-        {
-          "label": "Dulaglutide",
-          "type": "ACTIVE_COMPARATOR",
-          "description": "Participants will receive dulaglutide subcutaneously (SC)"
-        }
-      ],
-      "primaryEndpoints": [
-        "Change from Baseline in Hemoglobin A1c (HbA1c)"
-      ],
-      "secondaryEndpoints": [
-        "Change from Baseline in HbA1c",
-        "Percentage of Participants with HbA1c ≤6.5%",
-        "Percent Change from Baseline in Body Mass Index (BMI)",
-        "Change from Baseline in Glucose Time in Range Between 70 and 180 mg/dL",
-        "Percent Change from Baseline in Body Weight",
-        "Change from Baseline in Blood Pressure",
-        "Percent Change from Baseline in Total Cholesterol",
-        "Change from Baseline in Waist Circumference",
-        "Change from Baseline in Tanner Staging",
-        "Change from Baseline in Homeostatic Model Assessment of Beta-cell (HOMA2-B)",
-        "Change from Baseline in the EQ-5D-Y-5L",
-        "Number of Participants by Acceptability Response Category",
-        "Pharmacokinetics (PK): Area Under the Concentration Versus Time Curve (AUC) of Orforglipron"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07668336",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
     },
     {
       "id": "attain-cn",
@@ -6528,5 +6764,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-14T14:51:13.770Z"
+  "lastIngestedAt": "2026-10-28T20:13:00.721Z"
 }
