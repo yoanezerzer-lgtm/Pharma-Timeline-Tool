@@ -75,6 +75,14 @@ describe('checkDrug', () => {
     expect(codes(d)).toEqual(expect.arrayContaining(['warn:pivotal-phase', 'error:pivotal-observational']));
   });
 
+  it('requires a readout to carry its release sentence, and flags one before primary completion', () => {
+    const d = drug();
+    d.trials[0].primaryCompletionDate = { value: '2018-06-30', precision: 'day' };
+    d.trials[0].readoutDate = { value: '2018-03-01', precision: 'day' };
+    d.trials[0].provenance.readoutDate = { sourceUrl: 'https://www.prnewswire.com/x-1.html', extractedBy: 'regex', verified: false };
+    expect(codes(d)).toEqual(expect.arrayContaining(['error:readout-no-quote', 'warn:readout-before-completion']));
+  });
+
   it('warns on a registry-era indication with no pivotal trial', () => {
     const d = drug();
     d.trials[0].roles = [];

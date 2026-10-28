@@ -153,6 +153,13 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
               value={formatDate(trial.primaryCompletionDate)}
               provenance={p.primaryCompletionDate}
             />
+            {trial.readoutDate && (
+              <Fact
+                label="Results announced"
+                value={formatDate(trial.readoutDate)}
+                provenance={p.readoutDate}
+              />
+            )}
             <Fact label="Completion" value={formatDate(trial.completionDate)} />
           </dl>
         </section>

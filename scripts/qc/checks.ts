@@ -126,6 +126,14 @@ export function checkDrug(drug: Drug): Finding[] {
       out.push({ severity: 'error', code: 'trial-date-order', path: `${path}.completionDate`, message: `${trialName(t)} completes (${t.completionDate.value}) before its primary readout (${t.primaryCompletionDate.value}).` });
     }
     for (const [field, p] of Object.entries(t.provenance)) checkProvenance(p, `${path}.provenance.${field}`, out);
+    if (t.readoutDate) {
+      if (!t.provenance.readoutDate?.quote) {
+        out.push({ severity: 'error', code: 'readout-no-quote', path: `${path}.readoutDate`, message: `${trialName(t)} has a readout date with no release sentence to check it against.` });
+      }
+      if (comparable(t.primaryCompletionDate) && t.readoutDate.value < t.primaryCompletionDate.value.slice(0, 7)) {
+        out.push({ severity: 'warn', code: 'readout-before-completion', path: `${path}.readoutDate`, message: `${trialName(t)}'s results were announced ${t.readoutDate.value}, before its primary completion (${t.primaryCompletionDate.value}).` });
+      }
+    }
 
     t.roles.forEach((r, k) => {
       const rpath = `${path}.roles[${k}]`;

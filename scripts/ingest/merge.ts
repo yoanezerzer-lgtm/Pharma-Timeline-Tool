@@ -87,6 +87,8 @@ const HUMAN_ONLY_FIELDS = [
   'publications',
 ] as const;
 
+const FOUND_ELSEWHERE = new Set(['readoutDate']);
+
 function isVerified(p: Provenance | undefined): boolean {
   return p?.verified === true;
 }
@@ -138,6 +140,9 @@ function mergeTrial(
   const provenance: Record<string, Provenance> = { ...incoming.provenance };
   for (const [field, prov] of Object.entries(existing.provenance)) {
     if (isVerified(prov)) provenance[field] = prov;
+    // Found by a separate step (the readout finder), so an ingest run never
+    // carries them; the value survives the merge and so must its source.
+    else if (FOUND_ELSEWHERE.has(field) && !(field in incoming.provenance)) provenance[field] = prov;
   }
   merged.provenance = provenance;
 

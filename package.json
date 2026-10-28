@@ -13,7 +13,8 @@
     "ingest": "tsx scripts/ingest/cli.ts",
     "validate": "tsx scripts/validate.ts",
     "qc": "tsx scripts/qc/cli.ts",
-    "verify": "tsx scripts/verify/cli.ts"
+    "verify": "tsx scripts/verify/cli.ts",
+    "readouts": "tsx scripts/readouts/cli.ts"
   },
   "dependencies": {
     "react": "^18.3.1",

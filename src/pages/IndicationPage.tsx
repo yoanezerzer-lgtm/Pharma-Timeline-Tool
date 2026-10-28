@@ -5,7 +5,7 @@ import {
   trialsForIndication,
   isFullyUnverified,
   isMeaningfulMilestone,
-  readoutToApprovalMonths,
+  primaryCompletionToApprovalMonths,
 } from '../lib/drugs.js';
 import { IndicationTimeline } from '../components/IndicationTimeline/IndicationTimeline.js';
 import { navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '../lib/router.js';
@@ -85,7 +85,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
     );
 
   const labelUrl = newestLabelUrl(drug);
-  const lagMonths = readoutToApprovalMonths(scopedTrials, indication.name, indication.approvalDate);
+  const lagMonths = primaryCompletionToApprovalMonths(scopedTrials, indication.name, indication.approvalDate);
   const sourceGroups = groupSources(drug.sources, drug.milestones);
   const ownSources = sourceGroups.find((g) => g.submission === ownSubmission);
 
@@ -172,8 +172,8 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             <dd>{scopedTrials.length}</dd>
           </div>
           {lagMonths !== undefined && (
-            <div title="From the latest primary completion date among this indication's pivotal trials (ClinicalTrials.gov) to its approval.">
-              <dt>Last pivotal readout to approval</dt>
+            <div title="From the date the last patient was assessed for the primary endpoint in the final pivotal trial (ClinicalTrials.gov) to the FDA approval of this indication.">
+              <dt>Primary completion to approval</dt>
               <dd>
                 {lagMonths} month{lagMonths === 1 ? '' : 's'}
               </dd>
