@@ -78,6 +78,42 @@ describe('program views', () => {
   });
 });
 
+describe('one approval per view', () => {
+  const approval = (submission: string, date: string, kind: 'new' | 'expansion') => ({
+    submission, date: day(date), kind, statement: `Letter ${submission}.`, provenance: { ...src, quote: `Letter ${submission}.` },
+  });
+  const linked = (submission: string) => [{ indication: 'Melanoma', role: 'PIVOTAL' as const, provenance: src, approval: { submission, provenance: src } }];
+  const kt = Drug.parse({
+    slug: 'keytruda', brandName: 'KEYTRUDA', inn: 'pembrolizumab', modality: 'mAb', sponsor: 'Merck',
+    regulatory: { us: { applicationNumber: '1', applicationType: 'BLA' } },
+    indications: [{ name: 'Melanoma', slug: 'melanoma', approvalDate: day('2014-09-04'), approvals: [approval('ORIG-1', '2014-09-04', 'new'), approval('SUPPL-40', '2019-02-15', 'new')] }],
+    trials: [
+      trial({ id: 'k002', acronym: 'KEYNOTE-002', primaryCompletionDate: day('2014-05-01'), roles: linked('ORIG-1') }),
+      trial({ id: 'k054', acronym: 'KEYNOTE-054', primaryCompletionDate: day('2017-10-02'), roles: linked('SUPPL-40') }),
+      trial({ id: 'k006', acronym: 'KEYNOTE-006', primaryCompletionDate: day('2015-03-03'), roles: pivotal('Melanoma') }),
+    ],
+  });
+
+  it("defaults to the indication's first approval and shows only its trials", () => {
+    const v = programView(kt, kt.indications[0]);
+    expect(v.chosen?.submission).toBe('ORIG-1');
+    expect(v.key).toBe('keytruda:melanoma@ORIG-1');
+    expect(v.lanes.map((l) => l.name)).toEqual(['KEYNOTE-002']);
+    expect(v.unmatched.map((u) => u.name)).toEqual(['KEYNOTE-006']);
+  });
+
+  it('measures from the chosen approval', () => {
+    const v = programView(kt, kt.indications[0], 'SUPPL-40');
+    expect(v.lanes.map((l) => [l.name, l.afterApproval])).toEqual([['KEYNOTE-054', false]]);
+    expect(new Date(v.approval!).toISOString().slice(0, 10)).toBe('2019-02-15');
+    expect(evidenceCsv(evidenceRows([v]), [v])).toContain(',2019-02-15,Letter SUPPL-40.,KEYNOTE-054,');
+  });
+
+  it('reads and writes the approval in the URL', () => {
+    expect(parseProgramRef('keytruda:melanoma@SUPPL-40')).toEqual({ slug: 'keytruda', indicationSlug: 'melanoma', submission: 'SUPPL-40' });
+  });
+});
+
 describe('buildAxis', () => {
   const a = programView(ra, ra.indications[0]);
   const b = programView(psa, psa.indications[0]);

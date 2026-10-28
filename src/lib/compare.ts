@@ -1,4 +1,4 @@
-import type { DateValue, Drug, Indication, PostedOutcome, Provenance, Trial, TrialRole } from '../schema/index.js';
+import type { Approval, DateValue, Drug, Indication, PostedOutcome, Provenance, Trial, TrialRole } from '../schema/index.js';
 import { toTime } from './dates.js';
 import { roleFor, trialShortName, trialsForIndication } from './drugs.js';
 
@@ -10,16 +10,18 @@ import { roleFor, trialShortName, trialsForIndication } from './drugs.js';
 export interface ProgramRef {
   slug: string;
   indicationSlug: string;
+  /** One FDA approval within the indication ("SUPPL-40"); the indication's first when absent. */
+  submission?: string;
 }
 
-/** "upadacitinib:rheumatoid-arthritis", as kept in the page's URL. */
+/** "pembrolizumab:melanoma@SUPPL-40", as kept in the page's URL. */
 export function parseProgramRef(s: string | null): ProgramRef | undefined {
-  const m = s?.match(/^([a-z0-9-]+):([a-z0-9-]+)$/);
-  return m ? { slug: m[1], indicationSlug: m[2] } : undefined;
+  const m = s?.match(/^([a-z0-9-]+):([a-z0-9-]+)(?:@([A-Z]+-\d+))?$/);
+  return m ? { slug: m[1], indicationSlug: m[2], ...(m[3] ? { submission: m[3] } : {}) } : undefined;
 }
 
 export function programRefString(r: ProgramRef): string {
-  return `${r.slug}:${r.indicationSlug}`;
+  return `${r.slug}:${r.indicationSlug}${r.submission ? `@${r.submission}` : ''}`;
 }
 
 export interface Lane {
@@ -39,19 +41,44 @@ export interface Lane {
   afterApproval: boolean;
 }
 
+export interface UnmatchedTrial {
+  trialId: string;
+  name: string;
+  role: TrialRole;
+}
+
 export interface ProgramView {
   key: string;
   drug: Drug;
   indication: Indication;
+  /** Every FDA approval of this indication, oldest first; empty for records ingested before approvals were read. */
+  approvals: Approval[];
+  /** The approval this view is about. */
+  chosen?: Approval;
   approval?: number;
   lanes: Lane[];
+  /** Trials the label cites for the indication that aren't matched to any approval yet. */
+  unmatched: UnmatchedTrial[];
 }
 
-/** Every trial the label cites for this indication: pivotal ones first, then the rest, each by start date. */
-export function programView(drug: Drug, indication: Indication): ProgramView {
+/**
+ * One approval and the trials that supported it: those linked to it from
+ * its approval letter, and, when the indication has had only that one
+ * approval, its supporting trials too. Pivotal ones first, then the rest,
+ * each by start date. Records without an approval history show every
+ * cited trial against the indication's first approval.
+ */
+export function programView(drug: Drug, indication: Indication, submission?: string): ProgramView {
   const t = (d?: DateValue) => (d ? toTime(d) : undefined);
-  const approval = t(indication.approvalDate);
-  const lanes = trialsForIndication(drug, indication.name)
+  const approvals = indication.approvals ?? [];
+  const chosen = approvals.find((a) => a.submission === submission) ?? approvals[0];
+  const approval = t(chosen?.date ?? indication.approvalDate);
+  const cited = trialsForIndication(drug, indication.name);
+  const linkedTo = (tr: Trial) => tr.roles.find((r) => r.indication === indication.name && r.approval)?.approval?.submission;
+  const belongs = (tr: Trial) =>
+    !chosen || linkedTo(tr) === chosen.submission || (approvals.length === 1 && roleFor(tr, indication.name) !== 'PIVOTAL');
+  const lanes = cited
+    .filter(belongs)
     .map((tr) => ({
       trialId: tr.id,
       name: trialShortName(tr),
@@ -63,7 +90,11 @@ export function programView(drug: Drug, indication: Indication): ProgramView {
       afterApproval: approval !== undefined && tr.primaryCompletionDate !== undefined && t(tr.primaryCompletionDate)! > approval,
     }))
     .sort((a, b) => Number(b.role === 'PIVOTAL') - Number(a.role === 'PIVOTAL') || (a.start ?? Infinity) - (b.start ?? Infinity));
-  return { key: `${drug.slug}:${indication.slug}`, drug, indication, approval, lanes };
+  const unmatched = cited
+    .filter((tr) => !belongs(tr) && !linkedTo(tr))
+    .map((tr) => ({ trialId: tr.id, name: trialShortName(tr), role: roleFor(tr, indication.name) ?? ('UNKNOWN' as const) }));
+  const key = programRefString({ slug: drug.slug, indicationSlug: indication.slug, submission: chosen?.submission });
+  return { key, drug, indication, approvals, chosen, approval, lanes, unmatched };
 }
 
 const DAY = 86400000;
@@ -262,14 +293,15 @@ function csvCell(v: string | number | undefined): string {
 
 /** The evidence table as CSV, each row with its source links, for a client file. */
 export function evidenceCsv(rows: EvidenceRow[], programs: ProgramView[]): string {
-  const header = ['Drug', 'Indication', 'Approval date', 'Trial', 'NCT number', 'Enrollment', 'Primary endpoint', 'Results by arm', 'p-value', 'Results announced', 'Announcement source', 'Registry record'];
+  const header = ['Drug', 'Indication', 'Approval date', 'Approval (FDA wording)', 'Trial', 'NCT number', 'Enrollment', 'Primary endpoint', 'Results by arm', 'p-value', 'Results announced', 'Announcement source', 'Registry record'];
   const lines = rows.map((r) => {
     const p = programs.find((x) => x.key === r.program)!;
     const t = p.drug.trials.find((x) => x.id === r.trialId)!;
     return [
       r.drug,
       r.indication,
-      p.indication.approvalDate?.value,
+      (p.chosen?.date ?? p.indication.approvalDate)?.value,
+      p.chosen?.statement,
       r.trial,
       r.nctId,
       r.enrollment,

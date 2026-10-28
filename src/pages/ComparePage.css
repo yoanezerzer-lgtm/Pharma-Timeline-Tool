@@ -152,6 +152,68 @@
   color: var(--text-2);
 }
 
+.pane__approval-pick {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.6rem 0 0;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.pane__approval-pick select {
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-elevated);
+  color: var(--text-1);
+  font: inherit;
+}
+
+.pane__wording {
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.4rem 0 0.4rem 0.75rem;
+  border-left: 3px solid var(--border);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-1);
+  overflow-wrap: anywhere;
+}
+
+.pane__wording a,
+.pane__wording-more {
+  margin-left: 0.5rem;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.pane__wording-more {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--text-2);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pane__unmatched {
+  margin: 0.5rem 0 0;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.pane__unmatched-trial {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--text-1);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .pane__metric {
   text-align: right;
 }
