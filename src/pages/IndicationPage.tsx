@@ -8,7 +8,7 @@ import {
   primaryCompletionToApprovalMonths,
 } from '../lib/drugs.js';
 import { IndicationTimeline } from '../components/IndicationTimeline/IndicationTimeline.js';
-import { navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '../lib/router.js';
+import { compareHref, navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
@@ -109,6 +109,9 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
               </a>
             </p>
           )}
+          <p className="drug__compare">
+            <a href={compareHref(`${drug.slug}:${indication.slug}`)}>Compare with another program →</a>
+          </p>
           {label !== indication.name && (
             <p className="drug__label-wording">
               <span>Label wording:</span> {indication.name}

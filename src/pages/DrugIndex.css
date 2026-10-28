@@ -16,10 +16,31 @@
   color: var(--text-1);
 }
 
-.index__add-drug {
+.index__head-actions {
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.index__compare {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-1);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.index__compare:hover {
+  border-color: var(--text-3);
+  text-decoration: none;
+}
+
+.index__add-drug {
   padding: 0.5rem 1rem;
   border-radius: 999px;
   border: 1px solid var(--accent);
@@ -272,9 +293,9 @@
   .index__table .index__table-sponsor {
     display: none;
   }
-  .index__add-drug {
+  .index__head-actions {
     position: static;
-    display: inline-block;
+    justify-content: center;
     margin-bottom: 1rem;
   }
 }

@@ -15,17 +15,20 @@ export type Route =
       indicationSlug: string;
       trialId: string | null;
     }
+  | { name: 'compare' }
   | { name: 'review' }
   | { name: 'review-drug'; slug: string }
   | { name: 'ingest' };
 
 export function parseHash(hash: string): Route {
-  const path = hash.replace(/^#/, '').replace(/^\/+/, '');
+  // Anything after "?" is page state (filters, selections), not the route.
+  const path = hash.replace(/^#/, '').split('?')[0].replace(/^\/+/, '');
   const [section, slug, sub1, sub1Value, sub2, sub2Value] = path.split('/');
   if (section === 'drug' && slug && sub1 === 'indication' && sub1Value) {
     const trialId = sub2 === 'trial' ? sub2Value ?? null : null;
     return { name: 'indication', slug, indicationSlug: sub1Value, trialId };
   }
+  if (section === 'compare') return { name: 'compare' };
   if (section === 'review') {
     return slug ? { name: 'review-drug', slug } : { name: 'review' };
   }
@@ -67,4 +70,10 @@ export function reviewDrugHref(slug: string): string {
 
 export function ingestHref(): string {
   return '#/ingest';
+}
+
+/** The comparison page, optionally with programs chosen ("upadacitinib:rheumatoid-arthritis"). */
+export function compareHref(a?: string, b?: string): string {
+  const qs = new URLSearchParams(Object.entries({ a, b }).filter((e): e is [string, string] => !!e[1])).toString();
+  return `#/compare${qs ? `?${qs}` : ''}`;
 }
