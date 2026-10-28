@@ -1,5 +1,5 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
-import type { Drug, Trial } from '../schema/index.js';
+import type { Approval, Drug, Trial } from '../schema/index.js';
 import { drugIndex, useDrug, type DrugState } from '../lib/catalog.js';
 import {
   buildAxis,
@@ -79,7 +79,7 @@ export function ComparePage() {
       states.map((s, i) => {
         if (s.status !== 'ready') return undefined;
         const indication = s.drug.indications.find((x) => x.slug === refs[i].indicationSlug);
-        return indication ? programView(s.drug, indication) : undefined;
+        return indication ? programView(s.drug, indication, refs[i].submission) : undefined;
       }),
     [states[0], states[1], refs]
   );
@@ -94,6 +94,7 @@ export function ComparePage() {
     if (!r) return;
     setRefs((prev) => (i === 0 ? [r, prev[1]] : [prev[0], r]));
   };
+  const setApproval = (i: 0 | 1, submission: string) => setRef(i, programRefString({ ...refs[i], submission }));
 
   const showTrial = (program: string, trialId: string) => setOpenTrial({ program, trialId });
   const openProgram = ready.find((p) => p.key === openTrial?.program);
@@ -118,7 +119,7 @@ export function ComparePage() {
     <main className={`compare${selectedTrial ? ' has-drawer' : ''}`}>
       <BackLink href="#/" label="All drugs" />
       <div className="compare__head">
-        <h1>Compare two programs</h1>
+        <h1>Compare two approvals</h1>
         <div className="compare__actions">
           <button type="button" className="compare__button" onClick={exportCsv} disabled={rows.length === 0}>
             Export CSV
@@ -138,22 +139,23 @@ export function ComparePage() {
           <ProgramPane
             key={i}
             index={i}
-            current={programRefString(refs[i])}
+            current={programRefString({ slug: refs[i].slug, indicationSlug: refs[i].indicationSlug })}
             state={states[i]}
             program={programs[i]}
             axis={axis}
             onPick={(ref) => setRef(i, ref)}
+            onPickApproval={(submission) => setApproval(i, submission)}
             onReadout={showReadout}
             onTrial={showTrial}
           />
         ))}
       </div>
 
-      {ready.length > 0 && (
+      {rows.length > 0 && (
         <EvidenceTable rows={rows} programs={ready} confirmations={confirmations} refs={refs} onTrial={showTrial} />
       )}
 
-      {ready.length > 0 && (
+      {rows.length > 0 && (
         <section className="compare__section" aria-labelledby="readouts">
           <h2 id="readouts">Readouts: when results were first announced</h2>
           <div className="readouts">
@@ -317,6 +319,7 @@ function ProgramPane({
   program,
   axis,
   onPick,
+  onPickApproval,
   onReadout,
   onTrial,
 }: {
@@ -326,10 +329,10 @@ function ProgramPane({
   program?: ProgramView;
   axis: Axis;
   onPick: (ref: string) => void;
+  onPickApproval: (submission: string) => void;
   onReadout: (key: string) => void;
   onTrial: (program: string, trialId: string) => void;
 }) {
-  // Only trials completed before the approval count toward it.
   const pivotal = program?.lanes.filter((l) => l.role === 'PIVOTAL') ?? [];
   const supporting = (program?.lanes.length ?? 0) - pivotal.length;
   // Only pivotal trials completed before the approval count toward it.
@@ -361,8 +364,12 @@ function ProgramPane({
                 <span>· {indicationLabel(program.indication)}</span>
               </p>
               <p className="pane__sub">
-                {program.indication.approvalDate ? `Approved ${formatDate(program.indication.approvalDate)}` : 'Approval date not established'} ·{' '}
-                {pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supporting` : ''}
+                {program.chosen
+                  ? `${KIND_LABEL[program.chosen.kind]} ${formatDate(program.chosen.date)}`
+                  : program.indication.approvalDate
+                    ? `Approved ${formatDate(program.indication.approvalDate)}`
+                    : 'Approval date not established'}{' '}
+                · {pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supporting` : ''}
               </p>
             </div>
             <div className="pane__metric">
@@ -371,14 +378,30 @@ function ProgramPane({
                 Primary completion to approval
                 <Info label="What this measures">
                   From the date the last patient was assessed for the primary endpoint in the final pivotal trial
-                  (ClinicalTrials.gov) to the FDA approval of this indication.
+                  (ClinicalTrials.gov) to this FDA approval.
                 </Info>
               </p>
             </div>
           </div>
 
+          {program.approvals.length > 1 && (
+            <label className="pane__approval-pick">
+              <span>Approval</span>
+              <select value={program.chosen?.submission} onChange={(e) => onPickApproval(e.target.value)}>
+                {program.approvals.map((a) => (
+                  <option key={a.submission} value={a.submission}>
+                    {formatDate(a.date)} · {KIND_LABEL[a.kind]}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+          {program.chosen && <ApprovalWording approval={program.chosen} />}
+
           {program.lanes.length === 0 ? (
-            <p className="pane__status">No trials recorded for this indication.</p>
+            <p className="pane__status">
+              {program.chosen ? 'No trials matched to this approval yet.' : 'No trials recorded for this indication.'}
+            </p>
           ) : (
             <div className="chart">
               <div className="chart__axis" aria-hidden="true">
@@ -418,7 +441,7 @@ function ProgramPane({
                             aria-hidden="true"
                             className={`lane__bar${l.role !== 'PIVOTAL' ? ' lane__bar--support' : ''}${l.afterApproval ? ' lane__bar--later' : ''}`}
                             style={{ left: `${s}%`, width: `${Math.max(pc - s, 0.5)}%` }}
-                            title={l.afterApproval ? 'Completed after the first approval: supports a later label update' : `${l.name}: open trial details`}
+                            title={l.afterApproval ? 'Completed after this approval' : `${l.name}: open trial details`}
                             onClick={() => onTrial(program.key, l.trialId)}
                           />
                         )}
@@ -446,17 +469,62 @@ function ProgramPane({
                   {program.lanes.length > VISIBLE_LANES && <>Scroll for all {program.lanes.length}. </>}
                   {later > 0 && (
                     <>
-                      <span className="swatch swatch--later" aria-hidden="true" /> {later} completed after the first approval and
-                      supported later label updates for this indication.
+                      <span className="swatch swatch--later" aria-hidden="true" /> {later} completed after this approval.
                     </>
                   )}
                 </p>
               )}
             </div>
           )}
+          {program.unmatched.length > 0 && (
+            <p className="pane__unmatched">
+              Not yet matched to one approval:{' '}
+              {program.unmatched.map((u, k) => (
+                <span key={u.trialId}>
+                  {k > 0 && ', '}
+                  <button type="button" className="pane__unmatched-trial" onClick={() => onTrial(program.key, u.trialId)}>
+                    {u.name}
+                  </button>
+                </span>
+              ))}
+              <Info label="Why some trials aren't matched">
+                A trial is matched to an approval when the FDA’s approval letter names it, or when the indication has
+                had only one approval. The rest are matched once a check finds the trial in both the letter and the
+                label.
+              </Info>
+            </p>
+          )}
         </>
       )}
     </section>
+  );
+}
+
+const KIND_LABEL: Record<Approval['kind'], string> = {
+  new: 'New use approved',
+  expansion: 'Use widened',
+  revision: 'Use revised',
+  conversion: 'Converted to regular approval',
+};
+
+/** The approval letter's own sentence, shortened until opened. */
+function ApprovalWording({ approval }: { approval: Approval }) {
+  const [open, setOpen] = useState(false);
+  const long = approval.statement.length > 160;
+  return (
+    <blockquote className="pane__wording">
+      “{open || !long ? approval.statement : `${approval.statement.slice(0, 157).trimEnd()}…`}”
+      {long && (
+        <button type="button" className="pane__wording-more" onClick={() => setOpen(!open)}>
+          {open ? 'Less' : 'More'}
+        </button>
+      )}
+      {approval.provenance.sourceUrl && (
+        <a href={approval.provenance.sourceUrl} target="_blank" rel="noreferrer" title={approval.provenance.sourceLabel}>
+          FDA letter ↗
+        </a>
+      )}
+    </blockquote>
   );
 }
 
@@ -475,8 +543,8 @@ function EvidenceTable({
 }) {
   const [open, setOpen] = useState<string | null>(null);
   const confirmationFor = (r: EvidenceRow): Confirmation | undefined => {
-    const i = refs.findIndex((x) => programRefString(x) === r.program);
     const p = programs.find((x) => x.key === r.program);
+    const i = refs.findIndex((x) => x.slug === p?.drug.slug && x.indicationSlug === p?.indication.slug);
     if (i < 0 || !p) return undefined;
     return confirmations[i].get(`${p.indication.name}|${r.nctId ?? r.trialId}`);
   };
