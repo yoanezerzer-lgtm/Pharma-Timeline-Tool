@@ -21,7 +21,25 @@
         "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2019-08-16",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Psoriatic Arthritis",
@@ -37,7 +55,25 @@
         "quote": "Named in the SUPPL-2 approval letter; first listed in the label on or before SUPPL-2, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-2",
+          "date": {
+            "value": "2021-12-14",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for the addition of the indication of treatment of adults with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers to the prescribing information.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/211675Orig1s002,s005ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-2)",
+            "quote": "This Prior Approval supplemental new drug application provides for the addition of the indication of treatment of adults with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers to the prescribing information.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Atopic Dermatitis",
@@ -53,7 +89,25 @@
         "quote": "Named in the SUPPL-4 approval letter; first listed in the label on or before SUPPL-4, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-4",
+          "date": {
+            "value": "2022-01-14",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s004ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-4)",
+            "quote": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Ulcerative Colitis",
@@ -69,7 +123,41 @@
         "quote": "Named in the SUPPL-7 approval letter; first listed in the label on or before SUPPL-7, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-7",
+          "date": {
+            "value": "2022-03-16",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response or intolerance to one or more TNF blockers.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s007ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-7)",
+            "quote": "This Prior Approval supplemental new drug application provides for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response or intolerance to one or more TNF blockers.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-28",
+          "date": {
+            "value": "2025-10-10",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "These Prior Approval supplemental new drug applications provide for updates to the INDICATIONS AND USAGE section of the Prescribing Information for the treatment of adults with moderately to severely active ulcerative colitis (UC) and moderately to severely active Crohn’s disease (CD) as shown ( double-underline = addition): 1.4 Ulcerative Colitis RINVOQ is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis (UC) who have had an inadequate response or intolerance to one or more TNF blockers.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/211675Orig1s028,218347Orig1s005Correctedltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-28)",
+            "quote": "These Prior Approval supplemental new drug applications provide for updates to the INDICATIONS AND USAGE section of the Prescribing Information for the treatment of adults with moderately to severely active ulcerative colitis (UC) and moderately to severely active Crohn’s disease (CD) as shown ( double-underline = addition): 1.4 Ulcerative Colitis RINVOQ is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis (UC) who have had an inadequate response or intolerance to one or more TNF blockers.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Crohn’s Disease",
@@ -85,7 +173,41 @@
         "quote": "Named in the SUPPL-15 approval letter; first listed in the label on or before SUPPL-15, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-15",
+          "date": {
+            "value": "2023-05-18",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for the treatment of adult patients with moderately to severely active Crohn’s disease who have had an inadequate response or intolerance to one or more TNF blockers.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/211675Orig1s015ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-15)",
+            "quote": "This Prior Approval supplemental new drug application provides for the treatment of adult patients with moderately to severely active Crohn’s disease who have had an inadequate response or intolerance to one or more TNF blockers.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-28",
+          "date": {
+            "value": "2025-10-10",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "These Prior Approval supplemental new drug applications provide for updates to the INDICATIONS AND USAGE section of the Prescribing Information for the treatment of adults with moderately to severely active ulcerative colitis (UC) and moderately to severely active Crohn’s disease (CD) as shown ( double-underline = addition): 1.4 Ulcerative Colitis RINVOQ is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis (UC) who have had an inadequate response or intolerance to one or more TNF blockers.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/211675Orig1s028,218347Orig1s005Correctedltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-28)",
+            "quote": "These Prior Approval supplemental new drug applications provide for updates to the INDICATIONS AND USAGE section of the Prescribing Information for the treatment of adults with moderately to severely active ulcerative colitis (UC) and moderately to severely active Crohn’s disease (CD) as shown ( double-underline = addition): 1.4 Ulcerative Colitis RINVOQ is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis (UC) who have had an inadequate response or intolerance to one or more TNF blockers.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Ankylosing Spondylitis",
@@ -101,7 +223,25 @@
         "quote": "Named in the SUPPL-3 approval letter; first listed in the label on or before SUPPL-3, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-3",
+          "date": {
+            "value": "2022-04-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for the addition of a new indication: Rinvoq (upadacitinib) is indicated for adults with active ankylosing spondylitis who have had an inadequate response or intolerance to one or more TNF blockers.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s003ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-3)",
+            "quote": "This Prior Approval supplemental new drug application provides for the addition of a new indication: Rinvoq (upadacitinib) is indicated for adults with active ankylosing spondylitis who have had an inadequate response or intolerance to one or more TNF blockers.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Non-radiographic Axial Spondyloarthritis",
@@ -117,7 +257,25 @@
         "quote": "Named in the SUPPL-10 approval letter; first listed in the label on or before SUPPL-10, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-10",
+          "date": {
+            "value": "2022-10-21",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for treatment of adults with active non-radiographic axial spondyloarthritis (nr-axSpA) with objective signs of inflammation who have had an inadequate response or intolerance to TNF blocker therapy.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s010ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-10)",
+            "quote": "This Prior Approval supplemental new drug application provides for treatment of adults with active non-radiographic axial spondyloarthritis (nr-axSpA) with objective signs of inflammation who have had an inadequate response or intolerance to TNF blocker therapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Polyarticular Juvenile Idiopathic Arthritis",
@@ -133,7 +291,25 @@
         "quote": "Named in the SUPPL-22 approval letter; first listed in the label on or before SUPPL-22, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-22",
+          "date": {
+            "value": "2024-04-26",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "These Prior Approval supplemental NDAs 211675/S-021 and 211675/S-022 provide for the treatment of patients 2 years of age and older with active polyarticular juvenile idiopathic arthritis who have had an inadequate response or intolerance to one of more tumor necrosis factor (TNF) blockers, and the treatment of patients 2 years of age and older with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers, respectively.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/211675Orig1s021, s022ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-22)",
+            "quote": "These Prior Approval supplemental NDAs 211675/S-021 and 211675/S-022 provide for the treatment of patients 2 years of age and older with active polyarticular juvenile idiopathic arthritis who have had an inadequate response or intolerance to one of more tumor necrosis factor (TNF) blockers, and the treatment of patients 2 years of age and older with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers, respectively.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Giant Cell Arteritis",
@@ -149,7 +325,25 @@
         "quote": "Named in the SUPPL-25 approval letter; first listed in the label on or before SUPPL-25, absent from the last complete label before it.",
         "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-25",
+          "date": {
+            "value": "2025-04-28",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for treatment of adults with giant cell arteritis.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/211675Orig1s025ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-25)",
+            "quote": "This Prior Approval supplemental new drug application provides for treatment of adults with giant cell arteritis.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -828,6 +1022,16 @@
             "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -843,6 +1047,10 @@
       },
       "completionDate": {
         "value": "2027-09-30",
+        "precision": "day"
+      },
+      "readoutDate": {
+        "value": "2018-04-09",
         "precision": "day"
       },
       "enrollment": {
@@ -1100,36 +1308,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -1275,12 +1453,48 @@
           "field": "labelName",
           "newValue": "RA-IV",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
-      ],
-      "readoutDate": {
-        "value": "2018-04-09",
-        "precision": "day"
-      }
+      ]
     },
     {
       "id": "select-next",
@@ -1301,6 +1515,16 @@
             "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -1569,36 +1793,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -1744,6 +1938,46 @@
           "field": "labelName",
           "newValue": "RA-III",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -1766,6 +2000,16 @@
             "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -2185,36 +2429,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -2496,6 +2710,46 @@
           "field": "labelName",
           "newValue": "RA-I",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -2518,6 +2772,16 @@
             "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -2783,36 +3047,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -2958,6 +3192,46 @@
           "field": "labelName",
           "newValue": "RA-V",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -3362,6 +3636,16 @@
             "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -3628,36 +3912,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Rheumatoid Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -3803,6 +4057,46 @@
           "field": "labelName",
           "newValue": "RA-II",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Rheumatoid Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Rheumatoid Arthritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Rheumatoid Arthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/211675Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This new drug application provides for the use of Rinvoq (upadacitinib) Extended- Release Tablets for the treatment of adults with moderately to severely active rheumatoid arthritis who have had an inadequate response or intolerance to methotrexate.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -5069,6 +5363,16 @@
             "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-2",
+            "provenance": {
+              "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/211675Orig1s002,s005ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-2): the only approval of this indication",
+              "quote": "This Prior Approval supplemental new drug application provides for the addition of the indication of treatment of adults with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers to the prescribing information.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -5290,36 +5594,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Psoriatic Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Psoriatic Arthritis)",
-                "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Psoriatic Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Psoriatic Arthritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -5407,6 +5681,46 @@
           "field": "labelName",
           "newValue": "PsA-I",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Psoriatic Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Psoriatic Arthritis)",
+                "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Psoriatic Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Psoriatic Arthritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-2",
+                "provenance": {
+                  "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/211675Orig1s002,s005ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-2): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental new drug application provides for the addition of the indication of treatment of adults with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers to the prescribing information.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -5429,6 +5743,16 @@
             "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-2",
+            "provenance": {
+              "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/211675Orig1s002,s005ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-2): the only approval of this indication",
+              "quote": "This Prior Approval supplemental new drug application provides for the addition of the indication of treatment of adults with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers to the prescribing information.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -5629,36 +5953,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Psoriatic Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Psoriatic Arthritis)",
-                "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Psoriatic Arthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Psoriatic Arthritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -5736,6 +6030,46 @@
           "field": "labelName",
           "newValue": "PsA-II",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Psoriatic Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Psoriatic Arthritis)",
+                "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Psoriatic Arthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Psoriatic Arthritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Psoriatic Arthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-2",
+                "provenance": {
+                  "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/211675Orig1s002,s005ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-2): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental new drug application provides for the addition of the indication of treatment of adults with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers to the prescribing information.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -5864,6 +6198,16 @@
             "quote": "Trial identifier appears within the Ankylosing Spondylitis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-3",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s003ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-3): the only approval of this indication",
+              "quote": "This Prior Approval supplemental new drug application provides for the addition of a new indication: Rinvoq (upadacitinib) is indicated for adults with active ankylosing spondylitis who have had an inadequate response or intolerance to one or more TNF blockers.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -6033,36 +6377,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Ankylosing Spondylitis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ankylosing Spondylitis)",
-                "quote": "Trial identifier appears within the Ankylosing Spondylitis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Ankylosing Spondylitis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ankylosing Spondylitis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Ankylosing Spondylitis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -6117,6 +6431,46 @@
           "field": "labelName",
           "newValue": "AS-I",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Ankylosing Spondylitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ankylosing Spondylitis)",
+                "quote": "Trial identifier appears within the Ankylosing Spondylitis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Ankylosing Spondylitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ankylosing Spondylitis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Ankylosing Spondylitis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-3",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s003ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-3): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental new drug application provides for the addition of a new indication: Rinvoq (upadacitinib) is indicated for adults with active ankylosing spondylitis who have had an inadequate response or intolerance to one or more TNF blockers.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -7408,6 +7762,16 @@
             "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-4",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s004ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-4): the only approval of this indication",
+              "quote": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -7700,36 +8064,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Atopic Dermatitis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
-                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Atopic Dermatitis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -7870,6 +8204,46 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Atopic Dermatitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Atopic Dermatitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-4",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s004ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-4): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -7891,6 +8265,16 @@
             "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-4",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s004ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-4): the only approval of this indication",
+              "quote": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -8166,36 +8550,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Atopic Dermatitis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
-                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Atopic Dermatitis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -8336,6 +8690,46 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Atopic Dermatitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Atopic Dermatitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-4",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s004ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-4): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -8358,6 +8752,16 @@
             "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-4",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s004ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-4): the only approval of this indication",
+              "quote": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -8656,36 +9060,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Atopic Dermatitis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
-                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Atopic Dermatitis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -8831,6 +9205,46 @@
           "field": "labelName",
           "newValue": "AD-3",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Atopic Dermatitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Atopic Dermatitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-4",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s004ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-4): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -9251,6 +9665,16 @@
             "quote": "The label refers to this trial as \"GCA\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-25",
+            "provenance": {
+              "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/211675Orig1s025ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-25): the only approval of this indication",
+              "quote": "This Prior Approval supplemental new drug application provides for treatment of adults with giant cell arteritis.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -9472,36 +9896,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Giant Cell Arteritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Giant Cell Arteritis)",
-                "quote": "The label refers to this trial as \"GCA\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Giant Cell Arteritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Giant Cell Arteritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "The label refers to this trial as \"GCA\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -9579,6 +9973,46 @@
           "field": "labelName",
           "newValue": "GCA",
           "detectedAt": "2026-10-14T17:41:12.923Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Giant Cell Arteritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Giant Cell Arteritis)",
+                "quote": "The label refers to this trial as \"GCA\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Giant Cell Arteritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Giant Cell Arteritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "The label refers to this trial as \"GCA\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-25",
+                "provenance": {
+                  "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/211675Orig1s025ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-25): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental new drug application provides for treatment of adults with giant cell arteritis.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -9990,6 +10424,16 @@
             "quote": "Trial identifier appears within the Polyarticular Juvenile Idiopathic Arthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-22",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/211675Orig1s021, s022ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-22): the only approval of this indication",
+              "quote": "These Prior Approval supplemental NDAs 211675/S-021 and 211675/S-022 provide for the treatment of patients 2 years of age and older with active polyarticular juvenile idiopathic arthritis who have had an inadequate response or intolerance to one of more tumor necrosis factor (TNF) blockers, and the treatment of patients 2 years of age and older with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers, respectively.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -10113,7 +10557,7 @@
               "indication": "Polyarticular Juvenile Idiopathic Arthritis",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Polyarticular Juvenile Idiopathic Arthritis)",
                 "quote": "Trial identifier appears within the Polyarticular Juvenile Idiopathic Arthritis section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -10131,10 +10575,20 @@
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Polyarticular Juvenile Idiopathic Arthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-22",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/211675Orig1s021, s022ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-22): the only approval of this indication",
+                  "quote": "These Prior Approval supplemental NDAs 211675/S-021 and 211675/S-022 provide for the treatment of patients 2 years of age and older with active polyarticular juvenile idiopathic arthritis who have had an inadequate response or intolerance to one of more tumor necrosis factor (TNF) blockers, and the treatment of patients 2 years of age and older with active psoriatic arthritis who have had an inadequate response or intolerance to one or more TNF blockers, respectively.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -10272,6 +10726,16 @@
             "quote": "Trial identifier appears within the Non-radiographic Axial Spondyloarthritis section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-10",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s010ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-10): the only approval of this indication",
+              "quote": "This Prior Approval supplemental new drug application provides for treatment of adults with active non-radiographic axial spondyloarthritis (nr-axSpA) with objective signs of inflammation who have had an inadequate response or intolerance to TNF blocker therapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -10524,36 +10988,6 @@
       },
       "changeLog": [
         {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Non-radiographic Axial Spondyloarthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211675s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-radiographic Axial Spondyloarthritis)",
-                "quote": "Trial identifier appears within the Non-radiographic Axial Spondyloarthritis section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Non-radiographic Axial Spondyloarthritis",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-radiographic Axial Spondyloarthritis)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Non-radiographic Axial Spondyloarthritis section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-10T04:59:52.731Z"
-        },
-        {
           "field": "postedResults",
           "newValue": [
             {
@@ -10659,6 +11093,46 @@
             }
           ],
           "detectedAt": "2026-10-10T04:59:52.731Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Non-radiographic Axial Spondyloarthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-radiographic Axial Spondyloarthritis)",
+                "quote": "Trial identifier appears within the Non-radiographic Axial Spondyloarthritis section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Non-radiographic Axial Spondyloarthritis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-radiographic Axial Spondyloarthritis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Non-radiographic Axial Spondyloarthritis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-10",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/211675Orig1s010ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-10): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental new drug application provides for treatment of adults with active non-radiographic axial spondyloarthritis (nr-axSpA) with objective signs of inflammation who have had an inadequate response or intolerance to TNF blocker therapy.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-10-28T20:12:54.467Z"
         }
       ]
     },
@@ -12231,12 +12705,12 @@
       "id": "ad-vise",
       "nctId": "NCT05081557",
       "protocolNumber": "P20-441",
-      "acronym": "AD-VISE",
+      "acronym": "ADVISE MCOS",
       "title": "Real World Utilization of Upadacitinib in Adult and Adolescent Patients Living With Moderate to Severe Atopic Dermatitis (AD-VISE)",
       "briefTitle": "A Study to Assess Real-World Use, Safety, and Effectiveness of Oral Upadacitinib in Adult and Adolescent (>=12 Years Old) Participants With Atopic Dermatitis",
       "phase": "NA",
       "roles": [],
-      "status": "ACTIVE_NOT_RECRUITING",
+      "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
       "startDate": {
@@ -12244,12 +12718,12 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2026-10-01",
-        "precision": "month"
+        "value": "2026-09-02",
+        "precision": "day"
       },
       "completionDate": {
-        "value": "2026-10-01",
-        "precision": "month"
+        "value": "2026-09-02",
+        "precision": "day"
       },
       "enrollment": {
         "count": 873,
@@ -12366,7 +12840,44 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "acronym",
+          "previousValue": "AD-VISE",
+          "newValue": "ADVISE MCOS",
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "status",
+          "previousValue": "ACTIVE_NOT_RECRUITING",
+          "newValue": "COMPLETED",
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2026-10-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-09-02",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2026-10-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-09-02",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        }
+      ]
     },
     {
       "id": "upspine",
@@ -15241,7 +15752,7 @@
       "briefTitle": "A Study of Upadacitinib in Adult Participants With Moderate-to-Severe Atopic Dermatitis and Inadequate Response to Dupilumab",
       "phase": "PHASE3",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
       "startDate": {
@@ -15249,16 +15760,16 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2026-08-01",
+        "value": "2026-11-01",
         "precision": "month"
       },
       "completionDate": {
-        "value": "2027-03-01",
+        "value": "2027-05-01",
         "precision": "month"
       },
       "enrollment": {
-        "count": 200,
-        "type": "ESTIMATED"
+        "count": 184,
+        "type": "ACTUAL"
       },
       "design": {
         "allocation": "RANDOMIZED",
@@ -15349,7 +15860,50 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2026-08-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-11-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2027-03-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2027-05-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 200,
+            "type": "ESTIMATED"
+          },
+          "newValue": {
+            "count": 184,
+            "type": "ACTUAL"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        }
+      ]
     },
     {
       "id": "p24-081",
@@ -15530,7 +16084,7 @@
       "briefTitle": "Crohn's Disease: Efficacy, Safety, and Pharmacokinetics of Upadacitinib in Pediatric Subjects With Moderately to Severely Active Crohn's Disease",
       "phase": "PHASE3",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
       "startDate": {
@@ -15538,16 +16092,16 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2027-06-01",
+        "value": "2031-01-01",
         "precision": "month"
       },
       "completionDate": {
-        "value": "2034-12-01",
+        "value": "2031-01-01",
         "precision": "month"
       },
       "enrollment": {
-        "count": 110,
-        "type": "ESTIMATED"
+        "count": 111,
+        "type": "ACTUAL"
       },
       "design": {
         "allocation": "RANDOMIZED",
@@ -15644,7 +16198,50 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2027-06-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2031-01-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2034-12-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2031-01-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 110,
+            "type": "ESTIMATED"
+          },
+          "newValue": {
+            "count": 111,
+            "type": "ACTUAL"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        }
+      ]
     },
     {
       "id": "start-up",
@@ -15655,7 +16252,7 @@
       "briefTitle": "A Study to Assess Adverse Events and Change in Disease Activity Comparing Oral Upadacitinib to Subcutaneous Dupilumab in Children From 2 to Less Than 12 Years of Age With Moderate to Severe Atopic Dermatitis",
       "phase": "PHASE3",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
       "startDate": {
@@ -15663,16 +16260,16 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2030-07-01",
+        "value": "2029-11-01",
         "precision": "month"
       },
       "completionDate": {
-        "value": "2030-07-01",
+        "value": "2029-11-01",
         "precision": "month"
       },
       "enrollment": {
-        "count": 675,
-        "type": "ESTIMATED"
+        "count": 699,
+        "type": "ACTUAL"
       },
       "design": {
         "allocation": "RANDOMIZED",
@@ -15754,7 +16351,50 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2030-07-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2029-11-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2030-07-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2029-11-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        },
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 675,
+            "type": "ESTIMATED"
+          },
+          "newValue": {
+            "count": 699,
+            "type": "ACTUAL"
+          },
+          "detectedAt": "2026-10-28T20:12:54.467Z"
+        }
+      ]
     },
     {
       "id": "p24-960",
@@ -17098,6 +17738,106 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT07741838",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "ph3-peds-viti",
+      "nctId": "NCT07896434",
+      "protocolNumber": "M25-264",
+      "acronym": "Ph3 Peds Viti",
+      "title": "A Phase 3, Randomized, Placebo-Controlled, Double-Blind Study to Evaluate the Efficacy, Safety, and Tolerability of Upadacitinib in Pediatric Subjects 6 to <12 Years Old With Non-Segmental Vitiligo Who Are Eligible for Systemic Therapy",
+      "briefTitle": "A Study to Learn How Effective, Safe, and Tolerable Upadacitinib is for Young Participants With Non-segmental Vitiligo",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "AbbVie",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2027-01-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2032-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 154,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "maxAge": "11 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Period A: Double-Blind Treatment Period",
+          "type": "EXPERIMENTAL",
+          "description": "Pediatric participants will receive an adult-equivalent dose of upadacitinib or a matching placebo dose"
+        },
+        {
+          "label": "Period B: Blinded Extension Period",
+          "type": "EXPERIMENTAL",
+          "description": "Pediatric participants who complete Period A will continue into Period B and remain on blinded treatment.\n\nPediatric participants initially randomized to blinded placebo (Period A) who have not achieved F-VASI 75 at Week 48 (nonresponders) will receive a blinded upadacitinib adult dose equivalent in Period B."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving Facial-Vitiligo Area Scoring Index (F-VASI) 75 (>= 75% Improvement in F-VASI From Baseline)",
+        "Number of Participants with Adverse Events (AEs)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Achieving Total Vitiligo Area Scoring Index (T-VASI) 50 (>= 50% Improvement in T-VASI From Baseline)",
+        "Percentage of Participants Achieving Facial-Vitiligo Area Scoring Index (F-VASI) 75 (>= 75% Improvement in F-VASI From Baseline)",
+        "Percentage of Participants with a Change in Baseline Cartoon Children's Dermatology Life Quality Index (CDLQI) score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07896434",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07896434",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07896434",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07896434",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07896434",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -24346,5 +25086,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-14T17:41:12.923Z"
+  "lastIngestedAt": "2026-10-28T20:12:54.467Z"
 }
