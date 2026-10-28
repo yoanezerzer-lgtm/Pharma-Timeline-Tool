@@ -2,8 +2,8 @@ name: Find trial readouts
 
 # Searches SEC filings and newswires for the first public announcement of
 # each pivotal trial's primary result, and pushes the updated record to a
-# readouts/<slug>-<timestamp> branch for a pull request. The text it read
-# goes to a diag/readouts-<slug>-<timestamp> branch so every pick can be
+# readouts/<slug> branch for a pull request. The text it read goes to a
+# diag/readouts-<slug> branch so every pick can be
 # checked against its source.
 
 on:
@@ -62,16 +62,16 @@ jobs:
             echo "Nothing to push."
             exit 0
           fi
-          BRANCH="diag/readouts-${DRUG}-$(date +%Y%m%d-%H%M%S)"
+          BRANCH="diag/readouts-${DRUG}"
           ORIGINAL_REF="$(git rev-parse --abbrev-ref HEAD)"
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git stash push -- data/drugs >/dev/null || true
-          git checkout -b "$BRANCH"
+          git checkout -B "$BRANCH"
           git add -f "data/raw/${DRUG}/readouts/summary.json"
           git add -f "data/raw/${DRUG}/readouts/texts" 2>/dev/null || true
           git commit -m "Diagnostic: readout search for ${DRUG}"
-          git push -u origin "$BRANCH"
+          git push --force origin "$BRANCH"
           git checkout "$ORIGINAL_REF"
           git stash pop >/dev/null || true
 
@@ -84,11 +84,11 @@ jobs:
             echo "No readout changes."
             exit 0
           fi
-          BRANCH="readouts/${DRUG}-$(date +%Y%m%d-%H%M%S)"
+          BRANCH="readouts/${DRUG}"
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH"
+          git checkout -B "$BRANCH"
           git add data/drugs
           git commit -m "Add trial readouts for ${DRUG}"
-          git push -u origin "$BRANCH"
+          git push --force origin "$BRANCH"
           echo "Pushed: $BRANCH"

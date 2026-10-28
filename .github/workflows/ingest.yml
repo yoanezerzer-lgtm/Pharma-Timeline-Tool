@@ -131,14 +131,15 @@ jobs:
             echo "No extracted document text to push."
             exit 0
           fi
-          BRANCH="diag/raw-text-${DRUG}-$(date +%Y%m%d-%H%M%S)"
+          # One branch per drug, replaced on each run: only the latest text is ever read.
+          BRANCH="diag/raw-text-${DRUG}"
           ORIGINAL_REF="$(git rev-parse --abbrev-ref HEAD)"
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH"
+          git checkout -B "$BRANCH"
           git add -f data/raw/*/docs/*.txt
           git commit -m "Diagnostic: extracted document text for ${DRUG}"
-          git push -u origin "$BRANCH"
+          git push --force origin "$BRANCH"
           echo "Pushed extracted text to branch: $BRANCH"
           # The later "Push the data" step needs to branch from main, not from
           # this diagnostic branch — restore the checkout before it runs.
@@ -158,13 +159,14 @@ jobs:
             exit 0
           fi
 
-          BRANCH="ingest/${DRUG}-$(date +%Y%m%d-%H%M%S)"
+          # One branch per drug, replaced on each run, so it always holds the latest data.
+          BRANCH="ingest/${DRUG}"
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH"
+          git checkout -B "$BRANCH"
           git add data/drugs data/reference
           git commit -m "Ingest data for ${DRUG}"
-          git push -u origin "$BRANCH"
+          git push --force origin "$BRANCH"
 
           BODY=$(cat <<EOF
           Automated ingestion run for \`${DRUG}\`.
