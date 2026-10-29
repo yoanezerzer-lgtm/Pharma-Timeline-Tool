@@ -1,6 +1,7 @@
 import type { Disease, Trial } from '../../src/schema/index.js';
 import type { IngestContext } from './context.js';
 import { fetchJson } from './http.js';
+import { ABBREVIATIONS } from './approvals.js';
 
 /**
  * Which disease each approved use is for, as a MeSH term, so disease pages
@@ -8,16 +9,26 @@ import { fetchJson } from './http.js';
  *
  * The term comes from ClinicalTrials.gov, where the National Library of
  * Medicine assigns MeSH terms to each trial's conditions. An approved use's
- * disease is a term all of its pivotal trials share and that the FDA's
- * wording names ("Arthritis, Rheumatoid" for "Rheumatoid Arthritis"). When
- * the wording names none, a term is used only if the trials share exactly
- * one. Anything else is left unmatched.
+ * disease is a term on one of its pivotal trials that the FDA's wording
+ * names ("Arthritis, Rheumatoid" for "Rheumatoid Arthritis"), keeping the
+ * most specific when several are named ("Arthritis" gives way). A term the
+ * wording doesn't name is never used, however the trials are tagged: the
+ * registry's tags can be wrong (one Keytruda lymphoma trial carries
+ * "Parkinson Disease 4"). Anything else is left unmatched.
  *
  * Its definition and therapeutic areas (MeSH's top-level disease
  * categories, e.g. "Neoplasms") are read from NLM's MeSH service.
  */
 
 const MESH = 'https://id.nlm.nih.gov/mesh';
+
+// Words MeSH and the FDA use interchangeably for a malignancy.
+const SAME_WORD: Record<string, string> = { carcinoma: 'cancer', neoplasm: 'cancer', tumor: 'cancer', tumour: 'cancer' };
+
+/** The FDA's abbreviations spelled out ("NSCLC"), so the wording can be read against MeSH's full terms. */
+function expand(wording: string): string {
+  return wording.replace(/[A-Za-z][A-Za-z-]*[A-Z][A-Za-z-]*/g, (w) => (ABBREVIATIONS[w] ? `${w} ${ABBREVIATIONS[w]}` : w));
+}
 
 const words = (s: string) =>
   new Set(
@@ -27,11 +38,12 @@ const words = (s: string) =>
       .split(/[^a-z0-9]+/)
       .filter((w) => w.length > 1)
       .map((w) => w.replace(/(?<=[a-z]{3})s$/, ''))
+      .map((w) => SAME_WORD[w] ?? w)
   );
 
 /** Whether the FDA's wording names the term: every word of it appears ("Arthritis, Rheumatoid" in "Rheumatoid Arthritis"). */
 export function namesTerm(wording: string, term: string): boolean {
-  const have = words(wording);
+  const have = words(expand(wording));
   const need = [...words(term)];
   return need.length > 0 && need.every((w) => have.has(w));
 }
@@ -43,13 +55,22 @@ export interface MatchedTerm {
 }
 
 export function matchDiseases(wording: string, pivotal: Trial[]): MatchedTerm[] {
-  const tagged = pivotal.filter((t) => (t.conditionMesh ?? []).length > 0);
-  if (tagged.length === 0) return [];
-  const [first, ...rest] = tagged;
-  const common = (first.conditionMesh ?? []).filter((m) => rest.every((t) => t.conditionMesh!.some((x) => x.id === m.id)));
-  const named = common.filter((m) => namesTerm(wording, m.term));
-  const chosen = named.length > 0 ? named : common.length === 1 ? common : [];
-  return chosen.map((m) => ({ id: m.id, term: m.term, trials: tagged }));
+  const byId = new Map<string, MatchedTerm>();
+  for (const t of pivotal) {
+    for (const m of t.conditionMesh ?? []) {
+      if (!namesTerm(wording, m.term)) continue;
+      const entry = byId.get(m.id) ?? { id: m.id, term: m.term, trials: [] };
+      entry.trials.push(t);
+      byId.set(m.id, entry);
+    }
+  }
+  const named = [...byId.values()];
+  // "Arthritis" gives way to "Arthritis, Rheumatoid": a term whose words all appear in a longer named one.
+  const specific = named.filter((m) => {
+    const w = words(m.term);
+    return !named.some((o) => o !== m && words(o.term).size > w.size && [...w].every((x) => words(o.term).has(x)));
+  });
+  return specific.sort((a, b) => a.term.localeCompare(b.term));
 }
 
 interface Literal {
@@ -64,6 +85,8 @@ interface MeshInfo {
   definition?: string;
   definitionUrl?: string;
   areas: string[];
+  /** False when MeSH files the term under no disease category: a finding, not a disease ("Microsatellite Instability"). */
+  isDisease: boolean;
 }
 
 const SPARQL_PREFIX =
@@ -72,7 +95,7 @@ const SPARQL_PREFIX =
 /** A MeSH disease's definition, and the names of the top-level categories (C04, F03…) its tree numbers fall under. */
 export async function meshInfo(ctx: IngestContext, id: string): Promise<MeshInfo> {
   const descriptor = await fetchJson<Record<string, unknown>>(`${MESH}/${id}.json`, { ctx, kind: 'mesh' });
-  if (!descriptor) return { areas: [] };
+  if (!descriptor) return { areas: [], isDisease: true };
   const conceptUri = value(descriptor.preferredConcept) ?? (descriptor.preferredConcept as { '@id'?: string })?.['@id'];
   let definition: string | undefined;
   let definitionUrl: string | undefined;
@@ -99,7 +122,7 @@ export async function meshInfo(ctx: IngestContext, id: string): Promise<MeshInfo
     const label = res?.results?.bindings?.[0]?.label?.value;
     if (label) areas.push(label);
   }
-  return { definition, definitionUrl, areas };
+  return { definition, definitionUrl, areas, isDisease: tops.length > 0 };
 }
 
 const ctgovUrl = (t: Trial) => (t.nctId ? `https://clinicaltrials.gov/study/${t.nctId}` : undefined);
@@ -122,15 +145,15 @@ export async function indicationDiseases(
     } catch (err) {
       // A MeSH outage shouldn't fail the run: the disease still groups, without a definition.
       console.warn(`MeSH lookup failed for ${id}: ${(err as Error).message}`);
-      info.set(id, { areas: [] });
+      info.set(id, { areas: [], isDisease: true });
     }
   }
   const out = new Map<string, Disease[]>();
   for (const [name, terms] of matched) {
     out.set(
       name,
-      terms.map((m) => {
-        const mi = info.get(m.id) ?? { areas: [] };
+      terms.filter((m) => info.get(m.id)?.isDisease !== false).map((m) => {
+        const mi = info.get(m.id) ?? { areas: [], isDisease: true };
         return {
           meshId: m.id,
           term: m.term,

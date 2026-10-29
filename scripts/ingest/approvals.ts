@@ -69,7 +69,7 @@ export function approvalStatement(purpose: string): string {
  * forms that are also ordinary capitalised words in letters ("AS SOON AS",
  * "CD" for compact disc in old templates) are left out.
  */
-const ABBREVIATIONS: Record<string, string> = {
+export const ABBREVIATIONS: Record<string, string> = {
   NSCLC: 'non-small cell lung cancer',
   SCLC: 'small cell lung cancer',
   HNSCC: 'head and neck squamous cell cancer',

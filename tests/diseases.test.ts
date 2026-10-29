@@ -23,19 +23,28 @@ describe('matching an approved use to its disease', () => {
     expect(namesTerm('Psoriatic Arthritis', 'Arthritis, Rheumatoid')).toBe(false);
   });
 
-  it('takes a term every pivotal trial shares and the wording names', () => {
+  it('takes the most specific term on a pivotal trial that the wording names', () => {
     const t = [
       trial('NCT1', [['D001172', 'Arthritis, Rheumatoid'], ['D001168', 'Arthritis']], 'Rheumatoid Arthritis'),
       trial('NCT2', [['D001172', 'Arthritis, Rheumatoid']], 'Rheumatoid Arthritis'),
     ];
-    expect(matchDiseases('Rheumatoid Arthritis', t).map((m) => m.id)).toEqual(['D001172']);
+    const [m] = matchDiseases('Rheumatoid Arthritis', t);
+    expect(m.id).toBe('D001172');
+    expect(m.trials.map((x) => x.nctId)).toEqual(['NCT1', 'NCT2']);
   });
 
-  it('uses a single shared term the wording does not spell out, and leaves a gap when there are several', () => {
-    const nsclc = [trial('NCT3', [['D002289', 'Carcinoma, Non-Small-Cell Lung']], 'First-Line Treatment of NSCLC')];
-    expect(matchDiseases('First-Line Treatment of NSCLC', nsclc).map((m) => m.term)).toEqual(['Carcinoma, Non-Small-Cell Lung']);
-    const two = [trial('NCT4', [['D1', 'Lymphoma'], ['D2', 'Leukemia']], 'Hematologic cancer')];
-    expect(matchDiseases('Hematologic cancer', two)).toEqual([]);
+  it('reads cancer and carcinoma as one word, and spells out the FDA abbreviations', () => {
+    const lung = [trial('NCT3', [['D002289', 'Carcinoma, Non-Small-Cell Lung'], ['D008175', 'Lung Neoplasms']], 'x')];
+    expect(matchDiseases('Non-Small Cell Lung Cancer', lung).map((m) => m.term)).toEqual(['Carcinoma, Non-Small-Cell Lung']);
+    expect(matchDiseases('First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations', lung).map((m) => m.term)).toEqual([
+      'Carcinoma, Non-Small-Cell Lung',
+    ]);
+  });
+
+  it('never uses a term the wording does not name, however the trial is tagged', () => {
+    // A real Keytruda trial for this use is tagged "Parkinson Disease 4, Autosomal Dominant Lewy Body".
+    const pmbcl = [trial('NCT4', [['D020734', 'Parkinson Disease 4, Autosomal Dominant Lewy Body']], 'x')];
+    expect(matchDiseases('Primary Mediastinal Large B-Cell Lymphoma', pmbcl)).toEqual([]);
     expect(matchDiseases('Anything', [])).toEqual([]);
   });
 });
@@ -70,6 +79,18 @@ describe('MeSH definition and therapeutic areas', () => {
       definition: 'A chronic systemic disease, primarily of the joints.',
       areas: ['Musculoskeletal Diseases', 'Immune System Diseases'],
     });
+  });
+
+  it('drops a term MeSH files under no disease category', async () => {
+    responses['https://id.nlm.nih.gov/mesh/D053842.json'] = {
+      preferredConcept: 'http://id.nlm.nih.gov/mesh/M0000001',
+      treeNumber: ['http://id.nlm.nih.gov/mesh/G05.365.590.175'],
+    };
+    stub();
+    const ctx = makeContext('t', { rawDir: mkdtempSync(join(tmpdir(), 'mesh-')) });
+    const t = [trial('NCT9', [['D053842', 'Microsatellite Instability']], 'MSI-H Cancer')];
+    const name = 'Microsatellite Instability-High or Mismatch Repair Deficient Cancer';
+    expect((await indicationDiseases(ctx, [{ name }], t)).get(name)).toEqual([]);
   });
 
   it('attaches the disease to the approved use, with both sources', async () => {
