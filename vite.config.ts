@@ -4,7 +4,7 @@ import { defineConfig } from 'vitest/config';
 import type { Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { Drug } from './src/schema/index.js';
-import { checkStats, summarize } from './src/lib/summary.js';
+import { checkStats, mergeAreas, mergeCompanies, summarize } from './src/lib/summary.js';
 
 const DRUGS_DIR = fileURLToPath(new URL('./data/drugs/', import.meta.url));
 const REFERENCE_DIR = fileURLToPath(new URL('./data/reference/', import.meta.url));
@@ -42,10 +42,13 @@ function drugIndex(): Plugin {
           const refPath = REFERENCE_DIR + file;
           const ref = existsSync(refPath) ? JSON.parse(readFileSync(refPath, 'utf8')) : undefined;
           if (ref) this.addWatchFile(refPath);
-          return summarize(result.data, checkStats(ref));
+          return { ...summarize(result.data, checkStats(ref)), labelPrinted: !!result.data.regulatory.us.labelCompany };
         })
         .sort((a, b) => a.brandName.localeCompare(b.brandName));
-      return `export default ${JSON.stringify(summaries)};`;
+      const companies = mergeCompanies(summaries);
+      const areas = mergeAreas(summaries.map((s) => s.area));
+      const merged = summaries.map(({ labelPrinted: _, ...s }, i) => ({ ...s, company: companies[i], area: areas[i] }));
+      return `export default ${JSON.stringify(merged)};`;
     },
   };
 }

@@ -23,6 +23,7 @@ import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
 import { dateIndications } from './indicationDates.js';
 import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
 import { findReviews } from './reviews.js';
+import { labelCompany, reviewOffice } from './labelFacts.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 
@@ -525,6 +526,9 @@ function buildDrugRecord(
   );
   const reviews = docs.filter((d) => /review/i.test(d.type));
   trials = linkRolesToApprovals(trials, history, letters, completeFor, reviews);
+  const applicant = fda.application.sponsor_name ?? spec.sponsor;
+  const office = reviewOffice(letters);
+  const company = labelCompany(labels, applicant);
 
   return {
     slug: spec.slug,
@@ -539,8 +543,10 @@ function buildDrugRecord(
       us: {
         applicationNumber: fda.applicationNumber,
         applicationType: fda.applicationType,
-        sponsor: fda.application.sponsor_name ?? spec.sponsor,
+        sponsor: applicant,
         originalApprovalDate: original?.date,
+        ...(office ? { reviewOffice: office } : {}),
+        ...(company ? { labelCompany: company } : {}),
       },
     },
     trials,

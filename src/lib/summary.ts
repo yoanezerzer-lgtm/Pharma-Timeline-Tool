@@ -1,6 +1,7 @@
 import type { DateValue, Drug } from '../schema/index.js';
 import { trialsForIndication } from './drugs.js';
 import { drugStats, drugPendingChangeCount, type VerificationStats } from './review.js';
+import { sameCompany } from './company.js';
 
 /**
  * Everything the landing page and review index need about a drug, computed
@@ -13,6 +14,15 @@ export interface DrugSummary {
   brandName: string;
   inn: string;
   sponsor: string;
+  /**
+   * The company to list the drug under: the name its label prints, else the
+   * applicant's, with one spelling per company across all drugs (see
+   * mergeCompanies).
+   */
+  company: string;
+  /** The FDA office that reviews it, without "Office of" ("Oncologic Diseases"); unset when no letter names one. */
+  area?: string;
+  firstApproval?: DateValue;
   modality: string;
   mechanism?: string;
   trialCount: number;
@@ -48,6 +58,9 @@ export function summarize(drug: Drug, checked: CheckStats = { confirmed: 0, tota
     brandName: drug.brandName,
     inn: drug.inn,
     sponsor: drug.sponsor,
+    company: drug.regulatory.us.labelCompany?.name ?? drug.regulatory.us.sponsor ?? drug.sponsor,
+    area: drug.regulatory.us.reviewOffice?.name.replace(/^Office of /, ''),
+    firstApproval: firstApproval(drug),
     modality: drug.modality,
     mechanism: drug.mechanism,
     trialCount: drug.trials.length,
@@ -62,4 +75,47 @@ export function summarize(drug: Drug, checked: CheckStats = { confirmed: 0, tota
     checked,
     pendingChanges: drugPendingChangeCount(drug),
   };
+}
+
+function firstApproval(drug: Drug): DateValue | undefined {
+  const dates = [drug.regulatory.us.originalApprovalDate, ...drug.indications.map((i) => i.approvalDate)].filter(
+    (d): d is DateValue => !!d
+  );
+  return dates.sort((a, b) => a.value.localeCompare(b.value))[0];
+}
+
+/** Commonest first, ties alphabetically, so the choice doesn't depend on file order. */
+function commonest(names: string[]): string {
+  const counts = new Map<string, number>();
+  for (const n of names) counts.set(n, (counts.get(n) ?? 0) + 1);
+  return [...counts].sort(([a, x], [b, y]) => y - x || a.localeCompare(b))[0][0];
+}
+
+/**
+ * One spelling per company ("ABBVIE", "AbbVie Inc." → "AbbVie Inc."), using
+ * the same test the pipeline uses to tell a sponsor's own trials apart. A
+ * name a label printed beats openFDA's abbreviation of it.
+ */
+export function mergeCompanies<T extends { company: string; labelPrinted: boolean }>(drugs: T[]): string[] {
+  const groups: number[][] = [];
+  drugs.forEach((d, i) => {
+    const g = groups.find((members) => members.some((j) => sameCompany(drugs[j].company, d.company)));
+    if (g) g.push(i);
+    else groups.push([i]);
+  });
+  const names: string[] = new Array(drugs.length);
+  for (const members of groups) {
+    const printed = members.filter((j) => drugs[j].labelPrinted).map((j) => drugs[j].company);
+    const name = commonest(printed.length > 0 ? printed : members.map((j) => drugs[j].company));
+    for (const j of members) names[j] = name;
+  }
+  return names;
+}
+
+/** Office names as letters print them differ in a comma ("Endocrinology, and Nephrology"); one spelling each. */
+export function mergeAreas(areas: (string | undefined)[]): (string | undefined)[] {
+  const key = (a: string) => a.toLowerCase().replace(/,/g, '').replace(/\s+/g, ' ');
+  const byKey = new Map<string, string[]>();
+  for (const a of areas) if (a) byKey.set(key(a), [...(byKey.get(key(a)) ?? []), a]);
+  return areas.map((a) => a && commonest(byKey.get(key(a))!));
 }

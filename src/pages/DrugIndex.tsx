@@ -2,24 +2,30 @@ import { useEffect, useMemo, useState } from 'react';
 import { drugIndex } from '../lib/catalog.js';
 import { compareHref, indicationHref, reviewHref, ingestHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
-import { indicationLabel } from '../lib/drugs.js';
+import { indicationLabel, shortIndication } from '../lib/drugs.js';
 import type { DrugSummary } from '../lib/summary.js';
 import { CheckBadge } from '../components/CheckBadge/CheckBadge.js';
 import './DrugIndex.css';
 
 const approvalDates = drugIndex.flatMap((d) => d.indications.flatMap((i) => (i.approvalDate ? [i.approvalDate] : [])));
-const sponsors = [...new Set(drugIndex.map((d) => d.sponsor))].sort();
+const companies = [...new Set(drugIndex.map((d) => d.company))].sort((a, b) => a.localeCompare(b));
+const areas = [...new Set(drugIndex.flatMap((d) => (d.area ? [d.area] : [])))].sort();
+const NO_AREA = 'Review office not yet matched';
 const years = [...new Set(approvalDates.map((a) => a.value.slice(0, 4)))].sort().reverse();
 const latestApproval = approvalDates.reduce<(typeof approvalDates)[number] | null>(
   (latest, a) => (!latest || a.value > latest.value ? a : latest),
   null
 );
 const totalIndications = drugIndex.reduce((n, d) => n + d.indications.length, 0);
-const totalTrials = drugIndex.reduce((n, d) => n + d.trialCount, 0);
 
 const CARD_INDICATIONS = 4;
 
-type View = 'cards' | 'table';
+type View = 'list' | 'cards' | 'table';
+const VIEWS: { id: View; label: string }[] = [
+  { id: 'list', label: 'List' },
+  { id: 'cards', label: 'Cards' },
+  { id: 'table', label: 'Table' },
+];
 type SortKey = 'drug' | 'approved' | 'trials';
 
 function byApproval<T extends { approvalDate?: { value: string } }>(a: T, b: T): number {
@@ -46,25 +52,27 @@ export function DrugIndex() {
   const [query, setQuery] = useState(initial.get('q') ?? '');
   const [sponsor, setSponsor] = useState(initial.get('sponsor') ?? '');
   const [year, setYear] = useState(initial.get('year') ?? '');
-  const [view, setView] = useState<View>(initial.get('view') === 'table' ? 'table' : 'cards');
+  const [area, setArea] = useState(initial.get('area') ?? '');
+  const [view, setView] = useState<View>(() => VIEWS.find((v) => v.id === initial.get('view'))?.id ?? 'list');
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
   useEffect(() => {
-    writeParams({ q: query, sponsor, year, view: view === 'table' ? 'table' : '' });
-  }, [query, sponsor, year, view]);
+    writeParams({ q: query, sponsor, area, year, view: view === 'list' ? '' : view });
+  }, [query, sponsor, area, year, view]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return drugIndex.filter((d) => {
-      if (sponsor && d.sponsor !== sponsor) return false;
+      if (sponsor && d.company !== sponsor) return false;
+      if (area && (d.area ?? NO_AREA) !== area) return false;
       if (year && !d.indications.some((i) => i.approvalDate?.value.startsWith(year))) return false;
       if (!q) return true;
-      return [d.brandName, d.inn, d.sponsor, ...d.indications.flatMap((i) => [i.name, i.displayName ?? ''])]
+      return [d.brandName, d.inn, d.sponsor, d.company, d.area ?? '', ...d.indications.flatMap((i) => [i.name, i.displayName ?? ''])]
         .join(' ')
         .toLowerCase()
         .includes(q);
     });
-  }, [query, sponsor, year]);
+  }, [query, sponsor, area, year]);
 
   return (
     <main className="index">
@@ -79,34 +87,17 @@ export function DrugIndex() {
         </div>
         <h1>Drug Development Timelines</h1>
         <p className="index__lede">
-          Browse approved indications and see exactly which clinical trials supported each
-          one — traced from the FDA approval package, not padded out with every trial the
-          drug has ever run.
+          Which clinical trials supported each FDA approval, traced from the FDA's own documents.
+        </p>
+        <p className="index__summary">
+          {drugIndex.length} drugs · {totalIndications} approved uses
+          {latestApproval && <> · latest approval {formatDate(latestApproval)}</>}
         </p>
       </header>
 
-      <dl className="index__stats">
-        <div>
-          <dt>Drugs tracked</dt>
-          <dd>{drugIndex.length}</dd>
-        </div>
-        <div>
-          <dt>Approved indications</dt>
-          <dd>{totalIndications}</dd>
-        </div>
-        <div>
-          <dt>Trials catalogued</dt>
-          <dd>{totalTrials}</dd>
-        </div>
-        <div>
-          <dt>Most recent approval</dt>
-          <dd>{latestApproval ? formatDate(latestApproval) : '—'}</dd>
-        </div>
-      </dl>
-
       <div className="index__controls">
         <div className="index__control index__control--search">
-          <label htmlFor="drug-filter">Search by drug, sponsor, or indication</label>
+          <label htmlFor="drug-filter">Search by drug, company or disease</label>
           <input
             id="drug-filter"
             type="search"
@@ -116,16 +107,29 @@ export function DrugIndex() {
           />
         </div>
         <div className="index__control">
-          <label htmlFor="sponsor-filter">Sponsor</label>
+          <label htmlFor="sponsor-filter">Company</label>
           <select id="sponsor-filter" value={sponsor} onChange={(e) => setSponsor(e.target.value)}>
-            <option value="">All sponsors</option>
-            {sponsors.map((s) => (
+            <option value="">All companies</option>
+            {companies.map((s) => (
               <option key={s} value={s}>
                 {s}
               </option>
             ))}
           </select>
         </div>
+        {areas.length > 0 && (
+          <div className="index__control">
+            <label htmlFor="area-filter">FDA review office</label>
+            <select id="area-filter" value={area} onChange={(e) => setArea(e.target.value)}>
+              <option value="">All offices</option>
+              {[...areas, NO_AREA].map((a) => (
+                <option key={a} value={a}>
+                  {a}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
         <div className="index__control">
           <label htmlFor="year-filter">Approval year</label>
           <select id="year-filter" value={year} onChange={(e) => setYear(e.target.value)}>
@@ -140,9 +144,9 @@ export function DrugIndex() {
         <div className="index__control index__control--view" role="group" aria-label="View">
           <span className="index__control-label">View</span>
           <div className="index__view-toggle">
-            {(['cards', 'table'] as const).map((v) => (
-              <button key={v} type="button" aria-pressed={view === v} onClick={() => setView(v)}>
-                {v === 'cards' ? 'Cards' : 'Table'}
+            {VIEWS.map((v) => (
+              <button key={v.id} type="button" aria-pressed={view === v.id} onClick={() => setView(v.id)}>
+                {v.label}
               </button>
             ))}
           </div>
@@ -158,12 +162,15 @@ export function DrugIndex() {
             onClick={() => {
               setQuery('');
               setSponsor('');
+              setArea('');
               setYear('');
             }}
           >
             Clear all
           </button>
         </p>
+      ) : view === 'list' ? (
+        <DrugList drugs={filtered} />
       ) : view === 'table' ? (
         <IndicationTable drugs={filtered} year={year} />
       ) : (
@@ -176,7 +183,7 @@ export function DrugIndex() {
                     {d.brandName} <span className="drug-card__inn">({d.inn})</span>
                   </h2>
                   <p className="drug-card__meta">
-                    {d.mechanism ?? d.modality} · {d.sponsor}
+                    {d.mechanism ?? d.modality} · {d.company}
                   </p>
                   <p className="drug-card__check">
                     <CheckBadge stats={d.checked} />
@@ -285,7 +292,7 @@ function IndicationTable({ drugs, year }: { drugs: DrugSummary[]; year: string }
             <th scope="col">Indication</th>
             {header('approved', 'Approved')}
             {header('trials', 'Trials', true)}
-            <th scope="col" className="index__table-sponsor">Sponsor</th>
+            <th scope="col" className="index__table-sponsor">Company</th>
           </tr>
         </thead>
         <tbody>
@@ -302,11 +309,63 @@ function IndicationTable({ drugs, year }: { drugs: DrugSummary[]; year: string }
               </td>
               <td className="nums">{indication.approvalDate ? formatDate(indication.approvalDate) : '—'}</td>
               <td className="nums is-num">{indication.trialCount}</td>
-              <td className="index__table-sponsor">{drug.sponsor}</td>
+              <td className="index__table-sponsor">{drug.company}</td>
             </tr>
           ))}
         </tbody>
       </table>
+    </div>
+  );
+}
+
+/**
+ * The default view: one line per drug, grouped by the FDA office that
+ * reviews it. Each line shows the drug's first approved use in a few words;
+ * the drug page has every use in the FDA's full wording.
+ */
+function DrugList({ drugs }: { drugs: DrugSummary[] }) {
+  const grouped = areas.length > 0;
+  const groups = new Map<string, DrugSummary[]>();
+  for (const d of drugs) {
+    const key = grouped ? d.area ?? NO_AREA : '';
+    groups.set(key, [...(groups.get(key) ?? []), d]);
+  }
+  const order = [...groups.keys()].sort((a, b) => Number(a === NO_AREA) - Number(b === NO_AREA) || a.localeCompare(b));
+  return (
+    <div className="index__list">
+      {order.map((key) => (
+        <section key={key} className="index__group">
+          {grouped && (
+            <h2 className="index__group-head">
+              {key} <span className="index__group-count">{groups.get(key)!.length}</span>
+            </h2>
+          )}
+          <ul className="index__rows">
+            {groups.get(key)!.map((d) => {
+              const [first] = [...d.indications].sort(byApproval);
+              const more = d.indications.length - 1;
+              return (
+                <li key={d.slug}>
+                  <a className="index__row" href={first ? indicationHref(d.slug, first.slug) : undefined}>
+                    <span className="index__row-drug">
+                      <strong>{d.brandName}</strong> <span className="index__row-inn">{d.inn}</span>
+                    </span>
+                    <span className="index__row-use" title={first?.name}>
+                      {first ? shortIndication(first) : 'No approved use on record yet'}
+                      {more > 0 && <span className="index__row-more"> +{more} more</span>}
+                    </span>
+                    <span className="index__row-company">{d.company}</span>
+                    <span className="index__row-year nums">{d.firstApproval?.value.slice(0, 4) ?? '—'}</span>
+                    <span className="index__row-check">
+                      <CheckBadge stats={d.checked} />
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ))}
     </div>
   );
 }

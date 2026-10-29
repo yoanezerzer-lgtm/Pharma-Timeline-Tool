@@ -321,12 +321,20 @@ export const Milestone = z.object({
 });
 export type Milestone = z.infer<typeof Milestone>;
 
+/** A name read from a document, with the passage it was read from. */
+export const NamedFact = z.object({ name: z.string(), provenance: Provenance });
+export type NamedFact = z.infer<typeof NamedFact>;
+
 export const USRegulatory = z.object({
   applicationNumber: z.string(),
   applicationType: z.enum(['NDA', 'BLA', 'ANDA']),
+  /** The applicant, as openFDA records it ("MERCK SHARP DOHME"). */
   sponsor: z.string().optional(),
   originalApprovalDate: DateValue.optional(),
-  reviewDivision: z.string().optional(),
+  /** The FDA office that signed the newest approval letter naming one ("Office of Oncologic Diseases"). */
+  reviewOffice: NamedFact.optional(),
+  /** The applicant as the newest label prints it ("Merck Sharp & Dohme LLC"). */
+  labelCompany: NamedFact.optional(),
 });
 
 /** Defined but unpopulated. EMA ingestion is deliberately deferred. */
