@@ -1,0 +1,54 @@
+name: Add new drugs
+
+# Adds recently approved new medicines. The list comes from FDA's own record
+# (see scripts/ingest/novel.ts): first approvals of new molecular entities
+# and biologics, without generics, new formulations or biosimilars, and
+# without drugs already on the site. Each drug then runs through the usual
+# ingest workflow and lands on its own ingest/<slug> branch.
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: 'Approved on or after (YYYY-MM-DD)'
+        required: false
+        default: '2025-01-01'
+      limit:
+        description: 'At most this many drugs'
+        required: false
+        default: '10'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      drugs: ${{ steps.list.outputs.drugs }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - id: list
+        run: |
+          set -euo pipefail
+          drugs=$(npm run -s novel -- --from "${{ inputs.from }}" --limit "${{ inputs.limit }}")
+          echo "$drugs" | jq -r '.[] | "\(.approved)  \(.brandName)  \(.slug)  \(.applicationType) \(.applicationNumber)"' | tee -a "$GITHUB_STEP_SUMMARY"
+          echo "drugs=$drugs" >> "$GITHUB_OUTPUT"
+
+  ingest:
+    needs: list
+    if: needs.list.outputs.drugs != '[]'
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        drug: ${{ fromJSON(needs.list.outputs.drugs) }}
+    uses: ./.github/workflows/ingest.yml
+    with:
+      drug: ${{ matrix.drug.slug }}
+      application: ${{ format('{0} {1}', matrix.drug.applicationType, matrix.drug.applicationNumber) }}
