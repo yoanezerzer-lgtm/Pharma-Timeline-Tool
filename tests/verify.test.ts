@@ -156,6 +156,23 @@ describe('overnight verification', () => {
     expect(r.refs.get('testdrug')!.pivotal.find((p) => p.trial === 'NCT00000001')?.status).toBe('baseline');
   });
 
+  it('counts each night a fact is not confirmed, and stops queuing it after three', () => {
+    const unclear = (id: string, decoy: boolean, t: string): Verdict =>
+      !decoy && t === 'NCT00000001' ? { claim: id, verdict: 'unclear', evidence: [], reason: 'Garbled text.' } : honest(id, decoy, t);
+    const ctx = context();
+    for (const [night, date] of ['2026-10-27', '2026-10-28', '2026-10-29'].entries()) {
+      const { queue, key } = buildQueue([ctx], date);
+      expect(queue.some((c) => key[c.id] === 'real' && c.trial === 'NCT00000001')).toBe(true);
+      const r = applyVerdicts(queue, key, queue.map((c) => unclear(c.id, key[c.id] === 'decoy', c.trial)), [ctx], date);
+      ctx.ref = r.refs.get('testdrug')!;
+      expect(ctx.ref.pivotal.find((p) => p.trial === 'NCT00000001')?.tries).toBe(night + 1);
+      // PsA-I is a Phase 1 trial with no second source, so it is rejected every night too.
+      expect(r.stuck.map((x) => x.claim.trial).sort()).toEqual(night === 2 ? ['NCT00000001', 'NCT00000002'] : []);
+    }
+    const { queue, key } = buildQueue([ctx], '2026-10-30');
+    expect(queue.some((c) => key[c.id] === 'real' && c.trial === 'NCT00000001')).toBe(false);
+  });
+
   it('never changes an entry that is already confirmed', () => {
     const ctx = context();
     ctx.ref.pivotal[0] = { ...ctx.ref.pivotal[0], status: 'confirmed', checkedBy: 'a person' };

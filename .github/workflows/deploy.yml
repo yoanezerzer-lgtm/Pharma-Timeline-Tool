@@ -40,9 +40,39 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.deployment.outputs.page_url }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # The live site, after each update: every page loads and shows its content.
+  # A failure here emails the repository owner (GitHub's default).
+  sitecheck:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx playwright install --with-deps chromium
+
+      - name: Check the live site
+        env:
+          URL: ${{ needs.deploy.outputs.url }}
+        run: |
+          # GitHub Pages can take a minute to serve the new version everywhere.
+          for i in 1 2 3; do
+            npx tsx scripts/sitecheck.ts "$URL" && exit 0
+            sleep 60
+          done
+          exit 1

@@ -120,12 +120,16 @@ night was **voided** (a planted false claim came back supported), nothing was
 recorded. Re-read the claims you marked supported, write the summary, and
 stop. Don't retry.
 
-If any facts were confirmed:
+A fact that comes back unconfirmed (unclear, rejected, unanswered or a
+disagreement) has a night added to its `tries`; after 3 it stops being
+queued and the report lists it under "Stuck" for the owner.
+
+If anything in `data/reference/` changed (confirmations or tries):
 
 ```bash
 git checkout -b "nightly/${DATE}-confirmations" origin/main
 git add data/reference
-git commit -m "Confirm reference facts (overnight verification ${DATE})"
+git commit -m "Reference facts from overnight verification ${DATE}"
 git push -u origin HEAD
 ```
 
@@ -193,6 +197,7 @@ End the session with a short message for the owner:
   rejected, and planted claims caught;
 - readouts recorded tonight, each with its date and release link, and the
   trials you searched for but couldn't find;
+- facts newly stuck after 3 nights, from the report's "Stuck" section;
 - the spot-check list from the report, each with its quote and link. The
   owner checks these;
 - disagreements and QC errors, each with what you did about it;
