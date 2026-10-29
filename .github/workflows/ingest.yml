@@ -14,19 +14,19 @@ on:
         required: true
         type: string
       brand_name:
-        description: 'New drug only: the FDA-approved brand name (e.g. Winrevair)'
+        description: 'New drug only, optional if the application is given: the FDA-approved brand name (e.g. Winrevair)'
         required: false
         type: string
       inn:
-        description: 'New drug only: the INN / generic name (e.g. sotatercept)'
+        description: 'Optional: the INN / generic name. Read from the FDA record when blank'
         required: false
         type: string
       sponsor:
-        description: 'New drug only: the applicant of record, as written on the label (e.g. Merck Sharp & Dohme LLC)'
+        description: 'Optional: the applicant. Read from the FDA record when blank'
         required: false
         type: string
       modality:
-        description: 'New drug only: e.g. "Small molecule", "Monoclonal antibody", "Peptide"'
+        description: 'Optional: e.g. "Monoclonal antibody". The application type (NDA or BLA) when blank'
         required: false
         type: string
       mechanism:
@@ -52,6 +52,19 @@ on:
         required: false
         type: string
         default: '3000'
+
+  # The add-drugs workflow runs this once per new drug.
+  workflow_call:
+    inputs:
+      drug: { type: string, required: true }
+      application: { type: string, required: false, default: '' }
+      brand_name: { type: string, required: false, default: '' }
+      inn: { type: string, required: false, default: '' }
+      sponsor: { type: string, required: false, default: '' }
+      modality: { type: string, required: false, default: '' }
+      mechanism: { type: string, required: false, default: '' }
+      refresh: { type: boolean, required: false, default: false }
+      max_lookups: { type: string, required: false, default: '3000' }
 
 permissions:
   contents: write

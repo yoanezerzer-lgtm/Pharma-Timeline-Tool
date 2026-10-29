@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { Drug, type Drug as DrugType, type Trial, type Milestone } from '../../src/schema/index.js';
 import { makeContext, type IngestContext } from './context.js';
 import type { DrugSpec } from './registry.js';
-import { runFdaStage, type FdaStageResult } from './fda.js';
+import { identityFromApplication, runFdaStage, type FdaStageResult } from './fda.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
 import { extractCandidates, resolveCandidates, type ResolveReport } from './codes.js';
 import { studyToTrial, searchByIntervention, ctgovStudyUrl, studyMatchesDrug } from './ctgov.js';
@@ -22,6 +22,7 @@ import {
 import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
 import { dateIndications } from './indicationDates.js';
 import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
+import { findReviews } from './reviews.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 
@@ -76,7 +77,7 @@ function loadExisting(drugsDir: string, slug: string): DrugType | null {
  */
 export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   const {
-    spec,
+    spec: given,
     steps = new Set<string>(ALL_STEPS),
     rawDir,
     drugsDir = defaultDrugsDir(),
@@ -87,7 +88,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     log = () => {},
   } = options;
 
-  const ctx: IngestContext = makeContext(spec.slug, { rawDir, refresh });
+  const ctx: IngestContext = makeContext(given.slug, { rawDir, refresh });
   const warnings: string[] = [];
   const warn = (message: string) => {
     warnings.push(message);
@@ -96,7 +97,9 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
 
   // --- fda -----------------------------------------------------------------
   log('[fda]   openFDA Drugs@FDA');
-  const fda = await runFdaStage(ctx, spec.applicationNumber, spec.applicationType, spec.brandName);
+  const fda = await runFdaStage(ctx, given.applicationNumber, given.applicationType, given.brandName);
+  // A drug added by name or application number alone takes the rest of its identity from the FDA record.
+  const spec = { ...given, ...identityFromApplication(given, fda.application, fda.applicationType) };
   log(
     `        ${fda.milestones.length} approved submissions, ${fda.documentUrls.length} documents linked`
   );
@@ -105,7 +108,11 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   let docs: FetchedDoc[] = [];
   if (steps.has('docs')) {
     log('[docs]  downloading and parsing approval package');
-    docs = await runDocsStage(ctx, fda.documentUrls);
+    // Reviews openFDA doesn't list, from the Drugs@FDA page.
+    const listed = new Set(fda.documentUrls.map((d) => d.url));
+    const extra = (await findReviews(ctx, fda.applicationNumber)).filter((d) => !listed.has(d.url));
+    if (extra.length > 0) log(`        ${extra.length} more reviews linked from Drugs@FDA`);
+    docs = await runDocsStage(ctx, [...fda.documentUrls, ...extra]);
     log(`        ${docs.length} documents parsed`);
   }
 

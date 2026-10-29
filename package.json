@@ -14,7 +14,8 @@
     "validate": "tsx scripts/validate.ts",
     "qc": "tsx scripts/qc/cli.ts",
     "verify": "tsx scripts/verify/cli.ts",
-    "readouts": "tsx scripts/readouts/cli.ts"
+    "readouts": "tsx scripts/readouts/cli.ts",
+    "novel": "tsx scripts/ingest/novel.ts"
   },
   "dependencies": {
     "react": "^18.3.1",

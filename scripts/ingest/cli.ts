@@ -78,16 +78,14 @@ function parseArgs(argv: string[]): Args {
  * so a genuinely new drug can be ingested without a code change first — see
  * the GitHub Actions workflow_dispatch form in .github/workflows/ingest.yml.
  * This is still the same deterministic pipeline: no field here is inferred,
- * every one is either typed by a person or resolved from openFDA/CT.gov.
+ * every one is either given here or read from the FDA application.
  */
 function buildNewSpec(slug: string, args: NewDrugArgs): DrugSpec {
-  const required = ['brandName', 'inn', 'sponsor', 'modality'] as const;
-  const missing = required.filter((k) => !args[k]);
-  if (missing.length > 0) {
+  // Either names the FDA application; everything else comes from its record (see identityFromApplication).
+  if (!args.brandName && !args.applicationNumber) {
     console.error(
-      `"${slug}" isn't in the registry yet. To ingest a new drug, also pass ` +
-        `--brand-name, --inn, --sponsor, and --modality (missing: ${missing.join(', ')}).\n\n` +
-        `Known drugs: ${DRUG_SPECS.map((d) => d.slug).join(', ')}`
+      `"${slug}" isn't on the site yet. To add it, pass --brand-name, or --application-type ` +
+        `and --application-number.\n\nKnown drugs: ${DRUG_SPECS.map((d) => d.slug).join(', ')}`
     );
     process.exit(1);
   }
@@ -107,18 +105,17 @@ function buildNewSpec(slug: string, args: NewDrugArgs): DrugSpec {
 
   return {
     slug,
-    brandName: args.brandName!,
-    inn: args.inn!,
-    modality: args.modality!,
-    sponsor: args.sponsor!,
+    brandName: args.brandName ?? '',
+    inn: args.inn ?? '',
+    modality: args.modality ?? '',
+    sponsor: args.sponsor ?? '',
     mechanism: args.mechanism,
     applicationNumber,
     applicationType: applicationType as DrugSpec['applicationType'],
-    // A reasonable starting point — the INN and brand name are always valid
-    // ClinicalTrials.gov intervention terms. Development code names (e.g. an
-    // "ABT-494" or "PTG-300") can be added to registry.ts by hand afterward
-    // if early trials turn out to be registered under one.
-    interventionNames: [args.inn!, args.brandName!],
+    // The INN and brand name are always valid ClinicalTrials.gov intervention
+    // terms; blank ones are filled from the FDA record. Development code names
+    // (e.g. "ABT-494") can be added to registry.ts if early trials use them.
+    interventionNames: [args.inn ?? '', args.brandName ?? ''].filter(Boolean),
   };
 }
 
@@ -153,7 +150,7 @@ async function main(): Promise<void> {
     spec.applicationType && spec.applicationNumber
       ? `${spec.applicationType} ${spec.applicationNumber}`
       : 'application number not yet known — resolving by brand name';
-  console.log(`\nIngesting ${spec.brandName} (${spec.inn}) — ${knownApplication}\n`);
+  console.log(`\nIngesting ${spec.brandName || spec.slug}${spec.inn ? ` (${spec.inn})` : ''} — ${knownApplication}\n`);
 
   const result = await runIngest({
     spec,
