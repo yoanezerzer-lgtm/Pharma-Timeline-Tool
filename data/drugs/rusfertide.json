@@ -90,6 +90,31 @@
           }
         }
       ],
+      "diseases": [
+        {
+          "meshId": "D011087",
+          "term": "Polycythemia Vera",
+          "areas": [
+            "Neoplasms",
+            "Hemic and Lymphatic Diseases"
+          ],
+          "definition": {
+            "text": "A myeloproliferative disorder of unknown etiology, characterized by abnormal proliferation of all hematopoietic bone marrow elements and an absolute increase in red cell mass and total blood volume, associated frequently with splenomegaly, leukocytosis, and thrombocythemia. Hematopoiesis is also reactive in extramedullary sites (liver and spleen). In time myelofibrosis occurs.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011087",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05210790",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05210790)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
       "fdaAnnouncementUrl": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder"
     }
   ],
@@ -126,6 +151,15 @@
       "status": "COMPLETED",
       "sponsor": "Protagonist Therapeutics, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
       "startDate": {
         "value": "2019-10-01",
         "precision": "day"
@@ -230,6 +264,15 @@
       "status": "COMPLETED",
       "sponsor": "Protagonist Therapeutics, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hereditary Hemochromatosis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006432",
+          "term": "Hemochromatosis"
+        }
+      ],
       "startDate": {
         "value": "2020-03-19",
         "precision": "day"
@@ -322,6 +365,15 @@
       "status": "COMPLETED",
       "sponsor": "Protagonist Therapeutics, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
       "startDate": {
         "value": "2021-02-02",
         "precision": "day"
@@ -435,6 +487,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Protagonist Therapeutics, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
       "startDate": {
         "value": "2022-04-11",
         "precision": "day"
@@ -861,6 +922,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Protagonist Therapeutics, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
       "startDate": {
         "value": "2024-01-22",
         "precision": "day"
@@ -958,6 +1028,15 @@
       "status": "RECRUITING",
       "sponsor": "Takeda",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
       "startDate": {
         "value": "2026-07-14",
         "precision": "day"
@@ -1056,6 +1135,15 @@
       "status": "NOT_YET_RECRUITING",
       "sponsor": "Takeda",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
       "startDate": {
         "value": "2027-03-01",
         "precision": "day"
@@ -1184,5 +1272,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:36.503Z"
+  "lastIngestedAt": "2026-10-29T19:15:21.177Z"
 }
