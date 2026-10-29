@@ -4,6 +4,56 @@
   "inn": "florquinitau f-18",
   "modality": "Drug (NDA)",
   "sponsor": "CERVEAU LANTHEUS",
+  "pharmacology": {
+    "drugClass": {
+      "name": "radioactive diagnostic drug",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220496Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "TAUKLARIFY is a radioactive diagnostic drug indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Florquinitau F 18 binds to aggregated tau protein. In the brains of patients with Alzheimer’s disease, tau aggregates combine to form NFTs, one of two components required for the neuropathological diagnosis of Alzheimer’s disease. In vitro binding studies using postmortem human brain homogenates containing tau NFTs, the dissociation constant (K d ) for florquinitau was 0.3 nM.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220496Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Following intravenous injection, florquinitau F 18 crosses the blood-brain barrier and accumulates in brain regions that contain tau NFTs. The signal intensity of florquinitau F 18 increases after time zero and is stabilized by approximately 40 minutes to 60 minutes post-injection.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220496Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The pharmacokinetics of florquinitau F 18 were evaluated in healthy subjects and patients with Alzheimer’s disease following single intravenous doses of 160 MBq and 370 MBq (0.86 and 2 times the recommended dose, respectively). The area under the time concentration curve (AUC) increased in a dose proportional manner over the dosage range. Pharmacokinetic parameters are presented as mean ± standard deviation unless otherwise specified. The maximum plasma radioactivity concentration (C max ) was 61.5 ± 19.9 (kBq/mL) and the AUC was 10.5 ± 3.2 (h×kBq/mL) for 160 MBq (0.86 times the recommended dose). Distribution Florquinitau F 18 was 84% bound to plasma proteins. Florquinitau F 18 distributed rapidly throughout the body with peak brain uptake within about 3 minutes after injection. Elimination The clearance of florquinitau F 18 is 16.1 ± 4.1 L/h. The terminal half-life is 2.3 ± 0.5 hours. Metabolism Florquinitau F 18 is primarily metabolized via CYP1A2 -mediated oxidation. The plasma parent florquinitau F 18 fraction was > 85% at 2 minutes following administration and declined to 20% at 15 minutes following administration. Excretion Based on imaging dosimetry, injected radioactivity from TAUKLARIFY was eliminated by hepatobiliary and renal excretion. After administration of a single dose of TAUKLARIFY, 21.1 ± 7.3% of injected radioactivity was excreted in urine by 2 hours. Drug Interaction Studies In Vitro Studies 15 CYP450 enzymes: Florquinitau is not a substrate of CYP3A4, CYP2C8, CYP2C9, CYP2C19, CYP2D6, or CYP2B6. Transporter systems: Florquinitau is not a substrate of P-gp, BCRP, OCT2, MATE1, MATE2-K, OAT1, OAT3, OATP1B1, or OATP1B3. Florquinitau is not an inhibitor of P-gp, BCRP, OCT2, MATE1, MATE2-K, OAT1, OAT3, OATP1B1, or OATP1B3.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220496Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -85,5 +135,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:38.675Z"
+  "lastIngestedAt": "2026-10-29T18:37:12.489Z"
 }
