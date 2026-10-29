@@ -1,0 +1,1456 @@
+{
+  "slug": "daraxonrasib",
+  "brandName": "Rasonque",
+  "inn": "daraxonrasib",
+  "modality": "Drug (NDA)",
+  "sponsor": "REVOLUTION MEDICINES",
+  "summary": "",
+  "indications": [],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220910",
+      "applicationType": "NDA",
+      "sponsor": "REVOLUTION MEDICINES",
+      "originalApprovalDate": {
+        "value": "2026-08-26",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "rmc-6236-001",
+      "nctId": "NCT05379985",
+      "protocolNumber": "RMC-6236-001",
+      "title": "A Multicenter Open-Label Study of RMC-6236 in Patients With Advanced Solid Tumors Harboring Specific Mutations in RAS",
+      "briefTitle": "Study of RMC-6236 in Patients With Advanced Solid Tumors Harboring Specific Mutations in RAS",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-05-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-05-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-07-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 754,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Experimental: RMC-6236",
+          "type": "EXPERIMENTAL",
+          "description": "Enrollment into dose exploration may be from any advanced solid tumor type with KRAS p.G12 mutations.\n\nEnrollment into dose expansion/optimization may be from groups consisting of patients with a single histotype/genotype (for example, KRAS G12-mutated NSCLC, PDAC, CRC, RAS mutant NSCLC, Melanoma, gynecological cancer or other solid tumors not previously specified).\n\nRAS mutant is defined as any nonsynonymous mutation of KRAS, NRAS, or HRAS at codons 12, 13, or 61 (G12, G13, or Q61)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence and severity of treatment-emergent Adverse Events (AEs) and serious AEs, including incidence and severity of findings in laboratory values and vital signs",
+        "Number of Participants with Dose-Limiting Toxicity (DLT)"
+      ],
+      "secondaryEndpoints": [
+        "Maximum Observed Blood Concentration (Cmax) of RMC-6236",
+        "Time to Reach Maximum Blood Concentration (Tmax) of RMC-6236",
+        "Area Under Blood Concentration Time Curve (AUC) of RMC-6236",
+        "Elimination Half-Life of RMC-6236 (t1/2)",
+        "Ratio of accumulation of RMC-6236 from a single dose to steady state with repeated dosing",
+        "Overall Response Rate (ORR)",
+        "Duration of Response (DOR)",
+        "Disease Control Rate (DCR)",
+        "Time to Response (TTR)",
+        "Progression-Free Survival (PFS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05379985",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05379985",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05379985",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05379985",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05379985",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rmc-9805-001",
+      "nctId": "NCT06040541",
+      "protocolNumber": "RMC-9805-001",
+      "title": "Phase 1/1b, Multicenter, Open-Label, Study of RMC 9805 in Participants With Advanced KRASG 12D-Mutant Solid Tumors",
+      "briefTitle": "Study of RMC-9805 in Participants With KRAS G12D-Mutant Solid Tumors",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-09-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-04-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 604,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "RMC-9805 monotherapy arm",
+          "type": "EXPERIMENTAL",
+          "description": "Dose exploration and dose expansion"
+        },
+        {
+          "label": "RMC-9805 plus RMC-6236 combination arm",
+          "type": "EXPERIMENTAL",
+          "description": "Dose exploration and dose expansion"
+        }
+      ],
+      "primaryEndpoints": [
+        "Adverse events",
+        "Dose Limiting Toxicities"
+      ],
+      "secondaryEndpoints": [
+        "Maximum Observed Blood Concentration (Cmax) of RMC-9805 as monotherapy and in combination with RMC-6236, and Cmax of RMC-6236 in combination with RMC-9805",
+        "Time to Reach Maximum Blood Concentration (Tmax) of RMC-9805 as monotherapy and in combination with RMC-6236, and Tmax of RMC-6236 in combination with RMC-9805",
+        "Area Under Blood Concentration Time Curve (AUC) of RMC-9805 as monotherapy and in combination with RMC-6236, and AUC of RMC-6236 in combination with RMC-9805",
+        "Ratio of accumulation of RMC-9805 from a single dose to steady state with repeated dosing as monotherapy and in combination with RMC-6236, and ratio of accumulation of RMC-6236 in combination with RMC-9805",
+        "Elimination Half-Life (t1/2) of RMC-9805 as monotherapy and in combination with RMC-6236, and t1/2 of RMC-6236 in combination with RMC-9805",
+        "Overall Response Rate (ORR)",
+        "Duration of Response (DOR)",
+        "Disease Control Rate (DCR)",
+        "Time to Response (TTR)",
+        "Progression-Free Survival (PFS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06040541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06040541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06040541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06040541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06040541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rmc-6291-101",
+      "nctId": "NCT06128551",
+      "protocolNumber": "RMC-6291-101",
+      "title": "Phase 1b/2, Multicenter, Open-label, Dose Escalation and Dose Expansion Study of Elironrasib and Daraxonrasib as Monotherapies and Combination Therapy in Patients With Advanced KRAS G12C-Mutated Solid Tumors",
+      "briefTitle": "Study of Elironrasib and Daraxonrasib as Monotherapies and Combination Therapy in Participants With Advanced KRAS G12C Mutant Solid Tumors",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-11-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2029-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 534,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Elironrasib Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Phase 2 only"
+        },
+        {
+          "label": "Daraxonrasib Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Phase 2 only"
+        },
+        {
+          "label": "Daraxonrasib + Elironrasib Combination",
+          "type": "EXPERIMENTAL",
+          "description": "Phase 1b and 2"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of patients with adverse events (AEs) in Phase 1b",
+        "Changes in vital signs in Phase 1b",
+        "Changes in clinical laboratory test values in Phase 1b",
+        "Dose Limiting Toxicities in Phase 1b",
+        "Changes in ECGs in Phase 1b",
+        "Overall Response Rate (ORR) in Phase 2"
+      ],
+      "secondaryEndpoints": [
+        "Maximum Observed Blood Concentration of Elironrasib and Daraxonrasib",
+        "Time to Reach Maximum Blood Concentration of Elironrasib and Daraxonrasib",
+        "Area Under Blood Concentration Time Curve of Elironrasib and Daraxonrasib",
+        "Elimination Half-Life of Elironrasib and Daraxonrasib",
+        "Ratio of accumulation of Elironrasib and Daraxonrasib from a single dose to steady state with repeated dosing",
+        "Overall Response Rate (ORR) in Phase 1b",
+        "Duration of Response (DOR)",
+        "Disease Control Rate in Phase 1b",
+        "Time to Response (TTR) in Phase 1b",
+        "Progression-Free Survival (PFS)",
+        "Number of patients with AEs in Phase 2",
+        "Changes in vital signs in Phase 2",
+        "Changes in clinical laboratory values in Phase 2",
+        "Overall Survival (OS) in Phase 2"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06128551",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06128551",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06128551",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06128551",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06128551",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rmc-lung-101",
+      "nctId": "NCT06162221",
+      "protocolNumber": "RMC-LUNG-101",
+      "title": "A Platform Study of RAS(ON) Inhibitors in Patients With RAS-Mutated Non-Small Cell Lung Cancer (NSCLC)",
+      "briefTitle": "Study of RAS(ON) Inhibitors in Patients With Advanced RAS-mutated NSCLC",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 616,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Subprotocol A: KRAS G12C-Mutated Solid Tumors",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-6291 (BID), RMC-6236 (QD), and Pembrolizumab (Q3W) with or without Chemotherapy (Q3W)"
+        },
+        {
+          "label": "Subprotocol B: RAS-mutated NSCLC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-6236 (QD) and Pembrolizumab (Q3W) with or without Chemotherapy (Q3W)"
+        },
+        {
+          "label": "Subprotocol C: RAS G12D-mutated NSCLC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-9805 (QD or BID), RMC-6236 (QD), and Pembrolizumab (Q3W) with or without Chemotherapy (Q3W)."
+        },
+        {
+          "label": "Subprotocol D: RAS G12D-mutated NSCLC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-9805 (QD)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Adverse events",
+        "Dose limiting toxicities"
+      ],
+      "secondaryEndpoints": [
+        "Drug concentrations over time",
+        "Cmax",
+        "Tmax",
+        "AUC",
+        "ORR",
+        "DOR"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06162221",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06162221",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06162221",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06162221",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06162221",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rmc-gi-102",
+      "nctId": "NCT06445062",
+      "protocolNumber": "RMC-GI-102",
+      "title": "A Platform Study of RAS(ON) Inhibitors in Patients With Gastrointestinal Solid Tumors",
+      "briefTitle": "Study of RAS(ON) Inhibitors in Patients With Gastrointestinal Solid Tumors",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-05-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-09-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-03-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1130,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Subprotocol A: RAS-mutated unresectable or metastatic CRC or metastatic PDAC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-6236 (QD) and bevacizumab with 5-fluorouracil-based regimens"
+        },
+        {
+          "label": "Subprotocol B: RAS-mutated unresectable or metastatic CRC or metastatic PDAC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-6236 (QD) and cetuximab with or without mFOLFOX6"
+        },
+        {
+          "label": "Subprotocol C: metastatic PDAC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-6236 (QD) and gemcitabine with nab-paclitaxel"
+        },
+        {
+          "label": "Subprotocol D: RAS G12D-mutated unresectable or metastatic CRC or metastatic PDAC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-9805 (QD or BID) with or without RMC-6236 (QD), and bevacizumab with 5-fluorouracil- based regimens"
+        },
+        {
+          "label": "Subprotocol E: RAS G12D-mutated unresectable or metastatic CRC or metastatic PDAC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-9805 (QD or BID) with or without RMC-6236 (QD), and cetuximab with or without mFOLFOX6"
+        },
+        {
+          "label": "Subprotocol F: RAS G12D-mutated metastatic PDAC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-9805 (QD or BID) with or without RMC-6236 (QD), and gemcitabine with nab-paclitaxel"
+        },
+        {
+          "label": "Subprotocol G: RAS G12D-mutated metastatic CRC",
+          "type": "EXPERIMENTAL",
+          "description": "RMC-9805 (QD) and cetuximab with FOLFIRI"
+        }
+      ],
+      "primaryEndpoints": [
+        "Adverse events (Subprotocols A-F)",
+        "Dose limiting toxicities (Subprotocols A-F)",
+        "Objective Response Rate (ORR) Per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) as assessed by Blinded Independent Central Review (BICR)(Subprotocol G)"
+      ],
+      "secondaryEndpoints": [
+        "Pharmacokinetics of RMC-6236 (Subprotocols A-F)",
+        "Pharmacokinetics of RMC-9805 (Subprotocols D-G)",
+        "ORR assessed by Investigator (Subprotocols A-G)",
+        "DOR (Subprotocols A-G)",
+        "DCR (Subprotocols A-G)",
+        "TTR (Subprotocols A-G)",
+        "PFS (Subprotocols A-G)",
+        "PFS Rate at 6 and 12 Months (Subprotocol G)",
+        "OS (Subprotocols A-F)",
+        "Overall Survival Rate at 12 Months (Subprotocol G)",
+        "Number of Participants with Adverse Events (Subprotocol G)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445062",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445062",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445062",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445062",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445062",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rasolute-302",
+      "nctId": "NCT06625320",
+      "protocolNumber": "RMC-6236-302",
+      "acronym": "RASolute 302",
+      "title": "RASolute 302: A Phase 3 Multicenter, Open-label, Randomized Study of Daraxonrasib (RMC-6236) Versus Investigator's Choice of Standard of Care Therapy in Patients With Previously Treated Metastatic Pancreatic Ductal Adenocarcinoma (PDAC)",
+      "briefTitle": "Phase 3 Study of Daraxonrasib (RMC-6236) in Patients With Previously Treated Metastatic Pancreatic Ductal Adenocarcinoma (PDAC)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-10-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 500,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "RMC-6236",
+          "type": "EXPERIMENTAL",
+          "description": "Study drug"
+        },
+        {
+          "label": "Investigator's choice of standard of care therapy",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Patients randomized to Investigator's choice of standard of care chemotherapy will receive one of the following four treatments:\n\n* Gemcitabine and nab-paclitaxel (GnP)\n* Oxaliplatin, leucovorin, irinotecan, and 5-FU (Modified FOLFIRINOX: mFOLFIRINOX)\n* Liposomal irinotecan (Nal-IRI + 5-FU/LV)\n* Oxaliplatin, leucovorin and 5-FU IV (FOLFOX)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression free survival (PFS) in the RAS G12-mutant population",
+        "Overall survival (OS) in the RAS G12-mutant population"
+      ],
+      "secondaryEndpoints": [
+        "PFS in the all-patient population",
+        "OS in the all-patient population",
+        "Objective response in the RAS G12 and all-patient populations",
+        "Time to deterioration (TTD) in European Organization for Research and Treatment of Cancer Quality of Life Questionnaire Pancreatic Cancer Module (EORTC QLQ-PAN26) in the RAS G12 and all-patient populations",
+        "Time to deterioration (TTD) in European Organization for Research and Treatment of Cancer Quality of Life Questionnaire Core 30 (EORTC QLQ-C30) in the RAS G12 and all-patient populations",
+        "Objective response per investigator in RAS G12 and all- patient populations",
+        "Duration of response (DOR) in RAS G12 and all-patient populations",
+        "Time to response (TTR) in RAS G12 and all-patient populations",
+        "Percentage of patients with adverse events (AEs)",
+        "Pharmacokinetics of RMC-6236 in RAS G12 and all-patient populations"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220910Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 15,
+          "quote": "ONQUE was evaluated in a global, randomized, open-label, multicenter study (RASolute 302; NCT06625320). Patients were required to have metastatic pancreatic adenocarcinoma with disease progre",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rasolve-301",
+      "nctId": "NCT06881784",
+      "protocolNumber": "RMC-6236-301",
+      "acronym": "RASolve 301",
+      "title": "RASolve 301: Phase 3 Multicenter, Open Label, Randomized Study of RMC-6236 Versus Docetaxel in Patients With Previously Treated Locally Advanced or Metastatic RAS[MUT] NSCLC",
+      "briefTitle": "Study of Daraxonrasib (RMC-6236) in Patients With RAS Mutated NSCLC (RASolve 301)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-05-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-12-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 590,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "daraxonrasib",
+          "type": "EXPERIMENTAL",
+          "description": "study drug"
+        },
+        {
+          "label": "docetaxel",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Patients randomized to the comparator control arm will receive docetaxel as the standard of care therapy."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression free survival (PFS) per Blinded Independent Central Review (BICR) in the RAS G12X-C population (i.e RAS G12X excluding G12C)",
+        "Overall survival (OS) in the RAS G12X-C population"
+      ],
+      "secondaryEndpoints": [
+        "PFS in the RAS (MUT) population per BICR",
+        "OS in the RAS (MUT) population",
+        "Objective response per BICR in the RAS (G12X-C) and RAS (MUT) populations",
+        "PFS per Investigator in the RAS (G12X-C) and RAS (MUT) populations",
+        "Objective response per Investigator in the RAS (G12X-C) and RAS (MUT) populations",
+        "Duration of response (DOR) per Investigator and per BICR in the RAS (G12X-C) and RAS (MUT) populations",
+        "Time to response (TTR) per Investigator and per BICR in the RAS (G12X-C) and RAS (MUT) populations",
+        "Treatment effect on quality of life (QoL) using EORTC QLQ-LC13 In the RAS (G12X-C) and RAS (MUT) populations",
+        "Treatment effect on quality of life (QoL) using EORTC QLQ-C30 In the RAS (G12X-C) and RAS (MUT) populations",
+        "Safety and tolerability in the RAS (G12X-C) and RAS (MUT) population",
+        "PK characterization of daraxonrasib In the RAS (MUT) population"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06881784",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06881784",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06881784",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06881784",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06881784",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rasolute-304",
+      "nctId": "NCT07252232",
+      "protocolNumber": "RMC-6236-304",
+      "acronym": "RASolute 304",
+      "title": "RASolute 304: A Phase 3 Multicenter, Open-label, Randomized, 2-Arm Study of Adjuvant Daraxonrasib Versus Standard of Care Observation Following Completion of Neoadjuvant and/or Adjuvant Chemotherapy in Patients With Resected Pancreatic Ductal Adenocarcinoma (PDAC)",
+      "briefTitle": "Study of Daraxonrasib (RMC-6236) in Patients With Resected Pancreatic Ductal Adenocarcinoma (PDAC)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-12-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-05-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-07-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 500,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "daraxonrasib",
+          "type": "EXPERIMENTAL",
+          "description": "study drug"
+        },
+        {
+          "label": "SOC Observation",
+          "type": "NO_INTERVENTION",
+          "description": "Patients randomized to the comparator control arm will receive SOC observation."
+        }
+      ],
+      "primaryEndpoints": [
+        "Disease-Free Survival (DFS) per Investigator"
+      ],
+      "secondaryEndpoints": [
+        "Overall survival (OS)",
+        "DFS per blinded independent central review (BICR)",
+        "DFS Rate at 1 year and 2 years",
+        "OS rate at 1 year and 2 years",
+        "Safety and tolerability of daraxonrasib",
+        "Pharmacokinetics (PK)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07252232",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07252232",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07252232",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07252232",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07252232",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rmc-5127-001",
+      "nctId": "NCT07349537",
+      "protocolNumber": "RMC-5127-001",
+      "title": "Phase 1/1b, Multicenter, Open-Label, Study of RMC-5127 in Patients With Advanced KRAS G12V-Mutant Solid Tumors",
+      "briefTitle": "Study of RMC-5127 in Patients With Advanced KRAS G12V-Mutant Solid Tumors",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-01-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-04-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-10-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 574,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: RMC-5127 Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Dose Escalation and Dose Expansion"
+        },
+        {
+          "label": "Arm B: RMC-5127 + Daraxonrasib Combination",
+          "type": "EXPERIMENTAL",
+          "description": "Dose Escalation and Dose Expansion"
+        },
+        {
+          "label": "Arm C: RMC-5127 + Cetuximab Combination",
+          "type": "EXPERIMENTAL",
+          "description": "Dose Escalation and Dose Expansion"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of patients with adverse events (AEs)",
+        "Changes in vital signs",
+        "Changes in electrocardiogram (ECG) test values",
+        "Changes in clinical laboratory test values",
+        "Dose Limiting Toxicities"
+      ],
+      "secondaryEndpoints": [
+        "Cmax concentrations of RMC-5127 and daraxonrasib",
+        "Tmax concentration of RMC-5127 and daraxonrasib",
+        "AUC concentrations of RMC-5127 and daraxonrasib",
+        "Ratio of accumulation of RMC-5127",
+        "Half-Life of RMC-5127 and daraxonrasib",
+        "Objective Response Rate (ORR)",
+        "Duration of Response (DOR)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07349537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07349537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07349537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07349537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07349537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rmc-apex-103",
+      "nctId": "NCT07397338",
+      "protocolNumber": "RMC-APEX-103",
+      "title": "A Phase 1/2 Open-Label, Multicenter Study of RAS(ON) Inhibitors in Combination With Ivonescimab With or Without Other Anti-Cancer Agents in Patients With Solid Tumors",
+      "briefTitle": "Study of RAS(ON) Inhibitors in Combination With Ivonescimab in Patients With Solid Tumors",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-01-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-05-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2029-05-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 370,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Daraxonrasib + Ivonescimab Combination",
+          "type": "EXPERIMENTAL",
+          "description": "Dose Exploration and Dose Expansion (+ Carboplatin/Cisplatin + Pemetrexed)"
+        },
+        {
+          "label": "Arm B: Elironrasib + Ivonescimab Combination",
+          "type": "EXPERIMENTAL",
+          "description": "Dose Exploration and Dose Expansion. Dose Expansion will include two separate cohorts: Cohort B1 (+ daraxonrasib) and Cohort B2 (+ Carboplatin/Cisplatin + Pemetrexed)."
+        },
+        {
+          "label": "Arm C: Zoldonrasib + Ivonescimab Combination",
+          "type": "EXPERIMENTAL",
+          "description": "Dose Exploration and Dose Expansion. Dose Expansion will include two separate cohorts: Cohort C1 and Cohort C2 (+ Cetuximab)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of patients with adverse events (AEs)",
+        "Changes in vital signs",
+        "Changes in clinical laboratory test values",
+        "Dose Limiting Toxicities"
+      ],
+      "secondaryEndpoints": [
+        "Concentration of RAS(ON) inhibitors and ivonescimab",
+        "Objective Response Rate (ORR)",
+        "Duration of Response (DOR)",
+        "Disease Control Rate (DCR)",
+        "Time to response (TTR)",
+        "Progression free survival (PFS)",
+        "Anti-drug Antibody (ADA) of ivonescimab"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07397338",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07397338",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07397338",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07397338",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07397338",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rasolute-303",
+      "nctId": "NCT07491445",
+      "protocolNumber": "RMC-6236-303",
+      "acronym": "RASolute 303",
+      "title": "RASolute 303: A Phase 3 Global, Multicenter, Open-label, Randomized, 3-Arm Study of Daraxonrasib Monotherapy or Daraxonrasib Plus Gemcitabine and Nab-paclitaxel Versus Gemcitabine and Nab-paclitaxel as a First-Line Treatment for Patients With Metastatic Pancreatic Adenocarcinoma",
+      "briefTitle": "Study of Daraxonrasib and Daraxonrasib + GnP as First-line Treatment in Patients With Metastatic Pancreatic Adenocarcinoma",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-03-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2029-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 900,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: daraxonrasib",
+          "type": "EXPERIMENTAL",
+          "description": "study drug"
+        },
+        {
+          "label": "Arm B: daraxonrasib + gemcitabine and nab-paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "study drug in combination with chemotherapy"
+        },
+        {
+          "label": "Arm C: gemcitabine and nab-paclitaxel",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "SOC chemotherapy"
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression free survival (PFS)",
+        "Overall survival (OS)"
+      ],
+      "secondaryEndpoints": [
+        "Objective response rate (ORR)",
+        "Duration of response (DOR)",
+        "Concentration of daraxonrasib in Arm A and B",
+        "Health-related outcome assessed by European Organization for Research and Treatment of Cancer Quality of Life Questionnaire Pancreatic Cancer Module (EORTC QLQ-PAN26)",
+        "Quality of life as assessed with European Organization for Research and Treatment of Cancer Quality of Life Questionnaire Core 30 (EORTC QLQ-C30)",
+        "Incidence of adverse events (AEs)",
+        "Changes in vital signs",
+        "Changes in clinical laboratory test values"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07491445",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07491445",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07491445",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07491445",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07491445",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rasolute-309",
+      "nctId": "NCT07805954",
+      "protocolNumber": "RMC-9805-309",
+      "acronym": "RASolute 309",
+      "title": "A Phase 3, Randomized, Open-Label Study of Zoldonrasib (RMC-9805) Plus Daraxonrasib (RMC-6236) Versus Gemcitabine and Nab-Paclitaxel as First-Line Treatment in Patients With Metastatic KRAS G12D-Mutated Pancreatic Adenocarcinoma",
+      "briefTitle": "Study of Zoldonrasib (RMC-9805) Plus Daraxonrasib (RMC-6236) Versus Gemcitabine and Nab-Paclitaxel as First-Line Treatment in Metastatic KRAS G12D-Mutated Pancreatic Adenocarcinoma",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-08-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-03-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2030-04-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 400,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: daraxonrasib + zoldonrasib",
+          "type": "EXPERIMENTAL",
+          "description": "combination of study drugs"
+        },
+        {
+          "label": "Arm B: gemcitabine and nab-paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "chemotherapy"
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression free survival (PFS)",
+        "Overall survival (OS)"
+      ],
+      "secondaryEndpoints": [
+        "PFS by blinded independent central review (BICR)",
+        "Objective response rate (ORR)",
+        "Duration of response (DOR)",
+        "Incidence of adverse events (AEs)",
+        "Changes in vital signs",
+        "Changes in clinical laboratory test values",
+        "Concentration of daraxonrasib and zoldonrasib in Arm A",
+        "Health-related outcome assessed by European Organization for Research and Treatment of Cancer Quality of Life Questionnaire Pancreatic Cancer Module (EORTC QLQ-PAN26) pain scale",
+        "Quality of life as assessed with European Organization for Research and Treatment of Cancer Quality of Life Questionnaire Core 30 (EORTC QLQ-C30) global health status score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07805954",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07805954",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07805954",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07805954",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07805954",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rmc-6236-401",
+      "nctId": "NCT07573215",
+      "protocolNumber": "RMC-6236-401",
+      "title": "Expanded Access Program to Treat Patients With Previously Treated Metastatic Pancreatic Adenocarcinoma With Daraxonrasib",
+      "briefTitle": "Expanded Access Program for Daraxonrasib (RMC-6236) in Previously Treated Metastatic Pancreatic Adenocarcinoma",
+      "phase": "NA",
+      "roles": [],
+      "status": "APPROVED_FOR_MARKETING",
+      "sponsor": "Revolution Medicines, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573215",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573215",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573215",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573215",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573215",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-08-26",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220910%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220910",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220910%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220910Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220910Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:59:22.611Z"
+}
