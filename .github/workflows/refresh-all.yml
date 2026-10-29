@@ -1,0 +1,45 @@
+name: Refresh all drugs
+
+# Re-runs ingestion for every drug on the site, e.g. after the pipeline
+# learns to read a new fact. Each drug's new data lands on its own
+# ingest/<slug> branch, as with a single run; combine them into one data PR.
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Optional: space-separated slugs to refresh instead of all'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      drugs: ${{ steps.list.outputs.drugs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          if [ -n "$ONLY" ]; then
+            drugs=$(printf '%s\n' $ONLY | jq -R . | jq -sc .)
+          else
+            drugs=$(ls data/drugs/*.json | xargs -n1 basename | sed 's/\.json$//' | jq -R . | jq -sc .)
+          fi
+          echo "drugs=$drugs" >> "$GITHUB_OUTPUT"
+
+  ingest:
+    needs: list
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        drug: ${{ fromJSON(needs.list.outputs.drugs) }}
+    uses: ./.github/workflows/ingest.yml
+    with:
+      drug: ${{ matrix.drug }}

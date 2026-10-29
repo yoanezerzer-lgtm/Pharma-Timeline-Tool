@@ -19,6 +19,19 @@ export function indicationLabel(i: { name: string; displayName?: string }): stri
   return i.displayName || i.name;
 }
 
+/**
+ * The indication in a few words for a list: a person's short name, else the
+ * label's own heading when it is one ("Rheumatoid Arthritis"), else the
+ * label's sentence cut at a word with "…". Always the FDA's words, never
+ * reworded; the full wording goes in a tooltip and on the drug page.
+ */
+export function shortIndication(i: { name: string; displayName?: string }, max = 60): string {
+  if (i.displayName) return i.displayName;
+  if (i.name.length <= max) return i.name;
+  const cut = i.name.slice(0, max + 1).replace(/[\s,;(]+\S*$/, '');
+  return `${cut}…`;
+}
+
 export function getIndication(drug: DrugType, slug: string): Indication | undefined {
   return drug.indications.find((i) => i.slug === slug);
 }

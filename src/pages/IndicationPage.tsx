@@ -70,7 +70,9 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
     );
   }
 
-  const checked = drugIndex.find((d) => d.slug === drug.slug)?.checked ?? { confirmed: 0, total: 0 };
+  const listed = drugIndex.find((d) => d.slug === drug.slug);
+  const checked = listed?.checked ?? { confirmed: 0, total: 0 };
+  const company = listed?.company ?? drug.sponsor;
   // The supplement that added this indication (dated from the labels at
   // ingest) is shown as this page's approval; other indications' efficacy
   // supplements and administrative ones stay hidden.
@@ -150,8 +152,8 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             </dd>
           </div>
           <div>
-            <dt>Sponsor</dt>
-            <dd>{drug.sponsor}</dd>
+            <dt>Company</dt>
+            <dd>{company}</dd>
           </div>
           <div>
             <dt>Approved for this use</dt>
@@ -204,7 +206,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             <p>
               No registered trial could be matched to this approval. Usually either the label
               describes the trials without their ClinicalTrials.gov numbers, or they were run by
-              an organization other than {drug.sponsor} (a cooperative research group, for
+              an organization other than {company} (a cooperative research group, for
               example), which this site doesn't yet count as the applicant's own.
             </p>
           )}
