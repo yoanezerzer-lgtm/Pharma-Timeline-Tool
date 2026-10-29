@@ -61,8 +61,15 @@ the current state and the agreed next steps. Update it when they change.
   the stronger model.
 - When a conversation gets long, update this note and start a new session.
 
-## Open questions for the owner (product direction)
-- Who is the first paying user, and when does this move from a GitHub site
-  to a real app with accounts?
+## Product direction (owner, 29 Oct 2026)
+- **A free resource for scientists and students to learn from.** Not a paid
+  product for now: no accounts, no paywall. Favour clear explanations,
+  sources a reader can follow, and pages that teach (how a drug works, which
+  trials led to which approval) over sales or business features.
+- Licences still matter for what we copy in: quote public-domain sources
+  (FDA, MedlinePlus, MeSH) and only *link* to StatPearls (its licence bars
+  derivatives).
+
+## Open questions for the owner
 - The ~110 old branches on GitHub: optional cleanup. This session can't
   delete them, and the owner can do it on the branches page.
