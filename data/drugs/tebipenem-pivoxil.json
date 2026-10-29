@@ -119,6 +119,16 @@
       "sponsor": "Spero Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Urinary Tract Infection",
+        "Acute Pyelonephritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D014552",
+          "term": "Urinary Tract Infections"
+        }
+      ],
       "startDate": {
         "value": "2023-12-21",
         "precision": "day"
@@ -340,5 +350,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:58.232Z"
+  "lastIngestedAt": "2026-10-29T19:15:43.997Z"
 }
