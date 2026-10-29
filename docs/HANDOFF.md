@@ -8,7 +8,15 @@ the current state and the agreed next steps. Update it when they change.
   The 6 original ones (Rinvoq, Skyrizi, Keytruda, Lexapro, Foundayo,
   rusfertide) plus 46 added from FDA's own list of new-medicine approvals.
 - **46 of the 52 are unverified.** The overnight checker
-  (`docs/agents/nightly-verify.md`, Sonnet, ~00:36 ET) hasn't caught up.
+  (`docs/agents/nightly-verify.md`, Sonnet, ~00:36 ET) now takes drugs with
+  nothing confirmed first, a whole drug at a time. The site labels each drug
+  "Not yet checked", "Partly checked · N of M" or "Checked", counted from
+  `data/reference/` at build time.
+- **Home screen** is a compact list grouped by FDA review office (from the
+  newest approval letter's signature), one name per company (label's
+  "Manufactured for: …" name, merged with `sameCompany()` in
+  `src/lib/company.ts`). Both facts are read by `scripts/ingest/labelFacts.ts`.
+  The `Refresh all drugs` workflow re-runs ingestion for every drug.
 - **Adding drugs:** the `Add new drugs` workflow (`.github/workflows/add-drugs.yml`,
   `scripts/ingest/novel.ts`) asks openFDA for first approvals of new medicines
   since a date: NDAs classed Type 1, and BLAs that aren't biosimilars. It
@@ -29,21 +37,15 @@ the current state and the agreed next steps. Update it when they change.
   it; or the indication has a single approval.
 
 ## Agreed next steps, in order
-1. **Verification catch-up.** Make the nightly checker take unverified drugs
-   first. Show a clear "not yet checked" state until a drug is verified.
-   Don't add more drugs until this is moving.
-2. **Home screen.** Too busy at 52 drugs. Make a compact, searchable list the
-   default: brand, generic, one short disease name, approval year. Group by
-   disease area and keep the full FDA wording on the drug page. Short names
-   come from the label's own headings ("1.1 Rheumatoid Arthritis") where
-   they exist. Never AI-written.
-3. **Company names.** Merge duplicates: ABBVIE / AbbVie Inc., MSD / Merck
-   Sharp & Dohme. `sameCompany()` in `scripts/ingest/roles.ts` already
-   decides when two names are the same company. Display the name printed on
-   the label ("Manufactured for: …").
-4. **Drug pages** with an "About this drug" section: the label's sections
+1. **Verification catch-up** (done in code; let the nightly runs work
+   through it). Don't add more drugs until most are checked.
+2. **Gaps from the home-screen work:** no review office for Mimrylo
+   (letter signed above office level), Veppanu and Tauklarify (no signature
+   text); no label company for 7 drugs (label names only a manufacturer or
+   partner, or a name without "Inc"/"LLC"). Shown as such, not guessed.
+3. **Drug pages** with an "About this drug" section: the label's sections
    12.1–12.3 verbatim, plus FDA's Established Pharmacologic Class.
-5. **Disease pages:** every approval for one disease across drugs, on one
+4. **Disease pages:** every approval for one disease across drugs, on one
    timeline, with Excel/PowerPoint export later. For a short description,
    quote MedlinePlus or MeSH (public domain) with the source. Only *link* to
    StatPearls: its CC BY-NC-ND licence bars commercial reuse.
