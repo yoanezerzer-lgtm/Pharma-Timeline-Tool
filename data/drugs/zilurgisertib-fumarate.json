@@ -1,0 +1,57 @@
+{
+  "slug": "zilurgisertib-fumarate",
+  "brandName": "Atebrioz",
+  "inn": "zilurgisertib fumarate",
+  "modality": "Drug (NDA)",
+  "sponsor": "MIRUM",
+  "summary": "",
+  "indications": [],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "221198",
+      "applicationType": "NDA",
+      "sponsor": "MIRUM",
+      "originalApprovalDate": {
+        "value": "2026-09-25",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-25",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA221198%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 221198",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA221198%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221198Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T05:47:33.919Z"
+}
