@@ -4,6 +4,56 @@
   "inn": "narsoplimab",
   "modality": "Biologic (BLA)",
   "sponsor": "OMEROS CORP",
+  "pharmacology": {
+    "drugClass": {
+      "name": "MASP-2 inhibitor",
+      "provenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761152Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "YARTEMLEA is a MASP-2 inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Narsoplimab-wuug inhibits MASP-2, the effector enzyme of the lectin pathway of the complement system, blocking lectin-dependent activation of complement component 3 (C3) and C4 without affecting the classical and alternative pathways of complement. In hematopoietic stem cell transplant-associated thrombotic microangiopathy (TA-TMA), MASP-2 inhibition is thought to prevent lectin pathway-mediated cellular injury, including endothelial cell injury in small blood vessels.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761152Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The effect of YARTEMLEA on lectin pathway activity, assessed using inhibition of C4d deposition, was investigated in healthy subjects and patients with TA-TMA (TA-TMA Study). YARTEMLEA concentration levels achieved in patients with TA-TMA resulted in > 80% inhibition of lectin pathway activity. Based on pharmacokinetic/pharmacodynamic (PK/PD) modeling, a wash-out period of 6 weeks is sufficient to reduce YARTEMLEA concentrations to below pharmacologically active levels.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761152Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The PK profile of narsoplimab-wuug has been characterized in healthy subjects and in patients. PK of narsoplimab-wuug is less than dose-proportional for 2 and 4 mg/kg weekly IV dosing, with an accumulation ratio ranging from 1.02 to 1.75 at 4 mg/kg IV weekly dosing. Narsoplimab-wuug steady state (measured at day 36) geometric mean C max is 36.9 μg/mL, with geometric mean AUC 0-tau of 2314 μg·h/mL following 4 mg/kg administered intravenously in healthy subjects. Narsoplimab-wuug steady state is reached after three once-weekly IV doses (day 15) of 4 mg/kg in healthy subjects. Absorption After intravenous administration, peak plasma concentrations of narsoplimab-wuug occur approximately at the end of each infusion. 9 Distribution Narsoplimab-wuug is distributed in the blood and hydrophilic extravascular space with an average (CV%) volume of distribution of 10.9 L (65%) in patients. Elimination Total clearance of narsoplimab-wuug is concentration-dependent, with an estimated mean (CV%) value of 0.12 L/hour (68%) in patients. The mean (CV%) terminal elimination half-life was estimated to be 209 hours (73%) in patients. Metabolism Narsoplimab-wuug is expected to be metabolized into small peptides and amino acids by catabolic pathways. Excretion No biotransformation or excretion studies have been conducted. Specific Populations Body weight was a significant covariate affecting the PK of narsoplimab-wuug. No clinically significant differences in PK of narsoplimab-wuug were observed based on race or sex.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761152Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -696,5 +746,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:01:24.917Z"
+  "lastIngestedAt": "2026-10-29T18:38:01.663Z"
 }

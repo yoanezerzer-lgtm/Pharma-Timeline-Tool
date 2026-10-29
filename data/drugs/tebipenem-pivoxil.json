@@ -4,6 +4,56 @@
   "inn": "tebipenem pivoxil",
   "modality": "Drug (NDA)",
   "sponsor": "GLAXOSMITHKLINE",
+  "pharmacology": {
+    "drugClass": {
+      "name": "penem antibacterial",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "UTEBZI is a penem antibacterial indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Tebipenem pivoxil is a prodrug of tebipenem, an antibacterial drug [see Microbiology (12.4)] .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The ratio of 24-hour free tebipenem area under the plasma concentration-time curve to the minimum inhibitory concentration ( f AUC 24 :MIC) has been shown to be the pharmacokinetic-pharmacodynamic (PK-PD) index predictive of tebipenem antibacterial efficacy in vitro and in vivo animal infection models against Enterobacterales. Cardiac Electrophysiology At 2 times the maximum recommended UTEBZI dose in healthy adults, tebipenem does not prolong the QTc interval to a clinically relevant extent.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Pharmacokinetic Parameters Tebipenem pivoxil is the prodrug that is converted to the active moiety, tebipenem upon oral administration. Only the pharmacokinetics of tebipenem are described further because tebipenem pivoxil is not detected in plasma following oral administration. Following single and repeated dosing of 300 mg to 600 mg (0.5 to 1 times the highest approved recommended UTEBZI dose), the increase in cumulative plasma exposure (AUC) and C max was approximately dose proportional. No accumulation of tebipenem was observed following repeat dosing of UTEBZI at 600 mg every 6 hours. The pharmacokinetic properties of tebipenem are summarized in Table 3. Table 3. Pharmacokinetic Parameters of Tebipenem General Information Exposure C max (mcg/mL) a ,b 5. 0 ( 1.3 ) AUC 0 - 24 (mcg*hour/mL) a,b 64.5 (20.4) Absorption T max , (hours) b,c 0.6 - 1.5 Effect of food (high fat meal) d Not clinically significant No effect of food on AUC 0-inf , C max decreased by 13%, T max delayed by 0.25-0.5 h Distribution Apparent V z (L) e 66.4 (19.1) Plasma Protein Binding ~42% Blood:Plasma 0.66 Elimination Terminal Half-life (hours) a 1.6 (0.16) Apparent Clearance (L/hour) e 34.2 (8.1) Metabolism Primary Pathway Tebipenem pivoxil is converted to the pharmacologically active moiety, tebipenem, by hydrolysis in gastric/intestinal fluid and/or enterocytes by intestinal esterases and is further hydrolyzed to the inactive beta-lactam ring-opened metabolite Excretion Urine Primarily cleared in urine; both unchanged drug (62%) and as the ring-opened metabolite (22%) C max = maximum plasma concentration; AUC 0-24 = area under the time concentration curve from 0 to 24 hours; T max = time to peak concentration; V z = Volume of Distribution in terminal phase. a Pharmacokinetic parameters are presented as arithmetic mean (SD) at steady state in patients with cUTI and eGFR greater than or equal to 90 mL/min after oral administration of UTEBZI 600 mg every 6 hours. b No clinically relevant PK differences between healthy adults and patients with cUTI/pyelonephritis. c Observed range. d Studies evaluating the effect on food were performed with a high fat meal (1000 calories, 50% fat) 30 minutes prior to a single 600 mg dose of UTEBZI. e Pharmacokinetic parameters were calculated with data after oral administration of a single 600 mg dose of UTEBZI in healthy volunteers. Specific Populations No clinically significant differences in the pharmacokinetics of tebipenem were observed based on age (range: 18-95 years), sex (49% male and 51% female), race (95.3% White, 3.6% Black, and 0.9% Asian), or total body weight (42 to 159 kg). Patients with Renal Impairment: In a single-dose trial evaluating the effect of renal impairment in adults with varying degrees of renal insufficiency or end-stage renal disease (ESRD) on the pharmacokinetics of tebipenem, systemic exposures of tebipenem were higher at all levels of renal impairment compared with healthy participants with eGFR greater than or equal to 90 mL/min. Dose normalized total tebipenem plasma exposures by eGFR bands are displayed in Table 4. Approximately 40% of a 600 mg UTEBZI dose was removed by a 4-hour hemodialysis session. Table 4: Dose Normalized Fold AUC 0-infinity Increase in Adults with Renal Insufficiency Compared with Adults with eGFR ≥ 90 mL/min Estimated Glomerular Filtration Rate (eGFR) Tebipenem Fold Increase 60 mL/min to less than 90 mL/min 1.4 30 mL/min to 59 mL/min 2.2 15 mL/min to 29 mL/min 4.5 less than 15 mL/min o r HD 7.2 AUC 0-infinity = area under the plasma concentration time curve from 0 to infinity; eGFR = estimated GFR by Modification of Diet in Renal Disease (MDRD) equation; HD = hemodialysis. Patients with eGFR greater than 150 mL/min: A clinically significant reduction in systemic tebipenem exposure is predicted in adult patients with eGFR >150 mL/min [see Dosage and Administration (2.1), Use in Specific Populations (8.6)] . Hepatic Impairment: Tebipenem does not undergo hepatic metabolism (<10%). The effect of hepatic impairment on the pharmacokinetics of tebipenem has not been evaluated. Drug Interaction Studies Clinical Studies: Effect of Other Drugs on the Pharmacokinetics of Tebipenem: Following a single oral dose of 250 mg of tebipenem pivoxil co-administered with probenecid (inhibitor of the renal transporters OAT1 and OAT3), tebipenem C max increased by approximately 1.5-fold and plasma AUC by approximately 2.9-fold [see Drug Interactions (7.1)] . Co-administration of a single 600 mg dose of UTEBZI with an antacid (aluminum hydroxide, magnesium hydroxide, and simethicone suspension) or a proton pump inhibitor (omeprazole) resulted in no clinically meaningful change in tebipenem plasma AUC. In Vitro Studies: Tebipenem is not an in vitro substrate for the CYP enzymes 1A2, 2B6, 2C8, 2C9, 2C19, 2D6 and 3A4/5 or UGT enzymes 1A1, 1A3, 1A4, 1A6, 1A9, 2B7 or 2B15. Neither tebipenem or tebipenem pivoxil inhibited (reversible nor time dependent) CYP1A/CYP1A2, CYP2A6, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP2E1, CYP3A4/5 enzymes in human liver microsomes. Tebipenem is an inducer of CYP1A2 and CYP3A4 in human hepatocytes. Tebipenem pivoxil is a substrate of OATP1A2, OATP2B1, and tebipenem is a substrate of OCT2, OAT1, OAT3, MATE1, MATE2-K, OATP1B1, and OATP1B3, but not of MDR1 or BCRP. Tebipenem is not an inhibitor of OAT1, MATE1, MATE2-K, OATP1B1, OATP1B3, MDR1 and BCRP. Tebipenem showed partial in vitro inhibition of OAT3 and OCT2. Tebipenem pivoxil is an in vitro inhibitor of MDR1 and BCRP.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -290,5 +340,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:02:17.189Z"
+  "lastIngestedAt": "2026-10-29T18:38:58.232Z"
 }

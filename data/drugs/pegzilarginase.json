@@ -4,6 +4,56 @@
   "inn": "pegzilarginase",
   "modality": "Biologic (BLA)",
   "sponsor": "IMMEDICA PHARMA AB",
+  "pharmacology": {
+    "drugClass": {
+      "name": "arginine specific enzyme",
+      "provenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761211Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "LOARGYS is an arginine specific enzyme indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "ARG1-D is an inherited metabolic disease characterized by deficiency of the arginase 1 enzyme and associated with the persistent elevation of plasma arginine. LOARGYS provides an exogenous source of the deficient human arginase 1 enzyme activity in patients with ARG1-D and reduces plasma arginine by converting it to urea and ornithine.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761211Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Treatment with intravenous LOARGYS in patients with ARG1-D led to dose-dependent reduction in plasma arginine levels with median time to nadir (lowest arginine level) of 2-5 hours. After once weekly intravenous administration at the recommended dosage, plasma arginine levels reached steady state on or before Week 8 (see Figure 1) . Predose plasma arginine levels were similar after switching from intravenous to subcutaneous LOARGYS administration at the same dose. For a given dose level, the nadir following subcutaneous dosing was higher and led to shorter durations of LOARGYS-induced hypoargininemia. Treatment with intravenous or subcutaneous LOARGYS in patients with ARG1-D led to increases in plasma ornithine levels and decreases in plasma levels of the guanidino compounds argininic acid, guanidinoacetic acid, α-k-δ-guanidinovaleric acid, and Nα-acetyl-L - arginine.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761211Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The maximum plasma concentration (C max ) and area under the plasma concentration-time curve (AUC) of pegzilarginase-nbln at steady state following intravenous and subcutaneous administration of LOARGYS at the 0.1 mg/kg weekly dosage in adults and pediatric patients with ARG1-D are summarized in Table 2. Pegzilarginase-nbln exposures increased in an approximately dose-proportional manner at the recommended dosages. 8 Table 2: Pharmacokinetic Parameters of Pegzilarginase-nbln at Steady State in Adult and Pediatric Patients with ARG1-D [C max (μg/ m L )]* Intravenous LOARGYS 2.48 ( 20 %) Subcutaneous LOARGYS 0.5 8 ( 20 %) [AUC 0-168 (h*μg/ m L )]* 108 (18%) 61.3 (18%) Abbreviations: AUC 0-168 =area under the concentration-time curve from time 0 to 168 hours; C max =maximum concentration; * Data displayed are geometric mean and geometric coefficient of variation (%) Absorption Following subcutaneous LOARGYS administration, the mean absolute bioavailability was 57% and the median time to reach maximum concentration (T max ) was approximately 34 hours. Distribution The volume of distribution of pegzilarginase-nbln was approximately 47 mL/kg. Elimination Pegzilarginase-nbln clearance (CL) was 0.029 L/h. The mean half-life was approximately 50 hours. Metabolism Pegzilarginase-nbln is expected to be metabolized into small peptides and amino acids by catabolic pathways. Specific Populations Age and sex did not have clinically meaningful effect on the pharmacokinetics of pegzilarginase-nbln once the effect of body weight was taken into account.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761211Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -937,5 +987,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:01:46.921Z"
+  "lastIngestedAt": "2026-10-29T18:38:15.753Z"
 }

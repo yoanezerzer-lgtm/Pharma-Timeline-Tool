@@ -4,6 +4,56 @@
   "inn": "zidesamtinib",
   "modality": "Drug (NDA)",
   "sponsor": "NUVALENT",
+  "pharmacology": {
+    "drugClass": {
+      "name": "kinase inhibitor",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220185s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "JIDEYTRO is a kinase inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Zidesamtinib is an inhibitor of tyrosine kinase ROS1, including ROS1 resistance mutations. In a biochemical assay, zidesamtinib inhibited ROS1 (IC 50 = 0.7 nM) and also showed inhibitory effects on ALK (IC 50 = 3 nM) and tropomyosin receptor kinases (TRKs), TRKB (IC 50 = 54 nM), TRKC (IC 50 = 193 nM) and TRKA (IC 50 = 258 nM). In vitro, zidesamtinib inhibited the viability of cultured cells expressing ROS1 fusion genes and resistance mutations (G2032R, S1986F, F2004C/V, L2026M, D2033N, and G2101A). In mice subcutaneously implanted with tumors harboring ROS1 fusions, including the G2032R mutation, administration of zidesamtinib resulted in tumor growth inhibition. Zidesamtinib had antitumor activity in an intracranial NSCLC xenograft model harboring a ROS1 fusion.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220185s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Exposure-Response Relationships An increased incidence of dysgeusia was observed with higher metabolite M9 exposure. Cardiac Electrophysiology The largest mean increase in QTc interval was 13 ms (upper confidence interval = 19 ms) after administration of JIDEYTRO 100 mg once daily (the maximum recommended dosage) in patients with advanced ROS1 - positive NSCLC and other advanced ROS1-positive solid tumors [see Warnings and Precautions (5.2)].",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220185s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Zidesamtinib pharmacokinetics were observed at steady-state in patients with advanced ROS1-positive NSCLC and other solid tumors at the approved recommended dosage and are presented as mean (coefficient of variation [CV ]%) unless otherwise specified. Zidesamtinib maximum plasma concentration (C max ) is 934 ng/mL (44%) and total systemic exposure (AUC) is 8,310 ng.h/mL (37%) . Zidesamtinib C max and AUC increase in a dose proportional manner over the dose range of 25 mg to 100 mg orally once daily (0.25 to 1 times the maximum recommended dosage). Zidesamtinib accumulation is approximately 1.5-fold and steady-state is reached in approximately 4 days. Absorption Zidesamtinib median (min, max) time to maximum plasma concentration (T max ) is 1 hour (0.3, 6 hours). Zidesamtinib absolute bioavailability is 83 %. Effect of Food No clinically significant differences in zidesamtinib exposure were observed in healthy participants following administration of a high fat meal (approximately 1,000 calories with 60 % fat). Distribution Zidesamtinib apparent (oral) volume of distribution (V ss ) is 326 L (18%). Zidesamtinib plasma protein binding is 79% and is not concentration-dependent in vitro. Zidesamtinib blood-to - plasma ratio was 0.9 in vitro. Elimination Zidesamtinib elimination half-life is 18 (51 %) hours with an apparent (oral) clearance of 12 (37 %) L/h. Metabolism Zidesamtinib is primarily metabolized by CYP3A with minor contributions from CYP1A2 and CYP2C8. An active metabolite, a des-ethyl metabolite (M9), with activity one-third that of the parent, was identified in plasma and its AUC represents 48% of the parent AUC. Excretion Following oral administration of a single 100 mg radiolabeled dose to healthy participants, approximately 47% of the dose was recovered in the urine (< 1% unchanged) and 33% in the feces (< 2% as unchanged) . Specific Populations No clinically meaningful differences in the pharmacokinetics of zidesamtinib were observed based on age (26 to 87 years), sex, race (White 44 %, Asian 38 %, or Black 4%) , body weight (36 to 162 kg), eGFR 30 to 90 mL/min [estimated by Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI)], or mild (total bilirubin >1 to 1.5 times ULN or AST > ULN) to moderate (total bilirubin >1.5 to 3 times ULN with any AST) hepatic impairment. The effect of severe (total bilirubin >3 x ULN with any AST) hepatic impairment, severe renal impairment (eGFR < 30 mL/min), or dialysis on zidesamtinib pharmacokinetics is unknown. Drug Interaction Studies Clinical Studies Strong CYP3A Inhibitors : Zidesamtinib AUC increased 2.6-fold and C max increased 1.8-fold following concomitant use of itraconazole (strong CYP3A inhibitor) 200 mg twice daily followed by 200 mg once daily for 6 days . CYP3A Substrates : No clinically significant differences on midazolam (a sensitive CYP3A substrate) pharmacokinetics were observed when used concomitantly with JIDEYTRO. Acid-Reducing Agents : No clinically significant difference in steady-state zidesamtinib pharmacokinetics were observed when used concomitantly with lansoprazole (proton pump inhibitor). In Vitro Studies CYP450 Enzymes : Zidesamtinib and M9 do not inhibit CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19 or CYP2D6. UDP-glucuronosyltransferase (UGT) : Zidesamtinib does not inhibit UGT1A1, UGT1A3, UGT1A4, UGT1A6, UGT1A9, UGT2B7 or UGT2B15. Transporter Systems : Zidesamtinib inhibits P-glycoprotein (P-gp), BCRP, and MATE1. Zidesamtinib does not inhibit OATP1B1, OATP1B3, OAT1, OAT3, OCT1, OCT2 or MATE2K. M9 does not inhibit P-gp, BCRP, MATE1, OATP1B1, OATP1B3, OAT1, OAT3, OCT1, OCT2 or MATE2K.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220185s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -342,5 +392,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:03:01.862Z"
+  "lastIngestedAt": "2026-10-29T18:39:42.516Z"
 }

@@ -5,6 +5,56 @@
   "modality": "Peptide (hepcidin mimetic)",
   "sponsor": "Takeda Pharmaceuticals U.S.A., Inc.",
   "mechanism": "Hepcidin mimetic peptide that limits iron availability for red blood cell production",
+  "pharmacology": {
+    "drugClass": {
+      "name": "hepcidin mimetic",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "MIMRYLO is a hepcidin mimetic indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Rusfertide is a mimetic of the endogenous hormone hepcidin that blocks the iron transporter ferroportin. Inhibition of ferroportin by rusfertide reduces availability of iron for production of red blood cells resulting in lower hematocrit levels.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "In healthy participants receiving single subcutaneous doses of 9.5 mg, 19 mg, 28 mg, 41 mg, and 54 mg MIMRYLO, the maximum reduction in serum iron was noted approximately 24 to 48 hours post dose. The higher doses (41 mg and 54 mg) of MIMRYLO resulted in a more sustained reduction in serum iron up to 96 hours. In the Phase 3 VERIFY study, mean ferritin concentrations increased from 21 mcg/L at baseline to 124 mcg/L at Week 32 and 174 mcg/L at Week 52 for patients who were randomized to receive MIMRYLO. The exposure-response relationships of MIMRYLO have not been fully characterized. Cardiac Electrophysiology At 1.3 times the geometric mean rusfertide maximum plasma concentration (C max ) achieved with the maximum recommended weekly dose of 108 mg MIMRYLO, clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Rusfertide pharmacokinetics were characterized after a single-dose of 9.5 mg to 54 mg in healthy participants. After subcutaneous administration, rusfertide C max and AUC increased less than dose proportionally over the dose range of 9.5 mg to 54 mg (0.5 to 2.8 times the recommended starting dosage). Rusfertide pharmacokinetics were predicted in patients with PV using population PK analysis. At the weekly recommended starting dose of 19 mg MIMRYLO, the predicted mean (±SD) rusfertide steady state C max and AUC were 220 (±76.1) ng/mL and 17,800 (±6140) h·ng/mL, respectively. At the weekly dose of 82 mg MIMRYLO, the predicted mean (±SD) rusfertide steady state C max and AUC were 751 (±254) ng/mL and 66200 (±23,300) h·ng/mL, respectively. At the maximum recommended weekly dose of 108 mg MIMRYLO, the predicted mean (±SD) rusfertide steady state C max and AUC were 867 (±297) ng/mL and 105,000 (±36,900) h·ng/mL, respectively. In healthy participants, steady state concentrations of rusfertide were achieved after approximately 3 once weekly doses. Mean accumulation ratios of rusfertide following once weekly subcutaneous administration of 54 mg were 1.6 and 1.3 for AUC and C max , respectively. Absorption Following subcutaneous administration of 19 mg MIMRYLO in healthy participants, the median (min, max) rusfertide time to peak concentration (T max ) was 24 hours (4, 48 hours). The absolute bioavailability of rusfertide following subcutaneous administration of 19 mg MIMRYLO is approximately 51%. At steady state, rusfertide exposures were similar following subcutaneous administration of MIMRYLO in the abdomen, thigh, or upper arm. Distribution Rusfertide is highly bound to plasma proteins (>99%). The blood-to-plasma ratio is 2.7. Following subcutaneous administration of 19 mg MIMRYLO in healthy participants, the mean (±SD) rusfertide apparent volume of distribution (Vz/F) was 38.4 (±19.1) L. Elimination Following subcutaneous administration of 19 mg MIMRYLO in healthy participants, the mean (±SD) rusfertide apparent clearance (CL/F) was 0.930 (±0.233) L/h, and the mean (±SD) rusfertide plasma elimination half-life was 28.6 (±11.3) hours. Metabolism Rusfertide is catabolized into smaller peptides via 2 independent pathways. One pathway involves proteolysis by trypsin-like proteases to form metabolite M1, which undergoes further proteolysis to form metabolite M4. Rusfertide also undergoes hydroxylation to form metabolite M9 . M1 is a minor metabolite (<1% of total drug-related exposure). M4 and M9 are pharmacologically active but have potencies that are approximately 65% and 14% of the potency of rusfertide, respectively. Following multiple-dose subcutaneous administration of 54 mg MIMRYLO in healthy participants, M4 and M9 account for approximately 15% and 31% of total drug-related exposure, respectively, at steady state. Excretion Following subcutaneous administration of MIMRYLO, rusfertide concentrations in the urine were below the detection limit. Specific Populations No clinically meaningful differences in the pharmacokinetics of rusfertide were observed based on age (20 to 86 years), race (White, Asian, Other), sex, body weight (44.5 to 151 kg), or mild-to-moderate renal impairment (eGFR 30 to 89 mL/min). Patients with Renal Impairment Following subcutaneous administration of 19 mg MIMRYLO, no clinically meaningful difference was observed in rusfertide systemic exposures (AUC) between participants with severe renal impairment (eGFR <30 mL/min) and participants with normal renal function (eGFR ≥90 mL/min). Patients with Hepatic Impairment Following subcutaneous administration of 19 mg MIMRYLO, no clinically meaningful difference was observed in rusfertide systemic exposures (AUC) between participants with moderate hepatic impairment (Child-Pugh B) and participants with normal hepatic function. MIMRYLO has not been studied in participants with severe (Child-Pugh C) hepatic impairment. Drug Interaction Studies In vitro Studies Cytochrome P450 (CYP) Enzymes: Rusfertide does not inhibit CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, or CYP3A at clinically relevant concentrations. Rusfertide does not induce CYP1A2, CYP2B6, or CYP3A. Transporter Systems: Rusfertide is not a substrate of and does not inhibit BCRP, BSEP, MATE1, MATE2K, OATP1B1, OATP1B3, OAT1, OAT3, OCT1, OCT2, or P-gp.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220605Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -1134,5 +1184,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:02:00.651Z"
+  "lastIngestedAt": "2026-10-29T18:38:36.503Z"
 }

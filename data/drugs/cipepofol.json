@@ -4,6 +4,56 @@
   "inn": "cipepofol",
   "modality": "Drug (NDA)",
   "sponsor": "HAISCO",
+  "pharmacology": {
+    "drugClass": {
+      "name": "general anesthetic drug",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220482Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "CYPSEDO is a general anesthetic drug indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "The mechanism of action of CYPSEDO for induction of general anesthesia in adults undergoing surgery is poorly understood. However, cipepofol is thought to produce anesthetic effects by the positive modulation of the inhibitory function of the neurotransmitter GABA through ligand-gated GABA A receptors.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220482Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The anesthetic effects of CYPSEDO were assessed using the MOAA/S and BIS in a randomized, dose-escalation, open-label, two-way crossover clinical pharmacology trial that evaluated the pharmacodynamics and pharmacokinetics of cipepofol compared with propofol at different doses in healthy male subjects. An MOAA/S score of 0 indicates that the patient is unresponsive and score 5 indicates that the patient is fully alert; a BIS score of 0 indicates that there is no detectable brain activity, and a score of 100 indicates that the patient is fully conscious and alert. A total of 19 subjects were enrolled in the trial and were randomized to 1 of 3 treatment sequences. For the 0.4 mg/kg CYPSEDO dose (administered over 1 minute) in 6 subjects, the: • MOAA/S score decreased after CYPSEDO administration, and all subjects reached a MOAA/S ≤1 within 2 minutes after dosing. The mean (standard deviation [SD]) time to complete alertness after dosing was 13.3 (6.2) minutes after dosing. • The BIS decreased to the minimum after CYPSEDO administration with a mean (SD) BIS nadir of 42.5 (5.5) at median time of 2.3 minutes. MOAA/S and BIS parameters in geriatric patients, patients with HI, and patients with RI were comparable to healthy adults [see Clinical Pharmacology ( 12.3 )]. Cardiac Electrophysiology At the recommended initial CYPSEDO dose for patients with ASA-PS I or II, <65 years old, and BMI ≤ 40 kg/m² of 0.4 mg/kg intravenously over 30 seconds, clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220482Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Pharmacokinetic parameters were evaluated in 48 healthy adult patients, who received a single intravenous bolus of CYPSEDO 0.4 mg/kg administered over 30 seconds. The mean (SD) venous maximum plasma concentration (C max ) of cipepofol (administered over 30 seconds) was 2,790 (1,890) ng/mL and mean (SD) area under the plasma concentration time curve from 0 to infinity (AUC 0-inf ) was 256 (54.9) ng.h/mL. In dose ranging studies, pharmacokinetics were linear and dose proportional over the dose range of 0.128 to 0.81 mg/kg. Distribution Cipepofol has a large volume of distribution of 4.19±1.10 L/kg. Cipepofol is highly protein bound (approximately 99%) and protein binding was unaffected by mild or moderate RI or HI. Elimination After a single intravenous bolus of CYPSEDO 0.4 mg/kg, the mean (SD) clearance was 1.63 (0.357) L/h/kg, and the mean (SD) half-life was 1.81 (0.431) hours. Metabolism: Cipepofol is extensively metabolized by UGT enzymes (predominantly UGT1A9) and CYP2B6, and to a minor extent, CYP1A2 and CYP2C19. Following a single intravenous dose of 0.8 μCi/0.4 mg/kg [ 14 C]-cipepofol (radiolabeled cipepofol), cipepofol represented approximately 1.1% of total plasma radioactivity, with the major metabolite M4, a pharmacologically inactive O-glucuronide metabolite, accounting for 71% of total plasma radioactivity. Excretion: While cipepofol is not excreted in the urine, renal excretion is the primary route of elimination for the metabolites. In a mass balance study, approximately 85% of the administered cipepofol dose was excreted in urine, with glucuronide metabolites M4 and M5-1 accounting for 51.6% and 19.3% of the administered dose, respectively. Specific Populations Population pharmacokinetics analysis indicated that weight, sex, race, and age were covariates on CYPSEDO clearance or volume. Neither sex nor race had a clinically meaningful impact on cipepofol exposure. Geriatric Patients: Cipepofol exposures following intravenous administration of a CYPSEDO 0.4 mg/kg dose were similar in adults 65 years of age and older and those less than 65 years of age, indicating that age did not have a significant effect on plasma cipepofol exposure. With regard to PD effects, adult patients 65 years of age or older who received a CYPSEDO dose of 0.3 mg/kg had similar pharmacodynamic (MOAA/S and BIS) results compared with adult patients less than 65 years of age who received a dose of 0.4 mg/kg [see Dosage and Administration ( 2.2 ) and Use in Specific Populations ( 8.5 )]. Patients with Renal Impairment: In a clinical pharmacology study of CYPSEDO in patients with chronic mild and moderate RI and patients without RI, mean C max was slightly decreased in those with worse renal function, but AUC 0-last and AUC 0-inf values showed no clear trend with worse renal function: • Mild RI (i.e., estimated GFR [eGFR]: 60 to 89 mL/minute/1.73 m²): geometric mean AUC values were increased by approximately 12% to 13%, and C max was decreased by approximately 32% compared with those without RI. • Moderate RI (i.e., eGFR: 30 to 59 mL/minute/1.73 m²): geometric mean AUC values were similar, and C max was decreased by approximately 19% compared with those without RI. • Severe RI (i.e., eGFR: less than 30 mL/minute/1.73 m² with or without dialysis): pharmacokinetics was not assessed and is not known. MOAA/S and BIS parameters were similar across patients with mild RI, moderate RI, and without RI groups [see Use in Specific Populations ( 8.6 ) ] . Patients with Hepatic Impairment: In a clinical pharmacology study, mean cipepofol C max showed no clear trend when comparing patients with normal hepatic function and patients with mild HI (Child-Pugh A) or moderate HI (Child-Pugh B), while AUC 0-last and AUC 0-inf increased slightly with worse HI: • Mild HI: geometric mean AUC values were increased by approximately 10% to 12%, and C max was increased by 14% compared with those without HI. • Moderate HI: geometric mean AUC values were increased by approximately 22% to 30% while C max was not changed compared with those without HI. • Severe HI: pharmacokinetics was not assessed and is not known. Sedation assessed by MOAA/S and BIS nadir showed similar trends in patients with mild HI, moderate HI, and without HI, indicating that there were no effects of mild and moderate HI on sedation [see Use in Specific Populations ( 8.7 )] . Patients with BMI >40 kg/m²: In population pharmacokinetics analyses, there was increased cipepofol exposure with increasing lean body weight. Specifically, simulated CYPSEDO doses of 0.2 mg/kg to 0.25 mg/kg in patients with BMI >40 kg/m² were predicted to have similar exposure to a dose of 0.4 mg/kg in patients with BMI ≤40 kg/m² ; therefore, in Trials 1, 2, and 3 [see Clinical Studies ( 14 )], patients with BMI >40 kg/m² received a lower CYPSEDO dose than those with a BMI ≤40 kg/m² [ see Dosage and Administration ( 2.2 ) and Use in Specific Populations ( 8.8 )] . Drug Interaction Studies Clinical Studies : There was no significant pharmacokinetic/pharmacodynamic drug interaction of cipepofol with rifampicin (CYP2B6 inducer, UGT1A9 inducer), voriconazole (CYP2B6 inhibitor), mefenamic acid (UGT1A9 inhibitor), or divalproex. In Vitro Studies • Metabolizing enzymes: Cipepofol inhibited CYP2B6 and CYP2C19 in vitro, while its major metabolite, M4, did not inhibit any CYP enzymes. Cipepofol also inhibited UGT1A9 metabolism in vitro. Based on the rapid decline in cipepofol concentrations following administration of a 0.4 mg/kg CYPSEDO dose, there are not anticipated to be any clinically relevant drug interactions affecting CYP2B6, CYP2C19, and UGT1A9 substrates. Cipepofol and its major metabolite, M4, did not induce CYP1A2, CYP2B6, and CYP3A4 at clinically relevant concentrations. • Drug transporters: Cipepofol and M4 are not substrates of P-gp, BCRP, OAT1, OCT2, MATE1, and MATE2K. Cipepofol was not a substrate of OAT3, OATP1BI, and OATP1B3, while M4 was possibly a substrate of these transporters. Cipepofol was not an inhibitor of P-gp, BCRP, OAT1, OAT3, OCT2, OATP1B1, OATP1B3, MATE1, and MATE2K. M4 was not an inhibitor of P-gp, BCRP, OCT2 and MATE2K, but at high concentrations showed inhibitory activity for OAT1, OAT3, OATP1B1, OATP1B3, and MATE1. Based on in vitro studies, cipepofol and M4 are not expected to show clinically relevant inhibition of any drug transporters.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220482Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -3542,5 +3592,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:10.478Z"
+  "lastIngestedAt": "2026-10-29T18:36:45.681Z"
 }

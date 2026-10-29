@@ -4,6 +4,56 @@
   "inn": "bepirovirsen",
   "modality": "Drug (NDA)",
   "sponsor": "GLAXOSMITHKLINE LLC",
+  "pharmacology": {
+    "drugClass": {
+      "name": "hepatitis B virus (HBV) mRNA-directed antisense oligonucleotide (ASO)",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221276Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "HIBSAGO is a hepatitis B virus (HBV) mRNA-directed antisense oligonucleotide (ASO) indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "HIBSAGO is an antiviral drug against HBV [see Microbiology (12.4)] .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221276Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 20,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Exposure Response Within the range of bepirovirsen exposures achieved at the dosing regimen in B-Well 1 and B-Well 2 trials, variability in bepirovirsen plasma exposure was not identified as a determinant of treatment response at Week 72. Immunostimulant Activity In nonclinical studies, bepirovirsen exhibited innate immune activity in a sequence-specific, human toll-like receptor 8 (hTLR8)-dependent manner, with no activity observed at other pattern recognition receptors tested. This was demonstrated in an hTLR8-overexpressing cell line and confirmed in transgenic hTLR8 knock-in mice. Compared to wild-type mice, hTLR8 knock-in mice showed increased proinflammatory cytokine expression upon bepirovirsen treatment. This immunostimulatory activity was predominantly localized to hepatic macrophages and Kupffer cells, with induction of cytokines including TNF- α, IL -12p40, and CXCL10. In clinical studies, administration of HIBSAGO was associated with increases in innate immune markers of activation and trafficking, which included cytokines and chemokines (e.g., interleukin12, tumor necrosis factor, interferon gamma and CXC motif chemokine ligand 9 and 10). Treatment with HIBSAGO also increased total IgM. In addition, treatment with HIBSAGO led to immunophenotypic changes in peripheral B and T cells (including increases in Ki67 positive B and T cells and increases in granzyme B positive cluster of differentiation 8, T cell frequencies). The contribution of immunostimulatory activity to antiviral activity at therapeutic concentrations in humans has not been fully determined. Cardiac Electrophysiology At supratherapeutic doses of 450 or 600 mg (1.5 and 2 times the recommended dosage) of HIBSAGO, clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221276Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 20,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The pharmacokinetic parameters of bepirovirsen 300 mg are summarized in Table 7. Table 7. Pharmacokinetic Properties of Bepirovirsen General Information Exposure C max (mcg/mL) a 9.14 (2.19) AUC 0-tau (mcg*hour/mL) a 102 (34.3) C trough (mcg/mL) a 0.022 (0.045) Dose proportionality Exposure increased in proportion to dose over the range of 150 to 300 mg weekly dosing Time to steady state Steady state concentration is reached by Day 8 following 300 mg weekly dosing with loading doses during Weeks 1 and 2 Accumulation No accumulation was observed with 300 mg weekly dosing for 24 weeks Absorption T max , (hours) b 3 (2-5) Distribution V ss /F (L) c 73 (46.3) Plasma Protein Binding 99% at 5 mcg/mL 95% at 150 mcg/mL Elimination Major route of elimination Metabolism Terminal Half-life (days) b 29 (8-192) Clearance/F (L/hour) c 3.05 (25.7) Metabolism Primary Pathway Metabolized in tissues by endonucleases to form shorter oligonucleotides that are then substrates for additional metabolism by exonucleases Excretion Urine Oligonucleotide fragments are expected to be excreted by the kidney C max = maximum plasma concentration; AUC 0-tau = area under the time concentration curve from 0 to dosing interval; T max = time to peak concentration; Vss = Volume of Distribution at steady-state. a Pharmacokinetic parameters are presented as arithmetic mean (SD), derived from population PK model simulations at steady state following subcutaneous administration of HIBSAGO 300 mg weekly in participants with chronic HBV infection (CHB). b observed median (min-max) c Pharmacokinetic parameters are presented as geometric mean (CV%) from post-hoc individual estimates from Phase 3 population PK model. Specific Populations Based on population pharmacokinetic analyses, following subcutaneous administration, there were no clinically meaningful changes in the pharmacokinetics of bepirovirsen by race (Asian, Black, White, Other), ethnicity, age (18-87 years old), sex, body weight (39 kg to 148 kg), injection site location (thigh, upper arm, abdomen) and anti-drug antibodies (ADA) status. Renal Impairment: Bepirovirsen pharmacokinetics were similar between patients with CHB with an eGFR 60 to 89 mL/min/1.73m 2 compared to patients with an eGFR ≥90 mL/min/1.73 m 2 . Insufficient data are available in patients with moderate or severe renal impairment. Hepatic Impairment: The pharmacokinetics of bepirovirsen have not been evaluated in CHB patients with hepatic impairment (Child-Pugh Class A, B, or C) [see Contraindications (4)] . There is a 33% reduction in C max and a 31% reduction in AUC 0- ∞ in participants with moderate hepatic impairment (Child-Pugh Class B) but without HBV infection when compared to participants with normal hepatic function. Drug Interaction Studies No formal clinical drug interaction studies have been conducted with HIBSAGO. In clinical trials, concomitant administration of HIBSAGO with a NrtI did not result in changes in bepirovirsen exposure. In addition, HIBSAGO did not impact NrtI exposure. Based on in vitro study results, HIBSAGO is not a substrate, inducer or inhibitor of major cytochrome P450 (CYP) enzymes, or drug transporters; therefore, clinically relevant pharmacokinetic interactions are not expected.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221276Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 20,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -1939,5 +1989,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T17:59:42.021Z"
+  "lastIngestedAt": "2026-10-29T18:36:20.580Z"
 }

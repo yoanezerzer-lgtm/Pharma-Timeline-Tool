@@ -4,6 +4,56 @@
   "inn": "tradipitant",
   "modality": "Drug (NDA)",
   "sponsor": "VANDA PHARMS INC",
+  "pharmacology": {
+    "drugClass": {
+      "name": "substance P/neurokinin-1 (NK-1) receptor antagonist",
+      "provenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220152Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "NEREUS is a substance P/neurokinin-1 (NK-1) receptor antagonist indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Tradipitant is a selective, high-affinity antagonist of human substance P/neurokinin-1 (NK-1) receptors. Tradipitant does not have affinity for NK2 and NK3, serotonin (5-HT3), dopamine (D2), cholinergic, or histamine (H1) receptors. Tradipitant has been shown in animal models to inhibit drug induced emesis. Human Positron Emission Tomography (PET) studies with tradipitant have shown that tradipitant crosses the blood brain barrier and occupies brain NK-1 receptors. The exact mechanism by which tradipitant exerts its therapeutic effect is not fully established.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220152Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 6,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Tradipitant inhibits the NK1 receptor with a K i of 0.062 ± 0.01 nM and inhibits substance P (SP) induced intracellular calcium mobilization with a K b of 0.095 ± 0.025 nM. The major metabolites of tradipitant (M2, M3, M4, and M8) showed a similar degree of binding at the NK-1 receptor. 6 NK1 Receptor Occupancy A clinical study using PET imaging demonstrated a dose- and concentration-dependent increase in frontal cortex NK-1 receptor occupancy of tradipitant. The maximum receptor occupancy was 93% after multiple administrations of 100 mg of NEREUS. Cardiac Electrophysiology At the mean maximum concentration provided by the maximum recommended single dose (170 mg) administered without food, clinically significant QTc prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220152Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 6,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption Absolute oral bioavailability has not been studied in humans. Following a single dose of 85 mg tradipitant in healthy subjects under fasting conditions, tradipitant geometric mean C max was 84.7 ng/mL, AUC 0-inf was 1839 ng*h/mL, and the median T max was 2.0 hours. Following a single dose of 170 mg tradipitant in healthy subjects under fasting conditions, tradipitant geometric mean C max was 112 ng/mL, AUC 0-inf was 3,526 ng*h/mL, and the median T max was 1.50 hours. Effect of Food Tradipitant C max and AUC 0-inf increased approximately 4.7-fold and 2.4-fold, respectively, and T max was delayed by 2 hours, when 85 mg tradipitant was administered with a high-fat meal (800 to 1,000 calories, 50% fat) compared to fasted conditions in healthy subjects . After administration of 170 mg tradipitant with a high-fat meal, C max and AUC 0-inf increased approximately 6.9-fold and 2.9-fold, respectively, and T max was delayed by 2.5 hours [see Dosage and Administration (2.1)] . Distribution The apparent volume of distribution (Vd/F) of tradipitant is 1956 L in healthy subjects. Tradipitant plasma protein binding ranged from 96% to >99% in vitro . Elimination The observed mean elimination half-life for tradipitant is approximately 34 hours and apparent oral clearance of tradipitant is 41.7 L/hour in healthy subjects. Metabolism Tradipitant is extensively metabolized; however, the metabolic pathways have not been fully characterized. In vitro findings suggest that non-CYP450-mediated processes and CYP enzymes (CYP3A4, CYP2C19, and to a lesser extent by CYP2C8) are involved in the metabolism of tradipitant. Tradipitant is also glucuronidated by UGT1A4 and UGT2B7. Four major metabolites (M2, M3, M4, and M8) were identified in plasma. Following a single dose of 85 mg tradipitant in healthy subjects under fasting conditions, the AUCs of M2, M3, M4, and M8 represent 40%, 33%, 43%, and 42 % of the parent AUC, respectively. 7 Excretion Following a single oral dose of radiolabeled tradipitant 25 mg , approximately 88% of the dose was recovered, with 80% of the dose in feces and 7% in urine . Unchanged tradipitant was minimal in feces and was not detected in urine. Specific Populations Patients with Renal Impairment Based on population pharmacokinetic analysis, no clinically significant difference was observed in pharmacokinetics of tradipitant between subjects with normal renal function and subjects with mild to moderate renal impairment (estimated glomerular filtration rate (eGFR) of at least 30 mL/minute/1.73m 2 ). The impact of severe renal impairment (eGFR ≤ 29 mL/min/1.73m 2 ) on the pharmacokinetics of tradipitant is unknown [see Use in Specific Populations (8.6)] . Patients with Hepatic Impairment Tradipitant has not been studied in subjects with any degree of hepatic impairment (Child-Pugh Class A to C). The impact of mild, moderate, or severe hepatic impairment on the pharmacokinetics of tradipitant is unknown [see Use in Specific Populations (8.7)]. Drug Interaction Studies Clinical Studies Midazolam (CYP3A4 Substrate) Co-administration of tradipitant did not result in clinically significant change in pharmacokinetics of midazolam or 1-OH-midazolam. Ethanol Co-administration of tradipitant with ethanol ( 20% w/v alcohol in orange juice (240 mL for men and 200 mL women) increased tradipitant C max by 9% and AUC 0-24 by 14% . This increase in exposure is not considered to be clinically relevant. In Vitro Studies Based on in vitro studies, tradipitant does not inhibit CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, nor induces CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19. Based on in vitro studies, tradipitant may inhibit and induce CYP3A4. However, an in vivo study showed no clinically significant differences in midazolam pharmacokinetics when co-administered with tradipitant. Tradipitant is a P-gp substrate and is not a substrate of BCRP, OATP1B1, OATP1B3, MATE1 or MATE2-K. In vitro, tradipitant did not inhibit P-gp, BCRP, OATP1B1, OATP1B3, OCT2, OAT1, OAT3, MATE1, and MATE2K at clinically relevant concentrations. 8",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220152Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -2004,5 +2054,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:02:38.746Z"
+  "lastIngestedAt": "2026-10-29T18:39:23.681Z"
 }

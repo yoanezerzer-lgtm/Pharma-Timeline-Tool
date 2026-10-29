@@ -5,6 +5,55 @@
   "modality": "Drug (NDA)",
   "sponsor": "ACROTECH BIOPHARMA",
   "mechanism": "Phosphodiesterase 4 Inhibitor",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Phosphodiesterase 4 Inhibitor",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219474%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Difamilast is an inhibitor of phosphodiesterase-4 (PDE-4). Difamilast’s inhibition of PDE-4 (a major cyclic adenosine monophosphate (AMP)-metabolizing enzyme) activity leads to accumulation of intracellular cyclic AMP and decreased productions of various cytokines and chemokines. However, the specific mechanism(s) by which difamilast exerts its therapeutic action is not well defined.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219474Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 6,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The pharmacodynamics of ADQUEY ointment in the treatment of atopic dermatitis is not known. Cardiac Electrophysiology ADQUEY ointment is not expected to cause clinically significant QTc interval prolongation at the recommended dosages.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219474Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 6,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption The pharmacokinetics (PK) of ADQUEY were investigated in 31 pediatric subjects 2 years of age and older with moderate to severe atopic dermatitis and a mean ± SD body surface area (BSA) involvement of 44 ± 13% (range 25% to 80%). In this trial, subjects applied an average of approximately 4.3 g of ADQUEY ointment, 1% (dose range was 1.7 to 11.7 g per application) twice daily for 2 weeks. Plasma concentrations were quantifiable in all the subjects. On Day 15, the mean ± SD maximum plasma concentration (C max ) and area under the concentration time curve from 0 to 8 hours post dose (AUC 0-8 ) for difamilast were 16.9 ± 21.9 ng/mL and 86.2 ± 79.6 ng*h/mL, respectively. Systemic concentrations of difamilast were at steady state by Day 15, with no evidence of accumulation. The PK of ADQUEY were investigated in 31 adult subjects with mild to moderate atopic dermatitis and a mean ± SD BSA involvement of 6 ± 3% (range 3% to 19%). Subjects applied an average of approximately 0.9 g of ADQUEY ointment, 1% (dose range was 0.1 to 3.8 g per application) twice daily for 4 weeks. On Day 29, the mean ± SD C max and AUC 0-12 for difamilast were 0.76 ± 1.16 ng/mL and 6.10 ± 8.85 ng*h/mL, respectively. Distribution Difamilast serum protein binding is 99% and is not concentration-dependent, in vitro. Elimination Metabolism Difamilast is substantially metabolized to form three major metabolites in the plasma via CYP3A4-mediated O-deethylation (Metabolite 1), CYP1A2-mediated hydroxylation (Metabolite 2), and enzymatic hydrolysis (Metabolite 3). Excretion After both single dosing and twice daily administration of difamilast ointment 1% in healthy Japanese subjects for 2 weeks, difamilast and Metabolite 1 were undetectable in urine. The urinary excretion ratios of all the other metabolites were less than 0.1% of the administered dose. Specific Populations No dedicated clinical trials have been conducted to assess the impact of intrinsic factors on the PK of difamilast. Based on cross-study analyses, no substantial differences in the PK of difamilast were observed based on age (2-70 years), sex, race, mild or moderate renal impairment, or mild or moderate hepatic impairment. The effect of severe renal impairment (eGFR < 30 mL/min), or severe (Child-Pugh Class C) hepatic impairment on difamilast PK is unknown. Pediatric Patients The plasma difamilast trough concentration corrected by dose in pediatric patients was 1.3 to 1.9 times higher than that in adults (on Day 1 and Day 15, respectively). Drug Interaction Studies Clinical Studies No clinical drug interaction trials have been conducted with topical difamilast. In Vitro Studies CYP450 Enzymes: Difamilast is a substrate of CYP3A4 and CYP1A2. Difamilast is not expected to inhibit CYP1A2, CYP2A6, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP2E1, and CYP3A4 at clinically relevant concentrations. Induction of CYP1A2, CYP2B6, CYP2C9, and CYP3A4 by difamilast is expected to be low at clinically relevant concentrations. Transporter Systems: Difamilast is a substrate of breast cancer resistance protein (BCRP),but is not a substrate of P-glycoprotein (P-gp), OATP1B1, or OATP1B3. Difamilast is not expected to inhibit P-gp, BCRP, OAT1, OAT3, OCT1, OCT2, OATP1B1, OATP1B3, MATE1, or MATE2- K at clinically relevant concentrations.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219474Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 6,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -886,5 +935,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:12.801Z"
+  "lastIngestedAt": "2026-10-29T18:36:47.666Z"
 }

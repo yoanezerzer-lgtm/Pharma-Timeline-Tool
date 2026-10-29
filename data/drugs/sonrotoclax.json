@@ -4,6 +4,56 @@
   "inn": "sonrotoclax",
   "modality": "Drug (NDA)",
   "sponsor": "BEONE MEDICINES USA",
+  "pharmacology": {
+    "drugClass": {
+      "name": "BCL-2 inhibitor",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220711Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "BEQALZI is a BCL-2 inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Sonrotoclax is an inhibitor of B-cell lymphoma 2 (BCL-2) protein. Overexpression of BCL-2 in various cancers mediates cell survival and has been associated with chemotherapeutic resistance. Sonrotoclax binds to the BCL-2 protein, displacing pro-apoptotic proteins, thereby inducing apoptosis of cells. In nonclinical studies, sonrotoclax demonstrated cytotoxicity in cancer cells overexpressing BCL-2, with a series of intrinsic apoptotic events, including caspase activation.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220711Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Sonrotoclax exposure-response relationships and the time course of pharmacodynamic response have not been fully characterized. Cardiac Electrophysiology Administration of sonrotoclax has the potential to increase the QTc interval. The largest mean increase in QTc interval was 7 ms (upper confidence interval = 14 ms) after administration of sonrotoclax (320 mg once daily) with a low-fat meal in patients with mature B-cell malignancies. There is insufficient information to characterize the QTc effects of sonrotoclax at higher concentrations above recommended dose.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220711Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Sonrotoclax pharmacokinetics were determined following a single dose or at steady state at the approved recommended dosage of 320 mg once daily and are presented as mean (CV%), unless otherwise specified. Sonrotoclax area under the plasma drug concentration-time curve (AUC 0-24 h ) is 3395 (55%) ng∙h/mL and maximum plasma concentration (C max ) is 353 (49%) ng/mL, following 320 mg once daily with a low-fat meal. Sonrotoclax C max and AUC 0-tau increase in a less than dose proportional manner over the dosage range of 320 mg to 640 mg (1 to 2 times the highest approved recommended dosage). Limited systemic accumulation of sonrotoclax was observed following repeated administration. Absorption The median T max of sonrotoclax is 4 hours (ranged from 1 to 8 hours) following 320 mg once daily dosing. Effect of Food Sonrotoclax AUC and C max increased by approximately 1.5-fold following administration with a low-fat meal (approximately 333-500 kilocalories, 25% fat calories). Sonrotoclax AUC increased by 2-fold and C max by 2.4-fold following administration with a high-fat meal (1000 kilocalories, 50% fat). Distribution The geometric mean apparent volume of distribution of sonrotoclax is 482 (38%) L. Sonrotoclax plasma protein binding is 99% across a concentration range of 1 to 10 μM. The blood-to-plasma ratio is 0.6 to 0.7. Elimination The mean terminal elimination half-life (t ½ ) of sonrotoclax ranges from 4 to 6 hours. The geometric mean apparent oral clearance (CL/F) of sonrotoclax is 94 (62%) L/h. Metabolism Sonrotoclax is primarily metabolized by CYP3A and to a lesser extent by CYP2C8 in vitro . Excretion After a single radiolabeled sonrotoclax dose of 20 mg to healthy subjects, approximately 86% of the dose was recovered in feces (19.5% unchanged) and 0.28% in urine (0.04% unchanged) . Specific Populations No clinically meaningful differences in the pharmacokinetics of sonrotoclax were observed based on race, age (27-91 years), sex, weight (37-165 kg), mild to moderate renal impairment (eGFR ≥ 30 mL/min) or mild to moderate hepatic impairment ( bilirubin ≤ 3× upper limit of normal (ULN) and any aspartate aminotransferase (AST)). The effect of severe renal impairment (eGFR <30 mL/min) or severe hepatic impairment (total bilirubin >3× ULN with any AST) on sonrotoclax pharmacokinetics is unknown. Drug Interactions Studies Clinical Studies and Model-Informed Approaches Strong CYP3A inhibitors: Sonrotoclax AUC increased 11-fold and C max increased 4-fold following concomitant administration of itraconazole (strong CYP3A inhibitor and P-gp inhibitor). Sonrotoclax AUC increased 13-fold and C max increased 7-fold following concomitant administration of posaconazole (strong CYP3A inhibitor). Strong CYP3A inducers: Sonrotoclax AUC decreased to 35% and C max to 58% following concomitant use of phenytoin (strong CYP3A inducer). Other drugs: No clinically significant differences in sonrotoclax pharmacokinetics were observed following concomitant administration with gastric acid reducing agents (proton pump inhibitors, H2-receptor antagonists). In Vitro Studies CYP450 Enzymes: Sonrotoclax is not an inhibitor of CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, and CYP2D6. Sonrotoclax inhibits CYP3A in vitro , but this is not anticipated to have a clinically meaningful impact. Sonrotoclax is not an inducer of CYP1A2, CYP2B6, or CYP3A4. Transporters: Sonrotoclax is a substrate of P-gp and BCRP but not OATP1B1 or OATP1B3. Sonrotoclax does not inhibit P-gp, BCRP OATP1B1, OATP1B3, OAT1, OAT3, OCT1, OCT2, MATE1, or MATE2-K.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220711Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -2197,5 +2247,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:02:15.596Z"
+  "lastIngestedAt": "2026-10-29T18:38:39.627Z"
 }

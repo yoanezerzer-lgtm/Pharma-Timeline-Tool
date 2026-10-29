@@ -4,6 +4,56 @@
   "inn": "gadoquatrane",
   "modality": "Drug (NDA)",
   "sponsor": "BAYER HEALTHCARE",
+  "pharmacology": {
+    "drugClass": {
+      "name": "gadolinium-based contrast agent",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219627Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "AMBELVIST is a gadolinium-based contrast agent indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Gadoquatrane is a paramagnetic tetrameric macrocyclic non-ionic complex of gadolinium that develops a magnetic moment when placed in a magnetic field. The magnetic moment alters the relaxation rates of water protons in its vicinity in the body, leading to an increase in the signal intensity (brightness) of tissues.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219627Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "In MRI, visualization of normal and pathological tissue depends in part on variations in the radiofrequency signal intensity that occur with: • differences in proton density • differences of the spin-lattice or longitudinal relaxation times (T 1 ). • differences in the spin-spin or transverse relaxation time (T 2 ). Gadoquatrane alters the T 1 and T 2 relaxation times in tissues in the magnetic field of an MRI scanner. The extent to which a contrast agent can affect the relaxation rate (1/T 1 or 1/T 2 ) of tissue water is termed relaxivity (r 1 or r 2 ). The relaxivity (r1) of gadoquatrane is presented in Table 3. Table 3: Relaxivity (r 1 ) of Gadoquatrane* in Human Plasma at 37 ° C Magnetic Field Strength Relaxivity (r 1 ) (L/mmol/sec) 1.5 T 47 3. 0 T 41 *Each molecule of gadoquatrane contains 4 chelated gadolinium ions [see Description ( 11 )] . Cardiac Electrophysiology At 5 times the recommended dose of gadoquatrane, clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219627Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The peak plasma concentration (C max ) and area under the concentration time curve (AUC) of gadolinium (Gd) increased proportionally over a dose range from 0.0025 to 0.05 mmol/kg of gadoquatrane (0.25 to 5 times the recommended dose). At the recommended dose, the median (5th, 95th percentile) C max and AUC inf were 394 (249, 628) μmol Gd/L and 462 (315, 766) μmol Gd*h/L, respectively. The pharmacokinetic (PK) parameters of gadolinium by age group are shown in Table 4. Table 4: Pharmacokinetic Parameters (Median, (5 th , 95 th Percentile)) of Gadolinium a by Age Group Adults N=527 0 to <2 years N=23 2 to <12 years N=45 12 to <18 years N=24 0 to <18 years N=92 eGFR (mL/min/1.73m²) 105 (91.5, 126) 131 (74.7, 179) 141 (101, 192) 116 (85.6, 155) 134 (85.1, 186) AUC inf (μmol Gd*h/L) 421 (308, 651) 287 (214, 353) 250 (200, 342) 347 (264, 460) 284 (203, 398) CL/BW (L/h/kg) 0.095 (0.062, 0.130) 0.139 (0.113, 0.190) 0.160 (0.116, 0.202) 0.115 (0.087, 0.150) 0.142 (0.100, 0.194) Vss/BW (L/kg) 0.205 (0.157, 0.249) 0.245 (0.226, 0.259) 0.233 (0.199, 0.244) 0.198 (0.171, 0.230) 0.230 (0.175, 0.251) t 1/2 eff (h) 1.47 (1.16, 2.24) 1.19 (0.928, 1.52) 1.01 (0.829, 1.28) 1.15 (1.04, 1.34) 1.07 (0.844, 1.40) C 10 (μmol Gd/L) 268 (209, 374) 184 (167, 199) 190 (175, 228) 236 (193, 268) 193 (168, 261) C 20 (μmol Gd/L) 216 (171, 295) 153 (135, 164) 156 (139, 193) 200 (161, 228) 160 (136, 220) a at the recommended dose of gadoquatrane Abbreviations: N, number of subjects; eGFR, estimated glomerular filtration rate; AUC inf , area under the plasma concentration-time curve from time zero extrapolated to infinity; CL/BW, clearance normalized by body weight; Vss/BW, volume of distribution at steady state normalized by body weight; t 1/2eff , effective half-life; C 10, plasma concentration at 10 minutes post-dose; C 20, plasma concentration at 20 minutes post-dose Distribution After intravenous administration, gadoquatrane is distributed from the vascular to the extracellular space. The median (5th, 95th percentile) volume of distribution over body weight of gadolinium at steady state (Vss/BW) is 0.205 (0.157, 0.252) L/kg. Plasma protein binding is < 1%. Following GBCA administration, gadolinium is present for months or years in brain, bone, skin, and other organs [see Warnings and Precautions ( 5.4 )] . It is unknown whether the recommended dose of AMBELVIST results in similar or different levels of gadolinium retention relative to those of other approved macrocyclic GBCAs at their recommended doses. Elimination The median (5th, 95th percentile) effective elimination half-life (t 1/2, eff ) of gadolinium is 1.6 (1.2, 2.6) hours. The median (5th, 95th percentile) total body clearance over body weight (CL/BW) is 0.087 (0.052, 0.13) L/h/kg. Metabolism Gadoquatrane is not metabolized. Excretion Gadoquatrane is mainly eliminated through the kidneys by glomerular filtration. On average, 91% (CV 13%) of the dose was excreted in the urine within 12 hours after intravenous administration. Extrarenal elimination is negligible; less than 1% of the dose was detectable in feces. Specific Populations No clinically significant differences in PK of gadolinium were observed based on age (geriatric vs. younger patients) or sex (male vs. female). Pediatric Patients The PK profile of gadolinium in pediatric patients is generally comparable to and within range of that observed in adults. See Table 4 for the PK parameters of gadolinium at the recommended dose of gadoquatrane by age. Patients with Renal Impairment Gadolinium distributes into the extracellular space and is mainly eliminated by the kidney. Gadolinium clearance decreased as the severity of renal impairment increased, leading to higher total drug exposure (AUC) and prolonged excretion time. Despite the effects on total exposure, early plasma concentrations of gadolinium were not affected by the subjects’ level of renal function [ see Warnings and Precautions ( 5.2 ) and Use in Specific Populations ( 8.6 )] . Table 5 presents the pharmacokinetic parameters of gadolinium at the recommended dose of gadoquatrane in adults with varying degrees of renal function (normal, mild, and moderate impairment) and for virtual patients representing severe renal impairment. Table 5: Pharmacokinetic Parameters (Median, (5 th , 95 th Percentile)) of Gadolinium a by Renal Function in Adults Normal renal function (eGFR ≥90 mL/min/1.73 m²) N=527 Mild renal impairment (eGFR ≥60 -89 mL/min/1.73 m²) N=285 Moderate renal impairment (eGFR ≥30 -59 mL/min/1.73 m²) N=58 Severe renal impairment b (eGFR <30 mL/min/1.73 m²) AUC inf (μmol Gd*h/L) 421 (308, 651) 576 (423, 908) 851 (579, 1315) 2016 (1252, 4283) V ss /BW (L/kg) 0.205 (0.157, 0.249) 0.202 (0.158, 0.253) 0.193 (0.164, 0.226) 0.335 (0.246, 0.391) CL/BW [L/h/kg] 0.095 (0.062, 0.130) 0.070 (0.044, 0.095) 0.047 (0.031, 0.069) 0.0198 (0.0093, 0.032) t 1/2,eff [h] 1.47 (1.16, 2.24) 1.97 (1.51, 3.25) 2.94 (1.84, 5.05) 11.3 (7.25, 24.0) C 10 (μmol Gd/L) 268 (209, 374) 279 (216, 382) 303 (242, 367) 304 (232, 427) C 20 (μmol Gd/L) 216 (171, 295) 235 (186, 311) 266 (211, 314) 258 (204, 355) a at the recommended dose of gadoquatrane b predicted based on virtual patients (N=10,000) Abbreviations: N, number of subjects; AUC inf , area under the plasma concentration-time curve from time zero extrapolated to infinity; Vss/BW, volume of distribution at steady state normalized by body weight; CL/BW, clearance normalized by body weight; t 1/2eff , effective half-life; C 10, plasma concentration at 10 minutes post-dose; C 20 , plasma concentration at 20 minutes post-dose In patients with mild or moderate renal impairment, about 90% of the administered gadoquatrane was recovered in urine within 24 hours. In patients with severely impaired renal function, recovery of a similar amount is anticipated in urine within 5 to 7 days. Gadoquatrane has been shown to be dialyzable in an in vitro hemodialysis study. After 1 hour of in vitro hemodialysis, approximately 97% of gadoquatrane was removed from the plasma.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219627Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -682,5 +732,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:42.166Z"
+  "lastIngestedAt": "2026-10-29T18:37:15.101Z"
 }

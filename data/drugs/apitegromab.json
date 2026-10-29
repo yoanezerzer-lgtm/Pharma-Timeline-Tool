@@ -4,6 +4,56 @@
   "inn": "apitegromab",
   "modality": "Biologic (BLA)",
   "sponsor": "SCHOLAR ROCK INC",
+  "pharmacology": {
+    "drugClass": {
+      "name": "recombinant monoclonal antibody targeting proforms of myostatin,",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761463Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "ISEMBYLD is a recombinant monoclonal antibody targeting proforms of myostatin, indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "ISEMBYLD is a fully human monoclonal IgG4 antibody that binds to promyostatin and latent myostatin and inhibits the activation of myostatin, blocking myostatin signaling.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761463Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "In Study 1, the increase in serum total latent myostatin levels are comparable across ISEMBYLD 10 mg/kg and 20 mg/kg (twice the recommended dosage) doses in patients with SMA 2 to 12 years of age, and the 20 mg/kg dose in patients with SMA 13 years of age and older.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761463Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The PK of apitegromab-mstn were characterized in healthy adult subjects and in patients with SMA using population pharmacokinetic modeling. Pharmacokinetics of apitegromab-mstn were linear and dose-proportional in the range of 10 mg/kg to 20 mg/kg (twice the recommended dosage) in patients with SMA. Following administration of ISEMBYLD once every 4 weeks in patients with SMA, approximately 2-fold accumulation of apitegromab-mstn exposures were observed, and exposures reached steady state by approximately 16-20 weeks. Distribution The apitegromab-mstn mean (coefficient of variation % [CV%]) steady state volume of distribution in patients with SMA (2 to 21 years of age) was estimated to be 2.16 L (48%). Elimination Apitegromab-mstn is expected to be degraded into small peptides and amino acids via catabolism in the same manner as endogenous IgGs. The mean value (CV%) of clearance of apitegromab-mstn in patients with SMA (2 to 21 years of age) was estimated to be 0.055 L/day (50%). The mean value (CV%) of the terminal elimination half-life of apitegromab-mstn was estimated to be 31.2 days (32%). Specific Populations Pediatric Patients The PK of apitegromab-mstn was characterized in pediatric patients 2 years of age and older using a population pharmacokinetic model. Following weight-based dosing of ISEMBYLD 10 mg/kg, model-predicted steady state exposures (C max , C trough and AUC) of apitegromab-mstn was comparable between patients 2 to 12 years of age and 13 to 21 years of age . Male and Female Patients and Racial or Ethnic Groups Based on the population PK analysis, sex, race, and ethnicity had no effect on apitegromab-mstn PK in patients with SMA. Patients with Renal or Hepatic Impairment No clinical studies were conducted to evaluate the PK of apitegromab-mstn in patients with renal or hepatic impairment. Apitegromab-mstn is degraded by proteolytic enzymes and is not expected to undergo renal elimination or metabolism by hepatic enzymes. Drug Interaction Studies An effect of apitegromab-mstn on the PK of co-administered medications is not expected. Based on the population PK analysis, SMN-modulating therapies (nusinersen and risdiplam) had no effect on apitegromab-mstn PK in patients with SMA.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761463Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -837,5 +887,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T17:59:24.496Z"
+  "lastIngestedAt": "2026-10-29T18:35:56.743Z"
 }

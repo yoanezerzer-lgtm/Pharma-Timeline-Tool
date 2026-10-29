@@ -4,6 +4,56 @@
   "inn": "veligrotug",
   "modality": "Biologic (BLA)",
   "sponsor": "VIRIDIAN THERAPEUTICS INC",
+  "pharmacology": {
+    "drugClass": {
+      "name": "insulin-like growth factor-1 receptor inhibitor",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "LUMVOA is an insulin-like growth factor-1 receptor inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Veligrotug-vvze’s mechanism of action in patients with thyroid eye disease has not been fully characterized. Veligrotug-vvze is a humanized IgG1 monoclonal antibody that binds to IGF- 1R and inhibits IGF-1R signaling by blocking ligand-induced receptor autophosphorylation.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 6,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "No formal pharmacodynamic studies have been conducted with veligrotug-vvze.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The pharmacokinetics (PK) of veligrotug-vvze were described by a two-compartment population PK model based on data from 298 patients with thyroid eye disease receiving 10 mg/kg LUMVOA every 3 weeks in 4 clinical trials. Following this dose regimen, the geometric mean estimates for steady- state area under the concentration curve (AUC), peak (C max ), and trough (C trough ) concentrations of veligrotug-vvze were 3450 mcg∙day/mL, 363 mcg/mL, and 97.8 mcg/mL, respectively. Distribution The population PK estimated mean central and peripheral volume of distribution of veligrotug-vvze were 2.80 L and 2.50 L, respectively. Elimination The population PK estimated mean (% relative standard error) linear clearance of veligrotug-vvze was 0.216 (2.7) L/day with a corresponding half-life of approximately 18 days. Metabolism Metabolism of veligrotug-vvze has not been fully characterized. However, veligrotug-vvze is expected to undergo metabolism via proteolysis. Specific Populations No clinically meaningful differences in the pharmacokinetics of veligrotug-vvze were observed following administration of LUMVOA based on patient's age (20 - 79 years), sex (216 female and 82 male), race/ethnicity (224 White, 22 Black, and 13 Asian), or weight (41 - 161 kg). Neither renal nor hepatic impairment is expected to influence the pharmacokinetics of veligrotug-vvze. Drug Interaction Studies No studies evaluating the drug interaction potential of LUMVOA have been conducted.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -735,5 +785,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:02:52.229Z"
+  "lastIngestedAt": "2026-10-29T18:39:22.502Z"
 }

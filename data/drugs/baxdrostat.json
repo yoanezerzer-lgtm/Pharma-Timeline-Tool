@@ -4,6 +4,56 @@
   "inn": "baxdrostat",
   "modality": "Drug (NDA)",
   "sponsor": "ASTRAZENECA AB",
+  "pharmacology": {
+    "drugClass": {
+      "name": "aldosterone synthase inhibitor",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219878Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "BAXFENDY is an aldosterone synthase inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Baxdrostat is an inhibitor of human aldosterone synthase. Aldosterone contributes to hypertension by promoting the retention of sodium and water by the kidneys, which increases blood volume and, consequently, raises blood pressure. Aldosterone can cause vascular dysfunction, inflammation, and fibrosis. Inhibition of aldosterone synthase by baxdrostat decreases plasma aldosterone concentrations, thereby reducing blood pressure. Baxdrostat has a higher potency and selectivity for aldosterone synthase compared to the closely related enzyme 11β -hydroxylase (final enzyme in cortisol synthesis). In nonclinical and clinical studies, baxdrostat significantly lowered aldosterone concentrations without affecting cortisol responses over a wide dose range. Baxdrostat does not inhibit synthesis of sex hormones such as testosterone and estrone.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219878Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "In healthy subjects, baxdrostat dosed at 1.5 mg to 2.5 mg with a normal salt diet and 2.5 mg to 5 mg with a low salt diet (0.75 to 2.5 times the maximum recommended dose), resulted in a decrease of up to approximately 70% and 83% in plasma aldosterone concentrations, respectively, after the initial dose. At Day 10, aldosterone concentrations remained up to approximately 68% lower than baseline in the normal salt group and 73% lower than baseline in the low salt group. In hypertensive patients, repeated administration of baxdrostat 0.5 mg (0.5 times the lowest recommended dose), 1 mg and 2 mg caused a sustained dose-dependent decrease in 24-hour urinary excretion of aldosterone, and a decrease in plasma aldosterone concentrations, while plasma renin activity increased. Decreased plasma aldosterone concentrations were observed up to 32 weeks, the last time point of assessment. No effect on adrenocorticotropic hormone (ACTH) stimulated cortisol secretion was observed during treatment with BAXFENDY in healthy subjects with doses up to 360 mg (180 times the maximum recommended dose) administered as a single dose or with multiple ascending doses up to 10 mg (5 times the maximum recommended dose) at steady state, or in a dedicated randomized, double-blind, placebo-controlled trial in patients with hypertension treated with baxdrostat 2 mg for 8 weeks. Cardiac Electrophysiology Clinically significant QTc interval prolongation was not observed at 16 times the maximum recommended dose.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219878Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Baxdrostat geometric mean maximum plasma concentration (C max ) was 19 ng/mL (%CV: 5.4) and the geometric mean area underneath the time concentration curve from time 0 to infinity (AUC 0–inf ) was 711 h*ng/mL (%CV: 32) following a single 2 mg dose. Baxdrostat AUC and C max increased in a dose-proportional manner for the 1 and 2 mg doses in patients with hypertension, and steady state was reached by Day 8. Absorption Baxdrostat has an absolute bioavailability of 98%. Under fasted conditions, median time to maximum plasma concentration (t max ) was 2.5 hours (min: 1.0 hours, max: 5.0 hours) for the 2 mg dose. Baxdrostat did not show pH- dependent solubility at pharmacologically relevant concentrations. Effect of Food No clinically significant differences in baxdrostat pharmacokinetics were observed following administration of a high-fat, high-calorie meal (800 to 1000 calories with approximately 50% of the total caloric content from fat) in healthy subjects. Distribution The volume of distribution of baxdrostat at steady state is 205 L. The plasma protein binding of baxdrostat was 74% and the blood to plasma ratio was 0.95 in vitro . Elimination The mean effective half-life of baxdrostat was approximately 26 hours (range 23 to 32 hours). The mean total clearance was 2.8 L/h, and the mean renal clearance was 0.46 L/h. Metabolism Baxdrostat is primarily metabolized by CYP3A4 to an intermediate ketone metabolite, which is further metabolized by CBR1 (carbonyl reductase 1) to an alcohol metabolite (M2). After a single dose of radiolabeled baxdrostat, the parent compound accounted for 71% of total radioactivity exposure. Excretion After administration of a radiolabeled dose of baxdrostat, approximately 69% of the dose was recovered in urine (17% unchanged) and 15% in feces (6% unchanged). Specific Populations There were no clinically relevant effects of age (18 to 90 years), sex (37% females), body weight (43 to 224 kg), or race (White, Asian, and Black or African American) on the pharmacokinetics of baxdrostat. Patients with Renal Impairment In subjects with moderate or severe renal impairment (eGFR 15 to < 60 mL/min, not on dialysis), C max and AUC 0–inf of baxdrostat were similar compared to the control group (eGFR ≥ 60 mL/min), with a geometric mean ratio (95% CI) for baxdrostat C max of 1.02 (0.82, 1.27) and AUC 0–inf of 1.21 (0.81, 1.79). Compared to the control group, subjects with kidney failure treated with intermittent hemodialysis who were administered baxdrostat on a non-dialysis day had a geometric mean ratio (95% CI) for C max of 0.88 (0.71, 1.09) and AUC 0–inf of 0.68 (0.46, 0.99) [see Use in Specific Populations (8.6) ] . Patients with Hepatic Impairment In subjects with moderate hepatic impairment (Child-Pugh category B), C max and AUC 0–inf of baxdrostat were similar to control subjects with normal hepatic function, with a geometric mean ratio (95% CI) for baxdrostat C max of 1.13 (0.97, 1.32) and AUC 0–inf of 0.95 (0.73, 1.23). Baxdrostat has not been studied in patients with severe hepatic impairment. Drug Interaction Studies Clinical Studies There was no clinically significant difference in baxdrostat exposure based on C max (1.30-fold geometric mean increase [95% CI: 1.20, 1.39]) or AUC (1.56-fold geometric mean increase [95% CI: 1.46, 1.66]) when used concomitantly with itraconazole (strong CYP3A and P-gp inhibitor). There were no differences in the pharmacokinetics of either metformin (MATE1 and MATE2-K transporter substrate) or the oral contraceptive ethinyl estradiol/levonorgestrel when used concomitantly with baxdrostat. In Vitro Studies Cytochrome P450 (CYP450) enzymes: Baxdrostat did not inhibit CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6 or CYP3A4/5, and did not induce CYP1A2, CYP2B6, or CYP3A4. Baxdrostat was not a substrate of CYP1A2, CYP2A6, CYP2B6, CYP2C9, CYP2C19, CYP2D6, CYP2E1, or CYP3A5. UDP-Glucuronosyltransferase (UGT) enzymes: Baxdrostat did not inhibit UGT1A1, UGT1A3, UGT1A4, UGT1A6, UGT1A8, UGT1A9, UGT2B4, UGT2B7 or UGT2B15. Transporter systems: Baxdrostat is a P-gp and BCRP substrate, but this is not expected to result in clinically significant drug-drug interactions. Baxdrostat did not inhibit the transporters BCRP, BSEP, OATP1B1, OATP1B3, OAT1, OAT3, OCT1, OCT2, or P-gp. Baxdrostat is not a substrate of OAT1, OAT3, OCT1, OCT2, OATP1B1, OATP1B3, MATE1, or MATE2-K .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219878Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -2725,5 +2775,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T17:59:21.473Z"
+  "lastIngestedAt": "2026-10-29T18:35:55.262Z"
 }

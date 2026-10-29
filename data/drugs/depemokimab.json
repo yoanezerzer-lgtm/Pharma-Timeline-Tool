@@ -4,6 +4,56 @@
   "inn": "depemokimab",
   "modality": "Biologic (BLA)",
   "sponsor": "GLAXOSMITHKLINE LLC",
+  "pharmacology": {
+    "drugClass": {
+      "name": "interleukin-5 (IL-5) antagonist, a monoclonal antibody (humanized immunoglobulin G [IgG]1 kappa)",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761458Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "EXDENSUR is an interleukin-5 (IL-5) antagonist, a monoclonal antibody (humanized immunoglobulin G [IgG]1 kappa) indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Depemokimab-ulaa is an IL-5 antagonist (humanized IgG1 kappa monoclonal antibody), which binds to IL-5 with a dissociation constant of 10.5 pM, inhibiting the bioactivity of IL-5 with in vitro IC50 value of 4 pM by blocking its binding to the alpha chain of the IL-5 receptor complex expressed on the cell surface. Depemokimab-ulaa contains a triple amino acid substitution (YTE) in the fragment crystallizable (Fc) region which increases binding to the neonatal Fc receptor and thereby extends the elimination half-life. These properties support the dosing interval of every 6 months. IL-5 is the major cytokine responsible for the growth and differentiation, recruitment, activation, and survival of eosinophils. Inflammation is an important component in the pathogenesis of asthma. Multiple cell types (e.g., mast cells, eosinophils, neutrophils, macrophages, lymphocytes) and mediators (e.g., histamine, eicosanoids, leukotrienes, cytokines) are involved in inflammation. Depemokimab-ulaa, by inhibiting IL-5 signaling, reduced the production and survival of eosinophils; however, the mechanism of depemokimab-ulaa action in asthma has not been definitively established.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761458Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "In placebo-controlled studies involving adult and pediatric patients aged 12 years and older with asthma, a 100 mg dose of EXDENSUR administered SC every 6 months for 52 weeks reduced blood eosinophils to a geometric mean count of 57 cells/mcL (95% CI: 51, 63) at Week 52. This corresponded to a geometric mean reduction of 79% (95% CI: 75.8, 81.8) compared to placebo. This magnitude of blood eosinophil reduction was observed within 2 weeks of treatment (at the first assessment) and was maintained throughout the treatment period. 11",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761458Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The pharmacokinetics of depemokimab-ulaa were approximately dose-proportional in patients with asthma following SC administration over a dose range of 0.1-times the recommended dose to 3-times the recommended dose. After SC administration of 100 mg of EXDENSUR every 6 months in patients with severe asthma, the mean (SD) model-based estimated trough concentration of depemokimab-ulaa at Week 26 was approximately 1.30 (0.44) mcg/mL. The mean (SD) model-based estimated average steady-state plasma concentration over a single dosing interval was 6.16 (1.62) mcg/mL. Absorption Depemokimab-ulaa median T max was approximately 14 days. There was no accumulation following repeat SC administration once every 6 months. Distribution The estimated typical apparent volume of distribution is 6.3 L. Elimination The estimated mean (SD) elimination half-life was 48 (4.7) days following SC administration of EXDENSUR. The estimated typical apparent clearance was 0.092 L/day. Metabolism: Depemokimab-ulaa is a monoclonal antibody which is expected to be metabolized into small peptides and amino acids by catabolic pathways. Specific Populations No clinically significant differences in the pharmacokinetics of depemokimab-ulaa were observed based on age (12 to 93 years), sex, race (73% White, 7% Black, 19% Asian), body weight (34.6 to 161 kg), renal impairment (eGFR ≥ 90 mL/min/1.73 m 2 [normal, N = 548]; eGFR 60 to <90 mL/min/1.73 m 2 [mild, N = 380]; eGFR 30 to <60 mL/min/1.73 m 2 [moderate, N = 31], and eGFR ≤ 30 mL/min/1.73 m 2 [severe, N = 2]), or baseline hepatic function biomarkers (alanine aminotransferase [ALT; 5 to 153 IU/L], aspartate aminotransferase [AST; 9 to 115 IU/L], and bilirubin [1.7 to 42 micromol/L]). Pediatric Patients: There are limited pharmacokinetic data available in the pediatric population. The pharmacokinetics of depemokimab-ulaa in pediatric patients aged 12 to 17 years were consistent with adults. The pharmacokinetics of depemokimab-ulaa have not been studied in pediatric patients aged less than 12 years. Drug Interaction Studies No drug interaction studies have been conducted.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761458Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -2249,5 +2299,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:06.840Z"
+  "lastIngestedAt": "2026-10-29T18:36:44.670Z"
 }
