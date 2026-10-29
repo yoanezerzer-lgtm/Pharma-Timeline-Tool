@@ -25,6 +25,7 @@ import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './
 import { findReviews } from './reviews.js';
 import { labelCompany, reviewOffice } from './labelFacts.js';
 import { pharmacology } from './pharmacology.js';
+import { indicationDiseases } from './diseases.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 
@@ -343,6 +344,12 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
 
   // --- merge ---------------------------------------------------------------
   const incoming = buildDrugRecord(spec, fda, trials, docs, indicationList);
+  const diseases = await indicationDiseases(ctx, incoming.indications, incoming.trials);
+  incoming.indications = incoming.indications.map((i) => {
+    const d = diseases.get(i.name) ?? [];
+    return d.length > 0 ? { ...i, diseases: d } : i;
+  });
+  log(`[diseases] ${incoming.indications.filter((i) => i.diseases).length} of ${incoming.indications.length} approved use(s) matched to a MeSH disease`);
   const existing = loadExisting(drugsDir, spec.slug);
   const merged = mergeDrug(existing, incoming, now);
   merged.drug.trials = dedupeTrialIds(merged.drug.trials);

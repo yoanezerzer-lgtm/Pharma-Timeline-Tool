@@ -13,7 +13,14 @@ import { chromium, type Page } from 'playwright';
 const base = (process.argv[2] ?? 'http://localhost:4173/').replace(/\/?$/, '/');
 const drugs = readdirSync('data/drugs')
   .filter((f) => f.endsWith('.json'))
-  .map((f) => JSON.parse(readFileSync(`data/drugs/${f}`, 'utf8')) as { slug: string; brandName: string; indications: { slug: string }[] });
+  .map(
+    (f) =>
+      JSON.parse(readFileSync(`data/drugs/${f}`, 'utf8')) as {
+        slug: string;
+        brandName: string;
+        indications: { slug: string; diseases?: { meshId: string }[] }[];
+      }
+  );
 
 const problems: string[] = [];
 
@@ -60,8 +67,20 @@ async function main(): Promise<void> {
     });
   }
 
+  await visit(page, '#/diseases', async (p) => {
+    const body = await text(p);
+    return /\d+ diseases with FDA approvals/.test(body) ? undefined : 'disease list did not load';
+  });
+  const diseases = new Set(drugs.flatMap((d) => d.indications.flatMap((i) => (i.diseases ?? []).map((x) => x.meshId))));
+  for (const id of diseases) {
+    await visit(page, `#/disease/${id}`, async (p) => {
+      const body = await text(p);
+      return /approvals over time/i.test(body) ? undefined : 'disease page is empty';
+    });
+  }
+
   await browser.close();
-  const pages = 1 + drugs.length + drugs.filter((d) => d.indications.length > 0).length;
+  const pages = 2 + drugs.length + drugs.filter((d) => d.indications.length > 0).length + diseases.size;
   if (problems.length > 0) {
     console.error(`Site check: ${problems.length} problem(s) across ${pages} pages at ${base}`);
     for (const p of problems) console.error(`  - ${p}`);

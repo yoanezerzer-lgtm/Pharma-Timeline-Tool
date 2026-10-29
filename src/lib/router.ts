@@ -16,6 +16,8 @@ type Route =
       trialId: string | null;
     }
   | { name: 'drug'; slug: string }
+  | { name: 'diseases' }
+  | { name: 'disease'; meshId: string }
   | { name: 'compare' }
   | { name: 'review' }
   | { name: 'review-drug'; slug: string }
@@ -30,6 +32,8 @@ function parseHash(hash: string): Route {
     return { name: 'indication', slug, indicationSlug: sub1Value, trialId };
   }
   if (section === 'drug' && slug && !sub1) return { name: 'drug', slug };
+  if (section === 'diseases') return { name: 'diseases' };
+  if (section === 'disease' && slug) return { name: 'disease', meshId: slug };
   if (section === 'compare') return { name: 'compare' };
   if (section === 'review') {
     return slug ? { name: 'review-drug', slug } : { name: 'review' };
@@ -52,6 +56,15 @@ export function useRoute(): Route {
 
 export function navigate(to: string): void {
   window.location.hash = to;
+}
+
+export function diseasesHref(): string {
+  return '#/diseases';
+}
+
+/** A disease page, by its MeSH id ("D001172"). */
+export function diseaseHref(meshId: string): string {
+  return `#/disease/${meshId}`;
 }
 
 export function drugHref(slug: string): string {

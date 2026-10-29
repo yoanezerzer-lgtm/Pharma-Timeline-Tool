@@ -52,6 +52,7 @@ gap('No FDA review office', (d) => !d.regulatory.us.reviewOffice);
 gap('No company name from the label', (d) => !d.regulatory.us.labelCompany);
 gap('No drug class', (d) => !d.pharmacology?.drugClass);
 gap('No label sections 12.1-12.3', (d) => !d.pharmacology?.sections.length);
+gap('An approved use with no disease matched', (d) => d.indications.some((i) => !i.diseases?.length));
 gap('An approved use with no pivotal trial', (d) =>
   d.indications.some((i) => !d.trials.some((t) => t.roles.some((r) => r.role === 'PIVOTAL' && r.indication === i.name)))
 );

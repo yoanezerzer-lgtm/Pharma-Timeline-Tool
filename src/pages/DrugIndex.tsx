@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { drugIndex } from '../lib/catalog.js';
-import { compareHref, drugHref, indicationHref, reviewHref, ingestHref } from '../lib/router.js';
+import { compareHref, diseasesHref, drugHref, indicationHref, reviewHref, ingestHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel, shortIndication } from '../lib/drugs.js';
 import type { DrugSummary } from '../lib/summary.js';
@@ -9,8 +9,9 @@ import './DrugIndex.css';
 
 const approvalDates = drugIndex.flatMap((d) => d.indications.flatMap((i) => (i.approvalDate ? [i.approvalDate] : [])));
 const companies = [...new Set(drugIndex.map((d) => d.company))].sort((a, b) => a.localeCompare(b));
-const areas = [...new Set(drugIndex.flatMap((d) => (d.area ? [d.area] : [])))].sort();
-const NO_AREA = 'Review office not yet matched';
+const areas = [...new Set(drugIndex.flatMap((d) => d.areas))].sort();
+const NO_AREA = 'Therapeutic area not yet matched';
+const areasOf = (d: DrugSummary) => (d.areas.length > 0 ? d.areas : [NO_AREA]);
 const years = [...new Set(approvalDates.map((a) => a.value.slice(0, 4)))].sort().reverse();
 const latestApproval = approvalDates.reduce<(typeof approvalDates)[number] | null>(
   (latest, a) => (!latest || a.value > latest.value ? a : latest),
@@ -64,10 +65,10 @@ export function DrugIndex() {
     const q = query.trim().toLowerCase();
     return drugIndex.filter((d) => {
       if (sponsor && d.company !== sponsor) return false;
-      if (area && (d.area ?? NO_AREA) !== area) return false;
+      if (area && !areasOf(d).includes(area)) return false;
       if (year && !d.indications.some((i) => i.approvalDate?.value.startsWith(year))) return false;
       if (!q) return true;
-      return [d.brandName, d.inn, d.sponsor, d.company, d.area ?? '', ...d.indications.flatMap((i) => [i.name, i.displayName ?? ''])]
+      return [d.brandName, d.inn, d.sponsor, d.company, ...d.areas, ...d.indications.flatMap((i) => [i.name, i.displayName ?? '', ...i.diseases.map((x) => x.term)])]
         .join(' ')
         .toLowerCase()
         .includes(q);
@@ -78,6 +79,9 @@ export function DrugIndex() {
     <main className="index">
       <header className="index__head">
         <div className="index__head-actions">
+          <a href={diseasesHref()} className="index__compare">
+            Browse by disease
+          </a>
           <a href={compareHref()} className="index__compare">
             Compare programs
           </a>
@@ -119,9 +123,9 @@ export function DrugIndex() {
         </div>
         {areas.length > 0 && (
           <div className="index__control">
-            <label htmlFor="area-filter">FDA review office</label>
+            <label htmlFor="area-filter">Therapeutic area</label>
             <select id="area-filter" value={area} onChange={(e) => setArea(e.target.value)}>
-              <option value="">All offices</option>
+              <option value="">All areas</option>
               {[...areas, NO_AREA].map((a) => (
                 <option key={a} value={a}>
                   {a}
@@ -170,7 +174,7 @@ export function DrugIndex() {
           </button>
         </p>
       ) : view === 'list' ? (
-        <DrugList drugs={filtered} />
+        <DrugList drugs={filtered} area={area} />
       ) : view === 'table' ? (
         <IndicationTable drugs={filtered} year={year} />
       ) : (
@@ -319,16 +323,18 @@ function IndicationTable({ drugs, year }: { drugs: DrugSummary[]; year: string }
 }
 
 /**
- * The default view: one line per drug, grouped by the FDA office that
- * reviews it. Each line shows the drug's first approved use in a few words;
+ * The default view: one line per drug, grouped by therapeutic area (the
+ * MeSH disease categories of its approved uses). Each line shows the drug's first approved use in a few words;
  * the drug page has every use in the FDA's full wording.
  */
-function DrugList({ drugs }: { drugs: DrugSummary[] }) {
+function DrugList({ drugs, area }: { drugs: DrugSummary[]; area: string }) {
   const grouped = areas.length > 0;
   const groups = new Map<string, DrugSummary[]>();
   for (const d of drugs) {
-    const key = grouped ? d.area ?? NO_AREA : '';
-    groups.set(key, [...(groups.get(key) ?? []), d]);
+    // A drug sits under every area its approved uses fall in (Rinvoq: joints, skin, gut).
+    for (const key of grouped ? areasOf(d).filter((a) => !area || a === area) : ['']) {
+      groups.set(key, [...(groups.get(key) ?? []), d]);
+    }
   }
   const order = [...groups.keys()].sort((a, b) => Number(a === NO_AREA) - Number(b === NO_AREA) || a.localeCompare(b));
   return (
