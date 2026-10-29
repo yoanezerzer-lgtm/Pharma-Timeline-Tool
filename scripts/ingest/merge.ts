@@ -78,6 +78,9 @@ const MERGEABLE_FIELDS = [
   'postedResults',
 ] as const;
 
+/** Registry lookups the site groups by, not shown as values: refreshed silently, with no change-log entry. */
+const INDEX_FIELDS = ['conditions', 'conditionMesh'] as const;
+
 /** Human-authored fields ingestion never touches, verified or not. */
 const HUMAN_ONLY_FIELDS = [
   'takeaways',
@@ -129,6 +132,10 @@ function mergeTrial(
       changed = true;
       changedFields.add(field);
     }
+  }
+
+  for (const field of INDEX_FIELDS) {
+    if (incoming[field] !== undefined) (merged as Record<string, unknown>)[field] = incoming[field];
   }
 
   // Carry human-authored content forward untouched.

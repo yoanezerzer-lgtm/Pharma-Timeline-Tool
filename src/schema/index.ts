@@ -228,6 +228,10 @@ export const Trial = z.object({
    * approval rests on. Used as a guard against misclassifying one as pivotal.
    */
   studyType: z.string().optional(),
+  /** The conditions as the sponsor registered them ("Rheumatoid Arthritis"). */
+  conditions: z.array(z.string()).optional(),
+  /** ClinicalTrials.gov's MeSH terms for those conditions, assigned by the National Library of Medicine. */
+  conditionMesh: z.array(z.object({ id: z.string(), term: z.string() })).optional(),
 
   startDate: DateValue.optional(),
   primaryCompletionDate: DateValue.optional(),
@@ -389,6 +393,21 @@ export const Approval = z.object({
 });
 export type Approval = z.infer<typeof Approval>;
 
+/**
+ * A disease an approved use is for, as a MeSH term: one its pivotal trials
+ * are all registered under. Groups approvals across drugs on disease pages.
+ */
+export const Disease = z.object({
+  meshId: z.string(),
+  term: z.string(),
+  /** MeSH's top-level disease categories the term sits under ("Neoplasms"): the therapeutic areas. */
+  areas: z.array(z.string()).default([]),
+  /** MeSH's own definition (scope note), public domain, from the National Library of Medicine. */
+  definition: z.object({ text: z.string(), provenance: Provenance }).optional(),
+  provenance: Provenance,
+});
+export type Disease = z.infer<typeof Disease>;
+
 export const Indication = z.object({
   /** The label's own wording — sometimes a whole sentence when the label doesn't number its indications. */
   name: z.string(),
@@ -406,6 +425,7 @@ export const Indication = z.object({
   approvalProvenance: Provenance.optional(),
   /** Every approval of a use within this indication, oldest first, from the approval letters. */
   approvals: z.array(Approval).optional(),
+  diseases: z.array(Disease).optional(),
   /**
    * The sponsor's own announcement of this approval, when someone has found
    * and added one. A press release routinely names the trials behind an

@@ -21,12 +21,21 @@ export interface DrugSummary {
    */
   company: string;
   /** The FDA office that reviews it, without "Office of" ("Oncologic Diseases"); unset when no letter names one. */
-  area?: string;
+  office?: string;
+  /** Therapeutic areas: the MeSH disease categories of its approved uses ("Neoplasms"), sorted. */
+  areas: string[];
   firstApproval?: DateValue;
   modality: string;
   mechanism?: string;
   trialCount: number;
-  indications: { name: string; displayName?: string; slug: string; approvalDate?: DateValue; trialCount: number }[];
+  indications: {
+    name: string;
+    displayName?: string;
+    slug: string;
+    approvalDate?: DateValue;
+    trialCount: number;
+    diseases: { meshId: string; term: string }[];
+  }[];
   verification: VerificationStats;
   /** Pivotal-trial facts in data/reference: how many the checker has confirmed against FDA documents. */
   checked: CheckStats;
@@ -59,7 +68,8 @@ export function summarize(drug: Drug, checked: CheckStats = { confirmed: 0, tota
     inn: drug.inn,
     sponsor: drug.sponsor,
     company: drug.regulatory.us.labelCompany?.name ?? drug.regulatory.us.sponsor ?? drug.sponsor,
-    area: drug.regulatory.us.reviewOffice?.name.replace(/^Office of /, ''),
+    office: drug.regulatory.us.reviewOffice?.name.replace(/^Office of /, ''),
+    areas: [...new Set(drug.indications.flatMap((i) => (i.diseases ?? []).flatMap((d) => d.areas)))].sort(),
     firstApproval: firstApproval(drug),
     modality: drug.modality,
     mechanism: drug.mechanism,
@@ -70,6 +80,7 @@ export function summarize(drug: Drug, checked: CheckStats = { confirmed: 0, tota
       slug: i.slug,
       approvalDate: i.approvalDate,
       trialCount: trialsForIndication(drug, i.name).length,
+      diseases: (i.diseases ?? []).map((d) => ({ meshId: d.meshId, term: d.term })),
     })),
     verification: drugStats(drug),
     checked,

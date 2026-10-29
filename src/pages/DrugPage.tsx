@@ -3,7 +3,7 @@ import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.j
 import { drugIndex, useDrug } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
 import { trialsForIndication } from '../lib/drugs.js';
-import { indicationHref } from '../lib/router.js';
+import { diseaseHref, indicationHref } from '../lib/router.js';
 import type { Drug, Provenance } from '../schema/index.js';
 import './IndicationPage.css';
 import './DrugPage.css';
@@ -52,7 +52,10 @@ function DrugView({ drug }: { drug: Drug }) {
           <h1>
             {drug.brandName} <span className="drug__inn">({drug.inn})</span>
           </h1>
-          <p className="drug__mechanism">{listed?.area ? `Reviewed by the FDA Office of ${listed.area}` : drug.modality}</p>
+          <p className="drug__mechanism">
+            {about?.drugClass?.name ?? drug.modality}
+            {listed?.office && <> · Reviewed by the FDA Office of {listed.office}</>}
+          </p>
         </div>
         <dl className="drug__facts">
           <div>
@@ -91,6 +94,17 @@ function DrugView({ drug }: { drug: Drug }) {
                     {trials === 1 ? 'trial' : 'trials'}
                   </span>
                 </a>
+                {(i.diseases ?? []).length > 0 && (
+                  <p className="uses__diseases">
+                    Disease:{' '}
+                    {i.diseases!.map((d, k) => (
+                      <span key={d.meshId}>
+                        {k > 0 && ', '}
+                        <a href={diseaseHref(d.meshId)}>{d.term}</a>
+                      </span>
+                    ))}
+                  </p>
+                )}
               </li>
             );
           })}

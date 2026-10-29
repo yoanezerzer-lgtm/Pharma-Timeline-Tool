@@ -27,6 +27,7 @@ export interface CtgovStudy {
       completionDateStruct?: CtgovDateStruct;
     };
     sponsorCollaboratorsModule?: { leadSponsor?: { name?: string; class?: string } };
+    conditionsModule?: { conditions?: string[] };
     designModule?: {
       studyType?: string;
       phases?: string[];
@@ -54,6 +55,7 @@ export interface CtgovStudy {
     };
   };
   resultsSection?: CtgovResultsSection;
+  derivedSection?: { conditionBrowseModule?: { meshes?: { id?: string; term?: string }[] } };
 }
 
 interface CtgovMeasurement {
@@ -221,6 +223,10 @@ export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
     sponsor: ps?.sponsorCollaboratorsModule?.leadSponsor?.name,
     sponsorClass: ps?.sponsorCollaboratorsModule?.leadSponsor?.class,
     studyType: design?.studyType,
+    conditions: ps?.conditionsModule?.conditions,
+    conditionMesh: study.derivedSection?.conditionBrowseModule?.meshes?.flatMap((m) =>
+      m.id && m.term ? [{ id: m.id, term: m.term }] : []
+    ),
 
     startDate: toDateValue(status?.startDateStruct?.date),
     primaryCompletionDate: toDateValue(status?.primaryCompletionDateStruct?.date),

@@ -47,10 +47,25 @@ the current state and the agreed next steps. Update it when they change.
    "About this drug": FDA drug class (openFDA, else the label's Highlights
    statement) and label sections 12.1–12.3 as the PDF text reads
    (`scripts/ingest/pharmacology.ts`). Gap: Awiqli's label text is redacted.
-4. **Disease pages:** every approval for one disease across drugs, on one
-   timeline, with Excel/PowerPoint export later. For a short description,
-   quote MedlinePlus or MeSH (public domain) with the source. Only *link* to
-   StatPearls: its CC BY-NC-ND licence bars commercial reuse.
+4. **Disease pages** (done): `#/diseases` and `#/disease/<MeSH id>`. An
+   approved use's disease is a MeSH term on one of its pivotal trials'
+   ClinicalTrials.gov records that the FDA wording names
+   (`scripts/ingest/diseases.ts`); definition and therapeutic areas (MeSH's
+   top-level disease categories) come from NLM's MeSH service. The home
+   screen groups and filters by therapeutic area. Next: Excel/PowerPoint
+   export of a disease timeline; plain-language summaries from MedlinePlus.
+
+## Agents and automatic jobs
+- **Nightly fact checker** (scheduled task, Sonnet, 00:36 ET): unchecked
+  drugs first; a fact unconfirmed 3 nights is "stuck" for the owner.
+- **Weekly refresh** (`refresh-all.yml`, Saturdays 21:13 ET, no AI):
+  routine changes publish themselves after the full checks; others wait on
+  `data/refresh-<date>`.
+- **Site check** (`scripts/sitecheck.ts`, no AI): every page in a browser,
+  on each pull request and after each deploy.
+- **Weekly digest** (scheduled task, Sonnet, Mondays 07:13 Toronto): one
+  email to the owner. Needs the Gmail connector added to the task in
+  claude.ai (it couldn't be attached from a session).
 
 ## How to work (to save the owner's usage)
 - Batch: run a whole batch, collect every problem in one report, fix them

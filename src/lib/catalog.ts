@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import rawIndex from 'virtual:drug-index';
+import rawDiseases from 'virtual:disease-index';
 import { Drug } from '../schema/index.js';
 import type { DrugSummary } from './summary.js';
+import type { DiseaseSummary } from './diseases.js';
 
 export const drugIndex = rawIndex as DrugSummary[];
+export const diseaseIndex = rawDiseases as DiseaseSummary[];
 
 // Not eager: each record becomes its own chunk, fetched only when a page
 // needs it. The build-time index has already validated every file.
