@@ -676,6 +676,17 @@ describe('extractIndicationList — other label layouts', () => {
     ]);
   });
 
+  it('keeps bullets that describe patients as part of one indication (Hibsago)', () => {
+    const text =
+      '1 INDICATIONS AND USAGE HIBSAGO is indicated in combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis: • who have been on NrtI therapy for at least 6 months and have suppressed HBV deoxyribonucleic acid (DNA), and Reference ID: 5889023 • who have HBV surface antigen (HBsAg) levels less than or equal to 3,000 IU/mL. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text)).toEqual([
+      {
+        number: 1,
+        name: 'In combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis',
+      },
+    ]);
+  });
+
   it('reads a two-column table of contents that interleaves other sections (Lexapro 2009–2022)', () => {
     const text =
       '1 INDICATIONS AND USAGE 7.10 Pimozide and Celexa 1.1 Major Depressive Disorder 7.11 Sumatriptan 1.2 Generalized Anxiety Disorder 7.12 Theophylline 2 DOSAGE AND ADMINISTRATION';

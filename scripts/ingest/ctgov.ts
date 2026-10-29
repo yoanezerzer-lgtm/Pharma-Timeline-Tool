@@ -335,3 +335,25 @@ export async function searchByIntervention(
 export function ctgovStudyUrl(nctId: string): string {
   return `https://clinicaltrials.gov/study/${nctId}`;
 }
+
+/** A development code as registries write one: "AZD9833", "ABT-494", "MK-3475". */
+const CODE_NAME = /^[A-Z]{2,6}[- ]?\d{3,7}[A-Z]?$/;
+
+/**
+ * The drug's development codes, from the registry's own records: other
+ * names listed beside the INN on an intervention ("Camizestrant", other
+ * name "AZD9833"). Early and pivotal trials are often registered under the
+ * code alone, so searching by the INN misses them.
+ */
+export function codeNamesFrom(studies: CtgovStudy[], inn: string): string[] {
+  const want = inn.toLowerCase();
+  const out = new Set<string>();
+  for (const s of studies) {
+    for (const i of s.protocolSection?.armsInterventionsModule?.interventions ?? []) {
+      const names = [i.name, ...(i.otherNames ?? [])].filter((x): x is string => !!x).map((x) => x.trim());
+      if (!names.some((n) => n.toLowerCase().includes(want))) continue;
+      for (const n of names) if (CODE_NAME.test(n)) out.add(n);
+    }
+  }
+  return [...out];
+}

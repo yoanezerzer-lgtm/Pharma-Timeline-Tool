@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { cachePathFor } from '../scripts/ingest/http.js';
-import { drugsFdaUrl, drugsFdaUrlByBrand, identityFromApplication, runFdaStage } from '../scripts/ingest/fda.js';
+import { drugsFdaUrl, drugsFdaUrlByBrand, identityFromApplication, innOf, runFdaStage } from '../scripts/ingest/fda.js';
 import { makeContext } from '../scripts/ingest/context.js';
 
 function seedOpenFda(rawDir: string, slug: string, url: string, body: unknown): void {
@@ -119,5 +119,16 @@ describe('identityFromApplication', () => {
   it('keeps every field already given', () => {
     const given = { brandName: 'Skyrizi', inn: 'risankizumab', sponsor: 'AbbVie Inc.', modality: 'mAb', mechanism: 'IL-23 p19', interventionNames: ['risankizumab', 'ABBV-066'] };
     expect(identityFromApplication(given, app, 'BLA')).toEqual(given);
+  });
+});
+
+describe('innOf', () => {
+  it('drops salts and biologic suffixes, as trial registries write names', () => {
+    expect(innOf('PRITELIVIR MESYLATE')).toBe('pritelivir');
+    expect(innOf('LIRAFUGRATINIB HYDROCHLORIDE')).toBe('lirafugratinib');
+    expect(innOf('ZILURGISERTIB FUMARATE')).toBe('zilurgisertib');
+    expect(innOf('RISANKIZUMAB-RZAA')).toBe('risankizumab');
+    expect(innOf('INSULIN EFSITORA ALFA-GOBE')).toBe('insulin efsitora alfa');
+    expect(innOf('CAMIZESTRANT')).toBe('camizestrant');
   });
 });

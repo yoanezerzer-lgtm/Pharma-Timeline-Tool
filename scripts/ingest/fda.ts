@@ -213,6 +213,18 @@ export async function runFdaStage(
   };
 }
 
+/** Salt and hydrate words FDA names carry and trial registries usually don't: "pritelivir mesylate". */
+const SALT = /\s+(?:mono|di|tri|hemi|sesqui)?(?:mesylate|mesilate|hydrochloride|hydrobromide|fumarate|maleate|tartrate|bitartrate|citrate|besylate|tosylate|succinate|phosphate|sulfate|acetate|bromide|chloride|sodium|potassium|calcium|magnesium|meglumine|tromethamine|oxalate|malate|lactate|nitrate|benzoate|hydrate)\b.*$/i;
+
+/**
+ * The INN as trial registries write it, from FDA's name for the active
+ * ingredient: without a salt ("pritelivir mesylate" → "pritelivir") or a
+ * biologic's four-letter suffix ("risankizumab-rzaa" → "risankizumab").
+ */
+export function innOf(fdaName: string): string {
+  return fdaName.toLowerCase().replace(/-[a-z]{4}$/, '').replace(SALT, '').trim();
+}
+
 /** "KEYTRUDA" → "Keytruda"; a name already in mixed case is kept as written. */
 function brandCase(name: string): string {
   return name === name.toUpperCase() ? name.charAt(0) + name.slice(1).toLowerCase() : name;
@@ -233,8 +245,7 @@ export function identityFromApplication(
   const product = application.products?.[0];
   const ingredient = application.openfda?.generic_name?.[0] ?? product?.active_ingredients?.[0]?.name;
   const brandName = spec.brandName || (product?.brand_name ? brandCase(product.brand_name) : '');
-  // A biologic's FDA name carries a four-letter suffix ("risankizumab-rzaa"); the INN, which trial registries use, doesn't.
-  const inn = spec.inn || (ingredient ?? '').toLowerCase().replace(/-[a-z]{4}$/, '');
+  const inn = spec.inn || innOf(ingredient ?? '');
   const epc = application.openfda?.pharm_class_epc?.[0]?.replace(/\s*\[EPC\]$/, '');
   return {
     ...spec,

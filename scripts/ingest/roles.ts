@@ -219,8 +219,15 @@ function extractUnnumberedIndication(window: string): IndicationListEntry[] {
   const clause = m[1];
   // A bulleted list after "is indicated for the treatment of:" is several
   // indications, one per bullet — Lexapro's current label lists MDD and GAD
-  // this way. Each bullet ends at its own period.
-  const bullets = clause.includes('•') ? clause.split('•').slice(1) : [clause];
+  // this way. Each bullet ends at its own period. Bullets that describe
+  // patients ("• who have been on NrtI therapy...", Hibsago) are conditions
+  // on one indication, which is the sentence before them.
+  const [lead, ...items] = clause.split('•');
+  if (items.length > 0 && /^\s*(?:who|whose|with|without|that|in whom)\b/i.test(items[0])) {
+    const name = cleanIndicationClause(lead.replace(/:\s*$/, ''));
+    return name.length >= 3 ? [{ number: 1, name }] : [];
+  }
+  const bullets = items.length > 0 ? items : [clause];
   return bullets.flatMap((b) => {
     const name = cleanIndicationClause(b.split('.')[0]);
     return name.length >= 3 ? [name] : [];

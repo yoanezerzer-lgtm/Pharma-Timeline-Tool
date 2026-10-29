@@ -6,7 +6,7 @@ import type { DrugSpec } from './registry.js';
 import { identityFromApplication, runFdaStage, type FdaStageResult } from './fda.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
 import { extractCandidates, resolveCandidates, type ResolveReport } from './codes.js';
-import { studyToTrial, searchByIntervention, ctgovStudyUrl, studyMatchesDrug } from './ctgov.js';
+import { codeNamesFrom, studyToTrial, searchByIntervention, ctgovStudyUrl, studyMatchesDrug } from './ctgov.js';
 import {
   applyRoles,
   extractLabelSection14,
@@ -99,7 +99,14 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   log('[fda]   openFDA Drugs@FDA');
   const fda = await runFdaStage(ctx, given.applicationNumber, given.applicationType, given.brandName);
   // A drug added by name or application number alone takes the rest of its identity from the FDA record.
-  const spec = { ...given, ...identityFromApplication(given, fda.application, fda.applicationType) };
+  const identified = { ...given, ...identityFromApplication(given, fda.application, fda.applicationType) };
+  // Its development codes come from the registry, so trials registered under a code are found too.
+  const registered = steps.has('codes') || steps.has('ctgov') ? await searchByIntervention(ctx, identified.inn) : [];
+  const codes = codeNamesFrom(registered, identified.inn).filter(
+    (c) => !identified.interventionNames.some((n) => n.toLowerCase() === c.toLowerCase())
+  );
+  if (codes.length > 0) log(`        development codes from the registry: ${codes.join(', ')}`);
+  const spec = { ...identified, interventionNames: [...identified.interventionNames, ...codes] };
   log(
     `        ${fda.milestones.length} approved submissions, ${fda.documentUrls.length} documents linked`
   );
@@ -177,7 +184,8 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   let registeredTrialCount = 0;
   if (steps.has('ctgov')) {
     log('[ctgov] searching the registry for every trial of this drug');
-    const all = await searchByIntervention(ctx, spec.inn);
+    const byCode = await Promise.all(codes.map((c) => searchByIntervention(ctx, c)));
+    const all = [...new Map([registered, ...byCode].flat().map((s) => [s.protocolSection?.identificationModule?.nctId, s])).values()];
     const forDrug = all.filter((s) => studyMatchesDrug(s, spec.interventionNames));
     registeredTrialCount = forDrug.length;
     let added = 0;
