@@ -1,0 +1,98 @@
+{
+  "slug": "lirafugratinib-hydrochloride",
+  "brandName": "Lyrfigtu",
+  "inn": "lirafugratinib hydrochloride",
+  "modality": "Drug (NDA)",
+  "sponsor": "ELEVAR",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement [see Dosage and Administration ( 2",
+      "slug": "adults-with-previously-treated-unresectable-locally",
+      "approvalDate": {
+        "value": "2026-09-23",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220425Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-23",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Lyrfigtu (lirafugratinib) capsule for the treatment of adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220425Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Lyrfigtu (lirafugratinib) capsule for the treatment of adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220425",
+      "applicationType": "NDA",
+      "sponsor": "ELEVAR",
+      "originalApprovalDate": {
+        "value": "2026-09-23",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-23",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220425%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220425",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220425%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220425Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T05:47:38.304Z"
+}
