@@ -676,6 +676,14 @@ describe('extractIndicationList — other label layouts', () => {
     ]);
   });
 
+  it('leaves out cross-references and their section numbers (Etcamah)', () => {
+    const text =
+      '1 INDICATIONS AND USAGE ETCAMAH is indicated for the treatment of adult patients with HR-positive, HER2-negative breast cancer upon detection of ESR1 mutation, based on an FDA-authorized test [see Dosage and Administration (2.1)]. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text).map((e) => e.name)).toEqual([
+      'Adult patients with HR-positive, HER2-negative breast cancer upon detection of ESR1 mutation, based on an FDA-authorized test',
+    ]);
+  });
+
   it('keeps bullets that describe patients as part of one indication (Hibsago)', () => {
     const text =
       '1 INDICATIONS AND USAGE HIBSAGO is indicated in combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis: • who have been on NrtI therapy for at least 6 months and have suppressed HBV deoxyribonucleic acid (DNA), and Reference ID: 5889023 • who have HBV surface antigen (HBsAg) levels less than or equal to 3,000 IU/mL. 2 DOSAGE AND ADMINISTRATION';
