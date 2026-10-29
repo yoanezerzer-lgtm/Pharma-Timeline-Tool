@@ -4,6 +4,7 @@ import { compareHref, indicationHref, reviewHref, ingestHref } from '../lib/rout
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel } from '../lib/drugs.js';
 import type { DrugSummary } from '../lib/summary.js';
+import { CheckBadge } from '../components/CheckBadge/CheckBadge.js';
 import './DrugIndex.css';
 
 const approvalDates = drugIndex.flatMap((d) => d.indications.flatMap((i) => (i.approvalDate ? [i.approvalDate] : [])));
@@ -168,8 +169,6 @@ export function DrugIndex() {
       ) : (
         <div className="index__grid">
           {filtered.map((d) => {
-            const { verified, total } = d.verification;
-            const pct = total > 0 ? Math.round((verified / total) * 100) : 0;
             return (
               <article key={d.slug} className="drug-card">
                 <header className="drug-card__head">
@@ -179,16 +178,9 @@ export function DrugIndex() {
                   <p className="drug-card__meta">
                     {d.mechanism ?? d.modality} · {d.sponsor}
                   </p>
-                  {verified > 0 ? (
-                    <div className="drug-card__verification" title={`${verified} of ${total} fields verified`}>
-                      <div className="drug-card__verification-bar">
-                        <div className="drug-card__verification-fill" style={{ width: `${pct}%` }} />
-                      </div>
-                      <span className="drug-card__verification-label">{pct}% verified</span>
-                    </div>
-                  ) : (
-                    <p className="drug-card__unreviewed">Not yet reviewed</p>
-                  )}
+                  <p className="drug-card__check">
+                    <CheckBadge stats={d.checked} />
+                  </p>
                 </header>
 
                 {d.indications.length === 0 ? (

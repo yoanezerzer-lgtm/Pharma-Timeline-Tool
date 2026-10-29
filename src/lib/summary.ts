@@ -18,10 +18,31 @@ export interface DrugSummary {
   trialCount: number;
   indications: { name: string; displayName?: string; slug: string; approvalDate?: DateValue; trialCount: number }[];
   verification: VerificationStats;
+  /** Pivotal-trial facts in data/reference: how many the checker has confirmed against FDA documents. */
+  checked: CheckStats;
   pendingChanges: number;
 }
 
-export function summarize(drug: Drug): DrugSummary {
+export interface CheckStats {
+  confirmed: number;
+  total: number;
+}
+
+export type CheckState = 'unchecked' | 'partial' | 'checked';
+
+/** A drug counts as checked only once every pivotal-trial fact is confirmed; nothing confirmed is "not yet checked". */
+export function checkState({ confirmed, total }: CheckStats): CheckState {
+  if (confirmed === 0) return 'unchecked';
+  return confirmed < total ? 'partial' : 'checked';
+}
+
+/** Counts a reference file's pivotal entries (an unparsed file: only these two fields are read). */
+export function checkStats(ref: { pivotal?: { status?: string }[] } | undefined): CheckStats {
+  const pivotal = ref?.pivotal ?? [];
+  return { confirmed: pivotal.filter((p) => p.status === 'confirmed').length, total: pivotal.length };
+}
+
+export function summarize(drug: Drug, checked: CheckStats = { confirmed: 0, total: 0 }): DrugSummary {
   return {
     slug: drug.slug,
     brandName: drug.brandName,
@@ -38,6 +59,7 @@ export function summarize(drug: Drug): DrugSummary {
       trialCount: trialsForIndication(drug, i.name).length,
     })),
     verification: drugStats(drug),
+    checked,
     pendingChanges: drugPendingChangeCount(drug),
   };
 }

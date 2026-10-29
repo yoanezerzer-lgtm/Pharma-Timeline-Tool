@@ -63,6 +63,21 @@ function shuffle<T>(items: T[], rand: () => number): T[] {
   return a;
 }
 
+/**
+ * Whole drugs at a time, so each night finishes some drugs rather than
+ * leaving all of them part-checked: first drugs with nothing confirmed yet,
+ * then those with the fewest entries left. Ties fall in a random order seeded
+ * by the date, so one stuck drug doesn't hold the same place every night.
+ */
+function byDrugPriority<T extends { ctx: DrugContext }>(items: T[], rand: () => number): T[] {
+  const groups = new Map<DrugContext, T[]>();
+  for (const x of shuffle(items, rand)) groups.set(x.ctx, [...(groups.get(x.ctx) ?? []), x]);
+  const confirmed = (ctx: DrugContext) => ctx.ref.pivotal.some((r) => r.status === 'confirmed');
+  return [...groups.entries()]
+    .sort(([a, xs], [b, ys]) => Number(confirmed(a)) - Number(confirmed(b)) || xs.length - ys.length)
+    .flatMap(([, xs]) => xs);
+}
+
 function claimFor(ctx: DrugContext, trial: Trial, indication: string, id: string): Claim {
   return {
     id,
@@ -82,7 +97,8 @@ function claimFor(ctx: DrugContext, trial: Trial, indication: string, id: string
 }
 
 /**
- * Up to `limit` unchecked pivotal entries, plus planted false claims (about
+ * Up to `limit` unchecked pivotal entries, drugs with nothing confirmed yet
+ * first (see byDrugPriority), plus planted false claims (about
  * one in ten, at least two): a drug's real pivotal trial paired with another
  * of its indications it has no part in, or another drug's pivotal trial.
  * Both kinds must come back "not supported"; one that comes back supported
@@ -99,7 +115,7 @@ export function buildQueue(contexts: DrugContext[], date: string, limit = 40): {
       if (trial) real.push({ ctx, trial, indication: r.indication });
     }
   }
-  const picked = shuffle(real, rand).slice(0, limit);
+  const picked = byDrugPriority(real, rand).slice(0, limit);
 
   const decoys: typeof picked = [];
   const wanted = Math.max(2, Math.ceil(picked.length / 10));

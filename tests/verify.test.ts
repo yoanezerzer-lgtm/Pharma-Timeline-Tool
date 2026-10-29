@@ -93,6 +93,17 @@ describe('overnight verification', () => {
     }
   });
 
+  it('takes drugs with nothing confirmed yet first', () => {
+    const checked = context();
+    checked.ref.pivotal[0].status = 'confirmed';
+    const fresh = context();
+    fresh.drug = { ...fresh.drug, slug: 'freshdrug' };
+    for (const date of ['2026-10-27', '2026-10-28', '2026-10-29']) {
+      const { queue, key } = buildQueue([checked, fresh], date, 2);
+      expect(queue.filter((c) => key[c.id] === 'real').map((c) => c.drug)).toEqual(['freshdrug', 'freshdrug']);
+    }
+  });
+
   function run(answer: (id: string, decoy: boolean, trial: string) => Verdict) {
     const ctx = context();
     const { queue, key } = buildQueue([ctx], '2026-10-27');

@@ -14,16 +14,6 @@ export const ROLE_LABEL: Record<TrialRole, string> = {
   UNKNOWN: 'Unclassified',
 };
 
-/** True when no field on the record has been human-verified yet. */
-export function isFullyUnverified(drug: DrugType): boolean {
-  const provenances = [
-    ...drug.trials.flatMap((t) => Object.values(t.provenance)),
-    ...drug.trials.flatMap((t) => t.roles.map((r) => r.provenance)),
-    ...drug.milestones.map((m) => m.provenance).filter((p) => p !== undefined),
-  ];
-  return provenances.length > 0 && provenances.every((p) => !p.verified);
-}
-
 /** What to show for an indication: a person's short name if one was set, else the label's wording. */
 export function indicationLabel(i: { name: string; displayName?: string }): string {
   return i.displayName || i.name;

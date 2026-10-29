@@ -1,12 +1,13 @@
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vitest/config';
 import type { Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { Drug } from './src/schema/index.js';
-import { summarize } from './src/lib/summary.js';
+import { checkStats, summarize } from './src/lib/summary.js';
 
 const DRUGS_DIR = fileURLToPath(new URL('./data/drugs/', import.meta.url));
+const REFERENCE_DIR = fileURLToPath(new URL('./data/reference/', import.meta.url));
 
 /**
  * Serves `virtual:drug-index`: a summary of every committed drug record,
@@ -38,7 +39,10 @@ function drugIndex(): Plugin {
           if (`${result.data.slug}.json` !== file) {
             throw new Error(`${file} has slug "${result.data.slug}" — the filename must match it.`);
           }
-          return summarize(result.data);
+          const refPath = REFERENCE_DIR + file;
+          const ref = existsSync(refPath) ? JSON.parse(readFileSync(refPath, 'utf8')) : undefined;
+          if (ref) this.addWatchFile(refPath);
+          return summarize(result.data, checkStats(ref));
         })
         .sort((a, b) => a.brandName.localeCompare(b.brandName));
       return `export default ${JSON.stringify(summaries)};`;
