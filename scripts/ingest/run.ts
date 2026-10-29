@@ -24,6 +24,7 @@ import { dateIndications } from './indicationDates.js';
 import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
 import { findReviews } from './reviews.js';
 import { labelCompany, reviewOffice } from './labelFacts.js';
+import { pharmacology } from './pharmacology.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 
@@ -529,6 +530,7 @@ function buildDrugRecord(
   const applicant = fda.application.sponsor_name ?? spec.sponsor;
   const office = reviewOffice(letters);
   const company = labelCompany(labels, applicant);
+  const about = pharmacology(labels, spec.brandName, fda.application.openfda?.pharm_class_epc?.[0], fda.queryUrl);
 
   return {
     slug: spec.slug,
@@ -537,6 +539,7 @@ function buildDrugRecord(
     modality: spec.modality,
     sponsor: spec.sponsor,
     mechanism: spec.mechanism,
+    ...(about ? { pharmacology: about } : {}),
     summary: '',
     indications,
     regulatory: {

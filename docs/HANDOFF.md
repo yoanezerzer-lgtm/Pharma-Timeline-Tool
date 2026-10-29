@@ -43,8 +43,10 @@ the current state and the agreed next steps. Update it when they change.
    (letter signed above office level), Veppanu and Tauklarify (no signature
    text); no label company for 7 drugs (label names only a manufacturer or
    partner, or a name without "Inc"/"LLC"). Shown as such, not guessed.
-3. **Drug pages** with an "About this drug" section: the label's sections
-   12.1–12.3 verbatim, plus FDA's Established Pharmacologic Class.
+3. **Drug pages** (done): `#/drug/<slug>` lists every approved use and
+   "About this drug": FDA drug class (openFDA, else the label's Highlights
+   statement) and label sections 12.1–12.3 as the PDF text reads
+   (`scripts/ingest/pharmacology.ts`). Gap: Awiqli's label text is redacted.
 4. **Disease pages:** every approval for one disease across drugs, on one
    timeline, with Excel/PowerPoint export later. For a short description,
    quote MedlinePlus or MeSH (public domain) with the source. Only *link* to

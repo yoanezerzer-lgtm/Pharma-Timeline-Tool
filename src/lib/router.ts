@@ -15,6 +15,7 @@ type Route =
       indicationSlug: string;
       trialId: string | null;
     }
+  | { name: 'drug'; slug: string }
   | { name: 'compare' }
   | { name: 'review' }
   | { name: 'review-drug'; slug: string }
@@ -28,6 +29,7 @@ function parseHash(hash: string): Route {
     const trialId = sub2 === 'trial' ? sub2Value ?? null : null;
     return { name: 'indication', slug, indicationSlug: sub1Value, trialId };
   }
+  if (section === 'drug' && slug && !sub1) return { name: 'drug', slug };
   if (section === 'compare') return { name: 'compare' };
   if (section === 'review') {
     return slug ? { name: 'review-drug', slug } : { name: 'review' };
@@ -50,6 +52,10 @@ export function useRoute(): Route {
 
 export function navigate(to: string): void {
   window.location.hash = to;
+}
+
+export function drugHref(slug: string): string {
+  return `#/drug/${slug}`;
 }
 
 export function indicationHref(slug: string, indicationSlug: string): string {

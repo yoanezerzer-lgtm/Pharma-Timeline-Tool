@@ -325,6 +325,23 @@ export type Milestone = z.infer<typeof Milestone>;
 export const NamedFact = z.object({ name: z.string(), provenance: Provenance });
 export type NamedFact = z.infer<typeof NamedFact>;
 
+/** "About this drug": the label's clinical pharmacology sections, word for word, and the FDA drug class. */
+export const Pharmacology = z.object({
+  /** The FDA's Established Pharmacologic Class ("Janus Kinase Inhibitor"). */
+  drugClass: NamedFact.optional(),
+  sections: z.array(
+    z.object({
+      number: z.string(),
+      title: z.string(),
+      text: z.string(),
+      /** Cut at a length limit; the rest is on the label. */
+      truncated: z.boolean().optional(),
+      provenance: Provenance,
+    })
+  ),
+});
+export type Pharmacology = z.infer<typeof Pharmacology>;
+
 export const USRegulatory = z.object({
   applicationNumber: z.string(),
   applicationType: z.enum(['NDA', 'BLA', 'ANDA']),
@@ -422,6 +439,8 @@ export const Drug = z.object({
   /** Mechanism of action, one line. */
   mechanism: z.string().optional(),
   atcCode: z.string().optional(),
+
+  pharmacology: Pharmacology.optional(),
 
   /** Human-authored development narrative. Empty until written. */
   summary: z.string().default(''),

@@ -7,7 +7,7 @@ import {
   primaryCompletionToApprovalMonths,
 } from '../lib/drugs.js';
 import { IndicationTimeline } from '../components/IndicationTimeline/IndicationTimeline.js';
-import { compareHref, navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '../lib/router.js';
+import { compareHref, drugHref, navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
@@ -93,7 +93,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
 
   return (
     <main className={`drug${selectedTrial ? ' has-drawer' : ''}`}>
-      <BackLink href="#/" label="All drugs" />
+      <BackLink href={drugHref(drug.slug)} label={drug.brandName} />
 
       <header className="drug__head">
         <div>

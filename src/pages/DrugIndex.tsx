@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { drugIndex } from '../lib/catalog.js';
-import { compareHref, indicationHref, reviewHref, ingestHref } from '../lib/router.js';
+import { compareHref, drugHref, indicationHref, reviewHref, ingestHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel, shortIndication } from '../lib/drugs.js';
 import type { DrugSummary } from '../lib/summary.js';
@@ -180,7 +180,7 @@ export function DrugIndex() {
               <article key={d.slug} className="drug-card">
                 <header className="drug-card__head">
                   <h2>
-                    {d.brandName} <span className="drug-card__inn">({d.inn})</span>
+                    <a href={drugHref(d.slug)}>{d.brandName}</a> <span className="drug-card__inn">({d.inn})</span>
                   </h2>
                   <p className="drug-card__meta">
                     {d.mechanism ?? d.modality} · {d.company}
@@ -346,7 +346,7 @@ function DrugList({ drugs }: { drugs: DrugSummary[] }) {
               const more = d.indications.length - 1;
               return (
                 <li key={d.slug}>
-                  <a className="index__row" href={first ? indicationHref(d.slug, first.slug) : undefined}>
+                  <a className="index__row" href={drugHref(d.slug)}>
                     <span className="index__row-drug">
                       <strong>{d.brandName}</strong> <span className="index__row-inn">{d.inn}</span>
                     </span>
