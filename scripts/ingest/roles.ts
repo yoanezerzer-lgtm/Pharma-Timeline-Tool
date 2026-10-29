@@ -229,7 +229,9 @@ function extractUnnumberedIndication(window: string): IndicationListEntry[] {
   }
   const bullets = items.length > 0 ? items : [clause];
   return bullets.flatMap((b) => {
-    const name = cleanIndicationClause(b.split('.')[0]);
+    // A cross-reference ("[see Dosage and Administration (2.1)]") is a pointer, not part of the use,
+    // and its section number's period isn't the sentence's end.
+    const name = cleanIndicationClause(b.replace(/\s*\[see [^\]]*\]/gi, '').split(/\.(?!\d)/)[0]);
     return name.length >= 3 ? [name] : [];
   }).map((name, i) => ({ number: i + 1, name }));
 }
