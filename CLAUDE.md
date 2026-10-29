@@ -1,7 +1,8 @@
 # Working on this repo
 
 The owner's standing preferences. Every session, including the overnight
-agent, follows them without being told again.
+agent, follows them without being told again. For the current state and the
+agreed next steps, read `docs/HANDOFF.md`.
 
 ## Data
 - **No data is written by an AI.** Values come from FDA documents and
