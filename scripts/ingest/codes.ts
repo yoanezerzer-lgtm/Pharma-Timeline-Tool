@@ -205,7 +205,14 @@ export async function resolveCandidates(
   ctx: IngestContext,
   candidates: Candidate[],
   drugNames: string[],
-  maxLookups = 400
+  maxLookups = 400,
+  /**
+   * NCT numbers the drug's own label names. The label is about this drug, so
+   * these don't also need the registry to list it by a name we know: trials
+   * are often registered under a development code (Icotyde's psoriasis
+   * trials as JNJ-77242113).
+   */
+  namedInLabel: Set<string> = new Set()
 ): Promise<ResolveReport> {
   const resolved: ResolvedCode[] = [];
   const rejected: Candidate[] = [];
@@ -226,7 +233,7 @@ export async function resolveCandidates(
     // for this drug and that it genuinely carries the identifier we searched.
     const match = studies.find(
       (s) =>
-        studyMatchesDrug(s, drugNames) &&
+        (namedInLabel.has(cand.token.toUpperCase()) || studyMatchesDrug(s, drugNames)) &&
         studyIdentifiers(s).some((id) => id.toLowerCase() === cand.token.toLowerCase())
     );
 

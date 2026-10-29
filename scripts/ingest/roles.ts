@@ -223,6 +223,15 @@ function extractUnnumberedIndication(window: string): IndicationListEntry[] {
   // patients ("• who have been on NrtI therapy...", Hibsago) are conditions
   // on one indication, which is the sentence before them.
   const [lead, ...items] = clause.split('•');
+  // A list is several indications only when it follows "is indicated for...:"
+  // directly. After a full sentence ("...weighing at least 20 kg. Limitations
+  // of Use: ... • younger than 6 years"), the bullets are something else and
+  // the sentence is the indication (Simtriyo).
+  const leadSentence = lead.replace(/\s*\[see [^\]]*\]/gi, '').split(/\.(?!\d)/);
+  if (items.length > 0 && leadSentence.length > 1 && leadSentence[0].trim().length > 0) {
+    const name = cleanIndicationClause(leadSentence[0]);
+    return name.length >= 3 ? [{ number: 1, name }] : [];
+  }
   if (items.length > 0 && /^\s*(?:who|whose|with|without|that|in whom)\b/i.test(items[0])) {
     const name = cleanIndicationClause(lead.replace(/:\s*$/, ''));
     return name.length >= 3 ? [{ number: 1, name }] : [];

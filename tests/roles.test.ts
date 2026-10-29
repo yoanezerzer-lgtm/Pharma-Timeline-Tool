@@ -691,6 +691,14 @@ describe('extractIndicationList — other label layouts', () => {
     ]);
   });
 
+  it('reads the sentence, not later Limitations of Use bullets, as the indication (Simtriyo)', () => {
+    const text =
+      '1 INDICATIONS AND USAGE SIMTRIYO is indicated for the treatment of attention deficit hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg. Limitations of Use SIMTRIYO is not approved for use in pediatric patients: • younger than 6 years of age because this pediatric subpopulation had a higher rate of adverse reactions. • weighing less than 20 kg because of a lack of data. 2 DOSAGE AND ADMINISTRATION';
+    expect(extractIndicationList(text).map((e) => e.name)).toEqual([
+      'Attention deficit hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg',
+    ]);
+  });
+
   it('leaves out cross-references and their section numbers (Etcamah)', () => {
     const text =
       '1 INDICATIONS AND USAGE ETCAMAH is indicated for the treatment of adult patients with HR-positive, HER2-negative breast cancer upon detection of ESR1 mutation, based on an FDA-authorized test [see Dosage and Administration (2.1)]. 2 DOSAGE AND ADMINISTRATION';
