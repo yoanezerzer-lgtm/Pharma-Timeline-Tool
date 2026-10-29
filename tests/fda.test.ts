@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { cachePathFor } from '../scripts/ingest/http.js';
-import { drugsFdaUrl, drugsFdaUrlByBrand, runFdaStage } from '../scripts/ingest/fda.js';
+import { drugsFdaUrl, drugsFdaUrlByBrand, identityFromApplication, runFdaStage } from '../scripts/ingest/fda.js';
 import { makeContext } from '../scripts/ingest/context.js';
 
 function seedOpenFda(rawDir: string, slug: string, url: string, body: unknown): void {
@@ -93,5 +93,31 @@ describe('runFdaStage — brand-name lookup', () => {
     const result = await runFdaStage(ctx, '211675', 'NDA', 'Rinvoq');
     expect(result.applicationNumber).toBe('211675');
     expect(result.applicationType).toBe('NDA');
+  });
+});
+
+describe('identityFromApplication', () => {
+  const app = {
+    application_number: 'BLA761105',
+    sponsor_name: 'ABBVIE INC',
+    openfda: { generic_name: ['RISANKIZUMAB-RZAA'], pharm_class_epc: ['Interleukin-23 Antagonist [EPC]'] },
+    products: [{ brand_name: 'SKYRIZI', active_ingredients: [{ name: 'RISANKIZUMAB-RZAA' }] }],
+  };
+  const blank = { brandName: '', inn: '', sponsor: '', modality: '', interventionNames: [] as string[] };
+
+  it("fills a new drug's identity from its FDA application", () => {
+    expect(identityFromApplication(blank, app, 'BLA')).toEqual({
+      brandName: 'Skyrizi',
+      inn: 'risankizumab',
+      sponsor: 'ABBVIE INC',
+      modality: 'Biologic (BLA)',
+      mechanism: 'Interleukin-23 Antagonist',
+      interventionNames: ['risankizumab', 'Skyrizi'],
+    });
+  });
+
+  it('keeps every field already given', () => {
+    const given = { brandName: 'Skyrizi', inn: 'risankizumab', sponsor: 'AbbVie Inc.', modality: 'mAb', mechanism: 'IL-23 p19', interventionNames: ['risankizumab', 'ABBV-066'] };
+    expect(identityFromApplication(given, app, 'BLA')).toEqual(given);
   });
 });

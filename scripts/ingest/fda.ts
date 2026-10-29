@@ -25,8 +25,13 @@ interface Submission {
 export interface DrugsFdaResult {
   application_number?: string;
   sponsor_name?: string;
-  openfda?: { brand_name?: string[]; generic_name?: string[]; substance_name?: string[] };
-  products?: { brand_name?: string; dosage_form?: string; marketing_status?: string }[];
+  openfda?: { brand_name?: string[]; generic_name?: string[]; substance_name?: string[]; pharm_class_epc?: string[] };
+  products?: {
+    brand_name?: string;
+    dosage_form?: string;
+    marketing_status?: string;
+    active_ingredients?: { name?: string; strength?: string }[];
+  }[];
   submissions?: Submission[];
 }
 
@@ -205,5 +210,39 @@ export async function runFdaStage(
     milestones,
     documentUrls,
     queryUrl,
+  };
+}
+
+/** "KEYTRUDA" → "Keytruda"; a name already in mixed case is kept as written. */
+function brandCase(name: string): string {
+  return name === name.toUpperCase() ? name.charAt(0) + name.slice(1).toLowerCase() : name;
+}
+
+/**
+ * A drug's identity from its FDA application, for any field the spec leaves
+ * blank: brand name and active ingredient from the approved product,
+ * sponsor from the application, and the FDA's Established Pharmacologic
+ * Class ("Programmed Death Receptor-1 Blocking Antibody") as its mechanism.
+ * Modality is the application type, the one thing the record states plainly.
+ */
+export function identityFromApplication(
+  spec: { brandName: string; inn: string; sponsor: string; modality: string; mechanism?: string; interventionNames: string[] },
+  application: DrugsFdaResult,
+  applicationType: 'NDA' | 'BLA' | 'ANDA'
+): typeof spec {
+  const product = application.products?.[0];
+  const ingredient = application.openfda?.generic_name?.[0] ?? product?.active_ingredients?.[0]?.name;
+  const brandName = spec.brandName || (product?.brand_name ? brandCase(product.brand_name) : '');
+  // A biologic's FDA name carries a four-letter suffix ("risankizumab-rzaa"); the INN, which trial registries use, doesn't.
+  const inn = spec.inn || (ingredient ?? '').toLowerCase().replace(/-[a-z]{4}$/, '');
+  const epc = application.openfda?.pharm_class_epc?.[0]?.replace(/\s*\[EPC\]$/, '');
+  return {
+    ...spec,
+    brandName,
+    inn,
+    sponsor: spec.sponsor || application.sponsor_name || '',
+    modality: spec.modality || (applicationType === 'BLA' ? 'Biologic (BLA)' : 'Drug (NDA)'),
+    mechanism: spec.mechanism ?? epc,
+    interventionNames: spec.interventionNames.filter(Boolean).length > 0 ? spec.interventionNames : [inn, brandName].filter(Boolean),
   };
 }
