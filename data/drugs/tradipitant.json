@@ -135,6 +135,15 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pruritus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011537",
+          "term": "Pruritus"
+        }
+      ],
       "startDate": {
         "value": "2013-08-01",
         "precision": "month"
@@ -247,6 +256,19 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Treatment-resistant Pruritus Associated With Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011537",
+          "term": "Pruritus"
+        },
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2013-12-10",
         "precision": "day"
@@ -340,6 +362,9 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2015-11-01",
         "precision": "month"
@@ -440,6 +465,19 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
       "startDate": {
         "value": "2016-01-19",
         "precision": "day"
@@ -535,6 +573,15 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Gastroparesis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D018589",
+          "term": "Gastroparesis"
+        }
+      ],
       "startDate": {
         "value": "2016-11-01",
         "precision": "month"
@@ -637,6 +684,19 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
       "startDate": {
         "value": "2018-07-09",
         "precision": "day"
@@ -733,6 +793,15 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Motion Sickness"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009041",
+          "term": "Motion Sickness"
+        }
+      ],
       "startDate": {
         "value": "2018-12-20",
         "precision": "day"
@@ -835,6 +904,25 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Idiopathic Gastroparesis",
+        "Diabetic Gastroparesis",
+        "Gastroparesis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D018589",
+          "term": "Gastroparesis"
+        },
+        {
+          "id": "D009325",
+          "term": "Nausea"
+        },
+        {
+          "id": "D014839",
+          "term": "Vomiting"
+        }
+      ],
       "startDate": {
         "value": "2019-08-20",
         "precision": "day"
@@ -939,6 +1027,19 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
       "startDate": {
         "value": "2019-10-21",
         "precision": "day"
@@ -1034,6 +1135,15 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Coronavirus Infection"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D018352",
+          "term": "Coronavirus Infections"
+        }
+      ],
       "startDate": {
         "value": "2020-04-13",
         "precision": "day"
@@ -1139,6 +1249,9 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteer"
+      ],
       "startDate": {
         "value": "2021-02-01",
         "precision": "day"
@@ -1259,6 +1372,15 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Motion Sickness"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009041",
+          "term": "Motion Sickness"
+        }
+      ],
       "startDate": {
         "value": "2021-11-15",
         "precision": "day"
@@ -1407,6 +1529,15 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Motion Sickness"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009041",
+          "term": "Motion Sickness"
+        }
+      ],
       "startDate": {
         "value": "2023-02-27",
         "precision": "day"
@@ -1524,6 +1655,15 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Motion Sickness"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009041",
+          "term": "Motion Sickness"
+        }
+      ],
       "startDate": {
         "value": "2023-09-09",
         "precision": "day"
@@ -1672,6 +1812,25 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Idiopathic Gastroparesis",
+        "Diabetic Gastroparesis",
+        "Gastroparesis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D018589",
+          "term": "Gastroparesis"
+        },
+        {
+          "id": "D009325",
+          "term": "Nausea"
+        },
+        {
+          "id": "D014839",
+          "term": "Vomiting"
+        }
+      ],
       "startDate": {
         "value": "2024-01-09",
         "precision": "day"
@@ -1768,6 +1927,23 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D009325",
+          "term": "Nausea"
+        },
+        {
+          "id": "D014839",
+          "term": "Vomiting"
+        }
+      ],
       "startDate": {
         "value": "2025-02-25",
         "precision": "day"
@@ -1866,6 +2042,24 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Nausea and Vomiting",
+        "Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009325",
+          "term": "Nausea"
+        },
+        {
+          "id": "D014839",
+          "term": "Vomiting"
+        },
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2026-03-27",
         "precision": "day"
@@ -1964,6 +2158,24 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Gastroparesis",
+        "Diabetic Gastroparesis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D018589",
+          "term": "Gastroparesis"
+        },
+        {
+          "id": "D009325",
+          "term": "Nausea"
+        },
+        {
+          "id": "D014839",
+          "term": "Vomiting"
+        }
+      ],
       "design": {},
       "population": {
         "minAge": "18 Years",
@@ -2054,5 +2266,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:39:23.681Z"
+  "lastIngestedAt": "2026-10-29T19:16:03.042Z"
 }
