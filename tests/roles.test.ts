@@ -8,6 +8,7 @@ import {
   extractTrialAliases,
   extractIndicationList,
   normalizeSponsor,
+  runByApplicant,
   extractLabelTrialNames,
   splitSection14ByIndication,
   type RoleContext,
@@ -663,6 +664,20 @@ describe('normalizeSponsor', () => {
     expect(normalizeSponsor('MERCK SHARP DOHME')).toBe(normalizeSponsor('Merck Sharp & Dohme LLC'));
     expect(normalizeSponsor('Johnson and Johnson')).toBe(normalizeSponsor('Johnson & Johnson'));
     expect(normalizeSponsor('AbbVie Inc.')).toBe('abbvie');
+  });
+});
+
+describe('runByApplicant', () => {
+  const t = (sponsor: string) => ({ sponsor }) as Trial;
+  it("matches openFDA's abbreviated company names to the registry's", () => {
+    expect(runByApplicant(t('Janssen Research & Development, LLC'), 'JANSSEN BIOTECH')).toBe(true);
+    expect(runByApplicant(t('Vanda Pharmaceuticals'), 'VANDA PHARMS INC')).toBe(true);
+    expect(runByApplicant(t('Ionis Pharmaceuticals, Inc.'), 'IONIS PHARMS INC')).toBe(true);
+    expect(runByApplicant(t('Merck Sharp & Dohme LLC'), 'MSD')).toBe(true);
+  });
+  it('keeps different companies apart', () => {
+    expect(runByApplicant(t('Pfizer'), 'RIGEL PHARMS')).toBe(false);
+    expect(runByApplicant(t('Berinstein, Jeffrey'), 'AbbVie Inc.')).toBe(false);
   });
 });
 

@@ -219,6 +219,8 @@ export const Trial = z.object({
   roles: z.array(IndicationRole).default([]),
   status: z.string().optional(),
   sponsor: z.string().optional(),
+  /** The registry's class for the lead sponsor: INDUSTRY, OTHER (universities, hospitals), NIH, and so on. */
+  sponsorClass: z.string().optional(),
   /**
    * CT.gov's own classification: INTERVENTIONAL or OBSERVATIONAL. A trial
    * supporting a marketing application is definitionally interventional — an

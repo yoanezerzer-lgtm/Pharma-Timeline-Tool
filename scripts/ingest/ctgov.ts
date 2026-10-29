@@ -26,7 +26,7 @@ export interface CtgovStudy {
       primaryCompletionDateStruct?: CtgovDateStruct;
       completionDateStruct?: CtgovDateStruct;
     };
-    sponsorCollaboratorsModule?: { leadSponsor?: { name?: string } };
+    sponsorCollaboratorsModule?: { leadSponsor?: { name?: string; class?: string } };
     designModule?: {
       studyType?: string;
       phases?: string[];
@@ -219,6 +219,7 @@ export function studyToTrial(study: CtgovStudy, sourceUrl: string): Trial {
     roles: [],
     status: status?.overallStatus,
     sponsor: ps?.sponsorCollaboratorsModule?.leadSponsor?.name,
+    sponsorClass: ps?.sponsorCollaboratorsModule?.leadSponsor?.class,
     studyType: design?.studyType,
 
     startDate: toDateValue(status?.startDateStruct?.date),
