@@ -22,6 +22,7 @@ import {
 import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
 import { dateIndications } from './indicationDates.js';
 import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
+import { findReviews } from './reviews.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 
@@ -105,7 +106,11 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   let docs: FetchedDoc[] = [];
   if (steps.has('docs')) {
     log('[docs]  downloading and parsing approval package');
-    docs = await runDocsStage(ctx, fda.documentUrls);
+    // Reviews openFDA doesn't list, from the Drugs@FDA page.
+    const listed = new Set(fda.documentUrls.map((d) => d.url));
+    const extra = (await findReviews(ctx, fda.applicationNumber)).filter((d) => !listed.has(d.url));
+    if (extra.length > 0) log(`        ${extra.length} more reviews linked from Drugs@FDA`);
+    docs = await runDocsStage(ctx, [...fda.documentUrls, ...extra]);
     log(`        ${docs.length} documents parsed`);
   }
 

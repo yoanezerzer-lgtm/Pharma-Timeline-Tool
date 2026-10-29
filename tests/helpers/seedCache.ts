@@ -37,6 +37,8 @@ interface SeedOptions {
   openFdaResponse: unknown;
   /** Registry records returned by the intervention search. */
   registered?: CtgovStudy[];
+  /** The Drugs@FDA page for the application; blank links no extra reviews. */
+  drugsAtFdaHtml?: string;
 }
 
 export function seedCache(opts: SeedOptions): void {
@@ -63,6 +65,7 @@ export function seedCache(opts: SeedOptions): void {
     writeFileSync(join(docsDir, `${name}.txt`), doc.text);
     allText.push(doc.text);
   }
+  writeFileSync(join(docsDir, `drugsatfda-${opts.applicationNumber}.html.txt`), opts.drugsAtFdaHtml ?? '');
 
   // 3. An identifier lookup for EVERY candidate the extractor will produce —
   //    real studies for the ones that exist, an empty result for the rest.
