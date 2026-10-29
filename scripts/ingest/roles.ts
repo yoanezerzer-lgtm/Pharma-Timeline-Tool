@@ -439,6 +439,26 @@ export function normalizeSponsor(name: string): string {
     .trim();
 }
 
+// Words that say what kind of company it is, not which. openFDA abbreviates
+// them ("VANDA PHARMS INC", "JANSSEN BIOTECH") and the registry spells out a
+// different one ("Vanda Pharmaceuticals", "Janssen Research & Development").
+const GENERIC_COMPANY_WORD =
+  /\b(pharms?|pharma|pharmaceuticals?|biotech|biotechnology|biopharma|biosciences?|therapeutics|labs?|laboratories|research|development|healthcare|holdings|international|operations|us|usa)\b/g;
+
+/** Whether two company names are the same company: the same distinctive first word, or one is the other's initials ("MSD"). */
+function sameCompany(x: string, y: string): boolean {
+  const a = normalizeSponsor(x);
+  const b = normalizeSponsor(y);
+  if (a.length === 0 || b.length === 0) return false;
+  if (a.includes(b) || b.includes(a)) return true;
+  const core = (s: string) => s.replace(GENERIC_COMPANY_WORD, ' ').split(/\s+/).filter(Boolean);
+  const [ca, cb] = [core(a), core(b)];
+  if (ca.length === 0 || cb.length === 0) return false;
+  if (ca[0] === cb[0] && ca[0].length >= 3) return true;
+  const initials = (words: string[]) => words.map((w) => w[0]).join('');
+  return (ca.length === 1 && ca[0] === initials(cb)) || (cb.length === 1 && cb[0] === initials(ca));
+}
+
 /**
  * A cheap, real-world check learned directly from manual review: a trial that
  * actually supported this application is the applicant's own registrational
@@ -465,6 +485,11 @@ function looksLikeSponsorTrial(
   knownTrialSponsors?: string[]
 ): boolean {
   if (trial.studyType && trial.studyType.toUpperCase() === 'OBSERVATIONAL') return false;
+  // A company's trial counts even when the applicant licensed the drug from
+  // that company (Veppanu: Arvinas ran VERITAC-2, Rigel filed). The false
+  // positives this guards against were academic studies, which the registry
+  // classes OTHER, not INDUSTRY.
+  if (trial.sponsorClass?.toUpperCase() === 'INDUSTRY') return true;
   return runByApplicant(trial, sponsorName, knownTrialSponsors);
 }
 
@@ -475,15 +500,11 @@ export function runByApplicant(
   knownTrialSponsors?: string[]
 ): boolean {
   if (!trial.sponsor) return true;
-  const a = normalizeSponsor(trial.sponsor);
   const candidates = [sponsorName, ...(knownTrialSponsors ?? [])].filter(
     (s): s is string => !!s
   );
   if (candidates.length === 0) return true;
-  return candidates.some((c) => {
-    const b = normalizeSponsor(c);
-    return a.length > 0 && b.length > 0 && (a.includes(b) || b.includes(a));
-  });
+  return candidates.some((c) => sameCompany(trial.sponsor!, c));
 }
 
 /**

@@ -18,6 +18,7 @@ function makeStudy(opts: {
   title: string;
   intervention?: string;
   sponsor?: string;
+  sponsorClass?: string;
   studyType?: string;
 }): CtgovStudy {
   return {
@@ -40,7 +41,7 @@ function makeStudy(opts: {
           ? { date: opts.completionDate, type: 'ACTUAL' }
           : undefined,
       },
-      sponsorCollaboratorsModule: { leadSponsor: { name: opts.sponsor ?? 'AbbVie' } },
+      sponsorCollaboratorsModule: { leadSponsor: { name: opts.sponsor ?? 'AbbVie', class: opts.sponsorClass } },
       designModule: {
         studyType: opts.studyType ?? 'INTERVENTIONAL',
         phases: opts.phases,
@@ -155,7 +156,7 @@ export const academicStudy = makeStudy({
   nctId: 'NCT07258771', orgStudyId: 'HUM00266952', acronym: 'ACUTE',
   phases: ['PHASE4'], startDate: '2026-01', enrollment: 60,
   title: 'Upadacitinib Combined With Corticosteroids for Acute Severe Ulcerative Colitis',
-  sponsor: 'Berinstein, Jeffrey', studyType: 'INTERVENTIONAL',
+  sponsor: 'Berinstein, Jeffrey', sponsorClass: 'OTHER', studyType: 'INTERVENTIONAL',
 });
 register(academicStudy, ['NCT07258771', 'HUM00266952', 'ACUTE']);
 
