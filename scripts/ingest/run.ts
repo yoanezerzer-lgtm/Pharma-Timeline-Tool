@@ -146,7 +146,9 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
       );
     }
 
-    resolution = await resolveCandidates(ctx, candidates, spec.interventionNames, maxLookups);
+    const labelText = docs.filter((d) => /label/i.test(d.type)).map((d) => d.text).join('\n');
+    const namedInLabel = new Set((labelText.match(/NCT\d{8}/g) ?? []).map((n) => n.toUpperCase()));
+    resolution = await resolveCandidates(ctx, candidates, spec.interventionNames, maxLookups, namedInLabel);
     log(
       `        ${resolution.resolved.length} resolved, ${resolution.rejected.length} rejected, ` +
         `${resolution.skipped.length} skipped (${resolution.lookups} lookups)`
