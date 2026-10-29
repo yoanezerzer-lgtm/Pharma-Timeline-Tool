@@ -136,6 +136,19 @@
       "sponsor": "Vera Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Lupus Nephritis (LN)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008181",
+          "term": "Lupus Nephritis"
+        },
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2022-11-02",
         "precision": "day"
@@ -249,6 +262,16 @@
       "sponsor": "Vera Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "IgA Nephropathy",
+        "Berger Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D005922",
+          "term": "Glomerulonephritis, IGA"
+        }
+      ],
       "startDate": {
         "value": "2023-06-29",
         "precision": "day"
@@ -391,6 +414,21 @@
       "sponsor": "Vera Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "IgA Nephropathy (IgAN)",
+        "Renal and Urinary Disorders",
+        "Berger Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D005922",
+          "term": "Glomerulonephritis, IGA"
+        },
+        {
+          "id": "D014570",
+          "term": "Urologic Diseases"
+        }
+      ],
       "startDate": {
         "value": "2024-12-01",
         "precision": "day"
@@ -486,6 +524,16 @@
       "sponsor": "Vera Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "IgA Nephropathy (IgAN)",
+        "Berger Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D005922",
+          "term": "Glomerulonephritis, IGA"
+        }
+      ],
       "startDate": {
         "value": "2025-05-29",
         "precision": "day"
@@ -601,6 +649,47 @@
       "sponsor": "Vera Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "pMN",
+        "IgAN",
+        "Nephrotic Syndrome",
+        "MCD",
+        "FSGS"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009404",
+          "term": "Nephrotic Syndrome"
+        },
+        {
+          "id": "C537834",
+          "term": "Macular dystrophy, corneal type 1"
+        },
+        {
+          "id": "D005922",
+          "term": "Glomerulonephritis, IGA"
+        },
+        {
+          "id": "D005921",
+          "term": "Glomerulonephritis"
+        },
+        {
+          "id": "D009393",
+          "term": "Nephritis"
+        },
+        {
+          "id": "D001327",
+          "term": "Autoimmune Diseases"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        },
+        {
+          "id": "D007674",
+          "term": "Kidney Diseases"
+        }
+      ],
       "startDate": {
         "value": "2025-07-07",
         "precision": "day"
@@ -734,5 +823,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:35:56.411Z"
+  "lastIngestedAt": "2026-10-29T19:12:42.410Z"
 }
