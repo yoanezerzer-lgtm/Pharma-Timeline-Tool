@@ -1,0 +1,1198 @@
+{
+  "slug": "cefepime",
+  "brandName": "Zaynich",
+  "inn": "cefepime",
+  "modality": "Drug (NDA)",
+  "sponsor": "WOCKHARDT BIO AG",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Complicated Urinary Tract Infections, including pyelonephritis",
+      "slug": "complicated-urinary-tract-infections-including",
+      "approvalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220787Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-05-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Zaynich (cefepime and zidebactam) for injection for the treatment of adult patients with complicated urinary tract infections (cUTI) including pyelonephritis caused by designated susceptible microorganisms.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220787Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Zaynich (cefepime and zidebactam) for injection for the treatment of adult patients with complicated urinary tract infections (cUTI) including pyelonephritis caused by designated susceptible microorganisms.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Usage to Reduce Development of Drug-Resistant Bacteria",
+      "slug": "usage-to-reduce-development-of-drug-resistant-bacteria",
+      "approvalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220787%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220787",
+      "applicationType": "NDA",
+      "sponsor": "WOCKHARDT BIO AG",
+      "originalApprovalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "w-5107-101",
+      "nctId": "NCT02532140",
+      "protocolNumber": "W-5107-101",
+      "title": "Phase I Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of WCK 5107 Alone and in Combination With Cefepime Administered as Single IV Doses in Healthy Human Volunteers",
+      "briefTitle": "Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of WCK 5107 Alone and in Combination With Cefepime",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-08-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-11-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2015-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 88,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "WCK 5107",
+          "type": "EXPERIMENTAL",
+          "description": "A single administration of the investigational product will be administered intravenously in 7 SAD cohorts at different dose level . The SAD cohorts will enroll 10 subjects ( 8 on active drug and 2 on placebo)"
+        },
+        {
+          "label": "WCK 5107 1000 mg and Cefepime 2000 mg",
+          "type": "EXPERIMENTAL",
+          "description": "In the crossover cohorts (WCK 5107 and cefepime, both alone and in combination), 9 subjects will receive all 3 treatments."
+        },
+        {
+          "label": "WCK 5107 2000 mg and Cefepime 2000 mg",
+          "type": "EXPERIMENTAL",
+          "description": "In the crossover cohorts (WCK 5107 and cefepime, both alone and in combination), 9 subjects will receive all 3 treatments."
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety - number of adverse events .",
+        "Tolerability-measure of laboratory parameters"
+      ],
+      "secondaryEndpoints": [
+        "PK- Cmax",
+        "PK-AUC",
+        "PK-time to Cmax"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-4282-104",
+      "nctId": "NCT02709382",
+      "protocolNumber": "W-4282-104",
+      "title": "A Single-dose Study to Investigate the Pharmacokinetics of Intravenous FEP-TAZ in Patients With Renal Impairment",
+      "briefTitle": "A Single-dose Study to Investigate the Pharmacokinetics of Intravenous FEP-TAZ in Patients With Renal Impairment",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 48,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "FEP-TAZ",
+          "type": "EXPERIMENTAL",
+          "description": "Cefepime and Tazobactam combination; IV infusion over a period of 90 minutes Healthy subjects, Mild and Moderate RI: 4 g (2 g FEP and 2 g TAZ) Severe RI and patients on HD: 2 g (1 g FEP and 1 g TAZ)"
+        }
+      ],
+      "primaryEndpoints": [
+        "plasma concentrations (Cmax)",
+        "Tmax The elimination half-life (t1/2),"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Abnormal Laboratory Values",
+        "Number of Participants With Adverse Events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-5222-101",
+      "nctId": "NCT02707107",
+      "protocolNumber": "W-5222-101",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Safety, Tolerability and Pharmacokinetics of Multiple Escalating Doses of Intravenous WCK 5222 (Zidebactam and Cefepime) in Healthy Adult Human Subjects",
+      "briefTitle": "MED Study to Evaluate the Safety, Tolerability and Pharmacokinetics of Intravenous WCK 5222 (Zidebactam and Cefepime) in Healthy Volunteers",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-04-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-04-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "3 g of zidebactam (1 g q8h) and 6 g of cefepime (2 g q8h) or 6",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "administered as IV infusions every q8h, over a period of 60 minutes."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "administered as IV infusions every q8h, over a period of 60 minutes."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Abnormal Laboratory Values and/or Adverse Events That Are Related to Treatment"
+      ],
+      "secondaryEndpoints": [
+        "Maximum plasma concentration",
+        "Time to Cmax"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02707107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02707107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02707107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02707107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02707107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-5222-102",
+      "nctId": "NCT02942810",
+      "protocolNumber": "W-5222-102",
+      "title": "A Phase 1, Open-label, Single-dose Study to Investigate the Pharmacokinetics of Intravenous WCK 5222 (FEP-ZID) in Patients With Renal Impairment",
+      "briefTitle": "To Investigate The Pharmacokinetics Of Intravenous WCK 5222 (FEP-ZID) In Patients With Renal Impairment",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-10-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-04-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2017-04-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 48,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "WCK 5222 (Cefepime and zidebactam combination)",
+          "type": "EXPERIMENTAL",
+          "description": "IV infusion over a period of 60 minutes"
+        }
+      ],
+      "primaryEndpoints": [
+        "maximum plasma concentrations (Cmax)",
+        "area under the plasma concentration versus time curve"
+      ],
+      "secondaryEndpoints": [
+        "Safety assessment with number of abnormalities reported by physical examination, vital signs,ECG, clinical laboratory parameters, local tolerability at injection site and adverse events."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02942810",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02942810",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02942810",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02942810",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02942810",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-5222-103",
+      "nctId": "NCT03554304",
+      "protocolNumber": "W-5222-103",
+      "title": "A Randomized, Double-Blind, Double-Dummy, Placebo- and Positive-Controlled, Crossover Study to Evaluate the Effect of WCK 5222 on the QT/QTc Interval in Healthy Volunteers",
+      "briefTitle": "Evaluate the Effect of WCK 5222 on the QT/QTc Interval in Healthy Volunteers",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-02-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-06-05",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-10-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 60,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "WCK 5222",
+          "type": "EXPERIMENTAL",
+          "description": "WCK 5222 IV solution administered as either a 30- or 60-minute IV infusion)"
+        },
+        {
+          "label": "Placebo (IV placebo matched toWCK 5222IV solution)",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "placebo capsule matched to moxifloxacin overencapsulated tablet IV placebo matched to WCK 5222 IV solution"
+        },
+        {
+          "label": "Moxifloxacin 400-mg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "positive control"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of delay in cardiac repolarization induced by WCK 5222"
+      ],
+      "secondaryEndpoints": [
+        "Incidence of adverse events to assess tolerability at the supratherapeutic dose to be used in the thorough QT evaluation",
+        "Incidence of AEs to assess the safety of high doses of single-dose administration of FEP-ZID"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03554304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03554304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03554304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03554304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03554304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-5222-104",
+      "nctId": "NCT03630094",
+      "protocolNumber": "W-5222-104",
+      "title": "A Phase 1, Multiple-Dose, Open-Label Study to Determine and Compare Plasma and Intrapulmonary Concentrations of WCK 5222 (Cefepime and Zidebactam) in Healthy Adult Human Subjects",
+      "briefTitle": "Plasma and Intrapulmonary Concentrations Study of WCK 5222",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-03-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-06-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-07-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 36,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "FEP-ZID via intravenous",
+          "type": "EXPERIMENTAL",
+          "description": "total of 7 doses of FEP-ZID via intravenous infusion over 60 min at q8hr dosing regimen"
+        }
+      ],
+      "primaryEndpoints": [
+        "concentrations of cefepime (FEP) and zidebactam in epithelial lining fluid (ELF)",
+        "concentrations of cefepime (FEP) and zidebactam in alveolar macrophage (AM)"
+      ],
+      "secondaryEndpoints": [
+        "Number of adverse event reported",
+        "number variation noted in 12-lead electrocardiogram"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630094",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630094",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630094",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630094",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630094",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-5222-301",
+      "nctId": "NCT04979806",
+      "protocolNumber": "W-5222-301",
+      "title": "A Phase 3, Randomized, Double-blind, Multicenter, Comparative Study to Determine the Efficacy and Safety of Cefepime-zidebactam vs. Meropenem in the Treatment of Complicated Urinary Tract Infection or Acute Pyelonephritis in Adults",
+      "briefTitle": "Study of Cefepime-zidebactam (FEP-ZID) in Complicated Urinary Tract Infection (cUTI) or Acute Pyelonephritis (AP)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Complicated Urinary Tract Infections, including pyelonephritis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220787Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Complicated Urinary Tract Infections, including pyelonephritis)",
+            "quote": "Trial identifier appears within the Complicated Urinary Tract Infections, including pyelonephritis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220787Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Zaynich (cefepime and zidebactam) for injection for the treatment of adult patients with complicated urinary tract infections (cUTI) including pyelonephritis caused by designated susceptible microorganisms.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-08-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-11-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-11-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 530,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cefepime-zidebactam (FEP-ZID)",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Meropenem",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Subjects With Overall Success at Test-of-Cure",
+        "Percentage of Subjects With Treatment-Emergent Adverse Events (TEAE)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Subjects With Overall Success at End-of-Treatment",
+        "Percentage of Subjects With Clinical Cure at End-of-Treatment",
+        "Percent of Subjects With Microbiological Eradication at End-of-Treatment",
+        "Percentage of Subjects With Clinical Cure at Test-of-Cure",
+        "Percent of Subjects With Microbiological Eradication at Test-of-Cure",
+        "Percentage of Subjects With Clinical Cure at Late Follow-up",
+        "Plasma Concentration of FEP-ZID"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Subjects With Overall Success at Test-of-Cure",
+          "timeFrame": "Test Of Cure Visit (Day 17 ± 2 days)",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cefepime-zidebactam (FEP-ZID)"
+            },
+            {
+              "id": "OG001",
+              "title": "Meropenem"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "category": "Overall Success at TOC in mMITT-STIC Population",
+              "value": "250"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Overall Success at TOC in mMITT-STIC Population",
+              "value": "93"
+            },
+            {
+              "groupId": "OG000",
+              "category": "Overall Failure/Indeterminate at TOC in mMITT-STIC Population",
+              "value": "31"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Overall Failure/Indeterminate at TOC in mMITT-STIC Population",
+              "value": "43"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Percentage of Subjects With Treatment-Emergent Adverse Events (TEAE)",
+          "timeFrame": "Day 1 to the end of study Late Follow-Up visit (LFU) (26 ± 2 days)]",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cefepime-zidebactam (FEP-ZID)"
+            },
+            {
+              "id": "OG001",
+              "title": "Meropenem"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "112"
+            },
+            {
+              "groupId": "OG001",
+              "value": "50"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04979806",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04979806",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04979806",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04979806",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04979806",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04979806?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220787Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 18,
+          "quote": "andomized in a 2:1 ratio in a multinational, double-blind, noninferiority trial (Trial 1, NCT04979806), comparing ZAYNICH (2 grams cefepime and 1 gram of zidebactam) to meropenem (1 gram) bot",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-4282-301",
+      "nctId": "NCT03630081",
+      "protocolNumber": "W-4282-301",
+      "title": "A Phase III, Randomized, Double-Blind, Multicenter, Comparative Study to Determine the Efficacy and Safety of Cefepime-Tazobactam vs. Meropenem Followed by Optional Oral Therapy in the Treatment of Complicated Urinary Tract Infection or Acute Pyelonephritis in Adults",
+      "briefTitle": "Study of Cefepime-tazobactam (FEP-TAZ) in Complicated Urinary Tract Infection (cUTI) or Acute Pyelonephritis (AP)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "UNKNOWN",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-01-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2026-02-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 1004,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "WCK 4282 (FEP-TAZ) 4 g",
+          "type": "EXPERIMENTAL",
+          "description": "WCK 4282 (FEP-TAZ) Pharmaceutical dosage form: Intravenous infusion Dosage: 4 g (2 g FEP and 2 g TAZ) IV q8h, infused over 90 min"
+        },
+        {
+          "label": "Meropenem",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Meropenem Pharmaceutical dosage form: Intravenous infusion Dosage: 1 g IV q8h, infused over 45 min"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of subjects with overall success at Day 5",
+        "Percentage of subjects with overall success at Test-of-Cure",
+        "Percentage of subjects with Treatment-Emergent Adverse Events (TEAE)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-5222-106",
+      "nctId": "NCT06806995",
+      "protocolNumber": "W-5222-106",
+      "title": "A Single-center, Open-label, Study Evaluating Safety and Pharmacokinetics of Single Doses of Zidebactam-Cefepime and Metronidazole Alone or in Combination Utilizing a 3-Period, Crossover Study Design",
+      "briefTitle": "A Single-center, Open-label, Study Evaluating Safety and Pharmacokinetics of Single Doses of Zidebactam-Cefepime and Metronidazole Alone or in Combination.",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-01-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-02-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-02-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Zidebactam Cefepime",
+          "type": "EXPERIMENTAL",
+          "description": "Zidebactam Cefepime 3gm Vial"
+        }
+      ],
+      "primaryEndpoints": [
+        "To assess Plasma Pharmacokinetics Parameters",
+        "To assess Plasma Pharmacokinetics Parameters"
+      ],
+      "secondaryEndpoints": [
+        "To Assess Plasma Pharmacokinetics Parameters Area Under Concentration",
+        "To Assess Plasma Pharmacokinetics Parameters Time to reach maximum concentration",
+        "To Assess Plasma Pharmacokinetics Parameters Terminal elimination half-life",
+        "To Assess Plasma Pharmacokinetics Parameters Plasma Clearance",
+        "To Assess Plasma Pharmacokinetics Parameters Volume of Distribution"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06806995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06806995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06806995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06806995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06806995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-5222-302",
+      "nctId": "NCT07885891",
+      "protocolNumber": "W-5222-302",
+      "title": "A Phase 3, Randomized, Double-Blind, Multicenter, Comparative Study of Cefepime-Zidebactam Compared With Ceftazidime-avibactam With or Without Colistin in the Treatment of Hospital-Acquired Bacterial Pneumonia or Ventilator-Associated Bacterial Pneumonia.",
+      "briefTitle": "Cefepime-Zidebactam Versus Ceftazidime-Avibactam With or Without Colistin for Hospital-Acquired or Ventilator-Associated Bacterial Pneumonia",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-10-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 324,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "90 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cefepime-Zidebactam",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Ceftazidime-avibactam with or without Colistin",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "All-cause mortality at 14 days"
+      ],
+      "secondaryEndpoints": [
+        "All-cause mortality at 28 days",
+        "Clinical Outcome at EOT in the MITT analyses set",
+        "Clinical Outcome at TOC in the MITT analyses set",
+        "Number of Participants with Sustained clinical cure at LFU in the MITT Population",
+        "Number of Participants with Sustained Clinical Cure at LFU in the mMITT Population",
+        "Number of Participants with Sustained Clinical Cure at LFU in the CE Population",
+        "Microbiological Response in the mMITT analyses set"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07885891",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07885891",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07885891",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07885891",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07885891",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity and Type 4 - New Combination",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220787%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220787",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220787%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220787Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220787Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:01:13.005Z"
+}

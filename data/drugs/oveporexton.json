@@ -1,0 +1,954 @@
+{
+  "slug": "oveporexton",
+  "brandName": "Orzeyful",
+  "inn": "oveporexton",
+  "modality": "Drug (NDA)",
+  "sponsor": "TAKEDA PHARMS USA",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Narcolepsy type 1 (narcolepsy with cataplexy) in adult patients",
+      "slug": "narcolepsy-type-1-narcolepsy-with-cataplexy-in-adult",
+      "approvalDate": {
+        "value": "2026-08-05",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-08-05",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Orzeyful (oveporexton) tablets for the treatment of narcolepsy type 1 (narcolepsy with cataplexy) in adult patients.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Orzeyful (oveporexton) tablets for the treatment of narcolepsy type 1 (narcolepsy with cataplexy) in adult patients.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220860",
+      "applicationType": "NDA",
+      "sponsor": "TAKEDA PHARMS USA",
+      "originalApprovalDate": {
+        "value": "2026-08-05",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "tak-861-2001",
+      "nctId": "NCT05687903",
+      "protocolNumber": "TAK-861-2001",
+      "title": "A Randomized, Double-blind, Placebo-Controlled Study to Evaluate the Efficacy, Safety, and Tolerability of TAK-861 for the Treatment of Narcolepsy With Cataplexy (Narcolepsy Type 1)",
+      "briefTitle": "A Study of TAK-861 in Participants With Narcolepsy Type 1",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Takeda",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-01-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-12-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-12-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 112,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "16 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo tablets matching TAK-861, orally, twice daily (BID), from Days 1 to 56."
+        },
+        {
+          "label": "TAK-861 0.5 mg BID",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received TAK-861 0.5 milligrams (mg), orally, BID, from Days 1 to 56."
+        },
+        {
+          "label": "TAK-861 2 mg BID",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received TAK-861 2 mg, orally, BID, from Days 1 to 56."
+        },
+        {
+          "label": "TAK-861 2 mg and 5 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received TAK-861 2 mg followed by 5 mg dose, orally, BID, from Days 1 to 56."
+        },
+        {
+          "label": "TAK-861 7 mg QD",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received TAK-861 7 mg, orally, once daily (QD), from Day 1 to 56. Placebo was given as the second dose."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in the Average Sleep Latency as Determined From the MWT at Week 8"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Epworth Sleepiness Scale (ESS) Total Score at Week 8",
+        "Weekly Cataplexy Rate (WCR) at Week 8",
+        "Number of Participants With at Least One Treatment-emergent Adverse Event (TEAE)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687903",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687903",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687903",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687903",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687903",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tak-861-2002",
+      "nctId": "NCT05687916",
+      "protocolNumber": "TAK-861-2002",
+      "title": "A Randomized, Double-blind, Placebo-Controlled Study to Evaluate the Efficacy, Safety, and Tolerability of TAK-861 for the Treatment of Narcolepsy Without Cataplexy (Narcolepsy Type 2)",
+      "briefTitle": "A Study of TAK-861 in Participants With Narcolepsy Type 2",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Takeda",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-01-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-12-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-12-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 71,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "16 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo tablets matching TAK-861, orally, twice daily (BID), from Days 1 to 56."
+        },
+        {
+          "label": "TAK-861 2 milligrams (mg) BID",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received TAK-861 2 mg, orally, BID, from Days 1 to 56."
+        },
+        {
+          "label": "TAK-861 2 mg and 5 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received TAK-861 2 mg followed by the 5 mg dose, orally, from Days 1 to 56."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in the Average Sleep Latency as Determined From the MWT at Week 8"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Epworth Sleepiness Scale (ESS) Total Score at Week 8",
+        "Number of Participants With at Least One Treatment Emergent Adverse Event (TEAE)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687916",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687916",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687916",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687916",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05687916",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tak-861-2003",
+      "nctId": "NCT05816382",
+      "protocolNumber": "TAK-861-2003",
+      "title": "A Long-term Extension Study to Evaluate the Safety and Tolerability of TAK-861 in Participants With Selected Central Hypersomnia Conditions",
+      "briefTitle": "A Study of TAK-861 for the Treatment of Selected Central Hypersomnia Conditions",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Takeda",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-04-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-02-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-02-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 500,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "16 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "TAK-861",
+          "type": "EXPERIMENTAL",
+          "description": "In this trial, all participants are on TAK-861 treatment and they can switch to one of the available doses as needed."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With at Least One or More Treatment-emergent Adverse Events (TEAEs)"
+      ],
+      "secondaryEndpoints": [
+        "Change from Baseline in the Parent Trial in Mean Sleep Latency from the Maintenance of Wakefulness Test (MWT)",
+        "Change from Baseline in the Parent Trial in Epworth Sleepiness Scale (ESS) Total Score",
+        "Change from Baseline in the Parent Trial in Weekly Cataplexy Rate (WCR) Using the Patient-reported Cataplexy Diary"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05816382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05816382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05816382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05816382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05816382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tak-861-3001",
+      "nctId": "NCT06470828",
+      "protocolNumber": "TAK-861-3001",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of TAK-861 for the Treatment of Narcolepsy With Cataplexy (Narcolepsy Type 1)",
+      "briefTitle": "A Study of TAK-861 for the Treatment of Narcolepsy Type 1",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Narcolepsy type 1 (narcolepsy with cataplexy) in adult patients",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220860Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Narcolepsy type 1 (narcolepsy with cataplexy) in adult patients)",
+            "quote": "Trial identifier appears within the Narcolepsy type 1 (narcolepsy with cataplexy) in adult patients section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Orzeyful (oveporexton) tablets for the treatment of narcolepsy type 1 (narcolepsy with cataplexy) in adult patients.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Takeda",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-07-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-06-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 168,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "16 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received oveporexton (OVE)-matching placebo tablets, orally, for 12 weeks."
+        },
+        {
+          "label": "OVE 1 mg BID",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received OVE tablets, 1 milligram (mg), orally, for 12 weeks."
+        },
+        {
+          "label": "OVE 2 mg BID",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received OVE tablets, 2 mg, orally, for 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline to Week 12 in Mean Sleep Latency From the 4 Maintenance of Wakefulness Test (MWT) Wake Trials"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline to Week 12 in Epworth Sleepiness Scale (ESS) Total Score",
+        "Weekly Cataplexy Rate (WCR) at Week 12",
+        "Change From Baseline to Week 12 in Mean Number of Lapses on the Psychomotor Vigilance Test (PVT)",
+        "Responder Rate on Patient Global Impression of Change (PGI-C) Score at Week 12",
+        "Change From Baseline to Week 12 in Narcolepsy Severity Scale for Clinical Trials (NSS-CT) Total Score",
+        "Change From Baseline to Week 12 in Functional Impacts of Narcolepsy Instrument (FINI) Domain Scores",
+        "Change From Baseline to Week 12 in Short Form-36 Survey (SF-36) Mental and Physical Component Scores",
+        "Number of Participants With At Least One Treatment-Emergent Adverse Event (TEAE)"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline to Week 12 in Mean Sleep Latency From the 4 Maintenance of Wakefulness Test (MWT) Wake Trials",
+          "timeFrame": "Baseline, Week 12",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "minutes",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "OVE 1 mg BID"
+            },
+            {
+              "id": "OG002",
+              "title": "OVE 2 mg BID"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.32",
+              "spread": "1.502"
+            },
+            {
+              "groupId": "OG001",
+              "value": "12.51",
+              "spread": "1.284"
+            },
+            {
+              "groupId": "OG002",
+              "value": "15.87",
+              "spread": "1.205"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "MMRM",
+              "paramType": "LS Mean Difference",
+              "paramValue": "13.83",
+              "ciPct": "95",
+              "ciLower": "10.23",
+              "ciUpper": "17.44"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<0.001",
+              "method": "MMRM",
+              "paramType": "LS Mean Difference",
+              "paramValue": "17.2",
+              "ciPct": "95",
+              "ciLower": "13.66",
+              "ciUpper": "20.73"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06470828",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06470828",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06470828",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06470828",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06470828",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06470828?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 12,
+          "quote": "ed, multicenter, double-blind placebo controlled 12-week parallel group studies (Study 1 [NCT06470828] and Study 2 [NCT06505031]). Patients enrolled in both studies had a diagnosis of NT1 acc",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tak-861-3002",
+      "nctId": "NCT06505031",
+      "protocolNumber": "TAK-861-3002",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of TAK-861 for the Treatment of Narcolepsy With Cataplexy (Narcolepsy Type 1)",
+      "briefTitle": "A Study of TAK-861 in People With Narcolepsy Type 1",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Narcolepsy type 1 (narcolepsy with cataplexy) in adult patients",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220860Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Narcolepsy type 1 (narcolepsy with cataplexy) in adult patients)",
+            "quote": "Trial identifier appears within the Narcolepsy type 1 (narcolepsy with cataplexy) in adult patients section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Orzeyful (oveporexton) tablets for the treatment of narcolepsy type 1 (narcolepsy with cataplexy) in adult patients.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Takeda",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-10-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-06-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 105,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received oveporexton matching placebo tablets, orally, twice daily (BID) for 12 weeks."
+        },
+        {
+          "label": "TAK-861",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received oveporexton tablets, 2 milligrams (mg), orally, BID for 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline to Week 12 in Mean Sleep Latency From the Maintenance of Wakefulness Test (MWT) Wake Trials",
+        "Change From Baseline to Week 12 in ESS Total Score"
+      ],
+      "secondaryEndpoints": [
+        "Weekly Cataplexy Rate (WCR) at Week 12",
+        "Change From Baseline to Week 12 in Mean Number of Lapses on the Psychomotor Vigilance Test (PVT)",
+        "Proportion of Participants With Improved Patient Global Impression of Change (PGI-C) Score at Week 12",
+        "Change From Baseline to Week 12 in Narcolepsy Severity Scale for Clinical Trials (NSS-CT) Total Score",
+        "Change From Baseline to Week 12 in Functional Impacts of Narcolepsy Instrument (FINI) Domain Scores",
+        "Change From Baseline to Week 12 in Short Form-36 Survey (SF-36) Mental and Physical Component Scores",
+        "Number of Participants With At Least One Treatment-Emergent Adverse Event (TEAE)"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline to Week 12 in Mean Sleep Latency From the Maintenance of Wakefulness Test (MWT) Wake Trials",
+          "timeFrame": "Baseline, Week 12",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "minutes",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Oveporexton"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.01",
+              "spread": "1.529"
+            },
+            {
+              "groupId": "OG001",
+              "value": "19.09",
+              "spread": "1.254"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "MMRM",
+              "paramType": "LS Mean Difference",
+              "paramValue": "20.09",
+              "ciPct": "95",
+              "ciLower": "16.57",
+              "ciUpper": "23.61"
+            }
+          ]
+        },
+        {
+          "title": "Change From Baseline to Week 12 in ESS Total Score",
+          "timeFrame": "Baseline, Week 12",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "score on a scale",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Oveporexton"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.57",
+              "spread": "0.676"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-11.10",
+              "spread": "0.550"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "MMRM",
+              "paramType": "Least Square (LS) Mean Difference",
+              "paramValue": "-9.53",
+              "ciPct": "95",
+              "ciLower": "-11.10",
+              "ciUpper": "-7.97"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06505031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06505031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06505031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06505031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06505031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06505031?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 12,
+          "quote": "ind placebo controlled 12-week parallel group studies (Study 1 [NCT06470828] and Study 2 [NCT06505031]). Patients enrolled in both studies had a diagnosis of NT1 according to the Internationa",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tak-861-3003",
+      "nctId": "NCT07363720",
+      "protocolNumber": "TAK-861-3003",
+      "title": "A Double-blind, Placebo-Controlled, Randomized Withdrawal Trial to Evaluate the Efficacy and Safety of TAK-861 for the Treatment of Narcolepsy With Cataplexy (Narcolepsy Type 1)",
+      "briefTitle": "A Trial of TAK-861 for the Treatment of Narcolepsy With Cataplexy",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Takeda",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-01-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-10-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-10-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 98,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "16 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Double-blind RW Period: TAK-861",
+          "type": "EXPERIMENTAL",
+          "description": "Participants on stable TAK 861 dose will receive the same dose of TAK-861 they were taking at the end of the OL treatment period, for up to 4 weeks in the double-blind RW period."
+        },
+        {
+          "label": "Double-blind RW Period: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive TAK-861 matching-placebo, for up to 4 weeks in the double-blind RW period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Time to Loss of Response in the Epworth Sleepiness Scale (ESS) Score During the Up to 4-Week RW Period"
+      ],
+      "secondaryEndpoints": [
+        "Change From the End of the OL Treatment Period to Week 2 of the RW Period on the Maintenance of Wakefulness Test (MWT)",
+        "Weekly Cataplexy Rate (WCR) at Week 2 of the RW Period",
+        "Change from the End of the OL Treatment Period to Week 2 of the RW Period in Mean Number of Lapses on the Psychomotor Vigilance Test (PVT)",
+        "Number of Participants Reporting Much or Very Much Worse in Patient Global Impression of Change (PGI-C) Score at Week 2 of the RW Period",
+        "Change from the End of the OL Treatment Period to Week 2 of the RW Period in Narcolepsy Severity Scale for Clinical Trials (NSS-CT) Total Score",
+        "Change from the End of the OL Treatment Period to Week 2 of the RW Period in Functional Impacts of Narcolepsy Instrument (FINI) Domain Scores",
+        "Change from the End of the OL Treatment Period to Week 2 of the RW Period in Number of Correct Responses on the International Digit Symbol Substitution Test-symbols (iDSST-s)",
+        "Number of Participants With At Least One Treatment-Emergent Adverse Event (TEAE)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07363720",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07363720",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07363720",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07363720",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07363720",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-08-05",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220860%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220860",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220860%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220860Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:59:47.740Z"
+}

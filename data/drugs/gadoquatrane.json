@@ -1,0 +1,666 @@
+{
+  "slug": "gadoquatrane",
+  "brandName": "Ambelvist",
+  "inn": "gadoquatrane",
+  "modality": "Drug (NDA)",
+  "sponsor": "BAYER HEALTHCARE",
+  "summary": "",
+  "indications": [
+    {
+      "name": "The central nervous system (brain, spine, and associated tissues)",
+      "slug": "the-central-nervous-system-brain-spine-and-associated",
+      "approvalDate": {
+        "value": "2026-06-12",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219627Origs1s000correctedltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-06-12",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Ambelvist (gadoquatrane) injection in adult and pediatric patients, including term neonates, for use with magnetic resonance imaging (MRI) to detect and visualize lesions with abnormal vascularity in: • the central nervous system (brain, spine, and associated tissues) • the body (head and neck, thorax, abdomen, pelvis, and musculoskeletal system)",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219627Origs1s000correctedltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Ambelvist (gadoquatrane) injection in adult and pediatric patients, including term neonates, for use with magnetic resonance imaging (MRI) to detect and visualize lesions with abnormal vascularity in: • the central nervous system (brain, spine, and associated tissues) • the body (head and neck, thorax, abdomen, pelvis, and musculoskeletal system)",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "The body (head and neck, thorax, abdomen, pelvis, and musculoskeletal system)",
+      "slug": "the-body-head-and-neck-thorax-abdomen-pelvis-and",
+      "approvalDate": {
+        "value": "2026-06-12",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219627Origs1s000correctedltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-06-12",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Ambelvist (gadoquatrane) injection in adult and pediatric patients, including term neonates, for use with magnetic resonance imaging (MRI) to detect and visualize lesions with abnormal vascularity in: • the central nervous system (brain, spine, and associated tissues) • the body (head and neck, thorax, abdomen, pelvis, and musculoskeletal system)",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219627Origs1s000correctedltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Ambelvist (gadoquatrane) injection in adult and pediatric patients, including term neonates, for use with magnetic resonance imaging (MRI) to detect and visualize lesions with abnormal vascularity in: • the central nervous system (brain, spine, and associated tissues) • the body (head and neck, thorax, abdomen, pelvis, and musculoskeletal system)",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "219627",
+      "applicationType": "NDA",
+      "sponsor": "BAYER HEALTHCARE",
+      "originalApprovalDate": {
+        "value": "2026-06-12",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "19730",
+      "nctId": "NCT06135181",
+      "protocolNumber": "19730",
+      "title": "Randomized, Single-blind, Placebo-controlled, Escalating Single-dose Study of Safety, Tolerability, and Pharmacokinetics of Intravenously Administered BAY 1747846 in Healthy Chinese Men",
+      "briefTitle": "A Study to Learn More About the Safety and the Blood Level of BAY1747846 Given as Injection Into the Vein at Increasing Single Doses in Chinese Healthy Male Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Bayer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-08-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-02-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-04-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "0.03 mmol Gd/kg BAY1747846 and matching placebo",
+          "type": "EXPERIMENTAL",
+          "description": "12 healthy male participants were planned to be enrolled into this arm, 9 on BAY1747846 and 3 on placebo"
+        },
+        {
+          "label": "0.1 mmol Gd/kg BAY1747846 and matching placebo",
+          "type": "EXPERIMENTAL",
+          "description": "12 healthy male participants were planned to be enrolled into this arm, 9 on BAY1747846 and 3 on placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with treatment-emergent adverse events (TEAE)"
+      ],
+      "secondaryEndpoints": [
+        "Cmax",
+        "AUC",
+        "CL",
+        "CL/bw"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06135181",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06135181",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06135181",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06135181",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06135181",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "20241",
+      "nctId": "NCT04307186",
+      "protocolNumber": "20241",
+      "title": "Multicenter, Single-blind, Adaptive Dose Finding Study of Single Intravenous Injections of BAY 1747846 With Corresponding Blinded Read in Adult Participants With Known or Highly Suspected CNS Lesions Referred for Contrast-enhanced MRI of the CNS",
+      "briefTitle": "Study to Find the Appropriate Dose of a New Gadolinium-based Contrast Agent (GBCA) for Adults Undergoing Magnetic Resonance Imaging (MRI) for Known or Highly Suspected Brain and/or Spinal Cord Conditions",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Bayer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-11-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-09-05",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-09-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 57,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "DIAGNOSTIC"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Gadobutrol + Gadoquatrane",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive one intravenous (IV) injection of gadobutrol 0.1 millimole(s) gadolinium/kilogram body weight (mmol Gd/kg bw) and one IV injection of Gadoquatrane (BAY1747846)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Diagnostic Preference"
+      ],
+      "secondaryEndpoints": [
+        "Sum of Lesion Visualization Parameters on Post-contrast Images",
+        "Lesion Visualization Parameter Border Delineation on Pre-contrast and Combined Pre- and Post-contrast Images",
+        "Lesion Visualization Parameter Contrast Enhancement on Pre-contrast and Combined Pre- and Post-contrast Images",
+        "Lesion Visualization Parameter Internal Morphology on Pre-contrast and Combined Pre- and Post-contrast Images",
+        "Number of Lesions on Pre-contrast and Combined Pre- and Post-contrast Images"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04307186",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04307186",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04307186",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04307186",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04307186",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "quanti-cns",
+      "nctId": "NCT05915702",
+      "protocolNumber": "21181",
+      "acronym": "Quanti CNS",
+      "title": "A Multicenter, Randomized, Prospective Double-blind, Cross-over Phase 3 Study to Evaluate the Efficacy and Safety of 0.04 mmol Gd/kg Body Weight of Gadoquatrane for MRI in Adults With Known or Suspected Pathology of the Central Nervous System (CNS), Compared to 0.1 mmol Gd/kg Approved Macrocyclic Gadolinium-based Contrast Agents (GBCAs)",
+      "briefTitle": "A Study to Compare How Well Gadoquatrane Works and Its Safety With an Already Available Contrast Agent for MRI in People With Known or Suspected Brain or Spinal Cord-related Problems",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Bayer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-07-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 321,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "DIAGNOSTIC"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Gadoquatrane - Approved Macrocyclic GBCA",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive one intravenous injection of gadoquatrane before or during MRI in Period 1, followed by one intravenous injection of any approved macrocyclic GBCA before or during MRI in Period 2."
+        },
+        {
+          "label": "Approved Macrocyclic GBCA - Gadoquatrane",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive one intravenous injection of any approved macrocyclic GBCA before or during MRI in Period 1, followed by one intravenous injection of gadoquatrane before or during MRI in Period 2."
+        }
+      ],
+      "primaryEndpoints": [
+        "Visualization Parameter Contrast Enhancement Assessed by Separate Blinded Evaluation of Unenhanced and Combined Pre- and Post-gadoquatrane MRI, by a BICR (Mean Score)",
+        "Visualization Parameter Delineation Assessed by Separate Blinded Evaluation of Unenhanced and Combined Pre- and Post-gadoquatrane MRI, by a BICR (Mean Score)",
+        "Visualization Parameter Morphology Assessed by Separate Blinded Evaluation of Unenhanced and Combined Pre- and Post-gadoquatrane MRI, by a BICR (Mean Score)"
+      ],
+      "secondaryEndpoints": [
+        "Visualization Parameter Contrast Enhancement Assessed by Blinded Independent Central Review (BICR) Readers on Combined Pre- and Post- Gadoquatrane MRI and Combined Pre- and Post- Comparator MRI With Macrocyclic GBCAs (Mean Score)",
+        "Visualization Parameter Delineation Assessed by Blinded Independent Central Review (BICR) Readers on Combined Pre- and Post- Gadoquatrane MRI and Combined Pre- and Post- Comparator MRI With Macrocyclic GBCAs (Mean Score)",
+        "Visualization Parameter Morphology Assessed by Blinded Independent Central Review (BICR) Readers on Combined Pre- and Post- Gadoquatrane MRI and Combined Pre- and Post- Comparator MRI With Macrocyclic GBCAs (Mean Score)",
+        "Sensitivity (%) for the Detection of Lesions of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Specificity (%) for the Detection of Lesions of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Mean Overall Diagnostic Clinical Value Score From Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs",
+        "Sensitivity (%) for the Detection of Malignant Lesions of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs Assessed by BICR and the Investigator",
+        "Specificity (%) for the Detection of Malignant Lesions of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs Assessed by BICR and the Investigator",
+        "Number of Cases With Concordance Between Final Diagnosis and MRI Diagnosis From Combined Pre- and Post- Gadoquatrane MRI and Combined Pre- and Post- Comparator MRI With Macrocyclic GBCAs, as Assessed by the Investigator",
+        "Mean Confidence in Diagnosis Score From Combined Pre- and Post- Gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs by BICR and by Investigator on 4PS",
+        "Mean Number of Lesions Seen on Unenhanced MRI Image Set and Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Number of Enhancing Lesions Seen on Combined Pre- and Post- Gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Number of Participants With Treatment Emergent Adverse Events, Including Number of Serious Adverse Events, After Administration of Gadoquatrane Compared to Macrocyclic GBCAs Reported by the Investigator",
+        "Number of Participants With Treatment Emergent Adverse Events, Per Intensity, After Administration of Gadoquatrane Compared to Macrocyclic GBCAs Reported by the Investigator"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915702",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915702",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915702",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915702",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915702",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219627Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 14,
+          "quote": "two randomized, multicenter, double-blind, active comparator, crossover studies, Study 1 (NCT05915702) and Study 2 (NCT05915728). Study 1 focused on central nervous system (CNS) pathologies,",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "quanti-obr",
+      "nctId": "NCT05915728",
+      "protocolNumber": "21197",
+      "acronym": "Quanti OBR",
+      "title": "A Multicenter, Randomized, Prospective Double-blind, Cross-over Phase 3 Study to Evaluate the Efficacy and Safety of 0.04 mmol Gd/kg Body Weight of Gadoquatrane for MRI in Adults With Known or Suspected Pathology of Any Body Region (Except CNS), Compared to 0.1 mmol Gd/kg Approved Macrocyclic Gadolinium-based Contrast Agents (GBCAs)",
+      "briefTitle": "A Study to Compare How Well Gadoquatrane Works and Its Safety With an Already Available Contrast Agent for MRI in People With Any Known or Suspected Problems of the Body (Except Brain or Spinal Cord-related Problems)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Bayer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-07-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-06-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 410,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "DIAGNOSTIC"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Gadoquatrane - Approved Macrocyclic GBCA",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive one intravenous injection of gadoquatrane during MRI in Period 1, followed by one intravenous injection of any approved macrocyclic GBCA during MRI in Period 2."
+        },
+        {
+          "label": "Approved Macrocyclic GBCA - Gadoquatrane",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive one intravenous injection of any approved macrocyclic GBCA during MRI in Period 1, followed by one intravenous injection of gadoquatrane during MRI in Period 2."
+        }
+      ],
+      "primaryEndpoints": [
+        "Visualization Parameter Contrast Enhancement Assessed by Separate Blinded Evaluation of Unenhanced and Combined Pre- and Post-gadoquatrane MRI, by a BICR",
+        "Visualization Parameter Delineation Assessed by Separate Blinded Evaluation of Unenhanced and Combined Pre- and Post-gadoquatrane MRI, by a BICR",
+        "Visualization Parameter Morphology Assessed by Separate Blinded Evaluation of Unenhanced and Combined Pre- and Post-gadoquatrane MRI, by a BICR"
+      ],
+      "secondaryEndpoints": [
+        "Visualization Parameter Contrast Assessed by Separate Blinded Evaluation of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Visualization Parameter Delineation Assessed by Separate Blinded Evaluation of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Visualization Parameter Morphology Assessed by Separate Blinded Evaluation of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Sensitivity for the Detection of Lesions of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Specificity for the Detection of Lesions of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "The Overall Diagnostic Clinical Value of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs",
+        "Sensitivity for the Detection of Malignant Lesions of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs Assessed by BICR and the Investigator",
+        "Specificity for the Detection of Malignant Lesions of Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs Assessed by BICR and the Investigator",
+        "Number of Cases With Concordance Between Final Diagnosis and MRI Diagnosis From Combined pre-and Post- Gadoquatrane MRI and Combined Pre- and Post- Comparator MRI With Macrocyclic GBCAs, as Assessed by the Investigator",
+        "Confidence in Diagnosis Combined Pre- and Post- Gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs by BICR and by Investigator",
+        "Number of Lesions Seen on Unenhanced MR Image Sets and Combined Pre- and Post-gadoquatrane MRI and Combined Pre- and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Number of Enhancing Lesions Seen on Combined Pre- and Post- Gadoquatrane MRI and Combined pre-and Post-comparator MRI With Macrocyclic GBCAs, by a BICR",
+        "Number of Participants With Treatment Emergent Adverse Events, Including Number of Serious Adverse Events, After Administration of Gadoquatrane Compared to Macrocyclic GBCAs Reported by the Investigator",
+        "Number of Participants With Treatment Emergent Adverse Events, Including Number of Serious Adverse Events, Per Intensity After Administration of Gadoquatrane Compared to Macrocyclic GBCAs Reported by the Investigator"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219627Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 14,
+          "quote": "r, double-blind, active comparator, crossover studies, Study 1 (NCT05915702) and Study 2 (NCT05915728). Study 1 focused on central nervous system (CNS) pathologies, while Study 2 addressed pa",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "21196",
+      "nctId": "NCT05915026",
+      "protocolNumber": "21196",
+      "title": "A Multicenter, Prospective, Open-label Study to Evaluate the Pharmacokinetics and Safety of Gadoquatrane in Pediatric Participants (From Birth to <18 Years) Undergoing Contrast-enhanced Magnetic Resonance Imaging (CE-MRI)",
+      "briefTitle": "A Study to Learn How Gadoquatrane Moves Into, Through, and Out of the Body and How Safe it is in Children (From Birth to <18 Years), Who Will Undergo a Contrast Enhanced MRI (Quanti Pediatric)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Bayer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-08-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-09-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-09-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 105,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "0 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Gadoquatrane",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive one intravenous injection of gadoquatrane during MRI."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Curve (AUC) of Gadoquatrane After Single Administration",
+        "Plasma Clearance Normalized to Body Weight (CL/BW) of Gadoquatrane After Single Administration",
+        "Apparent Volume of Distribution at Steady State Normalized to Body Weight (Vss/BW) of Gadoquatrane After Single Administration",
+        "Simulation of Plasma Concentration at 10, 20 and 30 Minutes Post-injection (C10, C20 and C30)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Treatment Emergent Adverse Events, Including Serious Adverse Events",
+        "Number of Participants With Treatment Emergent Adverse Events Per Intensity",
+        "Number of Participants With Post-treatment Adverse Events, Including Serious Adverse Events",
+        "Number of Participants With Post-treatment Adverse Events Per Intensity"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05915026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-06-12",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219627%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 219627",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219627%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219627Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219627Origs1s000correctedltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:01:01.573Z"
+}

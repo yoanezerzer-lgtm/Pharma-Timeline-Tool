@@ -1,0 +1,309 @@
+{
+  "slug": "linerixibat",
+  "brandName": "Lynavoy",
+  "inn": "linerixibat",
+  "modality": "Drug (NDA)",
+  "sponsor": "INTERCEPT",
+  "mechanism": "Ileal Bile Acid Transporter Inhibitor",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients",
+      "slug": "cholestatic-pruritus-associated-with-primary-biliary",
+      "approvalDate": {
+        "value": "2026-03-17",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-03-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Lynavoy (linerixibat) tablets for the treatment of cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Lynavoy (linerixibat) tablets for the treatment of cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220295",
+      "applicationType": "NDA",
+      "sponsor": "INTERCEPT",
+      "originalApprovalDate": {
+        "value": "2026-03-17",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "212620",
+      "nctId": "NCT04950127",
+      "protocolNumber": "212620",
+      "title": "A Two-part, Randomized, Placebo Controlled, Double Blind, Multicenter, Phase 3 Study to Evaluate the Efficacy and Safety of Linerixibat for the Treatment of Cholestatic Pruritus in Participants With Primary Biliary Cholangitis (PBC)",
+      "briefTitle": "Global Linerixibat Itch Study of Efficacy and Safety in Primary Biliary Cholangitis (PBC) (GLISTEN)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220295Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients)",
+            "quote": "Trial identifier appears within the Cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Lynavoy (linerixibat) tablets for the treatment of cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-08-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-10-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-12-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 238,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part A: Linerixibat 40 milligrams (mg)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants were randomized to receive linerixibat 40 mg tablet orally twice a day (BID) in Part A (up to Week 24)."
+        },
+        {
+          "label": "Part A: Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Participants were randomized to receive Placebo orally twice a day (BID) in Part A (up to Week 24)."
+        },
+        {
+          "label": "Part B: Placebo in Part A and Part B",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants who were randomized to receive Placebo (up to Week 24) orally twice a day (BID) in Part A, continued to receive Placebo (from Week 24 to Week 32) orally twice a day (BID) in Part B."
+        },
+        {
+          "label": "Part B: Placebo in Part A and Linerixibat 40 mg in Part B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were randomized to receive Placebo (up to Week 24) orally twice a day (BID) in Part A, switched to receive linerixibat 40 mg tablet orally twice a day (BID) (from Week 24 to Week 32) in Part B."
+        },
+        {
+          "label": "Part B: Linerixibat 40 mg in Part A and Placebo in Part B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were randomized to receive linerixibat 40 mg tablet orally BID (up to Week 24) in Part A, switched to receive Placebo (from Week 24 to Week 32) orally twice a day (BID) in Part B."
+        },
+        {
+          "label": "Part B: Linerixibat 40 mg in Part A and Part B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were randomized to receive linerixibat 40 mg tablet orally twice a day (BID) (up to Week 24) in Part A, continued to receive linerixibat 40 mg twice a day (BID) (from Week 24 to Week 32) in Part B."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part A: Mean Change From Baseline in Monthly Itch Scores Over 24 Weeks Using Numerical Rating Scale (NRS)"
+      ],
+      "secondaryEndpoints": [
+        "Part A: Mean Change From Baseline in Weekly Itch Score at Week 2 Using NRS",
+        "Part A: Mean Change From Baseline in Monthly Sleep Score Over 24 Weeks Using NRS",
+        "Part A: Percentage of Responders Defined as Achieving More Than or Equal to (>=) 2-point Reduction From Baseline in the Monthly Itch Score at Week 24",
+        "Part A: Percentage of Responders Achieving >=3-point Reduction From Baseline in the Monthly Itch Score at Week 24",
+        "Part A: Percentage of Responders as Achieving a >=4-point Reduction From Baseline in the Monthly Itch Score at Week 24",
+        "Part A: Mean Change From Baseline in Primary Biliary Cholangitis-40 (PBC-40) Domain Scores at Week 24",
+        "Part A: Mean Change From Baseline in Patient's Global Impression of Severity (PGI-S) Over 24 Weeks",
+        "Part A: Patient's Global Impression of Change (PGI-C) Scores Over 24 Weeks",
+        "Part A: Mean Change From Baseline in Alkaline Phosphatase (ALP) at Week 24",
+        "Part A: Mean Change From Baseline in Bilirubin at Week 24"
+      ],
+      "postedResults": [
+        {
+          "title": "Part A: Mean Change From Baseline in Monthly Itch Scores Over 24 Weeks Using Numerical Rating Scale (NRS)",
+          "timeFrame": "Baseline and up to Week 24",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Scores on a scale",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Part A: Linerixibat 40 Milligrams (mg)"
+            },
+            {
+              "id": "OG001",
+              "title": "Part A: Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-2.86",
+              "lowerLimit": "-3.23",
+              "upperLimit": "-2.50"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-2.15",
+              "lowerLimit": "-2.51",
+              "upperLimit": "-1.78"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.001",
+              "method": "Mixed Models Analysis",
+              "paramType": "Mean Difference (Net)",
+              "paramValue": "-0.72",
+              "ciPct": "95",
+              "ciLower": "-1.15",
+              "ciUpper": "-0.28"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 10,
+          "quote": "mg/kg/day. 14 CLINICAL STUDIES The efficacy of LYNAVOY was evaluated in Study 1 (GLISTEN, NCT04950127), a 24-week, randomized, double-blind, placebo-controlled trial. The study included 238 a",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-03-17",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220295%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220295",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220295%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220295Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:44.299Z"
+}

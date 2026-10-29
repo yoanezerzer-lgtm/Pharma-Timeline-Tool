@@ -1,0 +1,1355 @@
+{
+  "slug": "garetosmab",
+  "brandName": "Pasatru",
+  "inn": "garetosmab",
+  "modality": "Biologic (BLA)",
+  "sponsor": "REGENERON PHARMACEUTICALS, INC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "To reduc e formation of new heterotopic ossification (HO) lesions and clinician - assessed flare - ups in adult s with fibrodysplasia ossificans progressiva (FOP)",
+      "slug": "to-reduc-e-formation-of-new-heterotopic-ossification-ho",
+      "approvalDate": {
+        "value": "2026-08-19",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761508%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761508",
+      "applicationType": "BLA",
+      "sponsor": "REGENERON PHARMACEUTICALS, INC",
+      "originalApprovalDate": {
+        "value": "2026-08-19",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "r2477-hv-1525",
+      "nctId": "NCT02870400",
+      "protocolNumber": "R2477-HV-1525",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled, Single Ascending Dose Study of the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamic Effects of Intravenously and Subcutaneously Administered REGN2477 in Healthy Women Not of Childbearing Potential",
+      "briefTitle": "A Study to Examine the Safety and Tolerability of Single Ascending Doses of REGN2477",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-07-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-01-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-01-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 41,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "REGN2477",
+          "type": "EXPERIMENTAL",
+          "description": "Cohorts 1 - 5 will receive REGN2477"
+        },
+        {
+          "label": "Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Cohorts 1 - 5 will receive placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Treatment emergent adverse events (TEAEs) through day 113 in participants treated with REGN2477"
+      ],
+      "secondaryEndpoints": [
+        "Pharmacokinetic profile of REGN2477, assessed via serum concentrations of REGN2477 over time",
+        "Immunogenicity of REGN2477, as determined by the presence or absence of Anti-drug antibody (ADA) to REGN2477 over time"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02870400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02870400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02870400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02870400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02870400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "r2477-1033-hv-1621",
+      "nctId": "NCT02943239",
+      "protocolNumber": "R2477-1033-HV-1621",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled, Ascending Dose Study to Assess the Safety, Tolerability, and Pharmacodynamic Effects of REGN2477 Alone and in Combination With REGN1033 in Healthy Postmenopausal Women and Healthy Adult Men",
+      "briefTitle": "Study of Safety, Tolerability, and Pharmacokinetics of REGN2477 Alone and in Combination With REGN1033 in Healthy Postmenopausal Women and Healthy Adult Men",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-12-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-04-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-04-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 82,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "35 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Panel A",
+          "type": "EXPERIMENTAL",
+          "description": "REGN1033 + REGN2477 (Regimen 1) or placebo"
+        },
+        {
+          "label": "Panel B",
+          "type": "EXPERIMENTAL",
+          "description": "Panel B - REGN1033 + REGN2477 (Regimen 2) or Placebo"
+        },
+        {
+          "label": "Panel C",
+          "type": "EXPERIMENTAL",
+          "description": "Panel C - Patients will receive either REGN1033 + REGN2477 (Regimen 3) or Placebo"
+        },
+        {
+          "label": "Panel D",
+          "type": "EXPERIMENTAL",
+          "description": "Panel D - Patients will receive either REGN1033 + REGN2477 (Regimen 4), REGN1033, REGN2477 (high dose) or Placebo"
+        },
+        {
+          "label": "Panel E",
+          "type": "EXPERIMENTAL",
+          "description": "REGN2477 (Regimen 5) or placebo"
+        },
+        {
+          "label": "Panel F",
+          "type": "EXPERIMENTAL",
+          "description": "REGN2477 + REGN1033 (Regimen 6) or placebo"
+        },
+        {
+          "label": "Panel G",
+          "type": "EXPERIMENTAL",
+          "description": "REGN2477 (Regimen 7) or placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence and severity of treatment-emergent adverse events (TEAEs)"
+      ],
+      "secondaryEndpoints": [
+        "Percent change in thigh muscle volume as measured by MRI",
+        "Change in thigh muscle volume as measured by MRI",
+        "Percent change in total and regional body composition as measured by Dual X-ray absorptiometry (DXA)",
+        "Change in total body composition as measured by DXA",
+        "Change in regional body composition as measured by DXA",
+        "Pharmacokinetic profile of REGN2477 assessed via measurement of concentrations of REGN2477 in serum over time",
+        "Pharmacokinetic profile of REGN1033 assessed via measurement of concentrations of REGN1033 in serum overtime",
+        "Change in total Activin A levels in blood",
+        "Change in total GDF8 levels in blood",
+        "Presence or absence of antibodies against REGN2477 and REGN1033"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02943239",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02943239",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02943239",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02943239",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02943239",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "lumina-1",
+      "nctId": "NCT03188666",
+      "protocolNumber": "R2477-FOP-1623",
+      "acronym": "LUMINA-1",
+      "title": "A Randomized, Placebo-controlled Study to Assess the Safety, Tolerability, Pharmacokinetics, and Effects on Heterotopic Bone Formation of REGN2477 in Patients With Fibrodysplasia Ossificans Progressiva",
+      "briefTitle": "A Study to Examine the Safety, Tolerability and Effects on Abnormal Bone Formation of REGN2477 in Patients With Fibrodysplasia Ossificans Progressiva",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-02-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-09-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-09-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 44,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "REGN2477",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Period 1: Number of Participants With Treatment-emergent Adverse Events (TEAEs) and Serious TEAEs",
+        "Period 1: Number of Participants With TEAEs by Severity",
+        "Period 1: Time-Weighted Average (Standardized Area Under the Curve [AUC]) of the Percent Change From Baseline in Total Lesion Activity by Fluorine-18-labeled Sodium Fluoride (18^F-NaF) Positron Emission Tomography (PET) at Week 28 (AHO)",
+        "Period 1: Percent Change From Baseline in the Total Volume of HO Lesions as Assessed by Computed Tomography (CT) at Week 28 (AHO)",
+        "Period 2: Number of New HO Lesions as Assessed by CT at Week 56 Relative to Week 28 Scan (AHO COVID-19 mITT)",
+        "Period 1: Time-weighted Average (Standardized AUC) of the Percent Change From Baseline in Total Lesion Activity Assessed by 18^F-NaF PET at Week 28 (AHOC)",
+        "Period 1: Percent Change From Baseline in the Total Volume of HO Lesions as Assessed by CT at Week 28 (AHOC)"
+      ],
+      "secondaryEndpoints": [
+        "Period 1: Time-weighted Average (Standardized AUC) of the Change From Baseline in Daily Pain Due to Fibrodysplasia Ossificans Progressiva (FOP) Assessed by Daily Numeric Rating Scale (NRS) at Week 28 (AHO)",
+        "Period 1: Time-weighted Average (Standardized AUC) of the Change From Baseline in Daily Pain Due to FOP, Assessed by Daily NRS at Week 28 (AHOC)",
+        "Period 1: Percent Change From Baseline in 18^F-NaF SUVmax of Individual Active HO Site(s) Assessed by 18^F-NaF PET at Week 8 (AHOC)",
+        "Period 1: Percent Change From Baseline in 18^F-NaF SUVmax of Individual Active HO Site(s) as Assessed by 18^F-NaFPET at Week 8 (AHO)",
+        "Period 1: Change From Baseline in Number of HO Lesions as Assessed by 18^F-NaF PET at Week 28 (AHOC)",
+        "Period 1: Change From Baseline in Number of HO Lesions as Assessed by 18^F-NaF PET at Week 28 (AHO)",
+        "Period 1: Change From Baseline in Number of HO Lesions Detectable by CT at Week 28 (AHOC)",
+        "Period 1: Change From Baseline in Number of HO Lesions Detectable by CT at Week 28 (AHO)",
+        "Period 2: Number of New HO Lesions as Assessed by 18^F-NaF PET at Week 56 Relative to Week 28 Scan (AHO COVID-19 mITT)",
+        "Period 2: Percentage of Participants With New HO Lesions as Assessed by CT at Week 56 Relative to Week 28 Scan (AHO COVID-19 mITT)",
+        "Period 2: Percentage of Participants With New HO Lesions as Assessed by 18^F-NaF PET at Week 56 Relative to Week 28 Scan (AHO COVID-19 mITT)",
+        "Period 2: Number of New HO Lesions as Assessed by CT Only at Week 56 Relative to Week 28 Scan (AHO COVID-19 mITT)",
+        "Period 2: Percentage of Participants With New HO Lesions as Assessed by CT Only at Week 56 Relative to Week 28 Scan (AHO COVID-19 mITT)",
+        "Period 2 vs. Period 1: Change From Week 28 in Number of Active HO Lesions as Assessed by 18^F-NaF PET to Week 56 (Period 2) Versus the Same Participants Between Baseline and Week 28 (Period 1) (AHO COVID-19 mITT)",
+        "Period 2 vs. Period 1: Change From Week 28 in Number of Active HO Lesions as Assessed by CT Scan at Week 56 (Period 2) Versus the Same Participants Between Baseline and Week 28 (Period 1) (AHO COVID-19 mITT)",
+        "Period 2: Number of New HO Lesions as Assessed by CT at Week 56 Relative to Baseline (AHO COVID-19 mITT)",
+        "Period 2: Number of New HO Lesions as Assessed by CT Only at Week 56 Relative to Baseline (AHO COVID-19 mITT)",
+        "Period 2: Percentage of Participants With New HO Lesions as Assessed by CT at Week 56 Relative to Baseline (AHO COVID-19 mITT)",
+        "Period 2: Number of New HO Lesions as Assessed by 18^F-NAF PET at Week 56 Relative to Baseline (AHO COVID-19 mITT)",
+        "Period 2: Percentage of Participants With New HO Lesions as Assessed by 18^F-NaF PET at Week 56 Relative to Baseline (AHO COVID-19 mITT)",
+        "Period 2: Total Volume of New HO Lesions as Assessed by CT at Week 56 Relative to Week 28 Scan (AHO COVID-19 mITT)",
+        "Period 2: Total Lesion Activity (TLA) Assessed by 18^F-NaF PET in New HO Lesions at Week 56 Relative to Week 28 Scan (AHO COVID-19 mITT)",
+        "Period 2 vs. Period 1: Percent Change From Week 28 in TLA as Assessed by 18^F-NaF PET to Week 56 (Period 2) Versus the Same Participants Between Baseline and Week 28 (Period 1) (AHO COVID-19 mITT)",
+        "Period 2 vs. Period 1: Percent Change From Week 28 in the Total Volume of HO Lesions as Assessed by CT to Week 56 (Period 2) Versus the Same Participants Between Baseline and Week 28 (Period 1) (AHO COVID-19 mITT)",
+        "Period 2: TLA in New HO Lesions as Assessed by 18^F-NaF PET at Week 56 Relative to Baseline (AHO COVID-19 mITT)",
+        "Period 2: Total Volume of New HO Lesions as Assessed by CT Only at Week 56 Relative to Baseline (AHO COVID-19 mITT)",
+        "Period 2: Percent Change From Baseline in TLA as Assessed by 18^F-NaF PET to Week 56 (AHO COVID-19 mITT)",
+        "Period 2: Percent Change From Baseline in the Total Volume of HO Lesions as Assessed by CT to Week 56 (AHO COVID-19 mITT)",
+        "Period 2: Percent Change From Week 28 in SUVmax as Assessed by 18^F-NaF to Week 56 (AHO COVID-19 mITT)",
+        "Period 2: Percent Change From Baseline in 18^F-NaF PET SUVmax to Week 56 (AHO COVID-19 mITT)",
+        "Period 2: Daily Average Pain Due to FOP Measured Using the Daily NRS",
+        "Period 2: Percentage of Participants With Flare-ups Assessed by Participant E-diary",
+        "Period 2: Percentage of Participants With Investigator-assessed Flare-ups",
+        "Periods 1, 2, and 3: Concentration of Total Activin A in Serum",
+        "Periods 1, 2, and 3: Concentrations of Functional REGN2477 in Serum",
+        "Periods 1, 2, and 3: Number of Participants With Clinical Impact of Treatment-Emergent Anti-drug Antibodies (ADA) to REGN2477"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03188666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03188666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03188666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03188666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03188666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "r2477-1033-sibm-1828",
+      "nctId": "NCT03710941",
+      "protocolNumber": "R2477-1033-sIBM-1828",
+      "title": "A Phase 2 Randomized, Double-Blind, Placebo-Controlled Study of the Safety and Efficacy of Intravenously Administered REGN2477+REGN1033 in Patients With Sporadic Inclusion Body Myositis",
+      "briefTitle": "Safety and Efficacy of REGN2477+REGN1033 in Patients With Sporadic Inclusion Body Myositis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "WITHDRAWN",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-02-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-08-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-11-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 0,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "45 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "REGN2477+REGN1033",
+          "type": "EXPERIMENTAL",
+          "description": "Single, sequential, repeat-dose IV or matching placebo"
+        },
+        {
+          "label": "Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Single, sequential, repeat-dose IV"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percent change in total lean mass as measured by dual-energy X-ray absorptiometry (DXA)"
+      ],
+      "secondaryEndpoints": [
+        "Change in the Inclusion Body Myositis-Functional Rating Scale (IBM-FRS)",
+        "Change in the Sporadic inclusion body myositis (sIBM) Physical Functioning Assessment (sIFA)",
+        "Incidence and severity of treatment-emergent adverse events (TEAEs)",
+        "Percent change in total and regional body composition (including lean mass and fat mass) as measured by DXA",
+        "Absolute change in total and regional body composition (including lean mass and fat mass) as measured by DXA",
+        "Change in the 1-repetition maximum (1-RM) chest press strength",
+        "Change in hand-grip strength as measured by dynamometry",
+        "Change in distance walked in the 6-minute walk test (6MWT)",
+        "Change in time to complete the 10-meter walk test (10MWT)",
+        "Change in instrumented stair climb power",
+        "Change in instrumented, sensor-based sit-to-stand test time",
+        "Change in fear of falling as measured via the Falls Efficacy Scale-International (FES-I)",
+        "Change in Patient Global Impression of Severity assessments (PGIS/PGIC)",
+        "Change in Patient Global Impression of Change Items assessments (PGIS/PGIC)",
+        "Change in Clinician Global Impression of Severity assessments (CGIS/CGIC)",
+        "Change in Clinician Global Impression of Change Items assessments (CGIS/CGIC)",
+        "Change in 36-item Short Form Health Survey (SF-36), including the Physical Function Items (PF-10) and the Vitality Scale of the SF-36",
+        "Change in Thigh muscle volume as measured by MRI (sub-study)",
+        "Frequency of falls and near-falls as measured by the Hopkins Falls Grading Scale",
+        "Pharmacokinetics (PK) profile of REGN2477",
+        "Pharmacokinetics (PK) profile of REGN1033",
+        "Immunogenicity of REGN2477+REGN1033"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03710941",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03710941",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03710941",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03710941",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03710941",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "r2477-fop-1940",
+      "nctId": "NCT04577820",
+      "protocolNumber": "R2477-FOP-1940",
+      "title": "Evaluation of Efficacy and Safety of Garetosmab in Japanese Adult Patients With Fibrodysplasia Ossificans Progressiva",
+      "briefTitle": "Study to Assess the Efficacy and Safety of Garetosmab in Japanese Adult Patients With Fibrodysplasia Ossificans Progressiva (FOP)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "WITHDRAWN",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-10-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-03-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-10-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 0,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "garetosmab",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence and severity of treatment-emergent adverse event (TEAEs)",
+        "Number of new HO lesions as assessed by CT"
+      ],
+      "secondaryEndpoints": [
+        "Total volume of new HO lesions as assessed by CT",
+        "Number of new HO lesions as assessed by positron emission tomography (PET)",
+        "Total lesion activity in new HO lesions as assessed by PET",
+        "Percent of patients with new HO lesions as assessed by CT",
+        "Percent of patients with new HO lesions as assessed by PET",
+        "Percent of patients with investigator-assessed flare-ups",
+        "Percent of patients with investigator-assessed flare-ups",
+        "Percent of patients with flare-ups assessed by patient e-diary",
+        "Percent of patients with flare-ups assessed by patient e-diary",
+        "Number of new HO lesions as assessed by CT",
+        "Total volume of new HO lesions as assessed by CT",
+        "Percent of patients with new HO lesions as assessed by CT",
+        "Number of new HO lesions as assessed by PET",
+        "Total lesion activity in new HO lesions as assessed by PET",
+        "Percent of patients with new HO lesions as assessed by PET",
+        "Change in mean maximum standard uptake volume (SUVmax) of individual active HO site(s) by PET",
+        "Change in mean maximum standard uptake volume (SUVmax) of individual active HO site(s) by PET",
+        "Percent change in mean maximum standard uptake volume (SUVmax) of individual active HO site(s) by PET",
+        "Percent change in mean maximum standard uptake volume (SUVmax) of individual active HO site(s) by PET",
+        "Change in total lesion activity by PET",
+        "Change in total lesion activity by PET",
+        "Percent change in total lesion activity by PET",
+        "Percent change in total lesion activity by PET",
+        "Change in the total volume of HO lesions as assessed by CT",
+        "Change in the total volume of HO lesions as assessed by CT",
+        "Percent change in the total volume of HO lesions as assessed by CT",
+        "Percent change in the total volume of HO lesions as assessed by CT",
+        "Change in number of HO lesions as assessed by PET",
+        "Change in number of HO lesions as assessed by PET",
+        "Change in the number of HO lesions detectable by CT",
+        "Change in the number of HO lesions detectable by CT",
+        "Time-weighted average (standardized area under curve [AUC]) change in daily pain due to FOP, as measured using the daily numeric rating scale (NRS)",
+        "Time-weighted average (standardized AUC) change in daily pain due to FOP, as measured using the daily NRS",
+        "Total dosage of glucocorticoids use",
+        "Incidence and severity of TEAEs",
+        "Concentration of total activin A in serum over time",
+        "Pharmacokinetic (Pk) Profile - concentrations of garetosmab in serum over time",
+        "Immunogenicity as measured by Anti-drug antibodies (ADA) to garetosmab over time",
+        "Percent change from baseline in biomarkers of bone formation levels in serum"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04577820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "optima",
+      "nctId": "NCT05394116",
+      "protocolNumber": "R2477-FOP-2175",
+      "acronym": "OPTIMA",
+      "title": "Phase 3 Randomized, Placebo-Controlled Study to Assess Safety, Tolerability, and Efficacy of Garetosmab in Patients With Fibrodysplasia Ossificans Progressiva",
+      "briefTitle": "A Study to Assess Safety, Tolerability and Efficacy of Garetosmab Versus Placebo Administered Intravenously (IV) in Adult Participants With Fibrodysplasia Ossificans Progressiva (FOP)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "To reduc e formation of new heterotopic ossification (HO) lesions and clinician - assessed flare - ups in adult s with fibrodysplasia ossificans progressiva (FOP)",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761508Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — To reduc e formation of new heterotopic ossification (HO) lesions and clinician - assessed flare - ups in adult s with fibrodysplasia ossificans progressiva (FOP))",
+            "quote": "Trial identifier appears within the To reduc e formation of new heterotopic ossification (HO) lesions and clinician - assessed flare - ups in adult s with fibrodysplasia ossificans progressiva (FOP) section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-11-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-07-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-02-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 63,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "High dose Garetosmab",
+          "type": "EXPERIMENTAL",
+          "description": "Garetosmab is administered by intravenous (IV) administration every 4 weeks (Q4W)"
+        },
+        {
+          "label": "Low dose Garetosmab",
+          "type": "EXPERIMENTAL",
+          "description": "Garetosmab is administered by IV administration Q4W"
+        },
+        {
+          "label": "Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Placebo to match garetosmab, is supplied as a liquid solution without the monoclonal antibody (or the protein) and is administered IV Q4W."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of new HO lesions",
+        "Incidence and severity of treatment-emergent adverse events of special interest (AESIs)"
+      ],
+      "secondaryEndpoints": [
+        "Number of clinician-assessed flare-ups",
+        "Occurrence of new HO lesions",
+        "Total volume of new HO lesions",
+        "Occurrence of patient-reported flare-ups",
+        "Number of new HO lesions",
+        "Occurrence of clinician-assessed flare-ups",
+        "Number of patient-reported flare-ups",
+        "Change in joint function assessment by physician using cumulative analog joint involvement scale (CAJIS)",
+        "Change in pulmonary function as assessed by spirometry",
+        "Change in disease severity as assessed by the Patient Global Impression of Severity (PGIS)",
+        "Change in disease severity as assessed by the Patient's Global Impression of Change (PGIC)",
+        "Change in disease severity as assessed by the Clinician's Global Impression of Change (CGIC)",
+        "Concentration of total activin A in serum over time",
+        "Concentration of garetosmab in serum over time",
+        "Incidence of anti-drug antibodies (ADA) to garetosmab over time",
+        "Titer of ADA to garetosmab over time"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05394116",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05394116",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05394116",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05394116",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05394116",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761508Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 10,
+          "quote": "971 14 CLINICAL STUDIES The efficacy of PASATRU was evaluated in Study 1 ( NCT05394116 ) , a randomized, double - blind, parallel - group, multicenter, placebo - controlled tri",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "courage",
+      "nctId": "NCT06299098",
+      "protocolNumber": "R1033-OB-2288",
+      "acronym": "COURAGE",
+      "title": "A Randomized, Double-Blind Study of The Efficacy and Safety of Trevogrumab, With or Without Garetosmab, in Addition to Semaglutide in Patients With Obesity",
+      "briefTitle": "A Study to Test if Trevogrumab or Trevogrumab With Garetosmab When Taken With Semaglutide is Safe and How Well They Work in Adult Patients With Obesity for Weight Loss, Fat Loss, and Lean Mass Preservation",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-03-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-06-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-10-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1005,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Part A Randomized 1:1"
+        },
+        {
+          "label": "Trevogrumab",
+          "type": "EXPERIMENTAL",
+          "description": "Part A Randomized 1:1"
+        },
+        {
+          "label": "Arm A0",
+          "type": "EXPERIMENTAL",
+          "description": "Part B Semaglutide (sema) and subcutaneous (SC) placebo and intravenous (IV) placebo followed by SC placebo Randomized 1:1:1:1:1:1:1:1"
+        },
+        {
+          "label": "Arm A1",
+          "type": "EXPERIMENTAL",
+          "description": "Part B Sema and SC placebo and IV placebo followed by high dose trevogrumab (trevo) Randomized 1:1:1:1:1:1:1:1"
+        },
+        {
+          "label": "Arm B0",
+          "type": "EXPERIMENTAL",
+          "description": "Part B Sema, moderate-high dose trevo, and IV placebo followed by SC placebo Randomized 1:1:1:1:1:1:1:1"
+        },
+        {
+          "label": "Arm B1",
+          "type": "EXPERIMENTAL",
+          "description": "Part B Sema, moderate-high dose trevo, and IV placebo followed by high dose trevo Randomized 1:1:1:1:1:1:1:1"
+        },
+        {
+          "label": "Arm C0",
+          "type": "EXPERIMENTAL",
+          "description": "Part B Sema, high dose trevo, and IV placebo followed by SC placebo Randomized 1:1:1:1:1:1:1:1"
+        },
+        {
+          "label": "Arm C1",
+          "type": "EXPERIMENTAL",
+          "description": "Part B Sema, high dose trevo, and IV placebo followed by high dose trevo Randomized 1:1:1:1:1:1:1:1"
+        },
+        {
+          "label": "Arm D0",
+          "type": "EXPERIMENTAL",
+          "description": "Part B Sema, high dose trevo, and garetosmab (gareto) followed by SC placebo Randomized 1:1:1:1:1:1:1:1"
+        },
+        {
+          "label": "Arm D1",
+          "type": "EXPERIMENTAL",
+          "description": "Part B Sema, high dose trevo, and gareto followed by high dose trevo Randomized 1:1:1:1:1:1:1:1"
+        },
+        {
+          "label": "Arm 1",
+          "type": "EXPERIMENTAL",
+          "description": "Part C Sema and SC placebo Randomized 1:2:2"
+        },
+        {
+          "label": "Arm 2",
+          "type": "EXPERIMENTAL",
+          "description": "Part C Sema and SC low dose trevo Randomized 1:2:2"
+        },
+        {
+          "label": "Arm 3",
+          "type": "EXPERIMENTAL",
+          "description": "Part C Sema and SC moderate dose trevo Randomized 1:2:2"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of treatment-emergent adverse events (TEAEs)",
+        "Severity of TEAEs",
+        "Percent change in total fat mass",
+        "Percent change in total lean mass",
+        "Percent change in body weight",
+        "Percent change in total fat mass",
+        "Percent change in total lean mass",
+        "Percent change in body weight"
+      ],
+      "secondaryEndpoints": [
+        "Concentrations of trevogrumab in serum over time",
+        "Percent change in total fat mass",
+        "Percent change in total lean mass",
+        "Percent change in body weight",
+        "Change in waist circumference (cm)",
+        "Change in waist circumference (cm)",
+        "Percent change in fasting serum triglycerides",
+        "Percent change in total cholesterol",
+        "Percent change in Apolipoprotein B (Apo B)",
+        "Percent change in Low-Density Lipoprotein Cholesterol (LDL-C)",
+        "Concentrations of garetosmab in serum over time",
+        "Incidence of anti-drug antibodies (ADA) to trevogrumab after repeated doses over time",
+        "Magnitude of ADAs to trevogrumab over time",
+        "Incidence of ADAs to garetosmab after repeated doses over time",
+        "Magnitude of ADAs to garetosmab over time",
+        "Incidence of TEAEs",
+        "Severity of TEAEs",
+        "Percent change in total fat mass",
+        "Percent change in total lean mass",
+        "Percent change in body weight",
+        "Concentration of total Growth Differentiation Factor (GDF) 8 in serum over time"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06299098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06299098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06299098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06299098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06299098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "r2477-ob-2470",
+      "nctId": "NCT06970405",
+      "protocolNumber": "R2477-OB-2470",
+      "title": "Randomized, Double-Blind, Placebo-Controlled Study of Safety, Tolerability, Pharmacokinetic, and Pharmacodynamic Effects of Garetosmab in Men and Post-Menopausal Women With Obesity Who Are Otherwise Healthy",
+      "briefTitle": "Study of Safety and Effects of Garetosmab in Healthy Obese Men and Post-Menopausal Women",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "WITHDRAWN",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-05-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-06-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-06-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 0,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "High Dose",
+          "type": "EXPERIMENTAL",
+          "description": "Randomized per the protocol"
+        },
+        {
+          "label": "Low Dose",
+          "type": "EXPERIMENTAL",
+          "description": "Randomized per the protocol"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Randomized per the protocol"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of treatment-emergent adverse events (TEAEs)",
+        "Severity of TEAEs"
+      ],
+      "secondaryEndpoints": [
+        "Change in serum Follicle Stimulating Hormone (FSH) level in response to gonadotropin-releasing hormone (GnRH) injection",
+        "Percent change in serum FSH level in response to GnRH injection",
+        "Change in serum Luteinizing Hormone (LH) level in response to GnRH injection",
+        "Percent change in serum LH level in response to GnRH injection",
+        "Change in serum total testosterone level in response to GnRH injection",
+        "Percent change in serum total testosterone level in response to GnRH injection",
+        "Change in serum free testosterone level in response to GnRH injection",
+        "Percent change in serum free testosterone level in response to GnRH injection",
+        "Change in serum estradiol level in response to GnRH injection",
+        "Percent change in serum estradiol level in response to GnRH injection",
+        "Change in serum 17-hydroxyprogesterone (17-OHP) level in response to GnRH injection",
+        "Percent change in serum 17-OHP level in response to GnRH injection",
+        "Change in serum Dehydroepiandrosterone Sulphate (DHEA-S) level in response to GnRH injection",
+        "Percent change in serum DHEA-S level in response to GnRH injection",
+        "Change in serum androstenedione level in response to GnRH injection",
+        "Percent change in serum androstenedione level in response to GnRH injection",
+        "Change in cortisol level in response to Adrenocorticotropic Hormone (ACTH) level injection",
+        "Percent change in cortisol level in response to ACTH injection",
+        "Concentrations of garetosmab in serum",
+        "Concentrations of total activin A in serum",
+        "Change in bleeding time",
+        "Percent change in bleeding time",
+        "Change in thrombin time",
+        "Percent change in thrombin time",
+        "Change in Activated Partial Thromboplastin Time (aPTT)",
+        "Percent change in aPTT",
+        "Change in Prothrombin Time (PT)",
+        "Percent change in PT",
+        "Change in International Normalized Ratio (INR)",
+        "Percent change in INR",
+        "Change in platelets count",
+        "Percent change in platelets count",
+        "Change in serum ACTH level",
+        "Percent change in serum ACTH level",
+        "Change in serum FSH level",
+        "Percent change in serum FSH level",
+        "Change in serum LH level",
+        "Percent change in serum LH level",
+        "Change in serum Thyroid Stimulating Hormone (TSH) level",
+        "Percent change in serum TSH level",
+        "Change in serum Thyroxine (T4) level",
+        "Percent change in serum T4 level",
+        "Change in serum total testosterone level",
+        "Percent change in serum total testosterone level",
+        "Change in serum free testosterone level",
+        "Percent change in serum free testosterone level",
+        "Change in serum 17-OHP level",
+        "Percent change in serum 17-OHP level",
+        "Change in serum estradiol level",
+        "Percent change in serum estradiol level",
+        "Change in serum DHEA-S level",
+        "Percent change in serum DHEA-S level",
+        "Change in serum androstenedione level",
+        "Percent change in serum androstenedione level",
+        "Change in serum Human Growth Hormone (HGH) level",
+        "Percent change in serum HGH level",
+        "Change in serum Insulin-like Growth Factor (IGF)-1 level",
+        "Percent change in serum IGF-1 level",
+        "Change in serum cortisol level",
+        "Percent change in serum cortisol level",
+        "Incidence of Anti-Drug Antibodies (ADA) to garetosmab",
+        "Titer of ADA to garetosmab"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06970405",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06970405",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06970405",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06970405",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06970405",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "optima-2",
+      "nctId": "NCT07559513",
+      "protocolNumber": "R2477-FOP-2413",
+      "acronym": "OPTIMA-2",
+      "title": "Phase 3 Evaluation of the Safety, Pharmacokinetics, and Efficacy of Garetosmab (Anti-Activin A Monoclonal Antibody) in Children and Adolescents With Fibrodysplasia Ossificans Progressiva",
+      "briefTitle": "A Study to Investigate the Safety, Pharmacokinetics (PK), and Efficacy of Garetosmab in Children and Adolescents With Fibrodysplasia Ossificans Progressiva (FOP)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2027-02-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-07-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-07-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 18,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1: Adolescents",
+          "type": "EXPERIMENTAL",
+          "description": "Participants aged 12 - 18 years old"
+        },
+        {
+          "label": "Cohort 2: Children",
+          "type": "EXPERIMENTAL",
+          "description": "Children who are 4 to 12 years old (for non-US sites only 2 to 12 years old)"
+        },
+        {
+          "label": "Cohort 3: Children and Adolescents",
+          "type": "EXPERIMENTAL",
+          "description": "Participants and Children aged 4 to 18 years old (for non-US sites only 2 to 18 years old)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Occurrence of Treatment-Emergent Adverse Event (TEAEs)",
+        "Severity of TEAEs",
+        "Concentrations of functional garetosmab in serum"
+      ],
+      "secondaryEndpoints": [
+        "Total volume of new Heterotopic Ossification (HO) lesions",
+        "Number of new HO lesions",
+        "Occurrence of new HO lesions",
+        "Number of clinician-assessed flare-ups",
+        "Occurrence of clinician-assessed flare-ups",
+        "Change from baseline in total volume of HO lesions",
+        "Change from baseline in Tanner puberty scale",
+        "Characteristics of menstrual cycles for female participants who reached menarche",
+        "Height-for-age Z-Scores according to the World Health Organization (WHO) Growth Reference Data for Children",
+        "Change from baseline in knee height",
+        "Concentrations of total activin A in serum",
+        "Occurence of Anti-Drug Antibody (ADA) to garetosmab",
+        "Magnitude of ADA to garetosmab",
+        "Change from baseline in hearing function as assessed by audiometry",
+        "Change from baseline in Pediatric Quality of Life inventory (PedsQL) scores",
+        "Acceptability or tolerability assessment via exit interview"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07559513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07559513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07559513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07559513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07559513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "r2477-fop-2081",
+      "nctId": "NCT07301450",
+      "protocolNumber": "R2477-FOP-2081",
+      "title": "An Expanded Access Program of Garetosmab in Patients With Fibrodysplasia Ossificans Progressiva",
+      "briefTitle": "An Expanded Access Program of Garetosmab in Adult Patients With Fibrodysplasia Ossificans Progressiva (FOP)",
+      "phase": "NA",
+      "roles": [],
+      "status": "APPROVED_FOR_MARKETING",
+      "sponsor": "Regeneron Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07301450",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07301450",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07301450",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07301450",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07301450",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-08-19",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761508%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761508",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761508%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761508Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761508Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:59:50.311Z"
+}

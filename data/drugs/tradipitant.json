@@ -1,0 +1,1988 @@
+{
+  "slug": "tradipitant",
+  "brandName": "Nereus",
+  "inn": "tradipitant",
+  "modality": "Drug (NDA)",
+  "sponsor": "VANDA PHARMS INC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Vomiting induced by motion in adults",
+      "slug": "vomiting-induced-by-motion-in-adults",
+      "approvalDate": {
+        "value": "2025-12-30",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-30",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Nereus (tradipitant) capsules for prevention of vomiting induced by motion in adults.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Nereus (tradipitant) capsules for prevention of vomiting induced by motion in adults.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220152",
+      "applicationType": "NDA",
+      "sponsor": "VANDA PHARMS INC",
+      "originalApprovalDate": {
+        "value": "2025-12-30",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "vp-vly-686-1101",
+      "nctId": "NCT01919944",
+      "protocolNumber": "VP-VLY-686-1101",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled, Four-Way Crossover Study on Itch Control by VLY-686 Administration in Healthy Volunteers After Intradermal Injections of Substance P",
+      "briefTitle": "Study of Itch Control by VLY-686 in Healthy Volunteers After Intradermal Injections of Substance P",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2013-08-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2013-11-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2013-11-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 12,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "PREVENTION"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "VLY-686 20 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Single dose, 20 mg VLY-686, administered as two 10 mg VLY-686 oral capsules"
+        },
+        {
+          "label": "VLY-686 50 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Single dose, 50 mg VLY-686, administered as one 50 mg VLY-686 oral capsule and one placebo capsule mimicking the VLY-686 50 mg capsule"
+        },
+        {
+          "label": "VLY-686 100 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Single dose, 100 mg VLY-686, administered as two 50 mg VLY-686 oral capsules"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Single dose, placebo, administered as either two 10 mg oral capsules or two 50 mg oral capsules"
+        }
+      ],
+      "primaryEndpoints": [
+        "Itch severity score on the Verbal Rating Scale",
+        "Itch severity score on the Visual Analog Scale"
+      ],
+      "secondaryEndpoints": [
+        "Dose response of VLY-686 and reduction of itch severity",
+        "Number of adverse events in subjects taking VLY-686",
+        "Size of injection site erythema",
+        "Number of adverse events in subjects taking placebo",
+        "Size of injection site and urticaria"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01919944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01919944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01919944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01919944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01919944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-2101",
+      "nctId": "NCT02004041",
+      "protocolNumber": "VP-VLY-686-2101",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled, Proof of Concept, Antipruritic Study of the Neurokinin-1 Receptor Antagonist VLY-686 in Subjects With Treatment-Resistant Pruritus Associated With Atopic Dermatitis",
+      "briefTitle": "Proof of Concept of VLY-686 in Subjects With Treatment-Resistant Pruritus Associated With Atopic Dermatitis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2013-12-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-02-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2015-02-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 69,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "VLY-686",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline to Endpoint (Day 28 or Early Termination) in Visual Analogue Scale (VAS) Pruritus 24 Hour Average Intensity."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02004041",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02004041",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02004041",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02004041",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02004041",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-1102",
+      "nctId": "NCT02621385",
+      "protocolNumber": "VP-VLY-686-1102",
+      "title": "An Open-label, Single-sequence Study to Assess the Effect of Multiple Doses of Tradipitant on Cytochrome P450 3A4 Using Midazolam as a Substrate in Healthy Subjects.",
+      "briefTitle": "Study to Assess the Effect of Multiple Doses of Tradipitant on CYP3A4 Using Midazolam as a Substrate in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-11-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-02-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant",
+          "type": "EXPERIMENTAL",
+          "description": "One dose of midazolam followed by tradipitant dosing for days 3-16. Midazolam is also given on day 16"
+        }
+      ],
+      "primaryEndpoints": [
+        "Midazolam Area Under the Curve (AUC)",
+        "Midazolam time to maximal plasma concentration (Tmax)",
+        "Midazolam maximal plasma concentration (Cmax)"
+      ],
+      "secondaryEndpoints": [
+        "α-hydroxymidazolam area under the curve(AUC)",
+        "α-hydroxymidazolam time to maximal plasma concentration (Tmax)",
+        "α-hydroxymidazolam maximal plasma concentration (Cmax)",
+        "Tradipitant and tradipitant metabolites area under the curve (AUC)",
+        "Tradipitant and tradipitant metabolites time to maximal plasma concentration (Tmax)",
+        "Tradipitant and tradipitant metabolites maximal plasma concentration (Cmax)",
+        "Safety of multiple oral doses of tradipitant alone and in combination with midazolam by spontaneous reporting of AEs measured by events related to treatment.",
+        "Safety of multiple oral doses of tradipitant alone and in combination with midazolam by number of participants with abnormal laboratory values",
+        "Safety of multiple oral doses of tradipitant alone and in combination with midazolam by number of participants with abnormal ECG values",
+        "Safety of multiple oral doses of tradipitant alone and in combination with midazolam by number of participants with abnormal vital signs",
+        "• The Columbia Suicide Severity Rating Scale will be used to assess suicidal behavior and ideation"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02621385",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02621385",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02621385",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02621385",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02621385",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-2102",
+      "nctId": "NCT02651714",
+      "protocolNumber": "VP-VLY-686-2102",
+      "title": "A Multicenter, Randomized, Double-blind, Placebo-controlled Study to Assess the Safety and Efficacy of Tradipitant in Treatment-resistant Pruritus Associated With Atopic Dermatitis",
+      "briefTitle": "Tradipitant in Treatment-resistant Pruritus Associated With Atopic Dermatitis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-01-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-08-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-08-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 168,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant",
+          "type": "EXPERIMENTAL",
+          "description": "Oral"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Oral"
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean Change From Baseline in Pruritus Symptoms, as Measured by the 24-hour Average Pruritus Visual Analogue Scale (VAS) Score"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02651714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02651714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02651714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02651714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02651714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-2301",
+      "nctId": "NCT02970968",
+      "protocolNumber": "VP-VLY-686-2301",
+      "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled Proof of Concept Study to Assess the Efficacy of VLY-686 (Tradipitant) in Relieving Symptoms of Gastroparesis",
+      "briefTitle": "Study to Assess the Efficacy of VLY-686 in Relieving Symptoms of Gastroparesis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-11-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-11-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2018-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 152,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Study Drug",
+          "type": "EXPERIMENTAL",
+          "description": "VLY-686 (Tradipitant) oral capsule for 4 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo oral capsule for 4 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Average Nausea Severity"
+      ],
+      "secondaryEndpoints": [
+        "Weekly % Nausea-Free Days",
+        "Daily Average Vomiting Frequency, Change From Baseline",
+        "Gastroparesis Cardinal Symptom Index (GCSI), Change From Baseline",
+        "PAGI-SYM, Change From Baseline",
+        "CGI-S, Change From Baseline",
+        "PGI-C"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02970968",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02970968",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02970968",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02970968",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02970968",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3101",
+      "nctId": "NCT03568331",
+      "protocolNumber": "VP-VLY-686-3101",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled Efficacy Study of The Neurokinin-1 Receptor Antagonist VLY-686 in Patients With Atopic Dermatitis",
+      "briefTitle": "Evaluating the Effects of Tradipitant vs. Placebo in Atopic Dermatitis (EPIONE)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-07-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-12-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 375,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Reduction of Worst Itch in Atopic Dermatitis"
+      ],
+      "secondaryEndpoints": [
+        "Improvement of Disease Severity in Atopic Dermatitis",
+        "Proportion of Patients With Improvement on Investigator Global Assessment for Atopic Dermatitis (vIGA-AD) of at Least 2-point Reduction"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03568331",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03568331",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03568331",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03568331",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03568331",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-2401",
+      "nctId": "NCT03772340",
+      "protocolNumber": "VP-VLY-686-2401",
+      "title": "Motion Sifnos: A Randomized, Double-blind, Placebo-controlled Study to Investigate the Efficacy of Tradipitant in Subjects Affected by Motion Sickness During Travel",
+      "briefTitle": "Motion Sifnos: A Study to Investigate the Efficacy of Tradipitant in Subjects Affected by Motion Sickness",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-12-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-06-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-06-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 126,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "The Most Severe Motion Sickness Severity During Vehicle Travel",
+        "Percentage of Vomiting"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03772340",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03772340",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03772340",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03772340",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03772340",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "NEREUS were obtained from a randomized, double-blind, placebo-controlled trial, Study 3 (NCT03772340). A dverse reactions reported in at least 5% of subjects treated with a single NEREUS 85",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3301",
+      "nctId": "NCT04028492",
+      "protocolNumber": "VP-VLY-686-3301",
+      "title": "VP-VLY-686-3301: A Multicenter, Randomized, Double-Blind, Placebo-Controlled Phase Iii Study To Assess The Efficacy Of Tradipitant In Relieving Symptoms Of Gastroparesis",
+      "briefTitle": "Evaluating the Safety and Efficacy of Tradipitant vs. Placebo in Idiopathic and Diabetic Gastroparesis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-08-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-02-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-02-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 979,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Capsule"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Oral Capsule"
+        },
+        {
+          "label": "Open Label Tradipitant",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Capsule"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline to Week 12 in the Biweekly Average of Daily Nausea Severity Score Using MMRM Model ITT Population"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Gastroparesis Cardinal Symptom Index (GCSI) Total Score Using MMRM Model ITT Population",
+        "Change From Baseline to Week 12 in the Biweekly Percentage of Nausea Free Days Using MMRM Model ITT Population",
+        "Change From Baseline in Overall Patient Benefit Scale (OPBS) ITT Population"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04028492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04028492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04028492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04028492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04028492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3102",
+      "nctId": "NCT04140695",
+      "protocolNumber": "VP-VLY-686-3102",
+      "title": "A Randomized, Double-blind, Placebo-controlled, Efficacy Study of the Neurokinin-1 Receptor Antagonist VLY-686 in Patients With Atopic Dermatitis",
+      "briefTitle": "Evaluating the Effects of Tradipitant vs. Placebo in Atopic Dermatitis (EPIONE2)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-10-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-10-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-10-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 87,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Capsule"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Oral Capsule"
+        }
+      ],
+      "primaryEndpoints": [
+        "Worst Itch Numeric Rating Scale (WI-NRS) Responder Rate at Week 2"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04140695",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04140695",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04140695",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04140695",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04140695",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vly-686-3501",
+      "nctId": "NCT04326426",
+      "protocolNumber": "VLY-686-3501",
+      "title": "ODYSSEY: A Randomized, Double-blind, Placebo-controlled Study to Investigate the Efficacy of Tradipitant in Treating Inflammatory Lung Injury and Improving Clinical Outcomes Associated With Severe or Critical COVID-19 Infection",
+      "briefTitle": "ODYSSEY: A Study to Investigate the Efficacy of Tradipitant in Treating Severe or Critical COVID-19 Infection",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ENROLLING_BY_INVITATION",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-04-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-08-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-08-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 300,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "90 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant",
+          "type": "EXPERIMENTAL",
+          "description": "Tradipitant 85 mg PO BID"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "2 capsules of matching placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Time to improvement on a 7-point ordinal scale as compared to baseline"
+      ],
+      "secondaryEndpoints": [
+        "Treatment and prevention of inflammatory lung injury as measured by change in baseline of interleukin-6 (IL-6)",
+        "Rate of Decline of COVID-19 viral load assessed by RT-PCR from nasopharyngeal samples",
+        "In-hospital mortality",
+        "Mean change in NEWS2 score from baseline",
+        "Understand the effect of genetics for treatment response through whole genome sequence of the participant and the COVID-19 virus",
+        "Reduction from baseline of NRS for cough",
+        "Reduction from baseline of NRS for nausea",
+        "Time to normalization of fever for at least 48 hours",
+        "Time to improvement in oxygenation for at least 48 hours"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04326426",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04326426",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04326426",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04326426",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04326426",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-1301",
+      "nctId": "NCT04849559",
+      "protocolNumber": "VP-VLY-686-1301",
+      "title": "VP-VLY-686-1301: A Single Center, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Effects of Tradipitant on Satiation, Gastric Volume, Gastric Accommodation and Gastric Emptying in Healthy Volunteers",
+      "briefTitle": "Effects of Tradipitant on Satiation, Gastric Volume, Gastric Accommodation, and Gastric Emptying in Healthy Volunteers",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-02-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-09-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-09-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 27,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Capsule"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Oral Capsule"
+        }
+      ],
+      "primaryEndpoints": [
+        "Fasting Gastric Volume as Measured by Single Photon Emission Computed Tomography (SPECT)",
+        "Accommodation Volume as Measured by SPECT",
+        "Satiation Expressed as Volume to Fullness as Measured by Satiation Test",
+        "Gastric Emptying Half-time of Solids as Measured by Scintigraphy"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849559",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849559",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849559",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849559",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849559",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3401",
+      "nctId": "NCT04327661",
+      "protocolNumber": "VP-VLY-686-3401",
+      "title": "Motion Syros: A Randomized, Double-blind, Placebo-controlled Study to Investigate the Efficacy of Tradipitant in Subjects Affected by Motion Sickness During Travel",
+      "briefTitle": "Motion Syros: A Study to Investigate the Efficacy of Tradipitant in Subjects Affected by Motion Sickness",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Vomiting induced by motion in adults",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220152Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Vomiting induced by motion in adults)",
+            "quote": "Trial identifier appears within the Vomiting induced by motion in adults section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Nereus (tradipitant) capsules for prevention of vomiting induced by motion in adults.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-11-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-04-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-04-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 366,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant High Dose",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Tradipitant Low Dose",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Prevention of Vomiting Measured by Vomiting Assessment (VA)"
+      ],
+      "secondaryEndpoints": [],
+      "postedResults": [
+        {
+          "title": "Prevention of Vomiting Measured by Vomiting Assessment (VA)",
+          "timeFrame": "1 day",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Tradipitant High Dose"
+            },
+            {
+              "id": "OG001",
+              "title": "Tradipitant Low Dose"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "22"
+            },
+            {
+              "groupId": "OG001",
+              "value": "24"
+            },
+            {
+              "groupId": "OG002",
+              "value": "54"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04327661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04327661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04327661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04327661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04327661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04327661?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 9,
+          "quote": "otion was evaluated in two randomized, double-blind, placebo-controlled studies: Study 1 (NCT04327661) and Study 2 (NCT05903924). In both studies, subjects were randomized 1:1:1 to receive a",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3403",
+      "nctId": "NCT06138613",
+      "protocolNumber": "VP-VLY-686-3403",
+      "title": "Motion Delos: An Open Label Study to Investigate the Safety and Efficacy of Tradipitant in Participants Affected by Motion Sickness During Travel",
+      "briefTitle": "Motion Delos: An Open Label Safety and Efficacy of Tradipitant in Participants Affected by Motion Sickness",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-02-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-09-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 705,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant Dose A",
+          "type": "EXPERIMENTAL",
+          "description": "\"See Drug\""
+        },
+        {
+          "label": "Tradipitant Dose B",
+          "type": "EXPERIMENTAL",
+          "description": "\"See Drug\""
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety and tolerability of tradipitant as measured by reporting of adverse events (AEs)."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06138613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06138613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06138613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06138613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06138613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3404",
+      "nctId": "NCT05903924",
+      "protocolNumber": "VP-VLY-686-3404",
+      "title": "Motion Serifos: A Randomized, Double-blind, Placebo-controlled Study to Investigate the Efficacy of Tradipitant in Participants Affected by Motion Sickness During Travel",
+      "briefTitle": "Motion Serifos: A Study to Investigate the Efficacy of Tradipitant in Participants Affected by Motion Sickness",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Vomiting induced by motion in adults",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220152Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Vomiting induced by motion in adults)",
+            "quote": "Trial identifier appears within the Vomiting induced by motion in adults section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Nereus (tradipitant) capsules for prevention of vomiting induced by motion in adults.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-09-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-04-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-04-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 316,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tradipitant High Dose",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        },
+        {
+          "label": "Tradipitant Low Dose",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Prevention of Vomiting Measured by Vomiting Assessment (VA)"
+      ],
+      "secondaryEndpoints": [],
+      "postedResults": [
+        {
+          "title": "Prevention of Vomiting Measured by Vomiting Assessment (VA)",
+          "timeFrame": "1 day",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Tradipitant High Dose"
+            },
+            {
+              "id": "OG001",
+              "title": "Tradipitant Low Dose"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "11"
+            },
+            {
+              "groupId": "OG001",
+              "value": "19"
+            },
+            {
+              "groupId": "OG002",
+              "value": "40"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05903924",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05903924",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05903924",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05903924",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05903924",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05903924?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 9,
+          "quote": "randomized, double-blind, placebo-controlled studies: Study 1 (NCT04327661) and Study 2 (NCT05903924). In both studies, subjects were randomized 1:1:1 to receive a single dose of NEREUS 85 m",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3304",
+      "nctId": "NCT06836557",
+      "protocolNumber": "VP-VLY-686-3304",
+      "title": "A Multicenter, Open Label, 3-Month Safety Study With Tradipitant in Patients With Idiopathic or Diabetic Gastroparesis",
+      "briefTitle": "Open Label Safety Study of Tradipitant in Idiopathic and Diabetic Gastroparesis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-03-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-03-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 17,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Open Label Tradipitant",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Capsule"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with adverse events (AEs), including suicidal ideation or behavior as measured by the C-SSRS",
+        "Number of participants with changes in vital signs identified as Clinically Notable Abnormal values",
+        "Number of participants with abnormal and potentially Clinically Notable Abnormal Electrocardiogram Intervals and Heart Rate",
+        "Number of participants with Clinically Notable Abnormal laboratory values"
+      ],
+      "secondaryEndpoints": [
+        "To evaluate the efficacy of tradipitant in reducing individual symptoms associated with gastroparesis",
+        "To evaluate the efficacy of tradipitant in global improvement"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06836557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06836557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06836557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06836557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06836557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-2601",
+      "nctId": "NCT06804603",
+      "protocolNumber": "VP-VLY-686-2601",
+      "title": "A Proof of Concept, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Effects of Tradipitant on Nausea and Vomiting After GLP-1R Agonist Administration in Healthy Overweight Class I or Class II Obese Volunteers",
+      "briefTitle": "A Study to Measure the Effects of Using Tradipitant on Nausea and Vomiting After GLP-1R Agonist Use",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-02-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-10-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-10-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 124,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo Group",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Treatment with placebo BID for approximately 2 weeks"
+        },
+        {
+          "label": "Tradipitant Group",
+          "type": "EXPERIMENTAL",
+          "description": "Treatment with tradipitant BID for approximately 2 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of participants with at least 1 vomiting episode per week in the tradipitant group compared to the placebo group as measured by a daily symptom diary."
+      ],
+      "secondaryEndpoints": [
+        "Individual gastrointestinal symptoms",
+        "Safety and tolerability of tradipitant after administration of semaglutide as measured by spontaneous reporting of adverse events (AEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06804603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06804603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06804603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06804603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06804603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3601",
+      "nctId": "NCT07446439",
+      "protocolNumber": "VP-VLY-686-3601",
+      "title": "The Thetis Study: A Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy of Tradipitant on Nausea and Vomiting After GLP-1R Agonist Administration in Healthy Overweight or Obese Volunteers",
+      "briefTitle": "A Study to Evaluate Tradipitant on Treating Nausea and Vomiting Induced by GLP-1R Agonist Use",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-03-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-12-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-12-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 280,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo Group",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Treatment with placebo BID for approximately 2 weeks"
+        },
+        {
+          "label": "Tradipitant Group",
+          "type": "EXPERIMENTAL",
+          "description": "Treatment with tradipitant BID for approximately 2 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of participants with at least 1 vomiting episode per week in the tradipitant group compared to the placebo group as measured by a daily symptom diary."
+      ],
+      "secondaryEndpoints": [
+        "Proportion of participants with worst nausea severity score ≥ 3 and at least one vomiting episode over 1 week.",
+        "To evaluate the effect of tradipitant relative to placebo on the worst of 7 daily nausea severity scores over 1 week."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07446439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07446439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07446439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07446439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07446439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vly-686-3303",
+      "nctId": "NCT04474990",
+      "protocolNumber": "VP-VLY-686-3303",
+      "title": "VP-VLY-686-3303: Single-Patient Expanded Access Protocol for Tradipitant In A Single Patient With Gastroparesis",
+      "briefTitle": "Single-Patient Expanded Access Protocol for Tradipitant In A Single Patient With Gastroparesis",
+      "phase": "NA",
+      "roles": [],
+      "status": "AVAILABLE",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04474990",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04474990",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04474990",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04474990",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04474990",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2025-12-30",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220152%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220152",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220152%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220152Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:03:16.792Z"
+}

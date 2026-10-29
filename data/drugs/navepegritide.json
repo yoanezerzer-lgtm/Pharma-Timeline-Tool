@@ -1,0 +1,820 @@
+{
+  "slug": "navepegritide",
+  "brandName": "Yuviwel",
+  "inn": "navepegritide",
+  "modality": "Drug (NDA)",
+  "sponsor": "ASCENDIS",
+  "summary": "",
+  "indications": [
+    {
+      "name": "To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses",
+      "slug": "to-increase-linear-growth-in-pediatric-patients-2-years-of",
+      "approvalDate": {
+        "value": "2026-02-27",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-02-27",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Yuviwel (navepegritide) for injection to increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Yuviwel (navepegritide) for injection to increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "219164",
+      "applicationType": "NDA",
+      "sponsor": "ASCENDIS",
+      "originalApprovalDate": {
+        "value": "2026-02-27",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "tcc-201",
+      "nctId": "NCT04085523",
+      "protocolNumber": "TCC-201",
+      "title": "ACcomplisH: A Phase 2, Multicenter, Double-blind, Randomized, Placebo-controlled, Dose Escalation Trial Evaluating Safety, Efficacy, and Pharmacokinetics of Subcutaneous Doses of TransCon CNP Administered Once Weekly for 52 Weeks in Prepubertal Children With Achondroplasia Followed by an Open-Label Extension Period",
+      "briefTitle": "A Dose Escalation Trial Evaluating Safety, Efficacy, and Pharmacokinetics of TransCon CNP Administered Once Weekly in Prepubertal Children With Achondroplasia",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "indication": "To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses)",
+            "quote": "Trial identifier appears within the To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Yuviwel (navepegritide) for injection to increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Ascendis Pharma A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-06-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-09-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-10-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 57,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "10 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "TransCon CNP 6 mcg",
+          "type": "EXPERIMENTAL",
+          "description": "TransCon CNP 6 mcg CNP/kg delivered once weekly by subcutaneous injection."
+        },
+        {
+          "label": "TransCon CNP 20 mcg",
+          "type": "EXPERIMENTAL",
+          "description": "TransCon CNP 20 mcg CNP/kg delivered once weekly by subcutaneous injection."
+        },
+        {
+          "label": "TransCon CNP 50 mcg",
+          "type": "EXPERIMENTAL",
+          "description": "TransCon CNP 50 mcg CNP/kg delivered once weekly by subcutaneous injection."
+        },
+        {
+          "label": "TransCon CNP 100 mcg",
+          "type": "EXPERIMENTAL",
+          "description": "TransCon CNP 100 mcg CNP/kg delivered once weekly by subcutaneous injection."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo mimicking 6, 20, 50, or 100 mcg CNP/kg delivered once weekly by subcutaneous injection."
+        },
+        {
+          "label": "Open-Label Extension Period: TransCon CNP",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who completed the 52-week blinded treatment period continued into the 104-week open-label extension period and received treatment with TransCon CNP (navepegritide) doses escalated up to a maximum of 100 mcg/kg delivered once weekly by subcutaneous injection."
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Height Velocity (cm/Year) After 52 Weeks of Double-blind Treatment"
+      ],
+      "secondaryEndpoints": [],
+      "postedResults": [
+        {
+          "title": "Annualized Height Velocity (cm/Year) After 52 Weeks of Double-blind Treatment",
+          "timeFrame": "52 weeks",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "cm/year",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "TransCon CNP 6 mcg"
+            },
+            {
+              "id": "OG001",
+              "title": "TransCon CNP 20 mcg"
+            },
+            {
+              "id": "OG002",
+              "title": "TransCon CNP 50 mcg"
+            },
+            {
+              "id": "OG003",
+              "title": "TransCon CNP 100 mcg"
+            },
+            {
+              "id": "OG004",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "4.09",
+              "lowerLimit": "3.34",
+              "upperLimit": "4.84"
+            },
+            {
+              "groupId": "OG001",
+              "value": "4.52",
+              "lowerLimit": "3.82",
+              "upperLimit": "5.22"
+            },
+            {
+              "groupId": "OG002",
+              "value": "5.16",
+              "lowerLimit": "4.43",
+              "upperLimit": "5.90"
+            },
+            {
+              "groupId": "OG003",
+              "value": "5.42",
+              "lowerLimit": "4.74",
+              "upperLimit": "6.11"
+            },
+            {
+              "groupId": "OG004",
+              "value": "4.35",
+              "lowerLimit": "3.75",
+              "upperLimit": "4.94"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG004"
+              ],
+              "pValue": "= 0.6004",
+              "method": "ANCOVA"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG004"
+              ],
+              "pValue": "= 0.7022",
+              "method": "ANCOVA"
+            },
+            {
+              "groupIds": [
+                "OG002",
+                "OG004"
+              ],
+              "pValue": "= 0.0849",
+              "method": "ANCOVA"
+            },
+            {
+              "groupIds": [
+                "OG003",
+                "OG004"
+              ],
+              "pValue": "= 0.0218",
+              "method": "ANCOVA"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04085523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04085523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04085523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04085523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04085523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04085523?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 10,
+          "quote": "2-week randomized, double-blind, placebo-controlled Phase 2 dose-finding trial (Trial 2 ; NCT04085523) entered the single-arm OLE and continued treatment with navepegritide. AGV was maintaine",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "approach",
+      "nctId": "NCT05598320",
+      "protocolNumber": "ASND0036",
+      "acronym": "ApproaCH",
+      "title": "A Phase 2b, Multicenter, Double-Blind, Randomized, Placebo-controlled Trial Evaluating Efficacy and Safety of Subcutaneous Doses of TransCon CNP Administered Once Weekly for 52 Weeks in Children With Achondroplasia Followed by an Open Label Extension Period",
+      "briefTitle": "A Clinical Trial to Evaluate Efficacy and Safety of TransCon CNP Compared With Placebo in Children With Achondroplasia",
+      "phase": "PHASE2_3",
+      "roles": [
+        {
+          "indication": "To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses)",
+            "quote": "Trial identifier appears within the To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Yuviwel (navepegritide) for injection to increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Ascendis Pharma Growth Disorders A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-03-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-08-09",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-08-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 84,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "11 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Navepegritide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received Navepegritide (TransCon CNP) 100 micrograms per kilogram (µg/kg) delivered once weekly by subcutaneous injection for a treatment period of up to 52 weeks."
+        },
+        {
+          "label": "Placebo for Navepegritide",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo matched for Navepegritide (TransCon CNP) 100 µg/kg delivered once weekly by subcutaneous injection for a treatment period of up to 52 weeks."
+        },
+        {
+          "label": "Open-Label Extension Period: Navepegritide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who completed the 52-week treatment period continued into the open-label extension period and received treatment with navepegritide (TransCon CNP) doses up to Week 104. All participants received navepegritide at a dose of 100 μg/kg/week."
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Growth Velocity (AGV) at Week 52"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Height Z-score (ACH-specific) at Week 52",
+        "Change From Baseline in Height Z-score (CDC-Based) at Week 52"
+      ],
+      "postedResults": [
+        {
+          "title": "Annualized Growth Velocity (AGV) at Week 52",
+          "timeFrame": "At Week 52",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "centimeters per year",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Navepegritide"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo for Navepegritide"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "5.89",
+              "lowerLimit": "5.66",
+              "upperLimit": "6.13"
+            },
+            {
+              "groupId": "OG001",
+              "value": "4.41",
+              "lowerLimit": "4.04",
+              "upperLimit": "4.77"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "ANCOVA",
+              "paramType": "Least Square Mean Difference",
+              "paramValue": "1.49",
+              "ciPct": "95",
+              "ciLower": "1.05",
+              "ciUpper": "1.93"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05598320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05598320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05598320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05598320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05598320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05598320?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 9,
+          "quote": "placebo-controlled 52-week period, followed by a single-arm 52-week OLE period (Trial 1; NCT05598320). Trial 1 enrolled 84 treatment-naïve pediatric patients with genetically confirmed achon",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "asnd0030",
+      "nctId": "NCT06079398",
+      "protocolNumber": "ASND0030",
+      "title": "A Phase 2, Multicenter, Double-Blind, Randomized, Placebo-controlled Trial, Evaluating Safety, Tolerability, and Efficacy of Subcutaneous Doses of TransCon CNP Administered Once Weekly for 52 Weeks in Infants (0 to <2 Years of Age) With Achondroplasia Followed by an Open Label Extension (OLE) Period",
+      "briefTitle": "A Clinical Trial to Evaluate Efficacy and Safety of TransCon CNP Compared With Placebo in Infants (0 to <2 Years of Age) With Achondroplasia",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Ascendis Pharma A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 72,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "0 Years",
+        "maxAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Navepegritide",
+          "type": "EXPERIMENTAL",
+          "description": "Once weekly double-blinded treatment with SC injection of 100 µg/kg of Navepegritide for 52 weeks"
+        },
+        {
+          "label": "Placebo for Navepegritide",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Once weekly double-blinded treatment with SC injection of 100 µg/kg of Placebo for Navepegritide for 52 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "To evaluate the safety and tolerability of Navepegritide",
+        "To evaluate the effect of Navepegritide on growth"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06079398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06079398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06079398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06079398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06079398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "coach",
+      "nctId": "NCT06433557",
+      "protocolNumber": "ASND0042",
+      "acronym": "COACH",
+      "title": "A Phase 2, Open-Label, Single-Arm, 156-week Trial to Investigate the Efficacy, Safety and Tolerability of Combined Once Weekly Navepegritide and Lonapegsomatropin in Children With Achondroplasia",
+      "briefTitle": "A Phase 2 Clinical Trial to Evaluate Efficacy, Safety, and Tolerability of Navepegritide in Combination With Lonapegsomatropin in Children With Achondroplasia",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Ascendis Pharma Growth Disorders A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-07-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-11-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-11-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 22,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "11 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Combination of Navepegritide and Lonapegsomatropin",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized growth velocity",
+        "Treatment-emergent adverse events (TEAEs)."
+      ],
+      "secondaryEndpoints": [
+        "Annualized growth velocity"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "teach",
+      "nctId": "NCT06732895",
+      "protocolNumber": "ASND0045",
+      "acronym": "teACH",
+      "title": "A Phase 2b, Multicenter, Double-Blind, Randomized, Placebo-controlled Trial Evaluating Efficacy and Safety of Subcutaneous Doses of Navepegritide Administered Once Weekly for 52 Weeks in Adolescents (12-18 Years of Age) With Achondroplasia.",
+      "briefTitle": "A Clinical Trial to Evaluate Efficacy and Safety of Navepegritide in Adolescents (12 - 18 Years of Age) With Achondroplasia.",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Ascendis Pharma A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-12-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-10-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 25,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Navepegritide",
+          "type": "EXPERIMENTAL",
+          "description": "Once weekly double-blinded treatment with SC injection of 100 µg/kg of navepegritide for 52 weeks"
+        },
+        {
+          "label": "Placebo for Navepegritide",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Once weekly double-blinded treatment with SC injection of 100 µg/kg of placebo for navepegritide for 52 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Growth Velocity"
+      ],
+      "secondaryEndpoints": [
+        "Height Z-score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06732895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06732895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06732895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06732895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06732895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-02-27",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219164%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 219164",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219164%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:45.202Z"
+}

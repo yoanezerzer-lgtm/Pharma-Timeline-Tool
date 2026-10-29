@@ -1,0 +1,1140 @@
+{
+  "slug": "aficamten",
+  "brandName": "Myqorzo",
+  "inn": "aficamten",
+  "modality": "Drug (NDA)",
+  "sponsor": "CYTOKINETICS",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms",
+      "slug": "adults-with-symptomatic-obstructive-hypertrophic",
+      "approvalDate": {
+        "value": "2025-12-19",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-19",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Myqorzo (aficamten) for the treatment of adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Myqorzo (aficamten) for the treatment of adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "219083",
+      "applicationType": "NDA",
+      "sponsor": "CYTOKINETICS",
+      "originalApprovalDate": {
+        "value": "2025-12-19",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "cy-6011",
+      "nctId": "NCT03767855",
+      "protocolNumber": "CY 6011",
+      "title": "A Phase 1, Double-Blind, Randomized, Placebo-Controlled, Multi-Part, Single and Multiple Ascending Dose Study of CK-3773274 in Healthy Adult Subjects",
+      "briefTitle": "A Single and Multiple Ascending Dose Study of CK-3773274 in Healthy Adult Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Cytokinetics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-12-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-01-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-01-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 114,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "CK-3773274 for SAD Cohorts",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will be assigned to one of 8 planned dose cohorts and receive single doses of CK-3773274"
+        },
+        {
+          "label": "Placebo for SAD Cohorts",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subjects will be assigned to one of 8 planned dose cohorts and receive single doses of placebo"
+        },
+        {
+          "label": "CK-3773274 for MAD Cohorts",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will be assigned to one of 3 planned dose cohorts and receive multiple doses of CK-3773274"
+        },
+        {
+          "label": "Placebo for MAD Cohorts",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subjects will be assigned to one of 3 planned dose cohorts and receive multiple doses of placebo"
+        },
+        {
+          "label": "CK-3773274 for CYP2D6 Cohort",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects with CYP2D6 poor metabolizer phenotype will be assigned to receive a single dose of CK-3773274"
+        },
+        {
+          "label": "Placebo for CYP2D6 Cohort",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subjects with CYP2D6 poor metabolizer phenotype will be assigned to receive a single dose of placebo"
+        },
+        {
+          "label": "Food Effect",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will be administered CK-3773274 with and without food in a randomized cross-over fashion"
+        },
+        {
+          "label": "Relative Bioavailability",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will be administered CK-3773274 as granules in a capsule and as a tablet in a randomized cross-over fashion."
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of Adverse events and Safety Signals observed during single and multiple ascending doses of CK-3773274 administered orally to healthy adult subjects."
+      ],
+      "secondaryEndpoints": [
+        "Cmax of CK-3773274 after single and multiple ascending doses",
+        "Change in absolute reduction in ejection fraction relative to baseline with doses of CK-3773274",
+        "Assess the effect of CYP2D6 genetic variants on the PK of CK-3773274",
+        "Assess the effect of a meal on how much CK-3773274 is in the blood in healthy subjects",
+        "Relative bioavailability of CK-3773274 formulated as granules in capsule versus a tablet in healthy adult subjects"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03767855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03767855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03767855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03767855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03767855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "redwood-hcm",
+      "nctId": "NCT04219826",
+      "protocolNumber": "CY 6021",
+      "acronym": "REDWOOD-HCM",
+      "title": "A Multi-Center, Randomized, Double-blind, Placebo-controlled, Dose-finding Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of CK-3773274 in Adults With Symptomatic Hypertrophic Cardiomyopathy",
+      "briefTitle": "Dose-finding Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of CK-3773274 in Adults With Hypertrophic Cardiomyopathy",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Cytokinetics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-01-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-02-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-02-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 96,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "85 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1 (oHCM) - Aficamten",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received CK-3773274 doses of 5 - 15 mg once daily with dose levels guided by echocardiography assessments for up to 10 weeks"
+        },
+        {
+          "label": "Cohort 1 (oHCM) - Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo once daily for up to 10 weeks"
+        },
+        {
+          "label": "Cohort 2 (oHCM) - Aficamten",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received CK-3773274 doses 10 - 30 mg once daily with dose levels guided by echocardiography assessments for up to 10 weeks"
+        },
+        {
+          "label": "Cohort 2 (oHCM) - Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo once daily for up to 10 weeks"
+        },
+        {
+          "label": "Cohort 3 (oHCM) - Aficamten & Background Disopyramide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received CK-3773274 doses 5 - 15 mg once daily with dose levels guided by echocardiography assessments for up to 10 weeks while taking disopyramide"
+        },
+        {
+          "label": "Cohort 4 (nHCM) - Aficamten",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received CK-3773274 doses of 5 - 15 mg once daily with dose levels guided by echocardiography assessments for up to 10 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of Adverse Events (AEs)",
+        "Incidence of Left Ventricular Ejection Fraction (LVEF) < 50%",
+        "Incidence of Serious Adverse Events (SAEs)"
+      ],
+      "secondaryEndpoints": [
+        "Slope of the Relationship of the Plasma Concentration of CK-3773274 to the Change From Baseline in the Resting Left Ventricular Outflow Track Gradient (LVOT-G)",
+        "Slope of the Relationship of the Plasma Concentration of CK-3773274 to the Change From Baseline in the Post-Valsalva LVOT-G",
+        "Change From Baseline in Resting LVOT-G Over Time as a Function of Dose.",
+        "Change From Baseline in Post-Valsalva LVOT-G Over Time as a Function of Dose.",
+        "Slope of the Relationship of the Plasma Concentration of CK-3773274 to the Change From Baseline in the Resting LVEF"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04219826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04219826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04219826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04219826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04219826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "forest-hcm",
+      "nctId": "NCT04848506",
+      "protocolNumber": "CY 6022",
+      "acronym": "FOREST-HCM",
+      "title": "A Follow-Up, Open-Label, Research Evaluation of Sustained Treatment With Aficamten (CK-3773274) in Hypertrophic Cardiomyopathy (HCM)",
+      "briefTitle": "Open-label Extension Study to Evaluate the Long-term Safety and Tolerability of Aficamten in Adults With HCM",
+      "phase": "PHASE2_3",
+      "roles": [
+        {
+          "indication": "Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms)",
+            "quote": "Trial identifier appears within the Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Myqorzo (aficamten) for the treatment of adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ENROLLING_BY_INVITATION",
+      "sponsor": "Cytokinetics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-05-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-03-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2029-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 900,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "85 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Aficamten",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in this arm take aficamten starting at the lowest prespecified dose and titrating up to their individual maximum tolerated dose. During titration phase, clinic visits will occur approximately every 2-6 weeks. In the maintenance phase clinic visits will occur every 24 weeks, with safety check-in occurring every 12 weeks between visits by phone or, if desirable, in the clinic. After Week 48, the visits can be yearly if participants meet criteria."
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of adverse events observed during dosing of aficamten in patients with HCM",
+        "Incidence of serious adverse events observed during dosing of aficamten in patients with HCM",
+        "Incidence of left ventricular ejection fraction (LVEF) < 50% observed during dosing of aficamten in patients with HCM"
+      ],
+      "secondaryEndpoints": [
+        "Long-term effects of aficamten on left ventricular outflow tract gradient (LVOT G) in patients with obstructive Hypertrophic Cardiomyopathy (oHCM)",
+        "Long-term effects of aficamten on resting LVOT-G",
+        "Long-term effects of aficamten on post Valsalva LVOT-G",
+        "Long-term effects of aficamten on post Valsalva LVOT-G",
+        "Long-term effects of aficamten on left ventricular ejection fraction (LVEF) and post-Valsalva LVOT-G",
+        "Long-term effects of aficamten on time to first resting LVOT-G < 30 mmHg through last follow-up",
+        "Long-term effects of aficamten on time to first post-Valsalva LVOT-G < 50 mmHg through last follow-up",
+        "Long-term effects of aficamten on time to first post-Valsalva LVOT-G < 30 mmHg through last follow-up",
+        "Long-term effects of aficamten on time to first LVEF ≥ 50%, resting LVOT-G < 30 mmHg, and post-Valsalva LVOT-G < 50 mmHg through last follow-up",
+        "Change from baseline values in N-terminal pro-B-type natriuretic peptide (NT-proBNP)",
+        "Change from baseline values in high sensitivity cardiac troponin I (hs-cTnI)",
+        "Change from baseline in Kansas City Cardiomyopathy Questionnaire (KCCQ) score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848506",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848506",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848506",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848506",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848506",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 5,
+          "quote": "s were able to participate in an ongoing, open-label, single-arm, long-term safety study (FOREST-HCM). Based on available data, the safety profile of MYQORZO in FOREST - HCM was similar to t",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "sequoia-hcm",
+      "nctId": "NCT05186818",
+      "protocolNumber": "CY 6031",
+      "acronym": "SEQUOIA-HCM",
+      "title": "A Phase 3, Multi-Center, Randomized, Double-blind, Placebo-controlled Trial to Evaluate the Efficacy and Safety of CK-3773274 in Adults With Symptomatic Hypertrophic Cardiomyopathy and Left Ventricular Outflow Tract Obstruction",
+      "briefTitle": "Phase 3 Trial to Evaluate the Efficacy and Safety of Aficamten Compared to Placebo in Adults With Symptomatic oHCM",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms)",
+            "quote": "Trial identifier appears within the Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Myqorzo (aficamten) for the treatment of adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Cytokinetics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-02-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-11-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-12-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 282,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "85 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Aficamten up to 20 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received 5 mg, 10 mg, 15 mg, or 20 mg of aficamten; dose levels were guided by echocardiography assessments. Treatment was administered for up to 24 weeks."
+        },
+        {
+          "label": "Placebo to match aficamten",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo for up to 24 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in pVO2 at Week 24"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in KCCQ-CSS at Week 24",
+        "Change From Baseline in KCCQ-CSS at Week 12",
+        "Proportion of Participants With ≥1 Class Improvement in New York Heart Association (NYHA) Functional Class From Baseline to Week 24",
+        "Proportion of Participants With ≥1 Class Improvement in NYHA Functional Class From Baseline to Week 12",
+        "Change From Baseline in Valsalva Left Ventricular Outflow Tract Gradient (LVOT-G) at Week 24",
+        "Change From Baseline in Valsalva LVOT-G at Week 12",
+        "Proportion of Participants With Valsalva LVOT G <30 mmHg at Week 24",
+        "Proportion of Participants With Valsalva LVOT G <30 mmHg at Week 12",
+        "Duration of SRT Eligibility During the 24-week Treatment Period for Participants Who Were SRT Eligible at Baseline",
+        "Change From Baseline to Week 24 in Total Workload During CPET"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in pVO2 at Week 24",
+          "timeFrame": "Baseline to Week 24",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "mL/kg/min",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Aficamten up to 20 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo to Match Aficamten"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "1.76",
+              "spread": "0.25"
+            },
+            {
+              "groupId": "OG001",
+              "value": "0.02",
+              "spread": "0.25"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "ANCOVA",
+              "paramType": "Mean Difference (Final Values)",
+              "paramValue": "1.74",
+              "ciPct": "95",
+              "ciLower": "1.04",
+              "ciUpper": "2.44"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05186818",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05186818",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05186818",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05186818",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05186818",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05186818?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 5,
+          "quote": "nd may not reflect the rates observed in practice. The safety of MYQORZO was evaluated in SEQUOIA-HCM, a phase 3, randomized, double-blind, placebo-controlled study [see Clinical Studies (14)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cy-6019",
+      "nctId": "NCT05924815",
+      "protocolNumber": "CY 6019",
+      "title": "A Randomized, 2-Part, Single-Dose, Crossover Study to Evaluate the Effect of Aficamten Administration on QT/QTc Interval in Healthy Participants",
+      "briefTitle": "Study to Evaluate the Effect of Aficamten Administration on QT/QTc Interval",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Cytokinetics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-05-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-11-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-11-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 44,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part A (Dose Finding Cohort 1): Aficamten 50 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in this arm will receive a single oral dose of 50 mg aficamten."
+        },
+        {
+          "label": "Part A (Dose Finding Cohort 2): Aficamten 75 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in this arm will receive a single oral dose up to 75 mg aficamten."
+        },
+        {
+          "label": "Part A (Dose Finding Cohort 3): Aficamten 100 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in this arm will receive a single oral dose up to 100 mg aficamten."
+        },
+        {
+          "label": "Part B (TQT Study): Aficamten",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of aficamten. The dose will be determined based on review of Part A PK parameters, echocardiogram parameters, safety, and tolerability for aficamten."
+        },
+        {
+          "label": "Part B (TQT Study): Aficamten-matching Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants in this arm will receive a single oral dose of aficamten-matching placebo."
+        },
+        {
+          "label": "Part B (TQT Study): Moxifloxacin 400 mg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive a single oral dose of 400 mg moxifloxacin"
+        }
+      ],
+      "primaryEndpoints": [
+        "Part A: To determine the dose for Part B",
+        "Part B: placebo-corrected dQTcF for aficamten"
+      ],
+      "secondaryEndpoints": [
+        "Part B: placebo-corrected dQTcF for moxifloxacin"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05924815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05924815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05924815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05924815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05924815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "maple-hcm",
+      "nctId": "NCT05767346",
+      "protocolNumber": "CY 6032",
+      "acronym": "MAPLE-HCM",
+      "title": "A Phase 3, Multi-center, Randomized, Double-blind Trial to Evaluate the Efficacy and Safety of Aficamten Compared to Metoprolol in Adults With Symptomatic Obstructive Hypertrophic Cardiomyopathy",
+      "briefTitle": "Phase 3 Trial to Evaluate the Efficacy and Safety of Aficamten Compared to Metoprolol Succinate in Adults With Symptomatic oHCM",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Cytokinetics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-06-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-02-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-03-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 175,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "85 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Aficamten up to 20 mg plus placebo for metoprolol",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will receive doses of 5 mg, 10 mg, 15 mg or 20 mg of aficamten (CK-3773274) plus placebo for metoprolol succinate with dose levels guided by echocardiography assessments for up to 24 weeks."
+        },
+        {
+          "label": "Metoprolol succinate up to 200 mg plus placebo for aficamten",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Patients will receive 50 mg, 100 mg, 150 mg or 200 mg of metoprolol succinate plus placebo for aficamten (CK-3773274) with dose levels guided by echocardiography and heart rate assessments for up to 24 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Peak Oxygen Uptake (pVO2) by Cardiopulmonary Exercise Testing (CPET)"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of Patients With ≥1 Class Improvement in New York Heart Association (NYHA) Functional Class",
+        "Change in Kansas City Cardiomyopathy Questionnaire - Clinical Summary Score (KCCQ-CSS)",
+        "Change in Left Ventricular Mass Index (LVMI)",
+        "Change in Left Atrial Volume Index (LAVI)",
+        "Change From Baseline Values in N-terminal Pro-B-type Natriuretic Peptide (NT-proBNP)",
+        "Change in Post-Valsalva Left Ventricular Outflow Tract Gradient (LVOT-G)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05767346",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05767346",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05767346",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05767346",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05767346",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "acacia-hcm",
+      "nctId": "NCT06081894",
+      "protocolNumber": "CY 6033",
+      "acronym": "ACACIA-HCM",
+      "title": "A Phase 3, Multi-Center, Randomized, Double-Blind Trial to Evaluate the Efficacy and Safety of Aficamten Compared to Placebo in Adults With Symptomatic Non-Obstructive Hypertrophic Cardiomyopathy",
+      "briefTitle": "A Trial to Evaluate the Efficacy and Safety of Aficamten Compared to Placebo in Adults With Symptomatic Non-Obstructive Hypertrophic Cardiomyopathy (nHCM)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Cytokinetics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-08-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-08-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-11-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 500,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "85 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Aficamten",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in this arm will receive a single daily oral dose of 5 mg, 10 mg, 15 mg, or 20 mg of aficamten with dose levels guided by echocardiography assessments, for up to 72 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants in this arm will receive placebo, for up to 72 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Kansas City Cardiomyopathy Questionnaire - Clinical Summary Score (KCCQ-CSS)",
+        "Change in pVO2"
+      ],
+      "secondaryEndpoints": [
+        "Change in composite of two Z-scores of CPET parameters (pVO2 and VE/VCO2 slope)",
+        "Proportion of participants with ≥ 1 class improvement in New York Heart Association (NYHA) Functional Class",
+        "Change in N-terminal prohormone brain natriuretic peptide (NT-proBNP)",
+        "Change in Left Atrial Volume Index (LAVI) in participants without atrial fibrillation or flutter at baseline on ECG",
+        "Time to first cardiovascular (CV) event"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06081894",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06081894",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06081894",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06081894",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06081894",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cedar-hcm",
+      "nctId": "NCT06412666",
+      "protocolNumber": "CY 6023",
+      "acronym": "CEDAR-HCM",
+      "title": "A Phase 2/3 Multicenter, Randomized, Double-Blind, Placebo-Controlled and Open-Label Extension Trial to Evaluate the Efficacy and Safety of Aficamten in a Pediatric Population With Symptomatic Obstructive Hypertrophic Cardiomyopathy",
+      "briefTitle": "A Study to Evaluate the Effect of Aficamten in Pediatric Patients With Symptomatic Obstructive Hypertrophic Cardiomyopathy (oHCM).",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Cytokinetics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-05-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-01-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2030-01-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 65,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Aficamten",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in this arm will receive a single daily oral dose of aficamten with dose levels (5 mg to 20 mg) guided by echocardiography assessments, for 12 weeks during the double-blinded period, for another 52 weeks during the open-label extension period, and for an additional 144 weeks during the long-term extension period."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants in this arm will receive a single daily oral dose of placebo for 12 weeks during the double-blinded period and then will receive aficamten for 52 weeks during the open-label extension period, followed by an additional 144 weeks of aficamten during the long-term extension period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from baseline in Valsalva left ventricular outflow tract gradient (LVOT-G)"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in resting LVOT-G",
+        "Trough observed plasma concentration (Ctrough) and concentration 2 hours postdose of aficamten",
+        "Change in values of N-terminal prohormone brain natriuretic peptide (NT-proBNP)",
+        "Change in values of high sensitivity cardiac troponin I (hs-cTnI)",
+        "Change in New York Heart Association (NYHA) Functional Class",
+        "Change in peak LVOT-G",
+        "Proportion of participants with ≥1 class improvement in NYHA Functional Class",
+        "Number of participants that have drug interruption or early discontinuation",
+        "Number of participants with appropriate implantable cardioverter defibrillator (ICD) discharges",
+        "Number of participants with left ventricular ejection fraction (LVEF) < 50%",
+        "Number of participants with clinically significant changes in vital signs, 12-lead electrocardiogram (ECGs) and safety laboratory parameters",
+        "Proportion of participants with Valsalva LVOT-G < 50 mmHg",
+        "Proportion of participants with Valsalva LVOT-G < 30 mmHg",
+        "Time to first resting LVOT-G < 30 mmHg through last follow-up",
+        "Time to first valsalva LVOT-G < 50 mmHg through last follow-up",
+        "Time to first valsalva LVOT-G < 30 mmHg through last follow-up"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06412666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06412666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06412666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06412666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06412666",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2025-12-19",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219083%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-1",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2026-02-05",
+        "precision": "day"
+      },
+      "label": "Supplement approved — rems",
+      "shortLabel": "+REMS",
+      "description": "REMS",
+      "submissionNumber": "SUPPL-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219083%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 219083",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219083%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-2",
+      "label": "Letter (SUPPL-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219083Orig1s001ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:03:24.365Z"
+}

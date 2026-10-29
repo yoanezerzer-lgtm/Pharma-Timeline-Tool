@@ -1,0 +1,284 @@
+{
+  "slug": "tebipenem-pivoxil",
+  "brandName": "Utebzi",
+  "inn": "tebipenem pivoxil",
+  "modality": "Drug (NDA)",
+  "sponsor": "GLAXOSMITHKLINE",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Usage to Reduce Development of Drug-Resistant Bacteria",
+      "slug": "usage-to-reduce-development-of-drug-resistant-bacteria",
+      "approvalDate": {
+        "value": "2026-06-17",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215960%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "215960",
+      "applicationType": "NDA",
+      "sponsor": "GLAXOSMITHKLINE",
+      "originalApprovalDate": {
+        "value": "2026-06-17",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "pivot-po",
+      "nctId": "NCT06059846",
+      "protocolNumber": "SPR994-305",
+      "acronym": "PIVOT-PO",
+      "title": "A Phase 3, Randomized, Double-blind, Double-dummy, Multicenter, Multinational Study to Assess the Efficacy and Safety of Orally Administered Tebipenem Pivoxil Hydrobromide (TBP-PI-HBr) Compared to Intravenously Administered Imipenem-cilastatin in Patients With Complicated Urinary Tract Infection (cUTI) or Acute Pyelonephritis (AP)",
+      "briefTitle": "A Study of Oral Tebipenem Pivoxil Hydrobromide (TBP-PI-HBr) Compared to Intravenous Imipenem-cilastatin in Participants With Complicated Urinary Tract Infection (cUTI) or Acute Pyelonephritis (AP)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Usage to Reduce Development of Drug-Resistant Bacteria",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Usage to Reduce Development of Drug-Resistant Bacteria)",
+            "quote": "Trial identifier appears within the Usage to Reduce Development of Drug-Resistant Bacteria section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Spero Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-12-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-01-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-02-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1690,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "TBP-PI-HBr",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received TBP-PI-HBr 600 milligrams (mg), two x 300mg film-coated tablets, orally (PO) and a dummy infusion intravenously (IV), every 6 hours (q6h) from Day 1 through Day 10. Participants with estimated baseline creatinine clearance (CrCl) greater than (\\>) 30 millilitres per minute (mL/min) and less than or equal to (≤) 50 mL/min received TBP-PI-HBr 300 mg q6h."
+        },
+        {
+          "label": "Imipenem-cilastatin",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants received imipenem-cilastatin 500 mg, IV and matched dummy tablets, PO, q6h from Day 1 through Day 10. Dose adjustments for imipenem-cilastatin were made for participants with estimated baseline CrCl less than (\\<) 90mL/min per approved imipenem-cilastatin package insert. Participants with baseline CrCl levels greater than or equal to (≥) 60 to \\< 90 mL/min were administered imipenem-cilastatin, 400 mg IV q6h and participants with baseline CrCl levels \\>30 to \\<60 mL/min, were administered 300mg IV, q6h."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Overall Response at the Test-of-Cure (TOC) Visit in the Microbiological Intent-to-Treat (Micro-ITT) Population"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Overall Response (Combined Per-Participant Clinical Cure and Favorable Microbiological Response) at the TOC Visit in the Microbiologically Evaluable (ME) Population",
+        "Number of Participants With Overall Response at the End-of-Treatment (EOT) and Late Follow-Up (LFU) Visits in the Micro-ITT Population",
+        "Number of Participants With Overall Response at EOT and LFU Visits in the ME Population",
+        "Number of Participants With Clinical Response at EOT, TOC and LFU Visits in the Micro-ITT Population",
+        "Number of Participants With Clinical Response at EOT, TOC and LFU Visits in the CE Population",
+        "Number of Participants With Clinical Response at EOT, TOC and LFU Visits in the ME Population",
+        "Number of Participants With Microbiological Response at EOT, TOC and LFU Visits in the Micro-ITT Population",
+        "Number of Participants With Microbiological Response at EOT, TOC and LFU Visits in the ME Population",
+        "Number of Participants With Overall Response at EOT, TOC, and LFU Visits in Participants With Drug-Resistant Enterobacterales in Micro-ITT Population",
+        "Number of Participants With Overall Response at EOT, TOC, and LFU Visits in Participants With Drug-Resistant Enterobacterales in the ME Population",
+        "Number of Participants With Clinical Response at the EOT and TOC Visits in Participants With Drug-resistant Enterobacterales in the Micro-ITT Population",
+        "Number of Participants With Clinical Response at the LFU Visit in Participants With Drug-resistant Enterobacterales in the Micro-ITT Population",
+        "Number of Participants With Clinical Response at the EOT, TOC and LFU Visits in Participants With Drug-resistant Enterobacterales in the ME Population",
+        "Number of Participants With Microbiological Response at the EOT and TOC Visits in Participants With Drug-resistant Enterobacterales in the Micro-ITT Population",
+        "Number of Participants With Microbiological Response at the LFU Visit in Participants With Drug-resistant Enterobacterales in the Micro-ITT Population",
+        "Number of Participants With Microbiological Response at the EOT and TOC Visits in Participants With Drug-resistant Enterobacterales in the ME Population",
+        "Number of Participants With Microbiological Response at the LFU Visit in Participants With Drug-resistant Enterobacterales in the ME Population",
+        "Number of Participants With at Least One Treatment-emergent Adverse Events (TEAEs) and Serious Adverse Events",
+        "Plasma Concentrations of TBP-PI-HBr"
+      ],
+      "postedResults": [
+        {
+          "title": "Number of Participants With Overall Response at the Test-of-Cure (TOC) Visit in the Microbiological Intent-to-Treat (Micro-ITT) Population",
+          "timeFrame": "At Day 17 (TOC)",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "TBP-PI-HBr"
+            },
+            {
+              "id": "OG001",
+              "title": "Imipenem-cilastatin"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "category": "Responder",
+              "value": "261"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Responder",
+              "value": "291"
+            },
+            {
+              "groupId": "OG000",
+              "category": "Non-responder",
+              "value": "171"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Non-responder",
+              "value": "179"
+            },
+            {
+              "groupId": "OG000",
+              "category": "Indeterminate",
+              "value": "14"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Indeterminate",
+              "value": "13"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "paramType": "Adjusted Difference in Percentage",
+              "paramValue": "-1.3",
+              "ciPct": "95",
+              "ciLower": "-7.5",
+              "ciUpper": "4.8"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06059846",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06059846",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06059846",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06059846",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06059846",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06059846?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 15,
+          "quote": "n a global, randomized, double-blind, double-dummy, non-inferiority (NI) trial, (Trial 1; NCT06059846). This trial compared UTEBZI 600 mg orally every 6 hours to imipenem-cilastatin 500 mg gi",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-06-17",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215960%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 215960",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215960%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/215960Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:00:44.946Z"
+}

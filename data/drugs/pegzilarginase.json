@@ -1,0 +1,921 @@
+{
+  "slug": "pegzilarginase",
+  "brandName": "Loargys",
+  "inn": "pegzilarginase",
+  "modality": "Biologic (BLA)",
+  "sponsor": "IMMEDICA PHARMA AB",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Hyperargininemia in adult and pediatric patients 2 years of age and older with Arginase 1 Deficiency (ARG1-D), in conjunction with dietary protein restriction",
+      "slug": "hyperargininemia-in-adult-and-pediatric-patients-2-years-of",
+      "approvalDate": {
+        "value": "2026-02-23",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-02-23",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Loargys is indicated for the treatment of hyperargininemia in adult and pediatric patients 2 years of age and older with Arginase 1 Deficiency (ARG1-D), in conjunction with dietary protein restriction.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Loargys is indicated for the treatment of hyperargininemia in adult and pediatric patients 2 years of age and older with Arginase 1 Deficiency (ARG1-D), in conjunction with dietary protein restriction.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761211",
+      "applicationType": "BLA",
+      "sponsor": "IMMEDICA PHARMA AB",
+      "originalApprovalDate": {
+        "value": "2026-02-23",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "caeb1102-100b",
+      "nctId": "NCT02561234",
+      "protocolNumber": "CAEB1102-100B",
+      "title": "A Phase 1 Multiple Dose, Dose Escalation Trial of AEB1102 (Co-Arg1-PEG) in Patients With Advanced Solid Tumors",
+      "briefTitle": "A Multiple Dose, Dose Escalation Trial of AEB1102 in Patients With Advanced Solid Tumors",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Immedica Pharma AB",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-10-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-05-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-05-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 76,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AEB1102 Dose Escalation Cohort 1",
+          "type": "EXPERIMENTAL",
+          "description": "3 patients dosed at 0.01 mg/kg until MTD determined"
+        },
+        {
+          "label": "AEB1102 Dose Escalation Cohort 2",
+          "type": "EXPERIMENTAL",
+          "description": "4 patients dosed at 0.02 mg/kg until MTD determined"
+        },
+        {
+          "label": "AEB1102 Dose Escalation Cohort 3",
+          "type": "EXPERIMENTAL",
+          "description": "4 patients dosed at 0.04 mg/kg until MTD determined"
+        },
+        {
+          "label": "AEB1102 Dose Escalation Cohort 4",
+          "type": "EXPERIMENTAL",
+          "description": "4 patients dosed at 0.08 mg/kg until MTD determined"
+        },
+        {
+          "label": "AEB1102 Dose Escalation Cohort 5",
+          "type": "EXPERIMENTAL",
+          "description": "3 patients dosed at 0.12 mg/kg until MTD determined"
+        },
+        {
+          "label": "AEB1102 Dose Escalation Cohort 6",
+          "type": "EXPERIMENTAL",
+          "description": "4 patients dosed at 0.18 mg/kg until MTD determined"
+        },
+        {
+          "label": "AEB1102 Dose Escalation Cohort 7",
+          "type": "EXPERIMENTAL",
+          "description": "5 patients dosed at 0.27 mg/kg until MTD determined"
+        },
+        {
+          "label": "AEB1102 Dose Escalation Cohort 8",
+          "type": "EXPERIMENTAL",
+          "description": "7 patients dosed at 0.40 mg/kg until MTD determined"
+        },
+        {
+          "label": "AEB1102 Dose Escalation Cohort 9",
+          "type": "EXPERIMENTAL",
+          "description": "7 patients dosed at 0.33 mg/kg until MTD determined MTD determined at 0.33 mg/kg"
+        },
+        {
+          "label": "AEB1102 Expansion Cutaneous",
+          "type": "EXPERIMENTAL",
+          "description": "11 Cutaneous Melanoma patients dosed at 0.33 mg/kg"
+        },
+        {
+          "label": "AEB1102 Expansion Uveal",
+          "type": "EXPERIMENTAL",
+          "description": "12 Uveal Melanoma patients dosed at 0.33 mg/kg"
+        },
+        {
+          "label": "AEB1102 Expansion SCLC",
+          "type": "EXPERIMENTAL",
+          "description": "13 SCLC patients dosed at 0.33 mg/kg"
+        }
+      ],
+      "primaryEndpoints": [
+        "maximum tolerated dose"
+      ],
+      "secondaryEndpoints": [
+        "safety profile (changes in physical exam, laboratory measures, reported adverse events)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02561234",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02561234",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02561234",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02561234",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02561234",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "caeb1102-100c",
+      "nctId": "NCT02732184",
+      "protocolNumber": "CAEB1102-100C",
+      "title": "A Phase 1 Dose-Escalation Study of AEB1102 (Co-ArgI-PEG) in Patients With Relapsed or Refractory Acute Myeloid Leukemia or Myelodysplastic Syndrome Refractory to Hypomethylating Agents",
+      "briefTitle": "A Multiple Dose, Dose Escalation Trial of AEB1102 in Patients With AML or MDS",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Immedica Pharma AB",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-08-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-11-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-11-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 21,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AEB1102 (Co-ArgI-PEG) administered via IV weekly.",
+          "type": "EXPERIMENTAL",
+          "description": "Co-ArgI-PEG modified human arginase I"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Tolerated Dose and Recommended Phase 2 Dose"
+      ],
+      "secondaryEndpoints": [
+        "Safety profile (changes in physical exam, laboratory measures, reported adverse events)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02732184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02732184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02732184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02732184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02732184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "caeb1102-102a",
+      "nctId": "NCT03378531",
+      "protocolNumber": "CAEB1102-102A",
+      "title": "An Open-label, Multicentre Study to Evaluate the Long-Term Safety, Tolerability and Efficacy of AEB1102 in Patients With Arginase 1 Deficiency",
+      "briefTitle": "A Study of AEB1102 (Pegzilarginase) in Patients With Arginase 1 Deficiency",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Immedica Pharma AB",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-12-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-12-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-12-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 14,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "pegzilarginase (AEB1102)",
+          "type": "EXPERIMENTAL",
+          "description": "Each patient may receive pegzilarginase administered IV or SC for up to 4 years."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Treatment-related Adverse Events",
+        "Number of Participants With Anti-pegzilarginase and Anti-PEG Antibodies"
+      ],
+      "secondaryEndpoints": [
+        "Plasma Arginine Levels",
+        "Plasma GC Levels (Argininic Acid)",
+        "Plasma GC Levels (Guanidinoacetic Acid)",
+        "Plasma GC Levels (α-keto-δ-guanidinovaleric Acid)",
+        "Plasma GC Levels (α-N-acetylarginine)",
+        "Six-Minute Walk Test (6MWT)",
+        "Gross Motor Function Measure (GMFM) Part D",
+        "Gross Motor Function Measure (GMFM) Part E",
+        "Modified Ashworth Scale (MAS)",
+        "Berg Balance Scale (BBS)",
+        "Purdue Pegboard Test (Dominant Hand)",
+        "Purdue Pegboard Test (Non-dominant Hand)",
+        "Number of Participants With Hyperammonemic Episodes",
+        "Number of Participants With Seizures"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03378531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03378531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03378531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03378531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03378531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "caeb1102-101b-keynote-pn758",
+      "nctId": "NCT03371979",
+      "protocolNumber": "CAEB1102-101B; KEYNOTE PN758",
+      "title": "A Phase 1/2 Study of Pegzilarginase (AEB1102, Co-ArgI-PEG) in Combination With Pembrolizumab in the Treatment of Patients With Extensive Disease (ED) Small Cell Lung Cancer (SCLC)",
+      "briefTitle": "Pegzilarginase and Pembrolizumab for Extensive Disease Small Cell Lung Cancer",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Immedica Pharma AB",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-12-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-06-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-06-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 42,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Pegzilarginase plus Pembrolizumab",
+          "type": "EXPERIMENTAL",
+          "description": "Phase 1 \\& 2"
+        }
+      ],
+      "primaryEndpoints": [
+        "Phase 1: Incidence of Treatment-realted Adverse Events as Assessed by CTCAE v4.0"
+      ],
+      "secondaryEndpoints": [
+        "Phase 2: Incidence of Treatment-related Adverse Events as Assessed by CTCAE v4.0"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03371979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03371979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03371979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03371979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03371979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "caeb1102-300a",
+      "nctId": "NCT03921541",
+      "protocolNumber": "CAEB1102-300A",
+      "title": "PEACE (Pegzilarginase Effect on Arginase 1 Deficiency Clinical Endpoints): A Randomized, Double-blind, Placebo-controlled Phase 3 Study of the Efficacy and Safety of Pegzilarginase in Children and Adults With Arginase 1 Deficiency",
+      "briefTitle": "Efficacy and Safety of Pegzilarginase in Patients With Arginase 1 Deficiency",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Hyperargininemia in adult and pediatric patients 2 years of age and older with Arginase 1 Deficiency (ARG1-D), in conjunction with dietary protein restriction",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761211Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Hyperargininemia in adult and pediatric patients 2 years of age and older with Arginase 1 Deficiency (ARG1-D), in conjunction with dietary protein restriction)",
+            "quote": "Trial identifier appears within the Hyperargininemia in adult and pediatric patients 2 years of age and older with Arginase 1 Deficiency (ARG1-D), in conjunction with dietary protein restriction section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Loargys is indicated for the treatment of hyperargininemia in adult and pediatric patients 2 years of age and older with Arginase 1 Deficiency (ARG1-D), in conjunction with dietary protein restriction.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Immedica Pharma AB",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-05-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-02-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-02-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 32,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Pegzilarginase",
+          "type": "EXPERIMENTAL",
+          "description": "Weekly IV infusions of pegzilarginase plus individualized disease management for 24 weeks"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Weekly IV infusions of placebo plus individualized disease management for 24 weeks"
+        },
+        {
+          "label": "Pegzilarginase Long Term Extension",
+          "type": "EXPERIMENTAL",
+          "description": "After completion of 24 weeks DB treatment, weekly IV infusions of pegzilarginase plus individualized disease management for an additional 150 weeks, with the option to receive treatment by SC after 8 weeks of the LTE study."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Plasma Arginine Concentration After 24 Weeks of Treatment"
+      ],
+      "secondaryEndpoints": [
+        "Mean Change From Baseline in the Mobility Assessments of the Key Secondary Outcome Measure of the 2 Minute Walk Test",
+        "Mean Change From Baseline in the Mobility Assessments of the Key Secondary Outcome Measure of GMFM-E",
+        "Proportion of Participants With Plasma Arginine Levels Below Target Guidance",
+        "Proportion of Participants With Plasma Arginine Levels in Normal Range",
+        "Change in Ornithine",
+        "Change in Guanidino Compound-ARGA",
+        "Change in Guanidino Compound - GAA",
+        "Change in Guanidino Compound - GVA",
+        "Change in Guanidino Compound - NAArg",
+        "Mean Change From Baseline at Week 24 in Other Aspects of Mobility Assessed by GMFM-D",
+        "Mean Change From Baseline at Week 24 in Other Aspects of Mobility Assessed by the Functional Mobility Scale (FMS)",
+        "Mean Change From Baseline at Week 24 in Other Aspects of Mobility Assessed by the Functional Mobility Scale (FMS)",
+        "Mean Change From Baseline at Week 24 in Other Aspects of Mobility Assessed by the Functional Mobility Scale (FMS)",
+        "Mean Change From Baseline at Week 24 in Other Aspects of Mobility Assessed by the Gillette Functional Assessment Questionnaire (GFAQ)",
+        "Mean Change From Baseline at Week 24 in Adaptive Behavior Assessed Using the Vineland Adaptive Behavior Scales (VABS)-II",
+        "Evaluate Safety of Pegzilarginase",
+        "Evaluate Immunogenicity of Pegzilarginase"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in Plasma Arginine Concentration After 24 Weeks of Treatment",
+          "timeFrame": "Baseline through Week 24",
+          "paramType": "GEOMETRIC_MEAN",
+          "unitOfMeasure": "micromolar",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Pegzilarginase"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "0.244",
+              "spread": "1.635"
+            },
+            {
+              "groupId": "OG001",
+              "value": "0.918",
+              "spread": "1.371"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Mixed Models Analysis"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921541?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 11,
+          "quote": "of hyperargininemia in adult and pediatric patients with ARG1-D was evaluated in Trial 1 (NCT03921541) which was a multicenter, double-blind, 24-week placebo-controlled trial with a long-term",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "caeb1102-301a-europe",
+      "nctId": "NCT06582524",
+      "protocolNumber": "CAEB1102-301A (Europe)",
+      "title": "A Phase 3 Open-Label Study of Safety, Pharmacokinetics, and Activity of Weekly Subcutaneous Pegzilarginase in Subjects <24 Months Old With Arginase 1 Deficiency",
+      "briefTitle": "Pegzilarginase in Subjects <24 Months Old With Arginase 1 Deficiency",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Immedica Pharma AB",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-08-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-06-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 3,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "1 Day",
+        "maxAge": "24 Months",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Weekly subcutaneous (SC) administration of pegzilarginase",
+          "type": "EXPERIMENTAL",
+          "description": "All subjects will receive a once weekly (QW) SC dose of pegzilarginase for 12 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Plasma Arginine Concentrations in Subjects <24 Months of Age With Arginase 1 Deficiency (ARG1-D)."
+      ],
+      "secondaryEndpoints": [
+        "Pharmacokinetic (PK) Profile of Pegzilarginase: Half-life (T½).",
+        "Pharmacokinetic (PK) Profile of Pegzilarginase: Maximum Observed Concentration (Tmax).",
+        "Pharmacokinetic (PK) Profile of Pegzilarginase: Maximum Observed Concentration (Cmax).",
+        "Pharmacokinetic (PK) Profile of Pegzilarginase: Area Under the Plasma Drug Concentration-time Curve.",
+        "Pharmacodynamic (PD) Response of Pegzilarginase: Anti-drug Antibodies (ADAs).",
+        "Pharmacodynamic (PD) Response of Pegzilarginase: Levels of Plasma Arginine.",
+        "Changes From Baseline in Physical Function: GMFM-66."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06582524",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06582524",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06582524",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06582524",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06582524",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "clear",
+      "nctId": "NCT07573059",
+      "protocolNumber": "IMM-PEG-005",
+      "acronym": "CLEAR",
+      "title": "A Multicenter, Prospective Study Assessing the Safety of Loargys Arginine Test System for Determining Arginine in Loargys-treated Patients",
+      "briefTitle": "Evaluation of the Safety of Loargys Arginine Test System in Loargys-treated Patients",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Immedica Pharma US Inc",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-04-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-07-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-07-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 100,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "0 Years",
+        "maxAge": "100 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Loargys Arginine Test System",
+          "type": "OTHER"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of AEs related to the Loargys Arginine Test System"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07573059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "rginine Assay. LOARGYS is only available to a patient if the patient is enrolled in Study IMM-PEG-005 to obtain Immedica Pharma’s Nor-NOHA Blood Collection Tubes and LOARGYS Arginine Assay. F",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-02-23",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761211%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761211",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761211%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761211Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:51.009Z"
+}

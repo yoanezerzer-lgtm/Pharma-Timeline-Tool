@@ -1,0 +1,598 @@
+{
+  "slug": "doravirine-islatravir",
+  "brandName": "Idvynso",
+  "inn": "doravirine, islatravir",
+  "modality": "Drug (NDA)",
+  "sponsor": "MSD",
+  "mechanism": "Human Immunodeficiency Virus 1 Non-Nucleoside Analog Reverse Transcriptase Inhibitor",
+  "summary": "",
+  "indications": [
+    {
+      "name": "As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine",
+      "slug": "as-a-complete-two-drug-regimen-for-the-treatment-of-human",
+      "approvalDate": {
+        "value": "2026-04-20",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA216964%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "216964",
+      "applicationType": "NDA",
+      "sponsor": "MSD",
+      "originalApprovalDate": {
+        "value": "2026-04-20",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "8591a-052",
+      "nctId": "NCT05630755",
+      "protocolNumber": "8591A-052",
+      "title": "A Phase 3, Randomized, Active-Controlled, Double-Blind Clinical Study to Evaluate a Switch to Doravirine/Islatravir (DOR/ISL 100 mg/0.25 mg) Once-Daily in Participants With HIV-1 Who Are Virologically Suppressed on Bictegravir/Emtricitabine/Tenofovir Alafenamide (BIC/FTC/TAF)",
+      "briefTitle": "A Switch to Doravirine/Islatravir (DOR/ISL) in Participants With Human Immunodeficiency Virus Type 1 (HIV-1) Who Are Virologically Suppressed on Bictegravir/Emtricitabine/Tenofovir Alafenamide (BIC/FTC/TAF) (MK-8591A-052)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216964Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine)",
+            "quote": "Trial identifier appears within the As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-02-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-10-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-08-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 514,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "DOR/ISL and Placebo to BIC/FTC/TAF",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive DOR/ISL 100 mg/0.25 mg and Placebo to BIC/FTC/TAF once daily (QD) orally from day 1 to week 144. After week 144, eligible participants may continue on DOR/ISL and continue study treatment until week 240 or to when DOR/ISL becomes commercially accessible (whichever comes first)."
+        },
+        {
+          "label": "BIC/FTC/TAF and Placebo to DOR/ISL",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive BIC/FTC/TAF 50 mg/200 mg/25 mg and Placebo to DOR/ISL once daily (QD) orally from day 1 to week 144. After week 144, eligible participants may switch to DOR/ISL and continue study treatment until week 240 or to when DOR/ISL becomes commercially accessible (whichever comes first)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With Human Immunodeficiency Virus Type 1 (HIV-1) Ribonucleic Acid (RNA) ≥50 Copies/mL at Week 48",
+        "Percentage of Participants Who Experience Adverse Events (AEs) Through Week 48",
+        "Percentage of Participants Who Discontinue Study Intervention Due to AEs Through Week 48"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With HIV-1 RNA <200 Copies/mL at Week 48",
+        "Percentage of Participants With HIV-1 RNA <50 Copies/mL at Week 48",
+        "Change From Baseline in Cluster of Differentiation 4-positive (CD4+) T-cell Count at Week 48",
+        "Percentage of Participants With Treatment-Emergent, Resistance-associated Substitutions at Week 48",
+        "Percentage of Participants With HIV-1 RNA ≥50 Copies/mL at Week 96",
+        "Percentage of Participants With HIV-1 RNA <200 Copies/mL at Week 96",
+        "Percentage of Participants With HIV-1 RNA <50 Copies/mL at Week 96",
+        "Change From Baseline in CD4+ T-cell Count at Week 96",
+        "Number of Participants With Viral Drug Resistance Mutations at Week 96",
+        "Percentage of Participants With HIV-1 RNA ≥50 Copies/mL at Week 144",
+        "Percentage of Participants With HIV-1 RNA <200 Copies/mL at Week 144",
+        "Percentage of Participants With HIV-1 RNA <50 Copies/mL at Week 144",
+        "Change From Baseline in CD4+ T-cell Count at Week 144",
+        "Number of Participants With Viral Drug Resistance Mutations at Week 144",
+        "Percentage of Participants Who Experience AEs Through Week 144",
+        "Percentage of Participants Who Discontinue Study Intervention Due to AEs Through Week 144"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants With Human Immunodeficiency Virus Type 1 (HIV-1) Ribonucleic Acid (RNA) ≥50 Copies/mL at Week 48",
+          "timeFrame": "Week 48",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "DOR/ISL and Placebo to BIC/FTC/TAF"
+            },
+            {
+              "id": "OG001",
+              "title": "BIC/FTC/TAF and Placebo to DOR/ISL"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "1.5"
+            },
+            {
+              "groupId": "OG001",
+              "value": "0.6"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.003",
+              "method": "Miettinen and Nurminen method",
+              "paramType": "Risk Difference (RD)",
+              "paramValue": "0.88",
+              "ciPct": "95",
+              "ciLower": "-1.86",
+              "ciUpper": "2.90"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.192",
+              "method": "Miettinen and Nurminen method",
+              "paramType": "Risk Difference (RD)",
+              "paramValue": "0.88",
+              "ciPct": "95",
+              "ciLower": "-1.86",
+              "ciUpper": "2.90"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants Who Experience Adverse Events (AEs) Through Week 48",
+          "timeFrame": "Up to Week 48",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "DOR/ISL and Placebo to BIC/FTC/TAF"
+            },
+            {
+              "id": "OG001",
+              "title": "BIC/FTC/TAF and Placebo to DOR/ISL"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "74.6"
+            },
+            {
+              "groupId": "OG001",
+              "value": "71.3"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Percentage of Participants Who Discontinue Study Intervention Due to AEs Through Week 48",
+          "timeFrame": "Up to Week 48",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "DOR/ISL and Placebo to BIC/FTC/TAF"
+            },
+            {
+              "id": "OG001",
+              "title": "BIC/FTC/TAF and Placebo to DOR/ISL"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "2.9"
+            },
+            {
+              "groupId": "OG001",
+              "value": "1.8"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630755?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/216964Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 16,
+          "quote": "omized, active-controlled, non-inferiority trials (Trial 051 [NCT05631093] and Trial 052 [NCT05630755]) in virologically-suppressed (HIV-1 RNA less than 50 copies per mL) participants living",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "8591a-051",
+      "nctId": "NCT05631093",
+      "protocolNumber": "8591A-051",
+      "title": "A Phase 3, Randomized, Active-Controlled, Open-Label Clinical Study to Evaluate a Switch to Doravirine/Islatravir (DOR/ISL 100 mg/0.25 mg) Once-Daily in Participants With HIV-1 Who Are Virologically Suppressed on Antiretroviral Therapy",
+      "briefTitle": "A Switch to Doravirine/Islatravir (DOR/ISL) in Participants With Human Immunodeficiency Virus Type 1 (HIV-1) Who Are Virologically Suppressed on Antiretroviral Therapy (ART) (MK-8591A-051)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216964Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine)",
+            "quote": "Trial identifier appears within the As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-02-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-10-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-07-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 553,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "DOR/ISL",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with Human Immunodeficiency Virus-1 (HIV-1) that have been virologically suppressed for ≥3 consecutive months who were previously treated with continuous baseline antiretroviral therapy (ART) receive doravine/islatravir (DOR/ISL), a fixed dose combination (FDC) of 100 mg DOR/0.25 mg ISL orally once daily (qd) for 144 weeks. At Week 144, participants who consent to enter the optional study extension will continue to receive DOR/ISL qd (100 mg/0.25 mg) for an additional 96 weeks or until it is commercially accessible (whichever comes first)."
+        },
+        {
+          "label": "ART + DOR/ISL",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants with HIV-1 that has been virologically suppressed for ≥3 consecutive months who were previously treated with continuous baseline ART received standard of care (SOC) ART for 48 weeks, followed by treatment with DOR/ISL as a FDC of 100 mg DOR/0.25 mg ISL orally qd until Week 144. At Week 144, participants who consent to enter the optional study extension will continue to receive DOR/ISL qd (100 mg/0.25 mg) for an additional 96 weeks or until it is commercially accessible (whichever comes first)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With HIV-1 RNA ≥50 Copies/mL at Week 48",
+        "Percentage of Participants With One or More Adverse Events (AEs) at Week 48",
+        "Percentage of Participants With an AE Leading to Discontinuation of Study Intervention at Week 48"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With HIV-1 RNA <200 Copies/mL at Week 48",
+        "Percentage of Participants With HIV-1 RNA <50 Copies/mL at Week 48",
+        "Percentage of Participants With HIV-1 RNA <200 Copies/mL at Week 96",
+        "Participants With HIV-1 RNA <200 Copies/mL at Week 144",
+        "Percentage of Participants With HIV-1 RNA ≥50 Copies/mL at Week 96",
+        "Percentage of Participants With HIV-1 RNA ≥50 Copies/mL at Week 144",
+        "Percentage of Participants With HIV-1 RNA <50 Copies/mL at Week 96",
+        "Percentage of Participants With HIV-1 RNA <50 Copies/mL at Week 144",
+        "Mean Change of Plasma Cluster of Differentiation 4 (CD4+) T-Cell Count From Baseline Day 1 to Week 48",
+        "Mean Change of Plasma CD4+ T-Cell Count From Baseline Week 48 to Week 96",
+        "Mean Change of Plasma CD4+ T-Cell Count From Baseline Day 48 to Week 144",
+        "Mean Change of Plasma CD4+ T-Cell Count From Baseline Day 1 to Week 96",
+        "Mean Change of Plasma CD4+ T-Cell Count From Baseline Day 1 to Week 144",
+        "Percentage of Participants With Treatment-Emergent, Resistance-associated Substitutions at Week 48",
+        "Mean Change From Baseline in Fasting Low Density Lipoprotein Cholesterol (LDL-C) at Week 48",
+        "Mean Change From Baseline in Fasting Non-High Density Lipoprotein Cholesterol (Non-HDL-C) at Week 48",
+        "Participants With One or More AEs at Week 96",
+        "Participants With One or More AEs at Week 144",
+        "Percentage of Participants With AEs Leading to Discontinuation of Study Intervention at Week 96",
+        "Percentage of Participants With AEs Leading to Discontinuation of Study Intervention at Week 144",
+        "Percentage of Participants With One or More AEs From Week 48 up to Week 96",
+        "Percentage of Participants With One or More AEs From Week 48 up to Week 144",
+        "Percentage of Participants With AEs Leading to Discontinuation of Study Intervention From Week 48 up to Week 96",
+        "Percentage of Participants With AEs Leading to Discontinuation of Study Intervention From Week 48 up to Week 144"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants With HIV-1 RNA ≥50 Copies/mL at Week 48",
+          "timeFrame": "Week 48",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Doravirine/Islatravir (DOR/ISL)"
+            },
+            {
+              "id": "OG001",
+              "title": "Baseline ART + DOR/ISL"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "1.4"
+            },
+            {
+              "groupId": "OG001",
+              "value": "4.9"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Miettinen and Nurminen",
+              "paramType": "Estimated difference",
+              "paramValue": "-3.58",
+              "ciPct": "95",
+              "ciLower": "-7.81",
+              "ciUpper": "-0.77"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants With One or More Adverse Events (AEs) at Week 48",
+          "timeFrame": "Up to Week 48",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Doravirine/Islatravir (DOR/ISL)"
+            },
+            {
+              "id": "OG001",
+              "title": "Baseline ART + DOR/ISL"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "79.5"
+            },
+            {
+              "groupId": "OG001",
+              "value": "83.8"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "paramType": "Estimated difference",
+              "paramValue": "-4.3",
+              "ciPct": "95",
+              "ciLower": "-10.7",
+              "ciUpper": "2.8"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants With an AE Leading to Discontinuation of Study Intervention at Week 48",
+          "timeFrame": "Up to Week 48",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Doravirine/Islatravir (DOR/ISL)"
+            },
+            {
+              "id": "OG001",
+              "title": "Baseline ART + DOR/ISL"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "0.5"
+            },
+            {
+              "groupId": "OG001",
+              "value": "2.2"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "paramType": "Estimated difference",
+              "paramValue": "-1.6",
+              "ciPct": "95",
+              "ciLower": "-4.9",
+              "ciUpper": "0.2"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05631093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05631093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05631093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05631093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05631093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05631093?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/216964Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 16,
+          "quote": "upported by data from 2 randomized, active-controlled, non-inferiority trials (Trial 051 [NCT05631093] and Trial 052 [NCT05630755]) in virologically-suppressed (HIV-1 RNA less than 50 copies",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-04-20",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity and Type 4 - New Combination",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA216964%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 216964",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA216964%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/216964Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216964Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:02.450Z"
+}

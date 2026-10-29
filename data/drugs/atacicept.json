@@ -1,0 +1,668 @@
+{
+  "slug": "atacicept",
+  "brandName": "Trutakna",
+  "inn": "atacicept",
+  "modality": "Biologic (BLA)",
+  "sponsor": "VERA THERAPEUTICS INC.",
+  "summary": "",
+  "indications": [
+    {
+      "name": "To reduce proteinuria in adults with primary immunoglobulin A nephropathy (IgAN) at risk for disease progression",
+      "slug": "to-reduce-proteinuria-in-adults-with-primary-immunoglobulin",
+      "approvalDate": {
+        "value": "2026-07-07",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761486Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-07-07",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "To reduce proteinuria in adults with primary immunoglobulin A nephropathy (IgAN) at risk for disease progression",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761486Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1); wording from the label's section 1",
+            "quote": "To reduce proteinuria in adults with primary immunoglobulin A nephropathy (IgAN) at risk for disease progression",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761486",
+      "applicationType": "BLA",
+      "sponsor": "VERA THERAPEUTICS INC.",
+      "originalApprovalDate": {
+        "value": "2026-07-07",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "compass",
+      "nctId": "NCT05609812",
+      "protocolNumber": "VT-001-0070",
+      "acronym": "COMPASS",
+      "title": "A Phase 3 Randomized, Double-Blind, Placebo-Controlled Multicenter, Multinational Study to Evaluate the Efficacy and Safety of Atacicept in Subjects With Active Lupus Nephritis",
+      "briefTitle": "Atacicept in Subjects With Active Lupus Nephritis (COMPASS)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "WITHDRAWN",
+      "sponsor": "Vera Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-11-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-03-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-12-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 0,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Atacicept Dose",
+          "type": "EXPERIMENTAL",
+          "description": "Atacicept Dose once weekly subcutaneous (SC) Injection"
+        },
+        {
+          "label": "Placebo to match Atacicept",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo to match Atacicept once weekly subcutaneous (SC) injection"
+        }
+      ],
+      "primaryEndpoints": [
+        "Renal Response as definedas UPCR ≤0.5 mg/mg, and eGFR ≥60 mL/min/1.73 m^2 or eGFR <60 mL/min/1.73 m^2 with no confirmed decrease from baseline of >20%"
+      ],
+      "secondaryEndpoints": [
+        "Renal Response with alternative success criteria",
+        "Time to UPCR of≤0.5 mg/mg",
+        "Renal Response at Week 104",
+        "Time to Death or Renal-Related Event"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05609812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05609812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05609812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05609812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05609812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "origin-3",
+      "nctId": "NCT04716231",
+      "protocolNumber": "VT-001-0050",
+      "acronym": "ORIGIN 3",
+      "title": "A Phase 2b/3, Multi-part, Randomized, Double-Blinded, Placebo-Controlled Study to Evaluate the Efficacy and Safety of Atacicept in Subjects With IgA Nephropathy (IgAN)",
+      "briefTitle": "Atacicept in Subjects With IgA Nephropathy",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "To reduce proteinuria in adults with primary immunoglobulin A nephropathy (IgAN) at risk for disease progression",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761486Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — To reduce proteinuria in adults with primary immunoglobulin A nephropathy (IgAN) at risk for disease progression)",
+            "quote": "Trial identifier appears within the To reduce proteinuria in adults with primary immunoglobulin A nephropathy (IgAN) at risk for disease progression section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Vera Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-06-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-07-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 428,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Atacicept Dose 150mg",
+          "type": "EXPERIMENTAL",
+          "description": "Atacicept 150mg once weekly subcutaneous (SC) injections"
+        },
+        {
+          "label": "Placebo to match Atacicept (Part C/D)",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo to match Atacicept once weekly subcutaneous (SC) injection"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage Change From Baseline in Urine Protein to Creatinine Ratio (UPCR)"
+      ],
+      "secondaryEndpoints": [],
+      "postedResults": [
+        {
+          "title": "Percentage Change From Baseline in Urine Protein to Creatinine Ratio (UPCR)",
+          "timeFrame": "36 Weeks",
+          "paramType": "MEAN",
+          "unitOfMeasure": "mean UPCR percent Change at Week 36",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Atacicept Dose 150mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo to Match Atacicept (Part C/D)"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-46",
+              "lowerLimit": "-53",
+              "upperLimit": "-38"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-7",
+              "lowerLimit": "-19",
+              "upperLimit": "8"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04716231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04716231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04716231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04716231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04716231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04716231?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761486Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 7,
+          "quote": "uria was evaluated in a randomized, double - blind, placebo - controlled study (Origin 3, NCT04716231) in adults with biopsy - proven IgAN, estimated glomerular filtration rate ( eGFR ) ≥30 m",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "origin-extend",
+      "nctId": "NCT06674577",
+      "protocolNumber": "VT-001-0051",
+      "acronym": "ORIGIN EXTEND",
+      "title": "A Multicenter, Rollover Study to Evaluate the Long-Term Safety and Efficacy of Atacicept",
+      "briefTitle": "A Rollover Study to Evaluate the Long-Term Safety and Efficacy of Atacicept",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ENROLLING_BY_INVITATION",
+      "sponsor": "Vera Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-12-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2031-05-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-05-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 750,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "99 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Atacicept 150mg once weekly subcutaneous (SC) injection",
+          "type": "EXPERIMENTAL",
+          "description": "Other Names:\n\nVT-001"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of adverse events observed during the dosing period"
+      ],
+      "secondaryEndpoints": [
+        "To evaluate the effect of atacicept on change in proteinuria",
+        "To evaluate the effect of atacicept on the change in estimated glomerular filtration rate (eGFR) using serum creatinine and cystatin C, respectively",
+        "To evaluate the effect of atacicept on hematuria",
+        "To evaluate the effect of atacicept on serum galactose-deficient IgA1 (Gd-IgA1) levels"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06674577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06674577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06674577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06674577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06674577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vt-001-0020",
+      "nctId": "NCT07020923",
+      "protocolNumber": "VT-001-0020",
+      "title": "A Study Evaluating Monthly (Every 4 Weeks) Dosing of Atacicept in Patients With IgAN",
+      "briefTitle": "Monthly Dosing of Atacicept in IgAN",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Vera Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-05-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 90,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Atacicept Arm 1",
+          "type": "EXPERIMENTAL",
+          "description": "Atacicept dose A administered subcutaneous (sc) injection monthly"
+        },
+        {
+          "label": "Atacicept Arm 2",
+          "type": "EXPERIMENTAL",
+          "description": "Atacicept dose B administered subcutaneous (sc) injection monthly"
+        },
+        {
+          "label": "Atacicept Arm 3",
+          "type": "EXPERIMENTAL",
+          "description": "Atacicept dose C administered subcutaneous (sc) injection monthly"
+        },
+        {
+          "label": "Atacicept Arm 4",
+          "type": "EXPERIMENTAL",
+          "description": "Atacicept dose D administered subcutaneous (sc) injection weekly"
+        },
+        {
+          "label": "Atacicept Arm 5",
+          "type": "EXPERIMENTAL",
+          "description": "Atacicept dose E administered subcutaneous (sc) injection weekly for 24 weeks, followed by monthly sc injections"
+        }
+      ],
+      "primaryEndpoints": [
+        "Evaluate the effect of atacicept on Gd-IgA1 in patients with IgAN"
+      ],
+      "secondaryEndpoints": [
+        "To evaluate the safety and tolerability of atacicept at different dosing regimensT",
+        "To evaluate the effect of atacicept on serum immunoglobulins (IgA)",
+        "To evaluate the effect of atacicept on serum immunoglobulins (IgG)",
+        "To evaluate the effect of atacicept on serum immunoglobulins (IgM)",
+        "To evaluate serum PK of atacicept"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07020923",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07020923",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07020923",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07020923",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07020923",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vt-001-0060",
+      "nctId": "NCT06983028",
+      "protocolNumber": "VT-001-0060",
+      "title": "A Phase 2 Study to Evaluate the Safety and Efficacy of Atacicept in Multiple Autoimmune Glomerular Diseases (PIONEER)",
+      "briefTitle": "Atacicept in Multiple Glomerular Diseases",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Vera Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-07-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-11-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-11-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 250,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "IgAN or IgAVN",
+          "type": "EXPERIMENTAL",
+          "description": "Adult and pediatric patients with biopsy proven IgAN or IgAVN with varied severity of proteinuria and kidney function beyond what is currently included in most clinical trials. Adults with post-transplant IgAN recurrence are also included."
+        },
+        {
+          "label": "pMN",
+          "type": "EXPERIMENTAL",
+          "description": "Adults with biopsy-proven pMN associated with anti-PLA2R antibodies at low risk of spontaneous remission, or experiencing recurrent or resistant disease."
+        },
+        {
+          "label": "Primary Nephrotic Syndrome (MCD/FSGS)",
+          "type": "EXPERIMENTAL",
+          "description": "Adults with biopsy-proven primary MCD or FSGS and evidence of anti-nephrin antibodies. Children with frequently relapsing, steroid-dependent, or non-genetic steroid-resistant nephrotic syndrome with evidence of anti-nephrin antibodies."
+        }
+      ],
+      "primaryEndpoints": [
+        "AE profile and results of routine clinical and laboratory tests",
+        "Percent reduction in urine protein to creatinine ratio (UPCR)"
+      ],
+      "secondaryEndpoints": [
+        "Changes from baseline estimated glomerular filtration rate (eGFR).",
+        "Change in disease-specific antibodies"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06983028",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06983028",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06983028",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06983028",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06983028",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-07-07",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761486%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761486",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761486%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761486Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761486Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:00:38.497Z"
+}

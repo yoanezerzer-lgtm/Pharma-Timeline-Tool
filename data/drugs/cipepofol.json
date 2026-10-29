@@ -1,0 +1,3526 @@
+{
+  "slug": "cipepofol",
+  "brandName": "Cypsedo",
+  "inn": "cipepofol",
+  "modality": "Drug (NDA)",
+  "sponsor": "HAISCO",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Induction of general anesthesia in adults undergoing surgery",
+      "slug": "induction-of-general-anesthesia-in-adults-undergoing-surgery",
+      "approvalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220482Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-05-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of CYPSEDO (cipepofol) injection for induction of general anesthesia in adults undergoing surgery.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220482Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of CYPSEDO (cipepofol) injection for induction of general anesthesia in adults undergoing surgery.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220482",
+      "applicationType": "NDA",
+      "sponsor": "HAISCO",
+      "originalApprovalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "hsk3486australia-01",
+      "nctId": "NCT04033939",
+      "protocolNumber": "HSK3486Australia-01",
+      "title": "A Phase I, Placebo and Positive-controlled, Dose-escalation Study to Determine the Safety, Pharmacodynamics and Pharmacokinetics of a Single Intravenous Injection of HSK3486 in Healthy Subjects",
+      "briefTitle": "A Study Evaluating the Safety, Pharmacodynamics and Pharmacokinetics of HSK3486 in Healthy Subjects.",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2014-04-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2014-11-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2015-05-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 48,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "49 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486-01",
+          "type": "EXPERIMENTAL",
+          "description": "Randomized to receive HSK3486 (0.016mg/kg,0.064mg/kg )as a single IV injection. HSK3486-01 was blinded.(2 HSK3486-01: 1 Placebo-01)"
+        },
+        {
+          "label": "Placebo-01",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Randomized to receive placebo (0.016mg/kg,0.064mg/kg )as a single IV injection. placebo-01 was blinded.(2 HSK3486-01: 1 Placebo-01)"
+        },
+        {
+          "label": "HSK3486-02",
+          "type": "EXPERIMENTAL",
+          "description": "Randomized to receive either HSK3486（0.128mg/kg,0.192mg/kg,0.288mg/kg,0.432mg/kg,0.540mg/kg,0.648mg/kg,0.810mg/kg) as a single IV injection. HSK3486-02 was open-label.(5 HSK3486-02: 1 propofol-02)"
+        },
+        {
+          "label": "Propofol-02",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Randomized to receive propofol (2.5mg/kg) as a single IV injection. Propofol-02 was open-label.(5 HSK3486-02: 1 propofol-02)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety by measurement of Adverse Events"
+      ],
+      "secondaryEndpoints": [
+        "Median effective dose (ED50)",
+        "Peak concentration (Cmax)",
+        "Time to plasma peak concentration(Tmax)",
+        "Terminal elimination half life (t1/2z) and mean residence time (MRT)",
+        "Mean residence time (MRT)",
+        "Area Under the Curve (AUC0-30min, AUC0-1h, AUC0-last, and AUC0-inf)",
+        "Total clearance (CL)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04033939",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04033939",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04033939",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04033939",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04033939",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-australian-02",
+      "nctId": "NCT04037657",
+      "protocolNumber": "HSK3486-Australian-02",
+      "title": "A Phase 1b, Positive-controlled, Dose-escalation Study to Determine the Safety, Pharmacodynamics and Pharmacokinetics of a Single Intravenous Dose of HSK3486 in Healthy Female Subjects.",
+      "briefTitle": "Evaluating the Safety, Pharmacodynamics and Pharmacokinetics of HSK3486 in Healthy Female Subjects.",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-04-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-06-09",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2015-11-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 25,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "49 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.288 mg/kg ，0.432 mg/kg ，0.540 mg/kg ，0.648 mg/kg，0.810 mg/kg There were five cohorts of six subjects per cohort (5 HSK3486:1 propofol)."
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "2.5 mg propofol"
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety by measurement of Adverse Events",
+        "Bispectral index （BIS）",
+        "Modified observer's assessment of alertness/sedation（MOAA/S）"
+      ],
+      "secondaryEndpoints": [
+        "Median effective dose (ED50)",
+        "Peak concentration (Cmax)",
+        "Time to plasma peak concentration(Tmax)",
+        "Area Under the Curve (AUC0-30min, AUC0-1h, AUC0-last, and AUC0-inf)",
+        "Total clearance (CL)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04037657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04037657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04037657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04037657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04037657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486australia-03",
+      "nctId": "NCT04029766",
+      "protocolNumber": "HSK3486Australia-03",
+      "title": "A Phase 1 Study to Investigate a Single Bolus Dose Followed With a 30 Minute Constant Infusion of HSK3486 on the Pharmacodynamics, Pharmacokinetics, Safety and Tolerability of HSK3486 in Healthy Male Subjects.",
+      "briefTitle": "A Study Evaluating Pharmacodynamics, Pharmacokinetics, Safety and Tolerability of HSK3486 Single Bolus Dose Followed With a 30 Minute Constant Infusion in Healthy Male Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-11-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-12-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2016-06-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 13,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "49 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.288 mg/kg bolus (1 min)+ 1 mg/kg/h constant infusion (30 min) or 0.540 mg/kg bolus (1 min)+ 2 mg/kg/h constant infusion (30 min)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety by measurement of Adverse Events"
+      ],
+      "secondaryEndpoints": [
+        "Modified observer's assessment of alertness/sedation（MOAA/S）",
+        "Bispectral index （BIS）",
+        "Median effective dose (ED50)",
+        "Peak concentration (Cmax)",
+        "Time to plasma peak concentration(Tmax)",
+        "Terminal elimination half life (t1/2z) and mean residence time (MRT)",
+        "Mean residence time (MRT)",
+        "Area Under the Curve (AUC0-30min, AUC0-1h, AUC0-last, and AUC0-inf)",
+        "Total clearance (CL)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04029766",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04029766",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04029766",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04029766",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04029766",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-101",
+      "nctId": "NCT03773835",
+      "protocolNumber": "HSK3486-101",
+      "title": "A Single-center, Open-label, Uncontrolled, and Dose-escalation Study Evaluating Safety, Tolerability, and Pharmacokinetics/Pharmacodynamics of Single IV Dose of HSK3486 Injectable Emulsion in Healthy Subjects.",
+      "briefTitle": "A Study Evaluating Safety, Tolerability, and Pharmacokinetics/Pharmacodynamics of Single IV Dose of HSK3486 Injectable Emulsion in Healthy Subjects.",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-05-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "49 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.15mg/kg, 0.40mg/kg, 0.60mg/kg, 0.90mg/kg,"
+        }
+      ],
+      "primaryEndpoints": [
+        "Apnea",
+        "Safety by measurement of Adverse Events"
+      ],
+      "secondaryEndpoints": [
+        "Modified observer's assessment of alertness/sedation（MOAA/S）",
+        "Bispectral index （BIS）",
+        "Median effective dose (ED50)",
+        "Peak concentration (Cmax)",
+        "Time to plasma peak concentration(Tmax)",
+        "Terminal elimination half life (t1/2z) and mean residence time (MRT)",
+        "Mean residence time (MRT)",
+        "Area Under the Curve (AUC0-30min, AUC0-1h, AUC0-last, and AUC0-inf)",
+        "Total clearance (CL)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773835",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773835",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773835",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773835",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773835",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-australian-04",
+      "nctId": "NCT04054063",
+      "protocolNumber": "HSK3486-Australian-04",
+      "title": "An Open Label, Single-Center, Single Dose Combination of HSK3486 and Etomidate Intravenous Bolus Injection to Determine the Safety, Pharmacodynamics and Pharmacokinetics for Induction of Anesthesia in Healthy Male Subjects",
+      "briefTitle": "A Study Evaluating Safety, Pharmacodynamics and Pharmacokinetics of HSK3486 and Etomidate for Induction of Anesthesia in Healthy Male Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-11-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-12-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-06-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 25,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "49 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486+etomidate",
+          "type": "EXPERIMENTAL",
+          "description": "Cohort 1: HSK3486 0.324 mg/kg + etomidate 0.15 mg/kg Cohort 2: HSK3486 0.216 mg/kg + etomidate 0.2 mg/kg Cohort 3: HSK3486 0.432 mg/kg + etomidate 0.1 mg/kg There were an additional 2 cohorts (Cohorts 4 and 5) planned for dose escalation once the optimal ratio of the drug combination was identified from the first 3 cohorts. However, these 2 cohorts were not done as the results of Cohorts 1 to 3 suggested that dose increases would cause higher occurrence of drug-related adverse events (AEs)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety by measurement of Adverse Events"
+      ],
+      "secondaryEndpoints": [
+        "Richmond Agitation Sedation Scale (RASS)",
+        "bispectral index (BIS)",
+        "subject-rated Quality of Recovery Assessment (QoR-9）",
+        "Peak concentration (Cmax)",
+        "Time to plasma peak concentration(Tmax)",
+        "Area Under the Curve"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04054063",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04054063",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04054063",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04054063",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04054063",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-201",
+      "nctId": "NCT03773042",
+      "protocolNumber": "HSK3486-201",
+      "title": "A Phase IIa, Multi-center, Open-label, Non-randomized, Active-controlled, and Dose-escalation Clinical Study Evaluating Tolerability, Efficacy, and Safety of HSK3486 Injectable Emulsion for Sedation/Anesthesia in Patients Undergoing Diagnostic Colonoscopy",
+      "briefTitle": "A Study Evaluating Tolerability, Efficacy, and Safety of HSK3486 Injectable Emulsion in Patients",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-12-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2017-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 64,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.1mg/kg, 0.2mg/kg, 0.3mg/kg, 0.4mg/kg, 0.5mg/kg"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "1.0mg/kg, 2.0mg/kg"
+        }
+      ],
+      "primaryEndpoints": [
+        "Rate of successful colonoscopies."
+      ],
+      "secondaryEndpoints": [
+        "Insertion time",
+        "The success rate of the colonoscopy procedure",
+        "Time to fully alert",
+        "Time to discharge",
+        "Application of study drug and alternative medication",
+        "Mini-Mental State Examinations (MMSE)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773042",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773042",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773042",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773042",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03773042",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-202",
+      "nctId": "NCT03698617",
+      "protocolNumber": "HSK3486-202",
+      "title": "A Phase IIa, Open-label, Propofol-controlled ,Dose-escalation, Multi-center Study to Evaluate the Tolerance, Efficacy and Safety of HSK3486 for Induction of General Anesthesia in Elective Surgery Patients.",
+      "briefTitle": "A Phase IIa Study Investigating the Tolerance, Efficacy and Safety of HSK3486",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-12-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-06-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-07-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 114,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "Dose Escalation Cohort:\n\n0.1 mg/kg, 0.2 mg/kg, 0.3mg/kg 0.4 mg/kg 0.5 mg/kg, 0.6 mg/kg, 0.7mg/kg, 0.8 mg/kg Dose Expansion Cohort: 0.3 mg/kg and 0.5 mg/kg."
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Dose Escalation Cohorts:2.0mg/kg and 2.5mg/kg; Dose Expansion Cohorts: 2.0mg/kg"
+        }
+      ],
+      "primaryEndpoints": [
+        "The success rate of induction of general anesthesia"
+      ],
+      "secondaryEndpoints": [
+        "Time from start of IMP administration to loss of eyelash reflex",
+        "Time from start of IMP administration to loss of consciousness",
+        "Time from start of IMP administration to intubation and the intubation reaction",
+        "Mini-Mental State Examination (MMSE) total scores(0-30) by time point",
+        "change from baseline in blood pressure （systolic, diastolic and mean arterial pressure)",
+        "change from baseline in heart rate",
+        "change from baseline in arterial oxygen saturation",
+        "Number of patients with adverse events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03698617",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03698617",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03698617",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03698617",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03698617",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-203",
+      "nctId": "NCT03709056",
+      "protocolNumber": "HSK3486-203",
+      "title": "A Phase IIb, Randomized, Double-blind, Propofol-controlled, Multi-center Study Evaluating the Efficacy and Safety of HSK3486 for Sedation and Anesthesia in Patients Undergoing Diagnostic Colonoscopy.",
+      "briefTitle": "A Study Evaluating the Efficacy and Safety of HSK3486",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-12-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-02-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-08-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 94,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486 0.4/0.2mg/kg ，0.5mg/kg/0.15mg/kg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Propofol 2.0/1.0mg/kg group",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Success of colonoscopy procedure"
+      ],
+      "secondaryEndpoints": [
+        "Time to start of procedure",
+        "The success rate of the colonoscopy procedure",
+        "Time to fully alert",
+        "Time to discharge",
+        "Application of study drug and alternative medication"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03709056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03709056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03709056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03709056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03709056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-301",
+      "nctId": "NCT03674008",
+      "protocolNumber": "HSK3486-301",
+      "title": "A Phase III,Randomized, Double-blind, Propofol-controlled, Parallel-design, Multi-center Study Evaluating The Efficacy and Safety of HSK3486 for Sedation or Anesthesia in Patients Undergoing Colonoscopy and Gastroscopy",
+      "briefTitle": "A Phase III Study Evaluating The Efficacy and Safety of HSK3486 for Sedation or Anesthesia",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-10-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-01-09",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-03-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 280,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.4mg/kg/0.2 mg/kg"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "1.5mg/kg/0.75mg/kg"
+        }
+      ],
+      "primaryEndpoints": [
+        "Success of colonoscopy procedure"
+      ],
+      "secondaryEndpoints": [
+        "The success rate of the gastroscopy procedure",
+        "The success rate of the colonoscopy and gastroscopy procedure",
+        "Time to induction of sedation or anaesthesia",
+        "Time to start of procedure",
+        "Time to fully alert",
+        "Time to discharge",
+        "Sedation/anesthesia satisfaction, satisfaction assessment of subjects, anesthesiologists, and endoscopic physicians"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03674008",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03674008",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03674008",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03674008",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03674008",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-103",
+      "nctId": "NCT03758469",
+      "protocolNumber": "HSK3486-103",
+      "title": "A Single-Center, Open-Label, Randomized, Two-Stage, Two-Way Crossover Study Evaluating Drug-Drug Interaction (DDI) Between HSK3486 Injectable Emulsion and Rifampin Capsules in Healthy Subjects.",
+      "briefTitle": "A Study Evaluating Drug-Drug Interaction (DDI) Between HSK3486 Injectable Emulsion and Rifampin Capsules",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-12-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-01-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-03-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 16,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.4 mg/kg"
+        },
+        {
+          "label": "rifampin , HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "600 mg;0.4 mg/kg"
+        }
+      ],
+      "primaryEndpoints": [
+        "Peak concentration (Cmax)",
+        "Area under the concentration-time curve (AUC0-t, AUC0-∞)"
+      ],
+      "secondaryEndpoints": [
+        "Terminal elimination half life (t1/2)",
+        "Time to fully awake",
+        "MOAA/S(modified observer's assessment of alert /sedation)-time curve",
+        "BIS(bispectral index)-time curve",
+        "Blood pressure",
+        "Heart rate",
+        "Respiratory rate or blood oxygen saturation",
+        "Blood routine test",
+        "Urine routine test",
+        "Blood biochemical examination",
+        "12-Electrocardiogram",
+        "Number of patients with adverse events",
+        "Concurrent medications"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03758469",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03758469",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03758469",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03758469",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03758469",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-104-2",
+      "nctId": "NCT03751956",
+      "protocolNumber": "HSK3486-104-2",
+      "title": "A Study Evaluating the Mass Balance and Biotransformation of [14C]HSK3486 Emulsion Injection in Healthy Chinese Male Adults.",
+      "briefTitle": "A Study Evaluating the Mass Balance of [14C]HSK3486 Emulsion Injection in Healthy Adults.",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-01-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-02-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-03-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 6,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "49 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.8 μCi/0.4 mg/kg of \\[14C\\]HSK3486 emulsion injection"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of cumulative drug excretion of [14C]HSK3486 on biological specimens(urine and faeces) accounting for total radiation drug dose",
+        "Maximum Plasma Concentration [Cmax] of total radioactivity and non-radiolabeled HSK3486 respectively",
+        "Time to plasma peak concentration[Tmax] of total radioactivity and non-radiolabeled HSK3486 respectively",
+        "Clearance half-life[t1/2] of total radioactivity and non-radiolabeled HSK3486 respectively",
+        "Area Under the Curve [AUC] of total radioactivity and non-radiolabeled HSK3486 respectively",
+        "The metabolite analysis of [14C]HSK3486 in human body"
+      ],
+      "secondaryEndpoints": [
+        "Number of patients with adverse events and serious adverse events",
+        "Blood routine test",
+        "Urine routine test",
+        "Blood biochemical examination",
+        "Blood pressure",
+        "Heart rate or pulse",
+        "Respiratory rate or blood oxygen saturation",
+        "Heart rate of electrocardiogram",
+        "RR interval of electrocardiogram",
+        "QT interval of electrocardiogram",
+        "QTcF interval of electrocardiogram",
+        "PR interval of electrocardiogram",
+        "QRS interval of electrocardiogram"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-102",
+      "nctId": "NCT03745625",
+      "protocolNumber": "HSK3486-102",
+      "title": "A Single-center, Open-label, Randomized, Double-crossover, Propofol-controlled, Two-stage Study Evaluating the Safety and Pharmacokinetics/Pharmacodynamics of IV Maintenance Dose After An Initial Dose and IV Single Loade Dose Plus Maintenance Dose of HSK3486 Emulsion fo Injection in Healthy Subjects",
+      "briefTitle": "A Study Evaluating the Safety and Pharmacokinetics/Pharmacodynamics of HSK3486",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-01-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-07-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-08-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 16,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "49 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "First-stage: 1mg/kg/h, 0.4mg/kg/h; Second-stage:Single loading dose: 0.2mg/kg, maintenance dose: 0.35mg/kg/h,"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "First-stage: 5mg/kg/h, 2mg/kg/h; Second-stage:Single load ing dose: 1mg/kg, maintenance dose: 1.75mg/kg/h"
+        }
+      ],
+      "primaryEndpoints": [
+        "blood pressure（systolic, diastolic and mean arterial pressure）",
+        "heart rate",
+        "respiratory rate",
+        "blood oxygen saturation",
+        "Number of patients with adverse events"
+      ],
+      "secondaryEndpoints": [
+        "Richmond Agitation Sedation Scale( scores：+4~-5)",
+        "Bispectral index",
+        "Sedation/anesthesia satisfaction, satisfaction assessment of subjects, anesthesiologists, and endoscopic physicians",
+        "Terminal elimination half life",
+        "Total clearance",
+        "Volume of distribution",
+        "plasma concentration at the end of infusion"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03745625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03745625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03745625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03745625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03745625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-302",
+      "nctId": "NCT03808844",
+      "protocolNumber": "HSK3486-302",
+      "title": "A Multi-Center, Randomized, Double-Blind, Propofol-Controlled Phase III Clinical Trial Evaluating the Efficacy and Safety of HSK3486 Injectable Emulsion for the Induction of General Anesthesia in Elective Surgery Subjects",
+      "briefTitle": "A Trial Evaluating the Efficacy and Safety of HSK3486 Injectable Emulsion for the Induction of General Anesthesia in Elective Surgery Subjects",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-03-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-08-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-09-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 178,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.4mg/kg/0.2 mg/kg"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "2.0mg/kg/1.0mg/kg"
+        }
+      ],
+      "primaryEndpoints": [
+        "The success rate of induction of anesthesia"
+      ],
+      "secondaryEndpoints": [
+        "Time to successful anesthetic induction",
+        "Time to loss of eyelash reflex",
+        "Use of the investigational drug and alternative drugs",
+        "Use of the alternative drugs",
+        "Changes in bispectral index (BIS)（score：0~100）",
+        "Number of patients with adverse events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03808844",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03808844",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03808844",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03808844",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03808844",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-105",
+      "nctId": "NCT04145596",
+      "protocolNumber": "HSK3486-105",
+      "title": "A Phase 1 Study to Investigate a Single Bolus Dose Followed With a 30 Minute Constant Infusion of HSK3486 on the Safety and Pharmacokinetics/Pharmacodynamics of HSK3486 in Patients With Hepatic Impairment (Single-Center, Open-label, Parallel-Group)",
+      "briefTitle": "Safety and Pharmacokinetics/Pharmacodynamics of HSK3486 in Patients With Hepatic Impairment",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-11-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-04-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-07-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "DIAGNOSTIC"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Compensated Chronic Liver Disease (Child-Pugh A)",
+          "type": "ACTIVE_COMPARATOR"
+        },
+        {
+          "label": "Decompensated Chronic Liver Disease (Child-Pugh B)",
+          "type": "ACTIVE_COMPARATOR"
+        },
+        {
+          "label": "healthy volunteers（Normal liver functions）",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Peak concentration (Cmax)",
+        "Area under the concentration-time curve (AUC)"
+      ],
+      "secondaryEndpoints": [
+        "MOAA/S(modified observer's assessment of alert /sedation)",
+        "Bispectral index(BIS)",
+        "Tmax",
+        "Total clearance",
+        "Volume of distribution",
+        "blood pressure（systolic, diastolic and mean arterial pressure）"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145596",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145596",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145596",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145596",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145596",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-205",
+      "nctId": "NCT04147416",
+      "protocolNumber": "HSK3486-205",
+      "title": "A Multi-center, Open-label, Randomized, Propofol-controlled Study Evaluating the Efficacy and Safety of Intravenous Administration of HSK3486 Injectable Emulsion for Sedation in Intensive Care (ICU) Patients Undergoing Mechanical Ventilation",
+      "briefTitle": "A Study Evaluating the Efficacy and Safety of HSK3486 for Sedation",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-11-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-05-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-07-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 39,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 for Sedation"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol for Sedation"
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean time to sedation"
+      ],
+      "secondaryEndpoints": [
+        "Study drug use",
+        "Minimum maintenance dose",
+        "Unit weight dose of remedial drug",
+        "Unit weight dose of remifentanil",
+        "Extubation time",
+        "Recovery time"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04147416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04147416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04147416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04147416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04147416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-303",
+      "nctId": "NCT04111159",
+      "protocolNumber": "HSK3486-303",
+      "title": "A Multi-Center, Randomized, Double-Blind, Propofol-Controlled Phase III Clinical Trial Evaluating the Efficacy and Safety of HSK3486 Injectable Emulsion for the Induction of Sedation/Anesthesia in Subjects Undergoing Fiberoptic Bronchoscopy",
+      "briefTitle": "A Trial Evaluating the Efficacy and Safety of HSK3486 Injectable Emulsion in Subjects Undergoing Fiberoptic Bronchoscopy",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-12-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-06-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-07-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 267,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects \\< 65 years old:0.4mg/kg/0.15mg/kg;Subjects ≥ 65 years old:75% of the dose for subjects \\< 65 years old."
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Subjects \\< 65 years old:2mg/kg/0.75mg/kg;Subjects≥ 65 years old:75% of the dose for subjects \\< 65 years old."
+        }
+      ],
+      "primaryEndpoints": [
+        "Success rate of fiberoptic bronchoscopy. A successful diagnosis/treatment should meet both of the following:"
+      ],
+      "secondaryEndpoints": [
+        "Time to successful sedation/anesthetic induction",
+        "Time to fully awake",
+        "Time to discharge",
+        "Use of the investigational drug and alternative drugs",
+        "Use of questionnaires to estimate sedation/anesthesia satisfaction, including satisfaction assessments of the subject and anesthesiologist"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04111159",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04111159",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04111159",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04111159",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04111159",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-204",
+      "nctId": "NCT04048811",
+      "protocolNumber": "HSK3486-204",
+      "title": "A Multi-Center, Randomized, Open-Label, Positive-Controlled Phase II Clinical Trial Evaluating the Efficacy and Safety of HSK3486 Injectable Emulsion for Induction and Maintenance of General Anesthesia in Elective Surgery Patients.",
+      "briefTitle": "A Clinical Trial Evaluating the Efficacy and Safety of HSK3486 Injectable Emulsion in Elective Surgery Patients",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-12-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-05-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-06-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 46,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 induction + maintenance group"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol induction + maintenance group"
+        },
+        {
+          "label": "Propofol HSK3486",
+          "type": "OTHER",
+          "description": "Propofol induction + HSK3486 maintenance group"
+        }
+      ],
+      "primaryEndpoints": [
+        "Success rate of anesthesia maintenance",
+        "Number of patients with adverse events"
+      ],
+      "secondaryEndpoints": [
+        "Success rate of anesthesia induction",
+        "Success rate of anesthesia",
+        "Changes in Bispectral index",
+        "Time to successful induction of anesthesia",
+        "Time to recovery from anesthesia",
+        "Time to respiratory recovery",
+        "Time to extubation",
+        "Time to leaving the operating room",
+        "Time to leaving postanesthesia care unit(PACU)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04048811",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04048811",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04048811",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04048811",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04048811",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-107",
+      "nctId": "NCT04145583",
+      "protocolNumber": "HSK3486-107",
+      "title": "A Single-Center, Open-Label, Randomized, Two-Stage, and Two-Way Crossover Study Evaluating Drug-Drug Interaction (DDI) Between HSK3486 Injectable Emulsion and Voriconazole Tablets in Healthy Subjects",
+      "briefTitle": "A Study Evaluating Drug-Drug Interaction (DDI) Between HSK3486 Injectable Emulsion and Voriconazole Tablets",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-12-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-01-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-05-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 16,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.4 mg/kg"
+        },
+        {
+          "label": "voriconazole , HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "400 or 200 mg; 0.4 mg/kg"
+        }
+      ],
+      "primaryEndpoints": [
+        "Peak concentration (Cmax)",
+        "Area under the concentration-time curve (AUC0-t, AUC0-∞)"
+      ],
+      "secondaryEndpoints": [
+        "Terminal elimination half-life (t1/2)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145583",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145583",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145583",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145583",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04145583",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-108",
+      "nctId": "NCT04197661",
+      "protocolNumber": "HSK3486-108",
+      "title": "A Study Evaluating Pharmacokinetics, Pharmacodynamics and Safety of Intravenous Administration of HSK3486 Injectable Emulsion in Healthy Elderly Subjects",
+      "briefTitle": "Safety and Pharmacokinetics/Pharmacodynamics of HSK3486 in Healthy Elderly Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-12-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-01-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-05-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 32,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Elderly groupⅠ",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Elderly groupⅠ 65 years or older 0.2 mg/kg HSK3486"
+        },
+        {
+          "label": "Elderly group Ⅱ",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Elderly group Ⅱ 65 years or older 0.3 mg/kg HSK3486"
+        },
+        {
+          "label": "Elderly group Ⅲ",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Elderly group Ⅲ 65 years or older 0.4 mg/kg HSK3486"
+        },
+        {
+          "label": "Non-elderly group IV",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Non-elderly group IV 18 to 64 years 0.4 mg/kg HSK3486"
+        }
+      ],
+      "primaryEndpoints": [
+        "Peak concentration (Cmax)",
+        "Area under the concentration-time curve（AUC）"
+      ],
+      "secondaryEndpoints": [
+        "MOAA/S(modified observer's assessment of alert /sedation)",
+        "Bispectral index(BIS)",
+        "Tmax",
+        "Total clearance",
+        "blood pressure（systolic, diastolic and mean arterial pressure）"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04197661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04197661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04197661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04197661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04197661",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-106",
+      "nctId": "NCT04142970",
+      "protocolNumber": "HSK3486-106",
+      "title": "A Clinical Study Comparatively Evaluating the Pharmacokinetics, Pharmacodynamics and Safety of Intravenous Administration of HSK3486 Injectable Emulsion in Patients With Chronic Renal Impairment and Subjects With Normal Renal Functions",
+      "briefTitle": "Safety and Pharmacokinetics/Pharmacodynamics of HSK3486 in Patients With Impairment Renal Functions",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-01-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-08-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-08-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Mild renal impairment",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Mild renal impairment (eGFR: 60-89 mL/min/1.73 m\\^2)"
+        },
+        {
+          "label": "Moderate renal impairment",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Moderate renal impairment (eGFR: 30-59 mL/min/1.73 m\\^2)"
+        },
+        {
+          "label": "Subjects with normal renal functions",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Subjects with normal renal functions (eGFR: ≥ 90 mL/min/1.73 m\\^2)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Peak concentration (Cmax)",
+        "Area under the concentration-time curve（AUC）"
+      ],
+      "secondaryEndpoints": [
+        "MOAA/S(modified observer's assessment of alert /sedation)",
+        "Bispectral index(BIS)",
+        "Tmax",
+        "Total clearance",
+        "Volume of distribution",
+        "blood pressure（systolic, diastolic and mean arterial pressure）"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04142970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04142970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04142970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04142970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04142970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-104-1",
+      "nctId": "NCT03751969",
+      "protocolNumber": "HSK3486-104-1",
+      "title": "A Study Evaluating the Mass Balance of Micro-dose [14C]HSK3486 Emulsion Injection in Healthy Chinese Male Adults",
+      "briefTitle": "A Study Evaluating the Mass Balance of Micro-dose[14C]HSK3486 Emulsion Injection in Healthy Adults",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "WITHDRAWN",
+      "sponsor": "Sichuan Haisco Pharmaceutical Group Co., Ltd",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-03-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-11-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-12-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 0,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "49 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "0.4 mg/kg of HSK3486 emulsion injection (containing \\[14C\\] HSK3486 at a radiation dose of 5 nCi/0.4 mg/kg)\n\n."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of cumulative drug excretion of [14C]HSK3486 on biological specimens(urine and faeces) accounting for total radiation drug dose",
+        "Maximum Plasma Concentration [Cmax] of 14C radioactivity and non-radiolabeled HSK3486 respectively",
+        "Time to plasma peak concentration[Tmax] of 14C radioactivity and non-radiolabeled HSK3486 respectively",
+        "Clearance half-life[t1/2] of 14C radioactivity and non-radiolabeled HSK3486 respectively",
+        "Area Under the Curve [AUC] of 14C radioactivity and non-radiolabeled HSK3486 respectively"
+      ],
+      "secondaryEndpoints": [
+        "Number of patients with adverse events and serious adverse events",
+        "Blood routine test",
+        "Urine routine test",
+        "Blood biochemical examination",
+        "Blood pressure",
+        "Heart rate or pulse",
+        "Respiratory rate or blood oxygen saturation",
+        "Heart rate of electrocardiogram",
+        "RR interval of electrocardiogram",
+        "QT interval of electrocardiogram",
+        "QTcF interval of electrocardiogram",
+        "PR interval of electrocardiogram",
+        "QRS interval of electrocardiogram"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751969",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751969",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751969",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751969",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751969",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-306",
+      "nctId": "NCT04511728",
+      "protocolNumber": "HSK3486-306",
+      "title": "A Multi-center, Randomized, Single-blind, Propofol Injectable Emulsion Parallel-controlled Phase III Clinical Study to Evaluate the Efficacy and Safety of HSK3486 Injectable Emulsion in the Induction of General Anesthesia in Patients Undergoing Elective Surgery",
+      "briefTitle": "A Study to Evaluate the Efficacy and Safety of HSK3486 in the Induction of General Anesthesia",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco Pharmaceutical Group Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-11-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-01-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 129,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Success rate of anesthesia maintenance"
+      ],
+      "secondaryEndpoints": [
+        "Success rate of anesthesia induction",
+        "Percentage of time from the beginning of surgical skin incision to the end of surgery",
+        "Time to recovery from anesthesia",
+        "Time to respiratory recovery",
+        "Time from discontinuation of the study drug to 3 consecutive Aldrete score ≥ 9.",
+        "Number of patients with adverse events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04511728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04511728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04511728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04511728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04511728",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-307",
+      "nctId": "NCT04620031",
+      "protocolNumber": "HSK3486-307",
+      "title": "A Multi-Center, Randomized, Single-Blind, Propofol-Controlled Phase III Clinical Study Evaluating Sedation of Intravenous Administration of HSK3486 Injectable Emulsion in ICU Patients Undergoing Mechanical Ventilation",
+      "briefTitle": "A Study Evaluating Sedation of Intravenous Administration of HSK3486 Injectable Emulsion in ICU Patients Undergoing Mechanical Ventilation",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco Pharmaceutical Group Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-12-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-06-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-08-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 135,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 for Sedation"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol for Sedation"
+        }
+      ],
+      "primaryEndpoints": [
+        "Success rate of sedation"
+      ],
+      "secondaryEndpoints": [
+        "Mean qualified rate of sedation",
+        "Use of study drug",
+        "Dose of remedial drugs per unit weight",
+        "Time to extubation",
+        "Time to recovery",
+        "Incidence of adverse events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04620031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04620031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04620031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04620031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04620031",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-304",
+      "nctId": "NCT04711837",
+      "protocolNumber": "HSK3486-304",
+      "title": "A Multicenter, Randomized, Double-blinded, Propofol-controlled, Phase 3 Clinical Study to Evaluate the Efficacy and Safety of HSK3486 Injectable Emulsion for Induction of General Anesthesia in Adults Undergoing Elective Surgery.",
+      "briefTitle": "Efficacy and Safety of HSK3486 Compared to Propofol in Induction of General Anesthesia in Adults Having Elective Surgery",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco-USA Pharmaceuticals, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-02-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-04-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-04-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 255,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 for induction of general anesthesia."
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol for induction of general anesthesia."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Successful Anesthesia Induction"
+      ],
+      "secondaryEndpoints": [
+        "Subjects' NRS Pain Score",
+        "Proportion of Subjects With Successful Induction Who Maintain the Desired Depth of Anesthesia for General Elective Surgery, AND Without Significant Cardiac and Respiratory Depression.",
+        "Proportion of Subjects With Any Injection-site Pain on Numeric Rating Scale.",
+        "Time to Successful Induction of General Anesthesia."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711837",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711837",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711837",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711837",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711837",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-206",
+      "nctId": "NCT04669821",
+      "protocolNumber": "HSK3486-206",
+      "title": "A Multi-Center, Randomized, Open-Label, Propofol-Controlled Exploratory Clinical Study Evaluating Sedation of Intravenous Administration of HSK3486 Injectable Emulsion in ICU Patients Undergoing Long-Term Mechanical Ventilation",
+      "briefTitle": "A Clinical Study Evaluating Sedation of Intravenous Administration of HSK3486 in ICU Patients Undergoing Long-Term Mechanical Ventilation",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco Pharmaceutical Group Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-08-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-10-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean duration of qualified sedation"
+      ],
+      "secondaryEndpoints": [
+        "Time to recovery",
+        "Time to extubation"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04669821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04669821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04669821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04669821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04669821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-305",
+      "nctId": "NCT05478174",
+      "protocolNumber": "HSK3486-305",
+      "title": "A Multicenter, Randomized, Double-blinded, Propofol-controlled, Phase 3 Clinical Study to Evaluate the Efficacy and Safety of HSK3486 Injectable Emulsion for Induction of General Anesthesia in Adults Undergoing Elective Surgery",
+      "briefTitle": "Efficacy and Safety of HSK3486 Compared to Propofol for Adults Undergoing Elective Surgery With General Anesthesia",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco-USA Pharmaceuticals, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-07-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-11-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-11-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 400,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "99 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 for general anesthesia induction"
+        },
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol for general anesthesia induction"
+        }
+      ],
+      "primaryEndpoints": [
+        "Success Rate of General Anesthesia Induction"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Subjects With Successful Induction Who Maintain the Desired Depth of Anesthesia for General Elective Surgery, AND Without Significant Cardiac and Respiratory Depression",
+        "Percentage of Subjects With Any Injection-site Pain on Numeric Rating Scale ≥1"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05478174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05478174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05478174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05478174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05478174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-110",
+      "nctId": "NCT05614544",
+      "protocolNumber": "HSK3486-110",
+      "title": "A 2-Part, Dose-Finding and Human Abuse Potential Study Of HSK3486 Injection In Nondependent, Recreational Central Nervous System Depressant Users",
+      "briefTitle": "Dose-Finding and Human Abuse Potential Study Of HSK3486 Injection In Nondependent, Recreational Central Nervous System Depressant Users",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco-USA Pharmaceuticals, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-08-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-10-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-10-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 42,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment A: HSK3486 dose 1",
+          "type": "EXPERIMENTAL",
+          "description": "Treatment A: HSK3486 dose 1 (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe; dose to be determined in Part 1)"
+        },
+        {
+          "label": "Treatment B: HSK3486 dose 2",
+          "type": "EXPERIMENTAL",
+          "description": "Treatment B: HSK3486 dose 2 (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe; dose to be determined in Part 1)"
+        },
+        {
+          "label": "Treatment C: Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Treatment C: Propofol (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe; dose to be determined in Part 1)"
+        },
+        {
+          "label": "Treatment D: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Treatment D: Placebo (Treatment A matched) (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1",
+        "Part 2"
+      ],
+      "secondaryEndpoints": [
+        "To evaluate the safety and tolerability of HSK3486 in healthy, nondependent, recreational CNS depressant drug users",
+        "• To evaluate the safety and tolerability of HSK3486 compared to propofol when administered IV to healthy nondependent, recreational CNS depressant drug users"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05614544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05614544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05614544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05614544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05614544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-110-dose-finding",
+      "nctId": "NCT07404306",
+      "protocolNumber": "HSK3486-110 Dose Finding",
+      "title": "A 2-Part, Dose-Finding and Human Abuse Potential Study Of HSK3486 Injection In Nondependent, Recreational Central Nervous System Depressant Users",
+      "briefTitle": "Part 1: Dose-Finding of HSK3486 Injection In Nondependent, Recreational Central Nervous System Depressant Users",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco-USA Pharmaceuticals, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-08-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-10-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-10-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 43,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486 0.1 mg/kg",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "HSK3486 0.125 mg/kg",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "HSK3486 0.15 mg/kg",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "HSK3486 0.175 mg/kg",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "HSK3486 0.2 mg/kg",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "HSK3486 0.225 mg/kg",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "Propofol 0.5 mg/kg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "Propofol 0.625 mg/kg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "Propofol 0.675 mg/kg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "Propofol 0.725 mg/kg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "Propofol 0.775 mg/kg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Intralipid (IV bolus over 30 seconds \\[+5 seconds\\] from a syringe)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Dose Determination for use in part 2"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07404306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07404306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07404306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07404306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07404306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-309",
+      "nctId": "NCT05486416",
+      "protocolNumber": "HSK3486-309",
+      "title": "A Global Multicenter, Randomized, Double-blinded, Propofol-controlled, Phase 3 Clinical Study to Evaluate the Efficacy and Safety of HSK3486 Injectable Emulsion for Induction of General Anesthesia in Adults Undergoing Elective Surgery",
+      "briefTitle": "Safety and Efficacy of HSK3486 Compared to Propofol for Induction of General Anesthesia in Adults With Elective Surgery",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco-USA Pharmaceuticals, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-07-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 465,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "99 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486 for general anesthesia induction",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 for induction of general anesthesia"
+        },
+        {
+          "label": "Propofol for general anesthesia induction",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol for induction of general anesthesia"
+        }
+      ],
+      "primaryEndpoints": [
+        "Success Rate of General Anesthesia Induction"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Subjects With Successful Induction Who Maintain the Desired Depth of Anesthesia for General Elective Surgery, AND Without Significant Cardiac and Respiratory Depression",
+        "Proportion of Subjects With Any Injection-site Pain on Numeric Rating Scale ≥1"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05486416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05486416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05486416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05486416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05486416",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-310",
+      "nctId": "NCT06391931",
+      "protocolNumber": "HSK3486-310",
+      "title": "A Multicenter, Open, Controlled, Phase III Clinical Study to Evaluate the Efficacy and Safety of Cipepofol Injection for General Anesthesia in Pediatric Patients Undergoing Elective Surgery",
+      "briefTitle": "A Multicenter, Open, Controlled, Phase III Clinical Study to Evaluate the Efficacy and Safety of Cipepofol Injection for General Anesthesia in Pediatric Patients Undergoing Elective Surgery",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco Pharmaceutical Group Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-04-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-11-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-11-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 190,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cipepofol group",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Propofol group",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Success rate of anesthesia"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06391931",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06391931",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06391931",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06391931",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06391931",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-112",
+      "nctId": "NCT06795204",
+      "protocolNumber": "HSK3486-112",
+      "title": "A Randomized, Positive and Placebo-Controlled Study to Evaluate the Effects of HSK3486 Administration on Cardiac Repolarization in Healthy Subjects",
+      "briefTitle": "Effects of HSK3486 on Cardiac Repolarization in Health Subjects (TQT)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Haisco-USA Pharmaceuticals, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-04-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-11-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 48,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "HSK3486( study drug)",
+          "type": "EXPERIMENTAL",
+          "description": "One time, 0.4 mg/kg, IV bolus administration for 30 (±5) seconds"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "One time, IV bolus administration for 30 (±5) seconds"
+        },
+        {
+          "label": "Moxifloxacin hydrochloride",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "One time, 0.4 g oral administration with 240 mL of warm water on an empty stomach."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change-from-baseline in QTc Interval"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-408",
+      "nctId": "NCT06740201",
+      "protocolNumber": "HSK3486-408",
+      "title": "A Clinical Validation Study to Evaluate the Accuracy of a Target Controlled Infusion Model of Cipepofol in Patients With General Anesthesia During Elective Surgery",
+      "briefTitle": "A Study to Evaluate the Accuracy of aTCI Model of Cipepofol in Patients With General Anesthesia During Elective Surgery",
+      "phase": "PHASE4",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Haisco Pharmaceutical Group Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-01-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-03-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-05-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 40,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cp=0.9μg/ml",
+          "type": "EXPERIMENTAL",
+          "description": "Plasma target-controlled concentration 0.9μg/ml"
+        },
+        {
+          "label": "Cp=1.2μg/ml",
+          "type": "EXPERIMENTAL",
+          "description": "Plasma target-controlled concentration 1.2μg/ml"
+        }
+      ],
+      "primaryEndpoints": [
+        "Optimize the parameters CeLoC/CeRoC and Ke0 of the target-controlled infusion model of cipepofol."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06740201",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06740201",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06740201",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06740201",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06740201",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "hsk3486-401",
+      "nctId": "NCT07510945",
+      "protocolNumber": "HSK3486-401",
+      "title": "A Multicenter, Randomized, Double-blinded, Propofol-controlled, Phase 3b Clinical Study to Evaluate the Efficacy and Safety of HSK3486 (Cipepofol) Injectable Emulsion for Induction of General Anesthesia in Pediatric Subjects Undergoing Elective Surgery",
+      "briefTitle": "HSK3486 (Cipepofol) Injectable Emulsion for Induction of General Anesthesia in Pediatric Subjects Undergoing Elective Surgery",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Haisco Pharmaceutical Group Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-05-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-05-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-05-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 400,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "3 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Propofol",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Propofol for induction of general anesthesia."
+        },
+        {
+          "label": "HSK3486",
+          "type": "EXPERIMENTAL",
+          "description": "HSK3486 for induction of general anesthesia."
+        }
+      ],
+      "primaryEndpoints": [
+        "Success rate of GA induction"
+      ],
+      "secondaryEndpoints": [
+        "The proportion of subjects (6-17 years old) with any injection-site pain (mild, moderate, severe) at time of drug administration on the NRS ≥1.",
+        "The proportion of subjects (3-5 years old) with any injection-site pain (mild, moderate, severe) at time of drug administration on the FPS-R ≥2."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07510945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07510945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07510945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07510945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07510945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220482%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220482",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220482%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220482Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220482Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:01:12.580Z"
+}

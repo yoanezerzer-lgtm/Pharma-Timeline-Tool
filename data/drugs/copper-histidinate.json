@@ -1,0 +1,357 @@
+{
+  "slug": "copper-histidinate",
+  "brandName": "Zycubo",
+  "inn": "copper histidinate",
+  "modality": "Drug (NDA)",
+  "sponsor": "SENTYNL THERAPS INC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Menkes disease in pediatric patients",
+      "slug": "menkes-disease-in-pediatric-patients",
+      "approvalDate": {
+        "value": "2026-01-12",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/211241Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-01-12",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Zycubo (copper histidinate) injection for the treatment of Menkes disease in pediatric patients.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/211241Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Zycubo (copper histidinate) injection for the treatment of Menkes disease in pediatric patients.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "211241",
+      "applicationType": "NDA",
+      "sponsor": "SENTYNL THERAPS INC",
+      "originalApprovalDate": {
+        "value": "2026-01-12",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "090059",
+      "nctId": "NCT00811785",
+      "protocolNumber": "090059",
+      "title": "Molecular Bases of Response to Copper Treatment in Menkes Disease, Related Phenotypes, and Unexplained Copper Deficiency",
+      "briefTitle": "Molecular Bases of Response to Copper Treatment in Menkes Disease, Related Phenotypes, and Unexplained Copper Deficiency",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Menkes disease in pediatric patients",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211241s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Menkes disease in pediatric patients)",
+            "quote": "Trial identifier appears within the Menkes disease in pediatric patients section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/211241Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Zycubo (copper histidinate) injection for the treatment of Menkes disease in pediatric patients.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Cyprium Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2009-02-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-08-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-08-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 93,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "To assess neurological improvement in patients with OHS or unexplained copper deficiency treated with subcutaneous CuHis injections."
+      ],
+      "secondaryEndpoints": [
+        "To assess survival in classic Menkes disease subjects treated with subcutaneous CuHis injections in comparison with classic Menkes patients who did not receive any type of copper treatment."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00811785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00811785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00811785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00811785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00811785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211241s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 8,
+          "quote": "eatment in two open- label, single-arm clinical trials (Trial 1, NCT00001262 and Trial 2, NCT00811785). Data from ZYCUBO-treated patients in these two trials were compared to data from an unt",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cyp-002",
+      "nctId": "NCT04337684",
+      "protocolNumber": "CYP-002",
+      "title": "Long Term Follow-Up and Collection of Historical Control Data on Menkes Disease Patients",
+      "briefTitle": "Long Term Follow-up on Menkes Disease Patients",
+      "phase": "NA",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Sentynl Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2019-12-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-02-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-08-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 50,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Historical Control"
+        },
+        {
+          "label": "Treated with Copper Histidinate"
+        }
+      ],
+      "primaryEndpoints": [
+        "Long Term Follow-Up on Survival"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04337684",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04337684",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04337684",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04337684",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04337684",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cyp-001",
+      "nctId": "NCT04074512",
+      "protocolNumber": "CYP-001",
+      "title": "Copper Histidinate Treatment for Menkes Disease",
+      "briefTitle": "Copper Histidinate Treatment for Menkes Disease",
+      "phase": "NA",
+      "roles": [],
+      "status": "APPROVED_FOR_MARKETING",
+      "sponsor": "Sentynl Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "0 Years",
+        "maxAge": "6 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04074512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04074512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04074512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04074512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04074512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-01-12",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA211241%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 211241",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA211241%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211241s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/211241Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:03:11.347Z"
+}

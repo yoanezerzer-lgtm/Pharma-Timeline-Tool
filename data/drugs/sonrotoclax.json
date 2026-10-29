@@ -1,0 +1,2181 @@
+{
+  "slug": "sonrotoclax",
+  "brandName": "Beqalzi",
+  "inn": "sonrotoclax",
+  "modality": "Drug (NDA)",
+  "sponsor": "BEONE MEDICINES USA",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adult patients with relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a Bruton’s tyrosine kinase (BTK) inhibitor",
+      "slug": "adult-patients-with-relapsed-or-refractory-mantle-cell",
+      "approvalDate": {
+        "value": "2026-05-13",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220711Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-05-13",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Beqalzi (sonrotoclax) tablets for the treatment of adult patients with relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a Bruton’s tyrosine kinase (BTK) inhibitor.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220711Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Beqalzi (sonrotoclax) tablets for the treatment of adult patients with relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a Bruton’s tyrosine kinase (BTK) inhibitor.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220711",
+      "applicationType": "NDA",
+      "sponsor": "BEONE MEDICINES USA",
+      "originalApprovalDate": {
+        "value": "2026-05-13",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "bgb-11417-101",
+      "nctId": "NCT04277637",
+      "protocolNumber": "BGB-11417-101",
+      "title": "A Phase 1a/1b Open-Label Dose Escalation and Expansion Study of Bcl-2 Inhibitor BGB-11417 in Patients With Mature B-Cell Malignancies",
+      "briefTitle": "Study of Bcl-2 Inhibitor Sonrotoclax (BGB-11417) in Participants With Mature B-Cell Malignancies",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-03-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-05-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-05-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 437,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sonrotoclax Monotherapy Dose Finding: Part 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with relapsed/refractory (R/R) non-Hodgkin lymphoma (NHL) including follicular lymphoma (FL), diffuse large B-cell lymphoma (DLBCL), marginal zone lymphoma (MZL) or transformed NHL, mantle cell lymphoma (MCL); Waldenströms macroglobulinemia (WM); and chronic lymphocytic leukemia (CLL)/small lymphocytic lymphoma (SLL) will receive oral sonrotoclax evaluated as monotherapy."
+        },
+        {
+          "label": "Sonrotoclax Monotherapy Expansion Cohorts: Part 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with R/R indolent NHL including FL, MZL; aggressive NHL including DLBCL, transformed NHL; CLL/SLL with low tumor burden or low creatine clearance; CLL/SLL with without high tumor burden or low creatine clearance will receive oral sonrotoclax at the RP2D dose to further define the safety profile."
+        },
+        {
+          "label": "Sonrotoclax + Zanubrutinib Combination Therapy Dose Finding: Part 3",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with R/R MCL, R/R or treatment-naïve (TN) CLL/SLL will receive oral sonrotoclax in combination with zanubrutinib."
+        },
+        {
+          "label": "Sonrotoclax + Zanubrutinib Combination Therapy Dose Expansion: Part 4",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with R/R indolent NHL including FL, MZL; aggressive NHL including DLBCL, transformed NHL; R/R MCL; R/R or treatment-naïve (TN) CLL/SLL will receive oral sonrotoclax in combination with zanubrutinib at an RP2D dose to further define the safety profile."
+        },
+        {
+          "label": "Sonrotoclax + Zanubrutinib Combination Therapy Dose Escalation: Part 5",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with treatment naïve CLL/SLL will receive oral sonrotoclax in combination with obinutuzumab without and with zanubrutinib."
+        },
+        {
+          "label": "Sonrotoclax + Zanubrutinib Combination Therapy Dose Expansion: Part 6",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with treatment naïve CLL/SLL will receive oral sonrotoclax in combination with obinutuzumab without and with zanubrutinib at an RP2D dose to further define the safety profile."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Experiencing Treatment Emergent Adverse Events (TEAEs)",
+        "Number of Participants Experiencing Serious Adverse Events (SAEs)",
+        "Number of Participants Experiencing Adverse Events (AEs) leading to discontinuation of Sonrotoclax",
+        "Part 1, Part 3: Maximum Tolerated Dose (MTD) of Sonrotoclax",
+        "Part 1, Part 3, Part 5: RP2D of Sonrotoclax",
+        "Part 1, Part 3, Part 5: Number of participants experiencing tumor lysis syndrome (TLS) relevant events",
+        "Part 1, Part 3, Part 5: Number of Participants Experiencing Dose-Limiting Toxicities (DLTs"
+      ],
+      "secondaryEndpoints": [
+        "Maximum Observed Plasma Concentration (Cmax) After a Single Dose of Sonrotoclax",
+        "Area Under the Concentration-Time Curve from Time 0 to the Last Quantifiable Concentration (AUC0-last) After a Single Dose of Sonrotoclax",
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-∞) After a Single Dose of Sonrotoclax",
+        "Time Taken for Half the Initial Dose Administered to Be Eliminated from The Body (T1/2) of Sonrotoclax",
+        "Time to Maximum Plasma Concentration (Tmax) After a Single Dose of Sonrotoclax",
+        "Apparent Clearance (CL/F) After a Single Dose of Sonrotoclax",
+        "Apparent volume of distribution (Vz/F) After a Single Dose of Sonrotoclax",
+        "Steady State Area Under the Concentration-Time Curve of 0 - Last Day (AUCLast, ss) of Sonrotoclax",
+        "Part 3, Part 4: Steady State Area Under the Concentration-Time Curve of 0 - Last Day (AUCLast, ss) of zanubrutinib",
+        "Steady State Maximum Observed Plasma Concentration (Cmax, ss) of Sonrotoclax",
+        "Part 3, Part 4: Steady State Maximum Observed Plasma Concentration (Cmax, ss) of zanubrutinib",
+        "Steady State Trough Observed Plasma Concentration (Ctrough, ss) of Sonrotoclax",
+        "Part 3, Part 4: Steady State Trough Observed Plasma Concentration (Ctrough, ss) of zanubrutinib",
+        "Steady State Time to Maximum Plasma Concentration (Tmax, ss) of Sonrotoclax",
+        "Part 3, Part 4: Steady State Time to Maximum Plasma Concentration (Tmax, ss) of zanubrutinib",
+        "Part 2: AUC of Sonrotoclax administered after a high fat/calorie meal (HF-Fed)",
+        "Part 2: Cmax of Sonrotoclax administered after a high fat/calorie meal (HF-Fed)",
+        "Part 2, Part 4, Part 6: Overall Response Rate (ORR) as Assessed by the Investigator",
+        "Part 2: Major Response Rate (MRR) for WM as Assessed by the Investigator",
+        "Part 6: Minimum residual disease (MRD) negativity as measured by next generation sequencing"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04277637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04277637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04277637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04277637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04277637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-103",
+      "nctId": "NCT04771130",
+      "protocolNumber": "BGB-11417-103",
+      "title": "A Phase 1b/2, Open-Label, Dose Finding, and Expansion Study of the Bcl-2 Inhibitor BGB-11417 in Patients With Myeloid Malignancies",
+      "briefTitle": "A Study of BGB-11417 in Participants With Myeloid Malignancies",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-05-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-08-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-08-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 260,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Parts 1 and 2: AML Cohorts",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with AML will receive BGB-11417 and azacitidine on a 28-day cycle."
+        },
+        {
+          "label": "Parts 1 and 2: MDS Cohorts",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with MDS will receive BGB-11417 and azacitidine on a 28-day cycle."
+        },
+        {
+          "label": "Part 3: AML and MDS Cohorts",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with AML and MDS will receive BGB-11417 and azacitidine on a 28-day cycle. A subset of the participants will receive a modified second cycle of treatment to explore drug-drug interactions (DDI) with posaconazole."
+        },
+        {
+          "label": "Part 3: AML and MDS Cohort",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with MDS and R/R AML (China only) will receive BGB-11417 on a 28-day cycle."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1 And 2: Number Of Participants Experiencing Dose-limiting Toxicities (DLTs)",
+        "Part 1 And 2: Number Of Participants Experiencing Treatment-emergent Adverse Events (TEAEs)",
+        "Part 3 AML Cohort: Complete Remission (CR) Plus CR With Partial Hematologic Recovery (CRh) Rate",
+        "Part 3 MDS Cohort: Modified Overall Response (mOR) Rate",
+        "Part 3 AML Cohort (DDI Sub-cohort): Area Under Plasma Concentration-time Curve (AUC) from time 0 to the last quantifiable timepoint (t) (AUC0-t) Of BGB-11417 When Administered Alone and when Co-administered With Posaconazole",
+        "Part 3 AML Cohort (DDI Sub-cohort): Maximum Observed Plasma Concentration (Cmax) Of BGB-11417 When Administered Alone and When Co-administered With Posaconazole",
+        "Part 3 AML Cohort (DDI Sub-cohort): Area Under Plasma Concentration-time Curve (AUC) from time 0 to infinity (AUC0-infinity) Of BGB-11417 When Administered Alone and When Co-administered With Posaconazole",
+        "Part 3 AML and MDS Cohorts (Treated with Monotherapy): Number Of Participants Experiencing DLTs",
+        "Part 3 AML and MDS Cohorts (Treated with Monotherapy): Number of Participants Experiencing TEAEs"
+      ],
+      "secondaryEndpoints": [
+        "Parts 1 And 2 AML Cohort: Complete remission (CR) + Morphologic CR With Partial Hematologic Recovery (CRh)",
+        "Parts 1 And 2 MDS Cohort: mOR Rate",
+        "Parts 1 And 2: Cmax Of Azacitidine When Coadministered With BGB-11417",
+        "Parts 1 And 2: Terminal Half-life (t1/2) Of Azacitidine When Coadministered With BGB-11417",
+        "Parts 1 And 2: AUC From Time Zero To Time t (AUC0-t) Of Azacitidine When Coadministered With BGB-11417",
+        "Parts 1 And 2: AUC From Time Zero To Infinity (AUC0-inf) Of Azacitidine When Coadministered With BGB-11417",
+        "Parts 1 And 2: Apparent Total Clearance Of Azacitidine From Plasma (CL/F) When Coadministered With BGB-11417",
+        "Parts 1 And 2: Apparent Volume Of Distribution (Vz/F) Of Azacitidine When Coadministered With BGB-11417",
+        "Parts 1 And 2: Steady-state AUC From Time Zero To Time Of Last Measurable Concentration (AUClast,ss) Of BGB-11417 When Coadministered With Azacitidine",
+        "Parts 1 And 2: Steady-state Cmax (Cmax,ss) Of BGB-11417 When Coadministered With Azacitidine",
+        "Parts 1 And 2: Steady-state Trough Plasma Concentration (Ctrough,ss) Of BGB-11417 When Coadministered With Azacitidine",
+        "Parts 1 And 2: Steady-state Time To Maximum Observed Plasma Concentration (tmax,ss) Of BGB-11417 When Coadministered With Azacitidine",
+        "Part 3: Number Of Participants Experiencing TEAEs",
+        "Part 3: Complete Response Rate",
+        "Part 3 AML Cohort: CR With Incomplete Hematologic Recovery (CRi) Rate",
+        "Part 3 AML Cohort: Overall Response Rate (ORR)",
+        "Part 3 AML Cohort: Duration Of Response (DOR)",
+        "Part 3 AML Cohort: Time To Response (TTR)",
+        "Part 3 Event-free Survival (EFS)",
+        "Part 3 Overall Survival (OS)",
+        "Part 3 AML Cohort: Number of Participants with Transfusion Independence",
+        "Part 3 MDS Cohort: Number Of Participants With Hematological Improvement-erythroid (HI-E)",
+        "Part 3 MDS Cohort: Proportion Of Participants With Hematological Improvement-platelet (HI-P)",
+        "Part 3 MDS Cohort: Proportion Of Participants With Hematological Improvement-neutrophil (HI-N)",
+        "Part 3 MDS Cohort: Number of participants with Transfusion Independence",
+        "Part 3: Ctrough,ss Of BGB-11417 When Coadministered With Azacitidine",
+        "Part 3 MDS cohort: Partial Hematologic Recovery CRh",
+        "Part 3 AML (Treated with Monotherapy): Complete Response + Morphologic complete Remission with Partial Hematologic Recovery",
+        "Part 3 AML (Treated with Monotherapy): Steady State trough plasma concentration of BGB-11417",
+        "Part 3 MDS (Treated with Monotherapy): Modified Overall Response",
+        "Part 3 MDS (Treated with Monotherapy): Steady State trough plasma concentration of BGB-11417"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04771130",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04771130",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04771130",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04771130",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04771130",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-105",
+      "nctId": "NCT04973605",
+      "protocolNumber": "BGB-11417-105",
+      "title": "A Phase 1b/2 Dose-Escalation and Cohort-Expansion Study to Determine the Safety and Efficacy of BGB-11417as Monotherapy, in Combination With Dexamethasone, Dexamethasone/Carfilzomib, Dexamethasone/Daratumumab, and Dexamethasone/Pomalidomide in Patients With Relapsed/Refractory Multiple Myeloma and t(11;14)",
+      "briefTitle": "A Phase 1b/2 Study of Sonrotoclax (BGB-11417) as Monotherapy and in Various Combinations With Dexamethasone Plus Carfilzomib, Dexamethasone Plus Daratumumab, and Dexamethasone Plus Pomalidomide in Multiple Myeloma",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-09-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-11-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2026-11-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 246,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1 Dose Escalation",
+          "type": "EXPERIMENTAL",
+          "description": "Dose-escalation and de-escalation to determine maximum tolerated dose (MTD) of sonrotoclax plus dexamethasone, sonrotoclax plus dexamethasone plus carfilzomib, sonrotoclax plus dexamethasone plus daratumumab, and sonrotoclax plus dexamethasone plus pomalidomide."
+        },
+        {
+          "label": "Part 2 Cohort Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "There will be up to 7 expansion cohorts to further evaluate the safety and efficacy of sonrotoclax monotherapy, sonrotoclax plus dexamethasone in combination with dexamethasone plus carfilzomib, and in combination with dexamethasone plus daratumumab"
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1: Number Of Participants Experiencing Dose-limiting Toxicities (DLTs)",
+        "Part 1 And 2: Number of Participants Reporting One or More Treatment-emergent Adverse Events (TEAEs), Serious Adverse Events (SAEs), Adverse Events Leading to Discontinuation and Adverse Events of Special Interest (AESIs).",
+        "Part 2: Overall response rate (ORR) as Assessed by Investigator",
+        "Part 2: Very Good Partial Response (VGPR) or Better Response Rate as Assessed by Investigator",
+        "Part 2: Complete Response (CR) or Stringent Complete Response (sCR) as Assessed by Investigator"
+      ],
+      "secondaryEndpoints": [
+        "Part 1: Area under the plasma concentration-time curve time 0 to the last measurable concentration (AUClast) After a Single Dose of Sonrotoclax",
+        "Part 1: Maximum observed plasma concentration (Cmax) After a Single Dose of Sonrotoclax",
+        "Part 1: Time to reach Cmax (tmax) After a Single Dose of Sonrotoclax",
+        "Part 1: At Steady-state: AUC last, ss",
+        "Part 1: At Steady-state: Cmax, ss",
+        "Part 1: At Steady-state: trough plasma concentration (Ctrough) ss",
+        "Part 1: At Steady-state: time to reach Cmax (tmax,ss)",
+        "Part 2: Time to response (TTR) as Assessed by Investigator",
+        "Part 2: Duration of response (DOR) as Assessed by Investigator",
+        "Part 2: Progression-free survival (PFS) as Assessed by Investigator",
+        "Part 2: Overall survival (OS) as Assessed by Investigator"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-201",
+      "nctId": "NCT05471843",
+      "protocolNumber": "BGB-11417-201",
+      "labelName": "BGB-11417-201",
+      "title": "A Single-Arm, Open-Label, Multicenter Phase 1/2 Study to Evaluate the Efficacy, Safety, and Pharmacokinetics of BCL2 Inhibitor BGB-11417 in Patients With Relapsed or Refractory Mantle Cell Lymphoma",
+      "briefTitle": "Study of Sonrotoclax (BGB-11417) Monotherapy in Participants With Relapsed or Refractory Mantle Cell Lymphoma",
+      "phase": "PHASE1_2",
+      "roles": [
+        {
+          "indication": "Adult patients with relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a Bruton’s tyrosine kinase (BTK) inhibitor",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220711Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adult patients with relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a Bruton’s tyrosine kinase (BTK) inhibitor)",
+            "quote": "Trial identifier appears within the Adult patients with relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a Bruton’s tyrosine kinase (BTK) inhibitor section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220711Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Beqalzi (sonrotoclax) tablets for the treatment of adult patients with relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a Bruton’s tyrosine kinase (BTK) inhibitor.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-09-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-07-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-01-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 125,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1: Sonrotoclax 160 mg (Daily Ramp-up)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received sonrotoclax at the target dose of 160 mg orally once a day (QD) after an approximately 4-week ramp-up schedule starting at 1 mg with daily dose increases until the target dose was reached. Participants received sonrotoclax until disease progression, unacceptable toxicity, or consent withdrawal."
+        },
+        {
+          "label": "Part 1: Sonrotoclax 320 mg (Daily Ramp-up)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received sonrotoclax at the target dose of 320 mg orally once a day after an approximately 4-week ramp-up schedule starting at 1 mg with daily dose increases until the target dose was reached. Participants received sonrotoclax until disease progression, unacceptable toxicity, or consent withdrawal."
+        },
+        {
+          "label": "Part 2: Sonrotoclax 320 mg (Daily Ramp-up)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received sonrotoclax at the target dose of 320 mg orally once a day after an approximately 4-week ramp-up schedule starting at 1 mg with daily dose increases until the target dose was reached. Participants received sonrotoclax until disease progression, unacceptable toxicity, or consent withdrawal."
+        },
+        {
+          "label": "Part 2: Sonrotoclax 320 mg (Twice-weekly Ramp-up)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received sonrotoclax at the target dose of 320 mg orally once a day after an approximately 4-week ramp-up schedule starting at 1 mg with twice-weekly dose increases until the target dose was reached. Participants received sonrotoclax until disease progression, unacceptable toxicity, or consent withdrawal."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1: Number of Participants Experiencing Dose-limiting Toxicities (DLTs)",
+        "Part 1: Number of Participants With Treatment-emergent Adverse Events (TEAEs), Serious Adverse Events (SAEs), and Adverse Events Leading to Treatment Discontinuation",
+        "Part 1: Number of Participants Experiencing Tumor Lysis Syndrome (TLS) Adverse Events",
+        "Part 2: Overall Response Rate (ORR) as Assessed by the Independent Review Committee (IRC)"
+      ],
+      "secondaryEndpoints": [
+        "Part 1: Area Under the Plasma Concentration-Time Curve From Time 0 to the Last Measurable Concentration (AUClast) of Sonrotoclax After a Single Dose",
+        "Part 1: Area Under the Plasma Concentration-Time Curve From Time 0 to the Last Measurable Concentration (AUClast) of Sonrotoclax at Steady-State",
+        "Part 1: Time to Maximum Observed Concentration of Sonrotoclax (Tmax) After a Single Dose",
+        "Part 1: Time to Maximum Observed Concentration of Sonrotoclax (Tmax) at Steady State",
+        "Part 1: Maximum Observed Plasma Concentration (Cmax) of Sonrotoclax After a Single Dose",
+        "Part 1: Maximum Observed Plasma Concentration (Cmax) at Steady State",
+        "Part 1: Trough Plasma Concentration (Ctrough) at Steady State",
+        "Part 1: Overall Response Rate Assessed by the Independent Review Committee (IRC)",
+        "Part 1: Overall Response Rate Assessed by the Investigator",
+        "Part 1: Duration of Response (DOR) Assessed by the IRC",
+        "Part 1: Duration of Response Assessed by the Investigator",
+        "Part 1: Progression Free Survival (PFS) Assessed by the IRC",
+        "Part 1: Progression-free Survival Assessed by the Investigator",
+        "Part 1: Time to Response (TTR) as Assessed by the IRC",
+        "Part 1: Time to Response Assessed by the Investigator",
+        "Part 1: Overall Survival (OS)",
+        "Part 2: Overall Response Rate (ORR) Assessed by the Investigator",
+        "Part 2: Duration of Response Assessed by the IRC",
+        "Part 2: Duration of Response Assessed by the Investigator",
+        "Part 2: Progression-free Survival Assessed by the IRC",
+        "Part 2: Progression-free Survival Assessed by the Investigator",
+        "Part 2: Time to Response Assessed by the IRC",
+        "Part 2: Time to Response Assessed by the Investigator",
+        "Part 2: Overall Survival",
+        "Part 2: Change From Baseline in National Comprehensive Cancer Network - Functional Assessment of Cancer Therapy Lymphoma Symptom Index-18 (NFlymSI-18) Disease Related Symptoms-Physical (DRS-P) Sub-scale Score",
+        "Part 2: Change From Baseline in National Comprehensive Cancer Network - Functional Assessment of Cancer Therapy Lymphoma Symptom Index-18 (NFlymSI-18) Treatment Side-Effects (TSE) Sub-scale Score",
+        "Part 2: Change From Baseline in European Quality of Life 5 Dimension (EQ-5D) Visual Analog Scale (VAS) Score",
+        "Part 2: Number of Participants With Treatment-emergent Adverse Events (TEAEs), Serious Adverse Events (SAEs), and Adverse Events Leading to Treatment Discontinuation"
+      ],
+      "postedResults": [
+        {
+          "title": "Part 1: Number of Participants Experiencing Dose-limiting Toxicities (DLTs)",
+          "timeFrame": "From first dose in the ramp-up period through the first 3 weeks of treatment at the target dose (approximately 7 weeks)",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Part 1: Sonrotoclax 160 mg (Daily Ramp-up)"
+            },
+            {
+              "id": "OG001",
+              "title": "Part 1: Sonrotoclax 320 mg (Daily Ramp-up)"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "0"
+            },
+            {
+              "groupId": "OG001",
+              "value": "0"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Part 1: Number of Participants With Treatment-emergent Adverse Events (TEAEs), Serious Adverse Events (SAEs), and Adverse Events Leading to Treatment Discontinuation",
+          "timeFrame": "From first dose of study drug up to 30 days after last dose or the primary analysis data cut-off date, whichever occurred earlier; maximum duration of treatment was 31 months.",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Part 1: Sonrotoclax 160 mg (Daily Ramp-up)"
+            },
+            {
+              "id": "OG001",
+              "title": "Part 1: Sonrotoclax 320 mg (Daily Ramp-up)"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "category": "TEAEs",
+              "value": "10"
+            },
+            {
+              "groupId": "OG001",
+              "category": "TEAEs",
+              "value": "12"
+            },
+            {
+              "groupId": "OG000",
+              "category": "SAEs",
+              "value": "6"
+            },
+            {
+              "groupId": "OG001",
+              "category": "SAEs",
+              "value": "5"
+            },
+            {
+              "groupId": "OG000",
+              "category": "TEAE Leading to Treatment Discontinuation",
+              "value": "2"
+            },
+            {
+              "groupId": "OG001",
+              "category": "TEAE Leading to Treatment Discontinuation",
+              "value": "1"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Part 1: Number of Participants Experiencing Tumor Lysis Syndrome (TLS) Adverse Events",
+          "timeFrame": "From first dose of study drug up to 30 days after last dose or the primary analysis data cut-off date, whichever occurred earlier; maximum duration of treatment was 31 months.",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Part 1: Sonrotoclax 160 mg (Daily Ramp-up)"
+            },
+            {
+              "id": "OG001",
+              "title": "Part 1: Sonrotoclax 320 mg (Daily Ramp-up)"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "0"
+            },
+            {
+              "groupId": "OG001",
+              "value": "1"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Part 2: Overall Response Rate (ORR) as Assessed by the Independent Review Committee (IRC)",
+          "timeFrame": "Response was assessed 8 and 16 weeks after the first dose, then every 12 weeks up to 1 year, every 24 weeks for 2 years, and yearly thereafter; median (range) time on follow-up in efficacy-evaluable participants in Part 2 was 14.2 (0.3-24.9) months.",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Part 2: Sonrotoclax 320 mg (Daily Ramp-up)"
+            },
+            {
+              "id": "OG001",
+              "title": "Part 2: Sonrotoclax 320 mg (Twice-weekly Ramp-up)"
+            },
+            {
+              "id": "OG002",
+              "title": "Part 2: Sonrotoclax 320 mg Total"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "44.2",
+              "lowerLimit": "29.1",
+              "upperLimit": "60.1"
+            },
+            {
+              "groupId": "OG001",
+              "value": "58.3",
+              "lowerLimit": "44.9",
+              "upperLimit": "70.9"
+            },
+            {
+              "groupId": "OG002",
+              "value": "52.4",
+              "lowerLimit": "42.4",
+              "upperLimit": "62.4"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Binomial exact test"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05471843",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05471843",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05471843",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05471843",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05471843",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05471843?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220711Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 9,
+          "quote": "s with previously treated MCL in a single-arm, multicenter clinical trial, BGB-11417-201 (NCT05471843) [see Clinical Studies (14.1)] . The trial required prior receipt of anti-CD20–based ther",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220711Orig1s000lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "BGB-11417-201 (NCT05471843)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-203",
+      "nctId": "NCT05952037",
+      "protocolNumber": "BGB-11417-203",
+      "title": "An Open-Label, Multicenter Phase 2 Study to Evaluate the Efficacy and Safety of the BCL2 Inhibitor Sonrotoclax (BGB-11417) as Monotherapy and in Combination With Zanubrutinib (BGB-3111) in Patients With Waldenström Macroglobulinemia",
+      "briefTitle": "A Study to Investigate Efficacy and Safety of BCL2 Inhibitor Sonrotoclax as Monotherapy and in Combination With Zanubrutinib in Adults With Waldenström Macroglobulinemia",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-10-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-09-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 114,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with R/R disease to both Bruton tyrosine kinase (BTK) inhibitor and anti-CD20 antibody-based systemic therapy containing chemotherapy or proteasome inhibitor will receive sonrotoclax at a standard dose, given orally once daily."
+        },
+        {
+          "label": "Cohort 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with R/R disease to anti-CD20 antibody-based systemic therapy containing chemotherapy or proteasome inhibitor and were intolerant to BTK inhibitor will receive sonrotoclax at a standard dose, given orally once daily."
+        },
+        {
+          "label": "Cohort 3",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with R/R disease to a BTK inhibitor treatment and are unsuitable for chemoimmunotherapy will receive sonrotoclax at a standard dose, given orally once daily."
+        },
+        {
+          "label": "Cohort 4",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with previously untreated WM will receive sonrotoclax and zanubrutinib combination therapy for a fixed duration."
+        }
+      ],
+      "primaryEndpoints": [
+        "Cohort 1: Major Response Rate (MRR)"
+      ],
+      "secondaryEndpoints": [
+        "Cohorts 2 and 3: MRR as assessed by the IRC",
+        "All Cohorts: MRR as assessed by the Investigator",
+        "Cohorts 1, 2, and 3: Duration of Major Response (DoMR) as assessed by the IRC",
+        "All Cohorts: DoMR as assessed by the Investigator",
+        "Cohorts 1, 2, and 3: Complete Response (CR) + Very Good Partial Response (VGPR) as assessed by the IRC",
+        "All Cohorts: CR + VGPR as assessed by the Investigator",
+        "Cohorts 1, 2, and 3: Overall Response Rate (ORR) as assessed by the IRC",
+        "All cohorts: ORR as assessed by the investigator",
+        "Cohorts 1, 2, and 3: Duration of Response (DOR) as assessed by the IRC",
+        "All Cohorts: DOR as assessed by the investigator",
+        "Cohorts 1, 2, and 3: Progression-Free Survival (PFS)",
+        "Cohorts 1, 2, and 3: Time to major response as assessed by the IRC",
+        "All Cohorts: Time to major response as assessed by the investigator",
+        "Cohorts 1, 2, and 3: Overall Survival (OS)",
+        "Cohort 4: Time to next treatment",
+        "Number of participants reporting adverse events",
+        "All Cohorts: Change from Baseline in Health-Related Quality of Life (HRQoL): NFLymSI-18 Disease-related Symptoms-Physical and Treatment-Related Side Effects Subscales"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952037",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952037",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952037",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952037",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952037",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-301",
+      "nctId": "NCT06073821",
+      "protocolNumber": "BGB-11417-301",
+      "title": "A Phase 3, Open-Label, Randomized Study of Sonrotoclax (BGB-11417) Plus Zanubrutinib (BGB-3111) Compared With Venetoclax Plus Obinutuzumab in Patients With Previously Untreated Chronic Lymphocytic Leukemia",
+      "briefTitle": "Study of Sonrotoclax (BGB-11417) Plus Zanubrutinib (BGB-3111) Compared With Venetoclax Plus Obinutuzumab in Participants With Chronic Lymphocytic Leukemia (CLL)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-11-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2032-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 652,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sonrotoclax Plus Zanubrutinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive from start of Cycle 1 a standard dose of zanubrutinib once or twice daily orally and in combination with sonrotoclax starting from Cycle 4 onwards at increasing doses until target dose is reached and continuing until end of Cycle 15 (each cycle is 28 days)"
+        },
+        {
+          "label": "Venetoclax Plus Obinutuzumab",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive obinutuzumab 100mg intravenously on Day 1 Cycle 1, followed by 900 mg on Day 2 Cycle 1 (or alternatively receive 1000 mg intravenously on Day 1), followed by 1000 mg on Days 8 and 15 of Cycle 1 and thereafter on Day 1 of Cycles 2 through 6 (each cycle is 28 days) in combination with venetoclax at increasing doses until target dose is reached from Day 22 Cycle 1 until end of Cycle 12 (each cycles is 28 days)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Cohort 1: Progression Free Survival (PFS）",
+        "Cohort 1: Rate of Undetectable Measurable Residual Disease"
+      ],
+      "secondaryEndpoints": [
+        "Cohort 1: Overall Survival (OS)",
+        "Cohort 1: Complete Response Rate (CRR ) by IRC",
+        "Cohort 1: PFS by Investigator Assessment",
+        "Cohort 1: CRR by Investigator Assessment",
+        "Cohort 1: Rate of Undetectable Measurable Residual Disease",
+        "Cohort 1: Overall Response Rate (ORR) by IRC and Investigator Assessment",
+        "Cohort 1: Duration of Response (DOR) by IRC and Investigator Assessment",
+        "Pooled Cohorts: PFS by IRC and Investigator Assessment",
+        "Pooled Cohorts: ORR by IRC and Investigator Assessment",
+        "Pooled Cohorts: DOR by IRC and Investigator Assessment",
+        "Pooled Cohorts: Rate of Undetectable Measurable Residual Disease",
+        "Pooled Cohorts: CRR by IRC and Investigator Assessment",
+        "Cohort 1 and Pooled Cohorts: Number of Participants with Adverse Events (AEs) and Serious Adverse Events (SAEs)",
+        "Cohort 1 and Pooled Cohorts: Change from baseline in European Organization for Research and Treatment of Cancer Quality of Life Cancer Questionnaire -Core 30 (EORTC QLQ-C30) Global Health Status/QoL (GHS) and Physical Functioning Scales",
+        "Cohort 1 and Pooled Cohorts: Change from baseline in EORTC Quality of Life Questionnaire - Chronic Lymphocytic Leukemia Module 17 Items (QLQ-CLL17) Symptom Burden and Physical Condition Scales",
+        "Cohort 1 and Pooled Cohorts: Change from baseline in European Quality of Life 5-Dimensions 5-Levels Health Questionnaire （EQ-5D-5L) Visual Analogue Scale (VAS)."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06073821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06073821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06073821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06073821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06073821",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-204",
+      "nctId": "NCT06637501",
+      "protocolNumber": "BGB-11417-204",
+      "title": "A Multicenter, Open-Label, Phase 2 Study to Investigate the Efficacy and Safety of Sonrotoclax Combined With Zanubrutinib Compared With Zanubrutinib Monotherapy in Adult Patients With Previously Untreated Chronic Lymphocytic Leukemia",
+      "briefTitle": "A Study to Investigate Sonrotoclax Combined With Zanubrutinib Versus Zanubrutinib Alone in Participants With Previously Untreated Chronic Lymphocytic Leukemia",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-11-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-11-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2029-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 94,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Combination Therapy: Sonrotoclax + Zanubrutinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive sonrotoclax in combination with zanubrutinib daily for a fixed duration of 15 cycles."
+        },
+        {
+          "label": "Arm B: Monotherapy: Zanubrutinib",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive zanubrutinib monotherapy daily until disease progression or unacceptable toxicity, whichever occurs first."
+        }
+      ],
+      "primaryEndpoints": [
+        "Complete Response (CR)/ Complete Response with Incomplete Bone Marrow Recovery (CRi) Rate"
+      ],
+      "secondaryEndpoints": [
+        "Undetectable Minimal Residual Disease at < 10^-4Sensitivity (uMRD4) Rate",
+        "CR/CRi Rate per Investigator Response Assessment",
+        "Overall Response Rate (ORR) per IRC and Investigator Response Assessment",
+        "Duration of Response (DOR) per Investigator Response Assessment",
+        "Time to Response (TTR) per IRC and Investigator Response Assessment",
+        "Landmark Progression-free Survival Rate at 24 Months per Investigator Assessment",
+        "Progression-free Survival (PFS) per Investigator Response Assessment",
+        "Overall Survival (OS)",
+        "Number of Participants with Adverse Events (AEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06637501",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06637501",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06637501",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06637501",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06637501",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-16673-104",
+      "nctId": "NCT06634589",
+      "protocolNumber": "BGB-16673-104",
+      "title": "A Phase 1b/2, Open-Label, Master Protocol Study of BTK-Degrader BGB-16673 in Combination With Other Agents in Patients With Relapsed or Refractory B-Cell Malignancies",
+      "briefTitle": "A Study to Investigate Safety and Effectiveness of Tacabrutideg (BGB-16673) in Combination With Other Agents in Participants With Relapsed or Refractory B-Cell Malignancies",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-11-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-12-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-12-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 80,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Substudy 1 Part 1a: Dose Escalation",
+          "type": "EXPERIMENTAL",
+          "description": "Sequential cohorts of increasing dose level combinations of tacabrutideg and sonrotoclax will be evaluated in participants with selected B-cell malignancies."
+        },
+        {
+          "label": "Substudy 1 Part 1b: Safety Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "Cohorts of select dose level combinations of tacabrutideg and sonrotoclax will be evaluated in participants with selected B-cell malignancies."
+        },
+        {
+          "label": "Substudy 2 Part 1a: Dose Escalation",
+          "type": "EXPERIMENTAL",
+          "description": "Sequential cohorts of increasing dose level combinations of tacabrutideg and zanubrutinib will be evaluated in participants with selected B-cell malignancies."
+        },
+        {
+          "label": "Substudy 2 Part 1b: Safety Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "Cohorts of select dose level combinations of tacabrutideg and zanubrutinib will be evaluated in participants with selected B-cell malignancies."
+        },
+        {
+          "label": "Substudy 3 Part 1a: Dose Escalation",
+          "type": "EXPERIMENTAL",
+          "description": "Sequential cohorts of increasing dose level combinations of tacabrutideg and mosunetuzumab will be evaluated in participants with selected B-cell malignancies."
+        },
+        {
+          "label": "Substudy 3 Part 1b: Safety Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "Cohorts of select dose level combinations of tacabrutideg and mosunetuzumab will be evaluated in participants with selected B-cell malignancies."
+        },
+        {
+          "label": "Substudy 4 Part 1a: Dose Escalation",
+          "type": "EXPERIMENTAL",
+          "description": "Sequential cohorts of increasing dose level combinations of tacabrutideg and glofitamab will be evaluated in participants with selected B-cell malignancies. Participants will receive obinutuzumab as pretreatment prior to the start of combination treatment."
+        },
+        {
+          "label": "Substudy 4 Part 1b: Safety Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "Cohorts of select dose level combinations of tacabrutideg and glofitamab will be evaluated in participants with selected B-cell malignancies."
+        }
+      ],
+      "primaryEndpoints": [
+        "Substudy 1 Part 1a: Number of participants with dose-limiting toxicities (DLTs), treatment-emergent adverse events, treatment-related adverse events, and serious adverse events",
+        "Substudy 1 Part 1b: Number of participants with treatment-emergent adverse events, treatment-related adverse events, and serious adverse events",
+        "Substudy 2 Part 1a: Number of participants with dose-limiting toxicities (DLTs), treatment-emergent adverse events, treatment-related adverse events, and serious adverse events",
+        "Substudy 2 Part 1b: Number of participants with treatment-emergent adverse events, treatment-related adverse events, and serious adverse events",
+        "Substudy 3 Part 1a: Number of participants with dose-limiting toxicities (DLTs), treatment-emergent adverse events, treatment-related adverse events, and serious adverse events",
+        "Substudy 3 Part 1b: Number of participants with treatment-emergent adverse events, treatment-related adverse events, and serious adverse events",
+        "Substudy 4 Part 1a: Number of participants with dose-limiting toxicities (DLTs), treatment-emergent adverse events, treatment-related adverse events, and serious adverse events",
+        "Substudy 4 Part 1b: Number of participants with treatment-emergent adverse events, treatment-related adverse events, and serious adverse events"
+      ],
+      "secondaryEndpoints": [
+        "Substudy 1 Parts 1a and 1b: Overall Response Rate (ORR) in participants with B-cell malignancies",
+        "Substudy 1 Parts 1a and 1b: Duration of Response (DOR)",
+        "Substudy 1 Parts 1a and 1b: Time to Response (TTR)",
+        "Substudy 1 Part 1a: Area under the plasma concentration-time curve (AUC) of tacabrutideg and sonrotoclax",
+        "Substudy 1 Part 1a: Maximum observed concentration (Cmax) of tacabrutideg and sonrotoclax",
+        "Substudy 1 Part 1a: Time to maximum concentration (Tmax) of tacabrutideg and sonrotoclax",
+        "Substudy 1 Part 1a: Terminal half-life (t1/2) of tacabrutideg and sonrotoclax",
+        "Substudy 1 Parts 1a and 1b: Trough concentration (Ctrough) of tacabrutideg and sonrotoclax",
+        "Substudy 1 Part 1b: Number of patients with complete response or complete response with incomplete count recovery (CR/CRi) who achieve undetectable minimal residual disease (uMRD)",
+        "Substudy 2 Parts 1a and 1b: ORR in participants with B-cell malignancies",
+        "Substudy 2 Parts 1a and 1b: DOR",
+        "Substudy 2 Parts 1a and 1b: TTR",
+        "Substudy 2 Part 1a: Area under the plasma concentration-time curve (AUC) of tacabrutideg and zanubrutinib",
+        "Substudy 2 Part 1a: Maximum observed concentration (Cmax) of tacabrutideg and zanubrutinib",
+        "Substudy 2 Part 1a: Time to maximum concentration (Tmax) of tacabrutideg and zanubrutinib",
+        "Substudy 2 Part 1a: Terminal half-life (t1/2) of tacabrutideg and zanubrutinib",
+        "Substudy 2 Parts 1a and 1b: Trough concentration (Ctrough) of tacabrutideg and zanubrutinib",
+        "Substudy 3 Parts 1a and 1b: ORR in participants with B-cell malignancies",
+        "Substudy 3 Parts 1a and 1b: DOR",
+        "Substudy 3 Parts 1a and 1b: TTR",
+        "Substudy 3 Part 1a: Area under the plasma concentration-time curve (AUC) of tacabrutideg and mosunetuzumab",
+        "Substudy 3 Part 1a: Maximum observed concentration (Cmax) of tacabrutideg and mosunetuzumab",
+        "Substudy 3 Part 1a: Time to maximum concentration (Tmax) of tacabrutideg and mosunetuzumab",
+        "Substudy 3 Part 1a: Terminal half-life (t1/2) of tacabrutideg and mosunetuzumab",
+        "Substudy 3 Parts 1a and 1b: Trough concentration (Ctrough) of tacabrutideg and mosunetuzumab",
+        "Substudy 4 Parts 1a and 1b: ORR in participants with B-cell malignancies",
+        "Substudy 4 Parts 1a and 1b: DOR",
+        "Substudy 4 Parts 1a and 1b: TTR",
+        "Substudy 4 Part 1a: Area under the plasma concentration-time curve (AUC) of tacabrutideg",
+        "Substudy 4 Part 1a: Maximum observed concentration (Cmax) of tacabrutideg",
+        "Substudy 4 Part 1a: Time to maximum concentration (Tmax) of tacabrutideg",
+        "Substudy 4 Part 1a: Terminal half-life (t1/2) of tacabrutideg",
+        "Substudy 4 Parts 1a and 1b: Trough concentration (Ctrough) of tacabrutideg"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06634589",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06634589",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06634589",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06634589",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06634589",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-108",
+      "nctId": "NCT06697184",
+      "protocolNumber": "BGB-11417-108",
+      "title": "A Phase 1/2 Open-label Study to Investigate the Safety of Sonrotoclax Ramp-up Schedule(s) in Adult Patients With Hematological Malignancies.",
+      "briefTitle": "A Study to Investigate the Safety of Novel Dose Ramp-up Schedule(s) When Initiating Sonrotoclax in Participants Treated for Blood Cancers.",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-01-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-11-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-11-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 258,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arms: 1A,1B and 2A: Zanubrutinib + Sonrotoclax for TN CLL",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive zanubrutinib alone, followed by a combination with sonrotoclax initiated with a ramp-up according to each schedule defined in the protocol. The total treatment duration is of 15 cycles of 28 days (including the phase of sonrotoclax dose ramp-up)"
+        },
+        {
+          "label": "Arms: 1C and 2B: Zanubrutinib + Sonrotoclax for R/R MCL",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive zanubrutinib alone, followed by a combination with sonrotoclax initiated with a ramp-up according to each schedule defined in the protocol, for a total of 27 cycles of 28 days (including the phase of sonrotoclax ramp-up), then will continue on zanubrutinib alone until progression of their disease or other treatment discontinuation criteria."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants who Experience Tumor Lysis Syndrome (TLS)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants with Adverse Events (AEs)",
+        "Number of Participants with Dose Modifications During the SLT Evaluation Window"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06697184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06697184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06697184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06697184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06697184",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-302",
+      "nctId": "NCT06742996",
+      "protocolNumber": "BGB-11417-302",
+      "title": "A Phase 3 Randomized Double-Blind Multicenter Study of Sonrotoclax Plus Zanubrutinib Versus Placebo Plus Zanubrutinib in Patients With Relapsed/Refractory Mantle Cell Lymphoma",
+      "briefTitle": "A Study to Investigate the Efficacy and Safety of Sonrotoclax Plus Zanubrutinib Compared With Placebo Plus Zanubrutinib in Adults With Relapsed/Refractory Mantle Cell Lymphoma (CELESTIAL-RRMCL)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-03-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-08-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-03-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 300,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: sonrotoclax plus zanubrutinib",
+          "type": "EXPERIMENTAL",
+          "description": "Sonrotoclax and zanubrutinib will be administered in combination."
+        },
+        {
+          "label": "Arm B: placebo plus zanubrutinib",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo and zanubrutinib will be administered in combination."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-Free Survival (PFS) as assessed by Blinded Independent Review Committee (BIRC)"
+      ],
+      "secondaryEndpoints": [
+        "Overall Survival (OS)",
+        "PFS as assessed by investigator (INV)",
+        "Overall Response Rate (ORR) as assessed by BIRC and by INV",
+        "Duration of Response (DOR) as assessed by BIRC and by INV",
+        "Complete Response Rate (CRR) as assessed by BIRC and by INV",
+        "Time to first response as assessed by BIRC and by INV",
+        "Time to initiation of new anticancer therapy",
+        "Health-Related Quality of Life (HRQoL) as Assessed by the European Organisation of Research and Treatment of Cancer-Quality of Life Questionnaire Non-Hodgkin Lymphoma High Grade Module 29 (EORTC-QLQ-NHL-HG29)",
+        "Health-Related Quality of Life (HRQoL) as Assessed by the European Organisation of Research and Treatment of Cancer-Quality of Life Questionnaire Core 30 (EORTC-QLQ-C30)",
+        "Number of participants with treatment-emergent adverse events (TEAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742996",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742996",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742996",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742996",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742996",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-303",
+      "nctId": "NCT06943872",
+      "protocolNumber": "BGB-11417-303",
+      "title": "A Phase 3 Randomized, Open-Label, Multicenter Study of Sonrotoclax Plus Anti-CD20 Antibody Therapies Versus Venetoclax Plus Rituximab in Patients With Relapsed/Refractory Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+      "briefTitle": "A Study to Investigate Progression-Free Survival With Sonrotoclax Plus Obinutuzumab Or Sonrotoclax Plus Rituximab Compared With Venetoclax Plus Rituximab Treatment In Patients With Relapsed and/or Refractory Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma (CELESTIAL-RRCLL)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-06-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-09-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 630,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Sonrotoclax plus Obinutuzumab",
+          "type": "EXPERIMENTAL",
+          "description": "Sonrotoclax and obinutuzumab will be administered in combination."
+        },
+        {
+          "label": "Arm B: Sonrotoclax plus Rituximab",
+          "type": "EXPERIMENTAL",
+          "description": "Sonrotoclax and rituximab will be administered in combination."
+        },
+        {
+          "label": "Arm C: Sonrotoclax plus Obinutuzumab (MRD)",
+          "type": "EXPERIMENTAL",
+          "description": "Sonrotoclax and obinutuzumab will be administered in combination with treatment guided by evaluation of minimal residual disease (MRD)."
+        },
+        {
+          "label": "Arm D: Venetoclax plus Rituximab",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Venetoclax and rituximab will be administered in combination."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-Free Survival (PFS) as assessed by Blinded Independent Review Committee (BIRC) for Arm A versus Arm D"
+      ],
+      "secondaryEndpoints": [
+        "Progression-Free Survival (PFS) as assessed by BIRC for Arm B versus Arm D",
+        "Rate of uMRD4 for Arm A versus Arm D",
+        "Complete Response Rate as assessed by BIRC for Arm A versus Arm D",
+        "Overall Survival for Arm A versus Arm D",
+        "PFS per Investigator Assessment (INV) for Arm B versus Arm D",
+        "CRR per BIRC and by INV for Arm B versus Arm D",
+        "OS for Arm B versus Arm D",
+        "Rate of uMRD4 for Arm B versus Arm D",
+        "PFS per BIRC and by INV for Arm A versus Arm B",
+        "CRR per BIRC and by INV for Arm A versus Arm B",
+        "OS for Arm A versus Arm B",
+        "Rate of uMRD4 for Arm A versus Arm B",
+        "Rate of uMRD4 for Arm A versus Arm D",
+        "CRR per INV for Arm A versus Arm D",
+        "PFS per INV for Arm A versus Arm D",
+        "PFS per INV for Arm C versus Arm D",
+        "CRR per INV for Arm C versus Arm D",
+        "OS for Arm C versus Arm D",
+        "Rate of uMRD4 for Arm C versus Arm D",
+        "Overall Response Rate (ORR) per BIRC and by INV",
+        "Duration of Response (DOR) per BIRC and by INV",
+        "Time to Response (TTR) per BIRC and by INV",
+        "Time to Next Anti-CLL/SLL Treatment (TTNT)",
+        "Rate of uMRD4",
+        "Change from Baseline in the European Organisation of Research and Treatment of Cancer-Quality of Life Questionnaire Core 30 (EORTC-QLQ-C30) Global Health Status/Quality of Life and Physical Functioning Scales",
+        "Change from Baseline in EORTC QLQ for Chronic Lymphocytic Leukemia (EORTC QLQ-CLL17) Symptom Burden and Fatigue Scales",
+        "Number of Participants with Treatment-Emergent Adverse Events (TEAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06943872",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06943872",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06943872",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06943872",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06943872",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bg-71332-101",
+      "nctId": "NCT07141511",
+      "protocolNumber": "BG-71332-101",
+      "title": "A Phase 1, Single-dose, Open-label, Randomized, Crossover Study in Healthy Adult Participants to Evaluate Relative Bioavailability and Food Effect of a Fixed-Dose Combination Tablet Containing Zanubrutinib and Sonrotoclax (BG-71332)",
+      "briefTitle": "A Study to Investigate the Relative Bioavailability and Food Effect of a Fixed-Dose Combination Tablet Containing Zanubrutinib and Sonrotoclax (BG-71332) in Healthy Adults",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-09-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-02-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-02-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "BG-71332, Zanubrutinib + Sonrotoclax",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive the following treatments in one of six sequences: one dose of BG-71332 with a high-fat meal, one dose of BG-71332 in a fasted state, and one dose of zanubrutinib and sonrotoclax administered together with a high-fat meal."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the plasma concentration-time curve from time 0 extrapolated to infinity (AUC0-inf) for zanubrutinib",
+        "Area under the plasma concentration-time curve from time 0 extrapolated to infinity (AUC0-inf) for sonrotoclax",
+        "Area under the plasma concentration-time curve from time 0 to the time of the last quantifiable concentration (AUC0-t) for zanubrutinib",
+        "Area under the plasma concentration-time curve from time 0 to the time of the last quantifiable concentration (AUC0-t) for sonrotoclax",
+        "Maximum observed plasma concentration (Cmax) of zanubrutinib",
+        "Maximum observed plasma concentration (Cmax) of sonrotoclax"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants with treatment-emergent adverse events (TEAEs) and serious adverse events (SAEs)",
+        "Number of participants with laboratory abnormalities",
+        "Number of participants with clinically significant abnormal electrocardiogram (ECG) values",
+        "Number of participants with clinically significant vital signs measurements"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07141511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07141511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07141511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07141511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07141511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-304",
+      "nctId": "NCT07277231",
+      "protocolNumber": "BGB-11417-304",
+      "title": "A Phase 3, Open-Label, Randomized Study of Sonrotoclax (BGB-11417) Plus Zanubrutinib (BGB-3111) Compared With Venetoclax Plus Acalabrutinib in Patients With Previously Untreated Chronic Lymphocytic Leukemia",
+      "briefTitle": "A Study to Investigate Sonrotoclax (BGB-11417) Plus Zanubrutinib (BGB-3111) Compared With Venetoclax Plus Acalabrutinib in Adults With Previously Untreated Chronic Lymphocytic Leukemia",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-01-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2031-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2031-11-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 500,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Sonrotoclax plus Zanubrutinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive sonrotoclax and zanubrutinib for a fixed duration followed by observation."
+        },
+        {
+          "label": "Arm B: Venetoclax plus Acalabrutinib",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive venetoclax and acalabrutinib for a fixed duration followed by observation."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-Free Survival (PFS) as Determined by Independent Review Committee (IRC)",
+        "Rate of Undetectable Minimal Residual Disease at < 10^-4 sensitivity (uMRD4)"
+      ],
+      "secondaryEndpoints": [
+        "PFS in High-Risk Participants",
+        "Overall Survival (OS)",
+        "Overall Response Rate (ORR) as Determined by IRC",
+        "Rate of Undetectable Minimal Residual Disease at < 10^-5 sensitivity (uMRD5)",
+        "Number of Participants with Adverse Events",
+        "PFS Determined by Investigator Assessment",
+        "Complete Response Rate (CRR) by IRC and Investigator Assessment",
+        "ORR Determined by Investigator Assessment",
+        "Duration of Response (DOR)",
+        "Time to Next Treatment (TTNT)",
+        "Change from Baseline in Score on European Organization for Research and Treatment of Cancer (EORTC) Item Library (IL)-409 Questionnaire"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07277231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07277231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07277231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07277231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07277231",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-110",
+      "nctId": "NCT07628881",
+      "protocolNumber": "BGB-11417-110",
+      "title": "A Phase 1, Single-dose, Open-label, Randomized, Crossover Study in Healthy Adult Participants to Evaluate Relative Bioavailability and Food Effect of Tablet for Oral Suspension of Sonrotoclax",
+      "briefTitle": "A Study to Investigate the Relative Bioavailability and Food Effect of Tablet for Oral Suspension of Sonrotoclax in Healthy Adults",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-06-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-09-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-09-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 12,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sonrotoclax Tablet for Oral Suspension",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive each of the following treatments as a single dose on 3 separate occasions with an 8-day washout in between:\n\n1. oral dose of sonrotoclax tablet for oral suspension administered in the fed state with a high-fat meal.\n2. oral dose of sonrotoclax tablet for oral suspension administered after fasting\n3. oral dose of sonrotoclax tablet administered in the fed state with a high-fat meal."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the Plasma Concentration-Time Curve from Time 0 Extrapolated to Infinity (AUC0-inf) for Sonrotoclax",
+        "Area under the Plasma Concentration-Time Curve from Time 0 to the Time of the Last Quantifiable Concentration (AUC0-t) for Sonrotoclax",
+        "Maximum Observed Plasma Concentration (Cmax) of Sonrotoclax"
+      ],
+      "secondaryEndpoints": [
+        "Time of the Maximum Observed Concentration (Tmax) for Sonrotoclax",
+        "Apparent Terminal Elimination Half-life (t1/2) for Sonrotoclax",
+        "Apparent Total Clearance (CL/F) for Sonrotoclax",
+        "Apparent Volume of Distribution (Vz/F) for Sonrotoclax",
+        "Number of Participants with Treatment-emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs)",
+        "Number of Participants with Abnormal Clinically Significant Electrocardiogram (ECG) Values",
+        "Number of Participants with Clinically Significant Vital Signs Measurements"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07628881",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07628881",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07628881",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07628881",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07628881",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-112",
+      "nctId": "NCT07855991",
+      "protocolNumber": "BGB-11417-112",
+      "title": "A Phase 1, Open-label, Single-dose Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of Sonrotoclax in Participants With Severe Hepatic Impairment",
+      "briefTitle": "A Study to Investigate the Safety, Tolerability, and Pharmacokinetics of Sonrotoclax in Participants With Severe Hepatic Impairment",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-11-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-02-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-02-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 12,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group 1: Severe Hepatic Impairment",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with severe hepatic impairment will receive a single dose of sonrotoclax on Day 1."
+        },
+        {
+          "label": "Group 2: Normal Hepatic Function",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with normal hepatic function will receive a single dose of sonrotoclax on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the plasma concentration-time curve (AUC) from time 0 to the last quantifiable concentration (AUC0-t) of Sonrotoclax",
+        "AUC from time 0 extrapolated to infinity (AUC0-inf) of Sonrotoclax",
+        "Maximum observed plasma concentration (Cmax) of Sonrotoclax",
+        "Time to reach maximum observed plasma concentration (Tmax) of Sonrotoclax",
+        "Apparent terminal elimination half-life (t1/2) of Sonrotoclax",
+        "Apparent oral clearance (CL/F) of Sonrotoclax",
+        "Apparent volume of distribution (Vz/F) of Sonrotoclax",
+        "Fraction unbound (Fu) of Sonrotoclax"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants with Treatment-Emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs)",
+        "Number of Participants with Laboratory Abnormalities",
+        "Number of Participants with Clinically Significant Vital Signs Measurements",
+        "Number of Participants with Clinically Significant Physical Examination Findings"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07855991",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07855991",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07855991",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07855991",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07855991",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bgb-11417-109",
+      "nctId": "NCT07770698",
+      "protocolNumber": "BGB-11417-109",
+      "title": "A Phase 1/2a, Open-Label, Dose Finding and Expansion Study to Investigate the Safety, Tolerability, Pharmacokinetics, and Preliminary Antitumor Activity of Sonrotoclax (BGB-11417) in Combination With Other Agents in Pediatric Patients Aged 6 Months to 17 Years, With Relapsed or Refractory Acute Myeloid Leukemia and B-cell Acute Lymphoblastic Leukemia",
+      "briefTitle": "A Study of Sonrotoclax (BGB-11417) in Children With Relapsed or Refractory Acute Myeloid Leukemia and B-cell Acute Lymphoblastic Leukemia",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "BeOne Medicines",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-12-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-04-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Months",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1: Sonrotoclax + Azacitidine (R/R AML)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with relapsed or refractory acute myeloid leukemia (R/R AML) will receive sonrotoclax in combination with azacitidine. Treatment will be administered in a dose-escalation phase (Part 1) to determine the recommended dose for expansion (RDFE), followed by a dose-expansion phase (Part 2) at the RDFE to further evaluate safety, tolerability, pharmacokinetics, and preliminary antitumor activity."
+        },
+        {
+          "label": "Cohort 2: Sonrotoclax + Inotuzumab Ozogamicin + Dexamethasone (R/R B-cell ALL)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with relapsed or refractory B-cell acute lymphoblastic leukemia (R/R B-cell ALL) receive sonrotoclax in combination with inotuzumab ozogamicin and dexamethasone. Treatment will be administered in a dose-escalation phase (Part 1) to determine the recommended dose for expansion (RDFE), followed by a dose-expansion phase (Part 2) at the RDFE to further evaluate safety, tolerability, pharmacokinetics, and preliminary antitumor activity. Enrollment may be paused based on futility criteria."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Adverse Events (AEs) and Serious Adverse Events (SAEs)",
+        "Part 1: Recommended Dose for Expansion (RDFE) of Sonrotoclax"
+      ],
+      "secondaryEndpoints": [
+        "Complete Remission (CR) Rate",
+        "Area Under the Curve From Time Zero to Last Measurable Concentration (AUClast) for Sonrotoclax",
+        "Maximum Observed Plasma Concentration (Cmax) for Sonrotoclax",
+        "Plasma Concentration Measured Immediately Prior to the Next Scheduled Dose (Ctrough) for Sonrotoclax",
+        "Time to Maximum Observed Plasma Concentration (Tmax) for Sonrotoclax"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07770698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07770698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07770698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07770698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07770698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-05-13",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220711%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220711",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220711%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220711Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220711Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:01:39.742Z"
+}

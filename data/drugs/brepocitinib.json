@@ -1,0 +1,729 @@
+{
+  "slug": "brepocitinib",
+  "brandName": "Lisraya",
+  "inn": "brepocitinib",
+  "modality": "Drug (NDA)",
+  "sponsor": "PRIOVANT THERAP",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Dermatomyositis in adult patients",
+      "slug": "dermatomyositis-in-adult-patients",
+      "approvalDate": {
+        "value": "2026-08-27",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220106Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-08-27",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Lisraya (brepocitinib) tablets for the treatment of dermatomyositis in adult patients.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220106Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Lisraya (brepocitinib) tablets for the treatment of dermatomyositis in adult patients.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220106",
+      "applicationType": "NDA",
+      "sponsor": "PRIOVANT THERAP",
+      "originalApprovalDate": {
+        "value": "2026-08-27",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "valor",
+      "nctId": "NCT05437263",
+      "protocolNumber": "PVT-2201-301",
+      "acronym": "VALOR",
+      "title": "A Phase 3, Randomized, Double-Blind, Placebo-Controlled Study to Investigate the Efficacy and Safety of Oral Brepocitinib in Adults With Dermatomyositis",
+      "briefTitle": "A Study to Investigate the Efficacy and Safety of Brepocitinib in Adults With Dermatomyositis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Dermatomyositis in adult patients",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220106Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Dermatomyositis in adult patients)",
+            "quote": "Trial identifier appears within the Dermatomyositis in adult patients section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220106Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Lisraya (brepocitinib) tablets for the treatment of dermatomyositis in adult patients.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Priovant Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-10-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-07-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-09-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 241,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Brepocitinib Dose Level 1 PO QD",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Brepocitinib Dose Level 2 PO QD",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo PO QD",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Total Improvement Score (TIS) at Week 52"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in Cutaneous Dermatomyositis Disease Area and Severity Index (CDASI) Activity Score at Week 52",
+        "Dermatomyositis Outcomes for Muscle and Skin (DMOMS) at Week 52",
+        "The proportion of participants achieving TIS ≥ 40 points (moderate improvement) at Week 52",
+        "Time to achievement of consecutive (≥ 2 visits) TIS ≥ 40 points (moderate improvement) by Week 52",
+        "The proportion of participants, regardless of baseline corticosteroid use, achieving TIS ≥ 40 points (moderate improvement) at Week 52 with 0 to ≤ 2.5 mg/day of oral prednisone (or equivalent) at both Week 48 and Week 52",
+        "The proportion of participants achieving ≥ 40% improvement with a ≥ 4-point improvement from baseline in CDASI Activity Score at Week 52",
+        "The proportion of participants achieving TIS ≥ 60 points (major improvement) at Week 52",
+        "Change from baseline in HAQ Disability Index score at Week 52",
+        "Change from baseline in CDASI Activity Score at Week 4"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05437263",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05437263",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05437263",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05437263",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05437263",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220106Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 16,
+          "quote": "lticenter, placebo-controlled trial in 241 adult patients with dermatomyositis (Trial DM; NCT05437263). Patients were randomized 1:1:1 to receive oral LISRAYA 30 mg once daily, brepocitinib 1",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "neptune",
+      "nctId": "NCT05523765",
+      "protocolNumber": "PVT-2201-201",
+      "acronym": "NEPTUNE",
+      "title": "A Phase 2 Randomized, Double-Masked, Dose-Ranging Study to Investigate the Safety and Efficacy of Oral Brepocitinib in Adults With Active Non-Infectious Intermediate-, Posterior-, and Panuveitis",
+      "briefTitle": "A Study of Brepocitinib in Adults With Active Non-Infectious Non-Anterior Uveitis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Priovant Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-11-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-07-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 26,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "74 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Brepocitinib Dose Level 1 by mouth (PO) once daily (QD)",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Brepocitinib Dose Level 2 by mouth (PO) once daily (QD)",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of Treatment-emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs)"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of participants meeting treatment failure criteria on or after Week 6 up to Week 24"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05523765",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05523765",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05523765",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05523765",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05523765",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "pvt-2201-202",
+      "nctId": "NCT06433999",
+      "protocolNumber": "PVT-2201-202",
+      "title": "A 12-Week Open-Label Pilot Study to Investigate the Efficacy and Safety of Oral Brepocitinib in Adults With Skin-Predominant Dermatomyositis",
+      "briefTitle": "A 12-Week Open-Label Study to Investigate the Efficacy and Safety of Brepocitinib in Adults With Skin-Predominant Dermatomyositis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Priovant Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-08-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-02-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-02-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 5,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Brepocitinib",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "The primary endpoint is the change in CDASI-A score from baseline through Week 12"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433999",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433999",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433999",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433999",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06433999",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "clarity",
+      "nctId": "NCT06431373",
+      "protocolNumber": "PVT-2201-303",
+      "acronym": "CLARITY",
+      "title": "A Phase 3 Randomized, Double-Masked, Placebo-Controlled Study to Investigate the Safety and Efficacy of Oral Brepocitinib in Adults With Active, Non-Infectious Intermediate-, Posterior-, and Panuveitis",
+      "briefTitle": "A Study of Brepocitinib in Adults With Active, Non-Infectious, Non-Anterior Uveitis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Priovant Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-09-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-09-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-02-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 371,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm 1",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Arm 2",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Time to treatment failure on or after Period 1 Week 6 up to Period 1 Week 48"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of participants meeting treatment failure criteria on or after Period 1 Week 6 up to Period 1 Week 24",
+        "Change in logMAR BCVA in each eye from best state achieved at or prior to Period 1 Week 6 up to Period 1 Week 24",
+        "Change in central subfield thickness from best state achieved in each eye at or prior to Period 1 Week 6 up to Period 1 Week 24",
+        "Change in logMAR BCVA in each eye from best state achieved at or prior to Period 1 Week 6 up to Period 1 Week 48",
+        "Change in central subfield thickness from best state achieved in each eye at or prior to Period 1 Week 6 up to Period 1 Week 48"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06431373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06431373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06431373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06431373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06431373",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "beacon",
+      "nctId": "NCT06978725",
+      "protocolNumber": "PVT-2201-203",
+      "acronym": "BEACON",
+      "title": "A Phase 2/3 Randomized, Double-Blind, Placebo-Controlled, Dose-Ranging Study to Investigate the Safety and Efficacy of Oral Brepocitinib in Adults With Cutaneous Sarcoidosis",
+      "briefTitle": "A Study of Brepocitinib in Adults With Cutaneous Sarcoidosis",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Priovant Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-04-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 168,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1: Brepocitinib Dose Level 1",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Brepocitinib"
+        },
+        {
+          "label": "Part 1: Brepocitinib Dose Level 2",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Brepocitinib"
+        },
+        {
+          "label": "Part 1: Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        },
+        {
+          "label": "Part 2: Brepocitinib Dose Level 1",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Brepocitinib"
+        },
+        {
+          "label": "Part 2: Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1: Number of participants with Treatment Emergent Adverse Events and Serious Adverse Events as assessed by CTCAE v5.0",
+        "Part 2: Proportion of participants achieving a reduction in Cutaneous Sarcoidosis Activity and Morphology Instrument Activity (CSAMI-A) from baseline to Week 16."
+      ],
+      "secondaryEndpoints": [
+        "Part 1: Change from baseline in the Cutaneous Sarcoidosis Activity and Morphology Instrument Activity (CSAMI-A) score",
+        "Part 2: Proportion of participants achieving a low Cutaneous Sarcoidosis Activity and Morphology Instrument Activity (CSAMI-A) score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06978725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06978725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06978725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06978725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06978725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "alpine",
+      "nctId": "NCT07532603",
+      "protocolNumber": "PVT-2201-304",
+      "acronym": "ALPINE",
+      "title": "A Phase 2/3 Randomized, Double-Blind, Placebo-Controlled Study to Investigate the Safety and Efficacy of Oral Brepocitinib in Adults With Lichen Planopilaris",
+      "briefTitle": "A Phase 2/3 Study of Brepocitinib in Adults With Lichen Planopilaris",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Priovant Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-03-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-07-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 342,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Brepocitinib Dose Level 1",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of participants achieving IGA score 0/1 and ≥ 2-step reduction from baseline at Week 24"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in LPP symptom numerical rating scale scores at Week 24"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07532603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07532603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07532603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07532603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07532603",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-08-27",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220106%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220106",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220106%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220106Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220106Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:59:24.483Z"
+}

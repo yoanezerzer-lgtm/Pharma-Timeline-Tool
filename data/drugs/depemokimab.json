@@ -1,0 +1,2233 @@
+{
+  "slug": "depemokimab",
+  "brandName": "Exdensur",
+  "inn": "depemokimab",
+  "modality": "Biologic (BLA)",
+  "sponsor": "GLAXOSMITHKLINE LLC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "The add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older",
+      "slug": "the-add-on-maintenance-treatment-of-severe-asthma",
+      "approvalDate": {
+        "value": "2025-12-16",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761458Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-16",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "BLA 761458 provides for the use of Exdensur (depemokimab-ulaa) injection for the following indications which, for administrative purposes, we have designated as follows: BLA 761458/Original 1 - Add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older The subject of this action letter is BLA 761458/Original 1. (b) (4) (b) (4) All future submissions to BLA 761458/Original 1 should specify the BLA number and the Original number to which each submission pertains.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761458Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "BLA 761458 provides for the use of Exdensur (depemokimab-ulaa) injection for the following indications which, for administrative purposes, we have designated as follows: BLA 761458/Original 1 - Add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older The subject of this action letter is BLA 761458/Original 1. (b) (4) (b) (4) All future submissions to BLA 761458/Original 1 should specify the BLA number and the Original number to which each submission pertains.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761458",
+      "applicationType": "BLA",
+      "sponsor": "GLAXOSMITHKLINE LLC",
+      "originalApprovalDate": {
+        "value": "2025-12-16",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "205722",
+      "nctId": "NCT03287310",
+      "protocolNumber": "205722",
+      "title": "A Randomised Double-blind (Sponsor Open), Placebo Controlled, Single Ascending Dose, First Time in Human Study in Participants With Mild to Moderate Asthma to Assess Safety, Tolerability, Immunogenicity, Pharmacokinetics and Pharmacodynamics of GSK3511294 Administered Subcutaneously",
+      "briefTitle": "First Time in Human (FTIH) Study to Evaluate Safety, Tolerability, Immunogenicity, Pharmacokinetics (PK) and Pharmacodynamics (PD) of GSK3511294 Administered Subcutaneously (SC) in Subjects With Mild to Moderate Asthma",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-10-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-07-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-07-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 50,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Subjects receiving GSK3511294 in Cohort 1",
+          "type": "EXPERIMENTAL",
+          "description": "Six subjects in Cohort 1 will receive a single SC dose of 2 mg GSK3511294."
+        },
+        {
+          "label": "Subjects receiving placebo in Cohort 1",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Two subjects in Cohort 1 will receive a single SC dose of placebo."
+        },
+        {
+          "label": "Subjects receiving GSK3511294 in Cohort 2",
+          "type": "EXPERIMENTAL",
+          "description": "Six subjects in Cohort 2 will receive a single SC dose of 10 mg GSK3511294."
+        },
+        {
+          "label": "Subjects receiving placebo in Cohort 2",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Two subjects in Cohort 2 will receive a single SC dose of placebo."
+        },
+        {
+          "label": "Subjects receiving GSK3511294 in Cohort 3",
+          "type": "EXPERIMENTAL",
+          "description": "Nine subjects in Cohort 3 will receive a single SC dose of 30 mg GSK3511294."
+        },
+        {
+          "label": "Subjects receiving placebo in Cohort 3",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Three subjects in Cohort 3 will receive a single SC dose of placebo."
+        },
+        {
+          "label": "Subjects receiving GSK3511294 in Cohort 4",
+          "type": "EXPERIMENTAL",
+          "description": "Nine subjects in Cohort 4 will receive a single SC dose of 100 mg GSK3511294."
+        },
+        {
+          "label": "Subjects receiving placebo in Cohort 4",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Three subjects in Cohort 4 will receive a single SC dose of placebo."
+        },
+        {
+          "label": "Subjects receiving GSK3511294 in Cohort 5",
+          "type": "EXPERIMENTAL",
+          "description": "Six subjects in Cohort 5 will receive a single SC dose of 300 mg GSK3511294."
+        },
+        {
+          "label": "Subjects receiving placebo in Cohort 5",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Two subjects in Cohort 5 will receive a single SC dose of placebo."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Adverse Events (AEs) and Serious AEs (SAE)",
+        "Number of Participants With Adverse Events of Special Interest (AESI)",
+        "Change From Baseline in Neutrophil, Lymphocyte, Monocyte, Eosinophil, Basophil and Platelet Count",
+        "Change From Baseline in Red Blood Cell Count (RBC)",
+        "Change From Baseline in Mean Corpuscle Volume (MCV)",
+        "Change From Baseline in Mean Corpuscle Hemoglobin (MCH)",
+        "Change From Baseline in Hemoglobin",
+        "Change From Baseline in Hematocrit",
+        "Change From Baseline in Clinical Chemistry Parameter: High Sensitivity C-reactive Protein (hsCRP)",
+        "Change From Baseline in Clinical Chemistry Parameter of Total Protein and Albumin",
+        "Change From Baseline in Clinical Chemistry Parameters Like Total Bilirubin, Direct Bilirubin and Creatinine",
+        "Urine Specific Gravity Analysis by Dipstick Method",
+        "Change From Baseline in Systolic Blood Pressure (SBP) and Diastolic Blood Pressure (DBP)",
+        "Change From Baseline in Temperature",
+        "Change From Baseline in Heart Rate",
+        "Change From Baseline in Respiration Rate",
+        "Change From Baseline in Heart Rate: Electrocardiogram (ECG)",
+        "Change From Baseline in PR Interval, QRS Interval, QT Interval and QT Interval Corrected by Fridericia's Formula (QTcF) Interval",
+        "Change From Baseline in Clinical Chemistry Parameters Like Alkaline Phosphatase (ALP), Alanine Aminotransferase (ALT), and Aspartate Aminotransferase (AST)",
+        "Change From Baseline in Clinical Chemistry Parameter Like Glucose, Calcium, Potassium, Sodium, Blood Urea Nitrogen (BUN), and Magnesium",
+        "Number of Participants With Presence of Ketones, Glucose, Occult Blood, and Protein",
+        "Urine Potential of Hydrogen (pH) Analysis by Dipstick Method",
+        "Absolute Values of Complement (C)3 and C4"
+      ],
+      "secondaryEndpoints": [
+        "Area Under the Curve From Time Zero to Infinity (AUC[0-inf]) of GSK3511294 2 mg and 10 mg",
+        "AUC(0-inf) of GSK3511294 30 mg and 100 mg",
+        "AUC(0-inf) of GSK3511294 300 mg",
+        "Area Under the Curve From Time Zero to the Last Measurable Concentration (AUC[0-t]) of GSK3511294 2 mg and 10 mg",
+        "AUC(0-t) of GSK3511294 30 mg and 100 mg",
+        "AUC(0-t) of GSK3511294 300 mg",
+        "Area Under the Concentration-time Curve From Time Zero to Week 4 (AUC[0-Week 4]) of GSK3511294",
+        "Area Under the Concentration-time Curve From Time Zero to Week 12 (AUC[0-Week 12]) of GSK3511294",
+        "Area Under the Concentration-time Curve From Time Zero to Week 26 (AUC [0-Week 26]) of GSK3511294",
+        "Percentage of AUC (0-inf) Obtained by Extrapolation (%AUCex) of GSK3511294 2 mg and 10 mg",
+        "%AUCex of GSK3511294 30 mg and 100 mg",
+        "%AUCex of GSK3511294 300 mg",
+        "Maximum Observed Concentration (Cmax) of GSK3511294 2 mg and 10 mg",
+        "Cmax of GSK3511294 30 mg and 100 mg",
+        "Cmax of GSK3511294 300 mg",
+        "Time of Occurrence of Cmax (Tmax) of GSK3511294 2 mg and 10 mg",
+        "Tmax of GSK3511294 30 mg and 100 mg",
+        "Tmax of GSK3511294 300 mg",
+        "Time of Last Quantifiable Concentration (Tlast) of GSK3511294 2 mg and 10 mg",
+        "Tlast of GSK3511294 30 mg and 100 mg",
+        "Tlast of GSK3511294 300 mg",
+        "Apparent Clearance Following Subcutaneous Dosing (CL/F) of GSK3511294 2 mg and 10 mg",
+        "CL/F of GSK3511294 30 mg and 100 mg",
+        "CL/F of GSK3511294 300 mg",
+        "Apparent Volume of Distribution After Subcutaneous Administration (Vd/F) of GSK3511294 2 mg and 10 mg",
+        "Vd/F of GSK3511294 30 mg and 100 mg",
+        "Vd/F of GSK3511294 300 mg",
+        "Terminal Phase Elimination Rate Constant (Lambda_z) of GSK3511294 2 mg and 10 mg",
+        "Lambda_z of GSK3511294 30 mg and 100 mg",
+        "Lambda_z of GSK3511294 300 mg",
+        "Terminal Phase Half-life (t1/2) of GSK3511294 2 mg and 10 mg",
+        "T1/2 of GSK3511294 30 mg and 100 mg",
+        "T1/2 of GSK3511294 300 mg",
+        "Ratio to Baseline in Absolute Blood Eosinophil Count",
+        "Number of Participants With Anti-drug Antibody (ADA) Binding to GSK3511294",
+        "Titers of Binding ADA to GSK3511294"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03287310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03287310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03287310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03287310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03287310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nimble",
+      "nctId": "NCT04718389",
+      "protocolNumber": "206785",
+      "acronym": "NIMBLE",
+      "title": "A 52-week, Randomised, Double-blind, Double-dummy, Parallel Group, Multi-centre, Non-inferiority Study Assessing Exacerbation Rate, Additional Measures of Asthma Control and Safety in Adult and Adolescent Severe Asthmatic Participants With an Eosinophilic Phenotype Treated With GSK3511294 Compared With Mepolizumab or Benralizumab",
+      "briefTitle": "A Study of GSK3511294 (Depemokimab) Compared With Mepolizumab or Benralizumab in Participants With Severe Asthma With an Eosinophilic Phenotype",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-01-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-09-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-09-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1717,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab 100mg SC",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received GSK3511294 (Depemokimab) 100 milligrams (mg) subcutaneous (SC) injection administered every 26 weeks (week 0 and week 26) alongside placebo SC treatment matching the active comparator (participant's anti-IL-5/5R treatment prior to randomisation: either placebo matching mepolizumab every 4 weeks or placebo matching benralizumab every 8 weeks)."
+        },
+        {
+          "label": "Mepolizumab 100 mg / Benralizumab 30 mg SC",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants received their existing active comparator (either mepolizumab 100 mg every 4 weeks or benralizumab 30 mg every 8 weeks) according to the participant's treatment prior to randomisation plus placebo SC matching GSK3511294 (Depemokimab) administered every 26 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Rate of Clinically Significant Exacerbations Over 52 Weeks"
+      ],
+      "secondaryEndpoints": [
+        "Weighted Mean (WM) Change From Baseline in St. George's Respiratory Questionnaire (SGRQ) Total Score",
+        "Weighted Mean Change From Baseline in Asthma Control Questionnaire-5 (ACQ-5) Score",
+        "Weighted Mean Change From Baseline in Pre-bronchodilator Forced Expiratory Volume in One Second (FEV1)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "swift-2",
+      "nctId": "NCT04718103",
+      "protocolNumber": "213744",
+      "acronym": "SWIFT-2",
+      "title": "A 52-week, Randomised, Double-blind, Placebo-controlled, Parallel-group, Multi-centre Study of the Efficacy and Safety of GSK3511294 Adjunctive Therapy in Adult and Adolescent Participants With Severe Uncontrolled Asthma With an Eosinophilic Phenotype",
+      "briefTitle": "A Study of GSK3511294 (Depemokimab) in Participants With Severe Asthma With an Eosinophilic Phenotype",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "The add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761458Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — The add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older)",
+            "quote": "Trial identifier appears within the The add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761458Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "BLA 761458 provides for the use of Exdensur (depemokimab-ulaa) injection for the following indications which, for administrative purposes, we have designated as follows: BLA 761458/Original 1 - Add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older The subject of this action letter is BLA 761458/Original 1. (b) (4) (b) (4) All future submissions to BLA 761458/Original 1 should specify the BLA number and the Original number to which each submission pertains.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-02-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-04-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-04-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 397,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "GSK3511294",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received a 100 milligram (mg) dose of GSK3511294 subcutaneous (SC) injection once every 26 weeks (week 0 and week 26). Participants were to be maintained on their existing baseline maintenance asthma standard of care (SOC) treatment throughout the study."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo SC injection once every 26 weeks (week 0 and week 26). Participants were to be maintained on their existing baseline maintenance asthma SOC treatment throughout the study."
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Rate of Clinically Significant Exacerbations up to 52 Weeks"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in St. George's Respiratory Questionnaire (SGRQ) Total Score at Week 52",
+        "Change From Baseline in Asthma Control Questionnaire-5 (ACQ-5) Score at Week 52",
+        "Change From Baseline in Pre-Bronchodilator Forced Expiratory Volume in One Second (FEV1) At Week 52",
+        "Change From Baseline in Asthma Nighttime Symptom Diary (ANSD) Weekly Mean Score at Week 52",
+        "Change From Baseline in Asthma Daily Symptom Diary (ADSD) Weekly Mean Score at Week 52",
+        "Annualized Rate of Exacerbations Requiring Hospitalization and/or Emergency Department (ED) Visit up to 52 Weeks"
+      ],
+      "postedResults": [
+        {
+          "title": "Annualized Rate of Clinically Significant Exacerbations up to 52 Weeks",
+          "timeFrame": "Up to Week 52",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Exacerbation per participant per year",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "GSK3511294"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "0.56",
+              "lowerLimit": "0.44",
+              "upperLimit": "0.70"
+            },
+            {
+              "groupId": "OG001",
+              "value": "1.08",
+              "lowerLimit": "0.83",
+              "upperLimit": "1.41"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Negative Binomial Distribution",
+              "paramType": "Rate Ratio",
+              "paramValue": "0.52",
+              "ciPct": "95",
+              "ciLower": "0.36",
+              "ciUpper": "0.73"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718103",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718103",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718103",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718103",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718103",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04718103?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761458Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 12,
+          "quote": "roup, placebo-controlled, multicenter clinical trials (SWIFT-1 [NCT04719832] and SWIFT-2 [NCT04718103]) of 52 weeks duration. The trials enrolled adult and pediatric patients aged 12 years an",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "swift-1",
+      "nctId": "NCT04719832",
+      "protocolNumber": "206713",
+      "acronym": "SWIFT-1",
+      "title": "A 52-week, Randomised, Double-blind, Placebo-controlled, Parallel-group, Multi-centre Study of the Efficacy and Safety of GSK3511294 Adjunctive Therapy in Adult and Adolescent Participants With Severe Uncontrolled Asthma With an Eosinophilic Phenotype",
+      "briefTitle": "Placebo-controlled Efficacy and Safety Study of GSK3511294 (Depemokimab) in Participants With Severe Asthma With an Eosinophilic Phenotype",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "The add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761458Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — The add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older)",
+            "quote": "Trial identifier appears within the The add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761458Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "BLA 761458 provides for the use of Exdensur (depemokimab-ulaa) injection for the following indications which, for administrative purposes, we have designated as follows: BLA 761458/Original 1 - Add-on maintenance treatment of severe asthma characterized by an eosinophilic phenotype in adult and pediatric patients aged 12 years and older The subject of this action letter is BLA 761458/Original 1. (b) (4) (b) (4) All future submissions to BLA 761458/Original 1 should specify the BLA number and the Original number to which each submission pertains.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-11-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-11-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 395,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "GSK3511294",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received a 100 milligram (mg) dose of GSK3511294 SC injection once every 26 weeks (week 0 and week 26). Participants were to be maintained on their existing baseline maintenance asthma SOC treatment throughout the study."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo subcutaneous (SC) injection once every 26 weeks (week 0 and week 26). Participants were to be maintained on their existing baseline maintenance asthma standard of care (SOC) treatment throughout the study."
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Rate of Clinically Significant Exacerbations up to 52 Weeks"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in St. George's Respiratory Questionnaire (SGRQ) Total Score at Week 52",
+        "Change From Baseline in Asthma Control Questionnaire-5 (ACQ-5) Score at Week 52",
+        "Change From Baseline in Pre-Bronchodilator Forced Expiratory Volume in One Second (FEV1) At Week 52",
+        "Change From Baseline in Asthma Nighttime Symptom Diary (ANSD) Weekly Mean Score at Week 52",
+        "Change From Baseline in Asthma Daily Symptom Diary (ADSD) Weekly Mean Score at Week 52",
+        "Annualized Rate of Exacerbations Requiring Hospitalization and/or Emergency Department (ED) Visit up to 52 Weeks"
+      ],
+      "postedResults": [
+        {
+          "title": "Annualized Rate of Clinically Significant Exacerbations up to 52 Weeks",
+          "timeFrame": "Up to Week 52",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Exacerbation per participant per year",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "GSK3511294"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "1.11",
+              "spread": "0.86",
+              "lowerLimit": "0.86",
+              "upperLimit": "1.43"
+            },
+            {
+              "groupId": "OG001",
+              "value": "0.46",
+              "spread": "0.36",
+              "lowerLimit": "0.36",
+              "upperLimit": "0.58"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "< 0.001",
+              "method": "Negative binomial distribution",
+              "paramType": "Rate Ratio",
+              "paramValue": "0.42",
+              "ciPct": "95",
+              "ciLower": "0.30",
+              "ciUpper": "0.59"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04719832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04719832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04719832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04719832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04719832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04719832?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761458Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 12,
+          "quote": ", double-blind, parallel-group, placebo-controlled, multicenter clinical trials (SWIFT-1 [NCT04719832] and SWIFT-2 [NCT04718103]) of 52 weeks duration. The trials enrolled adult and pediatric",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "208021",
+      "nctId": "NCT05140200",
+      "protocolNumber": "208021",
+      "title": "An Open-label, Single Dose Study to Investigate the Pharmacokinetics, Safety, Tolerability and Immunogenicity of Two Dose Levels of GSK3511294 Administered Subcutaneously in Chinese Healthy Participants",
+      "briefTitle": "Study of GSK3511294 in Healthy Chinese Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-12-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-12-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-12-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab 100mg",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy Chinese participants received a single dose of 100 mg Depemokimab subcutaneously on Day 1."
+        },
+        {
+          "label": "Depemokimab 300mg",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy Chinese participants received a single dose of 300 mg Depemokimab subcutaneously on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Plasma Concentration-Time Curve (AUC) From Time Zero (Pre-Dose) Extrapolated to Infinite Time (AUC[0-Infinity]) of Depemokimab",
+        "AUC From Time 0 (Pre-Dose) to Last Time of Quantifiable Concentration Within a Participant Across All Treatments (AUC[0-T]) of Depemokimab",
+        "AUC From Time 0 (Pre-dose) to Week 4 (AUC[0-Week 4]) of Depemokimab",
+        "AUC From Time 0 (Pre-dose) To Week 12 (AUC[0-Week 12]) Of Depemokimab",
+        "AUC From Time 0 (Pre-dose) To Week 26 [AUC(0-Week 26)] of Depemokimab",
+        "Percentage Of AUC(0-Infinity) Obtained by Extrapolation (%AUCex) of Depemokimab",
+        "Maximum Observed Plasma Concentration (Cmax) of Depemokimab",
+        "Time of Occurrence of Cmax (Tmax) Of Depemokimab",
+        "Time To Last Quantifiable Concentration (Tlast) of Depemokimab",
+        "Apparent Clearance (CL/F) of Depemokimab",
+        "Apparent Volume of Distribution (Vz/F) of Depemokimab",
+        "Terminal Elimination Rate Constant (Lambda Z) of Depemokimab",
+        "Terminal Phase Half-Life (T1/2) of Depemokimab"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Adverse Events (AE) And Serious Adverse Events (SAEs)",
+        "Change From Baseline in Hematology Parameter: Basophils, Eosinophils, Lymphocytes, Monocytes, Neutrophils, Platelets, and Leukocytes",
+        "Change From Baseline in Hematology Parameter: Hemoglobin",
+        "Change From Baseline in Hematology Parameter: Hematocrit",
+        "Change From Baseline in Hematology Parameter: Mean Corpuscular Volume (MCV)",
+        "Change From Baseline in Hematology Parameter: Mean Corpuscular Hemoglobin (MCH)",
+        "Change From Baseline in Hematology Parameter: Reticulocytes",
+        "Change From Baseline In Hematology Parameter: Erythrocytes",
+        "Change From Baseline in Clinical Chemistry Parameters: Sodium, Potassium, Calcium, Glucose And Urea",
+        "Change From Baseline in Clinical Chemistry Parameter: Direct Bilirubin, Bilirubin, and Creatinine",
+        "Change From Baseline in Clinical Chemistry Parameters: Alkaline Phosphate (ALP), Alanine Aminotransferase (ALT), Aspartate Aminotransferase (AST), and Gamma Glutamyl Transferase (GGT)",
+        "Change From Baseline In Clinical Chemistry Parameter of Albumin and Total Protein",
+        "Absolute Values of Complement C3 And C4 at Each Timepoint",
+        "Ratio to Baseline at Each Timepoint of Complement C3 And C4",
+        "Change From Baseline in Systolic and Diastolic Blood Pressure",
+        "Change From Baseline in Body Temperature",
+        "Change From Baseline in Pulse Rate",
+        "Change From Baseline in ECG Parameters: PR Interval, Aggregate, QRS Duration, Aggregate, QT Interval, Aggregate, QTcF Interval, Aggregate",
+        "Number of Participants With Positive Anti-drug Antibodies (ADAs) Against Depemokimab",
+        "Titres of Binding ADA's to Depemokimab"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05140200",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05140200",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05140200",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05140200",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05140200",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "agile",
+      "nctId": "NCT05243680",
+      "protocolNumber": "212895",
+      "acronym": "AGILE",
+      "title": "A Multi-centre, Single Arm, Open-label Extension Study to Evaluate the Long-term Safety of GSK3511294 (Depemokimab) in Adult and Adolescent Participants With Severe Asthma With an Eosinophilic Phenotype From Studies 206713 or 213744",
+      "briefTitle": "An Open-Label Extension Study of GSK3511294 (Depemokimab) in Participants Who Were Previously Enrolled in 206713 (NCT04719832) or 213744 (NCT04718103)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-03-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-05-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 641,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Participants diagnosed with asthma receiving GSK3511294 (Depemokimab)",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Any Adverse Events (AEs) and Serious AEs (SAEs)",
+        "Number of Participants With Worst Case Post-Baseline Positive Anti-GSK3511294 Antibodies (ADA)",
+        "Number of Participants With Worst Case Post-Baseline Positive Neutralizing Antibodies"
+      ],
+      "secondaryEndpoints": [
+        "Annualized Rate of Clinically Significant Exacerbations",
+        "Change From Baseline in Asthma Control Questionnaire-5 (ACQ-5) Score",
+        "Change From Baseline in St. George's Respiratory Questionnaire (SGRQ) Total Score at Weeks 26 and 52",
+        "Change From Baseline in Pre-Bronchodilator Forced Expiratory Volume in One Second (FEV1) at Weeks 26 and 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05243680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05243680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05243680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05243680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05243680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "anchor-2",
+      "nctId": "NCT05281523",
+      "protocolNumber": "218079",
+      "acronym": "ANCHOR-2",
+      "title": "A Randomised, Double-blind, Parallel Group Phase III Study to Assess the Efficacy and Safety of 100 mg SC Depemokimab in Patients With Chronic Rhinosinusitis With Nasal Polyps (CRSwNP) - ANCHOR-2 (depemokimAb iN CHrOnic Rhinosinusitis)",
+      "briefTitle": "Efficacy and Safety of Depemokimab (GSK3511294) in Participants With Chronic Rhinosinusitis With Nasal Polyps (ANCHOR-2)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-04-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-08-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 264,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received a 100 milligram (mg) dose of depemokimab subcutaneous (SC) injection once every 26 weeks (week 0 and week 26) over a treatment period of 52-weeks. Participants were to be maintained on their existing baseline maintenance Chronic rhinosinusitis with nasal polyps (CRSwNP) standard of care (SOC) treatment throughout the study."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo SC injection once every 26 weeks (week 0 and week 26) over a treatment period of 52-weeks. Participants were to be maintained on their existing baseline maintenance CRSwNP SOC treatment throughout the study."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Total Endoscopic Nasal Polyps (NP) Score at Week 52 (Centrally Read)",
+        "Change From Baseline in Mean Nasal Obstruction Score Using Verbal Response Scale From Weeks 49 Through to Week 52"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Mean Symptom Score for Rhinorrhea (Runny Nose) Using Verbal Response Scale From Week 49 Through to Week 52",
+        "Change From Baseline in Mean Symptom Score for Loss of Smell From Week 49 Through to Week 52",
+        "Change From Baseline in Lund Mackay (LMK) Computed Tomography (CT) Score at Week 52",
+        "Change From Baseline in Sino-nasal Outcome Test (SNOT)-22 Total Score at Week 52",
+        "Change From Baseline in Mean Nasal Obstruction Score From Week 21 Through to Week 24",
+        "Change From Baseline in Total Endoscopic Nasal Polyps Score at Week 26",
+        "Percentage of Participants Requiring First Nasal Surgery (Actual or Entry on Waiting List) or Disease-Modulating Medication for Chronic Rhinosinusitis With Nasal Polyps (CRSwNP) Up to Week 52",
+        "Percentage of Participants Requiring First Nasal Surgery (Actual) or Disease-Modulating Medication for CRSwNP up to Week 52",
+        "Percentage of Participants Requiring at Least One Course of Systemic Corticosteroids or Disease-Modulating Medication for CRSwNP or Nasal Surgery (Actual) During the Week 52 Treatment Period",
+        "Change From Baseline in Asthma Control Questionnaire-5 (ACQ-5) Score at Week 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05281523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05281523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05281523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05281523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05281523",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "anchor-1",
+      "nctId": "NCT05274750",
+      "protocolNumber": "217095",
+      "acronym": "ANCHOR-1",
+      "title": "A Randomised, Double-blind, Parallel Group Phase III Study to Assess the Efficacy and Safety of 100 mg SC Depemokimab in Patients With Chronic Rhinosinusitis With Nasal Polyps (CRSwNP) - ANCHOR-1 (depemokimAb iN CHrOnic Rhinosinusitis)",
+      "briefTitle": "Efficacy and Safety of Depemokimab (GSK3511294) in Participants With Chronic Rhinosinusitis With Nasal Polyps",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-04-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-08-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 276,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received a 100 milligram (mg) dose of depemokimab SC injection once every 26 weeks (week 0 and week 26) over a treatment period of 52 weeks. Participants were to be maintained on their existing baseline maintenance for Chronic Rhinosinusitis with Nasal Polyps (CRSwNP) standard of care (SOC) treatment throughout the study."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received placebo SC injection once every 26 weeks (week 0 and week 26) over a treatment period of 52 weeks. Participants were to be maintained on their existing baseline maintenance for CRSwNP SOC treatment throughout the study."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Total Endoscopic Nasal Polyps (NP) Score at Week 52 (Centrally Read)",
+        "Change From Baseline in Mean Nasal Obstruction Score Using Verbal Response Scale From Week 49 Through to Week 52"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Mean Symptom Score for Rhinorrhea (Runny Nose) Using Verbal Response Scale From Week 49 Through to Week 52",
+        "Change From Baseline in Mean Symptom Score for Loss of Smell Using Verbal Response Scale From Week 49 Through to Week 52",
+        "Change From Baseline in Lund Mackay Computerized Tomography (CT) Score at Week 52",
+        "Change From Baseline in Sino-nasal Outcome Test (SNOT)-22 Total Score at Week 52",
+        "Change From Baseline in Mean Nasal Obstruction Score (Verbal Response Scale) From Week 21 Through to Week 24",
+        "Change From Baseline in Total Endoscopic Nasal Polyps Score at Week 26",
+        "Percentage of Participants Requiring First Nasal Surgery (Actual or Entry on Waiting List) or Disease-Modulating Medication for Chronic Rhinosinusitis With Nasal Polyps (CRSwNP) Up to Week 52",
+        "Percentage of Participants Requiring First Nasal Surgery (Actual) or Disease-Modulating Medication for CRSwNP up to Week 52",
+        "Percentage of Participants Requiring at Least One Course of Systemic Corticosteroids or Disease-Modulating Medication for CRSwNP or Nasal Surgery (Actual) During the Week 52 Treatment Period",
+        "Change From Baseline in Asthma Control Questionnaire (ACQ-5) Score at Week 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05274750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05274750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05274750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05274750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05274750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "ocean",
+      "nctId": "NCT05263934",
+      "protocolNumber": "217102",
+      "acronym": "OCEAN",
+      "title": "A 52-week, Randomized, Double-blind, Double-dummy, Parallel-group, Multi-centre, Non-inferiority Study to Investigate the Efficacy and Safety of Depemokimab Compared With Mepolizumab in Adults With Relapsing or Refractory Eosinophilic Granulomatosis With Polyangiitis (EGPA) Receiving Standard of Care (SoC) Therapy",
+      "briefTitle": "Efficacy and Safety of Depemokimab Compared With Mepolizumab in Adults With Relapsing or Refractory Eosinophilic Granulomatosis With Polyangiitis (EGPA)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-07-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-09-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-10-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 163,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Participants receiving depemokimab+placebo matching mepolizumab",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Participants receiving mepolizumab+placebo matching depemokimab",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with remission (Birmingham Vasculitis Activity Score [BVAS] =0 and a dose of oral corticosteroid [OCS] less than or equal to [<=] 4 milligram [mg] per day)"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants in each category of accrued duration of remission",
+        "Number of participants with total accrued duration of remission",
+        "Time to first EGPA relapse",
+        "Number of participants receiving in each category of mean OCS dose during the last 4 weeks of study treatment period (Weeks 49 to 52)",
+        "Number of participants achieving remission (BVAS = 0 and OCS <= 4 mg/day) within the first 24 weeks with continued remission until Week 52",
+        "Number of participants achieving remission using the European League against Rheumatism (EULAR) definition (BVAS = 0 and OCS <=7.5 mg/day) at Weeks 36 and 52",
+        "Number of participants in each category of accrued duration of remission according to the EULAR definition of remission (BVAS = 0 plus OCS <=7.5 mg/day) over 52-week intervention period",
+        "Number of participants with total accrued duration of remission according to the EULAR definition of remission",
+        "Number of participants with remission (BVAS=0 and OCS <=7.5 mg/day) within the first 24 weeks with continued remission until Week 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05263934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05263934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05263934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05263934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05263934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "destiny",
+      "nctId": "NCT05334368",
+      "protocolNumber": "217013",
+      "acronym": "DESTINY",
+      "title": "A Randomized, Double-blind, Placebo-controlled Study to Investigate the Efficacy and Safety of Depemokimab in Adults With Hypereosinophilic Syndrome (HES)",
+      "briefTitle": "Depemokimab in Participants With Hypereosinophilic Syndrome, Efficacy, and Safety Trial",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-09-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-10-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-10-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 110,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "All participants in this arm will receive depemokimab."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "All participants in this arm will receive placebo."
+        }
+      ],
+      "primaryEndpoints": [
+        "Frequency of HES flares"
+      ],
+      "secondaryEndpoints": [
+        "Time to first HES flare",
+        "Number of participants with at least one HES flare during the 52-week study intervention period",
+        "Change from Baseline to Week 52 in weekly average score of Brief Fatigue Inventory (BFI) item 3 (worst fatigue in last 24 hours)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05334368",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05334368",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05334368",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05334368",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05334368",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "214099",
+      "nctId": "NCT05602025",
+      "protocolNumber": "214099",
+      "title": "An Open-Label, Randomized, Single-Dose, Multicenter, Parallel-Group Study to Compare the Pharmacokinetics of Subcutaneous Depemokimab When Delivered With a Safety Syringe Device or an Autoinjector in Healthy Adult Participants",
+      "briefTitle": "A Study to Compare the Pharmacokinetics (PK) of Depemokimab When Delivered With a Safety Syringe Device (SSD) or an Autoinjector in Healthy Adult Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-12-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-10-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-10-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 140,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "50 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab via SSD",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received a single subcutaneous dose of 100 milligrams (mg) of depemokimab administered via a Safety Syringe Device (SSD) on Day 1."
+        },
+        {
+          "label": "Depemokimab via autoinjector",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received a single subcutaneous dose of 100 mg of depemokimab administered via an autoinjector on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Observed Plasma Concentration (Cmax) of Depemokimab",
+        "Area Under the Concentration-time Curve From Time Zero Extrapolated to Infinity (AUC[0-inf]) of Depemokimab"
+      ],
+      "secondaryEndpoints": [
+        "Area Under the Concentration-time Curve From Time Zero to Time of Last Observed Quantifiable Concentration (AUC[0-t]) of Depemokimab",
+        "Time to Maximum Observed Plasma Concentration (Tmax) of Depemokimab",
+        "Apparent Clearance Following Extravascular Administration (CL/F) of Depemokimab",
+        "Apparent Volume of Distribution Following Extravascular Administration (Vd/F) of Depemokimab",
+        "Terminal Elimination Rate Constant (Lambda z) of Depemokimab",
+        "Terminal Elimination Half-Life (T1/2) Following Administration of Depemokimab",
+        "Time of Last Measurable Plasma Concentrations (Tlast) of Depemokimab",
+        "Percentage of AUC (0-Inf) Due to Extrapolation From the Time of the Last Observed Concentration (Tlast) to Infinity (%AUCex) of Depemokimab",
+        "Number of Participants With Presence of Positive Anti-depemokimab Antibodies",
+        "Number of Participants With Positive Neutralizing Antibodies to Depemokimab"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05602025",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05602025",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05602025",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05602025",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05602025",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "223529",
+      "nctId": "NCT06979323",
+      "protocolNumber": "223529",
+      "title": "The IMAGINE Study: A Phase 3b Open Label, Single Arm Study to Assess the Effect of Depemokimab on Airway Structure and Function in Asthma With Type 2 Inflammation Characterized by an Eosinophilic Phenotype Utilizing Quantitative High-resolution CT and Bronchoscopic Airway Sampling in a Sub Study",
+      "briefTitle": "Depemokimab Asthma Imaging and Bronchoscopy Sub-Study",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-07-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-01-05",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-02-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 150,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with asthma with type 2 inflammation will receive depemokimab."
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean Change from Baseline in Total Mucus Plug Volume Measured at Total Lung Capacity (TLC) at Week 26"
+      ],
+      "secondaryEndpoints": [
+        "Mean Change from Baseline in Airway Wall Thickness Measured at TLC at Week 52",
+        "Mean Change from Baseline in Airway Wall Thickness Measured at TLC at Week 26",
+        "Mean Change from Baseline in Total Mucus Plug Volume Measured at TLC at Week 52",
+        "Mean Change from Baseline at Week 26 for Mucus Segment Score",
+        "Mean Change from Baseline at Week 52 for Mucus Segment Score",
+        "Mean Change from Baseline in Pre- and Post- Bronchodilator Forced Expiration Volume in 1 second (BD FEV1) at Week 26",
+        "Mean Change from Baseline in Pre- and Post-BD FEV1 at Week 52",
+        "Number of Participants with Adverse Events (AE)",
+        "Number of Participants with Serious Adverse Events (SAE)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06979323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06979323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06979323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06979323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06979323",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "endura-1",
+      "nctId": "NCT06959095",
+      "protocolNumber": "222714",
+      "acronym": "ENDURA-1",
+      "title": "A Randomized, Double-Blind, Placebo- Controlled, Parallel-Group, Multicenter Study of the Efficacy and Safety of Depemokimab In Adult Participants With COPD With Type 2 Inflammation",
+      "briefTitle": "Depemokimab as an Extended Treatment Duration Biologic in Adults With Chronic Obstructive Pulmonary Disease (COPD) and Type 2 Inflammation",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-06-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-12-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-02-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 981,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be administered depemokimab along with standard of care (SoC)."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will be administered placebo along with SoC."
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Rate of Moderate/Severe Exacerbations"
+      ],
+      "secondaryEndpoints": [
+        "Time to First Moderate/Severe Exacerbation",
+        "Change From Baseline in St. Georges Respiratory Questionnaire (SGRQ) Total Score at Week 52",
+        "Change From Baseline in Evaluating Respiratory Symptoms in Chronic Obstructive Pulmonary Disease (E-RS: COPD) Total Score at Week 52",
+        "Annualized Rate of Exacerbations Requiring Emergency Department (ED) Visit or Hospitalization",
+        "Annualized Rate of Severe Exacerbations"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959095",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959095",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959095",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959095",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959095",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "endura-2",
+      "nctId": "NCT06961214",
+      "protocolNumber": "222725",
+      "acronym": "ENDURA-2",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled, Parallel-Group, Multicenter Study of the Efficacy and Safety of Depemokimab in Adult Participants With COPD With Type 2 Inflammation",
+      "briefTitle": "Depemokimab as an Extended Treatment Duration Biologic in Adults With Chronic Obstructive Pulmonary Disease (COPD) and Type 2 Inflammation (ENDURA-2)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-06-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-12-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-02-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 961,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be administered subcutaneous (SC) injection of Depemokimab along with standard of care (SoC)."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will be administered placebo along with SoC."
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Rate of Moderate/Severe Exacerbations"
+      ],
+      "secondaryEndpoints": [
+        "Time to First Moderate/Severe Exacerbation",
+        "Change from Baseline in St. George's Respiratory Questionnaire (SGRQ) Total Score at Week 52",
+        "Change from Baseline in Evaluating Respiratory Symptoms in Chronic Obstructive Pulmonary Disease (E-RS: COPD) Total Score at Week 52",
+        "Annualized Rate of Exacerbations Requiring Emergency Department (ED) Visit or Hospitalization",
+        "Annualized Rate of Severe Exacerbations"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06961214",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06961214",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06961214",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06961214",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06961214",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vigilant",
+      "nctId": "NCT07177339",
+      "protocolNumber": "224295",
+      "acronym": "VIGILANT",
+      "title": "A Multicenter, Randomized, Double-blind, Parallel Group, Placebo-controlled Study of the Efficacy and Safety of Early Depemokimab Initiation as add-on Treatment in COPD Patients With Type 2 Inflammation",
+      "briefTitle": "eValuating the Efficacy and Safety of InitiatinG depemokImab earLy therApy iN Chronic Obstructive Pulmonary Disorder (COPD) With Type 2 Inflammation",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-10-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-04-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-06-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1196,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with Chronic Obstructive Pulmonary Disorder (COPD) with Type 2 inflammation will receive Depemokimab in combination with existing Standard of Care (SoC)."
+        },
+        {
+          "label": "Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with COPD with Type 2 inflammation will receive matching Placebo in combination with existing SoC."
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Rate of Moderate/Severe Exacerbations"
+      ],
+      "secondaryEndpoints": [
+        "Time to First Moderate/Severe Exacerbation",
+        "Change from Baseline in St. George's Respiratory Questionnaire (SGRQ) Total Score at Week 52",
+        "Change from Baseline in Evaluating Respiratory Symptoms (E-RS): COPD Total Score at Week 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07177339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07177339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07177339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07177339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07177339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "modify",
+      "nctId": "NCT07456033",
+      "protocolNumber": "222926",
+      "acronym": "MODIFY",
+      "title": "The MODIFY Study: A Phase 3b/4 Randomized, Double-blind, Placebo-controlled, Multi-centre Study Evaluating the Impact of Early Intervention With Depemokimab on Exacerbation Rate, Clinical Remission, Lung Function Decline, and Safety in Adults and Adolescents With at Risk Type 2 Asthma, Conducted up to 156 Weeks",
+      "briefTitle": "A Study of Efficacy and Safety of Depemokimab Compared With Placebo in Adults and Adolescents With at Risk Type 2 Asthma",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-03-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-09-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-09-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 456,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be administered depemokimab along with standard of care (SoC)."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will be administered placebo along with SoC"
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized rate of clinically significant exacerbations"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of participants with clinical remission at 2 years",
+        "Change from Baseline in Asthma Quality of Life Questionnaire (AQLQ) total overall score at 2 years",
+        "Change from Baseline in Asthma Control Questionnaire-5 (ACQ-5) score at 2 years",
+        "Change from Baseline in post-Bronchodilator Forced expiratory volume in 1 second (FEV1) at 2 years",
+        "Change from Baseline in pre-Bronchodilator FEV1 at 2 years"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07456033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07456033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07456033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07456033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07456033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "glide",
+      "nctId": "NCT07671001",
+      "protocolNumber": "213204",
+      "acronym": "GLIDE",
+      "title": "A Phase 3, Open-label Study to Assess the Pharmacokinetics, Pharmacodynamics and Safety of Depemokimab (GSK3511294) Administered Subcutaneously as Add on Maintenance Treatment of Asthma With Type 2 Inflammation Characterised by an Eosinophilic Phenotype in Participants Aged 6 to 11 Years Old",
+      "briefTitle": "A Study of Depemokimab in Participants of 6 to 11 Years of Age",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-06-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-03-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-11-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 34,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "maxAge": "11 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive depemokimab at doses based on their body weight."
+        }
+      ],
+      "primaryEndpoints": [
+        "Depemokimab Concentration in Plasma"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants with Adverse events (AE) and Serious Adverse Events (SAE)",
+        "Number of Participants with Clinically Significant changes in Clinical Safety Laboratory Parameters",
+        "Number of Participants with Clinically Significant Changes in Vital Signs",
+        "Number of Participants with Positive Anti-Depemokimab Binding Antibodies and Neutralizing Antibodies",
+        "Ratio to Baseline in Absolute Blood Eosinophil Count"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07671001",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07671001",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07671001",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07671001",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07671001",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "307355",
+      "nctId": "NCT07701967",
+      "protocolNumber": "307355",
+      "title": "A Phase IV, Single-arm, Open-label Study to Evaluate the Efficacy and Safety of 100 mg SC Depemokimab Monotherapy Without Concomitant Use of Intranasal Corticosteroids (INCS) in Japanese Participants With Chronic Rhinosinusitis With Nasal Polyps (CRSwNP) Who Are Inadequately Controlled With Standard Treatment",
+      "briefTitle": "Efficacy and Safety of Depemokimab Monotherapy Without Concomitant Use of Intranasal Corticosteroids (INCS) in Japanese Participants With Chronic Rhinosinusitis With Nasal Polyps (CRSwNP)",
+      "phase": "PHASE4",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-07-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-06-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-06-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 28,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Depemokimab + SoC",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive depemokimab along with their existing baseline maintenance CRSwNP standard of care (SOC) treatment (excluding INCS)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving a One-point or Greater Decrease from Baseline in Total Endoscopic Nasal Polyp (NP) Score Without First Having Nasal Surgery (Actual) or Disease-Modulating Medication for CRSwNP"
+      ],
+      "secondaryEndpoints": [
+        "Change from Baseline in Total Endoscopic NP Score",
+        "Change from Baseline in Mean Nasal Obstruction Score Using Verbal Response Scale (VRS)",
+        "Change from Baseline in Mean Symptom Score for Rhinorrhoea (Runny Nose) Using VRS",
+        "Change from Baseline in Mean Symptom Score for Loss of Smell Using VRS",
+        "Change from baseline in Lund Mackay Computerised Tomography (CT) score",
+        "Change from Baseline in Sino-nasal Outcome Test (SNOT)-22 Score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07701967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07701967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07701967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07701967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07701967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2025-12-16",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761458%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-2",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2026-06-10",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-2",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761458%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761458",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761458%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (SUPPL-2)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761458Orig1s002ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761458Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-2",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761458Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:03:39.073Z"
+}

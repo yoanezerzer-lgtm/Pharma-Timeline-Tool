@@ -1,0 +1,827 @@
+{
+  "slug": "milsaperidone",
+  "brandName": "Bysanti",
+  "inn": "milsaperidone",
+  "modality": "Drug (NDA)",
+  "sponsor": "VANDA PHARMS INC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Schizophrenia in adults",
+      "slug": "schizophrenia-in-adults",
+      "approvalDate": {
+        "value": "2026-02-20",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220358Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-02-20",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Bysanti (milsaperidone) tablets for the following indications: • Treatment of schizophrenia in adults • Acute treatment of manic or mixed episodes associated with bipolar I disorder in adults",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220358Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Bysanti (milsaperidone) tablets for the following indications: • Treatment of schizophrenia in adults • Acute treatment of manic or mixed episodes associated with bipolar I disorder in adults",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Acute treatment of manic or mixed episodes associated with bipolar I disorder in adults",
+      "slug": "acute-treatment-of-manic-or-mixed-episodes-associated-with",
+      "approvalDate": {
+        "value": "2026-02-20",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220358Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-02-20",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Bysanti (milsaperidone) tablets for the following indications: • Treatment of schizophrenia in adults • Acute treatment of manic or mixed episodes associated with bipolar I disorder in adults",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220358Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Bysanti (milsaperidone) tablets for the following indications: • Treatment of schizophrenia in adults • Acute treatment of manic or mixed episodes associated with bipolar I disorder in adults",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220358",
+      "applicationType": "NDA",
+      "sponsor": "VANDA PHARMS INC",
+      "originalApprovalDate": {
+        "value": "2026-02-20",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "vp-vyv-683-3101",
+      "nctId": "NCT00254202",
+      "protocolNumber": "VP-VYV-683-3101",
+      "title": "A Randomized, Double-blind, Placebo- and Active-controlled, Multicenter Study to Evaluate the Efficacy, Safety and Tolerability of Iloperidone in Schizophrenic Patients in Acute Exacerbation Followed by a Long-term Treatment Phase.",
+      "briefTitle": "Efficacy and Safety of Iloperidone Compared With Placebo and Active Control in Subjects With Acute Schizophrenia",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2005-11-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2006-09-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2007-03-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 593,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Iloperidone",
+          "type": "EXPERIMENTAL",
+          "description": "Oral iloperidone"
+        },
+        {
+          "label": "Ziprasidone",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Oral ziprasidone"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Oral placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Positive and Negative Symptom Scale Total (PANSS-T) Score"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00254202",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00254202",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00254202",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00254202",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00254202",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220358Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 25,
+          "quote": "ks, iloperidone appeared to have had comparable efficacy to risperidone. Study 2 Study 2 (NCT00254202) (n=604) compared one fixed-dose of iloperidone (24 mg/day) to placebo and an active cont",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "reprieve",
+      "nctId": "NCT01291511",
+      "protocolNumber": "CILO522D2301",
+      "acronym": "REPRIEVE",
+      "title": "A Multicenter, Randomized, Double-blind, Placebo-controlled, Parallel-group Study to Evaluate Prevention of Relapse in Patients With Schizophrenia Receiving Either Flexible Dose Iloperidone or Placebo in Long-term Use (up to 26 Weeks) Followed by up to 52 Weeks of Open-label Extension",
+      "briefTitle": "Relapse Prevention Study in Patients With Schizophrenia",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2011-02-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2014-03-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2015-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 635,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Iloperidone",
+          "type": "EXPERIMENTAL",
+          "description": "After meeting all entry criteria, completing a 1-week open-label iloperidone titation period (up to 12 mg/day), followed by a 14-24 week open-label iloperidone flexible dose-stabilization period (up to 24 mg/day), approximately 260 patients will be randomized to one of two arms in a 1:1 ratio of iloperidone (flexible dosing 8-24 mg/day) to placebo. Post-randomization double-blind study medication will be administered orally twice daily for up to 26 weeks to evaluate relapse prevention. Subsequently, during the extension period, after a 1-week mock double-blind titration, open-label iloperidone (8-24 mg/day) is administered for up to 51 weeks to evaluate long-term safety."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Post-randomization matching placebo is administered orally bid during the double-blind period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Time to Relapse or Impending Relapse"
+      ],
+      "secondaryEndpoints": [
+        "PANSS Total Score, Change From Baseline to Last Visit",
+        "CGI-S, Last Visit",
+        "SDS Total Score, Change From Baseline to Last Visit"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01291511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01291511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01291511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01291511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01291511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220358Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 25,
+          "quote": "as ziprasidone which also needed a slow titration to the target dosage. Study 3 Study 3 (NCT01291511) included clinically stable adult outpatients (n=303) who met DSM-IV criteria for schizop",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vyv-683-3201",
+      "nctId": "NCT04819776",
+      "protocolNumber": "VP-VYV-683-3201",
+      "title": "A Multicenter, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Efficacy and Safety of Iloperidone for 4 Weeks in the Treatment of Patients With Acute Manic Episodes Associated With Bipolar I Disorder",
+      "briefTitle": "Evaluation of Efficacy and Safety of Iloperidone in the Acute Treatment of Manic or Mixed Episodes Associated With Bipolar I Disorder",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-09-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-08-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 417,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Iloperidone",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline to Week 4 in Young Mania Rating Scale (YMRS) Total Score"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04819776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04819776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04819776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04819776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04819776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220358Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 26,
+          "quote": "patients who met the DSM-5 criteria for bipolar I disorder, manic or mixed type (Study 4; NCT04819776). In Study 4, the demographic and baseline characteristics were similar in the iloperidon",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vhx-896-1101",
+      "nctId": "NCT04969211",
+      "protocolNumber": "VP-VHX-896-1101",
+      "title": "An Open-Label, Two-Period, Randomized, Single Oral Dose, Crossover Study to Evaluate the Bioequivalence of VHX-896 Tablets Relative to Iloperidone Tablets in Healthy Volunteers",
+      "briefTitle": "Bioequivalence Study Between VHX-896 Tablets and Iloperidone Tablets in Healthy Volunteers",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-06-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-10-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-10-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 25,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sequence A: VHX-896 then iloperidone",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Sequence B: Iloperidone then VHX-896",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Bioequivalence between VHX-896 tablets relative to iloperidone tablets",
+        "Assessment of Safety and Tolerability of a single dose of VHX-896"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04969211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04969211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04969211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04969211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04969211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vhx-896-1102",
+      "nctId": "NCT06803290",
+      "protocolNumber": "VP-VHX-896-1102",
+      "title": "An Open-Label, Two-Period, Two-Sequence, Two-Treatment Randomized, Single Oral Dose, Crossover Study to Evaluate the Effect of Food on the Pharmacokinetic Profile of VHX-896 in Healthy Volunteers",
+      "briefTitle": "Food Effect Study of VHX-896 in Healthy Volunteers",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-06-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-12-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-12-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sequence A: fed then fasted",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Sequence B: fasted then fed",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Comparative bioavailability of VHX-tablets under fed versus fasted conditions."
+      ],
+      "secondaryEndpoints": [
+        "Assessment of safety and tolerability of single dose of VHX-896 tablets"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06803290",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06803290",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06803290",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06803290",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06803290",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vhx-896-1103",
+      "nctId": "NCT06494397",
+      "protocolNumber": "VP-VHX-896-1103",
+      "title": "Crossover Bioequivalence Study of 12 mg VHX-896 and Iloperidone Tablets Under Steady-State Conditions",
+      "briefTitle": "Pharmacokinetic Study of VHX-896 and Iloperidone Tablets Under Steady-State Conditions",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-07-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-10-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-10-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 26,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sequence A: VHX-896 then iloperidone",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Sequence B: Iloperidone then VHX-896",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Bioequivalence between VHX-896 tablets relative to iloperidone tablets"
+      ],
+      "secondaryEndpoints": [
+        "Assessment of safety and tolerability of VHX-896 and iloperidone"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06494397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06494397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06494397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06494397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06494397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vp-vhx-896-3201",
+      "nctId": "NCT06830044",
+      "protocolNumber": "VP-VHX-896-3201",
+      "title": "A Randomized, Double-Blind, Placebo-controlled Multicenter Study to Assess the Efficacy and Safety of Milsaperidone as Adjunctive Therapy in the Treatment of Patients With Major Depressive Disorder",
+      "briefTitle": "Evaluation of Efficacy and Safety of Milsaperidone as Adjunctive Therapy in Patients With Major Depressive Disorder",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Vanda Pharmaceuticals",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-03-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-03-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 500,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Milsaperidone",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from Baseline in Montgomery-Asberg Depression Rating Scale (MADRS)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06830044",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06830044",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06830044",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06830044",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06830044",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-02-20",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220358%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220358",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220358%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220358Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220358Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:50.756Z"
+}
