@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D006561",
+          "term": "Herpes Simplex",
+          "areas": [
+            "Infections",
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "A group of acute infections caused by herpes simplex virus type 1 or type 2 that is characterized by the development of one or more small fluid-filled vesicles with a raised erythematous base on the skin or mucous membrane. It occurs as a primary infection or recurs due to a reactivation of a latent infection. (Dorland, 27th ed.)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D006561",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03073967",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03073967)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -124,6 +149,9 @@
       "status": "COMPLETED",
       "sponsor": "AiCuris Anti-infective Cures AG",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "HSV-2"
+      ],
       "startDate": {
         "value": "2010-03-01",
         "precision": "month"
@@ -227,6 +255,15 @@
       "status": "TERMINATED",
       "sponsor": "AiCuris Anti-infective Cures AG",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Genital Herpes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006558",
+          "term": "Herpes Genitalis"
+        }
+      ],
       "startDate": {
         "value": "2012-10-01",
         "precision": "month"
@@ -322,6 +359,19 @@
       "status": "COMPLETED",
       "sponsor": "AiCuris Anti-infective Cures AG",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Herpes Labialis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006560",
+          "term": "Herpes Labialis"
+        },
+        {
+          "id": "D006561",
+          "term": "Herpes Simplex"
+        }
+      ],
       "startDate": {
         "value": "2016-11-29",
         "precision": "day"
@@ -443,6 +493,15 @@
       "status": "COMPLETED",
       "sponsor": "AiCuris Anti-infective Cures AG",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "HSV Infection"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006561",
+          "term": "Herpes Simplex"
+        }
+      ],
       "startDate": {
         "value": "2017-05-08",
         "precision": "day"
@@ -572,6 +631,15 @@
       "status": "COMPLETED",
       "sponsor": "AiCuris Anti-infective Cures AG",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "HSV Infection"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006561",
+          "term": "Herpes Simplex"
+        }
+      ],
       "startDate": {
         "value": "2020-07-13",
         "precision": "day"
@@ -673,6 +741,9 @@
       "status": "COMPLETED",
       "sponsor": "AiCuris Anti-infective Cures AG",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Subjects"
+      ],
       "startDate": {
         "value": "2022-12-04",
         "precision": "day"
@@ -772,6 +843,9 @@
       "status": "AVAILABLE",
       "sponsor": "AiCuris Anti-infective Cures AG",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "HSV"
+      ],
       "design": {},
       "population": {
         "minAge": "16 Years",
@@ -861,5 +935,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:28.625Z"
+  "lastIngestedAt": "2026-10-29T19:15:14.602Z"
 }

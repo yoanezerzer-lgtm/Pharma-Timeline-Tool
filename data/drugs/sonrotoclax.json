@@ -88,6 +88,32 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D020522",
+          "term": "Lymphoma, Mantle-Cell",
+          "areas": [
+            "Neoplasms",
+            "Hemic and Lymphatic Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "A form of non-Hodgkin lymphoma having a usually diffuse pattern with both small and medium lymphocytes and small cleaved cells. It accounts for about 5% of adult non-Hodgkin lymphomas in the United States and Europe. The majority of mantle-cell lymphomas are associated with a t(11;14) translocation resulting in overexpression of the CYCLIN D1 gene (GENES, BCL-1).",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D020522",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05471843",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05471843)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +161,9 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Mature B-Cell Malignancies"
+      ],
       "startDate": {
         "value": "2020-03-24",
         "precision": "day"
@@ -276,6 +305,25 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Acute Myeloid Leukemia",
+        "Myelodysplastic Syndromes",
+        "Myelodysplastic/Myeloproliferative Neoplasm"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015470",
+          "term": "Leukemia, Myeloid, Acute"
+        },
+        {
+          "id": "D009190",
+          "term": "Myelodysplastic Syndromes"
+        },
+        {
+          "id": "D054437",
+          "term": "Myelodysplastic-Myeloproliferative Diseases"
+        }
+      ],
       "startDate": {
         "value": "2021-05-24",
         "precision": "day"
@@ -420,6 +468,15 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Relapsed/Refractory Multiple Myeloma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009101",
+          "term": "Multiple Myeloma"
+        }
+      ],
       "startDate": {
         "value": "2021-09-16",
         "precision": "day"
@@ -553,6 +610,21 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Mantle Cell Lymphoma",
+        "Refractory Mantle Cell Lymphoma (MCL)",
+        "Relapsed Mantle Cell Lymphoma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D020522",
+          "term": "Lymphoma, Mantle-Cell"
+        },
+        {
+          "id": "D008223",
+          "term": "Lymphoma"
+        }
+      ],
       "startDate": {
         "value": "2022-09-05",
         "precision": "day"
@@ -864,6 +936,21 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Waldenstrom Macroglobulinemia",
+        "Waldenstrom's Macroglobulinemia Recurrent",
+        "Waldenstrom's Macroglobulinemia Refractory"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008258",
+          "term": "Waldenstrom Macroglobulinemia"
+        },
+        {
+          "id": "D008223",
+          "term": "Lymphoma"
+        }
+      ],
       "startDate": {
         "value": "2023-10-23",
         "precision": "day"
@@ -986,6 +1073,15 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "CLL"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015451",
+          "term": "Leukemia, Lymphocytic, Chronic, B-Cell"
+        }
+      ],
       "startDate": {
         "value": "2023-11-11",
         "precision": "day"
@@ -1098,6 +1194,15 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Lymphocytic Leukemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015451",
+          "term": "Leukemia, Lymphocytic, Chronic, B-Cell"
+        }
+      ],
       "startDate": {
         "value": "2024-11-14",
         "precision": "day"
@@ -1202,6 +1307,26 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "B-cell Malignancy",
+        "Relapsed Cancer",
+        "Refractory Cancer",
+        "B-cell Lymphoma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012008",
+          "term": "Recurrence"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D016393",
+          "term": "Lymphoma, B-Cell"
+        }
+      ],
       "startDate": {
         "value": "2024-11-27",
         "precision": "day"
@@ -1367,6 +1492,26 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Lymphocytic Leukemia",
+        "CLL",
+        "Mantle Cell Lymphoma",
+        "MCL"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015451",
+          "term": "Leukemia, Lymphocytic, Chronic, B-Cell"
+        },
+        {
+          "id": "D020522",
+          "term": "Lymphoma, Mantle-Cell"
+        },
+        {
+          "id": "D019337",
+          "term": "Hematologic Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2025-01-23",
         "precision": "day"
@@ -1464,6 +1609,20 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Mantle Cell Lymphoma",
+        "B Cell Lymphoma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D020522",
+          "term": "Lymphoma, Mantle-Cell"
+        },
+        {
+          "id": "D016393",
+          "term": "Lymphoma, B-Cell"
+        }
+      ],
       "startDate": {
         "value": "2025-03-05",
         "precision": "day"
@@ -1569,6 +1728,16 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Lymphocytic Leukemia",
+        "Small Lymphocytic Lymphoma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015451",
+          "term": "Leukemia, Lymphocytic, Chronic, B-Cell"
+        }
+      ],
       "startDate": {
         "value": "2025-06-11",
         "precision": "day"
@@ -1701,6 +1870,9 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2025-09-24",
         "precision": "day"
@@ -1801,6 +1973,15 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Lymphocytic Leukemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015451",
+          "term": "Leukemia, Lymphocytic, Chronic, B-Cell"
+        }
+      ],
       "startDate": {
         "value": "2026-01-22",
         "precision": "day"
@@ -1908,6 +2089,9 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2026-06-17",
         "precision": "day"
@@ -2008,6 +2192,10 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatic Impairment",
+        "Healthy Adult Participants"
+      ],
       "startDate": {
         "value": "2026-11-01",
         "precision": "month"
@@ -2115,6 +2303,42 @@
       "sponsor": "BeOne Medicines",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Relapsed Acute Myeloid Leukemia",
+        "Refractory Acute Myeloid Leukemia",
+        "B-cell Acute Lymphoblastic Leukemia",
+        "Pediatric Cancer",
+        "Pediatric ALL, Relapsed",
+        "Pediatric ALL",
+        "Pediatric ALL, B Cell",
+        "Acute Myeloid Leukemia",
+        "Acute Lymphoblastic Leukemia",
+        "Pediatric AML",
+        "R/R AML",
+        "R/R B-cell ALL"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015470",
+          "term": "Leukemia, Myeloid, Acute"
+        },
+        {
+          "id": "D002051",
+          "term": "Burkitt Lymphoma"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D054198",
+          "term": "Precursor Cell Lymphoblastic Leukemia-Lymphoma"
+        },
+        {
+          "id": "D012008",
+          "term": "Recurrence"
+        }
+      ],
       "startDate": {
         "value": "2026-12-01",
         "precision": "month"
@@ -2247,5 +2471,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:39.627Z"
+  "lastIngestedAt": "2026-10-29T19:15:29.693Z"
 }

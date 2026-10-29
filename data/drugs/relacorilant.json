@@ -88,6 +88,78 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D005185",
+          "term": "Fallopian Tube Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Urogenital Diseases"
+          ],
+          "definition": {
+            "text": "Benign or malignant neoplasms of the FALLOPIAN TUBES. They are uncommon. If they develop, they may be located in the wall or within the lumen as a growth attached to the wall by a stalk.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D005185",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05257408)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "meshId": "D010051",
+          "term": "Ovarian Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Urogenital Diseases",
+            "Endocrine System Diseases"
+          ],
+          "definition": {
+            "text": "Tumors or cancer of the OVARY. These neoplasms can be benign or malignant. They are classified according to the tissue of origin, such as the surface EPITHELIUM, the stromal endocrine cells, and the totipotent GERM CELLS.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D010051",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05257408)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "meshId": "D010534",
+          "term": "Peritoneal Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Digestive System Diseases"
+          ],
+          "definition": {
+            "text": "Tumors or cancer of the PERITONEUM.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D010534",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05257408)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +207,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2014-09-01",
         "precision": "month"
@@ -284,6 +359,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2016-04-07",
         "precision": "day"
@@ -378,6 +456,23 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Solid Tumors"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D064726",
+          "term": "Triple Negative Breast Neoplasms"
+        },
+        {
+          "id": "D000077216",
+          "term": "Carcinoma, Ovarian Epithelial"
+        },
+        {
+          "id": "D010190",
+          "term": "Pancreatic Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2016-05-23",
         "precision": "day"
@@ -469,6 +564,39 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Cushing's Syndrome"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003480",
+          "term": "Cushing Syndrome"
+        },
+        {
+          "id": "D047748",
+          "term": "Pituitary ACTH Hypersecretion"
+        },
+        {
+          "id": "D000182",
+          "term": "ACTH Syndrome, Ectopic"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        },
+        {
+          "id": "D018268",
+          "term": "Adrenocortical Carcinoma"
+        },
+        {
+          "id": "D000306",
+          "term": "Adrenal Cortex Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2016-06-01",
         "precision": "month"
@@ -568,6 +696,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2016-08-01",
         "precision": "month"
@@ -695,6 +826,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2017-05-18",
         "precision": "day"
@@ -802,6 +936,10 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy",
+        "Food-drug Interaction"
+      ],
       "startDate": {
         "value": "2018-01-16",
         "precision": "day"
@@ -910,6 +1048,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2018-03-06",
         "precision": "day"
@@ -1018,6 +1159,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2018-04-10",
         "precision": "day"
@@ -1132,6 +1276,39 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Cushing Syndrome"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003480",
+          "term": "Cushing Syndrome"
+        },
+        {
+          "id": "D047748",
+          "term": "Pituitary ACTH Hypersecretion"
+        },
+        {
+          "id": "D000182",
+          "term": "ACTH Syndrome, Ectopic"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        },
+        {
+          "id": "D018268",
+          "term": "Adrenocortical Carcinoma"
+        },
+        {
+          "id": "D000306",
+          "term": "Adrenal Cortex Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2018-05-07",
         "precision": "day"
@@ -1219,6 +1396,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2018-05-24",
         "precision": "day"
@@ -1325,6 +1505,31 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Cushing Syndrome"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003480",
+          "term": "Cushing Syndrome"
+        },
+        {
+          "id": "D047748",
+          "term": "Pituitary ACTH Hypersecretion"
+        },
+        {
+          "id": "D000182",
+          "term": "ACTH Syndrome, Ectopic"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2018-11-15",
         "precision": "day"
@@ -1433,6 +1638,21 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Recurrent Ovarian Cancer",
+        "Recurrent Fallopian Tube Carcinoma",
+        "Recurrent Primary Peritoneal Carcinoma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010051",
+          "term": "Ovarian Neoplasms"
+        },
+        {
+          "id": "D005185",
+          "term": "Fallopian Tube Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2019-04-05",
         "precision": "day"
@@ -1544,6 +1764,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatic Impairment"
+      ],
       "startDate": {
         "value": "2020-01-06",
         "precision": "day"
@@ -1651,6 +1874,15 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Metastatic Pancreatic Ductal Adenocarcinoma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010190",
+          "term": "Pancreatic Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2020-06-30",
         "precision": "day"
@@ -1753,6 +1985,27 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypercortisolism"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003480",
+          "term": "Cushing Syndrome"
+        },
+        {
+          "id": "D000182",
+          "term": "ACTH Syndrome, Ectopic"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2020-07-27",
         "precision": "day"
@@ -1865,6 +2118,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2020-09-19",
         "precision": "day"
@@ -1974,6 +2230,59 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Adrenocortical Carcinoma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D018268",
+          "term": "Adrenocortical Carcinoma"
+        },
+        {
+          "id": "D000306",
+          "term": "Adrenal Cortex Neoplasms"
+        },
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        },
+        {
+          "id": "D006943",
+          "term": "Hyperglycemia"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "id": "D018149",
+          "term": "Glucose Intolerance"
+        },
+        {
+          "id": "D003480",
+          "term": "Cushing Syndrome"
+        },
+        {
+          "id": "D000182",
+          "term": "ACTH Syndrome, Ectopic"
+        },
+        {
+          "id": "D000308",
+          "term": "Adrenocortical Hyperfunction"
+        },
+        {
+          "id": "D000307",
+          "term": "Adrenal Gland Diseases"
+        },
+        {
+          "id": "D004700",
+          "term": "Endocrine System Diseases"
+        },
+        {
+          "id": "D010335",
+          "term": "Pathologic Processes"
+        }
+      ],
       "startDate": {
         "value": "2020-09-30",
         "precision": "day"
@@ -2068,6 +2377,9 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2021-01-22",
         "precision": "day"
@@ -2234,6 +2546,20 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Cushing Syndrome",
+        "Neoplasms"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003480",
+          "term": "Cushing Syndrome"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2022-05-25",
         "precision": "day"
@@ -2355,6 +2681,25 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ovarian Neoplasm",
+        "Fallopian Tube Neoplasms",
+        "Peritoneal Neoplasms"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010051",
+          "term": "Ovarian Neoplasms"
+        },
+        {
+          "id": "D005185",
+          "term": "Fallopian Tube Neoplasms"
+        },
+        {
+          "id": "D010534",
+          "term": "Peritoneal Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2022-06-29",
         "precision": "day"
@@ -2573,6 +2918,50 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ovarian Cancer",
+        "Fallopian Tube Cancer",
+        "Peritoneal Neoplasms",
+        "Endometrial Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010051",
+          "term": "Ovarian Neoplasms"
+        },
+        {
+          "id": "D005185",
+          "term": "Fallopian Tube Neoplasms"
+        },
+        {
+          "id": "D010534",
+          "term": "Peritoneal Neoplasms"
+        },
+        {
+          "id": "D016889",
+          "term": "Endometrial Neoplasms"
+        },
+        {
+          "id": "D005833",
+          "term": "Genital Neoplasms, Female"
+        },
+        {
+          "id": "D009371",
+          "term": "Neoplasms by Site"
+        },
+        {
+          "id": "D005184",
+          "term": "Fallopian Tube Diseases"
+        },
+        {
+          "id": "D010049",
+          "term": "Ovarian Diseases"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2025-04-11",
         "precision": "day"
@@ -2682,6 +3071,20 @@
       "sponsor": "Corcept Therapeutics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Adenocarcinoma",
+        "Carcinoma, Pancreatic Ductal"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000230",
+          "term": "Adenocarcinoma"
+        },
+        {
+          "id": "D021441",
+          "term": "Carcinoma, Pancreatic Ductal"
+        }
+      ],
       "startDate": {
         "value": "2026-01-27",
         "precision": "day"
@@ -2818,5 +3221,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:30.611Z"
+  "lastIngestedAt": "2026-10-29T19:15:17.143Z"
 }

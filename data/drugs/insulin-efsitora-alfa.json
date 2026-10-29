@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003924",
+          "term": "Diabetes Mellitus, Type 2",
+          "areas": [
+            "Nutritional and Metabolic Diseases",
+            "Endocrine System Diseases"
+          ],
+          "definition": {
+            "text": "A subclass of DIABETES MELLITUS that is not INSULIN-responsive or dependent (NIDDM). It is characterized initially by INSULIN RESISTANCE and HYPERINSULINEMIA; and eventually by GLUCOSE INTOLERANCE; HYPERGLYCEMIA; and overt diabetes. Type II diabetes mellitus is no longer considered a disease exclusively found in adults. Patients seldom develop KETOSIS but often exhibit OBESITY.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003924",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05275400",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05275400, NCT05362058, NCT05462756, NCT05662332)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -156,6 +181,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2022-03-08",
         "precision": "day"
@@ -343,6 +377,20 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes",
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003920",
+          "term": "Diabetes Mellitus"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2022-06-03",
         "precision": "day"
@@ -536,6 +584,16 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes",
+        "Type 2 Diabetes Treated With Insulin"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2022-08-11",
         "precision": "day"
@@ -703,6 +761,20 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 1 Diabetes",
+        "Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003922",
+          "term": "Diabetes Mellitus, Type 1"
+        },
+        {
+          "id": "D003920",
+          "term": "Diabetes Mellitus"
+        }
+      ],
       "startDate": {
         "value": "2022-08-12",
         "precision": "day"
@@ -839,6 +911,16 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes",
+        "T2D"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-01-14",
         "precision": "day"
@@ -1035,5 +1117,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:36.418Z"
+  "lastIngestedAt": "2026-10-29T19:14:23.471Z"
 }

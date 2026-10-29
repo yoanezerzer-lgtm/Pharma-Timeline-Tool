@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D001249",
+          "term": "Asthma",
+          "areas": [
+            "Respiratory Tract Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "A form of bronchial disorder with three distinct components: airway hyper-responsiveness (RESPIRATORY HYPERSENSITIVITY), airway INFLAMMATION, and intermittent AIRWAY OBSTRUCTION. It is characterized by spasmodic contraction of airway smooth muscle, WHEEZING, and dyspnea (DYSPNEA, PAROXYSMAL).",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D001249",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04718103",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04718103, NCT04719832)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +160,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2017-10-17",
         "precision": "day"
@@ -330,6 +364,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2021-01-26",
         "precision": "day"
@@ -451,6 +494,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2021-02-04",
         "precision": "day"
@@ -636,6 +688,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2021-03-17",
         "precision": "day"
@@ -800,6 +861,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2021-12-10",
         "precision": "day"
@@ -929,6 +999,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2022-03-01",
         "precision": "day"
@@ -1025,6 +1104,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Nasal Polyps"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009298",
+          "term": "Nasal Polyps"
+        }
+      ],
       "startDate": {
         "value": "2022-04-18",
         "precision": "day"
@@ -1132,6 +1220,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Nasal Polyps"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009298",
+          "term": "Nasal Polyps"
+        }
+      ],
       "startDate": {
         "value": "2022-04-22",
         "precision": "day"
@@ -1239,6 +1336,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Eosinophilic Granulomatosis With Polyangiitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015267",
+          "term": "Churg-Strauss Syndrome"
+        }
+      ],
       "startDate": {
         "value": "2022-07-14",
         "precision": "day"
@@ -1342,6 +1448,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypereosinophilic Syndrome"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D017681",
+          "term": "Hypereosinophilic Syndrome"
+        }
+      ],
       "startDate": {
         "value": "2022-09-06",
         "precision": "day"
@@ -1440,6 +1555,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2022-12-13",
         "precision": "day"
@@ -1547,6 +1671,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2024-07-19",
         "precision": "day"
@@ -1647,6 +1780,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pulmonary Disease, Chronic Obstructive"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D029424",
+          "term": "Pulmonary Disease, Chronic Obstructive"
+        }
+      ],
       "startDate": {
         "value": "2025-06-20",
         "precision": "day"
@@ -1749,6 +1891,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pulmonary Disease, Chronic Obstructive"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D029424",
+          "term": "Pulmonary Disease, Chronic Obstructive"
+        }
+      ],
       "startDate": {
         "value": "2025-06-23",
         "precision": "day"
@@ -1851,6 +2002,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pulmonary Disease, Chronic Obstructive"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D029424",
+          "term": "Pulmonary Disease, Chronic Obstructive"
+        }
+      ],
       "startDate": {
         "value": "2025-10-20",
         "precision": "day"
@@ -1951,6 +2111,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2026-03-13",
         "precision": "day"
@@ -2052,6 +2221,19 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        },
+        {
+          "id": "D011657",
+          "term": "Pulmonary Eosinophilia"
+        }
+      ],
       "startDate": {
         "value": "2026-06-25",
         "precision": "day"
@@ -2148,6 +2330,15 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Nasal Polyps"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009298",
+          "term": "Nasal Polyps"
+        }
+      ],
       "startDate": {
         "value": "2026-07-15",
         "precision": "day"
@@ -2299,5 +2490,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:44.670Z"
+  "lastIngestedAt": "2026-10-29T19:13:37.486Z"
 }

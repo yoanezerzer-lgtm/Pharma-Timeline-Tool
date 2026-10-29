@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D001943",
+          "term": "Breast Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "Tumors or cancer of the human BREAST.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D001943",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05501886",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05501886)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +160,19 @@
       "sponsor": "Celcuity Inc",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009477",
+          "term": "Hereditary Sensory and Autonomic Neuropathies"
+        }
+      ],
       "startDate": {
         "value": "2016-06-14",
         "precision": "day"
@@ -280,6 +318,19 @@
       "sponsor": "Celcuity Inc",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        }
+      ],
       "startDate": {
         "value": "2022-12-08",
         "precision": "day"
@@ -413,6 +464,36 @@
       "sponsor": "Celcuity Inc",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "mCRPC (Metastatic Castration-resistant Prostate Cancer)",
+        "Genital Diseases, Male",
+        "Urogenital Diseases, Male",
+        "Prostatic Disease",
+        "Prostatic Neoplasms, Castration-Resistant",
+        "Prostate Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D005832",
+          "term": "Genital Diseases, Male"
+        },
+        {
+          "id": "D052801",
+          "term": "Male Urogenital Diseases"
+        },
+        {
+          "id": "D011469",
+          "term": "Prostatic Diseases"
+        },
+        {
+          "id": "D064129",
+          "term": "Prostatic Neoplasms, Castration-Resistant"
+        },
+        {
+          "id": "D011471",
+          "term": "Prostatic Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2024-01-01",
         "precision": "day"
@@ -516,6 +597,19 @@
       "sponsor": "Celcuity Inc",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        }
+      ],
       "startDate": {
         "value": "2025-07-24",
         "precision": "day"
@@ -628,6 +722,9 @@
       "sponsor": "Celcuity Inc",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Breast Neoplasm Malignant Female"
+      ],
       "design": {},
       "population": {
         "minAge": "18 Years",
@@ -717,5 +814,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:35.413Z"
+  "lastIngestedAt": "2026-10-29T19:14:15.997Z"
 }

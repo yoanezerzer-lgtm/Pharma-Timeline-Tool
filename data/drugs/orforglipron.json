@@ -89,6 +89,54 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D009765",
+          "term": "Obesity",
+          "areas": [
+            "Nutritional and Metabolic Diseases",
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "A status with BODY WEIGHT that is grossly above the recommended standards, usually due to accumulation of excess FATS in the body. The standards may vary with age, sex, genetic or cultural background. In the BODY MASS INDEX, a BMI greater than 30.0 kg/m2 is considered obese, and a BMI greater than 40.0 kg/m2 is considered morbidly obese (MORBID OBESITY).",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D009765",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05869903",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05869903, NCT05872620)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "meshId": "D050177",
+          "term": "Overweight",
+          "areas": [
+            "Nutritional and Metabolic Diseases",
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "A status with BODY WEIGHT that is above certain standards. In the scale of BODY MASS INDEX, overweight is defined as having a BMI of 25.0-29.9 kg/m2. Overweight may or may not be due to increases in body fat (ADIPOSE TISSUE), hence overweight does not equal over fat.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D050177",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05869903",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05869903, NCT05872620)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -125,6 +173,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2019-06-12",
         "precision": "day"
@@ -304,6 +355,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2020-10-08",
         "precision": "day"
@@ -403,6 +463,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2021-09-15",
         "precision": "day"
@@ -539,6 +608,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2021-09-16",
         "precision": "day"
@@ -638,6 +710,20 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight and Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2021-09-29",
         "precision": "day"
@@ -769,6 +855,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2021-11-05",
         "precision": "day"
@@ -870,6 +959,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2021-11-12",
         "precision": "day"
@@ -982,6 +1080,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2022-05-17",
         "precision": "day"
@@ -1083,6 +1184,16 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy",
+        "Obese"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2022-05-26",
         "precision": "day"
@@ -1190,6 +1301,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2022-08-01",
         "precision": "day"
@@ -1286,6 +1400,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2022-10-17",
         "precision": "day"
@@ -1382,6 +1499,36 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes",
+        "Obesity",
+        "Overweight or Obesity",
+        "Overweight",
+        "Cardiovascular Diseases",
+        "Chronic Kidney Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D002318",
+          "term": "Cardiovascular Diseases"
+        },
+        {
+          "id": "D051436",
+          "term": "Renal Insufficiency, Chronic"
+        }
+      ],
       "startDate": {
         "value": "2023-04-03",
         "precision": "day"
@@ -1485,6 +1632,16 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy",
+        "Obese"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2023-04-26",
         "precision": "day"
@@ -1618,6 +1775,21 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight",
+        "Overweight or Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2023-06-05",
         "precision": "day"
@@ -1993,6 +2165,25 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight",
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-06-05",
         "precision": "day"
@@ -2348,6 +2539,16 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy",
+        "Hepatic Insufficiency"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D048550",
+          "term": "Hepatic Insufficiency"
+        }
+      ],
       "startDate": {
         "value": "2023-06-13",
         "precision": "day"
@@ -2454,6 +2655,16 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Renal Insufficiency",
+        "Healthy"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051437",
+          "term": "Renal Insufficiency"
+        }
+      ],
       "startDate": {
         "value": "2023-07-13",
         "precision": "day"
@@ -2556,6 +2767,23 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D009748",
+          "term": "Nutrition Disorders"
+        }
+      ],
       "startDate": {
         "value": "2023-07-31",
         "precision": "day"
@@ -2682,6 +2910,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-08-09",
         "precision": "day"
@@ -2797,6 +3034,20 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Overweight",
+        "Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2023-09-21",
         "precision": "day"
@@ -2906,6 +3157,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-09-22",
         "precision": "day"
@@ -3138,6 +3398,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-09-28",
         "precision": "day"
@@ -3249,6 +3518,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2023-10-19",
         "precision": "day"
@@ -3346,6 +3618,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-11-10",
         "precision": "day"
@@ -3557,6 +3838,21 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy",
+        "Obese",
+        "Overweight"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2024-01-02",
         "precision": "day"
@@ -3668,6 +3964,15 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2024-01-10",
         "precision": "day"
@@ -3887,6 +4192,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-05-06",
         "precision": "day"
@@ -3978,6 +4286,22 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy",
+        "Obese",
+        "Overweight",
+        "Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2024-06-24",
         "precision": "day"
@@ -4133,6 +4457,28 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D001836",
+          "term": "Body Weight Changes"
+        },
+        {
+          "id": "D015431",
+          "term": "Weight Loss"
+        }
+      ],
       "startDate": {
         "value": "2024-09-13",
         "precision": "day"
@@ -4233,6 +4579,20 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "OSA",
+        "Overweight or Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2024-10-22",
         "precision": "day"
@@ -4377,6 +4737,20 @@
       "status": "RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2024-11-18",
         "precision": "day"
@@ -4485,6 +4859,20 @@
       "status": "RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2024-11-18",
         "precision": "day"
@@ -4574,6 +4962,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-12-06",
         "precision": "day"
@@ -4669,6 +5060,9 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-12-13",
         "precision": "day"
@@ -4761,6 +5155,20 @@
       "status": "COMPLETED",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2025-02-17",
         "precision": "day"
@@ -4861,6 +5269,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2025-04-30",
         "precision": "day"
@@ -4954,6 +5371,24 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension",
+        "Overweight or Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2025-04-30",
         "precision": "day"
@@ -5055,6 +5490,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2025-04-30",
         "precision": "day"
@@ -5156,6 +5600,25 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight",
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2025-05-15",
         "precision": "day"
@@ -5289,6 +5752,20 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2025-05-15",
         "precision": "day"
@@ -5407,6 +5884,25 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight",
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2025-05-19",
         "precision": "day"
@@ -5528,6 +6024,39 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Osteoarthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010003",
+          "term": "Osteoarthritis"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D044343",
+          "term": "Overnutrition"
+        },
+        {
+          "id": "D009748",
+          "term": "Nutrition Disorders"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2025-09-15",
         "precision": "day"
@@ -5657,6 +6186,15 @@
       "status": "RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Urinary Incontinence,Stress"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D014550",
+          "term": "Urinary Incontinence, Stress"
+        }
+      ],
       "startDate": {
         "value": "2025-09-30",
         "precision": "day"
@@ -5768,6 +6306,15 @@
       "status": "RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Peripheral Arterial Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D058729",
+          "term": "Peripheral Arterial Disease"
+        }
+      ],
       "startDate": {
         "value": "2025-10-31",
         "precision": "day"
@@ -5867,6 +6414,28 @@
       "status": "RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atherosclerosis Cardiovascular Disease",
+        "Chronic Kidney Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051436",
+          "term": "Renal Insufficiency, Chronic"
+        },
+        {
+          "id": "D006331",
+          "term": "Heart Diseases"
+        },
+        {
+          "id": "D007674",
+          "term": "Kidney Diseases"
+        },
+        {
+          "id": "D020521",
+          "term": "Stroke"
+        }
+      ],
       "startDate": {
         "value": "2025-12-01",
         "precision": "day"
@@ -5965,6 +6534,15 @@
       "status": "RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2026-07-08",
         "precision": "day"
@@ -6093,6 +6671,58 @@
       "status": "RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2",
+        "Diabetes Melletus",
+        "Glucose Metabolism Disorders",
+        "Metabolic Disorders",
+        "Nutritional and Metabolic Diseases",
+        "Endocrine System Diseases",
+        "Feeding Behavior",
+        "Behavior",
+        "Fasting",
+        "Glucagon-Like Peptide-1 Receptor",
+        "Glucagon-Like Peptide Receptors",
+        "Receptors, G-Protein-Coupled",
+        "Receptors, Cell Surface",
+        "Membrane Proteins",
+        "Proteins",
+        "Receptors, Peptide"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "id": "D044882",
+          "term": "Glucose Metabolism Disorders"
+        },
+        {
+          "id": "D008659",
+          "term": "Metabolic Diseases"
+        },
+        {
+          "id": "D009750",
+          "term": "Nutritional and Metabolic Diseases"
+        },
+        {
+          "id": "D004700",
+          "term": "Endocrine System Diseases"
+        },
+        {
+          "id": "D005247",
+          "term": "Feeding Behavior"
+        },
+        {
+          "id": "D001519",
+          "term": "Behavior"
+        },
+        {
+          "id": "D005215",
+          "term": "Fasting"
+        }
+      ],
       "startDate": {
         "value": "2026-07-15",
         "precision": "day"
@@ -6190,6 +6820,30 @@
       "status": "RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Overweight",
+        "Prediabetic State",
+        "Prehypertension",
+        "Obesity, Abdominal"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D011236",
+          "term": "Prediabetic State"
+        },
+        {
+          "id": "D058246",
+          "term": "Prehypertension"
+        },
+        {
+          "id": "D056128",
+          "term": "Obesity, Abdominal"
+        }
+      ],
       "startDate": {
         "value": "2026-08-26",
         "precision": "day"
@@ -6321,6 +6975,20 @@
       "status": "NOT_YET_RECRUITING",
       "sponsor": "Eli Lilly and Company",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity",
+        "Overweight"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        },
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        }
+      ],
       "startDate": {
         "value": "2026-12-01",
         "precision": "month"
@@ -6824,5 +7492,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:04.887Z"
+  "lastIngestedAt": "2026-10-29T19:14:52.230Z"
 }

@@ -88,6 +88,32 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003882",
+          "term": "Dermatomyositis",
+          "areas": [
+            "Musculoskeletal Diseases",
+            "Nervous System Diseases",
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "A subacute or chronic inflammatory disease of muscle and skin, marked by proximal muscle weakness and a characteristic skin rash. The illness occurs with approximately equal frequency in children and adults. The skin lesions usually take the form of a purplish rash (or less often an exfoliative dermatitis) involving the nose, cheeks, forehead, upper trunk, and arms. The disease is associated with a complement mediated intramuscular microangiopathy, leading to loss of capillaries, muscle ischemia, muscle-fiber necrosis, and perifascicular atrophy. The childhood form of this disease tends to evolve into a systemic vasculitis. Dermatomyositis may occur in association with malignant neoplasms. (From Adams et al., Principles of Neurology, 6th ed, pp1405-6)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003882",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05437263",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05437263)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -158,6 +184,15 @@
       "sponsor": "Priovant Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dermatomyositis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003882",
+          "term": "Dermatomyositis"
+        }
+      ],
       "startDate": {
         "value": "2022-10-31",
         "precision": "day"
@@ -274,6 +309,17 @@
       "sponsor": "Priovant Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Non-infectious Intermediate Uveitis",
+        "Non-infectious Posterior Uveitis",
+        "Non-infectious Pan Uveitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D014605",
+          "term": "Uveitis"
+        }
+      ],
       "startDate": {
         "value": "2022-11-14",
         "precision": "day"
@@ -369,6 +415,16 @@
       "sponsor": "Priovant Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dermatomyositis",
+        "Dermatomyositis, Adult Type"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003882",
+          "term": "Dermatomyositis"
+        }
+      ],
       "startDate": {
         "value": "2024-08-28",
         "precision": "day"
@@ -459,6 +515,25 @@
       "sponsor": "Priovant Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Uveitis, Posterior",
+        "Uveitis, Intermediate",
+        "Uveitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015866",
+          "term": "Uveitis, Posterior"
+        },
+        {
+          "id": "D015867",
+          "term": "Uveitis, Intermediate"
+        },
+        {
+          "id": "D014605",
+          "term": "Uveitis"
+        }
+      ],
       "startDate": {
         "value": "2024-09-11",
         "precision": "day"
@@ -559,6 +634,15 @@
       "sponsor": "Priovant Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Cutaneous Sarcoidosis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012507",
+          "term": "Sarcoidosis"
+        }
+      ],
       "startDate": {
         "value": "2025-04-09",
         "precision": "day"
@@ -671,6 +755,15 @@
       "sponsor": "Priovant Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Lichen Planopilaris"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008010",
+          "term": "Lichen Planus"
+        }
+      ],
       "startDate": {
         "value": "2026-03-19",
         "precision": "day"
@@ -795,5 +888,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:21.657Z"
+  "lastIngestedAt": "2026-10-29T19:13:08.093Z"
 }

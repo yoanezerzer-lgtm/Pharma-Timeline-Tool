@@ -78,6 +78,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D000086382",
+          "term": "COVID-19",
+          "areas": [
+            "Infections",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A viral disorder generally characterized by high FEVER; COUGH; DYSPNEA; CHILLS; PERSISTENT TREMOR; MUSCLE PAIN; HEADACHE; SORE THROAT; a new loss of taste and/or smell (see AGEUSIA and ANOSMIA) and other symptoms of a VIRAL PNEUMONIA. A coronavirus, SARS-CoV-2 VIRUS, in the genus BETACORONAVIRUS is the causative agent.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000086382",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05897541)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -148,6 +173,15 @@
       "sponsor": "Shionogi",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "SARS-CoV-2 Infection"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000086382",
+          "term": "COVID-19"
+        }
+      ],
       "startDate": {
         "value": "2023-06-09",
         "precision": "day"
@@ -298,6 +332,9 @@
       "sponsor": "Shionogi",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Adult Female Participants"
+      ],
       "startDate": {
         "value": "2024-12-30",
         "precision": "day"
@@ -428,5 +465,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:03.888Z"
+  "lastIngestedAt": "2026-10-29T19:13:56.517Z"
 }

@@ -88,6 +88,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D010300",
+          "term": "Parkinson Disease",
+          "areas": [
+            "Nervous System Diseases"
+          ],
+          "definition": {
+            "text": "A progressive, degenerative neurologic disease characterized by a TREMOR that is maximal at rest, retropulsion (i.e. a tendency to fall backwards), rigidity, stooped posture, slowness of voluntary movements, and a masklike facial expression. Pathologic features include loss of melanin containing neurons in the substantia nigra and other pigmented nuclei of the brainstem. LEWY BODIES are present in the substantia nigra and locus coeruleus but may also be found in a related condition (LEWY BODY DISEASE, DIFFUSE) characterized by dementia in combination with varying degrees of parkinsonism. (Adams et al., Principles of Neurology, 6th ed, p1059, pp1067-75)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D010300",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04201093",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04201093, NCT04223193, NCT04542499)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -157,6 +181,39 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Parkinson Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010300",
+          "term": "Parkinson Disease"
+        },
+        {
+          "id": "D020734",
+          "term": "Parkinsonian Disorders"
+        },
+        {
+          "id": "D001927",
+          "term": "Brain Diseases"
+        },
+        {
+          "id": "D002493",
+          "term": "Central Nervous System Diseases"
+        },
+        {
+          "id": "D009422",
+          "term": "Nervous System Diseases"
+        },
+        {
+          "id": "D009069",
+          "term": "Movement Disorders"
+        },
+        {
+          "id": "D019636",
+          "term": "Neurodegenerative Diseases"
+        }
+      ],
       "startDate": {
         "value": "2019-12-13",
         "precision": "day"
@@ -373,6 +430,39 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Parkinson Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010300",
+          "term": "Parkinson Disease"
+        },
+        {
+          "id": "D020734",
+          "term": "Parkinsonian Disorders"
+        },
+        {
+          "id": "D001927",
+          "term": "Brain Diseases"
+        },
+        {
+          "id": "D002493",
+          "term": "Central Nervous System Diseases"
+        },
+        {
+          "id": "D009422",
+          "term": "Nervous System Diseases"
+        },
+        {
+          "id": "D009069",
+          "term": "Movement Disorders"
+        },
+        {
+          "id": "D019636",
+          "term": "Neurodegenerative Diseases"
+        }
+      ],
       "startDate": {
         "value": "2020-01-06",
         "precision": "day"
@@ -561,6 +651,39 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Parkinson Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010300",
+          "term": "Parkinson Disease"
+        },
+        {
+          "id": "D020734",
+          "term": "Parkinsonian Disorders"
+        },
+        {
+          "id": "D001927",
+          "term": "Brain Diseases"
+        },
+        {
+          "id": "D002493",
+          "term": "Central Nervous System Diseases"
+        },
+        {
+          "id": "D009422",
+          "term": "Nervous System Diseases"
+        },
+        {
+          "id": "D009069",
+          "term": "Movement Disorders"
+        },
+        {
+          "id": "D019636",
+          "term": "Neurodegenerative Diseases"
+        }
+      ],
       "startDate": {
         "value": "2020-09-23",
         "precision": "day"
@@ -720,6 +843,39 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Parkinson Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010300",
+          "term": "Parkinson Disease"
+        },
+        {
+          "id": "D020734",
+          "term": "Parkinsonian Disorders"
+        },
+        {
+          "id": "D001927",
+          "term": "Brain Diseases"
+        },
+        {
+          "id": "D002493",
+          "term": "Central Nervous System Diseases"
+        },
+        {
+          "id": "D009422",
+          "term": "Nervous System Diseases"
+        },
+        {
+          "id": "D009069",
+          "term": "Movement Disorders"
+        },
+        {
+          "id": "D019636",
+          "term": "Neurodegenerative Diseases"
+        }
+      ],
       "startDate": {
         "value": "2021-02-24",
         "precision": "day"
@@ -818,6 +974,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteer"
+      ],
       "startDate": {
         "value": "2025-03-26",
         "precision": "day"
@@ -929,6 +1088,15 @@
       "status": "AVAILABLE",
       "sponsor": "AbbVie",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Parkinson Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010300",
+          "term": "Parkinson Disease"
+        }
+      ],
       "design": {},
       "population": {
         "sex": "ALL",
@@ -1018,5 +1186,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:50.524Z"
+  "lastIngestedAt": "2026-10-29T19:15:37.699Z"
 }

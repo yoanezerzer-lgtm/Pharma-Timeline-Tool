@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D011537",
+          "term": "Pruritus",
+          "areas": [
+            "Skin and Connective Tissue Diseases",
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "An intense itching sensation that produces the urge to rub or scratch the skin to obtain relief.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011537",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04950127)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -147,6 +172,23 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pruritus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011537",
+          "term": "Pruritus"
+        },
+        {
+          "id": "D002779",
+          "term": "Cholestasis"
+        },
+        {
+          "id": "D008105",
+          "term": "Liver Cirrhosis, Biliary"
+        }
+      ],
       "startDate": {
         "value": "2021-08-27",
         "precision": "day"
@@ -364,5 +406,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:41.512Z"
+  "lastIngestedAt": "2026-10-29T19:14:30.695Z"
 }

@@ -88,6 +88,33 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D016532",
+          "term": "Mucopolysaccharidosis II",
+          "areas": [
+            "Nervous System Diseases",
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Skin and Connective Tissue Diseases",
+            "Nutritional and Metabolic Diseases"
+          ],
+          "definition": {
+            "text": "Systemic lysosomal storage disease marked by progressive physical deterioration and caused by a deficiency of L-sulfoiduronate sulfatase. This disease differs from MUCOPOLYSACCHARIDOSIS I by slower progression, lack of corneal clouding, and X-linked rather than autosomal recessive inheritance. The mild form produces near-normal intelligence and life span. The severe form usually causes death by age 15.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D016532",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04251026",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04251026)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -157,6 +184,19 @@
       "sponsor": "Denali Therapeutics Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Mucopolysaccharidosis II"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D016532",
+          "term": "Mucopolysaccharidosis II"
+        },
+        {
+          "id": "D013398",
+          "term": "Sudden Infant Death"
+        }
+      ],
       "startDate": {
         "value": "2020-07-16",
         "precision": "day"
@@ -293,6 +333,19 @@
       "sponsor": "Denali Therapeutics Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Mucopolysaccharidosis II"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D016532",
+          "term": "Mucopolysaccharidosis II"
+        },
+        {
+          "id": "D013398",
+          "term": "Sudden Infant Death"
+        }
+      ],
       "startDate": {
         "value": "2022-07-21",
         "precision": "day"
@@ -401,6 +454,19 @@
       "sponsor": "Denali Therapeutics Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Mucopolysaccharidosis II"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D016532",
+          "term": "Mucopolysaccharidosis II"
+        },
+        {
+          "id": "D013398",
+          "term": "Sudden Infant Death"
+        }
+      ],
       "startDate": {
         "value": "2023-09-20",
         "precision": "day"
@@ -561,5 +627,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:39:03.359Z"
+  "lastIngestedAt": "2026-10-29T19:15:55.486Z"
 }

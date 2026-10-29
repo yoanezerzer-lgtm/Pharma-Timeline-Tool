@@ -69,7 +69,32 @@
         "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
         "extractedBy": "api",
         "verified": false
-      }
+      },
+      "diseases": [
+        {
+          "meshId": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002289",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04487080)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
@@ -84,7 +109,32 @@
         "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
         "extractedBy": "api",
         "verified": false
-      }
+      },
+      "diseases": [
+        {
+          "meshId": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002289",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04487080, NCT04988295)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
     },
     {
       "name": "First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations",
@@ -118,6 +168,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002289",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04538664",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04538664)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -133,7 +208,32 @@
         "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
         "extractedBy": "api",
         "verified": false
-      }
+      },
+      "diseases": [
+        {
+          "meshId": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002289",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT02609776",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT02609776)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -193,6 +293,15 @@
       "sponsor": "Janssen Research & Development, LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Non-Small-Cell Lung Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
       "startDate": {
         "value": "2016-05-24",
         "precision": "day"
@@ -339,6 +448,15 @@
       "sponsor": "Janssen Research & Development, LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
       "startDate": {
         "value": "2020-09-30",
         "precision": "day"
@@ -548,6 +666,15 @@
       "sponsor": "Janssen Research & Development, LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
       "startDate": {
         "value": "2020-10-13",
         "precision": "day"
@@ -751,6 +878,15 @@
       "sponsor": "Janssen Research & Development, LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
       "startDate": {
         "value": "2021-11-17",
         "precision": "day"
@@ -1007,5 +1143,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:35:58.459Z"
+  "lastIngestedAt": "2026-10-29T19:12:41.924Z"
 }

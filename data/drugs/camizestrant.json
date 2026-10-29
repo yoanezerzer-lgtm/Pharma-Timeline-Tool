@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D001943",
+          "term": "Breast Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "Tumors or cancer of the human BREAST.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D001943",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04964934",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04964934)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +160,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "ER+ HER2- Advanced Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2018-10-11",
         "precision": "day"
@@ -288,6 +322,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Advanced ER-Positive HER2-Negative Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        }
+      ],
       "startDate": {
         "value": "2020-04-22",
         "precision": "day"
@@ -401,6 +444,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2020-09-17",
         "precision": "day"
@@ -520,6 +572,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "ER+ HER2- Advanced Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2020-09-29",
         "precision": "day"
@@ -619,6 +680,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "HER2-negative Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2020-11-02",
         "precision": "day"
@@ -747,6 +817,67 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ovarian Cancer",
+        "Breast Cancer",
+        "Pancreatic Cancer",
+        "Prostate Cancer",
+        "Additional Indications Below for Module 4 and 5",
+        "Non-small Cell Lung Cancer",
+        "Colorectal Cancer",
+        "Bladder Cancer",
+        "Gastric Cancer",
+        "Biliary Cancer",
+        "Cervical Cancer",
+        "Endometrial Cancer",
+        "Small Cell Lung Cancer Only in Module 5"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010051",
+          "term": "Ovarian Neoplasms"
+        },
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D010190",
+          "term": "Pancreatic Neoplasms"
+        },
+        {
+          "id": "D011471",
+          "term": "Prostatic Neoplasms"
+        },
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        },
+        {
+          "id": "D015179",
+          "term": "Colorectal Neoplasms"
+        },
+        {
+          "id": "D001749",
+          "term": "Urinary Bladder Neoplasms"
+        },
+        {
+          "id": "D013274",
+          "term": "Stomach Neoplasms"
+        },
+        {
+          "id": "D001661",
+          "term": "Biliary Tract Neoplasms"
+        },
+        {
+          "id": "D002583",
+          "term": "Uterine Cervical Neoplasms"
+        },
+        {
+          "id": "D016889",
+          "term": "Endometrial Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2020-11-12",
         "precision": "day"
@@ -897,6 +1028,35 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "ER-Positive HER2-Negative Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        },
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009371",
+          "term": "Neoplasms by Site"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D001941",
+          "term": "Breast Diseases"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        }
+      ],
       "startDate": {
         "value": "2021-01-28",
         "precision": "day"
@@ -1026,6 +1186,31 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "ER-Positive HER2-Negative Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        },
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009371",
+          "term": "Neoplasms by Site"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D001941",
+          "term": "Breast Diseases"
+        }
+      ],
       "startDate": {
         "value": "2021-06-30",
         "precision": "day"
@@ -1138,6 +1323,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "ER+, HER2-, Metastatic Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2021-11-12",
         "precision": "day"
@@ -1248,6 +1442,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "ER-positive, HER2-negative Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2022-05-10",
         "precision": "day"
@@ -1362,6 +1565,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2022-06-13",
         "precision": "day"
@@ -1478,6 +1690,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Subjects"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2022-10-04",
         "precision": "day"
@@ -1572,6 +1793,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatic Impairment"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008224",
+          "term": "Lymphoma, Follicular"
+        }
+      ],
       "startDate": {
         "value": "2023-02-20",
         "precision": "day"
@@ -1682,6 +1912,15 @@
       "status": "RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer, Early Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2023-03-31",
         "precision": "day"
@@ -1792,6 +2031,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer, Early Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2023-10-05",
         "precision": "day"
@@ -1895,6 +2143,10 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "ER+ HER2- Advanced Breast Cancer",
+        "High-grade Serous Ovarian Cancer (HGSOC)"
+      ],
       "startDate": {
         "value": "2023-12-05",
         "precision": "day"
@@ -2023,6 +2275,9 @@
       "status": "RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Advanced Breast Cancer"
+      ],
       "startDate": {
         "value": "2024-08-01",
         "precision": "day"
@@ -2139,6 +2394,15 @@
       "status": "COMPLETED",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Participants"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2024-08-27",
         "precision": "day"
@@ -2252,6 +2516,9 @@
       "status": "RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Advanced Breast Cancer"
+      ],
       "startDate": {
         "value": "2026-05-06",
         "precision": "day"
@@ -2362,6 +2629,31 @@
       "status": "RECRUITING",
       "sponsor": "AstraZeneca",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "ER-Positive HER2-Negative Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        },
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009371",
+          "term": "Neoplasms by Site"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D001941",
+          "term": "Breast Diseases"
+        }
+      ],
       "startDate": {
         "value": "2026-06-15",
         "precision": "day"
@@ -2486,5 +2778,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:18.942Z"
+  "lastIngestedAt": "2026-10-29T19:13:08.862Z"
 }
