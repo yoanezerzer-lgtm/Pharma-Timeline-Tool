@@ -157,6 +157,16 @@
       "sponsor": "Nuvalent Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Locally Advanced Solid Tumor",
+        "Metastatic Solid Tumor"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        }
+      ],
       "startDate": {
         "value": "2022-01-04",
         "precision": "day"
@@ -303,6 +313,16 @@
       "sponsor": "Nuvalent Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Non Small Cell Lung Cancer",
+        "ROS1-positive Non-Small Cell Lung Cancer (NSCLC)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
       "design": {},
       "population": {
         "minAge": "18 Years",
@@ -392,5 +412,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:39:42.516Z"
+  "lastIngestedAt": "2026-10-29T19:16:27.918Z"
 }
