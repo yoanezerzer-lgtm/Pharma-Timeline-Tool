@@ -88,6 +88,32 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D038261",
+          "term": "Alexander Disease",
+          "areas": [
+            "Nervous System Diseases",
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Nutritional and Metabolic Diseases"
+          ],
+          "definition": {
+            "text": "Rare leukoencephalopathy with infantile-onset accumulation of Rosenthal fibers in the subpial, periventricular, and subependymal zones of the brain. Rosenthal fibers are GLIAL FIBRILLARY ACIDIC PROTEIN aggregates found in ASTROCYTES. Juvenile- and adult-onset types show progressive atrophy of the lower brainstem instead. De novo mutations in the GFAP gene are associated with the disease with propensity for paternal inheritance.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D038261",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04849741",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04849741)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -157,6 +183,15 @@
       "sponsor": "Ionis Pharmaceuticals, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Alexander Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D038261",
+          "term": "Alexander Disease"
+        }
+      ],
       "startDate": {
         "value": "2021-06-01",
         "precision": "day"
@@ -276,6 +311,15 @@
       "sponsor": "Ionis Pharmaceuticals, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Alexander Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D038261",
+          "term": "Alexander Disease"
+        }
+      ],
       "design": {},
       "population": {
         "minAge": "2 Years",
@@ -366,5 +410,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:39:45.453Z"
+  "lastIngestedAt": "2026-10-29T19:16:31.857Z"
 }
