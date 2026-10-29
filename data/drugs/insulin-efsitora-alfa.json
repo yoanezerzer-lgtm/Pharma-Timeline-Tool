@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2026-09-23",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Cardiology, Hematology, Endocrinology, and Nephrology",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Cardiology, Hematology, Endocrinology, and Nephrology Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Eli Lilly and Company",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured by: Eli Lilly and Company",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -965,5 +985,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T06:00:05.901Z"
+  "lastIngestedAt": "2026-10-29T18:01:01.262Z"
 }

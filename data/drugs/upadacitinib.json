@@ -354,6 +354,26 @@
       "originalApprovalDate": {
         "value": "2019-08-16",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Immunology and Inflammation",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/211675Orig1s034,218347Orig1s008ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-34), signature",
+          "quote": "Division of Rheumatology and Transplant Medicine Office of Immunology and Inflammation Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "AbbVie Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
+          "sourceLabel": "Label (SUPPL-34)",
+          "quote": "Manufactured by: AbbVie Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -17746,6 +17766,124 @@
       "changeLog": []
     },
     {
+      "id": "m26-032",
+      "nctId": "NCT07904754",
+      "protocolNumber": "M26-032",
+      "title": "A Phase 2b, Multicenter, Platform Study of Targeted Therapies for the Treatment of Adult Subjects With Moderately to Severely Active Rheumatoid Arthritis",
+      "briefTitle": "Platform Study of Targeted Therapies for Adults With Moderately to Severely Active Rheumatoid Arthritis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "AbbVie",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-12-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-07-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2029-07-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 250,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ABBV-2294 Dose A",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive co-administration of ABBV-722 and upadacitinib"
+        },
+        {
+          "label": "ABBV-2294 Dose B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive co-administration of ABBV-722 and upadacitinib"
+        },
+        {
+          "label": "ABBV-2294 Dose C",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive co-administration of ABBV-722 and upadacitinib"
+        },
+        {
+          "label": "ABBV-722 Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive ABBV-722. At Week 12, participants will then be blindly switched to co-administration of ABBV-722 and upadacitinib."
+        },
+        {
+          "label": "Upadacitinib Monotherapy",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive upadacitinib."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving ACR50 Response",
+        "Number of Participants Experiencing Adverse Events"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Achieving ACR20 Response",
+        "Percentage of Participants Achieving ACR70 Response",
+        "Percentage of Participants Achieving Low Disease Activity Based on DAS28 (CRP) <= 3.2",
+        "Percentage of Participants Achieving Clinical Remission Based on DAS28 (CRP) < 2.6",
+        "Percentage of Participants with a Change From Baseline in DAS28 (CRP)",
+        "Percentage of Participants Achieving Low Disease Activity Based on Clinical Disease Activity Index (CDAI) <= 10",
+        "Percentage of Participants Achieving Clinical Remission Based on CDAI <= 2.8"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07904754",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07904754",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07904754",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07904754",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07904754",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "ph3-peds-viti",
       "nctId": "NCT07896434",
       "protocolNumber": "M25-264",
@@ -25086,5 +25224,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-28T20:12:54.467Z"
+  "lastIngestedAt": "2026-10-29T18:02:40.506Z"
 }

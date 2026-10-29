@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2026-03-26",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Cardiology, Hematology, Endocrinology, and Nephrology",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761326Orig2s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-2), signature",
+          "quote": "Office of Cardiology, Hematology, Endocrinology, and Nephrology Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Novo Nordisk Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-2)",
+          "quote": "Manufactured by: Novo Nordisk Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -4039,5 +4059,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:02:15.635Z"
+  "lastIngestedAt": "2026-10-29T18:01:07.208Z"
 }

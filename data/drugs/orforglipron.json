@@ -50,6 +50,16 @@
       "originalApprovalDate": {
         "value": "2026-04-01",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Cardiology, Hematology, Endocrinology, and Nephrology",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220934Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Cardiology, Hematology, Endocrinology, and Nephrology Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -6764,5 +6774,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-28T20:13:00.721Z"
+  "lastIngestedAt": "2026-10-29T18:01:31.475Z"
 }

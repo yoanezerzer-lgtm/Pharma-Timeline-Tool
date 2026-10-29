@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2026-02-23",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Rare Diseases, Pediatrics, Urologic and Reproductive Medicine",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Rare Diseases, Pediatrics, Urologic and Reproductive Medicine Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Immedica Pharma US Inc.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761211Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Marketed by: Immedica Pharma US Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -917,5 +937,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:02:51.009Z"
+  "lastIngestedAt": "2026-10-29T18:01:46.921Z"
 }

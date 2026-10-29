@@ -30,6 +30,26 @@
       "originalApprovalDate": {
         "value": "2026-06-26",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Specialty Medicine",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Specialty Medicine Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Viridian Therapeutics, Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured by: Viridian Therapeutics, Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -715,5 +735,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:00:41.823Z"
+  "lastIngestedAt": "2026-10-29T18:02:52.229Z"
 }

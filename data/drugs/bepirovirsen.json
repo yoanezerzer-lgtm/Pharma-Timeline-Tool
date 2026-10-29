@@ -30,6 +30,26 @@
       "originalApprovalDate": {
         "value": "2026-10-20",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Infectious Diseases",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221276Orig1s000Ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Division of Antivirals Office of Infectious Diseases Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "GlaxoSmithKline LLC",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221276Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured by GlaxoSmithKline LLC",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -1776,6 +1796,106 @@
         }
       },
       "changeLog": []
+    },
+    {
+      "id": "306775",
+      "nctId": "NCT07905157",
+      "protocolNumber": "306775",
+      "title": "A Phase 1, Randomized, Open-Label, Parallel-Group, Single-Dose Study to Compare the Pharmacokinetics and Safety of Bepirovirsen When Delivered From a Vial or a 1ml Autoinjector in Healthy Adult Participants",
+      "briefTitle": "A Study to Compare Blood Levels of Bepirovirsen and Safety Using Different Methods of Injecting in Healthy Adult Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-11-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-03-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-03-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 98,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group 1",
+          "type": "EXPERIMENTAL",
+          "description": "Bepirovirsen will be administered from a vial."
+        },
+        {
+          "label": "Group 2",
+          "type": "EXPERIMENTAL",
+          "description": "Bepirovirsen will be administered from an autoinjector."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-time Curve from Time Zero (pre-dose) up to Day 8 [AUC(0- 8 d)] of Bepirovirsen in Plasma",
+        "Maximum Observed Concentration (Cmax) of Bepirovirsen in plasma"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants with Adverse Events (AEs), Serious Adverse Events (SAEs), Treatment Related AEs Related SAEs",
+        "Number of Participants with Fatal SAEs, AEs of Grade 3 and above, and AEs Leading to Permanent Discontinuation of Study Intervention",
+        "Number of Participants with Adverse Event of Special Interest (AESIs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07905157",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07905157",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07905157",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07905157",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07905157",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
     }
   ],
   "milestones": [
@@ -1819,5 +1939,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T06:11:53.867Z"
+  "lastIngestedAt": "2026-10-29T17:59:42.021Z"
 }

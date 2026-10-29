@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2025-12-30",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Immunology and Inflammation",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/220152Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Immunology and Inflammation Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Vanda Pharmaceuticals Inc.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220152Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Distributed By: Vanda Pharmaceuticals Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -1984,5 +2004,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:03:16.792Z"
+  "lastIngestedAt": "2026-10-29T18:02:38.746Z"
 }

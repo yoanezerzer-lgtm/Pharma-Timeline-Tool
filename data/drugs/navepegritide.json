@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2026-02-27",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Cardiology, Hematology, Endocrinology, and Nephrology",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Cardiology, Hematology, Endocrinology, and Nephrology Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Ascendis Pharma Growth Disorders A/S",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured for: Ascendis Pharma Growth Disorders A/S",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -816,5 +836,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:02:45.202Z"
+  "lastIngestedAt": "2026-10-29T18:01:29.961Z"
 }

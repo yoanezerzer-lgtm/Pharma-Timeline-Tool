@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2026-07-24",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Neuroscience",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Neuroscience Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Otsuka America Pharmaceutical, Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured for Otsuka America Pharmaceutical, Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -3251,5 +3271,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:00:42.199Z"
+  "lastIngestedAt": "2026-10-29T17:59:48.130Z"
 }
