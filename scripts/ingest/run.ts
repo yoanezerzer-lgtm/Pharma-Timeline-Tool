@@ -491,9 +491,24 @@ function buildDrugRecord(
   // Every approval within each indication, from the letters; see approvals.ts.
   const datedBy = new Map([...approvals].map(([name, a]) => [name, a.submission]));
   const history = approvalsByIndication(indicationList.map((e) => e.name), letters, fda.milestones, datedBy);
+  // A drug never approved for a new use since its first approval has every
+  // indication from that first approval.
+  const onlyOriginal =
+    !!original && !fda.milestones.some((m) => m.type !== 'FDA_APPROVAL' && /efficacy/i.test(m.description ?? ''));
   const indications = indicationList.map((entry, k) => {
-    const approval = approvals.get(entry.name);
     const own = history.get(entry.name) ?? [];
+    const approval =
+      approvals.get(entry.name) ??
+      (onlyOriginal && original
+        ? {
+            date: original.date,
+            submission: original.submissionNumber ?? 'ORIG-1',
+            provenance: original.provenance && {
+              ...original.provenance,
+              sourceLabel: 'Original approval: the drug has had no efficacy supplement since',
+            },
+          }
+        : undefined);
     return {
       name: entry.name,
       slug: slugs[k],
