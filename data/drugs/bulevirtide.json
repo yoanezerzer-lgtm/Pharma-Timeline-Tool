@@ -69,7 +69,33 @@
         "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
         "extractedBy": "api",
         "verified": false
-      }
+      },
+      "diseases": [
+        {
+          "meshId": "D019701",
+          "term": "Hepatitis D, Chronic",
+          "areas": [
+            "Infections",
+            "Digestive System Diseases",
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "INFLAMMATION of the LIVER in humans caused by HEPATITIS DELTA VIRUS in conjunction with HEPATITIS B VIRUS and lasting six months or more.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D019701",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03852719",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03852719, NCT03852433)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -129,6 +155,15 @@
       "sponsor": "Gilead Sciences",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Hepatitis Delta"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D019701",
+          "term": "Hepatitis D, Chronic"
+        }
+      ],
       "startDate": {
         "value": "2019-04-17",
         "precision": "day"
@@ -344,6 +379,15 @@
       "sponsor": "Gilead Sciences",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Hepatitis Delta"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D019701",
+          "term": "Hepatitis D, Chronic"
+        }
+      ],
       "startDate": {
         "value": "2019-05-31",
         "precision": "day"
@@ -611,6 +655,9 @@
       "sponsor": "Gilead Sciences",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Chronic Hepatitis D Infection"
+      ],
       "startDate": {
         "value": "2023-02-07",
         "precision": "day"
@@ -703,6 +750,9 @@
       "sponsor": "Gilead Sciences",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Hepatitis D Infection"
+      ],
       "startDate": {
         "value": "2023-03-15",
         "precision": "day"
@@ -821,6 +871,10 @@
       "sponsor": "Gilead Sciences",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatic Impairment",
+        "Healthy"
+      ],
       "startDate": {
         "value": "2023-03-15",
         "precision": "day"
@@ -961,6 +1015,9 @@
       "sponsor": "Gilead Sciences",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Chronic Hepatitis Delta Virus Infection"
+      ],
       "design": {},
       "population": {
         "minAge": "18 Years",
@@ -1050,5 +1107,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:19.748Z"
+  "lastIngestedAt": "2026-10-29T19:13:10.351Z"
 }

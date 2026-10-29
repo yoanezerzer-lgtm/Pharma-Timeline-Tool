@@ -88,6 +88,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D002312",
+          "term": "Cardiomyopathy, Hypertrophic",
+          "areas": [
+            "Cardiovascular Diseases"
+          ],
+          "definition": {
+            "text": "A form of CARDIAC MUSCLE disease, characterized by left and/or right ventricular hypertrophy (HYPERTROPHY, LEFT VENTRICULAR; HYPERTROPHY, RIGHT VENTRICULAR), frequent asymmetrical involvement of the HEART SEPTUM, and normal or reduced left ventricular volume. Risk factors include HYPERTENSION; AORTIC STENOSIS; and gene MUTATION; (FAMILIAL HYPERTROPHIC CARDIOMYOPATHY).",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002312",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04848506",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04848506, NCT05186818)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +159,16 @@
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Symptomatic Obstructive Hypertrophic Cardiomyopathy",
+        "Healthy Subjects"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002312",
+          "term": "Cardiomyopathy, Hypertrophic"
+        }
+      ],
       "startDate": {
         "value": "2018-12-04",
         "precision": "day"
@@ -267,6 +301,15 @@
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertrophic Cardiomyopathy (HCM)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002312",
+          "term": "Cardiomyopathy, Hypertrophic"
+        }
+      ],
       "startDate": {
         "value": "2020-01-10",
         "precision": "day"
@@ -413,6 +456,15 @@
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Symptomatic Hypertrophic Cardiomyopathy (HCM)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002312",
+          "term": "Cardiomyopathy, Hypertrophic"
+        }
+      ],
       "startDate": {
         "value": "2021-05-06",
         "precision": "day"
@@ -549,6 +601,15 @@
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obstructive Hypertrophic Cardiomyopathy (oHCM)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002312",
+          "term": "Cardiomyopathy, Hypertrophic"
+        }
+      ],
       "startDate": {
         "value": "2022-02-01",
         "precision": "day"
@@ -714,6 +775,9 @@
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Participants"
+      ],
       "startDate": {
         "value": "2023-05-15",
         "precision": "day"
@@ -833,6 +897,15 @@
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obstructive Hypertrophic Cardiomyopathy (oHCM)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002312",
+          "term": "Cardiomyopathy, Hypertrophic"
+        }
+      ],
       "startDate": {
         "value": "2023-06-20",
         "precision": "day"
@@ -936,6 +1009,9 @@
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Symptomatic Non-Obstructive Hypertrophic Cardiomyopathy"
+      ],
       "startDate": {
         "value": "2023-08-31",
         "precision": "day"
@@ -1039,6 +1115,10 @@
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pediatric",
+        "Symptomatic Obstructive Hypertrophic Cardiomyopathy"
+      ],
       "startDate": {
         "value": "2024-05-29",
         "precision": "day"
@@ -1206,5 +1286,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:35:56.199Z"
+  "lastIngestedAt": "2026-10-29T19:12:40.612Z"
 }

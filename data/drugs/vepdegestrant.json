@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D001943",
+          "term": "Breast Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "Tumors or cancer of the human BREAST.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D001943",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05654623",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05654623)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -138,6 +163,15 @@
       "sponsor": "Pfizer",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Advanced Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
       "startDate": {
         "value": "2023-03-03",
         "precision": "day"
@@ -384,5 +418,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:39:26.897Z"
+  "lastIngestedAt": "2026-10-29T19:16:23.062Z"
 }

@@ -157,6 +157,25 @@
       "sponsor": "Cyprium Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Menkes Disease",
+        "Occipital Horn Syndrome",
+        "Unexplained Copper Deficiency"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D007706",
+          "term": "Menkes Kinky Hair Syndrome"
+        },
+        {
+          "id": "C537860",
+          "term": "Occipital horn syndrome"
+        },
+        {
+          "id": "D009410",
+          "term": "Nerve Degeneration"
+        }
+      ],
       "startDate": {
         "value": "2009-02-27",
         "precision": "day"
@@ -250,6 +269,15 @@
       "sponsor": "Sentynl Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Menkes Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D007706",
+          "term": "Menkes Kinky Hair Syndrome"
+        }
+      ],
       "startDate": {
         "value": "2019-12-01",
         "precision": "day"
@@ -333,6 +361,15 @@
       "sponsor": "Sentynl Therapeutics, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Menkes Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D007706",
+          "term": "Menkes Kinky Hair Syndrome"
+        }
+      ],
       "design": {},
       "population": {
         "minAge": "0 Years",
@@ -423,5 +460,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:43.152Z"
+  "lastIngestedAt": "2026-10-29T19:13:40.297Z"
 }

@@ -104,6 +104,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D011565",
+          "term": "Psoriasis",
+          "areas": [
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "A common genetically determined, chronic, inflammatory skin disease characterized by rounded erythematous, dry, scaling patches. The lesions have a predilection for nails, scalp, genitalia, extensor surfaces, and the lumbosacral region. Accelerated epidermopoiesis is considered to be the fundamental pathologic feature in psoriasis.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011565",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT02684370",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT02684370, NCT02672852, NCT02684357, NCT02694523)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -154,6 +178,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D015535",
+          "term": "Arthritis, Psoriatic",
+          "areas": [
+            "Musculoskeletal Diseases",
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "A type of inflammatory arthritis associated with PSORIASIS, often involving the axial joints and the peripheral terminal interphalangeal joints. It is characterized by the presence of HLA-B27-associated SPONDYLARTHROPATHY, and the absence of rheumatoid factor.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D015535",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03671148",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03671148, NCT03675308)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -188,6 +237,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003424",
+          "term": "Crohn Disease",
+          "areas": [
+            "Digestive System Diseases"
+          ],
+          "definition": {
+            "text": "A chronic transmural inflammation that may involve any part of the DIGESTIVE TRACT from MOUTH to ANUS, mostly found in the ILEUM, the CECUM, and the COLON. In Crohn disease, the inflammation, extending through the intestinal wall from the MUCOSA to the serosa, is characteristically asymmetric and segmental. Epithelioid GRANULOMAS may be seen in some patients.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003424",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03105128",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03105128, NCT03104413)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -219,6 +292,30 @@
             "sourceLabel": "Approval letter (SUPPL-29)",
             "quote": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
             "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003093",
+          "term": "Colitis, Ulcerative",
+          "areas": [
+            "Digestive System Diseases"
+          ],
+          "definition": {
+            "text": "Inflammation of the COLON that is predominantly confined to the MUCOSA. Its major symptoms include DIARRHEA, rectal BLEEDING, the passage of MUCUS, and ABDOMINAL PAIN.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003093",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03398148",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03398148)",
+            "extractedBy": "rule",
             "verified": false
           }
         }
@@ -268,6 +365,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2012-04-01",
         "precision": "month"
@@ -384,6 +490,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ankylosing Spondylitis (AS)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D013167",
+          "term": "Spondylitis, Ankylosing"
+        }
+      ],
       "startDate": {
         "value": "2014-01-28",
         "precision": "day"
@@ -495,6 +610,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2014-02-01",
         "precision": "month"
@@ -608,6 +732,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2014-11-20",
         "precision": "day"
@@ -710,6 +843,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Asthma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001249",
+          "term": "Asthma"
+        }
+      ],
       "startDate": {
         "value": "2015-06-23",
         "precision": "day"
@@ -822,6 +964,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2015-08-01",
         "precision": "month"
@@ -960,6 +1105,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2015-09-16",
         "precision": "day"
@@ -1086,6 +1240,23 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        },
+        {
+          "id": "D017444",
+          "term": "Skin Diseases, Papulosquamous"
+        }
+      ],
       "startDate": {
         "value": "2016-02-01",
         "precision": "month"
@@ -1325,6 +1496,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2016-02-29",
         "precision": "day"
@@ -1594,6 +1774,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2016-03-01",
         "precision": "month"
@@ -1836,6 +2025,23 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        },
+        {
+          "id": "D017444",
+          "term": "Skin Diseases, Papulosquamous"
+        }
+      ],
       "startDate": {
         "value": "2016-03-01",
         "precision": "month"
@@ -2098,6 +2304,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Arthritis, Psoriatic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2016-04-01",
         "precision": "month"
@@ -2329,6 +2544,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2016-09-15",
         "precision": "day"
@@ -2436,6 +2660,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2016-12-02",
         "precision": "day"
@@ -2554,6 +2787,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2016-12-15",
         "precision": "day"
@@ -2760,6 +3002,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2017-01-26",
         "precision": "day"
@@ -2862,6 +3113,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2017-02-27",
         "precision": "day"
@@ -2963,6 +3223,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2017-05-10",
         "precision": "day"
@@ -3453,6 +3722,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2017-08-22",
         "precision": "day"
@@ -3629,6 +3907,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2017-09-11",
         "precision": "day"
@@ -3740,6 +4021,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2017-10-23",
         "precision": "day"
@@ -3863,6 +4147,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2017-12-18",
         "precision": "day"
@@ -4366,6 +4659,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis (UC)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2018-03-07",
         "precision": "day"
@@ -4761,6 +5063,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2018-04-09",
         "precision": "day"
@@ -4904,6 +5215,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2018-05-08",
         "precision": "day"
@@ -5003,6 +5323,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2018-07-19",
         "precision": "day"
@@ -5101,6 +5430,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2018-07-30",
         "precision": "day"
@@ -5202,6 +5540,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis (UC)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2018-08-28",
         "precision": "day"
@@ -5353,6 +5700,19 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        },
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2018-12-27",
         "precision": "day"
@@ -5507,6 +5867,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriatic Arthritis (PsA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2019-03-07",
         "precision": "day"
@@ -5767,6 +6136,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2019-03-25",
         "precision": "day"
@@ -5998,6 +6376,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2019-04-02",
         "precision": "day"
@@ -6122,6 +6503,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2019-05-13",
         "precision": "day"
@@ -6326,6 +6716,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hidradenitis Suppurativa"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D017497",
+          "term": "Hidradenitis Suppurativa"
+        }
+      ],
       "startDate": {
         "value": "2019-06-03",
         "precision": "day"
@@ -6457,6 +6856,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2019-06-04",
         "precision": "day"
@@ -6860,6 +7268,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2019-06-27",
         "precision": "day"
@@ -6968,6 +7379,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Plaque Psoriasis"
+      ],
       "startDate": {
         "value": "2019-11-12",
         "precision": "day"
@@ -7066,6 +7480,20 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis (UC)",
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        },
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2020-05-27",
         "precision": "day"
@@ -7195,6 +7623,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2020-07-14",
         "precision": "day"
@@ -7522,6 +7959,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Palmoplantar Pustulosis (PPP)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2020-07-20",
         "precision": "day"
@@ -7618,6 +8064,20 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Psoriasis",
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        },
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2020-08-04",
         "precision": "day"
@@ -7700,6 +8160,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2020-09-01",
         "precision": "day"
@@ -7815,6 +8278,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2020-09-15",
         "precision": "day"
@@ -7928,6 +8394,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease (CD)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2020-09-30",
         "precision": "day"
@@ -8031,6 +8506,19 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        },
+        {
+          "id": "D000072662",
+          "term": "Margins of Excision"
+        }
+      ],
       "startDate": {
         "value": "2021-02-26",
         "precision": "day"
@@ -8131,6 +8619,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2021-04-26",
         "precision": "day"
@@ -8225,6 +8722,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2021-05-31",
         "precision": "day"
@@ -8330,6 +8836,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2021-06-09",
         "precision": "day"
@@ -8429,6 +8944,15 @@
       "status": "WITHDRAWN",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2021-06-23",
         "precision": "day"
@@ -8529,6 +9053,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2021-07-24",
         "precision": "day"
@@ -8618,6 +9151,19 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Plaque Psoriasis, Psoriatic Arthritis, Crohn's Disease, or Other Conditions for Which Risankizumab is an FDA-approved Treatment"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        },
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2021-07-30",
         "precision": "day"
@@ -8714,6 +9260,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2022-09-28",
         "precision": "day"
@@ -8815,6 +9364,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2023-06-09",
         "precision": "day"
@@ -8911,6 +9469,16 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Genital Psoriasis",
+        "Scalp Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2023-08-10",
         "precision": "day"
@@ -9161,6 +9729,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2023-10-26",
         "precision": "day"
@@ -9244,6 +9821,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2023-11-15",
         "precision": "day"
@@ -9365,6 +9951,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2023-11-20",
         "precision": "day"
@@ -9466,6 +10055,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2023-12-11",
         "precision": "day"
@@ -9642,6 +10240,27 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Inflammatory Bowel Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015212",
+          "term": "Inflammatory Bowel Diseases"
+        },
+        {
+          "id": "D001942",
+          "term": "Breast Feeding"
+        },
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        },
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2024-04-24",
         "precision": "day"
@@ -9732,6 +10351,17 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Moderate Plaque Psoriasis",
+        "Moderate Psoriasis",
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
       "startDate": {
         "value": "2024-04-29",
         "precision": "day"
@@ -9816,6 +10446,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Moderate Plaque Psoriasis"
+      ],
       "startDate": {
         "value": "2024-05-10",
         "precision": "day"
@@ -9932,6 +10565,19 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Juvenile Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001171",
+          "term": "Arthritis, Juvenile"
+        },
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2024-07-08",
         "precision": "day"
@@ -10042,6 +10688,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2024-07-23",
         "precision": "day"
@@ -10140,6 +10789,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2024-09-04",
         "precision": "day"
@@ -10269,6 +10927,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2024-09-11",
         "precision": "day"
@@ -10376,6 +11037,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2025-01-31",
         "precision": "day"
@@ -10463,6 +11133,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2025-02-27",
         "precision": "day"
@@ -10545,6 +11224,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2025-04-11",
         "precision": "day"
@@ -10649,6 +11337,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteer"
+      ],
       "startDate": {
         "value": "2025-04-21",
         "precision": "day"
@@ -10750,6 +11441,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2025-05-08",
         "precision": "day"
@@ -10850,6 +11544,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2025-06-12",
         "precision": "day"
@@ -10952,6 +11649,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2025-06-17",
         "precision": "day"
@@ -11049,6 +11755,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2025-07-14",
         "precision": "day"
@@ -11136,6 +11851,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2025-07-28",
         "precision": "day"
@@ -11327,6 +12051,9 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Plaque Psoriasis"
+      ],
       "startDate": {
         "value": "2025-09-09",
         "precision": "day"
@@ -11410,6 +12137,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2025-10-09",
         "precision": "day"
@@ -11502,6 +12238,20 @@
       "status": "NOT_YET_RECRUITING",
       "sponsor": "First Affiliated Hospital of Wenzhou Medical University",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn Disease",
+        "Crohn Disease and Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        },
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2025-10-20",
         "precision": "day"
@@ -11596,6 +12346,9 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteer"
+      ],
       "startDate": {
         "value": "2026-06-04",
         "precision": "day"
@@ -11693,6 +12446,20 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease",
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        },
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2026-07-31",
         "precision": "day"
@@ -11904,6 +12671,20 @@
       "status": "NO_LONGER_AVAILABLE",
       "sponsor": "AbbVie",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Crohn's Disease",
+        "Ulcerative Colitis (UC)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        },
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "design": {},
       "population": {
         "minAge": "18 Years",
@@ -12484,5 +13265,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:36.588Z"
+  "lastIngestedAt": "2026-10-29T19:15:22.871Z"
 }

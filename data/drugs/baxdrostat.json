@@ -88,6 +88,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D006973",
+          "term": "Hypertension",
+          "areas": [
+            "Cardiovascular Diseases"
+          ],
+          "definition": {
+            "text": "Persistently high systemic arterial BLOOD PRESSURE. Based on multiple readings (BLOOD PRESSURE DETERMINATION), hypertension is currently defined as when SYSTOLIC PRESSURE is consistently greater than 140 mm Hg or when DIASTOLIC PRESSURE is consistently 90 mm Hg or more.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D006973",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT06034743",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT06034743)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +159,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2019-12-19",
         "precision": "day"
@@ -289,6 +322,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2020-03-11",
         "precision": "day"
@@ -397,6 +439,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2020-10-28",
         "precision": "day"
@@ -503,6 +554,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2021-01-12",
         "precision": "day"
@@ -616,6 +676,16 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Primary Aldosteronism",
+        "Hyperaldosteronism"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006929",
+          "term": "Hyperaldosteronism"
+        }
+      ],
       "startDate": {
         "value": "2021-03-08",
         "precision": "day"
@@ -712,6 +782,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2021-08-10",
         "precision": "day"
@@ -811,6 +890,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2021-11-18",
         "precision": "day"
@@ -910,6 +998,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2022-04-06",
         "precision": "day"
@@ -1013,6 +1110,16 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Uncontrolled Hypertension",
+        "Chronic Kidney Diseases"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051436",
+          "term": "Renal Insufficiency, Chronic"
+        }
+      ],
       "startDate": {
         "value": "2022-04-29",
         "precision": "day"
@@ -1116,6 +1223,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2022-07-05",
         "precision": "day"
@@ -1249,6 +1365,16 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Uncontrolled Hypertension",
+        "Resistant Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2023-11-22",
         "precision": "day"
@@ -1460,6 +1586,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Participants"
+      ],
       "startDate": {
         "value": "2024-02-29",
         "precision": "day"
@@ -1596,6 +1725,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Resistant Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2024-03-01",
         "precision": "day"
@@ -1709,6 +1847,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Kidney Disease and Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051436",
+          "term": "Renal Insufficiency, Chronic"
+        },
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2024-03-29",
         "precision": "day"
@@ -1810,6 +1961,16 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Uncontrolled Hypertension",
+        "Resistant Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2024-04-08",
         "precision": "day"
@@ -1920,6 +2081,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Participants"
+      ],
       "startDate": {
         "value": "2024-04-16",
         "precision": "day"
@@ -2024,6 +2188,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Uncontrolled Hypertension"
+      ],
       "startDate": {
         "value": "2024-06-10",
         "precision": "day"
@@ -2122,6 +2289,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Participants"
+      ],
       "startDate": {
         "value": "2024-11-01",
         "precision": "day"
@@ -2238,6 +2408,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Kidney Disease and Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051436",
+          "term": "Renal Insufficiency, Chronic"
+        },
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2025-03-03",
         "precision": "day"
@@ -2338,6 +2521,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Heart Failure"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006333",
+          "term": "Heart Failure"
+        }
+      ],
       "startDate": {
         "value": "2025-03-14",
         "precision": "day"
@@ -2439,6 +2631,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Primary Hyperaldosteronism"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006929",
+          "term": "Hyperaldosteronism"
+        }
+      ],
       "startDate": {
         "value": "2025-08-07",
         "precision": "day"
@@ -2542,6 +2743,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Kidney Disease and Hypertension"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051436",
+          "term": "Renal Insufficiency, Chronic"
+        },
+        {
+          "id": "D006973",
+          "term": "Hypertension"
+        }
+      ],
       "startDate": {
         "value": "2025-12-05",
         "precision": "day"
@@ -2637,6 +2851,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Uncontrolled Hypertension"
+      ],
       "startDate": {
         "value": "2026-09-17",
         "precision": "day"
@@ -2775,5 +2992,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:35:55.262Z"
+  "lastIngestedAt": "2026-10-29T19:12:42.374Z"
 }

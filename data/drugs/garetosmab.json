@@ -69,7 +69,31 @@
         "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
         "extractedBy": "api",
         "verified": false
-      }
+      },
+      "diseases": [
+        {
+          "meshId": "D009999",
+          "term": "Ossification, Heterotopic",
+          "areas": [
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "The development of bony substance in normally soft structures.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D009999",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05394116",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05394116)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -116,6 +140,9 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2016-07-01",
         "precision": "month"
@@ -214,6 +241,9 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2016-12-08",
         "precision": "day"
@@ -346,6 +376,15 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Fibrodysplasia Ossificans Progressiva"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009221",
+          "term": "Myositis Ossificans"
+        }
+      ],
       "startDate": {
         "value": "2018-02-26",
         "precision": "day"
@@ -482,6 +521,15 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Sporadic Inclusion Body Myositis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D018979",
+          "term": "Myositis, Inclusion Body"
+        }
+      ],
       "startDate": {
         "value": "2019-02-19",
         "precision": "day"
@@ -600,6 +648,16 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Fibrodyplasia Ossificans Progressiva (FOP)",
+        "Heterotopic Ossification (HO)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009999",
+          "term": "Ossification, Heterotopic"
+        }
+      ],
       "startDate": {
         "value": "2021-10-13",
         "precision": "day"
@@ -743,6 +801,19 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Fibrodysplasia Ossificans Progressiva"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009221",
+          "term": "Myositis Ossificans"
+        },
+        {
+          "id": "D009999",
+          "term": "Ossification, Heterotopic"
+        }
+      ],
       "startDate": {
         "value": "2022-11-21",
         "precision": "day"
@@ -869,6 +940,15 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2024-03-13",
         "precision": "day"
@@ -1048,6 +1128,15 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2025-05-29",
         "precision": "day"
@@ -1213,6 +1302,24 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Fibrodysplasia Ossificans Progressiva",
+        "FOP"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009221",
+          "term": "Myositis Ossificans"
+        },
+        {
+          "id": "D009999",
+          "term": "Ossification, Heterotopic"
+        },
+        {
+          "id": "D009085",
+          "term": "Mucopolysaccharidosis IV"
+        }
+      ],
       "startDate": {
         "value": "2027-02-02",
         "precision": "day"
@@ -1332,6 +1439,15 @@
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Fibrodysplasia Ossificans Progressiva (FOP)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009221",
+          "term": "Myositis Ossificans"
+        }
+      ],
       "design": {},
       "population": {
         "minAge": "18 Years",
@@ -1421,5 +1537,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:15.479Z"
+  "lastIngestedAt": "2026-10-29T19:14:05.518Z"
 }

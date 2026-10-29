@@ -88,6 +88,32 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003876",
+          "term": "Dermatitis, Atopic",
+          "areas": [
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "A chronic inflammatory genetically determined disease of the skin marked by increased ability to form reagin (IgE), with increased susceptibility to allergic rhinitis and asthma, and hereditary disposition to a lowered threshold for pruritus. It is manifested by lichenification, excoriation, and crusting, mainly on the flexural surfaces of the elbow and knee. In infants it is known as infantile eczema.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT02068352",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT02068352, NCT03908970, NCT03911401)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -157,6 +183,19 @@
       "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
       "startDate": {
         "value": "2014-06-20",
         "precision": "day"
@@ -392,6 +431,15 @@
       "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2019-03-25",
         "precision": "day"
@@ -559,6 +607,15 @@
       "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2019-05-07",
         "precision": "day"
@@ -719,6 +776,15 @@
       "sponsor": "Acrotech Biopharma Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2022-09-15",
         "precision": "day"
@@ -809,6 +875,15 @@
       "sponsor": "Acrotech Biopharma Inc.",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2022-10-01",
         "precision": "day"
@@ -935,5 +1010,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:47.666Z"
+  "lastIngestedAt": "2026-10-29T19:13:35.089Z"
 }

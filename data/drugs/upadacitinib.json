@@ -88,6 +88,32 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D001172",
+          "term": "Arthritis, Rheumatoid",
+          "areas": [
+            "Musculoskeletal Diseases",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "A chronic systemic disease, primarily of the joints, marked by inflammatory changes in the synovial membranes and articular structures, widespread fibrinoid degeneration of the collagen fibers in mesenchymal tissues, and by atrophy and rarefaction of bony structures. Etiology is unknown, but autoimmune mechanisms have been implicated.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D001172",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT02629159",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT02629159, NCT02675426, NCT02706873, NCT02706847, NCT02706951)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -122,6 +148,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D015535",
+          "term": "Arthritis, Psoriatic",
+          "areas": [
+            "Musculoskeletal Diseases",
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "A type of inflammatory arthritis associated with PSORIASIS, often involving the axial joints and the peripheral terminal interphalangeal joints. It is characterized by the presence of HLA-B27-associated SPONDYLARTHROPATHY, and the absence of rheumatoid factor.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D015535",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03104400",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03104400, NCT03104374)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -153,6 +204,32 @@
             "sourceLabel": "Approval letter (SUPPL-4)",
             "quote": "This Prior Approval supplemental new drug application provides for the new indication of the treatment of adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies are inadvisable.",
             "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003876",
+          "term": "Dermatitis, Atopic",
+          "areas": [
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "A chronic inflammatory genetically determined disease of the skin marked by increased ability to form reagin (IgE), with increased susceptibility to allergic rhinitis and asthma, and hereditary disposition to a lowered threshold for pruritus. It is manifested by lichenification, excoriation, and crusting, mainly on the flexural surfaces of the elbow and knee. In infants it is known as infantile eczema.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03607422",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03607422, NCT03568318, NCT03569293)",
+            "extractedBy": "rule",
             "verified": false
           }
         }
@@ -206,6 +283,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003093",
+          "term": "Colitis, Ulcerative",
+          "areas": [
+            "Digestive System Diseases"
+          ],
+          "definition": {
+            "text": "Inflammation of the COLON that is predominantly confined to the MUCOSA. Its major symptoms include DIARRHEA, rectal BLEEDING, the passage of MUCUS, and ABDOMINAL PAIN.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003093",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT02819635",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT02819635)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -256,6 +357,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003424",
+          "term": "Crohn Disease",
+          "areas": [
+            "Digestive System Diseases"
+          ],
+          "definition": {
+            "text": "A chronic transmural inflammation that may involve any part of the DIGESTIVE TRACT from MOUTH to ANUS, mostly found in the ILEUM, the CECUM, and the COLON. In Crohn disease, the inflammation, extending through the intestinal wall from the MUCOSA to the serosa, is characteristically asymmetric and segmental. Epithelioid GRANULOMAS may be seen in some patients.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003424",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03345836",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03345836, NCT03345849, NCT03345823)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -287,6 +412,30 @@
             "sourceLabel": "Approval letter (SUPPL-3)",
             "quote": "This Prior Approval supplemental new drug application provides for the addition of a new indication: Rinvoq (upadacitinib) is indicated for adults with active ankylosing spondylitis who have had an inadequate response or intolerance to one or more TNF blockers.",
             "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D013167",
+          "term": "Spondylitis, Ankylosing",
+          "areas": [
+            "Musculoskeletal Diseases"
+          ],
+          "definition": {
+            "text": "A chronic inflammatory condition affecting the axial joints, such as the SACROILIAC JOINT and other intervertebral or costovertebral joints. It occurs predominantly in young males and is characterized by pain and stiffness of joints (ANKYLOSIS) with inflammation at tendon insertions.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D013167",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03178487",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03178487)",
+            "extractedBy": "rule",
             "verified": false
           }
         }
@@ -324,6 +473,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D000089183",
+          "term": "Axial Spondyloarthritis",
+          "areas": [
+            "Musculoskeletal Diseases"
+          ],
+          "definition": {
+            "text": "A spectrum of chronic inflammatory conditions affecting the axial joints (e.g., SPINE), characterized by pain, stiffness of joints (ANKYLOSIS), reduced mobility and inflammation. When joint inflammation and damage are visible on regular X-rays it is called ANKYLOSING SPONDYLITIS; otherwise it is referred to as NON-RADIOGRAPHIC AXIAL SPONDYLOARTHRITIS. HLA-B27 ANTIGEN is a biomarker and IL-23/IL-17 pathway a potential therapeutic target for axial and other related spondyloarthritis.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000089183",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04169373",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04169373)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -358,6 +531,32 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D001171",
+          "term": "Arthritis, Juvenile",
+          "areas": [
+            "Musculoskeletal Diseases",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "Arthritis in children, with onset before 16 years of age. The terms juvenile rheumatoid arthritis (JRA) and juvenile idiopathic arthritis (JIA) refer to classification systems for chronic arthritis in children. Only one subtype of juvenile arthritis (polyarticular-onset, rheumatoid factor-positive) clinically resembles adult rheumatoid arthritis and is considered its childhood equivalent.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D001171",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03725007",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03725007)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -389,6 +588,33 @@
             "sourceLabel": "Approval letter (SUPPL-25)",
             "quote": "This Prior Approval supplemental new drug application provides for treatment of adults with giant cell arteritis.",
             "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D013700",
+          "term": "Giant Cell Arteritis",
+          "areas": [
+            "Nervous System Diseases",
+            "Cardiovascular Diseases",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "A systemic autoimmune disorder that typically affects medium and large ARTERIES, usually leading to occlusive granulomatous vasculitis with transmural infiltrate containing multinucleated GIANT CELLS. The TEMPORAL ARTERY is commonly involved. This disorder appears primarily in people over the age of 50. Symptoms include FEVER; FATIGUE; HEADACHE; visual impairment; pain in the jaw and tongue; and aggravation of pain by cold temperatures. (From Adams et al., Principles of Neurology, 6th ed)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D013700",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03725202",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03725202)",
+            "extractedBy": "rule",
             "verified": false
           }
         }
@@ -438,6 +664,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie (prior sponsor, Abbott)",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2012-11-01",
         "precision": "month"
@@ -548,6 +783,27 @@
       "roles": [],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        }
+      ],
       "startDate": {
         "value": "2013-10-01",
         "precision": "month"
@@ -662,6 +918,27 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        }
+      ],
       "startDate": {
         "value": "2014-01-24",
         "precision": "day"
@@ -777,6 +1054,27 @@
       "roles": [],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        }
+      ],
       "startDate": {
         "value": "2014-03-26",
         "precision": "day"
@@ -898,6 +1196,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2015-03-17",
         "precision": "day"
@@ -1106,6 +1413,27 @@
       ],
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        }
+      ],
       "startDate": {
         "value": "2015-12-01",
         "precision": "day"
@@ -1599,6 +1927,27 @@
       ],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        }
+      ],
       "startDate": {
         "value": "2015-12-17",
         "precision": "day"
@@ -2084,6 +2433,27 @@
       ],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        }
+      ],
       "startDate": {
         "value": "2016-02-23",
         "precision": "day"
@@ -2856,6 +3226,27 @@
       ],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        }
+      ],
       "startDate": {
         "value": "2016-03-15",
         "precision": "day"
@@ -3325,6 +3716,15 @@
       ],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2016-03-22",
         "precision": "day"
@@ -3720,6 +4120,27 @@
       ],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        }
+      ],
       "startDate": {
         "value": "2016-03-23",
         "precision": "day"
@@ -4180,6 +4601,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease (CD)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2016-05-18",
         "precision": "day"
@@ -4312,6 +4742,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis (UC)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2016-09-26",
         "precision": "day"
@@ -4970,6 +5409,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2016-10-25",
         "precision": "day"
@@ -5315,6 +5763,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis (UC)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2017-01-31",
         "precision": "day"
@@ -5447,6 +5904,31 @@
       ],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        }
+      ],
       "startDate": {
         "value": "2017-04-27",
         "precision": "day"
@@ -5828,6 +6310,31 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        }
+      ],
       "startDate": {
         "value": "2017-05-01",
         "precision": "day"
@@ -6153,6 +6660,27 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        }
+      ],
       "startDate": {
         "value": "2017-05-09",
         "precision": "day"
@@ -6283,6 +6811,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ankylosing Spondylitis (AS)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D013167",
+          "term": "Spondylitis, Ankylosing"
+        }
+      ],
       "startDate": {
         "value": "2017-10-24",
         "precision": "day"
@@ -6567,6 +7104,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2017-11-29",
         "precision": "day"
@@ -7071,6 +7617,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2017-12-07",
         "precision": "day"
@@ -7514,6 +8069,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2018-01-03",
         "precision": "day"
@@ -7631,6 +8195,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2018-03-21",
         "precision": "day"
@@ -7847,6 +8420,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2018-07-27",
         "precision": "day"
@@ -8350,6 +8932,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2018-08-09",
         "precision": "day"
@@ -8836,6 +9427,15 @@
       ],
       "status": "COMPLETED",
       "sponsor": "AbbVie",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2018-08-13",
         "precision": "day"
@@ -9328,6 +9928,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2018-10-08",
         "precision": "day"
@@ -9474,6 +10083,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2018-10-27",
         "precision": "day"
@@ -9612,6 +10230,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis (UC)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2018-12-06",
         "precision": "day"
@@ -9750,6 +10377,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Giant Cell Arteritis (GCA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D013700",
+          "term": "Giant Cell Arteritis"
+        }
+      ],
       "startDate": {
         "value": "2019-01-24",
         "precision": "day"
@@ -10106,6 +10742,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2019-01-31",
         "precision": "day"
@@ -10253,6 +10898,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2019-02-21",
         "precision": "day"
@@ -10355,6 +11009,15 @@
       "status": "TERMINATED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2019-05-13",
         "precision": "day"
@@ -10509,6 +11172,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Juvenile Idiopathic Arthritis (JIA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001171",
+          "term": "Arthritis, Juvenile"
+        }
+      ],
       "startDate": {
         "value": "2019-06-24",
         "precision": "day"
@@ -10673,6 +11345,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2019-07-25",
         "precision": "day"
@@ -10811,6 +11492,23 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Spondyloarthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D025241",
+          "term": "Spondylarthritis"
+        },
+        {
+          "id": "D000089183",
+          "term": "Axial Spondyloarthritis"
+        },
+        {
+          "id": "D013167",
+          "term": "Spondylitis, Ankylosing"
+        }
+      ],
       "startDate": {
         "value": "2019-11-26",
         "precision": "day"
@@ -11216,6 +11914,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2020-01-15",
         "precision": "day"
@@ -11309,6 +12016,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Takayasu Arteritis (TAK)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D013625",
+          "term": "Takayasu Arteritis"
+        }
+      ],
       "startDate": {
         "value": "2020-02-04",
         "precision": "day"
@@ -11407,6 +12123,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2020-02-06",
         "precision": "day"
@@ -11520,6 +12245,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2020-04-24",
         "precision": "day"
@@ -11610,6 +12344,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hidradenitis Suppurativa (HS)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D017497",
+          "term": "Hidradenitis Suppurativa"
+        }
+      ],
       "startDate": {
         "value": "2020-07-14",
         "precision": "day"
@@ -11705,6 +12448,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2020-07-27",
         "precision": "day"
@@ -11825,6 +12577,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2020-10-07",
         "precision": "day"
@@ -11929,6 +12690,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2020-10-16",
         "precision": "day"
@@ -12036,6 +12806,15 @@
       "status": "WITHDRAWN",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis (AD)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2020-12-24",
         "precision": "day"
@@ -12143,6 +12922,30 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis (RA)",
+        "Atopic Dermatitis (AD)",
+        "Ankylosing Spondylitis (AS)",
+        "Psoriatic Arthritis (PsA)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D013167",
+          "term": "Spondylitis, Ankylosing"
+        },
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2021-01-26",
         "precision": "day"
@@ -12230,6 +13033,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2021-02-04",
         "precision": "day"
@@ -12321,6 +13133,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Axial Spondylarthritis (axSpA)"
+      ],
       "startDate": {
         "value": "2021-04-30",
         "precision": "day"
@@ -12404,6 +13219,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Non-Segmental Vitiligo"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D014820",
+          "term": "Vitiligo"
+        }
+      ],
       "startDate": {
         "value": "2021-06-30",
         "precision": "day"
@@ -12519,6 +13343,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2021-09-29",
         "precision": "day"
@@ -12624,6 +13457,25 @@
       "status": "COMPLETED",
       "sponsor": "Jeffrey Curtis",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis",
+        "Psoriatic Arthritis",
+        "Spondylarthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        },
+        {
+          "id": "D025241",
+          "term": "Spondylarthritis"
+        }
+      ],
       "startDate": {
         "value": "2021-11-15",
         "precision": "day"
@@ -12782,6 +13634,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2021-11-17",
         "precision": "day"
@@ -12960,6 +13821,9 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Axial Spondylarthritis (r-axSpA)"
+      ],
       "startDate": {
         "value": "2021-11-22",
         "precision": "day"
@@ -13060,6 +13924,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2021-12-13",
         "precision": "day"
@@ -13232,6 +14105,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2022-03-14",
         "precision": "day"
@@ -13359,6 +14241,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2022-04-20",
         "precision": "day"
@@ -13484,6 +14375,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2022-06-01",
         "precision": "day"
@@ -13597,6 +14497,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2022-08-15",
         "precision": "day"
@@ -13682,6 +14591,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2022-10-20",
         "precision": "day"
@@ -13765,6 +14683,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2022-11-28",
         "precision": "day"
@@ -13879,6 +14806,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2022-12-08",
         "precision": "day"
@@ -13962,6 +14898,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Psoriatic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        }
+      ],
       "startDate": {
         "value": "2022-12-15",
         "precision": "day"
@@ -14044,6 +14989,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2022-12-19",
         "precision": "day"
@@ -14137,6 +15091,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2023-02-21",
         "precision": "day"
@@ -14245,6 +15208,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2023-05-29",
         "precision": "day"
@@ -14378,6 +15350,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2023-06-15",
         "precision": "day"
@@ -14479,6 +15460,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hidradenitis Suppurativa"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D017497",
+          "term": "Hidradenitis Suppurativa"
+        }
+      ],
       "startDate": {
         "value": "2023-06-21",
         "precision": "day"
@@ -14619,6 +15609,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2023-07-25",
         "precision": "day"
@@ -14774,6 +15773,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2023-07-28",
         "precision": "day"
@@ -14856,6 +15864,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis (AD)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2023-08-18",
         "precision": "day"
@@ -14939,6 +15956,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Juvenile Idiopathic Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001171",
+          "term": "Arthritis, Juvenile"
+        }
+      ],
       "startDate": {
         "value": "2023-10-02",
         "precision": "day"
@@ -15057,6 +16083,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Alopecia Areata"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000506",
+          "term": "Alopecia Areata"
+        }
+      ],
       "startDate": {
         "value": "2023-10-11",
         "precision": "day"
@@ -15275,6 +16310,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2023-11-06",
         "precision": "day"
@@ -15396,6 +16440,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Vitiligo"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D014820",
+          "term": "Vitiligo"
+        }
+      ],
       "startDate": {
         "value": "2023-12-19",
         "precision": "day"
@@ -15555,6 +16608,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2024-02-19",
         "precision": "day"
@@ -15639,6 +16701,20 @@
       "status": "WITHDRAWN",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis",
+        "Sleep Disturbance"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D020447",
+          "term": "Parasomnias"
+        }
+      ],
       "startDate": {
         "value": "2024-05-23",
         "precision": "day"
@@ -15739,6 +16815,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2024-06-07",
         "precision": "day"
@@ -15824,6 +16909,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2024-06-14",
         "precision": "day"
@@ -15985,6 +17079,24 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Ulcerative Colitis",
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        },
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        },
+        {
+          "id": "D015212",
+          "term": "Inflammatory Bowel Diseases"
+        }
+      ],
       "startDate": {
         "value": "2024-06-24",
         "precision": "day"
@@ -16072,6 +17184,15 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis (AD)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2024-08-06",
         "precision": "day"
@@ -16156,6 +17277,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2024-08-08",
         "precision": "day"
@@ -16324,6 +17454,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2024-08-19",
         "precision": "day"
@@ -16476,6 +17615,20 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Ulcerative Colitis",
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        },
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2024-09-27",
         "precision": "day"
@@ -16560,6 +17713,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Moderate to Severe Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2024-11-07",
         "precision": "day"
@@ -16647,6 +17809,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2024-12-22",
         "precision": "day"
@@ -16746,6 +17917,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Ulcerative Colitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        }
+      ],
       "startDate": {
         "value": "2025-04-09",
         "precision": "day"
@@ -16829,6 +18009,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Alopecia Areata"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000506",
+          "term": "Alopecia Areata"
+        }
+      ],
       "startDate": {
         "value": "2025-06-19",
         "precision": "day"
@@ -16968,6 +18157,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2025-07-14",
         "precision": "day"
@@ -17065,6 +18263,9 @@
       "status": "RECRUITING",
       "sponsor": "Berinstein, Jeffrey",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Ulcerative Colitis Acute"
+      ],
       "startDate": {
         "value": "2026-01-16",
         "precision": "day"
@@ -17217,6 +18418,9 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteer"
+      ],
       "startDate": {
         "value": "2026-02-26",
         "precision": "day"
@@ -17350,6 +18554,15 @@
       "status": "RECRUITING",
       "sponsor": "Sixth Affiliated Hospital, Sun Yat-sen University",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Crohn Disease (CD)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        }
+      ],
       "startDate": {
         "value": "2026-03-01",
         "precision": "day"
@@ -17482,6 +18695,15 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Severe Alopecia Areata"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000506",
+          "term": "Alopecia Areata"
+        }
+      ],
       "startDate": {
         "value": "2026-08-24",
         "precision": "day"
@@ -17619,6 +18841,9 @@
       "status": "RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2026-08-26",
         "precision": "day"
@@ -17738,6 +18963,15 @@
       "status": "NOT_YET_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
       "startDate": {
         "value": "2026-09-30",
         "precision": "day"
@@ -17826,6 +19060,15 @@
       "sponsor": "AbbVie",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ],
       "startDate": {
         "value": "2026-12-07",
         "precision": "day"
@@ -17944,6 +19187,9 @@
       "status": "NOT_YET_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Non-Segmental Vitiligo"
+      ],
       "startDate": {
         "value": "2027-01-28",
         "precision": "day"
@@ -18043,6 +19289,68 @@
       "status": "AVAILABLE",
       "sponsor": "AbbVie",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Crohn Disease",
+        "Ulcerative Colitis",
+        "Idiopathic Arthritis (Including sJIA, pJIA, or JPsA)",
+        "Atopic Dermatitis",
+        "Rheumatoid Arthritis",
+        "Psoriatic Arthritis",
+        "Axial Spondyloarthritis",
+        "Non-radiographic Axial",
+        "Spondyloarthritis",
+        "Giant Cell Arteritis",
+        "Systemic Lupus Erythematosus",
+        "Alopecia Areata",
+        "Non Segmental Vitiligo",
+        "Hidradenitis Suppurativa"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003424",
+          "term": "Crohn Disease"
+        },
+        {
+          "id": "D003093",
+          "term": "Colitis, Ulcerative"
+        },
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D015535",
+          "term": "Arthritis, Psoriatic"
+        },
+        {
+          "id": "D000089183",
+          "term": "Axial Spondyloarthritis"
+        },
+        {
+          "id": "D025241",
+          "term": "Spondylarthritis"
+        },
+        {
+          "id": "D013700",
+          "term": "Giant Cell Arteritis"
+        },
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        },
+        {
+          "id": "D000506",
+          "term": "Alopecia Areata"
+        },
+        {
+          "id": "D017497",
+          "term": "Hidradenitis Suppurativa"
+        }
+      ],
       "design": {},
       "population": {
         "sex": "ALL",
@@ -25273,5 +26581,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:39:23.935Z"
+  "lastIngestedAt": "2026-10-29T19:16:08.234Z"
 }

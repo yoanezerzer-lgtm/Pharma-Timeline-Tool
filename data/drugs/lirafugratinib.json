@@ -88,6 +88,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D018281",
+          "term": "Cholangiocarcinoma",
+          "areas": [
+            "Neoplasms"
+          ],
+          "definition": {
+            "text": "A malignant tumor arising from the epithelium of the BILE DUCTS.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D018281",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04526106",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04526106)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -157,6 +181,22 @@
       "status": "COMPLETED",
       "sponsor": "Elevar Therapeutics",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "FGFR2 Amplification",
+        "FGFR2 Gene Mutation",
+        "FGFR2 Gene Fusion/Rearrangement",
+        "FGFR2 Gene Translocation",
+        "FGFR2 Gene Activation",
+        "Intrahepatic Cholangiocarcinoma",
+        "Cholangiocarcinoma",
+        "Other Solid Tumors, Adult"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D018281",
+          "term": "Cholangiocarcinoma"
+        }
+      ],
       "startDate": {
         "value": "2020-09-02",
         "precision": "day"
@@ -302,6 +342,10 @@
       "status": "RECRUITING",
       "sponsor": "Elevar Therapeutics",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "FGFR2 Gene Fusion/Rearrangement",
+        "Other Solid Tumors, Adult"
+      ],
       "startDate": {
         "value": "2026-06-04",
         "precision": "day"
@@ -444,5 +488,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:54.058Z"
+  "lastIngestedAt": "2026-10-29T19:14:36.656Z"
 }

@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D000130",
+          "term": "Achondroplasia",
+          "areas": [
+            "Musculoskeletal Diseases",
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
+          ],
+          "definition": {
+            "text": "An autosomal dominant disorder that is the most frequent form of short-limb dwarfism. Affected individuals exhibit short stature caused by rhizomelic shortening of the limbs, characteristic facies with frontal bossing and mid-face hypoplasia, exaggerated lumbar lordosis, limitation of elbow extension, GENU VARUM, and trident hand. (Online Mendelian Inheritance in Man, http://www.ncbi.nlm.nih.gov/Omim, MIM#100800, April 20, 2001)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000130",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04085523",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04085523, NCT05598320)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -157,6 +182,19 @@
       "sponsor": "Ascendis Pharma A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Achondroplasia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000130",
+          "term": "Achondroplasia"
+        },
+        {
+          "id": "D004392",
+          "term": "Dwarfism"
+        }
+      ],
       "startDate": {
         "value": "2020-06-24",
         "precision": "day"
@@ -405,6 +443,15 @@
       "sponsor": "Ascendis Pharma Growth Disorders A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Achondroplasia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000130",
+          "term": "Achondroplasia"
+        }
+      ],
       "startDate": {
         "value": "2023-03-03",
         "precision": "day"
@@ -569,6 +616,15 @@
       "sponsor": "Ascendis Pharma A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Achondroplasia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000130",
+          "term": "Achondroplasia"
+        }
+      ],
       "startDate": {
         "value": "2024-01-23",
         "precision": "day"
@@ -666,6 +722,15 @@
       "sponsor": "Ascendis Pharma Growth Disorders A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Achondroplasia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000130",
+          "term": "Achondroplasia"
+        }
+      ],
       "startDate": {
         "value": "2024-07-26",
         "precision": "day"
@@ -759,6 +824,15 @@
       "sponsor": "Ascendis Pharma A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Achondroplasia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000130",
+          "term": "Achondroplasia"
+        }
+      ],
       "startDate": {
         "value": "2024-12-10",
         "precision": "day"
@@ -886,5 +960,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:10.021Z"
+  "lastIngestedAt": "2026-10-29T19:14:49.900Z"
 }

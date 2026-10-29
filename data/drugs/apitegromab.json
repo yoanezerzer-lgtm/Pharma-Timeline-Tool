@@ -88,6 +88,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D009134",
+          "term": "Muscular Atrophy, Spinal",
+          "areas": [
+            "Nervous System Diseases"
+          ],
+          "definition": {
+            "text": "A group of disorders marked by progressive degeneration of motor neurons in the spinal cord resulting in weakness and muscular atrophy, usually without evidence of injury to the corticospinal tracts. Diseases in this category include Werdnig-Hoffmann disease and later onset SPINAL MUSCULAR ATROPHIES OF CHILDHOOD, most of which are hereditary. (Adams et al., Principles of Neurology, 6th ed, p1089)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D009134",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05156320",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05156320)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +159,43 @@
       "status": "COMPLETED",
       "sponsor": "Scholar Rock, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Spinal Muscular Atrophy",
+        "Spinal Muscular Atrophy Type 3",
+        "Spinal Muscular Atrophy Type 2",
+        "SMA",
+        "Neuromuscular Diseases",
+        "Muscular Atrophy",
+        "Atrophy",
+        "Muscular Atrophy, Spinal",
+        "Neuromuscular Manifestations"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009134",
+          "term": "Muscular Atrophy, Spinal"
+        },
+        {
+          "id": "D014897",
+          "term": "Spinal Muscular Atrophies of Childhood"
+        },
+        {
+          "id": "D009468",
+          "term": "Neuromuscular Diseases"
+        },
+        {
+          "id": "D009133",
+          "term": "Muscular Atrophy"
+        },
+        {
+          "id": "D001284",
+          "term": "Atrophy"
+        },
+        {
+          "id": "D020879",
+          "term": "Neuromuscular Manifestations"
+        }
+      ],
       "startDate": {
         "value": "2019-04-22",
         "precision": "day"
@@ -270,6 +331,44 @@
       "status": "COMPLETED",
       "sponsor": "Scholar Rock, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Spinal Muscular Atrophy",
+        "Spinal Muscular Atrophy Type 3",
+        "Spinal Muscular Atrophy Type 2",
+        "SMA",
+        "Neuromuscular Diseases",
+        "Muscular Atrophy",
+        "Atrophy",
+        "Muscular Atrophy, Spinal",
+        "Neuromuscular Manifestations",
+        "Anti-myostatin"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009134",
+          "term": "Muscular Atrophy, Spinal"
+        },
+        {
+          "id": "D014897",
+          "term": "Spinal Muscular Atrophies of Childhood"
+        },
+        {
+          "id": "D009468",
+          "term": "Neuromuscular Diseases"
+        },
+        {
+          "id": "D009133",
+          "term": "Muscular Atrophy"
+        },
+        {
+          "id": "D001284",
+          "term": "Atrophy"
+        },
+        {
+          "id": "D020879",
+          "term": "Neuromuscular Manifestations"
+        }
+      ],
       "startDate": {
         "value": "2022-04-14",
         "precision": "day"
@@ -396,6 +495,44 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Scholar Rock, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Spinal Muscular Atrophy",
+        "Spinal Muscular Atrophy Type 3",
+        "Spinal Muscular Atrophy Type 2",
+        "SMA",
+        "Neuromuscular Diseases",
+        "Muscular Atrophy",
+        "Atrophy",
+        "Muscular Atrophy, Spinal",
+        "Neuromuscular Manifestations",
+        "Anti-myostatin"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009134",
+          "term": "Muscular Atrophy, Spinal"
+        },
+        {
+          "id": "D014897",
+          "term": "Spinal Muscular Atrophies of Childhood"
+        },
+        {
+          "id": "D009468",
+          "term": "Neuromuscular Diseases"
+        },
+        {
+          "id": "D009133",
+          "term": "Muscular Atrophy"
+        },
+        {
+          "id": "D001284",
+          "term": "Atrophy"
+        },
+        {
+          "id": "D020879",
+          "term": "Neuromuscular Manifestations"
+        }
+      ],
       "startDate": {
         "value": "2023-04-17",
         "precision": "day"
@@ -493,6 +630,19 @@
       "status": "COMPLETED",
       "sponsor": "Scholar Rock, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Overweight and Obesity"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D050177",
+          "term": "Overweight"
+        },
+        {
+          "id": "D009765",
+          "term": "Obesity"
+        }
+      ],
       "startDate": {
         "value": "2024-05-21",
         "precision": "day"
@@ -599,6 +749,28 @@
       "status": "RECRUITING",
       "sponsor": "Scholar Rock, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Spinal Muscular Atrophy",
+        "SMA",
+        "Spinal Muscular Atrophy Type 2",
+        "Spinal Muscular Atrophy Type 3",
+        "Neuromuscular Manifestations",
+        "Anti-myostatin"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009134",
+          "term": "Muscular Atrophy, Spinal"
+        },
+        {
+          "id": "D014897",
+          "term": "Spinal Muscular Atrophies of Childhood"
+        },
+        {
+          "id": "D020879",
+          "term": "Neuromuscular Manifestations"
+        }
+      ],
       "startDate": {
         "value": "2025-09-15",
         "precision": "day"
@@ -696,6 +868,16 @@
       "status": "RECRUITING",
       "sponsor": "Scholar Rock, Inc.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Facioscapulohumeral Muscular Dystrophy",
+        "FSHD"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D020391",
+          "term": "Muscular Dystrophy, Facioscapulohumeral"
+        }
+      ],
       "startDate": {
         "value": "2026-07-30",
         "precision": "day"
@@ -798,6 +980,9 @@
       "status": "NO_LONGER_AVAILABLE",
       "sponsor": "Scholar Rock, Inc.",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "SMA"
+      ],
       "design": {},
       "population": {
         "minAge": "2 Years",
@@ -887,5 +1072,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:35:56.743Z"
+  "lastIngestedAt": "2026-10-29T19:12:43.009Z"
 }

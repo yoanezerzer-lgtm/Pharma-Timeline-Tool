@@ -135,6 +135,19 @@
       "sponsor": "Omeros Corporation",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Thrombotic Microangiopathies"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D057049",
+          "term": "Thrombotic Microangiopathies"
+        },
+        {
+          "id": "D065766",
+          "term": "Atypical Hemolytic Uremic Syndrome"
+        }
+      ],
       "startDate": {
         "value": "2014-11-02",
         "precision": "day"
@@ -251,6 +264,26 @@
       "sponsor": "Omeros Corporation",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "IgAN",
+        "LN",
+        "MN",
+        "C3G"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D005922",
+          "term": "Glomerulonephritis, IGA"
+        },
+        {
+          "id": "D008181",
+          "term": "Lupus Nephritis"
+        },
+        {
+          "id": "D015433",
+          "term": "Glomerulonephritis, Membranous"
+        }
+      ],
       "startDate": {
         "value": "2016-03-10",
         "precision": "day"
@@ -352,6 +385,23 @@
       "sponsor": "Omeros Corporation",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "IgA Nephropathy"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D005922",
+          "term": "Glomerulonephritis, IGA"
+        },
+        {
+          "id": "D011507",
+          "term": "Proteinuria"
+        },
+        {
+          "id": "D051436",
+          "term": "Renal Insufficiency, Chronic"
+        }
+      ],
       "startDate": {
         "value": "2018-04-05",
         "precision": "day"
@@ -456,6 +506,20 @@
       "sponsor": "Omeros Corporation",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Thrombotic Microangiopathies",
+        "Atypical Hemolytic Uremic Syndrome"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D057049",
+          "term": "Thrombotic Microangiopathies"
+        },
+        {
+          "id": "D065766",
+          "term": "Atypical Hemolytic Uremic Syndrome"
+        }
+      ],
       "startDate": {
         "value": "2018-05-02",
         "precision": "day"
@@ -561,6 +625,16 @@
       "sponsor": "Omeros Corporation",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Thrombotic Microangiopathies",
+        "Hematopoietic Stem Cell Transplantation"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D057049",
+          "term": "Thrombotic Microangiopathies"
+        }
+      ],
       "startDate": {
         "value": "2023-05-01",
         "precision": "day"
@@ -658,6 +732,9 @@
       "sponsor": "Omeros Corporation",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Hematopoietic Stem Cell Transplant Associated Thrombotic Microangiopathy (HSCT-TMA)"
+      ],
       "design": {},
       "population": {
         "sex": "ALL",
@@ -746,5 +823,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:01.663Z"
+  "lastIngestedAt": "2026-10-29T19:14:47.814Z"
 }

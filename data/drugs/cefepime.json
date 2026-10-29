@@ -150,6 +150,9 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2015-08-01",
         "precision": "month"
@@ -255,6 +258,15 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Renal Impairment"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051437",
+          "term": "Renal Insufficiency"
+        }
+      ],
       "startDate": {
         "value": "2016-03-01",
         "precision": "month"
@@ -348,6 +360,9 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Serious Gram-negative Infections"
+      ],
       "startDate": {
         "value": "2016-03-01",
         "precision": "month"
@@ -445,6 +460,15 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Renal Impairment"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051437",
+          "term": "Renal Insufficiency"
+        }
+      ],
       "startDate": {
         "value": "2016-10-25",
         "precision": "day"
@@ -538,6 +562,9 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "QT/QTc Interval in Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2017-02-09",
         "precision": "day"
@@ -641,6 +668,9 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "PHA1A"
+      ],
       "startDate": {
         "value": "2017-03-31",
         "precision": "day"
@@ -757,6 +787,10 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Complicated Urinary Tract Infection",
+        "Acute Pyelonephritis"
+      ],
       "startDate": {
         "value": "2022-08-28",
         "precision": "day"
@@ -940,6 +974,10 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Complicated Urinary Tract Infection",
+        "Acute Pyelonephritis"
+      ],
       "startDate": {
         "value": "2024-01-01",
         "precision": "month"
@@ -1036,6 +1074,9 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "PHA1A"
+      ],
       "startDate": {
         "value": "2025-01-21",
         "precision": "day"
@@ -1133,6 +1174,10 @@
       "sponsor": "Wockhardt",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hospital Acquired Bacterial Pneumonia (HABP)",
+        "Ventilator Associated Bacterial Pneumonia (VABP)"
+      ],
       "startDate": {
         "value": "2026-10-28",
         "precision": "day"
@@ -1264,5 +1309,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:21.666Z"
+  "lastIngestedAt": "2026-10-29T19:13:10.512Z"
 }

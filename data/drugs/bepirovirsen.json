@@ -69,7 +69,56 @@
         "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
         "extractedBy": "api",
         "verified": false
-      }
+      },
+      "diseases": [
+        {
+          "meshId": "D019694",
+          "term": "Hepatitis B, Chronic",
+          "areas": [
+            "Infections",
+            "Digestive System Diseases",
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "INFLAMMATION of the LIVER in humans caused by HEPATITIS B VIRUS lasting six months or more. It is primarily transmitted by parenteral exposure, such as transfusion of contaminated blood or blood products, but can also be transmitted via sexual or intimate personal contact.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D019694",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05630820",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05630820, NCT05630807)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "meshId": "D006521",
+          "term": "Hepatitis, Chronic",
+          "areas": [
+            "Digestive System Diseases",
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "INFLAMMATION of the LIVER with ongoing hepatocellular injury for 6 months or more, characterized by NECROSIS of HEPATOCYTES and inflammatory cell (LEUKOCYTES) infiltration. Chronic hepatitis can be caused by viruses, medications, autoimmune diseases, and other unknown factors.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D006521",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05630820",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05630820, NCT05630807)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -116,6 +165,19 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        },
+        {
+          "id": "D019694",
+          "term": "Hepatitis B, Chronic"
+        }
+      ],
       "startDate": {
         "value": "2020-07-27",
         "precision": "day"
@@ -262,6 +324,15 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        }
+      ],
       "startDate": {
         "value": "2020-10-06",
         "precision": "day"
@@ -367,6 +438,19 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        },
+        {
+          "id": "D019694",
+          "term": "Hepatitis B, Chronic"
+        }
+      ],
       "startDate": {
         "value": "2021-01-28",
         "precision": "day"
@@ -496,6 +580,19 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        },
+        {
+          "id": "D005355",
+          "term": "Fibrosis"
+        }
+      ],
       "startDate": {
         "value": "2021-09-07",
         "precision": "day"
@@ -601,6 +698,15 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        }
+      ],
       "startDate": {
         "value": "2021-12-14",
         "precision": "day"
@@ -727,6 +833,19 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B, Chronic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D019694",
+          "term": "Hepatitis B, Chronic"
+        },
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        }
+      ],
       "startDate": {
         "value": "2022-03-22",
         "precision": "day"
@@ -863,6 +982,19 @@
       "status": "TERMINATED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        },
+        {
+          "id": "D019694",
+          "term": "Hepatitis B, Chronic"
+        }
+      ],
       "startDate": {
         "value": "2022-04-14",
         "precision": "day"
@@ -1096,6 +1228,28 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Hepatitis B",
+        "Hepatitis B, Chronic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D019694",
+          "term": "Hepatitis B, Chronic"
+        },
+        {
+          "id": "D006505",
+          "term": "Hepatitis"
+        },
+        {
+          "id": "D006521",
+          "term": "Hepatitis, Chronic"
+        },
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        }
+      ],
       "startDate": {
         "value": "2022-12-06",
         "precision": "day"
@@ -1211,6 +1365,28 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Hepatitis B",
+        "Hepatitis B, Chronic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D019694",
+          "term": "Hepatitis B, Chronic"
+        },
+        {
+          "id": "D006505",
+          "term": "Hepatitis"
+        },
+        {
+          "id": "D006521",
+          "term": "Hepatitis, Chronic"
+        },
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        }
+      ],
       "startDate": {
         "value": "2022-12-07",
         "precision": "day"
@@ -1314,6 +1490,27 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        },
+        {
+          "id": "D006505",
+          "term": "Hepatitis"
+        },
+        {
+          "id": "D014777",
+          "term": "Virus Diseases"
+        },
+        {
+          "id": "D008107",
+          "term": "Liver Diseases"
+        }
+      ],
       "startDate": {
         "value": "2023-10-04",
         "precision": "day"
@@ -1424,6 +1621,15 @@
       "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        }
+      ],
       "startDate": {
         "value": "2024-07-18",
         "precision": "day"
@@ -1540,6 +1746,19 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        },
+        {
+          "id": "D000163",
+          "term": "Acquired Immunodeficiency Syndrome"
+        }
+      ],
       "startDate": {
         "value": "2024-09-17",
         "precision": "day"
@@ -1636,6 +1855,20 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Hepatitis B Virus Infection",
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D019694",
+          "term": "Hepatitis B, Chronic"
+        },
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        }
+      ],
       "startDate": {
         "value": "2024-11-11",
         "precision": "day"
@@ -1750,6 +1983,23 @@
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "GlaxoSmithKline",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        },
+        {
+          "id": "D051437",
+          "term": "Renal Insufficiency"
+        },
+        {
+          "id": "D007674",
+          "term": "Kidney Diseases"
+        }
+      ],
       "startDate": {
         "value": "2025-09-26",
         "precision": "day"
@@ -1859,6 +2109,23 @@
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatitis B"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006509",
+          "term": "Hepatitis B"
+        },
+        {
+          "id": "D008107",
+          "term": "Liver Diseases"
+        },
+        {
+          "id": "D003141",
+          "term": "Communicable Diseases"
+        }
+      ],
       "startDate": {
         "value": "2026-11-03",
         "precision": "day"
@@ -1989,5 +2256,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:20.580Z"
+  "lastIngestedAt": "2026-10-29T19:13:07.046Z"
 }

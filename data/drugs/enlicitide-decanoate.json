@@ -88,6 +88,30 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D006937",
+          "term": "Hypercholesterolemia",
+          "areas": [
+            "Nutritional and Metabolic Diseases"
+          ],
+          "definition": {
+            "text": "A condition with abnormally high levels of CHOLESTEROL in the blood. It is defined as a cholesterol value exceeding the 95th percentile for the population.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D006937",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05952869",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05952869, NCT05952856)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -135,6 +159,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Moderate Renal Impairment"
+      ],
       "startDate": {
         "value": "2021-11-16",
         "precision": "day"
@@ -243,6 +270,20 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypercholesterolemia",
+        "Familial Hypercholesterolemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        },
+        {
+          "id": "D006938",
+          "term": "Hyperlipoproteinemia Type II"
+        }
+      ],
       "startDate": {
         "value": "2022-03-10",
         "precision": "day"
@@ -359,6 +400,16 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy",
+        "Hypercholesterolemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        }
+      ],
       "startDate": {
         "value": "2022-09-30",
         "precision": "day"
@@ -462,6 +513,15 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypercholesterolemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        }
+      ],
       "startDate": {
         "value": "2022-10-25",
         "precision": "day"
@@ -586,6 +646,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2023-03-06",
         "precision": "day"
@@ -707,6 +770,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2023-03-10",
         "precision": "day"
@@ -814,6 +880,15 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypercholesterolaemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        }
+      ],
       "startDate": {
         "value": "2023-07-20",
         "precision": "day"
@@ -958,6 +1033,20 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypercholesterolemia",
+        "Familial Hypercholesterolemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        },
+        {
+          "id": "D006938",
+          "term": "Hyperlipoproteinemia Type II"
+        }
+      ],
       "startDate": {
         "value": "2023-08-08",
         "precision": "day"
@@ -1196,6 +1285,20 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypercholesterolemia",
+        "Familial Hypercholesterolemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        },
+        {
+          "id": "D006938",
+          "term": "Hyperlipoproteinemia Type II"
+        }
+      ],
       "startDate": {
         "value": "2023-08-10",
         "precision": "day"
@@ -1426,6 +1529,20 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Arteriosclerosis",
+        "Hypercholesterolaemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001161",
+          "term": "Arteriosclerosis"
+        },
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        }
+      ],
       "startDate": {
         "value": "2023-10-09",
         "precision": "day"
@@ -1543,6 +1660,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2023-10-24",
         "precision": "day"
@@ -1649,6 +1769,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2023-11-08",
         "precision": "day"
@@ -1766,6 +1889,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-01-22",
         "precision": "day"
@@ -1864,6 +1990,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-03-18",
         "precision": "day"
@@ -1969,6 +2098,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-04-01",
         "precision": "day"
@@ -2082,6 +2214,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-04-23",
         "precision": "day"
@@ -2188,6 +2323,15 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypercholesterolemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        }
+      ],
       "startDate": {
         "value": "2024-07-08",
         "precision": "day"
@@ -2300,6 +2444,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-07-08",
         "precision": "day"
@@ -2403,6 +2550,15 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hypercholesterolemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        }
+      ],
       "startDate": {
         "value": "2024-08-05",
         "precision": "day"
@@ -2500,6 +2656,16 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hepatic Insufficiency",
+        "Hepatic Impairment"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D048550",
+          "term": "Hepatic Insufficiency"
+        }
+      ],
       "startDate": {
         "value": "2024-09-20",
         "precision": "day"
@@ -2611,6 +2777,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-10-07",
         "precision": "day"
@@ -2717,6 +2886,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2024-10-21",
         "precision": "day"
@@ -2833,6 +3005,16 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy",
+        "Renal Impairment"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051437",
+          "term": "Renal Insufficiency"
+        }
+      ],
       "startDate": {
         "value": "2024-11-22",
         "precision": "day"
@@ -2934,6 +3116,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2025-01-02",
         "precision": "day"
@@ -3034,6 +3219,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2025-04-02",
         "precision": "day"
@@ -3135,6 +3323,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2025-07-03",
         "precision": "day"
@@ -3250,6 +3441,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Heterozygous Familial Hypercholesterolemia (HeFH)"
+      ],
       "startDate": {
         "value": "2025-08-21",
         "precision": "day"
@@ -3367,6 +3561,15 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hyperlipidemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006949",
+          "term": "Hyperlipidemias"
+        }
+      ],
       "startDate": {
         "value": "2025-11-11",
         "precision": "day"
@@ -3482,6 +3685,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2025-12-29",
         "precision": "day"
@@ -3595,6 +3801,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2026-03-23",
         "precision": "day"
@@ -3700,6 +3909,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Lipoprotein(a)"
+      ],
       "startDate": {
         "value": "2026-06-30",
         "precision": "day"
@@ -3816,6 +4028,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2026-07-01",
         "precision": "day"
@@ -3934,6 +4149,9 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2026-08-31",
         "precision": "day"
@@ -4050,6 +4268,20 @@
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hyperlipidemia",
+        "Hypercholesterolemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006949",
+          "term": "Hyperlipidemias"
+        },
+        {
+          "id": "D006937",
+          "term": "Hypercholesterolemia"
+        }
+      ],
       "startDate": {
         "value": "2026-10-15",
         "precision": "day"
@@ -4182,5 +4414,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:36:52.927Z"
+  "lastIngestedAt": "2026-10-29T19:13:35.954Z"
 }

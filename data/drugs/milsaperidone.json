@@ -157,6 +157,19 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Schizophrenia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012559",
+          "term": "Schizophrenia"
+        },
+        {
+          "id": "D011618",
+          "term": "Psychotic Disorders"
+        }
+      ],
       "startDate": {
         "value": "2005-11-18",
         "precision": "day"
@@ -266,6 +279,19 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Schizophrenia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012559",
+          "term": "Schizophrenia"
+        },
+        {
+          "id": "D001523",
+          "term": "Mental Disorders"
+        }
+      ],
       "startDate": {
         "value": "2011-02-01",
         "precision": "month"
@@ -373,6 +399,9 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Bipolar I Disorder"
+      ],
       "startDate": {
         "value": "2021-03-22",
         "precision": "day"
@@ -474,6 +503,9 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2021-06-30",
         "precision": "day"
@@ -568,6 +600,9 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
       "startDate": {
         "value": "2022-06-21",
         "precision": "day"
@@ -663,6 +698,16 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Schizophrenia",
+        "Bipolar I Disorder"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012559",
+          "term": "Schizophrenia"
+        }
+      ],
       "startDate": {
         "value": "2024-07-11",
         "precision": "day"
@@ -758,6 +803,15 @@
       "sponsor": "Vanda Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Major Depressive Disorder (MDD)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        }
+      ],
       "startDate": {
         "value": "2025-03-03",
         "precision": "day"
@@ -881,5 +935,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:38:01.491Z"
+  "lastIngestedAt": "2026-10-29T19:14:48.738Z"
 }

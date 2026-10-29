@@ -54,6 +54,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003924",
+          "term": "Diabetes Mellitus, Type 2",
+          "areas": [
+            "Nutritional and Metabolic Diseases",
+            "Endocrine System Diseases"
+          ],
+          "definition": {
+            "text": "A subclass of DIABETES MELLITUS that is not INSULIN-responsive or dependent (NIDDM). It is characterized initially by INSULIN RESISTANCE and HYPERINSULINEMIA; and eventually by GLUCOSE INTOLERANCE; HYPERGLYCEMIA; and overt diabetes. Type II diabetes mellitus is no longer considered a disease exclusively found in adults. Patients seldom develop KETOSIS but often exhibit OBESITY.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003924",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04460885",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04460885, NCT04770532, NCT04795531, NCT04880850)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -101,6 +126,20 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes",
+        "Type 2 Diabetes Mellitus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003920",
+          "term": "Diabetes Mellitus"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2014-05-26",
         "precision": "day"
@@ -199,6 +238,20 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes",
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003920",
+          "term": "Diabetes Mellitus"
+        },
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2016-11-15",
         "precision": "day"
@@ -297,6 +350,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2018-11-09",
         "precision": "day"
@@ -414,6 +476,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 1"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003922",
+          "term": "Diabetes Mellitus, Type 1"
+        }
+      ],
       "startDate": {
         "value": "2018-11-29",
         "precision": "day"
@@ -532,6 +603,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2018-11-29",
         "precision": "day"
@@ -643,6 +723,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 1"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003922",
+          "term": "Diabetes Mellitus, Type 1"
+        }
+      ],
       "startDate": {
         "value": "2018-12-07",
         "precision": "day"
@@ -761,6 +850,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2019-05-07",
         "precision": "day"
@@ -878,6 +976,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2019-05-09",
         "precision": "day"
@@ -992,6 +1099,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2019-05-09",
         "precision": "day"
@@ -1101,6 +1217,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2020-10-01",
         "precision": "day"
@@ -1204,6 +1329,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2020-10-16",
         "precision": "day"
@@ -1316,6 +1450,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2020-11-25",
         "precision": "day"
@@ -1482,6 +1625,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2020-12-22",
         "precision": "day"
@@ -1591,6 +1743,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2021-03-01",
         "precision": "day"
@@ -1704,6 +1865,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2021-03-05",
         "precision": "day"
@@ -1880,6 +2050,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2021-03-24",
         "precision": "day"
@@ -2043,6 +2222,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2021-04-28",
         "precision": "day"
@@ -2140,6 +2328,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 1"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003922",
+          "term": "Diabetes Mellitus, Type 1"
+        }
+      ],
       "startDate": {
         "value": "2021-04-30",
         "precision": "day"
@@ -2265,6 +2462,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2021-05-14",
         "precision": "day"
@@ -2427,6 +2633,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2021-11-30",
         "precision": "day"
@@ -2533,6 +2748,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2022-04-11",
         "precision": "day"
@@ -2634,6 +2858,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2022-06-01",
         "precision": "day"
@@ -2736,6 +2969,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2022-06-22",
         "precision": "day"
@@ -2863,6 +3105,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-04-11",
         "precision": "day"
@@ -2952,6 +3203,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-04-25",
         "precision": "day"
@@ -3047,6 +3307,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2023-09-22",
         "precision": "day"
@@ -3146,6 +3415,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Type 2 Diabetes"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2024-02-15",
         "precision": "day"
@@ -3251,6 +3529,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2024-02-26",
         "precision": "day"
@@ -3359,6 +3646,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2024-04-19",
         "precision": "day"
@@ -3463,6 +3759,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 1"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003922",
+          "term": "Diabetes Mellitus, Type 1"
+        }
+      ],
       "startDate": {
         "value": "2025-04-15",
         "precision": "day"
@@ -3552,6 +3857,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 1"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003922",
+          "term": "Diabetes Mellitus, Type 1"
+        }
+      ],
       "startDate": {
         "value": "2025-08-11",
         "precision": "day"
@@ -3656,6 +3970,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2025-08-15",
         "precision": "day"
@@ -3758,6 +4081,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 1"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003922",
+          "term": "Diabetes Mellitus, Type 1"
+        }
+      ],
       "startDate": {
         "value": "2025-08-28",
         "precision": "day"
@@ -3847,6 +4179,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2026-05-28",
         "precision": "day"
@@ -3938,6 +4279,15 @@
       "sponsor": "Novo Nordisk A/S",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        }
+      ],
       "startDate": {
         "value": "2026-07-02",
         "precision": "day"
@@ -4075,5 +4425,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:36.012Z"
+  "lastIngestedAt": "2026-10-29T19:14:27.541Z"
 }

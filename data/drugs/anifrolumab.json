@@ -88,6 +88,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D008180",
+          "term": "Lupus Erythematosus, Systemic",
+          "areas": [
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "A chronic, relapsing, inflammatory, and often febrile multisystemic disorder of connective tissue, characterized principally by involvement of the skin, joints, kidneys, and serosal membranes. It is of unknown etiology, but is thought to represent a failure of the regulatory mechanisms of the autoimmune system. The disease is marked by a wide range of system dysfunctions, an elevated erythrocyte sedimentation rate, and the formation of LE cells in the blood or bone marrow.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D008180",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT01438489",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT01438489, NCT04877691)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -157,6 +182,15 @@
       "sponsor": "MedImmune LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2012-01-01",
         "precision": "month"
@@ -411,6 +445,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2012-04-20",
         "precision": "day"
@@ -537,6 +580,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Active Systemic Lupus Erythematosus"
+      ],
       "startDate": {
         "value": "2015-06-09",
         "precision": "day"
@@ -751,6 +797,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Active Systemic Lupus Erythematosus"
+      ],
       "startDate": {
         "value": "2015-07-09",
         "precision": "day"
@@ -914,6 +963,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Lupus Nephritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008181",
+          "term": "Lupus Nephritis"
+        },
+        {
+          "id": "D009393",
+          "term": "Nephritis"
+        }
+      ],
       "startDate": {
         "value": "2015-11-04",
         "precision": "day"
@@ -1016,6 +1078,11 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Safety",
+        "Pharmacokinetics",
+        "Healthy Subjects"
+      ],
       "startDate": {
         "value": "2015-11-16",
         "precision": "day"
@@ -1141,6 +1208,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Active Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003240",
+          "term": "Connective Tissue Diseases"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ],
       "startDate": {
         "value": "2016-06-30",
         "precision": "day"
@@ -1237,6 +1317,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2017-02-14",
         "precision": "day"
@@ -1384,6 +1473,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2021-06-08",
         "precision": "day"
@@ -1494,6 +1592,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2021-07-27",
         "precision": "day"
@@ -1594,6 +1701,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Active Systemic Lupus Erythematosus"
+      ],
       "startDate": {
         "value": "2021-09-13",
         "precision": "day"
@@ -1694,6 +1804,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Lupus Nephritis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008181",
+          "term": "Lupus Nephritis"
+        },
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2022-02-15",
         "precision": "day"
@@ -1804,6 +1927,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Participants Study"
+      ],
       "startDate": {
         "value": "2022-03-22",
         "precision": "day"
@@ -1911,6 +2037,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2023-02-27",
         "precision": "day"
@@ -2013,6 +2148,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2023-10-27",
         "precision": "day"
@@ -2113,6 +2257,32 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Sclerosis",
+        "Scleroderma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012595",
+          "term": "Scleroderma, Systemic"
+        },
+        {
+          "id": "D045743",
+          "term": "Scleroderma, Diffuse"
+        },
+        {
+          "id": "D017563",
+          "term": "Lung Diseases, Interstitial"
+        },
+        {
+          "id": "D001327",
+          "term": "Autoimmune Diseases"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ],
       "startDate": {
         "value": "2023-11-08",
         "precision": "day"
@@ -2226,6 +2396,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2024-03-14",
         "precision": "day"
@@ -2338,6 +2517,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Long-Term Organ Damage in Adult Patients With Active Systemic Lupus Erythematosus"
+      ],
       "startDate": {
         "value": "2024-05-09",
         "precision": "day"
@@ -2430,6 +2612,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polymyositis, Dermatomyositis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003882",
+          "term": "Dermatomyositis"
+        },
+        {
+          "id": "D017285",
+          "term": "Polymyositis"
+        }
+      ],
       "startDate": {
         "value": "2024-06-20",
         "precision": "day"
@@ -2542,6 +2737,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Cutaneous Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008178",
+          "term": "Lupus Erythematosus, Cutaneous"
+        },
+        {
+          "id": "D008179",
+          "term": "Lupus Erythematosus, Discoid"
+        }
+      ],
       "startDate": {
         "value": "2024-06-29",
         "precision": "day"
@@ -2653,6 +2861,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
       "startDate": {
         "value": "2024-10-21",
         "precision": "day"
@@ -2769,6 +2980,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        },
+        {
+          "id": "D001327",
+          "term": "Autoimmune Diseases"
+        }
+      ],
       "startDate": {
         "value": "2024-10-22",
         "precision": "day"
@@ -2853,6 +3077,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus (SLE)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2025-02-03",
         "precision": "day"
@@ -2952,6 +3185,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Lupus Erythematosus, Systemic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2025-02-28",
         "precision": "day"
@@ -3048,6 +3290,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2025-07-01",
         "precision": "day"
@@ -3151,6 +3402,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2025-11-07",
         "precision": "day"
@@ -3238,6 +3498,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Lupus Erythematosus, Systemic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2025-12-31",
         "precision": "day"
@@ -3328,6 +3597,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2026-01-16",
         "precision": "day"
@@ -3430,6 +3708,23 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D007239",
+          "term": "Infections"
+        }
+      ],
       "startDate": {
         "value": "2026-01-26",
         "precision": "day"
@@ -3517,6 +3812,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Lupus Erythematosus, Systemic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        },
+        {
+          "id": "D005221",
+          "term": "Fatigue"
+        }
+      ],
       "startDate": {
         "value": "2026-03-19",
         "precision": "day"
@@ -3619,6 +3927,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2026-04-13",
         "precision": "day"
@@ -3727,6 +4044,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2026-06-04",
         "precision": "day"
@@ -3826,6 +4152,19 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        },
+        {
+          "id": "D009165",
+          "term": "Mycobacterium Infections, Nontuberculous"
+        }
+      ],
       "startDate": {
         "value": "2026-08-31",
         "precision": "day"
@@ -3933,6 +4272,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Lupus Erythematosus, Systemic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2026-08-31",
         "precision": "day"
@@ -4048,6 +4396,9 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Sclerosis Cutaneous Lupus E Myopathies Systemic Lupus Erythematosus"
+      ],
       "startDate": {
         "value": "2026-08-31",
         "precision": "day"
@@ -4139,6 +4490,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2026-10-01",
         "precision": "day"
@@ -4233,6 +4593,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "startDate": {
         "value": "2026-10-30",
         "precision": "day"
@@ -4336,6 +4705,15 @@
       "sponsor": "AstraZeneca",
       "sponsorClass": "INDUSTRY",
       "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008180",
+          "term": "Lupus Erythematosus, Systemic"
+        }
+      ],
       "design": {},
       "population": {
         "minAge": "18 Years",
@@ -4426,5 +4804,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:35:58.584Z"
+  "lastIngestedAt": "2026-10-29T19:12:42.337Z"
 }

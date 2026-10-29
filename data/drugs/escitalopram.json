@@ -195,6 +195,15 @@
       "status": "COMPLETED",
       "sponsor": "Hillerod Hospital, Denmark",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Major Depression"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        }
+      ],
       "startDate": {
         "value": "2004-03-01",
         "precision": "month"
@@ -295,6 +304,19 @@
       "status": "COMPLETED",
       "sponsor": "Forest Laboratories",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Major Depressive Disorder"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        },
+        {
+          "id": "D003863",
+          "term": "Depression"
+        }
+      ],
       "startDate": {
         "value": "2005-03-01",
         "precision": "month"
@@ -456,6 +478,19 @@
       "status": "COMPLETED",
       "sponsor": "Medtronic - MITG",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Major Depressive Disorder"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        },
+        {
+          "id": "D003866",
+          "term": "Depressive Disorder"
+        }
+      ],
       "startDate": {
         "value": "2006-01-01",
         "precision": "month"
@@ -557,6 +592,15 @@
       "status": "COMPLETED",
       "sponsor": "Sykehuset Innlandet HF",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dementia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003704",
+          "term": "Dementia"
+        }
+      ],
       "startDate": {
         "value": "2006-09-01",
         "precision": "month"
@@ -673,6 +717,15 @@
       "status": "COMPLETED",
       "sponsor": "Xian-Janssen Pharmaceutical Ltd.",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Depressive Disorder, Major"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        }
+      ],
       "startDate": {
         "value": "2009-07-07",
         "precision": "day"
@@ -822,6 +875,15 @@
       "status": "COMPLETED",
       "sponsor": "University of California, Los Angeles",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Major Depressive Disorder"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        }
+      ],
       "startDate": {
         "value": "2009-10-01",
         "precision": "month"
@@ -923,6 +985,19 @@
       "status": "COMPLETED",
       "sponsor": "Konkuk University Medical Center",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Alzheimer's Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000544",
+          "term": "Alzheimer Disease"
+        },
+        {
+          "id": "D003866",
+          "term": "Depressive Disorder"
+        }
+      ],
       "startDate": {
         "value": "2011-11-01",
         "precision": "month"
@@ -1026,6 +1101,15 @@
       "status": "TERMINATED",
       "sponsor": "AbbVie (prior sponsor, Abbott)",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Major Depressive Disorder"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        }
+      ],
       "startDate": {
         "value": "2012-01-01",
         "precision": "month"
@@ -1138,6 +1222,27 @@
       "status": "TERMINATED",
       "sponsor": "University Health Network, Toronto",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "End Stage Renal Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D007676",
+          "term": "Kidney Failure, Chronic"
+        },
+        {
+          "id": "D051437",
+          "term": "Renal Insufficiency"
+        },
+        {
+          "id": "D051436",
+          "term": "Renal Insufficiency, Chronic"
+        },
+        {
+          "id": "D003863",
+          "term": "Depression"
+        }
+      ],
       "startDate": {
         "value": "2015-03-01",
         "precision": "month"
@@ -1237,6 +1342,19 @@
       "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Anxiety Disorders,Generalized Anxiety Disorder"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001008",
+          "term": "Anxiety Disorders"
+        },
+        {
+          "id": "D000098647",
+          "term": "Generalized Anxiety Disorder"
+        }
+      ],
       "startDate": {
         "value": "2019-05-30",
         "precision": "day"
@@ -1347,6 +1465,15 @@
       "status": "RECRUITING",
       "sponsor": "University of Cincinnati",
       "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Anxiety"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001008",
+          "term": "Anxiety Disorders"
+        }
+      ],
       "startDate": {
         "value": "2021-03-08",
         "precision": "day"
@@ -1454,6 +1581,20 @@
       "status": "RECRUITING",
       "sponsor": "Mehmet Kemal Arikan",
       "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Healthy",
+        "Major Depressive Disorder (MDD)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        },
+        {
+          "id": "D012008",
+          "term": "Recurrence"
+        }
+      ],
       "startDate": {
         "value": "2025-01-01",
         "precision": "day"
@@ -2488,5 +2629,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:06.633Z"
+  "lastIngestedAt": "2026-10-29T19:13:56.332Z"
 }
