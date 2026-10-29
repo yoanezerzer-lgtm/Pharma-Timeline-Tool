@@ -1,0 +1,1823 @@
+{
+  "slug": "bepirovirsen",
+  "brandName": "Hibsago",
+  "inn": "bepirovirsen",
+  "modality": "Drug (NDA)",
+  "sponsor": "GLAXOSMITHKLINE LLC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "In combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis",
+      "slug": "in-combination-with-nucleos-t-ide-analog-reverse",
+      "approvalDate": {
+        "value": "2026-10-20",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA221276%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "221276",
+      "applicationType": "NDA",
+      "sponsor": "GLAXOSMITHKLINE LLC",
+      "originalApprovalDate": {
+        "value": "2026-10-20",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "b-clear",
+      "nctId": "NCT04449029",
+      "protocolNumber": "209668",
+      "acronym": "B-Clear",
+      "title": "Phase IIb Multi-Center, Randomised, Partial-Blind Parallel Cohort Study to Assess the Efficacy and Safety of Treatment With GSK3228836 in Participants With Chronic Hepatitis B Virus (B-Clear)",
+      "briefTitle": "A Study of GSK3228836 in Participants With Chronic Hepatitis B (CHB)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-07-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-03-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-03-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 457,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1: GSK3228836 300 mg + LD",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants on stable nucleos(t)ide treatment will receive 300 milligrams (mg) GSK3228836 once weekly for 24 weeks along with loading dose (LD) of 300 mg GSK3228836 on Day 4 and Day 11."
+        },
+        {
+          "label": "Cohort 1: GSK3228836 300 mg + LD/ GSK3228836 150 mg + Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants on stable nucleos(t)ide treatment will receive 300 mg GSK3228836 once weekly for 12 weeks along with LD of 300 mg GSK3228836 on Day 4 and Day 11 followed by step-down in dose of 150 mg GSK3228836 once weekly for 12 weeks along with placebo to match to maintain participant blinding."
+        },
+        {
+          "label": "Cohort 1: GSK3228836 300 mg + LD/ Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants on stable nucleos(t)ide treatment will receive 300 mg GSK3228836 once weekly for 12 weeks along with LD of 300 mg GSK3228836 on Day 4 and Day 11 followed by placebo once weekly for 12 weeks."
+        },
+        {
+          "label": "Cohort 1: Placebo/ GSK3228836 300 mg + Placebo LD",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants on stable nucleos(t)ide treatment will receive placebo once weekly for 12 weeks followed by 300 mg GSK3228836 once weekly for 12 weeks along with placebo LD to match on Day 4 and Day 11."
+        },
+        {
+          "label": "Cohort 2: GSK3228836 300 mg + LD",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants not currently on nucleos(t)ide therapy will receive 300 mg GSK3228836 once weekly for 24 weeks along with LD of 300 mg GSK3228836 on Day 4 and Day 11."
+        },
+        {
+          "label": "Cohort 2: GSK3228836 300 mg + LD/ GSK3228836 150 mg + Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants not currently on nucleos(t)ide therapy will receive 300 mg GSK3228836 once weekly for 12 weeks along with LD of 300 mg GSK3228836 on Day 4 and Day 11 followed by step-down in dose of 150 mg GSK3228836 once weekly for 12 weeks along with placebo to match to maintain participant blinding."
+        },
+        {
+          "label": "Cohort 2: GSK3228836 300 mg + LD/ Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants not currently on nucleos(t)ide therapy will receive 300 mg GSK3228836 once weekly for 12 weeks along with LD of 300 mg GSK3228836 on Day 4 and Day 11 followed by placebo once weekly for 12 weeks."
+        },
+        {
+          "label": "Cohort 2: Placebo/ GSK3228836 300 mg + Placebo LD",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants not currently on nucleos(t)ide therapy will receive placebo once weekly for 12 weeks followed by 300 mg GSK3228836 once weekly for 12 weeks along with placebo LD to match on Day 4 and Day 11."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Achieving Sustained Virologic Response (SVR)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Achieving HBsAg and HBV DNA<LLOQ",
+        "Number of Participants With Categorical Changes From Baseline in HBsAg Values",
+        "Number of Participants With Categorical Changes From Baseline in HBV DNA Values",
+        "Number of Participants With Alanine Aminotransferase (ALT) Normalization",
+        "Median Time to ALT Normalization",
+        "Number of Participants With Positive Hepatitis B Virus E-antibody (HBeAb)",
+        "Mean HBsAg and HBV DNA Level",
+        "Mean Values of Hepatitis B Virus e Antigen (HBeAg) Level",
+        "Mean Change From Baseline in HBsAg and HBV DNA Level",
+        "Mean Change From Baseline in HBeAg Level",
+        "Mean Hepatitis B Virus Surface Antigen Antibody (Anti-HBsAg) Level",
+        "Mean Change From Baseline in Anti-HBsAg Level",
+        "Mean Area Under the Concentration-time Curve From Time 0 up to 24 Hours (AUC0-24h) of GSK3228836",
+        "Mean Maximum Observed Concentration (Cmax) of GSK3228836",
+        "Median Time of Maximum Observed Concentration (Tmax) of GSK3228836",
+        "Mean AUC0-24h of NA Therapies",
+        "Mean Ctau of NA Therapies",
+        "Mean Cmax of NA Therapies",
+        "Median Tmax of NA Therapies",
+        "Median Terminal Half-life (t1/2) of GSK3228836",
+        "Mean Ctau of GSK3228836"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04449029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04449029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04449029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04449029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04449029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b-fine",
+      "nctId": "NCT04544956",
+      "protocolNumber": "212602",
+      "acronym": "B-Fine",
+      "title": "B-Fine: An Open Label, Single Arm Study to Mechanistically Interrogate the Therapeutic Effect of GSK3228836 in Patients With Chronic Hepatitis B Via Intrahepatic Immunophenotyping",
+      "briefTitle": "A Mechanistic Study of GSK3228836 With Fine Needle Aspiration (FNA) in Participants With Chronic Hepatitis B",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-10-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-11-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-11-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 12,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "GSK3228836 300 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants on stable nucleos(t)ide therapy will receive GSK3228836 300 mg subcutaneously (SC) weekly once for 12 weeks along with a loading dose of GSK3228836 300 mg in Week 1 (Day 4) and Week 2 (Day 11)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving Serum Hepatitis B Virus Surface Antigen (HBsAg) Level Less Than (<) Lower Limit of Quantitation (LLOQ)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With Sustained HBsAg Response (HBsAg <LLOQ) for 24 Weeks After the Planned and Actual End of GSK3228836 Treatment",
+        "Percentage of Participants Achieving Sustained Virologic Response (HBsAg <LLOQ and HBV DNA <LLOQ) for 24 Weeks After the Planned and Actual End of GSK3228836 Treatment",
+        "Percentage of Participants Achieving HBsAg <LLOQ at Indicated Time Points",
+        "Percentage of Participants Achieving HBV DNA <LLOQ at Indicated Time Points",
+        "Percentage of Participants Achieving HBsAg <LLOQ and HBV DNA <LLOQ at Indicated Time Points",
+        "Percentage of Participants With Categorical Change From Baseline in HBsAg Values at Indicated Time Points",
+        "Number of Participants With Alanine Aminotransferase (ALT) Greater Than (>)3 Times Upper Limit of Normal (ULN) at Indicated Time Points",
+        "Number of Participants With HBe Antibody (Anti-HBeAg) Levels",
+        "Actual Values of HBsAg at Indicated Time Points",
+        "Mean Change From Baseline in HBsAg at Indicated Time Points",
+        "Actual Values of HBV DNA at Indicated Time Points",
+        "Mean Change From Baseline in HBV DNA at Indicated Time Points",
+        "Actual Values of HB Surface Antibody (Anti-HBsAg) Levels at Indicated Time Points",
+        "Area Under the Concentration-time Curve (AUC) for ALT at Indicated Time Points",
+        "Time to Maximum ALT"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04544956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04544956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04544956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04544956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04544956",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b-together",
+      "nctId": "NCT04676724",
+      "protocolNumber": "209348",
+      "acronym": "B-Together",
+      "title": "A Phase IIb Multi-Center, Randomised, Open Label Study to Assess the Efficacy and Safety of Sequential Treatment With GSK3228836 Followed by Pegylated Interferon Alpha 2a in Participants With Chronic Hepatitis B Virus (B-Together)",
+      "briefTitle": "Study of Sequential GSK3228836 and Peginterferon Treatment in Participants With Chronic Hepatitis B (CHB)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-01-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-02-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-02-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 108,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "GSK3228836 300 mg (24 weeks) + PegIFN 180 mcg (24 weeks)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants on stable NA therapy received 300 milligrams per week (mg/week) GSK3228836 for 24 weeks (plus a loading dose on Day 4 and 11), followed by Pegylated Interferon (PegIFN) 180 microgram per week (mcg/week) up to 24 weeks."
+        },
+        {
+          "label": "GSK3228836 300 mg (12 weeks) + PegIFN 180 mcg (24 weeks)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants on stable NA therapy received 300mg/week GSK3228836 for 12 weeks (plus a loading dose on Day 4 and 11), followed by PegIFN 180 mcg/week up to 24 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Treatment Arm 1 - Percentage of Participants Achieving Sustained Virologic Response (SVR) for 24 Weeks After End of Treatment",
+        "Treatment Arm 2 - Percentage of Participants Achieving Sustained Virologic Response (SVR) for 24 Weeks After End of Treatment"
+      ],
+      "secondaryEndpoints": [
+        "Treatment Arm 1: Percentage of Participants Achieving HBsAg and HBV DNA < Lower Limit of Quantitation (LLOQ)",
+        "Treatment Arm 2: Percentage of Participants Achieving HBsAg and HBV DNA < Lower Limit of Quantitation (LLOQ)",
+        "Treatment Arm 1: Percentage of Participants With Categorical Changes From Baseline in HBsAg Values",
+        "Treatment Arm 2: Percentage of Participants With Categorical Changes From Baseline in HBsAg Values",
+        "Treatment Arm 1: Number of Participants With Alanine Aminotransferase (ALT) Normalization",
+        "Treatment Arm 2: Number of Participants With Alanine Aminotransferase (ALT) Normalization",
+        "Treatment Arm 1: Number of Participants With HBe Antibody (Anti-HBeAg) Levels",
+        "Treatment Arm 2: Number of Participants With HBe Antibody (Anti-HBeAg) Levels",
+        "Treatment Arm 1: Mean Change From Baseline in HBe Antibody Levels",
+        "Treatment Arm 2: Mean Change From Baseline in HBe Antibody Levels",
+        "Treatment Arm 1: Actual Values of HBsAg Levels",
+        "Treatment Arm 2: Actual Values of HBsAg Levels",
+        "Treatment Arm 1: Mean Change From Baseline in HBsAg Levels",
+        "Treatment Arm 2: Mean Change From Baseline in HBsAg Levels",
+        "Treatment Arm 1: Actual Values of HBV DNA Levels",
+        "Treatment Arm 2: Actual Values of HBV DNA Levels",
+        "Treatment Arm 1: Mean Change From Baseline in HBV DNA Levels",
+        "Treatment Arm 2: Mean Change From Baseline in HBV DNA Levels",
+        "Treatment Arm 1: Actual Values of Hepatitis B Virus E-antigen (HBeAg) Levels",
+        "Treatment Arm 2: Actual Values of Hepatitis B Virus E-antigen (HBeAg) Levels",
+        "Treatment Arm 1: Mean Change From Baseline in HBeAg Levels",
+        "Treatment Arm 2: Mean Change From Baseline in HBeAg Levels",
+        "Treatment Arm 1: Actual Values of HBs Antibody Levels",
+        "Treatment Arm 2: Actual Values of HBs Antibody Levels",
+        "Treatment Arm 1: Mean Change From Baseline in HBs Antibody Levels",
+        "Treatment Arm 2: Mean Change From Baseline in HBs Antibody Levels",
+        "Treatment Arm 1: Actual Values of ALT",
+        "Treatment Arm 2: Actual Values of ALT",
+        "Treatment Arm 1: Change From Baseline in ALT",
+        "Treatment Arm 2: Change From Baseline in ALT",
+        "Treatment Arm 1 - Median Time to ALT Normalization in Absence of Rescue Medication for 24 Weeks After End of Treatment",
+        "Treatment Arm 2 - Median Time to ALT Normalization in Absence of Rescue Medication for 24 Weeks After End of Treatment",
+        "Percentage of Participants Achieving Sustained Virologic Response (SVR) for 24 Weeks Off Treatment for Comparison of Efficacy Between Different Treatment Durations"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04676724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04676724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04676724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04676724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04676724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "205871",
+      "nctId": "NCT04971928",
+      "protocolNumber": "205871",
+      "title": "A Phase 1, Open-label, Single-Dose Study to Evaluate the Pharmacokinetics of GSK3228836 in Adults With Hepatic Impairment and Healthy Matched Control Participants (B-Assured)",
+      "briefTitle": "Phase 1 Study of GSK3228836 Pharmacokinetics in Participants With Hepatic Impairment",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-09-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-05-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-05-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Participants with Moderate (CP-B) hepatic impairment",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Participants with Mild (CP-A) hepatic impairment",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Healthy participants",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the concentration-time curve (AUC) from time zero (pre-dose) extrapolated to infinite time [AUC(0-infinity)]",
+        "Maximum observed concentration (Cmax)"
+      ],
+      "secondaryEndpoints": [
+        "AUC from time zero (pre-dose) to 24 hours [AUC(0-24)]",
+        "AUC from time zero (pre-dose) to 168 hours [AUC(0-168)]",
+        "Plasma concentration of GSK3228836 on Day 8",
+        "Apparent terminal phase half-life (t1/2)",
+        "Apparent clearance (CL/F)",
+        "Time of occurrence of Cmax (Tmax)",
+        "Apparent terminal phase volume of distribution (Vz/F)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04971928",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04971928",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04971928",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04971928",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04971928",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b-sure",
+      "nctId": "NCT04954859",
+      "protocolNumber": "206882",
+      "acronym": "B-Sure",
+      "title": "A Prospective, Multi-Centre Study (B-Sure) to Evaluate Long-Term Durability of Treatment Response in Chronic Hepatitis B Participants With and Without Nucleos(t)Ide Therapy Who Have Participated in a Previous Bepirovirsen Treatment Study",
+      "briefTitle": "Long-term Follow-up Study to Evaluate Durability of Treatment Response in Previous Bepirovirsen Study Participants (B-Sure)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-12-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-01-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-01-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 360,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Not-on-NA participants",
+          "type": "EXPERIMENTAL",
+          "description": "Participants rolling over from study 209668 who have not received nucleos(t)ide analogue (NA) therapy during the parent study and remain off NAs will be included in this arm. Participants will be followed up for 33 months. Participants maintaining either functional cure (FC) or a partial response off NA treatment at Month 33 will be eligible to be followed up for an additional 2 years. No study treatment will be administered in this study."
+        },
+        {
+          "label": "On-NA participants",
+          "type": "EXPERIMENTAL",
+          "description": "Participants rolling over from studies 209668, 209348, 212602, 202009, 219288, and 217023 who entered the parent study on stable NA therapy and remained on NA therapy for the duration of the treatment and follow-up periods in the parent study will be included in this arm. NA cessation will occur at 3 months in 206882 for eligible and willing participants. Participants will be followed up for 33 months. Participants rolling over from studies 209668 and 209348 who stopped NA treatment and are maintaining either FC or a partial response at Month 33, and remaining off NA treatment, will be eligible to be followed up for an additional 2 years. No study treatment will be administered in this study."
+        },
+        {
+          "label": "NA-cessated participants",
+          "type": "EXPERIMENTAL",
+          "description": "Participants rolling over from studies 202009 and 219288 who have stopped NA treatment during the parent study will be included in this arm. Participants will be followed up for 33 months. No study treatment will be administered in this study."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Not-on-NA participants without loss of parent study primary outcome (PSPO)",
+        "Percentage of On-NA participants rolling over from studies 209668 and 209348 without loss of functional cure (FC) after NA-cessation in study 206882",
+        "Percentage of On-NA participants rolling over from study 217023 without loss of FC after NA-cessation in study 206882",
+        "Percentage of NA-cessated participants rolling over from studies 202009 and 219288 without loss of FC after NA-cessation in the parent study"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of On-NA and NA-cessated participants with PSPO in the parent study who have hepatitis B surface antigen (HBsAg) reversion or use of any rescue medication after NA cessation (in either parent study or study 206682)",
+        "Percentage of On-NA and NA-cessated participants with PSPO in the parent study who have virologic relapse or use of any rescue medication after NA cessation (in either parent study or study 206682)",
+        "Percentage of On-NA and NA-cessated participants with PSPO in the parent study who have clinical relapse or use of any rescue medication after NA cessation (in either parent study or study 206682)",
+        "Percentage of On-NA and NA-cessated participants with PSPO in the parent study who receive NA retreatment after NA cessation (in either parent study or study 206682)",
+        "Percentage of On-NA participants with PSPO in the parent study, who continue NA treatment in study 206882, and have no loss of treatment response",
+        "Percentage of Not-on-NA participants with a partial response in the parent study and a delayed FC in study 206882 in absence of rescue medication after end of treatment in the parent study",
+        "Time to loss of FC from time of achieving delayed FC in Not-on-NA participants with a partial response in the parent study and a delayed FC in study 206882",
+        "Percentage of On-NA participants with a partial response in the parent study, who discontinue NA treatment in study 206882, and have a delayed FC in 206882 in absence of rescue medication after end of treatment in the parent study",
+        "Time to loss of FC in On-NA participants who achieve a partial response in the parent study, discontinue NA treatment in study 206882 and achieve delayed FC in 206882",
+        "Percentage of On-NA participants with a partial response in the parent study, who do not discontinue NA treatment in study 206882, and have a delayed treatment response in 206882 in absence of rescue medication after end of treatment in the parent study",
+        "Time to loss of treatment response in On-NA participants who achieve a partial response in the parent study, do not discontinue NA treatment in study 206882 and have a delayed treatment response in 206882",
+        "Percentage of On-NA participants with a partial response in the parent study, who discontinue NA treatment in study 206882, and have HBsAg loss in the absence of any rescue medication after NA cessation in 206882",
+        "Percentage of On-NA participants with a partial response in the parent study, who discontinue NA treatment in study 206882, and have virologic relapse or use of any rescue medication after NA cessation in 206882",
+        "Percentage of On-NA participants with a partial response in the parent study, who discontinue NA treatment in study 206882, and have clinical relapse or use of any rescue medication after NA cessation in 206882",
+        "Percentage of On-NA participants with a partial response in the parent study, who discontinue NA treatment in study 206882 and have use of any rescue medication after NA cessation in 206882",
+        "Percentage of participants with anti-HBs (antibody to HBsAg)",
+        "Percentage of participants with anti-HBe (antibody to hepatitis B e-antigen [HBeAg])",
+        "Absolute values for HBsAg, hepatitis B virus (HBV) deoxyribonucleic acid (DNA), HBeAg (logarithm to the base 10 [log10] international units per milliliter [IU/mL])",
+        "Change from Baseline for HBsAg, HBV DNA, HBeAg (log10 IU/mL)",
+        "Absolute values for hepatitis B core-related antigen (HBcrAg) (kiloUnits per milliliter [kU/mL])",
+        "Change from Baseline for HBcrAg (kU/mL)",
+        "Absolute values for HBV ribonucleic acid (RNA) (log10 IU/ml)",
+        "Change from Baseline for HBV RNA (log10 IU/ml)",
+        "Percentage of participants with mutations"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04954859",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04954859",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04954859",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04954859",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04954859",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "217023",
+      "nctId": "NCT05276297",
+      "protocolNumber": "217023",
+      "title": "A Phase 2, Single-blinded, Randomised, Controlled Multi-country Study to Evaluate the Safety, Reactogenicity, Efficacy and Immune Response Following Sequential Treatment With an Anti-sense Oligonucleotide (ASO) Against Chronic Hepatitis B (CHB) Followed by Chronic Hepatitis B Targeted Immunotherapy (CHB-TI) in CHB Patients Receiving Nucleos(t)Ide Analogue (NA) Therapy",
+      "briefTitle": "A Study on the Safety, Efficacy and Immune Response Following Sequential Treatment With an Anti-sense Oligonucleotide Against Chronic Hepatitis B (CHB) and Chronic Hepatitis B Targeted Immunotherapy (CHB-TI) in CHB Patients Receiving Nucleos(t)Ide Analogue (NA) Therapy",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-03-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-08-05",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-08-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 174,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ASO24-TI Group",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants receive GSK3228836 (Treatment 1) study intervention for 24 weeks of Treatment 1 period, followed by GSK3528869A (Treatment 2) study intervention administered at Days 1, 57, 113 and 169 of Treatment 2 period. The interval between Treatment 1 and Treatment 2 is preferably 1 week, with the possibility to extend up to 12 weeks."
+        },
+        {
+          "label": "ASO24 Group",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Eligible participants receive GSK3228836 (Treatment 1) study intervention for 24 weeks of Treatment 1 period, followed by non-active control (Treatment 2) study intervention administered at Days 1, 57, 113 and 169 of Treatment 2 period. The interval between Treatment 1 and Treatment 2 is preferably 1 week, with the possibility to extend up to 12 weeks."
+        },
+        {
+          "label": "ASO12-TI Group",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible participants receive GSK3228836 (Treatment 1) study intervention for 12 weeks of Treatment 1 period, followed by GSK3528869A (Treatment 2) study intervention administered at Days 1, 57, 113 and 169 of Treatment 2 period. The interval between Treatment 1 and Treatment 2 is preferably 1 week, with the possibility to extend up to 12 weeks."
+        },
+        {
+          "label": "ASO12 Group",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Eligible participants receive GSK3228836 (Treatment 1) study intervention for 12 weeks of Treatment 1 period, followed by non-active control (Treatment 2) study intervention administered at Days 1, 57, 113 and 169 of Treatment 2 period. The interval between Treatment 1 and Treatment 2 is preferably 1 week, with the possibility to extend up to 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of participants reporting any grade 3 adverse event (AE) from first dose of GSK3228836 up to study end",
+        "Percentage of participants reporting any serious adverse event (SAE) from first dose of GSK3228836 up to study end",
+        "Percentage of participants reporting any adverse events of special interest (AESIs) grade 3 or higher from first dose of GSK3228836 up to study end",
+        "Percentage of participants who achieve sustained virologic response (SVR) for 24 weeks after the planned end of active treatment in the absence of rescue medication, and difference between treatment arms (corresponding to GSK3228836 regimens)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of participants reporting each solicited administration site event post-GSK3528869A study intervention administration",
+        "Percentage of participants reporting each solicited systemic event post-GSK3528869A study intervention administration",
+        "Percentage of participants reporting any unsolicited AE post-GSK3528869A study intervention administration",
+        "Percentage of participants reporting any AE from first dose of GSK3228836 up to study end",
+        "Percentage of participants reporting any AESIs from first dose of GSK3228836 up to study end",
+        "Percentage of participants reporting any pIMDs from first dose of GSK3528869A up to study end",
+        "Percentage of participants reporting hematological, biochemical or urinalysis laboratory abnormalities at pre-defined time points during Treatment 1 period",
+        "Percentage of participants reporting hematological, biochemical or urinalysis laboratory abnormalities at pre-defined time points during Treatment 2 period",
+        "Percentage of participants reporting hematological, biochemical or urinalysis laboratory abnormalities at pre-defined time points during follow-up period",
+        "Percentage of participants who achieve quantitative Hepatitis B surface antigen assessment (qHBsAg) decrease and HBsAg loss at pre-defined time points from GSK3228836 baseline (Treatment 1-Day 1) up to study end",
+        "Changes in qHBsAg at pre-defined time points from GSK3228836 baseline (Treatment 1-Day 1) up to study end",
+        "Percentage of participants with HBsAg loss and anti-HBs seroconversion",
+        "Geometric mean concentrations (GMCs) of qHBsAg",
+        "Duration of SVR in terms of time to the first occurrence of HBsAg reversion and/or HBV DNA reversion",
+        "Percentage of participants who experienced HBV DNA virologic breakthrough",
+        "Percentage of participants with anti-HBc antibody response",
+        "Anti-HBc antibody concentrations",
+        "Percentage of participants who achieved HBsAg seroconversion",
+        "Percentage of participants with anti-HBs antibody response",
+        "Anti-HBs antibody concentrations",
+        "Percentage of participants with anti-HBs antibody concentrations equal to or above (≥) 10 mIU/mL",
+        "Percentage of participants with anti-HBs antibody concentrations equal to or above (≥) 100 mIU/mL",
+        "Frequency of HBc-specific CD4+ T-cells",
+        "Frequency of HBs-specific CD4+ T-cells",
+        "Frequency of HBc-specific CD8+ T-cells",
+        "Frequency of HBs-specific CD8+ T-cells",
+        "Number of HBc- and HBs-specific CD4+ T cells responders",
+        "Number of HBc- and HBs-specific CD8+ T cells responders"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05276297",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05276297",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05276297",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05276297",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05276297",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "214760",
+      "nctId": "NCT05330455",
+      "protocolNumber": "214760",
+      "title": "Four-part, Randomized, Double-blind (Parts 1, 2A, 3 and 4), Multi-center, Placebo-controlled Study to Assess the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of GSK3965193 Monotherapy in Healthy Participants and in Participants Living With Chronic Hepatitis B Infection; and GSK3965193 in Combination With Bepirovirsen in Participants Living With Chronic Hepatitis B Infection",
+      "briefTitle": "Study of GSK3965193 in Healthy Participants and Participants Living With Chronic Hepatitis B Infection",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-04-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-04-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 74,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1: Cohort 1 - Placebo/GSK3965193 Dose 2/Dose 3/Dose 4",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received a single dose of placebo oral solution on Day 1 in Treatment Period 1; followed by a single dose of GSK3965193 Dose 2 oral solution on Day 1 in Treatment Period 2; followed by a single dose of GSK3965193 Dose 3 oral solution on Day 1 in Treatment Period 3; further followed by a single dose of GSK3965193 Dose 4 oral solution on Day 1 in Treatment Period 4. Dose 4 of GSK3965193 was higher than Dose 3 and Dose 3 was higher than Dose 2."
+        },
+        {
+          "label": "Part 1: Cohort 1 - GSK3965193 Dose 1/Placebo/Dose 3/Dose 4",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received a single dose of GSK3965193 Dose 1 oral solution on Day 1 in Treatment Period 1; followed by a single dose of placebo oral solution on Day 1 in Treatment Period 2; followed by a single dose of GSK3965193 Dose 3 oral solution on Day 1 in Treatment Period 3; further followed by a single dose of GSK3965193 Dose 4 oral solution on Day 1 in Treatment Period 4. Dose 4 of GSK3965193 was higher than Dose 3 and Dose 3 was higher than Dose 1."
+        },
+        {
+          "label": "Part 1: Cohort 1 - GSK3965193 Dose 1/Dose 2/Placebo/Dose 4",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received a single dose of GSK3965193 Dose 1 oral solution on Day 1 in Treatment Period 1; followed by a single dose of GSK3965193 Dose 2 oral solution on Day 1 in Treatment Period 2; followed by a single dose of placebo oral solution on Day 1 in Treatment Period 3; further followed by a single dose of GSK3965193 Dose 4 oral solution on Day 1 in Treatment Period 4. Dose 4 of GSK3965193 was higher than Dose 2 and Dose 2 was higher than Dose 1."
+        },
+        {
+          "label": "Part 1: Cohort 1 - GSK3965193 Dose 1/Dose 2/Dose 3/Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received a single dose of GSK3965193 Dose 1 oral solution on Day 1 in Treatment Period 1; followed by a single dose of GSK3965193 Dose 2 oral solution on Day 1 in Treatment Period 2; followed by a single dose of GSK3965193 Dose 3 oral solution on Day 1 in Treatment Period 3; further followed by a single dose of placebo oral solution on Day 1 in Treatment Period 4. Dose 3 of GSK3965193 was higher than Dose 2 and Dose 2 was higher than Dose 1."
+        },
+        {
+          "label": "Part 1: Cohort 2 - Placebo/GSK3965193 Dose 6/Dose 7/Dose 8",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received a single dose of placebo oral solution on Day 1 in Treatment Period 1; followed by a single dose of GSK3965193 Dose 6 oral solution on Day 1 in Treatment Period 2; followed by a single dose of GSK3965193 Dose 7 oral solution on Day 1 in Treatment Period 3; further followed by a single dose of GSK3965193 Dose 8 oral solution on Day 1 in Treatment Period 4. Dose 8 of GSK3965193 was higher than Dose 7 and Dose 7 was higher than Dose 6."
+        },
+        {
+          "label": "Part 1: Cohort 2 - GSK3965193 Dose 5/Placebo/Dose 7/Dose 8",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received a single dose of GSK3965193 Dose 5 oral solution on Day 1 in Treatment Period 1; followed by a single dose of placebo oral solution on Day 1 in Treatment Period 2; followed by a single dose of GSK3965193 Dose 7 oral solution on Day 1 in Treatment Period 3; further followed by a single dose of GSK3965193 Dose 8 oral solution on Day 1 in Treatment Period 4. Dose 8 of GSK3965193 was higher than Dose 7 and Dose 7 was higher than Dose 5."
+        },
+        {
+          "label": "Part 1: Cohort 2 - GSK3965193 Dose 5/Dose 6/Placebo/Dose 8",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received a single dose of GSK3965193 Dose 5 oral solution on Day 1 in Treatment Period 1; followed by a single dose of GSK3965193 Dose 6 oral solution on Day 1 in Treatment Period 2; followed by a single dose of placebo oral solution on Day 1 in Treatment Period 3; further followed by a single dose of GSK3965193 Dose 8 oral solution on Day 1 in Treatment Period 4. Dose 8 of GSK3965193 was higher than Dose 6 and Dose 6 was higher than Dose 5."
+        },
+        {
+          "label": "Part 1: Cohort 2 - GSK3965193 Dose 5/Dose 6/Dose 7/Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received a single dose of GSK3965193 Dose 5 oral solution on Day 1 in Treatment Period 1; followed by a single dose of GSK3965193 Dose 6 oral solution on Day 1 in Treatment Period 2; followed by a single dose of GSK3965193 Dose 7 oral solution on Day 1 in Treatment Period 3; further followed by a single dose of placebo oral solution on Day 1 in Treatment Period 4. Dose 7 of GSK3965193 was higher than Dose 6 and Dose 6 was higher than Dose 5."
+        },
+        {
+          "label": "Part 2A: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Healthy participants received repeat doses of placebo oral solution twice daily (BID) for 14 days."
+        },
+        {
+          "label": "Part 2A: Cohort 5 - GSK3965193 Dose 9 BID",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received repeat doses of GSK3965193 Dose 9 oral solution BID for 14 days. Dose 9 of GSK3965193 was higher than Dose 4 but lower than Dose 5."
+        },
+        {
+          "label": "Part 2A: Cohort 3 - GSK3965193 Dose 5 BID",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received repeat doses of GSK3965193 Dose 5 oral solution BID for 14 days. Dose 5 of GSK3965193 was higher than Dose 9 but lower than Dose 10."
+        },
+        {
+          "label": "Part 2A: Cohort 4 - GSK3965193 Dose 6 BID",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received repeat doses of GSK3965193 Dose 6 oral solution BID for 14 days. Dose 6 of GSK3965193 was higher than Dose 10 but lower than Dose 7."
+        },
+        {
+          "label": "Part 2B: Cohort 6 - GSK3965193 Dose 10 Fasted/Fed",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received GSK3965193 Dose 10 oral tablets under fasted condition in Treatment Period 1, followed by GSK3965193 Dose 10 oral tablets under fed condition in Treatment Period 2. Dose 10 of GSK3965193 was higher than Dose 5 but lower than Dose 6."
+        },
+        {
+          "label": "Part 2B: Cohort 6 - GSK3965193 Dose 10 Fed/Fasted",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants received GSK3965193 Dose 10 oral tablets under fed condition in Treatment Period 1, followed by GSK3965193 Dose 10 oral tablets under fasted condition in Treatment Period 2. Dose 10 of GSK3965193 was higher than Dose 5 but lower than Dose 6."
+        },
+        {
+          "label": "Part 3: Cohort 7 - Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants living with chronic hepatitis B infection (PLWCHB) on stable nucleos(t)ide analog (NA) therapy received repeat doses of placebo oral tablets for 28 days. Participants who completed placebo monotherapy were given the option to receive subsequent treatment of optional open label bepirovirsen subcutaneous (SC) injection from Day 43."
+        },
+        {
+          "label": "Part 3: Cohort 7 - GSK3965193 Dose 9",
+          "type": "EXPERIMENTAL",
+          "description": "PLWCHB on stable NA therapy received repeat doses of GSK3965193 Dose 9 oral tablets for 28 days. Participants who completed GSK3965193 monotherapy were given the option to receive subsequent treatment of optional open label bepirovirsen SC injection from Day 43. Dose 9 of GSK3965193 was higher than Dose 4 but lower than Dose 5."
+        },
+        {
+          "label": "Part 4: Cohort 8 - Placebo + Bepirovirsen",
+          "type": "EXPERIMENTAL",
+          "description": "PLWCHB on stable NA therapy were planned to receive placebo oral tablets plus bepirovirsen SC injection for 28 days. All participants were further planned to continue receiving bepirovirsen SC injection after 28 days."
+        },
+        {
+          "label": "Part 4: Cohort 8 - GSK3965193 + Bepirovirsen",
+          "type": "EXPERIMENTAL",
+          "description": "PLWCHB on stable NA therapy were planned to receive GSK3965193 oral tablets plus bepirovirsen SC injection for 28 days. All participants were further planned to continue receiving bepirovirsen SC injection after 28 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1: Number of Participants With Treatment Emergent Adverse Events (TEAEs), Serious Treatment Emergent Adverse Events (STEAEs), and Treatment Withdrawals Due to TEAEs",
+        "Part 2A: Number of Participants With TEAEs, STEAEs, and Treatment Withdrawals Due to TEAEs",
+        "Part 2B: Number of Participants With TEAEs, STEAEs, and Treatment Withdrawals Due to TEAEs",
+        "Part 3: Number of Participants With TEAEs, STEAEs, and Treatment Withdrawals Due to TEAEs",
+        "Part 4: Number of Participants With TEAEs, STEAEs, and Treatment Withdrawals Due to TEAEs",
+        "Part 1: Number of Participants With Clinically Significant Hematology and Clinical Chemistry Parameters",
+        "Part 2A: Number of Participants With Clinically Significant Hematology, Clinical Chemistry, and Urinalysis Parameters",
+        "Part 2B: Number of Participants With Clinically Significant Hematology, Clinical Chemistry, and Urinalysis Parameters",
+        "Part 3: Number of Participants With Clinically Significant Hematology and Clinical Chemistry Parameters",
+        "Part 3: Number of Participants With Clinically Significant Urinalysis Parameters",
+        "Part 4: Number of Participants With Clinically Significant Hematology, Clinical Chemistry, and Urinalysis Parameters",
+        "Part 1: Number of Participants With Clinically Significant Vital Sign Findings",
+        "Part 2A: Number of Participants With Clinically Significant Vital Sign Findings",
+        "Part 2B: Number of Participants With Clinically Significant Vital Sign Findings",
+        "Part 3: Number of Participants With Clinically Significant Vital Sign Findings",
+        "Part 4: Number of Participants With Clinically Significant Vital Signs Findings",
+        "Part 1: Number of Participants With Clinically Significant Electrocardiogram [ECG] Findings",
+        "Part 2A: Number of Participants With Clinically Significant ECG Findings",
+        "Part 3: Number of Participants With Clinically Significant ECG Findings",
+        "Part 4: Number of Participants With Clinically Significant ECG Findings",
+        "Part 2A: Number of Participants With Changes in Sensory Nerve Conduction at Day 7",
+        "Part 2A: Number of Participants With Changes in Sensory Nerve Conduction at Day 14",
+        "Part 2A: Number of Participants With Changes in Sensory Nerve Conduction at Day 42",
+        "Part 3: Number of Participants With Changes in Sensory Nerve Conduction at Day 15",
+        "Part 3: Number of Participants With Changes in Sensory Nerve Conduction at Day 29",
+        "Part 4: Number of Participants With Changes in Sensory Nerve Conduction",
+        "Part 1: Area Under the Concentration-time Curve (AUC) From Time Zero (Pre-dose) Extrapolated to Infinite Time (AUC[0-inf]) of GSK3965193 Following Single Dose Administration",
+        "Part 2A: AUC Over the Dosing Interval Tau (AUC[0-tau]) of GSK3965193 Following Repeat Dose Administration",
+        "Part 1: Maximum Observed Concentration (Cmax) of GSK3965193 Following Single Dose Administration",
+        "Part 2A: Cmax of GSK3965193 Following Repeat Dose Administration",
+        "Part 1: Time to Maximum Observed Plasma Drug Concentration (Tmax) of GSK3965193 Following Single Dose Administration",
+        "Part 2A: Tmax of GSK3965193 Following Repeat Dose Administration",
+        "Part 1: Apparent Terminal Half-life (T1/2) of GSK3965193 Following Single Dose Administration",
+        "Part 2A: T1/2 of GSK3965193 Following Repeat Dose Administration",
+        "Part 3: Maximum Reduction of Serum HBsAg Levels From Baseline",
+        "Part 4: Number of Participants Achieving Complete Response"
+      ],
+      "secondaryEndpoints": [
+        "Part 2B: AUC(0-inf) of GSK3965193 Following Single Dose Administration",
+        "Part 2B: Cmax of GSK3965193 Following Single Dose Administration",
+        "Part 3: AUC(0-tau) of GSK3965193 Following Repeat Dose Administration",
+        "Part 3: Cmax of GSK3965193 Following Repeat Dose Administration",
+        "Part 3: Tmax of GSK3965193 Following Repeat Dose Administration",
+        "Part 3: T1/2 of GSK3965193 Following Repeat Dose Administration",
+        "Part 3: Number of Participants With Greater Than or Equal to [≥] 0.5 Times Log International Units Per Milliliters [IU/mL] Reduction From Baseline in Serum HBsAg Levels",
+        "Part 3: Number of Participants With TEAEs, STEAEs, and Treatment Withdrawals Due to TEAEs Among Participants Opting for Optional Bepirovirsen Treatment",
+        "Part 3: Number of Participants With Clinically Significant Hematology, Clinical Chemistry, and Urinalysis Parameters Among Participants Opting for Optional Bepirovirsen Treatment",
+        "Part 3: Number of Participants With Clinically Significant Vital Signs Among Participants Opting for Optional Bepirovirsen Treatment",
+        "Part 4: Number of Participants With HBsAg Loss"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05330455",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05330455",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05330455",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05330455",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05330455",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "219288",
+      "nctId": "NCT05630820",
+      "protocolNumber": "219288",
+      "title": "Phase 3 Multicenter, Randomized, Double-Blind, Study to Assess the Efficacy and Safety of Treatment With Bepirovirsen in Nucleos(t)Ide Analogue-treated Participants With Chronic Hepatitis B Virus (B-Well 2)",
+      "briefTitle": "Study of Bepirovirsen in Nucleos(t)Ide Analogue-treated Participants With Chronic Hepatitis B (B-Well 2)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "In combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221276Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis)",
+            "quote": "Trial identifier appears within the In combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-12-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-11-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-04-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 857,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Bepirovirsen",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants achieving functional cure (FC) with baseline HBsAg ≤3000 IU/mL"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants achieving FC with baseline HBsAg ≤1000 IU/mL",
+        "Number of participants achieving sustained suppression of HBV DNA (<LLOQ) with baseline HBsAg ≤3000 IU/mL",
+        "Number of participants achieving sustained suppression of HBV DNA (<LLOQ) with baseline HBsAg ≤1000 IU/mL"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221276Orig1s000Ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 25,
+          "quote": ", placebo-controlled trials with identical designs (B-Well 1 [NCT05630807] and B- Well 2 [NCT05630820]). All participants were aged ≥18 years, had documented chronic HBV infection for ≥6 mont",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "202009",
+      "nctId": "NCT05630807",
+      "protocolNumber": "202009",
+      "title": "Phase 3 Multicenter, Randomized, Double-Blind, Study to Assess the Efficacy and Safety of Treatment With Bepirovirsen in Nucleos(t)Ide Analogue-treated Participants With Chronic Hepatitis B Virus (B-Well 1)",
+      "briefTitle": "Study of Bepirovirsen in Nucleos(t)Ide Analogue-treated Participants With Chronic Hepatitis B (B-Well 1)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "In combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221276Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis)",
+            "quote": "Trial identifier appears within the In combination with nucleos(t)ide analog reverse transcriptase inhibitor (NrtI) therapy for treatment of chronic hepatitis B virus (HBV) infection in adult patients without cirrhosis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-12-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-11-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-04-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 981,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Bepirovirsen",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants achieving functional cure (FC) with baseline HBsAg ≤3000 IU/mL"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants achieving FC with baseline HBsAg ≤1000 IU/mL",
+        "Number of participants achieving sustained suppression of HBV DNA (<LLOQ) with baseline HBsAg ≤3000 IU/mL",
+        "Number of participants achieving sustained suppression of HBV DNA (<LLOQ) with baseline HBsAg ≤1000 IU/mL"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630807",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630807",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630807",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630807",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05630807",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221276Orig1s000Ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 25,
+          "quote": "3, randomized, double-blind, placebo-controlled trials with identical designs (B-Well 1 [NCT05630807] and B- Well 2 [NCT05630820]). All participants were aged ≥18 years, had documented chron",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "219239",
+      "nctId": "NCT06058390",
+      "protocolNumber": "219239",
+      "title": "A Phase 1, Randomized, Open-Label, Parallel Group Study to Evaluate the Relative Bioavailability of Subcutaneous Bepirovirsen When Delivered From a Vial or Prefilled Syringe Fitted With a Safety Syringe Device in Healthy Adult Participants",
+      "briefTitle": "A Study to Evaluate the Relative Bioavailability of Subcutaneous Bepirovirsen When Delivered From a Vial or Prefilled Syringe Fitted With a Safety Syringe Device in Healthy Adult Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-10-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 160,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Bepirovirsen Vial by HCP",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Bepirovirsen vial administered by Healthcare Professionals (HCP)."
+        },
+        {
+          "label": "Bepirovirsen PFS SSD by HCP",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Bepirovirsen PFS SSD administered by HCP."
+        },
+        {
+          "label": "Bepirovirsen PFS SSD self-administered post-training",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Bepirovirsen PFS SSD self- administered with training by HCP."
+        },
+        {
+          "label": "Bepirovirsen PFS SSD self-administered without training",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Bepirovirsen PFS SSD self- administered with no training by HCP."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Observed Plasma Concentration (Cmax) Following Administration of Bepirovirsen Using Vial and PFS by HCP",
+        "Area Under the Plasma Concentration-Time Curve From Time Zero Extrapolated to Infinity (AUC [0-Inf]) Following Administration of Bepirovirsen Using Vial and PFS by HCP"
+      ],
+      "secondaryEndpoints": [
+        "Maximum Observed Plasma Concentration (Cmax) Following Administration of Bepirovirsen Using PFS SSD by HCP and PFS SSD Self-administered Post-training",
+        "AUC(0-inf) Following Administration of Bepirovirsen Using PFS SSD by HCP and PFS SSD Self-administered Post-training",
+        "Maximum Observed Plasma Concentration (Cmax) Following Administration of Bepirovirsen Using PFS SSD by HCP and PFS SSD Self-administered Without Training",
+        "AUC(0-Inf) Following Administration of Bepirovirsen Using PFS SSD by HCP and PFS SSD Self-administered Without Training"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06058390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06058390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06058390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06058390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06058390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "205873",
+      "nctId": "NCT06422767",
+      "protocolNumber": "205873",
+      "title": "A Phase 1, Randomized, Double-Blinded, Placebo-Controlled, Parallel Group Study to Evaluate the Effect of Bepirovirsen on Cardiac Conduction as Assessed by 12-lead Electrocardiogram in Healthy Volunteers",
+      "briefTitle": "Study to Evaluate the Effect of Bepirovirsen on Cardiac Conduction as Assessed by 12-lead Electrocardiogram in Healthy Volunteers",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-07-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-04-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-04-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 46,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Bepirovirsen: Four-Dose SC Injection",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participant received four subcutaneous (SC) injections of Bepirovirsen dose level 1 on Day 1."
+        },
+        {
+          "label": "Placebo: Four SC Injections",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received four matching placebo SC injections on Day 1."
+        },
+        {
+          "label": "Bepirovirsen: Three-Dose SC Injection",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participant received three SC injections of Bepirovirsen dose level 1 on Day 1."
+        },
+        {
+          "label": "Placebo: Three SC Injections",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received three matching placebo SC injections on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Placebo-corrected Change From Baseline (CFB) in QT Interval Corrected by Fridericia's Formula (QTcF) Following Administration of Bepirovirsen Supratherapeutic Single Dose"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in RR Interval in ECG at Indicated Timepoints",
+        "Change From Baseline in QTcF Interval, PR Interval and QRS Duration at Indicated Timepoints",
+        "Number of Participants With Outlier Results for Heart Rate (HR)",
+        "Number of Participants With Outlier Results for Total QTcF Interval, PR Interval and QRS Duration",
+        "Number of Participants With Treatment Emergent Changes of T Wave Morphology and U-wave Presence",
+        "Plasma Concentrations of Bepirovirsen",
+        "Area Under the Concentration-time Curve From Time Zero (Pre-dose) Extrapolated to Infinite Time (AUC[0-infinity]) of Bepirovirsen",
+        "Area Under the Concentration-time Curve From Time Zero (Pre-dose) to 24 Hours Post-dose (AUC[0-24]) of Bepirovirsen",
+        "Maximum Plasma Concentration (Cmax) of Bepirovirsen",
+        "Time to Reach Cmax (Tmax) of Bepirovirsen"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06422767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06422767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06422767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06422767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06422767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b-focus",
+      "nctId": "NCT06497504",
+      "protocolNumber": "219231",
+      "acronym": "B-Focus",
+      "title": "A Multicenter, Randomized, Double-Blind, Placebo-controlled Study to Assess the Efficacy and Safety of Treatment With Bepirovirsen in Participants Living With Human Immunodeficiency Virus and Chronic Hepatitis B Virus Infection on Antiretroviral Treatment",
+      "briefTitle": "Study of Bepirovirsen in Participants Living With Human Immunodeficiency Virus and Chronic Hepatitis B Virus Infection (B-Focus)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-09-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-04-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-04-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 153,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Participants receiving Bepirovirsen",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive bepirovirsen."
+        },
+        {
+          "label": "Participants receiving Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of participants achieving hepatitis B virus (HBV) virologic response at 36 weeks after scheduled end of study treatment in absence of rescue medication"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of participants achieving HBV virologic response at the scheduled end of study treatment in absence of rescue medication"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06497504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06497504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06497504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06497504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06497504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b-united",
+      "nctId": "NCT06537414",
+      "protocolNumber": "218309",
+      "acronym": "B-UNITED",
+      "title": "A Phase 2b, Multi-centre, Randomized, Partially Placebo-controlled, Double-blind Study to Investigate the Safety and Efficacy of Sequential Therapy With Daplusiran/Tomligisiran Followed by Bepirovirsen in Participants With Chronic Hepatitis B Virus on Background Nucleos(t)Ide Analogue Therapy (B-United)",
+      "briefTitle": "A Study of Sequential Therapy With Daplusiran/Tomligisiran (DAP/TOM) Followed by Bepirovirsen in Participants Living With Chronic Hepatitis B (CHB)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-11-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-05-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-05-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 283,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment Arm 1A: DAP/TOM + Bepirovirsen",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with high Hepatitis B surface antigen (HBsAg) level will receive dose level 1 of DAP/TOM in Treatment Stage 1. After DAP/TOM Treatment, eligible participants will receive bepirovirsen in Treatment Stage 2. All participants will continue background NA treatment throughout these treatment stages. After bepirovirsen Treatment Stage, participants will be observed during the NA Only Stage, while maintaining background NA treatment. Eligible participants will then discontinue background NA treatment."
+        },
+        {
+          "label": "Treatment Arm 1B: DAP/TOM + Bepirovirsen",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with high HBsAg level will receive dose level 2 of DAP/TOM in Treatment Stage 1. After DAP/TOM treatment, eligible participants will receive bepirovirsen in Treatment Stage 2. All participants will continue background NA treatment throughout these treatment stages. After bepirovirsen Treatment Stage, participants will be observed during the NA Only Stage, while maintaining background NA treatment. Eligible participants will then discontinue background NA treatment."
+        },
+        {
+          "label": "Treatment Arm 2A: DAP/TOM + Bepirovirsen",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with low HBsAg level will receive dose level 1 of DAP/TOM in Treatment Stage 1. After DAP/TOM treatment, eligible participants will receive bepirovirsen in Treatment Stage 2. All participants will continue background NA treatment throughout these treatment stages. After bepirovirsen Treatment Stage, participants will be observed during the NA Only Stage, while maintaining background NA treatment. Eligible participants will then discontinue background NA treatment."
+        },
+        {
+          "label": "Treatment Arm 2B: DAP/TOM + Bepirovirsen",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with low HBsAg level will receive dose level 2 of DAP/TOM in Treatment Stage 1. After DAP/TOM treatment, eligible participants will receive bepirovirsen in Treatment Stage 2. All participants will continue background NA treatment throughout these treatment stages. After bepirovirsen Treatment Stage, participants will be observed during the NA Only Stage, while maintaining background NA treatment. Eligible participants will then discontinue background NA treatment."
+        },
+        {
+          "label": "Treatment Arm 2C: Placebo + Bepirovirsen",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with low HBsAg level will receive Placebo in Treatment Stage 1. After Placebo treatment, eligible participants will receive bepirovirsen in Treatment Stage 2. All participants will continue background NA treatment throughout these treatment stages. After bepirovirsen Treatment Stage, participants will be observed during the NA Only Stage, while maintaining background NA treatment. Eligible participants will then discontinue background NA treatment."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants achieving functional cure"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants achieving functional cure with high Baseline HBsAg level",
+        "Number of participants achieving functional cure with low Baseline HBsAg level",
+        "Number of participants achieving functional cure with low Baseline HBsAg level compared against placebo + bepirovirsen arm",
+        "Number of participants with undetected HBsAg and HBV DNA <LLOQ"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06537414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06537414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06537414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06537414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06537414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b-kind",
+      "nctId": "NCT07168356",
+      "protocolNumber": "205872",
+      "acronym": "B-Kind",
+      "title": "A Phase 1, Open-Label, Single-Dose, Parallel Group, 2-Part Study to Evaluate the Pharmacokinetics of Bepirovirsen in Adult Participants With Severe or Moderate Renal Impairment Compared to Matched Healthy Control Participants",
+      "briefTitle": "A Study to Evaluate Blood Levels of Bepirovirsen in Adult Participants With Severe or Moderate Kidney Disease",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "GlaxoSmithKline",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-09-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-03-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-08-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 32,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group 1- Severe Renal Impairment Participants",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with severe renal impairment will receive Bepirovirsen."
+        },
+        {
+          "label": "Group 2- Moderate Renal Impairment Participants",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with moderate renal impairment will receive Bepirovirsen."
+        },
+        {
+          "label": "Group 3-Healthy Control Participants",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy control participants will receive Bepirovirsen."
+        }
+      ],
+      "primaryEndpoints": [
+        "Plasma Area Under the Concentration Time Curve From Time Zero (Pre-Dose) Extrapolated to Infinite Time [AUC(0-∞)] of Bepirovirsen",
+        "Maximum Observed Concentration (Cmax) of Bepirovirsen"
+      ],
+      "secondaryEndpoints": [
+        "Plasma Area Under the Concentration Time Curve From Time Zero (Pre-Dose) to 24 hours [AUC(0-24)] of Bepirovirsen",
+        "Plasma Area Under the Concentration Time Curve From Time Zero (Pre-Dose) to 168 hours (Day 8) [AUC(0-168)] of Bepirovirsen",
+        "Observed Concentration of Bepirovirsen on Day 8",
+        "Apparent Terminal Phase Half-life (t1/2) of Bepirovirsen",
+        "Apparent Clearance (CL/F) of Bepirovirsen",
+        "Time of Occurrence of Cmax (Tmax) of Bepirovirsen",
+        "Apparent Terminal Phase Volume of Distribution (Vz/F) of Bepirovirsen"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07168356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07168356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07168356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07168356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07168356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-10-20",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA221276%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 221276",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA221276%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221276Orig1s000Ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221276Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:11:53.867Z"
+}

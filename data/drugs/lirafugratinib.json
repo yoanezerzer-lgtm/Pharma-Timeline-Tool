@@ -1,0 +1,378 @@
+{
+  "slug": "lirafugratinib",
+  "brandName": "Lyrfigtu",
+  "inn": "lirafugratinib",
+  "modality": "Drug (NDA)",
+  "sponsor": "ELEVAR",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement",
+      "slug": "adults-with-previously-treated-unresectable-locally",
+      "approvalDate": {
+        "value": "2026-09-23",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220425Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-23",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Lyrfigtu (lirafugratinib) capsule for the treatment of adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220425Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Lyrfigtu (lirafugratinib) capsule for the treatment of adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220425",
+      "applicationType": "NDA",
+      "sponsor": "ELEVAR",
+      "originalApprovalDate": {
+        "value": "2026-09-23",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "rly-4008-101",
+      "nctId": "NCT04526106",
+      "protocolNumber": "RLY-4008-101",
+      "labelName": "RLY-4008-101",
+      "title": "A First-in-Human Study of Highly Selective FGFR2 Inhibitor, RLY-4008, in Patients With Intrahepatic Cholangiocarcinoma (ICC) and Other Advanced Solid Tumors",
+      "briefTitle": "REFOCUS: A First-in-Human Study of Highly Selective FGFR2 Inhibitor, RLY-4008, in Patients With ICC and Other Advanced Solid Tumors",
+      "phase": "PHASE1_2",
+      "roles": [
+        {
+          "indication": "Adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement)",
+            "quote": "Trial identifier appears within the Adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220425Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Lyrfigtu (lirafugratinib) capsule for the treatment of adults with previously treated, unresectable, locally advanced or metastatic cholangiocarcinoma harboring a fibroblast growth factor receptor 2 (FGFR2) fusion or other rearrangement.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Elevar Therapeutics",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-09-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-09-05",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-09-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 490,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1: Dose Escalation",
+          "type": "EXPERIMENTAL",
+          "description": "Multiple doses of RLY-4008 for oral administration."
+        },
+        {
+          "label": "Part 2: Dose Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "Oral dose of RLY-4008 as determined during Part 1 Dose Escalation."
+        },
+        {
+          "label": "Part 3: Extension",
+          "type": "EXPERIMENTAL",
+          "description": "Oral dose of RLY-4008 as determined during Part 1 Dose Escalation."
+        },
+        {
+          "label": "Part 4: Rollover",
+          "type": "EXPERIMENTAL",
+          "description": "Oral dose of RLY-4008 as determined during Part 1 Dose Escalation."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1 and Part 4: Number of patients with adverse events and serious adverse events",
+        "Part 1: Determination of maximum tolerated dose (MTD) and recommended Phase 2 dose (RP2D) of RLY-4008",
+        "Part 2 and Part 3: Objective Response Rate (ORR) assessed by Independent Review Committee per RECIST v1.1",
+        "Part 4: Number of patients with dose interruptions",
+        "Part 4: Number of patients with dose reductions",
+        "Part 4: Number of patients with dose discontinuations"
+      ],
+      "secondaryEndpoints": [
+        "Part 1: FGFR2 gene status in plasma circulating tumor deoxyribonucleic acid (ctDNA) and tumor tissue",
+        "Part 1: Duration of Response (DOR) assessed by Investigator per RECIST v1.1",
+        "Part 1: Disease Control Rate (DCR) as assessed by Investigator per RECIST v1.1",
+        "Part 1, Part 2, and Part 3: Objective Response Rate (ORR) as assessed by Investigator per RECIST v1.1",
+        "Pharmacokinetic parameters including maximum plasma drug concentration (Cmax)",
+        "Pharmacokinetic parameters including area under the plasma concentration versus time curve (AUC)",
+        "Pharmacokinetic parameters including half-life (t1/2)",
+        "Part 1: Pharmacodynamic parameters including changes in fibroblast growth factor 23 (FGF-23)",
+        "Part 1: Pharmacodynamic parameters including changes in carcinoembryonic antigen (CEA)",
+        "Part 1: Pharmacodynamic parameters including changes in cancer antigen 19-9 (CA 19-9)",
+        "Part 2 and Part 3: Duration of response (DOR) assessed by Investigator and Independent Review Committee per RECIST v1.1",
+        "Part 2 and Part 3: Progression-free survival (PFS) assessed by Investigator and Independent Review Committee per RECIST v1.1",
+        "Part 2 and Part 3: Disease control rate (DCR) assessed by Investigator and Independent Review Committee per RECIST v1.1",
+        "Part 2 and Part 3:Overall survival (OS)",
+        "Part 2 and Part 3:Change from baseline in quality of life as assessed by EORTC QLQ-C30",
+        "Part 2 and Part 3:Dose intensity",
+        "Part 2 and Part 3: Number of patients with dose interruptions",
+        "Part 2 and Part 3: Number of patients with dose reductions",
+        "Part 2 and Part 3: Number of patients with dose discontinuations",
+        "Part 2 and Part 3: Correlation between FGFR2 genotype by central tissue assessment and antitumor response, as measured by ORR"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04526106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04526106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04526106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04526106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04526106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220425Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 13,
+          "quote": "UDIES Cholangiocarcinoma The efficacy of LYRFIGTU was evaluated in REFOCUS (RLY-4008-101; NCT04526106), a multicenter, open-label, single-arm trial in 116 patients with unresectable or metast",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "RLY-4008-101 (NCT04526106)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "refocus202",
+      "nctId": "NCT07359820",
+      "protocolNumber": "ELE-4008-202",
+      "acronym": "ReFocus202",
+      "title": "A Phase 2, Open-Label, Single-Arm Study of Lirafugratinib in Patients With Previously Treated, Unresectable, Locally Advanced or Metastatic Solid Tumors (Excluding Cholangiocarcinoma) With FGFR2 Fusion or Rearrangement",
+      "briefTitle": "A Study of Lirafugratinib in Non-CCA Solid Tumors With FGFR2 Fusion or Rearrangement",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Elevar Therapeutics",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-06-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Lirafugratinib",
+          "type": "EXPERIMENTAL",
+          "description": "Treatment with standard dose of lirafugratinib"
+        }
+      ],
+      "primaryEndpoints": [
+        "Objective Response Rate (ORR) assessed by Independent Review Committee per RECIST v1.1."
+      ],
+      "secondaryEndpoints": [
+        "Duration of response (DOR) assessed by Independent Review Committee per RECIST v1.1.",
+        "Number of patients with adverse events and serious adverse events.",
+        "Number of patients with dose interruptions.",
+        "Number of patients with dose reductions.",
+        "Number of patients with dose discontinuations.",
+        "Objective Response Rate (ORR) as assessed by Investigator per RECIST v1.1.",
+        "Duration of Response (DOR) as assessed by Investigator per RECIST v1.1.",
+        "Disease control rate (DCR) as assessed by Investigator and Independent Review Committee per RECIST v1.1.",
+        "Progression-free survival (PFS) as assessed by Investigator and Independent Review Committee per RECIST v1.1.",
+        "Overall survival (OS).",
+        "Time to response (TTR) assessed by Investigator and Independent Review Committee per RECIST v1.1.",
+        "Time to progression (TTP) assessed by Investigator and Independent Review Committee per RECIST v1.1.",
+        "Pharmacokinetic parameters including maximum plasma drug concentration (Cmax)",
+        "Pharmacokinetic parameters including area under the plasma concentration versus time curve (AUC)",
+        "Pharmacokinetic parameters including half-life (t1/2)",
+        "Change from baseline in quality of life as assessed by the European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire Core 30 (EORTC QLQ-C30).",
+        "Time to deterioration (TTD).",
+        "FGFR2 gene status in plasma circulating tumor deoxyribonucleic acid (ctDNA) and tumor tissue.",
+        "Pharmacodynamic parameters including changes in fibroblast growth factor 23 (FGF-23).",
+        "Pharmacodynamic parameters including changes in carcinoembryonic antigen (CEA)",
+        "Pharmacodynamic parameters including changes in cancer antigen 19-9 (CA 19-9)",
+        "Correlation between FGFR2 genotype by central tissue assessment and antitumor response, as measured by Objective Response Rate (ORR)."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07359820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07359820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07359820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07359820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07359820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-23",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220425%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220425",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220425%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220425Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:14:57.830Z"
+}

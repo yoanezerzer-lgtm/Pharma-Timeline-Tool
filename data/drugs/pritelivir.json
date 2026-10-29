@@ -1,0 +1,805 @@
+{
+  "slug": "pritelivir",
+  "brandName": "Hovilpri",
+  "inn": "pritelivir",
+  "modality": "Drug (NDA)",
+  "sponsor": "AICURIS ANTI-INFECT",
+  "summary": "",
+  "indications": [
+    {
+      "name": "In immunocompromised adults for the treatment of mucocutaneous lesions caused by herpes simplex virus (HSV) infection that is refractory (with or without documented resistance) to treatment with acyclovir, valacyclovir, or famciclovir",
+      "slug": "in-immunocompromised-adults-for-the-treatment-of",
+      "approvalDate": {
+        "value": "2026-10-09",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221154Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-10-09",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Hovilpri (pritelivir) tablets in immunocompromised adults for the treatment of mucocutaneous lesions caused by herpes simplex virus (HSV) infection that is refractory (with or without documented resistance) to treatment with acyclovir, valacyclovir, or famciclovir.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221154Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Hovilpri (pritelivir) tablets in immunocompromised adults for the treatment of mucocutaneous lesions caused by herpes simplex virus (HSV) infection that is refractory (with or without documented resistance) to treatment with acyclovir, valacyclovir, or famciclovir.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "221154",
+      "applicationType": "NDA",
+      "sponsor": "AICURIS ANTI-INFECT",
+      "originalApprovalDate": {
+        "value": "2026-10-09",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "aic316-01-ii-01",
+      "nctId": "NCT01047540",
+      "protocolNumber": "AIC316-01-II-01",
+      "title": "A Double-blind Randomized Placebo Controlled Dose-finding Trial to Investigate Different Doses of a New Antiviral Drug in Subjects With Genital HSV Type 2 Infection",
+      "briefTitle": "Safety and Efficacy Study for a New Antiviral Drug to Treat Genital Herpes Type 2",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AiCuris Anti-infective Cures AG",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2010-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2010-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2011-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 156,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "PREVENTION"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Dose regimen 1",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Dose regimen 2",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Dose regimen 3",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Dose regimen 4",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Efficacy of 4 Different Doses of AIC316 and Matching Placebo With Respect to the Suppression of Herpes Simplex Virus Replication (Shedding Rate)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01047540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01047540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01047540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01047540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01047540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "aic316-01-ii-02",
+      "nctId": "NCT01658826",
+      "protocolNumber": "AIC316-01-II-02",
+      "title": "A Double-blind, Double Dummy, Randomized Crossover Trial to Compare the Effect of \"AIC316 (Pritelivir)\" 100 mg Once Daily Versus Valacyclovir 500 mg Once Daily on Genital HSV Shedding in HSV-2 Seropositive Adults.",
+      "briefTitle": "Safety and Efficacy Comparator Trial of a New Drug Against Genital Herpes",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "AiCuris Anti-infective Cures AG",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2012-10-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2013-05-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2013-07-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 91,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "PREVENTION"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AIC316, Then Valacyclovir",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first received AIC316 100 mg once daily for 28 days. After a washout period of 28 days, they then received Valacyclovir 500 mg once daily for 28 days."
+        },
+        {
+          "label": "Valacyclovir, Then AIC316",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants first received Valacyclovir 500 mg once daily for 28 days. After a washout period of 28 days, they then received AIC316 100 mg once daily for 28 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Within-subject Genital HSV Mucocutaneous Shedding Rate",
+        "Overall Shedding Rate"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01658826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01658826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01658826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01658826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01658826",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "lipp1",
+      "nctId": "NCT02871492",
+      "protocolNumber": "AIC316-02-II-01",
+      "acronym": "LipP1",
+      "title": "A Randomized, Double-blind, Multi-center, Three Arm (Pritelivir, Placebo and Zovirax®) Parallel Group, Comparative Trial to Assess the Efficacy and Safety of Pritelivir 5% w/w Ointment for the Treatment of Recurrent Herpes Labialis in Adults - LipP1",
+      "briefTitle": "Trial on Efficacy and Safety of Pritelivir Ointment for Treatment of Labial Herpes",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AiCuris Anti-infective Cures AG",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-11-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-09-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-10-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 362,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Pritelivir 5% w/w ointment",
+          "type": "EXPERIMENTAL",
+          "description": "Topical treatment (20 applications), 5 times daily for 4 days"
+        },
+        {
+          "label": "Pritelivir ointment matching placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Topical treatment (20 applications), 5 times daily for 4 days"
+        },
+        {
+          "label": "Zovirax® cream",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Topical treatment (20 applications), 5 times daily for 4 days"
+        }
+      ],
+      "primaryEndpoints": [
+        "Efficacy Measured by Percentage of Subjects With Non-ulcerative Lesions Based on Principal Investigator's Assessment"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "prioh-1",
+      "nctId": "NCT03073967",
+      "protocolNumber": "AIC316-03-II-01",
+      "acronym": "PRIOH-1",
+      "title": "A Randomized, Open Label, Multi-center, Comparative Trial, to Assess the Efficacy and Safety of Pritelivir for the Treatment of Acyclovir-resistant Mucocutaneous HSV (Herpes Simplex Virus) Infections in Immunocompromised Subjects (PRIOH-1)",
+      "briefTitle": "Trial on Efficacy and Safety of Pritelivir Tablets for Treatment of Acyclovir-resistant Mucocutaneous HSV (Herpes Simplex Virus) Infections in Immunocompromised Subjects",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "In immunocompromised adults for the treatment of mucocutaneous lesions caused by herpes simplex virus (HSV) infection that is refractory (with or without documented resistance) to treatment with acyclovir, valacyclovir, or famciclovir",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221154Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — In immunocompromised adults for the treatment of mucocutaneous lesions caused by herpes simplex virus (HSV) infection that is refractory (with or without documented resistance) to treatment with acyclovir, valacyclovir, or famciclovir)",
+            "quote": "Trial identifier appears within the In immunocompromised adults for the treatment of mucocutaneous lesions caused by herpes simplex virus (HSV) infection that is refractory (with or without documented resistance) to treatment with acyclovir, valacyclovir, or famciclovir section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221154Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Hovilpri (pritelivir) tablets in immunocompromised adults for the treatment of mucocutaneous lesions caused by herpes simplex virus (HSV) infection that is refractory (with or without documented resistance) to treatment with acyclovir, valacyclovir, or famciclovir.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "AiCuris Anti-infective Cures AG",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-05-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-08-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-11-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 158,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "16 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part C, Pritelivir",
+          "type": "EXPERIMENTAL",
+          "description": "Oral tablets, 100mg/day (400mg loading dose on day 1) for up to 28 days and potential prolongation for up to additional 14 days"
+        },
+        {
+          "label": "Part C,",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Investigator's Choice:\n\nFoscarnet iv, 40 mg/kg tid or 60mg/kg bid or Cidofovir iv, 5 mg/kg body weight given once weekly or Cidofovir 1% or 3%, topically applied 2 to 4 times daily or Imiquimod 5%, topically applied 3 times per week, for up to 28 days and potential prolongation for up to additional 14 days."
+        },
+        {
+          "label": "Part D+F, Pritelivir",
+          "type": "EXPERIMENTAL",
+          "description": "Oral tablets, 100mg/day (400mg loading dose on day 1) for up to 28 days and potential prolongation for up to additional 14 days"
+        },
+        {
+          "label": "Part E, Pritelivir",
+          "type": "EXPERIMENTAL",
+          "description": "Oral tablets, 100mg/day (400mg loading dose on day 1) for up to 28 days and potential prolongation for up to additional 14 days"
+        }
+      ],
+      "primaryEndpoints": [
+        "Efficacy measured by cure rate"
+      ],
+      "secondaryEndpoints": [
+        "Efficacy measured by cure rate",
+        "Efficacy measured by time to lesion healing",
+        "Efficacy measured by recurrence rate",
+        "Efficacy measured by recurrence rate",
+        "Efficacy measured by pain rate",
+        "Efficacy measured by time to pain cessation at site of lesion",
+        "Efficacy measured by average pain score",
+        "Efficacy measured by clinical shedding rate",
+        "Efficacy measured by time to cessation of shedding",
+        "Efficacy measured by mean log number of HSV DNA copies",
+        "Efficacy measured by resistance to trial medication",
+        "Safety measured by number of subjects developing chronic kidney disease",
+        "Safety measured by percentage of subjects developing chronic kidney disease",
+        "Safety measured by percentage of subjects developing acute Kidney Injury",
+        "Safety measured by percentage of subjects developing renal impairment",
+        "Safety measured by percentage of subjects developing electrolyte abnormality",
+        "Safety measured by percentage of subjects developing seizures",
+        "Safety measured by percentage of subjects developing anemia",
+        "Safety measured by adverse events",
+        "Safety measured by haematology",
+        "Safety measured by lymphadenopathy",
+        "Safety measured by CRP (C reactive protein )",
+        "Safety measured by cutaneous adverse events",
+        "Safety measured by (a)PTT (partial thromboplastin time)",
+        "Safety measured by discontinuation rate"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03073967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03073967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03073967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03073967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03073967",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "aic316-03-i-01",
+      "nctId": "NCT05513625",
+      "protocolNumber": "AIC316-03-I-01",
+      "title": "A Single-center, Open-label, 2-period Fixed-sequence Phase I Trial to Evaluate the Effect of Esomeprazole on the Pharmacokinetics of Pritelivir",
+      "briefTitle": "Potential Influence of Esomeprazole on the Pharmacokinetics of Pritelivir",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AiCuris Anti-infective Cures AG",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-07-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-10-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-10-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 16,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "100 mg pritelivir",
+          "type": "EXPERIMENTAL",
+          "description": "Single dose 100 mg pritelivir (PTV) administered day 1"
+        },
+        {
+          "label": "40 mg qd ESO and 100 mg pritelivir",
+          "type": "EXPERIMENTAL",
+          "description": "40 mg qd ESO Day -3 to Day1. Single dose of 100 mg PTV on Day 1"
+        }
+      ],
+      "primaryEndpoints": [
+        "PK - Cmax",
+        "PK - AUC(0-infinity) and AUC(0-last)"
+      ],
+      "secondaryEndpoints": [
+        "PK - Tmax and Tlag",
+        "PK - λz",
+        "PK t1/2z",
+        "PK - CL/F",
+        "V d/F"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05513625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05513625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05513625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05513625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05513625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "aic316-03-i-07",
+      "nctId": "NCT05671029",
+      "protocolNumber": "AIC316-03-I-07",
+      "title": "A Double-blind, Single-center, Randomized, Placebo- and Positive-controlled, Parallel-group Trial With a Nested Crossover Part on the Electrocardiographic Effects 100 and 400 mg Pritelivir Per Day in Healthy Subjects: a Thorough QT/QTc Trial",
+      "briefTitle": "Thorough QT/QTc of Pritelivir in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AiCuris Anti-infective Cures AG",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-12-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-05-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-05-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 64,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "PREVENTION"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group 1",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects (32 male and female subjects) received 400 mg pritelivir on Day 1, 100 mg pritelivir from Day 2 to 6 and 400 mg pritelivir from Day 7 to 16.\n\nFurthermore, these subjects received moxifloxacin matching placebo on the Days 2 and 17."
+        },
+        {
+          "label": "Group 2a",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects (16 male and female subjects) received the respective amounts of tablets of matching pritelivir matching placebo on Day 1 to Day 16 in Group 2a as verum tablets in Group1.\n\nFurthermore, these subjects received 400 mg moxifloxacin on Day 2 and moxifloxacin matching placebo on Day 17."
+        },
+        {
+          "label": "Group 2b",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects (16 male and female subjects) received the respective amounts of tablets of matching pritelivir matching placebo on Day 1 to Day 16 in Group 2b as verum tablets in Group1.\n\nFurthermore, these subjects received moxifloxacin matching placebo on Day 2 and 400 mg moxifloxacin on Day 17."
+        }
+      ],
+      "primaryEndpoints": [
+        "Effects of Pritelivir on the QTcF Interval (QTc Using Fridericia Correction Method) in Comparison With Placebo in Male and Female Subjects."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05671029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05671029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05671029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05671029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05671029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "aic316-03-e-01",
+      "nctId": "NCT05844436",
+      "protocolNumber": "AIC316-03-E-01",
+      "title": "Expanded Access Intermediate Size Treatment Protocol: Pritelivir for Immunocompromised Subjects with Treatment Resistant Herpes Simplex Virus Type 1 or 2",
+      "briefTitle": "Expanded Access Intermediate Size Treatment Protocol: Pritelivir for Immunocompromised Subjects with Treatment Resistant Herpes Simplex Virus Type 1 or 2",
+      "phase": "NA",
+      "roles": [],
+      "status": "AVAILABLE",
+      "sponsor": "AiCuris Anti-infective Cures AG",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "16 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05844436",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05844436",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05844436",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05844436",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05844436",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-10-09",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA221154%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 221154",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA221154%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221154Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221154Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:14:59.092Z"
+}

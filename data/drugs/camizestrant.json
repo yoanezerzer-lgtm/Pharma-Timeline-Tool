@@ -1,0 +1,2420 @@
+{
+  "slug": "camizestrant",
+  "brandName": "Etcamah",
+  "inn": "camizestrant",
+  "modality": "Drug (NDA)",
+  "sponsor": "ASTRAZENECA",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer upon detection of ESR1 mutation during aromatase inhibitor and CDK4/6 inhibitor therapy, based on an FDA-authorized test",
+      "slug": "adult-patients-with-hormone-receptor-hr-positive-human",
+      "approvalDate": {
+        "value": "2026-09-04",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220359Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-04",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Etcamah (camizestrant) tablets in combination with a CDK4/6 inhibitor (abemaciclib, palbociclib, or ribociclib ) for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer upon detection of ESR1 mutation during aromatase inhibitor and CDK4/6 inhibitor therapy, based on an FDA-authorized test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220359Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Etcamah (camizestrant) tablets in combination with a CDK4/6 inhibitor (abemaciclib, palbociclib, or ribociclib ) for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer upon detection of ESR1 mutation during aromatase inhibitor and CDK4/6 inhibitor therapy, based on an FDA-authorized test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220359",
+      "applicationType": "NDA",
+      "sponsor": "ASTRAZENECA",
+      "originalApprovalDate": {
+        "value": "2026-09-04",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "serena-1",
+      "nctId": "NCT03616587",
+      "protocolNumber": "D8530C00001",
+      "acronym": "SERENA-1",
+      "title": "A Phase 1 Dose Escalation and Expansion Study of AZD9833 Alone or in Combination in Women With ER-positive, HER2-negative Advanced Breast Cancer (SERENA-1)",
+      "briefTitle": "Study of AZD9833 Alone or in Combination in Women With Advanced Breast Cancer.",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-10-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-09-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-06-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 396,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AZD9833 monotherapy dose escalation",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 monotherapy dose expansion",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with palbociclib dose escalation",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with palbociclib dose expansion",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with everolimus dose expansion",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with everolimus dose escalation",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with abemaciclib (± anastrozole) dose escalation",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with abemaciclib (± anastrozole)dose expansion",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with capivasertib dose escalation",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with capivasertib dose expansion",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with ribociclib (± anastrozole) dose escalation",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with ribociclib (± anastrozole) dose expansion",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with anastrozole dose escalation",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with anastrozole dose expansion",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "The number of subjects with dose-limiting toxicity, as defined in the protocol.",
+        "The number of subjects with treatment-related adverse events as assessed by CTCAE v4.03."
+      ],
+      "secondaryEndpoints": [
+        "Objective Response Rate",
+        "Duration of Response",
+        "Clinical benefit rate at 24 weeks",
+        "Percentage Change in Tumour Size",
+        "Progression Free Survival",
+        "Maximum Observed Plasma Concentration (Cmax) of AZD9833 alone or in combination with Palbociclib, Everolimus, Abemaciclib, Capivasertib, Ribociclib or Anastrozole",
+        "Time to observed Cmax (Tmax) for AZD9833 alone or in combination with Palbociclib, Everolimus, Abemaciclib, Capivasertib, Ribociclib or Anastrozole",
+        "Area under the plasma concentration-time curve (AUC) for AZD9833 alone or in combination with Palbociclib, Everolimus, Abemaciclib, Capivasertib, Ribociclib or Anastrozole",
+        "Renal clearance (CLR) for AZD9833",
+        "Assessment of biomarker changes"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03616587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03616587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03616587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03616587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03616587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "serena-2",
+      "nctId": "NCT04214288",
+      "protocolNumber": "D8530C00002",
+      "acronym": "SERENA-2",
+      "title": "SERENA-2: A Randomised, Open-Label, Parallel-Group, Multicentre Phase 2 Study Comparing the Efficacy and Safety of Oral AZD9833 Versus Fulvestrant in Women With Advanced ER-Positive HER2-Negative Breast Cancer",
+      "briefTitle": "A Study to Investigate Efficacy and Safety With Oral AZD9833 Compared With Intramuscular Fulvestrant in Post-menopausal Women at Least 18 Years of Age With Advanced ER-positive HER2 Negative Breast Cancer",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-04-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-08-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-06-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 240,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AZD9833 Dose A",
+          "type": "EXPERIMENTAL",
+          "description": "The patients will receive AZD9833 (Dose A)."
+        },
+        {
+          "label": "AZD9833 Dose B",
+          "type": "EXPERIMENTAL",
+          "description": "The patients will receive AZD9833 (Dose B)."
+        },
+        {
+          "label": "AZD9833 Dose C",
+          "type": "EXPERIMENTAL",
+          "description": "The patients will receive AZD9833 (Dose C)."
+        },
+        {
+          "label": "Fulvestrant 500 mg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "The patients will receive Fulvestrant (500 mg)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-free Survival (PFS)"
+      ],
+      "secondaryEndpoints": [
+        "Objective Response Rate (ORR)",
+        "Duration of Response (DoR)",
+        "Percentage Change in Tumour Size at 16 Weeks",
+        "Overall Survival (OS)",
+        "Clinical Benefit Rate at 24 Weeks (CBR24)",
+        "Plasma Concentrations of AZD9833",
+        "Percent Change From Baseline in ER and PgR Expression and Ki67 Labelling Index",
+        "Changes From Baseline in Health Related Quality of Life (HRQoL)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04214288",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04214288",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04214288",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04214288",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04214288",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d8530c00004",
+      "nctId": "NCT04546347",
+      "protocolNumber": "D8530C00004",
+      "title": "A Study to Determine the Rel Bio of AZD9833 Formulations, Food Effects and the Absolute Bioavailability of AZD9833 Following Co-Administration of an Oral Tablet Formulation With a Radiolabelled Intravenous Microdose of [14C]AZD9833",
+      "briefTitle": "A Study to Assess the Rel Bioavailability, Food Effect and Absolute Bioavailability on the Pharmacokinetics of AZD9833",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-09-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-01-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-01-07",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 32,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "50 Years",
+        "maxAge": "70 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "14CAZD9833 Infusion NMT 22.8 kBq/5mL",
+          "type": "EXPERIMENTAL",
+          "description": "Dose 1 14CAZD9833 Solution for Infusion"
+        },
+        {
+          "label": "AZD9833 film-coated tablet A Dose 1",
+          "type": "EXPERIMENTAL",
+          "description": "Dose 1 AZD9833 film-coated tablet type A"
+        },
+        {
+          "label": "AZD9833 Oral Solution",
+          "type": "EXPERIMENTAL",
+          "description": "Dose 1 AZD9833 oral solution"
+        },
+        {
+          "label": "AZD9833 film-coated tablet B Dose 1",
+          "type": "EXPERIMENTAL",
+          "description": "Dose 1 AZD9833 film-coated tablet type B"
+        },
+        {
+          "label": "AZD9833 film-coated tablet A Dose 2",
+          "type": "EXPERIMENTAL",
+          "description": "Dose 2 AZD9833 film-coated tablet type A"
+        },
+        {
+          "label": "AZD9833 film-coated tablet B Dose 2",
+          "type": "EXPERIMENTAL",
+          "description": "Dose 2 AZD9833 film-coated tablet type B"
+        }
+      ],
+      "primaryEndpoints": [
+        "Relative bioavailability of AZD9833 based on Area under the curve from time 0 to the time of last measurable concentration (AUC0-t)",
+        "Relative bioavailability of AZD9833 based on area under the concentration time curve from time zero to the last quantifiable concentration (AUC0-inf)",
+        "Relative bioavailability of AZD9833 based on Maximum observed concentration (Cmax)"
+      ],
+      "secondaryEndpoints": [
+        "Area under the concentration time curve from time zero to the last quantifiable concentration (AUC0-inf) for AZD9833 vs [14C]-AZD9833 and total radioactivity",
+        "Number of adverse events (AE) experienced by subjects"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04546347",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04546347",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04546347",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04546347",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04546347",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d8530c00006",
+      "nctId": "NCT04541433",
+      "protocolNumber": "D8530C00006",
+      "title": "A Phase 1, Open-label Study to Assess the Safety, Tolerability, Pharmacokinetics and Anti- Tumor Activity of AZD9833 in Japanese Women With ER Positive, HER2 Negative Advanced Breast Cancer",
+      "briefTitle": "A Phase 1 Study of AZD9833 in Japanese Women With ER Positive, HER2 Negative Advanced Breast Cancer",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-09-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-07-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 10,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "20 Years",
+        "maxAge": "130 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AZD9833 monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Dose escalation of AZD9833 monotherapy for patients with ER+ HER2- advanced breast cancer"
+        }
+      ],
+      "primaryEndpoints": [
+        "The number of subjects with dose-limiting toxicity, as defined in the protocol.",
+        "The number of subjects with treatment-related adverse events as assessed by CTCAE v5.0."
+      ],
+      "secondaryEndpoints": [
+        "Objective Response Rate",
+        "Duration of Response",
+        "Clinical benefit rate at 24 weeks",
+        "Percentage Change in Tumour Size",
+        "Progression Free Survival",
+        "Maximum Observed Plasma Concentration (Cmax) of AZD9833",
+        "Time to observed Cmax (Tmax) for AZD9833"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04541433",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04541433",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04541433",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04541433",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04541433",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "serena-3",
+      "nctId": "NCT04588298",
+      "protocolNumber": "D8530C00003",
+      "acronym": "SERENA-3",
+      "title": "A Randomised, Open-Label, Parallel-Group, Pre-surgical Study to Investigate the Biological Effects of AZD9833 in Women With ER-positive, HER2-negative Primary Breast Cancer (SERENA-3)",
+      "briefTitle": "A Study to Investigate the Biological Effects of AZD9833 in Women With ER-positive, HER2 Negative Primary Breast Cancer",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-11-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-06-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-06-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 135,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Stage 1: AZD9833 Dose A",
+          "type": "EXPERIMENTAL",
+          "description": "Post-menopausal participants will receive once daily oral dose A of AZD9833 in stage 1 of the study."
+        },
+        {
+          "label": "Stage 1: AZD9833 Dose B",
+          "type": "EXPERIMENTAL",
+          "description": "Post-menopausal participants will receive once daily oral dose B of AZD9833 in stage 1 of the study."
+        },
+        {
+          "label": "Stage 2: AZD9833 Dose A",
+          "type": "EXPERIMENTAL",
+          "description": "Post-menopausal participants will receive once daily oral dose A of AZD9833 in stage 2 of the study."
+        },
+        {
+          "label": "Stage 2: AZD9833 Dose B",
+          "type": "EXPERIMENTAL",
+          "description": "Post-menopausal participants will receive once daily oral dose B of AZD9833 in stage 2 of the study."
+        },
+        {
+          "label": "Stage 2: AZD9833 Dose C",
+          "type": "EXPERIMENTAL",
+          "description": "Post-menopausal participants will receive once daily oral dose C of AZD9833 in stage 2 of the study."
+        },
+        {
+          "label": "Stage 3: AZD9833 Dose A",
+          "type": "EXPERIMENTAL",
+          "description": "Post-menopausal participants will receive once daily oral dose A of AZD9833 in stage 3 of the study."
+        },
+        {
+          "label": "Stage 3: AZD9833: Dose B",
+          "type": "EXPERIMENTAL",
+          "description": "Post-menopausal participants will receive once daily oral dose B of AZD9833 in stage 3 of the study."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage Change From Baseline in Estrogen Receptor (ER) Expression Between Pre- and On-treatment Tumour Samples (Primary Analysis)",
+        "Percentage Change From Baseline in ER Expression Between Pre- and On-treatment Tumour Samples (Sensitivity Analysis)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage Change From Baseline in Progesterone Receptor (PgR) Expression Between Pre- and On-treatment Tumour Samples (Primary Analysis)",
+        "Percentage Change From Baseline in PgR Expression Between Pre- and On-treatment Tumour Samples (Sensitivity Analysis)",
+        "Percentage Change From Baseline in Ki-67 Labelling Index Between Pre- and On-treatment Tumour Samples (Primary Analysis)",
+        "Percentage Change From Baseline in Ki-67 Labelling Index Between Pre- and On-treatment Tumour Samples (Sensitivity Analysis)",
+        "Number of Patients With Adverse Events (AEs)",
+        "Plasma Concentrations of AZD9833"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04588298",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04588298",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04588298",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04588298",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04588298",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "petra",
+      "nctId": "NCT04644068",
+      "protocolNumber": "D9720C00001",
+      "acronym": "PETRA",
+      "title": "A Modular Phase I/IIa, Open-label, Multicentre Study to Assess the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics and Preliminary Efficacy of Ascending Doses of AZD5305 as Monotherapy and in Combination With Anti-cancer Agents in Patients With Advanced Solid Malignancies",
+      "briefTitle": "Study of AZD5305 as Monotherapy and in Combination With Anti-cancer Agents in Patients With Advanced Solid Malignancies",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-11-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-05-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-05-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 702,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Module 1: AZD5305 Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "AZD5305 Monotherapy"
+        },
+        {
+          "label": "Module 2: AZD5305 + Paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "AZD5305 + Paclitaxel"
+        },
+        {
+          "label": "Module 3: AZD5305 + Carboplatin with or without Paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "AZD5305 + Carboplatin with or without Paclitaxel"
+        },
+        {
+          "label": "Module 4: AZD5305 + Trastuzumab Deruxtecan",
+          "type": "EXPERIMENTAL",
+          "description": "AZD5305 + T- DXd"
+        },
+        {
+          "label": "Module 5 AZD5305 + Datopotamab Deruxtecan",
+          "type": "EXPERIMENTAL",
+          "description": "AZD5305 + Dato-DXd"
+        },
+        {
+          "label": "Module 6 AZD5305 + Camizestrant",
+          "type": "EXPERIMENTAL",
+          "description": "AZD5305 + Camizestrant"
+        }
+      ],
+      "primaryEndpoints": [
+        "The number of subjects with adverse events/serious adverse events",
+        "The number of subjects with dose-limiting toxicity (DLT), as defined in the protocol."
+      ],
+      "secondaryEndpoints": [
+        "Best percentage change in target lesion",
+        "Objective Response Rate",
+        "Duration of Response",
+        "Progression Free Survival",
+        "Time To Response",
+        "Effects of AZD5305 on pH2AX (Ser139) PD biomarker",
+        "CA125 response (ovarian cancer)",
+        "Module 1: Area Under Curve (AUC)",
+        "Module 1: Maximum plasma concentration of the drug (Cmax)",
+        "Module 1: The time taken to reach the maximum concentration (Tmax)",
+        "Module 1 and Module 5: Objective Response Rate (prostate cancer)",
+        "Module 1: Radiographic progression free survival (prostate cancer)",
+        "Module 1: Proportion of subjects with ≥ 50% PSA decrease (prostate cancer)",
+        "Module 1 : To investigate the effect of a high-fat meal on the PK of AZD5305",
+        "Module 2: Area Under Curve (AUC)",
+        "Module 2: Maximum plasma concentration of the drug (Cmax)",
+        "Module 2: The time taken to reach the maximum concentration (Tmax)",
+        "Module 3: Area Under Curve (AUC)",
+        "Module 3: Maximum plasma concentration of the drug (Cmax)",
+        "Module 3: The time taken to reach the maximum concentration (Tmax)",
+        "Module 4 : Area Under Curve",
+        "Module 4: Maximum plasma concentration of the drug (Cmax)",
+        "Module 4: The time taken to reach the maximum concentration (Tmax)",
+        "Module 4: Anti-Drug Antibody (ADA)",
+        "Module 4: To assess the preliminary anti-tumour activity of AZD5305 as monotherapy and in combination with T-DXd.",
+        "Module 5: Area Under Curve",
+        "Module 5: Maximum plasma concentration of the drug (Cmax)",
+        "Module 5: The time taken to reach the maximum concentration (Tmax)",
+        "Module 5: Anti-Drug Antibody (ADA)",
+        "Module 5: Premilinary anti tumour activity AZD5305 in combination with Dato-DXd",
+        "Module 6: To characterise the PK of AZD5305 and camizestrant following a single dose and at steady state after multiple dosing, when given in combination.",
+        "Module 6: To evaluate the effect of camizestrant on the PK of AZD5305.",
+        "Module 6: To evaluate the effect of AZD5305 on the PK of Camizestrant."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04644068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04644068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04644068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04644068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04644068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "serena-4",
+      "nctId": "NCT04711252",
+      "protocolNumber": "D8532C00001",
+      "acronym": "SERENA-4",
+      "title": "SERENA-4: A Randomised, Multicentre, Double-Blind, Phase III Study of AZD9833 (an Oral SERD) Plus Palbociclib Versus Anastrozole Plus Palbociclib for the Treatment of Patients With Estrogen Receptor-Positive, HER2-Negative Advanced Breast Cancer Who Have Not Received Any Systemic Treatment for Advanced Disease",
+      "briefTitle": "A Comparative Study of AZD9833 Plus Palbociclib Versus Anastrozole Plus Palbociclib in Patients With ER-Positive HER2 Negative Breast Cancer Who Have Not Received Any Systemic Treatment for Advanced Disease",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-01-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-06-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-02-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1371,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AZD9833 + palbociclib",
+          "type": "EXPERIMENTAL",
+          "description": "The patients will receive AZD9833 (75 mg, PO, once daily) + palbociclib (PO, once daily, 125 mg for 21 consecutive days followed by 7 days off treatment) + anastrozole placebo (1 mg, PO, once daily)"
+        },
+        {
+          "label": "Anastrozole + palbociclib",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "The patients will recieve Anastrozole (1 mg, PO, once daily) + palbociclib (PO, once daily, 125 mg for 21 consecutive days followed by 7 days off treatment) + AZD9833 placebo (PO, once daily)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-free survival (PFS) assessed by the Investigator as defined by response evaluation criteria in solid tumors (RECIST) version 1.1"
+      ],
+      "secondaryEndpoints": [
+        "Overall survival (OS)",
+        "Second progression-free survival (PFS2)",
+        "Objective response rate (ORR) assessed by the Investigator as defined by RECIST version 1.1",
+        "Duration of response (DoR) assessed by the Investigator as defined by RECIST version 1.1",
+        "Time to chemotherapy (TTC)",
+        "Time to first subsequent anti-cancer therapy (TFST)",
+        "Clinical benefit rate at 24 weeks (CBR24)",
+        "Time to second subsequent therapy (TSST)",
+        "Plasma concentration of AZD9833 at specified timepoints",
+        "Change from baseline in EORTC QLQ-C30 scale scores",
+        "Change from baseline in EORTC QLQ-BR45 scale scores"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711252",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711252",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711252",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711252",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04711252",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "serena-6",
+      "nctId": "NCT04964934",
+      "protocolNumber": "D8534C00001",
+      "acronym": "SERENA-6",
+      "title": "A Phase III, Double-blind, Randomised Study to Assess Switching to AZD9833 (a Next Generation, Oral SERD) + CDK4/6 Inhibitor vs Continuing Aromatase Inhibitor (Letrozole or Anastrozole)+ CDK4/6 Inhibitor in HR+/HER2-MBC Patients With Detectable ESR1Mutation Without Disease Progression During 1L Treatment With Aromatase Inhibitor+ CDK4/6 Inhibitor- A ctDNA Guided Early Switch Study",
+      "briefTitle": "Phase III Study to Assess AZD9833+ CDK4/6 Inhibitor in HR+/HER2-MBC With Detectable ESR1m Before Progression (SERENA-6)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer upon detection of ESR1 mutation during aromatase inhibitor and CDK4/6 inhibitor therapy, based on an FDA-authorized test",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220359Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer upon detection of ESR1 mutation during aromatase inhibitor and CDK4/6 inhibitor therapy, based on an FDA-authorized test)",
+            "quote": "Trial identifier appears within the Adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer upon detection of ESR1 mutation during aromatase inhibitor and CDK4/6 inhibitor therapy, based on an FDA-authorized test section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220359Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Etcamah (camizestrant) tablets in combination with a CDK4/6 inhibitor (abemaciclib, palbociclib, or ribociclib ) for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer upon detection of ESR1 mutation during aromatase inhibitor and CDK4/6 inhibitor therapy, based on an FDA-authorized test.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-06-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-06-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-09-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 315,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AZD9833 + palbociclib, abemaciclib or ribociclib",
+          "type": "EXPERIMENTAL",
+          "description": "The patients will receive AZD9833 (75 mg, PO, once daily) + palbociclib (PO, once daily, 125, 100 or 75 mg for 21 consecutive days followed by 7 days off treatment), abemaciclib (PO, twice daily, 150,100 or 50 mg) or ribociclib (To Be Determined, PO, once daily for 21 consecutive days followed by 7 days off treatment) + anastrozole placebo (PO, once daily) or letrozole placebo (PO, once daily)"
+        },
+        {
+          "label": "Anastrozole or letrozole + palbociclib, abemaciclib or ribociclib",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "The patients will recieve anastrozole (1 mg, PO, once daily) or letrozole (2.5 mg, PO, once daily) + palbociclib (PO, once daily, 125, 100 or 75 mg for 21 consecutive days followed by 7 days off treatment), abemaciclib (PO, twice daily, 150, 100 or 50 mg) or ribociclib (To Be Determined, PO, once daily for 21 consecutive days followed by 7 days off treatment) + AZD9833 placebo (PO, once daily)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-free survival (PFS) assessed by the Investigator as defined by response evaluation criteria in solid tumors (RECIST version 1.1)"
+      ],
+      "secondaryEndpoints": [
+        "Progression-free survival 2 (PFS2)",
+        "Overall survival (OS)",
+        "Chemotherapy free survival",
+        "Objective response rate (ORR) assessed by the Investigator as defined by RECIST version 1.1",
+        "Clinical benefit rate at 24 weeks (CBR24)",
+        "Change from baseline in EORTC QLQ-C30 scale scores",
+        "Change from baseline in EORTC QLQ-BR23 scale scores",
+        "Plasma concentration of AZD9833 at specified timepoints"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04964934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04964934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04964934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04964934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04964934",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220359Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 15,
+          "quote": "locally advanced or metastatic breast cancer with detectable ESR1 mutations in SERENA-6 (NCT04964934), a randomized, double-blind, placebo-controlled, multicenter, ctDNA-guided trial to asse",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "azd9833",
+      "nctId": "NCT04818632",
+      "protocolNumber": "D8530C00007",
+      "acronym": "AZD9833",
+      "title": "A Phase 1 Dose Escalation and Expansion Study of AZD9833 Alone or in Combination With Palbociclib or Everolimus in Chinese Patients With Oestrogen Receptor Positive (ER+), Human Epidermal Growth Factor Receptor 2 Negative (HER2-) Metastatic Breast Cancer (mBC)",
+      "briefTitle": "AZD9833 China PK Study",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-11-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-09-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-09-07",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 28,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "AZD9833 monotherapy dose escalation",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 monotherapy dose expansion",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with palbociclib dose expansion",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "AZD9833 with everolimus dose expansion",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "The number of subjects with dose-limiting toxicity, as defined in the protocol.",
+        "The number of subjects with treatment-related adverse events as assessed by CTCAE v5.0.",
+        "Plasma AZD9833 concentrations and derived PK parameters."
+      ],
+      "secondaryEndpoints": [
+        "The number of subjects with treatment-related adverse events as assessed by CTCAE v5.0.",
+        "Plasma AZD9833 concentrations and derived PK parameters (for optional expansion cohorts Part B Cohorts 2 and 3 only). Everolimus (whole blood) concentrations and derived PK parameters (for optional expansion cohort Part B Cohort 3 only).",
+        "Objective Response Rate",
+        "Duration of Response",
+        "Clinical benefit rate at 24 weeks",
+        "Percentage Change in Tumour Size",
+        "Progression Free Survival"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04818632",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04818632",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04818632",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04818632",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04818632",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d8532c00005",
+      "nctId": "NCT05364255",
+      "protocolNumber": "D8532C00005",
+      "title": "A Phase I, Open-Label, Single-Dose, Single-Period Study to Assess the Mass Balance Recovery, Metabolite Profile and Metabolite Identification of [14C]AZD9833 After Oral Administration in Healthy Post-Menopausal Female Subjects",
+      "briefTitle": "A Study to Assess the Mass Balance Recovery, Metabolite Profile and Metabolite Identification of [14C]AZD9833",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-05-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-06-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-06-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 6,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "50 Years",
+        "maxAge": "70 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "[14C]AZD9833 (D8532C00005)",
+          "type": "EXPERIMENTAL",
+          "description": "Oral Solution, 75 mg (NMT 0.67 MBq)"
+        }
+      ],
+      "primaryEndpoints": [
+        "The cumulative amount of AZD9833 excreted (CumAe)",
+        "The cumulative amount of AZD9833 excreted, expressed as a percentage of the radioactive dose administered (Cum%Ae)",
+        "Assessment of metabolites in plasma by liquid chromatography-radiochemical-detection and subsequent mass spectrometry",
+        "Assessment of metabolites in urine by liquid chromatography-radiochemical-detection and subsequent mass spectrometry",
+        "Assessment of metabolites in faeces by liquid chromatography-radiochemical-detection and subsequent mass spectrometry"
+      ],
+      "secondaryEndpoints": [
+        "The amount of total radioactivity eliminated in urine (Ae)",
+        "The amount of total radioactivity eliminated in urine expressed as a percentage of the radioactive dose administered (%Ae)",
+        "The cumulative amount of AZD9833 excreted in urine (CumAe)",
+        "The cumulative amount of AZD9833 excreted in urine, expressed as a percentage of the radioactive dose administered (Cum%Ae)",
+        "The amount of total radioactivity eliminated in faeces (Ae)",
+        "The amount of total radioactivity eliminated in faeces expressed as a percentage of the radioactive dose administered (%Ae)",
+        "The cumulative amount of AZD9833 excreted in faeces (CumAe)",
+        "The cumulative amount of AZD9833 excreted in faeces, expressed as a percentage of the radioactive dose administered (Cum%Ae)",
+        "Time to maximum concentration (tmax) for AZD9833 and total radioactivity",
+        "Maximum observed concentration (cmax) for AZD9833 and total radioactivity",
+        "Area under the curve from time 0 to the time of last measurable concentration for AZD9833 and total radioactivity (AUC0-t)",
+        "Area under the curve from time 0 extrapolated to infinity for AZD9833 and total radioactivity (AUC0-inf)",
+        "Area under the curve from time of the last measurable concentration to infinity as a percentage of the area under the curve extrapolated to infinity (AUC%extr) and total radioactivity",
+        "Terminal elimination half-life for AZD9833 (t1/2) and total radioactivity",
+        "First order rate constant associated with the terminal (log-linear) portion of the curve for AZD9833 (λz) and total radioactivity",
+        "Total body clearance calculated after a single extravascular administration for AZD9833 (CL/F) and total radioactivity",
+        "Apparent volume of distribution based on the terminal phase for AZD9833 (Vz/F) and total radioactivity",
+        "Renal clearance for AZD9833 (CLr) and total radioactivity",
+        "Evaluation of whole blood:plasma concentration ratios for total radioactivity",
+        "Number of AE's experienced by subjects"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05364255",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05364255",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05364255",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05364255",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05364255",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d8532c00004",
+      "nctId": "NCT05438303",
+      "protocolNumber": "D8532C00004",
+      "title": "A Phase 1, Multi-center, Open-label, 3-arm, Fixed Sequence Study to Assess the Effect of Co-administration of AZD9833 on the Pharmacokinetics of Midazolam (CYP3A4/5 Substrate), of Omeprazole (CYP2C19 Substrate), of Celecoxib (CYP2C9 Substrate) and of Dabigatran Etexilate (P-gp Transporter Substrate) in Healthy Postmenopausal Female Volunteers",
+      "briefTitle": "Study to Assess the Effect of Co-Administration of AZD9833 on the Pharmacokinetics of Midazolam, of Omeprazole, of Celecoxib and of Dabigatran Etexilate in Healthy Postmenopausal Female Volunteers",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-06-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-12-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-12-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 59,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "50 Years",
+        "maxAge": "70 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A (midazolam and omeprazole)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive single oral doses of midazolam and omeprazole together (Day 1 of Treatment Periods 1 and 3) and repeated doses of AZD9833 (Days 1 to 5 of Treatment Period 2 and Day 1 of Treatment Period 3)"
+        },
+        {
+          "label": "Arm B (Dabigatran etexilate)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive single oral doses of dabigatran etexilate (Day 1 of Treatment Periods 1 and 2) and single oral dose of AZD9833 (Day 1 of Treatment Period 2)"
+        },
+        {
+          "label": "Arm C (Celecoxib)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive single oral doses of celecoxib (Day 1 of Treatment Periods 1 and 3) and repeated oral doses of AZD9833 (Days 1 to 5 of Treatment Period 2 and Day 1 of Treatment Period 3)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under plasma concentration time curve from zero to infinity (AUCinf) of midazolam, omeprazole, total dabigatran, and celecoxib",
+        "Area under the plasma concentration curve from zero to the last quantifiable concentration (AUClast) of midazolam, omeprazole, total dabigatran, and celecoxib",
+        "Maximum observed plasma concentration (Cmax) of midazolam, omeprazole, dabigatran etexilate and celecoxib"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants with Adverse Events (AEs)",
+        "AUCinf for AZD9833 and free dabigatran",
+        "AUClast for AZD9833 and free dabigatran",
+        "Area under plasma concentration-time curve in the dose interval (AUCt) for AZD9833 and free dabigatran",
+        "Cmax for AZD9833 and free dabigatran",
+        "Time to reach maximum observed concentration (tmax) for AZD9833 and free dabigatran",
+        "Half-life associated with terminal slope of a semi-logarithmic concentration-time curve (t½λz) for AZD9833 and free dabigatran",
+        "Apparent total body clearance from plasma after extravascular administration (CL/F) for AZD9833 and free dabigatran",
+        "Apparent volume of distribution based on terminal phase (Vz/F) for AZD9833 and free dabigatran",
+        "tmax for midazolam, omeprazole, total dabigatran, and celecoxib",
+        "t½λz for midazolam, omeprazole, total dabigatran, and celecoxib",
+        "CL/F for midazolam, omeprazole, total dabigatran, and celecoxib",
+        "Vz/F for midazolam, omeprazole, total dabigatran, and celecoxib",
+        "Area under the plasma concentration-curve from zero to 24 hours post dose (AUC0-24) for celecoxib"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05438303",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05438303",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05438303",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05438303",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05438303",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d8532c00003",
+      "nctId": "NCT05551897",
+      "protocolNumber": "D8532C00003",
+      "title": "An Open-Label, Fixed Sequence Study in Healthy Post Menopausal Female Subjects to Assess the Pharmacokinetics of Camizestrant (AZD9833) When Administered Alone and in Combination With Itraconazole",
+      "briefTitle": "A Study to Assess the Pharmacokinetics of Camizestrant (AZD9833) When Administered Alone and in Combination With Itraconazole",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-10-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-12-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-12-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 14,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "50 Years",
+        "maxAge": "70 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment Arm",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive a single oral dose of Camizestrant on Day 1 of treatment period 1. Following washout period of 7 to 10 days, subjects will receive Itraconazole on Days 1, 2, and 3 of treatment period 2, and single oral dose of Camizestrant plus a dose of Itraconazole on Day 1, followed by Itraconazole alone on Day 2 and Day 3 of treatment period 3."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under plasma concentration time curve from zero to infinity (AUCinf) of Camizestrant",
+        "Area under the plasma concentration curve from zero to the last quantifiable concentration (AUClast) of Camizestrant",
+        "Maximum observed plasma (peak) drug concentration (Cmax) of Camizestrant"
+      ],
+      "secondaryEndpoints": [
+        "Number of subjects with adverse events (AEs) and serious adverse events (SAEs)",
+        "Number of subjects with adverse events leading to the discontinuation of study drug (DAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05551897",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05551897",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05551897",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05551897",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05551897",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d8532c00002",
+      "nctId": "NCT05790304",
+      "protocolNumber": "D8532C00002",
+      "title": "A Phase I, Single Dose, Non-Randomised, Multicentre, Open-Label, Parallel Group Study to Investigate the Effect of Hepatic Impairment on the Pharmacokinetics, Safety and Tolerability of Camizestrant in Post Menopausal Female Subjects",
+      "briefTitle": "Study to Investigate Hepatic Impairment on PK, Safety, Tolerability of Camizestrant in Post-Menopausal Female Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-02-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-02-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-02-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 22,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "50 Years",
+        "maxAge": "75 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group 1",
+          "type": "OTHER",
+          "description": "Matched-control healthy participants with normal hepatic function."
+        },
+        {
+          "label": "Group 2",
+          "type": "OTHER",
+          "description": "Participants with moderate hepatic impairment (CP Class B, score of 7 to 9)."
+        },
+        {
+          "label": "Group 3",
+          "type": "OTHER",
+          "description": "Participants with severe hepatic impairment (CP Class C, score of 10 to 15)."
+        }
+      ],
+      "primaryEndpoints": [
+        "PK parameters Cmax",
+        "PK parameters tmax",
+        "PK parameters AUClast,",
+        "PK parameters AUCinf.;",
+        "PK parameters tlast",
+        "PK parameters t1/2λz",
+        "PK parameters CL/F",
+        "PK parameters Vz/F."
+      ],
+      "secondaryEndpoints": [
+        "Number of subjects with adverse events (AEs) and serious adverse events (SAEs)",
+        "Number of participants with an AE causally related to IMP leading to study discontinuation"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790304",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cambria-1",
+      "nctId": "NCT05774951",
+      "protocolNumber": "D8531C00002",
+      "acronym": "CAMBRIA-1",
+      "title": "CAMBRIA-1: A Phase III, Open-Label, Randomised Study to Assess the Efficacy and Safety of Extended Therapy With Camizestrant (AZD9833, a Next Generation, Oral Selective Estrogen Receptor Degrader) Versus Standard Endocrine Therapy (Aromatase Inhibitor or Tamoxifen) in Patients With ER+/HER2- Early Breast Cancer and an Intermediate or High Risk of Recurrence Who Have Completed Definitive Locoregional Therapy and at Least 2 Years of Standard Adjuvant Endocrine-Based Therapy Without Disease Recurrence",
+      "briefTitle": "A Study of Camizestrant in ER+/HER2- Early Breast Cancer After at Least 2 Years of Standard Adjuvant Endocrine Therapy",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-03-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-04-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2036-05-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 4300,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: standard endocrine therapy of investigator´s choice",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Continue standard endocrine therapy of investigator's choice (aromatase inhibitors \\[AI; exemestane, letrozole, anastrozole\\] or tamoxifen)"
+        },
+        {
+          "label": "Arm B: camizestrant",
+          "type": "EXPERIMENTAL",
+          "description": "Camizestrant"
+        }
+      ],
+      "primaryEndpoints": [
+        "Invasive breast cancer-free survival (IBCFS)"
+      ],
+      "secondaryEndpoints": [
+        "Invasive disease-free survival (IDFS)",
+        "Distant relapse-free survival (DRFS)",
+        "Overall survival (OS)",
+        "Incidence and Severity of Adverse Events, with Severity Determined According to National Cancer Institute Common Terminology Criteria for Adverse Events, version 5.0 (NCI-CTCAE v5.0)",
+        "Absolute and percent change from baseline in Clinical Laboratory Parameters",
+        "Absolute and percent change from baseline in Vital Sign Parameters",
+        "Change from baseline of arthralgia as measured by the EORTC-IL-194 (European Organisation for Research and Treatment of Cancer) item 10. EORTC-IL-194 uses 0 - 4 scale (higher score is worse)",
+        "Change from baseline of hot flush as measured by the EORTC-IL-194 item 4. EORTC-IL-194 uses 0 - 4 scale (higher score is worse)",
+        "Change from baseline of vaginal dryness as measured by the EORTC-IL-194 item 15. EORTC-IL-194 uses 0 - 4 scale (higher score is worse)",
+        "Proportion of patients experiencing each level of symptomatic AEs of arthralgia as measured by the EORTC-IL-194 item 10. EORTC-IL-194 uses 0 - 4 scale (higher score is worse)",
+        "Proportion of patients experiencing each level of symptomatic AEs of hot flush as measured by the EORTC-IL-194 item 4. EORTC-IL-194 uses 0 - 4 scale (higher score is worse)",
+        "Proportion of patients experiencing each level of symptomatic AEs of vaginal dryness as measured by the EORTC-IL-194 item 15. EORTC-IL-194 uses 0 - 4 scale (higher score is worse)",
+        "Change from baseline and TTD (time to deterioration ) of health-related QoL (quality of life) as measured by the 2 global QoL items from the EORTC-QLQ-C30 items 11 and 12. EORTC-QLQ-C30 uses 0 - 4 scale (higher score is worse)",
+        "Pharmacokinetics (PK)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05774951",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05774951",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05774951",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05774951",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05774951",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cambria-2",
+      "nctId": "NCT05952557",
+      "protocolNumber": "D8535C00001",
+      "acronym": "CAMBRIA-2",
+      "title": "CAMBRIA-2: A Phase III, Open-Label, Randomised Study to Assess the Efficacy and Safety of Camizestrant (AZD9833, a Next Generation, Oral Selective Estrogen Receptor Degrader) vs Standard Endocrine Therapy (Aromatase Inhibitor or Tamoxifen) as Adjuvant Treatment for Patients With ER+/HER2- Early Breast Cancer and an Intermediate-High or High Risk of Recurrence Who Have Completed Definitive Locoregional Treatment and Have No Evidence of Disease",
+      "briefTitle": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-10-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-03-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2037-05-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 5511,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: standard endocrine therapy of investigator´s choice ± abemaciclib",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "standard endocrine therapy of investigator's choice (aromatase inhibitors \\[AI; exemestane, letrozole, anastrozole\\] or tamoxifen) ± abemaciclib"
+        },
+        {
+          "label": "Arm B: camizestrant ± abemaciclib",
+          "type": "EXPERIMENTAL",
+          "description": "camizestrant ± abemaciclib"
+        }
+      ],
+      "primaryEndpoints": [
+        "Invasive breast cancer-free survival (IBCFS)"
+      ],
+      "secondaryEndpoints": [
+        "Invasive disease-free survival (IDFS)",
+        "Distant relapse-free survival (DRFS)",
+        "Overall survival (OS)",
+        "Incidence and Severity of Adverse Events, with Severity Determined According to National Cancer Institute Common Terminology Criteria for Adverse Events, version 5.0 (NCI-CTCAE v5.0)",
+        "Proportion of time on study treatment with high side-effect burden as measured by the PGI-TT.",
+        "Change from baseline and time to deterioration of health-related quality of life as measured by the 2 global QoL items from the EORTC IL-311",
+        "Pharmacokinetics (PK)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952557",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cycad-1",
+      "nctId": "NCT06188520",
+      "protocolNumber": "D8470C00001",
+      "acronym": "CYCAD-1",
+      "title": "A Phase I/IIa, First-in-human, Open-label, Dose Escalation and Expansion Study to Evaluate the Safety, Pharmacokinetics, Pharmacodynamics and Preliminary Efficacy of AZD8421 Alone or in Combination in Participants With Selected Advanced or Metastatic Solid Tumors",
+      "briefTitle": "A First-in-human Dose Escalation and Expansion Study to Evaluate the Safety, and Tolerability of AZD8421 Alone or in Combination in Participants With Selected Advanced or Metastatic Solid Tumors",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-12-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-06-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-06-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 55,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Module 1",
+          "type": "EXPERIMENTAL",
+          "description": "AZD8421 monotherapy"
+        },
+        {
+          "label": "Module 2A",
+          "type": "EXPERIMENTAL",
+          "description": "AZD8421 with camizestrant and CDK4/6 inhibitor"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of dose limiting toxicities (DLTs) as defined in the protocol.",
+        "Incidence of AEs/SAEs",
+        "Clinically significant changes from baseline in clinical laboratory parameters, vital signs and ECGs.",
+        "Discontinuation of AZD8421 due to toxicity"
+      ],
+      "secondaryEndpoints": [
+        "Overall Response Rate (ORR)",
+        "Duration of Response (DoR)",
+        "Disease control rate (DCR)",
+        "Percentage change in tumor size",
+        "Progression Free Survival (PFS)",
+        "PK of AZD8421 (Cmax)",
+        "PK of AZD8421 (Tmax)",
+        "PK of AZD8421 (AUCinf)",
+        "PK of AZD8421 (AUClast)",
+        "PK of AZD8421 (T1/2λZ)",
+        "PK of AZD8421 (CL/F)",
+        "PK of AZD8421 (Cssmax)",
+        "PK of AZD8421 (Tssmax)",
+        "PK of AZD8421 (ARCmax)",
+        "PK of AZD8421 (AUCsslast)",
+        "PK of AZD8421 (T1/2λssz)",
+        "PK of AZD8421 (CLss/F)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (Cmax) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (Tmax) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (AUCinf) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (T1/2λ) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (CL/F) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (Cssmax) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (Tssmax) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (AUC0-tau) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (T1/2λssz) (M2 only)",
+        "PK of AZD8421, camizestrant, and CDK4/6i (CLss/F) (M2 only)",
+        "PD of AZD8421 (M1B only)",
+        "PK of AZD8421 (ARAUC)",
+        "Best Objective Response (BOR)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06188520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06188520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06188520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06188520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06188520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "evopar-br01",
+      "nctId": "NCT06380751",
+      "protocolNumber": "D9722C00001",
+      "acronym": "EvoPAR-BR01",
+      "title": "A Randomised, Open-Label, Phase III Study of Saruparib (AZD5305) Plus Camizestrant or Plus Endocrine Therapy, Compared With Physician's Choice CDK4/6 Inhibitor Plus Endocrine Therapy or Plus Camizestrant for the First-Line Treatment of Patients With BRCA1, BRCA2, or PALB2 Mutations and Hormone Receptor Positive, HER2-Negative (IHC 0, 1+, 2+/ ISH Non-amplified) Advanced Breast Cancer (EvoPAR-Breast01)",
+      "briefTitle": "Saruparib (AZD5305) Plus Camizestrant or Plus Endocrine Therapy, Compared With CDK4/6 Inhibitor Plus Endocrine Therapy or Plus Camizestrant in HR-Positive, HER2-Negative (IHC 0, 1+, 2+/ ISH Non-amplified), BRCA1, BRCA2, or PALB2m Advanced Breast Cancer",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-08-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-12-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-12-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 788,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm 1: saruparib (AZD5305) plus camizestrant",
+          "type": "EXPERIMENTAL",
+          "description": "participants will receive saruparib (AZD5305) orally and camizestrant orally"
+        },
+        {
+          "label": "Arm 2: Physician's choice CDK4/6i plus physician's choice ET",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "agents are indicated below and should follow local guidelines:\n\n* Physician's Choice CDK4/6i:\n\n  * abemaciclib orally, or\n  * ribociclib orally, or\n  * palbociclib orally.\n* Physician's Choice ET:\n\n  * fulvestrant intramuscularly, or\n  * One of the following AIs:\n\n    * letrozole orally, or\n    * anastrozole orally, or\n    * exemestane orally"
+        },
+        {
+          "label": "Arm 3: Physician's choice CDK4/6i plus camizestrant",
+          "type": "EXPERIMENTAL",
+          "description": "participants will receive camizestrant orally. Agents for CDK4/6i treatment are indicated above and should follow local guidelines"
+        },
+        {
+          "label": "Arm 4: Saruparib (AZD5305) plus physician's choice ET",
+          "type": "EXPERIMENTAL",
+          "description": "participants will receive Saruparib (AZD5305) plus -Physician's Choice ET:\n\n* fulvestrant intramuscularly, or\n* One of the following AIs:\n\n  * letrozole orally, or\n  * anastrozole orally, or\n  * exemestane orally"
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-Free Survival (Arm 1 vs arm 2)"
+      ],
+      "secondaryEndpoints": [
+        "Progression-Free Survival (arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Overall Survival (arm 1 vs 2, arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Progression Free Survival 2 (arm 1 vs 2, arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Time to chemotherapy (arm 1 vs 2, arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Objective Response Rate (arm 1 vs 2, arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Duration of Response (arm 1 vs 2, arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Participant-reported tolerability (arm 1 vs 2, arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Time to deterioration in patient-reported global health status/QoL as measured by the global health status/QoL scale within the EORTC quality of life questionnaire (QLQ) (arm 1 vs 2, arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Change from baseline in patient-reported global health status/QoL as measured by the global health status/QoL scale within the EORTC quality of life questionnaire (QLQ) (arm 1 vs 2, arm 4 vs 2, arm 1 vs 3, arm 3 vs 2, arm 4 vs 1)",
+        "Plasma concentrations of saruparib (AZD5305)",
+        "Plasma concentrations of camizestrant",
+        "Samples will be used to develop companion diagnostics by analyzing their performance characteristics and calculate their consistency with clinical trial assays used for enrolment onto the study."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06380751",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06380751",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06380751",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06380751",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06380751",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d8532c00006",
+      "nctId": "NCT06547164",
+      "protocolNumber": "D8532C00006",
+      "title": "A Phase I, Open-label, 2 Part, Fixed Sequence Study to Assess the Effect of Co-administration of Camizestrant (AZD9833) on the Pharmacokinetics of Midazolam Exposure (CYP3A4/5 Substrate) and of Carbamazepine (CYP3A4/5 Inducer) on Camizestrant Exposure in Healthy Post Menopausal Female Participants",
+      "briefTitle": "A Study to Investigate the Pharmacokinetics of Midazolam After Repeated Doses of Camizestrant (AZD9833) and to Investigate the Pharmacokinetics of Camizestrant When Administered Alone and in Combination With Carbamazepine in Healthy Post-Menopausal Female Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-08-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-08-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-08-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 40,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "50 Years",
+        "maxAge": "70 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part A: Midazolam + Camizestrant",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of midazolam on Day 1 in Period 1, followed by oral dose of camizestrant OD from Day 2 to Day 6 in Period 2, and then single oral dose of midazolam with camizestrant on Day 7 with PK sampling on Day 7 to Day 8 in Period 3."
+        },
+        {
+          "label": "Part B: Camizestrant + Carbamazepine",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of camizestrant on Day 1 with PK sampling on Day 1 to Day 4 in Period 1, followed by low oral doses of carbamazepine BID on Day 4 to Day 6, mid oral doses of carbamazepine BID on Day 7 to Day 9 and high oral doses of carbamazepine BID on Day 10 to Day 15 with single oral dose of camizestrant on Day 13 with PK sampling on Day 16 in Period 2."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part A: Area under concentration-time curve from time 0 to infinity (AUCinf) of midazolam",
+        "Part A: Area under concentrationcurve from time 0 to the last quantifiable concentration (AUClast) of midazolam",
+        "Part A: Maximum observed plasma (peak) drug concentration (Cmax) of midazolam",
+        "Part B: Area under concentration-time curve from time 0 to infinity (AUCinf) of camizestrant",
+        "Part B: Area under concentrationcurve from time 0 to the last quantifiable concentration (AUClast) of camizestrant",
+        "Part B: Maximum observed plasma (peak) drug concentration (Cmax) of camizestrant"
+      ],
+      "secondaryEndpoints": [
+        "Part A: Time to reach maximum observed concentration (tmax) of midazolam",
+        "Part A: Terminal elimination half-life (t½λz) of midazolam",
+        "Part A: Terminal rate constant (λz) of midazolam",
+        "Part A: Apparent total body clearance (CL/F) of midazolam",
+        "Part A: Apparent volume of distribution based on the terminal phase (Vz/F) of midazolam",
+        "Part A: Plasma concentration of camizestrant",
+        "Part B: Time to reach maximum observed concentration (tmax) of camizestrant",
+        "Part B: Terminal elimination half-life (t½λz) of camizestrant",
+        "Part B: Terminal rate constant (λz) of camizestrant",
+        "Part B: Apparent total body clearance (CL/F) of camizestrant",
+        "Part B: Apparent volume of distribution based on the terminal phase (Vz/F) of camizestrant",
+        "Number of participants with adverse events (AEs) and serious adverse events (SAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06547164",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06547164",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06547164",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06547164",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06547164",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "serena-1b",
+      "nctId": "NCT07427394",
+      "protocolNumber": "D853CC00001",
+      "acronym": "SERENA-1b",
+      "title": "A Phase IIa, Open-label Study to Evaluate the Safety, Pharmacokinetics and Preliminary Efficacy of Camizestrant in Combination With Atirmociclib in Participants With ER-positive, HER2-negative Advanced Breast Cancer (SERENA-1b)",
+      "briefTitle": "Study to Evaluate the Safety and Tolerability of Camizestrant in Combination With Atirmociclib in Women With Advanced Breast Cancer",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-05-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Camizestrant + Atirmociclib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single dose of atirmociclib on Day -1 followed by combination of camizestrant and atirmociclib from Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with adverse events (AEs) and serious AEs"
+      ],
+      "secondaryEndpoints": [
+        "Maximum concentration observed (Cmax)",
+        "Area under plasma concentration-time curve from time 0 to infinity (AUCinf)",
+        "Area under plasma concentration-time curve from time 0 to last quantifiable concentration (AUClast)",
+        "Time to reach maximum (peak) plasma concentration following drug administration (tmax)",
+        "Terminal elimination rate constant (λz)",
+        "Terminal elimination half-life (t½λz)",
+        "Apparent total body clearance (CL/F)",
+        "Apparent volume of distribution at steady state (Vss/F)",
+        "Apparent volume of distribution based on the terminal phase (Vz/F)",
+        "Maximum concentration observed at steady state (Cssmax)",
+        "Area under the curve from 0 to the end of dosing interval (AUC0-tau)",
+        "Area under the curve from 0 to the end of dosing interval at steady state (AUCss0-tau)",
+        "Time to reach maximum plasma concentration at steady state (tssmax)",
+        "Objective Response Rate (ORR)",
+        "Duration of Response (DOR)",
+        "Clinical Benefit Rate at 24 Weeks (CBR24)",
+        "Percentage change in tumor size",
+        "Progression Free Survival (PFS)",
+        "Progression-free survival landmark 6 months (PFSLM6m)",
+        "Progression-free survival landmark 12 months (PFSLM12m)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07427394",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07427394",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07427394",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07427394",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07427394",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "serafa-1",
+      "nctId": "NCT07647328",
+      "protocolNumber": "D8532C00008",
+      "acronym": "SERAFA-1",
+      "title": "SERAFA-1: A Single Arm, Open Label, Multicentre, Phase IIIb Study Of Camizestrant Plus Ribociclib in 1st Line Treatment of ER Positive, HER2-negative Advanced Breast Cancer Patients",
+      "briefTitle": "A Phase IIIb Study to Evaluate Camizestrant Plus Ribociclib in ER-positive, HER2-negative Advanced Breast Cancer",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-06-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-02-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-02-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 150,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Camizestrant and Ribociclib",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will receive the standard dose of camizestrant and ribociclib once daily as oral tablets"
+        }
+      ],
+      "primaryEndpoints": [
+        "Efficacy of camizestrant and ribociclib by time to next treatment (TTNT)"
+      ],
+      "secondaryEndpoints": [
+        "Efficacy of camizestrant and ribociclib by time to discontinuation (TTD)",
+        "Efficacy of camizestrant and ribociclib by progression free survival (PFS)",
+        "CTCAE grade ≥ 3 associated with camizestrant and ribociclib within first 6 months of study treatment"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07647328",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07647328",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07647328",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07647328",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07647328",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-04",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220359%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220359",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220359%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220359Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220359Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:14:54.125Z"
+}

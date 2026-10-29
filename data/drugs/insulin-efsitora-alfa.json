@@ -1,0 +1,969 @@
+{
+  "slug": "insulin-efsitora-alfa",
+  "brandName": "Onswik",
+  "inn": "insulin efsitora alfa",
+  "modality": "Biologic (BLA)",
+  "sponsor": "ELI LILLY AND CO",
+  "summary": "",
+  "indications": [
+    {
+      "name": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+      "slug": "as-an-adjunct-to-diet-and-exercise-to-improve-glycemic",
+      "approvalDate": {
+        "value": "2026-09-23",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-23",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Onswik is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Onswik is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761408",
+      "applicationType": "BLA",
+      "sponsor": "ELI LILLY AND CO",
+      "originalApprovalDate": {
+        "value": "2026-09-23",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "18237",
+      "nctId": "NCT05275400",
+      "protocolNumber": "18237",
+      "title": "A Phase 3, Multicenter, Randomized, Parallel-Design, Open-Label Trial to Evaluate the Efficacy and Safety of LY3209590 Compared With Insulin Degludec in Participants With Type 2 Diabetes Currently Treated With Basal Insulin (QWINT-3)",
+      "briefTitle": "A Study of Insulin Efsitora Alfa (LY3209590) Compared With Insulin Degludec in Participants With Type 2 Diabetes Currently Treated With Basal Insulin",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus)",
+            "quote": "Trial identifier appears within the As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Onswik is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Eli Lilly and Company",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-03-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 986,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "500 U/mL - Insulin Efsitora",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received 500 units per milliliter (U/mL) Insulin Efsitora Alfa (insulin efsitora) administered subcutaneously (SC) once weekly (QW)."
+        },
+        {
+          "label": "100 U/mL - Insulin Degludec",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants received 100 U/mL insulin degludec administered SC once daily (QD)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Hemoglobin A1c (HbA1c) [Noninferiority]"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Hemoglobin A1c (HbA1c) [Superiority]",
+        "Nocturnal Hypoglycemia Event Rate",
+        "Percentage of Time in Glucose Range Between 70 and 180 mg/dL (3.9 and 10.0 mmol/L)",
+        "Change From Baseline in Fasting Glucose",
+        "Weekly Insulin Dose at Week 26",
+        "Hypoglycemia Event Rate",
+        "Change From Baseline in Body Weight",
+        "Percentage of Time in Hypoglycemia Range",
+        "Percentage of Time in Hyperglycemia Range",
+        "Change From Baseline in Treatment-Related Impact Measure - Diabetes (TRIM-D)",
+        "Diabetes Treatment Satisfaction Questionnaire-Change Version (DTSQc) - Treatment Satisfaction Score: Week 26",
+        "Diabetes Treatment Satisfaction Questionnaire-Change Version (DTSQc) - Treatment Satisfaction Score: Week 52",
+        "Diabetes Treatment Satisfaction Questionnaire-Change Version (DTSQc) - Treatment Satisfaction Score: Week 78"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in Hemoglobin A1c (HbA1c) [Noninferiority]",
+          "timeFrame": "Baseline, Week 26",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Percentage of HbA1c",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "500 U/mL - Insulin Efsitora"
+            },
+            {
+              "id": "OG001",
+              "title": "100 U/mL - Insulin Degludec"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-0.81",
+              "spread": "0.0302"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-0.72",
+              "spread": "0.0424"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "paramType": "LS Mean Difference",
+              "paramValue": "-0.089",
+              "ciPct": "95",
+              "ciLower": "-0.191",
+              "ciUpper": "0.013"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05275400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05275400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05275400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05275400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05275400",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05275400?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 16,
+          "quote": "tes Mellitus Previously Treated with Once- or Twice-Daily Basal Insulin Trial 3 (QWINT-3, NCT05275400) was a 78-week, randomized, open-label, active-controlled, treat-to-target, multinational",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "qwint-2",
+      "nctId": "NCT05362058",
+      "protocolNumber": "18262",
+      "acronym": "QWINT-2",
+      "title": "A Phase 3, Parallel-Design, Open-Label, Randomized Control Study to Evaluate the Efficacy and Safety of LY3209590 as a Weekly Basal Insulin Compared to Insulin Degludec in Insulin Naïve Adults With Type 2 Diabetes",
+      "briefTitle": "A Study of Insulin Efsitora Alfa (LY3209590) Compared to Degludec in Adults With Type 2 Diabetes Who Are Starting Basal Insulin for the First Time",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus)",
+            "quote": "Trial identifier appears within the As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Onswik is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Eli Lilly and Company",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-06-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-04-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-04-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 928,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "500 U/mL - Insulin Efsitora Alfa",
+          "type": "EXPERIMENTAL",
+          "description": "* Participants received 500 units per milliliter (U/mL) of insulin efsitora alfa administered subcutaneously (SC) once weekly (QW) over a 52-week treatment period, followed by a 5-week safety follow-up period.\n* Participants continued their protocol-specified stable therapy with non-insulin antihyperglycemic medications throughout the study, at the discretion of the investigator."
+        },
+        {
+          "label": "100 U/mL - Insulin Degludec",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "* Participants received 100 U/mL insulin degludec administered SC once daily (QD) over a 52-week treatment period, followed by a 5-week safety follow-up period.\n* Participants continued their protocol-specified stable therapy with non-insulin antihyperglycemic medications throughout the study, at the discretion of the investigator."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in HbA1c at Week 52 [Noninferiority Analysis]"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in HbA1c at Week 52 in Participants Using GLP-1 Receptor Agonists [Noninferiority Analysis]",
+        "Change From Baseline in HbA1c at Week 52 in Participants Not Using GLP-1 Receptor Agonists [Noninferiority Analysis]",
+        "Change From Baseline in HbA1c at Week 52 [Superiority Analysis]",
+        "Percentage of Time in the Blood Glucose Range Between 70 and 180 mg/dL [3.9 and 10.0 mmol/L] - Week 48 to Week 52",
+        "Change From Baseline in HbA1c at Week 26 [Superiority Analysis]",
+        "Percentage of Time in the Blood Glucose Range Between 70 and 180 mg/dL [3.9 and 10.0 mmol/L] - Week 22 to Week 26",
+        "Change From Baseline in Fasting Blood Glucose (FBG)",
+        "Glucose Variability",
+        "Basal Insulin Dose",
+        "Hypoglycemia Event Rate",
+        "Nocturnal Hypoglycemia Event Rate",
+        "Change From Baseline in Body Weight",
+        "Percentage of Time in Hypoglycemia Range With Blood Glucose <70 mg/dL (3.9 mmol/L)",
+        "Percentage of Time in Hypoglycemia Range With Blood Glucose <54 mg/dL (3.0 mmol/L)",
+        "Percentage of Time in Hyperglycemia Range With Blood Glucose >180 mg/dL (10.0 mmol/L)",
+        "Change From Baseline in Treatment-Related Impact Measures for Diabetes (TRIM-D) -Total Score at Week 26 and Week 52",
+        "Change From Baseline in Short Form-36 Health Survey Version 2 (SF-36v2) Acute Form (Physical-Component and Mental-Component) Scores at Week 26 and Week 52",
+        "Change From Baseline in EuroQuality of Life (EuroQol) - 5 Dimensions-5 Levels (EQ-5D-5L) Health State Index and EQ Visual Analog Scale (VAS) Scores at Week 26 and Week 52"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in HbA1c at Week 52 [Noninferiority Analysis]",
+          "timeFrame": "Baseline, Week 52",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Percentage of HbA1c",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "500 U/mL - Insulin Efsitora Alfa"
+            },
+            {
+              "id": "OG001",
+              "title": "100 U/mL - Insulin Degludec"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.26",
+              "spread": "0.0470"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-1.17",
+              "spread": "0.0473"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "method": "ANCOVA",
+              "paramType": "LS Mean Difference",
+              "paramValue": "-0.09",
+              "ciPct": "95",
+              "ciLower": "-0.22",
+              "ciUpper": "0.04"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05362058",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05362058",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05362058",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05362058",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05362058",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05362058?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 15,
+          "quote": "daily insulin glargine dose of 48 units/day. Flexible-Dosage Titration Trial 2 (QWINT-2, NCT05362058) was a 52-week, randomized, open-label, active-controlled, treat-to-target, multinational",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "qwint-4",
+      "nctId": "NCT05462756",
+      "protocolNumber": "18260",
+      "acronym": "QWINT-4",
+      "title": "A Phase 3, Parallel-Design, Open-Label, Randomized Controlled Study to Evaluate the Efficacy and Safety of LY3209590 as a Weekly Basal Insulin Compared to Insulin Glargine in Adults With Type 2 Diabetes on Multiple Daily Injections",
+      "briefTitle": "A Study of Insulin Efsitora Alfa (LY3209590) as a Weekly Basal Insulin Compared to Insulin Glargine in Adult Participants With Type 2 Diabetes on Multiple Daily Injections",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus)",
+            "quote": "Trial identifier appears within the As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Onswik is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Eli Lilly and Company",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-08-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-02-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-02-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 730,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "500 U/mL - Insulin Efsitora",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received 500 units per milliliter (U/mL) Insulin Efsitora Alfa (insulin efsitora) administered subcutaneously (SC) once weekly (QW) along with 100 U/mL insulin lispro given SC with meals as needed."
+        },
+        {
+          "label": "100 U/mL - Insulin Glargine",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants received 100 U/mL insulin glargine administered SC once daily (QD) along with 100 U/mL insulin lispro given SC with meals as needed."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Hemoglobin A1c (HbA1c) [Noninferiority]"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in HbA1c [Superiority]",
+        "Percentage of Participants Achieving HbA1c <7% Without Nocturnal Hypoglycemia",
+        "Nocturnal Hypoglycemia Event Rate",
+        "Change From Baseline in Fasting Glucose",
+        "Percentage of Time in Glucose Range",
+        "Percentage of Time in Hypoglycemia Range",
+        "Percentage of Time in Hyperglycemia Range",
+        "Glucose Variability Between Weeks 22 to 26",
+        "Basal Insulin Dose at Week 26",
+        "Bolus Insulin Dose at Week 26",
+        "Total Insulin Dose at Week 26",
+        "Basal Insulin Dose to Total Insulin Dose Ratio at Week 26",
+        "Hypoglycemia Event Rate",
+        "Change From Baseline in Body Weight",
+        "Treatment Experience for Diabetes Injection Device at Week 26 - Experience Questionnaire (DID-EQ)"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in Hemoglobin A1c (HbA1c) [Noninferiority]",
+          "timeFrame": "Baseline, Week 26",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Percentage of HbA1c",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "500 U/mL - Insulin Efsitora"
+            },
+            {
+              "id": "OG001",
+              "title": "100 U/mL - Insulin Glargine"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.01",
+              "spread": "0.0463"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-1.00",
+              "spread": "0.0463"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "paramType": "LS Mean Difference",
+              "paramValue": "-0.012",
+              "ciPct": "95",
+              "ciLower": "-0.140",
+              "ciUpper": "0.116"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05462756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05462756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05462756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05462756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05462756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05462756?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 18,
+          "quote": "ly Treated with Once- or Twice-Daily Basal Insulin and Mealtime Insulin Trial 4 (QWINT-4, NCT05462756) was a 26-week, randomized, open-label, active-controlled, treat-to-target, multinational",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "qwint-5",
+      "nctId": "NCT05463744",
+      "protocolNumber": "18263",
+      "acronym": "QWINT-5",
+      "title": "A Phase 3, Multicenter, Randomized, Parallel-Design, Open-Label Study to Evaluate the Efficacy and Safety of LY3209590 as a Weekly Basal Insulin Compared With Insulin Degludec in Participants With Type 1 Diabetes Treated With Multiple Daily Injection Therapy",
+      "briefTitle": "A Study of Insulin Efsitora Alfa (LY3209590) Compared With Insulin Degludec in Participants With Type 1 Diabetes Treated With Multiple Daily Injection Therapy",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Eli Lilly and Company",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-08-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-07",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 692,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin Efsitora Alfa",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were treated with prestudy basal insulin and prandial insulin therapy (100 units per milliliter (U/mL) Insulin Lispro) received 500 U/mL of insulin efsitora alfa administered once weekly (QW) for 52 weeks as subcutaneous injection, followed by a 5-week safety follow-up."
+        },
+        {
+          "label": "Insulin Degludec",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants who were treated with prestudy basal insulin and prandial insulin therapy (100 U/mL Insulin Lispro) received 100 U/mL of Insulin Degludec administered once daily (QD) for 52 weeks as subcutaneous injection, followed by a 5-week safety follow-up."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Hemoglobin A1c (HbA1c) at Week 26 [Noninferiority Analysis]"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Hemoglobin A1c (HbA1c) at Week 26 [Superiority Analysis]",
+        "Percentage of Time in the Blood Glucose Range Between 70 and 180 mg/dL [3.9 and 10.0 mmol/L] From Week 23 to Week 26",
+        "Nocturnal Hypoglycemia Event Rate",
+        "Change From Baseline in HbA1c at Week 52 [Noninferiority Analysis]",
+        "Change From Baseline in Fasting Blood Glucose",
+        "Glucose Variability",
+        "Percentage of Time in the Blood Glucose Range Between 70 and 180 mg/dL [3.9 and 10.0 mmol/L] From Week 49 to Week 52",
+        "Basal Insulin Dose",
+        "Bolus Insulin Dose",
+        "Total Insulin Dose",
+        "Basal Insulin Dose to Total Insulin Dose Ratio",
+        "Hypoglycemia Event Rate",
+        "Change From Baseline in Body Weight",
+        "Percentage of Time in Hypoglycemia Range With Blood Glucose <54 mg/dL (3.0 mmol/L)",
+        "Percentage of Time in Hyperglycemia Range With Blood Glucose >180 mg/dL (10.0 mmol/L) From Week 23 to Week 26",
+        "Percentage of Time in Hyperglycemia Range With Blood Glucose >180 mg/dL (10.0 mmol/L) From Week 49 to Week 52",
+        "Diabetes Treatment Satisfaction as Measured by the Diabetes Treatment Satisfaction Questionnaire, Change Version (DTSQc) at Week 26",
+        "Diabetes Treatment Satisfaction as Measured by the Diabetes Treatment Satisfaction Questionnaire, Change Version (DTSQc) at Week 52",
+        "Change From Baseline in Short Form-36 Version 2 (SF-36 v2) Acute Form (Physical-Component and Mental-Component) Scores"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05463744",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05463744",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05463744",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05463744",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05463744",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "qwint-1",
+      "nctId": "NCT05662332",
+      "protocolNumber": "18261",
+      "acronym": "QWINT-1",
+      "title": "A Phase 3, Parallel-Design, Open-Label, Randomized Control Study to Evaluate the Efficacy and Safety of LY3209590 Administered Weekly Using a Fixed Dose Escalation Compared to Insulin Glargine in Insulin-Naïve Adults With Type 2 Diabetes",
+      "briefTitle": "A Study of Insulin Efsitora Alfa (LY3209590) Compared to Glargine in Adult Participants With Type 2 Diabetes Who Are Starting Basal Insulin for the First Time (QWINT-1)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus)",
+            "quote": "Trial identifier appears within the As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Onswik is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Eli Lilly and Company",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-01-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-07-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 795,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin Efsitora Alfa",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received Insulin Efsitora Alfa (insulin efsitora; 500 U/ml) administered subcutaneously (SC) once weekly (QW) for 52 weeks, with titration using fixed-doses 100 U, 150 U, 250 U, and 400 U."
+        },
+        {
+          "label": "Insulin Glargine",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants received insulin glargine (100 U/ml) administered SC once daily (QD) for 52 weeks with titration by standard sliding-scale dose adjustments."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Hemoglobin A1c (HbA1c) [Noninferiority Analysis]"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in HbA1c [Superiority]",
+        "Change From Baseline in Fasting Glucose",
+        "Basal Insulin Dose at Week 52",
+        "Rate Per Year of Hypoglycemia Events",
+        "Percentage of Participants With Hypoglycemia Events (Incidence)",
+        "Rate Per Year of Nocturnal Hypoglycemia Events",
+        "Percentage of Participants With Nocturnal Hypoglycemia Events (Incidence)",
+        "Change From Baseline in Body Weight",
+        "Change From Baseline in Treatment-Related Impact Measure - Diabetes (TRIM-D) Total Score",
+        "Change From Baseline in Diabetes Treatment Satisfaction Questionnaire - Change Version (DTSQ-c)",
+        "Percentage of Participants Reporting Treatment Experience Using the Simplicity of Diabetes Treatment Questionnaire (SIM-Q) Single Medication Status Version",
+        "Change From Baseline in Diabetes Injection Device Experience Questionnaire (DID-EQ) in Device Characteristics",
+        "Percentage of Participants in Treatment Experience in Diabetes Injection Device Experience Questionnaire (DID-EQ) (3-Global Items)"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in Hemoglobin A1c (HbA1c) [Noninferiority Analysis]",
+          "timeFrame": "Baseline, Week 52",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Percentage of HbA1c",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Efsitora"
+            },
+            {
+              "id": "OG001",
+              "title": "Glargine"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.19",
+              "spread": "0.0546"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-1.16",
+              "spread": "0.0545"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "method": "ANCOVA",
+              "paramType": "LS Mean Change difference",
+              "paramValue": "-0.03",
+              "ciPct": "95",
+              "ciLower": "-0.18",
+              "ciUpper": "0.12"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05662332",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05662332",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05662332",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05662332",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05662332",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05662332?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 14,
+          "quote": "sulin-Naïve Adults with Type 2 Diabetes Mellitus Fixed-Dosage Titration Trial 1 (QWINT-1, NCT05662332) was a 52-week, randomized, open-label, active-controlled, treat-to-target, multinational",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-23",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761408%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761408",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761408%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761408Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:00:05.901Z"
+}
