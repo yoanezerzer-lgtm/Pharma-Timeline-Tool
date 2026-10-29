@@ -1,0 +1,535 @@
+{
+  "slug": "pivekimab-sunirine",
+  "brandName": "Decnupaz",
+  "inn": "pivekimab sunirine",
+  "modality": "Biologic (BLA)",
+  "sponsor": "ABBVIE INC",
+  "summary": "",
+  "indications": [],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761460",
+      "applicationType": "BLA",
+      "sponsor": "ABBVIE INC",
+      "originalApprovalDate": {
+        "value": "2026-05-27",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "imgn632-0801",
+      "nctId": "NCT03386513",
+      "protocolNumber": "IMGN632-0801",
+      "labelName": "CADENZA",
+      "title": "A Phase 1/2, Multi-center, Open-label Study of IMGN632 Monotherapy Administered Intravenously in Patients With CD123-positive Acute Myeloid Leukemia and Other CD123-positive Hematologic Malignancies",
+      "briefTitle": "Study of IMGN632 in Patients With Untreated BPDCN and Relapsed/Refractory BPDCN",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AbbVie",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-01-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-10-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-12-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 179,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Escalation and Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "Escalation: IMGN632 was administered by IV on 2 different schedules for participants with relapsed/refractory AML, ALL, or BPDCN.\n\nExpansion: IMGN632 was administered by IV:\n\n* Cohort 1: Relapsed or refractory BPDCN participants who have received 1-3 prior systemic therapies (incl. tagraxofusp-erzs and/or any other systemic therapy deemed appropriate for the treatment of BPDCN)\n* Cohort 2: Relapsed AML\n* Cohort 3: Relapsed or refractory ALL\n* Cohort 4: Other relapsed or refractory hematologic malignancies\n* Cohort 5: Relapsed or refractory AML at alternate dose or schedule\n* Cohort 6: Pivotal cohort for frontline BPDCN participants who have not received prior systemic therapy and participants with frontline BPDCN who have prior or concomitant hematologic malignancy (PCHM) and have not received prior systemic therapy."
+        }
+      ],
+      "primaryEndpoints": [
+        "Composite Complete Remission/Response (CCR) Rate As Assessed by Investigator in Frontline De Novo Blastic Plasmacytoid Dendritic Cell Neoplasm (BPDCN) Participants"
+      ],
+      "secondaryEndpoints": [
+        "Dose Escalation Phase: Number of Participants With Treatment-emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs)",
+        "Dose Escalation Phase: Number of Participants With Dose-limiting Toxicities (DLTs)",
+        "Maximum Plasma Concentration (Cmax) of IMGN632 (Antibody Drug Conjugate [ADC]) and Total Antibody",
+        "Cmax of FGN849",
+        "Area Under the Curve From Time Zero to the Last Quantifiable Concentration (AUC0-last) of IMGN632 (ADC) and Total Antibody",
+        "AUC0-last of FGN849",
+        "Number of Participants With Anti-drug Antibodies (ADAs) at Any Post-baseline Visit",
+        "Dose Escalation Phase: Overall Response Rate (ORR), As Assessed by Investigator in Participants With AML",
+        "Dose Escalation Phase: CR+CRh Rate, As Assessed by Investigator in Participants With AML",
+        "Dose Escalation Phase: CR+CRh+CRi Rate, As Assessed by Investigator in Participants With AML",
+        "CCR Rate As Assessed by Investigator in Participants With Relapsed/Refractory (R/R) BPDCN",
+        "Duration of CCR (DOCR) As Assessed by Investigator in Frontline De Novo BPDCN Participants With CR or CRc",
+        "DOCR As Assessed by Investigator in R/R BPDCN Participants With CR or CRc",
+        "DOCR As Assessed by Investigator in Total Frontline BPDCN Participants With CR or CRc",
+        "Number of Participants With TEAEs in Participants Who Received IMGN632 As a Single Agent at the RP2D Level (0.045 mg/kg)",
+        "Rate of CR+CRc+CRh As Assessed by Investigator in Total R/R BPDCN Participants",
+        "Duration of CR+CRc+CRh As Assessed by Investigator in Total R/R BPDCN Participants",
+        "ORR As Assessed by Investigator in Total R/R BPDCN Participants",
+        "Duration of Overall Response As Assessed by Investigator in Total R/R BPDCN Participants",
+        "Overall Survival in Total R/R BPDCN Participants",
+        "CCR Rate As Assessed by Investigator in All Frontline BPDCN Participants With Post-Treatment Consolidative Stem Cell Transplant (SCT)",
+        "CCR Rate As Assessed by Investigator in All R/R BPDCN Participants With Post-Treatment Consolidative SCT",
+        "Percentage of Participants With Post-baseline Transfusion Independence in BPDCN Participants"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03386513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03386513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03386513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03386513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03386513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761460Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 17,
+          "quote": "TUDIES 14.1 Treatment-naïve Blastic Plasmacytoid Dendritic Cell Neoplasm (BPDCN) CADENZA (NCT03386513) was a multicenter, open-label, single-arm, clinical trial that included 33 adult patient",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761460Orig1s000lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "CADENZA (NCT03386513)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "imgn632-0802",
+      "nctId": "NCT04086264",
+      "protocolNumber": "IMGN632-0802",
+      "title": "A Phase 1b/2 Study of IMGN632 as Monotherapy or Combination With Venetoclax and/or Azacitidine for Participants With CD123-Positive Acute Myeloid Leukemia",
+      "briefTitle": "IMGN632 as Monotherapy or With Venetoclax and/or Azacitidine for Participants With CD123-Positive Acute Myeloid Leukemia",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AbbVie",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-11-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-02-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 218,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Regimen A (Closed to Enrollment)",
+          "type": "EXPERIMENTAL",
+          "description": "IMGN632, administered intravenously on Day 7 of a 28 day cycle at 0.015 mg/kg, 0.045 mg/kg, or 0.09 mg/kg, in combination with azacitidine, administered subcutaneously or intravenously daily at 75 mg/m2 on Days 1 to 7 of a 28 day cycle. Cycle 1 azacitidine dose in subsequent cohorts may be reduced."
+        },
+        {
+          "label": "Regimen B (Closed to Enrollment)",
+          "type": "EXPERIMENTAL",
+          "description": "IMGN632, administered intravenously on Day 7 of a 21 day cycle at 0.015 mg/kg, 0.045 mg/kg, or 0.09 mg/kg, in combination with venetoclax, administered orally daily at 100 mg on Day 1, 200mg on Day 2, and 400 mg on the day 3 up to Day 21 of a 21 day cycle. Alternate schedules with reduced venetoclax administration may be explored."
+        },
+        {
+          "label": "Regimen C-Frontline&Relapsed/Refractory(Closed to Enrollment)",
+          "type": "EXPERIMENTAL",
+          "description": "IMGN632, administered intravenously on Day 7 of a 28 day cycle at 0.015 mg/kg or 0.045 mg/ kg, in combination with azacitidine, administered subcutaneously or intravenously daily at 35-75 mg/ m2 given for Days 1 to 7 of a 28 day cycle and venetoclax, administered orally daily at 100 mg on Day 1, 200mg on Day 2, and 400 mg on Day 3 up to Day 28 of a 28 day cycle. Alternate schedules with reduced venetoclax administration or reduced azacitidine dose or administration may be explored."
+        },
+        {
+          "label": "Regimen D (Closed to Enrollment)",
+          "type": "EXPERIMENTAL",
+          "description": "IMGN632, administered intravenously on Day 1 of a 21 day cycle at 0.045 mg/kg, as a monotherapy for Fit and Unfit MRD+ patients."
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety and Tolerability",
+        "Preliminary antileukemia activity",
+        "Minimal Residual Disease Levels"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants with Treatment-Emergent Adverse Events (TEAEs) (Dose Expansion Phase)",
+        "Study Drug Concentration (Dose Escalation and Expansion)",
+        "Anti-drug Antibody Concentration (Dose Escalation and Expansion)",
+        "Minimal Residual Disease Levels (Dose Escalation)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04086264",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04086264",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04086264",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04086264",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04086264",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "m25-692",
+      "nctId": "NCT07306832",
+      "protocolNumber": "M25-692",
+      "title": "A Phase 1b Study of the Safety and Pharmacokinetics of Pivekimab Sunirine in Pediatric Subjects With Relapsed or Refractory Acute Myeloid Leukemia (AML)",
+      "briefTitle": "A Study to Assess Adverse Events and How Intravenous (IV) Pivekimab Sunirine Moves Through the Body in Pediatric Participants With Relapsed or Refractory Acute Myeloid Leukemia (AML)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AbbVie",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-05-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-04-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2030-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 18,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Months",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1: Pivekimab Sunirine Ages 2 to < 6 Years",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive pivekimab sunirine, as part of the approximately 28 month study duration. If enrolled, subjects aged 6 months to less than 2 years will be included in Cohort 1"
+        },
+        {
+          "label": "Cohort 2: Pivekimab Sunirine Ages 6 to < 12 Years",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive pivekimab sunirine, as part of the approximately 28 month study duration."
+        },
+        {
+          "label": "Cohort 3: Pivekimab Sunirine Ages 12 to < 17 Years",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive pivekimab sunirine, as part of the approximately 28 month study duration."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants with Treatment-Emergent Adverse Events (TEAEs) Leading to Treatment Discontinuation",
+        "Maximum Observed Serum/Plasma Concentration (Cmax) of Intact Antibody-Drug Conjugate (ADC)",
+        "Cmax of FGN849 Payload",
+        "Area Under the Concentration-Time Curve (AUC) of Intact ADC",
+        "AUC of FGN849 payload",
+        "Time to Cmax (Tmax) of Intact ADC",
+        "Tmax of FGN849 Payload"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Achieving Complete Remission (CR)",
+        "Percentage of Participants Achieving Composite Complete Remission (CR + complete remission with incomplete recovery [CRi])",
+        "Percentage of Participants Achieving Composite Complete Remission (CR + complete remission with partial hematological [CRh])",
+        "Duration of Complete Remission (DOCR)",
+        "Duration of Composite Complete Remission (CR + CRi)",
+        "Duration of Composite Complete Remission (CR + CRh)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07306832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07306832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07306832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07306832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07306832",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "revival",
+      "nctId": "NCT07581002",
+      "protocolNumber": "M26-092",
+      "acronym": "REVIVAL",
+      "title": "A Randomized Phase 2/3 Study Evaluating the Safety and Efficacy of Pivekimab Sunirine (PVEK) in Combination With Venetoclax and Azacitidine in Adult Subjects With Newly Diagnosed Acute Myeloid Leukemia (AML) Ineligible to Receive Intensive Chemotherapy",
+      "briefTitle": "A Study to Assess Adverse Events and Change in Disease Activity When Intravenous (IV) Pivekimab Sunirine is Given in Combination With Oral Venetoclax and IV or Subcutaneous Azacitidine in Adult Participants With Acute Myeloid Leukemia (AML)",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AbbVie",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-06-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2032-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 660,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Phase 2: Arm A - PVEK, VEN, and AZA",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive PVEK, VEN, and AZA"
+        },
+        {
+          "label": "Phase 2: Arm B - VEN and AZA",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive VEN and AZA"
+        },
+        {
+          "label": "Phase 3: Arm A - PVEK, VEN, and AZA",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive PVEK, VEN, and AZA"
+        },
+        {
+          "label": "Phase 3: Arm B - PVEK-Placebo, VEN, and AZA",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive PVEK-Placebo, VEN, and AZA"
+        }
+      ],
+      "primaryEndpoints": [
+        "Phase 2: Complete remission (CR)",
+        "Phase 3: Complete remission (CR)",
+        "Phase 3: Overall Survival (OS)",
+        "Number of Participants with Adverse Events (AEs)"
+      ],
+      "secondaryEndpoints": [
+        "Phase 2 and Phase 3: Composite Response",
+        "Phase 2 and Phase 3: Duration of CR (DoCR)",
+        "Phase 2: Change from baseline in the European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire Core 30 (EORCT QLQ-C30) domains",
+        "Phase 3: Percentage of Participants with Transfusion Independence",
+        "Phase 3: Conversion from baseline transfusion dependence to post-baseline transfusion independence",
+        "Phase 3: Change from baseline in the EORCT QLQ-C30 physical functioning domains",
+        "Phase 3: Change from baseline in the remaining EORCT QLQ-C30 domains",
+        "Phase 3: Change from Baseline in European Quality of Life 5 Dimensions (EQ-5D-5L) Utility Index and Visual Analog Scale (VAS) scores",
+        "Phase 3: Change from Baseline to the responses to FACT GP5"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07581002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07581002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07581002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07581002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07581002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-05-27",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761460%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761460",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761460%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761460Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761460Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:01:22.150Z"
+}
