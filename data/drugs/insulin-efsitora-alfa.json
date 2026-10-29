@@ -4,6 +4,56 @@
   "inn": "insulin efsitora alfa",
   "modality": "Biologic (BLA)",
   "sponsor": "ELI LILLY AND CO",
+  "pharmacology": {
+    "drugClass": {
+      "name": "long-acting insulin analog",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "ONSWIK™ is a long-acting insulin analog indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "12 The primary activity of ONSWIK is the regulation of glucose metabolism. Insulin and its analogs lower blood glucose by stimulating peripheral glucose uptake, especially by skeletal muscle and fat, and by inhibiting hepatic glucose production. Insulin also inhibits lipolysis and proteolysis and enhances protein synthesis. The protracted time-action profile of ONSWIK results from reduced renal clearance due to its relatively large molecular size, inhibition of degradation due to binding at the neonatal Fc receptor, and reduced affinity relative to human insulin for the insulin receptor, which decreases receptor-mediated clearance. Once insulin efsitora alfa-gobe is engaged with the insulin receptor, it results in the same pharmacological effects as human insulin.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The glucose-lowering effect of ONSWIK at steady-state was measured with a euglycemic glucose clamp study in 53 adults with type 2 diabetes mellitus. The glucose infusion rate (GIR) measured in three euglycemic clamps from 0 to 24 hours, 72 to 96 hours and 144 to 168 hours post dose, along with the model-derived GIR profile show the duration of the glucose lowering effect to cover the weekly dosing interval ( see Figure 1). At steady-state, the mean maximum glucose-lowering effect occurred between Days 4 and 5, with a peak-trough ratio of 1.07. The glucose-lowering response was stable over the dosing interval, with low day-to-day variability of 2% (coefficient of variation for the glucose infusion rate at steady-state). The glucose-lowering effect of ONSWIK lasted approximately 4 to 6 weeks after the last weekly injection. Following a dosage adjustment, initial changes in FBG are expected within 1 to 2 weeks, with the full treatment effect of the dosage adjustment occurring in approximately 4 weeks [see Dosage and Administration (2.1, 2.3, 2.4), Warnings and Precautions (5.4)]. Figure 1: Pharmacodynamic Effect of ONSWIK at Steady-State Following Weekly Subcutaneous Injections of 4 units/kg Weekly Dose in Adults with Type 2 Diabetes Mellitus Notes: Gray dots are means and bars are standard errors of the mean glucose infusion rate (GIR). Black solid line is mean of model-predicted GIR profiles for the weekly dosing interval.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption Absorption of insulin efsitora alfa-gobe was evaluated in healthy subjects and adults with diabetes. Steady-state pharmacokinetics (PK) was achieved between the eighth and tenth weeks after initiating ONSWIK without a one-time starting dose and between the fourth and sixth weeks after initiating ONSWIK with a one-time starting dose of 3 times the weekly dose [see Dosage and Administration (2.3, 2.4)] . 13 At steady-state, time to maximum insulin efsitora alfa-gobe concentration was achieved at 2.5 days post dose (Tmax). ONSWIK has a peak-to-trough ratio of 1.16 and the week-to-week variability (CV%) in total exposure of ONSWIK was 5%. The absolute bioavailability of insulin efsitora alfa-gobe after subcutaneous administration into the abdomen, was approximately 86%. Injection site (abdomen, upper arm, or thigh) did not influence the absorption or exposure of ONSWIK. Total insulin efsitora alfa-gobe exposure and maximum insulin efsitora alfa-gobe concentration increased proportionally with increasing subcutaneous doses of ONSWIK within the therapeutic dose range. No dose conversion is required if transferring a patient between the U-500 and U-1,000 strengths when each is administered at the same units/kg dose. Distribution Following a 100-unit subcutaneous bolus injection of ONSWIK, the geometric mean (CV%) volume of distribution of insulin efsitora alfa-gobe (Vd) was 13 L (24%). Elimination Following a 100-unit subcutaneous bolus injection of ONSWIK, the geometric mean (CV%) clearance of insulin efsitora alfa-gobe (CL) was 0.02 L/h (24%). The geometric mean (CV%) elimination half-life at steady-state is approximately 17 days (26%), independent of dose. Specific Populations No clinically significant differences in the pharmacokinetics of insulin efsitora alfa-gobe were observed based on age (18 to 88 years), sex (56% male and 44% female), race (67% White, 4.7% Black, 8.4% American Indian or Alaska Native, and 19% Asian), renal function (based on race-free CKD-EPI 2021 category) or based on alanine aminotransferase (ALT 5 to 398 U/L) and aspartate aminotransferase (AST 5 to 325 U/L). The effect of hemodialysis with kidney failure or severe hepatic impairment on the pharmacokinetics of insulin efsitora alfa-gobe is unknown. Insulin efsitora alfa-gobe exposure decreased with increasing body weight (43 to 157 kg), but these effects are mitigated by the recommended dosing based on glycemic control.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761408Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -985,5 +1035,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:01:01.262Z"
+  "lastIngestedAt": "2026-10-29T18:37:36.418Z"
 }

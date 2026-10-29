@@ -4,6 +4,56 @@
   "inn": "atacicept",
   "modality": "Biologic (BLA)",
   "sponsor": "VERA THERAPEUTICS INC.",
+  "pharmacology": {
+    "drugClass": {
+      "name": "B - lymphocyte s timulator (B L yS) - specific i nhibitor and A P roliferation I nducing L ig and ( APRIL ) b locker",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761486Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "TRUTAKNA is a B - lymphocyte s timulator (B L yS) - specific i nhibitor and A P roliferation I nducing L ig and ( APRIL ) b locker indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Atacicept - vymj, a BLyS - specific inhibitor and APRIL blocker, is a TACI - Fc fusion glyco protein that binds B cell activating factor ( BAFF ) and APRIL with dissociation constant s ( Kd ) of 106 p M and 33 p M, respectively , and reduces BAFF - and APRIL - mediated signaling . B AFF is also known as B lyS . Reduction in BAFF - and APRIL - mediated signaling decreases production of serum galactose - deficient IgA1 (Gd - IgA1) , which is implicated in the pathophysiology of IgAN. 6",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761486Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 5,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Immunoglobulins In IgAN patients treated with TRUTAKNA once weekly in the Origin 3 study, s erum Gd - IgA1 , Immunoglobulin A ( IgA ) , Immunoglobulin G ( IgG ) , and Immunoglobulin M ( IgM ) levels decreased within 4 weeks and these reductions were sustained through W eek 36 . By Week 36, mean serum levels were reduced from baseline by 68% for Gd - IgA1, 64% for IgA, 36% for IgG, and 75% for IgM .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761486Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 6,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption Following once weekly SC administration of TRUTAKNA 150 mg in IgAN patients , atacicept - vymj pharmacokinetics increased proportionally over a dose range of 75 to 150 mg. Steady state wa s achieved after approximately 24 weeks. Following the first SC dose, t he maximum atacicept - vymj concentration s were reached approximately 36 hours a fter atacicept - vymj administration . Distribution C entral and peripheral volume of distribution were 44 L and 61 L , respectively, in patients with IgAN. Metabolism/ Elimination N o drug metabolism studies have been conducted. Atacicept - vymj is a therapeutic protein that is expected to be catabolized into small peptides and amino acids by general catabolic degradation processes in multiple tissues. T he estimated clearance of a tacicept - vymj i s 3.2 L/day, and the elimination half - life is approximately 40 days in IgAN patients . Specific Populations No clinically significant differences in the pharmacokinetics of atacicept - vymj were observed based on sex, age (18 to 74 years) , weight (38.4 to 138 kg ) , race, and mild to severe renal impairment (eGFR: 22 to 89 mL/min).",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761486Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 6,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -684,5 +734,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T17:59:18.537Z"
+  "lastIngestedAt": "2026-10-29T18:35:56.411Z"
 }

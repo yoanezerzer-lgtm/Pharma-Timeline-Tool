@@ -4,6 +4,56 @@
   "inn": "lirafugratinib",
   "modality": "Drug (NDA)",
   "sponsor": "ELEVAR",
+  "pharmacology": {
+    "drugClass": {
+      "name": "kinase inhibitor",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "LYRFIGTU is a kinase inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Lirafugratinib is a small molecule kinase inhibitor that inhibits FGFR2. Lirafugratinib covalently binds FGFR2. Constitutive FGFR signaling can support the proliferation and survival of malignant cells. Lirafugratinib inhibited FGFR2 phosphorylation and downstream signaling and decreased cell viability in cancer cell lines with FGFR2 alterations, including FGFR fusions/rearrangements, amplifications, and mutations. Lirafugratinib demonstrated anti-tumor activity in human cell line-derived and patient- derived xenograft mouse models of various tumors with FGFR2 genetic alterations.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Exposure-Response Relationships Lirafugratinib exposure-response relationships and the time course of pharmacodynamic response have not been fully characterized. Cardiac Electrophysiology The largest mean increase in QTcF from baseline was 7 ms (upper confidence interval = 12 ms) after administration of LYRFIGTU 70 mg in patients with unresectable or metastatic cholangiocarcinoma or other advanced tumors.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Lirafugratinib pharmacokinetics were observed at steady- state in patients with cholangiocarcinoma or other solid tumors at the approved recommended dosage and are presented as mean (coefficient of variation [CV]%) unless otherwise specified. Lirafugratinib maximum concentration (C max ) is 4.7 mcg/mL (30 %) and systemic exposure (AUC) is 77 mcg ∙ h/mL (29 %) . Lirafugratinib AUC and C max increases in a dose proportional manner over the dose range from 20 mg to 100 mg orally once daily (0.3 to 1.4 times the recommended dosage). Lirafugratinib accumulation is approximately 2-fold at the approved recommended dosage. Lirafugratinib steady state is reached in approximately 4 days. Absorption Lirafugratinib median (min, max) time to maximum plasma concentration (T max ) is 3.9 (1.9 to 8) hours. Effect of Food No clinically significant difference in lirafugratinib pharmacokinetics were observed following administration of a high-fat, high-calorie meal (approximately 800 to 1000 total calories with 500 to 600 calories from fat). Distribution Lirafugratinib apparent (oral) volume of distribution is 22 (22 %) L. Lirafugratinib plasma protein binding is >99% and is not concentration-dependent in vitro. Lirafugratinib blood-to-plasma ratio is approximately 0.4. Elimination Lirafugratinib elimination half-life is 23 (34 %) hours with an apparent (oral) clearance of 1 (32 % ) L/h. Metabolism Lirafugratinib is primarily metabolized by CYP3A4 and CYP2J2 and to a lesser extent by non-CYP enzymes in vitro . Excretion Following a single oral dose of radiolabeled lirafugratinib 70 mg to healthy subjects, approximately 80 % of the dose was recovered in feces (23 % unchanged), and 8 % was recovered in urine ( unchanged lirafugratinib not quantified). Specific Populations No clinically significant differences in the pharmacokinetics of lirafugratinib were observed based on age (20-87 years), sex, race (White 59% , Asian 16% , or Black 2.7% ), body weight (34-147 kg), CLcr 30-89 mL/min (estimated by Cockcroft-Gault), or mild (Child-Pugh Class A) to moderate (Child-Pugh Class B) hepatic impairment. The effect of severe renal impairment (CLcr < 30 mL/min) and severe (Child-Pugh Class C) hepatic impairment on lirafugratinib pharmacokinetics is unknown . Drug Interaction Studies Clinical Studies and Model-Informed Approaches Strong and Moderate CYP3A Inhibitors : Lirafugratinib C max increased 1.3-fold and AUC 2-fold following coadministration with itraconazole 200 mg once daily for 8 days. Lirafugratinib C max is predicted to increase 1.1-fold and AUC 1.7-fold following coadministration with erythromycin (moderate CYP3A inhibitor) 500 mg four times a day for 15 days. Strong and Moderate CYP3A Inducers : Lirafugratinib C max is predicted to decrease to 65% and AUC to 25% following coadministration of rifampicin (strong CYP3A inducer) 600 mg once daily for 19 days. Lirafugratinib C max is predicted to decrease to 85% and AUC to 43% following coadministration of efavirenz (moderate CYP3A inducer) 600 mg once daily for 19 days. Other Drugs : No clinically significant differences in lirafugratinib pharmacokinetics are predicted when used concomitantly with quinidine (P-gp inhibitor). No clinically significant differences in lirafugratinib pharmacokinetics were observed when administered concomitantly with esomeprazole (proton pump inhibitor). No clinically significant differences in the pharmacokinetics of the following drugs are predicted when used concomitantly with lirafugratinib: repaglinide (CYP2C8 substrate), tolbutamide (CYP2C9 substrate), omeprazole (CYP2C19 substrate), desipramine (CYP2D6 substrate), midazolam (CYP3A substrate), and caffeine (CYP1A2 substrate). In Vitro Studies CYP450 Enzymes : Lirafugratinib both induces and inhibits CYP2B6. Transporter Systems : Lirafugratinib is a P-gp and BCRP substrate, but not of OCT1, OATP1B1, OATP1B3, or BSEP. Lirafugratinib inhibits P-gp,MATE1, MATE2-K, OCT1, OCT2, OATP1B1, OATP1B3, BCRP, and BSEP, but does not inhibit OAT1 or OAT3.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -394,5 +444,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:01:21.622Z"
+  "lastIngestedAt": "2026-10-29T18:37:54.058Z"
 }

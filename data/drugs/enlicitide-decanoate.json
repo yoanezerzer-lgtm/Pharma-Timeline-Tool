@@ -4,6 +4,56 @@
   "inn": "enlicitide decanoate",
   "modality": "Drug (NDA)",
   "sponsor": "MSD",
+  "pharmacology": {
+    "drugClass": {
+      "name": "proprotein convertase subtilisin kexin type 9 (PCSK9) inhibitor",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220848Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "LIPFENDRA is a proprotein convertase subtilisin kexin type 9 (PCSK9) inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Enlicitide is a macrocyclic peptide that binds to PCSK9. PCSK9 binds to the low-density lipoprotein receptors (LDLR) on the surface of hepatocytes to promote LDLR degradation within the liver. By inhibiting the binding of PCSK9 to LDLR, enlicitide increases the number of LDLRs available to clear LDL-C, thereby lowering LDL-C levels.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220848Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 5,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Administration of single doses of enlicitide ≥10 mg results in a maximum reduction in plasma levels of free PCSK9 >90% at T max for enlicitide (0.5–1 hour postdose). Exposure–response analysis across enlicitide daily doses ranging from 0.5 times to 1.5 times the recommended dose demonstrated that the 20 mg dose achieved near-maximal reductions in plasma LDL-C in participants with hypercholesterolemia. Cardiac Electrophysiology At four times that of the clinical C max at the maximum recommended enlicitide dose, clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220848Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 5,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The geometric means (% coefficient of variation) of steady-state enlicitide AUC and C max following once daily enlicitide 20 mg were 308 nM•h (28%) and 15.5 nM (29%), respectively, in participants with hypercholesterolemia. Enlicitide plasma exposures were less than dose-proportional between 0.25 times and 15 times the recommended dosage of 20 mg. Steady-state is achieved by approximately 7 days with an accumulation ratio of 1.42. 5 Absorption Each LIPFENDRA tablet contains sodium caprate, which facilitates the oral absorption of enlicitide. The oral bioavailability of enlicitide is approximately 1%. When LIPFENDRA is orally administered on an empty stomach in the morning with a meal given at least 30 minutes after the enlicitide dose, enlicitide is rapidly absorbed with a T max of approximately 0.5–1 hour. Effect of Food LIPFENDRA administration on an empty stomach in the morning, at least 30 minutes before a meal, does not affect the exposure of enlicitide. LIPFENDRA administration 30 minutes after a meal reduces steady- state AUC and C max by 48% and 50%, respectively, and delays T max . Effect of Beverages The administration of LIPFENDRA with black coffee or plain tea does not result in a clinically meaningful change in enlicitide exposure. Distribution The apparent steady-state volume of distribution of enlicitide is 2,384 L. Enlicitide exhibits concentration dependent plasma protein binding, ranging from 93% bound at 2 nM to 32% bound at 1 μM. Enlicitide blood to plasma ratio is approximately 0.6. Elimination The steady-state apparent clearance in participants with hypercholesterolemia is approximately 41 L/h at the 20 mg once daily dose. Enlicitide clearance increases with increasing concentration, resulting in non - linear pharmacokinetics (PK). Enlicitide has an effective half-life of approximately 14 hours and a terminal half-life of approximately 244 hours. Metabolism Enlicitide is minimally metabolized. No major metabolites of enlicitide have been identified. Excretion Enlicitide is primarily eliminated via glomerular filtration following IV administration, with approximately 73% and 8% of the dose excreted in urine and feces, respectively. Specific Populations Age, Sex, and Race/Ethnicity There is no clinically meaningful effect of age (18 to 88 years), body weight (40 to 174 kg), sex, race (American Indian or Alaskan Native, Asian, Black or African American, White, or multi-racial), or ethnicity (Hispanic or Latino) on the PK of enlicitide. Patients with Renal Impairment Patients with mild (eGFR 60 to 89 mL/min), moderate (eGFR 30 to 59 mL/min), and severe renal impairment (eGFR less than 30 mL/min) are expected to have 5%, 11%, and 26% higher enlicitide steady- state exposure compared to patients with normal renal function. These increases in exposure are not clinically meaningful. Compared to participants with normal renal function, single dose enlicitide exposure (AUC 0-inf ) was 17% and 75% higher in participants with end-stage renal disease (ESRD) on hemodialysis when enlicitide was administered before hemodialysis and after hemodialysis, respectively. These increases in exposure are not clinically meaningful. Patients with Hepatic Impairment The PK of enlicitide is not impacted by moderate hepatic impairment (Child-Pugh Class B). The PK of enlicitide in participants with severe hepatic impairment (Child-Pugh Class C) was not evaluated. 6 Drug Interaction Studies No clinically meaningful drug interactions have been observed with LIPFENDRA. LIPFENDRA (formulated with the permeation enhancer, sodium caprate) did not affect the exposure of lithium, levothyroxine, digoxin, warfarin, atorvastatin, alendronate, lisinopril, or oral semaglutide tablets. Oral semaglutide tablets (formulated with salcaprozate sodium to facilitate absorption) or atorvastatin did not affect the exposure of enlicitide. Based on in vitro studies, LIPFENDRA has very low drug interaction potential via cytochrome P450 enzymes or drug transporters at the therapeutic dose.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220848Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 5,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -4132,5 +4182,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:23.786Z"
+  "lastIngestedAt": "2026-10-29T18:36:52.927Z"
 }

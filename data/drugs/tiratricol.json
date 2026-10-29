@@ -4,6 +4,56 @@
   "inn": "tiratricol",
   "modality": "Drug (NDA)",
   "sponsor": "RARE THYROID",
+  "pharmacology": {
+    "drugClass": {
+      "name": "thyroid hormone receptor agonist",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220963Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "EMCITATE is a thyroid hormone receptor agonist indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Tiratricol is a thyroid hormone receptor (THR) agonist which, unlike triiodothyronine (T3) and thyroxine (T4), can enter cells independent of the transmembrane transporter protein MCT8. In patients with MCT8 deficiency, X-linked loss-of-function mutations in the SLC16A2 gene encoding MCT8 impair T3 entry into target tissues. This results in insufficient T3 activity in the brain concurrent with persistent peripheral thyrotoxicosis from accumulation of circulating T3. Intracellular tiratricol activity at THR- independent of MCT8-mediated membrane transport, can modulate hypothalamic- pituitary-thyroid axis signaling and reduce circulating T3 in patients with MCT8 deficiency.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220963Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Tiratricol reduces elevated T3 concentrations in patients with MCT8 deficiency in a concentration- dependent manner, with greater T3-lowering effect at higher tiratricol exposures; however, this effect plateaus at or above mean tiratricol concentrations of approximately 746 ng/dL in patients 5 years and older. Following discontinuation of EMCITATE, total T3 concentrations increased toward pretreatment levels within one week. Cardiac Electrophysiology There is insufficient information to characterize the effect of tiratricol on the QTc interval.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220963Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The area under the plasma concentration-time curve (AUC) and maximal plasma concentration (Cmax) of tiratricol increased dose proportionally over the dose range studied (175 mcg to 1050 mcg) after oral administration. Administration of EMCITATE via an enteral tube compared to standard oral administration did not affect tiratricol pharmacokinetics. Absorption The absorption of tiratricol is rapid with a median time to maximum plasma concentration (T max ) of 0.5 hours (range 0.25 to 1 hour). 10 Effect of Food Administration of EMCITATE in healthy volunteers at doses of 175 mcg and 1050 mcg with a high-fat high-calorie meal (956 kcal energy, 35 g protein, 65 g carbohydrate and 61 g fat (with 57% energy from fat)) resulted in a delayed T max (1 hour), reduced C max (67%-70%), and unchanged AUC, compared to fasted conditions. These changes are not clinically significant [see Dosage and Administration ( 2.8 )] . Distribution Tiratricol plasma protein binding is 99%. The apparent volume of distribution is 364 L for a 70 kg patient and 130 L for a 25 kg patient. Elimination The apparent clearance of tiratricol is 21 L/hr for a 70 kg patient and 10 L/hr for a 25 kg patient. The steady state half-life is approximately 12 hours for a 70 kg patient and 9.4 hours for a 25 kg patient. Metabolism Tiratricol is metabolized by stepwise deiodination, sulfation and glucuronidation, mainly in the liver. Excretion Tiratricol and its metabolites are predominantly eliminated in urine as inorganic iodine and in bile. Specific Populations No clinical studies have been performed in subjects with renal and hepatic impairment. Pediatric Patients Pediatric patients (5 to 16 years of age) with a lower body weight had a lower clearance and volume of distribution as compared to adult patients. Drug Interaction Studies No clinical drug-drug interaction studies have been performed with tiratricol. In vitro studies CYP450 Enzymes: Tiratricol is unlikely to inhibit or induce CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6 and CYP3A4 at clinically relevant doses. UGT Enzymes: Tiratricol is unlikely to inhibit UGT1A1, UGT1A3, UGT1A4, UGT1A6, UGT1A9, UGT2B7, UGT2B15 and UGT2B17 at clinically relevant doses. Transporters: Tiratricol is not a substrate for P-gp, BCRP, OAT1, OAT3, OCT1, OCT2, OATP1B1, OATP1B3, MATE1 or MATE2-K. Tiratricol is unlikely to inhibit BCRP, OAT1, OAT3, OATP1B1 transporters at clinically relevant doses.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220963Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -405,5 +455,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:02:25.614Z"
+  "lastIngestedAt": "2026-10-29T18:38:58.097Z"
 }

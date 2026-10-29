@@ -5,6 +5,56 @@
   "modality": "Small molecule",
   "sponsor": "Eli Lilly and Company",
   "mechanism": "Oral, non-peptide GLP-1 receptor agonist",
+  "pharmacology": {
+    "drugClass": {
+      "name": "GLP-1 receptor agonist",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
+        "sourceLabel": "Label (SUPPL-3), Highlights",
+        "quote": "FOUNDAYO™ is a GLP-1 receptor agonist indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "FOUNDAYO is a GLP-1 receptor agonist that binds to and activates the human GLP-1 receptor. GLP-1 is a physiological regulator of appetite and caloric intake. GLP-1 receptors are present in brain regions that regulate appetite. In animal studies, orforglipron distributed to and activated neurons in brain regions that regulate appetite and food intake.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
+          "sourceLabel": "Label (SUPPL-3), section 12.1",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "FOUNDAYO reduces body weight, with greater fat mass loss than lean mass loss. FOUNDAYO decreases food intake. This effect is likely mediated by decreased appetite. FOUNDAYO delays gastric emptying. The delay is largest after the first dose and diminishes over time. Cardiac Electrophysiology At 1.4 times the mean of maximum concentrations provided by the maximum recommended FOUNDAYO dose (17.2 mg) once daily, clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
+          "sourceLabel": "Label (SUPPL-3), section 12.2",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The pharmacokinetics of orforglipron is similar between healthy subjects and patients with overweight (BMI ≥ 27 kg/m 2 ) or obesity. Steady state exposure is achieved after approximately 1 week of once daily administration. The data below refer to FOUNDAYO dosages [see Dosage and Administration (2.1)] . Except in the food effect study, data were generated with the corresponding orforglipron investigational formulation [see Adverse Reactions (6.1)] . Absorption Maximum concentration of orforglipron is reached 4 to 8 hours post dose. Orforglipron tablet exposure increases in a dose-proportional manner. The geometric mean a bsolute bioavailability of orforglipron was 77% after a 0.8 mg dose. Effect of food No clinically relevant food effect on orforglipron exposure was observed. Following multiple doses of an investigational 37.5 mg orforglipron tablet, the AUC (0-24h) decreased by 19%, and C max decreased by 26% with food compared to fasted state. The t max and t 1/2 were unchanged. Distribution The mean steady-state volume of distribution of orforglipron is approximately 285 L, following intravenous dosing in healthy subjects. Orforglipron plasma protein binding is greater than 99 %. FOUNDAYO is only for oral use. Elimination The mean systemic clearance of orforglipron is 7.15 L/hour. The elimination half-life is approximately 29 to 49 hours after an oral dose. Metabolism Orforglipron is metabolized primarily via hepatic CYP3A4 to several oxidative metabolites. These oxidative metabolites are excreted into the intestinal lumen. Excretion After administration of a single oral dose of 2.5 mg orforglipron , 87% of the dose was recovered in feces (all metabolites) and less than 1% of the dose was recovered in urine. Special Populations The intrinsic factors of age (18 to 92 years), sex, race (White, Asian, Black or African American, American Indian, Multiracial, or Hawaiian Pacific Islander), ethnicity (Hispanic, Non-Hispanic), body weight (56.4 to 227 kg), and renal impairment (eGFR 27.8 to 156 mL/min/1.73 m 2 ) do not have a clinically relevant effect on the pharmacokinetics of orforglipron. Patients with Hepatic Impairment The pharmacokinetics of orforglipron after a single oral 0.8 mg dose was evaluated in patients with mild, moderate, and severe hepatic impairment (Child-Pugh Class A, B, and C, respectively) and in subjects with normal hepatic function. Orforglipron exposure was similar in patients with mild hepatic impairment and normal hepatic function. Orforglipron AUC (0- ∞ ) increased by 1.7-fold and 4.6-fold in patients with moderate and severe hepatic impairment, respectively, compared to subjects with normal hepatic function. C max in patients with moderate and severe hepatic impairment was similar to C max in subjects with normal hepatic function [see Use in Specific Populations (8.6)] . Patients with Renal Impairment Renal impairment does not impact the pharmacokinetics of orforglipron. The pharmacokinetics of orforglipron after a single oral 0.8 mg dose were evaluated in patients with severe renal impairment and ESRD compared with subjects who had normal renal function. Data from clinical trials have also shown that renal impairment in patients with overweight or obesity does not impact the pharmacokinetics of orforglipron [see Use in Specific Populations (8.7)] . Drug Interaction Studies Clinical Studies and Model-Informed Approaches Effects of Other Drugs on FOUNDAYO Table 4 outlines the results of definitive clinical trials and physiologically based pharmacokinetic (PBPK) simulations assessing the effect of other drugs on orforglipron pharmacokinetics. Concomitant use of strong CYP3A4 inhibitors significantly increased exposure of orforglipron while concomitant use of moderate or strong CYP3A4 inducers led to reductions in orforglipron exposure [see Dose and Administration (2.2), Drug Interactions (7.1)] . Table 4: Potential for Other Drugs to Affect FOUNDAYO Concomitant Drug Category Concomitant Drug (Dose) Change in Orforglipron AUC C max Strong CYP3A4 inhibitors Clarithromycin (500 mg twice daily) ↑3.5 -fold ↑1.9 -fold Moderate CYP3A4 inhibitors Verapamil a (80 mg three times daily) ↑2 -fold ↑1.6 -fold Strong CYP3A4 inducers Carbamazepine (300 mg twice daily) ↓82% ↓55% Moderate CYP3A4 inducers Efavirenz a (600 mg once daily) ↓61% ↓3 3 % Weak CYP3A4 inducers Modafinil a (200 mg once daily) ↓16% ↓7% OATP1B inhibitors Cyclosporine (200 mg twice daily) ↑2.6 -fold ↑1.3 -fold P-gp inhibitors Quinidine (200 mg twice daily) ↓12% ↓26% Acid reducing agents Esomeprazole (40 mg once daily) No effect No effect a Simulated using physiologically based pharmacokinetic modeling. Effects of FOUNDAYO on Other Drugs Table 5 outlines the results of clinical assessments that evaluated the effect of orforglipron on other drugs. Concomitant use of orforglipron and simvastatin led to significant increases in the active metabolite simvastatin acid whether orforglipron was co-administered or dosing was staggered by 2 hours [see Drug Interactions (7.2)] . No clinically relevant changes were observed for orforglipron when used with rosuvastatin or atorvastatin. Table 5: Potential for FOUNDAYO to Affect Other Drugs Concomitant Drug Category Concomitant Drug (Dose) Orforglipron Dosage Change in Concomitant Drug AUC C max Statin Simvastatin (prodrug) (20 mg) 17.2 mg once daily up to ↓16% up to ↓27% Simvastatin acid (active metabolite) 17.2 mg once daily ↑2 - to 2.5-fold ↑2.3 - to 2.5-fold Atorvastatin (40 mg) 14.5 mg once daily ↑1.5 -fold ↑0.9 -fold BCRP substrate Rosuvastatin (20 mg) 17.2 mg once daily ↑1.7 -fold ↑1.3 -fold CYP3A4 substrates Midazolam (200 mcg) 17.2 mg once daily ↑1.1 -fold No effect P-gp substrates Digoxin (0.25 mg) 17.2 mg once daily ↑1.2 -fold ↑1.2 -fold OATP1B substrates Endogenous OATP1B biomarker coproporphyrin-1 up to 14.5 mg once daily No effect No effect Potential Drug Interactions due to Gastric Emptying Delay Orforglipron delays gastric emptying and has the potential to affect the rate of absorption of other concomitantly administered oral drugs. The gastric emptying delay effect of orforglipron on acetaminophen C max was largest after the first dose of FOUNDAYO 0.8 mg with acetaminophen C max decreased by 28 % . The effect diminished after repeated dosing of FOUNDAYO 17.2 mg . In Vitro Assessments of Drug Interactions CYP Enzymes: In in vitro studies, orforglipron did not inhibit or induce CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, or CYP2D6. Orforglipron is a substrate of CYP3A4 and CYP2J2, and is not a substrate of CYP1A2, CYP2B6, CYP2C8, CYP2C19, CYP2D6, and CYP3A5. Transporter Systems: Orforglipron did not inhibit OATP1B1, OATP1B3, OATP2B1, OAT1, OAT3, OCT1, OCT2, MATE1, or MATE2K. Orforglipron is a substrate of P-gp, OATP1B1 and OATP1B3, and is not a substrate of BCRP or OCT1.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934s003lbl.pdf",
+          "sourceLabel": "Label (SUPPL-3), section 12.3",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -6774,5 +6824,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:01:31.475Z"
+  "lastIngestedAt": "2026-10-29T18:38:04.887Z"
 }

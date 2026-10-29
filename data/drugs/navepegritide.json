@@ -4,6 +4,56 @@
   "inn": "navepegritide",
   "modality": "Drug (NDA)",
   "sponsor": "ASCENDIS",
+  "pharmacology": {
+    "drugClass": {
+      "name": "C-type natriuretic peptide (CNP) analog",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "YUVIWEL is a C-type natriuretic peptide (CNP) analog indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "CNP released from navepegritide has the same receptor binding affinity and activity as endogenous CNP. CNP binds to natriuretic peptide receptor-B (NPR-B), which inhibits the mitogen activated protein kinase signaling (MAPK) pathway. Achondroplasia is caused by a gain-of-function variant in the fibroblast growth factor receptor 3 (FGFR3) leading to overactive downstream signaling. The overly active FGFR3 inhibits endochondral ossification leading to short stature and skeletal dysplasia. Like endogenous CNP, CNP released from navepegritide binds to NPR-B, stimulating an increase in cyclic guanosine monophosphate (cGMP) and signaling through protein kinase G, resulting in an inhibition of the MAPK signaling pathway and thereby antagonizing the overactive FGFR3 signaling in achondroplasia. CNP promotes chondrocyte differentiation and proliferation, thereby stimulating skeletal bone growth in patients with achondroplasia.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Natriuretic Peptide Receptor B (NPR-B) Activity Marker There was a dose-dependent (0.006 mg/kg/week to 0.1 mg/kg/week) increase in plasma cGMP levels in pediatric patients with achondroplasia following 52 weeks of once-weekly administration of navepegritide. Cardiac Electrophysiology At the approved recommended dose, YUVIWEL does not prolong the QT interval to any clinically relevant extent.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The pharmacokinetics of navepegritide, a prodrug releasing CNP following subcutaneous administration, have been investigated at single doses of 0.003 to 0.15 mg/kg in healthy adults, and at weekly doses of 0.006 to 0.1 mg/kg in patients with achondroplasia. Plasma concentrations of navepegritide and CNP released from navepegritide increased proportionally with dose within the range of 0.01 to 0.15 mg/kg. In patients with achondroplasia administered navepegritide 0.1 mg/kg once-weekly, the predicted steady state geometric mean (CV) maximum plasma concentration (C max ) of navepegritide was 1,360 ng/mL (8.3%) and the predicted geometric mean (CV) exposure over the weekly dosing interval AUC was 193,000 h*ng/mL (6.1%). For CNP released from navepegritide, the predicted geometric mean (CV) C max was 36.0 pmol/L (23%) and the predicted geometric mean (CV) AUC over the weekly dosing interval was 4,410 h*pmol/L (23%) . In patients with achondroplasia, steady state levels of navepegritide and CNP released from navepegritide were achieved after approximately 3 once-weekly doses. Median accumulation ratios of navepegritide and CNP released from navepegritide following once-weekly dose administration were 1.9 and 1.7, respectively. Absorption In patients with achondroplasia administered navepegritide 0.1 mg/kg once-weekly, the geometric mean (CV) time to reach maximum concentration (T max ) of navepegritide was 43.4 hours (15%). For CNP released from navepegritide, the geometric mean (CV) T max was 24.4 hours (13%). The absolute bioavailability of navepegritide following subcutaneous dose administration has not been investigated. Distribution The model-derived geometric mean (CV) apparent volume of distribution of navepegritide and CNP released from navepegritide was 1.8 (33 %) L and 5.1 (30 %) L, respectively. Elimination The model-derived geometric mean (CV) steady state apparent clearance of navepegritide and CNP released from navepegritide was 0.052 (33 %) and 1,950 (39 %) L/day, respectively. In patients with achondroplasia administered navepegritide 0.1 mg/kg once weekly, the predicted mean apparent elimination half-life of navepegritide was 6.7 days, and the mean apparent elimination half-life of CNP released from navepegritide was 5.3 days. Metabolism Following subcutaneous dose administration, navepegritide releases CNP via auto-cleavage of the TransCon Linker that follows first-order kinetics, resulting in continuous systemic exposure of CNP over the weekly dosing interval. CNP metabolism follows natural degradation pathways for peptides, resulting in small peptide fragments and amino acids. Specific Populations Based on a population pharmacokinetic analysis, no clinically meaningful effects on the pharmacokinetics of navepegritide were observed for age (2 to 59.6 years), sex (66 % male , 34% female), race (21% Asian, 1 .8% Black or African American, 75% White, and 1.8% Other) , ethnicity (11% Hispanic or Latino, 87% not Hispanic or Latino, 1% not reported or unknown) and mild (eGFR: 60 to < 89 mL/min/1.73 m 2 ) renal impairment. The effect of hepatic impairment on the pharmacokinetics of navepegritide was not studied. Drug Interaction Studies No in vitro assessments or clinical studies evaluating the drug-drug interaction potential of navepegritide have been conducted.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -836,5 +886,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:01:29.961Z"
+  "lastIngestedAt": "2026-10-29T18:38:10.021Z"
 }

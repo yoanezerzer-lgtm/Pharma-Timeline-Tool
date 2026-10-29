@@ -4,6 +4,56 @@
   "inn": "vepdegestrant",
   "modality": "Drug (NDA)",
   "sponsor": "RIGEL PHARMS",
+  "pharmacology": {
+    "drugClass": {
+      "name": "heterobifunctional protein degrader",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219835Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "VEPPANU is a heterobifunctional protein degrader indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Vepdegestrant is a heterobifunctional protein degrader that binds to estrogen receptor (ER) and the E3 ligase cereblon (CRBN). This interaction results in the degradation cascade through CRBN-mediated polyubiquitination and degradation of ER by the proteasome, leading to reduction of ER protein levels in breast cancer cells. Vepdegestrant induced degradation of wild-type (WT) and mutant ER, inhibited ER-dependent breast cancer cell line proliferation in vitro and demonstrated antitumor activity in vivo in both WT and mutant ESR1 breast cancer models.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219835Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The exposure-response relationship and time-course of pharmacodynamic response of vepdegestrant have not been fully characterized. Cardiac Electrophysiology The largest mean increase in QTc interval was 12 ms (upper confidence interval = 15 ms) after administration of vepdegestrant at the recommended dosage of 200 mg once daily in patients with ESR1 mutation-positive breast cancer.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219835Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Vepdegestrant pharmacokinetics were observed at steady state in patients with ER+/HER2- breast cancer at the approved recommended dosage of 200 mg once daily and are presented as mean (coefficient of variation (CV%)) unless otherwise specified. Vepdegestrant maximum concentration (C max ) is 926 ng/mL (39%) and the total systemic exposure (AUC) is 17,155 ng•hr/mL (36%). Vepdegestrant AUC and C max increase in an approximately dose proportional manner over the dose range of 100 mg (0.5 times the approved recommended dose) to 500 mg (2.5 times the approved recommended dose). Vepdegestrant accumulation is approximately 1.4-fold for AUC and 1.3-fold for C max . Vepdegestrant steady state is reached in approximately 7 days. Absorption Vepdegestrant median (min, max) time to maximum plasma concentration (T max ) is approximately 6 (4, 8) hours. Effect of Food Vepdegestrant AUC increased 2.9-fold and C max 3.2-fold following administration with a high-fat meal (approximately 800 to 1,000 calories; ≥50% fat). Distribution Vepdegestrant plasma protein binding is >99%. The apparent (oral) volume of distribution is 764 L (26%) following a single 200 mg dose. Elimination Vepdegestrant effective elimination half-life is 19 hours (50%) with an apparent (oral) clearance of 12 L/h (36%). Metabolism Vepdegestrant is primarily metabolized through direct sulfation via multiple SULT isoforms and oxidation via CYP3A4 and to a lesser extent by CYP2C8, CYP2C9 and CYP3A5. Unchanged total vepdegestrant represented 92% of total radioactivity in plasma. Excretion Following a single oral dose of radiolabeled vepdegestrant 200 mg to healthy subjects, approximately 68% of the dose was recovered in feces (18% unchanged) and 1.5% in urine (<0.02% unchanged). Specific Populations No clinically significant differences in the pharmacokinetics of vepdegestrant were observed based on age (26 to 89 years), sex, body weight (37 to 181 kg), race (60% White, 27% Asian, 2.2% Black or African American, and 10% other), CLcr 30 mL/min to 90 mL/min (estimated by Cockcroft Gault equation) or mild hepatic impairment (total bilirubin ≤ULN and AST>ULN or total bilirubin >1 to 1.5 × ULN and any AST). The effect of moderate hepatic impairment (total bilirubin >1.5 to 3 × ULN and any AST), severe hepatic impairment (total bilirubin >3 x ULN and any AST), CLcr 15 to <30 mL/min, and end-stage renal disease (CLcr <15 mL/min) on the pharmacokinetics of vepdegestrant is unknown. Drug Interaction Studies Clinical Studies and Model-Informed Approaches Strong CYP3A Inhibitors: Vepdegestrant AUC increased 1.7-fold and C max 1.5-fold following concomitant use of itraconazole (strong CYP3A inhibitor) 200 mg once daily. Strong CYP3A Inducers: Vepdegestrant AUC decreased to 64% and C max to 80% following concomitant use of carbamazepine (strong CYP3A inducer) 200 mg three times daily. Acid Reducing Agents: Vepdegestrant AUC decreased to 84% and C max to 74% following concomitant use of esomeprazole (proton-pump inhibitor) 40 mg once daily. CYP3A Substrates: Midazolam (CYP3A substrate) AUC increased 1.7-fold and C max 1.2-fold following concomitant use of VEPPANU 200 mg once daily. P-gp Substrates: Dabigatran etexilate (P-gp substrate) AUC increased 2-fold and C max 1.9-fold following concomitant use of a single dose of VEPPANU 200 mg. Breast Cancer Resistance Protein (BCRP) Substrates: Rosuvastatin (BCRP substrate) AUC increased 1.2-fold and C max 1.2-fold following concomitant use of a single dose of VEPPANU 200 mg. UGT1A9 Substrates : Dapagliflozin (UGT1A9 index substrate) AUC is predicted to increase approximately 2-fold following multiple doses of VEPPANU. In vitro studies: CYP450 Enzymes: Vepdegestrant does not inhibit CYP1A2, CYP2C8, CYP2C9, CYP2C19 or CYP2D6 and does not induce CYP1A2, CYP2C8, CYP2C9, or CYP2C19.Vepdegestrant is an inhibitor of CYP2B6. UDP -Glucuronosyltransferases (UGT): Vepdegestrant does not inhibit UGT1A1, UGT1A4, UGT1A6, UGT2B7, or UGT2B15. Transporter Systems: Vepdegestrant is not a substrate of P-gp, BCRP, OATP1B1, or OATP1B3. Vepdegestrant does not inhibit MATE1, MATE2-K, OAT1, OAT3, OATP1B1, OATP1B3, or OCT2.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219835Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -334,5 +384,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:01:48.762Z"
+  "lastIngestedAt": "2026-10-29T18:39:26.897Z"
 }

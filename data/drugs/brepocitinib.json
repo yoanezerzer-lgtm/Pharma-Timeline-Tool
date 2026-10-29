@@ -4,6 +4,56 @@
   "inn": "brepocitinib",
   "modality": "Drug (NDA)",
   "sponsor": "PRIOVANT THERAP",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Janus kinase (JAK) and tyrosine kinase 2 (TYK2) inhibitor",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220106Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "LISRAYA is a Janus kinase (JAK) and tyrosine kinase 2 (TYK2) inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Brepocitinib is a Janus kinase (JAK) and tyrosine kinase 2 (TYK2) inhibitor. In a cell-free isolated enzyme assay, brepocitinib had greater inhibitory potency at TYK2 and JAK1 than JAK2 (≥ 3.4 -fold) and JAK3 ( ≥ 286-fold). The JAK family comprises cytoplasmic tyrosine kinases that mediate signal transduction of cytokine receptors to influence immune cell function. Within the signaling pathway, JAKs phosphorylate and activate signal transducers and activators of transcription (STATs) which modulate intracellular activity including gene expression. JAKs mediate cytokine signaling through hetero- or homodimeric pairing. In human cellular assays, brepocitinib inhibited signaling of TYK2- and JAK1-mediated cytokine-induced STAT phosphorylation, including signaling of TYK2/JAK1, TYK2/JAK2, JAK1/JAK3, and TYK2/JAK1/JAK2. The relevance of inhibition of specific JAK combinations to therapeutic effectiveness is not known.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220106Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 13,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Inhibition of Type I IFN and IL-6 induced STAT1 and STAT3 phosphorylation In peripheral blood mononuclear cells isolated from dermatomyositis patients, brepocitinib resulted in concentration-dependent inhibition of Type I IFN induced and IL-6 induced phosphorylation of STAT1 and STAT3. Inhibition of IFNγ, IL -10, IL-12, IL-13, and IL-23 induced STAT phosphorylation In whole blood from healthy donors, brepocitinib resulted in concentration- dependent inhibition of IFNγ, IL-10, IL-12, IL-13, and IL-23 induced STAT1, STAT3, STAT4, STAT6, and STAT3 phosphorylation, respectively. Gene Expression After administration of LISRAYA 30 mg once daily to patients with dermatomyositis, expression of genes associated with Type I signaling were reduced by Week 12 and sustained through Week 52 in whole blood. The clinical relevance is unclear. Cardiac Electrophysiology LISRAYA caused concentration-dependent QTc interval prolongation with a supratherapeutic dose of 200 mg (6.67 times the approved recommended dose). At the maximum recommended LISRAYA oral dose of 30 mg once daily, clinically significant QTc interval prolongation is not expected.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220106Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 13,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption Following oral administration of LISRAYA, the median T max of brepocitinib is 1 hour. The absolute oral bioavailability of LISRAYA is approximately 75%. Effect of Food Coadministration of LISRAYA with a high-fat meal (approximately 50% fat and 800-1000 calories) resulted in 18% decrease in AUC and 36% decrease in C max [see Dosage and Administration ( 2.2 )]. Distribution Brepocitinib is 39% bound to plasma proteins. The blood to plasma partition ratio is 0.84. Elimination Metabolism Brepocitinib is primarily cleared by metabolism, which is mediated mainly by cytochrome P450 (CYP)1A1 and CYP1A2 with minor contribution from CYP3A4. The pharmacologic activity of brepocitinib is attributed to the parent molecule. In a human radiolabeled study, unchanged brepocitinib and the major inactive metabolite M1 accounted for 48% and 37% of the total circulating radioactivity in plasma, respectively. Excretion Following oral administration of radiolabeled brepocitinib in healthy subjects, 88% (7.7% as unchanged and 51% as M1) and 8.7% (0.8% as unchanged and 0.7% as M1) of the total radioactivity was recovered in urine and feces, respectively. Brepocitinib mean terminal half-life ranged from 5.4 to 12 hours. Specific Populations Body Weight, Sex, Age, and Race Based on population PK analysis, body weight (39-204 kg), sex, age (18-77 years) and race (White, Black, Asian, Native American, Pacific Islander, Other Race) did not have a clinically meaningful effect on brepocitinib exposure in adult patient populations. Patients with Renal Impairment Following a single oral administration of LISRAYA 30 mg, brepocitinib AUC was 29% lower, 48% higher, and 12% higher in subjects with mild (eGFR: 60 to 89 mL/min, based on Modification of Diet in Renal Disease formula), moderate (eGFR: 30 to 59 mL/min), and severe (eGFR: 15 to 29 mL/min) renal impairment, respectively. C max was 5% lower, 24% higher, and 10% higher in subjects with mild, moderate, and severe renal impairment, respectively, compared to subjects with normal renal function. Brepocitinib metabolite M1 AUC was 45% higher, 129% higher, and 346% higher in subjects with mild, moderate, and severe renal impairment, respectively. C max was 33% higher, 22% higher, and 78% higher in subjects with mild, moderate, and severe renal impairment, respectively, compared to subjects with normal renal function [ see Use in Specific Populations ( 8.6 )]. Patients with Hepatic Impairment Following a single oral administration of LISRAYA 30 mg, brepocitinib AUC and C max was 19% higher and 27% lower, respectively, in subjects with moderate hepatic impairment (Child-Pugh B) compared to subjects with normal hepatic function. Brepocitinib metabolite M1 AUC and C max was 19% higher and 19% lower, respectively, in subjects with moderate hepatic impairment compared to subjects with normal hepatic function. LISRAYA was not evaluated in patients with severe hepatic impairment (Child-Pugh C) [ see Use in Specific Populations ( 8.7 )]. Drug Interaction Studies Effects of Other Drugs on Pharmacokinetics of Brepocitinib Smoking causes induction of CYP1A1 and CYP1A2 levels. Following the administration of LISRAYA 30 mg once daily, brepocitinib AUC and C max at steady state was estimated to be 45% and 33% lower, respectively, in current smokers compared to non-current smokers. There was no clinically significant effect on the pharmacokinetics of brepocitinib when co-administered with multiple doses of itraconazole 200 mg once daily (CYP3A/P-gp inhibitor). Effects of Brepocitinib on Pharmacokinetics of Other Drugs Multiple doses of LISRAYA 60 mg once daily (2 times the approved recommended dosage) did not have a clinically significant effect on the PK of a combined oral contraceptive containing ethinylestradiol and levonorgestrel. In vitro studies indicate that brepocitinib does not inhibit the activity of enzymes CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, and CYP3A4/5, or human sulfotransferase enzymes or uridine 5’-diphospho-glucuronosyltransferases at clinically relevant concentrations. In vitro studies indicate that brepocitinib does not induce CYP3A4, CYP2B6 or CYP1A2 at clinically relevant concentrations. In vitro studies indicate that brepocitinib does not inhibit the transporters OATP1B1, OATP1B3, OAT1, OAT3, or BSEP. Brepocitinib inhibits OCT1, OCT2, MATE1, MATE2K, P-gp, and BCRP. The observed serum creatinine increase in clinical studies with brepocitinib is likely due to inhibition of tubular secretion of creatinine via OCT2, MATE1, and MATE2-K. The effect of brepocitinib on P-gp and BCRP has not been studied.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220106Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -745,5 +795,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T17:59:43.095Z"
+  "lastIngestedAt": "2026-10-29T18:36:21.657Z"
 }

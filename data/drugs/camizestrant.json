@@ -4,6 +4,56 @@
   "inn": "camizestrant",
   "modality": "Drug (NDA)",
   "sponsor": "ASTRAZENECA",
+  "pharmacology": {
+    "drugClass": {
+      "name": "estrogen receptor antagonist",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220359Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "ETCAMAH is an estrogen receptor antagonist indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Camizestrant is an estrogen receptor (ER) antagonist. In vitro, camizestrant binds to the ligand binding domain of ERα, antagonizing the activity of ER α encoded by both wild-type ESR1 and mutated ESR1 and inducing proteasome-dependent degradation of ER α , without agonizing ER α . Camizestrant demonstrated anti-tumor activity in ER-positive cell lines, in vitro, and patient derived xenograft (PDX) models, in vivo, including those with wild-type or mutated ESR1 genes. Treatment with camizestrant and CDK4/6 inhibitors (abemaciclib, palbociclib, or ribociclib) demonstrated greater anti-tumor activity than single agent treatment in ER-positive cell lines and PDX models.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220359Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Exposure-Response Relationships The exposure-response relationships for efficacy of camizestrant in combination with CDK4/6 inhibitors (abemaciclib, palbociclib, and ribociclib) have not been fully characterized. Higher exposure to camizestrant was associated with increased incidence of bradycardia and visual disturbance over the dose range of 25 mg (0.3 times the recommended dose) to 450 mg (6 times the recommended dose). Cardiac Electrophysiology There is insufficient information to fully characterize the effect size of camizestrant on the QTc interval [see Warnings and Precautions ( 5.1 )] .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220359Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Camizestrant pharmacokinetics were observed at steady state in patients with breast cancer at the approved recommended dosage and are presented as mean (CV%), unless otherwise specified. Camizestrant total systemic exposure (AUC) is 1,115 ng·h/mL (40.8%) and maximum concentration (C max ) is 73.6 ng/mL (40.2%). Camizestrant steady-state AUC and C max increase by approximately 2-fold when administered in combination with ribociclib ( see Drug Interaction Studies) . Camizestrant AUC and C max increase in a greater than dose proportional manner over the dosage range of 25 mg to 450 mg (0.3 to 6 times the approved recommended dosage) once daily. Camizestrant steady state is reached by Day 5. Accumulation was observed after multiple dosing with an accumulation ratio of 1.4 for C max and 1.8 for AUC. Absorption Camizestrant absolute oral bioavailability is 43%. Camizestrant median time to maximum concentration (T max ) is 3 to 4 hours. Effect of Food No clinically significant differences in camizestrant pharmacokinetics were observed following administration of a high-fat meal (951 calories, 58% fat) in healthy postmenopausal women. Distribution Camizestrant apparent volume of distribution is 1,888 L (29.3%). Camizestrant plasma protein binding is 0.75 and is not concentration-dependent in vitro. The blood-to-plasma concentration ratio is 0.99. Elimination Camizestrant terminal half-life is approximately 23 hours with an apparent clearance of 69 L/h (40.6%). Metabolism Camizestrant is primarily metabolized by CYP3A and UGT1A4. Excretion Following a single oral 75 mg dose of radiolabeled camizestrant to healthy subjects, 65% of the total radioactivity was recovered in feces (14.5% unchanged) and 17% in urine (4.8% unchanged). Specific Populations No clinically significant differences in the pharmacokinetics of camizestrant were observed based on age (29 – 89 years), body weight (34 – 150 kg), race (86% White, 9% Asian, and 1.3% Black), and creatinine clearance (CLcr) 30 mL/min to < 90 mL/min (calculated using the modified Cockcroft-Gault equation). The effect of CLcr 15 to < 30 mL/min and end-stage renal disease (CLcr < 15 mL/min) on camizestrant pharmacokinetics is unknown. Patients with Hepatic Impairment Camizestrant C max and AUC increased in patients with moderate (Child-Pugh B) and severe (Child-Pugh C) hepatic impairment compared to patients with normal hepatic function following a single 75 mg dose. Camizestrant steady state C max and AUC are predicted to increase in patients with mild (Child-Pugh A), moderate (Child-Pugh B), and severe (Child-Pugh C) hepatic impairment compared to patients with normal hepatic function. Table 7 summarizes observed systemic exposure of camizestrant in patients with hepatic impairment following a single dose and predicted systemic exposures at steady-state. Table 7. Observed and Predicted Systemic Exposure of Camizestrant in Patients with Hepatic Impairment PK Parameter Mild (Child-Pugh A) Hepatic Impairment Moderate (Child-Pugh B) Hepatic Impairment Severe (Child-Pugh C) Hepatic Impairment Single Dose C max N/A 2. 7 - fold increase 3.1 - fold increase AUC N/A 2. 4 - fold increase 3.8 - fold increase Steady - State C maxss 1.4 - fold increase 2.1 - fold increase 3.4 - fold increase AUC ss 1.4 - fold increase 2 .2 - fold increase 4.2 - fold increase N/A = not available. When camizestrant 75 mg once daily is coadministered with ribociclib 400 mg once daily in patients with severe hepatic impairment (Child-Pugh C), compared to patients with normal hepatic function, the steady-state camizestrant AUC was predicted to increase approximately 6-fold. Drug Interaction Studies Clinical Studies and Model-Informed Approaches Strong CYP3A Inhibitors: Camizestrant C max increased 1.4-fold and AUC 1.9-fold following concomitant administration of itraconazole (strong CYP3A inhibitor) 200 mg twice daily on day 1 followed by 200 mg once daily for 5 days. Camizestrant C max and AUC increased approximately 2-fold when administered concomitantly with ribociclib (strong CYP3A inhibitor) 400 or 600 mg once daily. Strong CYP3A Inducers: Camizestrant C max decreased to 41% and AUC decreased to 30% following concomitant administration of carbamazepine (strong CYP3A inducer) 100 mg once daily for 3 days, followed by 200 mg once daily for 3 days and then 300 mg once daily for 6 days. Camizestrant C max is predicted to decrease to 38% and AUC to 30% following concomitant administration of rifampicin (strong CYP3A inducer) 600 mg once daily for 17 days. Moderate CYP3A Inducers : Camizestrant C max is predicted to decrease to 58% and AUC to 43% following concomitant administration of phenobarbital (moderate CYP3A inducer) 100 mg once daily for 17 days. Phenobarbital or efavirenz (moderate CYP3A inducer) is predicted to have minimal effects on camizestrant AUC and C max when camizestrant is given in combination with 400 mg or 600 mg ribociclib. CYP2C9 Substrates: Warfarin (sensitive CYP2C9 substrate) C max is predicted to increase 1.1-fold and AUC 13-fold following concomitant administration with camizestrant . Siponimod (moderately sensitive CYP2C9 substrate) C max is predicted to increase 1.1-fold and AUC 5.3-fold following concomitant administration with camizestrant . CYP2C19 Substrates : Omeprazole (sensitive CYP2C19 substrate) C max is predicted to increase 3.3-fold and AUC 8.5-fold and lansoprazole (moderately sensitive CYP2C19 substrate) C max is predicted to increase 1.5-fold and AUC 5.7-fold following concomitant administration with camizestrant . CYP3A Substrates: Midazolam (sensitive CYP3A substrate) C max increased 1.5-fold and AUC 2-fold following concomitant administration with camizestrant . In Vitro Studies CYP450 Enzymes: Camizestrant is a reversible inhibitor of CYP2B6 and CYP2D6, but does not inhibit CYP1A2, CYP2A6, CYP2C8, and CYP2E1. Camizestrant can induce CYP1A2 and CYP2B6. UGT Enzymes: Camizestrant inhibits UGT1A1 and UGT2B7. Transporter Systems: Camizestrant is a substrate of P-gp, but not a substrate of BCRP, OATP1B1, or OATP1B3. Camizestrant can inhibit P - gp, BCRP and OATP1B1. Camizestrant does not inhibit OATP1B3, OCT2, OAT1, OAT3, MATE1, and MATE2K.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220359Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -2436,5 +2486,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T17:59:45.599Z"
+  "lastIngestedAt": "2026-10-29T18:36:18.942Z"
 }

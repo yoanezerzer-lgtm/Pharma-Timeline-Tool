@@ -4,6 +4,56 @@
   "inn": "zilganersen",
   "modality": "Drug (NDA)",
   "sponsor": "IONIS PHARMS INC",
+  "pharmacology": {
+    "drugClass": {
+      "name": "glial fibrillary acidic protein (GFAP)-directed antisense oligonucleotide",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220210Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "ZANVASTRO is a glial fibrillary acidic protein (GFAP)-directed antisense oligonucleotide indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "ZANVASTRO is an antisense oligonucleotide that causes degradation of glial fibrillary acidic protein (GFAP) pre-mRNA through binding to GFAP pre-mRNA, which results in a reduction of GFAP protein synthesis.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220210Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Effect of Zilganersen on Plasma GFAP Plasma GFAP, an indirect measure of target engagement, was evaluated longitudinally in patients with Alexander disease [see Clinical Studies (14)] . At week 61 (after 5 doses), the geometric mean ratio to baseline in plasma GFAP was 33.6% lower in patients on ZANVASTRO compared to controls (see Figure 2). Figure 2. Mean Change from Baseline in Plasma GFAP (Geometric Mean Ratio ± SE) in Patients Treated with ZANVASTRO 50 mg or Control (Study 1; Main Study) Cardiac Electrophysiology Based on the chemical properties of zilganersen and the absence of cardiac electrophysiology findings in nonclinical studies, zilganersen is not expected to affect the QTc interval.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220210Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption The pharmacokinetic properties of zilganersen were evaluated following intrathecal administration of multiple doses given as a 50mg bolus every 12 weeks in pediatric ( ≥ 2 years old) and adult patients with Alexander disease. Following 50 mg dosing in patients ≥ 2 years old, zilganersen was quantifiable in CSF 84 days after injection (trough). The steady state pharmacokinetics are presented as geometric mean (%CV). The steady-state CSF trough (C trough, CSF, ss ) concentration was 1.21 ng/mL (40.8%). The steady-state maximum plasma concentration (C max,ss ) was 908 ng/mL (74.3%), with a median time to maximum plasma concentration (T max,ss ) of 4.03 hours (range: 1.00–23.7 hours). The steady-state trough plasma concentration (C trough, plasma, ss ) was 0.252 ng/mL (147%), and the area under the plasma concentration-time curve from 0 to 24 hours (AUC ₀₋₂₄ h ) was 7,716 ng ꞏ h/mL (97.4%). No evidence of time-dependent plasma pharmacokinetics was observed between the first and sixth administration of ZANVASTRO in patients >2 years of age. Distribution In vitro , greater than 98% of zilganersen binds to human plasma proteins. Following intrathecal administration of ZANVASTRO into the CSF, zilganersen distributes into the systemic circulation and tissues with the central compartment volume of 7.95 L and the peripheral compartment volume of 315 L. Elimination The terminal elimination half-life in plasma is approximately 1 month. Metabolism Zilganersen undergoes endonuclease and exonuclease-mediated cleavage to shorter oligonucleotide metabolites; it is not a CYP substrate, and CYP450-mediated metabolism is not expected. Excretion The primary route of elimination is likely by urinary excretion for zilganersen and its chain-shortened metabolites. The urinary excretion of unchanged zilganersen has not been characterized. Specific Populations No clinically meaningful differences in the pharmacokinetics of zilganersen were observed based on age, body weight, sex, race, ethnicity, mild renal impairment (eGFR ≥ 60 to <90 mL/min/1.73 m 2 ), or mild hepatic impairment (defined using NCI-ODWG Criteria: total bilirubin ≤ 1 × ULN and AST >1 × ULN, or total bilirubin >1 to 1.5 × ULN and any AST). ZANVASTRO has not been studied in patients aged ≥ 65 years, patients with moderate or severe renal impairment, end-stage renal disease, or moderate or severe hepatic impairment. Drug Interaction Studies No clinical drug–drug interaction studies have been performed with ZANVASTRO. In vitro , studies show that zilganersen is not a substrate or inhibitor of major drug transporters, does not interact with highly plasma protein bound medicines, and is not an inhibitor or inducer of cytochrome P450 (CYP) enzymes.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220210Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -316,5 +366,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:03:05.214Z"
+  "lastIngestedAt": "2026-10-29T18:39:45.453Z"
 }

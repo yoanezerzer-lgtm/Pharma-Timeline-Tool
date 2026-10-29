@@ -4,6 +4,56 @@
   "inn": "cefepime",
   "modality": "Drug (NDA)",
   "sponsor": "WOCKHARDT BIO AG",
+  "pharmacology": {
+    "drugClass": {
+      "name": "combination of cefepime, a cephalosporin antibacterial, and zidebactam, a beta-lactamase inhibitor and non-beta-lactam antibacterial",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220787Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "ZAYNICH is a combination of cefepime, a cephalosporin antibacterial, and zidebactam, a beta-lactamase inhibitor and non-beta-lactam antibacterial indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Cefepime and zidebactam, components of ZAYNICH, are antibacterial drugs [see Microbiology ( 12.4 )] .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220787Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 13,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "For both cefepime and zidebactam, components of ZAYNICH, the percentage of time that unbound drug exceeds the minimum inhibitory concentration (% f T > MIC) has been shown to best correlate S N N H O O OCH 3 N N + C H 3 OH O N S N H 2 H Cl - . HCl . H 2 O with efficacy in animal and in vitro models of infection. Zidebactam alters the pharmacodynamic activity of cefepime, resulting in a reduction of cefepime's % f T > MIC required for antibacterial activity. Cardiac Electrophysiology At 4 times the maximum recommended zidebactam dose given together with the recommended dose for cefepime, clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220787Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 13,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Pharmacokinetic (PK) Parameters The PK properties of cefepime and zidebactam are summarized in Table 4 as geometric mean (geometric coefficient of variation, GCV%) in healthy adult subjects. Table 4: Pharmacokinetic Parameters (Geometric mean [GCV%]) of Cefepime and Zidebactam Pharmacokinetic Parameters Cefepime Zidebactam Exposure C max (mg/L) * 153 (2.6) 64.3 (6.3) AUC 0-8 (mg•h/L) * 362 (6.3) 153 (5.6) Distribution % Bound to human plasma protein 20% 4.0-5.4% Vz (L) * 13.7 (5.0) 15.5 (10.1) Proportionality (dose range) 0.25 g – 2.0 g 0.25 g – 3.0 g Accumulation Similar pharmacokinetics following single and multiple dosing Elimination CL (L/h) * 5.2 (8.5) 6.2 (5.9) T 1/2 (h) * 1.8 (12.9) 1.7 (10.8) Metabolism † Minimally metabolized Excretion Major route of elimination Renal % Excreted unchanged in urine ‡ 85% 88% AUC 0-8 = area under the plasma concentration time curve from 0 to 8 h; CL = clearance; C max = maximum concentration; GCV = Geometric coefficient of variation; T 1/2 = terminal half-life; Vz = volume of distribution. * Pharmacokinetic parameters are presented at steady state (Day 10) in healthy subjects at a dosage of 2 grams cefepime and 1 gram zidebactam every 8 hours (geometric mean (GCV%)). † Approximately 6.8% of the administered dose of cefepime is eliminated in urine as N-oxide and 2.5% as cefepime epimer. Approximately 2.5% of the administered dose of zidebactam is eliminated in urine as zidebactam impurity-1 isomer. ‡ Arithmetic mean. Specific Populations No clinically significant differences in the PK of cefepime and zidebactam were observed based on age (18 to 90 years), weight (39 to 130 kg), gender (59% male, 41% female), or race (0.02% American Indian or Alaska native, 9% Asian, 14% Black or African American, 75% White). Patients with Renal Impairment In a single-dose trial evaluating the effect of renal impairment on the pharmacokinetics of cefepime and zidebactam, dosage was adjusted for subjects with moderate and severe renal impairment (defined as creatinine clearance, CrCl, less than 60 mL/min). The dose-normalized systemic exposures of cefepime and zidebactam were higher at all levels of renal impairment compared with healthy subjects with creatinine clearance (CrCl, estimated by Cockcroft-Gault) greater than or equal to 90 mL/min, see Table 5 . Table 5: Dose Normalized Fold AUC 0-infinity Increase in Subjects with Renal Impairment Compared with Subjects with Creatinine Clearance (CrCl ) ≥ 90 mL/min CrCl (mL/min) Cefepime Zidebactam 60 to 89 1.4 1.3 30 to 59 3.0 3.3 15 to 29 4.2 5.4 ESRD on HD 9.9 16.0 AUC 0-infinity = area under the plasma concentration time curve from 0 to time infinity; CrCl = Creatinine clearance; ESRD = end stage renal disease; HD = hemodialysis Patients with Hepatic Impairment Cefepime and zidebactam undergo minimal hepatic metabolism (less than 10%), therefore their systemic clearance is unlikely to be affected by hepatic impairment. Drug Interactions Clinical Studies No drug-drug interactions were observed among cefepime, zidebactam, and metronidazole. In Vitro Studies Cytochrome P450 (CYP) Enzymes : Zidebactam does not inhibit CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, or CYP3A4. Zidebactam does not induce CYP1A2, CYP2B6, or CYP3A4. No in vitro CYP450 enzyme drug interaction studies were conducted with cefepime. Membrane Transporter Systems : Zidebactam is not a substrate of BCRP, MRP4, MDR1, OAT1, OAT3 and OCT2. Zidebactam does not inhibit P-gp, BCRP, OATP1B1, OATP1B3, OCT2, OAT1, OAT3, BSEP and MRP4. Cefepime is not a substrate of MRP4, OAT1, OAT3 and OCT2 transporters. At therapeutic concentrations, cefepime does not inhibit MDR1, OCT2, MRP4, OAT3, OATP1B3, OAT1, OATP1B1, and OCTN2.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220787Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 14,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -1214,5 +1264,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T17:59:48.731Z"
+  "lastIngestedAt": "2026-10-29T18:36:21.666Z"
 }

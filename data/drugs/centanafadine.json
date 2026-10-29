@@ -4,6 +4,56 @@
   "inn": "centanafadine",
   "modality": "Drug (NDA)",
   "sponsor": "OTSUKA PHARMACEUTICAL CO LTD",
+  "pharmacology": {
+    "drugClass": {
+      "name": "norepinephrine-dopamine-serotonin reuptake inhibitor and central nervous system stimulant",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "SIMTRIYO is a norepinephrine-dopamine-serotonin reuptake inhibitor and central nervous system stimulant indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Centanafadine has inhibitory activity at norepinephrine (NE), dopamine (DA), and serotonin (5-HT) reuptake transporters and is a central nervous system stimulant. The mechanism of action of centanafadine in the treatment of ADHD is unclear; however, its efficacy could be mediated through its activity as a norepinephrine-dopamine-serotonin reuptake inhibitor.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 20,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Centanafadine binds to the norepinephrine transporter, dopamine transporter, and serotonin transporter, and inhibits the reuptake of these neurotransmitters. Cardiac Electrophysiology At 2 times the maximum recommended dose of centanafadine, clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 20,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Following multiple doses of SIMTRIYO, peak plasma concentration (C max ) and area under the plasma concentration-time curve (AUC) increased slightly greater than dose proportionally across the dose range of 140 to 280 mg following once-daily dosing. Steady state concentrations were achieved on Day 2 with minimal drug accumulation (1.2- to 1.3-fold). Absorption Time to reach C max (T max ) of once daily SIMTRIYO extended-release capsules was 5 hours. Effect of Food Administration of SIMTRIYO with a high-fat meal ( 1000 calories, 50% fat) resulted in 29% increase in C max , 1.5 hours delay in T max and no change in AUC inf of SIMTRIYO capsule compared to the fasted Page 21 of 30 state. The differences in pharmacokinetic parameters are not considered clinically meaningful [see Dosage and Administration (2.3)] . Sprinkling the contents of a SIMTRIYO capsule on applesauce or yogurt, or in orange juice, had comparable pharmacokinetics (C max and AUC) to those observed after administration of the intact capsule of SIMTRIYO [see Dosage and Administration (2.3)] . Distribution Centanafadine is highly plasma protein bound. The fraction unbound of centanafadine in the plasma of healthy adults is <0.01 and is independent of centanafadine concentrations. The apparent volume of distribution of SIMTRIYO is approximately 167 L. Elimination The mean half-life of SIMTRIYO is 5.2 hours. The mean apparent clearance is 410 mL/min. Metabolism Centanafadine is primarily metabolized by monoamine oxidase A. The lactam metabolite was the most abundant metabolite and was not pharmacologically active. Excretion Following administration of a 14 C centanafadine dose, 88% of the administered radioactivity was excreted in the urine as metabolites, and 7% was recovered in the feces . Specific Populations Pediatric Patients (6 to 12 years of age) The pharmacokinetics of centanafadine (C max and AUC) in pediatric patients was similar to adults following single and multiple centanafadine doses when the dosage was adjusted for weight. Similar to adults, minor accumulation was observed following multiple centanafadine doses to pediatric patients. Patients with Renal Impairment In adults with severe renal impairment (eGFR <30 mL/min, and not undergoing dialysis), centanafadine exposures were lower (C max reduced by 25% and AUC inf reduced by 20%) compared to healthy matched adults. Patients with Hepatic Impairment In adults with moderate hepatic impairment (Child Pugh B), centanafadine exposures were lower (C max reduced by 30% and AUC inf reduced by 25%) compared to healthy matched adults. The effect of severe hepatic impairment (Child Pugh C) or mild hepatic impairment (Child-Pugh Class A) on centanafadine pharmacokinetics has not been studied [see Use in Specific Populations (8.6)] . Drug Interaction Studies No clinically meaningful change in pharmacokinetics of centanafadine was observed with concomitant use of ciprofloxacin (a CYP1A2 inhibitor), quinidine (a CYP2D6 inhibitor), or smoking (a CYP1A2 inducer). Following the concomitant use of multiple oral doses of another centanafadine formulation with a caffeine citrate solution (200 mg), a CYP1A2 substrate, there was no appreciable change in the mean C max of caffeine; however, there was a 2-fold increase in the AUC inf of caffeine compared to a single dose administration of caffeine citrate solution (200 mg) alone [see Drug Interactions (7)] . Page 22 of 30 Effect of Alcohol An in vitro dissolution study was conducted to evaluate the effects of alcohol on the release characteristics of centanafadine from SIMTRIYO. The study showed that 20% and 40% alcohol can cause approximately 85% and 100% of centanafadine release, respectively, within 1.5 hours compared to 23% of centanafadine release in the control (0% alcohol). At 5% alcohol, the centanafadine release was comparable to the control through 1.5 hours; however, the release was accelerated beyond that time point (i.e., after 2 hours) [see Drug Interactions (7)] .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 20,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -3271,5 +3321,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T17:59:48.130Z"
+  "lastIngestedAt": "2026-10-29T18:36:25.572Z"
 }

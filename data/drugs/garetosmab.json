@@ -4,6 +4,56 @@
   "inn": "garetosmab",
   "modality": "Biologic (BLA)",
   "sponsor": "REGENERON PHARMACEUTICALS, INC",
+  "pharmacology": {
+    "drugClass": {
+      "name": "activin signaling inhibitor",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761508Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "PASATRU is a n activin signaling inhibitor indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "FOP is caused by gain - of - function mutations in the intracellular domain of activin receptor type 1 (ACVR1, also known as ALK2), a bone morphogenetic protein (BMP) type I receptor that is expressed in many tissues, including skeletal muscle and cartilage. In patients with FOP , mutant ACVR1 is activated by activin A resulting in heterotopic ossification. Garetosmab - grts is a human IgG4 monoclonal antibody that specifically binds to and inhibits signaling by activin A to block the activation of FOP - mutant ACVR1 and reduce the formation and progression of new heterotop ic bone lesions .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761508Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "No pharmacodynamic studies have been conducted with garetosmab - grts .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761508Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "F ollowing multiple doses of garetosmab - grts 10 mg/kg or 3 mg/kg administered intravenously every 4 weeks in patients with FOP , the steady - state exposures were app roximately dose proportional. T he mean (SD) trough concentration s at steady - state following intravenous administration of garetosmab - grts 10 mg/kg or 3 mg/kg every 4 weeks w ere 99 (34) mg/L or 27 ( 10 ) mg/L , respectively , in patients with FOP . Steady - state concentrations were attained by approximately 1 2 weeks with an accumulation ratio of approximately 1. 7 - fold. Distribution The estimated mean (SD) volume of distribution is 5.1 ( 1. 2 ) L. Elimination Garetosmab - grts is eliminated by parallel linear and non - linear pathways. At higher concentrations, the elimination is predominantly through the linear, non - saturable proteolytic pathway, while at lower concentrations, non - linear, target - mediated clearance predominates. After the last dose of garetosmab - grts 10 mg/kg or 3 mg/kg administered intravenously every 4 weeks in patients with FOP , the median time to a non - detectable concentration was approximately 24 weeks or 17 weeks , respectively, based on population pharmacokinetic analysis. Metabolism G aretosmab - grts is expected to be degraded into small peptides and amino acids via catabolic pathways in the same manner as endogenous IgG. Specific Populations No clinically meaningful differences in the exposure of garetosmab - grts were observed in adults based on age (18 to 70 years) , sex, body weight (32 to 128 kg), race (White 86%, Asian 10%, Black 1%) , mild to moderate renal impairment (creatinine clearance 30 to 89 mL/min, estimated by Cockcroft - Gault equation), or mild to moderate hepatic impairment (total bilirubin > 1.5 to ≤ 3 times upper limit of normal [ ULN ] and any aspartate aminotransferase [ AST ] ) following 10 mg/kg and 3 mg/kg administered once every 4 weeks. The effect of severe renal impairment or kidney failure (creatinine clearance < 30 mL/min) and severe hepatic impairment (total bilirubin > 3 times ULN and any AST) on garetosmab - grts pharmacokinetics is unknown. Since garetosmab - grts is a monoclonal antibody that is not eliminated via renal pathways and is degraded by widely distributed proteolytic enzymes rather than restricted to hepatic tissue , changes in renal or hepatic function are not expected to impact the pharmacokinetics of garetosmab - grts . Drug Interaction Studies No drug - drug interaction studies have been conducted with garetosmab - grts .",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761508Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -1371,5 +1421,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:49.024Z"
+  "lastIngestedAt": "2026-10-29T18:37:15.479Z"
 }

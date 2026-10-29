@@ -5,6 +5,55 @@
   "modality": "Monoclonal antibody",
   "sponsor": "Merck Sharp & Dohme LLC",
   "mechanism": "Programmed death receptor-1 (PD-1) blocking antibody",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Programmed Death Receptor-1 Blocking Antibody",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA125514%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Binding of the PD-1 ligands, PD-L1 and PD-L2, to the PD-1 receptor found on T cells, inhibits T cell proliferation and cytokine production. Upregulation of PD-1 ligands occurs in some tumors and signaling through this pathway can contribute to inhibition of active T-cell immune surveillance of tumors. Pembrolizumab is a monoclonal antibody that binds to the PD-1 receptor and blocks its interaction with PD-L1 and PD-L2, releasing PD-1 pathway-mediated inhibition of the immune response, including the anti-tumor immune response. In syngeneic mouse tumor models, blocking PD-1 activity resulted in decreased tumor growth. In syngeneic mouse tumor models, combination treatment of a PD-1 blocking antibody and kinase inhibitor lenvatinib decreased tumor-associated macrophages, increased activated cytotoxic T cells, and reduced tumor growth compared to either treatment alone.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s195lbl.pdf",
+          "sourceLabel": "Label (SUPPL-195), section 12.1",
+          "page": 83,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "There are no clinically significant exposure-response relationships for efficacy or safety at pembrolizumab dosages of 200 mg or 2 mg/kg every 3 weeks and 400 mg every 6 weeks regardless of cancer type based on observed data in adult patients with melanoma, cHL, and PMBCL.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s195lbl.pdf",
+          "sourceLabel": "Label (SUPPL-195), section 12.2",
+          "page": 83,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The pharmacokinetics (PK) of pembrolizumab was characterized using a population PK analysis with concentration data collected from 2993 patients with various cancers who received pembrolizumab doses of 1 to 10 mg/kg every 2 weeks, 2 to 10 mg/kg every 3 weeks, or 200 mg every 3 weeks. Steady-state concentrations of pembrolizumab were reached by 16 weeks of repeated dosing with an every 3-week regimen and the systemic accumulation was 2.1-fold. The peak concentration (C max ), trough concentration (C min ), and area under the plasma concentration versus time curve at steady state (AUC ss ) of pembrolizumab increased dose proportionally in the dose range of 2 to 10 mg/kg every 3 weeks. Distribution The geometric mean value (CV%) for volume of distribution at steady state is 6.0 L (20%). Elimination Pembrolizumab clearance (CV%) is approximately 23% lower [geometric mean, 195 mL/day (40%)] at steady state than that after the first dose [252 mL/day (37%)]; this decrease in clearance with time is not considered clinically important. The terminal half-life (t 1/2 ) is 22 days (32%). Specific Populations The following factors had no clinically important effect on the CL of pembrolizumab: age (range: 15 to 94 years), sex, race (89% White), renal impairment (eGFR ≥15 mL/min/1.73 m 2 ), mild to moderate hepatic impairment (total bilirubin ≤3 times ULN and any AST), or tumor burden. The impact of severe hepatic impairment (total bilirubin >3 times ULN and any AST) on the pharmacokinetics of pembrolizumab is unknown. Pediatric Patients: Pembrolizumab concentrations with weight-based dosing at 2 mg/kg every 3 weeks in pediatric patients (10 months to 17 years) are comparable to those of adults at the same dose.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s195lbl.pdf",
+          "sourceLabel": "Label (SUPPL-195), section 12.3",
+          "page": 83,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -57503,5 +57552,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:01:45.303Z"
+  "lastIngestedAt": "2026-10-29T18:38:26.564Z"
 }

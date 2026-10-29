@@ -4,6 +4,56 @@
   "inn": "floretyrosine f-18",
   "modality": "Drug (NDA)",
   "sponsor": "TELIX",
+  "pharmacology": {
+    "drugClass": {
+      "name": "radioactive diagnostic drug",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "PIXCLARA is a radioactive diagnostic drug indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Floretyrosine F 18 is a radiolabeled derivative of tyrosine and a substrate for the Large Neutral Amino Acid Transporter 1 and 2 (LAT). LAT is a sodium-independent exchanger protein that transports large neutral amino acids (e.g., tyrosine, phenylalanine) across cell membranes, and it is highly expressed in the blood-brain barrier and glioma tumor tissue. Consequently, floretyrosine F 18 accumulates in cells that express LAT on their surface. Fluorine-18 is a β+ emitting radionuclide that enables positron emission tomography.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The relationship between floretyrosine F 18 plasma concentrations and image interpretation has not been characterized.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Distribution Following intravenous administration, floretyrosine F 18 distributes (% of injected activity) to skeletal muscles (39.2%), liver (3.1%), lungs (2.3%), bone marrow (2.2%), and brain (1.9%). Elimination Metabolism The majority of floretyrosine F 18 remains intact in plasma. At 60 minutes and 120 minutes post-injection, 91 ± 5% and 87% ± 13% of the total radioactivity in the plasma was intact floretyrosine F 18, respectively. Excretion Elimination is by urinary excretion. Approximately 22% of administered activity was excreted by 5 hours. Drug Interaction Studies In Vitro • Effect of Transporters on Floretyrosine: Floretyrosine is not a substrate for P-glycoprotein (P-gp), breast cancer resistance protein (BCRP), or bile salt export pump (BSEP). • Effect of Floretyrosine on CYP Enzymes: Floretyrosine does not inhibit or induce CYP1A2, CYP2B6, or CYP3A4. • Effect of Floretyrosine on Transporter Systems: Floretyrosine does not inhibit P-gp, BCRP, or BSEP.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -114,5 +164,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:36.443Z"
+  "lastIngestedAt": "2026-10-29T18:37:13.864Z"
 }

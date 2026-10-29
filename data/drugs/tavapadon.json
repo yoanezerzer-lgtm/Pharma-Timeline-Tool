@@ -4,6 +4,56 @@
   "inn": "tavapadon",
   "modality": "Drug (NDA)",
   "sponsor": "ABBVIE",
+  "pharmacology": {
+    "drugClass": {
+      "name": "non-ergot dopamine agonist",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220415Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "JUVMO is a non-ergot dopamine agonist indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Tavapadon is a selective partial agonist at the dopamine D1 and D5 receptor subtypes (D 1 /D 5 ).",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220415Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Cardiac Electrophysiology At the maximum recommended JUVMO dosage of 15 mg once daily, a mean increase in the QTc interval >20 ms is unlikely.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220415Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption Following oral administration of JUVMO, tavapadon is absorbed with peak plasma concentrations (C max ) at approximately 2 to 4 hours. Tavapadon displays dose-proportional pharmacokinetics within the maintenance dose range of 5 mg to 15 mg. Effect of Food When JUVMO was administered with a high-fat/high-calorie meal, the food effect was not significant (AUC τ and C max were increased by approximately 10% and 12%, respectively, with no effect on median time to C max ). JUVMO was administered without regard to food in clinical efficacy studies. Distribution Tavapadon plasma protein binding is 93% (primarily albumin). The apparent volume of distribution of tavapadon is 63.5 L. Elimination Metabolism Tavapadon and its major inactive metabolite M4 are primarily metabolized by CYP3A. The AUC ratio of M4 to tavapadon is approximately 1.4. Excretion Unchanged tavapadon was a minor component in both urine and feces (less than 1%). Metabolite M4 accounted for less than 5% of the administered dose in both urine and feces. The mean elimination half-life of tavapadon is approximately 25.5 hours. Specific Populations No clinically significant differences in pharmacokinetics of tavapadon were observed based on age (21 years to 79 years), sex, body weight (56 kg to 119 kg), race, severe renal impairment not requiring dialysis (eGFR < 30 mL/min estimated by CKD-EPI equation), mild hepatic impairment (Child-Pugh Class A), or moderate hepatic impairment (Child-Pugh Class B). The effects of renal impairment in patients with eGFR < 15 mL/min or on dialysis and severe hepatic impairment (Child-Pugh Class C) on tavapadon pharmacokinetics have not been studied. Drug Interaction Studies Clinical Studies and Model-based Approaches Strong CYP3A Inhibitors Concomitant administration of itraconazole (200 mg daily for 14 days), a strong CYP3A inhibitor, with JUVMO increased tavapadon AUC τ and C max by 5-fold and 4-fold, respectively. When a strong CYP3A inhibitor is initiated during tavapadon maintenance therapy (5, 10, or 15 mg doses) with a reduced dosing frequency of once-weekly, steady- state AUC₀₋₂₄ and C max, daily are predicted to fluctuate between +84% to -23% and +50% to -41%, respectively, across the 7-day dosing interval relative to once daily dosing of JUVMO without an inhibitor, with values highest on Day 1 of the dosing week [see Dosage and Administration ( 2.2 ), Warnings and Precautions ( 5.3 ), Drug Interactions ( 7.1 )] . Moderate CYP3A Inhibitors Concomitant administration of fluconazole (200 mg daily), a moderate CYP3A inhibitor, with 15 mg JUVMO at steady-state is predicted to increase the AUC τ and C max of tavapadon by approximately 2.6-fold and 2.3-fold, respectively. When a moderate CYP3A inhibitor is initiated during tavapadon maintenance therapy (5, 10, or 15 mg doses) with a reduced dosing frequency from once daily to once every 3 days, steady- state AUC₀₋₂₄ and C max, daily fluctuate between +14% to -40% and +1 to -43%, respectively from Day 1 to Day 3 of the dosing interval, relative to once daily dosing without an inhibitor. Exposures are predicted to be lowest on Day 3 of the once every 3 days dosing interval [see Dosage and Administration ( 2.2 ) , Drug Interactions ( 7.1 )] . Strong CYP3A Inducers Concomitant administration of carbamazepine (300 mg twice daily), a strong CYP3A inducer, with JUVMO decreased tavapadon AUC τ and C max by 63% and 49%, respectively [see Dosage and Administration ( 2.3 ), Drug Interactions ( 7.1 )] . Moderate CYP3A Inducers Concomitant administration of efavirenz (600 mg), a moderate CYP3A inducer, with 15 mg JUVMO is predicted to decrease the AUC τ and C max of tavapadon by 70% and 58%, respectively. When a moderate CYP3A inducer is initiated during maintenance therapy (5, 10, or 15 mg doses) of tavapadon, with an increased dosing frequency from once daily to three times daily, steady state AUC₀₋₂₄ and C max,daily are not predicted to differ significantly relative to once daily dosing without an inducer [see Dosage and Administration ( 2.3 ), Drug Interactions ( 7.1 )]. Effects of Tavapadon on Other Drugs Tavapadon is predicted to cause clinically relevant induction of CYP3A, inhibition of CYP2C8, and BCRP [see Drug Interactions ( 7.2 )]. In Vitro Assessment of Drug Interactions Cytochrome P450 (CYP450) Enzymes: Tavapadon and M4 are substrates of CYP3A, but are not substrates of CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, or CYP2D6. Tavapadon and M4 are not reversible inhibitors of CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, or CYP3A/5. Tavapadon is a time-dependent inhibitor of CYP2C8. Tavapadon and M4 did not demonstrate time-dependent inhibition of CYP1A2, 2B6, 2C9, 2C19, 2D6, or 3A4. Tavapadon and M4 are inducers of CYP3A, but are not inducers of CYP1A2 or CYP2B6. UDP-Glucuronosyltransferase (UGT): Tavapadon is an inhibitor of UGT1A9 but is not expected to result in clinically significant drug interactions. M4 is not an inhibitor of UGT1A9. Tavapadon and M4 are not inhibitors of UGT1A1, 1A3, 1A4, 1A6, 2B7, or 2B15. Transporter Systems: Tavapadon is a substrate for P-gp and BCRP, but is not expected to result in clinically significant drug interactions. Tavapadon and M4 are not substrates of OATP1B1, OATP1B3, OCT1, OCT2, OAT1, OAT3, MATE1, or MATE2-K. Tavapadon inhibits BCRP, but not P-gp, OATP1B1, OATP1B3, OCT1, OCT2, OAT1, or OAT3. Tavapadon is an inhibitor of MATE1, while M4 is an inhibitor of both MATE1 and MATE2-K, but are not expected to result in clinically significant drug interactions. M4 is not an inhibitor of BCRP, P-gp, OATP1B1, OATP1B3, OCT1, OCT2, OAT1, or OAT3.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220415Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -968,5 +1018,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:02:13.195Z"
+  "lastIngestedAt": "2026-10-29T18:38:50.524Z"
 }

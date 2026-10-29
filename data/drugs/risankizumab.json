@@ -5,6 +5,55 @@
   "modality": "Monoclonal antibody",
   "sponsor": "AbbVie Inc.",
   "mechanism": "Interleukin-23 (p19 subunit) antagonist",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Interleukin-23 Antagonist",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761105%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Risankizumab - rzaa is a humanized IgG1 monoclonal antibody that selectively binds to the p19 subunit of human IL - 23 cytokine and inhibits its interaction with the IL - 23 receptor. IL - 23 is a naturally occurring cytokine that is involved in inflammatory and i mmune responses. Risankizumab - rzaa inhibits the release of pro - inflammatory cytokines and chemokines.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Label (SUPPL-47), section 12.1",
+          "page": 18,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "No formal pharmacodynamics studies have been conducted with risankizumab - rzaa.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Label (SUPPL-47), section 12.2",
+          "page": 18,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Risankizumab - rzaa plasma concentrations, after single dose administration increased dose proportionally from 18 mg to 360 mg when administered subcutaneously (0.12 to 2.4 times the lowest recommended dose and 0.05 to 1 times the highest recommended dose) a nd from 200 mg to 1,800 mg when administered as an up to 3 - hour intravenous infusion ( 0.2 to 3 times the recommended dose) in healthy subjects. In subjects with plaque psoriasis treated with 150 mg subcutaneously at Weeks 0, 4, and every 12 weeks thereafter, steady - state peak concentration (C max ) and trough concentration (C trough ) are estimated to be 12 mcg/mL and 2 mcg/mL, respectively. With the same subcutaneous dosing regimen, the pharmacokinetics of risankizumab - rzaa in subjects with psoriatic arthritis were similar to that in subjects with plaque psoriasis. In subjects with Crohn’s disease treated with 600 mg intravenous induction dose at Weeks 0, 4, and 8, followed by 180 mg or 360 mg subcutaneous maintenance dose at Week 12 and every 8 weeks thereafter, the median C max and C trough are estimated to be 156 mcg/mL and 38.8 mcg/mL, respectively, during Weeks 8 - 12; and the steady state median C max and C trough are estimated to be 14.0 mcg/mL and 4.1 mcg/mL, respectively for 180 mg or 28.0 mcg/mL and 8.1 mcg/mL, respectively, for 360 mg, during Weeks 40 - 48. In subjects with ulcerative colitis treated with 1,200 mg intravenous induction dose at Weeks 0, 4, and 8, followed by 180 mg or 360 mg subcutaneous maintenance dose at Week 12 and every 8 weeks thereafter, the median C max and C trough are estimated to be 350 and 87.7 mcg /mL , respectively , during the induction period ( W eeks 8 - 12) ; and the steady state median C max and C trough are estimated to be 19.6 and 4.64 μg/mL , respectively , for 180 mg or 39.2 mcg/mL and 9.29 mcg/mL, respectively, for 360 mg, during the maintenance period ( W eeks 40 - 48). B ased on population pharmacokinetic analyses, t he pharmacokinetics of risankizumab - rzaa in subjects with ulcerative colitis was generally similar to that in subjects with Crohn’s disease. Absorption The absolute bioavailability of risankizumab - rzaa was estimated to be 74 to 89% following subcutaneous injection. In healthy subjects, following administration of a single subcutaneous dose, C max was reached by 3 to 14 days. Distribution The estimated steady - state volume of distribution (inter - subject CV%) was 11.2 L (34%) in subjects with plaque psoriasis, and 7.68 L (64%) in subjects with Crohn’s disease. Elimination The estimated systemic clearance (inter - subject CV%) was 0.31 L/day (24%) and 0.30 L/day (34%) and terminal elimination half - life was approximately 28 days and 21 days in subjects with plaque psoriasis and Crohn’s disease, respectively. Metabolism The metabolic pathway of risankizumab - rzaa has not been characterized. As a humanized IgG1 monoclonal antibody, risankizumab - rzaa is expected to be degraded into small peptides and amino acids via catabolic pathways in a manner similar to endogenous IgG. Specific Populations Risankizumab - rzaa exposures (C trough ) in geriatric patients (≥65 years) are comparable to those in younger adult patients with in each indication . No studies have been conducted to determine the effect of renal or hepatic impairment on the pharmacokinetics of risankizumab - rzaa. Body Weight Risankizumab - rzaa clearance and volume of distribution increase and plasma concentrations decrease as body weight increases; however, no dose adjustment is recommended based on body weight. Drug Interaction Studies Cytochrome P450 Substrates No clinically significant changes in exposure of caffeine (CYP1A2 substrate), warfarin (CYP2C9 substrate), omeprazole (CYP2C19 substrate), metoprolol (CYP2D6 substrate), or midazolam (CYP3A substrate) were observed when used concomitantly with risankizumab - rzaa in subjects with plaque psoriasis (risankizumab - rzaa 150 mg administered subcutaneously at Weeks 0, 4, 8 , and 12) and subjects with Crohn’s disease or ulcerative colitis (risankizumab - rzaa 1,800 mg administered intravenously at Weeks 0, 4 , and 8, i.e ., 3 times and 1.5 times the recommended dose for Crohn ’s disease and ulcerative colitis, respectively ).",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Label (SUPPL-47), section 12.3",
+          "page": 18,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -12435,5 +12484,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:01:59.236Z"
+  "lastIngestedAt": "2026-10-29T18:38:36.588Z"
 }

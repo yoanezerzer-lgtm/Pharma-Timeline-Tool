@@ -4,6 +4,56 @@
   "inn": "copper histidinate",
   "modality": "Drug (NDA)",
   "sponsor": "SENTYNL THERAPS INC",
+  "pharmacology": {
+    "drugClass": {
+      "name": "copper replacement product",
+      "provenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211241s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "ZYCUBO is a copper replacement product indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Menkes disease is an X-linked recessive disorder caused by pathogenic variants in the copper transport ATPase encoded by ATP7A . Patients with Menkes disease have impaired absorption of copper from their diet, impaired transport of copper across the blood-brain barrier, and dysregulation of many copper-dependent enzymes. ZYCUBO is a bioavailable copper replacement therapy that is administered as a subcutaneous injection to bypass the impaired gastrointestinal absorption observed in patients with Menkes disease.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211241s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Patients with Menkes disease have low serum concentrations of copper and ceruloplasmin. Treatment with ZYCUBO increases serum copper and ceruloplasmin concentrations in patients with Menkes disease. The exposure-response relationship and time course of pharmacodynamic response for the safety and effectiveness of ZYCUBO have not been fully characterized.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211241s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "The geometric mean (CV%) maximum serum concentration (C max ) of copper histidinate was 67 (36%) ng/mL, the geometric mean (CV%) area under the concentration-time curve from time 0 to 24 hours (AUC 0-24hr ) was 186 (21%) ng•hr/mL, and the geometric mean (CV%) area under the concentration- time curve from time 0 to infinity (AUC 0-inf ) was 296 (15%) ng•hr/mL following a single subcutaneous dose of 3 mg copper histidinate (approximately twice the approved recommended dose for Menkes disease patients 1 year old or older) in healthy adult subjects. At the recommended dosage, the mean (SD) serum copper concentration increased from a baseline concentration of 30 (25) mcg/dL to 114 (38) mcg/dL at 12 months, and gradually decreased over the 36-month treatment period, with a mean (SD) serum copper concentration of 63 (31) mcg/dL at 36 months. The mean (SD) serum ceruloplasmin concentration was 12 (12) mg/dL at baseline, 33 (11) mg/dL at 12 months, and 20 (8) mg/dL at 36 months [see Clinical Studies ( 14 )] . Absorption The absolute bioavailability of copper histidinate following subcutaneous injection has not been determined. The median time to reach maximum serum concentrations of copper histidinate (T max ) was 0.75 hours following a single subcutaneous dose of 3 mg copper histidinate (approximately twice the approved recommended dose for Menkes disease patients 1 year old or older) in healthy adult subjects. Distribution The mean (SD) apparent volume of distribution (Vz/F) of copper histidinate during the terminal elimination phase was 1034 (588) L following a single subcutaneous dose of 3 mg copper histidinate (approximately twice the approved recommended dose for Menkes disease patients 1 year old or older) in healthy adult subjects. Serum copper histidinate concentration-time profiles exhibited an initial decrease followed by a terminal elimination phase, consistent with the release of copper from the copper histidinate complex to the carrier proteins ceruloplasmin and albumin, followed by incorporation of copper histidinate and histidine into the endogenous pools of copper histidinate and histidine, respectively. No binding of copper histidinate to human plasma proteins in vitro has been observed. Elimination The mean (SD) serum clearance (CL/F) of copper histidinate was 10.3 (1.6) L/hr, and the mean terminal half-life was 75 hours following a single subcutaneous dose of 3 mg copper histidinate (approximately twice the approved recommended dose for Menkes disease patients 1 year old or older) in healthy adult subjects. Metabolism The metabolism of copper histidinate has not been well characterized. Excretion Elimination of elemental copper is through biliary excretion. Drug Interaction Studies In vitro Studies: Copper histidinate is a weak inhibitor of CYP1A2, CYP2B6, CYP2C9, CYP2C19, and CYP2D6 (IC 50 >100 μM) . Copper histidinate is not an inducer of CYP1A2, CYP2B6, or CYP3A. Transporter Systems: Copper histidinate is not a substrate of BCRP, P-gp, MATE1, MATE2-K, OAT1, OAT3, OATP1B1, OAT1B3, or OCT2. Copper histidinate is an inhibitor of BSEP and MATE1. Copper histidinate is a weak inhibitor of BCRP, MATE2K, OCT1, and OCT2. Copper histidinate is not an inhibitor of P-gp, OAT1, OAT3, OATP1B1, or OATP1B3.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/211241s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 7,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
   "summary": "",
   "indications": [
     {
@@ -373,5 +423,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:00:07.246Z"
+  "lastIngestedAt": "2026-10-29T18:36:43.152Z"
 }
