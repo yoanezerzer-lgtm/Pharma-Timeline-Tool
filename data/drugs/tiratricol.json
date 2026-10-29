@@ -1,0 +1,389 @@
+{
+  "slug": "tiratricol",
+  "brandName": "Emcitate",
+  "inn": "tiratricol",
+  "modality": "Drug (NDA)",
+  "sponsor": "RARE THYROID",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Peripheral thyrotoxicosis in adults and pediatric patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley syndrome)",
+      "slug": "peripheral-thyrotoxicosis-in-adults-and-pediatric-patients",
+      "approvalDate": {
+        "value": "2026-09-28",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220963Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-28",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Emcitate (tiratricol) tablets for the treatment of peripheral thyrotoxicosis in adults and pediatric patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley syndrome).",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220963Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Emcitate (tiratricol) tablets for the treatment of peripheral thyrotoxicosis in adults and pediatric patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley syndrome).",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220963",
+      "applicationType": "NDA",
+      "sponsor": "RARE THYROID",
+      "originalApprovalDate": {
+        "value": "2026-09-28",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "mct8-2019-2",
+      "nctId": "NCT02396459",
+      "protocolNumber": "MCT8-2019-2",
+      "title": "Tiratricol Treatment of Children With Monocarboxylate Transporter 8 Deficiency: Triac Trial II",
+      "briefTitle": "Triac Trial II in MCT8 Deficiency Patients",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Rare Thyroid Therapeutics International AB",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-12-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-07-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-08-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 22,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "maxAge": "30 Months",
+        "sex": "MALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "MCT8 deficient patients",
+          "type": "EXPERIMENTAL",
+          "description": "Tiratricol (Triac) treatment"
+        }
+      ],
+      "primaryEndpoints": [
+        "Gross Motor Function Measure 88 (GMFM 88) total score",
+        "Bayley Scales of Infant Development III Gross Motor Skill Domain score"
+      ],
+      "secondaryEndpoints": [
+        "GMFM-88 individual item score 10 and 24.",
+        "Bayley Scales of Infant Development III score.",
+        "Serum T3 concentrations",
+        "Tissue-specific markers of thyroid state: serum sex-hormone binding globulin concentrations for liver",
+        "Tissue-specific markers of thyroid state: serum creatine kinase concentrations for muscles",
+        "Tissue-specific markers of thyroid state: serum creatinine concentrations for kidneys",
+        "Blood pressure",
+        "Body weight"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02396459",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02396459",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02396459",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02396459",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02396459",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "retriact",
+      "nctId": "NCT05579327",
+      "protocolNumber": "MCT8-2021-3",
+      "acronym": "ReTRIACt",
+      "title": "Withdrawal of Tiratricol Treatment in Males With Monocarboxylate Transporter 8 Deficiency (MCT8 Deficiency): A Double-blind, Randomized, Placebo-controlled Study",
+      "briefTitle": "Withdrawal of Tiratricol Treatment in Males With Monocarboxylate Transporter 8 Deficiency (MCT8 Deficiency)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Peripheral thyrotoxicosis in adults and pediatric patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley syndrome)",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220963Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Peripheral thyrotoxicosis in adults and pediatric patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley syndrome))",
+            "quote": "Trial identifier appears within the Peripheral thyrotoxicosis in adults and pediatric patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley syndrome) section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220963Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Emcitate (tiratricol) tablets for the treatment of peripheral thyrotoxicosis in adults and pediatric patients with monocarboxylate transporter 8 (MCT8) deficiency (Allan-Herndon-Dudley syndrome).",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Rare Thyroid Therapeutics International AB",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-07-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-07-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-09-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "4 Years",
+        "sex": "MALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tiratricol",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Rate of change from baseline in serum total T3 (ln-transformed) during the 30-day double-blind Randomized Treatment Period",
+        "Proportion of participants who meet the rescue criterion (serum total T3 > ULN) during the 30-day double-blind Randomized Treatment Period"
+      ],
+      "secondaryEndpoints": [
+        "Change in serum thyroid hormone variables (T3, T4, TSH, fT3, and fT4)",
+        "Change in clinical endpoints: Heart rate",
+        "Change in clinical endpoints: Systolic blood pressure",
+        "Change in clinical endpoints: Rate pressure product (heart rate × systolic blood pressure)",
+        "Change in clinical endpoints: Heart rate Z scores",
+        "Change in clinical endpoints: Body weight",
+        "Safety endpoints: Number of participants with treatment-emergent adverse events (TEAEs)",
+        "Safety endpoints: Number of participants with TEAEs related to clinical laboratory tests",
+        "Safety endpoints: Number of participants with TEAEs related to vital signs variables",
+        "Safety endpoints: 12-lead Electrocardiograms (ECGs): Number of clinically significant abnormal results (investigator interpretations)",
+        "Safety endpoints: Physical examinations: Number of clinically significant abnormal results"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05579327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05579327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05579327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05579327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05579327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220963Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 5,
+          "quote": "afety of EMCITATE in patients with MCT8 deficiency was evaluated in two studies. Study 1 (NCT05579327) was a 3-period, multicenter study with an up to 16-week, open-label, titration period fo",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tiratricol-eap-pro-mct8-2022-4",
+      "nctId": "NCT05911399",
+      "protocolNumber": "Tiratricol-EAP-Pro MCT8-2022-4",
+      "title": "Expanded Access Program for Tiratricol in Patients With Monocarboxylate Transporter 8 Deficiency Also Known as Allan-Herndon-Dudley Syndrome (AHDS)",
+      "briefTitle": "Expanded Access Program for Tiratricol in Patients With Monocarboxylate Transporter 8 Deficiency",
+      "phase": "NA",
+      "roles": [],
+      "status": "APPROVED_FOR_MARKETING",
+      "sponsor": "Rare Thyroid Therapeutics International AB",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05911399",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05911399",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05911399",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05911399",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05911399",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-28",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220963%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220963",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220963%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220963Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220963Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T05:59:42.519Z"
+}

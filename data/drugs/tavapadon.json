@@ -1,0 +1,952 @@
+{
+  "slug": "tavapadon",
+  "brandName": "Juvmo",
+  "inn": "tavapadon",
+  "modality": "Drug (NDA)",
+  "sponsor": "ABBVIE",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Parkinson’s disease (PD) in adults",
+      "slug": "parkinson-s-disease-pd-in-adults",
+      "approvalDate": {
+        "value": "2026-09-25",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-25",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Juvmo (tavapadon) tablets 0.25 mg, 1 mg, 5 mg, 10 mg, and 15 mg for the treatment of Parkinson’s disease in adults.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Juvmo (tavapadon) tablets 0.25 mg, 1 mg, 5 mg, 10 mg, and 15 mg for the treatment of Parkinson’s disease in adults.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220415",
+      "applicationType": "NDA",
+      "sponsor": "ABBVIE",
+      "originalApprovalDate": {
+        "value": "2026-09-25",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "tempo-1",
+      "nctId": "NCT04201093",
+      "protocolNumber": "CVL-751-PD-001",
+      "acronym": "TEMPO-1",
+      "title": "A Phase 3, Double-Blind, Randomized, Placebo-Controlled, Parallel-Group, 27-Week Trial to Evaluate the Efficacy, Safety, and Tolerability of Two Fixed Doses of Tavapadon in Early Parkinson's Disease (TEMPO-1 TRIAL)",
+      "briefTitle": "Fixed-Dose Trial in Early Parkinson's Disease (PD)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Parkinson’s disease (PD) in adults",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220415Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Parkinson’s disease (PD) in adults)",
+            "quote": "Trial identifier appears within the Parkinson’s disease (PD) in adults section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Juvmo (tavapadon) tablets 0.25 mg, 1 mg, 5 mg, 10 mg, and 15 mg for the treatment of Parkinson’s disease in adults.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "AbbVie",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-12-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-06-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-06-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 529,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tavapadon 5 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive tavapadon tablet titrated up to 5 milligram (mg) once daily (QD) orally for 27 weeks."
+        },
+        {
+          "label": "Tavapadon 15 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive tavapadon tablet titrated up to 15 milligram (mg) QD orally for 27 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo matching to tavapadon tablet QD orally for 27 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in the MDS-UPDRS Parts II and III Combined Score"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in the MDS-UPDRS Part II Score",
+        "Percentage of Responders With a Score of \"Much Improved\" or \"Very Much Improved\" on PGIC",
+        "Change From Baseline in the MDS-UPDRS Parts II and III Combined Score",
+        "Change From Baseline in the MDS-UPDRS Parts I, II and III Combined Score",
+        "Change From Baseline in the MDS-UPDRS Parts I, II and III Individual Score",
+        "Change From Baseline in the CGI-S Score",
+        "Change From Baseline in the CGI-I Score",
+        "Change From Baseline in the PGIC Score",
+        "Change From Baseline in the Epworth Sleepiness Scale (ESS)",
+        "Change From Baseline in the Questionnaire for Impulsive-Compulsive Disorders in Parkinson's Disease-Rating Scale (QUIP-RS)",
+        "Columbia-Suicide Severity Rating Scale (C-SSRS)",
+        "Number of Participants With Treatment Emergent Adverse Events (TEAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in the MDS-UPDRS Parts II and III Combined Score",
+          "timeFrame": "Week 26",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "score on a scale",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Tavapadon 5 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Tavapadon 15 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "1.8",
+              "spread": "0.82"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-9.7",
+              "spread": "0.86"
+            },
+            {
+              "groupId": "OG002",
+              "value": "-10.2",
+              "spread": "0.88"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Mixed-effect Model Repeated Measurement",
+              "paramType": "LS Mean of Difference",
+              "paramValue": "-11.5",
+              "ciPct": "95",
+              "ciLower": "-13.8",
+              "ciUpper": "-9.2"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Mixed-effect Model Repeated Measurement",
+              "paramType": "LS Mean of Difference",
+              "paramValue": "-12.1",
+              "ciPct": "95",
+              "ciLower": "-14.4",
+              "ciUpper": "-9.8"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04201093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04201093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04201093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04201093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04201093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04201093?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 14,
+          "quote": "n two 27-week randomized, multicenter, double-blind, placebo-controlled studies, Study 1 (NCT04201093) and Study 2 (NCT04223193). Both studies enrolled PD patients with the following criteria",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tempo-2",
+      "nctId": "NCT04223193",
+      "protocolNumber": "CVL-751-PD-002",
+      "acronym": "TEMPO-2",
+      "title": "A Phase 3, Double-Blind, Randomized, Placebo-Controlled, Parallel-Group, Flexible-Dose, 27-Week Trial to Evaluate the Efficacy, Safety, and Tolerability of Tavapadon in Early Parkinson's Disease (TEMPO-2 Trial)",
+      "briefTitle": "Flexible-Dose Trial in Early Parkinson's Disease (PD)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Parkinson’s disease (PD) in adults",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220415Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Parkinson’s disease (PD) in adults)",
+            "quote": "Trial identifier appears within the Parkinson’s disease (PD) in adults section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Juvmo (tavapadon) tablets 0.25 mg, 1 mg, 5 mg, 10 mg, and 15 mg for the treatment of Parkinson’s disease in adults.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "AbbVie",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-01-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-10-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-10-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 304,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tavapadon",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive tavapadon tablet titrated up to 15 milligram (mg) once daily (QD) orally for 27 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo matching to tavapadon tablet QD orally for 27 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in the Movement Disorder Society - Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Parts II and III Combined Score"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in the MDS-UPDRS Part II Score",
+        "Percentage of Responders With \"Much Improved\" or \"Very Much Improved\" on Participant Global Impression of Change (PGIC)",
+        "Change From Baseline in the MDS-UPDRS Parts II and III Combined Score",
+        "Change From Baseline in the MDS-UPDRS Parts I, II and III Combined Score",
+        "Change From Baseline in the MDS-UPDRS Parts I, II and III Individual Score",
+        "Change From Baseline in the Clinical Global Impression - Severity of Illness (CGI-S) Score",
+        "Clinical Global Impression - Improvement (CGI-I) Score",
+        "Change From Baseline in the PGIC Score",
+        "Change From Baseline in the Epworth Sleepiness Scale (ESS)",
+        "Change From Baseline in the Questionnaire for Impulsive-Compulsive Disorders in Parkinson's Disease-Rating Scale (QUIP-RS)",
+        "Columbia-Suicide Severity Rating Scale (C-SSRS)",
+        "Number of Participants With Treatment Emergent Adverse Events (TEAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in the Movement Disorder Society - Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Parts II and III Combined Score",
+          "timeFrame": "Week 26",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "score on a scale",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Tavapadon"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.2",
+              "spread": "0.89"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-10.3",
+              "spread": "0.99"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Mixed-effect Model Repeated Measurement",
+              "paramType": "LS Mean of Difference",
+              "paramValue": "-9.1",
+              "ciPct": "95",
+              "ciLower": "-11.7",
+              "ciUpper": "-6.5"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04223193",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04223193",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04223193",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04223193",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04223193",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04223193?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 14,
+          "quote": "multicenter, double-blind, placebo-controlled studies, Study 1 (NCT04201093) and Study 2 (NCT04223193). Both studies enrolled PD patients with the following criteria: • diagnosis consistent w",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cvl-751-pd-003",
+      "nctId": "NCT04542499",
+      "protocolNumber": "CVL-751-PD-003",
+      "title": "A Phase 3, Double-Blind, Randomized, Placebo-Controlled, Parallel-Group, Flexible-Dose, 27-Week Trial to Evaluate the Efficacy, Safety, and Tolerability of Tavapadon as Adjunctive Therapy for Parkinson's Disease in Levodopa-Treated Adults With Motor Fluctuations (TEMPO-3 Trial)",
+      "briefTitle": "Flexible-Dose, Adjunctive Therapy Trial in Adults With Parkinson's Disease With Motor Fluctuations (TEMPO-3)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Parkinson’s disease (PD) in adults",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220415Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Parkinson’s disease (PD) in adults)",
+            "quote": "Trial identifier appears within the Parkinson’s disease (PD) in adults section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Juvmo (tavapadon) tablets 0.25 mg, 1 mg, 5 mg, 10 mg, and 15 mg for the treatment of Parkinson’s disease in adults.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "AbbVie",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-09-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-01-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-02-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 507,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tavapadon",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a tavapadon tablet titrated 5 to 15milligrams (mg) once daily (QD)orally for 27 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo matching to tavapadon tablet QD orally for 27 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in the Total \"On\" Time Without Troublesome Dyskinesia Based on the 2-day Average of the Self-completed Home Diary for Motor Function Status (Hauser Diary)"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Total Daily \"Off\" Time Based on the 2-Day Average of the Self-Completed Home Diary for Motor Function Status (Hauser Diary)",
+        "Change From Baseline in the Total \"On\" Time Without Troublesome Dyskinesia Based on the 2-day Average of the Self-completed Home Diary for Motor Function Status (Hauser Diary)",
+        "Change From Baseline in Total Daily \"Off\" Time Based on the 2-Day Average of the Self-Completed Home Diary for Motor Function Status (Hauser Diary)",
+        "Change From Baseline in the Movement Disorder Society - Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Parts I, II and III Individual Score"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in the Total \"On\" Time Without Troublesome Dyskinesia Based on the 2-day Average of the Self-completed Home Diary for Motor Function Status (Hauser Diary)",
+          "timeFrame": "Week 26",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "hours",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Tavapadon"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "0.619",
+              "spread": "0.188"
+            },
+            {
+              "groupId": "OG001",
+              "value": "1.721",
+              "spread": "0.207"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Mixed-effect Model Repeated Measurement",
+              "paramType": "LS Mean of Difference",
+              "paramValue": "1.103",
+              "ciPct": "95",
+              "ciLower": "0.553",
+              "ciUpper": "1.653"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04542499",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04542499",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04542499",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04542499",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04542499",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04542499?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 17,
+          "quote": "uble-blind, randomized, placebo-controlled, parallel-group, flexible-dose trial, Study 3 (NCT04542499). Study 3 enrolled adult patients with the following criteria: • diagnosis of PD consiste",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tempo-4",
+      "nctId": "NCT04760769",
+      "protocolNumber": "CVL-751-PD-004",
+      "acronym": "TEMPO-4",
+      "title": "58-Week Open-label Trial of Tavapadon in Parkinson's Disease (TEMPO-4 Trial)",
+      "briefTitle": "Open-label Trial in Parkinson's Disease (PD)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AbbVie",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-02-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-12-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-12-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 992,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tavapadon",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a Tavapadon tablet at a dose of 5 milligrams (mg) to 15 mg once daily (QD) orally during 58-week treatment period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Treatment Emergent Adverse Events (TEAEs)",
+        "Number of Participants Who Discontinued Study Treatment",
+        "Questionnaire for Impulsive-Compulsive Disorders in Parkinson's Disease Rating Scale (QUIP-RS)",
+        "Epworth Sleepiness Scale (ESS)",
+        "Columbia-Suicide Severity Rating Scale (C-SSRS)",
+        "Study Medication Withdrawal Questionnaire (SMWQ)",
+        "Change From Baseline in the Movement Disorder Society - Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Parts I, II and III",
+        "Change From Baseline in the Hauser diary",
+        "Change From Baseline in the EuroQol 5 Dimension 5 Level (EQ-5D-5L) Index",
+        "Change From Baseline in the EuroQol 5 Dimension 5 Level (EQ-5D-5L) Visual Analog Scores (VAS)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760769",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760769",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760769",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760769",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760769",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "m25-974",
+      "nctId": "NCT06895356",
+      "protocolNumber": "M25-974",
+      "title": "A Phase 1, Two Part, Randomized, Single and Multiple Dose Crossover Study to Assess the Relative Bioavailability Between Tavapadon Clinical and Commercial Tablets",
+      "briefTitle": "A Study to Assess the Relative Bioavailability of Oral Tavapadon in Healthy Adult Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AbbVie",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-03-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-06-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 83,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tavapadon: Part 1-Sequence 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Clinical Tavapadon Dose A in Period 1, followed by Commercial Tavapadon Dose B in Period 2"
+        },
+        {
+          "label": "Tavapadon: Part 1-Sequence 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Commercial Clinical Tavapadon Dose B in Period 1, followed by Clinical Tavapadon Dose A in Period 2"
+        },
+        {
+          "label": "Tavapadon: Part 2-Sequence 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Clinical Tavapadon Dose C in Period 1, Clinical Tavapadon Dose D in Period 2 followed by Commercial Tavapadon Dose E in Period 3"
+        },
+        {
+          "label": "Tavapadon: Part 2-Sequence 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Clinical Tavapadon Dose C in Period 1, Commercial Tavapadon Dose E in Period 2 followed by Clinical Tavapadon Dose D in Period 3"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Experiencing Adverse Events",
+        "Maximum Observed Plasma Concentration (Cmax) of Tavapadon",
+        "Time to Cmax (Tmax) of Tavapadon",
+        "Apparent Terminal Phase Elimination Rate Constant (β) of Tavapadon",
+        "Terminal Phase Elimination Half-life (t1/2) of Tavapadon",
+        "Area Under the Plasma Concentration-time Curve Over the Dosing Interval (AUCτ) of Tavapadon",
+        "Area Under the Plasma Concentration-time Curve from Time Zero to Infinity (AUCinf) of Tavapadon",
+        "Trough Concentration (Ctrough) of Tavapadon"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06895356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06895356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06895356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06895356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06895356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "c25-978",
+      "nctId": "NCT07158827",
+      "protocolNumber": "C25-978",
+      "title": "Expanded Access to Tavapadon",
+      "briefTitle": "Expanded Access to Tavapadon",
+      "phase": "NA",
+      "roles": [],
+      "status": "AVAILABLE",
+      "sponsor": "AbbVie",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07158827",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07158827",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07158827",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07158827",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07158827",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-25",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220415%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220415",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220415%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220415Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220415Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T05:59:44.655Z"
+}

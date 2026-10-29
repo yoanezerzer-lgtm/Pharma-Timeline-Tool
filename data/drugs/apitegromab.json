@@ -1,0 +1,821 @@
+{
+  "slug": "apitegromab",
+  "brandName": "Isembyld",
+  "inn": "apitegromab",
+  "modality": "Biologic (BLA)",
+  "sponsor": "SCHOLAR ROCK INC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Spinal muscular atrophy (SMA) in adults and pediatric patients 2 years of age and older who are currently receiving a survival motor neuron 2 (SMN2)-targeted treatment",
+      "slug": "spinal-muscular-atrophy-sma-in-adults-and-pediatric",
+      "approvalDate": {
+        "value": "2026-09-11",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761463Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-11",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Isembyld is indicated for the treatment of spinal muscular atrophy (SMA) in adults and pediatric patients 2 years of age and older who are currently receiving a survival motor neuron 2 (SMN2)-targeted treatment.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761463Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Isembyld is indicated for the treatment of spinal muscular atrophy (SMA) in adults and pediatric patients 2 years of age and older who are currently receiving a survival motor neuron 2 (SMN2)-targeted treatment.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761463",
+      "applicationType": "BLA",
+      "sponsor": "SCHOLAR ROCK INC",
+      "originalApprovalDate": {
+        "value": "2026-09-11",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "topaz",
+      "nctId": "NCT03921528",
+      "protocolNumber": "SRK-015-002",
+      "acronym": "TOPAZ",
+      "title": "Phase 2 Active Treatment Study to Evaluate the Efficacy and Safety of SRK-015 in Patients With Later-Onset Spinal Muscular Atrophy (TOPAZ)",
+      "briefTitle": "An Active Treatment Study of SRK-015 in Patients With Type 2 or Type 3 Spinal Muscular Atrophy",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Scholar Rock, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-04-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-01-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-02-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 58,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "21 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1",
+          "type": "EXPERIMENTAL",
+          "description": "Ambulatory Type 3 SMA"
+        },
+        {
+          "label": "Cohort 2",
+          "type": "EXPERIMENTAL",
+          "description": "Type 2 SMA / Non-Ambulatory Type 3 SMA"
+        },
+        {
+          "label": "Cohort 3",
+          "type": "EXPERIMENTAL",
+          "description": "Type 2 SMA"
+        }
+      ],
+      "primaryEndpoints": [
+        "Cohort 1: Change From Baseline in the Revised Hammersmith Scale (RHS) Total Score at Day 364 (Visit 15) [Month 12]",
+        "Cohort 2 and Cohort 3: Change From Baseline in Hammersmith Functional Motor Scale Expanded (HFMSE) Total Score at Day 364 (Visit 15) [Month 12]"
+      ],
+      "secondaryEndpoints": [
+        "Cohort 1:Change From Baseline in the Revised Hammersmith Scale (RHS) Total Score at Other Prespecified Timepoints",
+        "Cohort 1: Proportion of Patients Achieving Various Magnitudes of Change in RHS Score From Baseline",
+        "Cohort 1: Change From Baseline in 6-Minute Walk Test (6MWT)",
+        "Cohort 1: Change From Baseline in 30-Second Sit-to-Stand",
+        "Cohort 1: Change From Baseline in 10-Meter Walk/Run (From RHS)",
+        "Cohort 1: Change From Baseline in Timed Rise From Floor (From RHS)",
+        "Cohort 2 &3: Change From Baseline in HFMSE Total Score at Other Prespecified Timepoints",
+        "Cohort 2 & 3: Proportion of Patients Achieving Various Magnitudes of Change in HFMSE Score From Baseline",
+        "Cohort 2 & 3: Change in Baseline in Revised Upper Limb Module (RULM) Total Score",
+        "Cohort 2 & 3: Proportion of Patients Achieving a New WHO Motor Development Milestones Relative to Baseline",
+        "Cohort 2 & 3: Proportion of Patients Achieving Various Magnitudes of Change in RULM Score From Baseline"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921528",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921528",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921528",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921528",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03921528",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "sapphire",
+      "nctId": "NCT05156320",
+      "protocolNumber": "SRK-015-003",
+      "acronym": "SAPPHIRE",
+      "title": "Phase 3, Double-Blind, Placebo-Controlled Trial to Evaluate the Efficacy and Safety of Apitegromab (SRK-015) in Patients With Later-Onset Spinal Muscular Atrophy Receiving Background Nusinersen or Risdiplam Therapy",
+      "briefTitle": "Efficacy and Safety of Apitegromab in Patients With Later-Onset Spinal Muscular Atrophy Treated With Nusinersen or Risdiplam",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Spinal muscular atrophy (SMA) in adults and pediatric patients 2 years of age and older who are currently receiving a survival motor neuron 2 (SMN2)-targeted treatment",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761463Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Spinal muscular atrophy (SMA) in adults and pediatric patients 2 years of age and older who are currently receiving a survival motor neuron 2 (SMN2)-targeted treatment)",
+            "quote": "Trial identifier appears within the Spinal muscular atrophy (SMA) in adults and pediatric patients 2 years of age and older who are currently receiving a survival motor neuron 2 (SMN2)-targeted treatment section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761463Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Isembyld is indicated for the treatment of spinal muscular atrophy (SMA) in adults and pediatric patients 2 years of age and older who are currently receiving a survival motor neuron 2 (SMN2)-targeted treatment.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Scholar Rock, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-04-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-12-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-12-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 188,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "21 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Main Efficacy Population (Apitegromab 10 mg/kg)",
+          "type": "EXPERIMENTAL",
+          "description": "Aged 2-12 years at Screening. Participants were randomized to receive apitegromab 10 mg/kg for up to 52 weeks."
+        },
+        {
+          "label": "Main Efficacy Population (Apitegromab 20 mg/kg)",
+          "type": "EXPERIMENTAL",
+          "description": "Aged 2-12 years at Screening. Participants were randomized to receive apitegromab 20 mg/kg for up to 52 weeks."
+        },
+        {
+          "label": "Main Efficacy Population (Placebo)",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Aged 2-12 years at Screening. Participants were randomized to receive placebo for up to 52 weeks."
+        },
+        {
+          "label": "Exploratory Subpopulation (Apitegromab)",
+          "type": "EXPERIMENTAL",
+          "description": "Aged 13-21 years at Screening. Participants were randomized to receive apitegromab 20 mg/kg for up to 52 weeks."
+        },
+        {
+          "label": "Exploratory Subpopulation (Placebo)",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Aged 13-21 years at Screening. Participants were randomized to receive placebo for up to 52 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Main Efficacy Population: Change from Baseline in Hammersmith Functional Motor Scale Expanded (HFMSE) total score."
+      ],
+      "secondaryEndpoints": [
+        "Main Efficacy Population: Change from Baseline in Revised Upper Limb Module (RULM) total score.",
+        "Main Efficacy Population: Proportion of patients with ≥3-point change from Baseline in Hammersmith Functional Motor Scale Expanded (HFMSE) total score.",
+        "Main Efficacy Population: Change from Baseline in number of WHO motor development milestones attained at 12 months.",
+        "Main Efficacy Population and Exploratory Subpopulation combined: Incidence of Treatment Emergent Adverse Events (TEAEs) and Severe Adverse Events (SAEs) by severity.",
+        "Main Efficacy Population and Exploratory Subpopulation combined: Apitegromab concentrations in serum from blood samples.",
+        "Main Efficacy Population and Exploratory Subpopulation combined: Circulating latent myostatin concentrations in blood samples.",
+        "Main Efficacy Population and Exploratory Subpopulation combined: Presence or absence of Antidrug Antibody (ADA) against apitegromab in serum from blood samples."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05156320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05156320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05156320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05156320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05156320",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761463Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 9,
+          "quote": "d in a randomized, double-blind, placebo-controlled, multicenter clinical trial (Study 1; NCT05156320). Study 1 enrolled a total of 188 patients with a diagnosis of 5q SMA who were 2 to 21 ye",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onyx",
+      "nctId": "NCT05626855",
+      "protocolNumber": "SRK-015-004",
+      "acronym": "ONYX",
+      "title": "An Open-Label, Multicenter, Extension Trial to Evaluate the Long-Term Safety and Efficacy of Apitegromab in Patients With Type 2 and Type 3 Spinal Muscular Atrophy Who Completed Previous Investigational Trials of Apitegromab",
+      "briefTitle": "Long-Term Safety & Efficacy of Apitegromab in Patients With SMA Who Completed Previous Trials of Apitegromab",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Scholar Rock, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-04-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-11-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-05-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 238,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment Period",
+          "type": "EXPERIMENTAL",
+          "description": "Patients who are ≥2 years of age with Type 2 and Type 3 SMA will receive apitegromab 20 mg/kg every 4 weeks by intravenous (IV) infusion during the 104-week Treatment Period"
+        }
+      ],
+      "primaryEndpoints": [
+        "Evaluate the long-term safety and tolerability of apitegromab in patients with Type 2 and Type 3 SMA"
+      ],
+      "secondaryEndpoints": [
+        "Evaluate the long-term efficacy of apitegromab by assessing changes in motor function outcome measures at prespecified time points",
+        "Evaluate the long-term efficacy of apitegromab by assessing changes in motor function outcome measures at prespecified time points",
+        "Evaluate the long-term efficacy of apitegromab by assessing changes in motor function outcome measures at prespecified time points",
+        "Evaluate the long-term efficacy of apitegromab by assessing changes in motor function outcome measures at prespecified time points",
+        "Evaluate the long-term efficacy of apitegromab by assessing changes in motor function outcome measures at prespecified time points",
+        "Evaluate the long-term efficacy of apitegromab by assessing changes in motor function outcome measures at prespecified time points",
+        "Further evaluate the immunogenicity of apitegromab"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05626855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05626855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05626855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05626855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05626855",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "embraze",
+      "nctId": "NCT06445075",
+      "protocolNumber": "SRK-015-006",
+      "acronym": "EMBRAZE",
+      "title": "A Phase 2 Randomized, Double-blind, Placebo-controlled, Multicenter Study to Evaluate the Efficacy, Safety and Pharmacokinetics of Apitegromab in Overweight and Obese Adult Subjects",
+      "briefTitle": "Efficacy and Safety of Apitegromab for the Treatment of Adults Who Are Overweight or Obese",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Scholar Rock, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-05-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-03-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 102,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1",
+          "type": "EXPERIMENTAL",
+          "description": "Apitegromab + incretin mimetic"
+        },
+        {
+          "label": "Cohort 2",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo + incretin mimetic"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from Baseline in total Lean Body Mass (kg) at 24 weeks"
+      ],
+      "secondaryEndpoints": [
+        "Change from Baseline in body weight",
+        "Change from Baseline in percent lean body mass (%)",
+        "Change from Baseline in fat body mass (kg and %)",
+        "Change from Baseline in visceral adipose tissue (VAT), subcutaneous adipose tissue (SAT), and trunk fat body mass (kg and %)",
+        "Percent (%) of weight loss from baseline due to fat body mass loss",
+        "Percent (%) of weight loss from baseline due to lean body mass loss",
+        "Concentration of apitegromab in circulation over time",
+        "Concentration of latent myostatin in circulation over time",
+        "Treatment emergent adverse events (TEAEs) and serious adverse events (SAEs)",
+        "Presence of anti-drug antibodies (ADA) against apitegromab over time"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445075",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445075",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445075",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445075",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445075",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "opal",
+      "nctId": "NCT07047144",
+      "protocolNumber": "SRK-015-005",
+      "acronym": "OPAL",
+      "title": "A Phase 2, Double-Blind Study to Evaluate the Pharmacokinetics, Pharmacodynamics, Efficacy, and Safety of Apitegromab in Subjects <2 Years Old With Spinal Muscular Atrophy (SMA)",
+      "briefTitle": "A Study to Evaluate How Apitegromab Works in Subjects Who Are Less Than 2 Years Old and Have Spinal Muscular Atrophy",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Scholar Rock, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-09-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-11-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2029-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 52,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "maxAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Apitegromab low dose + SMN Therapy",
+          "type": "EXPERIMENTAL",
+          "description": "Patients who are less than 2 years of age with SMA will receive apitegromab every 4 weeks by intravenous (IV) infusion during the 48-week Treatment Period.\n\nPatients must have been treated with an approved SMN1-targeted therapy (ie, onasemnogene abeparvovec-xioi) or are continuing to be treated with an approved SMN2-targeted therapy (ie, nusinersen or risdiplam)."
+        },
+        {
+          "label": "Apitegromab high dose + SMN Therapy",
+          "type": "EXPERIMENTAL",
+          "description": "Patients who are less than 2 years of age with SMA will receive apitegromab every 4 weeks by intravenous (IV) infusion during the 48-week Treatment Period.\n\nPatients must have been treated with an approved SMN1-targeted therapy (ie, onasemnogene abeparvovec-xioi) or are continuing to be treated with an approved SMN2-targeted therapy (ie, nusinersen or risdiplam)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Evaluate the PK of apitegromab in subjects <2 years old with SMA",
+        "Evaluate the PD of apitegromab in subjects <2 years old with SMA",
+        "Evaluate the motor function outcomes (ie, efficacy) due to apitegromab treatment"
+      ],
+      "secondaryEndpoints": [
+        "Assess the safety and tolerability of apitegromab administered to subjects receiving an SMN therapy"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07047144",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07047144",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07047144",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07047144",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07047144",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "srk-015-009",
+      "nctId": "NCT07435129",
+      "protocolNumber": "SRK-015-009",
+      "title": "A Phase 2, Randomized, Double-Blind, Placebo-Controlled, Multicenter, 52-Week Study Evaluating the Efficacy and Safety of Apitegromab in Participants With Facioscapulohumeral Muscular Dystrophy (FORGE)",
+      "briefTitle": "Phase 2 Study Evaluating Apitegromab for the Treatment of FSHD",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Scholar Rock, Inc.",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-07-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 60,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Apitegromab",
+          "type": "EXPERIMENTAL",
+          "description": "10 mg/kg IV"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo IV"
+        }
+      ],
+      "primaryEndpoints": [
+        "Assess the efficacy of apitegromab compared with placebo in participants with FSHD"
+      ],
+      "secondaryEndpoints": [
+        "Further assess the efficacy of apitegromab compared with placebo in participants with FSHD",
+        "Further assess the efficacy of apitegromab compared with placebo in participants with FSHD",
+        "Further assess the efficacy of apitegromab compared with placebo in participants with FSHD",
+        "Evaluate the pharmacokinetics of apitegromab in participants with FSHD",
+        "Evaluate the pharmacodynamics of apitegromab in participants with FSHD",
+        "Evaluate the safety and tolerability of apitegromab in participants with FSHD",
+        "Evaluate the safety and tolerability of apitegromab in FSHD participants"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07435129",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07435129",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07435129",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07435129",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07435129",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "srk-015-008",
+      "nctId": "NCT06877689",
+      "protocolNumber": "SRK-015-008",
+      "title": "Expanded Access Protocol of Apitegromab for Patients With Spinal Muscular Atrophy",
+      "briefTitle": "EAP of Apitegromab for Patients With Spinal Muscular Atrophy",
+      "phase": "NA",
+      "roles": [],
+      "status": "NO_LONGER_AVAILABLE",
+      "sponsor": "Scholar Rock, Inc.",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06877689",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06877689",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06877689",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06877689",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06877689",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-11",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761463%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761463",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761463%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761463Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761463Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:00:34.473Z"
+}
