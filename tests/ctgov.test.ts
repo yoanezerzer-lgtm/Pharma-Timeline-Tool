@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { postedPrimaryResults, studyToTrial, type CtgovStudy } from '../scripts/ingest/ctgov.js';
+import { codeNamesFrom, postedPrimaryResults, studyToTrial, type CtgovStudy } from '../scripts/ingest/ctgov.js';
 import { withoutPostedResults } from '../scripts/ingest/run.js';
 
 const study: CtgovStudy = {
@@ -88,5 +88,23 @@ describe('studyToTrial posted results', () => {
     const stripped = withoutPostedResults(studyToTrial(study, 'https://clinicaltrials.gov/study/NCT02675426'));
     expect(stripped).not.toHaveProperty('postedResults');
     expect(stripped.provenance).not.toHaveProperty('postedResults');
+  });
+});
+
+describe('codeNamesFrom', () => {
+  const study = (interventions: { name: string; otherNames?: string[] }[]): CtgovStudy => ({
+    protocolSection: { armsInterventionsModule: { interventions } },
+  }) as CtgovStudy;
+
+  it("takes development codes listed beside the drug's INN", () => {
+    const studies = [
+      study([{ name: 'Camizestrant', otherNames: ['AZD9833', 'camizestrant 75 mg'] }, { name: 'Palbociclib', otherNames: ['PD-0332991'] }]),
+      study([{ name: 'AZD9833', otherNames: ['Camizestrant'] }]),
+    ];
+    expect(codeNamesFrom(studies, 'camizestrant')).toEqual(['AZD9833']);
+  });
+
+  it("ignores codes of other drugs in the same trial", () => {
+    expect(codeNamesFrom([study([{ name: 'Letrozole', otherNames: ['CGS-20267'] }])], 'camizestrant')).toEqual([]);
   });
 });

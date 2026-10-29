@@ -40,7 +40,7 @@ function absolute(href: string, page: string): string {
 /** Review packages linked from a Drugs@FDA page: PDFs and table-of-contents pages under drugsatfda_docs/nda/. */
 export function reviewPackageLinks(html: string, applicationNumber: string, page: string): { url: string; submission: string }[] {
   const out = new Map<string, string>();
-  for (const m of html.matchAll(/href\s*=\s*["']([^"']*drugsatfda_docs\/nda\/[^"']+\.(?:pdf|cfm))["']/gi)) {
+  for (const m of html.matchAll(/href\s*=\s*["']([^"']*drugsatfda_docs\/nda\/[^"']+\.(?:pdf|cfm|html?))["']/gi)) {
     const url = absolute(m[1], page);
     const submission = submissionOf(url, applicationNumber);
     if (submission) out.set(url, submission);

@@ -11,7 +11,7 @@
  */
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import type { DrugsFdaResult } from './fda.js';
+import { innOf, type DrugsFdaResult } from './fda.js';
 
 export interface NewApproval {
   slug: string;
@@ -25,11 +25,9 @@ export interface NewApproval {
 
 const OPENFDA = 'https://api.fda.gov/drug/drugsfda.json';
 
-/** A drug's site slug from its generic name: "risankizumab-rzaa" → "risankizumab". */
+/** A drug's site slug from its generic name: "risankizumab-rzaa" → "risankizumab", "pritelivir mesylate" → "pritelivir". */
 export function slugFor(genericName: string): string {
-  return genericName
-    .toLowerCase()
-    .replace(/-[a-z]{4}$/, '')
+  return innOf(genericName)
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
     .slice(0, 60);
