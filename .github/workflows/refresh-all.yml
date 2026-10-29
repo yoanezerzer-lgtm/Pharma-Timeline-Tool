@@ -1,31 +1,50 @@
 name: Refresh all drugs
 
-# Re-runs ingestion for every drug on the site, e.g. after the pipeline
-# learns to read a new fact. Each drug's new data lands on its own
-# ingest/<slug> branch, as with a single run; combine them into one data PR.
+# Re-runs ingestion for every drug on the site, then combines the results.
+# Weekly on its own, or on demand (e.g. after the pipeline learns to read a
+# new fact). Routine changes (registry updates, newly read document facts)
+# are checked like a pull request and published straight away; anything
+# else is left on a data/refresh-<date> branch for a person to look at.
+#
+# It publishes by pushing to main itself: GitHub doesn't run other workflows
+# for pull requests or pushes made by a workflow, so the checks CI would run
+# are run here instead, and the site deploy is started explicitly.
 on:
+  schedule:
+    # Saturdays 21:13 New York time, clear of the overnight checker.
+    - cron: '13 1 * * 0'
   workflow_dispatch:
     inputs:
       only:
         description: 'Optional: space-separated slugs to refresh instead of all'
         required: false
         default: ''
+      publish:
+        description: 'Publish routine changes straight away'
+        type: boolean
+        required: false
+        default: true
 
 permissions:
   contents: write
   pull-requests: write
+
+concurrency:
+  group: refresh-all
 
 jobs:
   list:
     runs-on: ubuntu-latest
     outputs:
       drugs: ${{ steps.list.outputs.drugs }}
+      started: ${{ steps.list.outputs.started }}
     steps:
       - uses: actions/checkout@v4
       - id: list
         env:
           ONLY: ${{ inputs.only }}
         run: |
+          echo "started=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
           if [ -n "$ONLY" ]; then
             drugs=$(printf '%s\n' $ONLY | jq -R . | jq -sc .)
           else
@@ -43,3 +62,91 @@ jobs:
     uses: ./.github/workflows/ingest.yml
     with:
       drug: ${{ matrix.drug }}
+
+  combine:
+    needs: [list, ingest]
+    # One drug failing to refresh shouldn't hold back the other 51.
+    if: always() && needs.list.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Collect each drug's new data
+        env:
+          DRUGS: ${{ needs.list.outputs.drugs }}
+          STARTED: ${{ needs.list.outputs.started }}
+        run: |
+          set -euo pipefail
+          for slug in $(echo "$DRUGS" | jq -r '.[]'); do
+            git fetch -q origin "ingest/${slug}" 2>/dev/null || continue
+            # Only this run's data: the branch is replaced on each run.
+            if [ "$(git log -1 --format=%ct FETCH_HEAD)" -lt "$(date -u -d "$STARTED" +%s)" ]; then continue; fi
+            git show "FETCH_HEAD:data/drugs/${slug}.json" > "data/drugs/${slug}.json"
+          done
+          git status --short
+
+      - name: Sort the changes
+        id: sort
+        run: |
+          set -euo pipefail
+          npx tsx scripts/ingest/classify.ts origin/main | tee report.txt
+          echo "routine=$(tail -1 report.txt | sed 's/routine=//')" >> "$GITHUB_OUTPUT"
+          { echo '## Weekly refresh'; echo; sed '$d' report.txt; } >> "$GITHUB_STEP_SUMMARY"
+
+      # The same checks CI runs on a pull request.
+      - name: Check
+        id: check
+        run: |
+          set -euo pipefail
+          npm run typecheck
+          npm test
+          npm run validate
+          npx tsx scripts/qc/guard.ts origin/main
+          npm run -s qc | tee -a "$GITHUB_STEP_SUMMARY"
+          npm run build
+
+      - name: Publish or hold for review
+        if: always() && steps.sort.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ROUTINE: ${{ steps.sort.outputs.routine }}
+          CHECKED: ${{ steps.check.outcome }}
+          PUBLISH: ${{ github.event_name == 'schedule' || inputs.publish }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- data/drugs)" ]; then
+            echo "Nothing changed." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          DATE=$(date -u +%F)
+          { echo "Weekly data refresh ${DATE}"; echo; sed '$d' report.txt; } > message.txt
+          git add data/drugs
+          git commit -q -F message.txt
+          if [ "$ROUTINE" = "true" ] && [ "$CHECKED" = "success" ] && [ "$PUBLISH" = "true" ]; then
+            git push origin HEAD:main
+            gh workflow run deploy.yml --ref main
+            echo "Published: routine changes only, all checks passed." | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            BRANCH="data/refresh-${DATE}"
+            git push --force origin "HEAD:refs/heads/${BRANCH}"
+            {
+              echo "Held for review (routine: ${ROUTINE}, checks: ${CHECKED}) on branch ${BRANCH}."
+              echo "Open a pull request: ${REPO_URL}/compare/main...${BRANCH}?expand=1"
+            } | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "::warning::Refresh held for review on ${BRANCH}"
+          fi

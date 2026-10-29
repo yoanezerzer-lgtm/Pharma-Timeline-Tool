@@ -20,6 +20,11 @@ const Checked = {
   /** Who or what confirmed it, e.g. "approval letter, Claude review 2026-10". */
   checkedBy: z.string().optional(),
   note: z.string().optional(),
+  /**
+   * Baseline only: nights the overnight checker tried this fact and couldn't
+   * confirm it. At STUCK_AFTER it stops being queued and waits for a person.
+   */
+  tries: z.number().int().nonnegative().optional(),
   /** The passages that confirmed it, each verified word for word against the source. */
   evidence: z.array(z.object({ sourceUrl: z.string(), quote: z.string(), page: z.number().optional() })).optional(),
 };

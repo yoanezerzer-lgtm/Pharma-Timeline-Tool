@@ -41,6 +41,9 @@ export const Verdict = z.object({
 export type Verdict = z.infer<typeof Verdict>;
 
 const trialKey = (t: Trial) => t.nctId ?? t.id;
+
+/** Nights a fact is tried before it waits for a person instead of taking a slot every night. */
+export const STUCK_AFTER = 3;
 const trialName = (t: Trial) => t.acronym ?? t.labelName ?? t.nctId ?? t.id;
 
 /** Small seeded generator, so a night's queue is reproducible from its date. */
@@ -110,7 +113,7 @@ export function buildQueue(contexts: DrugContext[], date: string, limit = 40): {
   const real: { ctx: DrugContext; trial: Trial; indication: string }[] = [];
   for (const ctx of usable) {
     for (const r of ctx.ref.pivotal) {
-      if (r.status !== 'baseline' || !r.pivotal) continue;
+      if (r.status !== 'baseline' || !r.pivotal || (r.tries ?? 0) >= STUCK_AFTER) continue;
       const trial = ctx.drug.trials.find((t) => trialKey(t) === r.trial);
       if (trial) real.push({ ctx, trial, indication: r.indication });
     }
@@ -173,6 +176,8 @@ interface ApplyResult {
   /** Reference files with this night's confirmations applied (unchanged when voided). */
   refs: Map<string, Reference>;
   spotCheck: ClaimResult[];
+  /** Facts tried for the STUCK_AFTER-th night tonight: no longer queued, a person decides. */
+  stuck: ClaimResult[];
 }
 
 export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[], contexts: DrugContext[], date: string): ApplyResult {
@@ -229,9 +234,21 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
     }
   }
 
+  // A fact tried and not confirmed counts one more night; voided nights don't count.
+  const stuck: ClaimResult[] = [];
+  if (!voided) {
+    for (const r of results) {
+      if (!['unclear', 'rejected', 'unanswered', 'disagreement'].includes(r.outcome)) continue;
+      const entry = refs.get(r.claim.drug)!.pivotal.find((p) => p.indication === r.claim.indication && p.trial === r.claim.trial);
+      if (!entry || entry.status !== 'baseline') continue;
+      entry.tries = (entry.tries ?? 0) + 1;
+      if (entry.tries === STUCK_AFTER) stuck.push(r);
+    }
+  }
+
   const rand = rng(`${date}-spot`);
   const spotCheck = voided ? [] : shuffle(confirmed, rand).slice(0, Math.ceil(confirmed.length / 10));
-  return { results, voided, refs, spotCheck };
+  return { results, voided, refs, spotCheck, stuck };
 }
 
 export function reportMarkdown(r: ApplyResult, date: string): string {
@@ -262,6 +279,7 @@ export function reportMarkdown(r: ApplyResult, date: string): string {
   section('Disagreements (the data may be wrong)', r.results.filter((x) => x.outcome === 'disagreement'));
   section('Missed planted claims', r.results.filter((x) => x.outcome === 'decoy-missed'));
   section('Spot check: please confirm these quotes support the fact', r.spotCheck);
+  section(`Stuck after ${STUCK_AFTER} nights: no longer queued, needs a person`, r.stuck);
   section("Couldn't tell", r.results.filter((x) => x.outcome === 'unclear'));
   section('Rejected by the quote checks', r.results.filter((x) => x.outcome === 'rejected'));
   return lines.join('\n');

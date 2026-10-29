@@ -53,3 +53,15 @@ jobs:
         run: npm run build
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
+
+      # Opens every page of the built site in a browser: catches a page that
+      # breaks or comes up empty, which the checks above can't see.
+      - name: Site check
+        run: |
+          set -euo pipefail
+          npx playwright install --with-deps chromium
+          npx vite preview --port 4173 --strictPort &
+          timeout 30 bash -c 'until curl -sf http://localhost:4173/${{ github.event.repository.name }}/ >/dev/null; do sleep 1; done'
+          npx tsx scripts/sitecheck.ts http://localhost:4173/${{ github.event.repository.name }}/
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
