@@ -1968,7 +1968,7 @@
           "indication": "Melanoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
             "quote": "The label refers to this trial as \"KEYNOTE-002\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -2343,7 +2343,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-002 (NCT01704287)",
           "extractedBy": "regex",
@@ -2363,7 +2363,7 @@
               "indication": "Melanoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
                 "quote": "The label refers to this trial as \"KEYNOTE-002\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -2376,7 +2376,7 @@
               "indication": "Melanoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -2384,7 +2384,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -2687,11 +2687,21 @@
           "indication": "Head and Neck Squamous Cell Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-012\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-9",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s009.pdf",
+              "sourceLabel": "FDA review (SUPPL-9): names the trial 185 times, 18× as often as any other trial",
+              "quote": "This efficacy supplement is supported by the demonstration of durable objective tumor responses observed in a defined subpopulation, as agreed upon with FDA, who were enrolled in a single-arm, open-label study, KEYNOTE-012.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -2992,7 +3002,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-012 (NCT01848834)",
           "extractedBy": "regex",
@@ -3012,7 +3022,7 @@
               "indication": "Head and Neck Squamous Cell Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-012\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -3025,15 +3035,25 @@
               "indication": "Head and Neck Squamous Cell Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "The label refers to this trial as \"KEYNOTE-012\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-9",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s009.pdf",
+                  "sourceLabel": "FDA review (SUPPL-9): names the trial 185 times, 18× as often as any other trial",
+                  "quote": "This efficacy supplement is supported by the demonstration of durable objective tumor responses observed in a defined subpopulation, as agreed upon with FDA, who were enrolled in a single-arm, open-label study, KEYNOTE-012.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -3050,7 +3070,7 @@
           "indication": "Non-Small Cell Lung Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-010\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -3474,7 +3494,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-010 (NCT01905657)",
           "extractedBy": "regex",
@@ -3494,7 +3514,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-010\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -3507,7 +3527,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -3515,7 +3535,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -3532,7 +3552,7 @@
           "indication": "Melanoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
             "quote": "The label refers to this trial as \"KEYNOTE-006\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -3809,7 +3829,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-006 (NCT01866319)",
           "extractedBy": "regex",
@@ -3829,7 +3849,7 @@
               "indication": "Melanoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
                 "quote": "The label refers to this trial as \"KEYNOTE-006\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -3842,7 +3862,7 @@
               "indication": "Melanoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -3850,7 +3870,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -5705,7 +5725,7 @@
           "indication": "Non-Small Cell Lung Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-024\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -5880,7 +5900,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-024 (NCT02142738)",
           "extractedBy": "regex",
@@ -5900,7 +5920,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-024\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -5913,7 +5933,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -5921,7 +5941,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -5938,7 +5958,7 @@
           "indication": "Urothelial Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-045\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -6337,7 +6357,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-045 (NCT02256436)",
           "extractedBy": "regex",
@@ -6357,7 +6377,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-045\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -6370,7 +6390,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -6378,7 +6398,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -6501,11 +6521,21 @@
           "indication": "Non-Small Cell Lung Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
             "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-47",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/125514Orig1s047.pdf",
+              "sourceLabel": "FDA review (SUPPL-47): names the trial 198 times, 3× as often as any other trial",
+              "quote": "This application is primarily supported by a randomized, multicenter, open-label, active-controlled trial, KEYNOTE-042, comparing pembrolizumab to platinum-based chemotherapy (carboplatin with either pemetrexed or paclitaxel) as first-line systemic therapy for 1274 patients with stage III NSCLC who were not candidates for surgical resection or definitive chemoradiation or metastatic NSCLC, whose tumors expressed PD-L1 (TPS ≥1%).",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -6754,7 +6784,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-042 (NCT02220894)",
           "extractedBy": "regex",
@@ -6774,7 +6804,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -6787,15 +6817,25 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-47",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/125514Orig1s047.pdf",
+                  "sourceLabel": "FDA review (SUPPL-47): names the trial 198 times, 3× as often as any other trial",
+                  "quote": "This application is primarily supported by a randomized, multicenter, open-label, active-controlled trial, KEYNOTE-042, comparing pembrolizumab to platinum-based chemotherapy (carboplatin with either pemetrexed or paclitaxel) as first-line systemic therapy for 1274 patients with stage III NSCLC who were not candidates for surgical resection or definitive chemoradiation or metastatic NSCLC, whose tumors expressed PD-L1 (TPS ≥1%).",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -7063,7 +7103,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-017 (NCT02267603)",
           "extractedBy": "regex",
@@ -7472,7 +7512,7 @@
           "indication": "Urothelial Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-052\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -7664,7 +7704,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-052 (NCT02335424)",
           "extractedBy": "regex",
@@ -7684,7 +7724,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-052\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -7697,7 +7737,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -7705,7 +7745,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -7722,11 +7762,21 @@
           "indication": "Head and Neck Squamous Cell Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
             "quote": "Trial identifier appears within the Head and Neck Squamous Cell Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-52",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s052.pdf",
+              "sourceLabel": "FDA review (SUPPL-52): names the trial 174 times, 8× as often as any other trial",
+              "quote": "This application is primarily supported by a randomized, multicenter, three-arm, open-label, active-controlled trial, KEYNOTE-048, comparing pembrolizumab as a single agent and pembrolizumab in combination with cisplatin or carboplatin and 5-FU to cetuximab in combination with cisplatin or carboplatin and 5-FU (control) as first-line systemic therapy for 882 patients with metastatic HNSCC who had not received prior therapy for metastatic disease or with recurrent HNSCC who were not candidates f…",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -8462,7 +8512,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-048 (NCT02358031)",
           "extractedBy": "regex",
@@ -8483,7 +8533,7 @@
               "indication": "Head and Neck Squamous Cell Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
                 "quote": "Trial identifier appears within the Head and Neck Squamous Cell Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -8496,15 +8546,25 @@
               "indication": "Head and Neck Squamous Cell Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Head and Neck Squamous Cell Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-52",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s052.pdf",
+                  "sourceLabel": "FDA review (SUPPL-52): names the trial 174 times, 8× as often as any other trial",
+                  "quote": "This application is primarily supported by a randomized, multicenter, three-arm, open-label, active-controlled trial, KEYNOTE-048, comparing pembrolizumab as a single agent and pembrolizumab in combination with cisplatin or carboplatin and 5-FU to cetuximab in combination with cisplatin or carboplatin and 5-FU (control) as first-line systemic therapy for 882 patients with metastatic HNSCC who had not received prior therapy for metastatic disease or with recurrent HNSCC who were not candidates f…",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -8521,7 +8581,7 @@
           "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
             "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -8665,7 +8725,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-051 (NCT02332668)",
           "extractedBy": "regex",
@@ -8685,7 +8745,7 @@
               "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
                 "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -8698,7 +8758,7 @@
               "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -8706,7 +8766,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -9092,7 +9152,7 @@
           "indication": "Classical Hodgkin Lymphoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Classical Hodgkin Lymphoma)",
             "quote": "Trial identifier appears within the Classical Hodgkin Lymphoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -9328,7 +9388,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-087 (NCT02453594)",
           "extractedBy": "regex",
@@ -9348,7 +9408,7 @@
               "indication": "Classical Hodgkin Lymphoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Classical Hodgkin Lymphoma)",
                 "quote": "Trial identifier appears within the Classical Hodgkin Lymphoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -9361,7 +9421,7 @@
               "indication": "Classical Hodgkin Lymphoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Classical Hodgkin Lymphoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -9369,7 +9429,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -9610,7 +9670,7 @@
           "indication": "Melanoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
             "quote": "Trial identifier appears within the Melanoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -9818,7 +9878,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-054 (NCT02362594)",
           "extractedBy": "regex",
@@ -9838,7 +9898,7 @@
               "indication": "Melanoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
                 "quote": "Trial identifier appears within the Melanoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -9851,7 +9911,7 @@
               "indication": "Melanoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -9859,7 +9919,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -10282,7 +10342,7 @@
           "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
             "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -10427,7 +10487,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-164 (NCT02460198)",
           "extractedBy": "regex",
@@ -10447,7 +10507,7 @@
               "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
                 "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -10460,7 +10520,7 @@
               "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -10468,7 +10528,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -10813,7 +10873,7 @@
           "indication": "Non-Small Cell Lung Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
             "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -11017,7 +11077,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-091 (NCT02504372)",
           "extractedBy": "regex",
@@ -11037,7 +11097,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -11050,7 +11110,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -11058,7 +11118,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -11174,7 +11234,7 @@
           "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer)",
             "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -11376,7 +11436,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-177 (NCT02563002)",
           "extractedBy": "regex",
@@ -11396,7 +11456,7 @@
               "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer)",
                 "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -11409,7 +11469,7 @@
               "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -11417,7 +11477,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -11434,11 +11494,21 @@
           "indication": "Esophageal Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
             "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-56",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s056.pdf",
+              "sourceLabel": "FDA review (SUPPL-56): names the trial 249 times, 6× as often as any other trial",
+              "quote": "The demonstrated improvement in OS is clinically meaningful an d supported by improvements in PFS and ORR over the active TPC comparator in KEYNOTE - 181 .",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -11687,7 +11757,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-181 (NCT02564263)",
           "extractedBy": "regex",
@@ -11707,7 +11777,7 @@
               "indication": "Esophageal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
                 "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -11720,15 +11790,25 @@
               "indication": "Esophageal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-56",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s056.pdf",
+                  "sourceLabel": "FDA review (SUPPL-56): names the trial 249 times, 6× as often as any other trial",
+                  "quote": "The demonstrated improvement in OS is clinically meaningful an d supported by improvements in PFS and ORR over the active TPC comparator in KEYNOTE - 181 .",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -11745,7 +11825,7 @@
           "indication": "Primary Mediastinal Large B-Cell Lymphoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Primary Mediastinal Large B-Cell Lymphoma)",
             "quote": "Trial identifier appears within the Primary Mediastinal Large B-Cell Lymphoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -11894,7 +11974,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-170 (NCT02576990)",
           "extractedBy": "regex",
@@ -11914,7 +11994,7 @@
               "indication": "Primary Mediastinal Large B-Cell Lymphoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Primary Mediastinal Large B-Cell Lymphoma)",
                 "quote": "Trial identifier appears within the Primary Mediastinal Large B-Cell Lymphoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -11927,7 +12007,7 @@
               "indication": "Primary Mediastinal Large B-Cell Lymphoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Primary Mediastinal Large B-Cell Lymphoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -11935,7 +12015,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -11952,11 +12032,21 @@
           "indication": "Esophageal Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
             "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-55",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s055.pdf",
+              "sourceLabel": "FDA review (SUPPL-55): names the trial 224 times, 5× as often as any other trial",
+              "quote": "This conclusion is based on the observation of highly durable response rate in this subpopulation of patient s receiving third and later line treatment in a single arm trial, KEYNOTE - 180 (submitted to this sBLA) , supported by the evidence of effectiveness observed in a n additional single , adequate and well - controlled , randomized trial , KEYNOTE - 181 (data submitted under sBLA 125514/S - 56).",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -12081,7 +12171,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-180 (NCT02559687)",
           "extractedBy": "regex",
@@ -12101,7 +12191,7 @@
               "indication": "Esophageal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
                 "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -12114,15 +12204,25 @@
               "indication": "Esophageal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-55",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s055.pdf",
+                  "sourceLabel": "FDA review (SUPPL-55): names the trial 224 times, 5× as often as any other trial",
+                  "quote": "This conclusion is based on the observation of highly durable response rate in this subpopulation of patient s receiving third and later line treatment in a single arm trial, KEYNOTE - 180 (submitted to this sBLA) , supported by the evidence of effectiveness observed in a n additional single , adequate and well - controlled , randomized trial , KEYNOTE - 181 (data submitted under sBLA 125514/S - 56).",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -12139,7 +12239,7 @@
           "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -12150,18 +12250,28 @@
           "indication": "Cervical Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-34",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s034.pdf",
+              "sourceLabel": "FDA review (SUPPL-34): names the trial 54 times, 4× as often as any other trial",
+              "quote": "The recommendation for the approval of pembrolizumab per 21 CFR Part 601.41 1 is based on the efficacy and safety data from Cohort E of the phase 2, non-randomized, open-label, multicenter, single cohort basket trial, KEYNOTE-158 (KN-158).",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         },
         {
           "indication": "Endometrial Carcinoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Endometrial Carcinoma)",
             "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -12172,7 +12282,7 @@
           "indication": "Tumor Mutational Burden-High Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Tumor Mutational Burden-High Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -12277,7 +12387,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-158 (NCT02628067)",
           "extractedBy": "regex",
@@ -12297,7 +12407,7 @@
               "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -12308,7 +12418,7 @@
               "indication": "Cervical Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -12319,7 +12429,7 @@
               "indication": "Endometrial Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Endometrial Carcinoma)",
                 "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -12330,7 +12440,7 @@
               "indication": "Tumor Mutational Burden-High Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Tumor Mutational Burden-High Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -12343,7 +12453,7 @@
               "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -12354,18 +12464,28 @@
               "indication": "Cervical Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "The label refers to this trial as \"KEYNOTE-158\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-34",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s034.pdf",
+                  "sourceLabel": "FDA review (SUPPL-34): names the trial 54 times, 4× as often as any other trial",
+                  "quote": "The recommendation for the approval of pembrolizumab per 21 CFR Part 601.41 1 is based on the efficacy and safety data from Cohort E of the phase 2, non-randomized, open-label, multicenter, single cohort basket trial, KEYNOTE-158 (KN-158).",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             },
             {
               "indication": "Endometrial Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Endometrial Carcinoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -12376,7 +12496,7 @@
               "indication": "Tumor Mutational Burden-High Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Tumor Mutational Burden-High Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -12384,7 +12504,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -12582,7 +12702,7 @@
           "indication": "Non-Small Cell Lung Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-189\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -12785,7 +12905,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-189 (NCT02578680)",
           "extractedBy": "regex",
@@ -12805,7 +12925,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-189\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -12818,7 +12938,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -12826,7 +12946,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -12969,7 +13089,7 @@
           "indication": "Urothelial Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
             "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -13080,7 +13200,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-057 (NCT02625961)",
           "extractedBy": "regex",
@@ -13100,7 +13220,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -13113,7 +13233,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -13121,7 +13241,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -13949,7 +14069,7 @@
           "indication": "Classical Hodgkin Lymphoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Classical Hodgkin Lymphoma)",
             "quote": "Trial identifier appears within the Classical Hodgkin Lymphoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -14051,7 +14171,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-204 (NCT02684292)",
           "extractedBy": "regex",
@@ -14071,7 +14191,7 @@
               "indication": "Classical Hodgkin Lymphoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Classical Hodgkin Lymphoma)",
                 "quote": "Trial identifier appears within the Classical Hodgkin Lymphoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -14084,7 +14204,7 @@
               "indication": "Classical Hodgkin Lymphoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Classical Hodgkin Lymphoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -14092,7 +14212,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -14368,7 +14488,7 @@
           "indication": "Non-Small Cell Lung Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
             "quote": "The label refers to this trial as \"KEYNOTE-407\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -14571,7 +14691,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-407 (NCT02775435)",
           "extractedBy": "regex",
@@ -14591,7 +14711,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "quote": "The label refers to this trial as \"KEYNOTE-407\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -14604,7 +14724,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -14612,7 +14732,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -14859,7 +14979,7 @@
           "indication": "Triple-Negative Breast Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
             "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -15346,7 +15466,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-355 (NCT02819518)",
           "extractedBy": "regex",
@@ -15366,7 +15486,7 @@
               "indication": "Triple-Negative Breast Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
                 "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -15379,7 +15499,7 @@
               "indication": "Triple-Negative Breast Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -15387,7 +15507,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -15866,7 +15986,7 @@
           "indication": "Urothelial Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
             "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -16190,7 +16310,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-361 (NCT02853305)",
           "extractedBy": "regex",
@@ -16210,7 +16330,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -16223,7 +16343,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -16231,7 +16351,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -16248,7 +16368,7 @@
           "indication": "Renal Cell Carcinoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
             "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -16460,7 +16580,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-426 (NCT02853331)",
           "extractedBy": "regex",
@@ -16480,7 +16600,7 @@
               "indication": "Renal Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
                 "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -16493,7 +16613,7 @@
               "indication": "Renal Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -16501,7 +16621,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -16810,7 +16930,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-581 (NCT02811861)",
           "extractedBy": "regex",
@@ -17824,7 +17944,7 @@
           "indication": "Triple-Negative Breast Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
             "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -18037,7 +18157,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-522 (NCT03036488)",
           "extractedBy": "regex",
@@ -18049,36 +18169,6 @@
           "field": "labelName",
           "newValue": "KEYNOTE-522",
           "detectedAt": "2026-10-14T17:41:13.074Z"
-        },
-        {
-          "field": "roles",
-          "previousValue": [
-            {
-              "indication": "Triple-Negative Breast Cancer",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
-                "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional.",
-                "extractedBy": "rule",
-                "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Triple-Negative Breast Cancer",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional."
-              }
-            }
-          ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
         },
         {
           "field": "arms",
@@ -18246,6 +18336,36 @@
             }
           ],
           "detectedAt": "2026-10-28T19:34:08.758Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Triple-Negative Breast Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
+                "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Triple-Negative Breast Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -18534,7 +18654,7 @@
           "indication": "Hepatocellular Carcinoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Hepatocellular Carcinoma)",
             "quote": "Trial identifier appears within the Hepatocellular Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -18694,7 +18814,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-394 (NCT03062358)",
           "extractedBy": "regex",
@@ -18714,7 +18834,7 @@
               "indication": "Hepatocellular Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Hepatocellular Carcinoma)",
                 "quote": "Trial identifier appears within the Hepatocellular Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -18727,7 +18847,7 @@
               "indication": "Hepatocellular Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Hepatocellular Carcinoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -18735,7 +18855,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -19067,7 +19187,7 @@
           "indication": "Renal Cell Carcinoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
             "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -19230,7 +19350,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-564 (NCT03142334)",
           "extractedBy": "regex",
@@ -19250,7 +19370,7 @@
               "indication": "Renal Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
                 "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -19263,7 +19383,7 @@
               "indication": "Renal Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -19271,7 +19391,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -19547,7 +19667,7 @@
           "indication": "Esophageal Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
             "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -19994,7 +20114,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-590 (NCT03189719)",
           "extractedBy": "regex",
@@ -20014,7 +20134,7 @@
               "indication": "Esophageal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
                 "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -20027,7 +20147,7 @@
               "indication": "Esophageal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -20035,7 +20155,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -20808,7 +20928,7 @@
           "indication": "Cutaneous Squamous Cell Carcinoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Cutaneous Squamous Cell Carcinoma)",
             "quote": "Trial identifier appears within the Cutaneous Squamous Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -20953,7 +21073,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-629 (NCT03284424)",
           "extractedBy": "regex",
@@ -20973,7 +21093,7 @@
               "indication": "Cutaneous Squamous Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Cutaneous Squamous Cell Carcinoma)",
                 "quote": "Trial identifier appears within the Cutaneous Squamous Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -20986,7 +21106,7 @@
               "indication": "Cutaneous Squamous Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Cutaneous Squamous Cell Carcinoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -20994,7 +21114,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -22569,7 +22689,7 @@
           "indication": "Non-Small Cell Lung Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
             "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -22775,7 +22895,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-671 (NCT03425643)",
           "extractedBy": "regex",
@@ -22795,7 +22915,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -22808,7 +22928,7 @@
               "indication": "Non-Small Cell Lung Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -22816,7 +22936,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -23375,7 +23495,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-775 (NCT03517449)",
           "extractedBy": "regex",
@@ -24062,7 +24182,7 @@
           "indication": "Melanoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
             "quote": "Trial identifier appears within the Melanoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -24219,7 +24339,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-716 (NCT03553836)",
           "extractedBy": "regex",
@@ -24239,7 +24359,7 @@
               "indication": "Melanoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
                 "quote": "Trial identifier appears within the Melanoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -24252,7 +24372,7 @@
               "indication": "Melanoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -24260,7 +24380,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -24489,11 +24609,21 @@
           "indication": "Gastric Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Gastric Cancer)",
             "quote": "Trial identifier appears within the Gastric Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-97",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2024/125514Orig1s097.pdf",
+              "sourceLabel": "FDA review (SUPPL-97): names the trial 100 times, 7× as often as any other trial",
+              "quote": "Mean peak and trough concentrations in the KEYNOTE-811 study fell within the range presented for the reference model developed by the Applicant based on data from 2993 patients with other cancer indications.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -24702,7 +24832,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-811 (NCT03615326)",
           "extractedBy": "regex",
@@ -24722,7 +24852,7 @@
               "indication": "Gastric Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Gastric Cancer)",
                 "quote": "Trial identifier appears within the Gastric Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -24735,15 +24865,25 @@
               "indication": "Gastric Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Gastric Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Gastric Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-97",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2024/125514Orig1s097.pdf",
+                  "sourceLabel": "FDA review (SUPPL-97): names the trial 100 times, 7× as often as any other trial",
+                  "quote": "Mean peak and trough concentrations in the KEYNOTE-811 study fell within the range presented for the reference model developed by the Applicant based on data from 2993 patients with other cancer indications.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -24982,7 +25122,7 @@
           "indication": "Cervical Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
             "quote": "Trial identifier appears within the Cervical Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -25374,7 +25514,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-826 (NCT03635567)",
           "extractedBy": "regex",
@@ -25394,7 +25534,7 @@
               "indication": "Cervical Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
                 "quote": "Trial identifier appears within the Cervical Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -25407,7 +25547,7 @@
               "indication": "Cervical Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -25415,7 +25555,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -25527,7 +25667,7 @@
           "indication": "Gastric Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Gastric Cancer)",
             "quote": "Trial identifier appears within the Gastric Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -25783,7 +25923,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-859 (NCT03675737)",
           "extractedBy": "regex",
@@ -25803,7 +25943,7 @@
               "indication": "Gastric Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Gastric Cancer)",
                 "quote": "Trial identifier appears within the Gastric Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -25816,7 +25956,7 @@
               "indication": "Gastric Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Gastric Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -25824,7 +25964,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -26096,7 +26236,7 @@
           "indication": "Head and Neck Squamous Cell Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
             "quote": "Trial identifier appears within the Head and Neck Squamous Cell Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -26417,10 +26557,12 @@
           "field": "roles",
           "previousValue": [
             {
-              "role": "SUPPORTIVE",
+              "indication": "Head and Neck Squamous Cell Cancer",
+              "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
+                "quote": "Trial identifier appears within the Head and Neck Squamous Cell Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
               }
@@ -26431,7 +26573,7 @@
               "indication": "Head and Neck Squamous Cell Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -26439,7 +26581,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -27537,7 +27679,7 @@
           "indication": "Merkel Cell Carcinoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Merkel Cell Carcinoma)",
             "quote": "Trial identifier appears within the Merkel Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -27666,7 +27808,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-913 (NCT03783078)",
           "extractedBy": "regex",
@@ -27686,7 +27828,7 @@
               "indication": "Merkel Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Merkel Cell Carcinoma)",
                 "quote": "Trial identifier appears within the Merkel Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -27699,7 +27841,7 @@
               "indication": "Merkel Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Merkel Cell Carcinoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -27707,7 +27849,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -29899,7 +30041,7 @@
           "indication": "Urothelial Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
             "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -30072,7 +30214,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-905 (NCT03924895)",
           "extractedBy": "regex",
@@ -30092,7 +30234,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -30105,7 +30247,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -30113,7 +30255,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -30338,7 +30480,7 @@
           "indication": "Biliary Tract Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Biliary Tract Cancer)",
             "quote": "Trial identifier appears within the Biliary Tract Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -30519,6 +30661,16 @@
                 "quote": "Trial identifier appears within the Biliary Tract Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-144",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s144ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-144)",
+                  "quote": "This Prior Approval supplemental biologics license application provides updates to the Keytruda (pembrolizumab) Prescribing Information (PI), and the Medication Guide based upon the final analysis from KEYNOTE-966, entitled, “A Phase 3 Randomized, Double Blind Study Of Pembrolizumab Plus Gemcitabine/Cisplatin Versus Placebo Plus Gemcitabine/Cisplatin as First-Line Therapy in Participants With Advanced and/or Unresectable Biliary Tract Carcinoma”, adding the following new indication: KEYTRUDA, i…",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
@@ -30527,7 +30679,7 @@
               "indication": "Biliary Tract Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Biliary Tract Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -30545,7 +30697,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T20:12:58.709Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -32612,7 +32764,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-A39 (NCT04223856)",
           "extractedBy": "regex",
@@ -32738,7 +32890,7 @@
           "indication": "Cervical Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
             "quote": "Trial identifier appears within the Cervical Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -32954,7 +33106,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-A18 (NCT04221945)",
           "extractedBy": "regex",
@@ -32974,7 +33126,7 @@
               "indication": "Cervical Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
                 "quote": "Trial identifier appears within the Cervical Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -32987,7 +33139,7 @@
               "indication": "Cervical Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Cervical Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -32995,7 +33147,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -35419,7 +35571,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-B21 (NCT04634877)",
           "extractedBy": "regex",
@@ -35583,7 +35735,7 @@
           "indication": "Renal Cell Carcinoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
             "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -35723,7 +35875,7 @@
               "indication": "Renal Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
                 "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -35736,7 +35888,7 @@
               "indication": "Renal Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -35744,7 +35896,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -36330,7 +36482,7 @@
           "indication": "Urothelial Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
             "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -36450,7 +36602,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -36463,7 +36615,7 @@
               "indication": "Urothelial Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -36471,7 +36623,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T19:34:08.758Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -38631,7 +38783,7 @@
           "indication": "Ovarian Cancer",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
             "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -38849,7 +39001,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "KEYNOTE-B96 (NCT05116189)",
           "extractedBy": "regex",
@@ -38874,6 +39026,16 @@
                 "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-186",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
@@ -38882,7 +39044,7 @@
               "indication": "Ovarian Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -38900,7 +39062,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T20:12:58.709Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -39251,7 +39413,7 @@
           "indication": "Renal Cell Carcinoma",
           "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
             "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
             "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
@@ -39370,7 +39532,7 @@
           "verified": false
         },
         "labelName": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
           "sourceLabel": "Approved label, section 14",
           "quote": "LITESPARK-022 (NCT05239728)",
           "extractedBy": "regex",
@@ -39395,6 +39557,16 @@
                 "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-192",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s192ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-192)",
+                  "quote": "This Prior Approval sBLA provides for the addition of the following indication based on Interim Analysis 1 (IA1) of MK-6482-022/LITESPARK-022, entitled, “A Multicenter, Double-blind, Randomized Phase 3 Study to Compare the Efficacy and Safety of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab, in the Adjuvant Treatment of Clear Cell Renal Cell Carcinoma (ccRCC) Post Nephrectomy (MK-6482-022)”: Pembrolizumab, in combination with belzutifan, is indicated for th…",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
@@ -39403,7 +39575,7 @@
               "indication": "Renal Cell Carcinoma",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
                 "extractedBy": "rule",
                 "verified": false,
@@ -39421,7 +39593,7 @@
               }
             }
           ],
-          "detectedAt": "2026-10-28T20:12:58.709Z"
+          "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
     },
@@ -52418,13 +52590,13 @@
     {
       "id": "doc-28",
       "label": "Label (SUPPL-191)",
-      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
       "type": "fda_label"
     },
     {
       "id": "doc-29",
       "label": "Letter (SUPPL-191)",
-      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s191ltr.pdf",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514s191ltrCorrected.pdf",
       "type": "fda_review"
     },
     {
@@ -53838,5 +54010,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-28T20:12:58.709Z"
+  "lastIngestedAt": "2026-10-29T05:36:27.832Z"
 }
