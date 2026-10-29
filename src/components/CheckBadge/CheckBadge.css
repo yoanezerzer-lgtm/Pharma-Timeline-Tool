@@ -1,0 +1,20 @@
+.check-badge {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.check-badge--unchecked,
+.check-badge--partial {
+  background: var(--unverified-bg);
+  color: var(--unverified-fg);
+}
+
+.check-badge--checked {
+  background: var(--verified-bg);
+  color: var(--verified-fg);
+}

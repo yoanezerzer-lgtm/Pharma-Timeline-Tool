@@ -3,7 +3,6 @@ import {
   getIndication,
   indicationLabel,
   trialsForIndication,
-  isFullyUnverified,
   isMeaningfulMilestone,
   primaryCompletionToApprovalMonths,
 } from '../lib/drugs.js';
@@ -13,7 +12,8 @@ import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
-import { useDrug } from '../lib/catalog.js';
+import { drugIndex, useDrug } from '../lib/catalog.js';
+import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
 import type { Drug, Milestone, Source } from '../schema/index.js';
 import './IndicationPage.css';
 
@@ -70,7 +70,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
     );
   }
 
-  const unverified = isFullyUnverified(drug);
+  const checked = drugIndex.find((d) => d.slug === drug.slug)?.checked ?? { confirmed: 0, total: 0 };
   // The supplement that added this indication (dated from the labels at
   // ingest) is shown as this page's approval; other indications' efficacy
   // supplements and administrative ones stay hidden.
@@ -185,13 +185,10 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         </dl>
       </header>
 
-      {unverified && (
-        <p className="drug__status" role="status">
-          <span className="drug__status-badge">Unverified</span>
-          Extracted automatically and not yet checked against the source documents.{' '}
-          <a href={reviewDrugHref(drug.slug)}>Review it</a>
-        </p>
-      )}
+      <p className="drug__status" role="status">
+        <CheckBadge stats={checked} />
+        {checkSentence(checked)} <a href={reviewDrugHref(drug.slug)}>Review it</a>
+      </p>
 
       {scopedTrials.length === 0 ? (
         <div className="drug__no-trials">

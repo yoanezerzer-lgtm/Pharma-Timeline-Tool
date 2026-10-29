@@ -64,7 +64,9 @@ Note every **error** for step 7. Warnings go in the summary as they are.
 npm run verify -- queue --date "$DATE"
 ```
 
-This writes `.verify/queue.json`. Each claim asks whether one trial was part
+This writes `.verify/queue.json`. It takes drugs with nothing confirmed yet
+first, a whole drug at a time, so the site's "Not yet checked" labels clear
+drug by drug. Each claim asks whether one trial was part
 of the evidence for one approved indication. It comes with the trial's
 registry facts and the passages where the FDA documents name the trial.
 `inIndicationSpan: true` marks a passage inside the label's section 14

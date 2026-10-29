@@ -99,15 +99,6 @@
   color: var(--text-3);
 }
 
-.drug__status-badge {
-  padding: 0.1rem 0.5rem;
-  border-radius: 999px;
-  background: var(--unverified-bg);
-  color: var(--unverified-fg);
-  font-size: 11px;
-  font-weight: 600;
-}
-
 .drug__source-group {
   display: grid;
   grid-template-columns: 12rem 1fr;
