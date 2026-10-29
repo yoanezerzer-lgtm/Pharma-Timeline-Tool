@@ -491,7 +491,8 @@ function buildDrugRecord(
   const completeFor = new Set(
     indications.filter((i) => historyComplete(i.approvals?.[0]?.date.value, letters, fda.milestones)).map((i) => i.name)
   );
-  trials = linkRolesToApprovals(trials, history, letters, completeFor);
+  const reviews = docs.filter((d) => /review/i.test(d.type));
+  trials = linkRolesToApprovals(trials, history, letters, completeFor, reviews);
 
   return {
     slug: spec.slug,
