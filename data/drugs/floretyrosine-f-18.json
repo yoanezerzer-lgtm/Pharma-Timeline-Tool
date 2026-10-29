@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2026-09-11",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Specialty Medicine",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218592Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Specialty Medicine Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Telix Pharmaceuticals US, Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured for: Telix Pharmaceuticals US, Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -94,5 +114,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T06:00:06.277Z"
+  "lastIngestedAt": "2026-10-29T18:00:36.443Z"
 }

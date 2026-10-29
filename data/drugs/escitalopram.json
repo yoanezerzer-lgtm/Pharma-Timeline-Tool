@@ -100,6 +100,26 @@
       "originalApprovalDate": {
         "value": "2002-08-14",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Neuroscience",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/020822Orig1s055; 021365Orig1s041; 021323Orig1s058; 022567Orig1s025; 204168Orig1s012ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-58), signature",
+          "quote": "Division of Psychiatry Office of Neuroscience Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Abbvie Inc.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021323s058lbl.pdf",
+          "sourceLabel": "Label (SUPPL-58)",
+          "quote": "Distributed by: Abbvie Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -578,10 +598,23 @@
       "phase": "PHASE4",
       "roles": [
         {
-          "role": "POST_MARKETING",
+          "indication": "Major Depressive Disorder",
+          "role": "SUPPORTIVE",
           "provenance": {
-            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/021365s038,021323s053lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Major Depressive Disorder)",
+            "quote": "Named within the Major Depressive Disorder section 14 span, but a Phase 4 (post-approval) study, so supporting rather than pivotal.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "indication": "Generalized Anxiety Disorder",
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/021365s038,021323s053lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Generalized Anxiety Disorder)",
+            "quote": "Named within the Generalized Anxiety Disorder section 14 span, but a Phase 4 (post-approval) study, so supporting rather than pivotal.",
             "extractedBy": "rule",
             "verified": false
           }
@@ -675,7 +708,47 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "role": "POST_MARKETING",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/021323_S003&021365_S004_LEXAPRO_TABS.pdf",
+                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Major Depressive Disorder",
+              "role": "SUPPORTIVE",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/021365s038,021323s053lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Major Depressive Disorder)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Named within the Major Depressive Disorder section 14 span, but a Phase 4 (post-approval) study, so supporting rather than pivotal."
+              }
+            },
+            {
+              "indication": "Generalized Anxiety Disorder",
+              "role": "SUPPORTIVE",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/021365s038,021323s053lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Generalized Anxiety Disorder)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Named within the Generalized Anxiety Disorder section 14 span, but a Phase 4 (post-approval) study, so supporting rather than pivotal."
+              }
+            }
+          ],
+          "detectedAt": "2026-10-29T18:00:34.526Z"
+        }
+      ]
     },
     {
       "id": "bold",
@@ -2357,7 +2430,13 @@
       "label": "Letter (SUPPL-7)",
       "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/21323se1-003,se8-007,21365se8-001,se1-004ltr.pdf",
       "type": "fda_review"
+    },
+    {
+      "id": "doc-55",
+      "label": "Review (SUPPL-30)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/021323Orig1S030_s031.pdf",
+      "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-28T20:12:59.639Z"
+  "lastIngestedAt": "2026-10-29T18:00:34.526Z"
 }

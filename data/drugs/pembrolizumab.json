@@ -1402,10 +1402,179 @@
       "originalApprovalDate": {
         "value": "2014-09-04",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Oncologic Diseases",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s195ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-195), signature",
+          "quote": "Office of Oncologic Diseases Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Merck Sharp & Dohme LLC",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s195lbl.pdf",
+          "sourceLabel": "Label (SUPPL-195)",
+          "quote": "Manufactured for: Merck Sharp & Dohme LLC",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
   "trials": [
+    {
+      "id": "0067",
+      "nctId": "NCT01040637",
+      "protocolNumber": "0067",
+      "title": "A Phase 1/Phase 2, Randomized, Double-Blind, Multiple Ascending Dose Study to Assess the Safety, Pharmacokinetics, and Effect on Opioid Analgesia of TD-1211 Administered Orally to Healthy Volunteers and to Assess the Safety, Pharmacokinetics, and Effect on Bowel Movements in Subjects With Opioid-Induced Constipation",
+      "briefTitle": "A Multiple Dose Study of TD-1211 in Healthy Volunteers and Patients With Opioid-Induced Constipation",
+      "phase": "PHASE1_2",
+      "roles": [
+        {
+          "indication": "Head and Neck Squamous Cell Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Head and Neck Squamous Cell Cancer)",
+            "quote": "Trial identifier appears within the Head and Neck Squamous Cell Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Glycyx Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2010-01-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2010-10-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2010-10-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 102,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "TD-1211 dose level 1",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "TD-1211 dose level 2",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "TD-1211 dose level 3",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "TD-1211 dose level 4",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "TD-1211 OIC dose level 1",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "TD-1211 OIC dose level 2",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "TD-1211 OIC dose level 3",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "TD-1211 OIC dose level 4",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "TD-1211 OIC dose level 5",
+          "type": "EXPERIMENTAL",
+          "description": "Ascending doses"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Ascending doses"
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety and tolerability in healthy subjects and activity in subjects with opioid-induced constipation"
+      ],
+      "secondaryEndpoints": [
+        "Evaluation of the multiple dose pharmacokinetics of TD-1211 following oral administration"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01040637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01040637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01040637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01040637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01040637",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
     {
       "id": "keynote-001",
       "nctId": "NCT01295827",
@@ -1950,6 +2119,1179 @@
           "page": 17,
           "quote": "nrolled 912 patients with melanoma and 682 patients with NSCLC, and one single-arm trial (KEYNOTE-001), which enrolled 655 patients with melanoma and 550 patients with NSCLC. In addition to t",
           "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0074",
+      "nctId": "NCT01333540",
+      "protocolNumber": "0074",
+      "title": "A Phase 2, Randomized, Double-Blind, Placebo-Controlled, Dose-Escalation Study to Assess the Safety, Tolerability, and Clinical Activity of TD-1211 in Subjects With Opioid-Induced Constipation",
+      "briefTitle": "A Study to Assess the Safety, Tolerability and Clinical Activity of TD-1211 in Patients With Opioid-Induced Constipation",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Glycyx Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2011-05-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2012-05-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2012-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 69,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Active",
+          "type": "EXPERIMENTAL",
+          "description": "Escalating Doses of TD-1211"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Frequency and Severity of Treatment Emergent Adverse Events in Subjects with Opioid-Induced Constipation Treated with TD-1211"
+      ],
+      "secondaryEndpoints": [
+        "Evaluation of clinical activity measured as frequency of bowel-movements at different dose levels"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01333540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01333540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01333540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01333540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01333540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0083",
+      "nctId": "NCT01655771",
+      "protocolNumber": "0083",
+      "title": "A Phase 1, Open-Label, Single-Dose, Parallel-Group Study to Assess the Safety, Tolerability, and Pharmacokinetics of TD-1211 Administered Orally to Elderly and Young Healthy Subjects",
+      "briefTitle": "TD-1211 Single-Dose Study in Elderly and Young Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [
+        {
+          "indication": "Ovarian Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
+            "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-186",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Glycyx Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2012-08-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2013-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2013-03-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 47,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "85 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Elderly",
+          "type": "EXPERIMENTAL",
+          "description": "TD-1211 Dose 1"
+        },
+        {
+          "label": "Younger",
+          "type": "EXPERIMENTAL",
+          "description": "TD-1211 Dose 2"
+        }
+      ],
+      "primaryEndpoints": [
+        "Cmax",
+        "AUCt",
+        "AUCinf"
+      ],
+      "secondaryEndpoints": [
+        "Number of patients with treatment-emergent adverse events",
+        "Number patients with abnormal vital sign measurements",
+        "Number of patients with abnormal clinical laboratory results",
+        "Number of patients with abnormal corrected QTc interval"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01655771",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01655771",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01655771",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01655771",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01655771",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "pd-1",
+      "nctId": "NCT01621490",
+      "protocolNumber": "CA209-038",
+      "acronym": "PD-1",
+      "title": "An Exploratory Study of the Biologic Effects of Nivolumab and Ipilimumab Monotherapy and Nivolumab in Combination With Ipilimumab Treatment in Subjects With Advanced Melanoma (Unresectable or Metastatic)",
+      "briefTitle": "PH 1 Biomarker Study of Nivolumab and Ipilimumab and Nivolumab in Combination With Ipilimumab in Advanced Melanoma",
+      "phase": "PHASE1",
+      "roles": [
+        {
+          "indication": "Non-Small Cell Lung Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
+            "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer)",
+            "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "indication": "Tumor Mutational Burden-High Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Tumor Mutational Burden-High Cancer)",
+            "quote": "Trial identifier appears within the Tumor Mutational Burden-High Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "indication": "Triple-Negative Breast Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
+            "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "indication": "Ovarian Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
+            "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-186",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Bristol-Myers Squibb",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2012-09-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-09-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-10-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 170,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1-Cohort 1 and 2: Nivolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Nivolumab 3 mg/kg solution intravenously Every 2 weeks, Up to 2 years depending on response"
+        },
+        {
+          "label": "Part 2-Arm A: Nivolumab + Ipilimumab",
+          "type": "EXPERIMENTAL",
+          "description": "Nivolumab 1 mg/kg combined with Ipilimumab 3 mg/kg solution intravenously and then Nivolumab 3 mg/kg solution intravenously as specified"
+        },
+        {
+          "label": "Part 3-Arm A: Nivolumab + Ipilimumab",
+          "type": "EXPERIMENTAL",
+          "description": "Nivolumab 1 mg/kg combined with Ipilimumab 3 mg/kg solution intravenously and then Nivolumab 3 mg/kg solution intravenously as specified"
+        },
+        {
+          "label": "Part 3-Arm B: Nivolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Nivolumab 3 mg/kg solution intravenously as specified"
+        },
+        {
+          "label": "Part 4-Arm D: Nivolumab + Ipilimumab",
+          "type": "EXPERIMENTAL",
+          "description": "Nivolumab 1 mg/kg combined with Ipilimumab 3 mg/kg solution intravenously and then Nivolumab 3 mg/kg solution intravenously as specified"
+        },
+        {
+          "label": "Part 4-Arm E: Nivolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Nivolumab 3 mg/kg solution intravenously as specified"
+        }
+      ],
+      "primaryEndpoints": [
+        "Median Change From Baseline to Week 7, of Interferon (IFN) and Interferon Gamma (IFN-gamma) Inducible Factors",
+        "Tumor Infiltrating Lymphocytes (TILs) as Measured by Medians in Percent Positive CD8 and Positive CD4 at Baseline and On-treatment Biopsy, Both Using the Mosaic Singleplex IHC Assay"
+      ],
+      "secondaryEndpoints": [
+        "Frequency of Adverse Events or Death",
+        "Frequency of AEs Leading to Discontinuation of Study Drug and SAEs",
+        "Number of Laboratory Abnormalities in Specific Liver Tests",
+        "Number of Laboratory Abnormalities in Specific Thyroid Tests",
+        "Objective Response Rate (ORR)",
+        "Median Duration of Response (mDOR)",
+        "Median Time to Response (mTTR)",
+        "Progression Free Survival (PFS)",
+        "Immunogenicity of Nivolumab and Nivolumab in Combination With Ipilimumab as Measured by the Number of Serum Anti-drug Antibody (ADA) Positive Participants and the Number of Neutralizing ADA Positive Participants",
+        "Objective Response Rate (ORR) by PD-L1 Expression",
+        "Duration of Response (DOR) by PD-L1 Expression",
+        "Progression Free Survival (PFS) by PD-L1 Expression",
+        "Overall Survival Rate (OSR)",
+        "Percent Probability for Progression Free Survival Rate (PFSR)"
+      ],
+      "postedResults": [
+        {
+          "title": "Median Change From Baseline to Week 7, of Interferon (IFN) and Interferon Gamma (IFN-gamma) Inducible Factors",
+          "timeFrame": "From last non-missing value prior to first dose to week 7 day 1",
+          "paramType": "MEDIAN",
+          "unitOfMeasure": "pg/mL",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "N3 60M Naive"
+            },
+            {
+              "id": "OG001",
+              "title": "N3 60M PROG"
+            },
+            {
+              "id": "OG002",
+              "title": "N1 60M + I3 90M"
+            },
+            {
+              "id": "OG003",
+              "title": "N1 30M + I3 30M Non-BM"
+            },
+            {
+              "id": "OG004",
+              "title": "N3 30M Non-BM"
+            },
+            {
+              "id": "OG005",
+              "title": "N1 30M + I3 30M BM"
+            },
+            {
+              "id": "OG006",
+              "title": "N3 30M BM"
+            },
+            {
+              "id": "OG007",
+              "title": "N1+ I3 Non-BM"
+            },
+            {
+              "id": "OG008",
+              "title": "Naive Nivo Mono"
+            },
+            {
+              "id": "OG009",
+              "title": "All Nivo"
+            },
+            {
+              "id": "OG010",
+              "title": "All Combo"
+            },
+            {
+              "id": "OG011",
+              "title": "Total"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "category": "IFN-gamma Simoa",
+              "value": "0.0130",
+              "spread": "0.1740"
+            },
+            {
+              "groupId": "OG001",
+              "category": "IFN-gamma Simoa",
+              "value": "0.0320",
+              "spread": "0.0817"
+            },
+            {
+              "groupId": "OG002",
+              "category": "IFN-gamma Simoa",
+              "value": "0.2310",
+              "spread": "0.4528"
+            },
+            {
+              "groupId": "OG003",
+              "category": "IFN-gamma Simoa",
+              "value": "0.1600",
+              "spread": "1.2047"
+            },
+            {
+              "groupId": "OG004",
+              "category": "IFN-gamma Simoa",
+              "value": "0.0520",
+              "spread": "0.1207"
+            },
+            {
+              "groupId": "OG005",
+              "category": "IFN-gamma Simoa",
+              "value": "0.0950",
+              "spread": "1.5082"
+            },
+            {
+              "groupId": "OG006",
+              "category": "IFN-gamma Simoa",
+              "value": "0.0375",
+              "spread": "0.1868"
+            },
+            {
+              "groupId": "OG007",
+              "category": "IFN-gamma Simoa",
+              "value": "0.2200",
+              "spread": "0.8198"
+            },
+            {
+              "groupId": "OG008",
+              "category": "IFN-gamma Simoa",
+              "value": "0.0130",
+              "spread": "0.1674"
+            },
+            {
+              "groupId": "OG009",
+              "category": "IFN-gamma Simoa",
+              "value": "0.0240",
+              "spread": "0.1373"
+            },
+            {
+              "groupId": "OG010",
+              "category": "IFN-gamma Simoa",
+              "value": "0.1520",
+              "spread": "1.0023"
+            },
+            {
+              "groupId": "OG011",
+              "category": "IFN-gamma Simoa",
+              "value": "0.0515",
+              "spread": "0.5944"
+            },
+            {
+              "groupId": "OG000",
+              "category": "CXL9 (aka MIG)",
+              "value": "1105.0",
+              "spread": "10467.4"
+            },
+            {
+              "groupId": "OG001",
+              "category": "CXL9 (aka MIG)",
+              "value": "1890.0",
+              "spread": "8706.0"
+            },
+            {
+              "groupId": "OG002",
+              "category": "CXL9 (aka MIG)",
+              "value": "4680.0",
+              "spread": "18096.9"
+            },
+            {
+              "groupId": "OG003",
+              "category": "CXL9 (aka MIG)",
+              "value": "3542.0",
+              "spread": "12133.1"
+            },
+            {
+              "groupId": "OG004",
+              "category": "CXL9 (aka MIG)",
+              "value": "-29.0",
+              "spread": "1684.2"
+            },
+            {
+              "groupId": "OG005",
+              "category": "CXL9 (aka MIG)",
+              "value": "5692.0",
+              "spread": "6796.0"
+            },
+            {
+              "groupId": "OG006",
+              "category": "CXL9 (aka MIG)",
+              "value": "3610.0",
+              "spread": "2197.4"
+            },
+            {
+              "groupId": "OG007",
+              "category": "CXL9 (aka MIG)",
+              "value": "458.5",
+              "spread": "1651.0"
+            },
+            {
+              "groupId": "OG008",
+              "category": "CXL9 (aka MIG)",
+              "value": "1056.5",
+              "spread": "9167.8"
+            },
+            {
+              "groupId": "OG009",
+              "category": "CXL9 (aka MIG)",
+              "value": "1235.0",
+              "spread": "8984.2"
+            },
+            {
+              "groupId": "OG010",
+              "category": "CXL9 (aka MIG)",
+              "value": "4680.0",
+              "spread": "14792.5"
+            },
+            {
+              "groupId": "OG011",
+              "category": "CXL9 (aka MIG)",
+              "value": "2027.0",
+              "spread": "11491.9"
+            },
+            {
+              "groupId": "OG000",
+              "category": "CXL10 (aka IP10)",
+              "value": "184.0",
+              "spread": "514.1"
+            },
+            {
+              "groupId": "OG001",
+              "category": "CXL10 (aka IP10)",
+              "value": "160.0",
+              "spread": "539.9"
+            },
+            {
+              "groupId": "OG002",
+              "category": "CXL10 (aka IP10)",
+              "value": "684.0",
+              "spread": "2563.1"
+            },
+            {
+              "groupId": "OG003",
+              "category": "CXL10 (aka IP10)",
+              "value": "934.5",
+              "spread": "2842.0"
+            },
+            {
+              "groupId": "OG004",
+              "category": "CXL10 (aka IP10)",
+              "value": "26.0",
+              "spread": "172.7"
+            },
+            {
+              "groupId": "OG005",
+              "category": "CXL10 (aka IP10)",
+              "value": "514.0",
+              "spread": "612.3"
+            },
+            {
+              "groupId": "OG006",
+              "category": "CXL10 (aka IP10)",
+              "value": "318.0",
+              "spread": "354.0"
+            },
+            {
+              "groupId": "OG007",
+              "category": "CXL10 (aka IP10)",
+              "value": "695.0",
+              "spread": "2627.7"
+            },
+            {
+              "groupId": "OG008",
+              "category": "CXL10 (aka IP10)",
+              "value": "185.0",
+              "spread": "474.6"
+            },
+            {
+              "groupId": "OG009",
+              "category": "CXL10 (aka IP10)",
+              "value": "184.0",
+              "spread": "500.7"
+            },
+            {
+              "groupId": "OG010",
+              "category": "CXL10 (aka IP10)",
+              "value": "684.0",
+              "spread": "2450.6"
+            },
+            {
+              "groupId": "OG011",
+              "category": "CXL10 (aka IP10)",
+              "value": "234.5",
+              "spread": "1566.3"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Tumor Infiltrating Lymphocytes (TILs) as Measured by Medians in Percent Positive CD8 and Positive CD4 at Baseline and On-treatment Biopsy, Both Using the Mosaic Singleplex IHC Assay",
+          "timeFrame": "From last non-missing value prior to first dose to week 4 day 1",
+          "paramType": "MEDIAN",
+          "unitOfMeasure": "Percentage of positive cells",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "N3 60M Naive"
+            },
+            {
+              "id": "OG001",
+              "title": "N3 60M PROG"
+            },
+            {
+              "id": "OG002",
+              "title": "N1 60M + I3 90M W2"
+            },
+            {
+              "id": "OG003",
+              "title": "N1 60M + I3 90M W4"
+            },
+            {
+              "id": "OG004",
+              "title": "N1 30M + I3 30M Non-BM"
+            },
+            {
+              "id": "OG005",
+              "title": "N3 30M Non-BM"
+            },
+            {
+              "id": "OG006",
+              "title": "N3 30M + I3 30M BM"
+            },
+            {
+              "id": "OG007",
+              "title": "N3 30M BM"
+            },
+            {
+              "id": "OG008",
+              "title": "Nivo Mono"
+            },
+            {
+              "id": "OG009",
+              "title": "Nivo Mono Reduced Infusion"
+            },
+            {
+              "id": "OG010",
+              "title": "Week 2 Biopsy Combo"
+            },
+            {
+              "id": "OG011",
+              "title": "Week 2 Biopsy Non-BM Combo"
+            },
+            {
+              "id": "OG012",
+              "title": "Naive Nivo Mono Non-BM"
+            },
+            {
+              "id": "OG013",
+              "title": "N1 + I3 Non-BM"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "category": "Percent CD8 Baseline",
+              "value": "3.730",
+              "spread": "10.994"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Percent CD8 Baseline",
+              "value": "7.230",
+              "spread": "10.712"
+            },
+            {
+              "groupId": "OG002",
+              "category": "Percent CD8 Baseline",
+              "value": "3.260",
+              "spread": "9.259"
+            },
+            {
+              "groupId": "OG003",
+              "category": "Percent CD8 Baseline",
+              "value": "11.105",
+              "spread": "9.524"
+            },
+            {
+              "groupId": "OG004",
+              "category": "Percent CD8 Baseline",
+              "value": "4.700",
+              "spread": "9.810"
+            },
+            {
+              "groupId": "OG005",
+              "category": "Percent CD8 Baseline",
+              "value": "5.615",
+              "spread": "12.475"
+            },
+            {
+              "groupId": "OG006",
+              "category": "Percent CD8 Baseline",
+              "value": "18.590",
+              "spread": "8.132"
+            },
+            {
+              "groupId": "OG007",
+              "category": "Percent CD8 Baseline",
+              "value": "6.135",
+              "spread": "5.664"
+            },
+            {
+              "groupId": "OG008",
+              "category": "Percent CD8 Baseline",
+              "value": "6.360",
+              "spread": "10.727"
+            },
+            {
+              "groupId": "OG009",
+              "category": "Percent CD8 Baseline",
+              "value": "5.615",
+              "spread": "11.472"
+            },
+            {
+              "groupId": "OG010",
+              "category": "Percent CD8 Baseline",
+              "value": "4.700",
+              "spread": "9.292"
+            },
+            {
+              "groupId": "OG011",
+              "category": "Percent CD8 Baseline",
+              "value": "4.230",
+              "spread": "9.401"
+            },
+            {
+              "groupId": "OG012",
+              "category": "Percent CD8 Baseline",
+              "value": "5.210",
+              "spread": "11.288"
+            },
+            {
+              "groupId": "OG013",
+              "category": "Percent CD8 Baseline",
+              "value": "4.230",
+              "spread": "9.844"
+            },
+            {
+              "groupId": "OG002",
+              "category": "Percent positive CD8 Week 2",
+              "value": "11.345",
+              "spread": "21.316"
+            },
+            {
+              "groupId": "OG004",
+              "category": "Percent positive CD8 Week 2",
+              "value": "7.970",
+              "spread": "15.132"
+            },
+            {
+              "groupId": "OG005",
+              "category": "Percent positive CD8 Week 2",
+              "value": "10.100",
+              "spread": "10.909"
+            },
+            {
+              "groupId": "OG006",
+              "category": "Percent positive CD8 Week 2",
+              "value": "8.470",
+              "spread": "7.740"
+            },
+            {
+              "groupId": "OG007",
+              "category": "Percent positive CD8 Week 2",
+              "value": "29.735",
+              "spread": "5.254"
+            },
+            {
+              "groupId": "OG009",
+              "category": "Percent positive CD8 Week 2",
+              "value": "10.910",
+              "spread": "12.387"
+            },
+            {
+              "groupId": "OG010",
+              "category": "Percent positive CD8 Week 2",
+              "value": "9.080",
+              "spread": "17.510"
+            },
+            {
+              "groupId": "OG011",
+              "category": "Percent positive CD8 Week 2",
+              "value": "9.125",
+              "spread": "18.654"
+            },
+            {
+              "groupId": "OG012",
+              "category": "Percent positive CD8 Week 2",
+              "value": "10.100",
+              "spread": "10.909"
+            },
+            {
+              "groupId": "OG013",
+              "category": "Percent positive CD8 Week 2",
+              "value": "9.125",
+              "spread": "18.654"
+            },
+            {
+              "groupId": "OG000",
+              "category": "Percent positive CD8 Week 4",
+              "value": "18.435",
+              "spread": "17.108"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Percent positive CD8 Week 4",
+              "value": "7.140",
+              "spread": "25.204"
+            },
+            {
+              "groupId": "OG003",
+              "category": "Percent positive CD8 Week 4",
+              "value": "32.455",
+              "spread": "15.967"
+            },
+            {
+              "groupId": "OG004",
+              "category": "Percent positive CD8 Week 4",
+              "value": "37.465",
+              "spread": "5.706"
+            },
+            {
+              "groupId": "OG008",
+              "category": "Percent positive CD8 Week 4",
+              "value": "15.150",
+              "spread": "21.475"
+            },
+            {
+              "groupId": "OG010",
+              "category": "Percent positive CD8 Week 4",
+              "value": "37.465",
+              "spread": "5.706"
+            },
+            {
+              "groupId": "OG011",
+              "category": "Percent positive CD8 Week 4",
+              "value": "37.465",
+              "spread": "5.706"
+            },
+            {
+              "groupId": "OG012",
+              "category": "Percent positive CD8 Week 4",
+              "value": "18.435",
+              "spread": "17.108"
+            },
+            {
+              "groupId": "OG013",
+              "category": "Percent positive CD8 Week 4",
+              "value": "34.785",
+              "spread": "13.856"
+            },
+            {
+              "groupId": "OG000",
+              "category": "Percent CD4 Baseline",
+              "value": "0.360",
+              "spread": "1.844"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Percent CD4 Baseline",
+              "value": "0.600",
+              "spread": "2.268"
+            },
+            {
+              "groupId": "OG002",
+              "category": "Percent CD4 Baseline",
+              "value": "0.840",
+              "spread": "1.852"
+            },
+            {
+              "groupId": "OG003",
+              "category": "Percent CD4 Baseline",
+              "value": "0.470",
+              "spread": "3.833"
+            },
+            {
+              "groupId": "OG004",
+              "category": "Percent CD4 Baseline",
+              "value": "4.155",
+              "spread": "6.624"
+            },
+            {
+              "groupId": "OG005",
+              "category": "Percent CD4 Baseline",
+              "value": "4.950",
+              "spread": "4.992"
+            },
+            {
+              "groupId": "OG006",
+              "category": "Percent CD4 Baseline",
+              "value": "6.500",
+              "spread": "8.108"
+            },
+            {
+              "groupId": "OG007",
+              "category": "Percent CD4 Baseline",
+              "value": "2.780",
+              "spread": "NA"
+            },
+            {
+              "groupId": "OG008",
+              "category": "Percent CD4 Baseline",
+              "value": "0.375",
+              "spread": "2.057"
+            },
+            {
+              "groupId": "OG009",
+              "category": "Percent CD4 Baseline",
+              "value": "4.600",
+              "spread": "4.807"
+            },
+            {
+              "groupId": "OG010",
+              "category": "Percent CD4 Baseline",
+              "value": "2.750",
+              "spread": "5.833"
+            },
+            {
+              "groupId": "OG011",
+              "category": "Percent CD4 Baseline",
+              "value": "2.610",
+              "spread": "5.607"
+            },
+            {
+              "groupId": "OG012",
+              "category": "Percent CD4 Baseline",
+              "value": "0.870",
+              "spread": "3.727"
+            },
+            {
+              "groupId": "OG013",
+              "category": "Percent CD4 Baseline",
+              "value": "1.510",
+              "spread": "6.023"
+            },
+            {
+              "groupId": "OG002",
+              "category": "Percent positive CD4 Week 2",
+              "value": "4.500",
+              "spread": "10.741"
+            },
+            {
+              "groupId": "OG004",
+              "category": "Percent positive CD4 Week 2",
+              "value": "6.260",
+              "spread": "8.518"
+            },
+            {
+              "groupId": "OG005",
+              "category": "Percent positive CD4 Week 2",
+              "value": "4.210",
+              "spread": "5.029"
+            },
+            {
+              "groupId": "OG006",
+              "category": "Percent positive CD4 Week 2",
+              "value": "6.420",
+              "spread": "14.778"
+            },
+            {
+              "groupId": "OG007",
+              "category": "Percent positive CD4 Week 2",
+              "value": "20.830",
+              "spread": "NA"
+            },
+            {
+              "groupId": "OG009",
+              "category": "Percent positive CD4 Week 2",
+              "value": "6.155",
+              "spread": "6.585"
+            },
+            {
+              "groupId": "OG010",
+              "category": "Percent positive CD4 Week 2",
+              "value": "6.125",
+              "spread": "10.222"
+            },
+            {
+              "groupId": "OG011",
+              "category": "Percent positive CD4 Week 2",
+              "value": "5.990",
+              "spread": "9.602"
+            },
+            {
+              "groupId": "OG012",
+              "category": "Percent positive CD4 Week 2",
+              "value": "4.210",
+              "spread": "5.029"
+            },
+            {
+              "groupId": "OG013",
+              "category": "Percent positive CD4 Week 2",
+              "value": "5.990",
+              "spread": "9.602"
+            },
+            {
+              "groupId": "OG000",
+              "category": "Percent positive CD4 Week 4",
+              "value": "1.585",
+              "spread": "3.071"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Percent positive CD4 Week 4",
+              "value": "1.260",
+              "spread": "4.641"
+            },
+            {
+              "groupId": "OG003",
+              "category": "Percent positive CD4 Week 4",
+              "value": "9.005",
+              "spread": "13.324"
+            },
+            {
+              "groupId": "OG004",
+              "category": "Percent positive CD4 Week 4",
+              "value": "24.520",
+              "spread": "2.659"
+            },
+            {
+              "groupId": "OG008",
+              "category": "Percent positive CD4 Week 4",
+              "value": "1.275",
+              "spread": "3.921"
+            },
+            {
+              "groupId": "OG010",
+              "category": "Percent positive CD4 Week 4",
+              "value": "24.520",
+              "spread": "2.659"
+            },
+            {
+              "groupId": "OG011",
+              "category": "Percent positive CD4 Week 4",
+              "value": "24.520",
+              "spread": "2.659"
+            },
+            {
+              "groupId": "OG012",
+              "category": "Percent positive CD4 Week 4",
+              "value": "1.585",
+              "spread": "3.071"
+            },
+            {
+              "groupId": "OG013",
+              "category": "Percent positive CD4 Week 4",
+              "value": "10.155",
+              "spread": "12.707"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01621490",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01621490",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01621490",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01621490",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01621490",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01621490?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
           "verified": false
         }
       },
@@ -3873,6 +5215,285 @@
           "detectedAt": "2026-10-29T05:36:27.832Z"
         }
       ]
+    },
+    {
+      "id": "j1365-cohort-a-b-and-c",
+      "nctId": "NCT01876511",
+      "protocolNumber": "J1365 (Cohort A, B and C)",
+      "title": "Phase 2 Study of MK-3475 in Patients With Microsatellite Unstable (MSI) Tumors",
+      "briefTitle": "Study of MK-3475 in Patients With Microsatellite Unstable (MSI) Tumors (Cohorts A, B and C)",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2013-09-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2019-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 113,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort A: MSI Positive Colorectal Cancer",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Cohort B: MSI Negative Colorectal Cancer",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Cohort C: MSI Positive Non-Colorectal Cancer",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Immune-related Progression Free Survival (irPFS) at 20 Weeks in MSI Positive and Negative Colorectal Adenocarcinoma Participants Using Immune Related Response Criteria (irRC) During Stages 1 and 2",
+        "Immune-related Objective Response Rate in MSI Positive and Negative Colorectal Adenocarcinoma Participants Using Immune Related Response Criteria (irRC) During Stages 1 and 2",
+        "Immune-related Progression Free Survival (irPFS) at 20 Weeks in MSI Positive Non-colorectal Adenocarcinoma Participants Using Immune Related Response Criteria (irRC) During Stages 1 and 2",
+        "Objective Response Rate in MSI Positive Solid Tumor Malignancies Using Response Evaluation Criteria in Solid Tumors (RECIST 1.1)",
+        "Progression Free Survival (PFS) at 20 Weeks in MSI Positive Solid Tumor Malignancies Using Response Evaluation Criteria in Solid Tumors (RECIST 1.1)"
+      ],
+      "secondaryEndpoints": [
+        "Overall Survival (OS)",
+        "Immune-related Progression Free Survival (irPFS) at 28 Weeks in MSI Positive and Negative Solid Tumor Malignancies Using Immune Related Response Criteria (irRC)",
+        "Objective Response Rate (ORR) in MSI Positive and Negative Solid Tumor Malignancies Using Response Evaluation Criteria in Solid Tumors (RECIST 1.1)",
+        "Number of Patients Experiencing a Grade 3 or Above Treatment-related Toxicity",
+        "Progression Free Survival (PFS) at 28 Weeks in MSI Positive and Negative Solid Tumor Malignancies Using Response Evaluation Criteria in Solid Tumors (RECIST 1.1)",
+        "Disease Control Rate in MSI Positive and Negative Solid Tumor Malignancies Using Response Evaluation Criteria in Solid Tumors (RECIST 1.1)",
+        "Does MSI as a Marker Predict Treatment Response"
+      ],
+      "postedResults": [
+        {
+          "title": "Immune-related Progression Free Survival (irPFS) at 20 Weeks in MSI Positive and Negative Colorectal Adenocarcinoma Participants Using Immune Related Response Criteria (irRC) During Stages 1 and 2",
+          "timeFrame": "20 weeks",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort A: MSI Positive Colorectal Cancer"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort B: MSI Negative Colorectal Cancer"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "88",
+              "lowerLimit": "75",
+              "upperLimit": "100"
+            },
+            {
+              "groupId": "OG001",
+              "value": "12",
+              "lowerLimit": "4",
+              "upperLimit": "36"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Immune-related Objective Response Rate in MSI Positive and Negative Colorectal Adenocarcinoma Participants Using Immune Related Response Criteria (irRC) During Stages 1 and 2",
+          "timeFrame": "28 months",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort A: MSI Positive Colorectal Cancer"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort B: MSI Negative Colorectal Cancer"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "67",
+              "lowerLimit": "45",
+              "upperLimit": "84"
+            },
+            {
+              "groupId": "OG001",
+              "value": "0",
+              "lowerLimit": "0",
+              "upperLimit": "14"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Immune-related Progression Free Survival (irPFS) at 20 Weeks in MSI Positive Non-colorectal Adenocarcinoma Participants Using Immune Related Response Criteria (irRC) During Stages 1 and 2",
+          "timeFrame": "20 weeks",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort C: MSI Positive Non-Colorectal Cancer"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "67",
+              "lowerLimit": "49",
+              "upperLimit": "90"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Objective Response Rate in MSI Positive Solid Tumor Malignancies Using Response Evaluation Criteria in Solid Tumors (RECIST 1.1)",
+          "timeFrame": "28 months",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort A: MSI Positive Colorectal Cancer"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort C: MSI Positive Non-Colorectal Cancer"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "54",
+              "lowerLimit": "37",
+              "upperLimit": "69"
+            },
+            {
+              "groupId": "OG001",
+              "value": "55",
+              "lowerLimit": "40",
+              "upperLimit": "70"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Progression Free Survival (PFS) at 20 Weeks in MSI Positive Solid Tumor Malignancies Using Response Evaluation Criteria in Solid Tumors (RECIST 1.1)",
+          "timeFrame": "20 weeks",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort A: MSI Positive Colorectal Cancer"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort C: MSI Positive Non-Colorectal Cancer"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "75",
+              "lowerLimit": "63",
+              "upperLimit": "90"
+            },
+            {
+              "groupId": "OG001",
+              "value": "68",
+              "lowerLimit": "56",
+              "upperLimit": "83"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01876511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01876511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01876511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01876511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01876511",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01876511?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 92,
+          "quote": "ent Population Number of Patients MSI - H/dMMR Testing Dosage Prior Therapy KEYNOTE - 016 NCT01876511 • prospective, investigator - initiated • 6 sites • patients with CRC and other tumors 28",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
     },
     {
       "id": "3475-013",
@@ -6778,8 +8399,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 73,
-          "quote": "a single agent KEYNOTE - 042 The efficacy of KEYTRUDA was investigated in KEYNOTE - 042 (NCT02220894), a randomized, multicenter, open - label, active - controlled trial conducted in 1274 pa",
+          "page": 24,
+          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
           "extractedBy": "regex",
           "verified": false
         },
@@ -7097,8 +8718,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 106,
-          "quote": "4. 1 3 Merkel Cell Carcinoma The efficacy of KEYTRUDA was investigated in KEYNOTE - 0 17 (NCT02267603), a multicenter, non - randomized, open - label trial that enrolled 50 patients with recu",
+          "page": 80,
+          "quote": ".................................................... 26 : Serious Adverse Events in Study CITN-09/KEYNOTE-017 and Reference Safety Database : Laboratory Abnormalities, Study CITN-09/KEYNO",
           "extractedBy": "regex",
           "verified": false
         },
@@ -11751,8 +13372,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 46,
-          "quote": "or Metastatic Esophageal Cancer Among the 314 patients with esophageal cancer enrolled in KEYNOTE-181 [see Clinical Studies (14.10)] treated with KEYTRUDA, the median duration of exposure to",
+          "page": 99,
+          "quote": "ophageal Cancer KEYNOTE - 181 The efficacy of KEYTRUDA was investigated in KEYNOTE - 181 (NCT02564263), a multicenter, randomized, open - label, active - controlled trial that enrolled 628 pa",
           "extractedBy": "regex",
           "verified": false
         },
@@ -15611,14 +17232,6 @@
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 24,
-          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
-          "extractedBy": "regex",
-          "verified": false
         }
       },
       "changeLog": []
@@ -15860,6 +17473,112 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT02862457",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "initiate",
+      "nctId": "NCT03048474",
+      "protocolNumber": "N16INM",
+      "acronym": "INITIATE",
+      "title": "Ipilimumab and Nivolumab in the Treatment of Malignant Pleural Mesothelioma: a Phase II Study. Acronym: INITIATE",
+      "briefTitle": "Ipilimumab and Nivolumab in the Treatment of Malignant Pleural Mesothelioma",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "The Netherlands Cancer Institute",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-09-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2019-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 36,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Nivolumab and Ipilimumab",
+          "type": "EXPERIMENTAL",
+          "description": "Nivolumab will be administered at a fixed dose of 240 mg every 2 weeks for a maximum period of 2 years. Nivolumab will be given in combination with ipilimumab on week 1, 7, 13 and 19. Ipilimumab will be administered at the dose of 1 mg/Kg."
+        }
+      ],
+      "primaryEndpoints": [
+        "Disease Controle Rate (DCR) at 12 weeks"
+      ],
+      "secondaryEndpoints": [
+        "Safety: the incidence of adverse events, serious adverse events, deaths and laboratory abnormalities.",
+        "Disease Controle Rate (DCR) at 6 months",
+        "Progression Free Survival (PFS)",
+        "Overall Survival (OS)",
+        "Overall Response Rate (ORR)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03048474",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03048474",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03048474",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03048474",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03048474",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -16736,10 +18455,33 @@
       "phase": "PHASE3",
       "roles": [
         {
-          "role": "SUPPORTIVE",
+          "indication": "Renal Cell Carcinoma",
+          "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
+            "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-192",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s192ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-192)",
+              "quote": "This Prior Approval sBLA provides for the addition of the following indication based on Interim Analysis 1 (IA1) of MK-6482-022/LITESPARK-022, entitled, “A Multicenter, Double-blind, Randomized Phase 3 Study to Compare the Efficacy and Safety of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab, in the Adjuvant Treatment of Clear Cell Renal Cell Carcinoma (ccRCC) Post Nephrectomy (MK-6482-022)”: Pembrolizumab, in combination with belzutifan, is indicated for th…",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        },
+        {
+          "indication": "Endometrial Carcinoma",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Endometrial Carcinoma)",
+            "quote": "Trial identifier appears within the Endometrial Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
           }
@@ -16942,6 +18684,55 @@
           "field": "labelName",
           "newValue": "KEYNOTE-581",
           "detectedAt": "2026-10-14T17:41:13.074Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "role": "SUPPORTIVE",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Renal Cell Carcinoma",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-192",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s192ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-192)",
+                  "quote": "This Prior Approval sBLA provides for the addition of the following indication based on Interim Analysis 1 (IA1) of MK-6482-022/LITESPARK-022, entitled, “A Multicenter, Double-blind, Randomized Phase 3 Study to Compare the Efficacy and Safety of Belzutifan (MK-6482) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab, in the Adjuvant Treatment of Clear Cell Renal Cell Carcinoma (ccRCC) Post Nephrectomy (MK-6482-022)”: Pembrolizumab, in combination with belzutifan, is indicated for th…",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            },
+            {
+              "indication": "Endometrial Carcinoma",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Endometrial Carcinoma)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Endometrial Carcinoma section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-10-29T18:01:45.303Z"
         }
       ]
     },
@@ -17363,6 +19154,14 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03933449",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 46,
+          "quote": "or Metastatic Esophageal Cancer Among the 314 patients with esophageal cancer enrolled in KEYNOTE-181 [see Clinical Studies (14.10)] treated with KEYTRUDA, the median duration of exposure to",
+          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -20788,6 +22587,215 @@
       "changeLog": []
     },
     {
+      "id": "ev-103",
+      "nctId": "NCT03288545",
+      "protocolNumber": "SGN22E-002",
+      "acronym": "EV-103",
+      "labelName": "KEYNOTE-869",
+      "title": "A Study of Enfortumab Vedotin (ASG-22CE) as Monotherapy or in Combination With Other Anticancer Therapies for the Treatment of Urothelial Cancer",
+      "briefTitle": "A Study of Enfortumab Vedotin Alone or With Other Therapies for Treatment of Urothelial Cancer",
+      "phase": "PHASE1_2",
+      "roles": [
+        {
+          "indication": "Urothelial Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
+            "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "TERMINATED",
+      "sponsor": "Astellas Pharma Global Development, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-10-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-02-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-02-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 348,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "EV + Pembrolizumab in cisplatin-ineligible 1L and in 2L",
+          "type": "EXPERIMENTAL",
+          "description": "Dose Escalation: Enfortumab vedotin on days 1 and 8 plus pembrolizumab on day 1 every 21 days"
+        },
+        {
+          "label": "Cohort A: EV + Pembrolizumab in cisplatin-ineligible 1L",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 plus pembrolizumab on day 1 every 21 days"
+        },
+        {
+          "label": "Optional Cohort B: Enfortumab Vedotin + Pembrolizumab in 2L",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 plus pembrolizumab on day 1 every 21 days"
+        },
+        {
+          "label": "Cohort D: Enfortumab Vedotin + Cisplatin in 1L",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 plus cisplatin on day 1 every 21 days"
+        },
+        {
+          "label": "Cohort E: Enfortumab Vedotin + Carboplatin in 1L",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 plus carboplatin on day 1 every 21 days"
+        },
+        {
+          "label": "Optional Cohort F: Enfortumab Vedotin+Gemcitabine in 1L and 2L",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin and gemcitabine on days 1 and 8 every 21 days"
+        },
+        {
+          "label": "Cohort G: Enfortumab Vedotin + Platinum + Pembrolizumab in 1L",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 plus cisplatin or carboplatin on day 1 plus pembrolizumab on day 1 every 21 days"
+        },
+        {
+          "label": "Cohort H: Enfortumab vedotin in MIBC neoadjuvant setting",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 every 21 days"
+        },
+        {
+          "label": "Optional Cohort J:EV+Pembrolizumab in MIBC neoadjuvant setting",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 plus pembrolizumab on day 1 every 21 days"
+        },
+        {
+          "label": "Randomized Cohort K: Enfortumab Vedotin Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 every 21 days"
+        },
+        {
+          "label": "Randomized Cohort K: Enfortumab Vedotin + Pembrolizumab",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 plus pembrolizumab on day 1 every 21 days"
+        },
+        {
+          "label": "Cohort L: Enfortumab vedotin in MIBC in perioperative setting",
+          "type": "EXPERIMENTAL",
+          "description": "Enfortumab vedotin on days 1 and 8 and every 21 days"
+        }
+      ],
+      "primaryEndpoints": [
+        "Type, incidence, severity, seriousness, and relatedness of adverse events (Dose escalation and Expansion Parts 1 to 3 cohorts only)",
+        "Type, incidence, and severity of laboratory abnormalities (Dose escalation and Expansion Parts 1 to 3 cohorts only)",
+        "Confirmed objective response rate (ORR) per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST 1.1) by blinded independent central review (BICR) (Cohort K only)",
+        "Pathological complete response (pCR) rate per central pathology review (MIBC cohorts only)"
+      ],
+      "secondaryEndpoints": [
+        "Incidence of dose-limiting toxicity (DLT)",
+        "Confirmed ORR by investigator assessment according to RECIST 1.1 (la/mUC cohorts only)",
+        "Confirmed ORR by BICR according to RECIST 1.1 (Dose escalation and Cohort A only)",
+        "Confirmed ORR by investigator assessment per the modified RECIST 1.1 for immune-based therapeutics (iRECIST) (Dose escalation and Part 1-3 cohorts with pembrolizumab only)",
+        "Disease control rate (DCR) by investigator assessment according to RECIST 1.1 (la/mUC cohorts only)",
+        "DCR by BICR according to RECIST 1.1 (Dose escalation, Cohort A, and randomized Cohort K only)",
+        "DCR by investigator assessment according to iRECIST (Dose escalation and Part 1-3 cohorts using pembrolizumab only)",
+        "Duration of response (DOR) by investigator assessment according to RECIST 1.1 (la/mUC cohorts only)",
+        "DOR by BICR according to RECIST 1.1 (Dose escalation, Cohort A, and randomized Cohort K only)",
+        "DOR by investigator assessment according to iRECIST (Dose escalation and Part 1-3 cohorts with pembrolizumab only)",
+        "Progression free survival on study therapy (PFS) by investigator assessment according to RECIST 1.1 (la/mUC cohorts only)",
+        "PFS by BICR according to RECIST 1.1 (Dose escalation, Cohort A, and randomized Cohort K only)",
+        "PFS by investigator assessment according to iRECIST (Dose escalation and Part 1-3 cohorts with pembrolizumab only)",
+        "Event-free (EFS) on study therapy by BICR (Cohort L only)",
+        "Event-free (EFS) on study therapy by investigator assessment (MIBC cohorts only)",
+        "Overall survival (OS) (all cohorts)",
+        "Pharmacokinetics (PK) parameter for enfortumab vedotin: Maximum concentration (Cmax) (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "PK parameter for monomethyl auristatin E (MMAE): Cmax (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "PK parameter for total antibody (Tab): Cmax (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "Incidence of antitherapeutic antibodies (ATA) to enfortumab vedotin (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "PK parameter for enfortumab vedotin: Time to maximum concentration (Tmax) (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "PK parameter for MMAE: Tmax (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "PK parameter for Tab: Tmax (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "PK parameter for enfortumab vedotin: Area under the concentration-time curve (AUC) (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "PK parameter for MMAE: AUC (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "PK parameter for Tab: AUC (Dose escalation and Expansion Parts 1 to 3; non-randomized la/mUC cohorts only)",
+        "Pathologic downstaging (pDS) rate by central pathology review (MIBC cohorts only)",
+        "Disease-free survival (DFS) by investigator assessment (MIBC cohorts only)",
+        "DFS by BICR (Cohort L only)",
+        "Type, incidence, severity, seriousness, and relatedness of AEs (Randomized Cohort K and MIBC cohorts only)",
+        "Type, incidence, and severity of laboratory abnormalities (Randomized Cohort K and MIBC cohorts only)",
+        "Percentage of planned radical cystectomy and pelvic lymph node dissections (RC+PLND) delayed due to treatment-related AEs (MIBC cohorts only)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03288545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03288545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03288545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03288545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03288545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 96,
+          "quote": "efficacy of KEYTRUDA in combination with enfortumab vedotin was evaluated in KEYNOTE-869 (NCT03288545), an open-label, multi-cohort (dose escalation cohort, Cohort A, Cohort K) study in patie",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-869 (NCT03288545)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "proceed",
       "nctId": "NCT03064490",
       "protocolNumber": "Pro00081010",
@@ -22941,6 +24949,134 @@
       ]
     },
     {
+      "id": "advise",
+      "nctId": "NCT03335540",
+      "protocolNumber": "CA028-001",
+      "acronym": "ADVISE",
+      "title": "ADaptiVe Biomarker Trial That InformS Evolution of Therapy",
+      "briefTitle": "An Adaptive Study to Match Patients With Solid Tumors to Various Immunotherapy Combinations Based Upon a Broad Biomarker Assessment",
+      "phase": "PHASE1",
+      "roles": [
+        {
+          "role": "PK",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Bristol-Myers Squibb",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-05-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-03-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-08-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm B",
+          "type": "EXPERIMENTAL",
+          "description": "Combination therapy determined by biomarker assessment"
+        },
+        {
+          "label": "Arm C",
+          "type": "EXPERIMENTAL",
+          "description": "Combination therapy determined by biomarker assessment"
+        },
+        {
+          "label": "Arm D",
+          "type": "EXPERIMENTAL",
+          "description": "Combination therapy determined by biomarker assessment"
+        },
+        {
+          "label": "Arm F",
+          "type": "EXPERIMENTAL",
+          "description": "Combination therapy determined by biomarker assessment"
+        },
+        {
+          "label": "Arm G",
+          "type": "EXPERIMENTAL",
+          "description": "Combination therapy determined by biomarker assessment"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with qualified tumor biopsy specimen at baseline"
+      ],
+      "secondaryEndpoints": [
+        "Percent of change from baseline in histopathologic features",
+        "Percent of change from baseline in biomarker expression patterns",
+        "Number of Adverse Events (AEs)",
+        "Number of Serious Adverse Events (SAEs)",
+        "Number of Laboratory Abnormalities",
+        "Number of Adverse Events(AEs) leadind to discontinutaion",
+        "Number of Deaths"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03335540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03335540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03335540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03335540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03335540",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "people",
       "nctId": "NCT03447678",
       "protocolNumber": "INT 178-17",
@@ -23184,10 +25320,12 @@
       "phase": "PHASE3",
       "roles": [
         {
-          "role": "SUPPORTIVE",
+          "indication": "Endometrial Carcinoma",
+          "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Endometrial Carcinoma)",
+            "quote": "Trial identifier appears within the Endometrial Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
           }
@@ -23507,6 +25645,34 @@
           "field": "labelName",
           "newValue": "KEYNOTE-775",
           "detectedAt": "2026-10-14T17:41:13.074Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "role": "SUPPORTIVE",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Endometrial Carcinoma",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Endometrial Carcinoma)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Endometrial Carcinoma section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-10-29T18:01:45.303Z"
         }
       ]
     },
@@ -25917,8 +28083,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 135,
-          "quote": "h fluoropyrimidine- and platinum-containing chemotherapy was investigated in KEYNOTE-859 (NCT03675737), a multicenter, randomized, double-blind, placebo-controlled trial that enrolled 1579 pa",
+          "page": 1,
+          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
           "extractedBy": "regex",
           "verified": false
         },
@@ -26062,14 +28228,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT04859582",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 1,
-          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -31732,103 +33890,6 @@
       "changeLog": []
     },
     {
-      "id": "3475-01b",
-      "nctId": "NCT04165083",
-      "protocolNumber": "3475-01B",
-      "title": "KEYMAKER-U01 Substudy 2: A Phase 2, Umbrella Study With Rolling Arms of Investigational Agents in Combination With Pembrolizumab in Treatment Naïve Patients With PD-L1 Positive Advanced Non-small Cell Lung Cancer (NSCLC)",
-      "briefTitle": "KEYMAKER-U01 Substudy 2: Efficacy and Safety Study of Pembrolizumab (MK-3475) When Used With Investigational Agents in Treatment-naïve Participants With Anti-programmed Cell Death Receptor Ligand 1 (PD-L1) Positive Advanced Non-small Cell Lung Cancer (NSCLC) (MK-3475-01B/KEYMAKER-U01B)",
-      "phase": "PHASE2",
-      "roles": [],
-      "status": "COMPLETED",
-      "sponsor": "Merck Sharp & Dohme LLC",
-      "studyType": "INTERVENTIONAL",
-      "startDate": {
-        "value": "2019-12-19",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2025-10-31",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2025-10-31",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 102,
-        "type": "ACTUAL"
-      },
-      "design": {
-        "allocation": "NON_RANDOMIZED",
-        "masking": "NONE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Pembrolizumab + MK-4830",
-          "type": "EXPERIMENTAL",
-          "description": "On Day 1 of each 3-week cycle, participants receive pembrolizumab 200 mg intravenously (IV) PLUS MK-4830 IV for a maximum of 35 cycles (approximately 2 years)"
-        },
-        {
-          "label": "Pembrolizumab + MK-0482",
-          "type": "EXPERIMENTAL",
-          "description": "On Day 1 of each 3-week cycle, participants receive pembrolizumab 200 mg intravenously (IV) PLUS MK-0482 IV for a maximum of 35 cycles (approximately 2 years)"
-        }
-      ],
-      "primaryEndpoints": [
-        "Objective Response Rate (ORR) According to Response Evaluation Criteria in Solid Tumors Version 1.1 (RECIST 1.1)"
-      ],
-      "secondaryEndpoints": [
-        "Progression-Free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors Version 1.1 (RECIST 1.1)",
-        "Number of Participants Who Experience One or More Adverse Events (AEs)",
-        "Number of Participants Who Discontinued Study Treatment Due to an Adverse Event (AE)"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
       "id": "3475-u01",
       "nctId": "NCT04165798",
       "protocolNumber": "3475-U01",
@@ -32545,10 +34606,12 @@
       "phase": "PHASE3",
       "roles": [
         {
-          "role": "SUPPORTIVE",
+          "indication": "Urothelial Cancer",
+          "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
+            "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
           }
@@ -32776,6 +34839,34 @@
           "field": "labelName",
           "newValue": "KEYNOTE-A39",
           "detectedAt": "2026-10-14T17:41:13.074Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "role": "SUPPORTIVE",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Urothelial Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Urothelial Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Urothelial Cancer section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-10-29T18:01:45.303Z"
         }
       ]
     },
@@ -35460,6 +37551,142 @@
       "changeLog": []
     },
     {
+      "id": "3475-01b",
+      "nctId": "NCT04165083",
+      "protocolNumber": "3475-01B",
+      "title": "KEYMAKER-U01 Substudy 2: A Phase 2, Umbrella Study With Rolling Arms of Investigational Agents in Combination With Pembrolizumab in Treatment Naïve Patients With PD-L1 Positive Advanced Non-small Cell Lung Cancer (NSCLC)",
+      "briefTitle": "KEYMAKER-U01 Substudy 2: Efficacy and Safety Study of Pembrolizumab (MK-3475) When Used With Investigational Agents in Treatment-naïve Participants With Anti-programmed Cell Death Receptor Ligand 1 (PD-L1) Positive Advanced Non-small Cell Lung Cancer (NSCLC) (MK-3475-01B/KEYMAKER-U01B)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-01-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-10-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-10-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 100,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Pembrolizumab + MK-4830",
+          "type": "EXPERIMENTAL",
+          "description": "On Day 1 of each 3-week cycle, participants receive pembrolizumab 200 mg intravenously (IV) PLUS MK-4830 IV for a maximum of 35 cycles (approximately 2 years)"
+        },
+        {
+          "label": "Pembrolizumab + MK-0482",
+          "type": "EXPERIMENTAL",
+          "description": "On Day 1 of each 3-week cycle, participants receive pembrolizumab 200 mg intravenously (IV) PLUS MK-0482 IV for a maximum of 35 cycles (approximately 2 years)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Objective Response Rate (ORR) According to Response Evaluation Criteria in Solid Tumors Version 1.1 (RECIST 1.1)"
+      ],
+      "secondaryEndpoints": [
+        "Progression-Free Survival (PFS) According to RECIST 1.1",
+        "Number of Participants Who Experienced One or More Adverse Events (AEs)",
+        "Number of Participants Who Discontinued Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04165083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "startDate",
+          "previousValue": {
+            "value": "2019-12-19",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2021-01-07",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-29T18:01:45.303Z"
+        },
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 102,
+            "type": "ACTUAL"
+          },
+          "newValue": {
+            "count": 100,
+            "type": "ACTUAL"
+          },
+          "detectedAt": "2026-10-29T18:01:45.303Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "Progression-Free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors Version 1.1 (RECIST 1.1)",
+            "Number of Participants Who Experience One or More Adverse Events (AEs)",
+            "Number of Participants Who Discontinued Study Treatment Due to an Adverse Event (AE)"
+          ],
+          "newValue": [
+            "Progression-Free Survival (PFS) According to RECIST 1.1",
+            "Number of Participants Who Experienced One or More Adverse Events (AEs)",
+            "Number of Participants Who Discontinued Study Treatment Due to an AE"
+          ],
+          "detectedAt": "2026-10-29T18:01:45.303Z"
+        }
+      ]
+    },
+    {
       "id": "3475-b21",
       "nctId": "NCT04634877",
       "protocolNumber": "3475-B21",
@@ -35613,10 +37840,34 @@
       "phase": "PHASE1",
       "roles": [
         {
-          "role": "PK",
+          "indication": "Non-Small Cell Lung Cancer",
+          "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
+            "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "indication": "Hepatocellular Carcinoma",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Hepatocellular Carcinoma)",
+            "quote": "Trial identifier appears within the Hepatocellular Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "indication": "Renal Cell Carcinoma",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
+            "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
           }
@@ -35720,7 +37971,58 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "role": "PK",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Non-Small Cell Lung Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional."
+              }
+            },
+            {
+              "indication": "Hepatocellular Carcinoma",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Hepatocellular Carcinoma)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Hepatocellular Carcinoma section 14 span, and the trial is sponsor-run and interventional."
+              }
+            },
+            {
+              "indication": "Renal Cell Carcinoma",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Renal Cell Carcinoma)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Renal Cell Carcinoma section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-10-29T18:01:45.303Z"
+        }
+      ]
     },
     {
       "id": "keynote-b61",
@@ -36721,6 +39023,115 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT04700072",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "pacific",
+      "nctId": "NCT04745949",
+      "protocolNumber": "2020-0686",
+      "acronym": "PACIFIC",
+      "title": "A Phase II Study to Determine the Response Kinetics, Safety, and Efficacy of Brentuximab Vedotin and Nivolumab Alone and Then Combined With Rituximab, Cyclophosphamide, Doxorubicin, and Prednisone for Patients With Untreated Primary Mediastinal Large B-Cell Lymphoma",
+      "briefTitle": "PACIFIC: Primary Mediastinal Large B-cell Lymphoma Treated With Antibody Therapy, Checkpoint Inhibitor in Frontline With ImmunoChemotherapy",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "M.D. Anderson Cancer Center",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-05-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-08-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-08-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 31,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment (brentuximab vedotin, nivolumab, R-CHP)",
+          "type": "EXPERIMENTAL",
+          "description": "Patient will receive an immune lead-in of 2 cycles of Brentuximab vedotin and Nivolumab (A-O) (cycles 1 and 2), which has an appropriate futility rules in place to close early if efficacy targets are not met. At cycle 3 and 4, patients will receive A-O with R-CHP. Patients who will have achieved complete response (CR) at PET/CT before cycle 5 will receive 2 more cycles of A-O-R-CHP (cycle 5 and 6) and A-O only for cycle 7 and 8. If these patients still present CR at PET/CT after cycle 8, they will have completed therapy and will be followed up. In case of stable disease or progressive disease at PET/CT after cycle 4, the patient will be taken off the trial. Patients who present further response but no CR, at PET/CT before cycle 5 will receive 4 more cycles A-O-R-CHP (cycles 5-8). If they reach CR at PET/CT after cycle 8, they will have completed therapy and will be followed up. All patients will receive a total of 8 cycles of A-O. The cycle duration is 21 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Complete response rate"
+      ],
+      "secondaryEndpoints": [
+        "Overall response rate (complete response + partial response)",
+        "1-year progression-free survival",
+        "2 -year progression-free survival",
+        "1-year overall survival",
+        "2-year overall survival",
+        "Duration of response",
+        "Incidence of adverse events",
+        "Health-related quality of life"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04745949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04745949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04745949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04745949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04745949",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -39193,6 +41604,111 @@
       "changeLog": []
     },
     {
+      "id": "atlas",
+      "nctId": "NCT04966676",
+      "protocolNumber": "ATLAS",
+      "acronym": "ATLAS",
+      "title": "Beyond Chemotherapy: Nivolumab-Ipilimumab With cfDNA-guided Treatment Intensification as a Chemotherapy-sparing Strategy in Metastatic Non-small Cell Lung Cancer",
+      "briefTitle": "Study of Nivolumab-Ipilimumab and cfDNA in Lung Cancer",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "TERMINATED",
+      "sponsor": "University Health Network, Toronto",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-01-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-02-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-02-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 5,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Non-Small cell Lung Cancer",
+          "type": "EXPERIMENTAL",
+          "description": "Nivolumab, intravenously (given by vein), once every 3 weeks Ipilimumab, intravenously (given by vein), once every 6 weeks\n\nParticipants will have blood samples taken for cell free deoxyribonucleic acid (cfDNA) testing.\n\nIf there is an increasing or stable tumor cfDNA, platinum-doublet chemotherapy will be given."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of participants whose disease does not worsen (progression-free survival rate) at 6 months"
+      ],
+      "secondaryEndpoints": [
+        "Average percentage of tumor cfDNA detected in the blood (tumor cfDNA clearance rate) at 3 weeks",
+        "Average percentage of tumor cfDNA detected in the blood (tumor cfDNA clearance rate) at 12 weeks",
+        "Number participants with adverse events",
+        "Average time from the date of study enrolment until death (overall survival)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04966676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04966676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04966676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04966676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04966676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "3475-c93",
       "nctId": "NCT05173987",
       "protocolNumber": "3475-C93",
@@ -40789,6 +43305,141 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT05446870",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "ascent-04",
+      "nctId": "NCT05382286",
+      "protocolNumber": "GS-US-592-6173",
+      "acronym": "ASCENT-04",
+      "labelName": "KEYNOTE-D19",
+      "title": "A Randomized, Open-label, Phase 3 Study of Sacituzumab Govitecan and Pembrolizumab Versus Treatment of Physician's Choice and Pembrolizumab in Patients With Previously Untreated, Locally Advanced Inoperable or Metastatic Triple-Negative Breast Cancer, Whose Tumors Express PD-L1",
+      "briefTitle": "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice and Pembrolizumab in Patients With Previously Untreated, Locally Advanced Inoperable or Metastatic Triple-Negative Breast Cancer",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Triple-Negative Breast Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
+            "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Gilead Sciences",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-07-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-02-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 443,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sacituzumab Govitecan-hziy (SG) + Pembrolizumab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive SG 10 mg/kg on Days 1 and 8 of 21-day cycles and pembrolizumab 200 mg on Day 1 of 21-day cycles\n\nPembrolizumab will be administered for a maximum of 35 cycles."
+        },
+        {
+          "label": "Pembrolizumab + Treatment of Physician's Choice (TPC)",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive pembrolizumab 200 mg on Day 1 of each 21-day cycle (maximum 35 cycles) plus TPC determined prior to randomization from 1 of the 3 allowed regimens:\n\n* Paclitaxel 90 mg/m\\^2 on Days 1, 8, and 15 of 28-day cycles\n* nab-Paclitaxel 100 mg/m\\^2 on Days 1, 8, and 15 of 28-day cycles\n* Gemcitabine 1000 mg/m\\^2 + carboplatin area under the curve (AUC) 2 on Days 1 and 8 of 21-day cycles"
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-free Survival (PFS) as Assessed by Blinded Independent Central Review (BICR) per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1"
+      ],
+      "secondaryEndpoints": [
+        "Overall Survival (OS)",
+        "Objective Response Rate (ORR) as Assessed by BICR per RECIST Version 1.1",
+        "Duration of Response (DOR) as Assessed by BICR per RECIST Version 1.1",
+        "Time to Response (TTR) as Assessed by BICR per RECIST Version 1.1",
+        "Percentage of Participants Experiencing Treatment-emergent Adverse Events (TEAEs)",
+        "Percentage of Participants Experiencing Clinical Laboratory Abnormalities",
+        "Time to Deterioration (TTD) in Global Health Status/Quality of Life (QoL) Scale as Measured by the European Organization for Research and Treatment of Cancer Quality of Life Questionnaire, Core Questionnaire, Version 3.0 (EORTC QLQ-C30)",
+        "TTD of Pain Score as Measured by EORTC QLQ-C30",
+        "TTD of Fatigue Score as Measured by EORTC QLQ-C30",
+        "TTD of Physical Functioning Domain Score as Measured by EORTC QLQ-C30",
+        "TTD of Role Functioning Score as Measured by EORTC QLQ-C30"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05382286",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05382286",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05382286",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05382286",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05382286",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 2,
+          "quote": "remind you of your postmarketing commitments: 5015-1 Complete the ongoing clinical trial, ASCENT-04 (NCT5382286), entitled “A Randomized, Open-label, Phase 3 Study of Sacituzumab Govitecan",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "KEYNOTE-D19 (NCT05382286)",
+          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -43070,7 +45721,7 @@
         "precision": "month"
       },
       "enrollment": {
-        "count": 776,
+        "count": 1082,
         "type": "ESTIMATED"
       },
       "design": {
@@ -43125,6 +45776,21 @@
           "label": "Rituximab",
           "type": "EXPERIMENTAL",
           "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 15 minutes in the following cycles."
+        },
+        {
+          "label": "Infliximab",
+          "type": "EXPERIMENTAL",
+          "description": "If no infusion reaction has occurred after 6 cycles, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+        },
+        {
+          "label": "Vedolizumab",
+          "type": "EXPERIMENTAL",
+          "description": "If no infusion reaction has occurred after 2 cycles, infusion time will stepwise be shortened to 1 minutes in the following cycles."
+        },
+        {
+          "label": "Tocilizumab",
+          "type": "EXPERIMENTAL",
+          "description": "If no infusion reaction has occurred after 2 cycles, infusion time will stepwise be shortened to 10 minutes in the following cycles."
         }
       ],
       "primaryEndpoints": [
@@ -43169,7 +45835,123 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 776,
+            "type": "ESTIMATED"
+          },
+          "newValue": {
+            "count": 1082,
+            "type": "ESTIMATED"
+          },
+          "detectedAt": "2026-10-29T18:01:45.303Z"
+        },
+        {
+          "field": "arms",
+          "previousValue": [
+            {
+              "label": "Nivolumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Pembrolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "ipilimumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Durvalumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Atezolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "bevacizumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Trastuzumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Rituximab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 15 minutes in the following cycles."
+            }
+          ],
+          "newValue": [
+            {
+              "label": "Nivolumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Pembrolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "ipilimumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Durvalumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Atezolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "bevacizumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Trastuzumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Rituximab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cyclues, infusion time will stepwise be shortened to 15 minutes in the following cycles."
+            },
+            {
+              "label": "Infliximab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 6 cycles, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            },
+            {
+              "label": "Vedolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cycles, infusion time will stepwise be shortened to 1 minutes in the following cycles."
+            },
+            {
+              "label": "Tocilizumab",
+              "type": "EXPERIMENTAL",
+              "description": "If no infusion reaction has occurred after 2 cycles, infusion time will stepwise be shortened to 10 minutes in the following cycles."
+            }
+          ],
+          "detectedAt": "2026-10-29T18:01:45.303Z"
+        }
+      ]
     },
     {
       "id": "4280a-010",
@@ -45407,6 +48189,116 @@
       "changeLog": []
     },
     {
+      "id": "3475-06d",
+      "nctId": "NCT06445972",
+      "protocolNumber": "3475-06D",
+      "title": "A Phase 1/2 Open-Label, Umbrella Platform Design Study to Evaluate the Safety and Efficacy of Investigational Agents in Combination With Standard of Care Treatments as the Second-Line Treatment of Participants With Advanced/Metastatic Gastroesophageal Adenocarcinoma: Substudy 06D",
+      "briefTitle": "Substudy 06D: Combination Therapies in Second Line (2L) Gastroesophageal Adenocarcinoma (MK-3475-06D/Keymaker-U06)",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-08-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-05-09",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-08-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 210,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ramucirumab + Paclitaxel",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants receive ramucirumab at 8mg/kg via intravenous (IV) infusion on days 1 and 15 of each 4-week cycle for up to \\~60 weeks plus paclitaxel at 80 mg/M\\^2 via IV infusion on Days 1, 8, and 15 of each 4-week cycle (3 weeks on and 1 week off) until discontinuation."
+        },
+        {
+          "label": "Sacituzumab Tirumotecan + Paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "Following a 28-day run-in with sacituzumab tirumotecan at 3 mg/kg and 4 mg/kg IV infusion on Days 1 and 15 of a 6-week cycle plus paclitaxel at 80 mg/M\\^2 IV infusion on days 1, 8 and 15 of a 4-week cycle, participants receive paclitaxel at 80 mg/M\\^2 IV infusion on days 1, 8, 15 of each 4-week cycle (3 weeks on and 1 week off) plus sacituzumab tirumotecan at selected dose IV infusion on days 1, 15, 29 of every 6-week cycle until discontinuation."
+        },
+        {
+          "label": "HER3-DXd + Ramucirumab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive HER3-DXd via IV infusion on days 1 and 22 of each 6-week cycle plus ramucirumab at 8mg/kg via IV infusion on days 1 and 15 and 29 of each 6-week cycle until discontinuation."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants who Experience Dose Limiting Toxicities (DLTs) During the Safety Lead-In Phase",
+        "Percentage of Particiapants who Experience an Adverse Event (AE) During the Safety Lead-In Phase",
+        "Percentage of Participants who Discontinue Study Intervention Due to an AE During the Safety Lead-In Phase",
+        "Objective Response Rate (ORR)"
+      ],
+      "secondaryEndpoints": [
+        "Progression Free Survival (PFS)",
+        "Duration of Response (DOR)",
+        "Overall Survival (OS)",
+        "Percentage of Particiapants who Experience an AE During the Efficacy Phase",
+        "Percentage of Participants who Discontinue Study Intervention Due to an AE During the Efficacy Phase",
+        "Incidence of sacituzumab tirumotecan anti-drug antibody (ADA)",
+        "Incidence of HER3-DXd ADA"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445972",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445972",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445972",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445972",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06445972",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "3475-06c",
       "nctId": "NCT06469944",
       "protocolNumber": "3475-06C",
@@ -47282,6 +50174,111 @@
       "changeLog": []
     },
     {
+      "id": "3475-01h",
+      "nctId": "NCT06780085",
+      "protocolNumber": "3475-01H",
+      "title": "KEYMAKER-U01 Substudy 01H: A Phase 2, Randomized, Umbrella Study With Rolling Arms of Investigational Agents in Participants With Previously Treated Stage IV Nonsquamous Non-small Cell Lung Cancer (NSCLC)",
+      "briefTitle": "A Study of Investigational Agents in Participants With Previously Treated Stage IV Nonsquamous Non-small Cell Lung Cancer (NSCLC) (MK-3475-01H/KEYMAKER-U01)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-05-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-03-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-03-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 96,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Raludotatug Deruxtecan",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive raludotatug deruxtecan (R-DXd) 5.6 mg/kg via intravenous (IV) Infusion every 3 weeks (q3w) until disease progression or discontinuation criterion is met."
+        },
+        {
+          "label": "Ifinatamab Deruxtecan",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive ifinatamab deruxtecan (I-DXd) 12 mg/kg via IV infusion q3w until disease progression or discontinuation criterion is met."
+        },
+        {
+          "label": "Docetetaxel",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants receive docetaxel 75mg/m2 via IV infusion q3w until disease progression or discontinuation criterion is met."
+        }
+      ],
+      "primaryEndpoints": [
+        "Objective Response Rate (ORR)",
+        "Percentage of Participants with at Least One Adverse Event (AE)",
+        "Percentage of Participants Who Discontinued Medication Due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Duration of Response (DOR)",
+        "Progression-free Survival (PFS)",
+        "Overall Survival (OS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780085",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780085",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780085",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780085",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780085",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "trofuse-033",
       "nctId": "NCT06952504",
       "protocolNumber": "2870-033",
@@ -47501,6 +50498,116 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT05815927",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "3475-01i",
+      "nctId": "NCT06780098",
+      "protocolNumber": "3475-01I",
+      "title": "KEYMAKER-U01 Substudy 01I: A Phase 2, Randomized, Umbrella Study With Rolling Arms of Investigational Agents in Participants With Previously Treated Stage IV Squamous Non-small Cell Lung Cancer (NSCLC)",
+      "briefTitle": "Substudy 01I: A Study of Investigational Agents in Participants With Previously Treated Stage IV Squamous Non-small Cell Lung Cancer (NSCLC) (MK-3475-01I/KEYMAKER-U01I)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-05-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-03-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-03-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 144,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm 1: Raludotatug deruxtecan (R-DXD)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive 5.6 mg/kg of R-DXD, every 3 weeks (Q3W) (Day 1 of every 21-day cycle) via intravenous (IV) infusion until progressive disease (PD) or discontinuation."
+        },
+        {
+          "label": "Arm 2: Infinatamab deruxtecan (I-DXD) High Dose",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive 12 mg/kg of I-DXD, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+        },
+        {
+          "label": "Arm 3: I-DXD Low Dose",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive 8 mg/kg of I-DXD, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+        },
+        {
+          "label": "Arm 4: Docetaxel",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants receive 75 mg/m\\^2 of Docetaxel, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+        }
+      ],
+      "primaryEndpoints": [
+        "Objective Response Rate (ORR)",
+        "Number of participants who experience one or more adverse events (AEs)",
+        "Number of participants who discontinue study intervention due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Duration of Response (DOR)",
+        "Progression-free Survival (PFS)",
+        "Overall Survival (OS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780098",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06780098",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -47918,6 +51025,112 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT06966700",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "3475-03c",
+      "nctId": "NCT07049926",
+      "protocolNumber": "3475-03C",
+      "title": "A Phase 1b/2 Study of Immune and Targeted Combination Therapies in Participants With RCC (KEYMAKER-U03): Substudy 03C in Participants With Recurrent Disease During or After Anti-PD-(L)1 Adjuvant Therapy",
+      "briefTitle": "Substudy 03C: A Study of Combination Therapies in Participants With Renal Cell Carcinoma With Recurrent Disease During or After Anti-PD-(L)1 Therapy (MK-3475-03C/KEYMAKER-U03)",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-07-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2031-10-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-10-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 140,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "120 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Zanzalintinib at Dose Level 1 or 2 + Belzutifan",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be allocated to receive zanzalintinib at dose level 1 or 2 + belzutifan daily until progressive disease or discontinuation"
+        },
+        {
+          "label": "Belzutifan",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive belzutifan daily until progressive disease or discontinuation"
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety Lead In Phase: Number of participants who experience one or more dose-limiting toxicities (DLTs)",
+        "Safety Lead In Phase: Number of participants who experience one or more adverse events (AEs)",
+        "Safety Lead In Phase: Number of participants who discontinue study treatment due to an AE",
+        "Efficacy Phase: Number of participants who experience one or more DLTs",
+        "Efficacy Phase: Number of participants who experience one or more AEs",
+        "Efficacy Phase: Number of participants who discontinue study treatment due to an AE",
+        "Efficacy Phase: Objective Response Rate (ORR)"
+      ],
+      "secondaryEndpoints": [
+        "Efficacy Phase: Duration of response (DOR)",
+        "Efficacy Phase: Progression-free survival (PFS)",
+        "Efficacy Phase: Overall survival (OS)",
+        "Efficacy Phase: Clinical benefit rate (CBR)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049926",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049926",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049926",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049926",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049926",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -48889,6 +52102,209 @@
       "changeLog": []
     },
     {
+      "id": "3475-06f",
+      "nctId": "NCT07405151",
+      "protocolNumber": "3475-06F",
+      "title": "A Phase 2 Open-Label, Umbrella Platform Design Study of Investigational Agent(s) in Participants With 2L/3L Unresectable Locally Advanced or Metastatic Esophageal Cancer: KEYMAKER-U06 Substudy 06F",
+      "briefTitle": "A Clinical Trial of Ifinatamab Deruxtecan in People With Advanced Esophageal Cancer (MK-3475-06F)",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-03-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-06-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-06-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 60,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "I-DXd",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be administered I-DXd every 3 weeks until progressive disease or discontinuation criteria are met."
+        }
+      ],
+      "primaryEndpoints": [
+        "Objective Response Rate (ORR)"
+      ],
+      "secondaryEndpoints": [
+        "Duration of Response (DOR)",
+        "Progression-Free Survival (PFS)",
+        "Overall Survival (OS)",
+        "Number of Participants Who Experience an Adverse Events (AEs)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07405151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07405151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07405151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07405151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07405151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "3475-01f",
+      "nctId": "NCT07286149",
+      "protocolNumber": "3475-01F",
+      "title": "KEYMAKER-U01 Substudy 01F: A Phase 1b/2 Umbrella Study With Rolling Arms of Investigational Agents for Previously Treated Participants With Advanced or Metastatic Nonsquamous Non-small Cell Lung Cancer (NSCLC) With KRAS G12C Mutations",
+      "briefTitle": "A Clinical Study of MK-1084 With Other Treatments for Non-small Cell Lung Cancer (MK-3475-01F)",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-04-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-08-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-04-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 140,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "MK-1084 + Patritumab deruxtecan (HER3-DXd)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive MK-1084 and HER3-DXd until discontinuation due to toxicity, adverse event (AE) or at the discretion of an investigator."
+        },
+        {
+          "label": "MK-1084 + Sacituzumab tirumotecan (Sac-TMT)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive MK-1084 and sac-TMT until discontinuation due to toxicity, AE or at the discretion of an investigator."
+        },
+        {
+          "label": "MK-1084 + Cetuximab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive MK-1084 and cetuximab until discontinuation due to toxicity, AE or at the discretion of an investigator. Per amendment 3, the MK-1084 + Cetuximab arm was discontinued."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Who Experience a Dose Limiting Toxicity (DLT)",
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE",
+        "Objective Response Rate (ORR)"
+      ],
+      "secondaryEndpoints": [
+        "Duration of Response (DOR)",
+        "Progression-Free Survival (PFS)",
+        "Area Under the Curve From Time 0 to the End of the Dosing Interval (AUC tau)",
+        "Maximum Plasma Concentration (Cmax)",
+        "Minimum Observed Concentration (Ctrough)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07286149",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07286149",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07286149",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07286149",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07286149",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "interpath-014",
       "nctId": "NCT07513376",
       "protocolNumber": "V940-014",
@@ -49006,10 +52422,23 @@
       "phase": "PHASE1_2",
       "roles": [
         {
-          "role": "DOSE_FINDING",
+          "indication": "Melanoma",
+          "role": "PIVOTAL",
           "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
+            "quote": "Trial identifier appears within the Melanoma section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "indication": "Tumor Mutational Burden-High Cancer",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Tumor Mutational Burden-High Cancer)",
+            "quote": "Trial identifier appears within the Tumor Mutational Burden-High Cancer section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
           }
@@ -49125,7 +52554,47 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "role": "DOSE_FINDING",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Melanoma",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Melanoma)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Melanoma section 14 span, and the trial is sponsor-run and interventional."
+              }
+            },
+            {
+              "indication": "Tumor Mutational Burden-High Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Tumor Mutational Burden-High Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Tumor Mutational Burden-High Cancer section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-10-29T18:01:45.303Z"
+        }
+      ]
     },
     {
       "id": "3475-g21",
@@ -54008,7 +57477,31 @@
       "label": "Summary Review (SUPPL-82)",
       "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
       "type": "fda_review"
+    },
+    {
+      "id": "doc-265",
+      "label": "Review (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2014/125514Orig1s000SumR.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-266",
+      "label": "Review (SUPPL-92)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2020/125514Orig1s092.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-267",
+      "label": "Review (SUPPL-45)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2018/125514Orig1s045.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-268",
+      "label": "Review (SUPPL-14)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/125514Orig1s014.pdf",
+      "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T05:36:27.832Z"
+  "lastIngestedAt": "2026-10-29T18:01:45.303Z"
 }

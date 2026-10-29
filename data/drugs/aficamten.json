@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2025-12-19",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Cardiology, Hematology, Endocrinology and Nephrology",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219083Orig1s001ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-1), signature",
+          "quote": "Division of Cardiology and Nephrology Office of Cardiology, Hematology, Endocrinology and Nephrology Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Cytokinetics, Incorporated",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Distributed by: Cytokinetics, Incorporated",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -1136,5 +1156,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:03:24.365Z"
+  "lastIngestedAt": "2026-10-29T17:59:22.105Z"
 }

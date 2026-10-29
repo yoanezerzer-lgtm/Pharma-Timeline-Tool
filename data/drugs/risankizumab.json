@@ -184,6 +184,26 @@
       "originalApprovalDate": {
         "value": "2019-04-23",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Immunology and Inflammation",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761105Orig1s047,761262Orig1s017ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-47), signature",
+          "quote": "Division of Gastroenterology Office of Immunology and Inflammation Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "AbbVie Inc.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Label (SUPPL-47)",
+          "quote": "Manufactured by: AbbVie Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -12415,5 +12435,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T05:36:29.335Z"
+  "lastIngestedAt": "2026-10-29T18:01:59.236Z"
 }

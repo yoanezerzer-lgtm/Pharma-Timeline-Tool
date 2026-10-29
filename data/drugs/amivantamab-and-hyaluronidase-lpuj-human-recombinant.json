@@ -95,6 +95,26 @@
       "originalApprovalDate": {
         "value": "2025-12-17",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Oncologic Diseases",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Oncologic Diseases Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Janssen Biotech, Inc.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured by: Janssen Biotech, Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -449,7 +469,7 @@
       "nctId": "NCT04538664",
       "protocolNumber": "CR108850",
       "acronym": "PAPILLON",
-      "title": "A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+      "title": "61186372NSC3001: A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
       "briefTitle": "A Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Participants With Advanced or Metastatic Non-Small Cell Lung Cancer Characterized by Epidermal Growth Factor Receptor (EGFR) Exon 20 Insertions",
       "phase": "PHASE3",
       "roles": [
@@ -488,7 +508,7 @@
         "precision": "day"
       },
       "completionDate": {
-        "value": "2027-08-02",
+        "value": "2027-12-31",
         "precision": "day"
       },
       "enrollment": {
@@ -636,7 +656,26 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "title",
+          "previousValue": "A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+          "newValue": "61186372NSC3001: A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+          "detectedAt": "2026-10-29T17:59:18.631Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2027-08-02",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2027-12-31",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-29T17:59:18.631Z"
+        }
+      ]
     },
     {
       "id": "mariposa-2",
@@ -919,5 +958,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:03:36.603Z"
+  "lastIngestedAt": "2026-10-29T17:59:18.631Z"
 }

@@ -49,6 +49,26 @@
       "originalApprovalDate": {
         "value": "2026-05-29",
         "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Neuroscience",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220482Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Neuroscience Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Haisco-USA Pharmaceuticals, Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220482Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured for: Haisco-USA Pharmaceuticals, Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
       }
     }
   },
@@ -3522,5 +3542,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T07:01:12.580Z"
+  "lastIngestedAt": "2026-10-29T18:00:10.478Z"
 }
