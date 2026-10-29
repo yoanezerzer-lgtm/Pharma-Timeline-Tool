@@ -1,0 +1,2752 @@
+{
+  "slug": "relacorilant",
+  "brandName": "Lifyorli (copackaged)",
+  "inn": "relacorilant",
+  "modality": "Drug (NDA)",
+  "sponsor": "CORCEPT THERAP",
+  "summary": "",
+  "indications": [
+    {
+      "name": "In combination with nab-paclitaxel for the treatment of adults with platinum- resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer who have received one to three prior systemic treatment regimens, at least one of which included bevacizumab",
+      "slug": "in-combination-with-nab-paclitaxel-for-the-treatment-of",
+      "approvalDate": {
+        "value": "2026-03-25",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220641Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-03-25",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Lifyorli (relacorilant) in combination with nab-paclitaxel for the treatment of adults with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer who have received one to three prior systemic treatment regimens, at least one of which included bevacizumab.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220641Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Lifyorli (relacorilant) in combination with nab-paclitaxel for the treatment of adults with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer who have received one to three prior systemic treatment regimens, at least one of which included bevacizumab.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220641",
+      "applicationType": "NDA",
+      "sponsor": "CORCEPT THERAP",
+      "originalApprovalDate": {
+        "value": "2026-03-25",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "cort125134-120",
+      "nctId": "NCT03508635",
+      "protocolNumber": "CORT125134-120",
+      "title": "A Phase I Adaptive Dose, Double-Blind, Placebo-Controlled, SAD and MAD Study to Measure the Safety, Tolerability, Pharmacokinetics and Pharmacological Effects of Orally Administered CORT125134 in Healthy Subjects",
+      "briefTitle": "CORT125134 Single Ascending Dose (SAD) and Multiple Ascending Dose (MAD)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2014-09-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2015-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 130,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "SAD Cohorts 1 through 6",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive single doses of 5 mg up to 400 mg of CORT125134 (capsule) in a dose escalation format. The doses selected will be subject to amendment based on emerging data."
+        },
+        {
+          "label": "SAD Cohorts 1 through 6 Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive single doses of Matching Placebo of CORT125134 (capsule)."
+        },
+        {
+          "label": "Food Effect Cohort 7",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single dose of CORT125134 (capsule) with a standard high fat breakfast. The dose will be chosen such that it has been previously administered in a prior SAD cohort."
+        },
+        {
+          "label": "Pharmacological Effect Cohort 8",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single dose of 25 mg of prednisone on Day -19; a single dose of 25 mg prednisone and 600 mg of mifepristone on Day -12; and a single dose of 25 mg prednisone and a single dose of CORT125134 on Day 1. The dose of CORT125134 will be chosen such that it has been previously administered in a prior SAD cohort."
+        },
+        {
+          "label": "Proof of Concept (POC) Cohort 9",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single dose of 25 mg of prednisone on Day -19; a single dose of 25 mg of prednisone and 600 mg of mifepristone on Day -12; and a single dose of 25 mg prednisone and a single dose of CORT125134 on Day 1. An oral glucose tolerance test will be administered on each study day. The dose of CORT125134 will be chosen such that it has been previously administered in a prior SAD cohort."
+        },
+        {
+          "label": "MAD Cohorts 10 and 11",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive the selected dose of CORT125134 (capsule) following receipt of data from Cohorts 1-9 up to a maximum frequency of twice a day for a total of 14 days."
+        },
+        {
+          "label": "MAD Cohorts 10 and 11 Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive Matching Placebo of CORT125134 (capsule) up to a maximum frequency of twice a day for a total of 14 days."
+        },
+        {
+          "label": "MAD of PoPE Cohorts 12 and 13",
+          "type": "EXPERIMENTAL",
+          "description": "Proof of Pharmacological Effect (PoPE+POC). Participants will receive 25 mg of prednisone (both cohorts) and an oral glucose tolerance test (Cohort 13 only) on Day -5. Participants will then receive the selected dose of CORT125134 (capsule) for a total of 13 days. Participants may either receive a higher dose level than previously administered or a repeat of a dose level given in 1 of the previous 2 MAD Cohorts. Participants will then receive 25 mg of prednisone (both cohorts) and an oral glucose tolerance test (Cohort 13 only) on Day 14."
+        },
+        {
+          "label": "MAD of PoPE Cohort 12 and 13 Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive 25 mg of prednisone (both cohorts) and an oral glucose tolerance test (Cohort 13 only) on Day -5. Participants will then receive the Matching Placebo of CORT125134 (capsule) for a total of 13 days. Participants will then receive 25 mg of prednisone (both cohorts) and an oral glucose tolerance test (Cohort 13 only) on Day 14."
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of Treatment-Emergent Adverse Events (AEs) (Safety and Tolerability) of CORT125134"
+      ],
+      "secondaryEndpoints": [
+        "QT internal corrected for heart rate using Fridericia's formula (QTcF) exposure-response analysis",
+        "CORT125134 Pharmacokinetic (PK) of total lag time (Tlag)",
+        "CORT125134 PK of peak plasma concentration (Cmax)",
+        "CORT125134 PK of time to reach maximum observed concentration (Tmax)",
+        "CORT125134 PK of area under the plasma concentration-time curve from time zero to time of last measurable concentration (AUClast)",
+        "CORT125201 PK of peak plasma concentration (Cmax)",
+        "CORT125201 PK time Lag (Tlag)",
+        "CORT125201 PK of time to reach maximum observed concentration (Tmax)",
+        "CORT125201 PK of area under the plasma concentration-time curve from time zero to time of last measurable concentration (AUClast)",
+        "Eosinophil count",
+        "Lymphocyte count",
+        "Neutrophil count",
+        "Osteocalcin",
+        "FKBP5 expression",
+        "Glucocorticoid-induced leucine zipper (GILZ) expression",
+        "Glucose tolerance",
+        "Serum cortisol",
+        "Plasma adrenocorticotrophic hormone (ACTH)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03508635",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03508635",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03508635",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03508635",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03508635",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-122",
+      "nctId": "NCT06094712",
+      "protocolNumber": "CORT125134-122",
+      "title": "An Open-Label, Single Dose Study to Evaluate the Pharmacokinetics of the Phase 2 Formulation of CORT125134 Capsules in Healthy Male Subjects",
+      "briefTitle": "A Study to Evaluate the Pharmacokinetics of the CORT125134 Phase 2 Formulation in Healthy Male Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-04-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-04-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2016-04-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 8,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "CORT125134",
+          "type": "EXPERIMENTAL",
+          "description": "After an overnight fast, subjects will receive a single CORT125134 150-mg oral dose of the Phase 2 capsule formulation on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum concentration of plasma CORT125134 (Cmax)",
+        "Time of maximum concentration of plasma CORT125134 (Tmax)",
+        "Area under the concentration-time curve from time zero to the time of last measurable concentration of plasma CORT125134 (AUC0-last)",
+        "Area under the concentration-time curve from time zero extrapolated to infinity of plasma CORT125134 (AUC0-inf)",
+        "Apparent terminal half-life of plasma CORT125134 (T1/2)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094712",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094712",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094712",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094712",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094712",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-550",
+      "nctId": "NCT02762981",
+      "protocolNumber": "CORT125134-550",
+      "title": "Phase 1/2 Study of CORT125134 in Combination With Nab-paclitaxel in Patients With Solid Tumors",
+      "briefTitle": "Study to Evaluate Relacorilant (CORT125134) in Combination With Nab-paclitaxel in Participants With Solid Tumors",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-05-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-05-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-09-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 85,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant with nab-paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be treated with relacorilant in combination with nab-paclitaxel at escalating dose levels in either a Continuous-Dosing Regimen or an Intermittent-Dosing Regimen."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Dose-limiting Toxicity"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With One or More Adverse Events Related to Treatment With Relacorilant"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02762981",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02762981",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02762981",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02762981",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02762981",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-451",
+      "nctId": "NCT02804750",
+      "protocolNumber": "CORT125134-451",
+      "title": "Phase 2 Study of the Safety and Efficacy of CORT125134 in the Treatment of Endogenous Cushing's Syndrome",
+      "briefTitle": "Study to Evaluate CORT125134 in Participants With Cushing's Syndrome",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-06-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2018-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 35,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group 1: Low-dose Group",
+          "type": "EXPERIMENTAL",
+          "description": "100 mg/day for 4 weeks in Period 1, then 150 mg/day for 4 weeks in Period 2, then 200 mg/day for 4 weeks in Period 3. There was no washout between treatment periods. Period 3 was followed by a 4-week follow-up period. Per-protocol, Group 1 did not participate in treatment Period 4."
+        },
+        {
+          "label": "Group 2: High-dose Group",
+          "type": "EXPERIMENTAL",
+          "description": "250 mg/day for 4 weeks in Period 1, then 300 mg/day for 4 weeks in Period 2, then 350 mg/day for 4 weeks in Period 3, then 400 mg/day for 4 weeks in Period 4. There was no washout between treatment periods. Period 4 was followed by a 4-week follow-up period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With One or More Adverse Events",
+        "Percentage of Participants With One or More Severe (≥Grade 3) Adverse Events"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With Hypertension Who Experience Improvement in Blood Pressure Following Treatment With CORT125134",
+        "Percentage of Participants With IGT / T2DM Who Experienced a ≥25% Reduction in AUCglucose Following Treatment With CORT125134"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02804750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02804750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02804750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02804750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02804750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-121",
+      "nctId": "NCT03067376",
+      "protocolNumber": "CORT125134-121",
+      "title": "An Open-label, Single-dose Study Designed to Assess the Mass Balance Recovery, Metabolite Profile and Identification of Metabolite Structures for [14C]-CORT125134 in Healthy Subjects",
+      "briefTitle": "A Study Designed to See How [14C]-CORT125134 is Taken up, Broken Down and Removed From the Body",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-08-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 9,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "30 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "[14C]-CORT125134",
+          "type": "EXPERIMENTAL",
+          "description": "Two capsules each containing 125 milligrams (mg) \\[14C\\]-CORT125134 administered to each participant on 1 occasion"
+        }
+      ],
+      "primaryEndpoints": [
+        "Amount of radioactivity eliminated in urine",
+        "Amount of radioactivity eliminated in feces",
+        "Amount of radioactivity eliminated in urine and feces",
+        "Cumulative amount of radioactivity eliminated in urine",
+        "Cumulative amount of radioactivity eliminated in feces",
+        "Cumulative amount of radioactivity eliminated in urine and feces",
+        "Pharmacokinetics (PK) of total radioactivity: lag time (tlag)",
+        "PK of total radioactivity: peak plasma concentration (Cmax)",
+        "PK of total radioactivity: time to reach maximum observed concentration (tmax)",
+        "PK of total radioactivity: area under the plasma concentration-time curve from time zero to time of last measurable concentration (AUClast)",
+        "PK of total radioactivity: area under the plasma concentration-time curve from time zero to infinity (AUCinf)",
+        "PK of total radioactivity: area under the plasma concentration-time curve extrapolated from time t to infinity as a percentage of total AUC (%AUCextrap)",
+        "PK of total radioactivity: first-order elimination rate constant associated with the terminal portion of the curve, determined as the negative slope of the terminal log-linear phase of the drug concentration-time curve (lambda-z)",
+        "PK of total radioactivity: elimination half-life (t1/2)",
+        "Metabolic profiling and structural identification in plasma, urine and feces"
+      ],
+      "secondaryEndpoints": [
+        "Hematology",
+        "Clinical chemistry",
+        "Urinalysis",
+        "Blood pressure",
+        "Heart rate",
+        "Electrocardiogram",
+        "Percentage of subjects with adverse events",
+        "Physical examination",
+        "Tlag of CORT125134",
+        "Cmax of CORT125134",
+        "Tmax of CORT125134",
+        "AUClast of CORT125134",
+        "%AUCextrap of CORT125134",
+        "AUCinf of CORT125134",
+        "Lambda-z of CORT125134",
+        "T1/2 of CORT125134",
+        "Mean Residence Time (MRT) of CORT125134",
+        "Apparent oral clearance (CL/F) of CORT125134",
+        "Apparent volume of distribution (Vz/F) of CORT125134",
+        "Number of metabolites >10% of circulating radioactivity in plasma",
+        "Number of metabolites >10% of the dose in urine",
+        "Number of metabolites >10% of the dose in feces"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03067376",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03067376",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03067376",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03067376",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03067376",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-453",
+      "nctId": "NCT06094790",
+      "protocolNumber": "CORT125134-453",
+      "title": "An Open-Label, Repeat-Dose Study to Evaluate the Pharmacokinetics of Orally Administered CORT125134 Using the Current Capsule Formulation in Healthy Subjects",
+      "briefTitle": "A Study to Evaluate the Pharmacokinetics of the Current Capsule Formulation of CORT125134 in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-05-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-11-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-11-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 32,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive CORT125134 150 mg once daily for 14 days"
+        },
+        {
+          "label": "Cohort 2",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive CORT125134 250 mg once daily for 14 days"
+        },
+        {
+          "label": "Cohort 3",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive CORT125134 once daily for 14 days at a dose level decided based on evaluation of steady state exposure from Cohorts 1 and 2"
+        },
+        {
+          "label": "Cohort 4 (optional)",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive CORT125134 once daily for 14 days at a dose level decided based on evaluation of steady state exposure from Cohorts 1, 2, and 3, if it is considered that this cohort would aid achievement of the study objectives"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the concentration-time curve over a dose-interval of plasma CORT125134 (AUCtau)",
+        "Maximum concentration of plasma CORT125134 (Cmax)",
+        "AUC from the time of dosing until 24 hours later of plasma CORT125134 (AUC0-24h)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094790",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-123",
+      "nctId": "NCT03442621",
+      "protocolNumber": "CORT125134-123",
+      "title": "A Phase 1, Open-label, Single-dose, Randomized, Crossover Study in Healthy Subjects of the Effects of Co-administration With Food on Exposure, and to Determine the Within-subject Variability in Exposure, to Relacorilant and Its Metabolites",
+      "briefTitle": "Relacorilant Food Effect Study in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-01-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-02-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-03-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant Fasted",
+          "type": "EXPERIMENTAL",
+          "description": "Relacorilant Fasted"
+        },
+        {
+          "label": "Relacorilant with a high fat breakfast",
+          "type": "EXPERIMENTAL",
+          "description": "Relacorilant with a high fat breakfast"
+        },
+        {
+          "label": "Relacorilant with a moderate breakfast",
+          "type": "EXPERIMENTAL",
+          "description": "Relacorilant with a moderate breakfast"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under plasma concentration-time curve up to the last quantifiable sample (AUC0-tz)"
+      ],
+      "secondaryEndpoints": [
+        "Area under plasma concentration-time curve extrapolated to infinity (AUCinf)",
+        "Maximum plasma concentration (Cmax)",
+        "Adverse Events",
+        "Safety Labs",
+        "ECGs",
+        "Vital Signs",
+        "Physical Examinations"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03442621",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03442621",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03442621",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03442621",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03442621",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-126",
+      "nctId": "NCT03457597",
+      "protocolNumber": "CORT125134-126",
+      "title": "A Phase 1, Open-Label, Single-Sequence Crossover Study in Healthy Subjects to Determine the Effect of Relacorilant on Exposure to Probe Substrates for Cytochrome P450s 3A4, 2C8, 2C9, 2C19, and 2D6",
+      "briefTitle": "Study in Healthy Subjects to Determine the Effect of Relacorilant on Exposure to Probe Substrates for Cytochrome P450s",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-03-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-04-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-04-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 27,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Period 1",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1 (Study Days 1 to 4): Midazolam hydrochloride and metoprolol tartrate will be given once on Day 1. Pioglitazone hydrochloride, tolbutamide and omeprazole will be given once on Day 2"
+        },
+        {
+          "label": "Period 2",
+          "type": "EXPERIMENTAL",
+          "description": "Period 2 (Study Days 5 to 13): Relacorilant will be given daily from Day 5 to Day 13."
+        },
+        {
+          "label": "Period 3",
+          "type": "EXPERIMENTAL",
+          "description": "Period 3 (Study Days 14 to 17): Midazolam hydrochloride and metoprolol tartrate will be given once on Day 14. Pioglitazone hydrochloride, tolbutamide and omeprazole will be given once on Day 15. Relacorilant will be given daily from Day 14 to Day 17."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under plasma concentration-time curve up to the last quantifiable sample (AUC0-tz)"
+      ],
+      "secondaryEndpoints": [
+        "Area under plasma concentration-time curve extrapolated to infinity (AUCinf)",
+        "Maximum plasma concentration (Cmax)",
+        "Adverse Events",
+        "Safety Labs",
+        "ECGs",
+        "Vital Signs",
+        "Physical Examinations"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03457597",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03457597",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03457597",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03457597",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03457597",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-124",
+      "nctId": "NCT03512548",
+      "protocolNumber": "CORT125134-124",
+      "title": "A Phase 1, Open-Label, Single-Sequence Crossover Study in Healthy Subjects to Determine the Effect of an Inhibitor of Cytochrome P450 3A on Exposure to Relacorilant and Its Main Metabolites",
+      "briefTitle": "Study in Healthy Subjects to Determine the Effect of an Inhibitor on Exposure to Relacorilant and Its Metabolites",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-04-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-07-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-08-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 52,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1 Period 1",
+          "type": "EXPERIMENTAL",
+          "description": "Part 1 Period 1: Relacorilant 350mg will be given once on Day 1"
+        },
+        {
+          "label": "Part 1 Period 2",
+          "type": "EXPERIMENTAL",
+          "description": "Part 1 Period 2: Itraconazole 200mg will be given for three days"
+        },
+        {
+          "label": "Part 1 Period 3",
+          "type": "EXPERIMENTAL",
+          "description": "Part 1 Period 3: Relacorilant 350mg will be given once with concomitant itraconazole and itraconazole will continue for three additional days"
+        },
+        {
+          "label": "Part 2 Period A",
+          "type": "EXPERIMENTAL",
+          "description": "Part 2 Period A: Relacorilant 300mg will be given once daily for 10 days"
+        },
+        {
+          "label": "Part 2 Period B",
+          "type": "EXPERIMENTAL",
+          "description": "Part 2 Period B: Relacorilant 300mg will be given once daily in combination with itraconazole 200mg once daily for 10 days"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under plasma concentration-time curve up to the last quantifiable sample (AUC0-tz)"
+      ],
+      "secondaryEndpoints": [
+        "Area under plasma concentration-time curve extrapolated to infinity (AUCinf)",
+        "Maximum plasma concentration (Cmax)",
+        "Number and Severity of Treatment Emergent Adverse Events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03512548",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03512548",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03512548",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03512548",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03512548",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-452",
+      "nctId": "NCT03604198",
+      "protocolNumber": "CORT125134-452",
+      "title": "An Open-Label Extension Study of the Safety of Relacorilant (CORT125134) in the Treatment of the Signs and Symptoms of Endogenous Cushing Syndrome",
+      "briefTitle": "Extension Study to Evaluate the Safety of Long-Term Use of Relacorilant in Patients With Cushing Syndrome",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-05-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2026-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 125,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "relacorilant (CORT125134)",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Long-term safety of relacorilant"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03604198",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03604198",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03604198",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03604198",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03604198",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-127",
+      "nctId": "NCT03540836",
+      "protocolNumber": "CORT125134-127",
+      "title": "A Phase 1, Randomized, Open-label, Crossover Study to Determine the Relative Bioavailability of Relacorilant Administered as 3×100-mg Softgel Capsules, 3×100 mg Hard Shell Capsules, and 6×50-mg Hard-shell Capsules in Healthy Adult Subjects",
+      "briefTitle": "A Study to Determine the Relative Bioavailability of Two New Relacorilant Capsule Variants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-05-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-07-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-07-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant 3x100mg softgel capsules",
+          "type": "EXPERIMENTAL",
+          "description": "Relacorilant (3x100 mg softgel capsules)"
+        },
+        {
+          "label": "Relacorilant 3x100mg hard-shell capsules",
+          "type": "EXPERIMENTAL",
+          "description": "Relacorilant (3x100 mg hard-shell capsules)"
+        },
+        {
+          "label": "Relacorilant 6x50mg hard-shell capsules",
+          "type": "EXPERIMENTAL",
+          "description": "Relacorilant (6x50mg hard-shell capsules)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under plasma concentration-time curve up to the last quantifiable sample (AUC0-tz)"
+      ],
+      "secondaryEndpoints": [
+        "Area under plasma concentration-time curve extrapolated to infinity (AUCinf)",
+        "Maximum plasma concentration (Cmax)",
+        "Time to Maximum plasma concentration (Tmax)",
+        "Adverse Events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03540836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03540836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03540836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03540836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03540836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "grace",
+      "nctId": "NCT03697109",
+      "protocolNumber": "CORT125134-455",
+      "acronym": "GRACE",
+      "title": "Glucocorticoid Receptor Antagonism in the Treatment of Cushing Syndrome (GRACE): A Phase 3, Double-Blind, Placebo-Controlled, Randomized-Withdrawal Study of the Efficacy and Safety of Relacorilant",
+      "briefTitle": "A Study of the Efficacy and Safety of Relacorilant in Patients With Endogenous Cushing Syndrome",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-11-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-04-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-04-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 152,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant (OL Phase)",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will receive relacorilant increased sequentially from 100 mg once daily to a maximum dose of 400 mg once daily."
+        },
+        {
+          "label": "Relacorilant (RW Phase)",
+          "type": "EXPERIMENTAL",
+          "description": "Patients who meet any of the response criteria will advance to the RW Phase of the study and receive the same dose of relacorilant as the last dose administered in the OL Phase."
+        },
+        {
+          "label": "Placebo (RW Phase)",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Patients who meet any of the response criteria will advance to the RW Phase of the study and receive placebo matched to study drug."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Patients With Loss of Response With Respect to Hypertension During the RW Phase.",
+        "Number of Patients With 1 or More Treatment-emergent Adverse Events (TEAEs) as Graded by CTCAE v5.0."
+      ],
+      "secondaryEndpoints": [
+        "Change in Area Under the Concentration-time Curve of Blood Glucose (AUCglucose) During the RW Phase",
+        "Change in Hemoglobin HbA1c During the RW Phase",
+        "Change in 2-hour Plasma Glucose During the RW Phase",
+        "Change in SBP and DBP During the RW Phase",
+        "Change in Body Weight During the RW Phase",
+        "Number of Patients With Any Increase or Modification in Diabetes Medication During the RW Phase"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03697109",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03697109",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03697109",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03697109",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03697109",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-552",
+      "nctId": "NCT03776812",
+      "protocolNumber": "CORT125134-552",
+      "title": "A Phase 2, Randomized, Open-Label, 3-arm Study of Relacorilant in Combination With Nab-Paclitaxel for Patients With Recurrent Platinum-Resistant Ovarian, Fallopian Tube, or Primary Peritoneal Cancer",
+      "briefTitle": "Study of Relacorilant in Combination With Nab-Paclitaxel for Patients With Recurrent Platinum-Resistant Ovarian, Fallopian Tube, or Primary Peritoneal Cancer",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-04-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-03-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-07-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 178,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Continuous Relacorilant Dosing",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will receive relacorilant 100 mg (titrated up to 150 mg after Cycle 1 or 2) once daily in combination with nab-paclitaxel 80 mg/m\\^2, on Days 1, 8, and 15 of each 28-day cycle."
+        },
+        {
+          "label": "Arm B: Intermittent Relacorilant Dosing",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will receive relacorilant 150 mg on the day before (excluding Cycle 1, Day -1), the day of, and the day after nab-paclitaxel, in combination with nab-paclitaxel 80 mg/m\\^2, on Days 1, 8, and 15 of each 28-day cycle."
+        },
+        {
+          "label": "Arm C: Nab-paclitaxel Comparator",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Patients will receive nab-paclitaxel 100 mg/m\\^2 on Days 1, 8, and 15 of each 28-day cycle. Patients initially in Arm C who choose to cross over after disease progression will receive relacorilant 100 mg (titrated up to 150 mg) in combination with nab-paclitaxel 80 mg/m\\^2 on Days 1, 8, and 15 of each 28-day cycle after cross over."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-free Survival (PFS)"
+      ],
+      "secondaryEndpoints": [
+        "Objective Response Rate (ORR)",
+        "Duration of Response (DOR)",
+        "Cancer Antigen 125 (CA-125) Response According to Gynecological Cancer Intergroup Criteria (GCIG)",
+        "Best Overall Response (BOR)",
+        "PFS Rate at 6 and 12 Months",
+        "PFS in Patients Who Cross Over to Continuous Treatment at Time of Initial PD",
+        "ORR in Patients Who Cross Over to Continuous Treatment at Time of Initial PD",
+        "DOR in Patients Who Cross Over to Continuous Treatment at Time of Initial PD",
+        "BOR in Patients Who Cross Over to Continuous Treatment at Time of Initial PD",
+        "Overall Survival (OS)",
+        "Overall Response According to Combined RECIST v1.1 + GCIG Criteria"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03776812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03776812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03776812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03776812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03776812",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-128",
+      "nctId": "NCT06094725",
+      "protocolNumber": "CORT125134-128",
+      "title": "An Open-label, Multiple-dose, Adaptive Design Study to Evaluate the Effects of Hepatic Impairment on the Pharmacokinetics of Relacorilant",
+      "briefTitle": "A Study to Evaluate the Effects of Hepatic Impairment on the Pharmacokinetics of Relacorilant",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-01-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-12-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-12-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "No Hepatic Impairment",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects with no hepatic impairment will receive relacorilant 300 mg once daily on Days 1 through 10."
+        },
+        {
+          "label": "Moderate Hepatic Impairment",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects with moderate hepatic impairment (Child-Pugh Class B) will receive relacorilant 300 mg once daily on Days 1 through 10."
+        },
+        {
+          "label": "Mild Hepatic Impairment",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects with mild hepatic impairment (Child-Pugh Class A) will receive relacorilant 300 mg once daily on Days 1 through 10."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum concentration of plasma relacorilant during the dosing interval (Cmax)",
+        "Area under the concentration-time curve of plasma relacorilant from time zero to the end of the dosing interval (24 hours) (AUCt)"
+      ],
+      "secondaryEndpoints": [
+        "Cmax of relacorilant plasma metabolites",
+        "AUCt of relacorilant plasma metabolites",
+        "Number of subjects with one or more treatment-emergent adverse events",
+        "Number of subjects with one or more treatment-emergent adverse events by severity"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "reliant",
+      "nctId": "NCT04329949",
+      "protocolNumber": "CORT125134-553",
+      "acronym": "RELIANT",
+      "title": "A Phase 3 Study of Relacorilant in Combination With Nab-Paclitaxel in Patients With Metastatic Pancreatic Ductal Adenocarcinoma (RELIANT)",
+      "briefTitle": "Study of Relacorilant in Combination With Nab-Paclitaxel in Patients With Metastatic Pancreatic Ductal Adenocarcinoma",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-06-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-08-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-03-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 43,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant with nab-paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will be treated with relacorilant, administered orally, once daily in combination with nab-paclitaxel on Days 1, 8, and 15 of each 28-day cycle."
+        }
+      ],
+      "primaryEndpoints": [
+        "Objective Response Rate (ORR) Per Blinded Independent Central Review (BICR)"
+      ],
+      "secondaryEndpoints": [
+        "Objective Response Rate (ORR) Per Investigator Assessment",
+        "Best Overall Response (BOR)",
+        "Duration of Response (DOR)",
+        "Disease Control Rate (DCR)",
+        "Progression-Free Survival (PFS)",
+        "Overall Survival (OS)",
+        "Progression-Free Survival (PFS)",
+        "Overall Survival (OS)",
+        "Cancer Antigen (CA)19-9",
+        "Tumor Response Per European Organization for Research and Treatment of Cancer (EORTC) Criteria",
+        "Time to Progression (TTP)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04329949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04329949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04329949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04329949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04329949",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "gradient",
+      "nctId": "NCT04308590",
+      "protocolNumber": "CORT125134-456",
+      "acronym": "GRADIENT",
+      "title": "Glucocorticoid Receptor Antagonism in the Treatment of Hypercortisolism in Patients With Cortisol-Secreting Adrenal Adenomas or Hyperplasia (GRADIENT): A Phase 3, Randomized, Double-Blind, Placebo-Controlled Study of the Efficacy and Safety of Relacorilant",
+      "briefTitle": "A Study of the Efficacy and Safety of Relacorilant in Patients With Cortisol-Secreting Adrenal Adenomas",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-07-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-09-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-09-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 137,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will receive relacorilant increased sequentially from 100 mg once daily to a maximum dose of 400 mg once daily."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Patients will receive placebo matched to study drug once daily."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Average 24-hour SBP",
+        "Number of Patients With 1 or More Treatment-emergent Adverse Events (TEAEs) as Graded by CTCAE v5.0."
+      ],
+      "secondaryEndpoints": [
+        "Change in Area Under the Concentration-time Curve of Blood Glucose (AUCglucose)",
+        "Change in Average Diastolic Blood Pressure (DBP)",
+        "Change in Average Heart Rate (HR)",
+        "Change in Average Daytime and Nighttime SBP",
+        "Change in Hemoglobin HbA1c for Patients With HbA1c ≥5.7% at Baseline",
+        "Change in HbA1c for Patients With HbA1c ≥6.5% at Baseline",
+        "Number of Patients With DM Who Achieved 2-hour oGTT Glucose <140 mg/dL",
+        "Number of Patients With IGT Who Achieved 2-hour oGTT Glucose <140 mg/dL",
+        "Number of Patients With Any Dose Decrease in Antihypertensive Medication",
+        "Number of Patients With Any Dose Decrease in Diabetes Medication",
+        "Number of Patients With Any Dose Increase or Switch in Antihypertensive Medication",
+        "Number of Patients With Any Dose Increase or Switch in Diabetes Medication",
+        "Number of Patients With HbA1c ≥6.5% at Baseline Who Achieved HbA1c <6.5%",
+        "Number of Patients With Normalization of the 24-hour Average SBP (<130 mm Hg)",
+        "Number of Patients With a Reduction in 24-hour Average SBP by ≥5 mm Hg"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04308590",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04308590",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04308590",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04308590",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04308590",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-129",
+      "nctId": "NCT06094738",
+      "protocolNumber": "CORT125134-129",
+      "title": "A Phase 1, Randomized, Open-Label, Single-Dose, Three-Way Crossover Study to Evaluate The Effect of Food on the Oral Bioavailability of Relacorilant in Healthy Subjects",
+      "briefTitle": "A Study to Evaluate the Effect of Food on the Oral Bioavailability of Relacorilant in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-09-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-11-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-11-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant under fasted conditions",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive oral relacorilant 400 mg (4 X 100 mg softgel capsules) single dose on Day 1 under fasted conditions. The study period in which a subject will receive this treatment will be determined by random assignment to 1 of 6 treatment sequences."
+        },
+        {
+          "label": "Relacorilant after a high-fat meal",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive oral relacorilant 400 mg (4 X 100 mg softgel capsules) single dose on Day 1 after a high-fat meal. The study period in which a subject will receive this treatment will be determined by random assignment to 1 of 6 treatment sequences."
+        },
+        {
+          "label": "Relacorilant after a low-fat meal",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive oral relacorilant 400 mg (4 X 100 mg softgel capsules) single dose on Day 1 after a low-fat meal. The study period in which a subject will receive this treatment will be determined by random assignment to 1 of 6 treatment sequences."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the concentration-time curve from time zero to the last observed concentration of plasma relacorilant (AUC0-t)",
+        "Area under the concentration-time curve from time zero extrapolated to infinity of plasma relacorilant (AUC0-inf)",
+        "Maximal observed concentration of plasma relacorilant (Cmax)"
+      ],
+      "secondaryEndpoints": [
+        "AUC0-t of relacorilant plasma metabolites",
+        "AUC0-inf of relacorilant plasma metabolites",
+        "Cmax of relacorilant plasma metabolites",
+        "Number of subjects with one or more adverse events",
+        "Number of subjects with one or more serious adverse events",
+        "Number of subjects with one or more adverse events leading to study drug discontinuation"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094738",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094738",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094738",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094738",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06094738",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-551",
+      "nctId": "NCT04373265",
+      "protocolNumber": "CORT125134-551",
+      "title": "A Phase 1b, Open-Label Study of Relacorilant in Combination With Pembrolizumab for Patients With Adrenocortical Carcinoma With Excess Glucocorticoid Production",
+      "briefTitle": "Study of Relacorilant in Combination With Pembrolizumab for Patients With Adrenocortical Carcinoma Which Produces Too Much Stress Hormone (Cortisol)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-09-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-10-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-01-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 15,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant in Combination with Pembrolizumab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be treated on Day -3 to Day 1 (Cohort 1 under fasting conditions) or Day -6 to Day 1 (Cohort 2 under fed conditions) for Cycle 1 only. During the lead-in period, 300 mg relacorilant will be administered daily for 4 -7 days. Patients will receive their first pembrolizumab infusion on Cycle 1 Day 1. The participants will then receive combined treatment from Cycle 1 Day 1 until confirmed PD or unacceptable toxicity. Pembrolizumab will be administered every 6 weeks (on Day 1 of each 42-day cycle) and relacorilant will be administered daily. Optional Cohort 3 will lead-in with 400 mg relacorilant once daily for 7 days and combined treatment of relacorilant and pembrolizumab, depending on PD and toxicity."
+        }
+      ],
+      "primaryEndpoints": [
+        "Dose-limiting Toxicity (DLT)"
+      ],
+      "secondaryEndpoints": [
+        "Non-Progression Rate (NPR)",
+        "Progression-Free Survival (PFS)",
+        "Number of Participants with Adverse Events",
+        "Plasma Concentrations of Relacorilant in Combination with Pembrolizumab in Patients with Advanced ACC and Glucocorticoid Excess"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04373265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04373265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04373265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04373265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04373265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-130",
+      "nctId": "NCT04795479",
+      "protocolNumber": "CORT125134-130",
+      "title": "A Randomized, Partial Double-Blind, Placebo- and Positive- Controlled, Multiple-Dose, 4-Way Crossover, Thorough QT/QTc (TQT) Study to Investigate the Effect of Relacorilant on Cardiac Repolarization in Healthy Volunteers",
+      "briefTitle": "T/QT Study to Investigate the Effect of Relacorilant on Cardiac Repolarization in Healthy Volunteers",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-01-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-05-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-07-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 36,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment Sequence 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive relacorilant 400 mg once daily (QD) for 5 days in Period 1, followed by relacorilant 800 mg QD for 5 days in Period 2, followed by placebo to relacorilant QD for 5 days in Period 3, followed by placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive relacorilant 800 mg QD for 5 days in Period 1, followed by placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 2, followed by relacorilant 400 mg QD for 5 days in Period 3, followed by placebo to relacorilant QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 3",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive placebo to relacorilant QD for 5 days in Period 1, followed by relacorilant 400 mg QD for 5 days in Period 2, followed by placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 3, followed by relacorilant 800 mg QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 4",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 1, followed by placebo to relacorilant QD for 5 days in Period 2, followed by relacorilant 800 mg QD for 5 days in Period 3, followed by relacorilant 400 mg QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 5",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive relacorilant 800 mg QD for 5 days in Period 1, followed by placebo to relacorilant QD for 5 days in Period 2, followed by relacorilant 400 mg QD for 5 days in Period 3, followed by relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 6",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive placebo to relacorilant QD for 5 days in Period 1, followed by placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 2, followed by relacorilant 800 mg QD for 5 days in Period 3, followed by relacorilant 400 mg QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 7",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive relacorilant 400 mg QD for 5 days in Period 1, followed by relacorilant 800 mg QD for 5 days in Period 2, followed by placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 3, followed by placebo to relacorilant QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 8",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 1, followed by relacorilant 400 mg QD for 5 days in Period 2, followed by placebo to relacorilant QD for 5 days in Period 3, followed by relacorilant 800 mg QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 9",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive placebo to relacorilant QD for 5 days in Period 1, followed by relacorilant 400 mg QD for 5 days in Period 2, followed by relacorilant 800 mg QD for 5 days in Period 3, followed by placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 10",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive relacorilant 400 mg QD for 5 days in Period 1, followed by placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 2, followed by placebo to relacorilant QD for 5 days in Period 3, followed by relacorilant 800 mg QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 11",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive relacorilant 800 mg QD for 5 days in Period 1, followed by placebo to relacorilant QD for 5 days in Period 2, followed by placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 3, followed by relacorilant 400 mg QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        },
+        {
+          "label": "Treatment Sequence 12",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive placebo to relacorilant QD for 4 days and moxifloxacin 400 mg on Day 5 in Period 1, followed by relacorilant 800 mg QD for 5 days in Period 2, followed by relacorilant 400 mg QD for 5 days in Period 3, followed by placebo to relacorilant QD for 5 days in Period 4. Treatment periods will be separated by a washout of at least 10 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Placebo-corrected Change from Baseline in Cardiac QT Interval Corrected by Fridericia's Formula (QTcF)"
+      ],
+      "secondaryEndpoints": [
+        "Change from Baseline in Cardiac QTcF",
+        "Change from Baseline in Heart Rate (HR)",
+        "Placebo-corrected Change from Baseline in HR",
+        "Change from Baseline in Cardiac PR Interval",
+        "Placebo-corrected Change from Baseline in Cardiac PR Interval",
+        "Change from Baseline in Cardiac QRS Intervals",
+        "Placebo-corrected Change from Baseline in Cardiac QRS Intervals",
+        "Number of Participants with a Categorical Outlier in QTcF",
+        "Number of Participants with a Categorical Outlier in HR",
+        "Number of Participants with a Categorical Outlier in PR Interval",
+        "Number of Participants with a Categorical Outlier in QRS Intervals",
+        "Number of Participants with a Treatment-emergent Change of T-wave Morphology",
+        "Number of Participants with a Treatment-emergent Presence of U-waves",
+        "Maximum Plasma Concentration (Cmax) of Relacorilant, Metabolites of Relacorilant, and Moxifloxacin",
+        "Time to Reach Cmax (Tmax) of Plasma Relacorilant, Metabolites of Relacorilant, and Moxifloxacin",
+        "Minimum Plasma Concentration (Cmin) of Relacorilant, Metabolites of Relacorilant, and Moxifloxacin",
+        "Area Under the Plasma-concentration Curve from Time Zero to Time of Last Measurable Concentration (AUClast) of Relacorilant, Metabolites of Relacorilant, and Moxifloxacin",
+        "Area Under the Plasma-concentration Curve from Time Zero to 24 Hours Postdose (AUC0-24) of Relacorilant, Metabolites of Relacorilant, and Moxifloxacin",
+        "Number of Participants with One or More Adverse Events",
+        "Number of Participants Discontinued From Study Treatment due to an Adverse Event"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-132",
+      "nctId": "NCT05347979",
+      "protocolNumber": "CORT125134-132",
+      "title": "An Open-Label, Drug-Drug Interaction Study Designed to Evaluate the Effect of Relacorilant on the Pharmacokinetics of the Sensitive P-glycoprotein Substrate Dabigatran Etexilate in Healthy Subjects",
+      "briefTitle": "Effect of Relacorilant on the Pharmacokinetics of the Sensitive P-glycoprotein Substrate Dabigatran Etexilate in Healthy Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-05-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-07-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-07-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Dabigatran Etexilate (NIMP) and Relacorilant (IMP)",
+          "type": "EXPERIMENTAL",
+          "description": "Following an overnight fast, participants will receive 75 mg dabigatran etexilate on Day 1, 400 mg dose of relacorilant QD on Days 3 to 13, and 75 mg dabigatran etexilate on Day 12. On Day 12, dabigatran etexilate will be dosed at approximately the same time as the relacorilant dose."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Observed Plasma Concentration (Cmax) of Dabigatran When Administered With and Without Relacorilant",
+        "Area Under the Curve from Time 0 to the Time of Last Measurable Concentration (AUC0-last) of Dabigatran When Administered With and Without Relacorilant",
+        "Area Under the Curve from Time 0 Extrapolated to Infinity (AUC 0-inf) of Dabigatran When Administered With and Without Relacorilant"
+      ],
+      "secondaryEndpoints": [
+        "Plasma Concentrations of Relacorilant",
+        "Number of Participants with Adverse Events (AEs) and Serious Adverse Events (SAEs)",
+        "Number of Participants with Clinically Significant Abnormalities in Blood Pressure and Heart Rate",
+        "Number of Participants with Clinically Significant Abnormalities in Electrocardiogram (ECG) Measurements",
+        "Number of Participants with Clinically Significant Abnormalities in Laboratory Safety Tests (Clinical Chemistry, Hematology, Urinalysis)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05347979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05347979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05347979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05347979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05347979",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-556",
+      "nctId": "NCT05257408",
+      "protocolNumber": "CORT125134-556",
+      "labelName": "ROSELLA",
+      "title": "A Phase 3 Study of Relacorilant in Combination With Nab-Paclitaxel Versus Nab-Paclitaxel Monotherapy in Advanced, Platinum-Resistant, High-Grade Epithelial Ovarian, Primary Peritoneal, or Fallopian-Tube Cancer (ROSELLA)",
+      "briefTitle": "Relacorilant in Combination With Nab-Paclitaxel in Advanced, Platinum-Resistant, High-Grade Epithelial Ovarian, Primary Peritoneal, or Fallopian-Tube Cancer",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "In combination with nab-paclitaxel for the treatment of adults with platinum- resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer who have received one to three prior systemic treatment regimens, at least one of which included bevacizumab",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220641s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with nab-paclitaxel for the treatment of adults with platinum- resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer who have received one to three prior systemic treatment regimens, at least one of which included bevacizumab)",
+            "quote": "Trial identifier appears within the In combination with nab-paclitaxel for the treatment of adults with platinum- resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer who have received one to three prior systemic treatment regimens, at least one of which included bevacizumab section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220641Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Lifyorli (relacorilant) in combination with nab-paclitaxel for the treatment of adults with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal cancer who have received one to three prior systemic treatment regimens, at least one of which included bevacizumab.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-06-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-03-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 381,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant 150 mg With Nab-paclitaxel 80 mg/m^2",
+          "type": "EXPERIMENTAL",
+          "description": "Patients receive nab-paclitaxel 80 mg/m\\^2 on Days 1, 8, and 15 of each 28-day cycle in combination with intermittent relacorilant (150 mg relacorilant once daily on the day before, the day of, and the day after nab-paclitaxel), administered orally under fed conditions. Relacorilant will not be administered on Cycle 1 Day -1."
+        },
+        {
+          "label": "Nab-paclitaxel 100 mg/m^2",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Patients receive nab-paclitaxel 100 mg/m\\^2 on Days 1, 8, and 15 of each 28-day cycle."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-free Survival (PFS) as Assessed by Blinded Independent Central Review (BICR)",
+        "Overall Survival"
+      ],
+      "secondaryEndpoints": [
+        "PFS as Assessed by the Investigator",
+        "Objective Response as Assessed by the Investigator",
+        "Best Overall Response as Assessed by the Investigator",
+        "Duration of Confirmed Responses as Assessed by the Investigator",
+        "Clinical Benefit Rate at 24 Weeks as Assessed by BICR and the Investigator",
+        "Cancer Antigen (CA)-125 Response",
+        "Combined Overall Response Rate by RECIST v1.1 and CA-125 Defined by GCIG Criteria",
+        "Number of Patients With One or More Adverse Events",
+        "Number of Patients Who Discontinued the Study Treatment Due to an Adverse Event"
+      ],
+      "postedResults": [
+        {
+          "title": "Progression-free Survival (PFS) as Assessed by Blinded Independent Central Review (BICR)",
+          "timeFrame": "Up to 20 months",
+          "paramType": "MEDIAN",
+          "unitOfMeasure": "months",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Relacorilant 150 mg With Nab-paclitaxel 80 mg/m^2"
+            },
+            {
+              "id": "OG001",
+              "title": "Nab-paclitaxel 100 mg/m^2"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "6.54",
+              "lowerLimit": "5.55",
+              "upperLimit": "7.43"
+            },
+            {
+              "groupId": "OG001",
+              "value": "5.52",
+              "lowerLimit": "3.94",
+              "upperLimit": "5.88"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.0076",
+              "method": "Log Rank",
+              "paramType": "Hazard Ratio (HR)",
+              "paramValue": "0.70",
+              "ciPct": "95",
+              "ciLower": "0.54",
+              "ciUpper": "0.91"
+            }
+          ]
+        },
+        {
+          "title": "Overall Survival",
+          "timeFrame": "Up to 32 months",
+          "paramType": "MEDIAN",
+          "unitOfMeasure": "months",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Relacorilant 150 mg With Nab-paclitaxel 80 mg/m^2"
+            },
+            {
+              "id": "OG001",
+              "title": "Nab-paclitaxel 100 mg/m^2"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "15.97",
+              "lowerLimit": "13.04",
+              "upperLimit": "18.33"
+            },
+            {
+              "groupId": "OG001",
+              "value": "11.86",
+              "lowerLimit": "10.02",
+              "upperLimit": "13.80"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.0004",
+              "method": "Log Rank",
+              "paramType": "Hazard Ratio (HR)",
+              "paramValue": "0.65",
+              "ciPct": "95",
+              "ciLower": "0.51",
+              "ciUpper": "0.83"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257408?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220641Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 4,
+          "quote": "ant epithelial ovarian, fallopian tube, or primary peritoneal cancer enrolled to ROSELLA (NCT05257408). Conduct an assessment of the impact of GR expression level cutoff on the analyses, incl",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220641s000lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "ROSELLA (NCT05257408)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-557",
+      "nctId": "NCT06906341",
+      "protocolNumber": "CORT125134-557",
+      "title": "An Open-label, Global, Multi-Arm Study to Evaluate the Efficacy and Safety of Relacorilant in Combination With Different Treatment Regimens in Patients With Gynecological Cancers (BELLA)",
+      "briefTitle": "Relacorilant in Combination With Different Treatment Regimens in Patients With Gynecological Cancers",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-04-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2026-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 270,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Relacorilant in Combination with Nab-paclitaxel and Bevacizumab",
+          "type": "EXPERIMENTAL",
+          "description": "In Arm A, patients with platinum-resistant ovarian cancer will receive the combination of relacorilant with nab-paclitaxel and bevacizumab."
+        },
+        {
+          "label": "Arm B: Relacorilant in Combination with Nab-Paclitaxel and Bevacizumab",
+          "type": "EXPERIMENTAL",
+          "description": "In Arm B, patients with platinum-sensitive ovarian cancer who have progressed while receiving treatment with a polymerase inhibitor will receive relacorilant in combination with nab-paclitaxel and bevacizumab."
+        },
+        {
+          "label": "Arm C: Relacorilant in Combination with Nab-Paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "In Arm C, patients with previously-treated advanced, recurrent, or metastatic endometrial cancer will receive relacorilant in combination with nab-paclitaxel."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-Free Survival (PFS)"
+      ],
+      "secondaryEndpoints": [
+        "Objective Response Rate (ORR)",
+        "Best Overall Response Rate (BOR)",
+        "Duration of Response (DOR)",
+        "Clinical Benefit Rate (CBR)",
+        "Overall Survival (OS)",
+        "Number of patients with one or more adverse events",
+        "Area under the plasma concentration-time curve (AUC) of relacorilant",
+        "Maximum plasma concentration (Cmax) of relacorilant",
+        "Trough plasma concentrations (Cmin) of relacorilant"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06906341",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06906341",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06906341",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06906341",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06906341",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cort125134-558",
+      "nctId": "NCT07259317",
+      "protocolNumber": "CORT125134-558",
+      "title": "A Phase 2, Single-Arm Trial of Relacorilant in Combination With Nab-Paclitaxel and Gemcitabine in Chemotherapy-Naïve Patients With Metastatic Pancreatic Adenocarcinoma (TRIDENT)",
+      "briefTitle": "Relacorilant With Nab-Paclitaxel and Gemcitabine in Patients With Metastatic Pancreatic Adenocarcinoma",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Corcept Therapeutics",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-01-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 80,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Relacorilant in Combination with Nab-paclitaxel and Gemcitabine",
+          "type": "EXPERIMENTAL",
+          "description": "The patient will receive relacorilant administered orally under fed conditions, once daily for 3 consecutive days on the day before (excluding Cycle 1 Day -1), the day of, and the day after nab-paclitaxel and gemcitabine intravenous (IV) infusions. Various dose levels and dosing schedules of relacorilant, nab-paclitaxel, and gemcitabine will be evaluated. On days when relacorilant, nab-paclitaxel, and gemcitabine are administered, relacorilant will be administered first, then nab-paclitaxel, and gemcitabine last."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percent of Patients who Experience Dose Limiting Toxicity (DLT) (Part 1)",
+        "Number of Patients with 1 or More Adverse Events (AEs) Leading to Study Drug Discontinuations or Dose Modifications (Part 1)",
+        "Progression-Free Survival (PFS) (Part 2)"
+      ],
+      "secondaryEndpoints": [
+        "Maximum Plasma Concentration (Cmax) of Relacorilant (Part 1 and Part 2)",
+        "Area Under the Plasma Concentration-time Curve (AUC) of Relacorilant (Part 1 and Part 2)",
+        "Cmax of Nab-paclitaxel (Part 1 and Part 2)",
+        "AUC of Nab-paclitaxel (Part 1 and Part 2)",
+        "Overall Survival (OS) (Part 2)",
+        "Best Overall Response (BOR) (Part 2)",
+        "Objective Response Rate (ORR) (Part 2)",
+        "Duration of Response (DoR) (Part 2)",
+        "Clinical Benefit Rate (CBR) (Part 2)",
+        "Cancer Antigen 19-9 (CA19-9) Kinetics (Part 2)",
+        "Number of Patients with 1 or More Adverse Events (Part 2)",
+        "Number of Patients with Treatment-related Adverse Events (Part 2)",
+        "Number of Patients with Adverse Events by Severity (Part 2)",
+        "Number of Patients With 1 or More Adverse Events Leading to Study Drug Discontinuation (Part 2)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07259317",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07259317",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07259317",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07259317",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07259317",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-03-25",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220641%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220641",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220641%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220641Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220641s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:19.249Z"
+}

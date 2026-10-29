@@ -1,0 +1,719 @@
+{
+  "slug": "veligrotug",
+  "brandName": "Lumvoa",
+  "inn": "veligrotug",
+  "modality": "Biologic (BLA)",
+  "sponsor": "VIRIDIAN THERAPEUTICS INC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Thyroid eye disease regardless of thyroid eye disease activity or duration",
+      "slug": "thyroid-eye-disease-regardless-of-thyroid-eye-disease",
+      "approvalDate": {
+        "value": "2026-06-26",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761530%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761530",
+      "applicationType": "BLA",
+      "sponsor": "VIRIDIAN THERAPEUTICS INC",
+      "originalApprovalDate": {
+        "value": "2026-06-26",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "thrive",
+      "nctId": "NCT05176639",
+      "protocolNumber": "VRDN-001-101",
+      "acronym": "THRIVE",
+      "title": "A Safety, Tolerability, and Efficacy Study of Veligrotug, a Humanized Monoclonal Antibody Directed Against the IGF-1 Receptor in Subjects With Thyroid Eye Disease",
+      "briefTitle": "A Safety, Tolerability, and Efficacy Study of Veligrotug (VRDN 001) in Participants With Thyroid Eye Disease (TED)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Thyroid eye disease regardless of thyroid eye disease activity or duration",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Thyroid eye disease regardless of thyroid eye disease activity or duration)",
+            "quote": "Trial identifier appears within the Thyroid eye disease regardless of thyroid eye disease activity or duration section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Viridian Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-11-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-03-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 113,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Veligrotug",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive veligrotug 10 mg/kg as an intravenous (IV) infusion every 3 weeks (Q3W) for 12 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo matched to veligrotug as an IV infusion Q3W for 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Proptosis Responder Rate (PRR) in the Study Eye As Measured by Exophthalmometer"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Proptosis in the Study Eye As Measured by Exophthalmometer",
+        "PRR in the Most Proptotic Eye As Measured by Magnetic Resonance Imaging (MRI)/Computed Tomography (CT)",
+        "Change From Baseline in Proptosis in the Most Proptotic Eye As Measured by MRI/CT",
+        "Change From Baseline in CAS in the Study Eye",
+        "Overall Responder Rate (ORR) Comprising of PRR and Clinical Activity Responder Rate in the Study Eye",
+        "Clinical Activity Responder Rate in the Study Eye",
+        "Diplopia Responder Rate",
+        "Diplopia Resolution Rate",
+        "Percentage of Participants With a CAS of 0 or 1 in the Study Eye"
+      ],
+      "postedResults": [
+        {
+          "title": "Proptosis Responder Rate (PRR) in the Study Eye As Measured by Exophthalmometer",
+          "timeFrame": "Baseline to Week 15",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Veligrotug"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "70.00"
+            },
+            {
+              "groupId": "OG001",
+              "value": "5.26"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Regression, Logistic",
+              "paramType": "Risk Difference (RD)",
+              "paramValue": "64.74",
+              "ciPct": "95",
+              "ciLower": "51.97",
+              "ciUpper": "77.51"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05176639",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05176639",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05176639",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05176639",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05176639",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05176639?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 4,
+          "quote": "evaluated in two randomized, double-masked, placebo-controlled clinical studies (Study 1 [NCT05176639] and Study 2 [NCT06021054]) consisting of 113 patients with active thyroid eye disease (7",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "thrive-2",
+      "nctId": "NCT06021054",
+      "protocolNumber": "VRDN-001-301",
+      "acronym": "THRIVE-2",
+      "title": "A Randomized, Double-masked, Placebo-controlled Safety, Tolerability, and Efficacy Study of VRDN-001, a Humanized Monoclonal Antibody Directed Against the IGF-1 Receptor, in Participants With Chronic Thyroid Eye Disease (TED)",
+      "briefTitle": "An Efficacy, Safety, and Tolerability Study of Veligrotug (VRDN-001), in Participants With Chronic Thyroid Eye Disease (TED)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Thyroid eye disease regardless of thyroid eye disease activity or duration",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Thyroid eye disease regardless of thyroid eye disease activity or duration)",
+            "quote": "Trial identifier appears within the Thyroid eye disease regardless of thyroid eye disease activity or duration section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Viridian Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-11-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-11-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-07-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 188,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Veligrotug",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive veligrotug 10 mg/kg as an intravenous (IV) infusion every 3 weeks (Q3W) for 12 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive placebo matched to veligrotug as an IV infusion Q3W for 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Proptosis Responder Rate (PRR) in the Most Proptotic Eye as Measured by Exophthalmometer"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Proptosis in the Most Proptotic Eye as Measured by Exophthalmometer",
+        "PRR in the Most Proptotic Eye, as Measured by Magnetic Resonance Imaging (MRI)/Computed Tomography (CT)",
+        "Change From Baseline in Proptosis in the Most Proptotic Eye as Measured by MRI/CT",
+        "Clinical Activity Responder Rate in the Most Proptotic Eye as Measured by Exophthalmometer",
+        "Overall Responder Rate (ORR) Comprising PRR and Clinical Activity Responder Rate in the Most Proptotic Eye as Measured by Exophthalmometer",
+        "Diplopia Responder Rate",
+        "Diplopia Resolution Rate"
+      ],
+      "postedResults": [
+        {
+          "title": "Proptosis Responder Rate (PRR) in the Most Proptotic Eye as Measured by Exophthalmometer",
+          "timeFrame": "Baseline to Week 15",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Veligrotug"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "57.28"
+            },
+            {
+              "groupId": "OG001",
+              "value": "8.22"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Regression, Logistic",
+              "paramType": "Risk Difference (RD)",
+              "paramValue": "49.06",
+              "ciPct": "95",
+              "ciLower": "37.71",
+              "ciUpper": "60.40"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06021054",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06021054",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06021054",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06021054",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06021054",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06021054?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 4,
+          "quote": "d, double-masked, placebo-controlled clinical studies (Study 1 [NCT05176639] and Study 2 [NCT06021054]) consisting of 113 patients with active thyroid eye disease (75 received LUMVOA and 38 r",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "ole",
+      "nctId": "NCT06179875",
+      "protocolNumber": "VRDN-001-302",
+      "acronym": "OLE",
+      "title": "An Open-label Study for Participants Who Are Non-responders at the End of Treatment Assessment on the VRDN-001-101 and VRDN-001-301 Pivotal Studies",
+      "briefTitle": "An Open-label Study (OLE) for Non-responders of VRDN-001-101 and VRDN-001-301",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Viridian Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-04-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 139,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Veligrotug/Veligrotug",
+          "type": "EXPERIMENTAL",
+          "description": "Non-responder participants who received veligrotug in the parent Study VRDN-001-101 or VRDN-001-301 will receive veligrotug 10 milligrams (mg)/kilogram (kg) every 3 weeks (Q3W) for 12 weeks."
+        },
+        {
+          "label": "Placebo/Veligrotug",
+          "type": "EXPERIMENTAL",
+          "description": "Non-responder participants who received placebo in the parent Study VRDN-001-101 or VRDN-001-301 will receive veligrotug 10 mg/kg Q3W for 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Proptosis Responder Rate (PRR) in the Most Proptotic Eye as Measured by Exophthalmometer"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Proptosis in the Most Proptotic Eye as Measured by Exophthalmometer",
+        "PRR in the Most Proptotic Eye as Measured by Magnetic Resonance Imaging (MRI)/Computed Tomography (CT)",
+        "Change From Baseline in Proptosis in the Most Proptotic Eye as Measured by MRI/CT",
+        "Clinical Activity Responder Rate in the Most Proptotic Eye as Measured by Exophthalmometer",
+        "ORR Comprising PRR and Clinical Activity Responder Rate in the Most Proptotic Eye as Measured by Exophthalmometer",
+        "Diplopia Responder Rate",
+        "Diplopia Resolution Rate"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06179875",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06179875",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06179875",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06179875",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06179875",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "strive",
+      "nctId": "NCT06384547",
+      "protocolNumber": "VRDN-001-303",
+      "acronym": "STRIVE",
+      "title": "A Randomized, Controlled, Safety and Tolerability Study of VRDN-001, a Humanized Monoclonal Antibody Directed Against the IGF-1 Receptor, in Participants With Thyroid Eye Disease (TED)",
+      "briefTitle": "A Randomized, Controlled, Safety and Tolerability Study of VRDN-001 in Participants With Thyroid Eye Disease (TED)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Viridian Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-05-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-01-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 231,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Veligrotug 10 mg/kg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 5 intravenous (IV) infusions of veligrotug 10 milligrams (mg)/kilogram (kg) at 3-week intervals for 12 weeks."
+        },
+        {
+          "label": "Veligrotug 3 mg/kg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 5 IV infusions of veligrotug 3 mg/kg at 3-week intervals for 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Treatment-emergent Adverse Events (TEAEs) Through Week 15"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Proptosis in the Study Eye as Measured by Exophthalmometer",
+        "Number of Participants With TEAEs Through Week 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06384547",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06384547",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06384547",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06384547",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06384547",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "vrdn-001-401",
+      "nctId": "NCT07832136",
+      "protocolNumber": "VRDN-001-401",
+      "title": "A Phase 4, Single-Arm, Open-Label Trial to Evaluate the Safety and Efficacy of Veligrotug in Participants With Thyroid Eye Disease (TED) Who Previously Responded to Teprotumumab",
+      "briefTitle": "An Open-Label Trial of Veligrotug in Participants With Thyroid Eye Disease Who Previously Responded to Teprotumumab",
+      "phase": "PHASE4",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Viridian Therapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-09-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-04-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "5 IV infusions of 10 mg/kg of veligrotug",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive veligrotug10 mg/kg as an intravenous (IV) infusion every 3 weeks (Q3W) for 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety and tolerability of veligrotrug (LUMVOA™)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07832136",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07832136",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07832136",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07832136",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07832136",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-06-26",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761530%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761530",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761530%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:00:41.823Z"
+}

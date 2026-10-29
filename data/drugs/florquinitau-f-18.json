@@ -1,0 +1,79 @@
+{
+  "slug": "florquinitau-f-18",
+  "brandName": "Tauklarify",
+  "inn": "florquinitau f-18",
+  "modality": "Drug (NDA)",
+  "sponsor": "CERVEAU LANTHEUS",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Positron emission tomography (PET) of the brain in adults with cognitive impairment who are being evaluated for Alzheimer’s disease to identify patients with tau neurofibrillary tangle (NFT) pathology",
+      "slug": "positron-emission-tomography-pet-of-the-brain-in-adults",
+      "approvalDate": {
+        "value": "2026-08-13",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220496%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220496",
+      "applicationType": "NDA",
+      "sponsor": "CERVEAU LANTHEUS",
+      "originalApprovalDate": {
+        "value": "2026-08-13",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-08-13",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220496%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220496",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220496%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220496Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220496Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:59:44.031Z"
+}

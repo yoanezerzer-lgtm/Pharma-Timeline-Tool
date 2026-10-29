@@ -1,0 +1,870 @@
+{
+  "slug": "difamilast",
+  "brandName": "Adquey",
+  "inn": "difamilast",
+  "modality": "Drug (NDA)",
+  "sponsor": "ACROTECH BIOPHARMA",
+  "mechanism": "Phosphodiesterase 4 Inhibitor",
+  "summary": "",
+  "indications": [
+    {
+      "name": "The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis",
+      "slug": "the-topical-treatment-of-adults-and-pediatric-patients-2",
+      "approvalDate": {
+        "value": "2026-02-12",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-02-12",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Adquey (difamilast) ointment,1% for the topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Adquey (difamilast) ointment,1% for the topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "219474",
+      "applicationType": "NDA",
+      "sponsor": "ACROTECH BIOPHARMA",
+      "originalApprovalDate": {
+        "value": "2026-02-12",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "271-12-205",
+      "nctId": "NCT02068352",
+      "protocolNumber": "271-12-205",
+      "title": "A Phase 2 Multi-center, Randomized, Double-blind, Vehicle-controlled, Three-arm, Parallel Group Study to Assess the Safety, Tolerability, and Efficacy of Topical OPA-15406 Ointment, in Subjects With Mild/Moderate Atopic Dermatitis",
+      "briefTitle": "A Study to Evaluate the Effectiveness and Safety of Topical OPA-15406 Ointment to Treat Participants With Atopic Dermatitis",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "indication": "The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219474Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis)",
+            "quote": "Trial identifier appears within the The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Adquey (difamilast) ointment,1% for the topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2014-06-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-01-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2015-02-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 121,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "10 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "0.3% OPA-15406",
+          "type": "EXPERIMENTAL",
+          "description": "OPA-15406 0.3% ointment was applied topically twice daily (BID) to the selected treatment area(s) at approximately 12-hour intervals for 8 weeks."
+        },
+        {
+          "label": "1% OPA-15406",
+          "type": "EXPERIMENTAL",
+          "description": "OPA-15406 1% ointment was applied topically BID to the selected treatment area(s) at approximately 12-hour intervals for 8 weeks."
+        },
+        {
+          "label": "Vehicle Ointment",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "OPA-15406 1%-matching placebo (vehicle ointment) was applied topically BID to the selected treatment area(s) at approximately 12-hour intervals for 8 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With Success in the Overall Investigator's Global Assessment of Disease Severity (IGA) Score at Week 4 [Using Non-responder Imputation or Last Observation Carried Forward (LOCF)]"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Overall IGA Score at Week 4 [Using Mixed Model Repeated Measures (MMRM) Analysis]",
+        "Change From Baseline in Overall IGA Score at Week 4 [Using Last Observation Carried Forward (LOCF) Analysis]",
+        "Percentage of Participants With Adverse Events (AEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants With Success in the Overall Investigator's Global Assessment of Disease Severity (IGA) Score at Week 4 [Using Non-responder Imputation or Last Observation Carried Forward (LOCF)]",
+          "timeFrame": "Week 4",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "0.3% OPA-15406"
+            },
+            {
+              "id": "OG001",
+              "title": "1% OPA-15406"
+            },
+            {
+              "id": "OG002",
+              "title": "Vehicle Ointment"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "category": "Non-responders",
+              "value": "14.63"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Non-responders",
+              "value": "20.93"
+            },
+            {
+              "groupId": "OG002",
+              "category": "Non-responders",
+              "value": "2.70"
+            },
+            {
+              "groupId": "OG000",
+              "category": "LOCF",
+              "value": "15.00"
+            },
+            {
+              "groupId": "OG001",
+              "category": "LOCF",
+              "value": "20.93"
+            },
+            {
+              "groupId": "OG002",
+              "category": "LOCF",
+              "value": "2.70"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "0.0690",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Mean Difference",
+              "paramValue": "11.93",
+              "ciPct": "95",
+              "ciLower": "-0.08",
+              "ciUpper": "23.95"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "0.0165",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Mean Difference",
+              "paramValue": "18.23",
+              "ciPct": "95",
+              "ciLower": "4.99",
+              "ciUpper": "31.46"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "0.0617",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Mean Difference",
+              "paramValue": "12.30",
+              "ciPct": "95",
+              "ciLower": "0.06",
+              "ciUpper": "24.53"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02068352",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02068352",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02068352",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02068352",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02068352",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02068352?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 8,
+          "quote": "ulticenter, randomized, double-blind, parallel-group, vehicle-controlled trials (Trial 1 [NCT02068352], Trial 2 [NCT03908970], and Trial 3 [NCT03911401]) that treated a total of 612 subjects.",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "271-102-00007",
+      "nctId": "NCT03908970",
+      "protocolNumber": "271-102-00007",
+      "title": "A Multicenter, Randomized, Double-blind, Vehicle Controlled, Parallel-group Comparison Trial to Demonstrate the Superiority of 1% OPA-15406 Ointment to the Vehicle in Adult Patients With Atopic Dermatitis (Phase 3 Trial)",
+      "briefTitle": "Comparison Trial of OPA-15406 Ointment in Adult Patients With Atopic DermatitisSyndrome",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219474Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis)",
+            "quote": "Trial identifier appears within the The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Adquey (difamilast) ointment,1% for the topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-03-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-12-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 364,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "15 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "1% OPA-15406",
+          "type": "EXPERIMENTAL",
+          "description": "Twice daily"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Twice daily"
+        }
+      ],
+      "primaryEndpoints": [
+        "Responder Rate of Investigator's Global Assesment(IGA) of Disease Severity"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Eczema Area and Severity Index (EASI) Score",
+        "Change From Baseline in Verbal Rating Scale (VRS) for Pruritus Score"
+      ],
+      "postedResults": [
+        {
+          "title": "Responder Rate of Investigator's Global Assesment(IGA) of Disease Severity",
+          "timeFrame": "At Week 4",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of perticipants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "1% OPA-15406"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "38.46",
+              "lowerLimit": "31.36",
+              "upperLimit": "45.95"
+            },
+            {
+              "groupId": "OG001",
+              "value": "12.64",
+              "lowerLimit": "8.18",
+              "upperLimit": "18.36"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03908970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03908970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03908970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03908970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03908970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03908970?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 8,
+          "quote": "double-blind, parallel-group, vehicle-controlled trials (Trial 1 [NCT02068352], Trial 2 [NCT03908970], and Trial 3 [NCT03911401]) that treated a total of 612 subjects. Trial 1 enrolled adult",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "271-102-00008",
+      "nctId": "NCT03911401",
+      "protocolNumber": "271-102-00008",
+      "title": "A Multicenter, Randomized, Double-blind, Vehicle Controlled, Parallel-group Comparison Trial to Demonstrate the Superiority of 0.3% and 1% OPA-15406 Ointment to the Vehicle in Pediatric Patients With Atopic Dermatitis (Phase 3 Trial)",
+      "briefTitle": "Comparison Trial of OPA-15406 Ointment in Pediatric Patients With Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219474Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis)",
+            "quote": "Trial identifier appears within the The topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Adquey (difamilast) ointment,1% for the topical treatment of adults and pediatric patients 2 years of age and older with mild to moderate atopic dermatitis.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-05-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-12-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 251,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "14 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "0.3% OPA-15406",
+          "type": "EXPERIMENTAL",
+          "description": "Twice daily"
+        },
+        {
+          "label": "1% OPA-15406",
+          "type": "EXPERIMENTAL",
+          "description": "Twice daily"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Twice daily"
+        }
+      ],
+      "primaryEndpoints": [
+        "Responder Rate of Investigator's Global Assesment (IGA) of Disease Severity"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Eczema Area and Severity Index (EASI) Score",
+        "Change From Baseline in Verbal Rating Scale (VRS) for Pruritus Score"
+      ],
+      "postedResults": [
+        {
+          "title": "Responder Rate of Investigator's Global Assesment (IGA) of Disease Severity",
+          "timeFrame": "At Week 4",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "0.3% OPA-15406"
+            },
+            {
+              "id": "OG001",
+              "title": "1% OPA-15406"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "44.58",
+              "lowerLimit": "33.66",
+              "upperLimit": "55.90"
+            },
+            {
+              "groupId": "OG001",
+              "value": "47.06",
+              "lowerLimit": "36.13",
+              "upperLimit": "58.19"
+            },
+            {
+              "groupId": "OG002",
+              "value": "18.07",
+              "lowerLimit": "10.48",
+              "upperLimit": "28.05"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03911401",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03911401",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03911401",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03911401",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03911401",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03911401?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 8,
+          "quote": "up, vehicle-controlled trials (Trial 1 [NCT02068352], Trial 2 [NCT03908970], and Trial 3 [NCT03911401]) that treated a total of 612 subjects. Trial 1 enrolled adult and pediatric subjects 10",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "mm36-302",
+      "nctId": "NCT05571943",
+      "protocolNumber": "MM36-302",
+      "title": "A Multicenter, Open-label Study to Assess the Long-term Safety of Difamilast Ointment 1% in the Treatment of Children, Adolescents and Adults With Mild to Moderate Atopic Dermatitis",
+      "briefTitle": "A Open-label Study to Assess the Long-term Safety of Difamilast Ointment 1% in Mild to Moderate Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Acrotech Biopharma Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-09-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-07-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 542,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Difamilast Ointment 1%",
+          "type": "EXPERIMENTAL",
+          "description": "A thin layer of Difamilast applied to affected areas twice daily (morning and evening, approximately 12 hours apart)"
+        }
+      ],
+      "primaryEndpoints": [
+        "The incidence and severity of treatment-emergent adverse events (TEAEs), serious adverse events (SAEs), and their relationship to study drug",
+        "Proportion of subjects who discontinue due to an AE over the study period"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05571943",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05571943",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05571943",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05571943",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05571943",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "mm36-301",
+      "nctId": "NCT05608343",
+      "protocolNumber": "MM36-301",
+      "title": "A Phase 3, Randomized, Double-Blind, Vehicle-Controlled, Multicenter Study to Assess the Efficacy and Safety of Difamilast Ointment 1% in Children, Adolescents, and Adults With Mild to Moderate Atopic Dermatitis",
+      "briefTitle": "This Study is to Assess the Efficacy of Difamilast Ointment in Mild to Moderate Atopic Dermatitis(AD)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Acrotech Biopharma Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-10-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-10-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-10-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 153,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Difamilast Ointment",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "1% Difamilast Ointment"
+        },
+        {
+          "label": "Vehicle Controlled",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Matching placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "To evaluate the efficacy of twice-daily topical application of Difamilast ointment 1% compared to vehicle control in subjects ≥2 years of age with mild to moderate AD"
+      ],
+      "secondaryEndpoints": [
+        "To further characterize the efficacy of Difamilast ointment 1% compared to vehicle control in subjects with mild to moderate AD"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05608343",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05608343",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05608343",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05608343",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05608343",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-02-12",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219474%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 219474",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219474%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219474Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219474Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:03:04.779Z"
+}

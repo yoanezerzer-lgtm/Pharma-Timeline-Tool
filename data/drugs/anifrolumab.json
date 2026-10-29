@@ -1,0 +1,4360 @@
+{
+  "slug": "anifrolumab",
+  "brandName": "Saphnelo",
+  "inn": "anifrolumab",
+  "modality": "Biologic (BLA)",
+  "sponsor": "ASTRAZENECA AB",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy",
+      "slug": "adult-patients-with-moderate-to-severe-systemic-lupus",
+      "approvalDate": {
+        "value": "2026-04-24",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-04-24",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Saphelo is indicated for the treatment of adult patients with moderate to severe systemic lupus erythematosus (SLE), receiving standard therapy.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Saphelo is indicated for the treatment of adult patients with moderate to severe systemic lupus erythematosus (SLE), receiving standard therapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761451",
+      "applicationType": "BLA",
+      "sponsor": "ASTRAZENECA AB",
+      "originalApprovalDate": {
+        "value": "2026-04-24",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "cd-ia-medi-546-1013",
+      "nctId": "NCT01438489",
+      "protocolNumber": "CD-IA-MEDI-546-1013",
+      "title": "A Phase 2, Randomized Study to Evaluate the Efficacy and Safety of MEDI-546 in Subjects With Systemic Lupus Erythematosus",
+      "briefTitle": "A Study of the Efficacy and Safety of MEDI-546 in Systemic Lupus Erythematosus",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "indication": "Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761451Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy)",
+            "quote": "Trial identifier appears within the Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Saphelo is indicated for the treatment of adult patients with moderate to severe systemic lupus erythematosus (SLE), receiving standard therapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "MedImmune LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2012-01-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-04-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2015-04-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 626,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab (MEDI-546) 300 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 300 milligram (mg) anifrolumab as an intravenous infusion every 4 weeks for 48 weeks."
+        },
+        {
+          "label": "Anifrolumab (MEDI-546) 1000 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 1000 mg anifrolumab as an intravenous infusion every 4 weeks for 48 weeks."
+        },
+        {
+          "label": "Matching Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo matched to anifrolumab intravenous (IV) infusion every 4 weeks for 48 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving an Systemic Lupus Erythematosus (SLE) Responder Index [SRI (4)] Response With Oral Corticosteroids (OCS) Tapering at Day 169",
+        "Percentage of Type I Interferon (IFN) Test High Participants Achieving an Systemic Lupus Erythematosus Responder Index (SRI) (4) Response With Oral Corticosteroids (OCS) Tapering at Day 169"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Achieving an Systemic Lupus Erythematosus (SLE) Responder Index [SRI (4)] Response With Oral Corticosteroids (OCS) Tapering at Day 365",
+        "Percentage of Participants on Oral Corticosteroids (OCS) >=10 mg/Day of Prednisone or Equivalent at Baseline Who Were Able to Taper to Less Than or Equal to (<=) 7.5 mg/Day at Day 365",
+        "Number of Participants With Treatment-Emergent Adverse Events (TEAEs), Adverse Events of Special Interest (AESIs) and Treatment-Emergent Serious Adverse Events (TESAEs)",
+        "Number of Participants With Clinically Significant Laboratory Abnormalities in Investigations Reported as Treatment-Emergent Adverse Events",
+        "Number of Participants With Vital Signs Abnormalities Reported as Treatment-Emergent Adverse Events (TEAEs)",
+        "Number of Participants With Electrocardiogram (ECG) Abnormalities Reported as Treatment-Emergent Adverse Events (TEAEs)",
+        "Percentage of SLE Participants With Positive Anti-drug Antibody (ADA)",
+        "Neutralization Ratio of 21-Gene Type I Interferon (IFN) Signature for Participants With Positive Baseline Pharmacodynamic (PD) Gene Signature",
+        "Maximum Observed Plasma Concentration (Cmax) of Anifrolumab at Day 1, 169 and 337",
+        "Accumulation Ratio of Maximum Observed Plasma Concentration (Cmax,AR) of Anifrolumab",
+        "Trough Concentration (Ctrough) of Anifrolumab at Day 29, 169 and 365",
+        "Accumulation Ratio of Trough Concentration (Ctrough,AR) of Anifrolumab at Day 169 and 365"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Achieving an Systemic Lupus Erythematosus (SLE) Responder Index [SRI (4)] Response With Oral Corticosteroids (OCS) Tapering at Day 169",
+          "timeFrame": "Day 169",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Anifrolumab 300 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Anifrolumab 1000 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "17.6"
+            },
+            {
+              "groupId": "OG001",
+              "value": "34.3"
+            },
+            {
+              "groupId": "OG002",
+              "value": "28.8"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.014",
+              "method": "Regression, Logistic",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "2.38",
+              "ciPct": "90",
+              "ciLower": "1.33",
+              "ciUpper": "4.26"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "0.063",
+              "method": "Regression, Logistic",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "1.94",
+              "ciPct": "90",
+              "ciLower": "1.08",
+              "ciUpper": "3.49"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Type I Interferon (IFN) Test High Participants Achieving an Systemic Lupus Erythematosus Responder Index (SRI) (4) Response With Oral Corticosteroids (OCS) Tapering at Day 169",
+          "timeFrame": "Day 169",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Anifrolumab 300 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Anifrolumab 1000 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "13.2"
+            },
+            {
+              "groupId": "OG001",
+              "value": "36"
+            },
+            {
+              "groupId": "OG002",
+              "value": "28.2"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.004",
+              "method": "Regression, Logistic",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "3.55",
+              "ciPct": "90",
+              "ciLower": "1.72",
+              "ciUpper": "7.32"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "0.029",
+              "method": "Regression, Logistic",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "2.65",
+              "ciPct": "90",
+              "ciLower": "1.27",
+              "ciUpper": "5.53"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01438489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01438489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01438489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01438489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01438489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01438489?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 12,
+          "quote": "atment period, multicenter, randomized, double-blind, placebo-controlled trials (Trial 1 [NCT01438489], Trial 2 [NCT02446912] and Trial 3 [NCT02446899]). Patients were diagnosed with SLE acco",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3461c00002",
+      "nctId": "NCT01559090",
+      "protocolNumber": "D3461C00002",
+      "title": "A Phase 2, Multicenter, Open-label, Dose-escalation Study to Evaluate the Safety and Tolerability of Intravenous Dose of MEDI-546, a Human Monoclonal Antibody Directed Against Type I Interferon Receptor (IFNAR), in Japanese Subjects With Active Systemic Lupus Erythematosus (SLE).",
+      "briefTitle": "Safety and Tolerability of Intravenous Dose of MEDI-546 in Japanese Subjects With Systemic Lupus Erythematosus.",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2012-04-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2014-08-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-02-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 17,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "1",
+          "type": "EXPERIMENTAL",
+          "description": "MEDI-546 100 mg IV"
+        },
+        {
+          "label": "2",
+          "type": "EXPERIMENTAL",
+          "description": "MEDI-546 300 mg IV"
+        },
+        {
+          "label": "3",
+          "type": "EXPERIMENTAL",
+          "description": "MEDI-546 1000 mg IV"
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Summary of Adverse Events"
+      ],
+      "secondaryEndpoints": [
+        "Pharmacokinetic Parameters of MEDI-546 After Single Dose: Cmax",
+        "Pharmacokinetic Parameters of MEDI-546 After Single Dose: AUClast",
+        "Anti-drug Antibody (ADA)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01559090",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01559090",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01559090",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01559090",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01559090",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3461c00005",
+      "nctId": "NCT02446912",
+      "protocolNumber": "D3461C00005",
+      "title": "A Multicentre, Randomised, Double-blind, Placebo-controlled, Phase 3 Study Evaluating the Efficacy and Safety of Two Doses of Anifrolumab in Adult Subjects With Active Systemic Lupus Erythematosus",
+      "briefTitle": "Efficacy and Safety of Two Doses of Anifrolumab Compared to Placebo in Adult Subjects With Active Systemic Lupus Erythematosus",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761451Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy)",
+            "quote": "Trial identifier appears within the Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Saphelo is indicated for the treatment of adult patients with moderate to severe systemic lupus erythematosus (SLE), receiving standard therapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-06-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-07-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-07-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 460,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab - higher dose",
+          "type": "EXPERIMENTAL",
+          "description": "Anifrolumab"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo"
+        },
+        {
+          "label": "Anifrolumab - lower dose",
+          "type": "EXPERIMENTAL",
+          "description": "Anifrolumab"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Who Achieved a Systemic Lupus Erythematosus (SLE) Responder Index ≥4 (SRI[4]) at Week 52 (Original Analysis With Restricted Medication Rules)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Achieved a Systemic Lupus Erythematosus (SLE) Responder Index of ≥4 at Week 52 in the Interferon (IFN) Test-High Sub-Group (Original Analysis With Restricted Medication Rules)",
+        "Number of Participants Who Achieved and Maintained an Oral Corticosteroid (OCS) Dose of ≤7.5 mg/Day in the Sub-group of Participants With Baseline OCS ≥10 mg/Day (Original Analysis With Restricted Medication Rules)",
+        "Number of Participants With a ≥50% Reduction in CLASI Activity Score at Week 12 in the Sub-group of Participants With Baseline CLASI Activity Score ≥10 (Original Analysis With Restricted Medication Rules)",
+        "Number of Participants Who Achieved a Systemic Lupus Erythematosus (SLE) Responder Index of ≥4 (SRI[4]) at Week 24 (Original Analysis With Restricted Medication Rules)",
+        "Annualized Flare Rate",
+        "Number of Participants Who Met the Criteria for British Isles Lupus Assessment Group-based Composite Lupus Assessment (BICLA) Response (Original Analysis With Restricted Medication Rules)",
+        "Number of Participants Reporting One or More Adverse Events (AE)",
+        "Number of Participants Reporting One or More Adverse Events of Special Interest (AESI)",
+        "Number of Participants With Markedly Abnormal Vital Signs",
+        "Number of Participants With Markedly Abnormal Physical Examinations",
+        "Number of Participants With Markedly Abnormal Electrocardiogram (ECG) Scores",
+        "Number of Participants With Mild To Moderate Lupus Flare Evaluated by Modified Safety of Estrogens in Lupus Erythematosus National Assessment (SELENA)-SLEDAI Flare Index",
+        "Number of Participants With Markedly Abnormal Laboratory Tests",
+        "Number of Participants With Suicidal Ideation or Behaviour Assessed Via the Columbia Suicide Severity Rating Scale (C-SSRS)",
+        "Change From Baseline in Personal Health Questionnaire Depression Scale-8 (PHQ-8) Score"
+      ],
+      "postedResults": [
+        {
+          "title": "Number of Participants Who Achieved a Systemic Lupus Erythematosus (SLE) Responder Index ≥4 (SRI[4]) at Week 52 (Original Analysis With Restricted Medication Rules)",
+          "timeFrame": "Week 52",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Anifrolumab 150 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Anifrolumab 300 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "35"
+            },
+            {
+              "groupId": "OG001",
+              "value": "65"
+            },
+            {
+              "groupId": "OG002",
+              "value": "74"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "0.412",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Mean Difference (Final Values)",
+              "paramValue": "-4.2",
+              "ciPct": "95",
+              "ciLower": "-14.2",
+              "ciUpper": "5.8"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "paramType": "Mean Difference (Final Values)",
+              "paramValue": "-2.6",
+              "ciPct": "95",
+              "ciLower": "-14.7",
+              "ciUpper": "9.6"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446912?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 12,
+          "quote": "ter, randomized, double-blind, placebo-controlled trials (Trial 1 [NCT01438489], Trial 2 [NCT02446912] and Trial 3 [NCT02446899]). Patients were diagnosed with SLE according to the American C",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3461c00004",
+      "nctId": "NCT02446899",
+      "protocolNumber": "D3461C00004",
+      "title": "A Multicentre, Randomised, Double-blind, Placebo-controlled, Phase 3 Study Evaluating the Efficacy and Safety of Anifrolumab in Adult Subjects With Active Systemic Lupus Erythematosus",
+      "briefTitle": "Efficacy and Safety of Anifrolumab Compared to Placebo in Adult Subjects With Active Systemic Lupus Erythematosus",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761451Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy)",
+            "quote": "Trial identifier appears within the Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Saphelo is indicated for the treatment of adult patients with moderate to severe systemic lupus erythematosus (SLE), receiving standard therapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-07-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-09-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-09-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 373,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Anifrolumab 300 mg intravenous infusion (IV) administered every 4 weeks for a total of 13 doses."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo intravenous infusion (IV) administered every 4 weeks for a total of 13 doses."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Who Achieved the British Isles Lupus Assessment Group Based Composite Lupus Assessment (BICLA) Response at Week 52"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Achieved the British Isles Lupus Assessment Group Based Composite Lupus Assessment (BICLA) Response at Week 52 in the IFN Test-High Sub-group",
+        "Number of Participants Who Achieved and Maintained an Oral Corticosteroids (OCS) Dose of ≤7.5 mg/Day at Week 52 in the Sub-Group of Participants With Baseline OCS ≥10 mg/Day",
+        "Number of Participants With a ≥50% Reduction in Cutaneous Lupus Erythematosus Disease Area and Severity Index (CLASI) Activity Score at Week 12 in The Sub-Group of Participants With Baseline CLASI Activity Score of ≥10",
+        "Number of Participants With ≥50% Reduction in Joint Counts at Week 52 in The Sub-group of Participants With ≥6 Swollen and ≥6 Tender Joints at Baseline",
+        "Annualised Flare Rate Through 52 Weeks",
+        "Number of Participants With One or More Adverse Events (AEs)",
+        "Number of Participants With One or More Adverse Events of Special Interest (AESIs)",
+        "Number of Participants With a Potentially Clinically Important Change From Baseline in Vital Sign Measurements",
+        "Number of Participants With a Potentially Clinically Important Change From Baseline in Clinical Laboratory Tests"
+      ],
+      "postedResults": [
+        {
+          "title": "Number of Participants Who Achieved the British Isles Lupus Assessment Group Based Composite Lupus Assessment (BICLA) Response at Week 52",
+          "timeFrame": "Baseline; Week 52",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Anifrolumab 300 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "86"
+            },
+            {
+              "groupId": "OG001",
+              "value": "57"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.0013",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Mean Difference (Final Values)",
+              "paramValue": "16.3",
+              "ciPct": "95",
+              "ciLower": "6.3",
+              "ciUpper": "26.3"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02446899?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 12,
+          "quote": "ind, placebo-controlled trials (Trial 1 [NCT01438489], Trial 2 [NCT02446912] and Trial 3 [NCT02446899]). Patients were diagnosed with SLE according to the American College of Rheumatology (19",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tulip-ln1",
+      "nctId": "NCT02547922",
+      "protocolNumber": "D3461C00007",
+      "acronym": "TULIP-LN1",
+      "title": "A Multicentre, Randomised, Double-blind, Placebo-controlled, Phase 2 Study Evaluating the Efficacy and Safety of Anifrolumab in Adult Subjects With Active Proliferative Lupus Nephritis",
+      "briefTitle": "Safety and Efficacy of Two Doses of Anifrolumab Compared to Placebo in Adult Subjects With Active Proliferative Lupus Nephritis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-11-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-11-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-01-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 147,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab - Lower Dose",
+          "type": "EXPERIMENTAL",
+          "description": "Anifrolumab - Lower Dose"
+        },
+        {
+          "label": "Anifrolumab - Higher Dose",
+          "type": "EXPERIMENTAL",
+          "description": "Anifrolumab - Higher Dose"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo IV Q4W plus SOC"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in 24-hour Urine Protein to Creatinine Ratio (UPCR)"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of Subjects Achieving the Composite Endpoint Complete Renal Response (CRR)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3461c00006",
+      "nctId": "NCT02601625",
+      "protocolNumber": "D3461C00006",
+      "title": "A Randomized, Phase 1, Placebo-controlled, Double-blind, Single-dose Study to Evaluate the Safety, Tolerability and Pharmacokinetics of Subcutaneously and Intravenously Delivered Anifrolumab in Healthy Subjects.",
+      "briefTitle": "A Study to Assess the Pharmacokinetics and Safety of Single Doses of Anifrolumab in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-11-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-05-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2016-05-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab 300 mg SC injections",
+          "type": "EXPERIMENTAL",
+          "description": "300 mg single dose anifrolumab delivered as 2 separate 1 mL SC injections administered serially"
+        },
+        {
+          "label": "Anifrolumab 300 mg IV infusion",
+          "type": "EXPERIMENTAL",
+          "description": "300 mg single dose anifrolumab delivered as an IV infusion over 30 minutes"
+        },
+        {
+          "label": "Anifrolumab 600 mg SC infusion",
+          "type": "EXPERIMENTAL",
+          "description": "600 mg single dose anifrolumab or placebo delivered as 4 mL SC by infusion pump"
+        },
+        {
+          "label": "Placebo 300 mg SC injections",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "300 mg single dose placebo delivered as 2 separate 1 mL SC injections administered serially"
+        },
+        {
+          "label": "Placebo 300 mg IV infusion",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "300 mg single dose placebo delivered as an IV infusion over 30 minutes"
+        },
+        {
+          "label": "Placebo 600mg SC infusion",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "600 mg single dose placebo delivered as 4 mL SC by infusion pump"
+        }
+      ],
+      "primaryEndpoints": [
+        "Pharmacokinetics: Observed Maximum Serum Concentration (Cmax) Following Single Dose of Anifrolumab.",
+        "Pharmacokinetics: Area Under the Serum Concentration-time Curve From Time Zero to Time of Last Quantifiable Concentration (AUC0-t) Following Single Dose of Anifrolumab",
+        "Pharmacokinetics: Area Under Serum Concentration-time Curve From Time Zero Extrapolated to Infinity (AUC) Following Single Dose of Anifrolumab",
+        "Safety: Number of Participants With Adverse Events (AEs)",
+        "Safety: Summary of Local Injection Site Pain (SC Cohorts) Assessed in Participants",
+        "Safety: Summary of Local Injection Site Pruritus (SC Cohorts) Assessed in Participants",
+        "Safety: Summary of Erythema Injection Site Reaction (SC Cohorts) Assessed in Participants",
+        "Safety: Summary of the Induration Injection Site Reaction (SC Cohorts) Assessed in Participants"
+      ],
+      "secondaryEndpoints": [
+        "Evaluation of Immunogenicity of Anifrolumab IV Infusions and SC Injections by the Measurement of Anti-drug Antibody (ADA)."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02601625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02601625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02601625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02601625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02601625",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tulip-sle-lte",
+      "nctId": "NCT02794285",
+      "protocolNumber": "D3461C00009",
+      "acronym": "TULIP SLE LTE",
+      "title": "A Multicentre, Randomised, Double-blind, Placebo-Controlled Phase 3 Extension Study to Characterise the Long-term Safety and Tolerability of Anifrolumab in Adult Subjects With Active Systemic Lupus Erythematosus.",
+      "briefTitle": "Long Term Safety of Anifrolumab in Adult Subjects With Active Systemic Lupus Erythematosus",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-06-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-12-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-12-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 559,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Anifrolumab"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Exposure-adjusted Incidence Rates (EAIRs) of Adverse Events of Special Interest (AESIs)",
+        "EAIRs of Serious Adverse Events (SAEs)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02794285",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02794285",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02794285",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02794285",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02794285",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3461c00008",
+      "nctId": "NCT02962960",
+      "protocolNumber": "D3461C00008",
+      "title": "A Multicenter, Randomized, Double-blind, Placebo-controlled, Phase 2 Study Characterizing the Pharmacokinetics, Pharmacodynamics, and Safety of Anifrolumab Following Subcutaneous Administration in Adult Systemic Lupus Erythematosus Subjects With Type I Interferon Test High Result and Active Skin Manifestations.",
+      "briefTitle": "A Study to Characterize the Pharmacokinetics, Pharmacodynamics, and Safety of Anifrolumab in Adult Type I Interferon Test High Systemic Lupus Erythematosus Subject With Active Skin Manifestations",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2017-02-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-01-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-12-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 36,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab - Lower dose",
+          "type": "EXPERIMENTAL",
+          "description": "1ml, once every second week, one subcutaneous injection as added to stand of care, from week 0 to week 50"
+        },
+        {
+          "label": "Placebo matching for lower dose of Anifrolumab",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "1ml, once every second week, one subcutaneous injection added to stand of care, from week 0 to week 50"
+        },
+        {
+          "label": "Anifrolumab - Higher dose",
+          "type": "EXPERIMENTAL",
+          "description": "2×1ml, once every second week, two subcutaneous injections as added to stand of care, from week 0 to week 50"
+        },
+        {
+          "label": "Placebo matching for higher dose of Anifrolumab",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "2×1ml , once every second week, two subcutaneous injections as added to stand of care, from week 0 to week 50"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Concentration of Anifrolumab in Serum After First Dose",
+        "Steady-state Serum Trough (Predose) Concentration (Ctrough) of Anifrolumab",
+        "21-gene Type 1 IFN Signature Score (Fold-change)",
+        "21-gene Type 1 IFN Neutralization Ratio (Percent Suppression of Fold Change)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Antidrug Antibody (ADA)",
+        "Number of Participants With Neutralizing Antibodies (nAb)",
+        "Number AEs (Adverse Events) and SAEs (Serious Adverse Events), Including Adverse Events of Special Interest (AESI)",
+        "Change From Baseline for Vital Signs",
+        "Change From Baseline for Physical Examination",
+        "Change From Baseline for 12-lead ECG",
+        "Value of Haemoglobin Blood Test to Detect Change From Baseline",
+        "Value of Haematology Blood Tests to Detect Change From Baseline",
+        "Value of Protein-creatinine Urinalysis Test to Detect Change From Baseline",
+        "Value of Total Protein Urinalysis Test to Detect Change From Baseline",
+        "Value of Clinical Chemistry Blood Tests to Detect Change From Baseline (Serum)",
+        "Value of Creatinine Clinical Chemistry Blood Tests to Detect Change From Baseline (Serum)",
+        "Value of Inflammatory Marker Panel Blood Tests to Detect Change From Baseline",
+        "Value of Autoantibody Blood Panel Blood Tests to Detect Change From Baseline",
+        "Number of Participants With Positive Hepatitis B Core Antibody Post-baseline."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02962960",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02962960",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02962960",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02962960",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02962960",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "tulip-sc",
+      "nctId": "NCT04877691",
+      "protocolNumber": "D3465C00001",
+      "acronym": "Tulip SC",
+      "title": "A Multicentre, Randomised, Double-Blind, Placebo-controlled, Phase 3 Study Evaluating the Efficacy and Safety of Subcutaneous Anifrolumab in Adult Patients With Systemic Lupus Erythematosus",
+      "briefTitle": "Subcutaneous Anifrolumab in Adult Patients With Systemic Lupus Erythematosus",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761451Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy)",
+            "quote": "Trial identifier appears within the Adult patients with moderate to severe systemic lupus erythematosus (SLE), who are receiving standard therapy section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Saphelo is indicated for the treatment of adult patients with moderate to severe systemic lupus erythematosus (SLE), receiving standard therapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-06-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-08-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-11-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 367,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Solution for injection in aPFS"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Solution for injection in aPFS"
+        }
+      ],
+      "primaryEndpoints": [
+        "British Isles Lupus Assessment Group-based Composite Lupus Assessment (BICLA) response"
+      ],
+      "secondaryEndpoints": [
+        "Time to first BICLA response sustained through Week 52",
+        "BICLA response with maintained low (or reduced) use of oral corticosteroid (OCS)",
+        "Time to flare",
+        "Maintained oral corticosteroid (OCS) reduction among patients with baseline OCS ≥10 mg/day.",
+        "Annualized flare rate",
+        "SRI4"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04877691",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04877691",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04877691",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04877691",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04877691",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 17,
+          "quote": "eatment period, multicenter, randomized, double-blind, placebo-controlled trial (Trial 5 [NCT04877691]). All patients were ≥ 18 years of age, diagnosed with SLE according to the American Coll",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3468c00002",
+      "nctId": "NCT05001698",
+      "protocolNumber": "D3468C00002",
+      "title": "A Phase I, Open-label, Single-Arm, Multiple-Dose Study to Evaluate the Pharmacokinetics, Safety and Tolerability of Anifrolumab in Chinese Participants With Systemic Lupus Erythematosus (SLE)",
+      "briefTitle": "Anifrolumab PK Study for Systemic Lupus Erythematosus (SLE)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-07-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-06-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-06-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 15,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "All eligible participants will receive anifrolumab via intravenous (IV) infusion pump."
+        }
+      ],
+      "primaryEndpoints": [
+        "Time to maximum observed plasma concentration (Tmax) of anifrolumab.",
+        "Maximum observed plasma concentration (Cmax) of anifrolumab.",
+        "Area under plasma concentration-time curve over dosing interval (AUC[tau]) of anifrolumab.",
+        "Pre-dose trough concentration (Ctrough) of anifrolumab.",
+        "The volume of plasma cleared of drug per unit time (CL) of anifrolumab."
+      ],
+      "secondaryEndpoints": [
+        "Incidence of adverse events",
+        "Incidence of abnormal vital signs",
+        "Incidence of abnormal laboratory parameters",
+        "Anti-drug antibodies (ADA)",
+        "21-gene Type I interferon PD signature"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05001698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05001698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05001698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05001698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05001698",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3468c00003",
+      "nctId": "NCT04931563",
+      "protocolNumber": "D3468C00003",
+      "title": "A Multicentre, Randomised, Double-blind, Placebo-controlled, Phase III Study Evaluating the Efficacy and Safety of Anifrolumab in Asian Participants With Active Systemic Lupus Erythematosus",
+      "briefTitle": "Anifrolumab Asian PhIII Efficacy Study for Systemic Lupus Erythematosus (SLE)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-09-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-04-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 277,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo will be administered via controlled IV infusion pump into a peripheral vein over a minimum of 30 minutes Q4W from Week 0 to Week 48. Each dose must be at least 14 days apart."
+        },
+        {
+          "label": "anifrolumab",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Anifrolumab will be administered via controlled IV infusion pump into a peripheral vein over a minimum of 30 minutes Q4W from Week 0 to Week 48. Each dose must be at least 14 days apart."
+        }
+      ],
+      "primaryEndpoints": [
+        "Difference in Proportion of Participants Who Are Responders Between Anifrolumab and Placebo"
+      ],
+      "secondaryEndpoints": [
+        "The Proportion of Participants Who Achieve SRI(4) Response at Week 52",
+        "The Proportion of Participants Who Achieve an Oral Corticosteroid (OCS) Dose ≤7.5 mg/Day at Week 40, Which is Maintained Through Week 52 in the Subgroup of Those With Baseline OCS ≥10 mg/Day",
+        "Annualized Flare Rate Through Week 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04931563",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04931563",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04931563",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04931563",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04931563",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "iris",
+      "nctId": "NCT05138133",
+      "protocolNumber": "D3466C00001",
+      "acronym": "IRIS",
+      "title": "A Multicentre Randomized Double-Blind Placebo Controlled Phase 3 Study to Evaluate the Efficacy and Safety of Anifrolumab in Adult Patients With Active Proliferative Lupus Nephritis",
+      "briefTitle": "Phase 3 Study of Anifrolumab in Adult Patients With Active Proliferative Lupus Nephritis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-02-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-02-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-10-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 363,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Solution for intravenous infusion"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Solution for intravenous infusion"
+        }
+      ],
+      "primaryEndpoints": [
+        "Difference in proportion of participants with CRR (Complete Renal Response) in anifrolumab group compared with placebo group"
+      ],
+      "secondaryEndpoints": [
+        "Difference in proportion of participants achieving sustained OCS reduction in anifrolumab group compared with placebo group",
+        "HR of achieving sustained CRR in anifrolumab compared with placebo group",
+        "Difference in the mean standardized AUC for UPCR between anifrolumab and placebo participants",
+        "Difference in proportion of participants with CRR in anifrolumab group compared with placebo group",
+        "HR to summarize the difference in the risk of hazard of renal-related event or death at any given time between anifrolumab and placebo participants",
+        "HR to summarize the difference in the risk of hazard of renal-related event or death at any given time between anifrolumab and placebo participants",
+        "Difference between anifrolumab and placebo in proportions of participants who achieve aCRR",
+        "Difference between anifrolumab and placebo in proportions of participants who achieve CRR with sustained OCS reduction",
+        "HR of achieving sustained CRR in anifrolumab compared to placebo group",
+        "HR of achieving 50% reduction in UPCR in anifrolumab compared to placebo group",
+        "Difference in mean UPCR between the anifrolumab and placebo group",
+        "Difference in proportion of participants achieving PRR (Partial Renal Response) in anifrolumab group compared with placebo group",
+        "Difference in change from baseline in extra-renal SLEDAI-2K total score",
+        "Difference in mean change from baseline in domains and component scores of Short Form-36 Version 2 (SF-36v2) and Functional Assessment of Chronic Illness Therapy-Fatigue (FACIT-fatigue) total score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05138133",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05138133",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05138133",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05138133",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05138133",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3465c00002",
+      "nctId": "NCT05339100",
+      "protocolNumber": "D3465C00002",
+      "title": "A Multicenter, Randomized, Open-label, Parallel Phase 1 Comparability Study of Anifrolumab Administered Using Accessorized Pre-Filled Syringe (APFS) or Autoinjector (AI) in Healthy Volunteers",
+      "briefTitle": "Accessorized Pre-Filled Syringe to Autoinjector Pharmacokinetic Bridging Study in Anifrolumab",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-03-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-04-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-04-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 180,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab administered using AI",
+          "type": "EXPERIMENTAL",
+          "description": "Randomized participants will receive a single SC dose of anifrolumab via AI."
+        },
+        {
+          "label": "Anifrolumab administered using APFS",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Randomized participants will receive a single SC dose of anifrolumab via APFS."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under serum concentration-time curve from time zero extrapolated to infinity (AUCinf)",
+        "Area under serum concentration-time curve from time zero to last quantifiable concentration (AUClast)",
+        "Maximum observed serum (peak) drug concentration (Cmax)"
+      ],
+      "secondaryEndpoints": [
+        "Time to reach peak or maximum observed concentration (tmax)",
+        "Half-life associated with terminal slope (λz) of a semi-logarithmic concentration-time curve (t1/2λz)",
+        "Mean residence time of the unchanged drug in the systemic circulation from zero to infinity (MRT)",
+        "Apparent total body clearance of drug after extravascular administration (CL/F)",
+        "Apparent volume of distribution following extravascular administration (based on terminal phase) (Vz/F)",
+        "Time of last quantifiable concentration (tlast)",
+        "Number of participants with positive Anti-drug antibodies (ADA)",
+        "Number of participants with adverse events and serious adverse events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05339100",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05339100",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05339100",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05339100",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05339100",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "aster",
+      "nctId": "NCT05637112",
+      "protocolNumber": "D3461R00043",
+      "acronym": "ASTER",
+      "title": "ASTER: Anifrolumab Study for Treatment Effectiveness in the Real World Multi-National, Observational, Post-Launch Effectiveness Study Among SLE Patients Receiving Anifrolumab in Routine Clinical Practice",
+      "briefTitle": "A Treatment Effectiveness Study Among SLE Patients Receiving Anifrolumab in Routine Clinical Practice.",
+      "phase": "NA",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2023-02-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-12-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-12-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 551,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Prospective Cohort",
+          "description": "All patients aged ≥18 years diagnosed with SLE who initiate anifrolumab as prescribed by their healthcare provider (HCP) per the approved country-specific label and are treated at the study sites will be eligible for inclusion."
+        }
+      ],
+      "primaryEndpoints": [
+        "Disease activity assessed by the Physician Global Assessment (PGA)",
+        "Disease activity assessed by Systemic Lupus Erythematosus Disease Activity Index 2000 (SLEDAI-2K)",
+        "Proportion of patients attaining the composite endpoint of lupus low disease activity (LLDAS)"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of patients attaining Definition of Remission in SLE (DORIS)",
+        "Clinical SLE Flares assessment by modified revised Safety of Estrogens in Lupus National Assessment-Systemic Lupus Erythematosus Disease Activity Index (SELENA-SLEDAI) flare index (rSFI)",
+        "Proportion of patients with irreversible organ damage, using the Systemic Lupus International Collaborating Clinics/American College of Rheumatology Damage Index (SDI).",
+        "SLE treatment patterns prior to, concomitant with and after anifrolumab",
+        "Functional Assessment of Chronic Illness Therapy - Fatigue Scale (FACIT-Fatigue)",
+        "Lupus Quality of Life (LupusQoL)",
+        "Patient Global Assessment (PtGA)",
+        "EuroQol 5-Dimension Health Questionnaire 5 Level (EQ-5D-5L)",
+        "Work Productivity and Activity Impairment - Lupus (WPAI:lupus)",
+        "Pain Numerical Rating Scale (NRS)",
+        "Number of outpatient hospital and emergency room visits and procedures",
+        "Number of hospital admissions and inpatient hospital procedures",
+        "Number of rheumatologist visits and procedures",
+        "Number of dialysis appointments"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05637112",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05637112",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05637112",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05637112",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05637112",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "erythro",
+      "nctId": "NCT06046534",
+      "protocolNumber": "D3461R00058",
+      "acronym": "ERYTHRO",
+      "title": "ERYTHRO Retrospective Medical Chart Review Study to Describe the Experience of SLE Patients Treated With Anifrolumab in the Early Access Programs.",
+      "briefTitle": "Retrospective Medical Chart Review Study to Describe the Experience of SLE Patients Treated With Anifrolumab in the Early Access Programs.",
+      "phase": "NA",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2023-10-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-06-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-06-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 46,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort",
+          "description": "SLE patients who participated in the anifrolumab EAPs (AMANA or ATUc)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Disease activity assessed by Systemic Lupus Erythematosus Disease Activity Index 2000 (SLEDAI-2K) or any of its components at 6 months from the date of first anifrolumab infusion",
+        "Disease activity assessed by the Physician Global Assessment (PGA) at 6 months from the date of first anifrolumab infusion"
+      ],
+      "secondaryEndpoints": [
+        "1. Proportion of patients achieving SLE remission at 6 months from the date of first anifrolumab infusion",
+        "2. Proportion of patients achieving all four criteria for low disease activity (LLDAS) at 6 months from first anifrolumab infusion",
+        "3. The frequency overall and by intensity (mild / moderate and severe) of flares as assessed by the Revised Safety of Estrogens in Lupus National Assessment - SLE Disease Activity Index Flare Index (rSFI) at baseline and during follow up.",
+        "4. The extent of skin manifestations over time as described by Cutaneous LE Disease Area and Severity Index (CLASI) during baseline and at 6 months after the data of first anifrolumab infusion",
+        "5. SLE treatments used before, during and after Anifrolumab, especially oral corticosteroids (OCS)",
+        "6. Usage of anifrolumab, including adherence",
+        "7. Usage of anifrolumab, including persistence",
+        "8. Baseline patient characteristics",
+        "9. Describe baseline comorbidities described by Charlson Comorbidity Index (CCI) or any of its components",
+        "10. SLE related tests performed during baseline and FU, respectively",
+        "11. SLE related tests performed during baseline and FU, respectively",
+        "12. SLE related tests performed during baseline and FU, respectively",
+        "13. SLE related tests performed during baseline and FU, respectively"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06046534",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06046534",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06046534",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06046534",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06046534",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "daisy",
+      "nctId": "NCT05925803",
+      "protocolNumber": "D3460C00002",
+      "acronym": "DAISY",
+      "title": "A Multicenter, Randomized, Parallel-group, Double-blind,Two-arm Phase III Study to Evaluate the Safety and Efficacy of Anifrolumab Compared With Placebo in Male and Female Participants 18 to 70 Years of Age Inclusive With Systemic Sclerosis",
+      "briefTitle": "Determine Effectiveness of Anifrolumab In SYstemic Sclerosis (DAISY)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-11-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-01-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-04-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 314,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab (subcutaneous weekly injection)",
+          "type": "EXPERIMENTAL",
+          "description": "Anifrolumab subcutaneous injection once weekly"
+        },
+        {
+          "label": "matched placebo control (subcutaneous weekly injection)",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "matched placebo control subcutaneous injection once weekly"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants responding to treatment based on the Revised Composite Response Index in Systemic Sclerosis (CRISS-25)"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in mRSS",
+        "Number of patients with improvement in individual revised Composite Response Index in Systemic Sclerosis (CRISS-25)",
+        "Change from baseline in chest computed tomography imaging",
+        "Change from baseline in Scleroderma Skin Patient Reported Outcome",
+        "Change from baseline in FVC",
+        "Change from baseline in percent predicted FVC",
+        "Anifrolumab pharmacokinetic parameters in serum",
+        "Anifrolumab pharmacodynamics via changes in type I IFN 21-gene signature generated from blood",
+        "Prevalence of anti-drug antibodies to Anifrolumab",
+        "Incidence of adverse events",
+        "Incidence of abnormal vital signs",
+        "Incidence of abnormal laboratory parameters",
+        "Incidence of abnormal ECG findings",
+        "Incidence of abnormal physical exam findings",
+        "Number of subjects with suicidal ideation and behavior and suicide attempts via Columbia-Suicide Severity Rating Scale (C-SSRS)",
+        "Total score of Personal Health Questionnaire Depression Scale-8 (PHQD-8)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05925803",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05925803",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05925803",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05925803",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05925803",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "blossom",
+      "nctId": "NCT05835310",
+      "protocolNumber": "D3461C00030",
+      "acronym": "BLOSSOM",
+      "title": "A Phase III, Randomized, Double-blind, Parallel-group, Placebo-controlled Study to Evaluate the Pharmacokinetics, Pharmacodynamics, Efficacy, and Safety of IV Anifrolumab in Pediatric Participants 5 to < 18 Years of Age With Moderate to Severe Active Systemic Lupus Erythematosus While on Background Standard of Care Therapy",
+      "briefTitle": "An Efficacy and Safety Study of Intravenous Anifrolumab to Treat Systemic Lupus Erythematosus in Pediatric Participants",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-03-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-10-05",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-01-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 100,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "5 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Randomized participants will receive anifrolumab via intravenous (IV) infusion every 4 weeks"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Randomized participants will receive matching placebo via IV infusion"
+        }
+      ],
+      "primaryEndpoints": [
+        "Part A- Anifrolumab serum concentration",
+        "Part A - Maximum observed serum (peak) drug concentration (Cmax)",
+        "Part A - Area under the serum concentration curve (AUC)",
+        "Part A - Minimum observed serum concentration (Cmin)",
+        "Part B - Number of participants who are British Isles Lupus Assessment Group-based Composite Lupus Assessment (BICLA) responders (yes/no)"
+      ],
+      "secondaryEndpoints": [
+        "Part B - Number of participants who are Systemic Lupus Erythematosus Responder Index of ≥ 4 SRI(4) responders (yes/no)",
+        "Part B - Time to first flare",
+        "Part B - Anifrolumab serum concentration",
+        "Part - B Change from baseline through Week 52 in antidrug antibody (ADA)",
+        "Part - B Change from baseline in anti-double stranded deoxyribonucleic acid antibodies",
+        "Part - B Change from baseline in total hemolytic complement (CH50)",
+        "Part - B Change from baseline in complement component (C3)",
+        "Part - B Change from baseline in complement component (C4)",
+        "Number of participants who are Pediatric Rheumatology International Trials Organization/American College of Rheumatology (PRINTO/ACR) childhood-onset systemic lupus erythematosus (cSLE) responders (yes/no)",
+        "Part B - The mean percentage reduction from Baseline through Week 52 in oral corticosteroid(s) (OCS) background dose",
+        "Part B - Change from baseline through Week 52 in type I interferon (IFN) 21-gene signature"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05835310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05835310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05835310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05835310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05835310",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "laser",
+      "nctId": "NCT06485674",
+      "protocolNumber": "D3461R00077",
+      "acronym": "LASER",
+      "title": "Long-Term Organ Damage: Anifrolumab Versus Real-World Standard of Care in Adult Patients With Active Systemic Lupus Erythematosus (LASER) An External Comparator Arm Study for the TULIP Trials Using the University of Toronto Lupus Clinic Cohort",
+      "briefTitle": "Long-Term Organ Damage: Anifrolumab Versus Real-World Standard of Care in Adult Patients With Active Systemic Lupus Erythematosus",
+      "phase": "NA",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2024-05-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-06-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 561,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tulip Trial Group",
+          "description": "Patients who initiated 300 mg of anifrolumab in TULIP (Treatment of Uncontrolled Lupus via the Interferon Pathway)-1 or -2."
+        },
+        {
+          "label": "Toronto Lupus Cohort Group",
+          "description": "Participants who received RW Standard Of Care for SLE from the University of Toronto Lupus Clinic (UTLC) registry."
+        }
+      ],
+      "primaryEndpoints": [
+        "SLICC/ACR damage index (SDI) at week 208"
+      ],
+      "secondaryEndpoints": [
+        "SDI at week 208 by organ damage at baseline",
+        "Time to first organ damage progression as measured by SDI.",
+        "Cumulative steroid intake",
+        "Average daily steroid dose"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06485674",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06485674",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06485674",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06485674",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06485674",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "jasmine",
+      "nctId": "NCT06455449",
+      "protocolNumber": "D3463C00003",
+      "acronym": "JASMINE",
+      "title": "A Multicenter, Parallel-group, Double-blind, 2-Arm, Phase III Study to Investigate the Efficacy and Safety of Anifrolumab Administered as Subcutaneous Injection and Added to Standard of Care Compared With Placebo Added to Standard of Care in Adult Participants With Idiopathic Inflammatory Myopathies (Polymyositis and Dermatomyositis)",
+      "briefTitle": "A Study to Investigate the Efficacy and Safety of Anifrolumab Administered as Subcutaneous Injection and Added to Standard of Care Compared With Placebo Added to Standard of Care in Adult Participants With Idiopathic Inflammatory Myopathies (Polymyositis and Dermatomyositis)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-06-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-01-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-04-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 240,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab (subcutaneous weekly injection)",
+          "type": "EXPERIMENTAL",
+          "description": "Anifrolumab subcutaneous injection once weekly"
+        },
+        {
+          "label": "Placebo (subcutaneous weekly injection)",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Matched placebo control subcutaneous injection once weekly"
+        }
+      ],
+      "primaryEndpoints": [
+        "Total Improvement Score (TIS) ≥ 40 response"
+      ],
+      "secondaryEndpoints": [
+        "Manual Muscle Testing 8 (MMT-8) (CSM)",
+        "Oral corticosteroid dose ≤ 7.5 mg/day",
+        "Moderate improvement in disease activity in participants with polymyositis (PM)",
+        "Moderate improvement in disease activity in dermatomyositis (DM) participants.",
+        "Cutaneous Dermatomyositis Disease Area and Severity Index (CDASI)",
+        "Manual Muscle Testing 8 (MMT-8) in PM participants",
+        "Manual Muscle Testing 8 (MMT-8) in DM participants",
+        "Core Set Measures (CSMs)",
+        "Oral corticosteroid dose ≤ 7.5 mg/day in PM participants",
+        "Oral corticosteroid dose ≤ 7.5 mg/day in DM participants",
+        "Cutaneous Dermatomyositis Activity Investigator Global Assessment (CDA-IGA)",
+        "5-D itch",
+        "Total Improvement Score (TIS) ≥ 20 Response",
+        "Total Improvement Score ≥ 60 Response",
+        "Cumulative Corticosteroid Use"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06455449",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06455449",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06455449",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06455449",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06455449",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "lavender",
+      "nctId": "NCT06015737",
+      "protocolNumber": "D346BC00001",
+      "acronym": "LAVENDER",
+      "title": "A Multicenter, Randomized, Double Blind, Placebo Controlled, Phase III Study to Evaluate the Efficacy and Safety of Anifrolumab in Adults With Chronic and/or Subacute Cutaneous Lupus Erythematosus Who Are Refractory and/or Intolerant to Antimalarial Therapy.",
+      "briefTitle": "A Phase III Study to Investigate the Efficacy and Safety of Anifrolumab in Adults With Chronic and/or Subacute Cutaneous Lupus Erythematosus",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-06-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-11-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-08-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 339,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive anifrolumab as a SC injection from Week 0/Day 1 up to Week 51."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo as a SC injection from Week 0/Day 1 up to Week 23. From Week 24 the participants will receive anifrolumab up to and including Week 51."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with a 70% reduction relative to baseline in the Cutaneous Lupus Erythematosus Disease Area and Severity Index-Activity (CLASI-A) score"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in total CLASI-A score",
+        "Number of participants with CLASI-70 response",
+        "Number of participants with ≥ 7-point reduction from baseline in CLASI-A total score",
+        "Number of participants with CLASI-50 response",
+        "Number of participants who are sustained CLASI-70 responders",
+        "Serum trough (pre-dose) concentrations of anifrolumab",
+        "Number of participants with positive antidrug antibody",
+        "Percent change from baseline in suppression of the Interferon 21-gene",
+        "Change from baseline in Skindex-29+3 Symptom domain scores",
+        "Change from baseline in Skindex-29+3 Emotion domain scores",
+        "Change from baseline in Skindex-29+3 Function domain scores",
+        "Change from baseline in Skindex-29+3 Lupus-Specific domain scores",
+        "Change from baseline in Skindex-29+3 Total score",
+        "Time from IP start date to CLASI-70 response.",
+        "Time from IP start date to CLASI-50 response."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06015737",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06015737",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06015737",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06015737",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06015737",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3465c00004",
+      "nctId": "NCT06662123",
+      "protocolNumber": "D3465C00004",
+      "title": "A Randomized, Phase I, Open-Label, Single-Dose Study to Evaluate the Pharmacokinetics, Safety, and Tolerability of Subcutaneously and Intravenously Delivered Anifrolumab in Healthy Chinese Participants",
+      "briefTitle": "Pharmacokinetic and Safety Study of Subcutaneous and Intravenous Anifrolumab Delivered in Healthy Adult Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-10-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-01-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-01-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Subcutaneous",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Intravenous",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "SC and IV Arm: Area under the serum concentration-time curve from the pre-dose concentration extrapolated to infinity (AUCinf)",
+        "SC and IV Arm: Maximum observed serum (peak) concentration (Cmax)",
+        "SC and IV Arm: Time to reach peak or maximum observed concentration (tmax)",
+        "SC and IV Arm: Area under the serum concentration-time curve from pre-dose concentration to time of last quantifiable concentration (AUClast)",
+        "SC and IV Arm: half-life associated with the terminal slope of a semi-logarithmic concentration-time curve (t½λz)",
+        "Bioavailability (F)",
+        "SC Arm: Apparent total body clearance of drug after extravascular administration (CL/F)",
+        "SC Arm:Volume of distribution during the terminal phase after extravascular administration (Vz/F)",
+        "IV Arm: volume of distribution during the terminal phase after intravenous administration (Vz)",
+        "IV Arm: Apparent total body clearance of drug after intravenous administration (CL)"
+      ],
+      "secondaryEndpoints": [
+        "Adverse Event",
+        "Vital Signs of blood pressure",
+        "12-lead ECG measurements include heart rate, RR interval, PR interval, QRS duration, and QT interval",
+        "Safety haematology laboratory parameters: WBC, Neutrophils absolute count, RBC, Lymphocytes absolute count, Hb, Monocytes absolute count, HCT, Eosinophils absolute count, MCV, Basophils absolute count, MCH, Platelets, MCHC, Reticulocytes absolute count",
+        "Physical examination of height",
+        "Vital Signs of pulse rate",
+        "Vital Signs of body temperature",
+        "Vital Signs of respiratory rate",
+        "Safety clinical chemistry laboratory parameters: Sodium, CRP, Potassium, ALP, Urea, ALT, Creatinine, AST, Albumin, GGT, Calcium, TBL, Phosphate, Conjugated bilirubin, Glucose, Creatine kinase",
+        "Safety urinalysis laboratory parameters: Glucose Protein, Blood, Microscopy (if positive for protein or blood)",
+        "Physical examination of weight",
+        "Physical examination of general appearance, the lungs, cardiovascular system, and the abdomen"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06662123",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06662123",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06662123",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06662123",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06662123",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "interstellar",
+      "nctId": "NCT06314282",
+      "protocolNumber": "D3461R00072",
+      "acronym": "INTERSTELLAR",
+      "title": "INTERSTELLAR - Multi-National, Observational, Prospective, Post-Launch, Effectiveness Study Among SLE Patients Receiving Anifrolumab in Routine Clinical Practice",
+      "briefTitle": "INTERSTELLAR - International Study Evaluating Lupus Outcomes After Anifrolumab Real World Use",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2024-10-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 200,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "PGA",
+        "SLEDAI-2K",
+        "CLASI",
+        "FACIT-Fatigue",
+        "LupusQoL",
+        "EQ-5D-5L"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06314282",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06314282",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06314282",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06314282",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06314282",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "azahar",
+      "nctId": "NCT06626945",
+      "protocolNumber": "D3461R00080",
+      "acronym": "AZAHAR",
+      "title": "AZAHAR Study. Observational Retrospective Study To Describe Characteristics And Clinical Outcomes of Patients With Systemic Lupus Erythematosus Initiating Saphnelo (Anifrolumab) in a Real-World Setting",
+      "briefTitle": "AZAHAR Study To Describe Anifrolumab in a Real-World Setting",
+      "phase": "NA",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2025-02-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-06-05",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 152,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "Systemic Lupus Erythematosus Disease Activity Index 2000 (SLEDAI-2K) score",
+        "Physician Global Assessment (PGA) score",
+        "Changes in SLEDAI-2K score",
+        "Changes in PGA score",
+        "Proportion of patients achieving low disease activity state",
+        "Proportion of patients achieving clinical remission"
+      ],
+      "secondaryEndpoints": [
+        "Flares incidence rate",
+        "Anifrolumab adherence",
+        "Anifrolumab persistence",
+        "Proportion of patients receiving any of dose of corticosteroids (CS)",
+        "Annual cumulative dose of CS",
+        "Proportion of patients treated with any biologic treatment",
+        "Proportion of patients treated with any antimalarial medication",
+        "Proportion of patients treated with any immunosuppressive medication",
+        "Hospitalization rate attributable to SLE",
+        "Intensive care unit (ICU) admission rate attributable to SLE",
+        "Emergency room (ER) admission rate attributable to SLE",
+        "Primary care (PC) visits rate attributable to SLE",
+        "Specialist visits rate attributable to SLE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06626945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06626945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06626945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06626945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06626945",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "sle-artemis",
+      "nctId": "NCT06673043",
+      "protocolNumber": "D3461R00082",
+      "acronym": "SLE-ARTEMIS",
+      "title": "Anifrolumab Real-world Treatment Outcomes in Polish Patients With Systemic Lupus Erythematosus (SLE). Multicenter, Non-interventional Study",
+      "briefTitle": "Anifrolumab Real-world Treatment Outcomes in Systemic Lupus Erythematosus",
+      "phase": "NA",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2025-02-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-06-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-06-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 105,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "SLE Patients",
+          "description": "Open-lable arm with SLE patients who received anifrolumab treatment in the frames of NDP in Poland."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from index date in Systemic Lupus Erythematosus Disease Activity Index 2000 (SLEDAI-2K) score"
+      ],
+      "secondaryEndpoints": [
+        "Change from index date in Systemic Lupus Erythematosus Disease Activity Index 2000 (SLEDAI-2K) score",
+        "Change from index date in Physician Global Assessment (PGA) score",
+        "Proportion of patients attaining the composite endpoint of modified SLE Responder Index (mSRI)",
+        "Proportion of patients attaining the composite endpoint of Lupus Low Disease Activity State (LLDAS)",
+        "Proportion of patients achieving the composite endpoint of remission",
+        "Proportion of patients receiving antimalarials, immunosuppressives, Non-steroidal anti-inflammatory drugs (NSAIDs), corticosteroids",
+        "Change from index date in corticosteroids dose",
+        "Proportion of steroid-free patients at every 6 months",
+        "Proportion of patients able to reach ≤5 mg/day of prednisolone equivalent dose at month 6, 12, 18, 24",
+        "Proportion of patients with 0-25%; 26-50%; 51-75%; 76-100% glucocorticoids (GCS) dose reduction",
+        "Anifrolumab treatment adherence"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06673043",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06673043",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06673043",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06673043",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06673043",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "primula-preg",
+      "nctId": "NCT06659029",
+      "protocolNumber": "D3461R00051",
+      "acronym": "PRIMULA_Preg",
+      "title": "PRIMULA Preg (Prospective Registry Investigating Maternal and Infant Outcomes in Anifrolumab Users): The AstraZeneca Pregnancy Study for Anifrolumab",
+      "briefTitle": "Prospective Registry Investigating Maternal and Infant Outcomes in Anifrolumab Users",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2025-07-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2031-04-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-04-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 442,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Exposed cohort",
+          "description": "Pregnant individuals with a diagnosis of moderate/severe SLE who are exposed to anifrolumab at any time during pregnancy"
+        },
+        {
+          "label": "Unexposed cohort",
+          "description": "Pregnant individuals with a diagnosis of moderate/severe SLE who are not exposed to anifrolumab at any time during pregnancy but who are exposed to other products for the treatment of SLE"
+        }
+      ],
+      "primaryEndpoints": [
+        "Composite outcome of all major congenital malformations (MCMs)"
+      ],
+      "secondaryEndpoints": [
+        "Composite outcome of all minor congenital malformations",
+        "Worsening of underlying disease",
+        "Premature rupture of membranes",
+        "Pregnancy-induced hypertension",
+        "Composite outcome of preeclampsia/eclampsia",
+        "Maternal hospitalization for serious illness",
+        "Spontaneous abortion",
+        "Elective termination",
+        "Emergency caesarean section",
+        "Preterm birth",
+        "Small for gestational age",
+        "Postnatal growth deficiency",
+        "Infant developmental delay",
+        "Infant hospitalization for serious illness",
+        "Infant serious or opportunistic infection"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06659029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06659029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06659029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06659029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06659029",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "prim",
+      "nctId": "NCT06795893",
+      "protocolNumber": "D3461R00090",
+      "acronym": "PRIM",
+      "title": "Pregnancy and Infant Outcomes in Anifrolumab Exposed Pregnancies Using PRegnancy Outcomes Intensive Monitoring (PRIM) Data: The Anifrolumab PRIM Program",
+      "briefTitle": "The Anifrolumab PRIM Program",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2025-11-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2031-04-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-04-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 240,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab exposed pregnancies",
+          "description": "The primary analysis cohort will be prospectively reported pregnancies with anifrolumab exposure anytime from 16 weeks prior to date of conception (DOC) until pregnancy outcome."
+        }
+      ],
+      "primaryEndpoints": [
+        "Major congenital malfunctions"
+      ],
+      "secondaryEndpoints": [
+        "Minor congenital malformations",
+        "Adverse pregnancy outcomes",
+        "Frequency of adverse pregnancy and birth outcomes"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795893",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795893",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795893",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795893",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06795893",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "dahlia",
+      "nctId": "NCT07330245",
+      "protocolNumber": "D3461R00093",
+      "acronym": "DAHLIA",
+      "title": "DAHLIA: Achievement of Low Level of Disease Activity With a Dose of Corticosteroids Less Than or Equal to 5 mg (LLDAS5): a Real-life Study With Anifrolumab on Patients With Systemic Lupus Erythematosus in Italy",
+      "briefTitle": "Achievement of LLDAS5 in Patients With Systemic Lupus Erythematosus Treated With Anifrolumab.",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2025-12-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-09-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-09-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 218,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "Number and percentage of patients achieving LLDAS5"
+      ],
+      "secondaryEndpoints": [
+        "Number and percentage of patients reaching LLDAS5 at each time point",
+        "Number and percentage of patients achieving a GCS (Glucocorticosterioids) dose reduction",
+        "Median (range) cumulative dose of GCS",
+        "Mean(SD) change in tender and swollen joint count",
+        "mean (SD) change in Power Doppler (PD) Signal Total score",
+        "mean (SD) change in Synovial Hypertrophy (SH) Total score",
+        "Annualize flaire rate",
+        "Number and percentage of patients meeting the DORIS clinical remission",
+        "Number and percentage of patients with sustained DORIS remission",
+        "Mean (SD) HDRS (Hamilton Depression Rating Scale) total score",
+        "Mean (SD) PROMIS Depression Short Form 8b (Patient-Reported Outcomes Measurement Information System) total score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07330245",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07330245",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07330245",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07330245",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07330245",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "primula-lac",
+      "nctId": "NCT06594068",
+      "protocolNumber": "D3461R00052",
+      "acronym": "PRIMULA Lac",
+      "title": "PRIMULA Lac (Prospective Registry Investigating Maternal, Infant, and Lactation Outcomes in Anifrolumab Users): The AstraZeneca Lactation Study for Anifrolumab",
+      "briefTitle": "Prospective Registry Investigating Maternal, Infant, and Lactation Outcomes in Anifrolumab Users",
+      "phase": "PHASE4",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-01-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-08-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-08-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 16,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab (IV administration and SC administration)",
+          "type": "EXPERIMENTAL",
+          "description": "For participants with IV administration, milk will be collected at 14 timepoints: 1 pre-dose (spot) and 13 post-dose: Day 1 \\[0-4, 4-8, 8-12, 12-18, 18-24 hours\\], Day 3 \\[48 hours\\], Day 4 (spot), Day 6 (spot), Day 8 (spot), Day 12 (spot), Day 16 (spot), Day 22 (spot), and Day 29 (prior to next dose, spot). Maternal serum collection: Day 1 (pre-dose and 0-4 hours post-dose), Day 12, and Day 29. Infant serum collection: Day 30 after the next dose and after 24 hours of breastfeeding. Total duration of participation will be 1 month. For participants with SC administration, the total duration of participation will be 9 days. Milk will be collected at 10 timepoints: 1 pre-dose (spot) and 9 post-dose: Day 1 \\[0-4, 4-8, 8-12, 12-18, 18-24 hours\\], Day 3 \\[48 hours\\], Day 4 (spot), Day 6 (spot), Day 8 (prior to next dose, spot). Maternal serum collection: Day 1 (pre-dose and 0-4 hours postdose), and Day 8. Infant serum collection: Day 9 after the next dose and after 24 hours of breastfeeding."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the milk concentration-time curve during a dosing interval",
+        "Area under the milk concentration-time curve from time 0 to last quantifiable concentration",
+        "Average milk concentration at steady state",
+        "Observed milk concentration at end of dosing interval",
+        "Maximum observed milk concentration",
+        "Time of maximum concentration"
+      ],
+      "secondaryEndpoints": [
+        "Total amount of drug excreted in milk over 24 hours",
+        "Fraction of dose excreted in milk",
+        "Maternal serum pharmacokinetic (PK) concentrations",
+        "Estimates of infant exposure",
+        "Maternal and Infant adverse events (AEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06594068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06594068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06594068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06594068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06594068",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "sima",
+      "nctId": "NCT07000110",
+      "protocolNumber": "D3461R00046",
+      "acronym": "SIMA",
+      "title": "A Non-Interventional Multi-Country Post-Authorisation Safety Study (PASS) to Assess the Incidence of Serious Infections & Malignancies in Systemic Lupus Erythematosus (SLE) Patients Exposed to Anifrolumab",
+      "briefTitle": "Anifrolumab Malignancy and Serious Infections Study",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2026-01-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2031-11-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-11-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 3506,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "Malignancies",
+        "Serious infection",
+        "Infections leading to hospitalisation",
+        "Infection-related death"
+      ],
+      "secondaryEndpoints": [
+        "Specific types of malignancies",
+        "Serious infection components",
+        "Serious infection types grouped as opportunistic serious infections, other serious infections, pneumonia (overall), fatal and non-fatal pneumonia (separately)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07000110",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07000110",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07000110",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07000110",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07000110",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "violet",
+      "nctId": "NCT07424261",
+      "protocolNumber": "D3461R00100",
+      "acronym": "VIOLET",
+      "title": "Effectiveness of Subcutaneous Anifrolumab in Systemic Lupus Erythematodes - A Non-interventional, Prospective, Multicenter Study on Disease Activity in SLE Patients Treated With Subcutaneous Anifrolumab in Routine Care",
+      "briefTitle": "NIS to Examine Disease Activity in SLE Patients Treated With Subcutaneous Anifrolumab in Routine Care",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2026-03-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-08-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-08-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 125,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "Proportion and number of patients who fulfill criteria for definition of remission in SLE (DORIS remission)"
+      ],
+      "secondaryEndpoints": [
+        "Proportion and number of patients in DORIS remission",
+        "Proportion and number of patients who ever achieved DORIS remission",
+        "Time (in months) to first DORIS remission among patients achieving DORIS criteria",
+        "Time (in months) spent in DORIS remission among patients achieving DORIS criteria",
+        "Time (in months) spent in sustained DORIS remission if in remission for at least 2 consecutive routine visits among patients achieving DORIS criteria",
+        "Proportion and number of patients attaining sustained DORIS remission among patients achieving DORIS criteria",
+        "Proportion and number of patients who fulfill criteria of lupus low disease activity state (LLDAS)",
+        "Proportion and number of patients ever achieving LLDAS criteria",
+        "Time (in months) to first achieving LLDAS criteria among patients achieving LLDAS criteria",
+        "Time (in months) spent in LLDAS among patients achieving LLDAS criteria",
+        "Time (in months) spent in sustained LLDAS if in LLDAS for at least 2 consecutive routine visits among patients achieving LLDAS criteria",
+        "Proportion and number of patients attaining sustained LLDAS",
+        "Change in Systemic Lupus Erythematosus Disease Activity Index 2000 (SLEDAI-2k)",
+        "Change in Systemic Lupus Erythematosus Disease Activity Score (SLE-DAS)",
+        "Change in Physician Global Assessment (PhGA) analog scale (0-3)",
+        "Change in Systemic Lupus International Collaborating Clinics (SLICC)/American College of Rheumatology (ACR) Damage Index (SDI) score",
+        "SLE treatment patterns prior to, concomitant with and after anifrolumab",
+        "Functional Assessment of Chronic Illness Therapy - Fatigue Scale (FACIT-Fatigue)",
+        "Patient Global Assessment (PtGA)",
+        "Lupus Quality of Life (LupusQoL)",
+        "SLE Flares assessment by modified revised Safety of Estrogens in Lupus National Assessment-Systemic Lupus Erythematosus Disease Activity Index (SELENA-SLEDAI) flare index (rSFI)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07424261",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07424261",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07424261",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07424261",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07424261",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "sunflower",
+      "nctId": "NCT07430306",
+      "protocolNumber": "D3461C00040",
+      "acronym": "SUNFLOWER",
+      "title": "Multinational, Interventional, 52-week, Open-label, Single-arm Study to Evaluate the Treatment Outcomes of Anifrolumab 120 mg Subcutaneous Once Weekly in Immunosuppressant-naïve and Biologic-naïve Systemic Lupus Erythematosus (SUNFLOWER)",
+      "briefTitle": "A Study to Evaluate the Treatment Outcomes of Subcutaneous Anifrolumab in Immunosuppressant-naïve and Biologic-naïve Systemic Lupus Erythematosus",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-04-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-01-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-01-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 245,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "OTHER",
+          "description": "Participants will receive dose A of anifrolumab on X dosing schedule beginning on Day 1 for a maximum of 52 -week during the study"
+        }
+      ],
+      "primaryEndpoints": [
+        "Attainment of DORIS remission"
+      ],
+      "secondaryEndpoints": [
+        "To assess the attainment of low level disease activity",
+        "Time spent in DORIS remission, LLDAS or LLDAS-5",
+        "Sustaining DORIS remission, LLDAS or LLDAS-5",
+        "Sustaining DORIS remission, LLDAS or LLDAS-5",
+        "Time to attain and sustain DORIS, or LLDAS, or LLDAS-5",
+        "Daily GC dose",
+        "Reduction in GC use",
+        "Maintenance of reduction in GC dose",
+        "Cumulative GC dose",
+        "Attainment of DORIS-0",
+        "Time to first moderate-to-severe flare",
+        "Change in active skin manifestations",
+        "Change in joint activity",
+        "Change in QoL and fatigue",
+        "Adverse Events",
+        "Change in QoL and fatigue"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07430306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07430306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07430306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07430306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07430306",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rose",
+      "nctId": "NCT07049653",
+      "protocolNumber": "D3461R00028",
+      "acronym": "ROSE",
+      "title": "A Non-Interventional Multi-Database Post-Authorisation Study to Assess Pregnancy-Related Safety Data From Women With SLE Exposed to Anifrolumab",
+      "briefTitle": "Anifrolumab Pregnancy Study",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2026-06-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-12-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-12-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 500,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Exposed cohort",
+          "description": "Pregnant individuals with a diagnosis of SLE who are exposed to anifrolumab at any time during pregnancy"
+        },
+        {
+          "label": "Unexposed cohort",
+          "description": "Pregnant individuals with a diagnosis of moderate/severe SLE who are not exposed to anifrolumab at any time during pregnancy but who are exposed to other products for the treatment of SLE"
+        }
+      ],
+      "primaryEndpoints": [
+        "Risk of major congenital malformations (MCM)",
+        "Relative risk of MCM",
+        "Risk of select pregnancy loss outcomes",
+        "Relative risk of select pregnancy loss outcomes"
+      ],
+      "secondaryEndpoints": [
+        "Demographic and clinical characteristics",
+        "Risk of minor congenital malformations (mCM)",
+        "Relative risk of mCM",
+        "Risk of adverse pregnancy outcomes",
+        "Relative risk of adverse pregnancy outcomes",
+        "Risk of adverse birth outcomes",
+        "Relative risk of adverse birth outcomes"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049653",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049653",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049653",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049653",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049653",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3465c00008",
+      "nctId": "NCT07630714",
+      "protocolNumber": "D3465C00008",
+      "title": "A Multicenter, Open-Label, Phase II Study to Evaluate the Pharmacokinetics, Pharmacodynamics, and Safety of Subcutaneous Anifrolumab in Pediatric Participants 5 to < 18 Years of Age With Systemic Lupus Erythematosus",
+      "briefTitle": "A Study to Investigate Pharmacokinetics, Pharmacodynamics, and Safety of Subcutaneous Anifrolumab in Pediatric Participants 5 to < 18 Years of Age With Systemic Lupus Erythematosus",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-08-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2030-09-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-09-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "5 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1 (body weight > 40 kg)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with body weight \\> 40 kg will receive anifrolumab as an injection in APFS."
+        },
+        {
+          "label": "Cohort 2 (body weight ≥ 15 to ≤ 40 kg)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with body weight ≥ 15 to ≤ 40 kg will receive anifrolumab as an injection in APFS."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum observed serum (peak) concentration (Cmax)",
+        "Area under the serum concentration-time curve (AUC)",
+        "Time to maximum plasma concentration (tmax)",
+        "Apparent total body clearance of drug from plasma (CL/F)",
+        "Trough drug concentration at steady state (Ctrough,ss)"
+      ],
+      "secondaryEndpoints": [
+        "Suppression of type I IFN 21-gene signature",
+        "Change from baseline in anti-double-stranded deoxyribonucleic acid (dsDNA) antibodies",
+        "Change from baseline in complement component 3 (C3) levels",
+        "Change from baseline in complement component 4 (C4) levels",
+        "Change from baseline in total hemolytic complement (CH50) levels",
+        "Number and percentage of participants who develop anti drug antibody (ADA) against anifrolumab"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07630714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07630714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07630714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07630714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07630714",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "lotus",
+      "nctId": "NCT07751848",
+      "protocolNumber": "D3461L00019",
+      "acronym": "LOTUS",
+      "title": "Multicentre, Open-Label, Single-Arm, 52-Week, Ph3b Study to Evaluate the Efficacy and Safety Outcomes in Chinese Patients Treated With Anifrolumab Who Have Active Moderate-Severe Systemic Lupus Erythematosus (SLE)",
+      "briefTitle": "A Study of Outcomes in Chinese Patients Treated With Anifrolumab Who Have Active Mod-severe Systemic Lupus Erythematosus",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-08-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-08-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-08-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 417,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "Eligible patients will receive a fixed IV dose for a total of 13 doses (from Week 0 to Week 48)"
+        }
+      ],
+      "primaryEndpoints": [
+        "The proportion of patients who achieve DORIS remission at week 52"
+      ],
+      "secondaryEndpoints": [
+        "The proportion of patients who achieve DORIS remission at week 12, 24",
+        "Time to first DORIS remission attainment Proportion of time spent in DORI remission: 0, or did not achieve, ≥25%, ≥ 50%, or ≥ 75%",
+        "The proportion of patients who achieve DORIS-0 remission at week 52",
+        "The proportion of patients who achieve LLDAS at week 12, 24, 52",
+        "Time to first LLDAS attainment Proportion of time spent in LLDAS: 0, or did not achieve, ≥25%, ≥ 50%, or ≥ 75%",
+        "The proportion of patients who achieve LLDAS-5 remission at week 52",
+        "Changes of SLEDAI-2K score from week 0 to week 4, 8, 12, 24, 52",
+        "The annualized flare rate over Week 52 Time to first flare",
+        "The proportion of patients who achieve an GC dose ≤5 mg/day at week 40 and sustained to Week 52 The proportion of patients who achieve GC dose ≤5 mg/day at week 24, 52",
+        "The proportion of patients who achieve an GC dose = 0 mg/day at week 40 and sustained to week 52",
+        "Time to GC ≤ 5 mg/day among patients on GC >5 mg/day at week 0 Time to GC 0 mg/day among patients on GC >0 mg/day at baseline",
+        "Average daily GC dose week 4, 8,…, 40, 52 The cumulative GC does from week 0 to week 52",
+        "Change of GTI score from week 0 and week 24, 52",
+        "Changes in Cutaneous Lupus Erythematosus Disease Area and Severity Index (CLASI)-A score from week 0 to week 8, 12, 24, 52",
+        "Changes in number of swollen and tender joints from week 0 to week 24, 52",
+        "Changes of the count of white blood cells from week 0 to week 8, 12, 24, 52",
+        "Changes of urine protein level from week 0 to week 52",
+        "The proportion of patients who achieve improvements* in serum complement level at week 8, 12, 24, 52 The changes of serum complement level between week 0 and week 8, 12, 24, 52",
+        "The changes of anti-dsDNA antibody between week 0 and week 24, 52",
+        "Change of FACIT-Fatigue total score from baseline over 52 weeks",
+        "Change of LupusQoL（ Physical Health, Pain, Fatigue, and Emotional Health domain） scores from baseline over 52 weeks",
+        "Changes of the platelet counts from week 0 to week 8, 12, 24, 52",
+        "Changes of haemoglobin levels from week 0 to week 8, 12, 24, 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07751848",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07751848",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07751848",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07751848",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07751848",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rosy-s",
+      "nctId": "NCT07691970",
+      "protocolNumber": "D346BC00004",
+      "acronym": "ROSY-S",
+      "title": "ROSY-S: Rollover Study for Participants Who Have Completed a Previous Study With Anifrolumab (Saphnelo) and Are Assessed by the Investigator to Clinically Benefit From Continued Treatment",
+      "briefTitle": "Rollover Study for Participants Who Have Completed a Previous Clinical Study With Anifrolumab (Saphnelo) and Clinically Benefited From Continued Treatment",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-08-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-12-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-12-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1072,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "5 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Anifrolumab",
+          "type": "EXPERIMENTAL",
+          "description": "This is a single arm open-label study with the primary objective of providing continued access to anifrolumab to eligible participants who are continuing to derive clinical benefit from treatment and assessing long-term safety and tolerability of anifrolumab until participant meets one of the study discontinuation criteria."
+        }
+      ],
+      "primaryEndpoints": [
+        "SAEs and Non-Serious AEs"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07691970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07691970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07691970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07691970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07691970",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "primula-dus",
+      "nctId": "NCT07431775",
+      "protocolNumber": "D3461R00086",
+      "acronym": "PRIMULA DUS",
+      "title": "A Non-Interventional Descriptive Multi-Country Study of Saphnelo™ (Anifrolumab-fnia) Utilization in Females of Reproductive Potential",
+      "briefTitle": "Saphnelo Use in Females of Child-bearing Potential",
+      "phase": "NA",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2026-10-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-03-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-03-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 26000000,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "15 Years",
+        "maxAge": "50 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Study population for primary objectives",
+          "description": "Patients will be included in the primary objective cohort for a given calendar year interval, if they satisfy the following inclusion and exclusion criteria within that year:\n\nInclusion criteria\n\n1. Observability (enrollment or activity) in the data source for at least one day during the patient identification period within that calendar year (set earliest qualifying date as \"index date\" for primary objectives)\n2. Female sex at index date\n3. Age ≥15 and ≤50 years at index date\n\nExclusion criteria\n\n1\\. (Primary Objective 1a only) Evidence of prior anifrolumab use in all available data prior to the index date through 1 day prior to the index date\n\nNote: Cohort selection criteria for the primary objectives will be assessed repeatedly within calendar year intervals during the patient identification period to enable evaluation of annual anifrolumab use incidence and prevalence outcomes."
+        },
+        {
+          "label": "Study population for secondary objectives",
+          "description": "Patients will be included in the secondary objective cohort if they satisfy the following inclusion and exclusion criteria:\n\nInclusion criteria\n\n1. Receipt of anifrolumab therapy during the patient identification period (identify earliest record of anifrolumab in this period and set as \"index date\" for secondary objectives)\n2. Female sex at index date\n3. Age ≥15 and ≤50 years at index date\n4. ≥180 days of continuous observability (e.g., enrollment or activity) in the dataset prior to and including the index date.\n5. (For Secondary Objective 3 only) SLE diagnosis, defined as having at least one unique health care encounter record with an International Classification of Diseases, 10th Revision (ICD-10) code of M32\\* (excluding M32.0: drug-induced SLE) within the 180-day baseline period prior to and including the index date\n\nExclusion criteria\n\n1\\. Evidence of prior anifrolumab use in all available data prior the index date through 1 day prior to the index date"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of anifrolumab use",
+        "Prevalence of anifrolumab use"
+      ],
+      "secondaryEndpoints": [
+        "Baseline patient characteristics",
+        "Baseline SLE treatment characteristics",
+        "Anifrolumab treatment utilization patterns",
+        "Anifrolumab-exposed pregnancies"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07431775",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07431775",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07431775",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07431775",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07431775",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d3466c00003",
+      "nctId": "NCT07688980",
+      "protocolNumber": "D3466C00003",
+      "title": "A Multicentre, Randomised, Open-label, Phase I Study to Characterise the Pharmacokinetics, Pharmacodynamics, and Safety of Anifrolumab Administered Subcutaneously or Intravenously in Participants With Systemic Lupus Erythematosus",
+      "briefTitle": "Study to Characterise Pharmacokinetics (PK), Pharmacodynamics (PD), and Safety of Anifrolumab Administered Subcutaneously (SC) or Intravenously (IV)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-10-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-04-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2030-06-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 92,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part A: SC",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive SC anifrolumab administered via AI."
+        },
+        {
+          "label": "Part A: IV",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive IV anifrolumab infusion."
+        },
+        {
+          "label": "Part B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive SC anifrolumab administered via aPFS."
+        }
+      ],
+      "primaryEndpoints": [
+        "Anifrolumab serum concentrations through Week 4"
+      ],
+      "secondaryEndpoints": [
+        "Percentage change from baseline in Type I interferon (IFN) 21-gene expression PD marker"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07688980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07688980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07688980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07688980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07688980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "amana",
+      "nctId": "NCT04750057",
+      "protocolNumber": "D3461R00027",
+      "acronym": "AMANA",
+      "title": "An Early Access Program for Anifrolumab Treatment in Adult Patients With Active Systemic Lupus Erythematosus - AMANA",
+      "briefTitle": "Anifrolumab Early Access Program",
+      "phase": "NA",
+      "roles": [],
+      "status": "NO_LONGER_AVAILABLE",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04750057",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04750057",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04750057",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04750057",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04750057",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-04-24",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 5 - New Formulation or New Manufacturer",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761451%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761451",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761451%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761451Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761451Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:03.959Z"
+}

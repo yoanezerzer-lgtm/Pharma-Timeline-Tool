@@ -1,0 +1,326 @@
+{
+  "slug": "zidesamtinib",
+  "brandName": "Jideytro",
+  "inn": "zidesamtinib",
+  "modality": "Drug (NDA)",
+  "sponsor": "NUVALENT",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adult patients with locally advanced or metastatic ROS1-positive non-small cell lung cancer (NSCLC) who received a prior ROS1 kinase inhibitor",
+      "slug": "adult-patients-with-locally-advanced-or-metastatic-ros1",
+      "approvalDate": {
+        "value": "2026-07-22",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220185Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-07-22",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Jideytro (zidesamtinib) tablets for the treatment of adult patients with locally advanced or metastatic ROS 1-positive non-small cell lung cancer (NSCLC) who received a prior ROS1 kinase inhibitor.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220185Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Jideytro (zidesamtinib) tablets for the treatment of adult patients with locally advanced or metastatic ROS 1-positive non-small cell lung cancer (NSCLC) who received a prior ROS1 kinase inhibitor.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220185",
+      "applicationType": "NDA",
+      "sponsor": "NUVALENT",
+      "originalApprovalDate": {
+        "value": "2026-07-22",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "nvl-520-01",
+      "nctId": "NCT05118789",
+      "protocolNumber": "NVL-520-01",
+      "title": "A Phase 1/2 Study of the Highly Selective ROS1 Inhibitor Zidesamtinib (NVL-520) in Patients With Advanced NSCLC and Other Solid Tumors (ARROS-1)",
+      "briefTitle": "A Study of Zidesamtinib (NVL-520) in Patients With Advanced NSCLC and Other Solid Tumors Harboring ROS1 Rearrangement (ARROS-1)",
+      "phase": "PHASE1_2",
+      "roles": [
+        {
+          "indication": "Adult patients with locally advanced or metastatic ROS1-positive non-small cell lung cancer (NSCLC) who received a prior ROS1 kinase inhibitor",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220185s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adult patients with locally advanced or metastatic ROS1-positive non-small cell lung cancer (NSCLC) who received a prior ROS1 kinase inhibitor)",
+            "quote": "Trial identifier appears within the Adult patients with locally advanced or metastatic ROS1-positive non-small cell lung cancer (NSCLC) who received a prior ROS1 kinase inhibitor section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220185Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Jideytro (zidesamtinib) tablets for the treatment of adult patients with locally advanced or metastatic ROS 1-positive non-small cell lung cancer (NSCLC) who received a prior ROS1 kinase inhibitor.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "Nuvalent Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-01-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 359,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Phase 1 dose escalation",
+          "type": "EXPERIMENTAL",
+          "description": "Zidesamtinib (NVL-520) oral daily dosing"
+        },
+        {
+          "label": "Cohort 2a",
+          "type": "EXPERIMENTAL",
+          "description": "ROS1+ NSCLC naïve to TKI therapy and up to 1 prior chemotherapy and/or immunotherapy"
+        },
+        {
+          "label": "Cohort 2b",
+          "type": "EXPERIMENTAL",
+          "description": "ROS1+ NSCLC treated with 1 prior ROS1 TKI and no prior chemotherapy or immunotherapy"
+        },
+        {
+          "label": "Cohort 2c",
+          "type": "EXPERIMENTAL",
+          "description": "ROS1+ NSCLC treated with 1 prior ROS1 TKI and 1 prior platinum-based chemotherapy with or without immunotherapy"
+        },
+        {
+          "label": "Cohort 2d",
+          "type": "EXPERIMENTAL",
+          "description": "ROS1+ NSCLC treated with ≥2 prior ROS1 TKIs and up to 1 prior chemotherapy and/or immunotherapy"
+        },
+        {
+          "label": "Cohort 2e",
+          "type": "EXPERIMENTAL",
+          "description": "ROS1+ solid tumor and progressed on any prior therapy"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Tolerated Dose (MTD) (Phase 1)",
+        "Recommended Phase 2 Dose (RP2D)",
+        "Objective Response Rate (ORR) (Phase 2)"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants with treatment-emergent adverse events, as assessed by CTCAE, v5.0",
+        "Maximum plasma concentration (Cmax) of NVL-520",
+        "Plasma concentration at the end of the dosing interval (Ctau) of NVL-520",
+        "Average plasma concentration (Cavg) of NVL-520",
+        "Time of maximum concentration (Tmax) of NVL-520",
+        "Area under the curve at the end of the dosing interval (AUCtau) of NVL-520",
+        "Area under the curve from time 0 to 24 (AUC0-24) of NVL-520",
+        "Area under the curve from time 0 to infinity (AUCinf) of NVL-520",
+        "Oral clearance (CL/F) of NVL-520",
+        "Volume of distribution (Vz/F) of NVL-520",
+        "Half-life (t1/2) of NVL-520",
+        "Objective response rate (ORR)",
+        "Duration of response (DOR)",
+        "Clinical benefit rate (CBR)",
+        "Time to response",
+        "Progression-free survival (PFS)",
+        "Overall survival (OS)",
+        "Rate of CNS progression",
+        "Intracranial objective response rate (IC-ORR)",
+        "Quality of life assessment using the European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire-Core 30 (EORTC QLQ-C30)",
+        "Quality of life assessment using the European Organisation for Research and Treatment of Cancer Quality of Life Questionnaire-Lung Cancer 29 module (EORTC QLQ-LC29)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05118789",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05118789",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05118789",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05118789",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05118789",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220185Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 13,
+          "quote": "e daily in ARROS - 1, a multicenter, single-arm, open-label, multi-cohort clinical trial (NCT05118789). Eligible patients were required to have ROS1- positive locally advanced or metastatic N",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nvl-520-eap",
+      "nctId": "NCT06797362",
+      "protocolNumber": "NVL-520-EAP",
+      "title": "Expanded Access Treatment of Zidesamtinib (NVL-520) in Patients With Advanced ROS1+ NSCLC or Other ROS1+ Solid Tumors",
+      "briefTitle": "Expanded Access Program of Zidesamtinib (NVL-520) for Patients With Advanced ROS1+ NSCLC or Other ROS1+ Solid Tumors",
+      "phase": "NA",
+      "roles": [],
+      "status": "AVAILABLE",
+      "sponsor": "Nuvalent Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06797362",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06797362",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06797362",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06797362",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06797362",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-07-22",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220185%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220185",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220185%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220185Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220185s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:00:11.109Z"
+}

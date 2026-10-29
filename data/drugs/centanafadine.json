@@ -1,0 +1,3255 @@
+{
+  "slug": "centanafadine",
+  "brandName": "Simtriyo",
+  "inn": "centanafadine",
+  "modality": "Drug (NDA)",
+  "sponsor": "OTSUKA PHARMACEUTICAL CO LTD",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg",
+      "slug": "attention-deficit-hyperactivity-disorder-adhd-in-adults-and",
+      "approvalDate": {
+        "value": "2026-07-24",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-07-24",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Simtriyo (centanafadine) extended-release capsules for the treatment of attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Simtriyo (centanafadine) extended-release capsules for the treatment of attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "218145",
+      "applicationType": "NDA",
+      "sponsor": "OTSUKA PHARMACEUTICAL CO LTD",
+      "originalApprovalDate": {
+        "value": "2026-07-24",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "eb-1020-102",
+      "nctId": "NCT01744808",
+      "protocolNumber": "EB-1020-102",
+      "title": "A Phase 1 Study To Investigate the Pharmacokinetics of SR Formulations; and the Food Effect, Safety, Tolerance, Pharmacokinetic and Pharmacodynamic Profile Of 1 SR Formulation of EB-1020 In Young Healthy Subjects",
+      "briefTitle": "A Study to Evaluate the Safety, Tolerance, and Pharmacokinetic and Pharmacodynamic Profile Of 1 SR Formulation of EB-1020",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2013-02-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2014-02-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2014-02-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 54,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "EB-1020 SR1",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Sustained release formulation"
+        },
+        {
+          "label": "EB-1020 SR2",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Sustained Release Formulation"
+        },
+        {
+          "label": "EB-1020 SR3",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Sustained Release Formulation"
+        },
+        {
+          "label": "EB-1020 IR",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Immediate Release Formulation"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo Formulation"
+        }
+      ],
+      "primaryEndpoints": [
+        "Cmax",
+        "Tmax",
+        "AUC"
+      ],
+      "secondaryEndpoints": [
+        "Effect of food on Cmax"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01744808",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01744808",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01744808",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01744808",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01744808",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "eb-1020-sr-adhd-201",
+      "nctId": "NCT01939353",
+      "protocolNumber": "EB-1020-SR-ADHD-201",
+      "title": "An Exploratory, Single-Blind Pilot Trial of Flexible Doses of the Triple Reuptake Inhibitor EB-1020 SR in the Treatment of Adult Males With Attention-Deficit Hyperactivity Disorder",
+      "briefTitle": "Study of Flexible Doses of the Triple Reuptake Inhibitor EB-1020 Sustained Release (SR) in the Treatment of Adult Males With Attention-Deficit Hyperactivity Disorder",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2013-10-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2014-02-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2014-02-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 45,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "SINGLE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "MALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Centanafadine SR 100-500 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Following a 1-week SB placebo run-in treatment, participants with \\<30% improvement and ≥28 total score on Adult ADHD-RS-IV scale score received centanafadine (CTN) 100 mg, sustained release (SR) tablet, once daily (1 tablet in the morning) on Days 1 and 2, followed by 200 mg, SR tablets, twice daily (1 tablet in the morning and 1 tablet 5 hours later) on Days 3 and 4, followed by 300 mg, SR tablets, twice daily (2 tablets in the morning and 1 tablet 5 hours later) on Days 5, 6, and 7. After 1 week of treatment, CTN doses were maintained or titrated in 100-mg increments up to the maximum of 500 mg daily or reduced based on the safety and tolerability, as judged by the investigator at Weeks 2, 3 and 4."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline-2 in ADHD Symptoms to Week 4 as Assessed by the Adult Attention-Deficit Hyperactivity Disorder Rating Scale (AD HD-RS-IV)"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline-2 in ADHD Symptoms as Assessed by the Adult ADHD-RS-IV",
+        "Change From Baseline-2 to Week 4 on the Behavior Rating Inventory of Executive Function, Adult Version (BRIEF-A) Scale",
+        "Percentage of Participants Who Are Responders for ADHD Symptoms as Measured by the ADHD-RS-IV",
+        "Percentage of Participants Who Are High Responders for ADHD Symptoms as Measured by the ADHD-RS-IV",
+        "Change From Baseline-2 on the Inattentiveness and Hyperactivity/Impulsivity Subscales of ADHD-RS-IV",
+        "Change From Baseline-2 in the Clinical Global Impression of Severity (CGI-S) [ADHD Version] Scale Score",
+        "Change From Baseline-2 in the Clinical Global Impression of Improvement (CGl-I) [ADHD Version] Scale Score",
+        "Percentage of Responders to the CGl-I (ADHD Version) Scale",
+        "Change From Baseline-2 in the Columbia-Suicide Severity Rating Scale (C-SSRS)",
+        "Change From Baseline-2 on the Profile of Mood States, Second Edition, Short Version 2A (POMS 2-A Short) at Week 4",
+        "Change From Baseline-2 on the Wender-Reimherr Adult Attention Deficit Disorder Scale (WRAADDS) at Week 4",
+        "Change From Baseline-2 on the Weiss Functional Impairment Rating Scale - Self Report (WFIRS-S) at Week 4",
+        "Change From Week 4 to End of Discontinuation Phase (Follow-up) on the ADHD-RS-IV"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01939353",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01939353",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01939353",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01939353",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01939353",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "eb-1020-ir-103",
+      "nctId": "NCT02144415",
+      "protocolNumber": "EB-1020 IR-103",
+      "title": "A Study to Evaluate the Abuse Potential of EB-1020 Immediate-Release in Healthy Recreational Stimulant Users",
+      "briefTitle": "A Study to Evaluate the Abuse Potential of EB-1020 Immediate-Release in Healthy Recreational Stimulant Users",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2014-05-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2014-07-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2014-07-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 80,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "EB-1020 400 mg",
+          "type": "EXPERIMENTAL",
+          "description": "EB-1020 400 mg, administered as four 100-mg IR capsules and 4 matching placebo capsules"
+        },
+        {
+          "label": "EB-1020 800 mg",
+          "type": "EXPERIMENTAL",
+          "description": "EB-1020 800 mg, administered as eight 100-mg IR capsules"
+        },
+        {
+          "label": "lisdexamfetamine 150 mg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "lisdexamfetamine 150 mg, administered as 3 capsules, each containing 1 lisdexamfetamine 50-mg capsule, and 5 matching placebo capsules"
+        },
+        {
+          "label": "d-amphetamine 40 mg",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "d-amphetamine 40 mg, administered as 4 capsules, each containing two 5-mg d-amphetamine tablets and 4 matching placebo capsules"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo, administered as 8 matching placebo capsules"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum effect (Emax) on Drug Liking visual analog scale (VAS)"
+      ],
+      "secondaryEndpoints": [
+        "Drug Liking VAS (minimum effect [Emin] and time-averaged area under the effect curve to 12 hours after study drug administration [TA_AUE])",
+        "Overall Drug Liking VAS (Emax/Emin)",
+        "Take Drug Again VAS (Emax)",
+        "High VAS (Emax and TA_AUE)",
+        "Good Effects VAS (Emax and TA_AUE)",
+        "Bad Effects VAS (Emax and TA_AUE)",
+        "Nausea VAS (Emax and TA_AUE)",
+        "ARCI-A scale (Emax and TA_AUE)",
+        "ARCI-BG scale (Emax and TA_AUE)",
+        "Alertness/Drowsiness VAS (Emax and TA_AUE)",
+        "Agitation/Relaxation VAS (Emax and TA_AUE)",
+        "Any Effects VAS (Emax and TA_AUE)",
+        "Drug Similarity VAS (score at 12 hours after study drug administration)",
+        "Safety and tolerability of EB-1020 as assessed by AEs",
+        "Safety and tolerability of EB-1020 by laboratory assessments",
+        "Safety and tolerability of EB-1020 as assessed by 12-lead ECGs",
+        "Safety and tolerability of EB-1020 as assessed by vital signs"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02144415",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02144415",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02144415",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02144415",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02144415",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nvi-eb-1020-202",
+      "nctId": "NCT02547428",
+      "protocolNumber": "NVI-EB-1020-202",
+      "title": "A Phase 2b, Randomized, Double-Blind, Multicenter, Placebo-Controlled, Crossover, Safety and Efficacy Study of Centanafadine Sustained-Release (CTN SR) in Adults With Attention-Deficit Hyperactivity Disorder (ADHD)",
+      "briefTitle": "Safety and Efficacy Study of Centanafadine Sustained-Release (CTN SR) in Adults With Attention-Deficit Hyperactivity Disorder (ADHD)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-08-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-06-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2016-06-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 85,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "CTN SR First, Then Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received CTN SR tablets starting at a dose of 100 or 200 milligrams (mg) on Day 1. Dose was up titrated up to 800 mg daily dose for up to 3 weeks in Period 1. The dose was decreased based on safety and tolerability based on Investigator's discretion, followed by a washout Period of 1 week followed by matching-placebo for up to 3 weeks in Period 2. The most common total daily dose (TDD) was 400 mg/day."
+        },
+        {
+          "label": "Placebo First, Then CTN SR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received matching-placebo for up to 3 weeks in Period 1, followed by a washout Period of 1 week, followed by CTN SR tablets starting at a dose of 100 or 200 mg on Day 1. Dose was up titrated up to 800 mg daily dose for up to 3 weeks in Period 2. The dose was decreased based on safety and tolerability based on Investigator's discretion. The most common TDD was 400 mg/day."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Total Attention-Deficit Hyperactivity Disorder Rating Scale IV (ADHD-RS-IV) Score",
+        "Change From Baseline in ADHD-RS-IV Score for Subgroup of Participants With Target CTN SR Dose of 400 mg/Day"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in ADHD-RS-IV Score Total Score After 1 and 2 Weeks of Double-blind Treatment",
+        "Change From Baseline in ADHD-RS-IV Score Total Score After 1 and 2 Weeks of Double-blind Treatment for Subgroup of Participants With Target CTN SR Dose of 400 mg/Day",
+        "Change From Baseline in ADHD-RS-IV Inattention Subscale Score of Double-blind Treatment",
+        "Change From Baseline in ADHD-RS-IV Inattention Subscale Score of Double-blind Treatment for Subgroup of Participants With Target CTN SR Dose of 400 mg/Day",
+        "Change From Baseline in ADHD-RS-IV Hyperactivity/Impulsivity Subscale Score of Double-blind Treatment",
+        "Change From Baseline in ADHD-RS-IV Hyperactivity/Impulsivity Subscale Score of Double-blind Treatment for Subgroup of Participants With Target CTN SR Dose of 400 mg/Day",
+        "Permanent Product Measure of Performance (PERMP) Score",
+        "PERMP Score for Subgroup of Participants With Target CTN SR Dose of 400 mg/Day",
+        "Number of Participants With Clinical Global Impressions of Severity (CGI-S) Score",
+        "Number of Participants With Clinical Global Impressions of Improvement (CGI-I) Score",
+        "Number of Participants With CGI-I Score for Subgroup of Participants With Target CTN SR Dose of 400 mg/Day",
+        "Number of Participants With at Least One Treatment-Emergent Adverse Events (TEAEs)",
+        "Number of Participants With at Least One TEAEs for Subgroup of Participants With Target CTN SR Dose of 400 mg/Day",
+        "Cmax: Maximum Concentration",
+        "Tmax: Time to Maximum Concentration",
+        "AUC0-t: Area Under the Concentration-Time Curve During the Steady-State 24-hour Dosing Interval",
+        "t½: Elimination Phase Half-Life",
+        "Clast: Last Measurable Concentration",
+        "Tlast: Time Point of the Last Measurable Concentration",
+        "ke: Elimination Phase Rate Constant"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547428",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547428",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547428",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547428",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02547428",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nvi-eb1020-105",
+      "nctId": "NCT02827513",
+      "protocolNumber": "NVI-EB1020-105",
+      "title": "A Phase 1 Study to Investigate the Safety, Tolerance, Food Effect, Pharmacokinetics and Pharmacodynamics of Single and Multiple Doses of Extended Release Formulations of Centanafadine (CTN) (Formerly Called EB-1020) in Young Healthy Subjects",
+      "briefTitle": "A Phase 1 Study to Investigate the Safety, Tolerance, Food Effect, Pharmacokinetics and Pharmacodynamics of Single and Multiple Doses of Extended Release Formulations of Centanafadine (CTN) in Young Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2015-12-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-01-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-01-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 16,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "45 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive sustained release (SR) Tablet Formulation 1 (SR1) containing 100 mg of Centanafadine (CTN) (2 x 100 mg tablets taken orally by mouth \\[PO\\] in the morning at starting at approximately 7 am and 2 x 100 mg tablets PO 5 hours later) for a total daily dose (TTD) of 400 mg on Days 1, 4, 7, and 10."
+        },
+        {
+          "label": "Arm 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive extended release (XR) Tablet Formulation 1 (XR1) containing 400 mg of CTN (1 x 400 mg tablet PO in the morning) on Days 1, 4, 7, and 10."
+        },
+        {
+          "label": "Arm 3",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive XR Tablet Formulation 2 (XR2) containing 400 mg of CTN (1 x 400 mg tablet PO in the morning) on Days 1, 4, 7, and 10."
+        },
+        {
+          "label": "Arm 4",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive XR Tablet Formulation 3 (XR3) containing 400 mg of CTN (1 x 400 mg tablet PO in the morning) on Days 1, 4, 7, and 10."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with treatment emergent adverse events and serious adverse events"
+      ],
+      "secondaryEndpoints": [
+        "Maximum observed plasma concentration (Cmax) of Centanafadine (CTN) and metabolite",
+        "Time to maximum plasma concentration (Tmax) of CTN and metabolite",
+        "Area under the plasma concentration-time curve from time zero until the last quantifiable time point (AUC0-last) of CTN and metabolite",
+        "Apparent termination elimination rate constant (kel) of CTN and metabolite",
+        "Apparent terminal elimination half-life (t1/2) of CTN and metabolite",
+        "last measurable plasma concentration (Clast) of CTN and metabolite",
+        "Area under the plasma concentration-time curve from time zero to infinity (AUC0-inf) from AUC0-last +Clast/kel of CTN and metabolite",
+        "Dose normalized Cmax (Cmax/Dose) of CTN and metabolite",
+        "Dose normalized AUC (AUC/Dose) of CTN and metabolite"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02827513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02827513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02827513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02827513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02827513",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00013",
+      "nctId": "NCT03605680",
+      "protocolNumber": "405-201-00013",
+      "title": "A Phase 3, Randomized, Double-blind, Multicenter, Placebo-controlled, Parallel-group Trial Evaluating the Efficacy, Safety, and Tolerability of Centanafadine Sustained-release Tablets in Adults With Attention-deficit/Hyperactivity Disorder",
+      "briefTitle": "A Trial Evaluating the Efficacy, Safety, & Tolerability of Centanafadine Sustained-release Tablets in Adults With Attention-deficit/Hyperactivity Disorder",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg)",
+            "quote": "Trial identifier appears within the Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Simtriyo (centanafadine) extended-release capsules for the treatment of attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-01-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-04-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-04-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 604,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Single-blind Run-in Period: Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Placebo-matching tablets BID (twice daily) on Day -7 through Baseline (Day -1)."
+        },
+        {
+          "label": "Double-blind Treatment Period: Centanafadine SR 200 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Following Single-blind Run-in Period, participants with \\<30% improvement on Adult ADHD Self Report Scale (ASRS) scale score were randomized to receive centanafadine 200 mg SR tablets BID orally on Day 1 through Day 42 in the Double-blind Treatment Period."
+        },
+        {
+          "label": "Double-blind Treatment Period: Centanafadine SR 400 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Following Single-blind Run-in Period, participants with \\<30% improvement on Adult ADHD Self Report Scale (ASRS) scale score were randomized to receive centanafadine 400 mg SR tablets BID orally on Day 1 through Day 42 in the Double-blind Treatment Period."
+        },
+        {
+          "label": "Double-blind Treatment Period: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Following Single-blind Run-in Period, participants with \\<30% improvement on Adult ADHD Self Report Scale (ASRS) scale score were randomized to receive centanafadine SR matching placebo tablets BID orally on Day 1 through Day 42 in the Double-blind Treatment Period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in ADHD Investigator Symptom Rating Scale (AISRS)"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Clinical Global Impression-Severity of Illness Scale (CGI-S)"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in ADHD Investigator Symptom Rating Scale (AISRS)",
+          "timeFrame": "Baseline and Day 42",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "score on a scale",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Double-blind Treatment Period: Centanafadine SR 200 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Double-blind Treatment Period: Centanafadine SR 400 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Double-blind Treatment Period: Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-10.1",
+              "spread": "0.99"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-9.73",
+              "spread": "0.98"
+            },
+            {
+              "groupId": "OG002",
+              "value": "-6.98",
+              "spread": "0.98"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "=0.0193",
+              "method": "MMRM",
+              "paramType": "Least Squares (LS ) Mean Difference",
+              "paramValue": "-3.15",
+              "ciPct": "95",
+              "ciLower": "-5.79",
+              "ciUpper": "-0.51"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "=0.0392",
+              "method": "MMRM",
+              "paramType": "LS Mean Difference",
+              "paramValue": "-2.74",
+              "ciPct": "95",
+              "ciLower": "-5.35",
+              "ciUpper": "-0.14"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605680",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605680?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 25,
+          "quote": "MTRIYO 210 mg and 280 mg once daily, respectively, for the treatment of ADHD. In Study 3 (NCT03605680) and Study 4 (NCT03605836), patients 18 to 55 years of age were randomized (1:1:1) to rec",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00014",
+      "nctId": "NCT03605836",
+      "protocolNumber": "405-201-00014",
+      "title": "A Phase 3, Randomized, Double-blind, Multicenter, Placebo-controlled, Parallel-group Trial Evaluating the Efficacy, Safety, and Tolerability of Centanafadine Sustained-release Tablets in Adults With Attention-deficit/Hyperactivity Disorder",
+      "briefTitle": "A Trial to Evaluate the Efficacy, Safety, and Tolerability of Centanafadine Sustained-release Tablets in Adults With Attention-deficit/Hyperactivity Disorder",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg)",
+            "quote": "Trial identifier appears within the Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Simtriyo (centanafadine) extended-release capsules for the treatment of attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-01-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-05-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-05-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 590,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Single-blind Run-in Period: Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Placebo-matching tablets BID (twice daily) on Day -7 through Baseline (Day -1)."
+        },
+        {
+          "label": "Double-blind Treatment Period: Centanafadine SR 200 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Following Single-blind Run-in Period, participants with \\<30% improvement on Adult ADHD Self Report Scale (ASRS) scale score were randomized to receive centanafadine 200 mg SR tablets BID orally on Day 1 through Day 42 in the Double-blind Treatment Period."
+        },
+        {
+          "label": "Double-blind Treatment Period: Centanafadine SR 400 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Following Single-blind Run-in Period, participants with \\<30% improvement on Adult ADHD Self Report Scale (ASRS) scale score were randomized to receive centanafadine 400 mg SR tablets BID orally on Day 1 through Day 42 in the Double-blind Treatment Period."
+        },
+        {
+          "label": "Double-blind Treatment Period: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Following Single-blind Run-in Period, participants with \\<30% improvement on Adult ADHD Self Report Scale (ASRS) scale score were randomized to receive centanafadine SR matching placebo tablets BID orally on Day 1 through Day 42 in the Double-blind Treatment Period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in ADHD Investigator Symptom Rating Scale (AISRS) Score at Day 42"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Clinical Global Impression-Severity of Illness Scale (CGI-S) Score at Day 42"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in ADHD Investigator Symptom Rating Scale (AISRS) Score at Day 42",
+          "timeFrame": "Baseline and Day 42",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "score on a scale",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Double-blind Treatment Period: Centanafadine SR 200 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Double-blind Treatment Period: Centanafadine SR 400 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Double-blind Treatment Period: Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-12.1",
+              "spread": "0.96"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-12.5",
+              "spread": "0.99"
+            },
+            {
+              "groupId": "OG002",
+              "value": "-8.07",
+              "spread": "0.94"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "=0.0021",
+              "method": "MMRM",
+              "paramType": "Least Squares (LS) Mean Difference",
+              "paramValue": "-4.01",
+              "ciPct": "95",
+              "ciLower": "-6.55",
+              "ciUpper": "-1.46"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "=0.0009",
+              "method": "MMRM",
+              "paramType": "LS Mean Difference",
+              "paramValue": "-4.42",
+              "ciPct": "95",
+              "ciLower": "-7.02",
+              "ciUpper": "-1.82"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605836",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605836?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 25,
+          "quote": "nce daily, respectively, for the treatment of ADHD. In Study 3 (NCT03605680) and Study 4 (NCT03605836), patients 18 to 55 years of age were randomized (1:1:1) to receive low or high doses of",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00015",
+      "nctId": "NCT03605849",
+      "protocolNumber": "405-201-00015",
+      "title": "An Open-label, 52-Week, Multicenter Trial Evaluating the Long-term Safety and Tolerability of Centanafadine Sustained-Release Tablets in Adults With Attention-Deficit/Hyperactivity Disorder",
+      "briefTitle": "A Trial Evaluating the Long-term Safety and Tolerability of Centanafadine Sustained-release Tablets in Adults With Attention-Deficit/Hyperactivity Disorder",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-02-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-09-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-09-07",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 662,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Centanafadine",
+          "type": "EXPERIMENTAL",
+          "description": "400 mg total daily dose"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Treatment-emergent Adverse Events (TEAEs) Graded by Severity"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605849",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605849",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605849",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605849",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03605849",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00037",
+      "nctId": "NCT04081363",
+      "protocolNumber": "405-201-00037",
+      "title": "A Pilot Phase 2a, Multicenter, Open-label, Single-dose Trial to Assess the Pharmacokinetics of Centanafadine Extended-release Capsules After Oral Administration in Pediatric Subjects (9 to 12 Years, Inclusive) With Attention-deficit Hyperactivity Disorder",
+      "briefTitle": "Open-label, Single-dose Trial to Assess the Pharmacokinetics of Centanafadine Extended-release Capsules in Pediatric Participants With Attention-deficit Hyperactivity Disorder (ADHD)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-10-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-12-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 13,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "9 Years",
+        "maxAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Swallowed Capsules Cohort",
+          "type": "EXPERIMENTAL",
+          "description": "Participants swallowed two capsules of centanafadine (one containing a 50-milligram \\[mg\\] dose as extended release beads and other containing a 5-mg dose as immediate-release \\[IR\\] beads), total dose of 55 mg, orally in the morning of Day 1 following a minimum 8-hour fast."
+        },
+        {
+          "label": "Sprinkled Onto Applesauce Cohort",
+          "type": "EXPERIMENTAL",
+          "description": "Participants were administered centanafadine 55 mg, contents of 2 capsules (one containing a 50-mg dose as beads and other containing a 5-mg dose as IR beads) sprinkled on a tablespoon of applesauce, orally in the morning of Day 1 following a minimum 8-hour fast."
+        }
+      ],
+      "primaryEndpoints": [
+        "Pharmacokinetic (PK) Parameter: Maximum Plasma Concentration (Cmax) of Centanafadine",
+        "PK Parameter: Time to Maximum Plasma Concentration (Tmax) of Centanafadine",
+        "PK Parameter: Area Under Concentration-time Curve From Time 0 to 12 Hours Postdose (AUC0-12h) of Centanafadine"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04081363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04081363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04081363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04081363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04081363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00010",
+      "nctId": "NCT04398225",
+      "protocolNumber": "405-201-00010",
+      "title": "A Phase 1b, Multicenter, Open-label, Multiple Ascending Dose Trial to Assess the Pharmacokinetics, Safety and Tolerability of Centanafadine Extended-release Capsules After Oral Administration in Pediatric Subjects (4 to 12 Years, Inclusive) With Attention-deficit/Hyperactivity Disorder",
+      "briefTitle": "A Trial to Assess the Pharmacokinetics, Safety, and Tolerability of Centanafadine in Pediatric Subjects With Attention-deficit/Hyperactivity Disorder",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-06-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-04-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-04-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 32,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "4 Years",
+        "maxAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1 (9-12 y)",
+          "type": "EXPERIMENTAL",
+          "description": "Centanafadine extended release capsule; 100 mg adult equivalent; twice daily for 14 days"
+        },
+        {
+          "label": "Cohort 2 (9-12 y)",
+          "type": "EXPERIMENTAL",
+          "description": "Centanafadine extended release capsule; 200 mg adult equivalent; twice daily for 14 days"
+        },
+        {
+          "label": "Cohort 3 (9-12 y)",
+          "type": "EXPERIMENTAL",
+          "description": "Centanafadine extended release capsule; 400 mg adult equivalent; twice daily for 14 days"
+        },
+        {
+          "label": "Cohort 4 (6-8 y)",
+          "type": "EXPERIMENTAL",
+          "description": "Centanafadine extended release capsule; 100 mg adult equivalent; twice daily for 14 days"
+        },
+        {
+          "label": "Cohort 5 (4-5 y)",
+          "type": "EXPERIMENTAL",
+          "description": "Centanafadine extended release capsule; 100 mg adult equivalent; twice daily for 14 days"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximal peak plasma concentration (Cmax)",
+        "Area under the concentration-time curve from time 0 to 24 hours (AUC0-24h) on day 14",
+        "Apparent clearance and apparent volume of distribution of centanafadine on Day 14"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04398225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04398225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04398225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04398225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04398225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00046",
+      "nctId": "NCT04786730",
+      "protocolNumber": "405-201-00046",
+      "title": "A Phase 1b, Multicenter, Open-label, Multiple Ascending Dose Trial to Assess the Pharmacokinetics, Safety, and Tolerability of Centanafadine Extended-release Capsules After Oral Administration in Pediatric Subjects (4 to 12 Years, Inclusive) With Attention-deficit Hyperactivity Disorder",
+      "briefTitle": "A Trial to Assess the Pharmacokinetics, Safety, and Tolerability of Centanafadine Capsules in Pediatric Subjects With Attention-deficit Hyperactivity Disorder",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-04-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-04-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 50,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "4 Years",
+        "maxAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Open-label centanafadine",
+          "type": "EXPERIMENTAL",
+          "description": "There will be multiple cohorts dosed with open-label centanafadine."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximal peak plasma concentration (Cmax)",
+        "Area under the concentration-time curve from time 0 to 24 hours (AUC0-24h) on day 14",
+        "Apparent clearance and apparent volume of distribution of centanafadine on Day 14"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04786730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04786730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04786730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04786730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04786730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00055",
+      "nctId": "NCT05066724",
+      "protocolNumber": "405-201-00055",
+      "title": "Efficacy of Centanafadine SR as a Potential Smoking Cessation Treatment",
+      "briefTitle": "Efficacy of Centanafadine SR as a Potential Smoking Cessation Treatment",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-09-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-05-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-05-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 50,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "21 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Centanafadine",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive centanafadine sustained release (SR) tablets, orally at a TDD of 400 milligrams (mg), administered as 200 mg doses, BID, approximately 4 to 6 hours apart, for a total of 7 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With a Continuous Smoking Abstinence Rate",
+        "Percentage of Participants With Continuous Smoking Abstinence Rate Determined Based on Expired Air Carbon Monoxide (CO) Reading Assessed Using the Vitalograph Breath CO Monitor"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With Nausea"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05066724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05066724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05066724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05066724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05066724",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00056",
+      "nctId": "NCT05113953",
+      "protocolNumber": "405-201-00056",
+      "title": "A Phase 2, Multicenter, Randomized, Double-blind, Placebo-controlled Trial to Assess the Efficacy, Safety, and Tolerability of Centanafadine Sustained-release Tablets After Oral Administration in Adult Subjects With Binge Eating Disorder",
+      "briefTitle": "A Trial of Centanafadine Efficacy, Safety, and Tolerability in Adult Subjects With Binge Eating Disorder",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-12-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-08-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-08-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 147,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Centanafadine 400 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive centanafadine 200 mg SR tablets, orally, twice daily (BID) at a TDD of 400 mg for 8 weeks."
+        },
+        {
+          "label": "Centanafadine 200 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive centanafadine 100 mg SR tablets, orally, BID at a TDD of 200 mg along with centanafadine matching placebo tablets, orally, BID for 8 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive centanafadine matching placebo tablets, orally, BID for 8 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Number of Binge Eating Days Per Week"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Clinical Global Impression - Severity (CGI-S) Score",
+        "Number of Participants With Adverse Events (AEs), Adverse Events of Special Interest (AESIs) Related to Rash, AEs Related to Abuse, and AEs Involving Medication Handling Irregularities (MHIs)",
+        "Number of Participants With Potentially Clinically Relevant Laboratory Abnormalities",
+        "Number of Participants With Potentially Clinically Relevant Vital Sign Abnormalities",
+        "Number of Participants With Potentially Clinically Relevant 12-Lead Electrocardiogram (ECG) Abnormalities",
+        "Study Medication Withdrawal Questionnaire (SMWQ) Total Mean Score",
+        "Change From Baseline in Hamilton Anxiety Rating Scale (HAM-A) Total Score",
+        "Change From Baseline in Montgomery-Asberg Depression Rating Scale (MADRS) Total Score",
+        "Number of Participants With Suicidality as Measured by Columbia Suicide Severity Rating Scale (C-SSRS) Score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05113953",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05113953",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05113953",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05113953",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05113953",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00016",
+      "nctId": "NCT05257265",
+      "protocolNumber": "405-201-00016",
+      "title": "A Phase 3, Multicenter, Randomized, Double-blind, Placebo-controlled Trial to Determine the Efficacy and Safety of Once Daily Centanafadine Capsules for the Treatment of Adolescents With Attention-deficit/Hyperactivity Disorder",
+      "briefTitle": "A Trial of Centanafadine Efficacy and Safety in Adolescents With Attention- Deficit/Hyperactivity Disorder",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg)",
+            "quote": "Trial identifier appears within the Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Simtriyo (centanafadine) extended-release capsules for the treatment of attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-02-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-09-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-10-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 459,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "13 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Centanafadine 164.4 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received centanafadine hydrochloride 164.4 milligrams (mg) XR capsules, orally, QD up to 6 weeks."
+        },
+        {
+          "label": "Centanafadine 328.8 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received centanafadine hydrochloride 328.8 mg XR capsules, orally, QD up to 6 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received centanafadine matching placebo capsules, orally, QD up to 6 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Attention-Deficit/Hyperactivity Disorder Rating Scale Version 5 (ADHD-RS-5)"
+      ],
+      "secondaryEndpoints": [
+        "Clinical Global Impression - Severity - Attention-Deficit/Hyperactivity Disorder (CGI-S-ADHD)",
+        "Conners-3 Parent Short- Change from baseline in Conners-3 Parent Short at Week 6"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05257265",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 24,
+          "quote": "e with ADHD (Study 1) Reference ID: 5841185 Page 24 of 30 Study 2 Study 2 (NCT05257265) was a randomized, double-blind, multicenter, placebo-controlled study in patients 13 to",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00017",
+      "nctId": "NCT05279313",
+      "protocolNumber": "405-201-00017",
+      "title": "A Phase 3, Multicenter, Open-label, Long-term Trial Evaluating the Long-term Safety and Tolerability of Once Daily Centanafadine Capsules in Children and Adolescents (4 to 17 Years of Age, Inclusive) With Attention-deficit/Hyperactivity Disorder (ADHD).",
+      "briefTitle": "A Trial of Centanafadine Long-term Safety in Children and Adolescents With Attention-deficit/Hyperactivity Disorder.",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-02-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-04-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-04-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 680,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "4 Years",
+        "maxAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Centanafadine Hydrochloride",
+          "type": "EXPERIMENTAL",
+          "description": "* Adolescents (13 to 17 years of age, inclusive) to receive 328.8 mg daily.\n* Children (4 to 12 years of age, inclusive) will receive weight-based doses of centanafadine ranging from 82.2 mg to 328.8 mg daily"
+        }
+      ],
+      "primaryEndpoints": [
+        "Frequency and severity of treatment-emergent adverse events (TEAEs) will be assessed to determine long-term safety and tolerability of Centanafadine QD XR Capsules."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05279313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05279313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05279313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05279313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05279313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00021",
+      "nctId": "NCT05428033",
+      "protocolNumber": "405-201-00021",
+      "title": "A Phase 3, Multicenter, Randomized, Double-blind, Placebo-controlled Trial to Determine the Efficacy and Safety of Once Daily Centanafadine Capsules for the Treatment of Children With Attention-deficit/Hyperactivity Disorder (ADHD)",
+      "briefTitle": "A Trial of Centanafadine Efficacy and Safety in Children With Attention-deficit/ Hyperactivity Disorder (ADHD)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg)",
+            "quote": "Trial identifier appears within the Attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Simtriyo (centanafadine) extended-release capsules for the treatment of attention-deficit/hyperactivity disorder (ADHD) in adults and pediatric patients 6 years of age and older weighing at least 20 kg.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-07-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-03-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-03-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 574,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "4 Years",
+        "maxAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Weight Based High Dose Centanafadine Capsules",
+          "type": "EXPERIMENTAL",
+          "description": "Cohort 1, (6 to 12 years of age)\n\nCohort 2, (4 to 5 years of age)\n\nHigh dose - weight-based dosing"
+        },
+        {
+          "label": "Weight Based Low Dose Centanafadine Capsules",
+          "type": "EXPERIMENTAL",
+          "description": "Cohort 1, (6 to 12 years of age)\n\nLow dose - weight-based dosing"
+        },
+        {
+          "label": "Matching Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Cohort 1 and Cohort 2\n\nChildren (4 to 12 years of age, inclusive) to receive Placebo capsules will be matching in size and color."
+        }
+      ],
+      "primaryEndpoints": [
+        "Attention-Deficit/Hyperactivity Disorder Rating Scale Version 5 (ADHD-RS-5) Change from baseline in the ADHD-RS-5 symptoms total raw score (investigator interview with informant) at Week 6"
+      ],
+      "secondaryEndpoints": [
+        "Clinical Global Impression - Severity - Attention-Deficit/Hyperactivity Disorder (CGI-S-ADHD) change from baseline in CGI-S-ADHD at Week 6",
+        "Conners-3 Parent Short- Change from baseline in Conners-3 Parent Short at Week 6"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05428033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05428033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05428033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05428033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05428033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 22,
+          "quote": "wo short-term, randomized, placebo-controlled studies (Studies 1 and 2). Study 1 Study 1 (NCT05428033) was a randomized, double-blind, multicenter, placebo-controlled study in patients 4 to 1",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "juniper",
+      "nctId": "NCT05536414",
+      "protocolNumber": "405-201-00062",
+      "acronym": "JUNIPER",
+      "title": "A Phase 2, Multicenter, Randomized, Double-blind, Placebo-controlled, Parallel-arm Trial to Assess the Efficacy, Safety, and Tolerability of Centanafadine Extended-release Capsules as Monotherapy or as Adjunct to SSRI in Adult Subjects With Major Depressive Disorder",
+      "briefTitle": "Trial of Centanafadine Efficacy and Safety as Monotherapy or as Adjunct to SSRI in Adults With Major Depressive Disorder",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-09-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-05-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 337,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Centanafadine + Placebo",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Centanafadine + Escitalopram",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Escitalopram + Placebo",
+          "type": "ACTIVE_COMPARATOR"
+        },
+        {
+          "label": "Placebo + Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from baseline to Week 6 in Montgomery-Asberg Depression Rating Scale (MADRS) Total score."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05536414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05536414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05536414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05536414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05536414",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00018",
+      "nctId": "NCT07465731",
+      "protocolNumber": "405-201-00018",
+      "title": "A Phase 1, Randomized, Open-label, Parallel-arm Trial to Assess Relative Bioavailability of Centanafadine Sustained-Release (SR) Tablet to Once-Daily Extended-Release (QD XR) Capsule Following Oral Administration in Healthy Adult Subjects",
+      "briefTitle": "A Trial to Compare the Amount of Centanafadine That Enters the Bloodstream for Two Different Formulations of Centanafadine",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-10-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-03-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-03-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 62,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm 1: CTN 200 milligrams (mg) TDD SR, Then CTN 164.4 mg QD XR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive CTN 200 mg total daily dose (TDD) SR, tablet, orally on Day 1, then, they receive CTN 164.4 mg QD XR, capsule, orally on Day 4."
+        },
+        {
+          "label": "Arm 1: CTN 164.4 mg QD XR, Then CTN 200 mg TDD SR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive CTN 164.4 mg QD XR capsule, orally on Day 1, then, they receive CTN 200 mg TDD SR, tablet, orally on Day 4."
+        },
+        {
+          "label": "Arm 2: CTN 400 TDD mg SR, Then CTN 328.8 mg QD XR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive CTN 400 mg TDD SR, tablet, orally on Day 1, then, they receive CTN 328.8 mg QD XR, capsule, orally on Day 4."
+        },
+        {
+          "label": "Arm 2: CTN 328.8 mg QD XR, Then CTN 400 mg TDD SR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive CTN 328.8 mg QD XR, capsule, orally on Day 1, then, they receive CTN 400 mg TDD SR, orally, on Day 4."
+        },
+        {
+          "label": "Arm 3: CTN 328.8 mg QD XR Fasted, Then CTN 328.8 mg QD XR Fed",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive CTN 328.8 mg QD XR, capsule, orally in fasted state on Day 1, then, they receive CTN 328.8 mg QD XR, capsule, orally in fed state on Day 4."
+        },
+        {
+          "label": "Arm 3: CTN 328.8 mg QD XR Fed, Then CTN 328.8 mg QD XR Fasted",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive CTN 328.8 mg, QD XR, capsule, orally in fed state on Day 1, then, they receive CTN 328.8 mg QD XR, capsule, orally in fasted state on Day 4."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-time Curve Calculated to the Last Observable Concentration at Time t (AUCt) of Centanafadine",
+        "Area Under the Concentration-time Curve From Time Zero to Infinity (AUCinfinity) of Centanafadine",
+        "Maximum Plasma Concentration (Cmax) of Centanafadine"
+      ],
+      "secondaryEndpoints": [
+        "Time to Maximum Plasma Concentration (Tmax) of Centanafadine",
+        "Terminal-phase Eimination Half-life (T1/2z) of Centanafadine",
+        "Apparent Clearance of Drug From Plasma After Extravascular Administration (CL/F) of Centanafadine",
+        "AUCt of Centanafadine Under Fasted and Fed Conditions",
+        "AUCinfinity of Centanafadine Under Fasted and Fed Conditions",
+        "Cmax of Centanafadine Under Fasted and Fed Conditions"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07465731",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07465731",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07465731",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07465731",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07465731",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00102",
+      "nctId": "NCT07486895",
+      "protocolNumber": "405-201-00102",
+      "title": "An Open-label, Randomized, Crossover Trial in Healthy Subjects to Assess Dose Strength Equivalence Among 164.4 and 328.8 mg Strengths of Oral Centanafadine QD XR Capsules",
+      "briefTitle": "Trial to Demonstrate the Equivalence of Two Different Strengths of Oral Centanafadine Capsules in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-03-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-05-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-05-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 44,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "CTN 1 x 328.8 mg QD XR, Then CTN 2 x 164.4 mg QD XR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will first receive 1 × 328.8 mg centanafadine QD XR capsule orally on Day 1, followed by 2 × 164.4 mg centanafadine QD XR capsules administered orally once daily on Day 5."
+        },
+        {
+          "label": "CTN 2 x 164.4 mg QD XR, Then CTN 1 x 328.8 mg QD XR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will first receive 2 × 164.4 mg centanafadine QD XR capsule, orally on Day 1. Then, they will receive 1 × 328.8 mg centanafadine QD XR capsule orally on Day 5."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Plasma Concentration (Cmax) of Centanafadine",
+        "Area Under the Concentration-time Curve Calculated to the Last Observable Concentration at Time t (AUCt) of Centanafadine",
+        "Area Under the Concentration-time Curve From Time Zero to Infinity (AUCinfinity) of Centanafadine"
+      ],
+      "secondaryEndpoints": [
+        "Time to Reach Maximum Plasma Concentration (Tmax) of Centanafadine",
+        "Percentage (%) of Extrapolated AUC of Centanafadine",
+        "Terminal Phase Elimination Half-life (t1/2,z) of Centanafadine",
+        "Apparent Clearance from Plasma (CL/F) After Extravascular Administration of Centanafadine"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07486895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07486895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07486895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07486895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07486895",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00157",
+      "nctId": "NCT07253441",
+      "protocolNumber": "405-201-00157",
+      "title": "A Multiple-arm, Phase 1, Open-label Trial to Determine Dose Strength Equivalence and Effect of Food on To-Be-Marketed Centanafadine QD XR Capsules, Bioequivalence Between Clinical and To-Be-Marketed QD XR Capsules and Relative Bioavailability of To-Be-Marketed QD XR Capsules to SR Tablets in Healthy Adults",
+      "briefTitle": "A Trial to Characterize Differences in Blood Levels of Different Lots of Centanafadine QD XR and to Understand the Effect of Food on Blood Levels",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-08-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-12-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-12-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 174,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1: CTN 1 × 328.8 mg capsule, Then CTN 2 × 164.4 mg capsules",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive a 1 × 328.8 mg CTN capsule, orally, on Day 1. Then, they receive 2 × 164.4 mg CTN capsules, orally, on Day 4."
+        },
+        {
+          "label": "Cohort 1: CTN 2 × 164.4 mg capsule, Then CTN 1 × 328.8 mg capsules",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive 2 × 164.4 mg CTN capsules, orally, on Day 1. Then, they receive 1 × 328.8 mg CTN capsule, orally, on Day 4."
+        },
+        {
+          "label": "Cohort 2: CTN Fasted State, Then CTN Fed state",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive 1 × 328.8 mg CTN capsules, orally, in the fasted state, on Day 1. Then, they receive 1 × 328.8 mg CTN capsule, orally, in the fed state, on Day 4."
+        },
+        {
+          "label": "Cohort 2: CTN Fed state, Then CTN Fasted state",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive 1 × 328.8 mg CTN capsules, orally, in the fed state, on Day 1. Then, they receive 1 × 328.8 mg CTN capsule, orally, in the fasted state, on Day 4."
+        },
+        {
+          "label": "Cohort 3: CTN 200 mg SR, Then CTN164.4 mg XR, Then CTN 400 mg SR, Then CTN 328.8 mg XR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 200 mg SR, tablets, orally on Day 1 followed by CTN 164.4 mg XR, capsules, orally on Day 4. Participants then receive CTN 400 mg SR, tablets, orally on Day 7, followed by CTN 328.8 mg XR, capsules, orally on Day 10."
+        },
+        {
+          "label": "Cohort 3: CTN 164.4 mg XR, Then CTN 200 mg SR, Then CTN 328.8 mg XR, Then CTN 400 mg SR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 164.4 mg XR, capsules, orally on Day 1 followed by CTN 200 mg SR, tablets, orally on Day 4. Participants then receive CTN 328.8 mg XR, capsules, orally on Day 7, followed by CTN 400 mg SR, tablets, orally on Day 10."
+        },
+        {
+          "label": "Cohort 3: CTN 400 mg SR, Then CTN 328.8 mg XR, Then CTN 200 mg SR, Then CTN 164.4 mg XR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 400 mg SR, tablets, orally on Day 1 followed by CTN 328.8 mg XR, capsules, orally on Day 4. Participants then receive CTN 200 mg SR, tablets, orally on Day 7, followed by CTN 164.4 mg XR, capsules, orally on Day 10."
+        },
+        {
+          "label": "Cohort 3: CTN 328.8 mg XR, Then CTN 400 mg SR, Then CTN 164.4 mg XR, Then CTN 200 mg SR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 328.8 mg XR, capsules, orally on Day 1 followed by CTN 400 mg SR, tablets, orally on Day 4. Participants then receive CTN 164.4 mg XR, capsules, orally on Day 7, followed by CTN 200 mg SR, tablets, orally on Day 10."
+        },
+        {
+          "label": "Cohort 4: CTN 164.4mg (Clin), Then CTN 164.4mg (TBM), Then CTN 328.8mg (Clin) Then CTN 328.8mg (TBM)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 164.4 mg XR (Clin), capsules, orally on Day 1 followed by CTN 164.4 mg XR (TBM), capsules, orally on Day 4. Participants then receive CTN 328.8 mg XR (Clin), capsules, orally on Day 7, followed by CTN 328.8 mg XR (TBM), capsules, orally on Day 10."
+        },
+        {
+          "label": "Cohort 4: CTN 164.4mg (TBM), Then CTN 164.4mg (Clin), Then CTN 328.8mg (TBM) Then CTN 328.8mg (Clin)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 164.4 mg XR (TBM), capsules, orally on Day 1 followed by CTN 164.4 mg XR (Clin), capsules, orally on Day 4. Participants then receive CTN 328.8 mg XR (TBM), capsules, orally on Day 7, followed by CTN 328.8 mg XR (Clin), capsules, orally on Day 10."
+        },
+        {
+          "label": "Cohort 4: CTN 328.8mg (Clin), Then CTN 328.8mg (TBM), Then CTN 164.4mg (Clin),Then CTN 164.4mg (TBM)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 328.8 mg XR (Clin), capsules, orally on Day 1 followed by CTN 328.8 mg XR (TBM), capsules, orally on Day 4. Participants then receive CTN 164.4 mg XR (Clin), capsules, orally on Day 7, followed by CTN 164.4 mg XR (TBM), capsules, orally on Day 10."
+        },
+        {
+          "label": "Cohort 4: CTN 328.8mg (TBM), Then CTN 328.8mg (Clin), Then CTN 164.4mg (TBM) Then CTN 164.4mg (Clin)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 328.8 mg XR (TBM), capsules, orally on Day 1 followed by CTN 328.8 mg XR (Clin), capsules, orally on Day 4. Participants then receive CTN 164.4 mg XR (TBM), capsules, orally on Day 7, followed by CTN 164.4 mg XR (Clin), capsules, orally on Day 10."
+        },
+        {
+          "label": "Cohort 5: CTN 328.8 mg XR (TBM), Then CTN 400 mg SR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 328.8 mg XR (TBM), capsules, orally, once a day (QD) from Day 1 to Day 5. Then, they receive CTN 400 mg SR, tablets, orally, from Day 6 to Day 10."
+        },
+        {
+          "label": "Cohort 5: CTN 400 mg SR, Then CTN 328.8 mg XR (TBM)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants first receive CTN 400 mg SR, tablets, orally from Day 1 to Day 5. Then, they will receive CTN 328.8 mg XR (TBM), capsules, orally, QD from Day 6 to Day 10."
+        }
+      ],
+      "primaryEndpoints": [
+        "Cohorts 1, 2, 3, and 4: Maximum Plasma Concentration (Cmax) of CTN",
+        "Cohorts 1, 2, 3, and 4: Area Under the Plasma Concentration-time Curve Calculated From Time 0 to Time t (AUCt) of CTN",
+        "Cohorts 1, 2, 3, and 4: Area Under the Plasma Concentration-time Curve From Time Zero to Infinity of CTN",
+        "Cohort 5: Cmax of CTN",
+        "Cohort 5: Area Under the Plasma Concentration-time Curve During the Dosing Interval at Steady-state of CTN XR",
+        "Cohort 5: Area Under the Drug Concentration-time Curve From Time Zero Predose to 24 hours Postdose (AUC0-24h) of CTN SR",
+        "Cohort 5: Minimum Plasma Concentration During a Dosing Interval (Cmin) of CTN"
+      ],
+      "secondaryEndpoints": [
+        "Cohorts 1, 2, 3, and 4: Percentage (%) Extrapolated AUC of CTN and its Metabolites",
+        "Cohorts 1, 2, 3, and 4: AUC0-24h of CTN and its Metabolites",
+        "Cohort 1, 2, 3, and 4: Time to Maximum (peak) Plasma Concentration (tmax) of CTN and its Metabolites",
+        "Cohort 1, 2, 3, and 4: Apparent Clearance (CL/F) of CTN and its Metabolites",
+        "Cohort 1, 2, 3, and 4: Volume of Distribution (Vz/F) of CTN",
+        "Cohort 1, 2, 3, and 4: Terminal Phase Elimination Half-Life (t1/2,z) of CTN and its Metabolites",
+        "Cohort 5: Tmax of CTN and its Metabolites",
+        "Cohort 5: CL/F of CTN",
+        "All Cohorts: Number of Participants With Adverse Events (AEs)",
+        "All Cohorts: Number of Participants With Potentially Clinically Relevant Laboratory Tests",
+        "All Cohorts: Number of Participants With Potentially Clinically Relevant Vital Signs",
+        "All Cohorts: Number of Participants With Potentially Clinically Relevant 12-Lead Electrocardiogram (ECG) Tests",
+        "All Cohorts: Percentage of Participants With Suicidal Ideation or Suicidal Behavior Using the Columbia-Suicide Severity Rating Scale (C-SSRS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07253441",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07253441",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07253441",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07253441",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07253441",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00180",
+      "nctId": "NCT06973577",
+      "protocolNumber": "405-201-00180",
+      "title": "A Phase 3b, Randomized, Double-blind, 8-week, Placebo-controlled Trial to Evaluate the Efficacy and Safety of Centanafadine Once Daily Extended-release Capsules for the Treatment of Adults With Attention-deficit/Hyperactivity Disorder and Comorbid Anxiety",
+      "briefTitle": "P3b Short-term Study of CTN in Patients With ADHD and Comorbid Anxiety",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-03-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-04-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-04-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 315,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        },
+        {
+          "label": "Centanafadine QD XR fixed dose 328.8mg",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Adult Investigator Symptom Rating Scale (AISRS)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Hamilton Anxiety Rating Scale (HAM-A)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06973577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06973577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06973577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06973577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06973577",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-102-00112",
+      "nctId": "NCT06931080",
+      "protocolNumber": "405-102-00112",
+      "title": "A Phase 2/3, Multicenter, Randomized, Double-blind, Placebo-controlled, Trial to Evaluate the Efficacy and Safety of EB-1020 Once Daily QD XR Capsules Administered Orally at Low or High Dose in Adults With Attention-deficit/Hyperactivity Disorder",
+      "briefTitle": "Evaluation of the Efficacy and Safety of EB-1020 in Adult ADHD Patients",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-04-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 630,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "EB-1020(QD XR capsules) 164.4 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "EB-1020(QD XR capsules) 328.8 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from baseline in Adult ADHD Investigator Symptom Rating Scale (AISRS) score at Week6"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06931080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06931080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06931080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06931080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06931080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-102-00113",
+      "nctId": "NCT06926829",
+      "protocolNumber": "405-102-00113",
+      "title": "A Phase 3, Multicenter, Open-label, Uncontrolled, Long-term Trial to Evaluate the Safety and Efficacy of Long-term Administration of EB-1020 Once Daily QD XR Capsules in Adults With Attention-deficit/Hyperactivity Disorder",
+      "briefTitle": "A Long-term Trial of EB-1020 in Adult Patients With ADHD",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-06-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 180,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "EB-1020 (QD XR Capsules) 164.4 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "EB-1020 (QD XR Capsules) 328.8 mg",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Patients Experiencing Treatment-Emergent Adverse Events (TEAEs)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06926829",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06926829",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06926829",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06926829",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06926829",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-102-00114",
+      "nctId": "NCT07086313",
+      "protocolNumber": "405-102-00114",
+      "title": "A Phase 2/3, Multicenter, Randomized, Double-blind, Placebo-controlled, Japan-China Joint Trial to Evaluate the Efficacy and Safety of Two Dose Levels of EB-1020 QD XR Capsules Administered Orally Once Daily in Children and Adolescents With Attention-deficit/Hyperactivity Disorder",
+      "briefTitle": "A Trial to Evaluate the Efficacy and Safety of EB-1020 in Pediatric Patients With ADHD",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-09-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 315,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "EB-1020(QD XR capsules) low dose",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "EB-1020(QD XR capsules) high dose",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from baseline in ADHD-RS-5 symptom total raw score at Week 6."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07086313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07086313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07086313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07086313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07086313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-102-00115",
+      "nctId": "NCT07087327",
+      "protocolNumber": "405-102-00115",
+      "title": "A Phase 3, Multicenter, Open-label, Uncontrolled, Long-term Japan-China Joint Trial to Evaluate the Safety and Efficacy of EB-1020 QD XR Capsules Administered Orally Once Daily in Children and Adolescents With Attention- Deficit/Hyperactivity Disorder",
+      "briefTitle": "A Long-term Trial of EB-1020 in Pediatric Patients With ADHD",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Otsuka Pharmaceutical Co., Ltd.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-09-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 180,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "EB-1020 (QD XR Capsules) low dose",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "EB-1020 (QD XR Capsules) high dose",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Patients Experiencing Treatment-Emergent Adverse Events (TEAEs)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07087327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07087327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07087327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07087327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07087327",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00198",
+      "nctId": "NCT07314333",
+      "protocolNumber": "405-201-00198",
+      "title": "A Phase 1, Single Blind, Parallel-arm Trial to Assess the Potential for Pharmacodynamic Interaction of Centanafadine When Co-administered With Stimulants in Healthy Adults",
+      "briefTitle": "A Trial to Assess How Centanafadine Interacts With Stimulants in the Body",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-02-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-03-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-04-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 40,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm 1, Sequence 1: ABC",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive dosing of centanafadine alone (A), once daily (QD) extended release (XR) capsule on Day 1 followed by methylphenidate alone (B), tablet, QD on Day 5, further followed by centanafadine, QD XR capsule along with methylphenidate, tablet (C), QD on Day 9. There will be a washout period of 96 hours between each dosing."
+        },
+        {
+          "label": "Arm 1, Sequence 2: BCA",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive dosing of methylphenidate alone (B), tablet, QD on Day 1, followed by centanafadine, QD XR capsule along with methylphenidate, tablet (C), QD on Day 5, further followed by centanafadine alone, QD XR capsule (A) on Day 9. There will be a washout period of 96 hours between each dosing."
+        },
+        {
+          "label": "Arm 1, Sequence 3: CAB",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive dosing of centanafadine, QD XR capsule along with methylphenidate, tablet (C), QD on Day 1, followed by centanafadine alone, QD XR capsule (A) on Day 5, further followed by methylphenidate alone, tablet (B), QD on Day 9. There will be a washout period of 96 hours between each dosing."
+        },
+        {
+          "label": "Arm 2, Sequence 1: ABC",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive dosing of centanafadine alone, QD XR capsule (A) on Day 1 followed by lisdexamfetamine alone, capsule (B), QD on Day 5, further followed by centanafadine, QD XR capsule along with lisdexamfetamine, capsule (C), QD on Day 9. There will be a washout period of 96 hours between each dosing."
+        },
+        {
+          "label": "Arm 2, Sequence 2: BCA",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive dosing of lisdexamfetamine alone, capsule (B), QD on Day 1, followed by centanafadine, QD XR capsule along with lisdexamfetamine, capsule (C), QD on Day 5, further followed by centanafadine alone, QD XR capsule (A) on Day 9. There will be a washout period of 96 hours between each dosing."
+        },
+        {
+          "label": "Arm 2, Sequence 3: CAB",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive dosing of centanafadine, QD XR capsule along with lisdexamfetamine, capsule (C), QD on Day 1, followed by centanafadine alone, QD XR capsule (A) on Day 5, further followed by lisdexamfetamine alone, capsule (B), QD on Day 9. There will be a washout period of 96 hours between each dosing."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from Baseline in Blood Pressure (BP) at Day 12 or Early Termination (ET)",
+        "Change from Baseline in Heart Rate (HR) at Day 12 or ET"
+      ],
+      "secondaryEndpoints": [
+        "Maximal peak plasma concentration (Cmax) for Centanafadine when co-administered with methylphenidate or lisdexamfetamine",
+        "Area under the concentration time curve from time zero to the time of the last observable concentration at time (AUC0-12 hours) for Centanafadine when co-administered with methylphenidate or lisdexamfetamine",
+        "Area under the concentration time curve from time zero to infinity (AUC-inf) for Centanafadine when co-administered with methylphenidate or lisdexamfetamine",
+        "Time to maximum (peak) Plasma Concentration (Tmax) for Centanafadine when co-administered with methylphenidate or lisdexamfetamine",
+        "Terminal phase elimination half-life (t1/2,z) for Centanafadine when co-administered with methylphenidate or lisdexamfetamine",
+        "Volume of distribution following extravascular administration (Vz/F) for Centanafadine when co-administered with methylphenidate or lisdexamfetamine",
+        "Apparent clearance of drug from plasma after extravascular administration (CL/F) for Centanafadine when co-administered with methylphenidate or lisdexamfetamine"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07314333",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07314333",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07314333",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07314333",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07314333",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "405-201-00231",
+      "nctId": "NCT07759154",
+      "protocolNumber": "405-201-00231",
+      "title": "A Phase 3b, Multicenter, Open-label, Single-arm Trial to Evaluate the Efficacy and Safety of Orally Administered Centanafadine QD XR Capsules in Adults With Attention-deficit/Hyperactivity Disorder and Emotional Dysregulation",
+      "briefTitle": "A Study to Test the Effects of Centanafadine in Adults With Attention-deficit/Hyperactivity Disorder and Emotional Dysregulation",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-09-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-05-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-05-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 80,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Centanafadine XR",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive centanafadine XR capsule 328.8 milligrams (mg), orally, QD, for 8 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline to Week 8 in the Wender-Reimherr Adult Attention Deficit Disorder Scale (WRAADDS) Total Score"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline to Week 8 in the Wender-Reimherr Adult Attention Deficit Disorder Scale Emotional Dysregulation (WRAADDS-ED) Subscale Score",
+        "Change From Baseline to Week 8 in the Clinical Global Impressions-Severity Scale for Attention-Deficit/Hyperactivity Disorder (CGI-S-ADHD) Score",
+        "Change From Baseline to Week 8 in the Behavior Rating Inventory of Executive Function-Adult Version (BRIEF-A) T-score for the Global Executive Composite (GEC) Scale",
+        "Change From Baseline to Week 8 in the BRIEF-A T-score for the Behavioral Regulation Index (BRI) Scale",
+        "Change From Baseline to Week 8 in the BRIEF-A T-score for the Metacognition Index (MI) Scale",
+        "Change From Baseline to Week 8 in the Difficulties in Emotion Regulation Scale (DERS) Total Score",
+        "Change From Baseline to Week 8 in the Nonacceptance of Emotional Responses (NONACCEPT) DERS Subscale Score",
+        "Change From Baseline to Week 8 in the Difficulties Engaging in Goal-Directed Behavior (GOALS) DERS Subscale Score",
+        "Change From Baseline to Week 8 in the Impulse Control Difficulties (IMPULSE) DERS Subscale Score",
+        "Change From Baseline to Week 8 in the Lack of Emotional Awareness (AWARE) DERS Subscale Score",
+        "Change From Baseline to Week 8 in the Limited Access to Emotion Regulation Strategies (STRATEGIES) DERS Subscale Score",
+        "Change From Baseline to Week 8 in the Lack of Emotional Clarity (CLARITY) DERS Subscale Score",
+        "Change From Baseline to Week 8 in the Attention-Deficit/Hyperactivity Disorder Symptoms, Executive Function Deficits, and Emotional Dyscontrol as Assessed by the Adult ADHD Self-Report Scale (ASRS) Score",
+        "Number of Participants With Adverse Events",
+        "Number of Participants With Suicidal Ideation or Behavior as Assessed by the Columbia-Suicide Severity Rating Scale (C-SSRS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07759154",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07759154",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07759154",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07759154",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07759154",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-07-24",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA218145%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 218145",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA218145%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218145s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:00:42.199Z"
+}

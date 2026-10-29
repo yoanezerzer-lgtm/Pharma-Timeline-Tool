@@ -1,0 +1,496 @@
+{
+  "slug": "tividenofusp-alfa",
+  "brandName": "Avlayah",
+  "inn": "tividenofusp alfa",
+  "modality": "Biologic (BLA)",
+  "sponsor": "DENALI THERAPEUTICS INC.",
+  "mechanism": "Hydrolytic Lysosomal Glycosaminoglycan-specific Enzyme",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Neurologic manifestations of Hunter syndrome (Mucopolysaccharidosis type II, MPS II) when initiated in presymptomatic or symptomatic pediatric patients weighing at least 5 kg prior to advanced neurologic impairment",
+      "slug": "neurologic-manifestations-of-hunter-syndrome",
+      "approvalDate": {
+        "value": "2026-03-24",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761485Orig1s000correctedltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-03-24",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Avlayah is indicated for the treatment of neurologic manifestations of Hunter syndrome (Mucopolysaccharidosis type II, MPS II) when initiated in presymptomatic or symptomatic pediatric patients weighing at least 5 kg prior to advanced neurologic impairment.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761485Orig1s000correctedltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Avlayah is indicated for the treatment of neurologic manifestations of Hunter syndrome (Mucopolysaccharidosis type II, MPS II) when initiated in presymptomatic or symptomatic pediatric patients weighing at least 5 kg prior to advanced neurologic impairment.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761485",
+      "applicationType": "BLA",
+      "sponsor": "DENALI THERAPEUTICS INC.",
+      "originalApprovalDate": {
+        "value": "2026-03-24",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "dnli-e-0002",
+      "nctId": "NCT04251026",
+      "protocolNumber": "DNLI-E-0002",
+      "title": "A Phase 1/2, Multicenter, Open-Label Study to Determine the Safety, Pharmacokinetics, and Pharmacodynamics of DNL310 in Pediatric Participants With Hunter Syndrome",
+      "briefTitle": "A Study of Tividenofusp Alfa (DNL310) in Pediatric Participants With Hunter Syndrome",
+      "phase": "PHASE1_2",
+      "roles": [
+        {
+          "indication": "Neurologic manifestations of Hunter syndrome (Mucopolysaccharidosis type II, MPS II) when initiated in presymptomatic or symptomatic pediatric patients weighing at least 5 kg prior to advanced neurologic impairment",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761485s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Neurologic manifestations of Hunter syndrome (Mucopolysaccharidosis type II, MPS II) when initiated in presymptomatic or symptomatic pediatric patients weighing at least 5 kg prior to advanced neurologic impairment)",
+            "quote": "Trial identifier appears within the Neurologic manifestations of Hunter syndrome (Mucopolysaccharidosis type II, MPS II) when initiated in presymptomatic or symptomatic pediatric patients weighing at least 5 kg prior to advanced neurologic impairment section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761485Orig1s000correctedltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Avlayah is indicated for the treatment of neurologic manifestations of Hunter syndrome (Mucopolysaccharidosis type II, MPS II) when initiated in presymptomatic or symptomatic pediatric patients weighing at least 5 kg prior to advanced neurologic impairment.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Denali Therapeutics Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-07-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2031-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2031-02-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 47,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "maxAge": "18 Years",
+        "sex": "MALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort A",
+          "type": "EXPERIMENTAL",
+          "description": "Dose escalation followed by a consistent dose level in participants with neuronopathic MPS II"
+        },
+        {
+          "label": "Cohort B",
+          "type": "EXPERIMENTAL",
+          "description": "A consistent dose level in participants with non-neuronopathic MPS II, neuronopathic MPS II, or unknown phenotype followed by dose escalation in some participants."
+        },
+        {
+          "label": "Cohort C",
+          "type": "EXPERIMENTAL",
+          "description": "A consistent dose level in participants with neuronopathic MPS II"
+        },
+        {
+          "label": "Cohort D",
+          "type": "EXPERIMENTAL",
+          "description": "A consistent dose level in participants with non-neuronopathic MPS II or neuronopathic MPS II"
+        },
+        {
+          "label": "Cohort E",
+          "type": "EXPERIMENTAL",
+          "description": "A consistent dose level in participants with non-neuronopathic MPS II or neuronopathic MPS II"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence and severity of treatment-emergent adverse events (TEAEs)",
+        "Change from baseline in urine total glycosaminoglycan (GAG) concentrations",
+        "Incidence and severity of infusion-related reactions (IRRs)",
+        "Change from baseline in concomitant medications"
+      ],
+      "secondaryEndpoints": [
+        "Percentage change from baseline in cerebrospinal fluid (CSF) of heparan sulfate",
+        "Participants with improvement in individual disease progression in the Vineland Adaptive Behavior Scale Adaptive Behavior Composite (ABC) score",
+        "Participants with improvement in individual disease progression in the Vineland Adaptive Behavior Scale subdomain scores",
+        "PK parameter: Maximum observed concentration (Cmax) of DNL310 in serum",
+        "PK parameter: Trough concentration (Cmin) of DNL310 in serum",
+        "PK parameter: Time to maximum observed concentration (tmax) of DNL310 in serum",
+        "PK parameter: Area under the concentration-time curve from time zero to the time of last quantifiable concentration (AUClast) of DNL310 in serum",
+        "PK parameter: Area under the concentration-time curve from time zero to infinity (AUC∞) of DNL310 in serum",
+        "PK parameter: Area under the concentration-time curve over a dosing interval (AUCτ) of DNL310 in serum",
+        "PK parameter: Apparent terminal elimination half-life (t½) of DNL310 in serum",
+        "Characterization of immunogenicity of DNL310 in serum, as measured by the incidence of anti-drug antibodies (ADAs) relative to baseline",
+        "Percent change from baseline in urine concentration of heparan sulfate (HS)",
+        "Participants with liver volume in the normal range",
+        "Percentage change from baseline in liver volume"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04251026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04251026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04251026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04251026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04251026",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761485s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 15,
+          "quote": "at the maintenance dosage level of 15 mg/kg (based on AUC). 14 CLINICAL STUDIES Trial 1 (NCT04251026) was a Phase 1/2 multi-center, international, multi-cohort, single-arm, open-label trial",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "compass",
+      "nctId": "NCT05371613",
+      "protocolNumber": "DNLI-E-0007",
+      "acronym": "COMPASS",
+      "title": "A Phase 2/3, Multicenter, Double-Blind, Randomized Study to Determine the Efficacy and Safety of Tividenofusp Alfa (DNL310) vs Idursulfase in Pediatric and Young Adult Participants With Neuronopathic or Non-Neuronopathic Mucopolysaccharidosis Type II",
+      "briefTitle": "A Study to Determine the Efficacy and Safety of Tividenofusp Alfa (DNL310) vs Idursulfase in Pediatric and Young Adult Participants With Neuronopathic (nMPS II) or Non-Neuronopathic Mucopolysaccharidosis Type II (nnMPS II)",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Denali Therapeutics Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-07-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 65,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "25 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort A: Participants with nMPS II",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Cohort B: Participants with nnMPS II",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Open-label Treatment Phase",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who meet pre-specified criteria may receive DNL310 or idursulfase"
+        }
+      ],
+      "primaryEndpoints": [
+        "Ratio to baseline in cerebrospinal fluid (CSF) heparan sulfate (HS) concentration (Cohort A)",
+        "Change from baseline in the Vineland Adaptive Behavior Scale, Third Edition (Vineland-3)(Cohort A)"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in the Bayley Scales of Infant and Toddler Development, Third Edition (BSID-III)(Cohort A only)",
+        "Change from baseline in the Vineland-3 Adaptive Behavior Composite (ABC) score (Cohort A only)",
+        "Ratio to baseline in serum neurofilament light chain (NfL) (Cohort A only)",
+        "Change from baseline in distance walked in the Six-Minute Walk Test (6MWT; Cohort B only)",
+        "Ratio to baseline in the sum of urine HS and dermatan sulfate (DS) concentrations (normalized to creatinine) (Cohorts A and B)",
+        "Liver volume within the normal range (normal vs abnormal) as measured by magnetic resonance imaging (MRI) (Cohorts A and B)",
+        "Spleen volume within the normal range (normal vs abnormal) as measured by MRI (Cohorts A and B)",
+        "Improvement in Parent/Caregiver Global Impression of Change (CaGI-C) Overall MPS II (Cohorts A and B)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05371613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05371613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05371613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05371613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05371613",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "dnli-e-0008",
+      "nctId": "NCT06075537",
+      "protocolNumber": "DNLI-E-0008",
+      "title": "An Open-Label Extension to Investigate the Long-Term Safety, Tolerability, and Efficacy of DNL310 in Patients With Mucopolysaccharidosis Type II (MPS II) From Study DNLI-E-0002 or Study DNLI-E-0007",
+      "briefTitle": "An Extension Study of the Long-Term Safety, Tolerability, and Efficacy of Tividenofusp Alfa (DNL310) in Participants With Mucopolysaccharidosis Type II (MPS II) From Study DNLI-E-0002 or Study DNLI-E-0007",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "ENROLLING_BY_INVITATION",
+      "sponsor": "Denali Therapeutics Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-09-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 99,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "maxAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort A2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with nMPS II, aged ≥5 to ≤10 years"
+        },
+        {
+          "label": "Cohort B2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with nMPS II or nnMPS II, aged ≥1 to ≤18 years"
+        },
+        {
+          "label": "Cohort C2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with nMPS II, aged \\<4 years"
+        },
+        {
+          "label": "Cohort D2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with nMPS II or nnMPS II, aged ≤18 years with preexisting hepatomegaly who have never taken standard-of-care ERT"
+        },
+        {
+          "label": "Cohort E2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with nMPS II, aged ≥6 years; participants with nnMPS II, aged \\<6 or ≥17 years; or participants with nMPS II, aged ≥1 to ≤18 years, with a history of prior HSCT or gene therapy and have completed at least 48 weeks in Study DNLI-E-0001"
+        },
+        {
+          "label": "Cohort A7",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with nMPS II, aged ≥2 to \\<6 years"
+        },
+        {
+          "label": "Cohort B7",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with nnMPS II, aged ≥6 to \\<17 years"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence and intensity of treatment-emergent adverse events (TEAEs)",
+        "Clinically significant changes in urine total glycosaminoglycan (GAG) concentrations throughout the treatment period",
+        "Incidence and intensity of infusion-related reactions (IRRs)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage change from baseline in cerebrospinal fluid (CSF) heparan sulfate (HS) concentration",
+        "Change from baseline in the Vineland-3 Adaptive Behavior Scale",
+        "Change from baseline in the Bayley Scales of Infant and Toddler Development, Third Edition (BSID-III) cognitive raw score",
+        "Change from baseline in distance walked (meters) in the Six-Minute Walk Test (6MWT)",
+        "Percent change from baseline in the sum of urine HS and dermatan sulfate (DS) concentrations",
+        "Liver volume within the normal range (normal vs abnormal) as measured by MRI",
+        "Spleen volume within the normal range (normal vs abnormal) as measured by MRI",
+        "Improvement in the Parent/Caregiver Global Impression of Change (CaGI-C) Overall MPS II"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06075537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06075537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06075537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06075537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06075537",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-03-24",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761485%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761485",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761485%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761485s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761485Orig1s000correctedltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:27.996Z"
+}

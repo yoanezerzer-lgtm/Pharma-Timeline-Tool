@@ -1,0 +1,372 @@
+{
+  "slug": "ensitrelvir",
+  "brandName": "Xocova",
+  "inn": "ensitrelvir",
+  "modality": "Drug (NDA)",
+  "sponsor": "SHIONOGI",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19",
+      "slug": "post-exposure-prophylaxis-of-coronavirus-disease-2019-covid",
+      "approvalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-05-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Xocova (ensitrelvir) tablets for post-exposure prophylaxis of coronavirus disease 2019 (COVID - 19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Xocova (ensitrelvir) tablets for post-exposure prophylaxis of coronavirus disease 2019 (COVID - 19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220442",
+      "applicationType": "NDA",
+      "sponsor": "SHIONOGI",
+      "originalApprovalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "scorpio-pep",
+      "nctId": "NCT05897541",
+      "protocolNumber": "2206T1331",
+      "acronym": "SCORPIO-PEP",
+      "title": "A Phase 3 Randomized, Double-blind, Placebo-controlled Study to Evaluate the Efficacy and Safety of S-217622 in the Prevention of Symptomatic SARS-CoV-2 Infection in Household Contacts of an Individual With Symptomatic COVID-19",
+      "briefTitle": "Phase 3 Study of S-217622 in Prevention of Symptomatic SARS-CoV-2 Infection",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19)",
+            "quote": "Trial identifier appears within the Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19 section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Xocova (ensitrelvir) tablets for post-exposure prophylaxis of coronavirus disease 2019 (COVID - 19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Shionogi",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-06-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-08-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-09-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 3701,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "S-217622",
+          "type": "EXPERIMENTAL",
+          "description": "S-217622 will be administered orally for 5 days."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo matching to S-217622 will be administered orally for 5 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants in mITT Population Who Were Infected With SARS-CoV-2 and Had Coronavirus Disease 2019 (COVID-19) Symptoms Onset"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants in ITT Population With a Negative Screening SARS-CoV-2 Infection Who Were Infected With SARS-CoV-2 and Had COVID-19 Symptoms Onset",
+        "Number of Participants Infected With SARS-CoV-2 Regardless of Occurrence of COVID-19 Symptoms",
+        "Time to the First Central Laboratory Confirmed-Positive Reverse Transcription Polymerase Chain Reaction Result",
+        "Number of Participants With a Central Laboratory Confirmed-Positive Reverse Transcription Polymerase Chain Reaction Results",
+        "Number of Participants Infected With SARS-CoV-2 With no COVID-19 Symptoms at Day 10",
+        "Number of Participants Infected With SARS-CoV-2 and Had no COVID-19 Symptoms Onset Through Day 10",
+        "Number of Participants With Sustained Symptom Resolution of Each COVID-19 Symptoms",
+        "Change From Baseline in Total Symptom Score of COVID-19 Symptoms at Day 10",
+        "Time From First Central Laboratory Confirmed SARS-CoV-2 Until at Least 1 COVID-19 Symptom",
+        "Time From First Central Laboratory Confirmed SARS-CoV-2 Until COVID-19 Symptoms Onset",
+        "Number of Participants Experiencing Hospitalization or Death From Any Cause",
+        "Trough Concentration (Ctrough) of S-217622",
+        "Number of Participants With Treatment-emergent Adverse Events (TEAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Number of Participants in mITT Population Who Were Infected With SARS-CoV-2 and Had Coronavirus Disease 2019 (COVID-19) Symptoms Onset",
+          "timeFrame": "Day 1 up to Day 10",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "S-217622"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "30"
+            },
+            {
+              "groupId": "OG001",
+              "value": "91"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "sed to the recommended dosage and duration of XOCOVA in controlled clinical trials. Trial SCORPIO-PEP was a randomized, double-blind, placebo-controlled trial in which 1,190 subjects received",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "2403t1219",
+      "nctId": "NCT06775730",
+      "protocolNumber": "2403T1219",
+      "title": "A Phase 1 Drug-Drug Interaction Study of S-217622 With Combined Oral Contraceptives in Healthy Adult Female Participants",
+      "briefTitle": "A Drug-Drug Interaction Study of S-217622 With Combined Oral Contraceptives in Healthy Adult Female Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Shionogi",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-12-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-04-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-04-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "35 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ensitrelvir",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive multiple oral doses of a combined oral contraceptive (COC) (EE and DRSP) once daily for 24 days (Days 1 to 24) (in the fasted state on Days 18 to 24) in the morning. Participants will also receive ensitrelvir high dose on Day 20 and multiple oral doses of ensitrelvir low dose once daily on Days 21 to 24 in the fasted state."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Plasma Concentration (Cmax) of Ethinyl Estradiol (EE)",
+        "Cmax of Drospirenone (DRSP)",
+        "Time to Reach Cmax (Tmax) of EE",
+        "Tmax of DRSP",
+        "Area Under the Plasma Concentration-time Curve Over the Dosing Interval (AUC0-τ) of EE",
+        "AUC0-τ of DRSP"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Adverse Events (AEs)",
+        "Cmax of Ensitrelvir",
+        "Tmax of Ensitrelvir",
+        "AUC0-τ of Ensitrelvir"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220442%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220442",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220442%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:01:05.821Z"
+}

@@ -1,0 +1,2709 @@
+{
+  "slug": "baxdrostat",
+  "brandName": "Baxfendy",
+  "inn": "baxdrostat",
+  "modality": "Drug (NDA)",
+  "sponsor": "ASTRAZENECA AB",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Hypertension, to lower blood pressure in adults who are not adequately controlled on other agents",
+      "slug": "hypertension-to-lower-blood-pressure-in-adults-who-are-not",
+      "approvalDate": {
+        "value": "2026-05-15",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219878Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-05-15",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Baxfendy (baxdrostat) tablets for the treatment of hypertension in combination with other antihypertensive drugs, to lower blood pressure in adults who are not adequately controlled on other agents.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219878Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Baxfendy (baxdrostat) tablets for the treatment of hypertension in combination with other antihypertensive drugs, to lower blood pressure in adults who are not adequately controlled on other agents.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "219878",
+      "applicationType": "NDA",
+      "sponsor": "ASTRAZENECA AB",
+      "originalApprovalDate": {
+        "value": "2026-05-15",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "cin-107-111",
+      "nctId": "NCT05500820",
+      "protocolNumber": "CIN-107-111",
+      "title": "A Randomized, Double-Blind Study to Evaluate the Safety, Pharmacokinetics, and Pharmacodynamics of CIN-107 Following Multiple Oral Doses in Healthy Subjects",
+      "briefTitle": "Study With CIN-107 Following Multiple Oral Ascending Doses in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-12-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-04-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-04-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 56,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1: 2.5 mg CIN-107",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects on a low salt diet"
+        },
+        {
+          "label": "Cohort 2: 5.0 mg CIN-107",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects on a low salt diet"
+        },
+        {
+          "label": "Cohort 3: 1.5 mg CIN-107",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects on a normal salt diet"
+        },
+        {
+          "label": "Cohort 4: 2.5 mg CIN-107",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects on a normal salt diet"
+        },
+        {
+          "label": "Cohort 5: 0.5 mg CIN-107",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects on a normal salt diet"
+        },
+        {
+          "label": "Cohort 1: 2.5 mg matching placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subjects on a low salt diet"
+        },
+        {
+          "label": "Cohort 2: 5.0 mg matching placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subjects on a low salt diet"
+        },
+        {
+          "label": "Cohort 3: 1.5 mg matching placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subjects on a normal salt diet"
+        },
+        {
+          "label": "Cohort 4: 2.5 mg matching placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subjects on a normal salt diet"
+        },
+        {
+          "label": "Cohort 5: 0.5 mg matching placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Subjects on a normal salt diet"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum plasma concentration (Cmax)",
+        "Time to maximum plasma concentration (Tmax)",
+        "Area under the curve from time 0 to the time of last quantifiable plasma concentration (AUC[0-last])",
+        "Area under the curve from time 0 to infinity",
+        "Area under the curve over a dosing interval (tau)",
+        "Area under the plasma concentration-time curve (AUC) from time 0 to 24 hours",
+        "Percent of AUC extrapolated",
+        "Terminal phase elimination half-life",
+        "Apparent plasma clearance",
+        "Apparent volume of distribution",
+        "The cumulative amount of CIN-107 and CIN-107-M excreted in the urine (Ae)",
+        "Renal clearance (CLR Calculated as Ae/AUC) of CIN-107 and CIN-107-M",
+        "Fraction of the dose excreted renally (fe)",
+        "Number of patients experiencing adverse events (AEs)",
+        "Number of patients experiencing adverse drug reactions",
+        "Number of patients experiencing serious adverse events (SAEs)",
+        "Plasma concentration of aldosterone",
+        "Plasma renin activity",
+        "Plasma concentration of cortisol (free and total)",
+        "Plasma concentration of ACTH (Adrenocorticotropic hormone)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05500820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05500820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05500820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05500820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05500820",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-112",
+      "nctId": "NCT05963009",
+      "protocolNumber": "CIN-107-112",
+      "title": "Randomized, Open Label, Crossover Study to Evaluate the Relative Bioavailability of a New Tablet Formulation of CIN-107 as Compared to Oral Solution and to Assess the Effect of Food on the CIN-107 Tablet Formulation in Healthy Subjects",
+      "briefTitle": "Baxdrostat Bioavailability and Bioequivalence Study",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-03-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-04-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-04-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 14,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Baxdrostat oral solution",
+          "type": "EXPERIMENTAL",
+          "description": "5 mg CIN-107 oral solution in a fasted state"
+        },
+        {
+          "label": "Baxdrostat tablet (fasted state)",
+          "type": "EXPERIMENTAL",
+          "description": "5 mg CIN-107 tablet(s) in a fasted state"
+        },
+        {
+          "label": "Baxdrostat tablet (fed state)",
+          "type": "EXPERIMENTAL",
+          "description": "5 mg CIN-107 tablet(s) in a fed state (standard high fat meal)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of treatment emergent adverse events following single oral doses of CIN-107 tablet and oral solution.",
+        "Maximum concentration [Cmax] following administration of a tablet formulation of CIN-107 compared to Cmax following administration of the oral solution.",
+        "Cmax of CIN-107 following administration of the tablet formulation under fed versus fasted conditions.",
+        "Area under the curve [AUC] following administration of a tablet formulation of CIN-107 compared to AUC following administration of the oral solution.",
+        "Time to maximum concentration [Tmax] of CIN-107 following administration of the tablet formulation under fed versus fasted conditions.",
+        "AUC of CIN-107 following administration of the tablet formulation under fed versus fasted conditions.",
+        "Tmax following administration of a tablet formulation of CIN-107 compared to Tmax following administration of the oral solution."
+      ],
+      "secondaryEndpoints": [
+        "Angiotensin converting enzyme (ACE) levels following single doses of CIN-107."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05963009",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05963009",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05963009",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05963009",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05963009",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-114",
+      "nctId": "NCT05526690",
+      "protocolNumber": "CIN-107-114",
+      "title": "A Randomized, Open-Label, Two-Period, Crossover Study to Evaluate the Effect of CIN-107 on the Pharmacokinetics of the MATE Substrate, Metformin, in Healthy Subjects",
+      "briefTitle": "Study to Evaluate the Effect of CIN-107 on the Pharmacokinetics of the MATE Substrate, Metformin, in Healthy Subjects",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-10-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-12-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-12-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 27,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment A: Immediate-release metformin",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Treatment A: single 1000 mg dose of immediate-release metformin\n\nSubjects will be randomly assigned to 1 of 2 sequences: AB or BA.\n\n* Treatment A: a single 1000 mg dose of immediate-release metformin; and\n* Treatment B: a single 1000 mg dose of immediate-release metformin coadministered with a 10 mg dose of CIN-107.\n\nAll study medication will be administered at 8:00 AM (±2 hours). There will be a minimum 10-day washout between administration of study drug in each treatment period."
+        },
+        {
+          "label": "Treatment B: Immediate-release metformin coadministered with a CIN-107",
+          "type": "EXPERIMENTAL",
+          "description": "Treatment B: a single 1000 mg dose of immediate-release metformin coadministered with a 10 mg dose of CIN-107\n\nSubjects will be randomly assigned to 1 of 2 sequences: AB or BA.\n\n* Treatment A: a single 1000 mg dose of immediate-release metformin; and\n* Treatment B: a single 1000 mg dose of immediate-release metformin coadministered with a 10 mg dose of CIN-107.\n\nAll study medication will be administered at 8:00 AM (±2 hours). For Treatment B, the dose of CIN-107 will be administered 2 hours prior to the dose of metformin.\n\nThere will be a minimum 10-day washout between administration of study drug in each treatment period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum plasma concentration (Cmax)",
+        "Time to Cmax (Tmax)",
+        "Area under the concentration-time curve (AUC) from time 0 to 72 hours",
+        "Maximum plasma concentration (Cmax) of metformin",
+        "Time to Cmax (Tmax) of metformin",
+        "AUC from time 0 to the time of last quantifiable plasma concentration of metformin",
+        "AUC from time 0 to infinity of metformin",
+        "Percent of AUC extrapolated of metformin",
+        "Terminal phase elimination half-life of metformin",
+        "Cumulative amount of metformin excreted in the urine (Ae) of metformin",
+        "Renal clearance (calculated as Ae/AUC) of metformin",
+        "Fraction of the dose excreted renally of metformin"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05526690",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05526690",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05526690",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05526690",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05526690",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-113",
+      "nctId": "NCT05470725",
+      "protocolNumber": "CIN-107-113",
+      "title": "A Phase 1, Open-Label, Single-Dose, Parallel-Group Study to Evaluate the Pharmacokinetics of CIN-107 in Subjects With Varying Degrees of Renal Function",
+      "briefTitle": "Study to Evaluate the Pharmacokinetics of CIN-107 in Subjects With Varying Degrees of Renal Function",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-01-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-04-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-04-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 33,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Control (normal renal function or mild renal impairment)",
+          "type": "EXPERIMENTAL",
+          "description": "Estimated glomerular filtration rate (eGFR) ≥60 mL/min"
+        },
+        {
+          "label": "Moderate to severe renal impairment",
+          "type": "EXPERIMENTAL",
+          "description": "eGFR 15 to 59 mL/min"
+        },
+        {
+          "label": "Kidney failure",
+          "type": "EXPERIMENTAL",
+          "description": "eGFR \\<15 mL/min, including:\n\n* Subjects not on dialysis; and\n* Subjects on dialysis, with study drug administration on a non-dialysis day"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum plasma concentration (Cmax)",
+        "Time to maximum plasma concentration (Tmax)",
+        "Area under the curve from time 0 to the time of last quantifiable plasma concentration (AUC[0-last])",
+        "Area under the curve from time 0 to infinity (AUC[0-inf])",
+        "Percent of AUC extrapolated",
+        "Terminal phase elimination half-life",
+        "Apparent plasma clearance (CL/F)",
+        "Apparent volume of distribution",
+        "The cumulative amount of CIN-107 and CIN-107-M excreted in the urine (Ae)",
+        "Renal clearance (CLR) of CIN-107 and CIN-107-M of CIN-107 and CIN-107-M",
+        "The fraction of the dose excreted renally",
+        "Number of patients experiencing adverse events (AEs)",
+        "Number of patients experiencing adverse drug reactions",
+        "Number of patients experiencing serious adverse events (SAEs)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05470725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05470725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05470725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05470725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05470725",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-122",
+      "nctId": "NCT04605549",
+      "protocolNumber": "CIN-107-122",
+      "title": "A Multicenter, Open-Label Study to Evaluate the Safety, Tolerability, and Effectiveness of CIN-107 for the Management of Blood Pressure in Patients With Primary Aldosteronism",
+      "briefTitle": "A Study of CIN-107 in Adults With Primary Aldosteronism",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-10-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-10-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 15,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "CIN-107 for dosing at 2, 4, or 8 mg (QD)",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will be provided with an initial dose of CIN-107 and start once daily (QD) dosing of CIN-107 tablets at 2 mg. At Visit 4, CIN-107 dose may be up-titrated to 4 mg QD if the patient has tolerated dosing of CIN-107 at 2 mg and the blood pressure (BP) records indicate minimal hypotension risk.\n\nAt Visit 5, CIN-107 dose may be up-titrated to 8 mg QD if the patient has tolerated dosing of CIN-107 at 4 mg."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Treatment Emergent Adverse Events",
+        "Change From Baseline in Mean Seated Systolic Blood Pressure (SBP) in Patients With Primary Aldosteronism"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Mean Diastolic Blood Pressure (DBP) in Patients With Primary Aldosteronism",
+        "The Percentage of Patients Achieving a Seated BP Response of <140/90 mmHg",
+        "The Percentage of Patients Achieving a Seated BP Response of <130/80 mmHg",
+        "The Percentage of Patients Achieving the Pharmacodynamic Marker Response"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04605549",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04605549",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04605549",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04605549",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04605549",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-115",
+      "nctId": "NCT05961397",
+      "protocolNumber": "CIN-107-115",
+      "title": "A Phase 1, Open-label, Single-dose, Parallel-group Study to Evaluate the Pharmacokinetics of CIN-107 in Subjects With Varying Degrees of Hepatic Function",
+      "briefTitle": "Phase 1 PK Study to Evaluate the PK of CIN-107 in Subjects With Hepatic Impairment",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-08-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-04-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-04-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Normal hepatic function group",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects with normal hepatic function"
+        },
+        {
+          "label": "Moderate hepatic impairment group",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects with a Child-Pugh score of 7 to 9 (Category B) at screening"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of treatment emergent adverse events following administration of a single oral dose of baxdrostat to subjects with varying degrees of hepatic function.",
+        "Area under the curve (AUC) for baxdrostat and the CIN-107-M metabolite following administration of a single oral dose of baxdrostat to subjects with varying degrees of hepatic function",
+        "Maximum Plasma Concentration [Cmax] of baxdrostat and the CIN-107-M metabolite following administration of a single oral dose of baxdrostat to subjects with varying degrees of hepatic function.",
+        "Time to Maximum Plasma Concentration [Tmax] of baxdrostat and the CIN-107-M metabolite following administration of a single oral dose of baxdrostat to subjects with varying degrees of hepatic function.",
+        "Terminal elimination half-life of baxdrostat and the CIN-107-M metabolite following administration of a single oral dose of baxdrostat to subjects with varying degrees of hepatic function."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961397",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-117",
+      "nctId": "NCT05961384",
+      "protocolNumber": "CIN-107-117",
+      "title": "A Phase 1, Open-Label Study Of The Absorption, Metabolism, And Excretion Of [14C]-Baxdrostat Following A Single Oral Dose In Healthy Male Subjects",
+      "briefTitle": "Phase 1 Study to Determine the Metabolism and Clearance of Baxdrostat",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-11-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-01-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-01-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 8,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "10 mg [14C]-bexdrostat",
+          "type": "EXPERIMENTAL",
+          "description": "single oral dose of 10 mg baxdrostat containing 100 μCi of \\[14C\\] baxdrostat"
+        }
+      ],
+      "primaryEndpoints": [
+        "Total radioactivity recovery in urine and feces following administration of [14C] baxdrostat.",
+        "Area under the curve [AUC] of baxdrostat and its primary metabolite (CIN-107M) following administration of [14C] baxdrostat to healthy male subjects.",
+        "Cumulative baxdrostat and CIN-107M excreted in urine and fraction of baxdrostat renally excreted following administration of [14C] baxdrostat to healthy subjects.",
+        "Maximum concentration [Cmax] for baxdrostat and CIN-107M in plasma.",
+        "Time to maximum concentration [Tmax] for baxdrostat and CIN-107M in plasma.",
+        "Terminal elimination half-life (t1/2) for baxdrostat and CIN-107M in plasma."
+      ],
+      "secondaryEndpoints": [
+        "Quantitative metabolic profiles of baxdrostat in plasma and excreta.",
+        "Identification of baxdrostat metabolites in plasma and excreta.",
+        "Incidence of treatment emergent adverse events following administration of [14C] baxdrostat."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961384",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961384",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961384",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961384",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05961384",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-130",
+      "nctId": "NCT05459688",
+      "protocolNumber": "CIN-107-130",
+      "title": "An Open-Label Extension Study of Patients Previously Enrolled in Study CIN-107-124 to Evaluate the Long-Term Safety and Effectiveness of CIN-107",
+      "briefTitle": "Open-Label Extension Study of Patients Previously Enrolled in Study CIN-107-124",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-04-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-11-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-11-07",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 175,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "100 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Experimental 2 mg CIN-107 tablets QD",
+          "type": "EXPERIMENTAL",
+          "description": "Treatment with 2 mg CIN-107 tablets, by mouth, once per day. Starting at Visit 1 and concluding at EOT (Visit 7)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Any Treatment-emergent Adverse Events (TEAEs)",
+        "Number of Participants With Any Treatment-emergent Adverse Events of Special Interest (AESIs)",
+        "Number of Participants With Any Treatment-emergent Serious Adverse Events (TESAEs)",
+        "Change From Baseline in Serum Potassium",
+        "Change From Baseline in Serum Sodium",
+        "Change From Baseline in Body Weight",
+        "Change From Baseline in Temperature",
+        "Change From Baseline in Seated Heart Rate"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Mean Seated Systolic Blood Pressure",
+        "Change From Baseline in Mean Seated Diastolic Blood Pressure",
+        "Achieving Mean Seated Systolic Blood Pressure <130 mmHg",
+        "Non-responders in Study CIN-107-124 Achieving a Seated SBP Response <130 mmHg",
+        "Responders in Study CIN-107-124 Achieving a Seated SBP Response <130 mmHg"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05459688",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05459688",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05459688",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05459688",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05459688",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-123",
+      "nctId": "NCT05432167",
+      "protocolNumber": "CIN-107-123",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled, Multicenter, Parallel-Group, Dose-Ranging Study to Evaluate CIN-107 for the Treatment of Patients With Uncontrolled Hypertension and Chronic Kidney Disease",
+      "briefTitle": "A Study to Evaluate CIN-107 for the Treatment of Patients With Uncontrolled Hypertension and Chronic Kidney Disease",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-04-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 195,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Low dose CIN-107",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will take oral tablets of CIN-107 for 26 weeks. The dose strength may be titrated within 6 weeks."
+        },
+        {
+          "label": "High dose CIN-107",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will take oral tablets of CIN-107 for 26 weeks. The dose strength may be titrated within 6 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Patients will take oral tablets of Placebo for 26 weeks. The dose strength may be titrated within 6 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Mean Seated Systolic Blood Pressure (SBP) of Pooled CIN-107 and Placebo"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in SBP in CIN-107 Compared to Placebo in Participants Assigned to the High-dose Strategy Group",
+        "Change From Baseline of SBP in CIN-107 Compared to Placebo in Participants Assigned to the Low-dose Strategy Group"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05432167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05432167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05432167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05432167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05432167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "cin-107-126",
+      "nctId": "NCT05966324",
+      "protocolNumber": "CIN-107-126",
+      "title": "A Phase 1 Single and Multiple Dose Study to Assess the Safety, Pharmacokinetics, and Pharmacodynamics of Baxdrostat in Healthy Japanese and Caucasian Subjects",
+      "briefTitle": "Baxdrostat Safety, Tolerability, Pharmacokinetic and Pharmacodynamic Study in a Japanese Population",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-07-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-09-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-09-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 41,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1",
+          "type": "EXPERIMENTAL",
+          "description": "Oral tablet dose of baxdrostat 1 mg or placebo, administered as a single dose (Day 1) and multiple doses (once daily \\[QD\\] for 5 days, Days 6 - 10) to Japanese subjects"
+        },
+        {
+          "label": "Cohort 2",
+          "type": "EXPERIMENTAL",
+          "description": "Oral tablet dose of baxdrostat 3 mg or placebo, administered as a single dose (Day 1) and multiple doses (QD for 5 days, Days 6 - 10) to Japanese subjects"
+        },
+        {
+          "label": "Cohort 3",
+          "type": "EXPERIMENTAL",
+          "description": "Oral tablet dose of baxdrostat 3 mg or placebo, administered as a single dose (Day 1) and multiple doses (QD for 5 days, Days 6 - 10) to Caucasian subjects"
+        },
+        {
+          "label": "Cohort 4",
+          "type": "EXPERIMENTAL",
+          "description": "Oral tablet dose of baxdrostat 10 mg or placebo, administered as a single dose (Day 1) and multiple doses (QD for 5 days, Days 6 - 10) to Japanese subjects"
+        }
+      ],
+      "primaryEndpoints": [
+        "Incidence of treatment emergent adverse events following single and multiple doses of baxdrostat in healthy Japanese and Caucasian participants versus placebo recipients.",
+        "Area under the curve (AUC) for baxdrostat and the CIN-107-M metabolite after single and multiple oral doses of baxdrostat in healthy Japanese subjects.",
+        "Maximum Plasma Concentration [Cmax] of baxdrostat and the CIN-107-M metabolite after single and multiple oral doses of baxdrostat in healthy Japanese subjects.",
+        "Plasma aldosterone levels following single and multiple oral doses of baxdrostat in healthy Japanese subjects.",
+        "Time to Maximum Plasma Concentration [Tmax] of baxdrostat and the CIN-107-M metabolite after single and multiple oral doses of baxdrostat in healthy Japanese subjects.",
+        "Terminal elimination half-life of baxdrostat and the CIN-107-M metabolite after single and multiple oral doses of baxdrostat in healthy Japanese subjects."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05966324",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05966324",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05966324",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05966324",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05966324",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "baxhtn",
+      "nctId": "NCT06034743",
+      "protocolNumber": "D6970C00002",
+      "acronym": "BaxHTN",
+      "title": "A Randomised, Double-Blind, Placebo-Controlled, Parallel Group Study to Assess the Efficacy and Safety of Baxdrostat in Participants With Uncontrolled Hypertension on Two or More Medications Including Participants With Resistant Hypertension",
+      "briefTitle": "A Study to Investigate the Efficacy and Safety of Baxdrostat in Participants With Uncontrolled Hypertension on Two or More Medications Including Participants With Resistant Hypertension",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Hypertension, to lower blood pressure in adults who are not adequately controlled on other agents",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219878Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Hypertension, to lower blood pressure in adults who are not adequately controlled on other agents)",
+            "quote": "Trial identifier appears within the Hypertension, to lower blood pressure in adults who are not adequately controlled on other agents section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219878Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Baxfendy (baxdrostat) tablets for the treatment of hypertension in combination with other antihypertensive drugs, to lower blood pressure in adults who are not adequately controlled on other agents.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-11-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-10-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 796,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "2 mg baxdrostat",
+          "type": "EXPERIMENTAL",
+          "description": "2 mg baxdrostat administered orally, once daily (QD)."
+        },
+        {
+          "label": "1 mg baxdrostat",
+          "type": "EXPERIMENTAL",
+          "description": "1 mg baxdrostat administered orally, once daily (QD)."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo administered orally, once daily (QD)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Seated Systolic Blood Pressure for 2 mg Baxdrostat",
+        "Change From Baseline in Seated Systolic Blood Pressure for 1 mg Baxdrostat"
+      ],
+      "secondaryEndpoints": [
+        "Change From Randomised Withdrawal Baseline (Week 24) in Seated Systolic Blood Pressure (SBP) for 2 mg Baxdrostat",
+        "Change From Baseline in Seated SBP for 2 mg Baxdrostat in the Resistant Hypertension Subpopulation",
+        "Change From Baseline in Seated Diastolic Blood Pressure (DBP) for 2 mg Baxdrostat",
+        "Number of Participants Who Achieved Seated SBP < 130 mmHg for 2 mg Baxdrostat",
+        "Change From Baseline in Seated SBP for 1 mg Baxdrostat in the Resistant Hypertension Subpopulation",
+        "Change From Baseline in Seated Diastolic Blood Pressure (DBP) for 1 mg Baxdrostat",
+        "Number of Participants Who Achieved Seated SBP < 130 mmHg for 1 mg Baxdrostat"
+      ],
+      "postedResults": [
+        {
+          "title": "Change From Baseline in Seated Systolic Blood Pressure for 2 mg Baxdrostat",
+          "timeFrame": "At Week 12",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "mmHg",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Double-Blind Treatment Period Weeks 0-12 Baxdrostat 2mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Double-Blind Treatment Period Weeks 0-12 Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-15.7",
+              "spread": "1.0"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-5.8",
+              "spread": "1.0"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "ANCOVA",
+              "paramType": "Least Square Mean Difference",
+              "paramValue": "-9.8",
+              "ciPct": "95",
+              "ciLower": "-12.6",
+              "ciUpper": "-7.0"
+            }
+          ]
+        },
+        {
+          "title": "Change From Baseline in Seated Systolic Blood Pressure for 1 mg Baxdrostat",
+          "timeFrame": "At Week 12",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "mmHg",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Double-Blind Treatment Period Weeks 0-12 Baxdrostat 1mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Double-Blind Treatment Period Weeks 0-12 Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-14.5",
+              "spread": "1.0"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-5.8",
+              "spread": "1.0"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "ANCOVA",
+              "paramType": "Least Square Mean Difference",
+              "paramValue": "-8.7",
+              "ciPct": "95",
+              "ciLower": "-11.5",
+              "ciUpper": "-5.8"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034743",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034743",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034743",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034743",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034743",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034743?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219878Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "equately controlled on other antihypertensive medications. Three of these trials [BaxHTN (NCT06034743), BrigHTN (NCT04519658), Bax24 (NCT06168409)] evaluated BAXFENDY 2 mg as add-on treatment",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d6970c00004",
+      "nctId": "NCT06194032",
+      "protocolNumber": "D6970C00004",
+      "title": "A Single-centre, Randomised, Double-blind, Placebo-controlled, Four-Way Crossover Phase I Thorough QTc Study to Investigate the Effect on QTcF of Single Doses of Baxdrostat Compared With Placebo, Using Open-label Moxifloxacin as a Positive Control, in Healthy Participants",
+      "briefTitle": "A Study to Investigate the Effect on QTcF of Baxdrostat Compared With Placebo, Using Moxifloxacin as a Positive Control, in Healthy Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-02-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 28,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment Sequence ABCD",
+          "type": "EXPERIMENTAL",
+          "description": "Dummy sequence according to CSP: Participants will receive a single dose of all 4 treatments (ABCD) in a crossover design with a washout period of at least 7 days between each study dose administration."
+        },
+        {
+          "label": "Treatment Sequence BDAC",
+          "type": "EXPERIMENTAL",
+          "description": "Dummy sequence according to CSP: Participants will receive a single dose of all 4 treatments (BDAC) in a crossover design with a washout period of at least 7 days between each study dose administration."
+        },
+        {
+          "label": "Treatment Sequence CADB",
+          "type": "EXPERIMENTAL",
+          "description": "Dummy sequence according to CSP: Participants will receive a single dose of all 4 treatments (CADB) in a crossover design with a washout period of at least 7 days between each study dose administration."
+        },
+        {
+          "label": "Treatment Sequence DCBA",
+          "type": "EXPERIMENTAL",
+          "description": "Dummy sequence according to CSP: Participants will receive a single dose of all 4 treatments (DCBA) in a crossover design with a washout period of at least 7 days between each study dose administration."
+        }
+      ],
+      "primaryEndpoints": [
+        "Placebo corrected change from baseline in QTcF (ΔΔQTcF)"
+      ],
+      "secondaryEndpoints": [
+        "Heart Rate (HR)",
+        "RR interval",
+        "PR interval",
+        "QRS interval",
+        "Change from baseline in Heart rate (ΔHR)",
+        "QT interval",
+        "Change from baseline in RR interval (ΔRR)",
+        "Change from baseline in PR interval (ΔPR)",
+        "Change from baseline in QRS interval (ΔQRS)",
+        "Change from baseline in QTcF (ΔQTcF)",
+        "Change from baseline in QT interval (ΔQT)",
+        "Number of participants with significant change in QTcF",
+        "Number of participants with significant change in PR interval",
+        "Number of participants with significant change in QRS interval",
+        "Number of participants with significant change in RR interval",
+        "Number of participants with significant change in QT interval",
+        "Number of participants with significant change in HR",
+        "Placebo corrected change from baseline in HR (ΔΔHR)",
+        "Placebo corrected change from baseline in RR interval (ΔΔRR)",
+        "Placebo corrected change from baseline in PR interval (ΔΔPR)",
+        "Placebo corrected change from baseline in QRS (ΔΔQRS)",
+        "AUClast of Baxdrostat",
+        "AUCinf of Baxdrostat",
+        "Maximum observed plasma peak concentration (Cmax) of baxdrostat",
+        "Time to reach peak or maximum observed concentration (Tmax) of baxdrostat",
+        "Number of participants with Adverse Events (AEs)",
+        "Number of participants with Adverse events of special interest",
+        "Number of treatment-emergent changes in T-wave morphology",
+        "Number of treatment-emergent changes in U-waves presence and morphology"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06194032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06194032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06194032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06194032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06194032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "bax24",
+      "nctId": "NCT06168409",
+      "protocolNumber": "D6970C00009",
+      "acronym": "Bax24",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled, Parallel Group Study to Assess the Effect of Baxdrostat on Ambulatory Blood Pressure in Participants With Resistant Hypertension",
+      "briefTitle": "A Study to Investigate the Effect of Baxdrostat on Ambulatory Blood Pressure in Participants With Resistant Hypertension",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-03-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-08-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-08-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 218,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "2 mg baxdrostat",
+          "type": "EXPERIMENTAL",
+          "description": "2 mg baxdrostat administered orally, once daily (QD)."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo administered orally, once daily (QD)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Least Square Mean Difference for Change From Baseline in Ambulatory 24-hour Average SBP at Week 12: Treatment Policy Strategy"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Ambulatory Night-time Average SBP (mmHg) at Week 12 LS Means",
+        "Change From Baseline in Ambulatory Daytime Average SBP (mmHg) at Week 12",
+        "Change From Baseline in Seated SBP (mmHg) at Week 12",
+        "Achieving Ambulatory 24-hour Average SBP of < 130 mmHg at Week 12",
+        "Change From Baseline in Ambulatory 24-hour Average DBP (mmHg) at Week 12",
+        "Change From Baseline in Ambulatory Night-time Average DBP (mmHg) at Week 12",
+        "Change From Baseline in Ambulatory Daytime Average DBP (mmHg) at Week 12",
+        "Change From Baseline in Seated DBP (mmHg) at Week 12",
+        "Achieving a Nocturnal SBP Dipping of >= 10% at Week 12"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06168409",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06168409",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06168409",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06168409",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06168409",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219878Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "e medications. Three of these trials [BaxHTN (NCT06034743), BrigHTN (NCT04519658), Bax24 (NCT06168409)] evaluated BAXFENDY 2 mg as add-on treatment and two trials [BaxHTN, BrigHTN] evaluated",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d6972c00003",
+      "nctId": "NCT06268873",
+      "protocolNumber": "D6972C00003",
+      "title": "A Phase III, Randomised, Double-Blind Study to Assess the Efficacy, Safety and Tolerability of Baxdrostat in Combination With Dapagliflozin Compared With Dapagliflozin Alone on Chronic Kidney Disease (CKD) Progression in Participants With CKD and High Blood Pressure",
+      "briefTitle": "A Phase III Study to Investigate the Efficacy and Safety of Baxdrostat in Combination With Dapagliflozin on CKD Progression in Participants With CKD and High Blood Pressure.",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-03-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-02-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-02-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 2554,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Baxdrostat/dapagliflozin",
+          "type": "EXPERIMENTAL",
+          "description": "Participants randomised to the baxdrostat/dapagliflozin arm will initially receive a dose of baxdrostat lower dose and dapagliflozin. For participants that meet the up-titration criteria, baxdrostat may be up-titrated to higher dose."
+        },
+        {
+          "label": "Dapagliflozin",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Patients will receive one dose of dapagliflozin (active comparator) in combination with placebo matching baxdrostat daily"
+        }
+      ],
+      "primaryEndpoints": [
+        "To determine whether baxdrostat/dapagliflozin is superior to dapagliflozin alone to slow CKD progression, assessed as the effect on change in eGFR over time."
+      ],
+      "secondaryEndpoints": [
+        "To determine whether baxdrostat/dapagliflozin is superior to dapagliflozin alone at reducing UACR (urine albumin-creatinine ratio).",
+        "To determine whether baxdrostat/dapagliflozin is superior to dapagliflozin alone at reducing SBP.",
+        "To determine whether baxdrostat/dapagliflozin compared with dapagliflozin alone slows CKD progression and reduces the risk of ESKD (End-stage kidney disease).",
+        "To determine whether baxdrostat/dapagliflozin compared with dapagliflozin alone slows the rate of kidney function decline after the hemodynamically-mediated acute effect on GFR (Glomerular Filtration Rate).",
+        "To determine whether baxdrostat/dapagliflozin is superior to dapagliflozin alone in reducing the risk of MACE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06268873",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06268873",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06268873",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06268873",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06268873",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "baxasia",
+      "nctId": "NCT06344104",
+      "protocolNumber": "D6970C00008",
+      "acronym": "BaxAsia",
+      "title": "A Double-Blind, Randomised, Placebo-Controlled, Multicentre Study Evaluating the Efficacy and Safety of Baxdrostat in Participants With Uncontrolled Hypertension on Two or More Medications Including Participants With Resistant Hypertension",
+      "briefTitle": "A Study to Investigate the Efficacy and Safety of Baxdrostat in Participants With Uncontrolled Hypertension on Two or More Medications Including Participants With Resistant Hypertension",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-04-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-11-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-04-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 326,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "2 mg baxdrostat",
+          "type": "EXPERIMENTAL",
+          "description": "2 mg baxdrostat administered orally, once daily (QD)"
+        },
+        {
+          "label": "1 mg baxdrostat",
+          "type": "EXPERIMENTAL",
+          "description": "1 mg baxdrostat administered orally, once daily (QD)."
+        },
+        {
+          "label": "placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo administered orally, once daily (QD)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from baseline in seated SBP at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in seated SBP at Week 12",
+        "Change from RWD baseline (Week 24) in seated SBP at Week 32",
+        "Change from baseline in the mean ambulatory 24-hour SBP at Week 12 as measured by ABPM",
+        "Change from baseline in the mean ambulatory 24-hour SBP at Week 12 as measured by ABPM",
+        "Change from baseline in seated DBP at Week 12",
+        "Achieving seated SBP < 140 mmHg at Week 12",
+        "Change from baseline in seated DBP at Week 12",
+        "Achieving seated SBP < 140 mmHg at Week 12",
+        "Change from baseline in seated SBP at Week 12",
+        "Change from baseline in seated SBP at Week 12"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06344104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06344104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06344104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06344104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06344104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d6970c00005",
+      "nctId": "NCT06357520",
+      "protocolNumber": "D6970C00005",
+      "title": "An Open-label, Fixed Sequence Study in Healthy Participants to Assess the Pharmacokinetics of Baxdrostat When Administered Alone and in Combination With Itraconazole",
+      "briefTitle": "A Study to Investigate the Pharmacokinetics of Baxdrostat When Given Alone and in Combination With Itraconazole in Healthy Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-04-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-06-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-06-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 14,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Baxdrostat and Itraconazole",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive single dose of baxdrostat tablet orally on Day 1 in Period 1, followed by itraconazole capsule orally twice a day on Day 6 and once daily on Days 7 to 8 in Period 2, and then single dose of baxdrostat tablet orally on Day 9 with itraconazole capsule orally once daily on Days 9 to 16 in Period 3."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under Plasma Concentration-Time Curve From Time Zero To Infinity (AUCinf)",
+        "Maximum Observed Plasma Drug Concentration (Cmax)"
+      ],
+      "secondaryEndpoints": [
+        "Extrapolated Area Under The Curve From Tlast to Infinity (AUCextr)",
+        "Area Under Plasma Concentration Curve from Time Zero to the Last Quantifiable Concentration (AUClast)",
+        "Apparent Total Body Clearance (CL/F)",
+        "Apparent Volume Of Distribution Based On The Terminal Phase (Vz/F)",
+        "Terminal Elimination Half-life (t1/2λz)",
+        "Terminal Rate Constant (λz)",
+        "Mean Residence Time (MRTinf)",
+        "Time To Reach Maximum Observed Concentration (tmax)",
+        "Ratio of Baxdrostat (Baxdrostat + Itraconazole) to Baxdrostat (Alone) Based on Maximum Plasma Concentration (RCmax)",
+        "Ratio of Baxdrostat (Baxdrostat + Itraconazole) to Baxdrostat (Alone) Based on AUClast (RAUClast)",
+        "Ratio of Baxdrostat (Baxdrostat + Itraconazole) to Baxdrostat (Alone) Based on AUCinf (RAUCinf)",
+        "Number of Participants with Adverse Events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06357520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06357520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06357520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06357520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06357520",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d6970c00011",
+      "nctId": "NCT06336356",
+      "protocolNumber": "D6970C00011",
+      "title": "A Randomised, Double-blind, Placebo-controlled Study to Evaluate Cortisol Reserve in Response to Adrenocorticotropic Hormone Stimulation Test Following Treatment With Baxdrostat for 8 Weeks in Participants With Uncontrolled Hypertension",
+      "briefTitle": "A Study to Evaluate Cortisol Reserve in Response to Adrenocorticotropic Hormone (ACTH) Stimulation Test Following Baxdrostat Treatment Compared to Placebo in Participants With Uncontrolled Hypertension",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-06-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-12-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-12-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 48,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "130 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm 1: Baxdrostat 2 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive baxdrostat 2 mg tablet orally once daily."
+        },
+        {
+          "label": "Arm 2: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo tablet orally once daily."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Serum Total Cortisol Level Before and After Adrenocorticotropic Hormone (ACTH) Stimulation Test"
+      ],
+      "secondaryEndpoints": [
+        "Incidence of Abnormal Stimulated Cortisol at Week 8",
+        "Number of Participants With Adverse Events (AEs) and Adverse Events of Special Interest (AESIs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06336356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06336356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06336356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06336356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06336356",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "d6970c00006",
+      "nctId": "NCT06657105",
+      "protocolNumber": "D6970C00006",
+      "title": "An Open-label, Fixed Sequence Study to Assess the Effect of Multiple Doses of Baxdrostat on the Pharmacokinetics of Single Doses of Combined Oral Ethinyl Estradiol and Levonorgestrel in Healthy Female Participants of Non-childbearing Potential.",
+      "briefTitle": "A Study to Investigate the Pharmacokinetics of Ethinyl Estradiol and Levonorgestrel When Given Alone and in Combination With Baxdrostat in Healthy Females of Non-childbearing Potential",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-11-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-02-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-02-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 22,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "35 Years",
+        "maxAge": "75 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Period 1: Ethinyl estradiol/Levonorgestrel (EE/LNG)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive oral dose of EE/LNG in the fasted state on Day ,1 followed by PK sampling of EE/LNG for 120 hours (EE 72 hours and LNG 120 hours)."
+        },
+        {
+          "label": "Period 2: Baxdrostat",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will self-administer the baxdrostat tablet once a day from Day 6 to Day 16."
+        },
+        {
+          "label": "Period 3: Baxdrostat + EE/LNG",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive baxdrostat once daily on Day 17 to Day 22 and will receive EE+LNG in the fasted state on Day 18, followed by oral dose of EE/LNG PK sampling for 120 hours (EE=72 hours and LNG=120 hours)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under concentration-time curve from time zero to infinity (AUCinf)",
+        "Area under concentration-curve from time 0 to the last quantifiable concentration (AUClast)",
+        "Maximum observed drug concentration (Cmax)"
+      ],
+      "secondaryEndpoints": [
+        "Maximum observed drug concentration (Cmax) of EE/LNG",
+        "Area under concentration-curve from time 0 to the last quantifiable concentration (AUClast) of EE/LNG",
+        "Area under concentration-time curve from time zero to infinity (AUCinf) of EE/LNG",
+        "Time to reach maximum observed concentration (tmax)",
+        "Terminal elimination half-life (t1/2λz)",
+        "Terminal rate constant (λz)",
+        "Ratio of EE or LNG to EE (alone) or LNG (alone) based on AUCinf (RAUCinf)",
+        "Ratio of EE or LNG to EE (alone) or LNG (alone) based on AUClast (RAUClast)",
+        "Ratio of EE or LN to EE (alone) or LNG (alone) based on Cmax (RCmax)",
+        "Number of participants with adverse event (AEs)",
+        "Maximum observed drug concentration (Cmax) of Baxdrostat",
+        "Observed lowest concentration before the next dose is administered (Day 22 pre-dose) (Ctrough)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06657105",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06657105",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06657105",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06657105",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06657105",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "baxduo-pacific",
+      "nctId": "NCT06742723",
+      "protocolNumber": "D6972C00002",
+      "acronym": "BaxDuo-Pacific",
+      "title": "A Phase III, Randomised, Double-blind, Placebo-controlled, Event-driven Study to Assess the Efficacy, Safety and Tolerability of Baxdrostat in Combination With Dapagliflozin Compared With Dapagliflozin Alone on Renal Outcomes and Cardiovascular Mortality in Participants With Chronic Kidney Disease and High Blood Pressure",
+      "briefTitle": "A Phase III Renal Outcomes and Cardiovascular Mortality Study to Investigate the Efficacy and Safety of Baxdrostat in Combination With Dapagliflozin in Participants With Chronic Kidney Disease and High Blood Pressure",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-03-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-12-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-12-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 5000,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Baxdrostat/dapagliflozin",
+          "type": "EXPERIMENTAL",
+          "description": "Participants randomised to the baxdrostat/dapagliflozin arm will initially receive a lower dose of baxdrostat and standard dose dapagliflozin. For participants that meet the up-titration criteria, baxdrostat may be up-titrated to higher dose."
+        },
+        {
+          "label": "Placebo/dapagliflozin",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Patients will receive one dose of dapagliflozin comparator in combination with matching placebo daily."
+        }
+      ],
+      "primaryEndpoints": [
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of the composite endpoint of ≥ 50% sustained decline in eGFR, kidney failure, Heart Failure events(HF), or CV death."
+      ],
+      "secondaryEndpoints": [
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of the composite endpoint of ≥ 50% sustained decline in eGFR, kidney failure or CV death.",
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of MACE (Major Adverse Cardiac Events).",
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of the composite endpoint of CV (cardiovascular) death.",
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of the composite endpoint of all-cause death."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742723",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742723",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742723",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742723",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06742723",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "prevent-hf",
+      "nctId": "NCT06677060",
+      "protocolNumber": "D6973C00001",
+      "acronym": "Prevent-HF",
+      "title": "A Phase III, Randomised, Placebo-controlled, Event-driven Study to Evaluate the Effect of Baxdrostat in Combination With Dapagliflozin Compared With Dapagliflozin Alone on the Risk of Incident Heart Failure and Cardiovascular Death",
+      "briefTitle": "Phase III Study Investigating Heart Failure and Cardiovascular Death With Baxdrostat in Combination With Dapagliflozin",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-03-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-12-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-12-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 11300,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "PREVENTION"
+      },
+      "population": {
+        "minAge": "40 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Baxdrostat/Dapagliflozin",
+          "type": "EXPERIMENTAL",
+          "description": "Participants randomised to the baxdrostat/dapagliflozin arm will initially receive a dose of baxdrostat lower dose and dapagliflozin. For participants that meet the up-titration criteria, baxdrostat may be up-titrated to higher dose."
+        },
+        {
+          "label": "Placebo/Dapagliflozin",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will receive a dose of dapagliflozin in combination with matching placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "To determine if baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of an HF event or CV death"
+      ],
+      "secondaryEndpoints": [
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of hospitalisation for HF or CV death",
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of HF events",
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of CV death",
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of all-cause mortality",
+        "To determine whether baxdrostat/dapagliflozin is superior to placebo/dapagliflozin in reducing the risk of 4-point MACE (CV death, MI, stroke, and hospitalisation for HF)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06677060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06677060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06677060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06677060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06677060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "baxpa",
+      "nctId": "NCT07007793",
+      "protocolNumber": "D6974C00001",
+      "acronym": "BaxPA",
+      "title": "Parent Study: A Randomised, Double-Blind, Placebo-Controlled, Parallel-Group Study to Assess the Efficacy and Safety of Baxdrostat in Adult Participants With Primary Aldosteronism Sub-study: A Substudy to Describe PA Disease Characteristics After Completion of the BaxPA Main Study",
+      "briefTitle": "Parent Study: A Study to Assess Efficacy and Safety of Baxdrostat in Participants With Primary Aldosteronism Sub-study: A Follow-up Substudy After Completion of the BaxPA Main Study.",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-08-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-07-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-08-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 212,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Baxdrostat",
+          "type": "EXPERIMENTAL",
+          "description": "Baxdrostat administered orally, once daily (QD)."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Matching placebo administered orally, once daily (QD)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from baseline in seated Systolic Blood Pressure (SBP) at Week 8",
+        "Achieving normalization of renin at week 8 in participants with dysregulated renin at baseline"
+      ],
+      "secondaryEndpoints": [
+        "Percent change from RWD baseline (Week 44) in Direct Renin Concentration (DRC) at Week 52",
+        "Change from Randomised withdrawal (RWD) baseline (Week 44) in seated Systolic Blood Pressure (SBP) at Week 52",
+        "Percent change from baseline in Renin at week 8",
+        "Achieving serum potassium ≥ 3.7 mmol/L without potassium supplementation at Week 8 in participants with serum potassium < 3.7 mmol/L or potassium supplementation at baseline",
+        "Achieving 24-hour urine aldosterone < 10 μg at Week 8 in participants with 24-hour urine aldosterone ≥ 10 μg at baseline",
+        "Percent change from baseline in 24-hour urine albumin at Week 8"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07007793",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07007793",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07007793",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07007793",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07007793",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "baxduo-baltic",
+      "nctId": "NCT07222917",
+      "protocolNumber": "D6972C00006",
+      "acronym": "BaxDuo-Baltic",
+      "title": "A Phase IIb, Randomised, Multicentre, Double-Blind Study to Evaluate the Effect of Baxdrostat in Combination With Dapagliflozin Compared With Baxdrostat on Albuminuria in Participants With Chronic Kidney Disease and High Blood Pressure.",
+      "briefTitle": "A Phase IIb Study to Evaluate the Effect of Dapagliflozin in Combination With Baxdrostat Compared With Baxdrostat on Albuminuria in Participants With Chronic Kidney Disease and High Blood Pressure.",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-12-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-12-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-12-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 222,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Baxdrostat/dapagliflozin",
+          "type": "EXPERIMENTAL",
+          "description": "Participants randomised to the baxdrostat/dapagliflozin arm will receive one dose of baxdrostat and one standard dose of dapagliflozin daily."
+        },
+        {
+          "label": "Baxdrostat /placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Patients will receive one dose of baxdrostat comparator in combination with placebo matching dapagliflozin daily"
+        }
+      ],
+      "primaryEndpoints": [
+        "To determine whether baxdrostat/dapagliflozin is superior to baxdrostat/matching placebo at reducing albuminuria."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07222917",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07222917",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07222917",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07222917",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07222917",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "baxnod",
+      "nctId": "NCT07686120",
+      "protocolNumber": "D6970L00002",
+      "acronym": "BaxNoD",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Effect of Baxdrostat on Ambulatory Blood Pressure in Chinese Participants With Uncontrolled Hypertension on Two or More Antihypertensive Medications Without Diuretics",
+      "briefTitle": "A Phase IIIb Study to Investigate the Effect of Baxdrostat in Chinese Participants With Uncontrolled Hypertension.",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "AstraZeneca",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-09-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-02-09",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-02-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 286,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "baxdrostat 2 mg",
+          "type": "EXPERIMENTAL",
+          "description": "2 mg baxdrostat administered orally, once daily (QD)"
+        },
+        {
+          "label": "Placebo 2mg",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "2 mg placebo administered orally, once daily (QD)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change from baseline in ambulatory 24-hour average Systolic blood pressure(SBP) at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline in ambulatory night-time average Systolic blood pressure(SBP) at Week 12",
+        "Change from baseline in ambulatory daytime average Systolic blood pressure(SBP) at Week 12",
+        "Change from baseline in seated Systolic blood pressure(SBP) at Week 12",
+        "Percentage achieving ambulatory 24-hour average SBP <130 mmHg at Week 12",
+        "Change from baseline in ambulatory 24-hour Diastolic Blood Pressure(DBP) at Week 12",
+        "Change from baseline in ambulatory night-time average DBP at Week 12",
+        "Change from baseline in ambulatory daytime average DBP at Week 12",
+        "Change from baseline in seated DBP at Week 12",
+        "Adverse Events (AE)s",
+        "Adverse Events of special interest (AESI)s -hyperkalaemia",
+        "Serious Adverse Event(SAE)s",
+        "Discontinuation of IP due to Adverse Event(DAE)s",
+        "Adverse Events of special interest (AESI)s- hyponatraemia"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07686120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07686120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07686120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07686120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07686120",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-05-15",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219878%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 219878",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219878%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219878Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219878Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:01:39.163Z"
+}

@@ -1,0 +1,1655 @@
+{
+  "slug": "icotrokinra",
+  "brandName": "Icotyde",
+  "inn": "icotrokinra",
+  "modality": "Drug (NDA)",
+  "sponsor": "JANSSEN BIOTECH",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy",
+      "slug": "moderate-to-severe-plaque-psoriasis-in-adults-and-pediatric",
+      "approvalDate": {
+        "value": "2026-03-17",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-03-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Icotyde (icotrokinra) tablets for treatment of moderate- to-severe plaque psoriasis (PsO) in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Icotyde (icotrokinra) tablets for treatment of moderate- to-severe plaque psoriasis (PsO) in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220149",
+      "applicationType": "NDA",
+      "sponsor": "JANSSEN BIOTECH",
+      "originalApprovalDate": {
+        "value": "2026-03-17",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "iconic-lead",
+      "nctId": "NCT06095115",
+      "protocolNumber": "77242113PSO3001",
+      "acronym": "ICONIC-LEAD",
+      "labelName": "PSO-3",
+      "title": "A Phase 3 Multicenter, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Efficacy and Safety of JNJ-77242113 for the Treatment of Participants With Moderate to Severe Plaque Psoriasis With Randomized Withdrawal and Retreatment",
+      "briefTitle": "A Study of JNJ-77242113 in Adolescent and Adult Participants With Moderate to Severe Plaque Psoriasis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy)",
+            "quote": "Trial identifier appears within the Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Icotyde (icotrokinra) tablets for treatment of moderate- to-severe plaque psoriasis (PsO) in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-10-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-04-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 684,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "JNJ-77242113",
+          "type": "EXPERIMENTAL",
+          "description": "Adolescent and adult participants will receive JNJ-77242113 from Week 0 through Week 156. At Week 24, adult participants who are psoriasis area and severity index (PASI) 75 or investigator global assessment (IGA) score of 0 or 1 responders (that is, those who achieve an IGA score of 0 or 1 and have \\>=2-grade improvement from baseline) will be re-randomized either to continue JNJ-77242113 or to placebo (and will be retreated with JNJ-77242113 upon loss of \\>=50% of their Week 24 PASI improvement). Adult participants identified as both PASI 75 and IGA 0 or 1 score non-responders will continue to receive JNJ-77242113 through Week 52. From Week 52 to Week 156, all adult participants will receive JNJ-77242113. Adolescents will not participate in re-randomization regardless of their PASI score or IGA score at Week 24. Adolescents will continue to receive JNJ-77242113 from Week 0 through Week 156."
+        },
+        {
+          "label": "Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Adolescent and adult participants will receive JNJ-77242113 matching placebo from Week 0 to Week 16. Participants will cross-over to receive JNJ-77242113 from Week 16 through Week 156."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Who Achieved an Investigator's Global Assessment (IGA) Score of 0 or 1 and Greater Than or Equal to (>=) 2-Grade Improvement From Baseline at Week 16",
+        "Percentage of Participants Who Achieved Psoriasis Area and Severity Index (PASI) 90 Response at Week 16"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Who Achieved IGA Score of 0 at Week 16",
+        "Percentage of Participants Who Achieved PASI 75 Response at Week 4",
+        "Percentage of Participants Who Achieved PASI 90 Response at Week 8",
+        "Percentage of Participants Who Achieved PASI 75 Response at Week 16",
+        "Percentage of Participants Who Achieved PASI 100 Response at Week 16",
+        "Percentage of Participants Who Achieved Scalp Specific (ss)-IGA Score of 0 or 1 and >=2-Grade Improvement From Baseline at Week 16 Among Participants With a Baseline Ss-IGA Score >=2",
+        "Percentage of Participants Who Achieved Psoriasis Symptom and Signs Diary (PSSD) Symptom Score of 0 at Week 8 Among Participants With a Baseline PSSD Symptom Score >0",
+        "Percentage of Participants Who Achieved Psoriasis Symptom and Signs Diary (PSSD) Symptom Score of 0 at Week 16 Among Participants With a Baseline PSSD Symptom Score >0",
+        "Percentage of Participants Who Achieved >=4-Point Improvement From Baseline in PSSD Itch Score at Week 4 Among Participants With a Baseline PSSD Itch Score >=4",
+        "Percentage of Participants Who Achieved >=4-Point Improvement From Baseline in PSSD Itch Score at Week 16 Among Participants With a Baseline PSSD Itch Score >=4",
+        "Percentage of Participants Who Achieved PASI 75 Response at Week 52 Among Participants Randomized at Week 24 and Were PASI 75 Responders at Week 24",
+        "Percentage of Participants Who Achieved PASI 90 Response at Week 52 Among Participants Randomized at Week 24 and Were PASI 90 Responders at Week 24",
+        "Time to Loss of PASI 75 Among Participants Randomized at Week 24 and Were PASI 75 Responders at Week 24",
+        "Time to Loss of PASI 90 Among Participants Randomized at Week 24 and Were PASI 90 Responders at Week 24",
+        "Change From Baseline in Body Surface Area (BSA) at Week 16",
+        "Change From Baseline in PASI Total Score at Week 16",
+        "Percent Change From Baseline in PASI Total Score at Week 16",
+        "Percentage of Participants Who Achieved Static Physician's Global Assessment of Genitalia (sPGA-G) Score of 0 or 1 and a >=2-Grade Improvement in Genital Psoriasis From Baseline at Week 16 Among Participants With a Baseline sPGA-G Score >=2",
+        "Percentage of Participants Achieving a Physician's Global Assessment of Hands and Feet (Hf-PGA) Score of 0 or 1 and at Least a 2-grade Improvement at Week 16 Among Participants With a Baseline Hf-PGA Score >=2",
+        "Percent Change From Baseline in Modified Nail Psoriasis Severity Index (mNAPSI) Score at Week 16 Among Participants With Baseline mNAPSI Score >0",
+        "Percentage of Participants Who Achieved Fingernail Physician's Global Assessment (f-PGA) Score of 0 or 1 at Week 16 Among Participants With a Baseline f-PGA Score >=2",
+        "Change From Baseline in PSSD Symptom Score at Week 16",
+        "Change From Baseline in PSSD Sign Score at Week 16",
+        "Percentage of Participants Achieving PSSD Sign Score of 0 at Week 16 Among Participants With Baseline PSSD Sign Score >0",
+        "Percentage of Participants Achieving Genital Psoriasis Sexual Frequency Questionnaire (GenPs-SFQ) Item 2 Score of 0 or 1 at Week 16 Among Participants With Baseline GenPS-SFQ Item 2 Score >=2 and a Baseline sPGA-G Score >=3",
+        "Percentage of Participants Achieving Dermatology Life Quality Index (DLQI) Score of 0 or 1 at Week 16 Among Participants With a Baseline DLQI Score >1",
+        "Change From Baseline in Total DLQI Score at Week 16",
+        "Adult Participants: Change From Baseline in Domain Scores of the Patient-reported Outcomes Measurement Information System-29 (PROMIS-29) Score at Week 16",
+        "Adolescent Participants: Percentage of Participants Achieving Children's Dermatology Life Quality Index (CDLQI) Score of 0 or 1 at Week 16 Among Participants With a Baseline CDLQI Score >1",
+        "Adolescent Participants: Change From Baseline in CDLQI at Week 16",
+        "Adolescent Participants: Change From Baseline in Domain Scores of the PROMIS-25 Pediatric Score at Week 16",
+        "Percentage of Participants Who Achieved an IGA Score of 0 or 1 and >=2-Grade Improvement From Baseline at Week 52",
+        "Percentage of Participants Achieving IGA Score of 0 at Week 52 Among Participants Who Were IGA 0 Responders at Week 24",
+        "Percentage of Participants Achieving PASI 100 Response at Week 52 Among PASI 100 Responders at Week 24",
+        "Time to Loss of IGA Response of 0 or 1",
+        "Adolescent Participants: Percentage of Participants With IGA Score of 0 or 1 and a >=2-grade Improvement From Baseline at Week 52",
+        "Adolescent Participants: Percentage of Participants Who Achieved PASI 75 Response at Week 52",
+        "Adolescent Participants: Percentage of Participants Who Achieved PASI 90 Response at Week 52",
+        "Number of Participants With Treatment-emergent Adverse Events (AEs)",
+        "Number of Participants With Treatment-emergent Serious Adverse Events (SAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Who Achieved an Investigator's Global Assessment (IGA) Score of 0 or 1 and Greater Than or Equal to (>=) 2-Grade Improvement From Baseline at Week 16",
+          "timeFrame": "Week 16",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo to JNJ-77242113 200 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "JNJ-77242113 200 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "8.3"
+            },
+            {
+              "groupId": "OG001",
+              "value": "64.7"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Treatment difference",
+              "paramValue": "56.4",
+              "ciPct": "95",
+              "ciLower": "50.4",
+              "ciUpper": "61.7"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants Who Achieved Psoriasis Area and Severity Index (PASI) 90 Response at Week 16",
+          "timeFrame": "Week 16",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo to JNJ-77242113 200 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "JNJ-77242113 200 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "4.4"
+            },
+            {
+              "groupId": "OG001",
+              "value": "49.6"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Treatment difference",
+              "paramValue": "45.1",
+              "ciPct": "95",
+              "ciLower": "39.5",
+              "ciUpper": "50.4"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095115?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 10,
+          "quote": "tor-controlled trials (Trial PSO-1 [NCT06143878], Trial PSO-2 [NCT06220604], Trial PSO-3 [NCT06095115], and Trial PSO-4 [NCT06095102]) that included 2500 subjects (2428 adults and 72 pediatri",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PSO-3 (NCT06095115)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "iconic-total",
+      "nctId": "NCT06095102",
+      "protocolNumber": "77242113PSO3003",
+      "acronym": "ICONIC-TOTAL",
+      "labelName": "PSO-4",
+      "title": "A Phase 3 Multicenter, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Efficacy and Safety of JNJ-77242113 for the Treatment of Participants With Plaque Psoriasis Involving Special Areas",
+      "briefTitle": "A Study of JNJ-77242113 for the Treatment of Participants With Plaque Psoriasis Involving Special Areas (Scalp, Genital, and/or Palms of the Hands and the Soles of the Feet)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy)",
+            "quote": "Trial identifier appears within the Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Icotyde (icotrokinra) tablets for treatment of moderate- to-severe plaque psoriasis (PsO) in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-10-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-06-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-02-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 311,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "JNJ-77242113",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive JNJ-77242113 from Week 0 through Week 156."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo from Week 0 through Week 16 and thereafter will receive JNJ-77242113 from Week 16 through Week 156."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Who Achieved an Investigator's Global Assessment (IGA) Score of 0 or 1 and a Greater Than or Equal to (>=) 2-Grade Improvement From Baseline at Week 16"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Who Achieved a Scalp Specific (ss)-IGA Score of 0 or 1 at Week 16 Among Participants With a Baseline Ss-IGA Score >=3",
+        "Percentage of Participants Who Achieved Psoriasis Scalp Severity Index (PSSI) 90 at Week 16 Among Participants With a Baseline Ss-IGA Score >=3",
+        "Percentage of Participants Who Achieved Static Physician's Global Assessment of Genitalia (sPGA-G) Score of 0 or 1 at Week 16 Among Participants With a Baseline sPGA Score >=3",
+        "Percentage of Participants Who Achieved Physician's Global Assessment of Hands and Feet (Hf-PGA) Score of 0 or 1 at Week 16 Among Participants With a Baseline Hf-PGA Score >=3",
+        "Percentage of Participants Who Achieved an IGA Score of 0 at Week 16",
+        "Percentage of Participants Who Achieved Psoriasis Symptom and Signs Diary (PSSD) Symptom Score of 0 at Week 16 Among Participants With a Baseline PSSD Symptom Score >0",
+        "Percentage of Participants Who Achieved >=4-Point Improvement From Baseline in PSSD Itch Score at Week 16 Among Participants With a Baseline PSSD Itch Score >=4",
+        "Percentage of Participants Who Achieved Genital Psoriasis Sexual Frequency Questionnaire (GenPs-SFQ) Item 2 Score of 0 or 1 at Week 16 Among Participants With a Baseline sPGA-G Score >=3 and a Baseline GenPs-SFQ Item 2 Score >=2",
+        "Percentage of Participants Who Achieved >=4-Point Improvement From Baseline in Scalp Itch Numeric Rating Scale (NRS) Score at Week 16 Among Participants With a Baseline Ss-IGA Score >=3 and a Baseline Scalp Itch NRS Score >=4",
+        "Percentage of Participants Who Achieved >=4-Point Improvement From Baseline in Genital Psoriasis Symptoms Score (GPSS) Genital Itch NRS Score at Week 16 Among Participants With a Baseline sPGA-G Score >=3 and a Baseline GPSS Genital Itch NRS Score >=4",
+        "Percentage of Participants Who Achieved Psoriasis Area and Severity Index (PASI) 90 at Week 16",
+        "Percentage of Participants Who Achieved PASI 75 at Week 16",
+        "Change From Baseline in PASI Total Score at Week 16",
+        "Percent Change From Baseline in PASI Total Score at Week 16",
+        "Change From Baseline in Body Surface Area (BSA) at Week 16",
+        "Percent Change From Baseline in Modified Nail Psoriasis Severity Index (mNAPSI) Score at Week 16 Among Participants With a Baseline mNAPSI Score >0",
+        "Percentage of Participants Who Achieved Fingernail Physician's Global Assessment (fPGA) Score of 0 or 1 at Week 16 Among Participants With a Baseline f-PGA Score >=2",
+        "Percentage of Participants Who Achieved PSSD Symptoms Score of 0 at Week 8 Among Participants With a Baseline PSSD Symptom Score >0",
+        "Change From Baseline in PSSD Symptoms Score at Week 16",
+        "Percentage of Participants Achieving >=4-Point Improvement From Baseline in PSSD Itch Score at Week 4 Among Participants With a Baseline Itch Score >=4",
+        "Change From Baseline in PSSD Sign Score at Week 16",
+        "Percentage of Participants Who Achieved PSSD Sign Score of 0 at Week 16 Among Participants With a Baseline PSSD Sign Score >0",
+        "Percentage of Participants Who Achieved Dermatological Life Quality Index (DLQI) Score of 0 or 1 at Week 16 Among Participants With a Baseline DLQI Score >1",
+        "Percentage of Participants Who Achieved Children's Dermatological Life Quality Index (CDLQI) Score of 0 or 1 at Week 16 Among Adolescent Participants With a Baseline CDLQI Score >1",
+        "Change From Baseline in Domain Scores of the Patient Reported Outcomes Measurement Information System-29 (PROMIS-29) Score at Week 16",
+        "Change From Baseline in Domain Scores of the PROMIS-25 Pediatric Score at Week 16",
+        "Change From Baseline in Palmoplantar Quality of Life Instrument (ppQLI) Hands Score at Week 16 Among Participants With a Baseline Hf-PGA Score >=3",
+        "Change From Baseline in ppQLI Feet Score at Week 16 Among Participants With a Baseline Hf-PGA Score >=3",
+        "Change From Baseline in Genital Psoriasis Symptoms Score (GPSS) Total Score at Week 16 Among Participants With a Baseline sPGA-G Score >=3",
+        "Number of Participants With Adverse Events (AEs)",
+        "Number of Participants With Serious Adverse Events (SAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Who Achieved an Investigator's Global Assessment (IGA) Score of 0 or 1 and a Greater Than or Equal to (>=) 2-Grade Improvement From Baseline at Week 16",
+          "timeFrame": "Week 16",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Arm 1: Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "Arm 2: JNJ-77242113 200 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "5.8"
+            },
+            {
+              "groupId": "OG001",
+              "value": "56.7"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Treatment difference",
+              "paramValue": "51.1",
+              "ciPct": "95",
+              "ciLower": "42.1",
+              "ciUpper": "58.8"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06095102?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 10,
+          "quote": "O-1 [NCT06143878], Trial PSO-2 [NCT06220604], Trial PSO-3 [NCT06095115], and Trial PSO-4 [NCT06095102]) that included 2500 subjects (2428 adults and 72 pediatric subjects 12 years and older w",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PSO-4 (NCT06095102)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "77242113pso3002",
+      "nctId": "NCT06143878",
+      "protocolNumber": "77242113PSO3002",
+      "labelName": "PSO-1",
+      "title": "A Phase 3 Multicenter, Randomized, Double-blind, Placebo-controlled and Deucravacitinib Active Comparator-controlled Study to Evaluate the Efficacy and Safety of JNJ-77242113 for the Treatment of Participants With Moderate to Severe Plaque Psoriasis",
+      "briefTitle": "A Study of JNJ-77242113 for the Treatment of Participants With Moderate to Severe Plaque Psoriasis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy)",
+            "quote": "Trial identifier appears within the Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Icotyde (icotrokinra) tablets for treatment of moderate- to-severe plaque psoriasis (PsO) in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-09-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-06-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 774,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "JNJ-77242113",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive JNJ-77242113 from Week 0 through Week 156 and deucravacitinib matching placebo from Week 0 through Week 24."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive matching placebo for JNJ-77242113 from Week 0 through Week 16, matching placebo for deucravacitinib from Week 0 through Week 24 and JNJ-77242113 from Week 16 through Week 156."
+        },
+        {
+          "label": "Deucravacitinib",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive deucravacitinib from Week 0 through Week 24 and matching placebo for JNJ-77242113 from Week 0 through Week 24 and JNJ-77242113 from Week 24 through Week 156."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Who Achieved an Investigator's Global Assessment (IGA) Score of 0 or 1 and a Greater Than or Equal to (>=) 2-Grade Improvement From Baseline at Week 16",
+        "Percentage of Participants Who Achieved Psoriasis Area and Severity Index (PASI) 90 at Week 16"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Who Achieved IGA Score of 0 at Week 16",
+        "Percentage of Participants Who Achieved PASI 75 at Weeks 4 and 16",
+        "Percentage of Participants Who Achieved PASI 90 at Week 8",
+        "Percentage of Participants Who Achieved PASI 100 at Week 16",
+        "Percentage of Participants Who Achieved a Scalp Specific (ss)-IGA Score of 0 or 1 and >=2-Grade Improvement From Baseline at Week 16 Among Participants With a Baseline Ss-IGA Score >=2",
+        "Percentage of Participants Who Achieved Psoriasis Symptom and Signs Diary (PSSD) Symptom Score of 0 at Weeks 8 and 16 Among Participants With a Baseline PSSD Symptom Score >0",
+        "Percentage of Participants Who Achieved >=4-Point Improvement From Baseline in PSSD Itch Score at Weeks 4 and 16 Among Participants With a Baseline PSSD Itch Score >=4",
+        "Percentage of Participants Who Achieved an IGA Score of 0 or 1 and >=2-Grade Improvement From Baseline at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved an IGA Score of 0 at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved PASI 75 at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved PASI 90 at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved PASI 100 at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved PSSD Symptom Score of 0 at Week 16 Among Participants With a Baseline Symptom Score >0",
+        "Change From Baseline in Body Surface Area (BSA) at Week 16",
+        "Change From Baseline in PASI Total Score at Week 16",
+        "Percent Change From Baseline in PASI Total Score at Week 16",
+        "Percentage of Participants Who Achieved Static Physician's Global Assessment of Genitalia (sPGA-G) Score of 0 or 1 and a >=2-grade Improvement at Week 16 Among Participants With a Baseline sPGA-G Score >=2",
+        "Percentage of Participants Who Achieved Physician's Global Assessment of Hands and Feet (Hf-PGA) Score of 0 or 1 and a >=2-grade Improvement at Week 16 Among Participants With a Baseline Hf-PGA Score >=2",
+        "Percent Change From Baseline in Modified Nail Psoriasis Severity Index (mNAPSI) Score at Week 16 Among Participants With a Baseline mNAPSI Score >0",
+        "Percentage of Participants Who Achieved Fingernail Physician's Global Assessment (f-PGA) Score of 0 or 1 at Week 16 Among Participants With Baseline f-PGA Score >=2",
+        "Change From Baseline in PSSD Symptom Score at Week 16",
+        "Change From Baseline in PSSD Sign Score at Week 16",
+        "Percentage of Participants Who Achieved PSSD Sign Score of 0 at Week 16 Among Participants With a Baseline Sign Score >0",
+        "Percentage of Participants Who Achieved Genital Psoriasis Sexual Frequency Questionnaire (GenPs-SFQ) Item 2 Score of 0 or 1 at Week 16 Among Participants With a Baseline GenPS-SFQ Item 2 Score >=2 and With a Baseline sPGA-G Score >=3",
+        "Percentage of Participants Who Achieved Dermatological Life Quality Index (DLQI) Score of 0 or 1 at Week 16 Among Participants With a Baseline DLQI Score >1",
+        "Change From Baseline in Total DLQI Score at Week 16",
+        "Change From Baseline in Domain Scores of the Patient Reported Outcomes Measurement Information System-29 (PROMIS-29) Score at Week 16",
+        "Percentage of Participants Who Achieved DLQI Score of 0 or 1 at Weeks 16 and 24 Among Participants With a Baseline DLQI Score >1",
+        "Percentage of Participants Who Achieved PSSD Symptom Score of 0 at Week 24 Among Participants With Baseline Symptom Score >0",
+        "Percentage of Participants Who Achieved PASI 75 After Week 24, Among PASI 75 Nonresponders to Deucravacitinib at Week 24",
+        "Percentage of Participants Who Achieved PASI 90 After Week 24, Among PASI 90 Nonresponders to Deucravacitinib at Week 24",
+        "Percentage of Participants Who Achieved IGA Score of 0 or 1 After Week 24, Among Participants in the Deucravacitinib Group With IGA Score >=2 at Week 24",
+        "Number of Participants With Adverse Events (AEs)",
+        "Number of Participants With Serious Adverse Events (SAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Who Achieved an Investigator's Global Assessment (IGA) Score of 0 or 1 and a Greater Than or Equal to (>=) 2-Grade Improvement From Baseline at Week 16",
+          "timeFrame": "Week 16",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Arm 1: Placebo Followed by JNJ-77242113 200 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Arm 2: JNJ-77242113 200 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "10.9"
+            },
+            {
+              "groupId": "OG001",
+              "value": "68.5"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Treatment difference",
+              "paramValue": "57.6",
+              "ciPct": "95",
+              "ciLower": "49.9",
+              "ciUpper": "64.2"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants Who Achieved Psoriasis Area and Severity Index (PASI) 90 at Week 16",
+          "timeFrame": "Week 16",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Arm 1: Placebo Followed by JNJ-77242113 200 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Arm 2: JNJ-77242113 200 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "3.8"
+            },
+            {
+              "groupId": "OG001",
+              "value": "55.0"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Treatment difference",
+              "paramValue": "51.2",
+              "ciPct": "95",
+              "ciLower": "44.5",
+              "ciUpper": "57.3"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06143878",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06143878",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06143878",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06143878",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06143878",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06143878?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 10,
+          "quote": "andomized, double-blind, placebo and/or active comparator-controlled trials (Trial PSO-1 [NCT06143878], Trial PSO-2 [NCT06220604], Trial PSO-3 [NCT06095115], and Trial PSO-4 [NCT06095102]) th",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PSO-1 (NCT06143878)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "77242113pso3004",
+      "nctId": "NCT06220604",
+      "protocolNumber": "77242113PSO3004",
+      "labelName": "PSO-2",
+      "title": "A Phase 3 Multicenter, Randomized, Double-blind, Placebo-controlled and Deucravacitinib Active Comparator-controlled Study to Evaluate the Efficacy and Safety of JNJ-77242113 for the Treatment of Participants With Moderate to Severe Plaque Psoriasis",
+      "briefTitle": "A Study of JNJ-77242113 for the Treatment of Participants With Moderate to Severe Plaque Psoriasis (ICONIC-ADVANCE 2)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy)",
+            "quote": "Trial identifier appears within the Moderate-to-severe plaque psoriasis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Icotyde (icotrokinra) tablets for treatment of moderate- to-severe plaque psoriasis (PsO) in adults and pediatric patients 12 years of age and older who weigh at least 40 kg who are candidates for systemic therapy or phototherapy.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-03-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-11-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-09-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 731,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "JNJ-77242113",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive JNJ-77242113 from Week 0 through Week 156 and deucravacitinib matching placebo from Week 0 through Week 24."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive matching placebo for JNJ-77242113 from Week 0 through Week 16, matching placebo for deucravacitinib from Week 0 through Week 24 and JNJ-77242113 from Week 16 through Week 156."
+        },
+        {
+          "label": "Deucravacitinib",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive deucravacitinib from Week 0 through Week 24 and matching placebo for JNJ-77242113 from Week 0 through Week 24 and JNJ-77242113 from Week 24 through Week 156."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Who Achieved an Investigator's Global Assessment (IGA) Score of 0 or 1 and Greater Than or Equal to (>=) 2-Grade Improvement From Baseline at Week 16",
+        "Percentage of Participants Who Achieved Psoriasis Area and Severity Index (PASI) 90 Response at Week 16"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Who Achieved IGA Score of 0 at Week 16",
+        "Percentage of Participants Who Achieved PASI 75 Response at Weeks 4 and 16",
+        "Percentage of Participants Who Achieved PASI 90 Response at Week 8",
+        "Percentage of Participants Who Achieved PASI 100 Response at Week 16",
+        "Percentage of Participants Who Achieved Scalp Specific (ss)-IGA Score of 0 or 1 and >=2-Grade Improvement From Baseline at Week 16 Among Participants With a Baseline Ss-IGA Score >=2",
+        "Percentage of Participants Who Achieved Psoriasis Symptom and Signs Diary (PSSD) Symptom Score of 0 at Weeks 8 and 16 Among Participants With a Baseline PSSD Symptom Score >0",
+        "Percentage of Participants Who Achieved >=4-Point Improvement From Baseline in PSSD Itch Score at Weeks 4 and 16 Among Participants With a Baseline PSSD Itch Score >=4",
+        "Percentage of Participants Who Achieved an IGA Score of 0 or 1 and >=2-Grade Improvement From Baseline at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved an IGA Score of 0 at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved PASI 75 Response at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved PASI 90 Response at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved PASI 100 Response at Weeks 16 and 24",
+        "Percentage of Participants Who Achieved PSSD Symptom Score of 0 at Week 16 Among Participants With a Baseline PSSD Symptom Score >0",
+        "Change From Baseline in Body Surface Area (BSA) at Week 16",
+        "Change From Baseline in PASI Total Score at Week 16",
+        "Percent Change From Baseline in PASI Total Score at Week 16",
+        "Percentage of Participants Who Achieved Static Physician's Global Assessment of Genitalia (sPGA-G) Score of 0 or 1 and a >=2-Grade Improvement From Baseline at Week 16 Among Participants With a Baseline sPGA-G Score >=2",
+        "Percentage of Participants Who Achieved Physician's Global Assessment of Hands and Feet (Hf-PGA) Score of 0 or 1 and a >=2-Grade Improvement From Baseline at Week 16 Among Participants With a Baseline Hf-PGA Score >=2",
+        "Percent Change From Baseline in Modified Nail Psoriasis Severity Index (mNAPSI) Score at Week 16 Among Participants With a Baseline mNAPSI Score >0",
+        "Percentage of Participants Who Achieved Fingernail Physician's Global Assessment (f-PGA) Score of 0 or 1 at Week 16 Among Participants With a Baseline f-PGA Score >=2",
+        "Change From Baseline in PSSD Symptom Score at Week 16",
+        "Change From Baseline in PSSD Sign Score at Week 16",
+        "Percentage of Participants Who Achieved PSSD Sign Score of 0 at Week 16 Among Participants With a Baseline Sign Score >0",
+        "Percentage of Participants Who Achieved Genital Psoriasis Sexual Frequency Questionnaire (GenPs-SFQ) Item 2 Score of 0 or 1 at Week 16 Among Participants With a Baseline GenPS-SFQ Item 2 Score >=2 and With a Baseline sPGA-G Score >=3",
+        "Percentage of Participants Who Achieved Dermatological Life Quality Index (DLQI) Score of 0 or 1 at Week 16 Among Participants With a Baseline DLQI Score >1",
+        "Change From Baseline in Total DLQI Score at Week 16",
+        "Change From Baseline in Domain Scores of the Patient Reported Outcomes Measurement Information System-29 (PROMIS-29) Score at Week 16",
+        "Percentage of Participants Who Achieved DLQI Score of 0 or 1 at Weeks 16 and 24 Among Participants With a Baseline DLQI Score >1",
+        "Percentage of Participants Who Achieved PSSD Symptoms Score of 0 at Week 24 Among Participants With a Baseline PSSD Symptom Score >0",
+        "Percentage of Participants Who Achieved PASI 75 After Week 24, Among PASI 75 Nonresponders to Deucravacitinib at Week 24",
+        "Percentage of Participants Achieving PASI 90 After Week 24, Among PASI 90 Nonresponders to Deucravacitinib at Week 24",
+        "Percentage of Participants Achieving IGA Score of 0 or 1 After Week 24, Among Participants in the Deucravacitinib Group With IGA Score >=2 at Week 24",
+        "Number of Participants With Treatment-emergent Adverse Events (TEAEs)",
+        "Number of Participants With Treatment-emergent Serious Adverse Events (TESAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Who Achieved an Investigator's Global Assessment (IGA) Score of 0 or 1 and Greater Than or Equal to (>=) 2-Grade Improvement From Baseline at Week 16",
+          "timeFrame": "Week 16",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Arm 1: Placebo Followed by JNJ-77242113 200 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Arm 2: JNJ-77242113 200 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "8.6"
+            },
+            {
+              "groupId": "OG001",
+              "value": "70.9"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Treatment difference",
+              "paramValue": "62.6",
+              "ciPct": "95",
+              "ciLower": "53.3",
+              "ciUpper": "69.5"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants Who Achieved Psoriasis Area and Severity Index (PASI) 90 Response at Week 16",
+          "timeFrame": "Week 16",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Arm 1: Placebo Followed by JNJ-77242113 200 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Arm 2: JNJ-77242113 200 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "1.2"
+            },
+            {
+              "groupId": "OG001",
+              "value": "57.5"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Treatment difference",
+              "paramValue": "56.5",
+              "ciPct": "95",
+              "ciLower": "49.0",
+              "ciUpper": "62.4"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06220604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06220604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06220604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06220604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06220604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06220604?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 10,
+          "quote": "acebo and/or active comparator-controlled trials (Trial PSO-1 [NCT06143878], Trial PSO-2 [NCT06220604], Trial PSO-3 [NCT06095115], and Trial PSO-4 [NCT06095102]) that included 2500 subjects (",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "PSO-2 (NCT06220604)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "iconic-psa-2",
+      "nctId": "NCT06807424",
+      "protocolNumber": "77242113PSA3002",
+      "acronym": "ICONIC-PsA 2",
+      "title": "A Phase 3, Multicenter, Randomized, Double-blind, Placebo-controlled Study Evaluating the Efficacy and Safety of JNJ-77242113 for the Treatment of Biologic-experienced and Biologic-naive Participants With Active Psoriatic Arthritis",
+      "briefTitle": "A Study to Evaluate the Efficacy and Safety of Icotrokinra (JNJ-77242113) in Biologic-experienced and Biologic-naive Participants With Active Psoriatic Arthritis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-01-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-02-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-10-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 750,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group I: Icotrokinra Dose 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive icotrokinra Dose 1. Participants who have not discontinued will be eligible to enter a long term extension (LTE) and will continue to receive icotrokinra Dose 1."
+        },
+        {
+          "label": "Group II: Icotrokinra Dose 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive icotrokinra Dose 2. Participants who have not discontinued will be eligible to enter a LTE and will continue to receive icotrokinra Dose 2."
+        },
+        {
+          "label": "Group III: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo matched to icotrokinra and will cross over to receive icotrokinra Dose 1 or Dose 2 at Week 16. Participants who have not discontinued will be eligible to enter a LTE and will continue to receive icotrokinra Dose 1 or Dose 2."
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of Participants who Achieved an American College of Rheumatology (ACR) 20 Response at Week 16"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of Participants Who Achieved Psoriatic Area and Severity Index (PASI) 75 Response at Week 16 Among Participants with Baseline Body Surface Area (BSA) Greater Than Equal to (>=) 3 Percent (%) and With Baseline IGA Score of >=2",
+        "Proportion of Participants Who Achieved PASI 90 Response at Week 16 Among Participants with Baseline BSA >=3% and With Baseline IGA Score of >=2",
+        "Proportion of Participants Who Achieved PASI 100 Response at Week 16 Among Participants with Baseline BSA >=3% and With Baseline IGA Score of >=2",
+        "Proportion of Participants with an Investigator Global Assessment (IGA) Psoriasis Score of 0 or 1 And >=2 Grade Improvement From Baseline at Week 16 Among Participants with Baseline BSA >=3% and With Baseline IGA Score of >=2",
+        "Proportion of Participants who Achieved an ACR 50 Response at Week 16",
+        "Proportion of Participants who Achieved an ACR 70 Response at Week 16",
+        "Change From Baseline in Health Assessment Questionnaire-Disability Index (HAQ-DI) Score At Week 16",
+        "Changes From Baseline in 36 Item Short Form Survey (SF-36) Physical Component Summary (PCS) Score at Week 16",
+        "Proportion of Participants With Resolution of Enthesitis at Week 16 Among Those With Enthesitis at Baseline",
+        "Change From Baseline in Enthesitis Score at Week 16 in Participants With Enthesitis at Baseline",
+        "Proportion of Participants With Resolution of Dactylitis at Week 16 Among Those With Dactylitis at Baseline",
+        "Change From Baseline in Dactylitis Score at Week 16 in Participants With Dactylitis at Baseline",
+        "Proportion of Participants who Achieved Minimal Disease Activity (MDA) at Week 16",
+        "Change From Baseline in Functional Assessment of Chronic Illness Therapy (FACIT)-Fatigue Score at Week 16"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807424",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807424",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807424",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807424",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807424",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "iconic-psa-1",
+      "nctId": "NCT06878404",
+      "protocolNumber": "77242113PSA3001",
+      "acronym": "ICONIC-PsA 1",
+      "title": "A Phase 3, Multicenter, Randomized, Double-blind, Placebo-controlled Study Evaluating the Efficacy and Safety of JNJ-77242113 for the Treatment of Biologic-naïve Participants With Active Psoriatic Arthritis",
+      "briefTitle": "A Study to Evaluate the Efficacy and Safety of JNJ-77242113 (Icotrokinra) in Biologic-naïve Participants With Active Psoriatic Arthritis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-02-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-05-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-02-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 552,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group I: Icotrokinra Dose 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive icotrokinra dose 1. Participants who continue into a long term extension (LTE) will continue to receive icotrokinra dose 1."
+        },
+        {
+          "label": "Group II: Icotrokinra Dose 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive icotrokinra dose 2. Participants who continue into a LTE will continue to receive icotrokinra dose 2."
+        },
+        {
+          "label": "Group III: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive placebo matched to icotrokinra and will cross over to receive icotrokinra dose 1 or dose 2. Participants who continue into the LTE will continue to receive icotrokinra dose 1 or dose 2."
+        },
+        {
+          "label": "Group IV: Active Reference Comparator",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive active reference drug. Participants who continue into a LTE will cross-over to receive icotrokinra dose 1 or dose 2."
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of Participants who Achieve an American College of Rheumatology (ACR) ACR 20 Response at Week 16"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of Participants Who Achieve Psoriatic Area and Severity Index (PASI) 75 Response at Week 16 Among Participants with Baseline Body Surface Area (BSA) Greater Than Equal to (>=) 3 Percent (%) and an IGA Score of >=2 at Baseline",
+        "Proportion of Participants Who Achieve PASI 90 Response at Week 16 Among Participants with Baseline BSA >=3% and an IGA Score of >=2 at Baseline",
+        "Proportion of Participants Who Achieve PASI 100 Response at Week 16 Among Participants with Baseline BSA >=3% and an IGA Score of >=2 at Baseline",
+        "Proportion of Participants with an Investigator Global Assessment (IGA) Psoriasis Score of 0 or 1 And >=2 Grade Improvement From Baseline at Week 16 Among Participants with Baseline BSA >=3% and an IGA Score of >=2 at Baseline",
+        "Proportion of Participants who Achieve an ACR 50 Response at Week 16",
+        "Proportion of Participants who Achieve an ACR 70 Response at Week 16",
+        "Change From Baseline in Health Assessment Questionnaire-Disability Index (HAQ-DI) Score At Week 16",
+        "Changes From Baseline in 36-Item Short Form Survey (SF-36) Physical Component Summary (PCS) Score at Week 16",
+        "Proportion of Participants With Resolution of Enthesitis at Week 16 Among Those With Enthesitis at Baseline",
+        "Change From Baseline in Enthesitis Score (LEI) at Week 16 in Participants With Enthesitis at Baseline",
+        "Proportion of Participants With Resolution of Dactylitis at Week 16 Among Those With Dactylitis at Baseline",
+        "Change From Baseline in Dactylitis Score at Week 16 in Participants With Dactylitis at Baseline",
+        "Proportion of Participants who Achieve Minimal Disease Activity (MDA) at Week 16",
+        "Change From Baseline in Functional Assessment of Chronic Illness Therapy (FACIT)-Fatigue Score at Week 16"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06878404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06878404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06878404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06878404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06878404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "iconic-uc",
+      "nctId": "NCT07196748",
+      "protocolNumber": "77242113UCO3001",
+      "acronym": "ICONIC-UC",
+      "title": "A Phase 3 Randomized, Double-blind, Placebo-Controlled, Parallel Group, Multicenter Protocol in Adults With an Open Label Study in Adolescents to Evaluate the Efficacy and Safety of Induction and Maintenance Therapy With Icotrokinra in Participants With Moderately to Severely Active Ulcerative Colitis",
+      "briefTitle": "A Protocol of Icotrokinra Therapy in Adult and Adolescent Participants With Moderately to Severely Active Ulcerative Colitis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-10-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-01-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-01-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 882,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Double-blind (DB) Induction Study: Icotrokinra",
+          "type": "EXPERIMENTAL",
+          "description": "Adult participants will be randomized to receive icotrokinra daily, orally starting at induction Week 0 (Week I-0). At Week I-12, all participants will be evaluated for clinical response and will enter the Maintenance study."
+        },
+        {
+          "label": "DB Induction Study: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Adult participants will be randomized to receive placebo daily, orally starting at Week I-0. At Week I-12, all participants will be evaluated for clinical response and will enter the Maintenance study."
+        },
+        {
+          "label": "DB Maintenance Study: Icotrokinra",
+          "type": "EXPERIMENTAL",
+          "description": "Adult participants who are in clinical response to icotrokinra at the end of the Induction study will enter the Maintenance study and be randomized to receive icotrokinra daily, orally starting at maintenance Week 0 (Week M-0) through Week M-40. Participants who are clinical nonresponders to icotrokinra or placebo will also enter the Maintenance study directly and receive icotrokinra daily. After completion of the Maintenance study through Week M-40, eligible participants can participate in a long-term extension (LTE)."
+        },
+        {
+          "label": "DB Maintenance Study: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Adult participants who are in clinical response to icotrokinra at the end of the Induction study will enter the Maintenance study and be randomized to receive placebo daily, orally starting at Week M-0 through Week M-40. Participants who are clinical responders to placebo will also enter the Maintenance study directly and continue to receive placebo daily. After completion of the Maintenance study through Week M-40, eligible participants can participate in a LTE."
+        },
+        {
+          "label": "Open-label (OL) Induction Phase: Icotrokinra",
+          "type": "EXPERIMENTAL",
+          "description": "Adolescent participants will enter the Induction phase and receive icotrokinra daily, orally. At Week I-12 all participants will be evaluated for clinical response and will enter the Maintenance phase."
+        },
+        {
+          "label": "OL Maintenance Phase: Icotrokinra",
+          "type": "EXPERIMENTAL",
+          "description": "Adolescent participants who are in clinical response to icotrokinra will enter the Maintenance phase at Week M-0 and continue to receive icotrokinra daily, orally up to Week M-40. Participants who are nonresponders to icotrokinra will also enter the Maintenance phase to receive icotrokinra daily. After completion of the Maintenance phase through Week M-40, eligible participants can participate in a LTE."
+        }
+      ],
+      "primaryEndpoints": [
+        "Double-blind (DB) Induction Study: Percentage of Adult Participants in Clinical Remission at Week I-12",
+        "DB Maintenance Study: Percentage of Adult Participants in Clinical Remission at Week M-40",
+        "Open-Label (OL) Maintenance Phase: Percentage of Adolescent Participants in Clinical Remission at Week M-40"
+      ],
+      "secondaryEndpoints": [
+        "DB Induction Study: Percentage of Adult Participants in Clinical Response at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants with Endoscopic Improvement at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants in Symptomatic Remission at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants with Inflammatory Bowel Disease Questionnaire (IBDQ) Remission at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants with Histologic-Endoscopic Mucosal Improvement (HEMI) at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants with Fatigue Response at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants in Symptomatic Remission at Week I-4",
+        "DB Induction Study: Percentage of Adult Participants in Endoscopic Remission at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants with No Bowel Urgency at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants with No Abdominal Pain at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants with No Bowel Incontinence at Week I-12",
+        "DB Induction Study: Percentage of Adult Participants with Adverse Events (AEs) and Serious Adverse Events (SAEs)",
+        "DB Maintenance Study: Percentage of Adult Participants with Endoscopic Improvement at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants in Symptomatic Remission at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with 90-day Corticosteroid-free Clinical Remission at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with HEMI at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with IBDQ Remission at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants in Endoscopic Remission at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants in Clinical Remission at Week M-40 Among the Participants who had Achieved Clinical Remission at Maintenance Baseline",
+        "DB Maintenance Study: Percentage of Adult Participants in Histologic-Endoscopic Mucosal Remission at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with Fatigue Response at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with Disease Clearance at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with No Bowel Urgency at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with No Abdominal Pain at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with No Bowel Incontinence at Week M-40",
+        "DB Maintenance Study: Percentage of Adult Participants with AEs and SAEs",
+        "OL Induction Phase: Percentage of Adolescent Participants in Clinical Response at Week I-12",
+        "OL Induction Phase: Percentage of Adolescent Participants in Clinical Remission at Week I-12",
+        "OL Induction Phase: Percentage of Adolescent Participants with HEMI at Week I-12",
+        "OL Induction Phase: Percentage of Adolescent Participants with Endoscopic Improvement at Week I-12",
+        "OL Induction Phase: Percentage of Adolescent Participants in Symptomatic Remission at Week I-12",
+        "OL Induction Phase: Percentage of Adolescent Participants in Endoscopic Remission at Week I-12",
+        "OL Induction Phase: Percentage of Adolescent Participants in Pediatric Ulcerative Colitis Activity Index (PUCAI) Remission at Week I-12",
+        "OL Induction Phase: Percentage of Adolescent Participants with AEs and SAEs",
+        "OL Maintenance Study: Percentage of Adolescent Participants with Endoscopic Improvement at Week M-40",
+        "OL Maintenance Phase: Percentage of Adolescent Participants in Symptomatic Remission at Week M-40",
+        "OL Maintenance Phase: Percentage of Adolescent Participants in 90-day Corticosteroid-free Clinical Remission at Week M-40",
+        "OL Maintenance Phase: Percentage of Adolescent Participants with HEMI at Week M-40",
+        "OL Maintenance Phase: Percentage of Adolescent Participants with Histologic-Endoscopic Mucosal Remission at Week M-40",
+        "OL Maintenance Phase: Percentage of Adolescent Participants with Endoscopic Remission at Week M-40",
+        "OL Maintenance Phase: Percentage of Adolescent Participants in Clinical Remission at Week M-40 Among the Participants who had Achieved Clinical Remission at Maintenance Baseline",
+        "OL Maintenance Phase: Percentage of Adolescent Participants in Clinical Response at Week M-40 Among the Participants who had Achieved Clinical Response at Maintenance Baseline",
+        "OL Maintenance Phase: Percentage of Adolescent Participants in PUCAI Remission at Week-40",
+        "OL Maintenance Phase: Percentage of Adolescent Participants with AEs and SAEs"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196748",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196748",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196748",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196748",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196748",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "iconic-cd",
+      "nctId": "NCT07196722",
+      "protocolNumber": "77242113CRD3001",
+      "acronym": "ICONIC-CD",
+      "title": "A Phase 2b/3 Randomized, Double-blind, Placebo-Controlled, Parallel Group, Multicenter Protocol to Evaluate the Efficacy and Safety of Icotrokinra in Participants With Moderately to Severely Active Crohn's Disease",
+      "briefTitle": "A Study of Icotrokinra in Participants With Moderately to Severely Active Crohn's Disease",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-10-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-09-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-10-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1092,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Induction Study 1: Icotrokinra Dose 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Icotrokinra dose 1 in Induction Study 1 up to Week 12. Subsequent treatment will be determined by the participant's response status at Week 12."
+        },
+        {
+          "label": "Induction Study 1: Icotrokinra Dose 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Icotrokinra dose 2 in Induction Study 1 up to Week 12. Subsequent treatment will be determined by the participant's response status at Week 12."
+        },
+        {
+          "label": "Induction Study 1: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive matching placebo in Induction Study 1 up to Week 12. Subsequent treatment will be determined by the participant's response status at Week 12."
+        },
+        {
+          "label": "Induction Study 2: Icotrokinra",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Icotrokinra at the dose regimen determined in Induction Study 1 up to Week 12. Subsequent study treatment will be determined by the participant's response status at Week 12."
+        },
+        {
+          "label": "Induction Study 2: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive matching placebo for up to Week 12. Subsequent study treatment will be determined by the participant's response status at Week 12."
+        },
+        {
+          "label": "Maintenance Study: Icotrokinra Dose 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were receiving icotrokinra in either induction studies 1 or 2 and were in response at Week 12 of the induction study will be randomized to receive icotrokinra maintenance dose 1. Participants receiving Icotrokinra Dose 1 and meeting criteria for loss of response during the Maintenance Study will be eligibile for a single blinded dose adjustment to Icotrokinra Dose 2. After completion of the Maintenance Study through Week 40, eligible participants can participate in long-term extension (LTE)."
+        },
+        {
+          "label": "Maintenance Study: Icotrokinra Dose 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were receiving icotrokinra in either induction studies 1 or 2 and were in response at Week 12 of the induction study will be randomized to receive icotrokinra maintenance dose 2. Participants who were non-responders at Week 12 of the induction studies will also receive icotrokinra maintenance dose 2 but will not be randomized. After completion of the Maintenance Study through Week 40, eligible participants can participate in LTE."
+        },
+        {
+          "label": "Maintenance Study: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants who were receiving icotrokinra in either induction studies 1 or 2 and were in response at Week 12 will be randomized to receive placebo. Participants receiving placebo in induction studies 1 or 2 and in response at Week 12 of the induction study will continue to receive placebo during maintenance on non-randomized basis. Placebo non-responders from induction study will receive icotrokinra maintenance dose 2 on a non-randomized basis and will be assessed for response at Week 12.\n\nParticipants receiving placebo and meeting criteria for loss of response during the Maintenance Study will be eligible for a single blinded dose adjustment to icotrokinra dose 2. After completion of the Maintenance Study through Week 40, eligible participants can participate in LTE."
+        }
+      ],
+      "primaryEndpoints": [
+        "Induction Study 1: Number of Participants with Clinical Response at Week 12",
+        "Induction Study 2: Number of Participants with Clinical Remission at Week 12 (Co-Primary Endpoint)",
+        "Induction Study 2: Number of Participants with Endoscopic Response at Week 12 (Co-Primary Endpoint)",
+        "Maintenance Study: Number of Participants with Clinical Remission at Week 40 (Co-Primary Endpoint)",
+        "Maintenance Study: Number of Participants with Endoscopic Response at Week 40 (Co-Primary Endpoint)"
+      ],
+      "secondaryEndpoints": [
+        "Induction Study 1: Number of Participants with Clinical Remission at Week 12",
+        "Induction Study 1: Number of Participants with Endoscopic Response at Week 12",
+        "Induction Study 1: Number of Participants with Adverse Events (AEs) and Serious Adverse Events (SAEs)",
+        "Induction Study 2: Number of Participants with Patient Reported Outcomes (PRO)-2 Remission at Week 12",
+        "Induction Study 2: Number of Participants with Clinical Response at Week 12",
+        "Induction Study 2: Number of Participants Reporting Both Clinical Remission and Endoscopic Response at Week 12",
+        "Induction Study 2: Number of Participants with Clinical Response at Week 4",
+        "Induction Study 2: Number of Participants with Endoscopic Remission at Week 12",
+        "Induction Study 2: Number of Participants with Deep Remission at Week 12",
+        "Induction Study 2: Number of Participants with Inflammatory Bowel Disease Questionnaire (IBDQ) Remission at Week 12",
+        "Induction Study 2: Number of Participants with Fatigue Response at Week 12",
+        "Induction Study 2: Number of Participants with Clinical Remission at Week 4",
+        "Induction Study 2: Number of Participants Reporting Both Histologic Remission and Endoscopic Remission at Week 12",
+        "Induction Study 2: Number of Participants with AEs and SAEs",
+        "Maintenance Study: Number of Participants with PRO-2 remission at Week 40",
+        "Maintenance Study: Number of Participants with Endoscopic Remission at Week 40",
+        "Maintenance Study: Number of Participants with 90-Day Corticosteroid-Free Clinical Remission at Week 40",
+        "Maintenance Study: Number of Participants with Maintenance of Clinical Remission at Week 40",
+        "Maintenance Study: Number of Participants Reporting Both Clinical Remission and Endoscopic Response at Week 40",
+        "Maintenance Study: Number of Participants with Deep Remission at Week 40",
+        "Maintenance Study: Number of Participants Reporting Both Histologic Remission and Endoscopic Remission at Week 40",
+        "Maintenance Study: Number of Participants with IBDQ Remission at Week 40",
+        "Maintenance Study: Number of Participants with Fatigue Response at Week 40",
+        "Maintenance Study : Number of Participants with AEs and SAEs"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196722",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196722",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196722",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196722",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07196722",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-03-17",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220149%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220149",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220149%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220149Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:29.378Z"
+}

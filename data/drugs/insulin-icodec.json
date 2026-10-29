@@ -1,0 +1,4043 @@
+{
+  "slug": "insulin-icodec",
+  "brandName": "Awiqli flextouch",
+  "inn": "insulin icodec",
+  "modality": "Biologic (BLA)",
+  "sponsor": "NOVO NORDISK INC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+      "slug": "as-an-adjunct-to-diet-and-exercise-to-improve-glycemic",
+      "approvalDate": {
+        "value": "2026-03-26",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-2",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761326Orig2s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-2)",
+        "quote": "Named in the ORIG-2 approval letter; first listed in the label on or before ORIG-2, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-2",
+          "date": {
+            "value": "2026-03-26",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Awiqli is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761326Orig2s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-2)",
+            "quote": "Awiqli is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761326",
+      "applicationType": "BLA",
+      "sponsor": "NOVO NORDISK INC",
+      "originalApprovalDate": {
+        "value": "2026-03-26",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "nn1436-4057",
+      "nctId": "NCT02148861",
+      "protocolNumber": "NN1436-4057",
+      "title": "A Multiple Dose Trial Investigating the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of Subcutaneously Administered NNC0148-0287 (Insulin 287) in Subjects With Type 2 Diabetes",
+      "briefTitle": "A Trial Investigating the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of Subcutaneously Administered NNC0148-0287 (Insulin 287) in Subjects With Type 2 Diabetes",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2014-05-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-06-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2015-06-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 49,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin 287 + placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects will receive one of two treatment combinations: either insulin 287 + placebo or insulin degludec + placebo. Dose escalation design (4 dose levels)."
+        },
+        {
+          "label": "Insulin degludec + placebo",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Subjects will receive one of two treatment combinations: either insulin 287 + placebo or insulin degludec + placebo. Dose escalation design (4 dose levels)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of treatment emergent adverse events"
+      ],
+      "secondaryEndpoints": [
+        "Area under the steady-state serum insulin 287 concentration-time curve",
+        "area under the glucose infusion rate - time curve at steady-state"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02148861",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02148861",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02148861",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02148861",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02148861",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4314",
+      "nctId": "NCT02964104",
+      "protocolNumber": "NN1436-4314",
+      "title": "A Multiple Dose Trial Investigating the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of NNC0148-0287 C (Insulin 287) for Subcutaneous Administration in Subjects With Type 2 Diabetes",
+      "briefTitle": "A Trial Investigating the Safety, Tolerability, Pharmacokinetics (the Exposure of the Trial Drug in the Body) and Pharmacodynamics (the Effect of the Investigated Drug on the Body) of Insulin 287 in Subjects With Type 2 Diabetes",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-11-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-12-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2017-12-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 50,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin 287 + placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Each dose group will consist of 16 subjects randomised for once-weekly s.c. (subcutaneous, under the skin) administration of insulin 287 and once daily s.c. placebo (n=12) or once-weekly s.c. placebo and once daily s.c. insulin degludec (n=4)"
+        },
+        {
+          "label": "Insulin degludec + placebo",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Each dose group will consist of 16 subjects randomised for once-weekly s.c. (subcutaneous, under the skin) administration of insulin 287 and once daily s.c. placebo (n=12) or once-weekly s.c. placebo and once daily s.c. insulin degludec (n=4)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of treatment emergent adverse events (TEAE)"
+      ],
+      "secondaryEndpoints": [
+        "AUCI287,τ,SS, area under the steady-state serum insulin 287 concentration-time curve",
+        "AUCGIR,0-24h,SS, area under the glucose infusion rate-time curve at steady state"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02964104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02964104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02964104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02964104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02964104",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4226",
+      "nctId": "NCT03723785",
+      "protocolNumber": "NN1436-4226",
+      "title": "Investigation of Pharmacokinetics and Safety Profile of a Single Dose NNC0148-0287 C (Insulin 287) in Subjects With Various Degrees of Renal Impairment",
+      "briefTitle": "A Research Study of How a New Medicine NNC0148-0287 C (Insulin 287) Works in the Body of People With Kidney Problems",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-11-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-09-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-09-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 58,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Participants with normal renal function",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with normal renal function (glomerular filtration rate \\[GFR\\] of greater than or equal to 90 ml/min) will receive single dose of insulin 287 on Day 1."
+        },
+        {
+          "label": "Participants with mildly decreased renal function",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with mildly decreased renal function (GFR of 60 to less than 90 ml/min) will receive single dose of insulin 287 on Day 1."
+        },
+        {
+          "label": "Participants with moderately decreased renal function",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with moderately decreased renal function (GFR of 30 to less than 60 ml/min) will receive single dose of insulin 287 on Day 1."
+        },
+        {
+          "label": "Participants with severely decreased renal function",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with severely decreased renal function (GFR of less than 30 not requiring dialysis) will receive single dose of insulin 287 on Day 1."
+        },
+        {
+          "label": "Participants with end-stage renal disease",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with end-stage renal disease requiring haemodialysis will receive single dose of insulin 287 on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "AUCI287,0-840h,SD: Area under the serum insulin 287 concentration-time curve after a single dose"
+      ],
+      "secondaryEndpoints": [
+        "Cmax,I287,SD: Maximum observed serum insulin 287 concentration after a single dose",
+        "tmax,I287,SD: Time to maximum observed serum insulin 287 concentration after a single dose",
+        "Number of adverse events",
+        "Change in anti-insulin 287 antibody level",
+        "Change in anti-insulin 287 antibody titres",
+        "Positive cross-reactive anti-human insulin antibodies"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723785",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4225",
+      "nctId": "NCT03723772",
+      "protocolNumber": "NN1436-4225",
+      "title": "A Trial Investigating the Pharmacokinetics and Pharmacodynamics of NNC0148-0287 C (Insulin 287) at Steady State Conditions in Subjects With Type 1 Diabetes",
+      "briefTitle": "A Research Study of How Different Doses of a New Medicine NNC0148-0287 C (Insulin 287) Work on the Blood Sugar in People With Type 1 Diabetes When it is Taken Once a Week",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-11-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-06-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-06-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 66,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin 287 followed by insulin glargine U100",
+          "type": "EXPERIMENTAL",
+          "description": "Run-in period (2 days to 4 weeks): The basal insulin glargine dose for each subject will be established and optimised.\n\nAfter run-in, participants will receive insulin 287 once a week (OW) for 8 weeks and subsequent 4 weeks of terminal pharmacokinetic sampling where subjects are treated with once daily (OD) insulin glargine.\n\nAfter insulin 287 treatment, participants will receive insulin glargine U100 OD for 2 weeks."
+        },
+        {
+          "label": "Insulin glargine U100 followed by insulin 287",
+          "type": "EXPERIMENTAL",
+          "description": "Run-in period (2 days to 4 weeks): The basal insulin glargine dose for each subject will be established and optimised.\n\nAfter run-in, participants will receive insulin glargine U100 OD for 2 weeks followed by 1-14 days (at least 1 day is mandatory) of continued insulin glargine treatment.\n\nAfter insulin glargine treatment, participants will receive insulin 287 once a week (OW) for 8 weeks and subsequent 4 weeks of terminal pharmacokinetic sampling."
+        }
+      ],
+      "primaryEndpoints": [
+        "AUCI287,τ,SS - Area under the serum insulin 287 concentration-time curve during one dosing interval at steady state"
+      ],
+      "secondaryEndpoints": [
+        "AUCGIR,16-52h,SS (for insulin 287) - Area under the glucose infusion rate-time curve at steady state",
+        "AUCGIR,138-168h,SS (for insulin 287) - Area under the glucose infusion rate-time curve at steady state",
+        "GIRmax,16-52h, SS (for insulin 287) - Maximum observed glucose infusion rate at steady state",
+        "GIRmax,138-168h, SS (for insulin 287) - Maximum observed glucose infusion rate at steady state",
+        "AUCGIR,0-24h,SS (for insulin glargine) - Area under the glucose infusion rate-time curve at steady state",
+        "GIRmax,0-24h, SS (for insulin glargine) - Maximum observed glucose infusion rate at steady state",
+        "AUCI287,0-168h,FD (from insulin 287) - Area under the serum insulin 287 concentration-time curve after the first dose",
+        "Cmax,I287,FD (for insulin 287) - Maximum observed serum insulin 287 concentration after the first dose",
+        "tmax,I287,FD (for insulin 287) - Time to maximum observed serum insulin 287 concentration after the first dose",
+        "Cmax,I287,SS (for insulin 287) - Maximum observed serum insulin 287 concentration after the last dose",
+        "tmax,I287,SS (for insulin 287) - Time to maximum observed serum insulin 287 concentration after the last dose",
+        "t½,I287,SS (for insulin 287) - Terminal half-life for insulin 287 at steady state",
+        "CI287,trough (for insulin 287) - Serum insulin 287 trough concentration",
+        "AUCIGlar,τ,SS (for insulin glargine) - Area under the serum insulin glargine concentration-time curve during one dosing interval at steady state",
+        "Cmax,IGlar,SS (for insulin glargine) - Maximum observed serum insulin glargine concentration at steady state",
+        "tmax,IGlar,SS (for insulin glargine) - Time to maximum observed serum insulin glargine concentration at steady state",
+        "CIGlar,trough (for insulin glargine) - Serum insulin glargine trough concentration",
+        "Number of adverse events (AEs)",
+        "Number of hypoglycaemic episodes",
+        "Change in anti-insulin 287 antibody level",
+        "Change in anti-insulin 287 antibody titres",
+        "Positive cross-reactive anti-human insulin antibodies"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723772",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723772",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723772",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723772",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03723772",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4383",
+      "nctId": "NCT03751657",
+      "protocolNumber": "NN1436-4383",
+      "title": "An Investigational Trial Comparing the Efficacy and Safety of Once Weekly NNC0148-0287 C (Insulin 287) Versus Once Daily Insulin Glargine, Both in Combination With Metformin, With or Without DPP-4 Inhibitors, in Insulin naïve Subjects With Type 2 Diabetes Mellitus",
+      "briefTitle": "A Research Study to Compare Insulin 287 Once a Week to Insulin Glargine (100 Units/mL) Once a Day in People With Type 2 Diabetes.",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-11-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-01-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 247,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin 287",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive once weekly insulin 287 and once daily placebo in combination with metformin with or without dipeptidyl peptidase-4 inhibitors (DPP4i) during 26 weeks of treatment period."
+        },
+        {
+          "label": "Insulin glargine",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive once daily insulin glargine and once weekly placebo in combination with metformin with or without DPP4i during 26 weeks of treatment period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c) [Percentage Point (%-Point)]",
+        "Change in HbA1c [Millimoles/Mole (mmol/Mol)]"
+      ],
+      "secondaryEndpoints": [
+        "Change in Fasting Plasma Glucose",
+        "9-point Profile (Individual SMPG Values)",
+        "Change in Mean of the 9-point Profile, Defined as the Area Under the Profile Divided by Measurement Time",
+        "Fluctuations of the 9-point Profile (Defined as the Integrated Absolute Distance From the Mean Profile Value Divided by Measurement Time).",
+        "Fasting C-peptide",
+        "Change in Body Weight",
+        "Weekly Dose of Insulin 287 and Weekly Dose of Insulin Glargine",
+        "Number of Treatment Emergent Adverse Events (TEAEs)",
+        "Number of Hypoglycaemic Alert Episodes (Level 1) (≥3.0 and <3.9 mmol/L (≥54 and <70 mg/dL), Confirmed by BG Meter)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Change in Anti-insulin 287 Antibody Titres",
+        "Change in Cross-reactive Anti-human Insulin Antibody Status (Positive/Negative)",
+        "Change in Anti-insulin 287 Antibody Level"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03751657",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4422",
+      "nctId": "NCT03766854",
+      "protocolNumber": "NN1436-4422",
+      "title": "A Multiple-dose Trial Investigating the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of NNC0148-0287 C (Insulin 287) for Subcutaneous Administration in Japanese Subjects With Type 1 Diabetes",
+      "briefTitle": "A Research Study of How Different Amounts of a New Medicine NNC0148-0287 C (Insulin 287) Works on the Blood Sugar of People Who Are Japanese With Type 1 Diabetes When Given Once a Week",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-12-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-09",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-12-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "20 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin 287 followed by insulin glargine U100",
+          "type": "EXPERIMENTAL",
+          "description": "Run-in period (2 days to 7 weeks): The basal insulin glargine dose for each subject will be established and optimised.\n\nAfter run-in, participants will receive insulin 287 once a week (OW) for 8 weeks and subsequent 4 weeks of terminal pharmacokinetic (PK) sampling where subjects are treated with once daily (OD) insulin glargine.\n\nAfter insulin 287 treatment, participants will receive insulin glargine U100 OD for 2 weeks."
+        },
+        {
+          "label": "Insulin glargine U100 followed by insulin 287",
+          "type": "EXPERIMENTAL",
+          "description": "Run-in period (2 days to 7 weeks): The basal insulin glargine dose for each subject will be established and optimised.\n\nAfter run-in, participants will receive insulin glargine U100 OD for 2 weeks followed by 1-14 days (at least 1 day is mandatory) of continued insulin glargine treatment.\n\nAfter insulin glargine treatment, participants will receive insulin 287 OW for 8 weeks and subsequent 4 weeks of terminal PK sampling."
+        }
+      ],
+      "primaryEndpoints": [
+        "AUCI287τ,SS - Area under the serum insulin 287 concentration-time curve during one dosing interval at steady state"
+      ],
+      "secondaryEndpoints": [
+        "Number of adverse events (AEs)",
+        "Number of hypoglycaemic episodes",
+        "Change in antiinsulin 287 antibody level",
+        "Change in antiinsulin 287 antibody titres",
+        "Positive cross-reactive anti-human insulin antibodies",
+        "AUCI287,0-168,FD - Area under the serum insulin 287 concentration-time curve after the first dose",
+        "tmax,I287,FD - Time to maximum observed serum insulin 287 concentration after the first dose",
+        "Cmax,I287,FD - Maximum observed serum insulin 287 concentration after the first dose",
+        "tmax,I287,SS - Time to maximum observed serum insulin 287 concentration after the last dose",
+        "Cmax,I287,SS - Maximum observed serum insulin 287 concentration after the last dose",
+        "t1/2,I287,SS - Terminal half-life for insulin 287 at steady state",
+        "CI287,trough - Serum insulin 287 trough concentration",
+        "AUCIGlar,τ,SS - Area under the serum IGlar concentration-time curve during one dosing interval at steady state",
+        "Cmax,IGlar,SS - Maximum observed serum IGlar concentration at steady state",
+        "tmax,IGlar,SS - Time to maximum observed serum IGlar concentration at steady state",
+        "CIGlar,trough - Serum IGlar trough concentration",
+        "AUCGIR,24-48h,SS - Area under the glucose infusion rate-time curve at steady state",
+        "GIRmax,24-48h, SS - Maximum observed glucose infusion rate at steady state",
+        "AUCGIR,150-168h,SS - Area under the glucose infusion rate-time curve at steady state",
+        "GIRmax,150-168h,SS - Maximum observed glucose infusion rate at steady state",
+        "AUCGIR,0-24h,SS - Area under the glucose infusion rate-time curve at steady state",
+        "GIRmax,0-24h,SS - Maximum observed glucose infusion rate at steady state"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03766854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03766854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03766854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03766854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03766854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4462",
+      "nctId": "NCT03945656",
+      "protocolNumber": "NN1436-4462",
+      "title": "A Trial Investigating the Hypoglycaemic Response to Overdosing of NNC0148-0287 C (Insulin 287) in Subjects With Type 2 Diabetes",
+      "briefTitle": "A Research Study of How Overdosing of a New Once Weekly Medicine NNC0148-0287 C (Insulin 287) Influences the Blood Sugar Level in People With Type 2 Diabetes",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-05-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-09-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-09-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 43,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "72 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin 287 followed by insulin glargine",
+          "type": "EXPERIMENTAL",
+          "description": "Run-in period (3 to 28 days): Once daily insulin glargine treatment with or without any usual metformin treatment.\n\nAfter run-in, participants will receive insulin 287 once a week (OW) for 6 weeks.\n\nAfter insulin 287 treatment, participants will receive insulin glargine U100 OD for 12 days."
+        },
+        {
+          "label": "Insulin glargine followed by insulin 287",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Run-in period (3 to 28 days): Once daily insulin glargine treatment with or without any usual metformin treatment.\n\nAfter run-in, participants will receive insulin glargine U100 OD for 12 days.\n\nAfter insulin glargine treatment, participants will receive insulin 287 OW for 6 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Clinically significant hypoglycaemia (Double dose): Clinically significant hypoglycaemia (Plasma glucose [PG] less than 3.0 mmol/L [54 mg/dL]) after 2 times the individualised optimal basal dose of insulin"
+      ],
+      "secondaryEndpoints": [
+        "PG (nadir) - PG concentration at nadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "t (decline, PG 5.5 mmol/L - PG 3.0 mmol/L) - Time from start of hypoglycaemia induction until a PG concentration of 3.0 mmol/L (54 mg/dL) is reached after 2 and 3 times the individualised optimal basal dose of insulin",
+        "t (decline, PG 5.5 mmol/L - PG nadir) - Time from start of hypoglycaemia induction until PGnadir is reached after 2 and 3 times the individualised optimal basal dose of insulin",
+        "t (recovery, PG nadir - PG 5.5 mmol/L) - Time to increase from PGnadir to a PG concentration of 5.5 mmol/L (100 mg/dL) after 2 and 3 times the individualised optimal basal dose of insulin",
+        "C (glucagon, PG nadir) - Plasma glucagon concentration at PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "C (adrenaline, PG nadir) - Plasma adrenaline concentration at PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "C (noradrenaline, PG nadir) - Plasma noradrenaline concentration at PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "C (growth hormone [GH], PG nadir) - Serum growth hormone concentration at PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "C (cortisol, PG nadir) - Serum cortisol concentration at PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "Pulse (PG 5.5 mmol/L - PG nadir) - Change in pulse rate from a PG concentration of 5.5 mmol/L (100 mg/dL) until PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "Diastolic blood pressure (DBP) (PG 5.5 mmol/L - PG nadir) - Change in diastolic blood pressure from a PG concentration of 5.5 mmol/L (100 mg/dL) until PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "Systolic blood pressure (SBP) (PG 5.5 mmol/L - PG nadir) - Change in systolic blood pressure from a PG concentration of 5.5 mmol/L (100 mg/dL) until PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "Digit Symbol Substitution Test (DSST) (PG 5.5 mmol/L - PG nadir) - Change in DSST score from a PG concentration of 5.5 mmol/L (100 mg/dL) until PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "Four-Choice Reaction Time (4CRT) (reaction 4CRT) (PG 5.5 mmol/L - PG nadir) - Change in 4CRT performance from a PG concentration of 5.5 mmol/L (100 mg/dL) until PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "4CRT (% correct answers) (PG 5.5 mmol/L - PG nadir) - Change in 4CRT performance (% correct answers) from a PG concentration of 5.5 mmol/L (100 mg/dL) until PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "Trail Making B test (TMB) (PG 5.5 mmol/L - PG nadir) - Change in TMB from a PG concentration of 5.5 mmol/L (100 mg/dL) until PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "Hypoglycaemic symptoms score (HSS) (PG 5.5 mmol/L - PG nadir) - Change in HSS from a PG concentration of 5.5 mmol/L (100 mg/dL) to PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "Hypoglycaemia awareness (HA) (PG nadir) - HA at PGnadir after 2 and 3 times the individualised optimal basal dose of insulin",
+        "AUC (GIR, recovery, PG nadir -PG 5.5 mmol/L) - Area under the glucose infusion rate-time profile during recovery from PGnadir to a PG concentration of 5.5 mmol/L (100 mg/dL) after 2 and 3 times the individualised optimal basal dose of insulin",
+        "AUC (GIR, recovery, PG 5.5 mmol/L, 0-6h)-Area under the glucose infusion rate-time profile during 6 hours at a PG concentration of 5.5 mmol/L (100 mg/dL) after recovery from hypoglycaemia after 2 & 3 times the individualised optimal basal dose of insulin",
+        "Clinically significant hypoglycaemia (Triple dose) - Clinically significant hypoglycaemia [PG less than 3.0 mmol/L (54 mg/dL)], after 3 times the individualised optimal basal dose of insulin"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03945656",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03945656",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03945656",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03945656",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03945656",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4465",
+      "nctId": "NCT03951805",
+      "protocolNumber": "NN1436-4465",
+      "title": "A Trial Comparing NNC0148-0287 C (Insulin 287) Versus Insulin Glargine U100, Both in Combination With Metformin, With or Without DPP4 Inhibitors and With or Without SGLT2 Inhibitors, in Insulin-naïve Subjects With Type 2 Diabetes Mellitus",
+      "briefTitle": "A Research Study to Compare Two Types of Insulin: Insulin 287 and Insulin Glargine in People With Type 2 Diabetes Who Have Not Used Insulin Before",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-05-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-01-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 205,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin 287 algorithm A",
+          "type": "EXPERIMENTAL",
+          "description": "Controlled on metformin with or without DPP4i (dipeptidyl peptidase-4 inhibitors) and with or without SGLT2i (sodium-glucose cotransporter 2 inhibitors)."
+        },
+        {
+          "label": "Insulin 287 algorithm B",
+          "type": "EXPERIMENTAL",
+          "description": "Controlled on metformin with or without DPP4i and with or without SGLT2i."
+        },
+        {
+          "label": "Insulin 287 algorithm C",
+          "type": "EXPERIMENTAL",
+          "description": "Controlled on metformin with or without DPP4i and with or without SGLT2i."
+        },
+        {
+          "label": "Insulin Glargine algorithm D",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Controlled on metformin with or without DPP4i and with or without SGLT2i."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Time in Target Range (TIR) 3.9-10.0 Millimoles Per Liter (mmol/L) (70-180 Milligrams Per Deciliter (mg/dL) Measured Using CGM (Continuous Glucose Monitoring)"
+      ],
+      "secondaryEndpoints": [
+        "Change in HbA1c (Glycated Haemoglobin)",
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Change in Body Weight",
+        "Weekly Insulin Dose",
+        "Number of Treatment Emergent Adverse Events (TEAEs)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Below 3.0 mmol/L (54 Milligrams Per Deciliter [mg/dL]), Confirmed by Blood Glucose (BG) Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Hypoglycaemic Alert Episodes (Level 1) (Greater Than or Equal to 3.0 and Below 3.9 mmol/L (Greater Than or Equal to 54 and Below 70 mg/dL), Confirmed by Blood Glucose (BG) Meter)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03951805",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03951805",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03951805",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03951805",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03951805",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4466",
+      "nctId": "NCT03922750",
+      "protocolNumber": "NN1436-4466",
+      "title": "A Trial Comparing NNC0148-0287 C (Insulin 287) Versus Insulin Glargine U100, Both in Combination With Metformin, With or Without DPP4 Inhibitors and With or Without SGLT2 Inhibitors, in Basal Insulin Treated Subjects With Type 2 Diabetes Mellitus",
+      "briefTitle": "A Research Study in People With Type 2 Diabetes to Compare Two Types of Insulin: Insulin 287 and Insulin Glargine",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2019-05-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-01-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 154,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin 287 (with 100% loading dose)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive insulin 287 injections once weekly (OW). A unit to unit switch approach with an additional 100% loading dose of insulin 287 will be used."
+        },
+        {
+          "label": "Insulin 287 (without loading dose)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive insulin 287 injections OW. A unit to unit switch approach without loading dose of insulin 287 will be used."
+        },
+        {
+          "label": "Insulin glargine U100",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive insulin glargine U100 once daily (OD)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Time in Target Range 3.9-10.0 mmol/L (70-180 Milligrams Per Deciliter (mg/dL)) Measured Using CGM (Continuous Glucose Monitoring)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Glycosylated Haemoglobin (HbA1c)",
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Change in Body Weight",
+        "Weekly Insulin Dose",
+        "Number of Treatment-emergent Adverse Events (TEAEs)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Below 3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Hypoglycaemic Alert Episodes(Level 1) (Greater Than or Equal to 3.0 and Below 3.9 mmol/L (Greater Than or Equal to 54 and Below 70 mg/dL), Confirmed by BG Meter)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03922750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03922750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03922750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03922750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03922750",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4572",
+      "nctId": "NCT04582448",
+      "protocolNumber": "NN1436-4572",
+      "title": "A Trial Investigating the Pharmacokinetic Properties of Insulin Icodec After Administration in Different Injection Regions in Subjects With Type 2 Diabetes",
+      "briefTitle": "A Study Looking at How Insulin Icodec is Taken up in the Blood When Administered in Different Injection Sites in People With Type 2 Diabetes",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-10-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-09-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-09-27",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 25,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "69 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec treatment sequence with injection region abdomen",
+          "type": "EXPERIMENTAL",
+          "description": "Each subject will be randomised to one of six treatment sequences, consisting of three single-dose administrations of insulin icodec (s.c. in the abdomen, the upper arm and the thigh) in a balanced manner on three separate treatment visits."
+        },
+        {
+          "label": "Insulin icodec treatment sequence with injection region upper arm",
+          "type": "EXPERIMENTAL",
+          "description": "Each subject will be randomised to one of six treatment sequences, consisting of three single-dose administrations of insulin icodec (s.c. in the abdomen, the upper arm and the thigh) in a balanced manner on three separate treatment visits."
+        },
+        {
+          "label": "Insulin icodec treatment sequence with injection region thigh",
+          "type": "EXPERIMENTAL",
+          "description": "Each subject will be randomised to one of six treatment sequences, consisting of three single-dose administrations of insulin icodec (s.c. in the abdomen, the upper arm and the thigh) in a balanced manner on three separate treatment visits."
+        }
+      ],
+      "primaryEndpoints": [
+        "AUCIco,0-inf,SD, Area under the serum insulin icodec concentration-time curve after a single dose"
+      ],
+      "secondaryEndpoints": [
+        "Cmax,Ico,SD, Maximum observed serum insulin icodec concentration after a single dose",
+        "tmax,Ico,SD, Time to maximum observed serum insulin icodec concentration after a single dose"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582448",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582448",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582448",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582448",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582448",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4569",
+      "nctId": "NCT04582435",
+      "protocolNumber": "NN1436-4569",
+      "title": "A Trial Investigating the Pharmacokinetic and Pharmacodynamic Properties of Insulin Icodec in Subjects With Type 2 Diabetes",
+      "briefTitle": "A Trial Investigating the Pharmacokinetic and Pharmacodynamic Properties of Insulin Icodec in Subjects With Type 2 Diabetes",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-10-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-04-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-04-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 46,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive individualised weekly doses of insulin icodec"
+        }
+      ],
+      "primaryEndpoints": [
+        "AUCIco,τ,SS, Area under the serum insulin icodec concentration-time curve during one dosing interval at steady state"
+      ],
+      "secondaryEndpoints": [
+        "AUCGIR,0-36h,SS,Area under the glucose infusion rate-time curve at steady state",
+        "AUCGIR,40-64h,SS,Area under the glucose infusion rate-time curve at steady state",
+        "AUCGIR,144-168h,SS,Area under the glucose infusion rate-time curve at steady state",
+        "AUCGIR,τ,SS,model, Model-based area under the glucose infusion rate-time curve during one dosing interval at steady state",
+        "AUCIco,τ,SS, Area under the serum insulin icodec concentration-time curve during one dosing interval at steady state",
+        "Dose-normalised AUCIco,τ,SS, Area under the serum insulin icodec concentration-time curve during one dosing interval at steady state divided by dose",
+        "Cmax,Ico,SS, Maximum observed serum insulin icodec concentration during one dosing interval at steady state",
+        "Dose-normalised Cmax,Ico,SS, Maximum observed serum insulin icodec concentration after the last dose divided by dose",
+        "tmax,Ico,SS, Time to maximum observed serum insulin icodec concentration after the last dose",
+        "t½,Ico,SS, Terminal half-life for insulin icodec at steady state"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582435",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582435",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582435",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582435",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04582435",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onwards-1",
+      "nctId": "NCT04460885",
+      "protocolNumber": "NN1436-4477",
+      "acronym": "ONWARDS 1",
+      "title": "A 78-week Trial Comparing the Effect and Safety of Once Weekly Insulin Icodec and Once Daily Insulin Glargine 100 Units/mL, Both in Combination With Non-insulin Anti-diabetic Treatment, in Insulin naïve Subjects With Type 2 Diabetes",
+      "briefTitle": "A Research Study to Compare Two Types of Insulin, a New Insulin, Insulin Icodec and an Available Insulin, Insulin Glargine, in People With Type 2 Diabetes Who Have Not Used Insulin Before",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus)",
+            "quote": "The label refers to this trial as \"A\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-11-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-05-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-12-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 984,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "type": "EXPERIMENTAL",
+          "description": "Insulin icodec + non-insulin anti-diabetic drugs. The pre-trial non-insulin anti-diabetic background medication should be maintained at the stable, pre-trial dose and at the same frequency during the entire treatment period"
+        },
+        {
+          "label": "Insulin glargine",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Insulin glargine + non-insulin anti-diabetic drugs. The pre-trial non-insulin anti-diabetic background medication should be maintained at the stable, pre-trial dose and at the same frequency during the entire treatment period"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Time in Target Range 3.9-10.0 mmol/L (70-180 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3) Until Week 52",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than [<] 3.0 mmol/L [54 mg/dL] Confirmed by Blood Glucose [BG] Meter) Until Week 52",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3) Until Week 52",
+        "Number of Severe Hypoglycaemic Episodes (Level 3) Until Week 83",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL) Confirmed by BG Meter) Until Week 83",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3) Until Week 83",
+        "Mean Weekly Insulin Dose",
+        "Change in Body Weight",
+        "Percentage of Time Spent < 3.0 mmol/L (54 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Percentage of Time Spent > 10 mmol/L (180 mg/dL) Using Continuous Glucose Monitoring (CGM) System"
+      ],
+      "postedResults": [
+        {
+          "title": "Change in Glycated Haemoglobin (HbA1c)",
+          "timeFrame": "Baseline (week 0), Week 52",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Percentage of HbA1c",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Insulin Icodec"
+            },
+            {
+              "id": "OG001",
+              "title": "Insulin Glargine"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.55",
+              "spread": "0.06"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-1.35",
+              "spread": "0.05"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "ANCOVA",
+              "paramType": "Treatment difference",
+              "paramValue": "-0.19",
+              "ciPct": "95",
+              "ciLower": "-0.36",
+              "ciUpper": "-0.03"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04460885",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04460885",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04460885",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04460885",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04460885",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04460885?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 15,
+          "quote": "led on one or more oral antidiabetic agents (OADs) or GLP - 1 receptor agonist [ Trial A (NCT04460885)] . Patients were randomized to Awiqli once - weekly or insulin glargine U - 100 once - d",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4570",
+      "nctId": "NCT04597697",
+      "protocolNumber": "NN1436-4570",
+      "title": "A Trial Investigating the Pharmacokinetic Properties of Insulin Icodec in Subjects With Various Degrees of Hepatic Impairment",
+      "briefTitle": "A Study to Test How a New Long-acting Insulin (Insulin Icodec) Works in the Body of People With Liver Disease",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2020-12-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-03-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-03-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 25,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Subjects with normal hepatic function",
+          "type": "EXPERIMENTAL",
+          "description": "The participants will be allocated into four groups. Receiving one insulin icodec dose, administered subcutaneously."
+        },
+        {
+          "label": "Subjects with mild hepatic impairment, child-pugh grade A",
+          "type": "EXPERIMENTAL",
+          "description": "The participants will be allocated into four groups. Receiving one insulin icodec dose, administered subcutaneously."
+        },
+        {
+          "label": "Subjects with moderate hepatic impairment, child-pugh grade B",
+          "type": "EXPERIMENTAL",
+          "description": "The participants will be allocated into four groups. Receiving one insulin icodec dose, administered subcutaneously."
+        },
+        {
+          "label": "Subjects with severe hepatic impairment, child-pugh grade C",
+          "type": "EXPERIMENTAL",
+          "description": "The participants will be allocated into four groups. Receiving one insulin icodec dose, administered subcutaneously."
+        }
+      ],
+      "primaryEndpoints": [
+        "AUC,Ico,0-inf,SD, Area under the serum insulin icodec concentration-time curve after a single dose"
+      ],
+      "secondaryEndpoints": [
+        "Cmax,Ico,SD, Maximum observed serum insulin icodec concentration after a single dose",
+        "tmax,Ico,SD, Time to maximum observed serum insulin icodec concentration after a single dose"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04597697",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04597697",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04597697",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04597697",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04597697",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onwards-5",
+      "nctId": "NCT04760626",
+      "protocolNumber": "NN1436-4481",
+      "acronym": "ONWARDS 5",
+      "title": "Effectiveness and Safety of Once Weekly Insulin Icodec Used With DoseGuide Versus Once Daily Basal Insulin Analogues in an Insulin naïve Type 2 Diabetes Population in a Clinical Practice Setting",
+      "briefTitle": "A Research Study to Compare a New Weekly Insulin, Insulin Icodec Used With DoseGuide App, and Daily Insulins in People With Type 2 Diabetes Who Have Not Used Insulin Before",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-08-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-08-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1085,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec with DoseGuide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants randomised to insulin icodec will use insulin icodec with the DoseGuide App to guide their titration."
+        },
+        {
+          "label": "Once daily basal insulin analogues",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants randomised to basal insulin analogue injections once daily"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Time From Baseline to Treatment Discontinuation or Intensification",
+        "Change in Diabetes Treatment Satisfaction Questionnaire (DTSQs) in Total Treatment Satisfaction",
+        "Treatment Related Impact Measure for Diabetes (TRIM-D) Compliance Domain",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Below 3.0 Millimoles Per Liter [mmol/L] (54 Milligrams Per Deciliter [mg/dL]), Confirmed by Blood Glucose (BG) Meter)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Below 3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04760626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onwards-2",
+      "nctId": "NCT04770532",
+      "protocolNumber": "NN1436-4478",
+      "acronym": "ONWARDS 2",
+      "title": "A 26-week Trial Comparing the Effect and Safety of Once Weekly Insulin Icodec and Once Daily Insulin Degludec, Both With or Without Non-insulin Anti-diabetic Drugs, in Subjects With Type 2 Diabetes Treated With Basal Insulin",
+      "briefTitle": "A Research Study to Compare Two Types of Insulin, a New Weekly Insulin, Insulin Icodec and an Available Daily Insulin, Insulin Degludec, in People With Type 2 Diabetes Who Use Daily Insulin",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus)",
+            "quote": "The label refers to this trial as \"C\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-01-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-03-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 526,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "type": "EXPERIMENTAL",
+          "description": "Insulin icodec + non-insulin anti-diabetic drugs. Pre-trial non-insulin anti-diabetic background medication throughout the entire trial except from sulfonylureas and glinides, which must be discontinued at randomisation. The background medication should be maintained at the stable, pre-trial dose and at the same frequency during the entire treatment period."
+        },
+        {
+          "label": "Insulin degludec",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Insulin degludec + non-insulin anti-diabetic drugs. Pre-trial non-insulin anti-diabetic background medication throughout the entire trial except from sulfonylureas and glinides, which must be discontinued at randomisation. The background medication should be maintained at the stable, pre-trial dose and at the same frequency during the entire treatment period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Percentage of Time in Target-range 3.9-10.0 Millimoles Per Liter (mmol/L) (70-180 Milligrams Per Deciliter [mg/dL]) Using Continuous Glucose Monitoring (CGM) System",
+        "Change in Diabetes Treatment Satisfaction Questionnaire (DTSQs) in Total Treatment Satisfaction",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Percentage of Time Spent < 3.0 mmol/L (54 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Percentage of Time Spent > 10 mmol/L (180 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Mean Weekly Insulin Dose",
+        "Change in Body Weight"
+      ],
+      "postedResults": [
+        {
+          "title": "Change in Glycated Haemoglobin (HbA1c)",
+          "timeFrame": "Baseline (Week 0), Week 26",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Percentage of HbA1c",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Insulin Icodec"
+            },
+            {
+              "id": "OG001",
+              "title": "Insulin Degludec"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-0.93",
+              "spread": "0.05"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-0.71",
+              "spread": "0.06"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "ANCOVA",
+              "paramType": "Treatment difference",
+              "paramValue": "-0.22",
+              "ciPct": "95",
+              "ciLower": "-0.37",
+              "ciUpper": "-0.08"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04770532",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04770532",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04770532",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04770532",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04770532",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04770532?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 17,
+          "quote": "s mellitus treated with once or twice daily basal insulin with or without OADs [ Trial C (NCT04770532)] . Patients were randomized to Awiqli once - weekly or insulin degludec U - 100 once dai",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onwards-3",
+      "nctId": "NCT04795531",
+      "protocolNumber": "NN1436-4479",
+      "acronym": "ONWARDS 3",
+      "title": "A 26-week Double Blinded, Multiregional, Trial Comparing the Effect and Safety of Once Weekly Insulin Icodec and Once Daily Insulin Degludec 100 Units/mL, Both in Combination With Non-insulin Anti-diabetic Drugs, in Insulin naïve Subjects With Type 2 Diabetes.",
+      "briefTitle": "A Research Study to Compare Two Types of Insulin, a New Insulin, Insulin Icodec and an Available Insulin, Insulin Degludec, in People With Type 2 Diabetes Who Have Not Used Insulin Before (ONWARDS 3)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus)",
+            "quote": "The label refers to this trial as \"B\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-03-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-06-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-06-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 588,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Once weekly insulin icodec + once daily placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will get once daily and once weekly injections"
+        },
+        {
+          "label": "Once weekly placebo and once daily insulin degludec",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will get once daily and once weekly injections"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (< 3.0 mmol/L (54 Milligrams Per Deciliter [mg/dL]), Confirmed by Blood Glucose [BG] Meter)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Change in Body Weight",
+        "Mean Weekly Insulin Dose"
+      ],
+      "postedResults": [
+        {
+          "title": "Change in Glycated Haemoglobin (HbA1c)",
+          "timeFrame": "Baseline (Week 0), Week 26",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Percentage of HbA1c",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Insulin Icodec"
+            },
+            {
+              "id": "OG001",
+              "title": "Insulin Degludec"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.57",
+              "spread": "0.05"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-1.36",
+              "spread": "0.05"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "ANCOVA",
+              "paramType": "Treatment difference",
+              "paramValue": "-0.21",
+              "ciPct": "95",
+              "ciLower": "-0.34",
+              "ciUpper": "-0.08"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795531",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04795531?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 16,
+          "quote": "led on one or more oral antidiabetic agents (OADs) or GLP - 1 receptor agonist [ Trial B (NCT04795531)] . Patients were randomized to Awiqli once - weekly or insulin degludec U - 100 once dai",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4571",
+      "nctId": "NCT04857398",
+      "protocolNumber": "NN1436-4571",
+      "title": "A Trial Investigating the Pharmacokinetic Properties of Insulin Icodec in Chinese Subjects With Type 2 Diabetes",
+      "briefTitle": "A Study to Test How a New Long-acting Insulin (Insulin Icodec) Works in the Body of People From China With Type 2 Diabetes",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-04-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-04-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-04-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "type": "EXPERIMENTAL",
+          "description": "The participants will receive an individualised weekly dose of subcutaneously (s.c.) insulin icodec for 6 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the serum insulin icodec concentration-time curve during one dosing interval at steady state"
+      ],
+      "secondaryEndpoints": [
+        "Area under the serum insulin icodec concentration-time curve during one dosing interval at steady state divided by dose",
+        "Maximum observed serum insulin icodec concentration after the last dose",
+        "Maximum observed serum insulin icodec concentration after the last dose divided by dose",
+        "Time to maximum observed serum insulin icodec concentration after the last dose",
+        "Terminal half-life for insulin icodec at steady state"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04857398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04857398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04857398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04857398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04857398",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onwards-6",
+      "nctId": "NCT04848480",
+      "protocolNumber": "NN1436-4625",
+      "acronym": "ONWARDS 6",
+      "title": "Efficacy and Safety of Once Weekly Insulin Icodec Compared to Once Daily Insulin Degludec 100 Units/mL, Both in Combination With Insulin Aspart, in Adults With Type 1 Diabetes. A 26-week, Randomised, Multicentre, Open-label, Active-controlled, Parallel Group, Two Armed, Treat-to-target Trial Investigating the Effect on Glycaemic Control and Safety of Treatment With Once Weekly Insulin Icodec Compared to Once Daily Insulin Degludec, Both in Combination With Insulin Aspart in Adults With Type 1 Diabetes, With a 26-week Extension Investigating Long Term Safety",
+      "briefTitle": "A Research Study to Compare a New Weekly Insulin, Insulin Icodec, and an Available Daily Insulin, Insulin Degludec, Both in Combination With Mealtime Insulin in People With Type 1 Diabetes (ONWARDS 6)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-04-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-04-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-12-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 582,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec + insulin aspart",
+          "type": "EXPERIMENTAL",
+          "description": "insulin icodec once a week in combination with 2-4 times daily injections of insulin aspart at meal times."
+        },
+        {
+          "label": "Insulin degludec + insulin aspart",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "insulin degludec once a day in combination with 2-4 times daily injections of insulin aspart at meal times."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycosylated Haemoglobin (HbA1c) at Week 26"
+      ],
+      "secondaryEndpoints": [
+        "Change in Glycosylated Haemoglobin (HbA1c) at Week 52",
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Percentage of Time in Range 3.9-10.0 mmol/L (70-180 Milligrams Per Deciliter [mg/dL]) Using Continuous Glucose Monitoring (CGM) System",
+        "Change in Diabetes Treatment Satisfaction Questionnaire (DTSQs) in Total Treatment Satisfaction",
+        "Number of Severe Hypoglycaemic Episodes (Level 3): From Baseline (Week 0) to Week 26",
+        "Number of Severe Hypoglycaemic Episodes (Level 3): From Baseline (Week 0) to Week 57",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than 3.0 mmol/L (54 mg/dL) Confirmed by Blood Glucose [BG] Meter): From Baseline (Week 0) to Week 26",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than 3.0 mmol/L (54 mg/dL) Confirmed by BG Meter): From Baseline (Week 0) to Week 57",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than 3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3): From Baseline (Week 0) to Week 26",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than 3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3): From Baseline (Week 0) to Week 57",
+        "Number of Nocturnal Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than 3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3): From Baseline (Week 0) to Week 26",
+        "Number of Nocturnal Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than 3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3): From Baseline (Week 0) to Week 57",
+        "Percentage of Time Spent Less Than (<) 3.0 mmol/L (54 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Percentage of Time Spent Greater Than (>) 10 mmol/L (180 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Mean Total Weekly Insulin Dose: From Week 24 to Week 26",
+        "Mean Total Weekly Insulin Dose: From Week 50 to Week 52",
+        "Change in Body Weight"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04848480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onwards-4",
+      "nctId": "NCT04880850",
+      "protocolNumber": "NN1436-4480",
+      "acronym": "ONWARDS 4",
+      "title": "A 26-week Trial Comparing the Effect and Safety of Once Weekly Insulin Icodec and Once Daily Insulin Glargine 100 Units/mL, Both in Combination With Bolus Insulin With or Without Non-insulin Anti-diabetic Drugs, in Subjects With Type 2 Diabetes on a Basal-bolus Regimen",
+      "briefTitle": "A Research Study to Compare Two Types of Insulin, a New Weekly Insulin, Insulin Icodec and an Available Daily Insulin, Insulin Glargine, Both in Combination With Mealtime Insulin, in People With Type 2 Diabetes Who Use Daily Insulin and Mealtime Insulin (ONWARDS 4)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus)",
+            "quote": "The label refers to this trial as \"D\" rather than by its registered identifiers; that name was resolved from a pairing found elsewhere in the FDA paperwork. Sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-05-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-06-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-06-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 582,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "insulin icodec + insulin aspart",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will get once weekly injections in combination with 2-4 times daily injections of insulin aspart"
+        },
+        {
+          "label": "Insulin glargine + insulin aspart",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will get once daily injections in combination with 2-4 times daily injections of insulin aspart"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Percentage of Time in Target-range 3.9-10.0 mmol/L (70-180 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL) Confirmed by Blood Glucose (BG) Meter)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Percentage of Time Spent Below 3.0 mmol/L (54 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Percentage of Time Spent Above 10 mmol/L (180 mg/dL) Using Continuous Glucose Monitoring (CGM) System",
+        "Mean Weekly Insulin Dose",
+        "Change in Body Weight"
+      ],
+      "postedResults": [
+        {
+          "title": "Change in Glycated Haemoglobin (HbA1c)",
+          "timeFrame": "Baseline (week 0), Week 26",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Percentage (%) of HbA1c",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Insulin Icodec"
+            },
+            {
+              "id": "OG001",
+              "title": "Insulin Glargine"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-1.16",
+              "spread": "0.05"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-1.18",
+              "spread": "0.05"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "ANCOVA",
+              "paramType": "Treatment difference",
+              "paramValue": "0.02",
+              "ciPct": "95",
+              "ciLower": "-0.11",
+              "ciUpper": "0.15"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04880850",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04880850",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04880850",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04880850",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04880850",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04880850?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 18,
+          "quote": "in with or without oral antidiabetic agents (OADs) or GLP - 1 receptor agonist [ Trial D (NCT04880850) ] . Patients were randomized to Awiqli once - weekly or insulin glargine U - 100 once da",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1535-4593",
+      "nctId": "NCT05013229",
+      "protocolNumber": "NN1535-4593",
+      "title": "A 52 Week Study Comparing the Efficacy and Safety of Once Weekly IcoSema and Daily Insulin Glargine 100 Units/mL Combined With Insulin Aspart, Both Treatment Arms With or Without Oral Anti Diabetic Drugs, in Participants With Type 2 Diabetes Inadequately Controlled With Daily Basal Insulin. COMBINE 3",
+      "briefTitle": "A Research Study to See How Well the New Weekly Medicine IcoSema, Which is a Combination of Insulin Icodec and Semaglutide, Controls Blood Sugar Level in People With Type 2 Diabetes Compared to Insulin Glargine Taken Daily With Insulin Aspart (COMBINE 3)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-11-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-11-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-11-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 679,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "IcoSema",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive once weekly subcutaneous (s.c) injections of IcoSema during the 52-week treatment period."
+        },
+        {
+          "label": "Insuling glargine/insulin aspart",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive subcutaneous (s.c) injections of insulin glargine once daily combined with 2-4 times daily injections of insulin aspart."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in HbA1c"
+      ],
+      "secondaryEndpoints": [
+        "Change in body weight",
+        "Number of clinically significant hypoglycaemic episodes (level 2) (less than 3.0 mmol/L (54 mg/dL), confirmed by BG meter) or severe hypoglycaemic episodes (level 3)",
+        "Time in range 3.9 - 10.0 mmol/L (70 - 180 mg/dL) using continuous glucose monitoring (CGM) system, Dexcom G6",
+        "Time spent more than 10.0 mmol/L (180 mg/dL) using continuous glucose monitoring (CGM) system, Dexcom G6",
+        "Time spent less than 3.0 mmol/L (54 mg/dL) using continuous glucose monitoring (CGM) system, Dexcom G6",
+        "Change in fasting plasma glucose (FPG)",
+        "Change in Diabetes Treatment Satisfaction Questionnaire (DTSQs) in total treatment satisfaction",
+        "Number of severe hypoglycaemic episodes (level 3)",
+        "Number of clinically significant hypoglycaemic episodes (level 2) (less than 3.0 mmol/L (54 mg/dL), confirmed by BG meter)",
+        "Weekly insulin dose (total)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05013229",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05013229",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05013229",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05013229",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05013229",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "combine-2",
+      "nctId": "NCT05259033",
+      "protocolNumber": "NN1535-4592",
+      "acronym": "COMBINE 2",
+      "title": "A 52 Week Study Comparing the Efficacy and Safety of Once Weekly IcoSema and Once Weekly Semaglutide, Both Treatment Arms With or Without Oral Anti Diabetic Drugs, in Participants With Type 2 Diabetes Inadequately Controlled With a GLP 1 Receptor Agonist. COMBINE 2",
+      "briefTitle": "A Research Study to See How Well the New Weekly Medicine IcoSema, Which is a Combination of Insulin Icodec and Semaglutide, Controls Blood Sugar Level in People With Type 2 Diabetes Compared to Weekly Semaglutide (COMBINE 2)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-04-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-12-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-01-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 683,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "IcoSema",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will get once weekly dose"
+        },
+        {
+          "label": "Semaglutide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will get once weekly dose"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Glycosylated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Fasting Plasma Glucose (FPG)",
+        "Change From Baseline in Body Weight",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 Milligram Per Decilitre [mg/dL]) , Confirmed by Blood Glucose [BG] Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05259033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05259033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05259033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05259033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05259033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "combine-1",
+      "nctId": "NCT05352815",
+      "protocolNumber": "NN1535-4591",
+      "acronym": "COMBINE 1",
+      "title": "A 52 Week Study Comparing the Efficacy and Safety of Once Weekly IcoSema and Once Weekly Insulin Icodec, Both Treatment Arms With or Without Oral Anti Diabetic Drugs, in Participants With Type 2 Diabetes Inadequately Controlled With Daily Basal Insulin.",
+      "briefTitle": "A Research Study to See How Well the New Weekly Medicine IcoSema, Which is a Combination of Insulin Icodec and Semaglutide, Controls Blood Sugar Level in People With Type 2 Diabetes Compared to Weekly Insulin Icodec",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-06-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-03-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-04-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1291,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "IcoSema",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Insulin icodec",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Body Weight",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than 3.0 Millimoles Per Litre [mmol/L] (54 Milligram Per Decilitre [mg/dL]), Confirmed by Blood Glucose [BG] Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Percentage of Time in Range 3.9-10.0 mmol/L (70-180 mg/dL) Using Continuous Glucose Monitoring (CGM) System, Dexcom G6",
+        "Percentage of Time Spent < 3.0 mmol/L (54 mg/dL) Using Continuous Glucose Monitoring (CGM) System, Dexcom G6",
+        "Percentage of Time Spent > 10.0 mmol/L (180 mg/dL) Using Continuous Glucose Monitoring (CGM) System, Dexcom G6",
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Weekly Basal Insulin Dose",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05352815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05352815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05352815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05352815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05352815",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1535-4710",
+      "nctId": "NCT05435677",
+      "protocolNumber": "NN1535-4710",
+      "title": "A Study Investigating the Pharmacokinetic Properties of a Single Dose of IcoSema Compared With Insulin Icodec and Semaglutide Given Separately in Chinese Participants With Type 2 Diabetes",
+      "briefTitle": "A Research Study to Look at How Insulin Icodec and Semaglutide Work in the Body of People From China With Type 2 Diabetes When Given Alone or Together",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-06-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-04-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-04-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sequence 1",
+          "type": "EXPERIMENTAL",
+          "description": "All participants will get each of the 3 medicines at 3 different timepoints IcoSema - insulin icodec - semaglutide, separated by a 1-4-week wash-out period. The study will last for about 19 to 26 weeks."
+        },
+        {
+          "label": "Sequence 2",
+          "type": "EXPERIMENTAL",
+          "description": "All participants will get each of the 3 medicines at 3 different timepoints IcoSema- semaglutide . insulin icodec, separated by a 1-4-week wash-out period. The study will last for about 19 to 26 weeks."
+        },
+        {
+          "label": "Sequence 3",
+          "type": "EXPERIMENTAL",
+          "description": "All participants will get each of the 3 medicines at 3 different timepoints insulin icodec- IcoSema- semaglutide, separated by a 1-4-week wash-out period. The study will last for about 19 to 26 weeks."
+        },
+        {
+          "label": "Sequence 4",
+          "type": "EXPERIMENTAL",
+          "description": "All participants will get each of the 3 medicines at 3 different timepoints insulin icodec- semaglutide - IcoSema separated by a 1-4-week wash-out period. The study will last for about 19 to 26 weeks."
+        },
+        {
+          "label": "Sequence 5",
+          "type": "EXPERIMENTAL",
+          "description": "All participants will get each of the 3 medicines at 3 different timepoints semaglutide - IcoSema - insulin icodec, separated by a 1-4-week wash-out period. The study will last for about 19 to 26 weeks."
+        },
+        {
+          "label": "Sequence 6",
+          "type": "EXPERIMENTAL",
+          "description": "All participants will get each of the 3 medicines at 3 different timepoints semaglutide - insulin icodec - IcoSema, separated by a 1-4-week wash-out period. The study will last for about 19 to 26 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "AUCIco,0-tz:Area under the serum insulin icodec concentration-time curve after a single dose",
+        "Dose-normalised AUCSema,0-tz: Area under the plasma semaglutide concentration-time curve after a single dose divided by dose"
+      ],
+      "secondaryEndpoints": [
+        "AUCIco,0-inf: Area under the serum insulin icodec concentration-time curve after a single dose",
+        "Cmax,Ico: Maximum observed serum insulin icodec concentration after a single dose",
+        "tmax,Ico: Time to maximum observed serum insulin icodec concentration after a single dose",
+        "t1/2,Ico: Terminal half-life for insulin icodec after a single dose",
+        "Dose-normalised AUCSema,0-inf: Area under the plasma semaglutide concentration-time curve after a single dose divided by dose",
+        "Dose-normalised Cmax,Sema: Maximum observed plasma semaglutide concentration after a single dose divided by dose",
+        "tmax,Sema: Time to maximum observed plasma semaglutide concentration after a single dose",
+        "t1/2,Sema: Terminal half-life for semaglutide after a single dose",
+        "Adverse events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05435677",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05435677",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05435677",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05435677",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05435677",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onwards-9",
+      "nctId": "NCT05823948",
+      "protocolNumber": "NN1436-4909",
+      "acronym": "ONWARDS 9",
+      "title": "A Study to Evaluate Flash Glucose Monitoring Based Titration of Once-weekly Insulin Icodec in Insulin-naïve Participants With Type 2 Diabetes",
+      "briefTitle": "A Study Using Flash Glucose Measurements for a New Once-weekly Insulin (Insulin Icodec) in People With Type 2 Diabetes Who Have Not Used Insulin Before (ONWARDS 9)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-04-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-03-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-04-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 51,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin Icodec",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 70 Units (U) insulin icodec subcutaneously once-weekly for 26 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycosylated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05823948",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05823948",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05823948",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05823948",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05823948",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4888",
+      "nctId": "NCT05790681",
+      "protocolNumber": "NN1436-4888",
+      "title": "A Study Investigating the Pharmacokinetic Properties of Insulin Icodec in Children and Adolescents With Type 2 Diabetes",
+      "briefTitle": "A Study to Test How New Long-acting Insulin (Insulin Icodec) Works in the Body of Children and Teenagers",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-04-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-02-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-02-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 18,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "10 Years",
+        "maxAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Participants with Type 2 Diabetes",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive single subcutaneous (s.c.) fixed dose of insulin icodec (700 units per milliliter \\[U/mL\\]) that is 5.6 units per kilogram (U/kg) bodyweight. Subjects will be followed up for 5 weeks after dosing."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the serum insulin icodec concentration-time curve after a single dose (AUCIco,0-inf,SD)",
+        "Maximum observed serum insulin icodec concentration after a single dose (Cmax,Ico,SD)",
+        "Time to maximum observed serum insulin icodec concentration after a single dose (tmax,Ico,SD)"
+      ],
+      "secondaryEndpoints": [
+        "Model-based maximum serum insulin icodec concentration during one dosing interval at steady state (Cmax,Ico,SS,model)",
+        "Model-based area under the serum insulin icodec concentration-time curve during one dosing interval at steady state (AUC,Ico,τ,SS,model)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790681",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790681",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790681",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790681",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05790681",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-4910",
+      "nctId": "NCT05813912",
+      "protocolNumber": "NN1436-4910",
+      "title": "Protocol Title: A Single Arm Study Investigating the Glycaemic Control and Safety of Adding Semaglutide to Insulin Icodec in Participants With Type 2 Diabetes Qualifying for Treatment Intensification Short Title: A Research Study to See How a New Weekly Insulin, Insulin Icodec When Given Along With Semaglutide Helps in Reducing the Blood Sugar Level in Patients With Type 2 Diabetes",
+      "briefTitle": "A Research Study to See How a New Weekly Insulin, Insulin Icodec When Given Along With Semaglutide Helps in Reducing the Blood Sugar Level in Patients With Type 2 Diabetes",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-09-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-04-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-05-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 148,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin Icodec + Semaglutide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive insulin icodec once weekly for 26 weeks in run-in period to ensure the dose optimization. Thereafter, participants meeting intensification criteria will proceed to the 26-week treatment period to receive once weekly semaglutide subcutaneously starting from 0.25 milligrams (mg) and dose increased up to 1 mg along with 700 units per milliliter (U/mL) insulin icodec therapy. There are no maximum or minimum insulin doses."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Mean 7-point Self-measured Plasma Glucose (SMPG) Profiles",
+        "Change in Mean Post-prandial Glucose Increment (Over All Meals)",
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (Less Than [<] 3.0 mmol/L [54 Milligrams Per Deciliter {mg/dL}], Confirmed by Blood Glucose [BG] Meter)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L [54 mg/dL]), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Change in Body Weight",
+        "Relative Change in Weekly Insulin Icodec Dose"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05813912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05813912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05813912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05813912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05813912",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "combine-4",
+      "nctId": "NCT06269107",
+      "protocolNumber": "NN1535-4988",
+      "acronym": "COMBINE 4",
+      "title": "A 40-week Study Comparing the Efficacy and Safety of Once Weekly IcoSema and Daily Insulin Glargine 100 Units/mL in Participants With Type 2 Diabetes Inadequately Controlled on Oral Anti Diabetic Drugs COMBINE 4",
+      "briefTitle": "A Research Study to See How Well New Weekly Medicine IcoSema, Which is a Combination of Insulin Icodec and Semaglutide, Controls Blood Sugar Levels in People With Type 2 Diabetes (T2D), Compared to Daily Insulin Glargine (COMBINE 4)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-02-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-07-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 485,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "IcoSema",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive once weekly IcoSema subcutaneously with or without oral anti diabetic drugs for 40 weeks."
+        },
+        {
+          "label": "Insulin glargine",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive once daily insulin glargine subcutaneously with or without oral anti diabetic drugs for 40 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in glycated haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in body weight",
+        "Time in range 3.9-10.0 millimoles per liter (mmol/L) (70-180 milligram per deciliter [mg/dL])",
+        "Time spent less than (<) 3.0 mmol/L (54 mg/dL)",
+        "Time spent greater than (>) 10.0 mmol/L (180 mg/dL)",
+        "Weekly basal insulin dose",
+        "Change in fasting plasma glucose (FPG)",
+        "Change in Diabetes Treatment Satisfaction Questionnaire (DTSQs) in total treatment satisfaction",
+        "Number of clinically significant hypoglycaemic episodes (level 2) (<3.0 mmol/L (54 mg/dL), confirmed by blood glucose meter) or severe hypoglycaemic episodes (level 3)",
+        "Number of clinically significant hypoglycaemic episodes (level 2) (<3.0 mmol/L (54 mg/dL), confirmed by BG meter)",
+        "Number of severe hypoglycaemic episodes (level 3)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06269107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06269107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06269107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06269107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06269107",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-7615",
+      "nctId": "NCT06288412",
+      "protocolNumber": "NN1436-7615",
+      "title": "Pharmacodynamic Properties of Insulin Icodec During Exercise and Prolonged Fasting in Participants With Type 2 Diabetes",
+      "briefTitle": "A Study to Test How a New Long-acting Insulin Works in the Body of Patients With Type 2 Diabetes During Exercise and Prolonged Fasting",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-02-26",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-03-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-04-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous (s.c.) injections of insulin degludec once daily in the run-in period and insulin icodec once weekly in the treatment period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Time below range, glucose less than (<) 3.0 millimoles per liter (mmol/L) (54 milligrams per deciliter [mg/dL]) within 24 hours after start of exercise (TBR3.0mmol/L,exe)"
+      ],
+      "secondaryEndpoints": [
+        "Time below range, glucose <3.9 mmol/L (70 mg/dL) within 24 hours after start of exercise (TBR3.9mmol/L,exe)",
+        "Time in range, glucose 3.9-10.0 mmol/L (70-180 mg/dL) within 24 hours after start of exercise (TIR3.9-10.0mmol/L,exe)",
+        "Time above range, glucose >10 mmol/L (180 mg/dL) within 24 hours after start of exercise (TAR10.0mmol/L,exe)",
+        "Number of clinically significant hypoglycaemic episodes during exercise (Hypoexe)",
+        "Amount of carbohydrate intake during exercise (CHOexe)",
+        "Amount of carbohydrate intake from end of standardised lunch meal until start of exercise (CHOpre-exe)",
+        "Amount of carbohydrate intake after stop of exercise until start of standardised dinner meal (CHOpost-exe)",
+        "Number of hypoglycaemic within 24 hours after start of exercise (Hypo24h,exe)",
+        "Number of hypoglycaemic episodes for 24 hours in reference week (43 to 67 hours after dosing) (Hypo24h,ref)",
+        "Time below range, glucose <3.0 mmol/L (54 mg/dL) within 18 hours after start of fasting (TBR3.0mmol/L,fast)",
+        "Time below range, glucose <3.9 mmol/L (70 mg/dL) within 18 hours after start of fasting (TBR3.9mmol/L,fast)",
+        "Time in range, glucose 3.9-10 mmol/L (70-180 mg/dL) within 18 hours after start of fasting (TIR3.9-10.0mmol/L,fast)",
+        "Time above range, glucose >10 mmol/L (180 mg/dL) within 18 hours after start of fasting (TAR10.0mmol/L,fast)",
+        "Number of clinically significant hypoglycaemic episodes during fasting (Hypofast)",
+        "Amount of carbohydrate administered intravenously during fasting (CHOfast)",
+        "Number of hypoglycaemic episodes within 18 hours after start of fasting (Hypo18h,fast)",
+        "Number of hypoglycaemic episodes for 18 hours in reference week (26 to 44 hours after dosing) (Hypo18h,ref)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06288412",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06288412",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06288412",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06288412",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06288412",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-7724",
+      "nctId": "NCT06340854",
+      "protocolNumber": "NN1436-7724",
+      "title": "A Study to Evaluate the Efficacy and Safety of Once-weekly Insulin Icodec When Switching From Daily Basal Insulins Compared to Once-daily Insulin Glargine U100 in Adults With Type 2 Diabetes",
+      "briefTitle": "A Research Study to See How Switching From a Daily Basal Insulin to a New Weekly Insulin, Insulin Icodec, Helps in Reducing the Blood Sugar Compared to Daily Insulin Glargine in Adults With Type 2 Diabetes",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-04-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 412,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Insulin icodec subcutaneously once weekly."
+        },
+        {
+          "label": "Insulin glargine U100",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive Insulin glargine subcutaneously once daily."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in Glycated Haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Time in Range 3.9-10.0 Millimoles Per Litre (mmol/L) (70-180 Milligrams Per Decilitre (mg/dL))",
+        "Change in DTSQs (Diabetes Treatment Satisfaction Questionnaire Status Version) Total Treatment Satisfaction",
+        "Number of Severe Hypoglycaemic Episodes (Level 3)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by Blood Glucose (BG) Meter)",
+        "Number of Clinically Significant Hypoglycaemic Episodes (Level 2) (<3.0 mmol/L (54 mg/dL), Confirmed by BG Meter) or Severe Hypoglycaemic Episodes (Level 3)",
+        "Time Spent < 3.0 mmol/L (54 mg/dL)",
+        "Change in Time Spent > 10.0 mmol/L (180 mg/dL)",
+        "Mean Weekly Insulin Dose",
+        "Change in Body Weight"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06340854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06340854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06340854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06340854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06340854",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-7680",
+      "nctId": "NCT06807190",
+      "protocolNumber": "NN1436-7680",
+      "title": "A Multi-centre, Prospective, Open Label, Non-interventional, Single-armed, 52 Weeks Post-marketing Study to Investigate Safety and Clinical Parameters of Awiqli Once Weekly in Patients With Diabetes Mellitus Under Real-world Clinical Practice Setting in Japan",
+      "briefTitle": "General Use-results Surveillance With Awiqli in Patients With Diabetes Mellitus",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2025-04-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-07-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-01-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 630,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Awiqli",
+          "description": "Participants with diabetes mellitus will be treated with commercially available Awiqli according to routine clinical practice at the discretion of the treating physician."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Adverse Reactions (ARs)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Adverse Events (AEs)",
+        "Number of Serious Adverse Events (SAEs)",
+        "Number of Serious Adverse Reactions (SARs)",
+        "Change in Glycosylated Haemoglobin (HbA1c)",
+        "Change in Fasting Plasma Glucose (FPG)",
+        "Change in Diabetes Therapy-Related Quality Of Life (DTR-QOL)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807190",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807190",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807190",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807190",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807190",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "onwards-11",
+      "nctId": "NCT07076199",
+      "protocolNumber": "NN1436-8182",
+      "acronym": "ONWARDS 11",
+      "title": "A 26-week Study Comparing the Efficacy and Safety of Once-weekly Insulin Icodec and Once-daily Insulin Glargine U100, Both in Combination With Insulin Aspart, in Adults With Type 1 Diabetes",
+      "briefTitle": "A Research Study to See How a Weekly Insulin, Insulin Icodec, Helps in Reducing the Blood Sugar Compared to Daily Insulin Glargine, Both in Combination With Insulin Aspart, in Adults With Type 1 Diabetes",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-08-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-01-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-03-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 877,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec + insulin aspart",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneously once weekly insulin icodec in combination with 2-4 times daily insulin aspart ."
+        },
+        {
+          "label": "Insulin glargine+ insulin aspart",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive subcutaneously once daily insulin glargine in combination with 2-4 times daily insulin aspart."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in glycosylated haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in time in range 3.9-10.0 millimoles per liter (mmol/L) (70-180 milligrams per deciliter (mg/dL))",
+        "Time spent less than (<)3.0 mmol/L (54 mg/dL)",
+        "Change in time spent greater than (>)10.0 mmol/L (180 mg/dL)",
+        "Number of severe hypoglycaemic episodes (level 3)",
+        "Number of clinically significant hypoglycaemicepisodes (level 2) (<3.0mmol/L [54 mg/dL],confirmed by blood glucose (BG) meter)",
+        "Number of clinically significant hypoglycaemic episodes (level 2) (< 3.0 mmol/L [54 mg/dL], severe hypoglycaemic confirmed by BG meter) or episodes (level 3)",
+        "Number of continuous glucose continuous glucose (CGM)-based clinically significant hypoglycaemic episodes (level 2) (< 3.0 mmol/L [54 mg/dL])",
+        "Mean total weekly insulin dose",
+        "Change in body weight"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07076199",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07076199",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07076199",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07076199",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07076199",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-7727",
+      "nctId": "NCT07112339",
+      "protocolNumber": "NN1436-7727",
+      "title": "EFFectiveness of Once-weekly Insulin ICodec Versus Once-daily Basal Insulin Analogues in an Insulin-naïve Type 2 diabEtes Population in Real-world cliNical pracTice- The EFFICIENT Pragmatic Study Effectiveness of Insulin Icodec in Real-world Clinical Practice",
+      "briefTitle": "A Research Study to See How Well Weekly Insulin Icodec Maintains Blood Sugar Levels Compared to Daily Basal Insulins in Adults With Type 2 Diabetes",
+      "phase": "PHASE4",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-08-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-03-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-03-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 586,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous (s.c) injection of once weekly insulin icodec."
+        },
+        {
+          "label": "Basal insulin analogues",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive once daily s.c. injection of basal insulin analogues."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in glycated haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Adelphi Adherence Questionnaire (ADAQ©)",
+        "Change in Diabetes Treatment Satisfaction Questionnaire- status version(DTSQs) total treatment satisfaction",
+        "Treatment Related Impact Measure for Diabetes (TRIM-D) compliance domain",
+        "Treatment Related Impact Measure for Diabetes (TRIM-D) treatment burden domain",
+        "Number of severe hypoglycaemic episodes (level 3)",
+        "Mean weekly basal insulin dose",
+        "Participant achieved individualised HbA1c target"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07112339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07112339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07112339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07112339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07112339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "nn1436-8404",
+      "nctId": "NCT07160816",
+      "protocolNumber": "NN1436-8404",
+      "title": "A Real-world, Multi-centre, Prospective, Non-interventional, Single-arm Study Investigating Glycaemic Control, Treatment Satisfaction and Adherence Associated With the Use of Insulin Icodec in People Living With Type 1 Diabetes",
+      "briefTitle": "A Research Study to See How Insulin Icodec Helps People With Type 1 Diabetes Control Their Blood Sugar",
+      "phase": "NA",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2025-08-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-01-20",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-01-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 245,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "description": "Participants with T1D will be treated with commercially available insulin icodec according to routine clinical practice at the discretion of the treating physician."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in glycated haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Insulin Treatment Satisfaction Questionnaire (ITSQ) score",
+        "Change in Adelphi Adherence Questionnaire (ADAQ) score",
+        "Number of self-reported overall severe hypoglycaemia",
+        "Clinical success as perceived by the physician"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07160816",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07160816",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07160816",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07160816",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07160816",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "icoswitch-real",
+      "nctId": "NCT07632404",
+      "protocolNumber": "NN1436-8501",
+      "acronym": "ICOSWITCH REAL",
+      "title": "A Real-world, Multi-centre, Prospective, Non-interventional, Single-arm Study Investigating Glycaemic Control, Treatment Satisfaction and Adherence Associated With the Switch From Daily Basal Insulin to Insulin Icodec in People Living With Type 2 Diabetes in Italy",
+      "briefTitle": "A Research Study to Examine Blood Sugar Control, Treatment Satisfaction and Adherence in People With Type 2 Diabetes After Switching From Daily Basal Insulin to Once-weekly Insulin Icodec",
+      "phase": "NA",
+      "roles": [],
+      "status": "ENROLLING_BY_INVITATION",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2026-05-28",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 214,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Insulin icodec",
+          "description": "Participants with T2D will be treated with commercially available insulin icodec according to routine clinical practice at the discretion of the treating physician."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in glycated haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Diabetes Treatment Satisfaction Questionnaire status (DTSQs) score",
+        "Change in Adelphi Adherence Questionnaire (ADAQ) score",
+        "Change in body weight",
+        "Number of self-reported overall severe hypoglycemia episodes",
+        "Frequency of titrations",
+        "Titration increments/decrements per titration"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07632404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07632404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07632404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07632404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07632404",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "icoswitch-real-nct07658417",
+      "nctId": "NCT07658417",
+      "protocolNumber": "NN1436-8502",
+      "acronym": "ICOSWITCH REAL",
+      "title": "A Real-world, Multi-centre, Prospective, Non-interventional, Single-arm Study Investigating Glycaemic Control, Treatment Satisfaction and Adherence Associated With the Switch From Daily Basal Insulin to Insulin Icodec in People Living With Type 2 Diabetes in China",
+      "briefTitle": "Research Study to Examine Blood Sugar Control, Treatment Satisfaction and Adherence in People With Type 2 Diabetes After Switching From Daily Basal Insulin to Once-weekly Insulin Icodec",
+      "phase": "NA",
+      "roles": [],
+      "status": "ENROLLING_BY_INVITATION",
+      "sponsor": "Novo Nordisk A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "startDate": {
+        "value": "2026-07-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 216,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Icodec with/without non-insulin glucose lowering treatments",
+          "description": "Participants will initiate the treatment with insulin icodec at the treating physician's discretion according to the local label, and it will be clearly separated from the decision to include the participant in the study."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change in glycated haemoglobin (HbA1c)"
+      ],
+      "secondaryEndpoints": [
+        "Change in Diabetes Treatment Satisfaction Questionnaire status (DTSQs) score",
+        "Change in Adelphi Adherence Questionnaire (ADAQ) score",
+        "Change in body weight",
+        "Number of self-reported overall severe hypoglycemia episodes"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07658417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07658417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07658417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07658417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07658417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-2",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-03-26",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-2",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761326%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-1",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2026-10-23",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761326%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761326",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761326%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-2)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761326Orig2s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-2)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761326Orig2s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:02:15.635Z"
+}

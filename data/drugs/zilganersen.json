@@ -1,0 +1,300 @@
+{
+  "slug": "zilganersen",
+  "brandName": "Zanvastro",
+  "inn": "zilganersen",
+  "modality": "Drug (NDA)",
+  "sponsor": "IONIS PHARMS INC",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Alexander disease in pediatric and adult patients",
+      "slug": "alexander-disease-in-pediatric-and-adult-patients",
+      "approvalDate": {
+        "value": "2026-09-03",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220210Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-03",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Zanvastro (zilganersen) injection for the treatment of Alexander disease in pediatric and adult patients.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220210Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Zanvastro (zilganersen) injection for the treatment of Alexander disease in pediatric and adult patients.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220210",
+      "applicationType": "NDA",
+      "sponsor": "IONIS PHARMS INC",
+      "originalApprovalDate": {
+        "value": "2026-09-03",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "ion373-cs1",
+      "nctId": "NCT04849741",
+      "protocolNumber": "ION373-CS1",
+      "title": "A Phase 1-3, Double-Blind, Randomized, Placebo-Controlled Study to Evaluate the Efficacy, Safety, Pharmacokinetics and Pharmacodynamics of Intrathecally Administered ION373 in Patients With Alexander Disease",
+      "briefTitle": "A Study to Evaluate the Safety and Efficacy of Zilganersen (ION373) in Patients With Alexander Disease (AxD)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Alexander disease in pediatric and adult patients",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220210Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Alexander disease in pediatric and adult patients)",
+            "quote": "Trial identifier appears within the Alexander disease in pediatric and adult patients section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220210Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Zanvastro (zilganersen) injection for the treatment of Alexander disease in pediatric and adult patients.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Ionis Pharmaceuticals, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-06-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-08-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2034-07-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 54,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "zilganersen",
+          "type": "EXPERIMENTAL",
+          "description": "Zilganersen will be administered by intrathecal bolus (ITB) injection once every 12 weeks through Week 49. The 60-week double-blind treatment period will be followed by the open-label, long-term and extended long-term extension periods, where participants will receive zilganersen by ITB injection from Week 61 to Week 469."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Matching placebo will be administered by ITB injection once every 12 weeks through Week 49. It will be followed by the open-label, long-term and extended long-term extension periods, where participants will receive zilganersen by ITB injection from Week 61 to Week 469."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percent Change from Baseline in the 10-Meter Walk Test (10MWT)"
+      ],
+      "secondaryEndpoints": [
+        "Change From Baseline in Most Bothersome Symptom (MBS)",
+        "Change From Baseline in Patient Global Impression of Severity (PGIS) Score",
+        "Change From Baseline in Patient Global Impression of Change (PGIC) Score",
+        "Change From Baseline in Clinical Global Impression of Change (CGIC) Score",
+        "Change From Baseline in Gross Motor Function Measure-88, Dimensions C, D and E (GMFM-88, Dimensions C-E) Score",
+        "Change From Baseline in 9-Hole Peg Test (9HPT) Score",
+        "Change From Baseline in Vineland Adaptive Behavior Scales, Third Edition (Vineland-3) Motor Skills Domain Score",
+        "Change From Baseline in Pediatrics Quality of Life Inventory Gastrointestinal Symptoms Scale (PedsQL GI) Score",
+        "Change From Baseline in Vineland Adaptive Behavior Composite, Third Edition (Vineland-3 ABC) Score",
+        "Change From Baseline in Composite Autonomic Symptom Score 31 (COMPASS-31) Score",
+        "Change From Baseline in Cerebrospinal Fluid (CSF) Glial Fibrillary Acid Protein (GFAP) Levels",
+        "Change From Baseline in Clinical Global Impression of Severity (CGIS) Score",
+        "Change From Baseline in Alexander Disease Patient Domain Impression of Severity (AxD-PDIS) Score",
+        "Change From Baseline in Alexander Disease Patient Domain Impression of Change (AxD-PDIC) Score",
+        "Change From Baseline in Body Weight Percentile (for participants < 18 years old at screening) or body weight (for participants ≥ 18 years old at screening)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849741",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849741",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849741",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849741",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04849741",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220210Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 11,
+          "quote": "d in a multicenter study in pediatric and adult patients with Alexander disease (Study 1; NCT04849741). Study 1 comprised two parts: a double-blind, randomized, controlled Main Study that enr",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "ion373-e01",
+      "nctId": "NCT07487389",
+      "protocolNumber": "ION373-E01",
+      "title": "Zilganersen Expanded Access Program for Individuals With Alexander Disease",
+      "briefTitle": "Zilganersen Expanded Access Program for Individuals With Alexander Disease",
+      "phase": "NA",
+      "roles": [],
+      "status": "APPROVED_FOR_MARKETING",
+      "sponsor": "Ionis Pharmaceuticals, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "99 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07487389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07487389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07487389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07487389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07487389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-03",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220210%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220210",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220210%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220210Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220210Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T06:59:22.031Z"
+}

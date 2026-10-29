@@ -1,0 +1,680 @@
+{
+  "slug": "narsoplimab",
+  "brandName": "Yartemlea",
+  "inn": "narsoplimab",
+  "modality": "Biologic (BLA)",
+  "sponsor": "OMEROS CORP",
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adult and pediatric patients 2 years of age and older with hematopoietic stem cell transplant-associated thrombotic microangiopathy (TA - TMA)",
+      "slug": "adult-and-pediatric-patients-2-years-of-age-and-older-with",
+      "approvalDate": {
+        "value": "2025-12-23",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761152Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-23",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Yartemlea is indicated for the treatment of adult and pediatric patients two years of age and older with hematopoietic stem cell transplant-associated thrombotic microangiopathy (TA-TMA).",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761152Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Yartemlea is indicated for the treatment of adult and pediatric patients two years of age and older with hematopoietic stem cell transplant-associated thrombotic microangiopathy (TA-TMA).",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761152",
+      "applicationType": "BLA",
+      "sponsor": "OMEROS CORP",
+      "originalApprovalDate": {
+        "value": "2025-12-23",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "oms721-tma-001",
+      "nctId": "NCT02222545",
+      "protocolNumber": "OMS721-TMA-001",
+      "title": "A Phase 2, Uncontrolled, Three-Stage, Dose-Escalation Cohort Study to Evaluate the Safety, Pharmacokinetics, Pharmacodynamics, Immunogenicity, and Clinical Activity of OMS721 in Adults With Thrombotic Microangiopathies",
+      "briefTitle": "Safety and Efficacy Study of OMS721 in Patients With Thrombotic Microangiopathies",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Omeros Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2014-11-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-01-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-08-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 58,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "OMS721 low dose",
+          "type": "EXPERIMENTAL",
+          "description": "Administration of OMS721 at a low dose"
+        },
+        {
+          "label": "OMS721 medium dose",
+          "type": "EXPERIMENTAL",
+          "description": "Administration of OMS721 at a medium dose"
+        },
+        {
+          "label": "OMS721 high dose",
+          "type": "EXPERIMENTAL",
+          "description": "Administration of OMS721 at a high dose"
+        }
+      ],
+      "primaryEndpoints": [
+        "Assess the Safety and Tolerability of Multiple-dose Administration of OMS721 in Participants With TMA",
+        "Number of Participants With HSCT-TMA Who Respond to OMS721"
+      ],
+      "secondaryEndpoints": [
+        "Participants With HSCT-TMA Treated With OMS721: 100-day Survival",
+        "Participants With HSCT-TMA Treated With OMS721: Overall Survival",
+        "Participants With HSCT-TMA Treated With OMS721: Duration of Response",
+        "Participants With HSCT-TMA Treated With OMS721: Freedom From Platelet Transfusion",
+        "Participants With HSCT-TMA Treated With OMS721: Freedom From Red Blood Cell (RBC) Transfusion",
+        "Participants With HSCT-TMA Treated With OMS721: Change From Baseline in Platelet Count",
+        "Participants With HSCT-TMA: Pharmacokinetics (PK) of Multiple-dose Administration of OMS721",
+        "Participants With HSCT-TMA (ADA)",
+        "Participants With HSCT-TMA Treated With OMS721: Change From Baseline in LDH",
+        "Participants With HSCT-TMA Treated With OMS721: Change From Baseline in Creatine",
+        "Participants With HSCT-TMA Treated With OMS721: Change From Baseline in Haptoglobin",
+        "Participants With HSCT-TMA Treated With OMS721: Change From Baseline in Hemoglobin",
+        "Participants With HSCT-TMA: Pharmacokinetics (PK) of Multiple-dose Administration of OMS721",
+        "Participants With HSCT-TMA: Pharmacokinetics (PK) of Multiple-dose Administration of OMS721",
+        "Participants With HSCT-TMA: Pharmacodynamics (PD)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02222545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02222545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02222545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02222545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02222545",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "oms721-gnp-001",
+      "nctId": "NCT02682407",
+      "protocolNumber": "OMS721-GNP-001",
+      "title": "A Phase 2 Study to Evaluate the Safety and Effect on Proteinuria of OMS721 in Subjects With IgA Nephropathy, Lupus Nephritis, Membranous Nephropathy, or C3 Glomerulopathy Including Dense Deposit Disease",
+      "briefTitle": "Safety Study of IgAN, LN, MN, & C3 Glomerulopathy Including Dense Deposit Disease Treated With OMS721",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Omeros Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2016-03-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-08-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-08-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 31,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Narsoplimab",
+          "type": "EXPERIMENTAL",
+          "description": "Administration of Narsoplimab\n\nVehicle: 5% dextrose in water"
+        },
+        {
+          "label": "Vehicle",
+          "type": "OTHER",
+          "description": "Drug: Vehicle (5% dextrose in water)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Cohort 1-3: Proportion of IgAN, LN, MN, C3 Glomerulopathy Participants With Treatment Related Adverse Events (AE).",
+        "Cohort 4: Proportion of IgAN Participants of Asian Descent With Treatment Related AEs.",
+        "Cohort 4: Change From Baseline in Serum and Urine Complement Component Levels."
+      ],
+      "secondaryEndpoints": [
+        "Cohort 1-3: Absolute Change From Baseline in Serum Narsoplimab Concentrations (ng/mL).",
+        "Cohort 4: Change From Baseline in Serum Narsoplimab Concentrations.",
+        "Cohort 1-3: Change From Baseline in Urine Protein Excretion (UPE) mg/24hrs.",
+        "Cohort 1-3: Change From Baseline in Urine Albumin/Creatinine Ratio."
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02682407",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02682407",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02682407",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02682407",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02682407",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "oms721-iga-001",
+      "nctId": "NCT03608033",
+      "protocolNumber": "OMS721-IGA-001",
+      "title": "A Randomized, Double-blind, Placebo-controlled, Phase 3 Study of the Safety and Efficacy of OMS721 in Patients With Immunoglobulin A (IgA) Nephropathy (ARTEMIS - IGAN)",
+      "briefTitle": "Study of the Safety and Efficacy of OMS721 in Patients With Immunoglobulin A (IgA) Nephropathy",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Omeros Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-04-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-01-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-01-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 360,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "OMS721",
+          "type": "EXPERIMENTAL",
+          "description": "Administration of OMS721"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Administration of Vehicle (D5W or Saline Solution)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percent Change in 24-hour UPE in g/Day Compared to Baseline"
+      ],
+      "secondaryEndpoints": [
+        "Change in Annualized eGFR Compared to Baseline.",
+        "Change in Annualized eGFR Compared to Baseline in All Patients.",
+        "Change in 24-hour UPE in g/Day Compared to Baseline in All Patients",
+        "Change in 24-hour UPE in g/Day Between 36 Weeks and 48 Weeks.",
+        "Change in 24-hour UPE in g/Day Between 36 Weeks and 72 Weeks in Patients With >= 2 g/Day UPE at Baseline (High-risk Proteinuria Group).",
+        "Change in 24-hour UPE in g/Day Between 36 Weeks and 48 Weeks in All Patients",
+        "Change in 24-hour UPE in g/Day Between 36 Weeks and 72 Weeks in All Patients",
+        "Safety and Tolerability of Narsoplimab for the Treatment of IgAN as Assessed by AEs, Vital Signs, Clinical Laboratory Tests, and ECGs"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03608033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03608033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03608033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03608033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03608033",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "ahus",
+      "nctId": "NCT03205995",
+      "protocolNumber": "OMS721-HUS-002",
+      "acronym": "aHUS",
+      "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of OMS721 for the Treatment of Atypical Hemolytic Uremic Syndrome (aHUS) in Adults and Adolescents",
+      "briefTitle": "Safety and Efficacy Study of OMS721 in Patients With Atypical Hemolytic Uremic Syndrome",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Omeros Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2018-05-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-02-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-02-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 6,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "OMS721 (narsoplimab)",
+          "type": "EXPERIMENTAL",
+          "description": "Administration of OMS721 (narsoplimab)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Platelet Count (10^9 Platelets/L) Change From Baseline at Week 26"
+      ],
+      "secondaryEndpoints": [
+        "Safety as Measured by Incidences of Adverse Events, Vital Signs, ECG, and Clinical Laboratory Tests",
+        "Thrombotic Microangiopathies (TMA) Response",
+        "TMA Event-free Status",
+        "Increase in Estimated Glomerular Filtration Rate (eGFR)",
+        "Hematological Normalization",
+        "TMA Remission",
+        "Incidence of Antidrug Antibodies (ADA)",
+        "Change From Baseline in Serum Creatinine (mg/dL)",
+        "Change From Baseline in Serum LDH (U/L)",
+        "Change From Baseline in Haptoglobin (mg/dL)",
+        "Pharmacokinetics (PK): Trough Plasma Concentration, Lower Limit of Quantification (LLOQ)",
+        "Pharmacokinetics (PK): Maximum Plasma Concentrations (Cmax)",
+        "Pharmacokinetics (PK): Area Under Time-concentration Curve (AUC)",
+        "Pharmacodynamics (PD): Inhibition of C3 Activity (%)",
+        "Pharmacodynamics (PD): Inhibition of C4 Activity (%)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03205995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03205995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03205995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03205995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03205995",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "oms721-hct-002",
+      "nctId": "NCT05855083",
+      "protocolNumber": "OMS721-HCT-002",
+      "title": "A Phase 2 Study Evaluating the Efficacy, Safety, Pharmacokinetics, and Pharmacodynamics of Narsoplimab in Pediatric Patients (28 Days to ≤ 18 Years of Age.) With High-Risk Hematopoietic Stem Cell Transplant Thrombotic Microangiopathy",
+      "briefTitle": "Efficacy and Safety Study of Narsoplimab in Pediatric Patients With High-Risk Hematopoietic Stem Cell Transplant TMA",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Omeros Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-05-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2025-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 18,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "28 Days",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Narsoplimab single arm-treatment",
+          "type": "EXPERIMENTAL",
+          "description": "Narsoplimab 4 mg/kg"
+        }
+      ],
+      "primaryEndpoints": [
+        "100-day survival rate following high-risk HSCT-TMA diagnosis."
+      ],
+      "secondaryEndpoints": [
+        "Number of participants with treatment-emergent adverse events assessed by CTCAE v5.0",
+        "Percentage of patients meeting protocol definition of clinical response",
+        "52 week survival rate following high-risk HSCT-TMA diagnosis",
+        "Overall survival following the diagnosis of high-risk HSCT-TMA",
+        "Pharmacokinetics (PK) of multiple-dose administration of OMS721",
+        "Presence of anti-drug antibody (ADA)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05855083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05855083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05855083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05855083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05855083",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "721-tma-ea",
+      "nctId": "NCT04247906",
+      "protocolNumber": "721-TMA-EA",
+      "title": "Single Patient Expanded Access Treatment Plan (EAP; Also Known As A Compassionate Use Plan) To Provide Patients Access To The Investigational Product Narsoplimab",
+      "briefTitle": "Single Patient Expanded Access Treatment Plan For The Investigational Product Narsoplimab",
+      "phase": "NA",
+      "roles": [],
+      "status": "APPROVED_FOR_MARKETING",
+      "sponsor": "Omeros Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "design": {},
+      "population": {
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04247906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04247906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04247906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04247906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04247906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2025-12-23",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761152%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761152",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761152%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761152Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761152Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:03:16.941Z"
+}

@@ -1,0 +1,4116 @@
+{
+  "slug": "enlicitide-decanoate",
+  "brandName": "Lipfendra",
+  "inn": "enlicitide decanoate",
+  "modality": "Drug (NDA)",
+  "sponsor": "MSD",
+  "summary": "",
+  "indications": [
+    {
+      "name": "As an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH)",
+      "slug": "as-an-adjunct-to-diet-and-exercise-to-reduce-low-density",
+      "approvalDate": {
+        "value": "2026-07-15",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220848Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-07-15",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Lipfendra (enlicitide) tablets as an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH).",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220848Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Lipfendra (enlicitide) tablets as an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH).",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220848",
+      "applicationType": "NDA",
+      "sponsor": "MSD",
+      "originalApprovalDate": {
+        "value": "2026-07-15",
+        "precision": "day"
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "0616-007",
+      "nctId": "NCT05070390",
+      "protocolNumber": "0616-007",
+      "title": "An Open-Label Clinical Study to Evaluate the Pharmacokinetics of MK-0616 Following Administration of a Single Dose to Participants With Moderate Renal Impairment",
+      "briefTitle": "A Study of Enlicitide Chloride (MK-0616 Oral PCSK9 Inhibitor) in Participants With Moderate Renal Impairment (MK-0616-007)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2021-11-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-05-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-05-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 18,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Panel A - Moderate Renal Impairment (RI)",
+          "type": "EXPERIMENTAL",
+          "description": "Single dose of enlicitide chloride 10 mg"
+        },
+        {
+          "label": "Panel B - Healthy Controls",
+          "type": "EXPERIMENTAL",
+          "description": "Single dose of enlicitide chloride 10 mg"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve From Time 0 to Infinity (AUC0-Inf) of MK-0616",
+        "Area Under the Concentration- Time Curve From Time 0 to Last Measurable Concentration (AUC0-last) of MK-0616.",
+        "Maximum Plasma Concentration (Cmax) of MK-0616",
+        "Time to Maximum Plasma Concentration (Tmax) of MK-0616",
+        "Apparent Terminal Half-life (t1/2) of MK-0616",
+        "Apparent Clearance (CL/F) of MK-0616",
+        "Apparent Volume of Distribution (Vz/F) of MK-0616"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experienced an Adverse Event (AE)",
+        "Number of Participants Who Discontinued From the Study Due to an AE",
+        "Amount Recovered in Urine From 0 to 24 Hours (Ae0-24) of MK-0616",
+        "Fraction of Dose Recovered in Urine (Fe) of MK-0616",
+        "Renal Clearance (CLr) of MK-0616",
+        "Percent Change From Baseline in Free Proprotein Convertase Subtilisin Kexin 9 (PCSK9)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05070390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05070390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05070390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05070390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05070390",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-008",
+      "nctId": "NCT05261126",
+      "protocolNumber": "0616-008",
+      "title": "A Phase 2b, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of MK-0616 in Adults With Hypercholesterolemia",
+      "briefTitle": "A Study of the Efficacy and Safety of Enclitide Chloride (MK-0616 Oral PCSK9 Inhibitor) in Adults With Hypercholesterolemia (MK-0616-008)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-03-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-11-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-11-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 381,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enclitide Chloride 6 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 6 mg of enlicitide chloride orally QD for 8 weeks"
+        },
+        {
+          "label": "Enclitide Chloride 12 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 12 mg of enlicitide chloride orally QD for 8 weeks"
+        },
+        {
+          "label": "Enclitide Chloride 18 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 18 mg of enlicitide chloride orally QD for 8 weeks"
+        },
+        {
+          "label": "Enclitide Chloride 30 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 30 mg of enlicitide chloride orally QD for 8 weeks"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive enlicitide chloride-matching placebo orally QD for 8 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percent Change From Baseline in Low-density Lipoprotein Cholesterol (LDL-C) at Week 8",
+        "Percentage of Participants Who Experienced One or More Adverse Events (AEs)",
+        "Percentage of Participants Who Discontinued Study Intervention Due to AEs"
+      ],
+      "secondaryEndpoints": [
+        "Percent Change From Baseline in Apolipoprotein B (ApoB) at Week 8",
+        "Percent Change From Baseline in Non-High-density Lipoprotein Cholesterol (Non-HDL-C) at Week 8",
+        "Percentage of Participants With LDL-C Value at Goal at Week 8"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05261126",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05261126",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05261126",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05261126",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05261126",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-012",
+      "nctId": "NCT06655311",
+      "protocolNumber": "0616-012",
+      "title": "Multiple-Rising Dose Clinical Study to Evaluate the Safety and Pharmacokinetics of MK-0616 in Healthy Participants and in Male and Female Participants Taking Statins",
+      "briefTitle": "A Study of Enlicitide Chloride (MK-0616) in Healthy Participants and Participants Taking Statins (MK-0616-012)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-09-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-01-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-01-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 56,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Chloride",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive enlicitide chloride titrated orally from Dose 1, Dose 2, or Dose 3 once daily (QD) over the course of a 14-day treatment for each dose based on the safety and tolerability of the previous starting dose. The total treatment duration is up to approximately 6 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants receive placebo orally for up to approximately 6 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Area Under the Curve from Time 0 to 24 Hours (AUC0-24) of Enlicitide Chloride",
+        "Maximum Plasma Concentration (Cmax) of Enlicitide Chloride",
+        "Plasma Concentration 24 Hours Postdose (C24) of Enlicitide Chloride",
+        "Time to Maximum Plasma Concentration (Tmax) of Enlicitide Chloride",
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of Enlicitide Chloride",
+        "Percent Change from Baseline of Plasma Low Density Lipoprotein (LDL-C) Concentration After Administration of Enlicitide Chloride"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06655311",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06655311",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06655311",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06655311",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06655311",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-009",
+      "nctId": "NCT06592339",
+      "protocolNumber": "0616-009",
+      "title": "An Open-Label, Randomized, Single-Dose, 3-Period, Crossover Study to Evaluate the Comparative Bioavailability of MK-0616 Capsules and Tablet Formulations in Healthy Participants",
+      "briefTitle": "A Study of MK-0616 in Healthy Adult Participants (MK-0616-009)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2022-10-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-12-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-12-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "50 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sequence 1: MK-0616 Reference capsule→MK-0616 Formulation 1 (F1)→MK-0616 Formulation 2 (F2)",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants receive MK-0616 reference capsule single dose on Day 1 orally (Period 1 = 15 days). Period 2: Participants receive MK-0616 F1 single dose on Day 1 orally (Period 2 = 15 days). Period 3: Participants receive MK-0616 F2 single dose on Day 1 orally (Period 3 = 15 days). A washout period of 14 days will separate Period 1, Period 2 and Period 3."
+        },
+        {
+          "label": "Sequence 2: MK-0616 Reference capsule→MK-0616 F2→MK-0616 F1",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants receive MK-0616 reference capsule single dose on Day 1 orally (Period 1 = 15 days). Period 2: Participants receive MK-0616 F2 single dose on Day 1 orally (Period 2 = 15 days). Period 3: Participants receive MK-0616 F1 single dose on Day 1 orally (Period 3 = 15 days). A washout period of 14 days will separate Period 1, Period 2 and Period 3."
+        },
+        {
+          "label": "Sequence 3: MK-0616 F1→MK-0616 Reference capsule→MK-0616 F2",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants receive MK-0616 F1 single dose on Day 1 orally (Period 1 = 15 days). Period 2: Participants receive MK-0616 reference capsule single dose on Day 1 orally (Period 2 = 15 days). Period 3: Participants receive MK-0616 F2 single dose on Day 1 orally (Period 3 = 15 days). A washout period of 14 days will separate Period 1, Period 2 and Period 3."
+        },
+        {
+          "label": "Sequence 4: MK-0616 F1→MK-0616 F2→MK-0616 Reference capsule",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants receive MK-0616 F1 single dose on Day 1 orally (Period 1 = 15 days). Period 2: Participants receive MK-0616 F2 single dose on Day 1 orally (Period 2 = 15 days). Period 3: Participants receive MK-0616 reference capsule single dose on Day 1 orally (Period 3 = 15 days). A washout period of 14 days will separate Period 1, Period 2 and Period 3."
+        },
+        {
+          "label": "Sequence 5: MK-0616 F2→MK-0616 Reference capsule →MK-0616 F1",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants receive MK-0616 F2 single dose on Day 1 orally (Period 1 = 15 days). Period 2: Participants receive MK-0616 reference capsule single dose on Day 1 orally (Period 2 = 15 days). Period 3: Participants receive MK-0616 F1 single dose on Day 1 orally (Period 3 = 15 days). A washout period of 14 days will separate Period 1, Period 2 and Period 3."
+        },
+        {
+          "label": "Sequence 6: MK-0616 F2→MK-0616 F1→MK-0616 Reference capsule",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants receive MK-0616 F2 single dose on Day 1 orally (Period 1 = 15 days). Period 2: Participants receive MK-0616 F1 single dose on Day 1 orally (Period 2 = 15 days). Period 3: Participants receive MK-0616 reference capsule single dose on Day 1 orally (Period 3 = 15 days). A washout period of 14 days will separate Period 1, Period 2 and Period 3."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of MK-0616",
+        "Area Under the Concentration-Time Curve from Time 0 to 24 hours (AUC0-24hr) of MK-0616",
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of MK-0616",
+        "Maximum Plasma Concentration (Cmax) of MK-0616",
+        "Maximum Plasma Concentration (C24) of MK-0616",
+        "Apparent Terminal Half-life (t1/2) of MK-0616",
+        "Time to Maximum Plasma Concentration (Tmax) of MK-0616"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06592339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06592339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06592339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06592339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06592339",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-010",
+      "nctId": "NCT06814106",
+      "protocolNumber": "0616-010",
+      "title": "A Single- and Multiple-Dose Clinical Study to Evaluate the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of MK-0616 in Healthy Chinese Adult Participants.",
+      "briefTitle": "A Single- and Multiple-Dose Study of Enlicitide Chloride (MK-0616) in Healthy Chinese Adult Participants (MK 0616-010)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-03-06",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-05-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-05-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 37,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "50 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Chloride Panel A",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants will receive a single dose of enlicitide chloride dose 1 or a single dose of placebo on Day 1 on an empty stomach (after a ≥8-hour overnight fast).\n\nPeriod 2: Participants will receive a single dose of enlicitide chloride dose 1 or a single dose of placebo on Day 1 on an empty stomach (after a ≥8-hour overnight fast) followed by a standard breakfast."
+        },
+        {
+          "label": "Enlicitide Chloride Panel B",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants will receive a single dose of enlicitide chloride dose 2 or a single dose of placebo on Day 1 on an empty stomach (after a ≥8-hour overnight fast).\n\nPeriod 2: Participants will receive a single dose of enlicitide chloride dose 3 or a single dose of placebo on Day 1 on an empty stomach (after a ≥8-hour overnight fast)."
+        },
+        {
+          "label": "Enlicitide Chloride Panel C",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive enlicitide chloride dose 2 or placebo once daily for 14 days on an empty stomach (after a ≥8-hour overnight fast)."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue the Study Treatment Due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Panels A and B: Area Under the Concentration-Time Curve from 0 to Infinity (AUC0-inf) of Enlicitide Chloride",
+        "Panels A and B: Area Under the Concentration-Time Curve from 0 to 24 Hours (AUC0-24) of Enlicitide Chloride",
+        "Panels A and B: Area Under the Concentration-Time Curve from 0 to Last Measurable Concentration (AUC0-last) of Enlicitide Chloride",
+        "Panels A and B: Maximum Plasma Concentration (Cmax) of Enlicitide Chloride",
+        "Panels A and B: Time to Maximum Plasma Concentration (Tmax) of Enlicitide Chloride",
+        "Panels A and B: Concentration at 24 Hours Postdose (C24) of Enlicitide Chloride",
+        "Panels A and B: Apparent Terminal Half-Life (t1/2) of Enlicitide Chloride",
+        "Panels A and B: Apparent Clearance (CL/F) of Enlicitide Chloride",
+        "Panels A and B: Apparent Volume of Distribution During Terminal Phase (Vz/F) of Enlicitide Chloride",
+        "Panels A and B: Percent of Reduction of Serum Low Density Lipoprotein Cholesterol (LDL-C)",
+        "Panel C: AUC0-24 of Enlicitide Chloride",
+        "Panel C: Cmax of Enlicitide Chloride",
+        "Panel C: Tmax of Enlicitide Chloride",
+        "Panel C: C24 of Enlicitide Chloride",
+        "Panel C: Apparent Terminal t1/2 of Enlicitide Chloride",
+        "Panel C: CL/F of Enlicitide Chloride",
+        "Panel C: Vz/F of Enlicitide Chloride",
+        "Panel C: Accumulation Ratio of Enlicitide Chloride",
+        "Panel C: Percent of Reduction of Serum LDL-C"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06814106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06814106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06814106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06814106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06814106",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-016",
+      "nctId": "NCT06658626",
+      "protocolNumber": "0616-016",
+      "title": "An Open-label Phase 1 Study to Evaluate Metabolism, Excretion, and Mass Balance of [¹⁴C]MK-0616 in Healthy Participants",
+      "briefTitle": "A Study to Evaluate the Metabolism, Excretion, and Mass Balance of [¹⁴C]Enlicitide Chloride ([¹⁴C]MK-0616) in Healthy Participants (MK-0616-016)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-03-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-08-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-08-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 8,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "MALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "[¹⁴C]Enlicitide chloride",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single dose of \\[¹⁴C\\]enlicitide chloride on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Cumulative Amount of Radioactivity Excreted in Urine (Aeu)",
+        "Cumulative Amount of Radioactivity Excreted in Feces (Aef)",
+        "Cumulative Percentage of Radioactivity Excreted in Urine (feu)",
+        "Cumulative Percentage of Radioactivity Excreted in Feces (fef)",
+        "Plasma Enlicitide Chloride: Area Under the Concentration-Time Curve from Time 0 to the Last Measurable Concentration (AUC0-t)",
+        "Plasma Enlicitide Chloride: Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-inf)",
+        "Plasma Enlicitide Chloride: Maximum Plasma Concentration (Cmax)",
+        "Plasma Enlicitide Chloride: Apparent Terminal Half-life (t1/2)",
+        "Plasma Enlicitide Chloride: Time to Maximum Plasma Concentration (Tmax)",
+        "Plasma Total Reactivity: AUC0-t",
+        "Plasma Total Reactivity: AUC0-inf",
+        "Plasma Total Reactivity: Cmax",
+        "Plasma Total Reactivity: t1/2",
+        "Plasma Total Reactivity: Tmax",
+        "Enlicitide Chloride to Total Radioactivity Ratio of Area Under the Concentration-Time Curve from Time 0 to the Last Detectable Sample (enlicitide chloride AUC0-x/total radioactivity AUC0-x)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue the Study Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658626",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-020",
+      "nctId": "NCT05934292",
+      "protocolNumber": "0616-020",
+      "title": "An Open-Label, Single-Dose Clinical Study to Evaluate the Pharmacokinetics of MK-0616 in Participants With Varying Degrees of Renal Impairment",
+      "briefTitle": "Enlicitide Decanoate (MK-0616 Oral PCSK9 Inhibitor) Renal Impairment Study (MK-0616-020)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-07-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-01-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-01-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 33,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "85 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Panel A: Moderate Renal Impairment (RI)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive Enlicitide Decanoate 20 mg tablet single dose orally on Day 1"
+        },
+        {
+          "label": "Panel B: Severe RI",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive Enlicitide Decanoate 20 mg tablet single dose orally on Day 1"
+        },
+        {
+          "label": "Panel C: End-Stage Renal Disease (ESRD) on Hemodialysis (HD)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive Enlicitide Decanoate 20 mg tablet orally on Day 1 and Day 16."
+        },
+        {
+          "label": "Panel D: Healthy Controls",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive Enlicitide Decanoate 20 mg tablet single dose orally on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve From Time 0 to Infinity (AUC0-Inf) of Enlicitide Decanoate",
+        "AUC From Time 0 to Last Measurable Concentration (AUClast) of Enlicitide Decanoate",
+        "Maximum Plasma Concentration (Cmax) of Enlicitide Decanoate",
+        "Time to Maximum Plasma Concentration (Tmax) of Enlicitide Decanoate",
+        "Apparent Terminal Half-life (t1/2) of Enlicitide Decanoate",
+        "Apparent Clearance (CL/F) of Enlicitide Decanoate",
+        "Apparent Volume of Distribution (Vz/F) of Enlicitide Decanoate"
+      ],
+      "secondaryEndpoints": [
+        "Panel C: Dialysate Clearance (CLd) of Enlicitide Decanoate",
+        "Panel C: Dialysate Concentration (Cd) of Enlicitide Decanoate",
+        "Panel C: Amount of Enlicitide Decanoate Excreted (AEd) in Dialysate",
+        "Panel C: Percentage of Dose (%Dose) of Enlicitide Decanoate Excreted in Dialysate",
+        "Amount of Enlicitide Decanoate Excreted in Urine From 0 to 24 Hours (AE0-24) After Administration of Enlicitide Decanoate",
+        "Percentage of Unchanged Enlicitide Decanoate Excreted in Urine (Fe)",
+        "Renal Clearance (CLr) of Enlicitide Decanoate",
+        "Number of Participants Who Experienced an Adverse Event (AE)",
+        "Panels A, B, and D: Number of Participants Who Discontinued From the Study Due to an AE",
+        "Panel C: Number of Participants Who Discontinued From the Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05934292",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05934292",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05934292",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05934292",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05934292",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-017",
+      "nctId": "NCT05952869",
+      "protocolNumber": "0616-017",
+      "title": "A Phase 3, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of MK-0616 in Adults With Heterozygous Familial Hypercholesterolemia.",
+      "briefTitle": "A Study of Enlicitide Decanoate (MK-0616 Oral PCSK9 Inhibitor) in Adults With Heterozygous Familial Hypercholesterolemia (MK-0616-017/CORALreef HeFH)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH)",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220848Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH))",
+            "quote": "Trial identifier appears within the As an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH) section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220848Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Lipfendra (enlicitide) tablets as an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH).",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-08-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-04-07",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-04-07",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 303,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received 20 mg of enlicitide decanoate orally once daily (QD) for up to 52 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received enlicitide decanoate-matching placebo orally QD for up to 52 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean Percent Change From Baseline in Low-Density Lipoprotein Cholesterol (LDL-C) at Week 24",
+        "Number of Participants With Adverse Events (AEs)",
+        "Number of Participants Who Discontinued Study Drug Due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Mean Percent Change From Baseline in LDL-C at Week 52",
+        "Mean Percent Change From Baseline in Non-High-Density Lipoprotein Cholesterol (HDL-C) at Week 24",
+        "Mean Percent Change From Baseline in Apolipoprotein B (ApoB) at Week 24",
+        "Percent Change From Baseline in Lipoprotein(a) (Lp[a]) at Week 24",
+        "Percentage of Participants With LDL-C <70 mg/dL and ≥50% Reduction From Baseline at Week 24",
+        "Percentage of Participants With LDL-C <55 mg/dL and ≥50% Reduction From Baseline at Week 24"
+      ],
+      "postedResults": [
+        {
+          "title": "Mean Percent Change From Baseline in Low-Density Lipoprotein Cholesterol (LDL-C) at Week 24",
+          "timeFrame": "Baseline and Week 24",
+          "paramType": "MEAN",
+          "unitOfMeasure": "Percent Change",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Enlicitide Decanoate"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-58.2",
+              "spread": "28.0"
+            },
+            {
+              "groupId": "OG001",
+              "value": "2.6",
+              "spread": "23.6"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "ANCOVA",
+              "paramType": "Difference in Means",
+              "paramValue": "-59.4",
+              "ciPct": "95",
+              "ciLower": "-65.6",
+              "ciUpper": "-53.2"
+            }
+          ]
+        },
+        {
+          "title": "Number of Participants With Adverse Events (AEs)",
+          "timeFrame": "Up to 64 weeks (8 weeks postdose)",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Enlicitide Decanoate"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "157"
+            },
+            {
+              "groupId": "OG001",
+              "value": "77"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Number of Participants Who Discontinued Study Drug Due to an AE",
+          "timeFrame": "Up to 56 weeks",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Enlicitide Decanoate"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "4"
+            },
+            {
+              "groupId": "OG001",
+              "value": "3"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952869",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952869",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952869",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952869",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952869",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952869?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220848Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 2,
+          "quote": "ons in Adults with HeFH The safety of LIPFENDRA was evaluated in Trial 2 (CORALreef HeFH, NCT05952869), a 52-week multicenter, double-blind, randomized, placebo-controlled trial in 303 patien",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-013",
+      "nctId": "NCT05952856",
+      "protocolNumber": "0616-013",
+      "title": "A Phase 3, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of MK-0616 in Adults With Hypercholesterolemia",
+      "briefTitle": "A Study of Enlicitide Decanoate (MK-0616 Oral PCSK9 Inhibitor) in Adults With Hypercholesterolemia (MK-0616-013) CORALreef Lipids",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "As an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH)",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220848Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — As an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH))",
+            "quote": "Trial identifier appears within the As an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH) section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220848Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Lipfendra (enlicitide) tablets as an adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH).",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-08-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-07-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-07-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 2912,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 20 mg of enlicitide decanoate orally once daily (QD) for up to 52 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive enlicitide decanoate-matching placebo orally QD for up to 52 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean Percent Change From Baseline in Low-density Lipoprotein Cholesterol (LDL-C) at Week 24",
+        "Number of Participants With One or More Adverse Events (AEs)",
+        "Number of Participants Who Discontinued Study Drug Due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Mean Percent Change From Baseline in LDL-C at Week 52",
+        "Mean Percent Change From Baseline in Non-high-density Lipoprotein Cholesterol (Non-HDL-C) at Week 24",
+        "Mean Percent Change From Baseline in Apolipoprotein B (ApoB) at Week 24",
+        "Percent Change From Baseline in Lipoprotein(a) (Lp(a)) at Week 24",
+        "Percentage of Participants With LDL-C <70 mg/dL and ≥50% Reduction From Baseline at Week 24",
+        "Percentage of Participants With LDL-C <55 mg/dL and ≥50% Reduction From Baseline at Week 24"
+      ],
+      "postedResults": [
+        {
+          "title": "Mean Percent Change From Baseline in Low-density Lipoprotein Cholesterol (LDL-C) at Week 24",
+          "timeFrame": "Baseline and Week 24",
+          "paramType": "MEAN",
+          "unitOfMeasure": "Percent change",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Enlicitide Decanoate"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-57.1",
+              "lowerLimit": "-61.8",
+              "upperLimit": "-52.5"
+            },
+            {
+              "groupId": "OG001",
+              "value": "3.0",
+              "lowerLimit": "0.9",
+              "upperLimit": "5.1"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.001",
+              "method": "ANCOVA",
+              "paramType": "Difference in Means",
+              "paramValue": "-55.8",
+              "ciPct": "95",
+              "ciLower": "-60.9",
+              "ciUpper": "-50.7"
+            }
+          ]
+        },
+        {
+          "title": "Number of Participants With One or More Adverse Events (AEs)",
+          "timeFrame": "Up to 60 weeks",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Enlicitide Decanoate"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "1244"
+            },
+            {
+              "groupId": "OG001",
+              "value": "602"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "paramType": "Difference in Percentage",
+              "paramValue": "2.2",
+              "ciPct": "95",
+              "ciLower": "-1.5",
+              "ciUpper": "5.9"
+            }
+          ]
+        },
+        {
+          "title": "Number of Participants Who Discontinued Study Drug Due to an AE",
+          "timeFrame": "Up to 52 weeks",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Enlicitide Decanoate"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "60"
+            },
+            {
+              "groupId": "OG001",
+              "value": "40"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952856",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952856",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952856",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952856",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952856",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05952856?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220848Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 2,
+          "quote": "Hypercholesterolemia The safety of LIPFENDRA was evaluated in Trial 1 (CORALreef Lipids, NCT05952856), a 52-week, multicenter, double-blind, randomized, placebo-controlled trial in 2,904 pat",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-015",
+      "nctId": "NCT06008756",
+      "protocolNumber": "0616-015",
+      "title": "Phase 3 Randomized, Placebo-Controlled Clinical Study to Evaluate the Efficacy and Safety of MK-0616 in Reducing Major Adverse Cardiovascular Events in Participants at High Cardiovascular Risk",
+      "briefTitle": "Enlicitide Decanoate (MK-0616 Oral PCSK9 Inhibitor) Cardiovascular Outcomes Study (MK-0616-015) CORALreef Outcomes",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-10-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-11-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2031-11-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 14550,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Blinded Portion: Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive enlicitide decanoate 20 mg once daily."
+        },
+        {
+          "label": "Blinded Portion: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants receive placebo once daily."
+        },
+        {
+          "label": "Open-Label Extension: Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who complete the blinded portion may enroll in this open-label extension arm. Participants in the extension arm receive enlicitide decanoate once daily up to 2 years."
+        }
+      ],
+      "primaryEndpoints": [
+        "Blinded Period: Time to First Occurrence of Coronary Heart Disease (CHD) Death-Based Major Adverse Cardiovascular Events (MACE)-Plus"
+      ],
+      "secondaryEndpoints": [
+        "Blinded Period: Time to First Occurrence of 3-point MACE",
+        "Blinded Period: Time to First Occurrence of Cardiovascular (CV) Death-Based MACE Plus",
+        "Blinded Period: Time to First Occurrence of CHD Death or MI",
+        "Blinded Period: Time to CV Death",
+        "Blinded Period: Time to All-Cause Death",
+        "Blinded Period: Time to CHD Death",
+        "Blinded Period: Time to First Event of MI",
+        "Blinded Period: Time to First Event of Ischemic Stroke",
+        "Blinded Period: Time to First Event of Acute Limb Ischemia or Major Amputation",
+        "Blinded Period: Time to First Event of Urgent Arterial Revascularization",
+        "Blinded Period: Percent Change from Baseline in Low-Density Lipoprotein Cholesterol (LDL-C)",
+        "Blinded Period: Percent Change from Baseline in Apolipoprotein B",
+        "Blinded Period: Percent Change from Baseline in Non-High-Density Lipoprotein Cholesterol (non-HDL-C) cholesterol",
+        "Blinded Period: Percent Change from Baseline in Lipoprotein (a)",
+        "Blinded Period: Number of Participants with an Adverse Event (AE)",
+        "Blinded Period: Number of Participants Discontinuing from Study Therapy Due to AE",
+        "Open-Label Extension (OLE): Time to First Occurrence of CHD Death-Based MACE Plus"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06008756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06008756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06008756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06008756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06008756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-022",
+      "nctId": "NCT06658652",
+      "protocolNumber": "0616-022",
+      "title": "A Clinical Study to Evaluate the Effect of Food and Water Volume on the Pharmacokinetics of the MK-0616 Final Market Formulation in Healthy Adult Participants",
+      "briefTitle": "The Effect of Food and Water Volume in Healthy Adult Participants Administered Enlicitide Decanoate (MK-0616) (MK-0616-022)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-10-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-12-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-12-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 34,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Decanoate Food Effect",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be administered enlicitide decanoate on Day 1 with or without food."
+        },
+        {
+          "label": "Enlicitide Decanoate Water Effect",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be administered enlicitide decanoate on Day 1 with high, medium, and low volumes of water."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of Enlicitide Decanoate",
+        "Area Under the Concentration-Time Curve from Time 0 to 24 hours (AUC0-24hrs) of Enlicitide Decanoate",
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of Enlicitide Decanoate",
+        "Maximum Plasma Concentration (Cmax) of Enlicitide Decanoate",
+        "Time to Maximum Plasma Concentration (Tmax) of Enlicitide Decanoate",
+        "Lag Time (tlag) of Enlicitide Decanoate in Plasma",
+        "Apparent Terminal Half-life (t1/2) of Enlicitide Decanoate",
+        "Apparent Clearance (CL/F) of Enlicitide Decanoate",
+        "Apparent Volume of Distribution During Terminal Phase (Vz/F) of Enlicitide Decanoate"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658652",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658652",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658652",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658652",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06658652",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-024",
+      "nctId": "NCT06699355",
+      "protocolNumber": "0616-024",
+      "title": "A Clinical Study to Evaluate the Effect of MK-0616 and Atorvastatin on Their Respective Pharmacokinetics in Healthy Adult Participants",
+      "briefTitle": "A Study to Evaluate the Drug-Drug Interaction Between Enlicitide Decanoate (MK-0616) and Atorvastatin in Healthy Adult Participants (MK-0616-024)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2023-11-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-12-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-12-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 18,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Atorvastatin",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive a single oral dose of atorvastatin (Treatment A) on Day 1."
+        },
+        {
+          "label": "Enlicitide Decanoate + Atorvastatin",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive a single oral dose of enlicitide decanoate plus a single oral dose of atorvastatin (Treatment B) on Day 1."
+        },
+        {
+          "label": "Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive a single oral dose of enlicitide decanoate (Treatment C) on Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of Atorvastatin and its Metabolites",
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of Atorvastatin and its Metabolites",
+        "Maximum Plasma Concentration (Cmax) of Atorvastatin and its Metabolites",
+        "Time to Maximum Plasma Concentration (Tmax) of Atorvastatin and its Metabolites",
+        "Apparent Terminal Half-Life (t1/2) of Atorvastatin and its Metabolites",
+        "Apparent Clearance (CL/F) of Atorvastatin",
+        "Apparent Volume of Distribution (Vz/F) of Atorvastatin",
+        "Area Under the Concentration-Time Curve from Time 0 to 24 Hours (AUC0-24hrs) of Enlicitide Decanoate",
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of Enlicitide Decanoate",
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of Enlicitide Decanoate",
+        "Maximum Plasma Concentration (Cmax) of Enlicitide Decanoate",
+        "Time to Maximum Plasma Concentration (Tmax) of Enlicitide Decanoate",
+        "Apparent Terminal Half-Life (t1/2) of Enlicitide Decanoate",
+        "Apparent Clearance (CL/F) of Enlicitide Decanoate",
+        "Apparent Volume of Distribution (Vz/F) of Enlicitide Decanoate"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699355",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699355",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699355",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699355",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699355",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-023",
+      "nctId": "NCT06699329",
+      "protocolNumber": "0616-023",
+      "title": "A Clinical Study to Evaluate the Effect of MK-0616 and Semaglutide on Their Respective Pharmacokinetics in Healthy Adult Participants",
+      "briefTitle": "A Study of Enlicitide Decanoate (MK-0616) and Semaglutide in Healthy Adult Participants (MK-0616-023)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-01-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 38,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Decanoate and Semaglutide",
+          "type": "EXPERIMENTAL",
+          "description": "Period 1: Participants receive an oral dose of enlicitide decanoate every day for 1 week.\n\nPeriod 2: Participants receive an oral dose of semaglutide every day for 6 weeks.\n\nPeriod 3: Participants receive an oral dose of both enlicitide decanoate and semaglutide every day for 1 week."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to 24 hours (AUC0-24hrs) of Enlicitide Decanoate",
+        "Area Under the Concentration-Time Curve from Time 0 to 24 hours (AUC0-24hrs) of Semaglutide",
+        "Maximum Plasma Concentration (Cmax) of Enlicitide Decanoate",
+        "Maximum Plasma Concentration (Cmax) of Semaglutide",
+        "Time to Maximum Plasma Concentration (Tmax) of Enlicitide Decanoate",
+        "Time to Maximum Plasma Concentration (Tmax) of Semaglutide"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience a Treatment-Emergent Adverse Event (TEAE)",
+        "Number of Participants Who Discontinue Study Due to a TEAE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699329",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699329",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699329",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699329",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06699329",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-025",
+      "nctId": "NCT06691906",
+      "protocolNumber": "0616-025",
+      "title": "A Clinical Study to Evaluate the Relative Bioavailability of MK-0616 Formulations in Healthy Adult Participants",
+      "briefTitle": "A Clinical Study of Enlicitide Decanoate (MK-0616) in Healthy Adult Participants (MK-0616-025)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-03-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 40,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Decanoate Treatment A",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single dose of enlicitide decanoate formulation 1 on Day 1 on an empty stomach."
+        },
+        {
+          "label": "Enlicitide Decanoate Treatment B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single dose of enlicitide decanoate formulation 2 on Day 1 on an empty stomach."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from 0 to 24 hours (AUC0-24) of enlicitide decanoate",
+        "Area Under the Concentration-Time Curve from 0 to Time of Last Quantifiable Sample (AUC0-last) of enlicitide decanoate",
+        "Area Under the Concentration-Time Curve from 0 to Infinity (AUC0-inf) of enlicitide decanoate",
+        "Maximum Plasma Concentration (Cmax) of enlicitide decanoate",
+        "Time to Maximum Plasma Concentration (Tmax) of enlicitide decanoate",
+        "Apparent Terminal Half-Life (t1/2) of enlicitide decanoate",
+        "Apparent Clearance (CL/F) of enlicitide decanoate",
+        "Apparent Volume of Distribution During Terminal Phase (Vz/F) of enlicitide decanoate"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06691906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06691906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06691906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06691906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06691906",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-026",
+      "nctId": "NCT06772779",
+      "protocolNumber": "0616-026",
+      "title": "A Clinical Study to Evaluate the Effect of MK-0616 on Warfarin and Lisinopril Pharmacokinetics in Healthy Adult Participants",
+      "briefTitle": "A Study of Enlicitide Decanoate (MK-0616), Warfarin, and Lisinopril in Healthy Adult Participants (MK-0616-026)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-04-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-06-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-06-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 36,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Warfarin Plus Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive oral warfarin and oral enlicitide decanoate."
+        },
+        {
+          "label": "Lisinopril Plus Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive oral lisinopril and oral enlicitide decanoate."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of Warfarin",
+        "Area Under the Concentration-Time Curve from Time 0 to Last Measurable Concentration (AUC0-Last) of Warfarin",
+        "Maximum Plasma Concentration (Cmax) of Warfarin",
+        "Time to Maximum Plasma Concentration (Tmax) of Warfarin",
+        "Apparent Terminal Half-life (t½) of Warfarin",
+        "Apparent Clearance (CL/F) of Warfarin",
+        "Apparent Volume of Distribution During Terminal Phase (Vz/F) of Warfarin",
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of Lisinopril",
+        "Area Under the Concentration-Time Curve from Time 0 to Last Measurable Concentration (AUC0-Last) of Lisinopril",
+        "Maximum Plasma Concentration (Cmax) of Lisinopril",
+        "Time to Maximum Plasma Concentration (Tmax) of Lisinopril",
+        "Apparent Terminal Half-life (t½) of Lisinopril",
+        "Apparent Clearance (CL/F) of Lisinopril",
+        "Apparent Volume of Distribution During Terminal Phase (Vz/F) of Lisinopril"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience a Treatment-Emergent Adverse Event (TEAE) in Part 1",
+        "Number of Participants Who Discontinue Study due to a TEAE in Part 1",
+        "Number of Participants Who Experience a Treatment-Emergent Adverse Event (TEAE) in Part 2",
+        "Number of Participants Who Discontinue Study due to a TEAE in Part 2"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772779",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772779",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772779",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772779",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772779",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-027",
+      "nctId": "NCT06772792",
+      "protocolNumber": "0616-027",
+      "title": "A Clinical Study to Evaluate the Effect of MK-0616 on the Pharmacokinetics of Alendronate in Healthy Adult Participants",
+      "briefTitle": "A Study to Evaluate the Drug-Drug Interaction Between Enlicitide Decanoate (MK-0616) and Alendronate in Healthy Adult Participants (MK-0616-027)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-04-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-06-21",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-06-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 36,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Alendronate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive a single oral dose of alendronate on Day 1 OR participants receive a single oral dose of alendronate on Day 15 depending on randomization."
+        },
+        {
+          "label": "Alendronate + Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive an oral dose of alendronate plus an oral dose of enlicitide decanoate on Day 1 OR participants receive an oral dose of alendronate plus an oral dose of enlicitide decanoate on Day 15 depending on randomization."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of Alendronate",
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of Alendronate",
+        "Maximum Plasma Concentration (Cmax) of Alendronate",
+        "Time to Maximum Plasma Concentration (Tmax) of Alendronate",
+        "Apparent Terminal Half-Life (t1/2) of Alendronate",
+        "Apparent Clearance (CL/F) of Alendronate",
+        "Apparent Volume of Distribution (Vz/F) of Alendronate"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE",
+        "Total Amount of Alendronate Excreted Unchanged Over a Period of 48 Hours (Ae0-48) after Alendronate Administration",
+        "Maximum Rate (Rmax) of Alendronate Excretion"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772792",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772792",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772792",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772792",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06772792",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-018",
+      "nctId": "NCT06450366",
+      "protocolNumber": "0616-018",
+      "title": "A Phase 3, Randomized, Double-Blind Study to Evaluate the Efficacy and Safety of MK-0616 Compared With Ezetimibe or Bempedoic Acid or Ezetimibe and Bempedoic Acid in Adults With Hypercholesterolemia",
+      "briefTitle": "A Study to Evaluate the Efficacy and Safety of Enlicitide (MK-0616, Oral PCSK9 Inhibitor) Compared With Ezetimibe or Bempedoic Acid or Ezetimibe and Bempedoic Acid in Adults With Hypercholesterolemia (MK-0616-018/CORALreef AddOn)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-07-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-02-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-03-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 301,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive enlicitide 20mg, ezetimibe-matching placebo, and bempedoic acid-matching placebo once daily (QD) orally up to approximately 56 days."
+        },
+        {
+          "label": "Ezetimibe",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants receive ezetimibe 10mg, enlicitide-matching placebo, and bempedoic acid-matching placebo QD orally up to approximately 56 days."
+        },
+        {
+          "label": "Bempedoic Acid",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants receive bempedoic acid 180mg, ezetimibe-matching placebo, and enlicitide-matching placebo QD orally up to approximately 56 days."
+        },
+        {
+          "label": "Ezetimibe + Bempedoic Acid",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants receive ezetimibe 10 mg, bempedoic acid 180mg, enlicitide-matching placebo orally QD for approximately 56 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean Percent Change From Baseline in Low-density Lipoprotein Cholesterol (LDL-C) at Day 56"
+      ],
+      "secondaryEndpoints": [
+        "Mean Percent Change From Baseline in Apolipoprotein B (ApoB) at Day 56",
+        "Mean Percent Change From Baseline in Non-High-density Lipoprotein Cholesterol (Non-HDL-C) at Day 56",
+        "Median Percent Change From Baseline in Lipoprotein(a) Levels (Lp[a])",
+        "Percentage of Participants Who at Day 56 Have an LDL-C <70 mg/dL and ≥50% Reduction From Baseline",
+        "Percentage of Participants Who at Day 56 Have an LDL-C <55 mg/dL and ≥50% Reduction From Baseline",
+        "Percentage of Participants With ≥1 Adverse Event (AE)",
+        "Percentage of Participants Discontinuing From Study Intervention Due to AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06450366",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06450366",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06450366",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06450366",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06450366",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-028",
+      "nctId": "NCT06625814",
+      "protocolNumber": "0616-028",
+      "title": "A Clinical Study to Evaluate the Effect of MK-0616 on the Pharmacokinetics of Levothyroxine in Healthy Adult Participants",
+      "briefTitle": "A Study of Levothyroxine and Enlicitide Decanoate (MK-0616) in Healthy Adult Participants (MK-0616-028)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-07-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-08-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-09-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 28,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "50 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Levothyroxine",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of levothyroxine."
+        },
+        {
+          "label": "Levothyroxine Plus Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of levothyroxine and a single oral dose of enlicitide decanoate at the same time."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area under the Concentration-Time Curve from Time 0 to 48 hours (AUC0-48hrs) of Levothyroxine (total T4)",
+        "Maximum Plasma Concentration (Cmax) of Levothyroxine (total T4)",
+        "Time to Maximum Plasma Concentration (Tmax) of Levothyroxine (total T4)",
+        "Area under the Concentration-Time Curve from Time 0 to 48 hours (AUC0-48hrs) of Triiodothyronine (total T3)",
+        "Maximum Plasma Concentration (Cmax) of Triiodothyronine (total T3)",
+        "Time to Maximum Plasma Concentration (Tmax) of Triiodothyronine (total T3)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience a Treatment-Emergent Adverse Event (TEAE)",
+        "Number of Participants Who Discontinue Study Due to a TEAE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625814",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625814",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625814",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625814",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06625814",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-019",
+      "nctId": "NCT06492291",
+      "protocolNumber": "0616-019",
+      "title": "A Phase 3, Open-label Extension Study to Evaluate the Safety and Efficacy of MK-0616 in Adults With Hypercholesterolemia",
+      "briefTitle": "Open-label Extension Study of Enlicitide Decanoate (MK-0616/Enlicitide Oral PCSK9 Inhibitor) in Adults With Hypercholesterolemia (MK-0616-019) CORALreef Extension",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-08-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-10-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-10-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 3000,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 20 mg of enlicitide decanoate orally once daily (QD)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with one or more adverse events (AEs)",
+        "Number of participants who discontinue study drug due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Mean percent change from baseline of the parent study in LDL-C at Week 8 of this extension study",
+        "Mean percent change from baseline of the parent study in non-high-density lipoprotein cholesterol (non-HDL-C) at Week 8 of this Extension Study",
+        "Mean percent change from baseline of the parent study in apolipoprotein B (ApoB) at Week 8 of this extension study",
+        "Percent change from baseline of the parent study in lipoprotein(a) (Lp[a]) at Week 8 of this extension study",
+        "Percentage of participants with LDL-C <70 mg/dL and ≥50% reduction from baseline of the parent study",
+        "Percentage of participants with LDL-C <55 mg/dL and ≥50% reduction from baseline of the parent study"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06492291",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06492291",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06492291",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06492291",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06492291",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-030",
+      "nctId": "NCT06575959",
+      "protocolNumber": "0616-030",
+      "title": "An Open-Label, Single-Dose Clinical Study to Evaluate the Pharmacokinetics of Enlicitide in Participants With Hepatic Impairment",
+      "briefTitle": "A Clinical Study of Enlicitide Decanoate in People With Liver Function Problems (MK-0616-030)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-09-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-05-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Moderate Hepatic Impairment (HI)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of enlicitide on Day 1"
+        },
+        {
+          "label": "Healthy Controls",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of enlicitide on Day 1"
+        },
+        {
+          "label": "Mild HI",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of enlicitide on Day 1"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration Versus Time Curve From Time 0 to Infinity (AUC0-inf) of Enlicitide",
+        "Maximum Concentration (Cmax) of Enlicitide"
+      ],
+      "secondaryEndpoints": [
+        "Area Under the Concentration Versus Time Curve From Time 0 to 24 Hours (AUC0-24) of Enlicitide",
+        "Area Under the Concentration Versus Time Curve From Time 0 to Last (AUC0-last) of Enlicitide in Plasma",
+        "Time to Maximum (Tmax) Observed Plasma Drug Concentration of Enlicitide",
+        "Apparent Terminal Half-life (t1/2) of Enlicitide",
+        "Apparent Clearance (CL/F) of Enlicitide",
+        "Apparent Volume of Distribution During Terminal Phase (Vz/F) of Enlicitide",
+        "Number of Participants Who Experienced a Treatment Emergent Adverse Event (TEAE)",
+        "Number of Participants Who Experienced An Adverse Event (AE)",
+        "Number of Participants Who Discontinued Study Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06575959",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06575959",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06575959",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06575959",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06575959",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-031",
+      "nctId": "NCT06597760",
+      "protocolNumber": "0616-031",
+      "title": "A Clinical Study to Evaluate the Effect of Enlicitide on the Pharmacokinetics of Digoxin in Healthy Adult Participants",
+      "briefTitle": "A Clinical Study to Assess the Effect of Enlicitide on How the Body Processes Digoxin in Healthy Adult Participants (MK-0616-031)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-10-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-11-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-11-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sequence 1: 0.25mg Digoxin-->0.25mg Digoxin plus 20mg enlicitide/180mg Sodium Caprate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 1 tablet of 0.25mg Digoxin on Day 1 of period 1 and 1 tablet of 0.25mg Digoxin coadministered with 1 tablet of 20 mg enlicitide/180 mg sodium caprate on Day 1 of Period 2."
+        },
+        {
+          "label": "Sequence 2: 0.25mg Digoxin plus 20mg enlicitide/180mg Sodium Caprate-->0.25mg Digoxin",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 1 tablet of 0.25mg Digoxin coadministered with 1 tablet of 20 mg enlicitide/180 mg sodium caprate on Day 1 of Period 1 and will receive 1 tablet of 0.25mg Digoxin on Day 1 of period 2."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-time Curve From Time Zero to Infinity (AUC0-inf) for Digoxin in Plasma"
+      ],
+      "secondaryEndpoints": [
+        "Area Under the Curve From Time Zero to Last Quantifiable Concentration (AUC0-last) for Digoxin in Plasma",
+        "Cmax (Maximum Concentration) for Digoxin in Plasma",
+        "Tmax (Time to Maximum Concentration) for Digoxin in Plasma",
+        "Terminal half life (T½) for Digoxin in Plasma",
+        "Apparent Clearance (CL/F) for Digoxin in Plasma",
+        "Apparent Volume of Distribution During Terminal Phase (Vz/F) for Digoxin in Plasma",
+        "Number of Participants With Treatment Emergent Adverse Events (TEAEs):",
+        "Number of Participants With Clinical Laboratory Abnormalities",
+        "Standard and Orthostatic Vital Signs",
+        "12-lead Electrocardiogram (ECGs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06597760",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06597760",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06597760",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06597760",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06597760",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-033",
+      "nctId": "NCT06609512",
+      "protocolNumber": "0616-033",
+      "title": "A Clinical Study to Evaluate the Effect of Fasting Duration on the Pharmacokinetics of the Enlicitide in Healthy Adult Participants",
+      "briefTitle": "A Clinical Study of Enlicitide and the Effect of Food in Healthy Adult Participants (MK-0616-033)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-10-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-01-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-01-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Treatment A",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive single oral dose of enlicitide after 8-hour overnight fast."
+        },
+        {
+          "label": "Enlicitide Treatment B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive single oral dose of enlicitide 4 hours after morning meal."
+        },
+        {
+          "label": "Enlicitide Treatment C",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive single oral dose of enlicitide 3 hours after morning meal."
+        },
+        {
+          "label": "Enlicitide Treatment D",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive single oral dose of enlicitide 2 hours after morning meal."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration versus Time Curve from 0 to Infinity (AUC0-inf) of enlicitide in plasma",
+        "Area Under the Concentration versus Time Curve from Time 0 to 24 hours (AUC0-24) of enlicitide in plasma",
+        "Area under the concentration versus time curve from time 0 to last quantifiable sample (AUC0-last) of enlicitide in plasma",
+        "Maximum plasma concentration (Cmax) of enlicitide in plasma",
+        "Time to maximum plasma concentration (Tmax) of enlicitide in plasma",
+        "Apparent terminal half-life (t1/2) of enlicitide in plasma",
+        "Apparent Clearance (CL/F) of enlicitide in plasma",
+        "Apparent volume of distribution during terminal phase (Vz/F) of enlicitide in plasma",
+        "Lag Time (tlag) of enlicitide in plasma"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants who experience one or more adverse events (AEs)",
+        "Number of participants who discontinue study intervention due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06609512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06609512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06609512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06609512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06609512",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-032",
+      "nctId": "NCT06643377",
+      "protocolNumber": "0616-032",
+      "title": "An Open-Label, Multiple-Dose Clinical Study to Evaluate the Pharmacokinetics of Enlicitide in Participants With Severe Renal Impairment",
+      "briefTitle": "A Clinical Study of Enlicitide in Participants With Severe Renal Impairment (MK-0616-032)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2024-11-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-06-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-06-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 27,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "85 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Panel A: Severe Renal Impairment",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with severe renal impairment receive enlicitide once daily (QD) for 28 days."
+        },
+        {
+          "label": "Panel B: Healthy",
+          "type": "EXPERIMENTAL",
+          "description": "Healthy participants receive enlicitide QD for 28 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Plasma Concentration Versus Time Curve From Time 0 to 24 Hours (AUC0-24) of Enlicitide",
+        "Maximum Plasma Concentration (Cmax) of Enlicitide",
+        "Time to Maximum Plasma Concentration (Tmax) of Enlicitide in Plasma",
+        "Apparent Plasma Clearance at Steady State (CLss/F) of Enlicitide",
+        "Apparent Plasma Volume of Distribution During Terminal Phase (Vz/F) of Enlicitide",
+        "Number of Participants Who Experience One or More Adverse Events (AEs)",
+        "Number of Participants Who Discontinue Study Intervention Due to an AE"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06643377",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06643377",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06643377",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06643377",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06643377",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-034",
+      "nctId": "NCT06719544",
+      "protocolNumber": "0616-034",
+      "title": "A Clinical Study to Evaluate the Effect of Enlicitide on the Pharmacokinetics of Lithium in Healthy Adult Participants",
+      "briefTitle": "A Study of Lithium and Enlicitide in Healthy Adult Participants (MK-0616-034)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-01-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-01-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-02-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 16,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Lithium Carbonate",
+          "type": "EXPERIMENTAL",
+          "description": "On Day 1 of Period 1, a single oral dose of lithium carbonate will be administered."
+        },
+        {
+          "label": "Enlicitide with Lithium Carbonate",
+          "type": "EXPERIMENTAL",
+          "description": "On Day 1 of Period 2, a single oral dose of lithium carbonate will be coadministered with a single oral dose of enlicitide."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration Versus Time Curve From Time Zero to Infinity (AUC0-inf) for Lithium in Plasma",
+        "Area Under the Concentration versus Time Curve From Time Zero to Last Quantifiable Sample (AUC0-last) for Lithium in Plasma",
+        "Cmax (Maximum Concentration) for Lithium in Plasma"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants who experience a Treatment Emergent Adverse Event (TEAE)",
+        "Number of Participants Who Discontinue Study Due to a TEAE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06719544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06719544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06719544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06719544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06719544",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-035",
+      "nctId": "NCT06880874",
+      "protocolNumber": "0616-035",
+      "title": "A Clinical Study to Evaluate the Relative Bioavailability of Enlicitide Formulations in Healthy Adult Participants",
+      "briefTitle": "A Clinical Study to Evaluate Enlicitide (MK-0616) Formulations in Healthy Adult Participants (MK-0616-035)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-04-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-05-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-05-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 40,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment A: enlicitide reference tablet",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive a single oral dose of enlicitide reference tablet."
+        },
+        {
+          "label": "Treatment B: enlicitide test tablet",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive a single oral dose of enlicitide test tablet."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to 24 hours (AUC0-24hrs) of enlicitide in plasma",
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of enlicitide in plasma",
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of enlicitide in plasma",
+        "Maximum Plasma Concentration (Cmax) of enlicitide in plasma"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06880874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06880874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06880874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06880874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06880874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-040",
+      "nctId": "NCT07044479",
+      "protocolNumber": "0616-040",
+      "title": "A Clinical Study to Evaluate the Effects of Coffee and Tea on the Pharmacokinetics of Enlicitide in Healthy Adult Participants",
+      "briefTitle": "A Clinical Study of How Coffee and Tea Affect Enlicitide in Healthy Volunteers (MK-0616-040)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-07-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-08-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-08-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 60,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Coffee Sequence 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be randomized to receive enlicitide administered with water in period 1 and enlicitide with coffee in period 2."
+        },
+        {
+          "label": "Enlicitide Coffee Sequence 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be randomized to receive enlicitide administered with coffee in period 1 and enlicitide with water in period 2."
+        },
+        {
+          "label": "Enlicitide Tea Sequence 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be randomized to receive enlicitide administered with water in period 1 and enlicitide with tea in period 2."
+        },
+        {
+          "label": "Enlicitide Tea Sequence 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be randomized to receive enlicitide administered with tea in period 1 and enlicitide with water in period 2."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1-Coffee: Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of Enlicitide",
+        "Part 1-Coffee: Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-last) of Enlicitide",
+        "Part 1 -Coffee : Maximum Plasma Concentration (Cmax) of Enlicitide",
+        "Part 2 -Tea: AUC0-last of Enlicitide",
+        "Part 2 - Tea: AUC0-Inf of Enlicitide",
+        "Part 2 -Tea: Cmax of Enlicitide"
+      ],
+      "secondaryEndpoints": [
+        "Part 1 - Coffee: Number of Participants Who Experience an Adverse Event (AE)",
+        "Part 2 - Tea: Number of Participants Who Experience an Adverse Event (AE)",
+        "Part 1 - Coffee: Number of Participants Who Discontinue Study Treatment Due to an AE",
+        "Part 2 - Tea: Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07044479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07044479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07044479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07044479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07044479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-029",
+      "nctId": "NCT07058077",
+      "protocolNumber": "0616-029",
+      "title": "An Operationally Seamless Phase 2/3 Study to Evaluate the Safety, Efficacy, and Pharmacokinetics of Enlicitide Decanoate in Pediatric Participants With Heterozygous Familial Hypercholesterolemia",
+      "briefTitle": "A Study of Enlicitide Decanoate (MK-0616, an Oral PCSK9 Inhibitor) in Children and Adolescents With Heterozygous Familial Hypercholesterolemia (MK-0616-029)",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-08-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2033-12-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2037-01-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 153,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part A: Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive enlicitide decanoate orally once daily (QD) at a dosage determined by age for up to 2 weeks."
+        },
+        {
+          "label": "Part B: Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive enlicitide decanoate QD at a dosage determined by age for up to 24 weeks."
+        },
+        {
+          "label": "Part B: Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants receive placebo orally QD for up to 24 weeks."
+        },
+        {
+          "label": "Open-Label Extension: Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who complete either Part A or Part B may enroll in this open-label extension arm. Participants in the extension arm receive enlicitide decanoate QD at a dosage determined by age for up to 3 years."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part A: Maximum Plasma Concentration (Cmax) of Enlicitide",
+        "Part A: Area Under the Concentration-Time Curve from 0 to 24 Hours (AUC0-24) of Enlicitide",
+        "Part B: Percent Change from Baseline in Low-Density Lipoprotein Cholesterol (LDL-C)",
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Part B: Percent Change from Baseline in Apolipoprotein B (ApoB)",
+        "Part B: Percent Change from Baseline in Non-High-Density Lipoprotein Cholesterol (non-HDL-C)",
+        "Part B: Percent Change from Baseline in Lipoprotein (a) (Lp(a))",
+        "Part B: Percentage of Participants With LDL-C <130 mg/dL at Week 24",
+        "Part B: Percentage of Participants With ≥50% LDL-C Reduction from Baseline at Week 24",
+        "Part B: Percentage of Participants With LDL-C <100 mg/dL at Week 24",
+        "Change in Carotid Intima-media Thickness (cIMT)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07058077",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07058077",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07058077",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07058077",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07058077",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-037",
+      "nctId": "NCT07216482",
+      "protocolNumber": "0616-037",
+      "title": "A Phase 3, Multicenter, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of Enlicitide Decanoate Coadministered With Rosuvastatin in Adults With Hyperlipidemia",
+      "briefTitle": "A Clinical Study of Enlicitide in Participants With High Cholesterol (MK-0616-037)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-11-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-08-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-11-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 996,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "FACTORIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "64 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive enlicitide and a rosuvastatin-matching placebo. Both will be delivered orally once daily (QD) for up to 12 weeks."
+        },
+        {
+          "label": "Enlicitide + Rosuvastatin",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive enlicitide and rosuvastatin. Both will be delivered orally QD for up to 12 weeks."
+        },
+        {
+          "label": "Rosuvastatin",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive rosuvastatin and an enlicitide-matching placebo. Both will be delivered orally QD for up to 12 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive an enlicitide-matching placebo and a rosuvastatin-matching placebo. Placebos will be delivered orally QD for up to 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean Percent Change from Baseline in LDL-C at Week 8 (Enlicitide + Rosuvastatin Versus Placebo)"
+      ],
+      "secondaryEndpoints": [
+        "Mean Percent Change from Baseline in LDL-C at Week 8",
+        "Mean Percent Change from Baseline in Apolipoprotein B (ApoB) at Week 8",
+        "Number of Participants with One or More Adverse Events (AEs)",
+        "Number of Participants who Discontinue Study Drug Due to One or More AEs",
+        "Mean Percent Change from Baseline in LDL-C at Week 12",
+        "Mean Percent Change from Baseline in Non-High-Density Lipoprotein Cholesterol (non-HDL-C) at Week 8",
+        "Percent Change from Baseline in Lipoprotein (a) (Lp[a]) at Week 8",
+        "Percentage of Participants with LDL-C <70 mg/dL and ≥50% Reduction from Baseline at Week 8",
+        "Percentage of Participants with LDL-C <55 mg/dL and ≥50% Reduction from Baseline at Week 8"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07216482",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07216482",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07216482",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07216482",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07216482",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616a-039",
+      "nctId": "NCT07300280",
+      "protocolNumber": "0616A-039",
+      "title": "A Clinical Study to Evaluate the Relative Bioavailability of FDC Tablets Containing Enlicitide and Rosuvastatin, Compared to Enlicitide and Rosuvastatin Administered Concomitantly as Single Entities, in Healthy Adult Participants",
+      "briefTitle": "A Clinical Trial of Enlicitide and Rosuvastatin in Healthy Adults (MK-0616-039)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2025-12-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-10-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-10-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 60,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide + Rosuvastatin Part 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in Part 1 will receive a single dose of enlicitide tablet coadministered with a single dose of rosuvastatin tablet"
+        },
+        {
+          "label": "MK-0616A Part 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in Part 1 will receive a single dose of MK-0616A"
+        },
+        {
+          "label": "Enlicitide + Rosuvastatin Part 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in Part 2 will receive a single dose of enlicitide tablet coadministered with a single dose of rosuvastatin tablet"
+        },
+        {
+          "label": "MK-0616A Part 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants in Part 2 will receive a single dose of MK-0616A formulation B"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of Enlicitide",
+        "AUC0-Inf of Rosuvastatin",
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of Enlicitde",
+        "AUC0-Last of Rosuvastatin",
+        "Maximum Plasma Concentration (Cmax) of Enlicitide",
+        "Cmax of Rosuvastatin"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07300280",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07300280",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07300280",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07300280",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07300280",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-041",
+      "nctId": "NCT07481708",
+      "protocolNumber": "0616-041",
+      "title": "A Clinical Study to Evaluate the Relative Bioavailability of Enlicitide Tablet Formulations Compared to the Reference Formulation in Healthy Adult Participants",
+      "briefTitle": "A Clinical Study of the Effect of Enlicitide (MK-0616) Formulations in Healthy Participants (MK-0616-041)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-03-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-05-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-05-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Dose regimen A",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive enlicitide orally at dose regimen A."
+        },
+        {
+          "label": "Dose regimen B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive enlicitide orally at dose regimen B."
+        },
+        {
+          "label": "Dose regimen C",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants receive enlicitide orally at dose regimen C."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve from Time 0 to Last (AUC0-Last) of enlicitide",
+        "Area Under the Concentration-Time Curve from Time 0 to Infinity (AUC0-Inf) of enlicitide",
+        "Maximum Plasma Concentration (Cmax) of enlicitide"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Intervention Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07481708",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07481708",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07481708",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07481708",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07481708",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "7262-004",
+      "nctId": "NCT07614984",
+      "protocolNumber": "7262-004",
+      "title": "A Phase 2, Multicenter, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of MK-7262 as Monotherapy and When Coadministered With Enlicitide Decanoate in Adults With Elevated Lipoprotein(a)",
+      "briefTitle": "A Clinical Trial of MK-7262 and Enlicitide in Participants With High Lipoprotein(a) (MK-7262-004)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-06-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-10-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-10-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 750,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive MK-7262 placebo + enlicitide placebo orally once daily (QD) for up to approximately 12 weeks of treatment."
+        },
+        {
+          "label": "enlicitide monotherapy",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive enlicitide + MK-7262 placebo orally once daily (QD) for up to approximately 12 weeks of treatment."
+        },
+        {
+          "label": "MK-7262 monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive MK-7262 + enlicitide placebo orally once daily (QD) for up to approximately 12 weeks of treatment."
+        },
+        {
+          "label": "MK-7262 + enlicitide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive MK-7262 + enlicitide orally once daily (QD) for up to approximately 12 weeks of treatment."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percent Change from Baseline in Lipoprotein (a) (Lp(a)) at Week 8",
+        "Percent Change from Baseline in Low-Density Lipoprotein Cholesterol (LDL-C) at Week 8",
+        "Number of Participants who Experience One or More Adverse Events (AEs)",
+        "Number of Participants Who Discontinue Study Intervention Due to an AE"
+      ],
+      "secondaryEndpoints": [
+        "Percent Change from Baseline in LDL-C at Week 8 (enlicitide monotherapy vs. placebo)",
+        "Percent Change from Baseline in LDL-C at Week 8 (MK-7262 monotherapy vs. placebo)",
+        "Percent Change from Baseline in Lp(a) at Week 8 (MK-7262 + enlicitide vs. MK-7262 monotherapy)",
+        "Percent Change from Baseline in LDL-C at Week 8 (MK-7262 + enlicitide vs. enlicitide monotherapy)",
+        "Percentage of Participants with Lp(a) <125 nmol/L at Week 8",
+        "Percentage of Participants with Lp(a) <75 nmol/L at Week 8",
+        "Percent Change from Baseline in Lp(a) at Week 12",
+        "Percent Change from Baseline in LDL-C at Week 12"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07614984",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07614984",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07614984",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07614984",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07614984",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "7262-003",
+      "nctId": "NCT07619443",
+      "protocolNumber": "7262-003",
+      "title": "A Clinical Drug-Drug Interaction Study to Evaluate the Mutual Pharmacokinetic Effects of MK-7262 and Enlicitide in Healthy Participants",
+      "briefTitle": "A Clinical Study of MK-7262 and Enlicitide in Healthy Participants (MK-7262-003)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-07-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-09-05",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-09-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "MK-7262",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive MK-7262 orally."
+        },
+        {
+          "label": "Enlicitide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive enlicitide orally."
+        },
+        {
+          "label": "MK-7262 plus Enlicitide",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive MK-7262 and enlicitide orally."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Concentration-Time Curve From Time 0 to Infinity (AUC0-inf) of MK-7262",
+        "AUC0-inf of Enlicitide",
+        "Maximum Plasma Concentration (Cmax) of MK-7262",
+        "Cmax of Enlicitide"
+      ],
+      "secondaryEndpoints": [
+        "Area Under the Concentration-Time Curve From Time 0 to 24 hours (AUC0-24) of MK-7262",
+        "Area Under the Concentration-Time Curve From Time 0 to Last Quantifiable Sample (AUC0-last) of MK-7262",
+        "Time to Maximum Plasma Concentration (Tmax) of MK-7262",
+        "Apparent Terminal Half-life (t1/2) of MK-7262",
+        "Apparent Clearance (CL/F) of MK-7262",
+        "Apparent Volume of Distribution During Terminal Phase (Vz/F)of MK-7262",
+        "AUC0-24 of Enlicitide",
+        "AUC0-last of Enlicitide",
+        "Tmax of Enlicitide",
+        "t1/2 of Enlicitide",
+        "CL/F of Enlicitide",
+        "Vz/F of Enlicitide",
+        "Number of Participants Who Experience One or More Adverse Events (AEs)",
+        "Number of Participants Who Discontinue Study Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07619443",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07619443",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07619443",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07619443",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07619443",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-044",
+      "nctId": "NCT07776665",
+      "protocolNumber": "0616-044",
+      "title": "A Clinical Study to Evaluate the Relative Bioavailability of Enlicitide Test Formulations Under Fed and Fasted Conditions and Compare to the Reference FMF Tablet in Healthy Adult Participants",
+      "briefTitle": "A Clinical Trial of Enlicitide (MK-0616) Formulations in Healthy Participants (MK-0616-044)",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-08-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-12-14",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-12-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 30,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment A: Enlicitide Reference",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of enlicitide reference formulation."
+        },
+        {
+          "label": "Treatment B: Enlicitide Formulation Test 1 - Fed",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of enlicitide formulation test 1 after a high-fat breakfast."
+        },
+        {
+          "label": "Treatment C: Enlicitide Formulation Test 1 - Fasted",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of enlicitide formulation test 1 under fasted conditions."
+        },
+        {
+          "label": "Treatment D: Enlicitide Formulation Test 2 - Fed",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive a single oral dose of enlicitide formulation test 2 after a high-fat breakfast."
+        },
+        {
+          "label": "Treatment E: Enlicitide Formulation Test 2 - Fasted",
+          "type": "EXPERIMENTAL",
+          "description": "Participant will receive a single oral dose of enlicitide formulation test 2 under fasted conditions."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Plasma Concentration-Time Curve From Time Zero to Infinity (AUC0-inf) of Enlicitide in Plasma",
+        "Maximum Observed Plasma Concentration (Cmax) of Enlicitide in Plasma"
+      ],
+      "secondaryEndpoints": [
+        "AUC0-inf of Enlicitide in Plasma Under Fed vs Fasted Conditions",
+        "Cmax of Enlicitide in Plasma Under Fed vs Fasted Conditions",
+        "Number of Participants Who Experience an Adverse Event (AE)",
+        "Number of Participants Who Discontinue Study Treatment Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07776665",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07776665",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07776665",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07776665",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07776665",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "0616-038",
+      "nctId": "NCT07821944",
+      "protocolNumber": "0616-038",
+      "title": "A Phase 3, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of Enlicitide Decanoate in Adults With Hyperlipidemia in India",
+      "briefTitle": "A Clinical Study of Enlicitide (MK-0616) in Adults With Hyperlipidemia in India (MK-0616-038)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "startDate": {
+        "value": "2026-10-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-11-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-11-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 150,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Enlicitide Decanoate",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive 20 mg enlicitide decanoate orally once daily (qd) for up to 24 weeks."
+        },
+        {
+          "label": "Placebo",
+          "type": "OTHER",
+          "description": "Participants will receive placebo orally qd for up to 24 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean Percent Change From Baseline in Low-density Lipoprotein Cholesterol (LDL-C) at Week 24",
+        "Number of Participants with One or More Adverse Events (AEs)",
+        "Number of Participants who Discontinue Study Drug Due to One or More AEs"
+      ],
+      "secondaryEndpoints": [
+        "Mean Percent Change From Baseline in Non High-Density Lipoprotein Cholesterol (Non-HDL-C) at Week 24",
+        "Mean Percent Change From Baseline in Apolipoprotein B (ApoB) at Week 24",
+        "Percent Change From Baseline in Lipoprotein (a) (Lp(a)) at Week 24",
+        "Percentage of Participants With LDL-C <70 mg/dL and ≥50% Reduction From Baseline at Week 24",
+        "Percentage of Participants With LDL-C <55 mg/dL and ≥50% Reduction From Baseline at Week 24"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07821944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07821944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07821944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07821944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07821944",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-07-15",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220848%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220848",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220848%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220848Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220848Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-10-29T07:00:13.817Z"
+}
