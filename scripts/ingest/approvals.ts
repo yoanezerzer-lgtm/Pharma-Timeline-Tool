@@ -241,17 +241,147 @@ export function historyComplete(first: string | undefined, letters: LabelDoc[], 
     .every((m) => !m.submissionNumber || read.has(m.submissionNumber));
 }
 
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/** A name that ignores spacing and hyphens: "KEYNOTE-590" also finds "KEYNOTE 590" and "KEYNOTE590". */
+function namePattern(id: string): RegExp {
+  const parts = id.match(/[A-Za-z]+|\d+/g) ?? [];
+  return new RegExp(`(?<![A-Za-z0-9])${parts.map(escapeRe).join('[\\s-]*')}(?![A-Za-z0-9])`, 'gi');
+}
+
+const nameKey = (s: string) => s.replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+
+/** Trial names written the way reviews write trials not in this record: "Study 111", "KEYNOTE-146". */
+const OTHER_TRIAL_NAME = /\b(?:(?:Study|Trial|Protocol)\s+[A-Z]{0,4}-?\d{2,5}(?:-\d{2,5})?|[A-Z][A-Za-z]{2,}-\d{2,4}[A-Z]?|NCT\d{8})\b/g;
+
+/**
+ * A trial's names as reviews write them: label name, acronym, protocol and
+ * NCT numbers. Only names with a number or hyphen count ("KEYNOTE-042",
+ * "SELECT-NEXT", "M16-011"): registry acronyms that are ordinary words
+ * ("TREATMENT", "NSCLC") turn up everywhere.
+ */
+type Named = Pick<Trial, 'id' | 'acronym' | 'labelName' | 'nctId' | 'protocolNumber'>;
+function trialIds(t: Named): string[] {
+  return [t.acronym, t.labelName, t.protocolNumber, t.nctId].filter(
+    (x): x is string => !!x && x.replace(/[^A-Za-z0-9]/g, '').length >= 5 && /\d|-/.test(x)
+  );
+}
+
+/** How a review shows which trials it is about: each named this often, and this many times more than any other trial. */
+const REVIEW_MIN_MENTIONS = 30;
+const REVIEW_MIN_LEAD = 3;
+/** At most this many trials share the lead, as with two identical phase 3 trials. */
+const REVIEW_MAX_SUBJECTS = 3;
+
+/** A review's statement of what the application rests on: "This application is primarily supported by...". */
+const SUPPORT = /supported by|based on (?:the )?(?:results|data|efficacy)|(?:pivotal|registrational) (?:trials?|stud(?:y|ies))/i;
+
+interface ReviewSubject {
+  trialIds: string[];
+  mentions: Map<string, number>;
+  runnerUp: number;
+  sentences: Map<string, string>;
+}
+
+/**
+ * The trials a review is about. A review quotes the whole label, so it
+ * names every trial in passing; the trials it is about it names hundreds of
+ * times. They are the smallest leading group (one trial, or two or three
+ * that share the lead) each named at least REVIEW_MIN_MENTIONS times and
+ * REVIEW_MIN_LEAD times as often as any trial outside the group, including
+ * trials outside this record ("Study 111").
+ */
+function reviewSubjects(review: LabelDoc, allTrials: Named[]): ReviewSubject | undefined {
+  const text = review.text.replace(/<<<PAGE \d+>>>/g, ' ').replace(/\s+/g, ' ');
+  const names = (t: Named) => trialIds(t).map(namePattern);
+  const count = (t: Named) => names(t).reduce((n, re) => n + (text.match(re) ?? []).length, 0);
+  const known = new Set(allTrials.flatMap((t) => trialIds(t).map(nameKey)));
+  const unknown: number[] = [];
+  const tally = new Map<string, number>();
+  for (const m of text.match(OTHER_TRIAL_NAME) ?? []) {
+    const bare = m.replace(/^(?:Study|Trial|Protocol)\s+/i, '');
+    if (known.has(nameKey(m)) || known.has(nameKey(bare))) continue;
+    tally.set(nameKey(bare), (tally.get(nameKey(bare)) ?? 0) + 1);
+  }
+  unknown.push(...tally.values());
+  const ranked = allTrials.map((t) => ({ t, n: count(t) })).sort((x, y) => y.n - x.n);
+  const outside = (k: number) => Math.max(ranked[k]?.n ?? 0, ...unknown);
+  const k = [1, 2, 3].slice(0, REVIEW_MAX_SUBJECTS).find(
+    (k) => ranked[k - 1] && ranked[k - 1].n >= REVIEW_MIN_MENTIONS && ranked[k - 1].n >= REVIEW_MIN_LEAD * outside(k)
+  );
+  if (!k) return undefined;
+  const subjects = ranked.slice(0, k);
+  const runnerUp = outside(k);
+
+  const sentences = text.split(/(?<=\.)\s+(?=[A-Z])/).filter((x) => x.length <= 600 && !/\.{4}/.test(x));
+  const naming = (t: Named) => sentences.filter((x) => names(t).some((re) => new RegExp(re.source, 'i').test(x)));
+  const quote = (t: Named) => {
+    const own = naming(t);
+    return own.find((x) => SUPPORT.test(x)) ?? own.find((x) => /efficacy/i.test(x)) ?? own[0] ?? `${review.submission} review`;
+  };
+  return {
+    trialIds: subjects.map((r) => r.t.id),
+    mentions: new Map(subjects.map((r) => [r.t.id, r.n])),
+    runnerUp,
+    sentences: new Map(subjects.map((r) => [r.t.id, quote(r.t)])),
+  };
+}
+
+/**
+ * The approval a pivotal trial supported, from the FDA's own review of that
+ * submission: the trial is one the review is about (see reviewSubjects), for
+ * exactly one of its indication's approvals, and it started before that approval.
+ */
+export function approvalFromReview(
+  trial: Named & Pick<Trial, 'startDate'>,
+  approvals: Approval[],
+  reviews: LabelDoc[],
+  allTrials: Named[],
+  subjectsOf: (r: LabelDoc) => ReviewSubject | undefined = (r) => reviewSubjects(r, allTrials)
+): IndicationRole['approval'] {
+  const hits = approvals.flatMap((a) => {
+    // Accelerated approvals rest on interim results, so only the start date has to come first.
+    if (trial.startDate && trial.startDate.value > a.date.value) return [];
+    const review = reviews.find((r) => r.submission === a.submission);
+    const subject = review && subjectsOf(review);
+    return review && subject?.trialIds.includes(trial.id) ? [{ a, review, subject }] : [];
+  });
+  if (hits.length !== 1) return undefined;
+  const { a, review, subject } = hits[0];
+  const mentions = subject.mentions.get(trial.id)!;
+  const quote = subject.sentences.get(trial.id)!;
+  const lead = subject.runnerUp > 0 ? `${Math.floor(mentions / subject.runnerUp)}× as often as any other trial` : 'and no other trial';
+  return {
+    submission: a.submission,
+    provenance: {
+      sourceUrl: review.url,
+      sourceLabel: `FDA review (${a.submission}): names the trial ${mentions} times, ${lead}`,
+      quote: quote.length > 500 ? quote.slice(0, 499) + '…' : quote,
+      extractedBy: 'rule',
+      verified: false,
+    },
+  };
+}
+
 /**
  * Each pivotal role linked to its approval: where a letter names the trial,
- * or where the indication has had exactly one approval and every later
+ * where the FDA's review of one approval is plainly about the trial, or
+ * where the indication has had exactly one approval and every later
  * efficacy letter was read, so there's no other approval it could be.
  */
 export function linkRolesToApprovals(
   trials: Trial[],
   history: Map<string, Approval[]>,
   letters: LabelDoc[],
-  completeFor: Set<string> = new Set()
+  completeFor: Set<string> = new Set(),
+  reviews: LabelDoc[] = []
 ): Trial[] {
+  // Each review is read once, however many trials ask about it.
+  const subjects = new Map<LabelDoc, ReviewSubject | undefined>();
+  const subjectsOf = (r: LabelDoc) => {
+    if (!subjects.has(r)) subjects.set(r, reviewSubjects(r, trials));
+    return subjects.get(r);
+  };
   return trials.map((t) => {
     let changed = false;
     const roles = t.roles.map((r) => {
@@ -260,6 +390,7 @@ export function linkRolesToApprovals(
       const sole = own.length === 1 && completeFor.has(r.indication) ? own[0] : undefined;
       const link =
         approvalNamingTrial(t, own, letters) ??
+        approvalFromReview(t, own, reviews, trials, subjectsOf) ??
         (sole && {
           submission: sole.submission,
           provenance: {

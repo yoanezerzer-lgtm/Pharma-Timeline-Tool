@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import type { Milestone, Trial } from '../src/schema/index.js';
 import {
+  approvalFromReview,
   approvalKind,
   approvalNamingTrial,
   approvalStatement,
@@ -160,5 +161,58 @@ describe('linking pivotal trials to approvals', () => {
     expect(linked[0].roles[0].approval).toMatchObject({ submission: 'ORIG-1', provenance: { sourceLabel: expect.stringContaining('the only approval') } });
     expect(linked[1].roles[0].approval).toBeUndefined();
     expect(linkRolesToApprovals(trials, history, letters, new Set())[0].roles[0].approval).toBeUndefined();
+  });
+});
+
+describe('matching trials to approvals from FDA reviews', () => {
+  const nsclc = [
+    { submission: 'SUPPL-24', date: { value: '2016-10-24', precision: 'day' as const }, kind: 'new' as const, statement: 'x', provenance: src },
+    { submission: 'SUPPL-47', date: { value: '2019-04-11', precision: 'day' as const }, kind: 'new' as const, statement: 'x', provenance: src },
+  ];
+  const t042 = trial({ id: 'k042', labelName: 'KEYNOTE-042', nctId: 'NCT02220894', protocolNumber: '3475-042', startDate: { value: '2014-11-19', precision: 'day' } });
+  const t024 = trial({ id: 'k024', labelName: 'KEYNOTE-024', nctId: 'NCT02142738', startDate: { value: '2014-09-19', precision: 'day' } });
+  const t010 = trial({ id: 'k010', labelName: 'KEYNOTE-010', nctId: 'NCT01905657', acronym: 'TREATMENT' });
+  const all = [t042, t024, t010];
+  const review = (submission: string, text: string) => ({ submission, url: `https://www.accessdata.fda.gov/nda/${submission}.pdf`, text });
+  // A review names its own trial hundreds of times and every label trial in passing.
+  const s047 = review(
+    'SUPPL-47',
+    'This application is primarily supported by a randomized, open-label trial, KEYNOTE-042. ' +
+      'Results of KEYNOTE 042 were consistent. '.repeat(60) +
+      'KEYNOTE-024 is described in the label. '.repeat(15) +
+      'TREATMENT TREATMENT TREATMENT '.repeat(40)
+  );
+
+  it("links the trial a review is plainly about, quoting the review's statement of what it rests on", () => {
+    expect(approvalFromReview(t042, nsclc, [s047], all)).toMatchObject({
+      submission: 'SUPPL-47',
+      provenance: {
+        quote: 'This application is primarily supported by a randomized, open-label trial, KEYNOTE-042.',
+        sourceLabel: expect.stringContaining('names the trial 61 times'),
+      },
+    });
+  });
+
+  it('ignores trials named only in passing, and acronyms that are ordinary words', () => {
+    expect(approvalFromReview(t024, nsclc, [s047], all)).toBeUndefined();
+    expect(approvalFromReview(t010, nsclc, [s047], all)).toBeUndefined();
+  });
+
+  it('links two trials that share the lead', () => {
+    const psa1 = trial({ id: 'p1', acronym: 'KEEPsAKE 1', protocolNumber: 'M16-011' });
+    const psa2 = trial({ id: 'p2', acronym: 'KEEPsAKE2', protocolNumber: 'M15-998' });
+    const r = review('SUPPL-47', 'Study M16-011 met its endpoint. '.repeat(50) + 'Study M15-998 met its endpoint. '.repeat(45) + 'Study M16-002 was supportive. '.repeat(10));
+    expect(approvalFromReview(psa1, nsclc, [r], [psa1, psa2])?.submission).toBe('SUPPL-47');
+    expect(approvalFromReview(psa2, nsclc, [r], [psa1, psa2])?.submission).toBe('SUPPL-47');
+  });
+
+  it("links nothing when the review is about a trial outside this record", () => {
+    const r = review('SUPPL-47', 'Study 111 was the basis. '.repeat(200) + 'KEYNOTE-042 was background. '.repeat(60));
+    expect(approvalFromReview(t042, nsclc, [r], all)).toBeUndefined();
+  });
+
+  it('needs the trial to have started before the approval', () => {
+    const late = { ...t042, startDate: { value: '2019-06-01', precision: 'day' as const } };
+    expect(approvalFromReview(late, nsclc, [s047], [late, t024, t010])).toBeUndefined();
   });
 });
