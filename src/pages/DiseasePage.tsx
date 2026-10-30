@@ -166,7 +166,8 @@ export function DiseasesPage() {
 /** MedlinePlus's summary, opening on its first two paragraphs. */
 function PlainSummary({ summary }: { summary: NonNullable<DiseaseSummary['summary']> }) {
   const [open, setOpen] = useState(false);
-  const shown = open ? summary.paragraphs : summary.paragraphs.slice(0, 2);
+  const opening = summary.paragraphs[0]?.endsWith('?') ? 3 : 2;
+  const shown = open ? summary.paragraphs : summary.paragraphs.slice(0, opening);
   return (
     <section className="disease__plain" aria-label="In plain words">
       <h2>In plain words</h2>
@@ -175,12 +176,16 @@ function PlainSummary({ summary }: { summary: NonNullable<DiseaseSummary['summar
           <p key={k} className="disease__bullet">
             {p.slice(2)}
           </p>
+        ) : p.endsWith('?') && p.length < 120 ? (
+          <h3 key={k} className="disease__plain-q">
+            {p}
+          </h3>
         ) : (
           <p key={k}>{p}</p>
         )
       )}
       <p className="disease__plain-foot">
-        {summary.paragraphs.length > 2 && (
+        {summary.paragraphs.length > opening && (
           <button type="button" className="disease__more" onClick={() => setOpen(!open)}>
             {open ? 'Show less' : 'Read the whole summary'}
           </button>

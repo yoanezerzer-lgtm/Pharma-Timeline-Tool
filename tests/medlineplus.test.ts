@@ -13,9 +13,14 @@ const XML = `<?xml version="1.0" encoding="UTF-8"?>
 <document rank="0" url="https://medlineplus.gov/rheumatoidarthritis.html">
 <content name="title">&lt;span class="qt0"&gt;Rheumatoid&lt;/span&gt; &lt;span class="qt1"&gt;Arthritis&lt;/span&gt;</content>
 <content name="altTitle">RA</content>
-<content name="FullSummary">&lt;p&gt;Rheumatoid arthritis (RA) is a type of arthritis that causes pain, swelling, and stiffness in your joints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Fatigue&lt;/li&gt;&lt;li&gt;Fever&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;No one knows what causes RA.&lt;/p&gt;</content>
+<content name="FullSummary">&lt;h3&gt;What is rheumatoid arthritis?&lt;/h3&gt;&lt;p&gt;Rheumatoid arthritis (RA) is a type of arthritis that causes pain, swelling, and stiffness in your joints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Fatigue&lt;/li&gt;&lt;li&gt;Fever&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;No one knows what causes RA.&lt;/p&gt;</content>
 </document>
-<document rank="1" url="https://medlineplus.gov/arthritis.html">
+<document rank="1" url="https://medlineplus.gov/dwarfism.html">
+<content name="title">Dwarfism</content>
+<content name="mesh">Achondroplasia</content>
+<content name="FullSummary">&lt;p&gt;People with dwarfism have short stature.&lt;/p&gt;</content>
+</document>
+<document rank="2" url="https://medlineplus.gov/arthritis.html">
 <content name="title">&lt;span class="qt1"&gt;Arthritis&lt;/span&gt;</content>
 <content name="FullSummary">&lt;p&gt;Arthritis means inflammation or swelling of one or more joints.&lt;/p&gt;</content>
 </document>
@@ -25,13 +30,14 @@ describe('MedlinePlus summaries', () => {
   afterEach(() => vi.unstubAllGlobals());
 
   it('reads each topic, without the search highlights', () => {
-    const [ra, arthritis] = parseResults(XML);
+    const [ra, , arthritis] = parseResults(XML);
     expect(ra).toMatchObject({ title: 'Rheumatoid Arthritis', names: ['Rheumatoid Arthritis', 'RA'], url: 'https://medlineplus.gov/rheumatoidarthritis.html' });
     expect(arthritis.title).toBe('Arthritis');
   });
 
   it('keeps the summary word for word, as paragraphs and list items', () => {
     expect(summaryParagraphs(parseResults(XML)[0].summary)).toEqual([
+      'What is rheumatoid arthritis?',
       'Rheumatoid arthritis (RA) is a type of arthritis that causes pain, swelling, and stiffness in your joints.',
       '• Fatigue',
       '• Fever',
@@ -48,5 +54,7 @@ describe('MedlinePlus summaries', () => {
     expect((await topic('Arthritis, Rheumatoid'))?.title).toBe('Rheumatoid Arthritis');
     expect((await topic('Arthritis'))?.title).toBe('Arthritis');
     expect(await topic('Arthritis, Psoriatic')).toBeUndefined();
+    // Filed under Achondroplasia in MeSH, but about dwarfism in general.
+    expect(await topic('Achondroplasia')).toBeUndefined();
   });
 });
