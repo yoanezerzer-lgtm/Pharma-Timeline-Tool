@@ -5,15 +5,16 @@ import { join } from 'node:path';
 import { medlinePlusTopic, parseResults, summaryParagraphs } from '../scripts/ingest/medlineplus.js';
 import { makeContext } from '../scripts/ingest/context.js';
 
-// The shape of a wsearch.nlm.nih.gov healthTopics response: content values
-// are escaped HTML, with search terms wrapped in highlight spans.
+// The shape of a real wsearch.nlm.nih.gov healthTopics response (captured on
+// the diag branches): content values are escaped HTML, search terms wrapped
+// in highlight spans, and a heading is bare text before a paragraph.
 const XML = `<?xml version="1.0" encoding="UTF-8"?>
 <nlmSearchResult><term>Arthritis, Rheumatoid</term><count>2</count>
 <list num="2" start="0" per="5">
 <document rank="0" url="https://medlineplus.gov/rheumatoidarthritis.html">
 <content name="title">&lt;span class="qt0"&gt;Rheumatoid&lt;/span&gt; &lt;span class="qt1"&gt;Arthritis&lt;/span&gt;</content>
 <content name="altTitle">RA</content>
-<content name="FullSummary">&lt;h3&gt;What is rheumatoid arthritis?&lt;/h3&gt;&lt;p&gt;Rheumatoid arthritis (RA) is a type of arthritis that causes pain, swelling, and stiffness in your joints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Fatigue&lt;/li&gt;&lt;li&gt;Fever&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;No one knows what causes RA.&lt;/p&gt;</content>
+<content name="FullSummary">What is &lt;span class="qt1"&gt;rheumatoid&lt;/span&gt; arthritis?&lt;p&gt;Rheumatoid arthritis (RA) is a type of arthritis that causes pain, swelling, and stiffness in your joints.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Fatigue&lt;/li&gt;&lt;li&gt;Fever&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;No one knows what causes RA.&lt;/p&gt;</content>
 </document>
 <document rank="1" url="https://medlineplus.gov/dwarfism.html">
 <content name="title">Dwarfism</content>

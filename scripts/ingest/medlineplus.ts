@@ -42,9 +42,8 @@ const stripTags = (s: string) => s.replace(/<[^>]+>/g, '');
 export function summaryParagraphs(html: string): string[] {
   return decode(html)
     .replace(/<li[^>]*>/gi, '\n• ')
-    // A heading ("<h3>What is RA?</h3>", or a bold lead-in question) is its own line.
-    .replace(/<\/(p|li|ul|ol|h\d|div)>|<br\s*\/?>|<h\d[^>]*>/gi, '\n')
-    .replace(/(\?)\s*<\/(strong|b)>/gi, '$1</$2>\n')
+    // A heading is bare text before a paragraph ("What is rheumatoid arthritis?<p>…"): its own line.
+    .replace(/<\/?(p|li|ul|ol|h\d|div)\b[^>]*>|<br\s*\/?>/gi, '\n')
     .split('\n')
     .map((line) => decode(stripTags(line)).replace(/\s+/g, ' ').trim())
     .filter((line) => line.length > 0 && line !== '•');
