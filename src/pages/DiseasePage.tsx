@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { BackLink } from '../components/BackLink/BackLink.js';
+import type { DiseaseSummary } from '../lib/diseases.js';
 import { diseaseIndex } from '../lib/catalog.js';
 import { formatDate, toTime } from '../lib/dates.js';
 import { shortIndication } from '../lib/drugs.js';
@@ -40,11 +42,12 @@ export function DiseasePage({ meshId }: { meshId: string }) {
           {drugs === 1 ? 'drug' : 'drugs'}
           {disease.areas.length > 0 && <> · {disease.areas.join(', ')}</>}
         </p>
+        {disease.summary && <PlainSummary summary={disease.summary} />}
         {disease.definition && (
           <blockquote className="disease__definition">
             <p>{disease.definition.text}</p>
             <footer>
-              Definition from{' '}
+              Medical definition from{' '}
               <a href={disease.definition.sourceUrl} target="_blank" rel="noopener noreferrer">
                 MeSH, U.S. National Library of Medicine ↗
               </a>
@@ -54,7 +57,10 @@ export function DiseasePage({ meshId }: { meshId: string }) {
       </header>
 
       <section className="ind-timeline" aria-label="Approvals over time">
-        <h2>Approvals over time</h2>
+        <div className="disease__timeline-head">
+          <h2>Approvals over time</h2>
+          <ExportButtons disease={disease} />
+        </div>
         {dated.length > 0 && (
           <div className="ind-timeline__axis" aria-hidden="true">
             <div />
@@ -154,5 +160,66 @@ export function DiseasesPage() {
         </section>
       ))}
     </main>
+  );
+}
+
+/** MedlinePlus's summary, opening on its first two paragraphs. */
+function PlainSummary({ summary }: { summary: NonNullable<DiseaseSummary['summary']> }) {
+  const [open, setOpen] = useState(false);
+  const shown = open ? summary.paragraphs : summary.paragraphs.slice(0, 2);
+  return (
+    <section className="disease__plain" aria-label="In plain words">
+      <h2>In plain words</h2>
+      {shown.map((p, k) =>
+        p.startsWith('• ') ? (
+          <p key={k} className="disease__bullet">
+            {p.slice(2)}
+          </p>
+        ) : (
+          <p key={k}>{p}</p>
+        )
+      )}
+      <p className="disease__plain-foot">
+        {summary.paragraphs.length > 2 && (
+          <button type="button" className="disease__more" onClick={() => setOpen(!open)}>
+            {open ? 'Show less' : 'Read the whole summary'}
+          </button>
+        )}
+        From{' '}
+        <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
+          MedlinePlus: {summary.title} ↗
+        </a>
+        , U.S. National Library of Medicine
+      </p>
+    </section>
+  );
+}
+
+/** Downloads of this page's approvals; the file is made in the browser. */
+function ExportButtons({ disease }: { disease: DiseaseSummary }) {
+  const [busy, setBusy] = useState<'xlsx' | 'pptx' | null>(null);
+  const [failed, setFailed] = useState(false);
+  const run = async (kind: 'xlsx' | 'pptx') => {
+    setBusy(kind);
+    setFailed(false);
+    try {
+      const m = await import('../lib/export.js');
+      await (kind === 'xlsx' ? m.exportExcel(disease) : m.exportPowerPoint(disease));
+    } catch {
+      setFailed(true);
+    } finally {
+      setBusy(null);
+    }
+  };
+  return (
+    <div className="disease__export">
+      <button type="button" onClick={() => run('xlsx')} disabled={busy !== null}>
+        {busy === 'xlsx' ? 'Preparing…' : 'Download Excel'}
+      </button>
+      <button type="button" onClick={() => run('pptx')} disabled={busy !== null}>
+        {busy === 'pptx' ? 'Preparing…' : 'Download PowerPoint'}
+      </button>
+      {failed && <span className="disease__export-error">Couldn’t make the file. Try again.</span>}
+    </div>
   );
 }

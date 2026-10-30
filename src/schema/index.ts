@@ -404,6 +404,8 @@ export const Disease = z.object({
   areas: z.array(z.string()).default([]),
   /** MeSH's own definition (scope note), public domain, from the National Library of Medicine. */
   definition: z.object({ text: z.string(), provenance: Provenance }).optional(),
+  /** MedlinePlus's plain-language summary of the same disease, word for word, public domain from NLM. */
+  summary: z.object({ title: z.string(), paragraphs: z.array(z.string()), provenance: Provenance }).optional(),
   provenance: Provenance,
 });
 export type Disease = z.infer<typeof Disease>;

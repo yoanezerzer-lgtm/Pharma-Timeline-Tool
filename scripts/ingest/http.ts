@@ -58,10 +58,21 @@ async function throttle(): Promise<void> {
  * A 404 is cached as a null result: "this identifier does not resolve" is a
  * real answer the resolver depends on, not a failure worth retrying.
  */
-export async function fetchJson<T>(
+export async function fetchJson<T>(url: string, opts: FetchOptions, retries = 3): Promise<T | null> {
+  return fetchCached<T>(url, opts, 'application/json', (res) => res.json() as Promise<T>, retries);
+}
+
+/** The same, for a service that answers in XML or HTML: the body as text. */
+export async function fetchText(url: string, opts: FetchOptions, retries = 3): Promise<string | null> {
+  return fetchCached<string>(url, opts, 'application/xml, text/xml, text/html', (res) => res.text(), retries);
+}
+
+async function fetchCached<T>(
   url: string,
   opts: FetchOptions,
-  retries = 3
+  accept: string,
+  read: (res: Response) => Promise<T>,
+  retries: number
 ): Promise<T | null> {
   const path = cachePathFor(opts.ctx.slug, opts.kind, url, opts.ctx.rawDir);
 
@@ -75,7 +86,7 @@ export async function fetchJson<T>(
     try {
       await throttle();
       const res = await fetch(url, {
-        headers: { accept: 'application/json', 'user-agent': 'pharma-timeline-tool' },
+        headers: { accept, 'user-agent': 'pharma-timeline-tool' },
       });
 
       if (res.status === 404) {
@@ -96,7 +107,7 @@ export async function fetchJson<T>(
         );
       }
 
-      const body = (await res.json()) as T;
+      const body = await read(res);
       writeCache(path, { ok: true, body });
       return body;
     } catch (err) {

@@ -2,6 +2,7 @@ import type { Disease, Trial } from '../../src/schema/index.js';
 import type { IngestContext } from './context.js';
 import { fetchJson } from './http.js';
 import { ABBREVIATIONS } from './approvals.js';
+import { medlinePlusTopic, type MedlinePlusTopic } from './medlineplus.js';
 
 /**
  * Which disease each approved use is for, as a MeSH term, so disease pages
@@ -42,6 +43,12 @@ const words = (s: string) =>
   );
 
 /** Whether the FDA's wording names the term: every word of it appears ("Arthritis, Rheumatoid" in "Rheumatoid Arthritis"). */
+/** Whether two names are the same disease: the same words in any order ("Rheumatoid Arthritis", "Arthritis, Rheumatoid"). */
+export function sameDisease(a: string, b: string): boolean {
+  const [x, y] = [words(a), words(b)];
+  return x.size > 0 && x.size === y.size && [...x].every((w) => y.has(w));
+}
+
 export function namesTerm(wording: string, term: string): boolean {
   const have = words(expand(wording));
   const need = [...words(term)];
@@ -87,6 +94,7 @@ interface MeshInfo {
   areas: string[];
   /** False when MeSH files the term under no disease category: a finding, not a disease ("Microsatellite Instability"). */
   isDisease: boolean;
+  plain?: MedlinePlusTopic;
 }
 
 const SPARQL_PREFIX =
@@ -147,6 +155,14 @@ export async function indicationDiseases(
       console.warn(`MeSH lookup failed for ${id}: ${(err as Error).message}`);
       info.set(id, { areas: [], isDisease: true });
     }
+    const term = [...matched.values()].flat().find((m) => m.id === id)!.term;
+    try {
+      const plain = await medlinePlusTopic(ctx, term);
+      if (plain) info.get(id)!.plain = plain;
+    } catch (err) {
+      // Same for MedlinePlus: the page goes without a plain-language summary.
+      console.warn(`MedlinePlus lookup failed for ${term}: ${(err as Error).message}`);
+    }
   }
   const out = new Map<string, Disease[]>();
   for (const [name, terms] of matched) {
@@ -163,6 +179,15 @@ export async function indicationDiseases(
                 definition: {
                   text: mi.definition,
                   provenance: { sourceUrl: `https://meshb.nlm.nih.gov/record/ui?ui=${m.id}`, sourceLabel: 'MeSH, U.S. National Library of Medicine', extractedBy: 'api' as const, verified: false },
+                },
+              }
+            : {}),
+          ...(mi.plain
+            ? {
+                summary: {
+                  title: mi.plain.title,
+                  paragraphs: mi.plain.paragraphs,
+                  provenance: { sourceUrl: mi.plain.url, sourceLabel: 'MedlinePlus, U.S. National Library of Medicine', extractedBy: 'api' as const, verified: false },
                 },
               }
             : {}),

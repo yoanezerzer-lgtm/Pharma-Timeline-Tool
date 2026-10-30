@@ -52,8 +52,10 @@ the current state and the agreed next steps. Update it when they change.
    ClinicalTrials.gov records that the FDA wording names
    (`scripts/ingest/diseases.ts`); definition and therapeutic areas (MeSH's
    top-level disease categories) come from NLM's MeSH service. The home
-   screen groups and filters by therapeutic area. Next: Excel/PowerPoint
-   export of a disease timeline; plain-language summaries from MedlinePlus.
+   screen groups and filters by therapeutic area. Disease pages have a
+   plain-language summary from MedlinePlus (only when its topic is the same
+   disease as the MeSH term, `scripts/ingest/medlineplus.ts`) and Excel and
+   PowerPoint downloads made in the browser (`src/lib/export.ts`).
 
 ## Agents and automatic jobs
 - **Nightly fact checker** (scheduled task, Sonnet, 00:36 ET): unchecked
