@@ -17,6 +17,7 @@ const XML = `<?xml version="1.0" encoding="UTF-8"?>
 </document>
 <document rank="1" url="https://medlineplus.gov/dwarfism.html">
 <content name="title">Dwarfism</content>
+<content name="altTitle">Achondroplasia</content>
 <content name="mesh">Achondroplasia</content>
 <content name="FullSummary">&lt;p&gt;People with dwarfism have short stature.&lt;/p&gt;</content>
 </document>
@@ -54,7 +55,8 @@ describe('MedlinePlus summaries', () => {
     expect((await topic('Arthritis, Rheumatoid'))?.title).toBe('Rheumatoid Arthritis');
     expect((await topic('Arthritis'))?.title).toBe('Arthritis');
     expect(await topic('Arthritis, Psoriatic')).toBeUndefined();
-    // Filed under Achondroplasia in MeSH, but about dwarfism in general.
+    // Lists Achondroplasia as another name and as a MeSH heading, but is about dwarfism in general.
+    expect(await topic('RA')).toBeUndefined();
     expect(await topic('Achondroplasia')).toBeUndefined();
   });
 });
