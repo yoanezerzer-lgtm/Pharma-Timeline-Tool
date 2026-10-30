@@ -23,6 +23,8 @@ export interface DiseaseSummary {
   term: string;
   areas: string[];
   definition?: { text: string; sourceUrl?: string };
+  /** MedlinePlus's plain-language summary, word for word. */
+  summary?: { title: string; paragraphs: string[]; sourceUrl?: string };
   /** Oldest first; undated last. */
   approvals: DiseaseApproval[];
 }
@@ -39,6 +41,9 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
         }
         entry.areas = [...new Set([...entry.areas, ...d.areas])].sort();
         if (!entry.definition && d.definition) entry.definition = { text: d.definition.text, sourceUrl: d.definition.provenance.sourceUrl };
+        if (!entry.summary && d.summary) {
+          entry.summary = { title: d.summary.title, paragraphs: d.summary.paragraphs, sourceUrl: d.summary.provenance.sourceUrl };
+        }
         const base = { drugSlug: drug.slug, brandName: drug.brandName, inn: drug.inn, indicationSlug: i.slug, indication: i.name };
         // A use approved in steps (Keytruda's melanoma: 2014, then adjuvant in 2019) shows each step.
         if (i.approvals && i.approvals.length > 0) {
