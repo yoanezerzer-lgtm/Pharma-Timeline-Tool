@@ -7,11 +7,12 @@ import { sameDisease } from './diseases.js';
  * Library of Medicine's consumer health site, for readers new to it.
  *
  * Read from MedlinePlus's search service. A health topic is used only when
- * its title, or one of its other names ("altTitle"), is the same disease as
- * the MeSH term ("Rheumatoid Arthritis" for "Arthritis, Rheumatoid"). The
- * MeSH headings a topic is filed under don't count: they include narrower
- * diseases ("Dwarfism" is filed under Achondroplasia, "Skin Cancer" under
- * Merkel cell carcinoma), and their summary is about the broader topic.
+ * its title is the same disease as the MeSH term ("Rheumatoid Arthritis"
+ * for "Arthritis, Rheumatoid"). Neither the other names it lists nor the
+ * MeSH headings it is filed under count: both include narrower diseases
+ * ("Dwarfism" lists Achondroplasia, "Skin Cancer" Merkel cell carcinoma),
+ * and the summary is about the broader topic. A true synonym under another
+ * title ("High Blood Pressure" for Hypertension) is left out with them.
  * Health topic summaries are written by NLM and free to reuse with credit.
  */
 
@@ -41,9 +42,8 @@ const stripTags = (s: string) => s.replace(/<[^>]+>/g, '');
 export function summaryParagraphs(html: string): string[] {
   return decode(html)
     .replace(/<li[^>]*>/gi, '\n• ')
-    // A heading ("<h3>What is RA?</h3>", or a bold lead-in question) is its own line.
-    .replace(/<\/(p|li|ul|ol|h\d|div)>|<br\s*\/?>|<h\d[^>]*>/gi, '\n')
-    .replace(/(\?)\s*<\/(strong|b)>/gi, '$1</$2>\n')
+    // A heading is bare text before a paragraph ("What is rheumatoid arthritis?<p>…"): its own line.
+    .replace(/<\/?(p|li|ul|ol|h\d|div)\b[^>]*>|<br\s*\/?>/gi, '\n')
     .split('\n')
     .map((line) => decode(stripTags(line)).replace(/\s+/g, ' ').trim())
     .filter((line) => line.length > 0 && line !== '•');
@@ -74,7 +74,7 @@ export async function medlinePlusTopic(ctx: IngestContext, term: string): Promis
   const url = `${SEARCH}?db=healthTopics&term=${encodeURIComponent(term)}&retmax=5`;
   const xml = await fetchText(url, { ctx, kind: 'medlineplus' });
   if (!xml) return undefined;
-  const topic = parseResults(xml).find((t) => t.names.some((n) => sameDisease(n, term)));
+  const topic = parseResults(xml).find((t) => sameDisease(t.title, term));
   if (!topic) return undefined;
   const paragraphs = summaryParagraphs(topic.summary);
   return paragraphs.length > 0 ? { title: topic.title, url: topic.url, paragraphs } : undefined;
