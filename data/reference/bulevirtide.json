@@ -13,13 +13,21 @@
       "indication": "Chronic hepatitis delta virus (HDV) infection in adults with out cirrhosis or with compensated cirrhosis",
       "trial": "NCT03852719",
       "pivotal": true,
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-10-30: Confirmed by label section 14 and the registry record.",
+      "evidence": [
+        {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761468Orig1s000lbl.pdf",
+          "quote": "Trial MYR301 The efficacy of HEPCLUDEX once daily in the treatment of adults with chronic HDV infection without cirrhosis or with compensated cirrhosis is based on data through Week 144"
+        }
+      ]
     },
     {
       "indication": "Chronic hepatitis delta virus (HDV) infection in adults with out cirrhosis or with compensated cirrhosis",
       "trial": "NCT03852433",
       "pivotal": true,
-      "status": "baseline"
+      "status": "baseline",
+      "tries": 1
     }
   ]
 }

@@ -13,13 +13,21 @@
       "indication": "To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses",
       "trial": "NCT04085523",
       "pivotal": true,
-      "status": "baseline"
+      "status": "baseline",
+      "tries": 1
     },
     {
       "indication": "To increase linear growth in pediatric patients 2 years of age and older with achondroplasia with open epiphyses",
       "trial": "NCT05598320",
       "pivotal": true,
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-10-30: Confirmed by label section 14 and the registry record.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219164Orig1s000lbl.pdf",
+          "quote": "The effectiveness of YUVIWEL has been established in a clinical trial of navepegritide consisting of a randomized, double-blind, placebo-controlled 52-week period, followed by a single-arm 52-week OLE period (Trial 1; NCT05598320)."
+        }
+      ]
     }
   ]
 }
