@@ -6,15 +6,6 @@
   "sponsor": "JANSSEN BIOTECH",
   "mechanism": "Endoglycosidase",
   "pharmacology": {
-    "drugClass": {
-      "name": "Endoglycosidase",
-      "provenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761433%22&limit=1",
-        "sourceLabel": "openFDA: Established Pharmacologic Class",
-        "extractedBy": "api",
-        "verified": false
-      }
-    },
     "sections": [
       {
         "number": "12.1",
@@ -128,8 +119,8 @@
             }
           },
           "provenance": {
-            "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
-            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04487080, NCT04988295)",
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04988295",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04988295)",
             "extractedBy": "rule",
             "verified": false
           }
@@ -431,17 +422,6 @@
             "extractedBy": "rule",
             "verified": false
           }
-        },
-        {
-          "indication": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
-          "role": "PIVOTAL",
-          "provenance": {
-            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
-            "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
-            "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional.",
-            "extractedBy": "rule",
-            "verified": false
-          }
         }
       ],
       "status": "ACTIVE_NOT_RECRUITING",
@@ -629,7 +609,49 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+                "quote": "Trial identifier appears within the First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            },
+            {
+              "indication": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+                "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-10-31T18:52:32.062Z"
+        }
+      ]
     },
     {
       "id": "papillon",
@@ -1143,5 +1165,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T19:12:41.924Z"
+  "lastIngestedAt": "2026-10-31T18:52:32.062Z"
 }
