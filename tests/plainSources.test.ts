@@ -32,3 +32,17 @@ describe('NCI Dictionary of Cancer Terms', () => {
     expect(nciEntry(results, ['Lung Neoplasms'])).toBeUndefined();
   });
 });
+
+describe('search answers and spellings', () => {
+  it('reads page addresses from a Genetics search answer (real format)', async () => {
+    const { searchUrls, geneticsSlug } = await import('../scripts/ingest/plainSources.js');
+    const xml =
+      '<search_results count="1"><query>Hyperargininemia</query><result><order>0</order><score>2.75</score><url>https://medlineplus.gov/genetics/condition/arginase-deficiency</url></result></search_results>';
+    expect(searchUrls(xml).map(geneticsSlug)).toEqual(['arginase-deficiency']);
+  });
+  it('spells MeSH names the way the cancer dictionary does', async () => {
+    const { nciSpellings } = await import('../scripts/ingest/plainSources.js');
+    expect(nciSpellings(['Carcinoma, Non-Small-Cell Lung'])).toContain('non-small cell lung cancer');
+    expect(nciSpellings(['Breast Neoplasms'])).toContain('breast cancer');
+  });
+});

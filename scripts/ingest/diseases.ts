@@ -110,10 +110,20 @@ export async function meshInfo(ctx: IngestContext, id: string): Promise<MeshInfo
   const conceptUri = value(descriptor.preferredConcept) ?? (descriptor.preferredConcept as { '@id'?: string })?.['@id'];
   let definition: string | undefined;
   let definitionUrl: string | undefined;
+  const synonyms: string[] = [];
   if (conceptUri) {
     definitionUrl = `${MESH}/${idOf(conceptUri)}.json`;
     const concept = await fetchJson<Record<string, unknown>>(definitionUrl, { ctx, kind: 'mesh' });
     definition = value(concept?.scopeNote)?.trim();
+    // Only the preferred concept's terms: a descriptor's other concepts can be narrower diseases.
+    const termUris = [...list(concept?.preferredTerm), ...list(concept?.term)]
+      .map((t) => value(t) ?? (t as { '@id'?: string })?.['@id'])
+      .filter((t): t is string => !!t);
+    for (const uri of [...new Set(termUris)].slice(0, 12)) {
+      const term = await fetchJson<Record<string, unknown>>(`${MESH}/${idOf(uri)}.json`, { ctx, kind: 'mesh' });
+      const label = (value(term?.prefLabel) ?? value(term?.label))?.trim();
+      if (label) synonyms.push(label);
+    }
   }
   // Diseases (C) and mental disorders (F03) only: a tree number like
   // "C05.550.114.099" sits under category C05.
@@ -133,14 +143,7 @@ export async function meshInfo(ctx: IngestContext, id: string): Promise<MeshInfo
     const label = res?.results?.bindings?.[0]?.label?.value;
     if (label) areas.push(label);
   }
-  // Only the preferred concept's terms: a descriptor's other concepts can be narrower diseases.
-  const synonymQuery = `${SPARQL_PREFIX}SELECT ?label WHERE { mesh:${id} meshv:preferredConcept ?c . ?c meshv:preferredTerm|meshv:term ?t . ?t rdfs:label ?label }`;
-  const synRes = await fetchJson<{ results?: { bindings?: { label?: { value?: string } }[] } }>(
-    `${MESH}/sparql?query=${encodeURIComponent(synonymQuery)}&format=JSON&inference=false`,
-    { ctx, kind: 'mesh' }
-  );
-  const synonyms = [...new Set((synRes?.results?.bindings ?? []).map((b) => b.label?.value?.trim() ?? '').filter((l) => l.length > 0))];
-  return { definition, definitionUrl, areas, isDisease: tops.length > 0, synonyms };
+  return { definition, definitionUrl, areas, isDisease: tops.length > 0, synonyms: [...new Set(synonyms)] };
 }
 
 const ctgovUrl = (t: Trial) => (t.nctId ? `https://clinicaltrials.gov/study/${t.nctId}` : undefined);
@@ -227,7 +230,5 @@ async function plainSummary(ctx: IngestContext, names: string[]): Promise<PlainS
   }
   const genetic = await geneticsCondition(ctx, names);
   if (genetic) return genetic;
-  // The dictionary names cancers as "… cancer": search those spellings too.
-  const spellings = [...new Set(names.flatMap((n) => [n, n.replace(/\b(?:neoplasms?|carcinoma)\b/i, 'cancer')]).map((n) => n.toLowerCase()))];
-  return nciDictionary(ctx, spellings.slice(0, 6));
+  return nciDictionary(ctx, names);
 }
