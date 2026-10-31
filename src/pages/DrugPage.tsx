@@ -3,6 +3,7 @@ import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.j
 import { drugIndex, useDrug } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
 import { trialsForIndication } from '../lib/drugs.js';
+import { naturalTerm } from '../lib/plainText.js';
 import { diseaseHref, indicationHref } from '../lib/router.js';
 import type { Drug, Provenance } from '../schema/index.js';
 import './IndicationPage.css';
@@ -100,7 +101,7 @@ function DrugView({ drug }: { drug: Drug }) {
                     {i.diseases!.map((d, k) => (
                       <span key={d.meshId}>
                         {k > 0 && ', '}
-                        <a href={diseaseHref(d.meshId)}>{d.term}</a>
+                        <a href={diseaseHref(d.meshId)}>{naturalTerm(d.term)}</a>
                       </span>
                     ))}
                   </p>

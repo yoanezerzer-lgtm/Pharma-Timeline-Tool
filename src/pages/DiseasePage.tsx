@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { BackLink } from '../components/BackLink/BackLink.js';
-import type { DiseaseSummary } from '../lib/diseases.js';
+import type { DiseaseSummary, UseStep } from '../lib/diseases.js';
 import { diseaseIndex } from '../lib/catalog.js';
 import { formatDate, toTime } from '../lib/dates.js';
-import { shortIndication } from '../lib/drugs.js';
 import { diseaseHref, diseasesHref, drugHref, indicationHref } from '../lib/router.js';
 import '../components/IndicationTimeline/IndicationTimeline.css';
 import './IndicationPage.css';
@@ -11,6 +10,13 @@ import './DrugPage.css';
 import './DiseasePage.css';
 
 const DAY = 86_400_000;
+
+const STEP_LABEL: Record<UseStep['kind'], string> = {
+  new: 'Approved',
+  expansion: 'Widened',
+  revision: 'Wording changed',
+  conversion: 'Converted to full approval',
+};
 
 export function DiseasePage({ meshId }: { meshId: string }) {
   const disease = diseaseIndex.find((d) => d.meshId === meshId);
@@ -22,24 +28,23 @@ export function DiseasePage({ meshId }: { meshId: string }) {
       </main>
     );
   }
-  const dated = disease.approvals.filter((a) => a.date);
-  const times = dated.map((a) => toTime(a.date!));
+  const times = disease.uses.flatMap((u) => u.steps.filter((s) => s.date).map((s) => toTime(s.date!)));
   const min = Math.min(...times) - 180 * DAY;
   const max = Math.max(...times) + 180 * DAY;
   const pct = (t: number) => ((t - min) / (max - min)) * 100;
   const years: number[] = [];
   for (let y = new Date(min).getUTCFullYear() + 1; y <= new Date(max).getUTCFullYear(); y++) years.push(y);
   const step = Math.ceil(years.length / 8);
-  const drugs = new Set(disease.approvals.map((a) => a.drugSlug)).size;
+  const drugs = new Set(disease.uses.map((u) => u.drugSlug)).size;
+  const uses = disease.uses.length;
 
   return (
     <main className="drug">
       <BackLink href={diseasesHref()} label="All diseases" />
       <header className="disease__head">
-        <h1>{disease.term}</h1>
+        <h1>{disease.name}</h1>
         <p className="drug__mechanism">
-          {disease.approvals.length} FDA {disease.approvals.length === 1 ? 'approval' : 'approvals'} across {drugs}{' '}
-          {drugs === 1 ? 'drug' : 'drugs'}
+          {uses} FDA-approved {uses === 1 ? 'use' : 'uses'} across {drugs} {drugs === 1 ? 'drug' : 'drugs'}
           {disease.areas.length > 0 && <> · {disease.areas.join(', ')}</>}
         </p>
         {disease.summary && <PlainSummary summary={disease.summary} />}
@@ -47,7 +52,7 @@ export function DiseasePage({ meshId }: { meshId: string }) {
           <blockquote className="disease__definition">
             <p>{disease.definition.text}</p>
             <footer>
-              Medical definition from{' '}
+              Medical definition of “{disease.term}” from{' '}
               <a href={disease.definition.sourceUrl} target="_blank" rel="noopener noreferrer">
                 MeSH, U.S. National Library of Medicine ↗
               </a>
@@ -61,7 +66,8 @@ export function DiseasePage({ meshId }: { meshId: string }) {
           <h2>Approvals over time</h2>
           <ExportButtons disease={disease} />
         </div>
-        {dated.length > 0 && (
+        <p className="about__note">One row per approved use. A filled dot is a new approval; an open dot is a change to an earlier one.</p>
+        {times.length > 0 && (
           <div className="ind-timeline__axis" aria-hidden="true">
             <div />
             <div className="ind-timeline__years">
@@ -77,41 +83,76 @@ export function DiseasePage({ meshId }: { meshId: string }) {
           </div>
         )}
         <ol className="ind-timeline__rows">
-          {disease.approvals.map((a, k) => (
-            <li key={`${a.drugSlug}-${a.indicationSlug}-${a.submission ?? k}`}>
-              <a href={indicationHref(a.drugSlug, a.indicationSlug)} className="ind-timeline__row" title={a.statement ?? a.indication}>
-                <span className="ind-timeline__name">
-                  <strong>{a.brandName}</strong> <span className="disease__use">{shortIndication({ name: a.indication }, 40)}</span>
-                </span>
-                <span className="ind-timeline__track" aria-hidden="true">
-                  {years.map((y) => (
-                    <span key={y} className="ind-timeline__gridline" style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }} />
-                  ))}
-                  {a.date && <span className="ind-timeline__dot" style={{ left: `${pct(toTime(a.date))}%` }} />}
-                </span>
-                <span className="ind-timeline__date">{a.date ? formatDate(a.date) : 'Date not determined'}</span>
-              </a>
-            </li>
-          ))}
+          {disease.uses.map((u) => {
+            const firstDate = u.steps.find((s) => s.date)?.date;
+            return (
+              <li key={`${u.drugSlug}-${u.indicationSlug}`}>
+                <a href={`#use-${u.drugSlug}-${u.indicationSlug}`} className="ind-timeline__row" title={`${u.brandName}: ${u.indication}`}>
+                  <span className="ind-timeline__name disease__row-name">
+                    <strong>{u.brandName}</strong> <span className="disease__use">{u.indication}</span>
+                  </span>
+                  <span className="ind-timeline__track" aria-hidden="true">
+                    {years.map((y) => (
+                      <span key={y} className="ind-timeline__gridline" style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }} />
+                    ))}
+                    {u.steps.map((s, k) =>
+                      s.date ? (
+                        <span
+                          key={k}
+                          className={`ind-timeline__dot${s.kind === 'new' ? '' : ' disease__dot--later'}`}
+                          style={{ left: `${pct(toTime(s.date))}%` }}
+                        />
+                      ) : null
+                    )}
+                  </span>
+                  <span className="ind-timeline__date">
+                    {firstDate ? formatDate(firstDate) : 'Date not determined'}
+                    {u.steps.length > 1 && <span className="disease__inn"> · {u.steps.length - 1} more</span>}
+                  </span>
+                </a>
+              </li>
+            );
+          })}
         </ol>
       </section>
 
       <section className="uses" aria-labelledby="wording-head">
         <h2 id="wording-head">What each approval covers</h2>
-        <p className="about__note">In the FDA's words: the label's indication, or the approval letter's sentence when a use was approved in steps.</p>
+        <p className="about__note">
+          In the FDA’s words, from the approval letter (its opening formalities left out) or the label. Each date links to the
+          letter.
+        </p>
         <ul className="uses__list">
-          {disease.approvals.map((a, k) => (
-            <li key={`${a.drugSlug}-${a.indicationSlug}-${a.submission ?? k}`} className="disease__approval">
+          {disease.uses.map((u) => (
+            <li key={`${u.drugSlug}-${u.indicationSlug}`} id={`use-${u.drugSlug}-${u.indicationSlug}`} className="disease__approval">
               <p className="uses__name">
-                <a href={drugHref(a.drugSlug)}>
-                  <strong>{a.brandName}</strong>
+                <a href={drugHref(u.drugSlug)}>
+                  <strong>{u.brandName}</strong>
                 </a>{' '}
-                <span className="disease__inn">({a.inn})</span> · {a.date ? formatDate(a.date) : 'Date not determined'}
-                {a.submission && <span className="disease__inn"> · {a.submission}</span>}
+                <span className="disease__inn">({u.inn})</span> · {u.indication}
               </p>
-              <p className="disease__wording">{a.statement ?? a.indication}</p>
-              <a className="uses__meta" href={indicationHref(a.drugSlug, a.indicationSlug)}>
-                Trials behind this approval →
+              <ol className="disease__steps">
+                {u.steps.map((s, k) => (
+                  <li key={k}>
+                    <span className="disease__step-when">
+                      {STEP_LABEL[s.kind]}{' '}
+                      {s.sourceUrl ? (
+                        <a href={s.sourceUrl} target="_blank" rel="noopener noreferrer" title={s.submissions.join(', ')}>
+                          {s.date ? formatDate(s.date) : 'date not determined'}
+                        </a>
+                      ) : s.date ? (
+                        formatDate(s.date)
+                      ) : (
+                        'date not determined'
+                      )}
+                    </span>
+                    {/* The label's wording is already the heading above; don't say it twice. */}
+                    <span className="disease__wording">{s.text === u.indication ? '' : s.text}</span>
+                  </li>
+                ))}
+              </ol>
+              <a className="uses__meta" href={indicationHref(u.drugSlug, u.indicationSlug)}>
+                Trials behind this use →
               </a>
             </li>
           ))}
@@ -133,8 +174,8 @@ export function DiseasesPage() {
       <header className="disease__head">
         <h1>Diseases</h1>
         <p className="drug__mechanism">
-          {diseaseIndex.length} diseases with FDA approvals on this site, grouped by therapeutic area. The names and areas are
-          the National Library of Medicine's (MeSH), and a disease can sit in more than one area.
+          {diseaseIndex.length} diseases with FDA approvals on this site, grouped by therapeutic area. The names and areas come
+          from the National Library of Medicine’s medical vocabulary (MeSH), and a disease can sit in more than one area.
         </p>
       </header>
       {areas.map((area) => (
@@ -144,13 +185,13 @@ export function DiseasesPage() {
           </h2>
           <ul className="uses__list">
             {byArea.get(area)!.map((d) => {
-              const drugs = [...new Set(d.approvals.map((a) => a.brandName))];
+              const drugs = [...new Set(d.uses.map((u) => u.brandName))];
               return (
                 <li key={d.meshId}>
                   <a href={diseaseHref(d.meshId)} className="uses__item">
-                    <span className="uses__name">{d.term}</span>
+                    <span className="uses__name">{d.name}</span>
                     <span className="uses__meta">
-                      {d.approvals.length} {d.approvals.length === 1 ? 'approval' : 'approvals'} · {drugs.join(', ')}
+                      {d.uses.length} approved {d.uses.length === 1 ? 'use' : 'uses'} · {drugs.join(', ')}
                     </span>
                   </a>
                 </li>

@@ -3,6 +3,7 @@ import { drugIndex } from '../lib/catalog.js';
 import { compareHref, diseasesHref, drugHref, indicationHref, reviewHref, ingestHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel, shortIndication } from '../lib/drugs.js';
+import { naturalTerm } from '../lib/plainText.js';
 import type { DrugSummary } from '../lib/summary.js';
 import { CheckBadge } from '../components/CheckBadge/CheckBadge.js';
 import './DrugIndex.css';
@@ -68,7 +69,7 @@ export function DrugIndex() {
       if (area && !areasOf(d).includes(area)) return false;
       if (year && !d.indications.some((i) => i.approvalDate?.value.startsWith(year))) return false;
       if (!q) return true;
-      return [d.brandName, d.inn, d.sponsor, d.company, ...d.areas, ...d.indications.flatMap((i) => [i.name, i.displayName ?? '', ...i.diseases.map((x) => x.term)])]
+      return [d.brandName, d.inn, d.sponsor, d.company, ...d.areas, ...d.indications.flatMap((i) => [i.name, i.displayName ?? '', ...i.diseases.flatMap((x) => [x.term, naturalTerm(x.term)])])]
         .join(' ')
         .toLowerCase()
         .includes(q);

@@ -10,7 +10,7 @@ import { shortIndication } from './drugs.js';
 
 const SITE = 'https://yoanezerzer-lgtm.github.io/Pharma-Timeline-Tool/';
 const pageUrl = (a: DiseaseApproval) => `${SITE}#/drug/${a.drugSlug}/indication/${a.indicationSlug}`;
-const fileName = (d: DiseaseSummary, ext: string) => `${d.term.replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '')}-FDA-approvals.${ext}`;
+const fileName = (d: DiseaseSummary, ext: string) => `${d.name.replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '')}-FDA-approvals.${ext}`;
 const today = () => new Date().toISOString().slice(0, 10);
 
 const SOURCES = [
@@ -34,7 +34,7 @@ export async function exportExcel(d: DiseaseSummary): Promise<void> {
     ]),
   ];
   const about = [
-    [bold(d.term)],
+    [bold(d.name)],
     [{ value: d.definition?.text ?? '', wrap: true }],
     [{ value: d.areas.length > 0 ? `Therapeutic areas (MeSH): ${d.areas.join(', ')}` : '' }],
     [{ value: '' }],
@@ -62,7 +62,7 @@ export async function exportPowerPoint(d: DiseaseSummary): Promise<void> {
   const font = 'Arial';
 
   const title = pptx.addSlide();
-  title.addText(d.term, { x: 0.6, y: 1.8, w: 12, h: 1, fontSize: 36, bold: true, color: ink, fontFace: font });
+  title.addText(d.name, { x: 0.6, y: 1.8, w: 12, h: 1, fontSize: 36, bold: true, color: ink, fontFace: font });
   title.addText(`${d.approvals.length} FDA approvals across ${new Set(d.approvals.map((a) => a.drugSlug)).size} drugs`, {
     x: 0.6, y: 2.8, w: 12, h: 0.5, fontSize: 18, color: muted, fontFace: font,
   });
