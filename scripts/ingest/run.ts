@@ -26,7 +26,6 @@ import { findReviews } from './reviews.js';
 import { labelCompany, reviewOffice } from './labelFacts.js';
 import { pharmacology } from './pharmacology.js';
 import { indicationDiseases } from './diseases.js';
-import { drugTrialsSnapshot } from './snapshot.js';
 
 export const ALL_STEPS = ['fda', 'docs', 'codes', 'ctgov', 'merge'] as const;
 
@@ -351,19 +350,6 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     return d.length > 0 ? { ...i, diseases: d } : i;
   });
   log(`[diseases] ${incoming.indications.filter((i) => i.diseases).length} of ${incoming.indications.length} approved use(s) matched to a MeSH disease`);
-  try {
-    const snap = await drugTrialsSnapshot(ctx, spec.brandName);
-    if (snap) {
-      incoming.snapshot = {
-        sections: snap.sections,
-        provenance: { sourceUrl: snap.url, sourceLabel: 'FDA Drug Trials Snapshot', extractedBy: 'regex', verified: false },
-      };
-    }
-    log(`[snapshot] ${snap ? `${snap.sections.length} section(s) from ${snap.url}` : 'no Drug Trials Snapshot found'}`);
-  } catch (err) {
-    // The page is extra reading: an outage leaves it out rather than failing the run.
-    console.warn(`Drug Trials Snapshot lookup failed: ${(err as Error).message}`);
-  }
   const existing = loadExisting(drugsDir, spec.slug);
   const merged = mergeDrug(existing, incoming, now);
   merged.drug.trials = dedupeTrialIds(merged.drug.trials);

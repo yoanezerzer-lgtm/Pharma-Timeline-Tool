@@ -153,7 +153,7 @@ jobs:
           git add -f data/raw/*/docs/*.txt
           # Answers from services only this workflow can reach (MedlinePlus, MedlinePlus Genetics, the NCI
           # dictionary, MeSH); kept so their format and matches can be checked.
-          for kind in medlineplus genetics nci mesh snapshot; do
+          for kind in medlineplus genetics nci mesh; do
             if compgen -G "data/raw/*/${kind}/*.json" > /dev/null; then git add -f data/raw/*/${kind}/*.json; fi
           done
           git commit -m "Diagnostic: extracted document text for ${DRUG}"

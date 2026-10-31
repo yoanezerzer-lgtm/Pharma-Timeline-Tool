@@ -67,11 +67,6 @@ export async function fetchText(url: string, opts: FetchOptions, retries = 3): P
   return fetchCached<string>(url, opts, 'application/xml, text/xml, text/html', (res) => res.text(), retries);
 }
 
-/** A web page meant for people (fda.gov answers "not found" when XML is asked for first). */
-export async function fetchHtml(url: string, opts: FetchOptions, retries = 3): Promise<string | null> {
-  return fetchCached<string>(url, opts, 'text/html,application/xhtml+xml', (res) => res.text(), retries);
-}
-
 async function fetchCached<T>(
   url: string,
   opts: FetchOptions,
