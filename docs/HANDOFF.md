@@ -1,4 +1,4 @@
-# Handoff: where things stand (31 Oct 2026)
+# Handoff: where things stand (31 Oct 2026, evening)
 
 Read `CLAUDE.md` first: it holds the owner's standing rules. This note is
 the current state and the next steps. Update it when they change, and start
@@ -15,17 +15,26 @@ a new session when a conversation gets long.
 ## The site (https://yoanezerzer-lgtm.github.io/Pharma-Timeline-Tool/)
 - **52 drugs.** The 6 originals (Rinvoq, Skyrizi, Keytruda, Lexapro,
   Foundayo, Mimrylo) plus 46 from FDA's list of new-medicine approvals.
-- **Home** (`src/pages/DrugIndex.tsx`): compact list, grouped and filtered by
-  therapeutic area. A drug appears under each area its uses fall in. Also
-  filters by company and year; cards and table views remain.
-- **Drug page** (`#/drug/<slug>`, `src/pages/DrugPage.tsx`): approved uses
-  (each linked to its disease) and "About this drug": FDA drug class, label
-  sections 12.1–12.3 as the PDF text reads (`scripts/ingest/pharmacology.ts`).
+- **Home** (`src/pages/DrugIndex.tsx`): one search box, one area menu, a
+  plain list grouped by **therapeutic area**. The areas and each drug's
+  areas are the owner's (`data/areas/areas.json`, approved 31 Oct): change
+  them only with the owner. "Genetic diseases" is filled by rule (a disease
+  MeSH files under "Genetic Diseases, Inborn", C16.320); "Rare diseases" is
+  meant to come from FDA orphan status (not built yet). Drugs with no area
+  show under "Being sorted". No admin links, badges or extra views on the
+  home page; the add-drug page is still at `#/ingest`.
+- **Drug page** (`#/drug/<slug>`, `src/pages/DrugPage.tsx`): "What it's for"
+  (the label's patient leaflet answer to "What is BRAND?", word for word,
+  `patientSummary` in `scripts/ingest/pharmacology.ts`), approved uses, "How
+  it works" (label sections 12.1–12.3), then "Sources and checks" (FDA
+  application, review office, check status) at the bottom.
 - **Approved-use page** (`#/drug/<slug>/indication/<slug>`): trials timeline.
-- **Diseases** (`#/diseases`, `#/disease/<MeSH id>`, `src/pages/DiseasePage.tsx`):
-  every approval for one disease across drugs on one timeline; MedlinePlus
-  plain-language summary; MeSH definition; Excel and PowerPoint downloads
-  made in the browser (`src/lib/export.ts`).
+- **Disease page** (`#/disease/<MeSH id>`, `src/pages/DiseasePage.tsx`):
+  everyday name, first and latest approval, plain-language summary, one
+  timeline row per approved use (filled dot = new approval, open dot =
+  change), what each approval covers (the approval letter's sentence
+  without its opening paperwork, `src/lib/plainText.ts`), and MeSH's
+  medical definition at the end. Excel and PowerPoint downloads.
 - **Check status** on every drug: "Not yet checked", "Partly checked · N of
   M" or "Checked", counted from `data/reference/` at build time.
 
@@ -39,17 +48,24 @@ a new session when a conversation gets long.
   ClinicalTrials.gov records that the FDA wording names; most specific
   wins; non-disease terms dropped (`scripts/ingest/diseases.ts`).
   **Therapeutic areas** are MeSH's top-level disease categories.
-- **MedlinePlus summary:** only when the topic's *title* is the same disease
-  (`scripts/ingest/medlineplus.ts`). Its alternative names and MeSH
-  headings include narrower diseases, so they don't count. Raw answers are
-  kept on the `diag/raw-text-<slug>` branches.
+- **Plain-language disease summary** (`scripts/ingest/diseases.ts`,
+  `plainSources.ts`), first found of: a MedlinePlus health topic, a
+  MedlinePlus Genetics condition page, the NCI Dictionary of Cancer Terms.
+  A page counts only when its *title* is the disease: the MeSH term or one
+  of the names of its MeSH preferred concept. Never by a page's list of
+  other names (they include broader or different diseases: garetosmab's
+  heterotopic ossification once matched "Progressive osseous heteroplasia").
+  Raw answers are kept on the `diag/raw-text-<slug>` branches.
+- **Patient leaflet ("What it's for"):** from the newest label's Medication
+  Guide or Patient Information. 37 of 52 labels have one.
 
 ## Known gaps (shown as blanks, not guessed)
 - 59 of 90 approved uses have a disease. The others: recent trials not yet
   MeSH-tagged on ClinicalTrials.gov (Icotyde, Orzeyful), uses with no
   pivotal trial (Bysanti, Lexapro, imaging agents), or FDA wording that
   differs from MeSH (8 Keytruda uses, e.g. "Classical Hodgkin Lymphoma").
-- 19 of 51 diseases have a MedlinePlus summary.
+- About 45 of 51 diseases have a plain summary (peritoneal cancer and
+  heterotopic ossification have none yet).
 - Drug class missing for Awiqli and Xocova; Awiqli's label text is redacted.
 - No review office for Mimrylo, Tauklarify, Veppanu; no label company for 5.
 - Held back (no label in openFDA yet): zilurgisertib, iberdomide,
@@ -81,6 +97,24 @@ a new session when a conversation gets long.
   running all 52. Services this container can't reach (openFDA,
   ClinicalTrials.gov, MeSH, MedlinePlus) are reached from GitHub Actions.
 - Use Sonnet for routine data runs and small fixes.
+
+## Next steps agreed with the owner (31 Oct)
+1. "Rare diseases" area from FDA orphan status (the orphan database is a
+   web form; needs a way to read it from GitHub Actions).
+2. Make tiles and cards look the same everywhere, including Compare.
+3. Shorten titles and descriptions across the site.
+4. "Further reading" links to company press releases and drug websites:
+   link only, never copy their text.
+5. Later: mechanism-of-action diagrams, one per drug class, built from the
+   label's 12.1 wording, with public-domain NIH artwork; the owner reviews
+   each.
+
+Not possible: the FDA's Drug Trials Snapshots. fda.gov doesn't serve those
+pages to the pipeline, and working around its bot protection is not allowed.
+
+Owner decisions on record: audience is students and industry alike; company
+material is linked, never copied; atopic dermatitis shows under "Genetic
+diseases" because MeSH files it there (raise if the owner objects).
 
 ## Ideas not yet started
 - More drugs once most are "Checked" (the `Add new drugs` workflow).
