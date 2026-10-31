@@ -13,13 +13,21 @@
       "indication": "Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms",
       "trial": "NCT04848506",
       "pivotal": true,
-      "status": "baseline"
+      "status": "baseline",
+      "tries": 1
     },
     {
       "indication": "Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms",
       "trial": "NCT05186818",
       "pivotal": true,
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-10-31: Confirmed by label section 14 and the registry record.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
+          "quote": "The efficacy of MYQORZO was evaluated in SEQUOIA-HCM (NCT05186818), a phase 3, multicenter, randomized, double-blind, placebo-controlled study in 282 adults"
+        }
+      ]
     }
   ]
 }
