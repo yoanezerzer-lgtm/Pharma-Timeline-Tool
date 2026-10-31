@@ -106,8 +106,8 @@
             }
           },
           "provenance": {
-            "sourceUrl": "https://clinicaltrials.gov/study/NCT04848506",
-            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04848506, NCT05186818)",
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05186818",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05186818)",
             "extractedBy": "rule",
             "verified": false
           }
@@ -429,29 +429,7 @@
       "title": "A Follow-Up, Open-Label, Research Evaluation of Sustained Treatment With Aficamten (CK-3773274) in Hypertrophic Cardiomyopathy (HCM)",
       "briefTitle": "Open-label Extension Study to Evaluate the Long-term Safety and Tolerability of Aficamten in Adults With HCM",
       "phase": "PHASE2_3",
-      "roles": [
-        {
-          "indication": "Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms",
-          "role": "PIVOTAL",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
-            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms)",
-            "quote": "Trial identifier appears within the Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms section 14 span, and the trial is sponsor-run and interventional.",
-            "extractedBy": "rule",
-            "verified": false
-          },
-          "approval": {
-            "submission": "ORIG-1",
-            "provenance": {
-              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
-              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
-              "quote": "This NDA provides for the use of Myqorzo (aficamten) for the treatment of adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms.",
-              "extractedBy": "rule",
-              "verified": false
-            }
-          }
-        }
-      ],
+      "roles": [],
       "status": "ENROLLING_BY_INVITATION",
       "sponsor": "Cytokinetics",
       "sponsorClass": "INDUSTRY",
@@ -564,7 +542,36 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219083s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms)",
+                "quote": "Trial identifier appears within the Adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Myqorzo (aficamten) for the treatment of adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM) to improve functional capacity and symptoms.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [],
+          "detectedAt": "2026-10-31T18:52:25.260Z"
+        }
+      ]
     },
     {
       "id": "sequoia-hcm",
@@ -1286,5 +1293,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T19:12:40.612Z"
+  "lastIngestedAt": "2026-10-31T18:52:25.260Z"
 }
