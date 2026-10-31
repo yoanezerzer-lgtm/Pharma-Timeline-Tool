@@ -15,6 +15,18 @@
         "verified": false
       }
     },
+    "patientSummary": {
+      "paragraphs": [
+        "LISRAYA is a prescription medicine that works by blocking certain proteins (Janus kinase [JAK] and tyrosine kinase 2 [TYK2]) in the body. It is used to treat an inflammatory disease that affects the muscles and skin (dermatomyositis) in adults."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220106Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), patient information: \"What is Lisraya?\"",
+        "page": 23,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
     "sections": [
       {
         "number": "12.1",
@@ -900,5 +912,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-31T19:52:57.538Z"
+  "lastIngestedAt": "2026-10-31T20:18:07.587Z"
 }

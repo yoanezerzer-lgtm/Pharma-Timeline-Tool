@@ -15,6 +15,20 @@
         "verified": false
       }
     },
+    "patientSummary": {
+      "paragraphs": [
+        "JIDEYTRO is a prescription medicine used to treat adults with non-small cell lung cancer (NSCLC) that:",
+        "has spread within the chest or other parts of the body and is caused by an abnormal ROS1 gene and,",
+        "who have received a ROS1 kinase inhibitor."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220185s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), patient information: \"What is Jideytro?\"",
+        "page": 16,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
     "sections": [
       {
         "number": "12.1",
@@ -412,5 +426,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T19:16:27.918Z"
+  "lastIngestedAt": "2026-10-31T20:21:42.845Z"
 }

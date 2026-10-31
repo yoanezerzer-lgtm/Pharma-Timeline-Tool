@@ -5,6 +5,18 @@
   "modality": "Drug (NDA)",
   "sponsor": "SHIONOGI",
   "pharmacology": {
+    "patientSummary": {
+      "paragraphs": [
+        "XOCOVA is a prescription medicine that is used to help prevent coronavirus disease 2019 (COVID-19) in adults and children 12 years of age and older following contact with a person who has COVID-19 (post-exposure prophylaxis)."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), patient information: \"What is Xocova?\"",
+        "page": 21,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
     "sections": [
       {
         "number": "12.1",
@@ -477,5 +489,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-31T19:53:41.577Z"
+  "lastIngestedAt": "2026-10-31T20:18:50.108Z"
 }
