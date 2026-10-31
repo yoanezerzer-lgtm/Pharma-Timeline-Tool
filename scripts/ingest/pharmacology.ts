@@ -132,6 +132,71 @@ export function pharmacology(
       }
     : labelDrugClass(label, brandName);
   const sections = pharmacologySections(label);
-  if (!drugClass && sections.length === 0) return undefined;
-  return { ...(drugClass ? { drugClass } : {}), sections };
+  const plain = patientSummary(label, brandName);
+  if (!drugClass && sections.length === 0 && !plain) return undefined;
+  return { ...(drugClass ? { drugClass } : {}), ...(plain ? { patientSummary: plain } : {}), sections };
+}
+
+/** Where the leaflet's answer to "What is …?" stops: the warnings and instructions that follow it. */
+const ANSWER_END =
+  /\b(?:What (?:is|are|should|does) |It is not known|Before (?:taking|using|receiving|you (?:take|use|receive|start|begin))|Do not (?:take|use|receive)|Who should not|What should I tell|How (?:should|will) I|What is the most important information|What are the possible side effects|Read this (?:Medication Guide|Patient Information)|This Medication Guide|This Patient Information)\b/i;
+
+/** List markers as PDF text layers set them: bullets, and symbol-font characters in the private-use range. */
+const BULLETS = '•●▪‣⁃\\uf000-\\uf8ff';
+
+/** Longest answer kept; the leaflet's opening is the plain description. */
+const MAX_ANSWER = 900;
+
+/**
+ * Whitespace the PDF text layer adds inside the label's own words ("non -
+ * small cell", "( COVID-19)", "type 2 , ") is closed up. Letters and
+ * punctuation are untouched.
+ */
+export function closeUp(text: string): string {
+  return text
+    .replace(/(\w) - (?=\w)/g, '$1-')
+    .replace(/\( +/g, '(')
+    .replace(/ +\)/g, ')')
+    .replace(/ +([,.;:])/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * The patient leaflet's own answer to "What is BRAND?" (the Medication Guide
+ * or Patient Information printed at the end of the label): the FDA-approved
+ * plain-language description of what the medicine is for. Word for word; a
+ * list in it is kept as separate lines.
+ */
+export function patientSummary(label: Doc, brandName: string): Pharmacology['patientSummary'] | undefined {
+  const text = clean(label.text);
+  // The brand may come out letter-split ("L exapro", "AMB EL VIST").
+  const word = brandName.split(/\s+/)[0];
+  const brand = [...word].map((c) => escape(c)).join('\\s?');
+  const question = new RegExp(`What is\\s+${brand}(?:\\s+[A-Z][A-Za-z]+)?[®™]?(?:\\s*\\([^)]{1,60}\\))?\\s*\\?`, 'gi');
+  for (const m of text.matchAll(question)) {
+    const start = m.index + m[0].length;
+    const rest = text.slice(start, start + MAX_ANSWER * 3);
+    // The answer opens on the brand ("BAXFENDY is a prescription medicine…"), perhaps after a bullet.
+    if (!new RegExp(`^[\\s${BULLETS}o-]*${brand}`, 'i').test(rest)) continue;
+    const end = rest.search(ANSWER_END);
+    let body = rest.slice(0, end > 0 ? end : MAX_ANSWER);
+    if (body.length > MAX_ANSWER) body = body.slice(0, MAX_ANSWER).replace(/[^.]*$/, '');
+    const paragraphs = body
+      .split(new RegExp(`\\s*[${BULLETS}]\\s*|\\s+o\\s+(?=[a-z(])`))
+      .map(closeUp)
+      .filter((p) => p.length > 1);
+    if (paragraphs.length === 0 || paragraphs.join(' ').length < 40) continue;
+    return {
+      paragraphs,
+      provenance: {
+        sourceUrl: label.url,
+        sourceLabel: `Label (${label.submission}), patient information: "What is ${word}?"`,
+        page: pageForOffset(label.text, Math.max(0, label.text.search(new RegExp(question.source, 'i')))),
+        extractedBy: 'regex',
+        verified: false,
+      },
+    };
+  }
+  return undefined;
 }

@@ -106,3 +106,45 @@
   font-size: 12.5px;
   color: var(--text-3);
 }
+
+.drug__plain {
+  margin: 1.5rem 0 0.5rem;
+  max-width: 72ch;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-1);
+}
+
+.drug__plain h2 {
+  margin: 0 0 0.5rem;
+}
+
+.drug__plain p {
+  margin: 0 0 0.5rem;
+}
+
+.drug__plain .drug__plain-item {
+  margin-left: 1.1rem;
+  text-indent: -0.8rem;
+}
+
+.drug__plain .drug__plain-item::before {
+  content: '• ';
+}
+
+.drug__plain-source {
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.drug__sources {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.drug__sources .drug__facts {
+  margin: 0.5rem 0 0.75rem;
+}

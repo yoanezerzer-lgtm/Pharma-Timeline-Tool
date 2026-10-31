@@ -1,6 +1,6 @@
 import { BackLink } from '../components/BackLink/BackLink.js';
 import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
-import { drugIndex, useDrug } from '../lib/catalog.js';
+import { diseaseIndex, drugIndex, useDrug } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
 import { trialsForIndication } from '../lib/drugs.js';
 import { naturalTerm } from '../lib/plainText.js';
@@ -8,6 +8,9 @@ import { diseaseHref, indicationHref } from '../lib/router.js';
 import type { Drug, Provenance } from '../schema/index.js';
 import './IndicationPage.css';
 import './DrugPage.css';
+
+/** Each disease's everyday name as its disease page shows it ("Breast Cancer"). */
+const diseaseName = new Map(diseaseIndex.map((d) => [d.meshId, d.name]));
 
 export function DrugPage({ slug }: { slug: string }) {
   const state = useDrug(slug);
@@ -54,32 +57,26 @@ function DrugView({ drug }: { drug: Drug }) {
             {drug.brandName} <span className="drug__inn">({drug.inn})</span>
           </h1>
           <p className="drug__mechanism">
-            {about?.drugClass?.name ?? drug.modality}
-            {listed?.office && <> · Reviewed by the FDA Office of {listed.office}</>}
+            {about?.drugClass?.name ?? drug.modality} · {listed?.company ?? drug.sponsor}
+            {listed?.firstApproval && <> · first approved {formatDate(listed.firstApproval)}</>}
           </p>
         </div>
-        <dl className="drug__facts">
-          <div>
-            <dt>Application</dt>
-            <dd>
-              {drug.regulatory.us.applicationType} {drug.regulatory.us.applicationNumber}
-            </dd>
-          </div>
-          <div>
-            <dt>Company</dt>
-            <dd>{listed?.company ?? drug.sponsor}</dd>
-          </div>
-          <div>
-            <dt>First approved</dt>
-            <dd>{listed?.firstApproval ? formatDate(listed.firstApproval) : 'Date not determined'}</dd>
-          </div>
-        </dl>
       </header>
 
-      <p className="drug__status" role="status">
-        <CheckBadge stats={checked} />
-        {checkSentence(checked)}
-      </p>
+      {about?.patientSummary && (
+        <section className="drug__plain" aria-labelledby="plain-head">
+          <h2 id="plain-head">What it’s for</h2>
+          {about.patientSummary.paragraphs.map((p, k) => (
+            <p key={k} className={k > 0 && /^[a-z(]/.test(p) ? 'drug__plain-item' : undefined}>
+              {p}
+            </p>
+          ))}
+          <p className="drug__plain-source">
+            From the patient information in the FDA-approved label.{' '}
+            <SourceLink provenance={about.patientSummary.provenance} label="Read the label" />
+          </p>
+        </section>
+      )}
 
       <section className="uses" aria-labelledby="uses-head">
         <h2 id="uses-head">Approved uses · {indications.length}</h2>
@@ -101,7 +98,7 @@ function DrugView({ drug }: { drug: Drug }) {
                     {i.diseases!.map((d, k) => (
                       <span key={d.meshId}>
                         {k > 0 && ', '}
-                        <a href={diseaseHref(d.meshId)}>{naturalTerm(d.term)}</a>
+                        <a href={diseaseHref(d.meshId)}>{diseaseName.get(d.meshId) ?? naturalTerm(d.term)}</a>
                       </span>
                     ))}
                   </p>
@@ -112,7 +109,7 @@ function DrugView({ drug }: { drug: Drug }) {
         </ul>
       </section>
       <section className="about" aria-labelledby="about-head">
-        <h2 id="about-head">About this drug</h2>
+        <h2 id="about-head">How it works</h2>
         <p className="about__note">Quoted word for word from the FDA-approved label, as its PDF reads. Some words come out split (“fun ction”); the linked label has the original.</p>
         <dl className="about__class">
           <dt>Drug class (FDA)</dt>
@@ -151,6 +148,27 @@ function DrugView({ drug }: { drug: Drug }) {
         )}
       </section>
 
+      <section className="drug__sources" aria-labelledby="sources-head">
+        <h2 id="sources-head">Sources and checks</h2>
+        <dl className="drug__facts">
+          <div>
+            <dt>FDA application</dt>
+            <dd>
+              {drug.regulatory.us.applicationType} {drug.regulatory.us.applicationNumber}
+            </dd>
+          </div>
+          {listed?.office && (
+            <div>
+              <dt>Reviewed by</dt>
+              <dd>FDA Office of {listed.office}</dd>
+            </div>
+          )}
+        </dl>
+        <p className="drug__status" role="status">
+          <CheckBadge stats={checked} />
+          {checkSentence(checked)}
+        </p>
+      </section>
     </main>
   );
 }
