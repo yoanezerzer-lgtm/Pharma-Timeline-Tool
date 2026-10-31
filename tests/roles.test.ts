@@ -771,3 +771,30 @@ describe('classifyTrialRoles — a trial the label reports as not effective', ()
     expect(pivotalFor(k775, ctx)).toBe(true);
   });
 });
+
+describe('classifyTrialRoles — extension studies and trials with a shared name prefix', () => {
+  // From the Myqorzo label (219083s000lbl.pdf), page 13.
+  const hcm =
+    'The efficacy of MYQORZO was evaluated in SEQUOIA-HCM (NCT05186818), a phase 3, multicenter, randomized, ' +
+    'double-blind, placebo-controlled study in 282 adults. Patients who completed SEQUOIA-HCM were eligible to ' +
+    'participate in an ongoing, open-label, single-arm extension study (FOREST-HCM). Patients with a known ' +
+    'infiltrative or storage disorder were excluded.';
+  const cytok = { sponsor: 'Cytokinetics', studyType: 'INTERVENTIONAL' as const };
+
+  it('does not mark an extension study pivotal', () => {
+    const ctx = ctxFor(hcm, { sponsorName: 'CYTOKINETICS' });
+    expect(pivotalFor(trial({ nctId: 'NCT04848506', labelName: 'FOREST-HCM', ...cytok }), ctx)).toBe(false);
+    expect(pivotalFor(trial({ nctId: 'NCT05186818', labelName: 'SEQUOIA-HCM', ...cytok }), ctx)).toBe(true);
+  });
+
+  // From the Rybrevant label (761433s000lbl.pdf), pages 37 and 42.
+  it('does not match MARIPOSA inside MARIPOSA-2', () => {
+    const text =
+      'Previously Treated NSCLC The efficacy of intravenous amivantamab in combination with carboplatin and ' +
+      'pemetrexed was evaluated in MARIPOSA-2 (NCT04988295), a randomized, open-label, multicenter trial.';
+    const ctx = ctxFor(text, { sponsorName: 'JANSSEN' });
+    const janssen = { sponsor: 'Janssen Research & Development, LLC', studyType: 'INTERVENTIONAL' as const };
+    expect(pivotalFor(trial({ nctId: 'NCT04487080', labelName: 'MARIPOSA', ...janssen }), ctx)).toBe(false);
+    expect(pivotalFor(trial({ nctId: 'NCT04988295', labelName: 'MARIPOSA-2', ...janssen }), ctx)).toBe(true);
+  });
+});
