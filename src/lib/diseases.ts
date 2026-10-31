@@ -46,7 +46,7 @@ export interface DiseaseSummary {
   meshId: string;
   /** MeSH's heading as MeSH files it ("Carcinoma, Non-Small-Cell Lung"). */
   term: string;
-  /** The same heading in natural word order ("Non-Small-Cell Lung Carcinoma"). */
+  /** MedlinePlus's name for it when there is one ("Breast Cancer"), else the heading in natural word order ("Non-Small-Cell Lung Carcinoma"). */
   name: string;
   areas: string[];
   definition?: { text: string; sourceUrl?: string };
@@ -72,6 +72,8 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
         if (!entry.definition && d.definition) entry.definition = { text: readableDefinition(d.definition.text), sourceUrl: d.definition.provenance.sourceUrl };
         if (!entry.summary && d.summary) {
           entry.summary = { title: d.summary.title, paragraphs: d.summary.paragraphs, sourceUrl: d.summary.provenance.sourceUrl };
+          // MedlinePlus's topic is matched only when its title is this same disease, so its everyday name can head the page.
+          entry.name = d.summary.title;
         }
         const base = { drugSlug: drug.slug, brandName: drug.brandName, inn: drug.inn, indicationSlug: i.slug, indication: i.name };
         // A use approved in steps (Keytruda's melanoma: 2014, then adjuvant in 2019) shows each step.

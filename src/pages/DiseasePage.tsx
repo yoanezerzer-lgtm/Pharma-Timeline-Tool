@@ -47,18 +47,8 @@ export function DiseasePage({ meshId }: { meshId: string }) {
           {uses} FDA-approved {uses === 1 ? 'use' : 'uses'} across {drugs} {drugs === 1 ? 'drug' : 'drugs'}
           {disease.areas.length > 0 && <> · {disease.areas.join(', ')}</>}
         </p>
-        {disease.summary && <PlainSummary summary={disease.summary} />}
-        {disease.definition && (
-          <blockquote className="disease__definition">
-            <p>{disease.definition.text}</p>
-            <footer>
-              Medical definition of “{disease.term}” from{' '}
-              <a href={disease.definition.sourceUrl} target="_blank" rel="noopener noreferrer">
-                MeSH, U.S. National Library of Medicine ↗
-              </a>
-            </footer>
-          </blockquote>
-        )}
+        <AtAGlance disease={disease} />
+        {disease.summary ? <PlainSummary summary={disease.summary} /> : <Definition disease={disease} />}
       </header>
 
       <section className="ind-timeline" aria-label="Approvals over time">
@@ -158,6 +148,13 @@ export function DiseasePage({ meshId }: { meshId: string }) {
           ))}
         </ul>
       </section>
+
+      {disease.summary && disease.definition && (
+        <details className="disease__details">
+          <summary>Medical definition</summary>
+          <Definition disease={disease} />
+        </details>
+      )}
     </main>
   );
 }
@@ -267,5 +264,42 @@ function ExportButtons({ disease }: { disease: DiseaseSummary }) {
       </button>
       {failed && <span className="disease__export-error">Couldn’t make the file. Try again.</span>}
     </div>
+  );
+}
+
+/** The first and the latest approval, so a reader sees the history at a glance. */
+function AtAGlance({ disease }: { disease: DiseaseSummary }) {
+  const steps = disease.uses
+    .flatMap((u) => u.steps.filter((s) => s.date && s.kind === 'new').map((s) => ({ brand: u.brandName, date: s.date! })))
+    .sort((a, b) => a.date.value.localeCompare(b.date.value));
+  if (steps.length === 0) return null;
+  const first = steps[0];
+  const last = steps[steps.length - 1];
+  return (
+    <p className="disease__glance">
+      First FDA approval on this site: <strong>{formatDate(first.date)}</strong> ({first.brand})
+      {steps.length > 1 && last !== first && (
+        <>
+          {' '}
+          · most recent: <strong>{formatDate(last.date)}</strong> ({last.brand})
+        </>
+      )}
+    </p>
+  );
+}
+
+/** MeSH's definition, in medical language. */
+function Definition({ disease }: { disease: DiseaseSummary }) {
+  if (!disease.definition) return null;
+  return (
+    <blockquote className="disease__definition">
+      <p>{disease.definition.text}</p>
+      <footer>
+        Medical definition of “{disease.term}” from{' '}
+        <a href={disease.definition.sourceUrl} target="_blank" rel="noopener noreferrer">
+          MeSH, U.S. National Library of Medicine ↗
+        </a>
+      </footer>
+    </blockquote>
   );
 }
