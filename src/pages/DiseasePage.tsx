@@ -230,9 +230,9 @@ function PlainSummary({ summary }: { summary: NonNullable<DiseaseSummary['summar
         )}
         From{' '}
         <a href={summary.sourceUrl} target="_blank" rel="noopener noreferrer">
-          MedlinePlus: {summary.title} ↗
+          {summary.sourceLabel.split(', ')[0]}: {summary.title} ↗
         </a>
-        , U.S. National Library of Medicine
+        , {summary.sourceLabel.split(', ').slice(1).join(', ')}
       </p>
     </section>
   );

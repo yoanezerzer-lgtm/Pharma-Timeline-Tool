@@ -2,7 +2,8 @@ import type { Disease, Trial } from '../../src/schema/index.js';
 import type { IngestContext } from './context.js';
 import { fetchJson } from './http.js';
 import { ABBREVIATIONS } from './approvals.js';
-import { medlinePlusTopic, type MedlinePlusTopic } from './medlineplus.js';
+import { medlinePlusTopic } from './medlineplus.js';
+import { geneticsCondition, nciDictionary, type PlainSource } from './plainSources.js';
 
 /**
  * Which disease each approved use is for, as a MeSH term, so disease pages
@@ -94,7 +95,9 @@ interface MeshInfo {
   areas: string[];
   /** False when MeSH files the term under no disease category: a finding, not a disease ("Microsatellite Instability"). */
   isDisease: boolean;
-  plain?: MedlinePlusTopic;
+  /** The terms of the descriptor's preferred concept: names MeSH treats as the same meaning ("Breast Cancer"). */
+  synonyms: string[];
+  plain?: PlainSource;
 }
 
 const SPARQL_PREFIX =
@@ -103,7 +106,7 @@ const SPARQL_PREFIX =
 /** A MeSH disease's definition, and the names of the top-level categories (C04, F03…) its tree numbers fall under. */
 export async function meshInfo(ctx: IngestContext, id: string): Promise<MeshInfo> {
   const descriptor = await fetchJson<Record<string, unknown>>(`${MESH}/${id}.json`, { ctx, kind: 'mesh' });
-  if (!descriptor) return { areas: [], isDisease: true };
+  if (!descriptor) return { areas: [], isDisease: true, synonyms: [] };
   const conceptUri = value(descriptor.preferredConcept) ?? (descriptor.preferredConcept as { '@id'?: string })?.['@id'];
   let definition: string | undefined;
   let definitionUrl: string | undefined;
@@ -130,7 +133,14 @@ export async function meshInfo(ctx: IngestContext, id: string): Promise<MeshInfo
     const label = res?.results?.bindings?.[0]?.label?.value;
     if (label) areas.push(label);
   }
-  return { definition, definitionUrl, areas, isDisease: tops.length > 0 };
+  // Only the preferred concept's terms: a descriptor's other concepts can be narrower diseases.
+  const synonymQuery = `${SPARQL_PREFIX}SELECT ?label WHERE { mesh:${id} meshv:preferredConcept ?c . ?c meshv:preferredTerm|meshv:term ?t . ?t rdfs:label ?label }`;
+  const synRes = await fetchJson<{ results?: { bindings?: { label?: { value?: string } }[] } }>(
+    `${MESH}/sparql?query=${encodeURIComponent(synonymQuery)}&format=JSON&inference=false`,
+    { ctx, kind: 'mesh' }
+  );
+  const synonyms = [...new Set((synRes?.results?.bindings ?? []).map((b) => b.label?.value?.trim() ?? '').filter((l) => l.length > 0))];
+  return { definition, definitionUrl, areas, isDisease: tops.length > 0, synonyms };
 }
 
 const ctgovUrl = (t: Trial) => (t.nctId ? `https://clinicaltrials.gov/study/${t.nctId}` : undefined);
@@ -153,15 +163,15 @@ export async function indicationDiseases(
     } catch (err) {
       // A MeSH outage shouldn't fail the run: the disease still groups, without a definition.
       console.warn(`MeSH lookup failed for ${id}: ${(err as Error).message}`);
-      info.set(id, { areas: [], isDisease: true });
+      info.set(id, { areas: [], isDisease: true, synonyms: [] });
     }
     const term = [...matched.values()].flat().find((m) => m.id === id)!.term;
+    const names = [...new Set([term, ...info.get(id)!.synonyms])];
     try {
-      const plain = await medlinePlusTopic(ctx, term);
-      if (plain) info.get(id)!.plain = plain;
+      info.get(id)!.plain = await plainSummary(ctx, names);
     } catch (err) {
-      // Same for MedlinePlus: the page goes without a plain-language summary.
-      console.warn(`MedlinePlus lookup failed for ${term}: ${(err as Error).message}`);
+      // An outage at any of these services shouldn't fail the run: the page goes without a plain-language summary.
+      console.warn(`Plain-language lookup failed for ${term}: ${(err as Error).message}`);
     }
   }
   const out = new Map<string, Disease[]>();
@@ -169,7 +179,7 @@ export async function indicationDiseases(
     out.set(
       name,
       terms.filter((m) => info.get(m.id)?.isDisease !== false).map((m) => {
-        const mi = info.get(m.id) ?? { areas: [], isDisease: true };
+        const mi: MeshInfo = info.get(m.id) ?? { areas: [], isDisease: true, synonyms: [] };
         return {
           meshId: m.id,
           term: m.term,
@@ -187,7 +197,7 @@ export async function indicationDiseases(
                 summary: {
                   title: mi.plain.title,
                   paragraphs: mi.plain.paragraphs,
-                  provenance: { sourceUrl: mi.plain.url, sourceLabel: 'MedlinePlus, U.S. National Library of Medicine', extractedBy: 'api' as const, verified: false },
+                  provenance: { sourceUrl: mi.plain.url, sourceLabel: mi.plain.sourceLabel, extractedBy: 'api' as const, verified: false },
                 },
               }
             : {}),
@@ -202,4 +212,22 @@ export async function indicationDiseases(
     );
   }
   return out;
+}
+
+/**
+ * The first plain-language explanation found, in order of depth: a
+ * MedlinePlus health topic, a MedlinePlus Genetics condition page, then the
+ * NCI cancer dictionary's short definition. Each must be named as the
+ * disease itself (see plainSources.ts); none found leaves a gap.
+ */
+async function plainSummary(ctx: IngestContext, names: string[]): Promise<PlainSource | undefined> {
+  for (const name of names.slice(0, 4)) {
+    const topic = await medlinePlusTopic(ctx, name, names);
+    if (topic) return { ...topic, sourceLabel: 'MedlinePlus, U.S. National Library of Medicine' };
+  }
+  const genetic = await geneticsCondition(ctx, names);
+  if (genetic) return genetic;
+  // The dictionary names cancers as "… cancer": search those spellings too.
+  const spellings = [...new Set(names.flatMap((n) => [n, n.replace(/\b(?:neoplasms?|carcinoma)\b/i, 'cancer')]).map((n) => n.toLowerCase()))];
+  return nciDictionary(ctx, spellings.slice(0, 6));
 }

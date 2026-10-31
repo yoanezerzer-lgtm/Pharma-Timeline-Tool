@@ -46,12 +46,12 @@ export interface DiseaseSummary {
   meshId: string;
   /** MeSH's heading as MeSH files it ("Carcinoma, Non-Small-Cell Lung"). */
   term: string;
-  /** MedlinePlus's name for it when there is one ("Breast Cancer"), else the heading in natural word order ("Non-Small-Cell Lung Carcinoma"). */
+  /** The plain summary's name for it when there is one ("Breast Cancer"), else the heading in natural word order ("Non-Small-Cell Lung Carcinoma"). */
   name: string;
   areas: string[];
   definition?: { text: string; sourceUrl?: string };
   /** MedlinePlus's plain-language summary, word for word. */
-  summary?: { title: string; paragraphs: string[]; sourceUrl?: string };
+  summary?: { title: string; paragraphs: string[]; sourceUrl?: string; sourceLabel: string };
   /** Oldest first; undated last. */
   approvals: DiseaseApproval[];
   /** The same approvals grouped by use, ordered by each use's first approval. */
@@ -71,9 +71,12 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
         entry.areas = [...new Set([...entry.areas, ...d.areas])].sort();
         if (!entry.definition && d.definition) entry.definition = { text: readableDefinition(d.definition.text), sourceUrl: d.definition.provenance.sourceUrl };
         if (!entry.summary && d.summary) {
-          entry.summary = { title: d.summary.title, paragraphs: d.summary.paragraphs, sourceUrl: d.summary.provenance.sourceUrl };
-          // MedlinePlus's topic is matched only when its title is this same disease, so its everyday name can head the page.
-          entry.name = d.summary.title;
+          const sourceLabel = d.summary.provenance.sourceLabel ?? 'MedlinePlus, U.S. National Library of Medicine';
+          entry.summary = { title: d.summary.title, paragraphs: d.summary.paragraphs, sourceUrl: d.summary.provenance.sourceUrl, sourceLabel };
+          // A summary is matched only when its title is this same disease, so its everyday name ("Breast Cancer",
+          // "non-small cell lung cancer") can head the page. A MedlinePlus Genetics page may go by a name the FDA
+          // doesn't use ("Arginase 1 deficiency" for hyperargininemia): the MeSH name stays.
+          if (!sourceLabel.startsWith('MedlinePlus Genetics')) entry.name = d.summary.title.charAt(0).toUpperCase() + d.summary.title.slice(1);
         }
         const base = { drugSlug: drug.slug, brandName: drug.brandName, inn: drug.inn, indicationSlug: i.slug, indication: i.name };
         // A use approved in steps (Keytruda's melanoma: 2014, then adjuvant in 2019) shows each step.
