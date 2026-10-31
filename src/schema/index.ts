@@ -466,7 +466,6 @@ export const Drug = z.object({
 
   pharmacology: Pharmacology.optional(),
 
-
   /** Human-authored development narrative. Empty until written. */
   summary: z.string().default(''),
 
