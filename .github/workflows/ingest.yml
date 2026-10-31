@@ -151,8 +151,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -B "$BRANCH"
           git add -f data/raw/*/docs/*.txt
-          # MedlinePlus answers in XML only this workflow can fetch; kept so its format can be checked.
-          if compgen -G "data/raw/*/medlineplus/*.json" > /dev/null; then git add -f data/raw/*/medlineplus/*.json; fi
+          # Answers from services only this workflow can reach (MedlinePlus, MedlinePlus Genetics, the NCI
+          # dictionary, MeSH); kept so their format and matches can be checked.
+          for kind in medlineplus genetics nci mesh; do
+            if compgen -G "data/raw/*/${kind}/*.json" > /dev/null; then git add -f data/raw/*/${kind}/*.json; fi
+          done
           git commit -m "Diagnostic: extracted document text for ${DRUG}"
           git push --force origin "$BRANCH"
           echo "Pushed extracted text to branch: $BRANCH"

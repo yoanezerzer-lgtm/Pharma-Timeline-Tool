@@ -70,11 +70,12 @@ export function parseResults(xml: string): { title: string; names: string[]; url
   return out;
 }
 
-export async function medlinePlusTopic(ctx: IngestContext, term: string): Promise<MedlinePlusTopic | undefined> {
+/** The topic titled as the disease: the term, or any of `names` (MeSH's synonyms for it). */
+export async function medlinePlusTopic(ctx: IngestContext, term: string, names: string[] = [term]): Promise<MedlinePlusTopic | undefined> {
   const url = `${SEARCH}?db=healthTopics&term=${encodeURIComponent(term)}&retmax=5`;
   const xml = await fetchText(url, { ctx, kind: 'medlineplus' });
   if (!xml) return undefined;
-  const topic = parseResults(xml).find((t) => sameDisease(t.title, term));
+  const topic = parseResults(xml).find((t) => names.some((n) => sameDisease(t.title, n)));
   if (!topic) return undefined;
   const paragraphs = summaryParagraphs(topic.summary);
   return paragraphs.length > 0 ? { title: topic.title, url: topic.url, paragraphs } : undefined;

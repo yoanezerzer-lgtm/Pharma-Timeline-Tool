@@ -1,4 +1,5 @@
 import areaFile from '../../data/areas/areas.json';
+import type { DrugSummary } from './summary.js';
 
 /**
  * Therapeutic areas as people use them ("Oncology", "Immunology"). The names
@@ -16,8 +17,13 @@ export const AREAS: Area[] = areaFile.areas;
 
 const byDrug = areaFile.drugs as Record<string, string[]>;
 
-/** The owner-approved areas of a drug, in the list's order; empty when not yet sorted. */
-export function areasOfDrug(slug: string): Area[] {
-  const ids = byDrug[slug] ?? [];
-  return AREAS.filter((a) => ids.includes(a.id));
+/**
+ * A drug's areas, in the list's order: the owner-approved ones, plus the
+ * rule-based ones its records qualify for ("Genetic diseases" when one of its
+ * diseases is filed by MeSH as inherited). Empty when not yet sorted.
+ */
+export function areasOfDrug(d: Pick<DrugSummary, 'slug' | 'indications'>): Area[] {
+  const ids = new Set(byDrug[d.slug] ?? []);
+  if (d.indications.some((i) => i.diseases.some((x) => x.inherited))) ids.add('genetic');
+  return AREAS.filter((a) => ids.has(a.id));
 }
