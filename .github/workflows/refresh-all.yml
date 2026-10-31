@@ -124,6 +124,7 @@ jobs:
           ROUTINE: ${{ steps.sort.outputs.routine }}
           CHECKED: ${{ steps.check.outcome }}
           PUBLISH: ${{ github.event_name == 'schedule' || inputs.publish }}
+          ONLY: ${{ inputs.only }}
           REPO_URL: ${{ github.server_url }}/${{ github.repository }}
         run: |
           set -euo pipefail
@@ -142,7 +143,8 @@ jobs:
             gh workflow run deploy.yml --ref main
             echo "Published: routine changes only, all checks passed." | tee -a "$GITHUB_STEP_SUMMARY"
           else
-            BRANCH="data/refresh-${DATE}"
+            # A trial on a few drugs keeps its own branch, so it never replaces a full run's held changes.
+            if [ -n "${ONLY:-}" ]; then BRANCH="data/trial-${DATE}-${GITHUB_RUN_ID}"; else BRANCH="data/refresh-${DATE}"; fi
             git push --force origin "HEAD:refs/heads/${BRANCH}"
             {
               echo "Held for review (routine: ${ROUTINE}, checks: ${CHECKED}) on branch ${BRANCH}."
