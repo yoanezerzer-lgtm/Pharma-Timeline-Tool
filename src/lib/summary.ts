@@ -34,7 +34,7 @@ export interface DrugSummary {
     slug: string;
     approvalDate?: DateValue;
     trialCount: number;
-    diseases: { meshId: string; term: string }[];
+    diseases: { meshId: string; term: string; inherited?: boolean }[];
   }[];
   verification: VerificationStats;
   /** Pivotal-trial facts in data/reference: how many the checker has confirmed against FDA documents. */
@@ -80,7 +80,7 @@ export function summarize(drug: Drug, checked: CheckStats = { confirmed: 0, tota
       slug: i.slug,
       approvalDate: i.approvalDate,
       trialCount: trialsForIndication(drug, i.name).length,
-      diseases: (i.diseases ?? []).map((d) => ({ meshId: d.meshId, term: d.term })),
+      diseases: (i.diseases ?? []).map((d) => ({ meshId: d.meshId, term: d.term, inherited: d.inherited })),
     })),
     verification: drugStats(drug),
     checked,

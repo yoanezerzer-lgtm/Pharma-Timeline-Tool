@@ -402,6 +402,8 @@ export const Disease = z.object({
   term: z.string(),
   /** MeSH's top-level disease categories the term sits under ("Neoplasms"): the therapeutic areas. */
   areas: z.array(z.string()).default([]),
+  /** Filed under MeSH's "Genetic Diseases, Inborn" (C16.320): fills the "Genetic diseases" area. */
+  inherited: z.boolean().optional(),
   /** MeSH's own definition (scope note), public domain, from the National Library of Medicine. */
   definition: z.object({ text: z.string(), provenance: Provenance }).optional(),
   /** MedlinePlus's plain-language summary of the same disease, word for word, public domain from NLM. */

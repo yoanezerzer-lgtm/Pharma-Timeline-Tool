@@ -95,6 +95,8 @@ interface MeshInfo {
   areas: string[];
   /** False when MeSH files the term under no disease category: a finding, not a disease ("Microsatellite Instability"). */
   isDisease: boolean;
+  /** Filed under MeSH's "Genetic Diseases, Inborn" (tree C16.320): an inherited disease. */
+  inherited?: boolean;
   /** The terms of the descriptor's preferred concept: names MeSH treats as the same meaning ("Breast Cancer"). */
   synonyms: string[];
   plain?: PlainSource;
@@ -125,6 +127,8 @@ export async function meshInfo(ctx: IngestContext, id: string): Promise<MeshInfo
       if (label) synonyms.push(label);
     }
   }
+  const trees = list(descriptor.treeNumber).map((t) => idOf(value(t) ?? (t as { '@id'?: string })?.['@id'] ?? ''));
+  const inherited = trees.some((t) => t === 'C16.320' || t.startsWith('C16.320.'));
   // Diseases (C) and mental disorders (F03) only: a tree number like
   // "C05.550.114.099" sits under category C05.
   const tops = [
@@ -143,7 +147,7 @@ export async function meshInfo(ctx: IngestContext, id: string): Promise<MeshInfo
     const label = res?.results?.bindings?.[0]?.label?.value;
     if (label) areas.push(label);
   }
-  return { definition, definitionUrl, areas, isDisease: tops.length > 0, synonyms: [...new Set(synonyms)] };
+  return { definition, definitionUrl, areas, isDisease: tops.length > 0, inherited, synonyms: [...new Set(synonyms)] };
 }
 
 const ctgovUrl = (t: Trial) => (t.nctId ? `https://clinicaltrials.gov/study/${t.nctId}` : undefined);
@@ -187,6 +191,7 @@ export async function indicationDiseases(
           meshId: m.id,
           term: m.term,
           areas: mi.areas,
+          ...(mi.inherited ? { inherited: true } : {}),
           ...(mi.definition && mi.definitionUrl
             ? {
                 definition: {
