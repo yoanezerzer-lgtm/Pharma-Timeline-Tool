@@ -1,5 +1,5 @@
 import type { IngestContext } from './context.js';
-import { fetchText } from './http.js';
+import { fetchHtml } from './http.js';
 
 /**
  * The FDA's Drug Trials Snapshot for a new medicine: a plain-language page,
@@ -89,7 +89,7 @@ export function snapshotUrls(brandName: string): string[] {
 
 export async function drugTrialsSnapshot(ctx: IngestContext, brandName: string): Promise<Snapshot | undefined> {
   for (const url of snapshotUrls(brandName)) {
-    const html = await fetchText(url, { ctx, kind: 'snapshot' });
+    const html = await fetchHtml(url, { ctx, kind: 'snapshot' });
     if (!html) continue;
     const sections = parseSnapshot(html);
     if (sections.length > 0) return { url, sections };
