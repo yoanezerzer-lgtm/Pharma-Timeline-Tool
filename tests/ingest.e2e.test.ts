@@ -7,6 +7,8 @@ import type { DrugSpec } from '../scripts/ingest/registry.js';
 import { Drug, type Drug as DrugType } from '../src/schema/index.js';
 import { seedCache, readFixture, OPENFDA_211675 } from './helpers/seedCache.js';
 import { academicStudy, observationalStudy } from './fixtures/studies.js';
+import { cachePathFor } from '../scripts/ingest/http.js';
+import { snapshotUrls } from '../scripts/ingest/snapshot.js';
 
 /**
  * The dress rehearsal: the whole pipeline, start to finish, with no network.
@@ -54,6 +56,13 @@ function makeWorkspace(): { rawDir: string; drugsDir: string } {
       { url: LABEL_URL, text: readFixture('label-excerpt.txt') },
     ],
   });
+
+  // No Drug Trials Snapshot in this rehearsal: answer each address the way a missing page does.
+  for (const url of snapshotUrls(SPEC.brandName)) {
+    const path = cachePathFor(SPEC.slug, 'snapshot', url, rawDir);
+    mkdirSync(join(path, '..'), { recursive: true });
+    writeFileSync(path, JSON.stringify({ ok: false, body: null }));
+  }
 
   return { rawDir, drugsDir };
 }

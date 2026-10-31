@@ -464,6 +464,18 @@ export const Drug = z.object({
 
   pharmacology: Pharmacology.optional(),
 
+  /**
+   * The FDA's Drug Trials Snapshot: its own plain-language sections for the
+   * public ("What is the drug for?", "What are the benefits of this drug?"),
+   * word for word. Describes the original approval only.
+   */
+  snapshot: z
+    .object({
+      sections: z.array(z.object({ heading: z.string(), paragraphs: z.array(z.string()) })),
+      provenance: Provenance,
+    })
+    .optional(),
+
   /** Human-authored development narrative. Empty until written. */
   summary: z.string().default(''),
 
