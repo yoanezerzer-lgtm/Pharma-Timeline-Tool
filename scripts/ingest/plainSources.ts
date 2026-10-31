@@ -18,9 +18,9 @@ import { summaryParagraphs } from './medlineplus.js';
  *
  * As with MedlinePlus, an entry counts only when its own name is the disease:
  * the MeSH term or one of MeSH's synonyms for it (the terms of its preferred
- * concept, which MeSH treats as the same meaning). A Genetics page's listed
- * other names also count: each page is about one condition, so they are its
- * synonyms, not narrower diseases.
+ * concept, which MeSH treats as the same meaning). A Genetics page counts by
+ * its title only: its list of other names takes in broader or different
+ * diseases.
  */
 
 export interface PlainSource {
@@ -70,7 +70,9 @@ export async function geneticsCondition(ctx: IngestContext, names: string[]): Pr
   const slugs = [...new Set(searchUrls(xml ?? '').map(geneticsSlug).filter((s): s is string => !!s))];
   for (const slug of slugs.slice(0, 3)) {
     const record = await fetchJson<GeneticsCondition>(`${GENETICS_JSON}/${slug}.json`, { ctx, kind: 'genetics' });
-    if (!record || !named(geneticsNames(record), names)) continue;
+    // By title only: a page's list of other names includes broader or different diseases
+    // ("Heterotopic ossification" on Progressive osseous heteroplasia, "spondyloarthritis" on Ankylosing spondylitis).
+    if (!record?.name || !named([record.name], names)) continue;
     const paragraphs = geneticsParagraphs(record);
     if (paragraphs.length === 0) continue;
     return {
