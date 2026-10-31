@@ -916,11 +916,11 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2026-10-02",
+        "value": "2026-12-17",
         "precision": "day"
       },
       "completionDate": {
-        "value": "2026-10-02",
+        "value": "2026-12-17",
         "precision": "day"
       },
       "enrollment": {
@@ -1001,7 +1001,32 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2026-10-02",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-12-17",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-31T18:54:47.210Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2026-10-02",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-12-17",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-31T18:54:47.210Z"
+        }
+      ]
     }
   ],
   "milestones": [
@@ -1045,5 +1070,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T19:14:58.005Z"
+  "lastIngestedAt": "2026-10-31T18:54:47.210Z"
 }

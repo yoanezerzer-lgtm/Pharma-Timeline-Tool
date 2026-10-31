@@ -9304,8 +9304,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 24,
-          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
+          "page": 73,
+          "quote": "a single agent KEYNOTE - 042 The efficacy of KEYTRUDA was investigated in KEYNOTE - 042 (NCT02220894), a randomized, multicenter, open - label, active - controlled trial conducted in 1274 pa",
           "extractedBy": "regex",
           "verified": false
         },
@@ -17764,8 +17764,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 23,
-          "quote": "nvestigator’s choice of either paclitaxel or paclitaxel protein-bound was investigated in KEYNOTE-407, a multicenter, double-blind, randomized (1:1), placebo-controlled trial in 558 patients",
+          "page": 71,
+          "quote": "ice of either paclitaxel or paclitaxel protein - bound was investigated in KEYNOTE - 407 (NCT02775435), a randomized, multi - center, double - blind, placebo - controlled trial conducted in 5",
           "extractedBy": "regex",
           "verified": false
         },
@@ -18733,6 +18733,14 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03850444",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 24,
+          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
+          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -22164,6 +22172,14 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03875092",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 23,
+          "quote": "nvestigator’s choice of either paclitaxel or paclitaxel protein-bound was investigated in KEYNOTE-407, a multicenter, double-blind, randomized (1:1), placebo-controlled trial in 558 patients",
+          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -37313,7 +37329,7 @@
         "precision": "day"
       },
       "completionDate": {
-        "value": "2026-06-23",
+        "value": "2026-06-26",
         "precision": "day"
       },
       "enrollment": {
@@ -37388,7 +37404,20 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2026-06-23",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-06-26",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-31T18:54:51.947Z"
+        }
+      ]
     },
     {
       "id": "1454-002",
@@ -62458,5 +62487,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-30T03:02:13.434Z"
+  "lastIngestedAt": "2026-10-31T18:54:51.947Z"
 }

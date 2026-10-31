@@ -1,366 +1,73 @@
 .index {
-  max-width: 1040px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 5rem 1.5rem 4rem;
+  padding: 1.5rem 1rem 4rem;
+}
+
+.index__nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.index__nav a {
+  color: var(--text-2);
+}
+
+.index__nav a:hover {
+  color: var(--text-1);
 }
 
 .index__head {
-  position: relative;
+  margin: 3rem 0 1.75rem;
   text-align: center;
 }
 
 .index__head h1 {
-  margin: 0 0 0.6rem;
-  font-size: 2.1rem;
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
   letter-spacing: -0.02em;
   color: var(--text-1);
 }
 
-.index__head-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.index__compare {
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--bg-elevated);
-  color: var(--text-1);
-  font-size: 13px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.index__compare:hover {
-  border-color: var(--text-3);
-  text-decoration: none;
-}
-
-.index__add-drug {
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--accent);
-  background: var(--accent);
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.index__add-drug:hover {
-  opacity: 0.9;
-}
-
 .index__lede {
-  margin: 0 auto 0.5rem;
-  max-width: 58ch;
+  margin: 0;
   color: var(--text-2);
-  line-height: 1.6;
-}
-
-.index__summary {
-  margin: 0 0 1.75rem;
-  font-size: 13px;
-  color: var(--text-3);
-  font-variant-numeric: tabular-nums;
+  font-size: 16px;
 }
 
 .index__controls {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  max-width: 900px;
-  margin: 0 auto 2.5rem;
+  gap: 0.5rem;
+  margin: 0 auto 2.25rem;
+  max-width: 640px;
 }
 
-.index__control {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  flex: 1 1 160px;
-}
-
-.index__control--search {
-  flex: 2 1 280px;
-}
-
-.index__control--view {
-  flex: 0 0 auto;
-}
-
-.index__control label,
-.index__control-label {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-3);
-}
-
-.index__control input,
-.index__control select {
-  height: 2.5rem;
-  padding: 0 0.75rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--bg-elevated);
-  color: var(--text-1);
-  font: inherit;
-  font-size: 14px;
-}
-
-.index__control input::placeholder {
-  color: var(--text-3);
-}
-
-.index__clear {
-  padding: 0;
-  border: none;
-  background: none;
-  color: var(--accent);
-  font: inherit;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.index__hint {
-  margin: 0.75rem 0 0;
-  font-size: 12.5px;
-  color: var(--text-3);
-  text-align: center;
-}
-
-.index__hint--card {
-  text-align: left;
-  margin-top: 0.75rem;
-}
-
-.index__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.1rem;
-}
-
-.drug-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1.25rem;
-  background: var(--bg-elevated);
+.index__search,
+.index__area {
+  height: 2.75rem;
+  padding: 0 0.85rem;
   border: 1px solid var(--border);
   border-radius: 10px;
-}
-
-.drug-card__head h2 {
-  margin: 0;
-  font-size: 1.1rem;
-  letter-spacing: -0.01em;
-  color: var(--text-1);
-}
-
-.drug-card__inn {
-  font-weight: 400;
-  font-size: 0.85rem;
-  color: var(--text-3);
-}
-
-.drug-card__meta {
-  margin: 0.3rem 0 0;
-  font-size: 12.5px;
-  color: var(--text-2);
-}
-
-.drug-card__check {
-  margin: 0.6rem 0 0;
-}
-
-.drug-card__indications {
-  list-style: none;
-  margin: 1rem 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.drug-card__indication {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  padding: 0.55rem 0.7rem;
-  border: 1px solid var(--border-subtle);
-  border-radius: 7px;
-  color: inherit;
-}
-
-.drug-card__indication:hover {
-  border-color: var(--border);
-  background: var(--bg-1);
-}
-
-.drug-card__indication-name {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--text-1);
-}
-
-.drug-card__indication-meta {
-  font-size: 11.5px;
-  color: var(--text-3);
-  font-variant-numeric: tabular-nums;
-}
-
-.index__foot {
-  margin-top: 3.5rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--border-subtle);
-  font-size: 12px;
-  line-height: 1.6;
-  color: var(--text-3);
-  text-align: center;
-}
-
-.index__foot p + p {
-  margin-top: 0.75rem;
-}
-
-@media (max-width: 560px) {
-  .index {
-    padding-top: 3rem;
-  }
-  .index__grid {
-    grid-template-columns: 1fr;
-  }
-  .index__table .index__table-sponsor {
-    display: none;
-  }
-  .index__head-actions {
-    position: static;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-}
-
-.index__view-toggle {
-  display: flex;
-  height: 2.5rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.index__view-toggle button {
-  padding: 0 0.9rem;
-  border: none;
   background: var(--bg-elevated);
-  color: var(--text-2);
-  font: inherit;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.index__view-toggle button + button {
-  border-left: 1px solid var(--border);
-}
-
-.index__view-toggle button[aria-pressed='true'] {
-  background: var(--text-1);
-  color: var(--bg-1);
-}
-
-.drug-card__more {
-  width: 100%;
-  padding: 0.45rem 0.7rem;
-  border: 1px dashed var(--border);
-  border-radius: 7px;
-  background: none;
-  color: var(--text-2);
-  font: inherit;
-  font-size: 12.5px;
-  cursor: pointer;
-}
-
-.drug-card__more:hover {
-  border-color: var(--text-3);
   color: var(--text-1);
+  font: inherit;
+  font-size: 15px;
+  min-width: 0;
 }
 
-.index__table-wrap {
-  overflow-x: auto;
+.index__search {
+  flex: 1;
 }
 
-.index__table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13px;
+.index__area {
+  flex: 0 0 11rem;
 }
 
-.index__table th {
-  padding: 0 0.75rem 0.5rem 0;
-  border-bottom: 1px solid var(--border);
-  text-align: left;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.index__search::placeholder {
   color: var(--text-3);
-  white-space: nowrap;
-}
-
-.index__table th button {
-  padding: 0;
-  border: none;
-  background: none;
-  font: inherit;
-  text-transform: inherit;
-  letter-spacing: inherit;
-  color: inherit;
-  cursor: pointer;
-}
-
-.index__table th[aria-sort='ascending'],
-.index__table th[aria-sort='descending'] {
-  color: var(--text-1);
-}
-
-.index__table td {
-  padding: 0.55rem 0.75rem 0.55rem 0;
-  border-bottom: 1px solid var(--border-subtle);
-  vertical-align: top;
-  color: var(--text-1);
-}
-
-.index__table tbody tr:hover {
-  background: var(--row-hover);
-}
-
-.index__table .nums {
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-  color: var(--text-2);
-}
-
-.index__table .is-num {
-  text-align: right;
-}
-
-.index__table-drug {
-  font-weight: 600;
-}
-
-.index__table-inn,
-.index__table-sponsor {
-  color: var(--text-3);
-}
-
-.index__list {
-  max-width: 1040px;
-  margin: 0 auto;
 }
 
 .index__group + .index__group {
@@ -369,11 +76,9 @@
 
 .index__group-head {
   margin: 0 0 0.4rem;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-2);
+  color: var(--text-1);
 }
 
 .index__group-count {
@@ -391,25 +96,29 @@
 
 .index__row {
   display: grid;
-  grid-template-columns: minmax(11rem, 1.1fr) minmax(0, 2fr) minmax(0, 1fr) 3rem 9.5rem;
+  grid-template-columns: minmax(12rem, 1fr) minmax(0, 1.6fr) 3rem;
   align-items: baseline;
-  gap: 0.25rem 1rem;
-  padding: 0.55rem 0.5rem;
+  gap: 0.2rem 1rem;
+  padding: 0.6rem 0.5rem;
   border-bottom: 1px solid var(--border-subtle);
   color: var(--text-1);
   text-decoration: none;
-  font-size: 13.5px;
+  font-size: 14px;
 }
 
 .index__row:hover {
   background: var(--bg-elevated);
+  text-decoration: none;
 }
 
 .index__row-inn,
-.index__row-company,
 .index__row-year {
   color: var(--text-3);
-  font-size: 12.5px;
+  font-size: 13px;
+}
+
+.index__row-year {
+  text-align: right;
 }
 
 .index__row-use {
@@ -419,22 +128,32 @@
   white-space: nowrap;
 }
 
-.index__row-company {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .index__row-more {
   color: var(--text-3);
-  font-size: 12px;
+  font-size: 12.5px;
 }
 
-.index__row-check {
-  text-align: right;
+.index__empty,
+.index__none {
+  margin: 2.5rem 0 0;
+  font-size: 13px;
+  color: var(--text-3);
+  line-height: 1.6;
 }
 
-@media (max-width: 720px) {
+.index__empty span {
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+@media (max-width: 640px) {
+  .index__controls {
+    flex-direction: column;
+  }
+  .index__search,
+  .index__area {
+    flex: 0 0 auto;
+  }
   .index__row {
     grid-template-columns: 1fr auto;
   }
@@ -442,24 +161,8 @@
     grid-column: 1 / -1;
     white-space: normal;
   }
-  .index__row-company {
-    grid-column: 1;
-  }
   .index__row-year {
-    display: none;
-  }
-  .index__row-check {
     grid-row: 1;
     grid-column: 2;
   }
-}
-
-.index__control {
-  min-width: 0;
-}
-
-.index__control select {
-  width: 100%;
-  min-width: 0;
-  text-overflow: ellipsis;
 }
