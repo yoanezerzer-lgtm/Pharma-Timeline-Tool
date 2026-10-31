@@ -333,6 +333,11 @@ export type NamedFact = z.infer<typeof NamedFact>;
 export const Pharmacology = z.object({
   /** The FDA's Established Pharmacologic Class ("Janus Kinase Inhibitor"). */
   drugClass: NamedFact.optional(),
+  /**
+   * The patient leaflet's own answer to "What is BRAND?", word for word: the
+   * FDA-approved plain-language description of what the medicine is for.
+   */
+  patientSummary: z.object({ paragraphs: z.array(z.string()), provenance: Provenance }).optional(),
   sections: z.array(
     z.object({
       number: z.string(),
