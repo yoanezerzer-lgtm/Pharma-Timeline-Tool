@@ -181,3 +181,23 @@
     gap: 0.1rem;
   }
 }
+
+.disease__glance {
+  margin: 0.5rem 0 0;
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+.disease__details {
+  margin: 1.5rem 0 0;
+  max-width: 78ch;
+}
+
+.disease__details > summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
