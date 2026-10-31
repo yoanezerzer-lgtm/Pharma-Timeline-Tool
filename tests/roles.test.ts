@@ -797,4 +797,15 @@ describe('classifyTrialRoles — extension studies and trials with a shared name
     expect(pivotalFor(trial({ nctId: 'NCT04487080', labelName: 'MARIPOSA', ...janssen }), ctx)).toBe(false);
     expect(pivotalFor(trial({ nctId: 'NCT04988295', labelName: 'MARIPOSA-2', ...janssen }), ctx)).toBe(true);
   });
+
+  // The PDF text of the same label spaces the hyphen: "MARIPOSA - 2 (NCT04988295)".
+  it('does not match MARIPOSA inside "MARIPOSA - 2" as the label text reads', () => {
+    const text =
+      'Previously Treated NSCLC The efficacy of intravenous amivantamab in combination with carboplatin and ' +
+      'pemetrexed was evaluated in MARIPOSA - 2 (NCT04988295), a randomized, open - label, multicenter trial.';
+    const ctx = ctxFor(text, { sponsorName: 'JANSSEN' });
+    const janssen = { sponsor: 'Janssen Research & Development, LLC', studyType: 'INTERVENTIONAL' as const };
+    expect(pivotalFor(trial({ nctId: 'NCT04487080', labelName: 'MARIPOSA', ...janssen }), ctx)).toBe(false);
+    expect(pivotalFor(trial({ nctId: 'NCT04988295', labelName: 'MARIPOSA-2', ...janssen }), ctx)).toBe(true);
+  });
 });
