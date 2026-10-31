@@ -53,7 +53,7 @@ export function DrugIndex() {
         d.inn,
         d.company,
         d.firstApproval?.value.slice(0, 4) ?? '',
-        ...areasOfDrug(d.slug).map((a) => a.name),
+        ...areasOfDrug(d).map((a) => a.name),
         ...d.indications.flatMap((i) => [i.name, i.displayName ?? '', ...i.diseases.flatMap((x) => [x.term, diseaseName.get(x.meshId) ?? ''])]),
       ]
         .join(' ')
@@ -62,8 +62,8 @@ export function DrugIndex() {
     );
   }, [query]);
 
-  const groups = AREAS.map((a) => ({ ...a, drugs: matching.filter((d) => areasOfDrug(d.slug).some((x) => x.id === a.id)) }));
-  const unsorted = matching.filter((d) => areasOfDrug(d.slug).length === 0);
+  const groups = AREAS.map((a) => ({ ...a, drugs: matching.filter((d) => areasOfDrug(d).some((x) => x.id === a.id)) }));
+  const unsorted = matching.filter((d) => areasOfDrug(d).length === 0);
   const shown = groups.filter((g) => (!area || g.id === area) && g.drugs.length > 0);
   const empty = query ? [] : groups.filter((g) => (!area || g.id === area) && g.drugs.length === 0);
 
