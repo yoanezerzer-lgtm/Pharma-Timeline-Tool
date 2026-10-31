@@ -415,7 +415,21 @@ function escapeRegExp(s: string): string {
  * a section 14 mention with no citation behind it.
  */
 function mentions(haystack: string, needles: string[]): boolean {
-  return needles.some((n) => new RegExp(`\\b${escapeRegExp(n)}\\b`, 'i').test(haystack));
+  // `(?!\s*-\s*\d)` keeps "MARIPOSA" from matching inside "MARIPOSA-2" or "MARIPOSA - 2", a different trial.
+  return needles.some((n) => new RegExp(`\\b${escapeRegExp(n)}\\b(?!\\s*-\\s*\\d)`, 'i').test(haystack));
+}
+
+/**
+ * Whether the first mention of the trial in this span names it as an
+ * extension study: "...an ongoing, open-label, single-arm extension study
+ * (FOREST-HCM)". The label mentions the extension to say where patients went
+ * next, not because the indication rests on it.
+ */
+function reportedAsExtension(spanText: string, ids: string[]): boolean {
+  const mention = Math.min(
+    ...ids.map((n) => spanText.search(new RegExp(`\\b${escapeRegExp(n)}\\b(?!\\s*-\\s*\\d)`, 'i'))).filter((i) => i >= 0)
+  );
+  return /extension\s+(?:study|trial)\s*\(\s*$/i.test(spanText.slice(Math.max(0, mention - 40), mention));
 }
 
 /**
@@ -525,6 +539,7 @@ export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignme
     const namedHere = mentions(span.text, ids);
     if (!namedHere) continue;
     if (reportedAsLackOfEffectiveness(span.text, ids)) continue;
+    if (reportedAsExtension(span.text, ids)) continue;
 
     // `citedIn` only proves the identifier's string appears *somewhere* in the
     // FDA paperwork (it's populated by a document-wide scan, not one scoped to
