@@ -97,11 +97,27 @@
             "Musculoskeletal Diseases",
             "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
           ],
+          "inherited": true,
           "definition": {
             "text": "An autosomal dominant disorder that is the most frequent form of short-limb dwarfism. Affected individuals exhibit short stature caused by rhizomelic shortening of the limbs, characteristic facies with frontal bossing and mid-face hypoplasia, exaggerated lumbar lordosis, limitation of elbow extension, GENU VARUM, and trident hand. (Online Mendelian Inheritance in Man, http://www.ncbi.nlm.nih.gov/Omim, MIM#100800, April 20, 2001)",
             "provenance": {
               "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000130",
               "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Achondroplasia",
+            "paragraphs": [
+              "Achondroplasia is the most common form of short-limbed dwarfism. The word achondroplasia means \"without cartilage formation.\" Cartilage is a tough but flexible tissue that makes up much of the skeleton during early development. However, in people with achondroplasia the problem is not forming cartilage but converting it to bone (a process called ossification), particularly in the long bones of the arms and legs. Achondroplasia is similar to another skeletal disorder called hypochondroplasia, but the features of achondroplasia tend to be more severe.",
+              "All people with achondroplasia have short stature. Without treatment, the average height of an adult male with achondroplasia is 131 centimeters (4 feet, 4 inches), and the average height for adult females is 124 centimeters (4 feet, 1 inch). Characteristic features of achondroplasia include an average-size trunk, short arms and legs with particularly short upper arms and thighs, limited range of motion at the elbows, and an enlarged head (macrocephaly) with a prominent forehead. Fingers are typically short and the ring finger and middle finger may diverge, giving the hand a three-pronged (trident) appearance.",
+              "Health problems commonly associated with achondroplasia include obesity and recurrent ear infections. People with achondroplasia are generally of normal intelligence. In childhood, individuals with the condition usually develop a pronounced and permanent sway of the lower back (lordosis) and bowed legs. Some affected people also develop abnormal front-to-back curvature of the spine (kyphosis) and back pain.",
+              "As affected individuals age, they may experience a potentially serious complication of achondroplasia called spinal stenosis. Spinal stenosis is a narrowing of the spinal canal that can pinch (compress) the upper part of the spinal cord. Spinal stenosis causes with pain, tingling, and weakness in the legs that can make walking difficult. An uncommon but serious complication of achondroplasia in early childhood is stenosis of the hole at the base of the skull where the spinal cord comes out of brain (foramen magnum). This complication can cause compression of the brain stem, which can lead to pauses in breathing during sleep (sleep apnea) or a condition known as hydrocephalus. Hydrocephalus is a buildup of fluid in the brain that can lead to increased head size and related brain abnormalities."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/genetics/condition/achondroplasia/",
+              "sourceLabel": "MedlinePlus Genetics, U.S. National Library of Medicine",
               "extractedBy": "api",
               "verified": false
             }
@@ -960,5 +976,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-29T19:14:49.900Z"
+  "lastIngestedAt": "2026-10-31T19:54:52.927Z"
 }
