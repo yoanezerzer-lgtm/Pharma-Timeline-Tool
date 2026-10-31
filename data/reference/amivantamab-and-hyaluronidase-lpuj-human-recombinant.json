@@ -31,31 +31,54 @@
       "indication": "Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations",
       "trial": "NCT02609776",
       "pivotal": true,
-      "status": "baseline"
+      "status": "baseline",
+      "tries": 1
     },
     {
       "indication": "First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
       "trial": "NCT04487080",
       "pivotal": true,
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-10-31: Confirmed by label section 14 and the registry record.",
+      "evidence": [
+        {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+          "quote": "The efficacy of intravenous amivantamab, in combination with lazertinib , was evaluated in MARIPOSA (NCT04487080), a randomized, active-controlled, multicenter trial."
+        }
+      ]
     },
     {
       "indication": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
       "trial": "NCT04487080",
       "pivotal": true,
-      "status": "baseline"
+      "status": "baseline",
+      "tries": 1
     },
     {
       "indication": "First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations",
       "trial": "NCT04538664",
       "pivotal": true,
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-10-31: Confirmed by label section 14 and the registry record.",
+      "evidence": [
+        {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+          "quote": "The efficacy of intravenous amivantamab was evaluated in PAPILLON (NCT04538664), in a randomized, open-label, multicenter study."
+        }
+      ]
     },
     {
       "indication": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
       "trial": "NCT04988295",
       "pivotal": true,
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-10-31: Confirmed by label section 14 and the registry record.",
+      "evidence": [
+        {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+          "quote": "The efficacy of intravenous amivantamab in combination with carboplatin and pemetrexed was evaluated in MARIPOSA-2 (NCT04988295), a randomized, open-label, multicenter trial."
+        }
+      ]
     }
   ]
 }
