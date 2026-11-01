@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0010279",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0010279",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T019759",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A group of acute infections caused by herpes simplex virus type 1 or type 2 that is characterized by the development of one or more small fluid-filled vesicles with a raised erythematous base on the skin or mucous membrane. It occurs as a primary infection or recurs due to a reactivation of a latent infection. (Dorland, 27th ed.)"
+    },
+    "term": "http://id.nlm.nih.gov/mesh/T000908425",
+    "label": {
+      "@language": "en",
+      "@value": "Herpes Simplex"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
