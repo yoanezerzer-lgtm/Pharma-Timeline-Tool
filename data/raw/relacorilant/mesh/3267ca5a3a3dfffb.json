@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0008173",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0008173",
+    "narrowerConcept": "http://id.nlm.nih.gov/mesh/M0482643",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T015884",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Benign or malignant neoplasms of the FALLOPIAN TUBES. They are uncommon. If they develop, they may be located in the wall or within the lumen as a growth attached to the wall by a stalk."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "Fallopian Tube Neoplasms"
+    },
+    "@context": {
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
