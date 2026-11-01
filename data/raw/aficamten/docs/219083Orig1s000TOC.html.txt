@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="dc.title" content="Drugs@FDA: FDA-Approved Drugs" />
+<meta name="ROBOTS" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drug Approval Package</title>
+<link rel="stylesheet" media="all" href="/scripts/includes/fdagov/css/css_accessdata_stylesheet.css" type="text/css">
+<link rel="stylesheet" media="all" href="/scripts/includes/fdagov/css/css_bootstrap_stylesheet.css" type="text/css">
+<link rel="stylesheet" media="all" href="/scripts/includes/fdagov/css/css_responsive_stylesheet.css" type="text/css">
+<style>
+  #pageTitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003366;
+  }
+    </style>
+    <script src="/scripts/includes/fdagov/js/js_jquery.js"></script>
+    <script src="/scripts/includes/fdagov/js/js_bootstrap.js"></script>
+</head>
+<body>
+
+<script>
+// ============================================================================
+// EDIT SECTION: All editable variables are located here for easy modification
+// ============================================================================
+
+// Drug Information Variables - EDIT THESE VALUES AS NEEDED
+var drugName = "Myqorzo";
+var companyName = "Cytokinetics, Incorporated";
+var applicationNumber = "219083";
+var approvalDate = "12/19/2025";
+var dateCreated = "January 16, 2026";
+
+// Individual Application Numbers for Drugs@FDA Links
+var applicationNumbers = ["219083"];
+
+// PDF Base Name for PDF Links (CFM filename without TOC)
+var pdfBaseName = "219083Orig1s000";
+
+// PDF Base URL for Preview Mode (empty for production, file:// for preview)
+var pdfBaseUrl = "";
+
+// PDF File Flags - SET TO 1 TO SHOW, 0 TO HIDE LINKS
+var pdfFiles = {
+// Approval and Labeling Files
+approv: 1,
+lbl: 1,
+
+// Review Files
+chemR: 1,
+clinPharmR: 0,
+integratedR: 1,
+medR: 0,
+crossR: 0,
+memo: 0,
+microR: 0,
+otherActionLtrs: 0,
+multidisciplineR: 0,
+pharmR: 0,
+nameR: 1,
+oeList: 1,
+otherR: 1,
+rems: 1,
+rems1: 0,
+riskR: 1,
+statR: 0,
+sumR: 0,
+adminCorres: 1
+};
+
+// ============================================================================
+// END EDIT SECTION - NO NEED TO EDIT BEYOND THIS LINE!
+// ============================================================================
+
+// Function to open PDF with Chrome browser preference
+function openPdfWithChrome(url) {
+try {
+  // For preview mode with local files, try to open with Chrome
+  if (pdfBaseUrl && pdfBaseUrl.indexOf('file://') === 0) {
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    
+    // Try to detect Chrome and use it preferentially
+    var isChrome = navigator.userAgent.indexOf('Chrome') > -1 && navigator.vendor.indexOf('Google Inc') > -1;
+    
+    if (isChrome) {
+      // Chrome detected, open normally
+      link.click();
+    } else {
+      // Not Chrome, try to suggest Chrome or open with default
+      if (confirm('For best PDF viewing experience, we recommend using Chrome browser. Open with default browser?')) {
+        link.click();
+      }
+    }
+  } else {
+    // Production mode, open normally
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
+} catch (e) {
+  console.error('Error opening PDF:', e);
+  // Fallback to normal link opening
+  window.open(url, '_blank', 'noopener,noreferrer');
+}
+}
+
+// Function to populate page content from variables above
+function populatePageContent() {
+// Update page title
+document.getElementById('pageTitle').innerHTML = 'Drug Approval Package: ' + drugName.toUpperCase();
+document.title = 'Drug Approval Package: ' + drugName.toUpperCase();
+
+// Update drug information panel
+document.getElementById('companyName').innerHTML = companyName;
+document.getElementById('applicationNumber').innerHTML = applicationNumber;
+document.getElementById('approvalDate').innerHTML = approvalDate;
+document.getElementById('dateCreated').innerHTML = dateCreated;
+
+// Generate Drugs@FDA links
+var drugsAtFdaHtml = '';
+for (var i = 0; i < applicationNumbers.length; i++) {
+  var appNum = applicationNumbers[i];
+  var url = 'https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&varApplNo=' + appNum;
+  drugsAtFdaHtml += '<div style="margin-bottom: 4px;">'; /* Reduced from 8px */
+  drugsAtFdaHtml += '<a href="' + url + '" title="Go to Drugs@FDA for Application ' + appNum + '" target="_blank">';
+  drugsAtFdaHtml += 'Drugs@FDA info: ' + appNum; /* Shortened text further */
+  drugsAtFdaHtml += '</a>';
+  drugsAtFdaHtml += '<span aria-hidden="true" class="icon-info-sign" style="margin-left: 2px;"></span>'; /* Reduced margin */
+  drugsAtFdaHtml += '</div>';
+}
+document.getElementById('drugsAtFdaLinks').innerHTML = drugsAtFdaHtml;
+
+// Generate approval documents with Chrome browser support
+var approvalHtml = '';
+if (pdfFiles.approv == 1) {
+  var approvUrl = pdfBaseUrl + pdfBaseName + 'Approv.pdf';
+  approvalHtml += '<li><a href="' + approvUrl + '" onclick="openPdfWithChrome(\'' + approvUrl + '\'); return false;" title="Go to approval letter">Approval Letter(s)</a> (PDF)</li>';
+}
+if (pdfFiles.lbl == 1) {
+  var lblUrl = pdfBaseUrl + pdfBaseName + 'Lbl.pdf';
+  approvalHtml += '<li><a href="' + lblUrl + '" onclick="openPdfWithChrome(\'' + lblUrl + '\'); return false;" title="Go to printed labeling">Printed Labeling</a> (PDF)</li>';
+}
+document.getElementById('approvalDocuments').innerHTML = approvalHtml;
+
+// Generate review documents with Chrome browser support - SHORTENED NAMES for narrow panel
+var reviewHtml = '';
+if (pdfFiles.chemR == 1) {
+  var chemRUrl = pdfBaseUrl + pdfBaseName + 'ChemR.pdf';
+  reviewHtml += '<li><a href="' + chemRUrl + '" onclick="openPdfWithChrome(\'' + chemRUrl + '\'); return false;" title="Go to product quality review(s)">Product Quality Review(s)</a> (PDF)</li>';
+}
+if (pdfFiles.clinPharmR == 1) {
+  var clinPharmRUrl = pdfBaseUrl + pdfBaseName + 'ClinPharmR.pdf';
+  reviewHtml += '<li><a href="' + clinPharmRUrl + '" onclick="openPdfWithChrome(\'' + clinPharmRUrl + '\'); return false;" title="Go to clinical pharmacology and biopharmaceutics review(s)">Clin Pharm Review(s)</a> (PDF)</li>'; /* Further shortened */
+}
+if (pdfFiles.integratedR == 1) {
+  var integratedRUrl = pdfBaseUrl + pdfBaseName + 'IntegratedR.pdf';
+  reviewHtml += '<li><a href="' + integratedRUrl + '" onclick="openPdfWithChrome(\'' + integratedRUrl + '\'); return false;" title="Go to integrated review">Integrated Review</a> (PDF)</li>';
+}
+if (pdfFiles.medR == 1) {
+  var medRUrl = pdfBaseUrl + pdfBaseName + 'MedR.pdf';
+  reviewHtml += '<li><a href="' + medRUrl + '" onclick="openPdfWithChrome(\'' + medRUrl + '\'); return false;" title="Go to clinical review(s)">Clinical Review(s)</a> (PDF)</li>';
+}
+if (pdfFiles.crossR == 1) {
+  var crossRUrl = pdfBaseUrl + pdfBaseName + 'CrossR.pdf';
+  reviewHtml += '<li><a href="' + crossRUrl + '" onclick="openPdfWithChrome(\'' + crossRUrl + '\'); return false;" title="Go to cross discipline team leader review">Cross Discipline Review</a> (PDF)</li>'; /* Shortened */
+}
+if (pdfFiles.memo == 1) {
+  var memoUrl = pdfBaseUrl + pdfBaseName + 'Memo.pdf';
+  reviewHtml += '<li><a href="' + memoUrl + '" onclick="openPdfWithChrome(\'' + memoUrl + '\'); return false;" title="Go to office director memo">Office Director Memo</a> (PDF)</li>';
+}
+if (pdfFiles.microR == 1) {
+  var microRUrl = pdfBaseUrl + pdfBaseName + 'MicroR.pdf';
+  reviewHtml += '<li><a href="' + microRUrl + '" onclick="openPdfWithChrome(\'' + microRUrl + '\'); return false;" title="Go to clinical microbiology/virology review(s)">Microbiology Review(s)</a> (PDF)</li>'; /* Further shortened */
+}
+if (pdfFiles.otherActionLtrs == 1) {
+  var otherActionLtrsUrl = pdfBaseUrl + pdfBaseName + 'OtherActionLtrs.pdf';
+  reviewHtml += '<li><a href="' + otherActionLtrsUrl + '" onclick="openPdfWithChrome(\'' + otherActionLtrsUrl + '\'); return false;" title="Go to other action letters">Other Action Letters</a> (PDF)</li>';
+}
+if (pdfFiles.multidisciplineR == 1) {
+  var multidisciplineRUrl = pdfBaseUrl + pdfBaseName + 'MultidisciplineR.pdf';
+  reviewHtml += '<li><a href="' + multidisciplineRUrl + '" onclick="openPdfWithChrome(\'' + multidisciplineRUrl + '\'); return false;" title="Go to multi-discipline review">Multi-Discipline Review</a> (PDF)</li>';
+}
+if (pdfFiles.pharmR == 1) {
+  var pharmRUrl = pdfBaseUrl + pdfBaseName + 'PharmR.pdf';
+  reviewHtml += '<li><a href="' + pharmRUrl + '" onclick="openPdfWithChrome(\'' + pharmRUrl + '\'); return false;" title="Go to non-clinical review(s)">Non-Clinical Review(s)</a> (PDF)</li>';
+}
+if (pdfFiles.nameR == 1) {
+  var nameRUrl = pdfBaseUrl + pdfBaseName + 'NameR.pdf';
+  reviewHtml += '<li><a href="' + nameRUrl + '" onclick="openPdfWithChrome(\'' + nameRUrl + '\'); return false;" title="Go to proprietary name review(s)">Proprietary Name Review(s)</a> (PDF)</li>';
+}
+if (pdfFiles.oeList == 1) {
+  var oeListUrl = pdfBaseUrl + pdfBaseName + 'OEList.pdf';
+  reviewHtml += '<li><a href="' + oeListUrl + '" onclick="openPdfWithChrome(\'' + oeListUrl + '\'); return false;" title="Go to officer/employee list">Officer/Employee List</a> (PDF)</li>';
+}
+if (pdfFiles.otherR == 1) {
+  var otherRUrl = pdfBaseUrl + pdfBaseName + 'OtherR.pdf';
+  reviewHtml += '<li><a href="' + otherRUrl + '" onclick="openPdfWithChrome(\'' + otherRUrl + '\'); return false;" title="Go to other review(s)">Other Review(s)</a> (PDF)</li>';
+}
+if (pdfFiles.rems == 1) {
+  var remsUrl = pdfBaseUrl + pdfBaseName + 'REMS.pdf';
+  reviewHtml += '<li><a href="' + remsUrl + '" onclick="openPdfWithChrome(\'' + remsUrl + '\'); return false;" title="Go to rems">REMS</a> (PDF)</li>';
+}
+if (pdfFiles.rems1 == 1) {
+  var rems1Url = pdfBaseUrl + pdfBaseName + 'REMS1.pdf';
+  reviewHtml += '<li><a href="' + rems1Url + '" onclick="openPdfWithChrome(\'' + rems1Url + '\'); return false;" title="Go to rems program">REMS Program</a> (PDF)</li>';
+}
+if (pdfFiles.riskR == 1) {
+  var riskRUrl = pdfBaseUrl + pdfBaseName + 'RiskR.pdf';
+  reviewHtml += '<li><a href="' + riskRUrl + '" onclick="openPdfWithChrome(\'' + riskRUrl + '\'); return false;" title="Go to risk assessment and risk mitigation review(s)">Risk Assessment Review(s)</a> (PDF)</li>'; /* Further shortened */
+}
+if (pdfFiles.statR == 1) {
+  var statRUrl = pdfBaseUrl + pdfBaseName + 'StatR.pdf';
+  reviewHtml += '<li><a href="' + statRUrl + '" onclick="openPdfWithChrome(\'' + statRUrl + '\'); return false;" title="Go to statistical review(s)">Statistical Review(s)</a> (PDF)</li>';
+}
+if (pdfFiles.sumR == 1) {
+  var sumRUrl = pdfBaseUrl + pdfBaseName + 'SumR.pdf';
+  reviewHtml += '<li><a href="' + sumRUrl + '" onclick="openPdfWithChrome(\'' + sumRUrl + '\'); return false;" title="Go to summary review">Summary Review</a> (PDF)</li>';
+}
+if (pdfFiles.adminCorres == 1) {
+  var adminCorresUrl = pdfBaseUrl + pdfBaseName + 'AdminCorres.pdf';
+  reviewHtml += '<li><a href="' + adminCorresUrl + '" onclick="openPdfWithChrome(\'' + adminCorresUrl + '\'); return false;" title="Go to administrative and correspondence documents">Admin & Correspondence</a> (PDF)</li>'; /* Further shortened */
+}
+document.getElementById('reviewDocuments').innerHTML = reviewHtml;
+}
+
+// Call the function when page loads
+window.onload = function() {
+populatePageContent();
+};
+</script>
+
+<div id="header-container"></div>
+<section id="block-entityviewcontent-15" class="clearfix">
+  <ol class="lcds-breadcrumb">
+    <li><a href="http://www.fda.gov/">FDA</a></li>
+    <li><a href="http://www.fda.gov/Drugs/default.htm">Drugs</a></li>
+    <li><a href="http://www.fda.gov/Drugs/InformationOnDrugs/default.htm">Drug Approvals and Databases</a></li>
+    <li><a href="http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm">Drugs@FDA</a></li>
+    <li class="active">Drug Approval Package</li>
+  </ol>
+</section>
+
+<div class="container">
+  <h1 id="pageTitle">Drug Approval Package: LOADING...</h1>
+
+  <!-- Drug Information Panels -->
+  <div class="row">
+    <div class="col-sm-6">  
+      <div class="panel panel-primary">
+        <div class="panel-body">
+          <strong>
+            Company: <span id="companyName">Loading...</span>
+            <br />Application Number: <span id="applicationNumber">Loading...</span>
+            <br />Approval Date: <span id="approvalDate">Loading...</span>
+          </strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <strong>Drugs@FDA Links</strong>
+        </div>
+        <div class="panel-body">
+          <strong>
+            <div id="drugsAtFdaLinks">Loading...</div>
+          </strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size: 9px; margin: 3px 0;">Persons with disabilities having problems accessing the PDF files below may call (301) 796-3634 for assistance.</p> <!-- Further reduced font size and margin -->
+  <div style="height:4px"></div> <!-- Reduced from 10px -->
+
+  <!-- Document Sections -->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <span aria-hidden="true" class="icon-ok icon-1x"></span> 
+          <strong>FDA Approval Letter and Labeling</strong>
+        </div>
+        <div class="panel-body">
+          <ul id="approvalDocuments">
+            Loading...
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-6">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <span aria-hidden="true" class="icon-list-alt icon-1x"></span> 
+          <strong>FDA Application Review Files</strong>
+        </div>
+        <div class="panel-body">
+          <ul id="reviewDocuments">
+            Loading...
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size: 9px; margin: 3px 0;">Date created: <span id="dateCreated">Loading...</span></p> <!-- Further reduced font size and margin -->
+  <p style="font-size: 9px; margin: 3px 0;"><strong><a name="note" id="note"></a></strong>Vision impaired people having problems accessing certain pages of a PDF file may call (301) 796-3634 for assistance.</p> <!-- Further reduced font size and margin -->
+  <p style="font-size: 9px; margin: 3px 0;">Note: Documents in PDF format require the <a href="http://get.adobe.com/reader/">Adobe Acrobat Reader</a>.</p> <!-- Further reduced font size and margin -->
+</div>
+
+<div id="footer-container"></div>
+<script src="../../includes/js/header.js"></script>
+<script src="../../includes/js/footer.js"></script>  
+<script src="../../includes/js/loadhtml_content.js"></script>
+<script type="text/javascript"  src="/DmUGzC/xlpQ/gazP_/We1/JQACNTNaI/u33NGkNwkmSXJL9X/cGcuVDAD/DCVW/RmAFazE"></script></body>
+</html>
