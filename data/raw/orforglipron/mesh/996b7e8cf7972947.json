@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0473031",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0473031",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T610636",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A status with BODY WEIGHT that is above certain standards. In the scale of BODY MASS INDEX, overweight is defined as having a BMI of 25.0-29.9 kg/m2. Overweight may or may not be due to increases in body fat (ADIPOSE TISSUE), hence overweight does not equal over fat."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "Overweight"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
