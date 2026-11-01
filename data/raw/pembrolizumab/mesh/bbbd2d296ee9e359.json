@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T812691",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Carcinoma, Liver Cell"
+      },
+      {
+        "@language": "en",
+        "@value": "Cell Carcinoma, Liver"
+      },
+      {
+        "@language": "en",
+        "@value": "Cell Carcinomas, Liver"
+      },
+      {
+        "@language": "en",
+        "@value": "Liver Cell Carcinomas"
+      },
+      {
+        "@language": "en",
+        "@value": "Carcinomas, Liver Cell"
+      }
+    ],
+    "dateCreated": "2011-11-15",
+    "identifier": "T812691",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Liver Cell Carcinoma"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "OMIM (2013)"
+    },
+    "@context": {
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}

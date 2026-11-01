@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0009818",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0009818",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0332484",
+      "http://id.nlm.nih.gov/mesh/M0009820",
+      "http://id.nlm.nih.gov/mesh/M0009819",
+      "http://id.nlm.nih.gov/mesh/M0392810",
+      "http://id.nlm.nih.gov/mesh/M0392809",
+      "http://id.nlm.nih.gov/mesh/M0358107"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T018951",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Soft tissue tumors or cancer arising from the mucosal surfaces of the LIP; oral cavity; PHARYNX; LARYNX; and cervical esophagus. Other sites included are the NOSE and PARANASAL SINUSES; SALIVARY GLANDS; THYROID GLAND and PARATHYROID GLANDS; and MELANOMA and non-melanoma skin cancers of the head and neck. (from Holland et al., Cancer Medicine, 4th ed, p1651)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T001004270",
+      "http://id.nlm.nih.gov/mesh/T363675",
+      "http://id.nlm.nih.gov/mesh/T018950"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Head and Neck Neoplasms"
+    },
+    "@context": {
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
