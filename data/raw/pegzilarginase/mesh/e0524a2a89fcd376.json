@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T734485",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Deficiencies, ARG1"
+      },
+      {
+        "@language": "en",
+        "@value": "Deficiency, ARG1"
+      },
+      {
+        "@language": "en",
+        "@value": "ARG1 Deficiencies"
+      }
+    ],
+    "dateCreated": "2009-02-04",
+    "identifier": "T734485",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "ABX"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "ARG1 Deficiency"
+    },
+    "thesaurusID": [
+      {
+        "@language": "en",
+        "@value": "NLM (2010)"
+      },
+      {
+        "@language": "en",
+        "@value": "GHR (2014)"
+      },
+      {
+        "@language": "en",
+        "@value": "ORD (2010)"
+      },
+      {
+        "@language": "en",
+        "@value": "OMIM (2013)"
+      }
+    ],
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      }
+    }
+  }
+}
