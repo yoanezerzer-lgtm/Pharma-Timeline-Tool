@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0001748",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0001748",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M000640364",
+      "http://id.nlm.nih.gov/mesh/M0001749",
+      "http://id.nlm.nih.gov/mesh/M000629517",
+      "http://id.nlm.nih.gov/mesh/M000754578",
+      "http://id.nlm.nih.gov/mesh/M000640365"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T842799",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Arthritis in children, with onset before 16 years of age. The terms juvenile rheumatoid arthritis (JRA) and juvenile idiopathic arthritis (JIA) refer to classification systems for chronic arthritis in children. Only one subtype of juvenile arthritis (polyarticular-onset, rheumatoid factor-positive) clinically resembles adult rheumatoid arthritis and is considered its childhood equivalent."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T618283",
+      "http://id.nlm.nih.gov/mesh/T618282",
+      "http://id.nlm.nih.gov/mesh/T003506",
+      "http://id.nlm.nih.gov/mesh/T001112724",
+      "http://id.nlm.nih.gov/mesh/T841800",
+      "http://id.nlm.nih.gov/mesh/T841798",
+      "http://id.nlm.nih.gov/mesh/T003505"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Arthritis, Juvenile"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

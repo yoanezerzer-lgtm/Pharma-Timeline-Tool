@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M000743268",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M000743268",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T001095772",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A spectrum of chronic inflammatory conditions affecting the axial joints (e.g., SPINE), characterized by pain, stiffness of joints (ANKYLOSIS), reduced mobility and inflammation. When joint inflammation and damage are visible on regular X-rays it is called ANKYLOSING SPONDYLITIS; otherwise it is referred to as NON-RADIOGRAPHIC AXIAL SPONDYLOARTHRITIS. HLA-B27 ANTIGEN is a biomarker and IL-23/IL-17 pathway a potential therapeutic target for axial and other related spondyloarthritis."
+    },
+    "term": "http://id.nlm.nih.gov/mesh/T001095804",
+    "label": {
+      "@language": "en",
+      "@value": "Axial Spondyloarthritis"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
