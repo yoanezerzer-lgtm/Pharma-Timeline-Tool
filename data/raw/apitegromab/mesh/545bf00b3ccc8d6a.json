@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0014250",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0014250",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0335732",
+      "http://id.nlm.nih.gov/mesh/M0393323",
+      "http://id.nlm.nih.gov/mesh/M0335741",
+      "http://id.nlm.nih.gov/mesh/M0335740",
+      "http://id.nlm.nih.gov/mesh/M0014251",
+      "http://id.nlm.nih.gov/mesh/M0583907",
+      "http://id.nlm.nih.gov/mesh/M0335731",
+      "http://id.nlm.nih.gov/mesh/M0335730"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T027301",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A group of disorders marked by progressive degeneration of motor neurons in the spinal cord resulting in weakness and muscular atrophy, usually without evidence of injury to the corticospinal tracts. Diseases in this category include Werdnig-Hoffmann disease and later onset SPINAL MUSCULAR ATROPHIES OF CHILDHOOD, most of which are hereditary. (Adams et al., Principles of Neurology, 6th ed, p1089)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T027300",
+      "http://id.nlm.nih.gov/mesh/T842508"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Muscular Atrophy, Spinal"
+    },
+    "@context": {
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      }
+    }
+  }
+}
