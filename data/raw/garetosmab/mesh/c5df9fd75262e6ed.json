@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T029596",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": {
+      "@language": "en",
+      "@value": "Pathological Ossification"
+    },
+    "dateCreated": "1990-09-18",
+    "identifier": "T029596",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Ossification, Pathological"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (1992)"
+    },
+    "@context": {
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}
