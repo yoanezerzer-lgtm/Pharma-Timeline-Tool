@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0017168",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0017168",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T032601",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A myeloproliferative disorder of unknown etiology, characterized by abnormal proliferation of all hematopoietic bone marrow elements and an absolute increase in red cell mass and total blood volume, associated frequently with splenomegaly, leukocytosis, and thrombocythemia. Hematopoiesis is also reactive in extramedullary sites (liver and spleen). In time myelofibrosis occurs."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T842296",
+      "http://id.nlm.nih.gov/mesh/T768257",
+      "http://id.nlm.nih.gov/mesh/T032600",
+      "http://id.nlm.nih.gov/mesh/T842297",
+      "http://id.nlm.nih.gov/mesh/T032602"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Polycythemia Vera"
+    },
+    "@context": {
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
