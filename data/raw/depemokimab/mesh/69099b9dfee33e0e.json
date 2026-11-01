@@ -1,0 +1,117 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D001249",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000178",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000453",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000208",
+      "http://id.nlm.nih.gov/mesh/Q000401",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000235",
+      "http://id.nlm.nih.gov/mesh/Q000662",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000532",
+      "http://id.nlm.nih.gov/mesh/Q000652",
+      "http://id.nlm.nih.gov/mesh/Q000150",
+      "http://id.nlm.nih.gov/mesh/Q000628",
+      "http://id.nlm.nih.gov/mesh/Q000209",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000191",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000534",
+      "http://id.nlm.nih.gov/mesh/Q000097",
+      "http://id.nlm.nih.gov/mesh/Q000517",
+      "http://id.nlm.nih.gov/mesh/Q000451",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000175",
+      "http://id.nlm.nih.gov/mesh/Q000188",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000139",
+      "http://id.nlm.nih.gov/mesh/Q000151",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000134"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "note specifics; ASTHMA, CARDIAC see DYSPNEA, PAROXYSMAL is also available; in historical literature consider indexing \"phthisic\" here; \"phthisis\" probably goes under TUBERCULOSIS, PULMONARY"
+    },
+    "broaderDescriptor": [
+      "http://id.nlm.nih.gov/mesh/D001982",
+      "http://id.nlm.nih.gov/mesh/D008173",
+      "http://id.nlm.nih.gov/mesh/D012130"
+    ],
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D001249",
+    "lastUpdated": "2011-06-24",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0001885",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T003741",
+    "seeAlso": "http://id.nlm.nih.gov/mesh/D018927",
+    "treeNumber": [
+      "http://id.nlm.nih.gov/mesh/C08.127.108",
+      "http://id.nlm.nih.gov/mesh/C08.674.095",
+      "http://id.nlm.nih.gov/mesh/C08.381.495.108",
+      "http://id.nlm.nih.gov/mesh/C20.543.480.680.095"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Asthma"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      }
+    }
+  }
+}
