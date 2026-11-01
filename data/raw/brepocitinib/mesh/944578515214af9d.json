@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0006061",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0006061",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0337307",
+      "http://id.nlm.nih.gov/mesh/M0337306"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T011553",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A subacute or chronic inflammatory disease of muscle and skin, marked by proximal muscle weakness and a characteristic skin rash. The illness occurs with approximately equal frequency in children and adults. The skin lesions usually take the form of a purplish rash (or less often an exfoliative dermatitis) involving the nose, cheeks, forehead, upper trunk, and arms. The disease is associated with a complement mediated intramuscular microangiopathy, leading to loss of capillaries, muscle ischemia, muscle-fiber necrosis, and perifascicular atrophy. The childhood form of this disease tends to evolve into a systemic vasculitis. Dermatomyositis may occur in association with malignant neoplasms. (From Adams et al., Principles of Neurology, 6th ed, pp1405-6)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T372462",
+      "http://id.nlm.nih.gov/mesh/T372461"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Dermatomyositis"
+    },
+    "@context": {
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
