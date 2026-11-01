@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0003440",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0003440",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T006593",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T811434",
+      "http://id.nlm.nih.gov/mesh/T006592",
+      "http://id.nlm.nih.gov/mesh/T000997468",
+      "http://id.nlm.nih.gov/mesh/T006591",
+      "http://id.nlm.nih.gov/mesh/T768830"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Carcinoma, Non-Small-Cell Lung"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
