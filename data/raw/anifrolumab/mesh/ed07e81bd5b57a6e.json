@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0012757",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0012757",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T024387",
+    "relatedConcept": "http://id.nlm.nih.gov/mesh/M0012758",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A chronic, relapsing, inflammatory, and often febrile multisystemic disorder of connective tissue, characterized principally by involvement of the skin, joints, kidneys, and serosal membranes. It is of unknown etiology, but is thought to represent a failure of the regulatory mechanisms of the autoimmune system. The disease is marked by a wide range of system dysfunctions, an elevated erythrocyte sedimentation rate, and the formation of LE cells in the blood or bone marrow."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T024386",
+      "http://id.nlm.nih.gov/mesh/T024385"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Lupus Erythematosus, Systemic"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      }
+    }
+  }
+}
