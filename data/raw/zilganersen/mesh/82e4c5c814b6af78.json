@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0415670",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0415670",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T483481",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Rare leukoencephalopathy with infantile-onset accumulation of Rosenthal fibers in the subpial, periventricular, and subependymal zones of the brain. Rosenthal fibers are GLIAL FIBRILLARY ACIDIC PROTEIN aggregates found in ASTROCYTES. Juvenile- and adult-onset types show progressive atrophy of the lower brainstem instead. De novo mutations in the GFAP gene are associated with the disease with propensity for paternal inheritance."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T483482",
+      "http://id.nlm.nih.gov/mesh/T840851",
+      "http://id.nlm.nih.gov/mesh/T840852",
+      "http://id.nlm.nih.gov/mesh/T840853",
+      "http://id.nlm.nih.gov/mesh/T840850"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Alexander Disease"
+    },
+    "@context": {
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
