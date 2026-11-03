@@ -84,9 +84,8 @@ a new session when a conversation gets long.
   hand after a pipeline change, with `only` to try a few drugs first.
 - **Site check** (`scripts/sitecheck.ts`, no AI): every page in a browser,
   on each pull request and after each deploy.
-- **Weekly digest** (scheduled task, Sonnet, Mondays 07:13 Toronto): meant
-  to email the owner, but it has no Gmail connector, so nothing is sent.
-  To be replaced by a free GitHub job (see the audit below).
+- **Weekly status** (`.github/workflows/weekly-status.yml`, Mondays, no
+  AI): comments on the "Weekly status" issue; GitHub emails the owner.
 
 ## How to work: token and process rules (audit, 3 Nov 2026)
 
@@ -134,21 +133,29 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   twice a day. Moving the brief to Sonnet and the scout to once a day would
   save the most. Only the owner can decide that.
 
-## Open questions for the owner (one list, answer once)
-From the draft `docs/PRD.md` (branch `claude/prd`, not merged), section 10:
-- Accounts: stay free with no sign-up (the 29 Oct direction), or keep the
-  door open for accounts later?
-- Short names for uses: may they be cut automatically from the FDA's own
-  wording, or does each need the owner's approval?
-- Atopic dermatitis under "Genetic diseases" (MeSH files it there): keep
-  or exclude?
-Account-level: morning brief to Sonnet? Job scout once a day? Turn on
-auto-merge? Delete old chats and branches (owner only)?
+## Owner decisions (3 Nov 2026)
+- Accounts: the site stays free with no sign-up, but keep the door open
+  for accounts later (don't build anything that rules them out).
+- Short names for uses: may be cut automatically from the FDA's own
+  wording.
+- Atopic dermatitis belongs under immunology, not "Genetic diseases":
+  exclude it from the MeSH genetic-diseases rule and file it under the
+  immunology area (still to do).
+- Morning brief moved to Sonnet (done). Job scout to once a day: the owner
+  must edit it (claude.ai/code/routines/trig_01RjhVp6w65gGm9krCvDUjnq);
+  it was not created by an agent, so an agent can't change it.
+- Auto-merge: wanted; a session can't change repo settings, so the owner
+  turns it on (Settings > General > Pull Requests).
+- Old branches: the owner said an agent may delete them, but the delete
+  was blocked in-session. 30 branches whose PR is merged are safe to
+  delete; keep `diag/raw-text-*`, `claude/prd` and unmerged `data/*`.
+- Weekly status: done. A free workflow posts to the "Weekly status" issue
+  every Monday (`.github/workflows/weekly-status.yml`).
 
 ## Next steps agreed with the owner (31 Oct)
-0. First, from the audit: replace the weekly digest with the free GitHub
-   job (pinned issue), and stop the old digest scheduled task. Then the
-   list below, one chat per step.
+0. Done (3 Nov): weekly status issue replaces the digest.
+   Next: move atopic dermatitis to immunology, then the list below, one
+   chat per step.
 1. "Rare diseases" area from FDA orphan status (the orphan database is a
    web form; needs a way to read it from GitHub Actions).
 2. Make tiles and cards look the same everywhere, including Compare.
