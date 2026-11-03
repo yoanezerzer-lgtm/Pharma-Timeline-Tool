@@ -23,6 +23,8 @@ agreed next steps, read `docs/HANDOFF.md`.
 - **Explain in plain language**, short, no jargon. Say what changed for
   the site's users, not how the code works.
 - **Stay at $0.** No paid services or API tokens outside the owner's plan.
+- **Treadle agents** have no internet and never push: see
+  `docs/agents/treadle.md` for what to give them.
 
 ## Before merging
 - Run `npm run typecheck`, `npm test`, `npm run validate`, `npm run qc` and
