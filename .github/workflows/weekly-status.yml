@@ -1,0 +1,70 @@
+name: Weekly status
+
+# Free replacement for the old AI digest. Every Monday morning (Toronto) it
+# posts a short plain-language status as a comment on one issue titled
+# "Weekly status" (created if missing). GitHub emails the owner the comment.
+# No AI, no connectors.
+on:
+  schedule:
+    # Mondays 08:00 Toronto in summer, 07:00 in winter (cron is UTC).
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+  actions: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Build the report
+        run: |
+          since=$(date -u -d '7 days ago' +%Y-%m-%d)
+          {
+            echo "## Status for the week to $(date -u +%Y-%m-%d)"
+            echo
+            echo "### Data status"
+            echo '```'
+            npm run -s status 2>&1 | head -60
+            echo '```'
+            echo
+            echo "### Merged in the last 7 days"
+            gh pr list --repo "$REPO" --state merged --search "merged:>=$since" --limit 50 \
+              --json number,title --jq '.[] | "- #\(.number) \(.title)"' | sed '/^$/d' > merged.txt
+            if [ -s merged.txt ]; then cat merged.txt; else echo "- Nothing merged."; fi
+            echo
+            echo "### Open pull requests"
+            gh pr list --repo "$REPO" --state open --limit 50 \
+              --json number,title --jq '.[] | "- #\(.number) \(.title)"' > open.txt
+            if [ -s open.txt ]; then cat open.txt; else echo "- None."; fi
+            echo
+            echo "### Failed workflow runs in the last 7 days"
+            gh run list --repo "$REPO" --status failure --created ">=$since" --limit 50 \
+              --json name,headBranch,url --jq '.[] | "- \(.name) (\(.headBranch)): \(.url)"' > failed.txt
+            if [ -s failed.txt ]; then cat failed.txt; else echo "- None."; fi
+          } > report.md
+
+      - name: Post to the "Weekly status" issue
+        run: |
+          num=$(gh issue list --repo "$REPO" --state open --search '"Weekly status" in:title' \
+            --json number,title --jq '[.[] | select(.title=="Weekly status")][0].number // empty')
+          if [ -z "$num" ]; then
+            url=$(gh issue create --repo "$REPO" --title "Weekly status" \
+              --body "One short status report is posted here every Monday. No AI, no cost.")
+            num=${url##*/}
+          fi
+          gh issue pin "$num" --repo "$REPO" || echo "Could not pin (not critical)."
+          gh issue comment "$num" --repo "$REPO" --body-file report.md
