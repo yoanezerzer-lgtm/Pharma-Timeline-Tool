@@ -1,4 +1,4 @@
-# Handoff: where things stand (31 Oct 2026, evening)
+# Handoff: where things stand (3 Nov 2026)
 
 Read `CLAUDE.md` first: it holds the owner's standing rules. This note is
 the current state and the next steps. Update it when they change, and start
@@ -84,21 +84,71 @@ a new session when a conversation gets long.
   hand after a pipeline change, with `only` to try a few drugs first.
 - **Site check** (`scripts/sitecheck.ts`, no AI): every page in a browser,
   on each pull request and after each deploy.
-- **Weekly digest** (scheduled task, Sonnet, Mondays 07:13 Toronto): one
-  email to the owner. **Needs the Gmail connector added to the task in
-  claude.ai** (it couldn't be attached from a session).
+- **Weekly digest** (scheduled task, Sonnet, Mondays 07:13 Toronto): meant
+  to email the owner, but it has no Gmail connector, so nothing is sent.
+  To be replaced by a free GitHub job (see the audit below).
 
-## How to work (to save the owner's usage)
-- Decide, don't ask; batch; check CI once, then merge. Auto-merge is off
-  in the repo (Settings → General → Pull Requests can turn it on).
-- New pipeline facts: write the extractor, test it on the real text on
-  the `diag/raw-text-<slug>` branches, then trial-run `Refresh all drugs`
-  on a few drugs from the branch (`publish: false`) and inspect before
-  running all 52. Services this container can't reach (openFDA,
-  ClinicalTrials.gov, MeSH, MedlinePlus) are reached from GitHub Actions.
-- Use Sonnet for routine data runs and small fixes.
+## How to work: token and process rules (audit, 3 Nov 2026)
+
+**Where the owner's tokens went.** Every message in a chat re-reads the
+whole chat, so a chat gets more expensive with every turn. The 29 Oct chat
+ran for five days and over 90 pull requests; late in it, each short reply
+cost as much as an hour of fresh work. Waiting on CI inside a chat costs
+tokens too, and so does re-running all 52 drugs to try out a guess.
+
+Rules for every session:
+1. **One chat per piece of work.** Start a fresh chat for each new step,
+   and when a chat passes about 30 turns. End each chat by updating this
+   note. The next chat reads `CLAUDE.md` and this note, nothing else.
+2. **Don't wait inside a chat.** Push, open the PR, check CI once a few
+   minutes later, merge. No repeated sleeps or polling. Ask the owner to
+   turn on auto-merge (Settings → General → Pull Requests) so PRs merge
+   themselves once checks pass.
+3. **Batch.** One PR per step with code, tests and docs together; one data
+   PR per refresh. Not a PR per fix.
+4. **Look before parsing.** For any outside service (openFDA, ClinicalTrials.gov,
+   MeSH, MedlinePlus, NCI), first capture a real response on the
+   `diag/raw-text-<slug>` branch (one-drug run), then write the parser
+   against it. Guessing the format cost three full re-runs for MedlinePlus.
+5. **Try a few, then all.** Run `Refresh all drugs` with `only` = 2–5 drugs
+   and `publish: false` before running all 52.
+6. **Cheap model for routine work.** Sonnet for the nightly checker, data
+   runs and small fixes. The stronger model only for design work.
+7. **Read less.** Use `npm run -s status`, `git log --oneline`, and
+   `grep`/`sed -n` on the needed lines. Don't read whole big files or whole
+   drug records, and don't screenshot pages that didn't change.
+8. **No AI where code will do.** Refresh, site check and status report are
+   plain GitHub jobs and cost no tokens. Keep new automation that way.
+
+Scheduled tasks on the owner's account (3 Nov) and what they cost:
+- *Nightly data verification* (Sonnet, every night, ~5 minutes): needed
+  until the catch-up is done (30 of 52 checked, 18 facts stuck). It also
+  adds one chat per night to the list. **Plan:** once fewer than 5 drugs are
+  unchecked, move it to once a week.
+- *Pharma Timeline weekly digest* (Sonnet, Mondays): **runs but can't send**,
+  because its Gmail connector was never attached. **Plan:** replace it with a
+  free GitHub job that posts the status report to a pinned GitHub issue each
+  week; GitHub emails the owner the update. No AI, no connector.
+- Not this project, but the biggest regular users on the account: *Morning
+  brief* runs on the stronger model every weekday, and *Job scout* runs
+  twice a day. Moving the brief to Sonnet and the scout to once a day would
+  save the most. Only the owner can decide that.
+
+## Open questions for the owner (one list, answer once)
+From the draft `docs/PRD.md` (branch `claude/prd`, not merged), section 10:
+- Accounts: stay free with no sign-up (the 29 Oct direction), or keep the
+  door open for accounts later?
+- Short names for uses: may they be cut automatically from the FDA's own
+  wording, or does each need the owner's approval?
+- Atopic dermatitis under "Genetic diseases" (MeSH files it there): keep
+  or exclude?
+Account-level: morning brief to Sonnet? Job scout once a day? Turn on
+auto-merge? Delete old chats and branches (owner only)?
 
 ## Next steps agreed with the owner (31 Oct)
+0. First, from the audit: replace the weekly digest with the free GitHub
+   job (pinned issue), and stop the old digest scheduled task. Then the
+   list below, one chat per step.
 1. "Rare diseases" area from FDA orphan status (the orphan database is a
    web form; needs a way to read it from GitHub Actions).
 2. Make tiles and cards look the same everywhere, including Compare.
