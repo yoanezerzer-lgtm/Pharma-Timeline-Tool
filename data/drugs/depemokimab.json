@@ -731,9 +731,20 @@
           "quote": "roup, placebo-controlled, multicenter clinical trials (SWIFT-1 [NCT04719832] and SWIFT-2 [NCT04718103]) of 52 weeks duration. The trials enrolled adult and pediatric patients aged 12 years an",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.gsk.com/en-gb/media/press-releases/gsk-announces-positive-results-from-phase-iii-severe-asthma-trials-of-depemokimab/",
+          "sourceLabel": "gsk.com: GSK announces positive results from phase III severe asthma trials of depemokimab | GSK",
+          "quote": "Primary endpoints met in SWIFT-1 and SWIFT-2 trials with statistically significant and clinically meaningful reductions in exacerbations over 52 weeks vs. placebo",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2024-05-21",
+        "precision": "day"
+      }
     },
     {
       "id": "swift-1",
