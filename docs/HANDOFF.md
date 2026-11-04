@@ -163,8 +163,8 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
 - **Revised the same day after an outside review (office hours):
   professionals come first** (consultants, business-development and
   regulatory analysts building precedent tables), students second. One
-  disease area made complete before any other; proposed first area:
-  atopic dermatitis, moderate to severe (owner to confirm). The visitor
+  disease area made complete before any other; first area: atopic
+  dermatitis, moderate to severe (owner confirmed). The visitor
   counter and real page addresses come first. This replaces "students come
   first" and "no new drugs until goals 1–3" above. See `docs/PRD.md` §2, §9.
 

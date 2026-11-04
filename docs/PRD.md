@@ -180,9 +180,9 @@ the rest wait.
    the counter shows which pages people open.
 2. **One area is complete.** Every FDA approval in one area, older drugs
    included, each checked, with the area's scope written in one line.
-   Proposed first area: atopic dermatitis, moderate to severe (about six
-   medicines, all approved since 2017, with trials on ClinicalTrials.gov;
-   owner to confirm). *Done when* the list matches the FDA's own records for
+   First area: atopic dermatitis, moderate to severe (owner, 4 Nov; about
+   six medicines, all approved since 2017, with trials on
+   ClinicalTrials.gov). *Done when* the list matches the FDA's own records for
    that scope and a professional in the field finds nothing missing.
 3. **A professional builds a precedent table in ten minutes.** The disease
    page's precedent table and downloads (Excel, PowerPoint) with a source on
