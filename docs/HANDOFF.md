@@ -1,6 +1,7 @@
-# Handoff: where things stand (3 Nov 2026)
+# Handoff: where things stand (4 Nov 2026)
 
-Read `CLAUDE.md` first: it holds the owner's standing rules. This note is
+Read `CLAUDE.md` first: it holds the owner's standing rules. `docs/PRD.md`
+holds the mission, the users and the goals, agreed 4 Nov. This note is
 the current state and the next steps. Update it when they change, and start
 a new session when a conversation gets long.
 
@@ -152,26 +153,25 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
 - Weekly status: done. A free workflow posts to the "Weekly status" issue
   every Monday (`.github/workflows/weekly-status.yml`).
 
-## Next steps agreed with the owner (31 Oct)
-0. Done (3 Nov): weekly status issue replaces the digest.
-   Next: move atopic dermatitis to immunology, then the list below, one
-   chat per step.
-1. "Rare diseases" area from FDA orphan status (the orphan database is a
-   web form; needs a way to read it from GitHub Actions).
-2. Make tiles and cards look the same everywhere, including Compare.
-3. Shorten titles and descriptions across the site.
-4. "Further reading" links to company press releases and drug websites:
-   link only, never copy their text.
-5. Later: mechanism-of-action diagrams, one per drug class, built from the
-   label's 12.1 wording, with public-domain NIH artwork; the owner reviews
-   each.
+## Owner decisions (4 Nov 2026)
+- Mission, users and eight goals agreed: see `docs/PRD.md`.
+- Students come first; analyst features (milestones, Compare) wait.
+- Polish the 52 drugs first; no new drugs until PRD goals 1–3 are done.
+- A free, cookie-free visitor counter is wanted (page counts only).
+- Treadle is the project manager: one board goal per PRD goal, set up as
+  in `docs/agents/treadle.md`. The old October goal on the board is Done.
+
+## Next steps
+Work the PRD goals in order (§9). Active now: 1 (two-minute
+understanding), 2 (trust), 3 (honest coverage), 7 (owner only approves).
+First tasks are listed in `docs/agents/treadle.md`.
 
 Not possible: the FDA's Drug Trials Snapshots. fda.gov doesn't serve those
 pages to the pipeline, and working around its bot protection is not allowed.
 
-Owner decisions on record: audience is students and industry alike; company
-material is linked, never copied; atopic dermatitis shows under "Genetic
-diseases" because MeSH files it there (raise if the owner objects).
+Owner decisions on record: audience is students first, industry later
+(4 Nov); company material is linked, never copied; atopic dermatitis moves
+to immunology (3 Nov, PRD goal 3).
 
 ## Ideas not yet started
 - More drugs once most are "Checked" (the `Add new drugs` workflow).
