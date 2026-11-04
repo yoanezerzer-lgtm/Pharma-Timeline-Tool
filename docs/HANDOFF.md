@@ -160,17 +160,26 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
 - A free, cookie-free visitor counter is wanted (page counts only).
 - Treadle is the project manager: one board goal per PRD goal, set up as
   in `docs/agents/treadle.md`. The old October goal on the board is Done.
+- **Revised the same day after an outside review (office hours):
+  professionals come first** (consultants, business-development and
+  regulatory analysts building precedent tables), students second. One
+  disease area made complete before any other; proposed first area:
+  atopic dermatitis, moderate to severe (owner to confirm). The visitor
+  counter and real page addresses come first. This replaces "students come
+  first" and "no new drugs until goals 1–3" above. See `docs/PRD.md` §2, §9.
 
 ## Next steps
-Work the PRD goals in order (§9). Active now: 1 (two-minute
-understanding), 2 (trust), 3 (honest coverage), 7 (owner only approves).
-First tasks are listed in `docs/agents/treadle.md`.
+Work the PRD goals in order (§9). Active now: 1 (see who comes: counter
+and real page addresses), 2 (one area complete), 3 (precedent table in ten
+minutes), plus the standing goal (owner only approves). The Treadle board
+goals still follow the old numbering and need renaming to match.
+Earlier first tasks are listed in `docs/agents/treadle.md`.
 
 Not possible: the FDA's Drug Trials Snapshots. fda.gov doesn't serve those
 pages to the pipeline, and working around its bot protection is not allowed.
 
-Owner decisions on record: audience is students first, industry later
-(4 Nov); company material is linked, never copied; atopic dermatitis moves
+Owner decisions on record: audience is professionals first, students
+second, one area at a time (4 Nov, revised); company material is linked, never copied; atopic dermatitis moves
 to immunology (3 Nov, PRD goal 3).
 
 ## Ideas not yet started

@@ -40,7 +40,8 @@ Every task description starts with "Read CLAUDE.md, docs/PRD.md and
 docs/HANDOFF.md first." Keep the owner's areas list
 (`data/areas/areas.json`) unchanged unless the goal says otherwise.
 
-Known first tasks:
+Known first tasks (written for the PRD's first goal order; old goals 1, 3
+and 5 are now goals 6, 4 and "later"):
 - Goal 1: one tile/card component on every page, Compare included
   (Planner lists them, Builder merges, Eye reviews); shorter titles and
   descriptions as a list for the owner, then applied.
