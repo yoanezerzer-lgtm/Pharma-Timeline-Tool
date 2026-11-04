@@ -409,9 +409,20 @@
           "quote": "uria was evaluated in a randomized, double - blind, placebo - controlled study (Origin 3, NCT04716231) in adults with biopsy - proven IgAN, estimated glomerular filtration rate ( eGFR ) ≥30 m",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://ir.veratx.com/news-releases/news-release-details/vera-therapeutics-announces-atacicept-achieved-46-proteinuria",
+          "sourceLabel": "ir.veratx.com: Vera Therapeutics Announces Atacicept Achieved 46% Proteinuria Reduction in ORIGIN Phase 3 Trial in Adults with IgA Nephropathy | Vera Therapeutics, Inc.",
+          "quote": "Other prespecified endpoints achieved similar or better results compared to the ORIGIN Phase 2b clinical trial — per FDA guidance, Vera is not sharing eGFR results at this time while the ORIGIN 3 placebo-controlled trial continues",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2025-06-02",
+        "precision": "day"
+      }
     },
     {
       "id": "origin-extend",
