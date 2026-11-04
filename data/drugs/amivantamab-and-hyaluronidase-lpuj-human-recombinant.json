@@ -671,6 +671,13 @@
           "quote": "y of intravenous amivantamab, in combination with lazertinib , was evaluated in MARIPOSA (NCT04487080), a randomized, active - controlled, multicenter trial. Eligible patients Reference ID: 5",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.jnj.com/media-center/press-releases/landmark-phase-3-mariposa-study-meets-primary-endpoint-resulting-in-statistically-significant-and-clinically-meaningful-improvement-in-progression-free-survival-for-rybrevant-amivantamab-vmjw-plus-lazertinib-versus-osimertinib-in-patients-with-egfr-mutated-non-small-cell-lung-cancer",
+          "sourceLabel": "jnj.com: Landmark Phase 3 MARIPOSA Study Meets Primary Endpoint Resulting in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival for RYBREVANT® (amivantamab-vm",
+          "quote": "Landmark Phase 3 MARIPOSA Study Meets Primary Endpoint Resulting in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival for RYBREVANT® (amivantamab-vmjw) plus ",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -715,7 +722,11 @@
           ],
           "detectedAt": "2026-10-31T18:52:32.062Z"
         }
-      ]
+      ],
+      "readoutDate": {
+        "value": "2023-09-28",
+        "precision": "day"
+      }
     },
     {
       "id": "papillon",
@@ -916,6 +927,13 @@
           "quote": "nd Pemetrexed PAPILLON The efficacy of intravenous amivantamab was evaluated in PAPILLON (NCT04538664), in a randomized, open - label, multicenter study. Eligible patients were required to ha",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.jnj.com/media-center/press-releases/treatment-with-rybrevant-amivantamab-vmjw-plus-chemotherapy-resulted-in-statistically-significant-and-clinically-meaningful-improvement-in-progression-free-survival-in-patients-with-newly-diagnosed-egfr-exon-20-insertion-mutation-positive-non-small-cell-lung-cancer",
+          "sourceLabel": "jnj.com: Treatment with RYBREVANT® (amivantamab-vmjw) Plus Chemotherapy Resulted in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival in Patients with Newly ",
+          "quote": "RARITAN, New Jersey, July 17, 2023 – The Janssen Pharmaceutical Companies of Johnson & Johnson today announced positive topline results from the Phase 3 PAPILLON study evaluating RYBREVANT ® (amivantamab-vmjw) in combination with chemotherapy (carboplatin-pemetrexed) in patients with newly diagnosed advanced or metast…",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -937,7 +955,11 @@
           },
           "detectedAt": "2026-10-29T17:59:18.631Z"
         }
-      ]
+      ],
+      "readoutDate": {
+        "value": "2023-07-17",
+        "precision": "day"
+      }
     },
     {
       "id": "mariposa-2",
@@ -1183,9 +1205,20 @@
           "quote": "amivantamab in combination with carboplatin and pemetrexed was evaluated in MARIPOSA - 2 (NCT04988295), a randomized, open - label, multicenter trial. Eligible patients were required to have",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.prnewswire.com/news-releases/phase-3-mariposa-2-study-meets-dual-primary-endpoint-resulting-in-statistically-significant-and-clinically-meaningful-improvement-in-progression-free-survival-for-rybrevant-amivantamab-vmjw-plus-chemotherapy-with-and-without-la-301919084.html",
+          "sourceLabel": "PR Newswire: Phase 3 MARIPOSA-2 Study Meets Dual Primary Endpoint Resulting in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival for RYBREVANT® (amivantamab-",
+          "quote": "Phase 3 MARIPOSA-2 Study Meets Dual Primary Endpoint Resulting in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival for RYBREVANT® (amivantamab-vmjw) Plus Ch",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2023-09-06",
+        "precision": "day"
+      }
     }
   ],
   "milestones": [
