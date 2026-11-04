@@ -14,6 +14,13 @@ agents follow `CLAUDE.md` like any other session, with three limits:
   Integrations → Projects, this must be the folder listed, not the old
   `~/Desktop/Pharma-Timeline-Tool`.
 
+- **Kept current every morning.** Because agents can't fetch, a job on the
+  owner's Mac (`~/Library/LaunchAgents/com.yoanezerzer.pharma-timeline-sync.plist`,
+  8:45 daily) moves this folder's `main` up to GitHub's. It only
+  fast-forwards and skips a day with unsaved changes on `main`. Log:
+  `~/Library/Logs/pharma-timeline-sync.log`. It needs Full Disk Access for
+  `/bin/bash` (granted 4 Nov).
+
 Good fits for an agent: site layout and wording, code-only rules, tests.
 Not a fit: new data, anything that needs a fresh document from a source.
 
