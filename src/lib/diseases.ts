@@ -1,5 +1,6 @@
 import type { Approval, DateValue, Drug } from '../schema/index.js';
 import { letterCore, naturalTerm, readableDefinition } from './plainText.js';
+import { shownCategories } from './areas.js';
 
 /**
  * Every approval for one disease across drugs, computed at build time (see
@@ -68,7 +69,7 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
           entry = { meshId: d.meshId, term: d.term, name: naturalTerm(d.term), areas: [], approvals: [], uses: [] };
           byId.set(d.meshId, entry);
         }
-        entry.areas = [...new Set([...entry.areas, ...d.areas])].sort();
+        entry.areas = shownCategories(d.meshId, [...new Set([...entry.areas, ...d.areas])].sort());
         if (!entry.definition && d.definition) entry.definition = { text: readableDefinition(d.definition.text), sourceUrl: d.definition.provenance.sourceUrl };
         if (!entry.summary && d.summary) {
           const sourceLabel = d.summary.provenance.sourceLabel ?? 'MedlinePlus, U.S. National Library of Medicine';
