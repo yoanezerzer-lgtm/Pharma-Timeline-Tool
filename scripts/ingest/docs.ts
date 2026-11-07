@@ -44,7 +44,15 @@ export function joinTextItems(items: TextPiece[]): string {
       const size = Math.abs(item.transform[3]) || item.height || 1;
       const sameLine = Math.abs(item.transform[5] - prev.transform[5]) < size * 0.5;
       const gap = item.transform[4] - (prev.transform[4] + prev.width);
-      const touching = !prev.hasEOL && sameLine && gap < size * WORD_GAP && gap > -size;
+      // Only upright text: on rotated print (carton artwork) x and y don't run along the line.
+      const upright = (t: number[]) => t[1] === 0 && t[2] === 0 && t[0] > 0;
+      const touching =
+        !prev.hasEOL &&
+        upright(item.transform) &&
+        upright(prev.transform) &&
+        sameLine &&
+        gap < size * WORD_GAP &&
+        gap > -size * 0.25;
       if (!touching) out += ' ';
     }
     out += item.str;

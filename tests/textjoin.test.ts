@@ -47,3 +47,14 @@ describe('joinTextItems', () => {
     );
   });
 });
+
+describe('joinTextItems on print that is not a plain line of text', () => {
+  it('keeps a space between rotated pieces', () => {
+    const rotated = (str: string, y: number): TextPiece => ({ str, transform: [0, 10, -10, 0, 300, y], width: 10, height: 10 });
+    expect(joinTextItems([rotated('15', 100), rotated('15', 100)])).toBe('15 15');
+  });
+
+  it('keeps a space between pieces printed on top of each other', () => {
+    expect(joinTextItems([piece('15', 0, 700, 10), piece('15', 2, 700, 10)])).toBe('15 15');
+  });
+});
