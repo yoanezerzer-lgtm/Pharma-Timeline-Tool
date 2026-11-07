@@ -24,11 +24,28 @@ const MAX_LINKS = 20;
 const ROOT = process.cwd();
 const NEWS_DIR = join(ROOT, 'data', 'news');
 
+/** A <meta> tag's content by its property or name, either attribute order, quotes kept apart so "Takeda's" survives. */
+function meta(html: string, key: string): string | undefined {
+  for (const tag of html.match(/<meta\b[^>]*>/gi) ?? []) {
+    const attr = (name: string) => new RegExp(`\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)')`, 'i').exec(tag);
+    const k = attr('property') ?? attr('name');
+    if ((k?.[1] ?? k?.[2])?.toLowerCase() !== key) continue;
+    const c = attr('content');
+    const v = c?.[1] ?? c?.[2];
+    if (v) return htmlToText(v);
+  }
+  return undefined;
+}
+
+/** The page's own one-line summary (its og:description or description). */
+export function summaryOf(html: string): string {
+  return meta(html, 'og:description') ?? meta(html, 'description') ?? '';
+}
+
 /** The page's own headline: its og:title, else its <title> without the site name. */
 export function headlineOf(html: string): string {
-  const og = /<meta[^>]+property=["']og:title["'][^>]*content=["']([^"']+)["']/i.exec(html)?.[1] ??
-    /<meta[^>]+content=["']([^"']+)["'][^>]*property=["']og:title["']/i.exec(html)?.[1];
-  const t = og ? htmlToText(og) : titleOf(html);
+  const og = meta(html, 'og:title');
+  const t = og ?? titleOf(html);
   return t.replace(/\s+[|–—-]\s+(Fierce \w+|PR Newswire|Business Wire|GlobeNewswire.*)$/i, '').trim();
 }
 
@@ -66,7 +83,7 @@ async function main(): Promise<void> {
 
     const items: FeedItem[] = [
       ...(await searchFeeds(names, ctx)),
-      ...fierce.filter((i) => namesDrug({ title: i.title, text: i.description }, names)),
+      ...fierce.filter((i) => namesDrug({ title: i.title, summary: i.description }, names)),
     ];
     const known = load(slug);
     const seen = new Set(known.map((l) => l.url));
@@ -90,8 +107,8 @@ async function main(): Promise<void> {
         log(`    - ${url}: no ${title ? 'date' : 'headline'} on the page`);
         continue;
       }
-      if (!namesDrug({ title, text: htmlToText(html) }, names)) {
-        log(`    - ${url}: page doesn't name the drug`);
+      if (!namesDrug({ title, summary: summaryOf(html) }, names)) {
+        log(`    - ${url}: headline and summary don't name the drug`);
         continue;
       }
       found.push({ url, source, title, date, checkedAt: now });

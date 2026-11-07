@@ -107,13 +107,15 @@ function wordPattern(name: string): RegExp {
 }
 
 /**
- * Whether a page is about the drug: it names the brand anywhere, or names
- * the ingredient in its headline. A bare ingredient deep in a long article
- * (a pipeline round-up, an old generic like cefepime) isn't enough.
+ * Whether a page is about the drug: its own headline or its own one-line
+ * summary names the brand or the ingredient. A name only further down the
+ * page (an earnings report, a round-up, a "related stories" box) isn't
+ * enough: the trial run on 7 Nov let in Amgen's and Halozyme's quarterly
+ * results for Keytruda that way.
  */
-export function namesDrug(page: { title: string; text: string }, names: { brand: string; inn: string }): boolean {
-  if (names.brand && wordPattern(names.brand).test(`${page.title}\n${page.text}`)) return true;
-  return names.inn.length >= 4 && wordPattern(names.inn).test(page.title);
+export function namesDrug(page: { title: string; summary: string }, names: { brand: string; inn: string }): boolean {
+  const lead = `${page.title}\n${page.summary}`;
+  return [names.brand, names.inn].some((n) => n.length >= 4 && wordPattern(n).test(lead));
 }
 
 /** Newest first; one link per address. */

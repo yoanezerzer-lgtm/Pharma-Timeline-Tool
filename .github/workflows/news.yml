@@ -12,8 +12,6 @@ on:
   schedule:
     # Sundays 09:47 New York time.
     - cron: '47 14 * * 0'
-  push:
-    branches: [claude/news-links]  # trial on a few drugs; removed before merge
   workflow_dispatch:
     inputs:
       only:
@@ -49,7 +47,7 @@ jobs:
 
       - name: Find links
         env:
-          ONLY: ${{ github.event_name == 'push' && 'upadacitinib aficamten pembrolizumab orforglipron insulin-icodec' || inputs.only }}
+          ONLY: ${{ inputs.only }}
         run: |
           set -euo pipefail
           # shellcheck disable=SC2086

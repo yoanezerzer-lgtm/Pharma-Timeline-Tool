@@ -6,7 +6,8 @@ import { fetchText, htmlToText, type SourceContext } from '../readouts/sources.j
  * are read from the page itself (cli.ts).
  *
  * - Bing News search (RSS): recent news from any outlet, by drug name.
- * - GlobeNewswire keyword feed: its releases naming the drug.
+ *   GlobeNewswire's own keyword feed refuses automated requests (403), so
+ *   its releases come through the search.
  * - Fierce Pharma and Fierce Biotech front-page feeds: their latest stories,
  *   kept when the headline or summary names the drug.
  *
@@ -61,11 +62,12 @@ export async function searchFeeds(names: { brand: string; inn: string }, ctx: So
   const terms = quoted([names.brand, names.inn]);
   const sites = '(site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com OR site:fiercepharma.com OR site:fiercebiotech.com)';
   const feeds: [string, string][] = [
-    ['Bing News', `https://www.bing.com/news/search?format=rss&q=${encodeURIComponent(terms)}`],
-    ['Bing News (wires)', `https://www.bing.com/news/search?format=rss&q=${encodeURIComponent(`(${terms}) ${sites}`)}`],
+    // An "A OR B" query on its own comes back empty (trial run, 7 Nov), so
+    // each name is searched alone; with the site filter, OR works.
     ...[names.brand, names.inn]
       .filter((n) => n.length >= 4)
-      .map((n): [string, string] => ['GlobeNewswire', `https://www.globenewswire.com/RssFeed/keyword/${encodeURIComponent(n)}`]),
+      .map((n): [string, string] => ['Bing News', `https://www.bing.com/news/search?format=rss&q=${encodeURIComponent(n)}`]),
+    ['Bing News (wires)', `https://www.bing.com/news/search?format=rss&q=${encodeURIComponent(`(${terms}) ${sites}`)}`],
   ];
   const out: FeedItem[] = [];
   for (const [name, url] of feeds) {

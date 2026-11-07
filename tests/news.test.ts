@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { allowedSource, drugNames, isCompanySite, namesDrug, sortLinks, type NewsLink } from '../src/lib/news.js';
 import { parseFeed, unwrapLink } from '../scripts/news/feeds.js';
-import { cleanUrl, headlineOf } from '../scripts/news/cli.js';
+import { cleanUrl, headlineOf, summaryOf } from '../scripts/news/cli.js';
 
 describe('allowed sites', () => {
   it('takes newswires and Fierce, not paywalled outlets', () => {
@@ -38,11 +38,11 @@ describe('allowed sites', () => {
 
 describe('a page about the drug', () => {
   const names = drugNames('Rinvoq', 'upadacitinib');
-  it('names the brand anywhere, or the ingredient in its headline', () => {
-    expect(namesDrug({ title: 'AbbVie results', text: 'RINVOQ® met its endpoints' }, names)).toBe(true);
-    expect(namesDrug({ title: 'Upadacitinib wins in GCA', text: '' }, names)).toBe(true);
-    expect(namesDrug({ title: 'Pipeline round-up', text: '… upadacitinib …' }, names)).toBe(false);
-    expect(namesDrug({ title: 'Rinvoqx', text: '' }, names)).toBe(false);
+  it("names the drug in the page's own headline or one-line summary", () => {
+    expect(namesDrug({ title: 'AbbVie results', summary: 'RINVOQ® met its endpoints' }, names)).toBe(true);
+    expect(namesDrug({ title: 'Upadacitinib wins in GCA', summary: '' }, names)).toBe(true);
+    expect(namesDrug({ title: 'AMGEN REPORTS THIRD QUARTER 2026 FINANCIAL RESULTS', summary: 'Revenue rose' }, names)).toBe(false);
+    expect(namesDrug({ title: 'Rinvoqx', summary: '' }, names)).toBe(false);
   });
 
   it('drops "(copackaged)" and pen names from the brand', () => {
@@ -87,6 +87,15 @@ describe('pages', () => {
       'FDA approves Rinvoq for GCA'
     );
     expect(headlineOf('<title>Lilly wins | Fierce Pharma</title>')).toBe('Lilly wins');
+    // An apostrophe inside double quotes is part of the headline (PR Newswire, trial run 7 Nov).
+    expect(headlineOf(`<meta property="og:title" content="Takeda's ENTYVIO Continues Growth">`)).toBe("Takeda's ENTYVIO Continues Growth");
+    expect(headlineOf(`<meta content='A "quoted" word' property='og:title'>`)).toBe('A "quoted" word');
+  });
+
+  it("reads the page's own summary", () => {
+    expect(summaryOf('<meta name="description" content="/PRNewswire/ -- Lilly &amp; Hims">')).toBe('/PRNewswire/ -- Lilly & Hims');
+    expect(summaryOf('<meta property="og:description" content="First"><meta name="description" content="Second">')).toBe('First');
+    expect(summaryOf('<p>none</p>')).toBe('');
   });
 
   it('drops tracking parameters but keeps the ones that pick the page', () => {

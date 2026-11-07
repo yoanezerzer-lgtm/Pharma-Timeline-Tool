@@ -79,11 +79,16 @@ a new session when a conversation gets long.
   and the company's own site (its web name is the company's first
   distinctive word, e.g. abbvie.com, lilly.com, or the whole name run
   together, novonordisk.com). `npm run validate` fails on any other site.
-- Where addresses come from: Bing News search and GlobeNewswire keyword
-  feeds per drug, plus the Fierce front-page feeds. A feed only suggests:
-  each page is opened, and kept only if the page itself gives a date and a
-  headline, and names the brand (anywhere) or the ingredient (in the
-  headline). What was read is on the `diag/news` branch.
+- Where addresses come from: Bing News search per drug (each name alone,
+  and both names limited to the allowed sites), plus the Fierce front-page
+  feeds. GlobeNewswire's own feed refuses bots (403) and Business Wire
+  pages time out, so those come only rarely. A feed only suggests: each
+  page is opened, and kept only if the page gives its own date and
+  headline, and its headline or one-line summary names the brand or the
+  ingredient. What was read is on the `diag/news` branch.
+- Trial on 5 drugs (7 Nov): 11 links, all about the drug, none for
+  Keytruda yet. Borderline case: a Lilly release whose summary calls Lilly
+  "the maker of Foundayo" counts for Foundayo.
 - Known gaps: companies whose web name differs from their name (GSK as
   "GlaxoSmithKline", Janssen at jnj.com) get no company-site links, only
   newswires and Fierce. Feeds only show recent news, so older releases
