@@ -1,3 +1,4 @@
+import { sameWording, wordingKey } from '../../src/lib/wording.js';
 import { z } from 'zod';
 import type { Drug } from '../../src/schema/index.js';
 
@@ -67,14 +68,14 @@ const trialKey = (t: Drug['trials'][number]) => t.nctId ?? t.id;
 export function scoreAgainstReference(drug: Drug, ref: Reference): RefResult[] {
   const out: RefResult[] = [];
   for (const r of ref.indications) {
-    const ind = drug.indications.find((i) => i.name === r.name);
+    const ind = drug.indications.find((i) => sameWording(i.name, r.name));
     const expected = r.approvalDate ? `${r.approvalDate} (${r.submission})` : 'undated';
     const actual = !ind ? 'indication missing' : ind.approvalDate ? `${ind.approvalDate.value} (${ind.submissionNumber ?? '?'})` : 'undated';
     out.push({ kind: 'approvalDate', key: r.name, status: r.status, expected, actual, pass: expected === actual });
   }
   for (const r of ref.pivotal) {
     const t = drug.trials.find((x) => trialKey(x) === r.trial);
-    const isPivotal = !!t?.roles.some((x) => x.indication === r.indication && x.role === 'PIVOTAL');
+    const isPivotal = !!t?.roles.some((x) => !!x.indication && sameWording(x.indication, r.indication) && x.role === 'PIVOTAL');
     out.push({
       kind: 'pivotal',
       key: `${r.indication} / ${r.trial}`,
@@ -94,11 +95,11 @@ export function scoreAgainstReference(drug: Drug, ref: Reference): RefResult[] {
  */
 export function snapshotReference(drug: Drug, existing?: Reference): Reference {
   const ref: Reference = existing ? structuredClone(existing) : { slug: drug.slug, indications: [], pivotal: [] };
-  const confirmedInd = new Set(ref.indications.filter((r) => r.status === 'confirmed').map((r) => r.name));
+  const confirmedInd = new Set(ref.indications.filter((r) => r.status === 'confirmed').map((r) => wordingKey(r.name)));
   ref.indications = [
     ...ref.indications.filter((r) => r.status === 'confirmed'),
     ...drug.indications
-      .filter((i) => !confirmedInd.has(i.name))
+      .filter((i) => !confirmedInd.has(wordingKey(i.name)))
       .map((i) => ({
         name: i.name,
         approvalDate: i.approvalDate?.value ?? null,
@@ -106,7 +107,7 @@ export function snapshotReference(drug: Drug, existing?: Reference): Reference {
         status: 'baseline' as const,
       })),
   ];
-  const key = (indication: string, trial: string) => `${indication}\u0000${trial}`;
+  const key = (indication: string, trial: string) => `${wordingKey(indication)}\u0000${trial}`;
   const confirmedPiv = new Set(ref.pivotal.filter((r) => r.status === 'confirmed').map((r) => key(r.indication, r.trial)));
   const current = drug.trials.flatMap((t) =>
     t.roles

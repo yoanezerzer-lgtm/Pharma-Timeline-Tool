@@ -18,7 +18,7 @@ import {
 } from '../lib/compare.js';
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel, ROLE_LABEL } from '../lib/drugs.js';
-import { useConfirmations, type Confirmation } from '../lib/reference.js';
+import { confirmationKey, useConfirmations, type Confirmation } from '../lib/reference.js';
 import { indicationHref } from '../lib/router.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
@@ -546,7 +546,7 @@ function EvidenceTable({
     const p = programs.find((x) => x.key === r.program);
     const i = refs.findIndex((x) => x.slug === p?.drug.slug && x.indicationSlug === p?.indication.slug);
     if (i < 0 || !p) return undefined;
-    return confirmations[i].get(`${p.indication.name}|${r.nctId ?? r.trialId}`);
+    return confirmations[i].get(confirmationKey(p.indication.name, r.nctId ?? r.trialId));
   };
   const drugOf = (r: EvidenceRow): Drug | undefined => programs.find((x) => x.key === r.program)?.drug;
 

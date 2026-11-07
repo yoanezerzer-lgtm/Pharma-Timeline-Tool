@@ -1,3 +1,4 @@
+import { sameWording } from '../../src/lib/wording.js';
 import { z } from 'zod';
 import type { Drug, Trial } from '../../src/schema/index.js';
 import { runByApplicant } from '../ingest/roles.js';
@@ -225,7 +226,7 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
   const confirmed = results.filter((r) => r.outcome === 'confirmed');
   if (!voided) {
     for (const r of confirmed) {
-      const entry = refs.get(r.claim.drug)!.pivotal.find((p) => p.indication === r.claim.indication && p.trial === r.claim.trial);
+      const entry = refs.get(r.claim.drug)!.pivotal.find((p) => sameWording(p.indication, r.claim.indication) && p.trial === r.claim.trial);
       // Only ever upgrades a baseline entry; a confirmed one is never touched.
       if (!entry || entry.status !== 'baseline') continue;
       entry.status = 'confirmed';
@@ -239,7 +240,7 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
   if (!voided) {
     for (const r of results) {
       if (!['unclear', 'rejected', 'unanswered', 'disagreement'].includes(r.outcome)) continue;
-      const entry = refs.get(r.claim.drug)!.pivotal.find((p) => p.indication === r.claim.indication && p.trial === r.claim.trial);
+      const entry = refs.get(r.claim.drug)!.pivotal.find((p) => sameWording(p.indication, r.claim.indication) && p.trial === r.claim.trial);
       if (!entry || entry.status !== 'baseline') continue;
       entry.tries = (entry.tries ?? 0) + 1;
       if (entry.tries === STUCK_AFTER) stuck.push(r);
