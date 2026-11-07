@@ -190,8 +190,8 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 1. **Page copy.** Clean up the site's own wording on every page type
    (headings, (i) explanations, empty states, buttons). FDA and MeSH text
    stays word for word; plain-language labels for data are the owner's.
-2. **Design.** Tidy the look and layout of every page, phone first; check
-   each page in a browser before and after.
+2. **Design.** Tidy the look and layout of every page, desktop web first,
+   then phone (owner, 7 Nov); check each page in a browser before and after.
 3. **Company sources and news.** Links only, never copied, only pages
    without a paywall: company sites and press releases, newswires, Fierce
    Pharma (owner decision, 7 Nov). Shown per drug, newest first.
