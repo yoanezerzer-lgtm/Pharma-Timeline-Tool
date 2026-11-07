@@ -14,7 +14,7 @@ a new session when a conversation gets long.
   MedlinePlus). Only *link* to StatPearls: its licence bars derivatives.
 
 ## The site (https://yoanezerzer-lgtm.github.io/Pharma-Timeline-Tool/)
-- **52 drugs.** The 6 originals (Rinvoq, Skyrizi, Keytruda, Lexapro,
+- **56 drugs** (52 + 4 atopic dermatitis drugs, 7 Nov). The 6 originals (Rinvoq, Skyrizi, Keytruda, Lexapro,
   Foundayo, Mimrylo) plus 46 from FDA's list of new-medicine approvals.
 - **Home** (`src/pages/DrugIndex.tsx`): one search box, one area menu, a
   plain list grouped by **therapeutic area**. The areas and each drug's
@@ -253,9 +253,25 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
    then phone (owner, 7 Nov); check each page in a browser before and after.
 3. Done 7 Nov: **Company news** on each drug page (see "Company news
    links" below).
-4. **New drugs.** Start with the missing moderate-to-severe atopic
-   dermatitis drugs, so that area is complete first (PRD §9), through the
-   `Add new drugs` workflow, a few at a time.
+4. **New drugs.** In progress (7 Nov). Added through the `Ingest drug data`
+   workflow (the `Add new drugs` list only finds approvals since a date, so
+   older drugs go in one by one by application number): Dupixent (BLA 761055),
+   Adbry (BLA 761180), Cibinqo (NDA 213871), Ebglyss (BLA 761306); one data PR.
+   Found from openFDA labels with "moderate to severe" atopic dermatitis;
+   left out as mild to moderate: Opzelura, Eucrisa, Zoryve, Elidel; Zonalon
+   (itch only); corticosteroids (atopic dermatitis is one item in a long
+   allergic list). **Not yet added:**
+   - Nemluvio (BLA 761390): the pipeline dates its atopic dermatitis use to
+     the original approval (12 Aug 2024, prurigo nodularis); atopic dermatitis
+     came later by a supplement that Drugs@FDA does not class as efficacy.
+     Fix the dating rule first, then ingest.
+   - Protopic (NDA 050777, "moderate to severe", second-line): the pipeline
+     read no approved use from its 2011 label. Needs an extraction fix.
+   - Known gaps in what was added: Dupixent chronic rhinosinusitis with nasal
+     polyps shows 12 Sep 2024 as its first approval found (a widening; the
+     2019 letter was not found). Dupixent use names are the label's short
+     headings, not full wording.
+   Owner questions: in the 7 Nov reply (areas for Dupixent's other uses).
 5. Done (Ledger PR). **Visual direction.** Owner picked **A, Ledger** (7 Nov; may revisit):
    IBM Plex Sans, IBM Plex Mono for dates and numbers, deep teal accent,
    square corners, striped tables. Mock-up and colour values (light and
