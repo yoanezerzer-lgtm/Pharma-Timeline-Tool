@@ -35,13 +35,19 @@ async function throttle(ms = 250): Promise<void> {
   last = Date.now();
 }
 
+// Hosts that didn't answer in time this run: not tried again (Business Wire
+// timed out on every page in the 7 Nov news run, costing a minute each).
+const unresponsive = new Set<string>();
+
 export async function fetchText(url: string, ctx: SourceContext, ua = BROWSER_UA): Promise<string | undefined> {
+  const host = new URL(url).hostname;
   const key = createHash('sha1').update(url).digest('hex').slice(0, 16);
   const path = join(ctx.cacheDir, `${key}.json`);
   if (!ctx.refresh && existsSync(path)) {
     const cached = JSON.parse(readFileSync(path, 'utf8')) as { status: number; body?: string };
     return cached.body;
   }
+  if (unresponsive.has(host)) return undefined;
   let status = 0;
   let body: string | undefined;
   for (let attempt = 0; attempt < 3; attempt++) {
@@ -50,7 +56,7 @@ export async function fetchText(url: string, ctx: SourceContext, ua = BROWSER_UA
       const res = await fetch(url, {
         headers: { 'user-agent': ua, accept: 'text/html,application/json;q=0.9,*/*;q=0.8' },
         // A server that never answers would stall the whole run.
-        signal: AbortSignal.timeout(20000),
+        signal: AbortSignal.timeout(15000),
       });
       status = res.status;
       if (res.ok) body = await res.text();
@@ -58,6 +64,10 @@ export async function fetchText(url: string, ctx: SourceContext, ua = BROWSER_UA
     } catch (err) {
       status = -1;
       ctx.log(`    ! ${url}: ${(err as Error).message}`);
+      if ((err as Error).name === 'TimeoutError') {
+        unresponsive.add(host);
+        break;
+      }
     }
     await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt));
   }
