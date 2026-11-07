@@ -98,6 +98,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/news
           git commit -q -m "News links $(date -u +%F)"
+          # main may have moved during the run; only data/news is ours, so a rebase is safe.
+          git pull -q --rebase origin main
           git push origin HEAD:main
           gh workflow run deploy.yml --ref main
           echo "Published new links." | tee -a "$GITHUB_STEP_SUMMARY"
