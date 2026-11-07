@@ -191,10 +191,12 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   "Approved use" everywhere instead of a mix with "indication". A real
   "Page not found" page for unknown addresses and missing drugs or
   diseases (was: the home page). Home and Compare titles and descriptions
-  sharpened. Drugs with no area show under "Not yet sorted" (Pasatru,
-  Zycubo: the owner picks their areas).
+  sharpened. Drugs with no area show under "Not yet sorted"; Pasatru and
+  Zycubo, the two there, are filed under Rare diseases by hand (owner,
+  7 Nov; `decisions` in `data/areas/areas.json`) until the orphan rule
+  exists.
 
-## Blocker (7 Nov): the site is not publishing
+## Was blocked (7 Nov): publishing. Owner set Pages to GitHub Actions on 7 Nov; check the next deploy is green
 The repository is public again (7 Nov evening), but GitHub switched Pages
 off while it was private: deploys still fail with "Ensure GitHub Pages has
 been enabled". Owner: Settings → Pages → Source: "GitHub Actions". Then
@@ -203,10 +205,9 @@ live site. Then submit `sitemap.xml` in Google Search Console.
 
 ## Owner's plan (7 Nov), one chat per step
 1. Done 7 Nov: clean up the page wording (above), PR #116.
-   Auto-merge still can't be turned on for a PR: GitHub needs a branch
-   rule on `main` that requires CI to pass (owner: Settings → Branches →
-   add rule for `main`, tick "Require status checks"). Until then, merge
-   by hand once CI is green.
+   Owner, 7 Nov: branch rule on `main` added (CI "check" must pass), so
+   PRs can auto-merge; Pages source set to GitHub Actions (publishing
+   unblocked).
 
 ## Next steps (in order, one chat each)
 1. Unblock publishing (above, owner), then check the live Rinvoq page
