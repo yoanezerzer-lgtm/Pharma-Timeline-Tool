@@ -31,7 +31,7 @@ function usesLabel(d: DrugSummary): { text: string; more: number } {
         .map((i) => (i.diseases[0] ? diseaseName.get(i.diseases[0].meshId) ?? naturalTerm(i.diseases[0].term) : shortIndication(i, 48)))
     ),
   ];
-  return { text: names[0] ?? 'No approved use on record yet', more: Math.max(0, names.length - 1) };
+  return { text: names[0] ?? 'No approved use yet', more: Math.max(0, names.length - 1) };
 }
 
 export function DrugIndex() {
@@ -98,8 +98,8 @@ export function DrugIndex() {
         {shown.map((g) => (
           <Group key={g.id} title={g.name} drugs={g.drugs} />
         ))}
-        {(!area || area === NOT_SORTED) && unsorted.length > 0 && <Group title="Being sorted" drugs={unsorted} />}
-        {shown.length === 0 && unsorted.length === 0 && <p className="index__none">{query ? 'No drugs match.' : 'No drugs here yet.'}</p>}
+        {(!area || area === NOT_SORTED) && unsorted.length > 0 && <Group title="Not yet sorted" drugs={unsorted} />}
+        {shown.length === 0 && unsorted.length === 0 && <p className="index__none">{query ? 'No drugs match your search.' : 'No drugs here yet.'}</p>}
       </div>
     </main>
   );

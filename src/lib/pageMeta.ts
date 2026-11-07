@@ -30,14 +30,18 @@ export function homeMeta(): PageMeta {
   return {
     title: SITE_NAME,
     description:
-      'How medicines were developed: clinical trial programs and regulatory milestones, traced from FDA approval packages.',
+      'Each FDA drug approval traced to the clinical trials behind it: dates, the FDA’s own wording and a source for every fact.',
   };
+}
+
+export function notFoundMeta(): PageMeta {
+  return { title: withSite('Page not found'), description: homeMeta().description };
 }
 
 export function diseasesMeta(): PageMeta {
   return {
     title: withSite('Diseases'),
-    description: 'Every disease with an FDA-approved medicine on this site, with each approval and the FDA’s wording.',
+    description: 'Every disease with an FDA-approved drug on this site, by therapeutic area, with each approval in the FDA’s own wording.',
   };
 }
 

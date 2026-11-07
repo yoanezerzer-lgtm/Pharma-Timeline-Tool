@@ -26,7 +26,7 @@ export function sitePages(drugs: Drug[], diseases: DiseaseSummary[]): SitePage[]
       ...drug.indications.map((i) => ({ path: `drug/${drug.slug}/indication/${i.slug}/`, meta: indicationMeta(drug, i), listed: true })),
     ]),
     ...diseases.map((d) => ({ path: `disease/${d.meshId}/`, meta: diseaseMeta(d), listed: true })),
-    tool('compare/', 'Compare'),
+    tool('compare/', 'Compare two approvals'),
     tool('review/', 'Review'),
     tool('ingest/', 'Add a drug'),
   ];

@@ -5,33 +5,27 @@ import type { DiseaseSummary, UseStep } from '../lib/diseases.js';
 import { diseaseIndex } from '../lib/catalog.js';
 import { formatDate, toTime } from '../lib/dates.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
-import { diseaseMeta, diseasesMeta, homeMeta } from '../lib/pageMeta.js';
+import { diseaseMeta, diseasesMeta } from '../lib/pageMeta.js';
 import { diseaseHref, diseasesHref, drugHref, indicationHref, homeHref } from '../lib/router.js';
 import '../components/IndicationTimeline/IndicationTimeline.css';
+import { APPROVAL_KIND, DATE_UNCLEAR } from '../lib/copy.js';
+import { NotFoundPage } from './NotFoundPage.js';
 import './IndicationPage.css';
 import './DrugPage.css';
 import './DiseasePage.css';
 
 const DAY = 86_400_000;
 
-const STEP_LABEL: Record<UseStep['kind'], string> = {
-  new: 'Approved',
-  expansion: 'Widened',
-  revision: 'Wording changed',
-  conversion: 'Converted to full approval',
-};
+const STEP_LABEL: Record<UseStep['kind'], string> = APPROVAL_KIND;
 
 export function DiseasePage({ meshId }: { meshId: string }) {
   const disease = diseaseIndex.find((d) => d.meshId === meshId);
-  usePageMeta(disease ? diseaseMeta(disease) : homeMeta());
-  if (!disease) {
-    return (
-      <main className="drug">
-        <BackLink href={diseasesHref()} label="All diseases" />
-        <p className="drug__missing">No approvals on record for this disease.</p>
-      </main>
-    );
-  }
+  if (!disease) return <NotFoundPage message={`No disease “${meshId}” on this site.`} />;
+  return <DiseaseView disease={disease} />;
+}
+
+function DiseaseView({ disease }: { disease: DiseaseSummary }) {
+  usePageMeta(diseaseMeta(disease));
   const times = disease.uses.flatMap((u) => u.steps.filter((s) => s.date).map((s) => toTime(s.date!)));
   const min = Math.min(...times) - 180 * DAY;
   const max = Math.max(...times) + 180 * DAY;
@@ -104,7 +98,7 @@ export function DiseasePage({ meshId }: { meshId: string }) {
                     )}
                   </span>
                   <span className="ind-timeline__date">
-                    {firstDate ? formatDate(firstDate) : 'Date not determined'}
+                    {firstDate ? formatDate(firstDate) : DATE_UNCLEAR}
                     {u.steps.length > 1 && <span className="disease__inn"> · {u.steps.length - 1} more</span>}
                   </span>
                 </a>
@@ -137,12 +131,12 @@ export function DiseasePage({ meshId }: { meshId: string }) {
                       {STEP_LABEL[s.kind]}{' '}
                       {s.sourceUrl ? (
                         <a href={s.sourceUrl} target="_blank" rel="noopener noreferrer" title={s.submissions.join(', ')}>
-                          {s.date ? formatDate(s.date) : 'date not determined'}
+                          {s.date ? formatDate(s.date) : DATE_UNCLEAR.toLowerCase()}
                         </a>
                       ) : s.date ? (
                         formatDate(s.date)
                       ) : (
-                        'date not determined'
+                        DATE_UNCLEAR.toLowerCase()
                       )}
                     </span>
                     {/* The label's wording is already the heading above; don't say it twice. */}
@@ -151,7 +145,7 @@ export function DiseasePage({ meshId }: { meshId: string }) {
                 ))}
               </ol>
               <a className="uses__meta" href={indicationHref(u.drugSlug, u.indicationSlug)}>
-                Trials behind this use →
+                Trials supporting this approval →
               </a>
             </li>
           ))}
@@ -181,8 +175,11 @@ export function DiseasesPage() {
       <header className="disease__head">
         <h1>Diseases</h1>
         <p className="drug__mechanism">
-          {diseaseIndex.length} diseases with FDA approvals on this site, grouped by therapeutic area. The names and areas come
-          from the National Library of Medicine’s medical vocabulary (MeSH), and a disease can sit in more than one area.
+          {diseaseIndex.length} diseases with FDA approvals on this site, by therapeutic area.
+          <Info label="About this list">
+            Names and areas come from MeSH, the U.S. National Library of Medicine’s medical vocabulary. A disease can sit in
+            more than one area.
+          </Info>
         </p>
       </header>
       {areas.map((area) => (

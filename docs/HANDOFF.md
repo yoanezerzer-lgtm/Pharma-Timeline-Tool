@@ -181,13 +181,22 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   The cleaner text found two new pivotal links for the checker to confirm:
   Rinvoq NCT03653026 and Skyrizi NCT03398135 (ulcerative colitis).
 - (i) icons for section explanations, owner-only text removed (#110).
+- Page wording tidied on every page (step 1, #116): one wording for gaps
+  ("Not yet matched", "Date unclear"), approval kinds (Approved, Widened,
+  Wording changed, Converted to traditional approval) and trial roles
+  ("Supportive"); shared words in `src/lib/copy.ts`. "Approved use"
+  everywhere. A real "Page not found" page. Pasatru and Zycubo filed under
+  Rare diseases by hand (owner, 7 Nov; `decisions` in
+  `data/areas/areas.json`) until the orphan-status rule exists.
+- Maintenance for any later chat: the workflows' GitHub actions warn
+  "Node.js 20 is deprecated"; move them to their Node 24 versions.
 
 ## Next steps (owner's plan, 7 Nov; in order, one chat each)
 Done 7 Nov: Pages switched back on and auto-merge turned on (owner); real
 page addresses and sitemap; atopic dermatitis under immunology (#114).
 Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 
-1. **Page copy.** Clean up the site's own wording on every page type
+1. Done (#116). **Page copy.** Clean up the site's own wording on every page type
    (headings, (i) explanations, empty states, buttons). FDA and MeSH text
    stays word for word; plain-language labels for data are the owner's.
 2. **Design.** Tidy the look and layout of every page, desktop web first,

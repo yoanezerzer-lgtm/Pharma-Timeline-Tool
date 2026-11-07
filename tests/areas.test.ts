@@ -8,12 +8,13 @@ describe('therapeutic areas (data/areas/areas.json)', () => {
   it('names each area once', () => {
     expect(ids.size).toBe(areaFile.areas.length);
   });
-  it('places drugs only in listed areas, and never by hand in a rule-based one', () => {
+  it('places drugs only in listed areas, and in a rule-based one by hand only on a recorded owner decision', () => {
     const ruled = new Set(areaFile.areas.filter((a) => 'rule' in a).map((a) => a.id));
+    const decided = (areaFile as { decisions?: Record<string, string> }).decisions ?? {};
     for (const [slug, areas] of Object.entries(areaFile.drugs as Record<string, string[]>)) {
       for (const a of areas) {
         expect(ids.has(a), `${slug}: ${a}`).toBe(true);
-        expect(ruled.has(a), `${slug}: ${a} is filled by its rule`).toBe(false);
+        if (ruled.has(a)) expect(decided[slug], `${slug}: ${a} is filled by its rule`).toMatch(/^Owner, /);
       }
     }
   });

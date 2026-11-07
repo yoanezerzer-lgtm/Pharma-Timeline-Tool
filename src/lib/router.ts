@@ -21,6 +21,7 @@ type Route =
   | { name: 'diseases' }
   | { name: 'disease'; meshId: string }
   | { name: 'compare' }
+  | { name: 'not-found' }
   | { name: 'review' }
   | { name: 'review-drug'; slug: string }
   | { name: 'ingest' };
@@ -51,11 +52,12 @@ export function parsePath(path: string): Route {
   if (section === 'ingest') {
     return { name: 'ingest' };
   }
-  return { name: 'index' };
+  return section === '' || section === 'index.html' ? { name: 'index' } : { name: 'not-found' };
 }
 
 function currentPath(): string {
   const { pathname } = window.location;
+  if (`${pathname}/` === BASE) return '';
   return pathname.startsWith(BASE) ? pathname.slice(BASE.length) : pathname.replace(/^\/+/, '');
 }
 

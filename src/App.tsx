@@ -4,6 +4,7 @@ import { DrugIndex } from './pages/DrugIndex.js';
 import { IndicationPage } from './pages/IndicationPage.js';
 import { DrugPage } from './pages/DrugPage.js';
 import { DiseasePage, DiseasesPage } from './pages/DiseasePage.js';
+import { NotFoundPage } from './pages/NotFoundPage.js';
 
 // Tooling pages most visitors never open — split out of the main bundle.
 const ReviewPage = lazy(() => import('./pages/ReviewPage.js').then((m) => ({ default: m.ReviewPage })));
@@ -28,6 +29,7 @@ export function App() {
   // while already on the page starts from that link's filters. Typing in the
   // filters uses replaceState, which doesn't re-render App, so no remount then.
   if (route.name === 'index') return <DrugIndex key={window.location.search} />;
+  if (route.name === 'not-found') return <NotFoundPage />;
   if (route.name === 'compare') {
     return (
       <Suspense fallback={null}>
