@@ -1,3 +1,4 @@
+import { Info } from '../components/Info/Info.js';
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { Approval, Drug, Trial } from '../schema/index.js';
 import { drugIndex, useDrug, type DrugState } from '../lib/catalog.js';
@@ -183,12 +184,14 @@ export function ComparePage() {
             ))}
             {notFound.length > 0 && (
               <div className="readout readout--empty">
-                <p className="readout__headline">Not found yet</p>
-                <p>{notFound.join(', ')}</p>
-                <p className="readout__fine">
-                  The overnight search looks for each sponsor’s first release reporting the primary result. A release
-                  covering several trials shows once, with all of them.
+                <p className="readout__headline">
+                  Not found yet
+                  <Info label="About results announcements">
+                    We look for each company’s first press release reporting the trial’s main result. A release covering
+                    several trials shows once.
+                  </Info>
                 </p>
+                <p>{notFound.join(', ')}</p>
               </div>
             )}
           </div>
@@ -212,24 +215,6 @@ function Stat({ label, months }: { label: string; months?: number }) {
       <p className="stat__label">{label}</p>
       <p className="stat__value">{months === undefined ? '—' : <>{months} <span>mo</span></>}</p>
     </div>
-  );
-}
-
-/** A small "i" button whose note opens on click, tap or keyboard, and closes on Escape or leaving it. */
-function Info({ label, children, align = 'right' }: { label: string; children: React.ReactNode; align?: 'left' | 'right' }) {
-  const [open, setOpen] = useState(false);
-  const id = useId();
-  return (
-    <span className="info" onBlur={(e) => !e.currentTarget.contains(e.relatedTarget) && setOpen(false)}>
-      <button type="button" className="info__button" aria-label={label} aria-expanded={open} aria-controls={id} onClick={() => setOpen(!open)} onKeyDown={(e) => e.key === 'Escape' && setOpen(false)}>
-        i
-      </button>
-      {open && (
-        <span role="note" id={id} className={`info__note info__note--${align}`}>
-          {children}
-        </span>
-      )}
-    </span>
   );
 }
 

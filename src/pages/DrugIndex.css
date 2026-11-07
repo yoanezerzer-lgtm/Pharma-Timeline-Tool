@@ -133,17 +133,11 @@
   font-size: 12.5px;
 }
 
-.index__empty,
 .index__none {
   margin: 2.5rem 0 0;
   font-size: 13px;
   color: var(--text-3);
   line-height: 1.6;
-}
-
-.index__empty span {
-  font-weight: 600;
-  color: var(--text-2);
 }
 
 @media (max-width: 640px) {

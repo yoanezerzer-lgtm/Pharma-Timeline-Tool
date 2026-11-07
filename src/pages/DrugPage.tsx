@@ -1,3 +1,4 @@
+import { Info } from '../components/Info/Info.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
 import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
 import { diseaseIndex, drugIndex, useDrug } from '../lib/catalog.js';
@@ -109,8 +110,13 @@ function DrugView({ drug }: { drug: Drug }) {
         </ul>
       </section>
       <section className="about" aria-labelledby="about-head">
-        <h2 id="about-head">How it works</h2>
-        <p className="about__note">Quoted word for word from the FDA-approved label, as its PDF reads. Some words come out split (“fun ction”); the linked label has the original.</p>
+        <h2 id="about-head">
+          How it works
+          <Info label="About this section">
+            Word for word from the FDA-approved label (sections 12.1 to 12.3). Each part links to the page of the label it
+            comes from.
+          </Info>
+        </h2>
         <dl className="about__class">
           <dt>Drug class (FDA)</dt>
           <dd>
@@ -166,7 +172,7 @@ function DrugView({ drug }: { drug: Drug }) {
         </dl>
         <p className="drug__status" role="status">
           <CheckBadge stats={checked} />
-          {checkSentence(checked)}
+          <Info label="What checked means">{checkSentence(checked)}</Info>
         </p>
       </section>
     </main>
