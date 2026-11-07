@@ -20,7 +20,10 @@ a new session when a conversation gets long.
   plain list grouped by **therapeutic area**. The areas and each drug's
   areas are the owner's (`data/areas/areas.json`, approved 31 Oct): change
   them only with the owner. "Genetic diseases" is filled by rule (a disease
-  MeSH files under "Genetic Diseases, Inborn", C16.320); "Rare diseases" is
+  MeSH files under "Genetic Diseases, Inborn", C16.320), except diseases
+  the owner excluded in the file's `diseases` list; that list also files a
+  disease under an area for every drug approved for it (atopic dermatitis:
+  Immunology, not Genetic, 3 Nov decision, done 7 Nov). "Rare diseases" is
   meant to come from FDA orphan status (not built yet). Drugs with no area
   show under "Being sorted". No admin links, badges or extra views on the
   home page; the add-drug page is still at `/ingest/`.
@@ -145,9 +148,8 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   for accounts later (don't build anything that rules them out).
 - Short names for uses: may be cut automatically from the FDA's own
   wording.
-- Atopic dermatitis belongs under immunology, not "Genetic diseases":
-  exclude it from the MeSH genetic-diseases rule and file it under the
-  immunology area (still to do).
+- Atopic dermatitis belongs under immunology, not "Genetic diseases"
+  (done 7 Nov: `diseases` in `data/areas/areas.json`).
 - Morning brief moved to Sonnet (done). Job scout to once a day: the owner
   must edit it (claude.ai/code/routines/trig_01RjhVp6w65gGm9krCvDUjnq);
   it was not created by an agent, so an agent can't change it.
@@ -194,7 +196,9 @@ live site. Then submit `sitemap.xml` in Google Search Console.
 1. Unblock publishing (above, owner), then check the live Rinvoq page
    shows "point of JAKs" and the (i) icons.
 2. Done 7 Nov: real page addresses, titles, descriptions, sitemap.
-3. Move atopic dermatitis under immunology (3 Nov decision).
+3. Done 7 Nov: atopic dermatitis under immunology. Rinvoq and Adquey left
+   "Genetic diseases" (now 4 drugs); the disease list no longer shows it
+   under MeSH's hereditary category.
 4. Hosting on Cloudflare Pages and the owner's domain.
 5. News links (sources above), then the paywall.
 
