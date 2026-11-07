@@ -8,7 +8,9 @@ import {
   primaryCompletionToApprovalMonths,
 } from '../lib/drugs.js';
 import { IndicationTimeline } from '../components/IndicationTimeline/IndicationTimeline.js';
-import { compareHref, drugHref, navigate, indicationHref, indicationTrialHref } from '../lib/router.js';
+import { usePageMeta } from '../lib/usePageMeta.js';
+import { drugMeta, indicationMeta } from '../lib/pageMeta.js';
+import { compareHref, drugHref, navigate, indicationHref, indicationTrialHref, homeHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
@@ -34,7 +36,7 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
   }
   return (
     <main className="drug">
-      <BackLink href="#/" label="All drugs" />
+      <BackLink href={homeHref()} label="All drugs" />
       <p className="drug__missing">
         {state.status === 'loading' && 'Loading…'}
         {state.status === 'missing' && `No drug record found for “${slug}”.`}
@@ -46,6 +48,7 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
 
 function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicationSlug: string; trialId: string | null }) {
   const indication = getIndication(drug, indicationSlug);
+  usePageMeta(indication ? indicationMeta(drug, indication) : drugMeta(drug));
 
   const scopedTrials = useMemo(
     () => (indication ? trialsForIndication(drug, indication.name) : []),
@@ -60,7 +63,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
   if (!indication) {
     return (
       <main className="drug">
-        <BackLink href="#/" label="All drugs" />
+        <BackLink href={homeHref()} label="All drugs" />
         <p className="drug__missing">
           {drug.brandName} has no indication “{indicationSlug}” on record.{' '}
           <a href={indicationHref(drug.slug, drug.indications[0]?.slug ?? '')}>
@@ -228,7 +231,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             selectedTrialId={trialId}
             indication={indication.name}
             majorSubmission={ownSubmission}
-            onSelectTrial={(id) => navigate(indicationTrialHref(drug.slug, indication.slug, id))}
+            onSelectTrial={(id) => navigate(indicationTrialHref(drug.slug, indication.slug, id), { scroll: false })}
           />
         </section>
       )}
@@ -294,14 +297,14 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         <TrialDrawer
           trial={selectedTrial}
           indication={indication.name}
-          onClose={() => navigate(indicationHref(drug.slug, indication.slug))}
+          onClose={() => navigate(indicationHref(drug.slug, indication.slug), { scroll: false })}
         />
       )}
     </main>
   );
 }
 
-// A hash link would change the route (the router reads location.hash), so scroll instead.
+// Smooth scrolling, and the address stays clean.
 function scrollTo(id: string) {
   return (e: React.MouseEvent) => {
     e.preventDefault();

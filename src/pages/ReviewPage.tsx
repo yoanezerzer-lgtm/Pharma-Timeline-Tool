@@ -23,7 +23,7 @@ import {
   setWriteUp,
 } from '../lib/review.js';
 import { formatDate } from '../lib/dates.js';
-import { reviewHref, reviewDrugHref } from '../lib/router.js';
+import { reviewHref, reviewDrugHref, homeHref } from '../lib/router.js';
 import './ReviewPage.css';
 
 const FIELD_LABEL: Record<string, string> = {
@@ -65,7 +65,7 @@ export function ReviewPage({ slug }: Props) {
 function ReviewIndex() {
   return (
     <main className="review">
-      <BackLink href="#/" label="All drugs" />
+      <BackLink href={homeHref()} label="All drugs" />
       <header className="review__head">
         <p className="review__eyebrow">Verification</p>
         <h1>Review extracted data</h1>

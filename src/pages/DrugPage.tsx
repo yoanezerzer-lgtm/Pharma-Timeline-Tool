@@ -5,7 +5,9 @@ import { diseaseIndex, drugIndex, useDrug } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
 import { trialsForIndication } from '../lib/drugs.js';
 import { naturalTerm } from '../lib/plainText.js';
-import { diseaseHref, indicationHref } from '../lib/router.js';
+import { usePageMeta } from '../lib/usePageMeta.js';
+import { drugMeta } from '../lib/pageMeta.js';
+import { diseaseHref, indicationHref, homeHref } from '../lib/router.js';
 import type { Drug, Provenance } from '../schema/index.js';
 import './IndicationPage.css';
 import './DrugPage.css';
@@ -18,7 +20,7 @@ export function DrugPage({ slug }: { slug: string }) {
   if (state.status === 'ready') return <DrugView drug={state.drug} />;
   return (
     <main className="drug">
-      <BackLink href="#/" label="All drugs" />
+      <BackLink href={homeHref()} label="All drugs" />
       <p className="drug__missing">
         {state.status === 'loading' && 'Loading…'}
         {state.status === 'missing' && `No drug record found for “${slug}”.`}
@@ -41,6 +43,7 @@ function SourceLink({ provenance, label }: { provenance: Provenance; label: stri
 }
 
 function DrugView({ drug }: { drug: Drug }) {
+  usePageMeta(drugMeta(drug));
   const listed = drugIndex.find((d) => d.slug === drug.slug);
   const checked = listed?.checked ?? { confirmed: 0, total: 0 };
   const about = drug.pharmacology;
@@ -50,7 +53,7 @@ function DrugView({ drug }: { drug: Drug }) {
 
   return (
     <main className="drug">
-      <BackLink href="#/" label="All drugs" />
+      <BackLink href={homeHref()} label="All drugs" />
 
       <header className="drug__head">
         <div>

@@ -1,6 +1,7 @@
 import type { DiseaseApproval, DiseaseSummary } from './diseases.js';
 import { formatDate } from './dates.js';
 import { shortIndication } from './drugs.js';
+import { homeHref, indicationHref } from './router.js';
 
 /**
  * A disease's approvals as an Excel workbook or a PowerPoint deck, made in
@@ -8,8 +9,9 @@ import { shortIndication } from './drugs.js';
  * they add nothing to an ordinary page load.
  */
 
-const SITE = 'https://yoanezerzer-lgtm.github.io/Pharma-Timeline-Tool/';
-const pageUrl = (a: DiseaseApproval) => `${SITE}#/drug/${a.drugSlug}/indication/${a.indicationSlug}`;
+// Addresses of the site the reader is on (it moves to its own domain later).
+const absolute = (path: string) => new URL(path, window.location.origin).href;
+const pageUrl = (a: DiseaseApproval) => absolute(indicationHref(a.drugSlug, a.indicationSlug));
 const fileName = (d: DiseaseSummary, ext: string) => `${d.name.replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '')}-FDA-approvals.${ext}`;
 const today = () => new Date().toISOString().slice(0, 10);
 
@@ -40,7 +42,7 @@ export async function exportExcel(d: DiseaseSummary): Promise<void> {
     [{ value: '' }],
     [bold('Sources')],
     ...SOURCES.map((s) => [{ value: s }]),
-    [{ value: `Exported ${today()} from ${SITE}` }],
+    [{ value: `Exported ${today()} from ${absolute(homeHref())}` }],
   ];
   await writeExcelFile([
     { data: approvals, sheet: 'Approvals', columns: [{ width: 13 }, { width: 18 }, { width: 22 }, { width: 12 }, { width: 80 }, { width: 50 }] },
@@ -123,7 +125,7 @@ export async function exportPowerPoint(d: DiseaseSummary): Promise<void> {
 
   const end = pptx.addSlide();
   end.addText('Sources', { x: 0.6, y: 0.3, w: 12, h: 0.6, fontSize: 24, bold: true, color: ink, fontFace: font });
-  end.addText([...SOURCES, `Exported ${today()} from ${SITE}`].map((text) => ({ text, options: { bullet: true } })), {
+  end.addText([...SOURCES, `Exported ${today()} from ${absolute(homeHref())}`].map((text) => ({ text, options: { bullet: true } })), {
     x: 0.6, y: 1.1, w: 12, h: 3, fontSize: 14, color: ink, fontFace: font, valign: 'top',
   });
   await pptx.writeFile({ fileName: fileName(d, 'pptx') });

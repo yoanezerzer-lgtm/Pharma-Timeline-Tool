@@ -24,10 +24,10 @@ export function App() {
       />
     );
   }
-  // Keyed by the hash so opening a different filtered link ("#/?view=table")
+  // Keyed by the query so opening a different filtered link ("/?area=oncology")
   // while already on the page starts from that link's filters. Typing in the
   // filters uses replaceState, which doesn't re-render App, so no remount then.
-  if (route.name === 'index') return <DrugIndex key={window.location.hash} />;
+  if (route.name === 'index') return <DrugIndex key={window.location.search} />;
   if (route.name === 'compare') {
     return (
       <Suspense fallback={null}>
