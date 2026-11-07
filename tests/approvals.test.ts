@@ -234,3 +234,11 @@ describe('approvalKind — wordings seen on Dupixent letters', () => {
     ).toBe('update');
   });
 });
+
+describe('approvalKind — a repeat of the first approval is not a widened use', () => {
+  it('does not widen on "provides for the treatment of ... in adults" (Skyrizi Crohn’s, SUPPL-18)', () => {
+    expect(
+      approvalKind('This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.')
+    ).toBe('update');
+  });
+});
