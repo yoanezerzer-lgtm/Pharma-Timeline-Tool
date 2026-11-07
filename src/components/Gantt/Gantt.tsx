@@ -42,6 +42,12 @@ function barLabel(t: Trial): string {
   return trialShortName(t);
 }
 
+/** The label cut to fit the name column; the full name stays in the tooltip. */
+function fitLabel(label: string, columnWidth: number): string {
+  const max = Math.floor((columnWidth - 28) / 6.6);
+  return label.length > max ? `${label.slice(0, Math.max(1, max - 1))}…` : label;
+}
+
 export function Gantt({
   trials,
   milestones,
@@ -81,6 +87,17 @@ export function Gantt({
           aria-label={`Development timeline: ${trials.length} trials and ${milestones.length} regulatory milestones`}
           className="gantt__svg"
         >
+          {/* After today every date is planned: shade it lightly, behind everything else */}
+          {layout.todayX !== null && (
+            <rect
+              x={layout.todayX}
+              y={TOP_PAD + AXIS_H - 12}
+              width={Math.max(layout.plotRight - layout.todayX, 0)}
+              height={layout.regulatoryLaneY + 20 - (TOP_PAD + AXIS_H - 12)}
+              className="gantt__future"
+            />
+          )}
+
           {/* Year gridlines and axis labels */}
           <g className="gantt__axis">
             {layout.yearTicks.map((tick) => (
@@ -112,6 +129,28 @@ export function Gantt({
                 className="gantt__approval-rule"
               />
             ))}
+
+          {/* Today: dates to its right are planned, not yet happened */}
+          {layout.todayX !== null && (
+            <g className="gantt__today">
+              <line
+                x1={layout.todayX}
+                y1={TOP_PAD + AXIS_H - 12}
+                x2={layout.todayX}
+                y2={layout.regulatoryLaneY + 8}
+                className="gantt__today-rule"
+              />
+              {/* Near the right edge the label sits to the left of the line instead. */}
+              <text
+                x={layout.todayX > layout.plotRight - 36 ? layout.todayX - 4 : layout.todayX + 4}
+                y={TOP_PAD + AXIS_H - 4}
+                textAnchor={layout.todayX > layout.plotRight - 36 ? 'end' : 'start'}
+                className="gantt__today-label"
+              >
+                Today
+              </text>
+            </g>
+          )}
 
           {/* Phase lanes */}
           {layout.groups.map((group) => (
@@ -152,7 +191,7 @@ export function Gantt({
                       className="gantt__row-hit"
                     />
                     <text x={20} y={bar.y + ROW_H / 2 + 4} className="gantt__row-label">
-                      {barLabel(bar.trial)}
+                      {fitLabel(barLabel(bar.trial), layout.plotLeft)}
                     </text>
                     <rect
                       x={bar.x}
@@ -242,7 +281,7 @@ export function Gantt({
         </p>
       )}
 
-      <GanttLegend />
+      <GanttLegend today={layout.todayX !== null} />
     </div>
   );
 }
@@ -285,7 +324,7 @@ function BarTooltip({
   );
 }
 
-function GanttLegend() {
+function GanttLegend({ today }: { today: boolean }) {
   return (
     <div className="gantt__legend">
       <span className="gantt__legend-item">
@@ -303,6 +342,11 @@ function GanttLegend() {
       <span className="gantt__legend-item">
         <span className="gantt__swatch-diamond" /> Regulatory milestone
       </span>
+      {today && (
+        <span className="gantt__legend-item">
+          <span className="gantt__swatch-today" /> Today: later dates are planned
+        </span>
+      )}
       <Info label="How to read this chart">
         A faded bar end means the source gave only a month or year.
       </Info>

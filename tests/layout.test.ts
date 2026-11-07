@@ -38,6 +38,13 @@ describe('computeLayout', () => {
     expect(layout.groups[0].bars).toHaveLength(1);
   });
 
+  it('narrows the name column on a phone so the bars stay in view', () => {
+    const trials = [trial({ id: 'a', startDate: { value: '2018-06-01', precision: 'month' } })];
+    const wide = computeLayout(trials, [approval], 1000);
+    const phone = computeLayout(trials, [approval], 358);
+    expect(phone.plotLeft).toBeLessThan(wide.plotLeft);
+  });
+
   it('marks approval as a major milestone so it draws a full-height rule', () => {
     const layout = computeLayout([], [approval], 1000);
     expect(layout.milestones[0].isMajor).toBe(true);
@@ -109,5 +116,30 @@ describe('computeLayout', () => {
     const layout = computeLayout([], [], 1000);
     expect(layout.yearTicks.length).toBeGreaterThan(0);
     expect(layout.height).toBeGreaterThan(0);
+  });
+
+  it('draws a Today line between past and planned dates, and none when today is off the chart', () => {
+    const today = Date.UTC(2026, 10, 7);
+    const ongoing = computeLayout(
+      [trial({ startDate: { value: '2022-01-01', precision: 'month' }, completionDate: { value: '2031-06-01', precision: 'month' } })],
+      [],
+      1000,
+      undefined,
+      today
+    );
+    expect(ongoing.todayX).toBeCloseTo(ongoing.scale(today));
+    expect(ongoing.todayX!).toBeGreaterThan(ongoing.plotLeft);
+    expect(ongoing.todayX!).toBeLessThan(ongoing.plotRight);
+    expect(ongoing.todayX!).toBeGreaterThan(ongoing.scale(Date.UTC(2026, 0, 1)));
+    expect(ongoing.todayX!).toBeLessThan(ongoing.scale(Date.UTC(2027, 0, 1)));
+
+    const finished = computeLayout(
+      [trial({ startDate: { value: '2012-01-01', precision: 'month' }, completionDate: { value: '2015-06-01', precision: 'month' } })],
+      [],
+      1000,
+      undefined,
+      today
+    );
+    expect(finished.todayX).toBeNull();
   });
 });

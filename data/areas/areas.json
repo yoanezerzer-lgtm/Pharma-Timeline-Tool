@@ -23,7 +23,13 @@
     { "id": "imaging", "name": "Imaging" },
     { "id": "anesthesia", "name": "Anesthesia" }
   ],
+  "decisions": {
+    "garetosmab": "Owner, 7 Nov 2026: Pasatru (fibrodysplasia ossificans progressiva) under Rare diseases, filed by hand until the orphan-status rule is built",
+    "copper-histidinate": "Owner, 7 Nov 2026: Zycubo (Menkes disease) under Rare diseases, filed by hand until the orphan-status rule is built"
+  },
   "drugs": {
+    "garetosmab": ["rare"],
+    "copper-histidinate": ["rare"],
     "pembrolizumab": ["oncology"],
     "amivantamab-and-hyaluronidase-lpuj-human-recombinant": ["oncology"],
     "zidesamtinib": ["oncology"],

@@ -1,6 +1,6 @@
 import type { Drug } from '../schema/index.js';
 import type { DiseaseSummary } from './diseases.js';
-import { diseaseMeta, diseasesMeta, drugMeta, homeMeta, indicationMeta, SITE_NAME, type PageMeta } from './pageMeta.js';
+import { aboutMeta, diseaseMeta, diseasesMeta, drugMeta, homeMeta, indicationMeta, SITE_NAME, type PageMeta } from './pageMeta.js';
 
 /**
  * Every page the build writes as its own HTML file, so each has a real
@@ -21,12 +21,13 @@ export function sitePages(drugs: Drug[], diseases: DiseaseSummary[]): SitePage[]
   return [
     { path: '', meta: homeMeta(), listed: true },
     { path: 'diseases/', meta: diseasesMeta(), listed: true },
+    { path: 'about/', meta: aboutMeta(), listed: true },
     ...drugs.flatMap((drug) => [
       { path: `drug/${drug.slug}/`, meta: drugMeta(drug), listed: true },
       ...drug.indications.map((i) => ({ path: `drug/${drug.slug}/indication/${i.slug}/`, meta: indicationMeta(drug, i), listed: true })),
     ]),
     ...diseases.map((d) => ({ path: `disease/${d.meshId}/`, meta: diseaseMeta(d), listed: true })),
-    tool('compare/', 'Compare'),
+    tool('compare/', 'Compare two approvals'),
     tool('review/', 'Review'),
     tool('ingest/', 'Add a drug'),
   ];

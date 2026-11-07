@@ -1,27 +1,11 @@
 .index {
   max-width: 880px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 4rem;
-}
-
-.index__nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1.25rem;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.index__nav a {
-  color: var(--text-2);
-}
-
-.index__nav a:hover {
-  color: var(--text-1);
+  padding: 1.5rem var(--gutter) 4rem;
 }
 
 .index__head {
-  margin: 3rem 0 1.75rem;
+  margin: 2.5rem 0 1.75rem;
   text-align: center;
 }
 

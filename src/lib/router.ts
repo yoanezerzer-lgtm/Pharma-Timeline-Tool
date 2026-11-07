@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
  *
  * Old `#/drug/...` links still work: they are moved to the path on load.
  */
-type Route =
+export type Route =
   | { name: 'index' }
   | {
       name: 'indication';
@@ -21,6 +21,8 @@ type Route =
   | { name: 'diseases' }
   | { name: 'disease'; meshId: string }
   | { name: 'compare' }
+  | { name: 'about' }
+  | { name: 'not-found' }
   | { name: 'review' }
   | { name: 'review-drug'; slug: string }
   | { name: 'ingest' };
@@ -45,17 +47,19 @@ export function parsePath(path: string): Route {
   if (section === 'diseases') return { name: 'diseases' };
   if (section === 'disease' && slug) return { name: 'disease', meshId: slug };
   if (section === 'compare') return { name: 'compare' };
+  if (section === 'about') return { name: 'about' };
   if (section === 'review') {
     return slug ? { name: 'review-drug', slug } : { name: 'review' };
   }
   if (section === 'ingest') {
     return { name: 'ingest' };
   }
-  return { name: 'index' };
+  return section === '' || section === 'index.html' ? { name: 'index' } : { name: 'not-found' };
 }
 
 function currentPath(): string {
   const { pathname } = window.location;
+  if (`${pathname}/` === BASE) return '';
   return pathname.startsWith(BASE) ? pathname.slice(BASE.length) : pathname.replace(/^\/+/, '');
 }
 
@@ -138,6 +142,11 @@ export function indicationHref(slug: string, indicationSlug: string): string {
 
 export function indicationTrialHref(slug: string, indicationSlug: string, trialId: string): string {
   return href(`drug/${slug}/indication/${indicationSlug}/trial/${trialId}/`);
+}
+
+/** Where the facts come from and how they are checked. */
+export function aboutHref(): string {
+  return href('about/');
 }
 
 export function reviewHref(): string {

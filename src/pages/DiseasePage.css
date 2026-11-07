@@ -1,7 +1,7 @@
 .disease__head h1 {
-  margin: 0.5rem 0 0.3rem;
-  font-size: 1.8rem;
-  letter-spacing: -0.01em;
+  margin: 0 0 0.3rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
   color: var(--text-1);
 }
 
@@ -48,7 +48,7 @@
 }
 
 .disease__plain {
-  margin: 1.25rem 0 0;
+  margin: 2rem 0 0;
   max-width: 78ch;
   font-size: 15px;
   line-height: 1.65;
@@ -200,4 +200,18 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-2);
+}
+
+/* The diseases list: areas flow in two columns on wide screens. */
+@media (min-width: 900px) {
+  .disease__areas {
+    columns: 2;
+    column-gap: 3rem;
+  }
+  .disease__areas > .uses {
+    max-width: none;
+    break-inside: avoid;
+    padding-top: 2rem;
+    margin-top: 0;
+  }
 }

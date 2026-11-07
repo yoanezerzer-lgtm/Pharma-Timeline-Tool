@@ -1,13 +1,14 @@
 import { Info } from '../components/Info/Info.js';
-import { BackLink } from '../components/BackLink/BackLink.js';
 import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
 import { diseaseIndex, drugIndex, useDrug, useNews } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
 import { trialsForIndication } from '../lib/drugs.js';
 import { naturalTerm } from '../lib/plainText.js';
+import { DATE_UNCLEAR } from '../lib/copy.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { drugMeta } from '../lib/pageMeta.js';
-import { diseaseHref, indicationHref, homeHref } from '../lib/router.js';
+import { NotFoundPage } from './NotFoundPage.js';
+import { diseaseHref, indicationHref } from '../lib/router.js';
 import type { Drug, Provenance } from '../schema/index.js';
 import './IndicationPage.css';
 import './DrugPage.css';
@@ -17,14 +18,13 @@ const diseaseName = new Map(diseaseIndex.map((d) => [d.meshId, d.name]));
 
 export function DrugPage({ slug }: { slug: string }) {
   const state = useDrug(slug);
+  if (state.status === 'missing') return <NotFoundPage message={`No drug called “${slug}” on this site.`} />;
   if (state.status === 'ready') return <DrugView drug={state.drug} />;
   return (
     <main className="drug">
-      <BackLink href={homeHref()} label="All drugs" />
       <p className="drug__missing">
         {state.status === 'loading' && 'Loading…'}
-        {state.status === 'missing' && `No drug record found for “${slug}”.`}
-        {state.status === 'error' && 'Couldn’t load this drug’s data — check your connection and reload.'}
+        {state.status === 'error' && 'Couldn’t load this page. Check your connection and reload.'}
       </p>
     </main>
   );
@@ -81,13 +81,11 @@ function DrugView({ drug }: { drug: Drug }) {
   const checked = listed?.checked ?? { confirmed: 0, total: 0 };
   const about = drug.pharmacology;
   const indications = [...drug.indications].sort((a, b) =>
-    (a.approvalDate?.value ?? '9999').localeCompare(b.approvalDate?.value ?? '9999')
+    (a.approvalDate?.value ?? '9999').localeCompare(b.approvalDate?.value ?? '9999'),
   );
 
   return (
     <main className="drug">
-      <BackLink href={homeHref()} label="All drugs" />
-
       <header className="drug__head">
         <div>
           <h1>
@@ -115,31 +113,34 @@ function DrugView({ drug }: { drug: Drug }) {
         </section>
       )}
 
-      <section className="uses" aria-labelledby="uses-head">
+      <section className="uses uses--wide" aria-labelledby="uses-head">
         <h2 id="uses-head">Approved uses · {indications.length}</h2>
-        <ul className="uses__list">
+        <ul className="uselist">
           {indications.map((i) => {
             const trials = trialsForIndication(drug, i.name).length;
+            const diseases = i.diseases ?? [];
             return (
-              <li key={i.slug}>
-                <a href={indicationHref(drug.slug, i.slug)} className="uses__item">
-                  <span className="uses__name">{i.displayName ?? i.name}</span>
-                  <span className="uses__meta">
-                    {i.approvalDate ? formatDate(i.approvalDate) : 'Date not determined'} · {trials}{' '}
-                    {trials === 1 ? 'trial' : 'trials'}
-                  </span>
+              <li key={i.slug} className="uselist__row">
+                <a href={indicationHref(drug.slug, i.slug)} className="uselist__name">
+                  {i.displayName ?? i.name}
                 </a>
-                {(i.diseases ?? []).length > 0 && (
-                  <p className="uses__diseases">
-                    Disease:{' '}
-                    {i.diseases!.map((d, k) => (
-                      <span key={d.meshId}>
-                        {k > 0 && ', '}
-                        <a href={diseaseHref(d.meshId)}>{diseaseName.get(d.meshId) ?? naturalTerm(d.term)}</a>
-                      </span>
-                    ))}
-                  </p>
-                )}
+                <span className="uselist__disease">
+                  {diseases.length > 0 && (
+                    <>
+                      <span className="uselist__label">Disease: </span>
+                      {diseases.map((d, k) => (
+                        <span key={d.meshId}>
+                          {k > 0 && ', '}
+                          <a href={diseaseHref(d.meshId)}>{diseaseName.get(d.meshId) ?? naturalTerm(d.term)}</a>
+                        </span>
+                      ))}
+                    </>
+                  )}
+                </span>
+                <span className="uselist__date">{i.approvalDate ? formatDate(i.approvalDate) : DATE_UNCLEAR}</span>
+                <span className="uselist__trials">
+                  {trials} {trials === 1 ? 'trial' : 'trials'}
+                </span>
               </li>
             );
           })}
@@ -149,8 +150,8 @@ function DrugView({ drug }: { drug: Drug }) {
         <h2 id="about-head">
           How it works
           <Info label="About this section">
-            Word for word from the FDA-approved label (sections 12.1 to 12.3). Each part links to the page of the label it
-            comes from.
+            Word for word from the FDA-approved label (sections 12.1 to 12.3). Each part links to the page of the label
+            it comes from.
           </Info>
         </h2>
         <dl className="about__class">
@@ -186,7 +187,7 @@ function DrugView({ drug }: { drug: Drug }) {
             </details>
           ))
         ) : (
-          <p className="about__gap">The label's clinical pharmacology sections couldn't be read from its text.</p>
+          <p className="about__gap">Not yet read from the label.</p>
         )}
       </section>
 

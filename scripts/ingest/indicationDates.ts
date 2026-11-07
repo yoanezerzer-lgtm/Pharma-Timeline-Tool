@@ -205,7 +205,11 @@ export function dateIndications(
         })
         .sort((a, b) => a.date.value.localeCompare(b.date.value));
       const pick = confirmed[0];
-      if (!pick) return;
+      // A letter may word the use more briefly than a long label sentence
+      // (Ebglyss: "moderate to severe atopic dermatitis"). A use already listed in
+      // the original approval's own label is dated by that approval, below.
+      if (!pick && !(first === 0 && snapshots[0].milestone.type === 'FDA_APPROVAL')) return;
+      if (pick) {
       const letter = letters.find((l) => l.submission === pick.submissionNumber)!;
       out.set(name, {
         date: pick.date,
@@ -221,6 +225,7 @@ export function dateIndications(
         },
       });
       return;
+      }
     }
 
     // No letters to confirm with: only trust a first appearance that directly

@@ -1,6 +1,7 @@
 import type { DiseaseApproval, DiseaseSummary } from './diseases.js';
 import { formatDate } from './dates.js';
 import { shortIndication } from './drugs.js';
+import { DATE_UNCLEAR } from './copy.js';
 import { homeHref, indicationHref } from './router.js';
 
 /**
@@ -27,7 +28,7 @@ export async function exportExcel(d: DiseaseSummary): Promise<void> {
   const approvals = [
     ['Approved', 'Drug', 'Generic name', 'Submission', 'What the FDA approved (FDA wording)', 'Page on this site'].map(bold),
     ...d.approvals.map((a) => [
-      a.date ? { value: new Date(`${a.date.value}T00:00:00Z`), type: Date, format: 'yyyy-mm-dd' } : { value: 'Date not determined' },
+      a.date ? { value: new Date(`${a.date.value}T00:00:00Z`), type: Date, format: 'yyyy-mm-dd' } : { value: DATE_UNCLEAR },
       { value: a.brandName },
       { value: a.inn },
       { value: a.submission ?? '' },

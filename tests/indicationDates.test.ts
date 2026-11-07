@@ -157,4 +157,19 @@ describe('dateIndications — real-label quirks', () => {
     expect(r.get(names[0])?.date.value).toBe('2002-08-14');
     expect(r.get(names[1])?.date.value).toBe('2003-12-18');
   });
+  it('dates a long one-sentence use from the original approval when its letter words it more briefly (Ebglyss)', () => {
+    const long = 'Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older who weigh at least 40 kg whose disease is not adequately controlled with topical prescription therapies';
+    const text = `1 INDICATIONS AND USAGE EBGLYSS is indicated for the treatment of ${long.toLowerCase()}. 2 DOSAGE AND ADMINISTRATION`;
+    const labels: LabelDoc[] = [{ submission: 'ORIG-1', url: 'https://x/o.pdf', text }];
+    const letters = [letter('ORIG-1', 'Ebglyss is indicated for treatment of moderate to severe atopic dermatitis.')];
+    const r = dateIndications([long], labels, milestones, letters);
+    expect(r.get(long)?.date.value).toBe('2019-08-16');
+    expect(r.get(long)?.submission).toBe('ORIG-1');
+  });
+
+  it('still leaves a use undated when a later supplement added it and no letter names it', () => {
+    const labels = [label('ORIG-1', 'Rheumatoid Arthritis'), label('SUPPL-2', 'Rheumatoid Arthritis', 'Psoriatic Arthritis')];
+    const r = dateIndications(['Psoriatic Arthritis'], labels, milestones, [letter('SUPPL-2', 'Approved for something else.')]);
+    expect(r.has('Psoriatic Arthritis')).toBe(false);
+  });
 });

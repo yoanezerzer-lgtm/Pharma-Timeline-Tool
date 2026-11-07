@@ -18,6 +18,8 @@ import { BackLink } from '../components/BackLink/BackLink.js';
 import { drugIndex, useDrug } from '../lib/catalog.js';
 import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
 import type { Drug, Milestone, Source } from '../schema/index.js';
+import { DATE_UNCLEAR } from '../lib/copy.js';
+import { NotFoundPage } from './NotFoundPage.js';
 import './IndicationPage.css';
 
 /** FDAAA 801: registration on ClinicalTrials.gov became mandatory for most trials in late 2007. */
@@ -31,16 +33,15 @@ interface Props {
 
 export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
   const state = useDrug(slug);
+  if (state.status === 'missing') return <NotFoundPage message={`No drug called “${slug}” on this site.`} />;
   if (state.status === 'ready') {
     return <IndicationView drug={state.drug} indicationSlug={indicationSlug} trialId={trialId} />;
   }
   return (
     <main className="drug">
-      <BackLink href={homeHref()} label="All drugs" />
       <p className="drug__missing">
         {state.status === 'loading' && 'Loading…'}
-        {state.status === 'missing' && `No drug record found for “${slug}”.`}
-        {state.status === 'error' && 'Couldn’t load this drug’s data — check your connection and reload.'}
+        {state.status === 'error' && 'Couldn’t load this page. Check your connection and reload.'}
       </p>
     </main>
   );
@@ -63,11 +64,10 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
   if (!indication) {
     return (
       <main className="drug">
-        <BackLink href={homeHref()} label="All drugs" />
         <p className="drug__missing">
-          {drug.brandName} has no indication “{indicationSlug}” on record.{' '}
-          <a href={indicationHref(drug.slug, drug.indications[0]?.slug ?? '')}>
-            {drug.indications[0] ? `See ${indicationLabel(drug.indications[0])} instead` : 'Back to search'}
+          {drug.brandName} has no approved use “{indicationSlug}” on this site.{' '}
+          <a href={drug.indications[0] ? indicationHref(drug.slug, drug.indications[0].slug) : homeHref()}>
+            {drug.indications[0] ? `See ${indicationLabel(drug.indications[0])} instead` : 'All drugs'}
           </a>
         </p>
       </main>
@@ -109,14 +109,14 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           </p>
           {drug.indications.length > 1 && (
             <p className="drug__other-indications">
-              One of {drug.indications.length} approved indications ·{' '}
+              One of {drug.indications.length} approved uses ·{' '}
               <a href="#approved-indications" onClick={scrollTo('approved-indications')}>
                 see all
               </a>
             </p>
           )}
           <p className="drug__compare">
-            <a href={compareHref(`${drug.slug}:${indication.slug}`)}>Compare with another program →</a>
+            <a href={compareHref(`${drug.slug}:${indication.slug}`)}>Compare with another approval →</a>
           </p>
           {label !== indication.name && (
             <p className="drug__label-wording">
@@ -132,7 +132,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Sponsor's announcement of this approval ↗
+                  Company’s announcement ↗
                 </a>
               )}
               {indication.fdaAnnouncementUrl && (
@@ -142,7 +142,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  FDA's announcement of this approval ↗
+                  FDA’s announcement ↗
                 </a>
               )}
             </div>
@@ -150,7 +150,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         </div>
         <dl className="drug__facts">
           <div>
-            <dt>Application</dt>
+            <dt>FDA application</dt>
             <dd>
               {drug.regulatory.us.applicationType} {drug.regulatory.us.applicationNumber}
             </dd>
@@ -162,7 +162,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           <div>
             <dt>Approved for this use</dt>
             <dd>
-              {indication.approvalDate ? formatDate(indication.approvalDate) : 'Date not determined'}
+              {indication.approvalDate ? formatDate(indication.approvalDate) : DATE_UNCLEAR}
               {indication.approvalProvenance?.sourceUrl && (
                 <a
                   className="drug__fact-source"
@@ -181,8 +181,14 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             <dd>{scopedTrials.length}</dd>
           </div>
           {lagMonths !== undefined && (
-            <div title="From the date the last patient was assessed for the primary endpoint in the final pivotal trial (ClinicalTrials.gov) to the FDA approval of this indication.">
-              <dt>Primary completion to approval</dt>
+            <div>
+              <dt>
+                Primary completion to approval
+                <Info label="What this measures">
+                  From the date the last patient was assessed for the primary endpoint in the final pivotal trial
+                  (ClinicalTrials.gov) to this FDA approval.
+                </Info>
+              </dt>
               <dd>
                 {lagMonths} month{lagMonths === 1 ? '' : 's'}
               </dd>
@@ -203,21 +209,19 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             <p>
               No registered trial is linked to this approval. It was approved in{' '}
               {indication.approvalDate.value.slice(0, 4)}, before trials had to be registered on
-              ClinicalTrials.gov (from 2007), so the trials behind it generally have no registry
-              record to link to.
+              ClinicalTrials.gov (2007), so its trials usually have no registry record.
             </p>
           ) : (
             <p>
-              No registered trial could be matched to this approval. Usually either the label
-              describes the trials without their ClinicalTrials.gov numbers, or they were run by
-              an organization other than {company} (a cooperative research group, for
-              example), which this site doesn't yet count as the applicant's own.
+              Not yet matched to a registered trial. The label may describe the trials without
+              their ClinicalTrials.gov numbers, or they were run by an organization other than{' '}
+              {company}, such as a cooperative research group.
             </p>
           )}
           {labelUrl && (
             <p>
               <a href={labelUrl} target="_blank" rel="noopener noreferrer">
-                Read the label's clinical studies section ↗
+                Read the label’s clinical studies section ↗
               </a>
             </p>
           )}

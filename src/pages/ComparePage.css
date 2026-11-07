@@ -1,7 +1,7 @@
 .compare {
-  max-width: 1240px;
+  max-width: var(--page-width);
   margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding: 2rem var(--gutter) 4rem;
 }
 
 .compare__head {
@@ -15,7 +15,7 @@
 
 .compare__head h1 {
   margin: 0;
-  font-size: 1.9rem;
+  font-size: 1.75rem;
   letter-spacing: -0.02em;
 }
 
@@ -751,7 +751,8 @@
 
 @media (max-width: 560px) {
   .compare {
-    padding: 1.25rem 1rem 3rem;
+    padding-top: 1.25rem;
+    padding-bottom: 3rem;
   }
   .chart {
     --name-w: 96px;

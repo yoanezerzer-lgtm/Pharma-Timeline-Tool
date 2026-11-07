@@ -3,6 +3,10 @@
 :root {
   color-scheme: light dark;
 
+  /* One page width and side gutter for every page. */
+  --page-width: 1180px;
+  --gutter: 1.5rem;
+
   --bg-1: #ffffff;
   --bg-2: #f4f5f7;
   --bg-elevated: #ffffff;
@@ -92,6 +96,12 @@
     --tag-safety-fg: #e0a668;
     --tag-pk-bg: #271c33;
     --tag-pk-fg: #c79ee8;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 1rem;
   }
 }
 

@@ -1,0 +1,33 @@
+.site-foot {
+  margin-top: auto;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-1);
+}
+
+/* Holds the bar, the page and the footer, so the footer sits at the bottom of short pages. */
+.site-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Pages centre themselves with auto margins; keep them full width in the column. */
+.site-shell > main {
+  width: 100%;
+}
+
+.site-foot__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 1.1rem var(--gutter) 1.5rem;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.site-foot__inner a {
+  font-weight: 600;
+}

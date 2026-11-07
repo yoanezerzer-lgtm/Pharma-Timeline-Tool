@@ -54,7 +54,7 @@ async function main(): Promise<void> {
     await visit(page, `drug/${d.slug}/`, async (p) => {
       const body = await text(p);
       if (!(await p.title()).includes(d.brandName)) return `page title lacks the name ${d.brandName}`;
-      if (/No drug record found|Couldn’t load/.test(body)) return 'drug page did not load';
+      if (/Page not found|Couldn’t load/.test(body)) return 'drug page did not load';
       if (!body.toLowerCase().includes(d.brandName.toLowerCase())) return `drug page lacks the name ${d.brandName}`;
       if (!/approved uses/i.test(body)) return 'drug page lacks its approved uses';
       return undefined;
@@ -63,7 +63,7 @@ async function main(): Promise<void> {
     if (!first) continue;
     await visit(page, `drug/${d.slug}/indication/${first.slug}/`, async (p) => {
       const body = await text(p);
-      if (/No drug record found|has no indication|Couldn’t load/.test(body)) return 'approved-use page did not load';
+      if (/Page not found|has no approved use|Couldn’t load/.test(body)) return 'approved-use page did not load';
       return /regulatory milestones|trials supporting/i.test(body) ? undefined : 'approved-use page is empty';
     });
   }
@@ -80,6 +80,16 @@ async function main(): Promise<void> {
     });
   }
 
+  await visit(page, 'about/', async (p) => {
+    const body = await text(p);
+    return /Where the facts come from/i.test(body) ? undefined : 'about page did not load';
+  });
+
+  // An address that isn't a page says so, rather than showing the home page.
+  await visit(page, 'no-such-page/', async (p) =>
+    /Page not found/.test(await text(p)) ? undefined : 'unknown address did not show "Page not found"'
+  );
+
   // Links shared before pages had their own addresses ("#/drug/x") still open the page.
   const old = drugs[0];
   if (old) {
@@ -89,7 +99,7 @@ async function main(): Promise<void> {
   }
 
   await browser.close();
-  const pages = 3 + drugs.length + drugs.filter((d) => d.indications.length > 0).length + diseases.size;
+  const pages = 5 + drugs.length + drugs.filter((d) => d.indications.length > 0).length + diseases.size;
   if (problems.length > 0) {
     console.error(`Site check: ${problems.length} problem(s) across ${pages} pages at ${base}`);
     for (const p of problems) console.error(`  - ${p}`);

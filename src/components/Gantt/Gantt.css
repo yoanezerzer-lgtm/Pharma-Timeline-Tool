@@ -283,3 +283,31 @@
   font-size: 12px;
   color: var(--text-3);
 }
+
+/* Today: everything to its right is a planned date. */
+.gantt__today-rule {
+  stroke: var(--text-2);
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+
+.gantt__today-label {
+  fill: var(--text-2);
+  font-size: 11px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.gantt__future {
+  fill: var(--bg-2);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.gantt__swatch-today {
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  border-left: 1.5px solid var(--text-2);
+  background: var(--bg-2);
+}

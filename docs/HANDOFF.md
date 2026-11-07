@@ -209,23 +209,52 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   The cleaner text found two new pivotal links for the checker to confirm:
   Rinvoq NCT03653026 and Skyrizi NCT03398135 (ulcerative colitis).
 - (i) icons for section explanations, owner-only text removed (#110).
+- Page wording tidied on every page (step 1, #116): one wording for gaps
+  ("Not yet matched", "Date unclear"), approval kinds (Approved, Widened,
+  Wording changed, Converted to traditional approval) and trial roles
+  ("Supportive"); shared words in `src/lib/copy.ts`. "Approved use"
+  everywhere. A real "Page not found" page. Pasatru and Zycubo filed under
+  Rare diseases by hand (owner, 7 Nov; `decisions` in
+  `data/areas/areas.json`) until the orphan-status rule exists.
+- Design tidied on every page (step 2): one bar at the top of every page
+  (site name; Drugs, Diseases, Compare, with the current one underlined),
+  one page width and side margin (`--page-width`, `--gutter` in
+  `src/styles.css`). Drug pages list approved uses as one row each (use,
+  disease, date, trials). The diseases list runs in two columns on wide
+  screens. On phones the trials timeline gives the bars more room. "All
+  drugs" back buttons removed (the top bar replaces them); the approved-use
+  page keeps its link back to the drug.
+- Design follow-up (#design-2): a plain footer on every public page links
+  to a new **About the data** page (`/about/`, in the sitemap): the sources,
+  how facts are checked, what Checked / Partly checked / Not yet checked
+  mean, gaps left blank. Disease pages now open on "Approvals over time"
+  (timeline and downloads) right under the title; "In plain words" follows,
+  cut to its first paragraph with "Read more". The trials timeline has a
+  **Today** line, and dates after it are lightly shaded as planned.
+- **Desktop first** (owner, 7 Nov): design for desktop web; phones must
+  work (no sideways scroll) but come second.
+- Maintenance for any later chat: the workflows' GitHub actions warn
+  "Node.js 20 is deprecated"; move them to their Node 24 versions.
 
 ## Next steps (owner's plan, 7 Nov; in order, one chat each)
 Done 7 Nov: Pages switched back on and auto-merge turned on (owner); real
 page addresses and sitemap; atopic dermatitis under immunology (#114).
 Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 
-1. **Page copy.** Clean up the site's own wording on every page type
+1. Done (#116). **Page copy.** Clean up the site's own wording on every page type
    (headings, (i) explanations, empty states, buttons). FDA and MeSH text
    stays word for word; plain-language labels for data are the owner's.
-2. **Design.** Tidy the look and layout of every page, desktop web first,
+2. Done (#117, follow-up design-2). **Design.** Tidy the look and layout of every page, desktop web first,
    then phone (owner, 7 Nov); check each page in a browser before and after.
 3. Done 7 Nov: **Company news** on each drug page (see "Company news
    links" below).
 4. **New drugs.** Start with the missing moderate-to-severe atopic
    dermatitis drugs, so that area is complete first (PRD §9), through the
    `Add new drugs` workflow, a few at a time.
-5. Later this week: submit `sitemap.xml` to Google Search Console (owner),
+5. **Visual direction.** The owner picks one of the directions in the
+   design brainstorm (artifact shared 7 Nov); then a chat applies it.
+   Open owner question: show a public "last updated" date on the site?
+6. Later this week: submit `sitemap.xml` to Google Search Console (owner),
    then Cloudflare Pages and the owner's domain, then the paywall.
 
 ## Owner decisions (4 Nov 2026)

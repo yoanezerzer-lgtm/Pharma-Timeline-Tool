@@ -1,0 +1,38 @@
+.about > * {
+  max-width: 78ch;
+}
+
+.about h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.about h2 {
+  margin: 2rem 0 0.6rem;
+}
+
+.about p,
+.about dd {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-1);
+}
+
+.about__lead {
+  color: var(--text-2);
+}
+
+.about dl {
+  margin: 0;
+}
+
+.about dt {
+  margin-top: 0.9rem;
+  font-weight: 600;
+}
+
+.about dd {
+  margin: 0.2rem 0 0;
+  color: var(--text-2);
+}

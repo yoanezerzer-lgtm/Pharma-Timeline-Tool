@@ -69,3 +69,8 @@
     z-index: 100;
   }
 }
+
+/* Inside a small fact label, keep the row the same height as its neighbours. */
+.drug__facts dt .info {
+  margin-block: -6px;
+}
