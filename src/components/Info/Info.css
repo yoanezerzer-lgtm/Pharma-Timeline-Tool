@@ -36,7 +36,7 @@
   width: 300px;
   max-width: 80vw;
   padding: 0.75rem 0.9rem;
-  border-radius: 8px;
+  border-radius: var(--radius);
   background: var(--text-1);
   color: var(--bg-1);
   font-size: 13px;

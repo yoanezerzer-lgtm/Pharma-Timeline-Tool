@@ -277,7 +277,7 @@ function ExportButtons({ disease }: { disease: DiseaseSummary }) {
   };
   return (
     <div className="disease__export">
-      <button type="button" onClick={() => run('xlsx')} disabled={busy !== null}>
+      <button type="button" className="disease__export-main" onClick={() => run('xlsx')} disabled={busy !== null}>
         {busy === 'xlsx' ? 'Preparing…' : 'Download Excel'}
       </button>
       <button type="button" onClick={() => run('pptx')} disabled={busy !== null}>

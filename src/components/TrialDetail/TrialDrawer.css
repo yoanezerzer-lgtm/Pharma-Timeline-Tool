@@ -181,7 +181,7 @@
   padding: 0.75rem 0.85rem;
   background: var(--bg-2);
   border: 1px dashed var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius);
   font-size: 12px;
   line-height: 1.5;
   color: var(--text-3);
@@ -225,7 +225,7 @@
 .drawer__met {
   margin-left: 0.5rem;
   padding: 0.1rem 0.5rem;
-  border-radius: 999px;
+  border-radius: var(--radius);
   font-size: 10.5px;
   font-weight: 600;
   letter-spacing: normal;
@@ -286,6 +286,7 @@
 
 .posted-results__value {
   text-align: right !important;
+  font-family: var(--font-data);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
   color: var(--text-1);

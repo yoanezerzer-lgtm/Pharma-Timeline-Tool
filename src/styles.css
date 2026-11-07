@@ -1,102 +1,116 @@
-/* Light palette is the base; dark redefines only the tokens. Every colour is
-   defined here on :root so nothing depends on a media query alone. */
+/* Design direction A, "Ledger" (owner, 7 Nov 2026): IBM Plex Sans for text,
+   IBM Plex Mono for dates and numbers, deep teal accent, square corners,
+   striped tables. Light by default; the dark values are kept for a later
+   switch and apply only when <html data-theme="dark"> is set. Every colour is
+   defined here on :root so components use tokens only. */
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   /* One page width and side gutter for every page. */
   --page-width: 1180px;
   --gutter: 1.5rem;
 
-  --bg-1: #ffffff;
-  --bg-2: #f4f5f7;
+  --font-text: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-data: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  --radius: 3px;
+
+  --bg-1: #fbfcfc;
+  --bg-2: #f0f4f4;
   --bg-elevated: #ffffff;
+  /* Every other table row. */
+  --row-stripe: #f4f7f7;
 
-  --text-1: #14171f;
-  --text-2: #4a5061;
-  --text-3: #838a9c;
+  --text-1: #10191b;
+  --text-2: #415256;
+  --text-3: #6f7f82;
 
-  --border: #dfe2e8;
-  --border-subtle: #eceef2;
+  --border: #dbe3e4;
+  --border-subtle: #e7ecec;
 
-  --accent: #b0304a;
+  --accent: #0d6670;
+  --accent-fg: #ffffff;
+  --accent-soft: #e2f0f1;
 
-  --row-hover: #f2f4f7;
-  --row-selected: #fdeef1;
+  --row-hover: #edf3f3;
+  --row-selected: #e2f0f1;
 
   /* Sequential ramp: later phases read as heavier. */
-  --phase-1: #b9c6d6;
-  --phase-12: #93a9c4;
-  --phase-2: #6b8db2;
-  --phase-23: #4a719d;
-  --phase-3: #2d5687;
-  --phase-4: #7c8ba0;
-  --bar-default: #a8b0bd;
+  --phase-1: #b7cdd0;
+  --phase-12: #93b4b9;
+  --phase-2: #6e98a0;
+  --phase-23: #4a7a84;
+  --phase-3: #2a5560;
+  --phase-4: #7d8c8f;
+  --bar-default: #a9b5b7;
 
-  --verified-bg: #e2f2e6;
-  --verified-fg: #1f6b38;
-  --unverified-bg: #f2ecd9;
-  --unverified-fg: #7a6218;
+  --verified-bg: #e3f1e7;
+  --verified-fg: #1d6236;
+  --unverified-bg: #f4ecd6;
+  --unverified-fg: #6f5713;
 
   /* Results announced: orange, so it never reads as the accent or a role. */
   --readout: #c2410c;
 
-  --warn-bg: #fdf6e3;
-  --warn-border: #e8d9a8;
+  --warn-bg: #fbf5e3;
+  --warn-border: #e6d7a6;
   --warn-fg: #5f4c12;
 
   /* Endpoint category tags — semantic, distinct from --accent. */
-  --tag-efficacy-bg: #e8eef7;
-  --tag-efficacy-fg: #2d5687;
+  --tag-efficacy-bg: #e3edf3;
+  --tag-efficacy-fg: #2a5560;
   --tag-safety-bg: #fdf1e3;
   --tag-safety-fg: #9a5b12;
   --tag-pk-bg: #f1e8f7;
   --tag-pk-fg: #6b3fa0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --bg-1: #14161b;
-    --bg-2: #1b1e25;
-    --bg-elevated: #1a1d24;
+:root[data-theme='dark'] {
+  color-scheme: dark;
 
-    --text-1: #e9ecf2;
-    --text-2: #b0b7c5;
-    --text-3: #7c8494;
+  --bg-1: #0d1314;
+  --bg-2: #172123;
+  --bg-elevated: #121a1c;
+  --row-stripe: #111a1b;
 
-    --border: #2c313b;
-    --border-subtle: #23272f;
+  --text-1: #e4eced;
+  --text-2: #a9b8bb;
+  --text-3: #7a8b8e;
 
-    --accent: #e8697f;
+  --border: #23302f;
+  --border-subtle: #1b2627;
 
-    --row-hover: #1f232b;
-    --row-selected: #2a1f25;
+  --accent: #4fb7c1;
+  --accent-fg: #062326;
+  --accent-soft: #15302f;
 
-    --phase-1: #46586e;
-    --phase-12: #56708f;
-    --phase-2: #6a8cb0;
-    --phase-23: #7fa3c8;
-    --phase-3: #98bce0;
-    --phase-4: #6b7686;
-    --bar-default: #4d545f;
+  --row-hover: #172123;
+  --row-selected: #15302f;
 
-    --verified-bg: #1d3324;
-    --verified-fg: #7fce97;
-    --unverified-bg: #332d1a;
-    --unverified-fg: #d9bd6a;
+  --phase-1: #3f5a5f;
+  --phase-12: #4e7076;
+  --phase-2: #62898f;
+  --phase-23: #79a3aa;
+  --phase-3: #95bec5;
+  --phase-4: #63777a;
+  --bar-default: #4a5759;
 
-    --readout: #f0915a;
+  --verified-bg: #173323;
+  --verified-fg: #8ad3a3;
+  --unverified-bg: #352d14;
+  --unverified-fg: #e2c66f;
 
-    --warn-bg: #2a2415;
-    --warn-border: #4a3f22;
-    --warn-fg: #dcc98d;
+  --readout: #f0915a;
 
-    --tag-efficacy-bg: #1c2733;
-    --tag-efficacy-fg: #98bce0;
-    --tag-safety-bg: #2e2312;
-    --tag-safety-fg: #e0a668;
-    --tag-pk-bg: #271c33;
-    --tag-pk-fg: #c79ee8;
-  }
+  --warn-bg: #2a2415;
+  --warn-border: #4a3f22;
+  --warn-fg: #dcc98d;
+
+  --tag-efficacy-bg: #172a2e;
+  --tag-efficacy-fg: #95bec5;
+  --tag-safety-bg: #2e2312;
+  --tag-safety-fg: #e0a668;
+  --tag-pk-bg: #271c33;
+  --tag-pk-fg: #c79ee8;
 }
 
 @media (max-width: 640px) {
@@ -118,8 +132,7 @@ body {
 body {
   background: var(--bg-1);
   color: var(--text-1);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 14px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -137,4 +150,26 @@ a:hover {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+/* Ledger: data rows are striped so a reader can follow a row across. */
+.uselist__row:nth-child(even),
+.drug__table tbody tr:nth-child(even) td,
+.evidence tbody tr:nth-child(even) td {
+  background: var(--row-stripe);
+}
+
+.uselist__row:hover,
+.drug__table tbody tr:hover td {
+  background: var(--row-hover);
+}
+
+.drug__table th:first-child,
+.drug__table td:first-child {
+  padding-left: 0.5rem;
+}
+
+/* Ledger: one button style everywhere; the main action is filled teal. */
+button {
+  font-family: inherit;
 }
