@@ -232,6 +232,10 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
    **Light by default** (owner, 7 Nov): the site no longer follows the
    device's dark setting; keep the dark values for a later switch.
    The name "Drug Development Timelines" stays for now (owner, 7 Nov).
+   In the same chat (owner, 7 Nov): each drug page shows "Sources last
+   read: <date>" near "Sources and checks", from the record's
+   `lastIngestedAt` (set by the weekly refresh), and the footer says
+   "Sources are updated every week."
    Open owner question: show a public "last updated" date on the site?
 6. Later this week: submit `sitemap.xml` to Google Search Console (owner),
    then Cloudflare Pages and the owner's domain, then the paywall.
