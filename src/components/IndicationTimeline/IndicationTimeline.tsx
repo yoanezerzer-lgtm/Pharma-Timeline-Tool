@@ -1,6 +1,7 @@
 import type { Indication } from '../../schema/index.js';
 import { formatDate, toTime } from '../../lib/dates.js';
 import { indicationLabel } from '../../lib/drugs.js';
+import { DATE_UNCLEAR } from '../../lib/copy.js';
 import './IndicationTimeline.css';
 
 const DAY = 86_400_000;
@@ -41,9 +42,9 @@ export function IndicationTimeline({
   const step = Math.ceil(years.length / 8);
 
   return (
-    <section className="ind-timeline" aria-label="Approved indications">
+    <section className="ind-timeline" aria-label="All approved uses">
       <h2>
-        Approved indications <span className="ind-timeline__count">{indications.length}</span>
+        All approved uses <span className="ind-timeline__count">{indications.length}</span>
       </h2>
       {dated.length > 0 && (
         <div className="ind-timeline__axis" aria-hidden="true">
@@ -82,7 +83,7 @@ export function IndicationTimeline({
                   )}
                 </span>
                 <span className="ind-timeline__date">
-                  {i.approvalDate ? formatDate(i.approvalDate) : 'Date not determined'}
+                  {i.approvalDate ? formatDate(i.approvalDate) : DATE_UNCLEAR}
                 </span>
               </a>
             </li>

@@ -184,6 +184,15 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   The cleaner text found two new pivotal links for the checker to confirm:
   Rinvoq NCT03653026 and Skyrizi NCT03398135 (ulcerative colitis).
 - (i) icons for section explanations, owner-only text removed (#110).
+- Page wording tidied on every page (owner's 7 Nov plan, step 1): one
+  wording for gaps ("Not yet matched", "Date unclear"), for approval kinds
+  (Approved, Widened, Wording changed, Converted to traditional approval)
+  and for trial roles ("Supportive"); shared words live in `src/lib/copy.ts`.
+  "Approved use" everywhere instead of a mix with "indication". A real
+  "Page not found" page for unknown addresses and missing drugs or
+  diseases (was: the home page). Home and Compare titles and descriptions
+  sharpened. Drugs with no area show under "Not yet sorted" (Pasatru,
+  Zycubo: the owner picks their areas).
 
 ## Blocker (7 Nov): the site is not publishing
 The repository is public again (7 Nov evening), but GitHub switched Pages
@@ -191,6 +200,9 @@ off while it was private: deploys still fail with "Ensure GitHub Pages has
 been enabled". Owner: Settings → Pages → Source: "GitHub Actions". Then
 re-run "Deploy to GitHub Pages" on main; its site check job confirms the
 live site. Then submit `sitemap.xml` in Google Search Console.
+
+## Owner's plan (7 Nov), one chat per step
+1. Done 7 Nov: clean up the page wording (above).
 
 ## Next steps (in order, one chat each)
 1. Unblock publishing (above, owner), then check the live Rinvoq page

@@ -5,8 +5,10 @@ import { diseaseIndex, drugIndex, useDrug } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
 import { trialsForIndication } from '../lib/drugs.js';
 import { naturalTerm } from '../lib/plainText.js';
+import { DATE_UNCLEAR } from '../lib/copy.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { drugMeta } from '../lib/pageMeta.js';
+import { NotFoundPage } from './NotFoundPage.js';
 import { diseaseHref, indicationHref, homeHref } from '../lib/router.js';
 import type { Drug, Provenance } from '../schema/index.js';
 import './IndicationPage.css';
@@ -17,14 +19,14 @@ const diseaseName = new Map(diseaseIndex.map((d) => [d.meshId, d.name]));
 
 export function DrugPage({ slug }: { slug: string }) {
   const state = useDrug(slug);
+  if (state.status === 'missing') return <NotFoundPage message={`No drug called “${slug}” on this site.`} />;
   if (state.status === 'ready') return <DrugView drug={state.drug} />;
   return (
     <main className="drug">
       <BackLink href={homeHref()} label="All drugs" />
       <p className="drug__missing">
         {state.status === 'loading' && 'Loading…'}
-        {state.status === 'missing' && `No drug record found for “${slug}”.`}
-        {state.status === 'error' && 'Couldn’t load this drug’s data — check your connection and reload.'}
+        {state.status === 'error' && 'Couldn’t load this page. Check your connection and reload.'}
       </p>
     </main>
   );
@@ -92,7 +94,7 @@ function DrugView({ drug }: { drug: Drug }) {
                 <a href={indicationHref(drug.slug, i.slug)} className="uses__item">
                   <span className="uses__name">{i.displayName ?? i.name}</span>
                   <span className="uses__meta">
-                    {i.approvalDate ? formatDate(i.approvalDate) : 'Date not determined'} · {trials}{' '}
+                    {i.approvalDate ? formatDate(i.approvalDate) : DATE_UNCLEAR} · {trials}{' '}
                     {trials === 1 ? 'trial' : 'trials'}
                   </span>
                 </a>
@@ -153,7 +155,7 @@ function DrugView({ drug }: { drug: Drug }) {
             </details>
           ))
         ) : (
-          <p className="about__gap">The label's clinical pharmacology sections couldn't be read from its text.</p>
+          <p className="about__gap">Not yet read from the label.</p>
         )}
       </section>
 

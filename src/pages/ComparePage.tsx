@@ -23,6 +23,7 @@ import { confirmationKey, useConfirmations, type Confirmation } from '../lib/ref
 import { indicationHref, homeHref, replaceQuery } from '../lib/router.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
+import { APPROVAL_KIND } from '../lib/copy.js';
 import './ComparePage.css';
 
 interface ProgramOption {
@@ -120,14 +121,14 @@ export function ComparePage() {
         <h1>Compare two approvals</h1>
         <div className="compare__actions">
           <button type="button" className="compare__button" onClick={exportCsv} disabled={rows.length === 0}>
-            Export CSV
+            Download CSV
           </button>
         </div>
       </div>
 
       <div className="compare__legend">
         <span><span className="swatch swatch--bar" aria-hidden="true" />Pivotal trial, start to primary completion</span>
-        <span><span className="swatch swatch--support" aria-hidden="true" />Supporting trial</span>
+        <span><span className="swatch swatch--support" aria-hidden="true" />Supportive trial</span>
         <span><span className="swatch swatch--readout" aria-hidden="true" />Results announced (select to read)</span>
         <span><span className="swatch swatch--approval" aria-hidden="true" />FDA approval</span>
       </div>
@@ -182,7 +183,7 @@ export function ComparePage() {
             {notFound.length > 0 && (
               <div className="readout readout--empty">
                 <p className="readout__headline">
-                  Not found yet
+                  Not yet found
                   <Info label="About results announcements">
                     We look for each company’s first press release reporting the trial’s main result. A release covering
                     several trials shows once.
@@ -235,12 +236,12 @@ function ProgramPicker({ index, current, onPick }: { index: number; current: str
     <div className="picker" onBlur={(e) => !e.currentTarget.contains(e.relatedTarget) && (setOpen(false), setQuery(null))}>
       <input
         role="combobox"
-        aria-label={`Program ${index + 1}: search a drug or indication`}
+        aria-label={`Approval ${index + 1}: search a drug or approved use`}
         aria-expanded={open}
         aria-controls={listId}
         aria-activedescendant={open && matches[active] ? `${listId}-${active}` : undefined}
         value={query ?? shown}
-        placeholder="Drug or indication"
+        placeholder="Drug or approved use"
         onFocus={(e) => {
           e.currentTarget.select();
           setOpen(true);
@@ -268,8 +269,8 @@ function ProgramPicker({ index, current, onPick }: { index: number; current: str
         }}
       />
       {open && (
-        <div className="picker__list" id={listId} role="listbox" aria-label="Programs">
-          {matches.length === 0 && <p className="picker__empty">No program matches. Try a drug or indication name.</p>}
+        <div className="picker__list" id={listId} role="listbox" aria-label="Approvals">
+          {matches.length === 0 && <p className="picker__empty">No match. Try a drug name or an approved use.</p>}
           {matches.map((o, k) => (
             <button
               type="button"
@@ -327,14 +328,14 @@ function ProgramPane({
   const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="pane" aria-label={program ? `${program.drug.brandName}, ${indicationLabel(program.indication)}` : `Program ${index + 1}`}>
+    <section className="pane" aria-label={program ? `${program.drug.brandName}, ${indicationLabel(program.indication)}` : `Approval ${index + 1}`}>
       <div className="pane__controls">
         <ProgramPicker index={index} current={current} onPick={onPick} />
       </div>
 
       {state.status === 'loading' && <p className="pane__status">Loading…</p>}
       {(state.status === 'missing' || state.status === 'error' || (state.status === 'ready' && !program)) && (
-        <p className="pane__status">This program couldn’t be loaded. Pick another above.</p>
+        <p className="pane__status">Couldn’t load this approval. Pick another above.</p>
       )}
 
       {program && (
@@ -350,8 +351,8 @@ function ProgramPane({
                   ? `${KIND_LABEL[program.chosen.kind]} ${formatDate(program.chosen.date)}`
                   : program.indication.approvalDate
                     ? `Approved ${formatDate(program.indication.approvalDate)}`
-                    : 'Approval date not established'}{' '}
-                · {pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supporting` : ''}
+                    : 'Approval date unclear'}{' '}
+                · {pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supportive` : ''}
               </p>
             </div>
             <div className="pane__metric">
@@ -382,7 +383,7 @@ function ProgramPane({
 
           {program.lanes.length === 0 ? (
             <p className="pane__status">
-              {program.chosen ? 'No trials matched to this approval yet.' : 'No trials recorded for this indication.'}
+              Not yet matched to a trial.
             </p>
           ) : (
             <div className="chart">
@@ -470,8 +471,8 @@ function ProgramPane({
                 </span>
               ))}
               <Info label="Why some trials aren't matched">
-                A trial is matched to an approval when the FDA’s approval letter names it, or when the indication has
-                had only one approval. The rest are matched once a check finds the trial in both the letter and the
+                A trial is matched to an approval when the FDA’s approval letter names it, or when the use has had
+                only one approval. The rest are matched once a check finds the trial in both the letter and the
                 label.
               </Info>
             </p>
@@ -482,12 +483,7 @@ function ProgramPane({
   );
 }
 
-const KIND_LABEL: Record<Approval['kind'], string> = {
-  new: 'New use approved',
-  expansion: 'Use widened',
-  revision: 'Use revised',
-  conversion: 'Converted to regular approval',
-};
+const KIND_LABEL: Record<Approval['kind'], string> = APPROVAL_KIND;
 
 /** The approval letter's own sentence, shortened until opened. */
 function ApprovalWording({ approval }: { approval: Approval }) {
@@ -538,7 +534,7 @@ function EvidenceTable({
         <h2 id="evidence">The pivotal evidence, side by side</h2>
         <Info label="About these results" align="left">
           Results as posted to ClinicalTrials.gov for each trial’s first primary outcome, every arm against the trial’s
-          own control. ✓ Verified opens the FDA label sentence that names the trial for this indication.
+          own control. ✓ Checked opens the FDA label sentence that names the trial for this indication.
         </Info>
         {endpointsDiffer(rows) && (
           <span className="compare__caution">Endpoints, timepoints or controls differ: not a head-to-head comparison</span>
@@ -605,7 +601,7 @@ function EvidenceTable({
                     {c ? (
                       <>
                         <button type="button" className="verified" aria-expanded={open === key} onClick={() => setOpen(open === key ? null : key)}>
-                          ✓ Verified
+                          ✓ Checked
                         </button>
                         {open === key && (
                           <div role="note" className="verified__note">

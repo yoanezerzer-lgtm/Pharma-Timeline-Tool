@@ -8,6 +8,7 @@ import { Drug } from './src/schema/index.js';
 import { checkStats, mergeAreas, mergeCompanies, summarize } from './src/lib/summary.js';
 import { summarizeDiseases } from './src/lib/diseases.js';
 import { pageHtml, robotsTxt, sitemapXml, sitePages } from './src/lib/sitePages.js';
+import { notFoundMeta } from './src/lib/pageMeta.js';
 
 const DRUGS_DIR = fileURLToPath(new URL('./data/drugs/', import.meta.url));
 const REFERENCE_DIR = fileURLToPath(new URL('./data/reference/', import.meta.url));
@@ -89,7 +90,7 @@ function staticPages(base: string): Plugin {
         mkdirSync(join(dir, page.path), { recursive: true });
         writeFileSync(join(dir, page.path, 'index.html'), pageHtml(template, page.meta, url(page.path), page.listed));
       }
-      writeFileSync(join(dir, '404.html'), pageHtml(template, pages[0].meta, null, false));
+      writeFileSync(join(dir, '404.html'), pageHtml(template, notFoundMeta(), null, false));
       const today = new Date().toISOString().slice(0, 10);
       writeFileSync(join(dir, 'sitemap.xml'), sitemapXml(pages.filter((p) => p.listed).map((p) => url(p.path)), today));
       writeFileSync(join(dir, 'robots.txt'), robotsTxt(url('sitemap.xml')));
