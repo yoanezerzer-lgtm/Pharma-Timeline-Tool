@@ -203,6 +203,11 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   (timeline and downloads) right under the title; "In plain words" follows,
   cut to its first paragraph with "Read more". The trials timeline has a
   **Today** line, and dates after it are lightly shaded as planned.
+- Ledger look applied: colours and fonts in `src/styles.css` (`--font-text`,
+  `--font-data`, `--radius`, `--row-stripe`); IBM Plex served with the site
+  (`@fontsource`, no outside font service). Light only; dark values sit
+  under `[data-theme='dark']` for a later switch. Drug pages show "Sources
+  last read"; the footer says sources are updated every week.
 - **Desktop first** (owner, 7 Nov): design for desktop web; phones must
   work (no sideways scroll) but come second.
 - Maintenance for any later chat: the workflows' GitHub actions warn
@@ -224,7 +229,7 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 4. **New drugs.** Start with the missing moderate-to-severe atopic
    dermatitis drugs, so that area is complete first (PRD §9), through the
    `Add new drugs` workflow, a few at a time.
-5. **Visual direction.** Owner picked **A, Ledger** (7 Nov; may revisit):
+5. Done (Ledger PR). **Visual direction.** Owner picked **A, Ledger** (7 Nov; may revisit):
    IBM Plex Sans, IBM Plex Mono for dates and numbers, deep teal accent,
    square corners, striped tables. Mock-up and colour values (light and
    dark): https://claude.ai/artifact/6p1ctoK8mBFTXsWQSDoWVm. A fresh chat

@@ -106,7 +106,7 @@
 
 .disease__export button {
   padding: 0.4rem 0.85rem;
-  border-radius: 999px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--bg-elevated);
   color: var(--text-1);
@@ -214,4 +214,10 @@
     padding-top: 2rem;
     margin-top: 0;
   }
+}
+
+.disease__export .disease__export-main {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-fg);
 }

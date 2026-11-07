@@ -21,6 +21,7 @@
   fill: var(--text-3);
   font-size: 11px;
   text-anchor: middle;
+  font-family: var(--font-data);
   font-variant-numeric: tabular-nums;
 }
 
@@ -184,7 +185,7 @@
   padding: 0.6rem 0.75rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   font-size: 12px;
   line-height: 1.45;
@@ -215,6 +216,7 @@
 .gantt__tooltip-facts dd {
   margin: 0;
   color: var(--text-1);
+  font-family: var(--font-data);
   font-variant-numeric: tabular-nums;
 }
 

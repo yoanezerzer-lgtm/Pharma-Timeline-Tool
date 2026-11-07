@@ -207,6 +207,7 @@
 }
 
 .drug__table .nums {
+  font-family: var(--font-data);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
   color: var(--text-2);

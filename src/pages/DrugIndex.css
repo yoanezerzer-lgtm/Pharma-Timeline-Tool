@@ -34,7 +34,7 @@
   height: 2.75rem;
   padding: 0 0.85rem;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius);
   background: var(--bg-elevated);
   color: var(--text-1);
   font: inherit;

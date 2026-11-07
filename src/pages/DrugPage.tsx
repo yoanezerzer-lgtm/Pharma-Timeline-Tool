@@ -173,6 +173,13 @@ function DrugView({ drug }: { drug: Drug }) {
               <dd>FDA Office of {listed.office}</dd>
             </div>
           )}
+          {/* When the weekly refresh last re-read this drug's sources. */}
+          {drug.lastIngestedAt && (
+            <div>
+              <dt>Sources last read</dt>
+              <dd>{formatDate({ value: drug.lastIngestedAt.slice(0, 10), precision: 'day' })}</dd>
+            </div>
+          )}
         </dl>
         <p className="drug__status" role="status">
           <CheckBadge stats={checked} />
