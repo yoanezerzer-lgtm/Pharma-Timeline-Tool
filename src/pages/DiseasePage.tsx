@@ -1,12 +1,11 @@
 import { Info } from '../components/Info/Info.js';
 import { useState } from 'react';
-import { BackLink } from '../components/BackLink/BackLink.js';
 import type { DiseaseSummary, UseStep } from '../lib/diseases.js';
 import { diseaseIndex } from '../lib/catalog.js';
 import { formatDate, toTime } from '../lib/dates.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { diseaseMeta, diseasesMeta } from '../lib/pageMeta.js';
-import { diseaseHref, diseasesHref, drugHref, indicationHref, homeHref } from '../lib/router.js';
+import { diseaseHref, drugHref, indicationHref } from '../lib/router.js';
 import '../components/IndicationTimeline/IndicationTimeline.css';
 import { APPROVAL_KIND, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
@@ -38,7 +37,6 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
 
   return (
     <main className="drug">
-      <BackLink href={diseasesHref()} label="All diseases" />
       <header className="disease__head">
         <h1>{disease.name}</h1>
         <p className="drug__mechanism">
@@ -68,7 +66,7 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
                   <span key={y} style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }}>
                     {y}
                   </span>
-                ) : null
+                ) : null,
               )}
             </div>
             <div />
@@ -79,7 +77,11 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
             const firstDate = u.steps.find((s) => s.date)?.date;
             return (
               <li key={`${u.drugSlug}-${u.indicationSlug}`}>
-                <a href={`#use-${u.drugSlug}-${u.indicationSlug}`} className="ind-timeline__row" title={`${u.brandName}: ${u.indication}`}>
+                <a
+                  href={`#use-${u.drugSlug}-${u.indicationSlug}`}
+                  className="ind-timeline__row"
+                  title={`${u.brandName}: ${u.indication}`}
+                >
                   <span className="ind-timeline__name disease__row-name">
                     <strong>{u.brandName}</strong> <span className="disease__use">{u.indication}</span>
                   </span>
@@ -94,7 +96,7 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
                           className={`ind-timeline__dot${s.kind === 'new' ? '' : ' disease__dot--later'}`}
                           style={{ left: `${pct(toTime(s.date))}%` }}
                         />
-                      ) : null
+                      ) : null,
                     )}
                   </span>
                   <span className="ind-timeline__date">
@@ -117,7 +119,11 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
         </h2>
         <ul className="uses__list">
           {disease.uses.map((u) => (
-            <li key={`${u.drugSlug}-${u.indicationSlug}`} id={`use-${u.drugSlug}-${u.indicationSlug}`} className="disease__approval">
+            <li
+              key={`${u.drugSlug}-${u.indicationSlug}`}
+              id={`use-${u.drugSlug}-${u.indicationSlug}`}
+              className="disease__approval"
+            >
               <p className="uses__name">
                 <a href={drugHref(u.drugSlug)}>
                   <strong>{u.brandName}</strong>
@@ -130,7 +136,12 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
                     <span className="disease__step-when">
                       {STEP_LABEL[s.kind]}{' '}
                       {s.sourceUrl ? (
-                        <a href={s.sourceUrl} target="_blank" rel="noopener noreferrer" title={s.submissions.join(', ')}>
+                        <a
+                          href={s.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={s.submissions.join(', ')}
+                        >
                           {s.date ? formatDate(s.date) : DATE_UNCLEAR.toLowerCase()}
                         </a>
                       ) : s.date ? (
@@ -171,39 +182,40 @@ export function DiseasesPage() {
   const areas = [...byArea.keys()].sort((a, b) => Number(a === 'Other') - Number(b === 'Other') || a.localeCompare(b));
   return (
     <main className="drug">
-      <BackLink href={homeHref()} label="All drugs" />
       <header className="disease__head">
         <h1>Diseases</h1>
         <p className="drug__mechanism">
           {diseaseIndex.length} diseases with FDA approvals on this site, by therapeutic area.
           <Info label="About this list">
-            Names and areas come from MeSH, the U.S. National Library of Medicine’s medical vocabulary. A disease can sit in
-            more than one area.
+            Names and areas come from MeSH, the U.S. National Library of Medicine’s medical vocabulary. A disease can
+            sit in more than one area.
           </Info>
         </p>
       </header>
-      {areas.map((area) => (
-        <section key={area} className="uses">
-          <h2>
-            {area} · {byArea.get(area)!.length}
-          </h2>
-          <ul className="uses__list">
-            {byArea.get(area)!.map((d) => {
-              const drugs = [...new Set(d.uses.map((u) => u.brandName))];
-              return (
-                <li key={d.meshId}>
-                  <a href={diseaseHref(d.meshId)} className="uses__item">
-                    <span className="uses__name">{d.name}</span>
-                    <span className="uses__meta">
-                      {d.uses.length} approved {d.uses.length === 1 ? 'use' : 'uses'} · {drugs.join(', ')}
-                    </span>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-      ))}
+      <div className="disease__areas">
+        {areas.map((area) => (
+          <section key={area} className="uses">
+            <h2>
+              {area} · {byArea.get(area)!.length}
+            </h2>
+            <ul className="uses__list">
+              {byArea.get(area)!.map((d) => {
+                const drugs = [...new Set(d.uses.map((u) => u.brandName))];
+                return (
+                  <li key={d.meshId}>
+                    <a href={diseaseHref(d.meshId)} className="uses__item">
+                      <span className="uses__name">{d.name}</span>
+                      <span className="uses__meta">
+                        {d.uses.length} approved {d.uses.length === 1 ? 'use' : 'uses'} · {drugs.join(', ')}
+                      </span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))}
+      </div>
     </main>
   );
 }
@@ -227,7 +239,7 @@ function PlainSummary({ summary }: { summary: NonNullable<DiseaseSummary['summar
           </h3>
         ) : (
           <p key={k}>{p}</p>
-        )
+        ),
       )}
       <p className="disease__plain-foot">
         {summary.paragraphs.length > opening && (
@@ -277,7 +289,9 @@ function ExportButtons({ disease }: { disease: DiseaseSummary }) {
 /** The first and the latest approval, so a reader sees the history at a glance. */
 function AtAGlance({ disease }: { disease: DiseaseSummary }) {
   const steps = disease.uses
-    .flatMap((u) => u.steps.filter((s) => s.date && s.kind === 'new').map((s) => ({ brand: u.brandName, date: s.date! })))
+    .flatMap((u) =>
+      u.steps.filter((s) => s.date && s.kind === 'new').map((s) => ({ brand: u.brandName, date: s.date! })),
+    )
     .sort((a, b) => a.date.value.localeCompare(b.date.value));
   if (steps.length === 0) return null;
   const first = steps[0];

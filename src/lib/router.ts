@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
  *
  * Old `#/drug/...` links still work: they are moved to the path on load.
  */
-type Route =
+export type Route =
   | { name: 'index' }
   | {
       name: 'indication';

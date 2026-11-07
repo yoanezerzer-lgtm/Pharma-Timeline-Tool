@@ -1,7 +1,7 @@
 .drug {
-  max-width: 1180px;
+  max-width: var(--page-width);
   margin: 0 auto;
-  padding: 2rem 1.5rem 5rem;
+  padding: 2rem var(--gutter) 5rem;
 }
 
 .drug__head {
@@ -261,4 +261,11 @@
 .drug__compare {
   margin: 0.35rem 0 0;
   font-size: 13px;
+}
+
+/* A page with a bare heading (Page not found) matches the others. */
+.drug > h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
 }

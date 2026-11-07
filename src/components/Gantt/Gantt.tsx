@@ -42,6 +42,12 @@ function barLabel(t: Trial): string {
   return trialShortName(t);
 }
 
+/** The label cut to fit the name column; the full name stays in the tooltip. */
+function fitLabel(label: string, columnWidth: number): string {
+  const max = Math.floor((columnWidth - 28) / 6.6);
+  return label.length > max ? `${label.slice(0, Math.max(1, max - 1))}…` : label;
+}
+
 export function Gantt({
   trials,
   milestones,
@@ -152,7 +158,7 @@ export function Gantt({
                       className="gantt__row-hit"
                     />
                     <text x={20} y={bar.y + ROW_H / 2 + 4} className="gantt__row-label">
-                      {barLabel(bar.trial)}
+                      {fitLabel(barLabel(bar.trial), layout.plotLeft)}
                     </text>
                     <rect
                       x={bar.x}

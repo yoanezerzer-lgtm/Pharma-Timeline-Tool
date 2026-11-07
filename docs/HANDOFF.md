@@ -188,6 +188,14 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   everywhere. A real "Page not found" page. Pasatru and Zycubo filed under
   Rare diseases by hand (owner, 7 Nov; `decisions` in
   `data/areas/areas.json`) until the orphan-status rule exists.
+- Design tidied on every page (step 2): one bar at the top of every page
+  (site name; Drugs, Diseases, Compare, with the current one underlined),
+  one page width and side margin (`--page-width`, `--gutter` in
+  `src/styles.css`). Drug pages list approved uses as one row each (use,
+  disease, date, trials). The diseases list runs in two columns on wide
+  screens. On phones the trials timeline gives the bars more room. "All
+  drugs" back buttons removed (the top bar replaces them); the approved-use
+  page keeps its link back to the drug.
 - Maintenance for any later chat: the workflows' GitHub actions warn
   "Node.js 20 is deprecated"; move them to their Node 24 versions.
 
@@ -199,7 +207,7 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 1. Done (#116). **Page copy.** Clean up the site's own wording on every page type
    (headings, (i) explanations, empty states, buttons). FDA and MeSH text
    stays word for word; plain-language labels for data are the owner's.
-2. **Design.** Tidy the look and layout of every page, desktop web first,
+2. Done (#117). **Design.** Tidy the look and layout of every page, desktop web first,
    then phone (owner, 7 Nov); check each page in a browser before and after.
 3. **Company sources and news.** Links only, never copied, only pages
    without a paywall: company sites and press releases, newswires, Fierce
