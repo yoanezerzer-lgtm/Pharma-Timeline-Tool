@@ -47,7 +47,11 @@ export async function fetchText(url: string, ctx: SourceContext, ua = BROWSER_UA
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       await throttle();
-      const res = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/json;q=0.9,*/*;q=0.8' } });
+      const res = await fetch(url, {
+        headers: { 'user-agent': ua, accept: 'text/html,application/json;q=0.9,*/*;q=0.8' },
+        // A server that never answers would stall the whole run.
+        signal: AbortSignal.timeout(20000),
+      });
       status = res.status;
       if (res.ok) body = await res.text();
       if (res.status !== 429 && res.status < 500) break;
