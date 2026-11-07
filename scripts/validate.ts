@@ -4,9 +4,10 @@
  * Runs in CI so malformed ingested data fails the build rather than shipping
  * to the site. Exits non-zero with a readable error on the first bad file.
  */
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { Drug } from '../src/schema/index.js';
+import { allowedSource, companiesOf, NewsFile } from '../src/lib/news.js';
 
 const DRUGS_DIR = join(process.cwd(), 'data', 'drugs');
 
@@ -44,6 +45,37 @@ function main(): void {
     process.exit(1);
   }
   console.log(`\nAll ${files.length} drug record(s) valid.`);
+  validateNews(new Set(files.map((f) => f.replace(/\.json$/, ''))));
+}
+
+/** News links: the right shape, for a drug we have, and only on sites with no paywall. */
+function validateNews(slugs: Set<string>): void {
+  const dir = join(process.cwd(), 'data', 'news');
+  if (!existsSync(dir)) return;
+  const problems: string[] = [];
+  const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
+  for (const file of files) {
+    const slug = file.replace(/\.json$/, '');
+    const result = NewsFile.safeParse(JSON.parse(readFileSync(join(dir, file), 'utf8')));
+    if (!result.success) {
+      problems.push(`${file}: ${result.error.issues.map((i) => `${i.path.join('.')} ${i.message}`).join('; ')}`);
+      continue;
+    }
+    if (!slugs.has(slug) || result.data.slug !== slug) {
+      problems.push(`${file}: no drug record "${slug}"`);
+      continue;
+    }
+    const drug = Drug.parse(JSON.parse(readFileSync(join(DRUGS_DIR, file), 'utf8')));
+    const companies = companiesOf(drug);
+    for (const l of result.data.links) {
+      if (!allowedSource(l.url, companies)) problems.push(`${file}: ${l.url} is not on an allowed site`);
+    }
+  }
+  if (problems.length > 0) {
+    for (const p of problems) console.error(`FAIL  news/${p}`);
+    process.exit(1);
+  }
+  console.log(`All ${files.length} news file(s) valid.`);
 }
 
 main();

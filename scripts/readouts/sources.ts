@@ -35,7 +35,7 @@ async function throttle(ms = 250): Promise<void> {
   last = Date.now();
 }
 
-async function fetchText(url: string, ctx: SourceContext, ua = BROWSER_UA): Promise<string | undefined> {
+export async function fetchText(url: string, ctx: SourceContext, ua = BROWSER_UA): Promise<string | undefined> {
   const key = createHash('sha1').update(url).digest('hex').slice(0, 16);
   const path = join(ctx.cacheDir, `${key}.json`);
   if (!ctx.refresh && existsSync(path)) {
@@ -97,7 +97,7 @@ export function extractPublishedDate(html: string): string | undefined {
   return undefined;
 }
 
-function titleOf(html: string): string {
+export function titleOf(html: string): string {
   const m = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(html);
   return m ? htmlToText(m[1]).slice(0, 200) : '';
 }
