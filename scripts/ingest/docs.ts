@@ -12,6 +12,47 @@ export interface FetchedDoc {
   text: string;
 }
 
+/** The parts of a pdfjs text item the join needs. */
+export interface TextPiece {
+  str: string;
+  /** [a, b, c, d, x, y]: x and y are where the piece starts on the page. */
+  transform: number[];
+  width: number;
+  height: number;
+  hasEOL?: boolean;
+}
+
+/**
+ * A gap narrower than this share of the font size is kerning inside a word,
+ * not a space between words. Word spaces in label PDFs are about a quarter
+ * of the font size.
+ */
+const WORD_GAP = 0.12;
+
+/**
+ * Joins a page's text pieces the way they sit on the page. PDFs often print
+ * one word as several pieces (a font or kerning change mid-word), so joining
+ * every piece with a space split words: "JA Ks", "fun ction" on Rinvoq's
+ * label. A space goes in only where the page shows one: a visible gap, a new
+ * line, or a space character in the text itself.
+ */
+export function joinTextItems(items: TextPiece[]): string {
+  let out = '';
+  let prev: TextPiece | undefined;
+  for (const item of items) {
+    if (prev && !/\s$/.test(out) && !/^\s/.test(item.str)) {
+      const size = Math.abs(item.transform[3]) || item.height || 1;
+      const sameLine = Math.abs(item.transform[5] - prev.transform[5]) < size * 0.5;
+      const gap = item.transform[4] - (prev.transform[4] + prev.width);
+      const touching = !prev.hasEOL && sameLine && gap < size * WORD_GAP && gap > -size;
+      if (!touching) out += ' ';
+    }
+    out += item.str;
+    if (item.str !== '' || item.hasEOL) prev = item;
+  }
+  return out.replace(/\s+/g, ' ');
+}
+
 /**
  * Extracts a PDF's text layer.
  *
@@ -29,10 +70,7 @@ async function extractPdfText(pdfPath: string): Promise<string> {
   for (let i = 1; i <= doc.numPages; i++) {
     const page = await doc.getPage(i);
     const content = await page.getTextContent();
-    const text = content.items
-      .map((item) => ('str' in item ? item.str : ''))
-      .join(' ')
-      .replace(/\s+/g, ' ');
+    const text = joinTextItems(content.items.flatMap((item) => ('str' in item ? [item] : [])));
     // Page markers let later stages report a page number alongside a match.
     pages.push(`\n<<<PAGE ${i}>>>\n${text}`);
   }
