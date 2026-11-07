@@ -251,8 +251,18 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 4. **New drugs.** Start with the missing moderate-to-severe atopic
    dermatitis drugs, so that area is complete first (PRD §9), through the
    `Add new drugs` workflow, a few at a time.
-5. **Visual direction.** The owner picks one of the directions in the
-   design brainstorm (artifact shared 7 Nov); then a chat applies it.
+5. **Visual direction.** Owner picked **A, Ledger** (7 Nov; may revisit):
+   IBM Plex Sans, IBM Plex Mono for dates and numbers, deep teal accent,
+   square corners, striped tables. Mock-up and colour values (light and
+   dark): https://claude.ai/artifact/6p1ctoK8mBFTXsWQSDoWVm. A fresh chat
+   applies it to `src/styles.css` and the page styles, desktop first.
+   **Light by default** (owner, 7 Nov): the site no longer follows the
+   device's dark setting; keep the dark values for a later switch.
+   The name "Drug Development Timelines" stays for now (owner, 7 Nov).
+   In the same chat (owner, 7 Nov): each drug page shows "Sources last
+   read: <date>" near "Sources and checks", from the record's
+   `lastIngestedAt` (set by the weekly refresh), and the footer says
+   "Sources are updated every week."
    Open owner question: show a public "last updated" date on the site?
 6. Later this week: submit `sitemap.xml` to Google Search Console (owner),
    then Cloudflare Pages and the owner's domain, then the paywall.
