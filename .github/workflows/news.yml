@@ -1,0 +1,103 @@
+name: Find news links
+
+# Looks for company press releases and free news stories about each drug
+# (newswires, Fierce Pharma and Fierce Biotech, the company's own site) and
+# records links to them in data/news/. No AI: the headline and date are read
+# from each page by code (scripts/news/cli.ts). Links only, never text.
+#
+# Weekly, after the data refresh. New links are additive and checked like a
+# pull request, then published straight away. The pages and feeds it read go
+# to the diag/news branch so any link can be traced to what was read.
+on:
+  schedule:
+    # Sundays 09:47 New York time.
+    - cron: '47 14 * * 0'
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Optional: space-separated slugs instead of all'
+        required: false
+        default: ''
+      publish:
+        description: 'Publish new links straight away'
+        type: boolean
+        required: false
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news
+  cancel-in-progress: true
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Find links
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          set -euo pipefail
+          # shellcheck disable=SC2086
+          npm run -s news -- $ONLY | tee news.log
+          { echo '## News links'; echo '```'; grep -E '^\S|^\s+\+' news.log | tail -200; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Keep what was read
+        if: always()
+        run: |
+          set -euo pipefail
+          [ -d data/raw ] || exit 0
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          tmp=$(mktemp -d)
+          mkdir -p "$tmp/raw"
+          find data/raw -path '*news*' -type d -prune -exec cp -r --parents {} "$tmp/raw" \;
+          cp news.log "$tmp/raw/" 2>/dev/null || true
+          git worktree add -q --detach "$tmp/wt"
+          cd "$tmp/wt"
+          git checkout -q --orphan diag/news
+          git rm -rq --cached . >/dev/null
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r "$tmp/raw/." .
+          git add -A -f .
+          git commit -q -m "News feeds and pages read on $(date -u +%F)"
+          git push -q --force origin HEAD:refs/heads/diag/news
+
+      - name: Check
+        id: check
+        run: |
+          set -euo pipefail
+          npm run typecheck
+          npm test
+          npm run validate
+          npm run build
+
+      - name: Publish
+        if: steps.check.outcome == 'success' && (github.event_name == 'schedule' || inputs.publish)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- data/news)" ]; then
+            echo "No new links." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/news
+          git commit -q -m "News links $(date -u +%F)"
+          git push origin HEAD:main
+          gh workflow run deploy.yml --ref main
+          echo "Published new links." | tee -a "$GITHUB_STEP_SUMMARY"

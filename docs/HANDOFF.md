@@ -69,6 +69,31 @@ a new session when a conversation gets long.
 - **Patient leaflet ("What it's for"):** from the newest label's Medication
   Guide or Patient Information. 37 of 52 labels have one.
 
+## Company news links (7 Nov)
+- Drug page section "Company news": links only, headline, date and
+  publisher, newest first, up to 20 per drug. Nothing from the article is
+  copied. Files: `data/news/<slug>.json`, written only by
+  `npm run news` (`scripts/news/`); rules in `src/lib/news.ts`.
+- Allowed sites only: PR Newswire, Business Wire, GlobeNewswire, Fierce
+  Pharma, Fierce Biotech (same free publisher as Fierce Pharma; my call),
+  and the company's own site (its web name is the company's first
+  distinctive word, e.g. abbvie.com, lilly.com, or the whole name run
+  together, novonordisk.com). `npm run validate` fails on any other site.
+- Where addresses come from: Bing News search per drug (each name alone,
+  and both names limited to the allowed sites), plus the Fierce front-page
+  feeds. GlobeNewswire's own feed refuses bots (403) and Business Wire
+  pages time out, so those come only rarely. A feed only suggests: each
+  page is opened, and kept only if the page gives its own date and
+  headline, and its headline or one-line summary names the brand or the
+  ingredient. What was read is on the `diag/news` branch.
+- Trial on 5 drugs (7 Nov): 11 links, all about the drug, none for
+  Keytruda yet. Borderline case: a Lilly release whose summary calls Lilly
+  "the maker of Foundayo" counts for Foundayo.
+- Known gaps: companies whose web name differs from their name (GSK as
+  "GlaxoSmithKline", Janssen at jnj.com) get no company-site links, only
+  newswires and Fierce. Feeds only show recent news, so older releases
+  appear only if a newswire search still lists them; the list grows weekly.
+
 ## Known gaps (shown as blanks, not guessed)
 - 59 of 90 approved uses have a disease. The others: recent trials not yet
   MeSH-tagged on ClinicalTrials.gov (Icotyde, Orzeyful), uses with no
@@ -94,6 +119,9 @@ a new session when a conversation gets long.
   hand after a pipeline change, with `only` to try a few drugs first.
 - **Site check** (`scripts/sitecheck.ts`, no AI): every page in a browser,
   on each pull request and after each deploy.
+- **News links** (`.github/workflows/news.yml`, Sundays 09:47 New York,
+  no AI): finds new company and free news pages per drug and publishes
+  them after the full checks. Run it by hand with `only` for a few drugs.
 - **Weekly status** (`.github/workflows/weekly-status.yml`, Mondays, no
   AI): comments on the "Weekly status" issue; GitHub emails the owner.
 
@@ -218,9 +246,8 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
    stays word for word; plain-language labels for data are the owner's.
 2. Done (#117, follow-up design-2). **Design.** Tidy the look and layout of every page, desktop web first,
    then phone (owner, 7 Nov); check each page in a browser before and after.
-3. **Company sources and news.** Links only, never copied, only pages
-   without a paywall: company sites and press releases, newswires, Fierce
-   Pharma (owner decision, 7 Nov). Shown per drug, newest first.
+3. Done 7 Nov: **Company news** on each drug page (see "Company news
+   links" below).
 4. **New drugs.** Start with the missing moderate-to-severe atopic
    dermatitis drugs, so that area is complete first (PRD §9), through the
    `Add new drugs` workflow, a few at a time.

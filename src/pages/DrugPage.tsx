@@ -1,6 +1,6 @@
 import { Info } from '../components/Info/Info.js';
 import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
-import { diseaseIndex, drugIndex, useDrug } from '../lib/catalog.js';
+import { diseaseIndex, drugIndex, useDrug, useNews } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
 import { trialsForIndication } from '../lib/drugs.js';
 import { naturalTerm } from '../lib/plainText.js';
@@ -39,6 +39,39 @@ function SourceLink({ provenance, label }: { provenance: Provenance; label: stri
       {label}
       {provenance.page ? `, page ${provenance.page}` : ''} ↗
     </a>
+  );
+}
+
+/** Links to the company's own announcements and free news coverage, newest first. Never their text. */
+function NewsSection({ slug }: { slug: string }) {
+  const links = useNews(slug);
+  if (!links) return null;
+  return (
+    <section className="news" aria-labelledby="news-head">
+      <h2 id="news-head">
+        Company news
+        <Info label="About this section">
+          Links to press releases on the company’s own site and on newswires, and to Fierce Pharma and Fierce Biotech
+          stories. Only free pages, newest first. Each link opens the original page; nothing is copied here.
+        </Info>
+      </h2>
+      {links.length > 0 ? (
+        <ul className="news__list">
+          {links.map((l) => (
+            <li key={l.url} className="news__item">
+              <a href={l.url} target="_blank" rel="noopener noreferrer" className="news__title">
+                {l.title} ↗
+              </a>
+              <span className="news__meta">
+                {formatDate({ value: l.date, precision: 'day' })} · {l.source}
+              </span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="about__gap">No news links found yet.</p>
+      )}
+    </section>
   );
 }
 
@@ -157,6 +190,8 @@ function DrugView({ drug }: { drug: Drug }) {
           <p className="about__gap">Not yet read from the label.</p>
         )}
       </section>
+
+      <NewsSection slug={drug.slug} />
 
       <section className="drug__sources" aria-labelledby="sources-head">
         <h2 id="sources-head">Sources and checks</h2>

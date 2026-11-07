@@ -57,6 +57,12 @@ export function AboutPage() {
             The plain-language summary on disease pages, word for word. It is used only when the page’s title is the
             disease itself.
           </dd>
+          <dt>Company news</dt>
+          <dd>
+            Links to press releases and news stories on free pages only: the company’s own site, PR Newswire, Business
+            Wire, GlobeNewswire, Fierce Pharma and Fierce Biotech. Each link is kept only when the page’s own headline
+            or summary names the drug. Nothing from these pages is copied here.
+          </dd>
         </dl>
       </section>
 
