@@ -21,6 +21,7 @@ export type Route =
   | { name: 'diseases' }
   | { name: 'disease'; meshId: string }
   | { name: 'compare' }
+  | { name: 'about' }
   | { name: 'not-found' }
   | { name: 'review' }
   | { name: 'review-drug'; slug: string }
@@ -46,6 +47,7 @@ export function parsePath(path: string): Route {
   if (section === 'diseases') return { name: 'diseases' };
   if (section === 'disease' && slug) return { name: 'disease', meshId: slug };
   if (section === 'compare') return { name: 'compare' };
+  if (section === 'about') return { name: 'about' };
   if (section === 'review') {
     return slug ? { name: 'review-drug', slug } : { name: 'review' };
   }
@@ -140,6 +142,11 @@ export function indicationHref(slug: string, indicationSlug: string): string {
 
 export function indicationTrialHref(slug: string, indicationSlug: string, trialId: string): string {
   return href(`drug/${slug}/indication/${indicationSlug}/trial/${trialId}/`);
+}
+
+/** Where the facts come from and how they are checked. */
+export function aboutHref(): string {
+  return href('about/');
 }
 
 export function reviewHref(): string {

@@ -38,6 +38,14 @@ export function notFoundMeta(): PageMeta {
   return { title: withSite('Page not found'), description: homeMeta().description };
 }
 
+export function aboutMeta(): PageMeta {
+  return {
+    title: withSite('About the data'),
+    description:
+      'Where every fact on this site comes from (FDA documents, ClinicalTrials.gov, MeSH, MedlinePlus, the NCI dictionary) and how each one is checked against its source.',
+  };
+}
+
 export function diseasesMeta(): PageMeta {
   return {
     title: withSite('Diseases'),

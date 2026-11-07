@@ -82,6 +82,8 @@ interface GanttLayout {
   milestones: MilestoneLayout[];
   regulatoryLaneY: number;
   yearTicks: { year: number; x: number }[];
+  /** Where today falls, so planned dates read apart from past ones; null when today is off the chart. */
+  todayX: number | null;
   /** Trials with no usable dates; listed outside the chart rather than dropped. */
   undated: Trial[];
   scale: (t: number) => number;
@@ -103,7 +105,9 @@ export function computeLayout(
   milestones: Milestone[],
   availableWidth: number,
   /** A supplement to draw as prominently as the original approval — the one that added the indication in view. */
-  majorSubmission?: string
+  majorSubmission?: string,
+  /** Today's date as a timestamp; passed in by tests. */
+  now: number = Date.now()
 ): GanttLayout {
   const dated = trials.filter((t) => trialSpan(t) !== null);
   const undated = trials.filter((t) => trialSpan(t) === null);
@@ -116,7 +120,6 @@ export function computeLayout(
   for (const m of milestones) times.push(toTime(m.date));
 
   // Fall back to a one-year window so an empty dataset still renders an axis.
-  const now = Date.now();
   let min = times.length ? Math.min(...times) : now;
   let max = times.length ? Math.max(...times) : now + 365 * 24 * 3600 * 1000;
 
@@ -253,6 +256,7 @@ export function computeLayout(
     milestones: msLayout,
     regulatoryLaneY,
     yearTicks,
+    todayX: now >= min && now <= max ? scale(now) : null,
     undated,
     scale,
   };

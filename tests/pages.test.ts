@@ -12,6 +12,7 @@ const drugs = readdirSync('data/drugs')
 describe('page addresses', () => {
   it('reads each kind of page from its path', () => {
     expect(parsePath('')).toEqual({ name: 'index' });
+    expect(parsePath('about/')).toEqual({ name: 'about' });
     expect(parsePath('drug/upadacitinib/')).toEqual({ name: 'drug', slug: 'upadacitinib' });
     expect(parsePath('drug/upadacitinib')).toEqual({ name: 'drug', slug: 'upadacitinib' });
     expect(parsePath('drug/x/indication/y/trial/NCT1/')).toEqual({ name: 'indication', slug: 'x', indicationSlug: 'y', trialId: 'NCT1' });
@@ -41,6 +42,7 @@ describe('page titles and descriptions', () => {
       expect(listed).toContain(`drug/${d.slug}/`);
       for (const i of d.indications) expect(listed).toContain(`drug/${d.slug}/indication/${i.slug}/`);
     }
+    expect(listed).toContain('about/');
     expect(listed).not.toContain('ingest/');
   });
 

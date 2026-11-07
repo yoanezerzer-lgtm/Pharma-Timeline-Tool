@@ -80,6 +80,11 @@ async function main(): Promise<void> {
     });
   }
 
+  await visit(page, 'about/', async (p) => {
+    const body = await text(p);
+    return /Where the facts come from/i.test(body) ? undefined : 'about page did not load';
+  });
+
   // An address that isn't a page says so, rather than showing the home page.
   await visit(page, 'no-such-page/', async (p) =>
     /Page not found/.test(await text(p)) ? undefined : 'unknown address did not show "Page not found"'
@@ -94,7 +99,7 @@ async function main(): Promise<void> {
   }
 
   await browser.close();
-  const pages = 4 + drugs.length + drugs.filter((d) => d.indications.length > 0).length + diseases.size;
+  const pages = 5 + drugs.length + drugs.filter((d) => d.indications.length > 0).length + diseases.size;
   if (problems.length > 0) {
     console.error(`Site check: ${problems.length} problem(s) across ${pages} pages at ${base}`);
     for (const p of problems) console.error(`  - ${p}`);

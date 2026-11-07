@@ -117,4 +117,29 @@ describe('computeLayout', () => {
     expect(layout.yearTicks.length).toBeGreaterThan(0);
     expect(layout.height).toBeGreaterThan(0);
   });
+
+  it('draws a Today line between past and planned dates, and none when today is off the chart', () => {
+    const today = Date.UTC(2026, 10, 7);
+    const ongoing = computeLayout(
+      [trial({ startDate: { value: '2022-01-01', precision: 'month' }, completionDate: { value: '2031-06-01', precision: 'month' } })],
+      [],
+      1000,
+      undefined,
+      today
+    );
+    expect(ongoing.todayX).toBeCloseTo(ongoing.scale(today));
+    expect(ongoing.todayX!).toBeGreaterThan(ongoing.plotLeft);
+    expect(ongoing.todayX!).toBeLessThan(ongoing.plotRight);
+    expect(ongoing.todayX!).toBeGreaterThan(ongoing.scale(Date.UTC(2026, 0, 1)));
+    expect(ongoing.todayX!).toBeLessThan(ongoing.scale(Date.UTC(2027, 0, 1)));
+
+    const finished = computeLayout(
+      [trial({ startDate: { value: '2012-01-01', precision: 'month' }, completionDate: { value: '2015-06-01', precision: 'month' } })],
+      [],
+      1000,
+      undefined,
+      today
+    );
+    expect(finished.todayX).toBeNull();
+  });
 });
