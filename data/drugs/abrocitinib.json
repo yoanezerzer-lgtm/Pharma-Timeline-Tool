@@ -1,0 +1,4062 @@
+{
+  "slug": "abrocitinib",
+  "brandName": "Cibinqo",
+  "inn": "abrocitinib",
+  "modality": "Drug (NDA)",
+  "sponsor": "PFIZER",
+  "mechanism": "Janus Kinase Inhibitor",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Janus Kinase Inhibitor",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA213871%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "patientSummary": {
+      "paragraphs": [
+        "CIBINQO is a prescription medicine that is a Janus Kinase (JAK) inhibitor. CIBINQO is used to treat adults and children 12 years of age and older with moderate-to-severe atopic dermatitis (eczema) that did not respond to other 3 treatment and is not well controlled with prescription therapies, including biologic medicines or when these medicines cannot be tolerated."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s005lbl.pdf",
+        "sourceLabel": "Label (SUPPL-5), patient information: \"What is Cibinqo?\"",
+        "page": 29,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "CIBINQO is a Janus kinase (JAK) inhibitor. Abrocitinib reversibly inhibits JAK1 by blocking the adenosine triphosphate (ATP) binding site. In a cell-free isolated enzyme assay, abrocitinib was selective for JAK1 over JAK2 (28-fold), JAK3 (>340-fold), and tyrosine kinase (TYK) 2 (43-fold), as well as the broader kinome. The relevance of inhibition of specific JAK enzymes to therapeutic effectiveness is not currently known. Both the parent compound and the active metabolites inhibit JAK1 activity in vitro with similar levels of selectivity.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s005lbl.pdf",
+          "sourceLabel": "Label (SUPPL-5), section 12.1",
+          "page": 17,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Treatment with CIBINQO was associated with dose-dependent reduction in serum markers of inflammation, including high sensitivity C-reactive protein (hsCRP), interleukin-31 (IL-31) and thymus and activation regulated chemokine (TARC). These changes returned to near baseline within 4 weeks of drug discontinuation. Effect on Platelet Count Treatment with CIBINQO was also associated with a transient, dose-dependent decrease in platelet count with the nadir occurring at a median of 24 days after continuous administration of abrocitinib 200 mg once daily. The percent change from baseline of the nadir increases with decreasing baseline platelet counts (-41.2%, -33.4%, and -26.5% for baseline platelet counts of 170, 220, and 270 × 10 3/mm 3, respectively). Partial recovery of platelet count (~40% recovery in platelet count by 12 weeks) occurred without discontinuation of the treatment. Cardiac Electrophysiology At a dose 3 times the maximum approved recommended dose, abrocitinib does not prolong the QT interval to any clinically relevant extent. 17",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s005lbl.pdf",
+          "sourceLabel": "Label (SUPPL-5), section 12.2",
+          "page": 17,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Abrocitinib plasma Cmax and AUC increased dose proportionally up to 200 mg. Steady-state plasma concentrations of abrocitinib are achieved within 48 hours after once daily administration. Absorption Abrocitinib is absorbed with over 91% extent of oral absorption and absolute oral bioavailability of approximately 60%. The peak plasma concentrations of abrocitinib are reached within 1 hour. Effect of Food Coadministration of CIBINQO with a high-fat, high-calorie meal (total 916 calories, with approximate distribution of 55% fat, 29% carbohydrates, and 16% protein) had no clinically relevant effect on abrocitinib exposures (AUC and Cmax of abrocitinib increased by approximately 26% and 29%, respectively, and Tmax was prolonged by 2 hours) [see Dosage and Administration (2.7)]. Distribution After intravenous administration, the volume of distribution of abrocitinib is approximately 100 L. Approximately 64%, 37% and 29% of circulating abrocitinib and its active metabolites M1 and M2, respectively, are bound to plasma proteins. Abrocitinib and its active metabolites M1 and M2 bind predominantly to albumin and distribute equally between red blood cells and plasma. Elimination Abrocitinib is eliminated primarily by metabolic clearance mechanisms. The mean elimination half-lives of abrocitinib and its two active metabolites, M1 and M2, range 3 to 5 hours. Metabolism The metabolism of abrocitinib is mediated by multiple CYP enzymes, CYP2C19 (~53%), CYP2C9 (~30%), CYP3A4 (~11%) and CYP2B6 (~6%). In a human radiolabeled study, abrocitinib was the most prevalent circulating species, with two active polar mono-hydroxylated metabolites identified as M1 (3-hydroxypropyl), and M2 (2-hydroxypropyl). Metabolite M1 is less active than abrocitinib while metabolite M2 is as active as the parent. The pharmacologic activity of abrocitinib is attributable to the unbound exposure of parent molecule (~60%) as well as M1 (~10%) and M2 (~30%) in systemic circulation. The sum of unbound exposures of abrocitinib, M1 and M2, each expressed in molar units and adjusted for relative potencies, is referred to as the combined exposure of abrocitinib and its two active metabolites, M1 and M2. Excretion After a single radiolabeled abrocitinib dose, less than 1% of the dose was excreted in urine as unchanged drug. The metabolites of abrocitinib, M1 and M2 are excreted predominantly in urine, and are substrates of OAT3 transporter. Specific Populations Body weight, sex, race, and age did not have a clinically meaningful effect on CIBINQO exposure. 18 Patients with Renal Impairment In a renal impairment study, subjects with severe (eGFR <30 mL/min as estimated by MDRD equation) and moderate (eGFR 30-59 mL/min, MDRD) renal impairment had approximately 191% and 110% increase in the combined exposure (AUCinf,u) of abrocitinib and its active metabolites, M1 and M2, respectively, compared to subjects with normal renal function (eGFR ≥90 mL/min, MDRD). Based on these results, a clinically significant increase in the combined exposure of abrocitinib and its active metabolites, M1 and M2, is not expected in patients with mild renal impairment (eGFR 60 -89 mL/min, MDRD) [see Dosage and Administration (2.3) and Use in Specific Population (8.6)]. CIBINQO has not been studied in subjects on renal replacement therapy [see Dosage and Administration (2.3) and Use in Specific Population (8.6)]. In Phase 3 clinical trials, CIBINQO was not evaluated in subjects with atopic dermatitis with baseline creatinine clearance values less than 40 mL/min. Patients with Hepatic Impairment Subjects with mild hepatic impairment (Child Pugh A) had approximately 4% decrease in the combined exposure (AUCinf,u) of abrocitinib and its two active metabolites, M1 and M2, compared to subjects with normal hepatic function. Subjects with moderate hepatic impairment (Child Pugh B) had approximately 15% increase in the combined exposure (AUCinf,u) of abrocitinib and its two active metabolites, M1 and M2, compared to subjects with normal hepatic function. These changes are not clinically significant. In clinical trials, CIBINQO has not been studied in subjects with severe (Child Pugh C) hepatic impairment, or in subjects screened positive for active hepatitis B or hepatitis C [see Use in Specific Populations (8.7) and Warnings and Precautions (5.1)]. Drug Interaction Studies Clinical Studies The effect of coadministered drugs on the pharmacokinetics of abrocitinib is presented in Table 6. Table 6. Change in Pharmacokinetics of the Combined Exposure of Abrocitinib and its Two Active Metabolites (M1 and M2) in the Presence of Coadministered Drugs Coadministered Drugs Regimen of Dose of Ratioa (90% Confidence Interval) Coadministered Drug Abrocitinib Cmax,u AUCinf,u Strong CYP2C19 and moderate CYP3A inhibitor: Fluvoxamine [see Drug Interactions (7.1)] 50 mg once daily x 9 days 100 mg 1.33 (1.00-1.78) 1.91 (1.74-2.10) Strong CYP2C19, moderate CYP2C9 and CYP3A inhibitor: Fluconazole [see Drug Interactions (7.1)] 400 mg on Day 1 and 200 mg on Days 2-7 100 mg 1.23 (1.08-1.42) 2.55 b (2.42-2.69) Strong CYP Enzymes Inducers: Rifampin [see Drug Interactions (7.1)] 600 mg once daily x 8 days 200 mg 0.69 (0.50-0.94) 0.44 (0.41-0.47) OAT3 inhibitor: Probenecid c 1,000 mg twice daily x 3 days 200 mg 1.30 (1.04-1.63) 1.66 (1.52-1.80) a Ratios for Cmax,u and AUCinf,u compare coadministration of the drug with abrocitinib versus administration of abrocitinib alone. b When coadministered with Fluconazole, the systemic exposure of abrocitinib was approximately 4.8-fold higher compared to when abrocitinib is administered alone. c Drug interaction with OAT3 inhibitor is not clinically significant. 19 The effect of abrocitinib on the pharmacokinetics of coadministered drugs is presented in Table 7. Table 7. Change in Pharmacokinetics of Coadministered Drugs in the Presence of Abrocitinib Coadministered Drugs or In Vivo Dose Regimen of Ratioa (90% Confidence Interval) Markers of CYP Activity Abrocitinib Cmax AUCinf Oral contraceptive: Ethinyl estradiol (EE) and levonorgestrel (LN) 200 mg once daily x 9 days EE: 1.07 (0.99, 1.15) LN: 0.86 (0.75, 0.97) EE: 1.19 (1.12, 1.26) LN b: 0.98 (0.87, 1.10) Sensitive CYP3A Substrate: Midazolam 200 mg once daily x 7 days 0.93 (0.84, 1.04) 0.92 (0.86, 0.99) Sensitive P-gp substrate: Dabigatran 200 mg single dose 1.40 (0.92, 2.13) 1.53 (1.09, 2.15) Sensitive BCRP and OAT3 substrate: Rosuvastatin 200 mg once daily x 3 days 0.99 (0.86, 1.14) 1.02 (0.93, 1.12) Sensitive MATE1/2K substrate: Metformin 200 mg once daily x 2 days 0.88 (0.81, 0.96) 0.93 (0.85, 1.03) a Ratios for Cmax and AUCinf compare coadministration of abrocitinib with the drug versus administration of the drug alone. b AUClast of levonorgestrel was reported in lieu of AUCinf because the terminal phase of levonorgestrel was not well characterized. Coadministration of dabigatran etexilate (a P-gp substrate), with a single dose of CIBINQO 200 mg increased dabigatran AUCinf and Cmax by approximately 53% and 40%, respectively, compared with administration alone. These increases in dabigatran exposure are not considered clinically significant change. However, appropriate dose titration of P-gp substrate where small concentration changes may lead to serious or life-threatening toxicities (e.g., digoxin) when coadministered with the CIBINQO would be needed. In Vitro Studies Cytochrome P450 (CYP) Enzymes: Abrocitinib and its metabolites M1 and M2 are not inhibitors or inducers of CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, or CYP3A4. Uridine diphosphate (UDP)-glucuronosyl transferase (UGT) Enzymes: Abrocitinib and its metabolites M1 and M2 are not inhibitors or inducers of UGT1A1, UGT1A4, UGT1A6, UGT1A9, or UGT2B7. Transporter Systems: Abrocitinib is an inhibitor of organic cation transporter (OCT)1 but is not an inhibitor of organic anion transporting polypeptide (OATP)1B1/1B3, bile salt export pump (BSEP), OAT1 or OCT2.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s005lbl.pdf",
+          "sourceLabel": "Label (SUPPL-5), section 12.3",
+          "page": 18,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable",
+      "slug": "adults-and-pediatric-patients-12-years-of-age-and-older",
+      "approvalDate": {
+        "value": "2022-01-14",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/213871Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2022-01-14",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Cibinqo (abrocitinib) tablets for the treatment of adults with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/213871Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Cibinqo (abrocitinib) tablets for the treatment of adults with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003876",
+          "term": "Dermatitis, Atopic",
+          "areas": [
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "inherited": true,
+          "definition": {
+            "text": "A chronic inflammatory genetically determined disease of the skin marked by increased ability to form reagin (IgE), with increased susceptibility to allergic rhinitis and asthma, and hereditary disposition to a lowered threshold for pruritus. It is manifested by lichenification, excoriation, and crusting, mainly on the flexural surfaces of the elbow and knee. In infants it is known as infantile eczema.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Atopic dermatitis",
+            "paragraphs": [
+              "Atopic dermatitis (also known as atopic eczema) is a disorder characterized by inflammation of the skin (dermatitis). The condition usually begins in early infancy, and it often disappears before adolescence. However, in some affected individuals the condition continues into adulthood; in others, it does not begin until adulthood. Hallmarks of atopic dermatitis include dry, itchy skin and red rashes that come and go. The rashes can occur on any part of the body, although the pattern tends to be different at different ages. In affected infants, the rashes commonly occur on the face, scalp, hands, and feet. In children, the rashes are usually found in the bend of the elbows and knees and on the front of the neck. In adolescents and adults, the rashes typically occur on the wrists, ankles, and eyelids in addition to the bend of the elbows and knees. Scratching the itchy skin can lead to oozing and crusting of the rashes and thickening and hardening (lichenification) of the skin. The itchiness can be so severe as to disturb sleep and impair a person's quality of life.",
+              "The word \"atopic\" indicates an association with allergies. While atopic dermatitis is not always due to an allergic reaction, it is commonly associated with other allergic disorders: up to 60 percent of people with atopic dermatitis develop asthma or hay fever (allergic rhinitis) later in life, and up to 30 percent have food allergies. Atopic dermatitis is often the beginning of a series of allergic disorders, referred to as the \"atopic march.\" Development of these disorders typically follows a pattern, beginning with atopic dermatitis, followed by food allergies, then hay fever, and finally asthma. However, not all individuals with atopic dermatitis will progress through the atopic march, and not all individuals with one allergic disease will develop others.",
+              "Individuals with atopic dermatitis have an increased risk of developing other conditions related to inflammation, such as inflammatory bowel disease, rheumatoid arthritis, and hair loss caused by a malfunctioning immune reaction (alopecia areata). They also have an increased risk of having a behavioral or psychiatric disorder, such as attention-deficit/hyperactivity disorder (ADHD) or depression.",
+              "In a particular subset of individuals with atopic dermatitis, the immune system is unable to protect the body from foreign invaders such as bacteria and fungi (which is known as immunodeficiency). These individuals are prone to recurrent infections. Most also have other allergic disorders, such as asthma, hay fever, and food allergies.",
+              "Atopic dermatitis can also be a feature of separate disorders that have a number of signs and symptoms, which can include skin abnormalities and immunodeficiency. Some such disorders are Netherton syndrome; immune dysregulation, polyendocrinopathy, enteropathy, X-linked (IPEX) syndrome; and severe dermatitis, multiple allergies, metabolic wasting (SAM) syndrome."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/genetics/condition/atopic-dermatitis/",
+              "sourceLabel": "MedlinePlus Genetics, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT03349060",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03349060, NCT03575871, NCT03720470, NCT03796676)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "213871",
+      "applicationType": "NDA",
+      "sponsor": "PFIZER",
+      "originalApprovalDate": {
+        "value": "2022-01-14",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Immunology and Inflammation",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/213871Orig1s005ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-5), signature",
+          "quote": "Division of Dermatology and Dentistry Office of Immunology and Inflammation Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "jade-mono-1",
+      "nctId": "NCT03349060",
+      "protocolNumber": "B7451012",
+      "acronym": "JADE Mono-1",
+      "labelName": "Trial-AD-1",
+      "title": "A PHASE 3 RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED, PARALLEL GROUP, MULTI-CENTER STUDY TO EVALUATE THE EFFICACY AND SAFETY OF PF-04965842 MONOTHERAPY IN SUBJECTS AGED 12 YEARS AND OLDER, WITH MODERATE TO SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "Study to Evaluate Efficacy and Safety of PF-04965842 in Subjects Aged 12 Years And Older With Moderate to Severe Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable)",
+            "quote": "Trial identifier appears within the Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/213871Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Cibinqo (abrocitinib) tablets for the treatment of adults with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dermatitis, Atopic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2017-12-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-03-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-03-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 387,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "PF-04965842 100 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "PF-04965842 200 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) or Almost Clear (1) and Greater Than or Equal to 2 Points Improvement From Baseline at Week 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response of >=75 Percent (%) Improvement From Baseline at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With at Least 4 Points Improvement From Baseline in the Numerical Rating Scale (NRS) for Severity of Pruritus at Week 2, 4, 8 and 12: Full Analysis Set (FAS)",
+        "Percentage of Participants With at Least 4 Points Improvement From Baseline in the Numerical Rating Scale for Severity of Pruritus at Week 2, 4 and 12: Per Protocol Analysis Set (PPAS)",
+        "Change From Baseline in Pruritus and Symptoms Assessment for Atopic Dermatitis (PSAAD) Total Score at Week 2, 4, 8 and 12: Full Analysis Set",
+        "Change From Baseline in Pruritus and Symptoms Assessment for Atopic Dermatitis Total Score at Week 12: Per Protocol Analysis Set",
+        "Time to Achieve >=4 Points Improvement From Baseline in Numerical Rating Scale for Severity of Pruritus",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of >=75% Improvement From Baseline at Week 2, 4 and 8",
+        "Percentage of Participants Achieving Investigator's Global Assessment Response of Clear (0) or Almost Clear (1) and >=2 Points Improvement From Baseline at Week 2, 4 and 8",
+        "Percentage of Participants Achieving Investigator's Global Assessment Response of Clear (0) at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of >=50% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of >=90% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of 100% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Change From Baseline in Eczema Area and Severity Index Total Score at Week 2, 4, 8 and 12",
+        "Change From Baseline in Percentage Body Surface Area at Week 2, 4, 8 and 12",
+        "Percentage of Participants With Percentage Body Surface Area Less Than (<) 5% at Week 2, 4, 8 and 12",
+        "Percentage of Participants With Scoring Atopic Dermatitis (SCORAD) Response of >=50% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Percentage of Participants With Scoring Atopic Dermatitis Response of >=75% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Change From Baseline in Scoring Atopic Dermatitis: Visual Analogue Scale of Sleep Loss at Week 2, 4, 8 and 12",
+        "Change From Baseline in Scoring Atopic Dermatitis: Total Score at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving >=1 Point Improvement From Baseline in Pruritus and Symptoms Assessment for Atopic Dermatitis at Week 2, 4, 8 and 12",
+        "Change From Baseline in Dermatology Life Quality Index (DLQI) at Week 2, 4, 8 and 12",
+        "Change From Baseline in Children's Dermatology Life Quality Index (CDLQI) at Week 2, 4, 8 and 12",
+        "Percentage of Participants With Baseline Dermatology Life Quality Index Score >=2 and Achieving <2 DLQI Score at Week 2, 4, 8 and 12",
+        "Percentage of Participants With Baseline Children's Dermatology Life Quality Index Score >=2 and Achieving <2 CDLQI Score at Week 2, 4, 8 and 12",
+        "Percentage of Participants With Baseline Dermatology Life Quality Index Score >=4 and Achieving >=4 Point Improvement From Baseline in DLQI Score at Week 2, 4, 8 and 12",
+        "Percentage of Participants With Baseline Children's Dermatology Life Quality Index Score >=2.5 and Achieving >=2.5 Point Improvement From Baseline in CDLQI Score at Week 2, 4, 8 and 12",
+        "Change From Baseline in Hospital Anxiety and Depression Scale (HADS): Depression Subscale at Week 2, 4, 8 and 12",
+        "Change From Baseline in Hospital Anxiety and Depression Scale: Anxiety Subscale at Week 2, 4, 8 and 12",
+        "Percentage of Participants With >=8 Points at Baseline and Achieving Score of <8 Points in Hospital Anxiety and Depression Scale: Anxiety Subscale at Week 2, 4, 8 and 12",
+        "Percentage of Participants With >=8 Points at Baseline and Achieving Score of <8 Points in Hospital Anxiety and Depression Scale: Depression Subscale at Week 2, 4, 8 and 12",
+        "Percentage of Participants With >=11 Points at Baseline and Achieving Score of <11 Points in Hospital Anxiety and Depression Scale: Anxiety Subscale at Week 2, 4, 8 and 12",
+        "Percentage of Participants With >=11 Points at Baseline and Achieving Score of <11 Points in Hospital Anxiety and Depression Scale: Depression Subscale at Week 2, 4, 8 and 12",
+        "Change From Baseline in Patient-Oriented Eczema Measure (POEM) at Week 2, 4, 8 and 12",
+        "Change From Baseline in Patient Global Assessment (PtGA) at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving 'Clear' or 'Almost Clear' and >=2 Points Improvement From Baseline in Patient Global Assessment (PtGA) at Week 2, 4, 8 and 12",
+        "Change From Baseline in EuroQol Quality of Life 5-Dimension 5-Level Scale (EQ-5D-5L): Index Value at Week 2, 4, 8 and 12",
+        "Change From Baseline in EuroQol Quality of Life 5-Dimension 5-Level Scale (EQ-5D-5L)- Visual Analogue Scale Score at Week 2, 4, 8 and 12",
+        "Change From Baseline in EuroQol Quality of Life 5-Dimension Youth Scale (EQ-5D-Y): Index Value at Week 2, 4, 8 and 12",
+        "Change From Baseline in EuroQol Quality of Life 5-Dimension Youth Scale (EQ-5D-Y): Visual Analogue Scale Score at Week 2, 4, 8 and 12",
+        "Change From Baseline in Functional Assessment of Chronic Illness Therapy Fatigue Scale (FACIT-F) at Week 12",
+        "Change From Baseline in Pediatric Functional Assessment of Chronic Illness Therapy Fatigue Scale (Peds-FACIT-F) at Week 12",
+        "Change From Baseline in Short Form-36v2 (SF-36v2) Acute Summary Score at Week 12: Physical Component Summary",
+        "Change From Baseline in Short Form-36v2 Acute Summary Score at Week 12: Mental Component Summary",
+        "Plasma Concentration Versus Time Summary of PF-04965842"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) or Almost Clear (1) and Greater Than or Equal to 2 Points Improvement From Baseline at Week 12",
+          "timeFrame": "Baseline, Week 12",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "PF-04965842 100 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "PF-04965842 200 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "23.7"
+            },
+            {
+              "groupId": "OG001",
+              "value": "43.8"
+            },
+            {
+              "groupId": "OG002",
+              "value": "7.9"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "0.0037",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "15.8",
+              "ciPct": "95",
+              "ciLower": "6.8",
+              "ciUpper": "24.8"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "36.0",
+              "ciPct": "95",
+              "ciLower": "26.2",
+              "ciUpper": "45.7"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response of >=75 Percent (%) Improvement From Baseline at Week 12",
+          "timeFrame": "Baseline, Week 12",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "PF-04965842 100 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "PF-04965842 200 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "39.7"
+            },
+            {
+              "groupId": "OG001",
+              "value": "62.7"
+            },
+            {
+              "groupId": "OG002",
+              "value": "11.8"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "27.9",
+              "ciPct": "95",
+              "ciLower": "17.4",
+              "ciUpper": "38.3"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "51.0",
+              "ciPct": "95",
+              "ciLower": "40.5",
+              "ciUpper": "61.5"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03349060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03349060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03349060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03349060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03349060",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03349060?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/213871Orig1s005ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 21,
+          "quote": "roids was evaluated in 4 randomized, double-blind, placebo-controlled trials [Trial-AD-1 (NCT03349060), Trial-AD-2 (NCT03575871), Trial-AD-3 (NCT03720470), and Trial-AD-4 (NCT03796676)] in 19",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "Trial-AD-1 (NCT03349060)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "jade-extend",
+      "nctId": "NCT03422822",
+      "protocolNumber": "B7451015",
+      "acronym": "JADE EXTEND",
+      "title": "A PHASE 3 MULTI-CENTER, LONG-TERM EXTENSION STUDY INVESTIGATING THE EFFICACY AND SAFETY OF ABROCITINIB, WITH OR WITHOUT TOPICAL MEDICATIONS, ADMINISTERED TO SUBJECTS AGED 12 YEARS AND OLDER WITH MODERATE TO SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "Study to Evaluate Efficacy and Safety of PF-04965842 With or Without Topical Medications in Subjects Aged 12 Years and Older With Moderate to Severe Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dermatitis, Atopic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2018-03-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-12-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-12-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 3166,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Abrocitinib 100 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Abrocitinib 100 mg QD PO"
+        },
+        {
+          "label": "Abrocitinib 200 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Abrocitinib 200 mg QD PO"
+        }
+      ],
+      "primaryEndpoints": [
+        "Treatment emergent adverse events",
+        "Serious adverse events and adverse events leading to discontinuation",
+        "Change from baseline in clinical laboratory values",
+        "Change from baseline in electrocardiogram (ECG) measurements",
+        "Change from baseline in vital signs"
+      ],
+      "secondaryEndpoints": [
+        "Investigator's Global Assessment (IGA)",
+        "Eczema Area and Severity Index (EASI)",
+        "Pruritus Numerical Rating Scale (NRS)",
+        "Patient Global Assessment (PtGA)",
+        "Body Surface Area (BSA) affected",
+        "Dermatology Life Quality Index (DLQI) or Children's DLQI (CDLQI)",
+        "Patient Oriented Eczema Measure (POEM)",
+        "Hospital Anxiety and Depression Scale (HADS)",
+        "EuroQol Quality of Life 5 Dimension 5 Level Scale (EQ-5D-5L) or EuroQol Quality of Life 5 Dimension Youth Scale (EQ-5D-Y)",
+        "Steroid-Free Days",
+        "Serum Hs-CRP Levels",
+        "Change in height standard deviation score (SDS)",
+        "Proportion of abnormal findings in knee MRI in adolescent subjects exposed to abrocitinib 100mg and 200mg QD"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03422822",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03422822",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03422822",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03422822",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03422822",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451014",
+      "nctId": "NCT03627767",
+      "protocolNumber": "B7451014",
+      "title": "A PHASE 3 RANDOMIZED WITHDRAWAL, DOUBLE-BLIND, PLACEBO-CONTROLLED, MULTI-CENTER STUDY INVESTIGATING THE EFFICACY AND SAFETY OF PF-04965842 IN SUBJECTS AGED 12 YEARS AND OVER, WITH MODERATE TO SEVERE ATOPIC DERMATITIS WITH THE OPTION OF RESCUE TREATMENT IN FLARING SUBJECTS",
+      "briefTitle": "Study to Investigate Efficacy and Safety of PF-04965842 in Subjects Aged 12 Years and Over With Moderate to Severe Atopic Dermatitis With the Option of Rescue Treatment in Flaring Subjects",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dermatitis",
+        "Dermatitis, Atopic",
+        "Eczema",
+        "Skin Diseases",
+        "Skin Diseases, Genetic",
+        "Genetic Diseases, Inborn",
+        "Skin Diseases, Eczematous",
+        "Hypersensitivity",
+        "Hypersensitivity, Immediate",
+        "Immune System Diseases"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        },
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        },
+        {
+          "id": "D012873",
+          "term": "Skin Diseases, Genetic"
+        },
+        {
+          "id": "D030342",
+          "term": "Genetic Diseases, Inborn"
+        },
+        {
+          "id": "D017443",
+          "term": "Skin Diseases, Eczematous"
+        },
+        {
+          "id": "D006967",
+          "term": "Hypersensitivity"
+        },
+        {
+          "id": "D006969",
+          "term": "Hypersensitivity, Immediate"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ],
+      "startDate": {
+        "value": "2018-06-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-09-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-10-07",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1235,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "PF-04965842 100 mg QD",
+          "type": "EXPERIMENTAL",
+          "description": "Double-blind randomized treatment following open label run-in period."
+        },
+        {
+          "label": "PF-04965842 200 mg QD",
+          "type": "EXPERIMENTAL",
+          "description": "Double-blind randomized treatment following open label run-in period."
+        },
+        {
+          "label": "Placebo QD",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Double-blind randomized treatment following open label run-in period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With Loss of Response: Double-blind (DB) Period",
+        "Time to Loss of Response: Double-blind Period"
+      ],
+      "secondaryEndpoints": [
+        "Time to First Loss of Response Based on Investigator's Global Assessment (IGA) Score of 2 or Higher: Double-blind Period",
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) or Almost Clear (1) and a Reduction of Greater Than or Equal to (>=) 2 Points From Baseline at Weeks 12, 16, 28, 40, and 52: Double-blind Period",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response >=50% Improvement From Baseline at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response >=75% Improvement From Baseline at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response >=90% Improvement From Baseline at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response >=100% Improvement From Baseline at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percentage of Participants With Greater Than or Equal 4 Points Improvement in the Numerical Rating Scale (NRS) for Severity of Pruritus From Baseline at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percent Change From Baseline in Body Surface Area (BSA) at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percent Change From Baseline in Scoring Atopic Dermatitis (SCORAD) Total Score at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Change From Baseline in Scoring Atopic Dermatitis (SCORAD) Visual Analogue Scale (VAS) of Itch and Sleep Loss at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percentage of Participants With >=50% Improvement From Baseline in Scoring Atopic Dermatitis (SCORAD) Response at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percentage of Participants With >=75% Improvement From Baseline in Scoring Atopic Dermatitis (SCORAD) Response at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Percentage of Participants Achieving IGA Response of Clear (0) or Almost Clear (1) and Greater Than or Equal to (>=) 2 Points Improvement From Rescue Baseline at Rescue Weeks 2, 4, 8 and 12: Rescue Period",
+        "Percent Change From Rescue Baseline in Total Eczema Area and Severity Index (EASI) Score at Rescue Weeks 2, 4, 8 and 12: Rescue Period",
+        "Percentage of Participants Achieving Greater Than or Equal to 4 Points Improvement From Rescue Baseline in Peak Pruritus Numeric Rating Scale (PP-NRS) at Rescue Weeks 2, 4, 8 and 12: Rescue Period",
+        "Percent Change From Rescue Baseline in Percent Body Surface Area (BSA) at Rescue Weeks 2, 4, 8 and 12: Rescue Period",
+        "Percent Change From Rescue Baseline in Scoring Atopic Dermatitis (SCORAD) Visual Analog Scale (VAS) Score of Itch and Sleep Loss at Rescue Weeks 2, 4, 8 and 12: Rescue Period",
+        "Percentage of Participants With 50% Improvement in Scoring Atopic Dermatitis (SCORAD) From Rescue Baseline at Rescue Weeks 2, 4, 8 and 12: Rescue Period",
+        "Percentage of Participants With 75% Improvement in Scoring Atopic Dermatitis (SCORAD) From Rescue Baseline at Rescue Weeks 2, 4, 8 and 12: Rescue Period",
+        "Percentage of Participants Achieving Patient Global Assessment (PtGA) Response of 'Clear (0)' or 'Almost Clear (1)' and Greater Than or Equal to 2 Points Improvement From Baseline at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Change From Baseline in Dermatology Life Quality Index (DLQI) Score for Adults at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Change From Baseline in Children's Dermatology Life Quality Index (CDLQI) Score for Adolescents at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Change From Baseline in Hospital Anxiety and Depression Scale (HADS) - Anxiety Scale at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Change From Baseline in Hospital Anxiety and Depression Scale (HADS) - Depression Scale at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Change From Baseline in Patient Oriented Eczema Measure (POEM) Score at Weeks 12, 16, 28, 40 and 52: Double-blind Period",
+        "Change From Baseline in Pruritus and Symptoms Assessment for Atopic Dermatitis (PSAAD) Score at Weeks 12, 16, 28, 40 and 52: Double-blind Period"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03627767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03627767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03627767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03627767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03627767",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "jade-mono-2",
+      "nctId": "NCT03575871",
+      "protocolNumber": "B7451013",
+      "acronym": "JADE Mono-2",
+      "labelName": "Trial-AD-2",
+      "title": "A PHASE 3 RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED, PARALLEL GROUP, MULTI-CENTER STUDY TO EVALUATE THE EFFICACY AND SAFETY OF PF-04965842 MONOTHERAPY IN SUBJECTS AGED 12 YEARS AND OLDER, WITH MODERATE TO SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "Study Evaluating Efficacy and Safety of PF-04965842 in Subjects Aged 12 Years And Older With Moderate to Severe Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable)",
+            "quote": "Trial identifier appears within the Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/213871Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Cibinqo (abrocitinib) tablets for the treatment of adults with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dermatitis, Atopic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2018-06-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-08-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-08-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 391,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "PF-04965842 100 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "PF-04965842 200 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) or Almost Clear (1) and Greater Than or Equal to (>=) 2 Points Improvement From Baseline at Week 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of >=75 Percent (%) Improvement (EASI-75) From Baseline at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Who Achieved at Least 4-Points Improvement From Baseline in the Numerical Rating Scale (NRS) for Severity of Pruritus at Weeks 2, 4, 8 and 12",
+        "Change From Baseline in Pruritus and Symptoms Assessment for Atopic Dermatitis (PSAAD) Total Score at Week 12",
+        "Time to Achieve >=4 Points Improvement From Baseline in Numerical Rating Scale (NRS) for Severity of Pruritus",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of >=75% Improvement (EASI-75) From Baseline at Weeks 2, 4 and 8",
+        "Percentage of Participants Achieving IGA Response of Clear (0) or Almost Clear (1) and >=2 Points Improvement From Baseline at Weeks 2, 4 and 8",
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of >=50% Improvement (EASI-50) From Baseline at Weeks 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of >=90% Improvement (EASI-90) From Baseline at Weeks 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index Response of 100% Improvement (EASI-100) From Baseline at Weeks 2, 4, 8 and 12",
+        "Percent Change From Baseline in Eczema Area and Severity Index (EASI) Total Score at Week 2, 4, 8 and 12",
+        "Change From Baseline in the Percentage Body Surface Area (%BSA) Affected at Week 2, 4, 8, and 12",
+        "Percentage of Participants With Percentage Body Surface Area (%BSA) (From EASI) < 5% at Weeks 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Scoring Atopic Dermatitis (SCORAD) Response >=50% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Scoring Atopic Dermatitis (SCORAD) Response >=75% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Change From Baseline in Scoring Atopic Dermatitis (SCORAD) Visual Analogue Scale (VAS) of Itch at Weeks 2, 4, 8 and 12",
+        "Change From Baseline in Scoring Atopic Dermatitis (SCORAD) Visual Analogue Scale (VAS) Sleep Loss at Weeks 2, 4, 8 and 12",
+        "Percent Change From Baseline in Scoring Atopic Dermatitis (SCORAD) Total Score at Week 2, 4, 8 and 12"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) or Almost Clear (1) and Greater Than or Equal to (>=) 2 Points Improvement From Baseline at Week 12",
+          "timeFrame": "Baseline, Week 12",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "PF-04965842 100 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "PF-04965842 200 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "28.4",
+              "lowerLimit": "21.3",
+              "upperLimit": "35.5"
+            },
+            {
+              "groupId": "OG001",
+              "value": "38.1",
+              "lowerLimit": "30.4",
+              "upperLimit": "45.7"
+            },
+            {
+              "groupId": "OG002",
+              "value": "9.1",
+              "lowerLimit": "2.7",
+              "upperLimit": "15.5"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "0.0008",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "19.3",
+              "ciPct": "95",
+              "ciLower": "9.6",
+              "ciUpper": "29.0"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "28.7",
+              "ciPct": "95",
+              "ciLower": "18.6",
+              "ciUpper": "38.8"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants Achieving Eczema Area and Severity Index Response of >=75 Percent (%) Improvement (EASI-75) From Baseline at Week 12",
+          "timeFrame": "Baseline, Week 12",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "PF-04965842 100 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "PF-04965842 200 mg"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "44.5",
+              "lowerLimit": "36.7",
+              "upperLimit": "52.3"
+            },
+            {
+              "groupId": "OG001",
+              "value": "61.0",
+              "lowerLimit": "53.3",
+              "upperLimit": "68.7"
+            },
+            {
+              "groupId": "OG002",
+              "value": "10.4",
+              "lowerLimit": "3.6",
+              "upperLimit": "17.2"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "33.9",
+              "ciPct": "95",
+              "ciLower": "23.3",
+              "ciUpper": "44.4"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "50.5",
+              "ciPct": "95",
+              "ciLower": "40.0",
+              "ciUpper": "60.9"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03575871",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03575871",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03575871",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03575871",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03575871",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03575871?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/213871Orig1s005ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 21,
+          "quote": "andomized, double-blind, placebo-controlled trials [Trial-AD-1 (NCT03349060), Trial-AD-2 (NCT03575871), Trial-AD-3 (NCT03720470), and Trial-AD-4 (NCT03796676)] in 1900 subjects (see Table 8).",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "Trial-AD-2 (NCT03575871)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "jade-compare",
+      "nctId": "NCT03720470",
+      "protocolNumber": "B7451029",
+      "acronym": "JADE Compare",
+      "labelName": "Trial-AD-3",
+      "title": "A PHASE 3 RANDOMIZED, DOUBLE-BLIND, DOUBLE-DUMMY, PLACEBO-CONTROLLED, PARALLEL GROUP, MULTI-CENTER STUDY INVESTIGATING THE EFFICACY AND SAFETY OF PF-04965842 AND DUPILUMAB IN COMPARISON WITH PLACEBO IN ADULT SUBJECTS ON BACKGROUND TOPICAL THERAPY, WITH MODERATE TO SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "Study Evaluating Efficacy and Safety of PF-04965842 and Dupilumab in Adult Subjects With Moderate to Severe Atopic Dermatitis on Background Topical Therapy",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable)",
+            "quote": "Trial identifier appears within the Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/213871Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Cibinqo (abrocitinib) tablets for the treatment of adults with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Dermatitis",
+        "Dermatitis, Atopic",
+        "Eczema",
+        "Skin Diseases",
+        "Skin Diseases, Genetic",
+        "Genetic Diseases, Inborn",
+        "Skin Diseases, Eczematous",
+        "Hypersensitivity",
+        "Hypersensitivity, Immediate",
+        "Immune System Diseases"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        },
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        },
+        {
+          "id": "D012873",
+          "term": "Skin Diseases, Genetic"
+        },
+        {
+          "id": "D030342",
+          "term": "Genetic Diseases, Inborn"
+        },
+        {
+          "id": "D017443",
+          "term": "Skin Diseases, Eczematous"
+        },
+        {
+          "id": "D006967",
+          "term": "Hypersensitivity"
+        },
+        {
+          "id": "D006969",
+          "term": "Hypersensitivity, Immediate"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ],
+      "startDate": {
+        "value": "2018-10-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-12-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-03-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 838,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "PF-04965842 100 mg + Placebo Inj followed by PF-04965842 100mg",
+          "type": "EXPERIMENTAL",
+          "description": "Once-daily oral PF-04965842 100 mg + Placebo injected subcutaneously once every 2 weeks from Day 1 until Week 16 followed by once-daily oral PF-04965842 100 mg from Week 16 to Week 20"
+        },
+        {
+          "label": "PF-04965842 200 mg + Placebo Inj followed by PF-04965842 200mg",
+          "type": "EXPERIMENTAL",
+          "description": "Once-daily oral PF-04965842 200 mg + Placebo injected subcutaneously once every 2 weeks from Day 1 until Week 16 followed by once-daily oral PF-04965842 200 mg from Week 16 to Week 20"
+        },
+        {
+          "label": "Dupilumab Injection + Oral Placebo followed by Oral Placebo",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Dupilumab injected subcutaneously once every 2 weeks + once-daily oral Placebo from Day 1 until Week 16 followed by once-daily oral Placebo from Week 16 to Week 20"
+        },
+        {
+          "label": "Oral Placebo + Placebo Inj followed by 100 mg PF-04965842",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Once-daily oral Placebo + Placebo injected subcutaneously once every 2 weeks from Day 1 until Week 16 followed by once-daily oral 100 mg PF-04965842 from Week 16 to Week 20"
+        },
+        {
+          "label": "Oral Placebo + Placebo Inj followed by 200 mg PF-04965842",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Once-daily oral Placebo + Placebo injected subcutaneously once every 2 weeks from Day 1 until Week 16 followed by once-daily oral 200 mg PF-04965842 from Week 16 to Week 20"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) or Almost Clear (1) and a Reduction of Greater Than or Equal to (>=) 2 Points From Baseline at Week 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response >=75 Percent (%) Improvement From Baseline at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With at Least 4 Points Improvement in the Numerical Rating Scale (NRS) for Severity of Pruritus From Baseline at Day 2-15, Week 2, 4, 8, 12 and 16",
+        "Percentage of Participants Achieving IGA Response of Clear (0) or Almost Clear (1) and a Reduction of >=2 Points From Baseline at Week 2, 4, 8 and 16",
+        "Percentage of Participants Achieving EASI Response >=75% Improvement From Baseline at Week 2, 4, 8 and 16",
+        "Percentage of Participants Achieving EASI Response >=50% Improvement From Baseline at Week 2, 4, 8, 12 and 16",
+        "Percentage of Participants Achieving EASI Response >=90% Improvement From Baseline at Week 2, 4, 8, 12 and 16",
+        "Percentage of Participants Achieving EASI Response =100% Improvement From Baseline at Week 2, 4, 8, 12 and 16",
+        "Time From Baseline to First Achieve at Least 4 Points Improvement in the Severity of Pruritus NRS",
+        "Change From Baseline in Percentage Body Surface Area (BSA) at Week 2, 4, 8, 12 and 16",
+        "Percentage BSA at Week 18 and 20",
+        "Change From Baseline in Patient Global Assessment (PtGA) at Week 2, 4, 8, 12 and 16",
+        "Change From Baseline in Dermatology Life Quality Index (DLQI) at Week 2, 12 and 16",
+        "DLQI at Week 20",
+        "Change From Baseline in EuroQol Quality of Life 5-Dimension 5-Level Scale (EQ-5D-5L) Index Value at Week 12 and 16",
+        "Change From Baseline in EQ-5D-5L Visual Analogue Scale (VAS) Score at Week 12 and 16",
+        "EQ-5D-5L- Index Value at Week 20",
+        "EQ-5D-5L- VAS Score at Week 20",
+        "Change From Baseline in Hospital Anxiety and Depression Scale (HADS) - Anxiety Scale at Week 12 and 16",
+        "Change From Baseline in HADS - Depression Scale at Week 12 and 16",
+        "HADS - Anxiety Scale at Week 20",
+        "HADS - Depression Scale at Week 20",
+        "Change From Baseline in Patient-Oriented Eczema Measure (POEM) at Week 12 and 16",
+        "POEM at Week 20",
+        "Change From Baseline in Pruritus and Symptoms Assessment for Atopic Dermatitis (PSAAD) Total Score Week 1 to Week 16",
+        "PSAAD Total Score at Week 18 and 20",
+        "Percentage of Participants With Scoring Atopic Dermatitis (SCORAD) Response >=50% Improvement From Baseline at Week 2, 4, 8, 12 and 16",
+        "Percentage of Participants With SCORAD Response >=75% Improvement From Baseline at Week 2, 4, 8 12 and 16",
+        "Change From Baseline in SCORAD Visual Analogue Scale (VAS) of Itch and Sleep Loss at Week 2, 4, 8 12 and 16",
+        "SCORAD VAS of Itch and Sleep Loss at Week 18 and 20",
+        "Least Square Mean of Number of Steroid-free Days From Baseline up to Week 16"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) or Almost Clear (1) and a Reduction of Greater Than or Equal to (>=) 2 Points From Baseline at Week 12",
+          "timeFrame": "Baseline (the last measurement prior to first dosing on Day 1), Week 12",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo up to Week 16"
+            },
+            {
+              "id": "OG001",
+              "title": "PF-04965842 100 mg + Placebo Injection up to Week 16"
+            },
+            {
+              "id": "OG002",
+              "title": "PF-04965842 200 mg + Placebo Injection up to Week 16"
+            },
+            {
+              "id": "OG003",
+              "title": "Dupilumab 300 mg + Oral Placebo up to Week 16"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "14.0",
+              "lowerLimit": "8.0",
+              "upperLimit": "19.9"
+            },
+            {
+              "groupId": "OG001",
+              "value": "36.6",
+              "lowerLimit": "30.4",
+              "upperLimit": "42.8"
+            },
+            {
+              "groupId": "OG002",
+              "value": "48.4",
+              "lowerLimit": "41.8",
+              "upperLimit": "55.0"
+            },
+            {
+              "groupId": "OG003",
+              "value": "36.5",
+              "lowerLimit": "30.4",
+              "upperLimit": "42.6"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in percentage",
+              "paramValue": "23.1",
+              "ciPct": "95",
+              "ciLower": "14.7",
+              "ciUpper": "31.4"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "34.8",
+              "ciPct": "95",
+              "ciLower": "26.1",
+              "ciUpper": "43.5"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response >=75 Percent (%) Improvement From Baseline at Week 12",
+          "timeFrame": "Baseline, Week 12",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo up to Week 16"
+            },
+            {
+              "id": "OG001",
+              "title": "PF-04965842 100 mg + Placebo Injection up to Week 16"
+            },
+            {
+              "id": "OG002",
+              "title": "PF-04965842 200 mg + Placebo Injection up to Week 16"
+            },
+            {
+              "id": "OG003",
+              "title": "Dupilumab 300 mg + Oral Placebo up to Week 16"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "27.1",
+              "lowerLimit": "19.5",
+              "upperLimit": "34.8"
+            },
+            {
+              "groupId": "OG001",
+              "value": "58.7",
+              "lowerLimit": "52.4",
+              "upperLimit": "65.0"
+            },
+            {
+              "groupId": "OG002",
+              "value": "70.3",
+              "lowerLimit": "64.3",
+              "upperLimit": "76.4"
+            },
+            {
+              "groupId": "OG003",
+              "value": "58.1",
+              "lowerLimit": "51.9",
+              "upperLimit": "64.3"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in percentage",
+              "paramValue": "31.9",
+              "ciPct": "95",
+              "ciLower": "22.2",
+              "ciUpper": "41.6"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Difference in Percentage",
+              "paramValue": "43.2",
+              "ciPct": "95",
+              "ciLower": "33.7",
+              "ciUpper": "52.7"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03720470",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03720470",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03720470",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03720470",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03720470",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03720470?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/213871Orig1s005ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 21,
+          "quote": "lacebo-controlled trials [Trial-AD-1 (NCT03349060), Trial-AD-2 (NCT03575871), Trial-AD-3 (NCT03720470), and Trial-AD-4 (NCT03796676)] in 1900 subjects (see Table 8). Trial-AD-1 and Trial-AD-2",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "Trial-AD-3 (NCT03720470)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "jade-teen",
+      "nctId": "NCT03796676",
+      "protocolNumber": "B7451036",
+      "acronym": "JADE TEEN",
+      "labelName": "Trial-AD-4",
+      "title": "A PHASE 3, RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED, MULTI-CENTER STUDY INVESTIGATING THE EFFICACY AND SAFETY OF PF-04965842 CO-ADMINISTERED WITH BACKGROUND MEDICATED TOPICAL THERAPY IN ADOLESCENT PARTICIPANTS 12 TO <18 YEARS OF AGE WITH MODERATE-TO-SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "JAK1 Inhibitor With Medicated Topical Therapy in Adolescents With Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable)",
+            "quote": "Trial identifier appears within the Adults and pediatric patients 12 years of age and older with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/213871Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Cibinqo (abrocitinib) tablets for the treatment of adults with refractory, moderate-to-severe atopic dermatitis whose disease is not adequately controlled with other systemic drug products, including biologics, or when use of those therapies is inadvisable.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2019-02-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-04-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-04-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 287,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo"
+        },
+        {
+          "label": "PF-04965842 100 mg QD",
+          "type": "EXPERIMENTAL",
+          "description": "active"
+        },
+        {
+          "label": "PF-04965842 200 mg QD",
+          "type": "EXPERIMENTAL",
+          "description": "active"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of 'Clear' (0) or 'Almost Clear' (1) and ≥2 Points Improvement From Baseline at Week 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response ≥ 75% Improvement From Baseline at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Achieving ≥4 Points Improvement From Baseline in Peak Pruritis Numeric Rating Scale (PP-NRS) for Severity of Pruritus at Weeks 2, 4 and 12",
+        "Change From Baseline in Pruritus and Symptoms Assessment for Atopic Dermatitis (PSAAD) at Week 12",
+        "Percentage of Participants Achieving IGA Response of 'Clear' or 'Almost Clear' and ≥2 Points Improvement From Baseline at All Scheduled Time Points Except Week 12",
+        "Percentage of Participants Achieving EASI Response ≥ 75% Improvement From Baseline at All Scheduled Time Points Except Week 12",
+        "Percentage of Participants Achieving EASI Response ≥ 50% Improvement From Baseline",
+        "Percentage of Participants Achieving EASI Response ≥ 90% Improvement From Baseline",
+        "Percentage of Participants Achieving EASI Response =100% Improvement From Baseline",
+        "Percent Change From Baseline in EASI Score",
+        "Percentage of Participants Achieving ≥4 Points Improvement From Baseline in PP-NRS for Severity of Pruritus at All Scheduled Time Points Other Than Weeks 2, 4 and 12",
+        "Time to First Achieve ≥4 Points Improvement From Baseline in PP-NRS for Severity of Pruritus",
+        "Percent Change From Baseline in PP-NRS for Severity of Pruritus",
+        "Change From Baseline in Percentage Body Surface Area (BSA)",
+        "Percent Change From Baseline in Percentage BSA",
+        "Percentage of Participants Achieving Percentage BSA < 5% at Week 12",
+        "Percentage of Participants Achieving Scoring Atopic Dermatitis (SCORAD) Response ≥ 50% Improvement From Baseline",
+        "Percentage of Participants Achieving SCORAD Response ≥ 75% Improvement From Baseline",
+        "Change From Baseline in SCORAD Total Score",
+        "Percent Change From Baseline in SCORAD Total Score",
+        "Change From Baseline in SCORAD Subjective Visual Analogue Scale (VAS) of Sleep Loss",
+        "Percent Change From Baseline in SCORAD Subjective VAS of Sleep Loss",
+        "Number of Days When a Corticosteroid Not Used up to Day 88",
+        "Change From Baseline in Children's Dermatology Life Quality Index (DLQI)",
+        "Percentage of Participants With ≥2.5 Points at Baseline and Achieving ≥2.5 Points Improvement From Baseline in Children's DLQI",
+        "Change From Baseline in Anxiety of Hospital Anxiety and Depression Scale (HADS)",
+        "Change From Baseline in Depression of HADS",
+        "Change From Baseline in Patient-Oriented Eczema Measure (POEM)",
+        "Change From Baseline in Dermatitis Family Impact (DFI) at Week 12",
+        "Change From Baseline in Patient Global Assessment (PtGA)",
+        "Percentage of Participants With ≥2 Points at Baseline and Achieving 'Clear' or 'Almost Clear' and ≥2 Points Improvement From Baseline in PtGA",
+        "Change From Baseline in EuroQol Quality of Life 5-Dimension Youth Scale (EQ-5D-Y) VAS Score",
+        "Change From Baseline in Pediatric Functional Assessment of Chronic Illness Therapy Fatigue Scale (Peds-FACIT-F) at Week 12",
+        "Number of Participants With Treatment Emergent Adverse Events (TEAEs)",
+        "Number of Participants With Serious Adverse Events (SAEs)",
+        "Number of Participants Who Discontinued From the Study Due to TEAEs",
+        "Number of Participants With Laboratory Test Abnormalities (Without Regard to Baseline Abnormality)",
+        "Number of Participants With Electrocardiogram (ECG) Data Meeting Prespecified Criteria",
+        "Categorization of Vital Signs Data Meeting Prespecified Criteria",
+        "Fold Increase of Immunoglobulin G (IgG) Concentrations Against Specific Vaccine Antigens at 4 Weeks Post-Vaccination",
+        "Plasma PF-04965842 Concentration at Week 8",
+        "Plasma PF-04965842 Concentration at Week 12"
+      ],
+      "postedResults": [
+        {
+          "title": "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of 'Clear' (0) or 'Almost Clear' (1) and ≥2 Points Improvement From Baseline at Week 12",
+          "timeFrame": "Baseline to Week 12",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "PF-04965842 100mg QD"
+            },
+            {
+              "id": "OG002",
+              "title": "PF-04965842 200mg QD"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "24.5",
+              "lowerLimit": "15.8",
+              "upperLimit": "33.2"
+            },
+            {
+              "groupId": "OG001",
+              "value": "41.6",
+              "lowerLimit": "31.3",
+              "upperLimit": "51.8"
+            },
+            {
+              "groupId": "OG002",
+              "value": "46.2",
+              "lowerLimit": "36.1",
+              "upperLimit": "56.4"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.0147",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Estimate of difference",
+              "paramValue": "16.7",
+              "ciPct": "95",
+              "ciLower": "3.5",
+              "ciUpper": "29.9"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "0.0030",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Estimate of difference",
+              "paramValue": "20.6",
+              "ciPct": "95",
+              "ciLower": "7.3",
+              "ciUpper": "33.9"
+            }
+          ]
+        },
+        {
+          "title": "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response ≥ 75% Improvement From Baseline at Week 12",
+          "timeFrame": "Baseline to Week 12",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Placebo"
+            },
+            {
+              "id": "OG001",
+              "title": "PF-04965842 100mg QD"
+            },
+            {
+              "id": "OG002",
+              "title": "PF-04965842 200mg QD"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "41.5",
+              "lowerLimit": "31.5",
+              "upperLimit": "51.4"
+            },
+            {
+              "groupId": "OG001",
+              "value": "68.5",
+              "lowerLimit": "58.9",
+              "upperLimit": "78.2"
+            },
+            {
+              "groupId": "OG002",
+              "value": "72.0",
+              "lowerLimit": "62.9",
+              "upperLimit": "81.2"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.0002",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Estimate of difference",
+              "paramValue": "26.5",
+              "ciPct": "95",
+              "ciLower": "13.1",
+              "ciUpper": "39.8"
+            },
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Estimate of difference",
+              "paramValue": "29.4",
+              "ciPct": "95",
+              "ciLower": "16.3",
+              "ciUpper": "42.5"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03796676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03796676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03796676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03796676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03796676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03796676?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/213871Orig1s005ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 21,
+          "quote": "l-AD-1 (NCT03349060), Trial-AD-2 (NCT03575871), Trial-AD-3 (NCT03720470), and Trial-AD-4 (NCT03796676)] in 1900 subjects (see Table 8). Trial-AD-1 and Trial-AD-2 enrolled adult and pediatric",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "Trial-AD-4 (NCT03796676)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451050",
+      "nctId": "NCT04345367",
+      "protocolNumber": "B7451050",
+      "title": "A PHASE 3B RANDOMIZED, DOUBLE-BLIND, DOUBLE-DUMMY, ACTIVE CONTROLLED MULTI-CENTER STUDY ASSESSING THE EFFICACY AND SAFETY OF ABROCITINIB COMPARED WITH DUPILUMAB IN ADULT PARTICIPANTS ON BACKGROUND TOPICAL THERAPY WITH MODERATE TO SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "Study of Abrocitinib Compared With Dupilumab in Adults With Moderate to Severe Atopic Dermatitis on Background Topical Therapy",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2020-06-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-07-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-07-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 727,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Abrocitinib 200 mg plus placebo injection",
+          "type": "EXPERIMENTAL",
+          "description": "Abrocitinib 200 mg daily through Week 26, plus placebo injections every other week through Week 24"
+        },
+        {
+          "label": "Dupilumab 300 mg plus placebo tablets",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Dupilumab 300 mg every other week (2 injections on Day 1) through Week 24, plus placebo tablets daily through Week 26"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving Greater Than or Equal to (>=) 4 Points Improvement in Peak Pruritus Numerical Rating Scale (PP-NRS4) From Baseline at Week 2",
+        "Percentage of Participants Achieving >= 90% Improvement From Baseline in Eczema Area and Severity Index (EASI-90) Response at Week 4"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Achieving EASI-90 Response at Week 16",
+        "Percentage of Participants Achieving EASI-90 Response at Weeks 2, 8, 12, 20 and 26",
+        "Percentage of Participants Achieving >= 75% Improvement From Baseline in EASI (EASI-75) Response at Weeks 2, 4, 8, 12, 16, 20 and 26",
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Score of 'Clear' or 'Almost Clear' and >=2 Points Improvement From Baseline up to Week 26",
+        "Percentage of Participants Achieving PP-NRS4 From Baseline at Days 2 to 15",
+        "Percentage of Participants Achieving PP-NRS4 From Baseline at Week 4, 8, 12, 16, 20 and 26",
+        "Time to Achieve >=4 Points Improvement in Peak Pruritus Numerical Rating Scale (PP-NRS4)",
+        "Percent Change From Baseline in the Percentage (%) Body Surface Area (BSA) Affected at Week 2, 4, 8, 12, 16, 20 and 26",
+        "Percent Change From Baseline in the SCORing Atopic Dermatitis (SCORAD) Total Score at Week 2, 4, 8, 12, 16, 20 and 26",
+        "Change From Baseline in Total Anxiety Score Measured Using the Hospital Anxiety and Depression Scale (HADS) at Week 12,16 and 26",
+        "Change From Baseline in Total Depression Score Measured Using the HADS at Week 12,16 and 26",
+        "Change From Baseline in Dermatology Life Quality Index (DLQI) Total Score at Week 2, 12, 16, 20 and 26",
+        "Change From Baseline in EuroQol Quality of Life 5-Dimension 5-Level (EQ-5D-5L) Visual Analog Scale (VAS) Score at Week 12, 16 and 26",
+        "Change From Baseline in Patient-Oriented Eczema Measure (POEM) Total Score at Week 12, 16 and 26",
+        "Change From Baseline in Medical Outcomes Study - Sleep Scale (MOS-Sleep Scale) at Week 12, 16 and 26",
+        "Change From Baseline in Skin Pain NRS at Week 2, 12, 16, 20 and 26",
+        "Medicated Topical Background Therapy-free Days",
+        "Percentage of Participants Achieving >=4 Points Improvement From Baseline in DLQI at Week 2, 12, 16, 20 and 26"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04345367",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04345367",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04345367",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04345367",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04345367",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "jade-moa",
+      "nctId": "NCT03915496",
+      "protocolNumber": "B7451037",
+      "acronym": "JADE MOA",
+      "title": "A PHASE 2A, RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED, PARALLEL GROUP, MULTI-CENTER STUDY TO INVESTIGATE THE MECHANISM OF ACTION OF ABROCITINIB MONOTHERAPY IN ADULT PARTICIPANTS WITH MODERATE-TO-SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "Study Evaluating the Mechanism of Action of PF-04965842 Monotherapy for Moderate-to-severe Atopic Dermatitis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2020-06-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-11-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-11-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 46,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "PF-04965842 200 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "PF-04965842 100 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Fold-Change From Baseline in Atopic Dermatitis Biomarkers in Lesional and Non-lesional Skin at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Fold-Change From Baseline in Cellular (T-cell and Dendritic Cell) Inflammation Markers at Week 12",
+        "Fold-Change From Baseline in Epidermal Hyperplasia Markers in Skin Biopsies and Skin Thickness at Week 12",
+        "Fold-Change From Baseline in Blood Biomarkers for Inflammation and Immune Response at Week 12",
+        "Percent-Change From Baseline in T-cell Lymphocyte Subset Populations at Week 12",
+        "Response Based on at Least 4 Points Improvement in the Severity of Peak Pruritus Numerical Rating Scale (NRS) From Baseline and Changes From Baseline in Immunohistochemistry (IHC) and Gene Expression Biomarkers in Lesional Skin",
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of 'Clear' or 'Almost Clear' and >=2 Points Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response ≥ 75% Improvement From Baseline Week 2, 4, 8 and 12",
+        "Percentage of Participants With >=4 Points at Baseline and Achieving >=4 Points Improvement From Baseline in Numeric Rating Scale for Severity of Pruritus (PP-NRS) at Weeks 2, 4, 8 and 12",
+        "Percentage of Participants Achieving EASI Response ≥ 90% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Percentage of Participants Achieving EASI Response ≥ 50% Improvement From Baseline at Week 2, 4, 8 and 12",
+        "Percent Change From Baseline in Percentage Body Surface Area (BSA) at Week 2, 4, 8 and 12",
+        "Number of Participants With Treatment Emergent Adverse Events (TEAEs)",
+        "Number of Participants With Serious Adverse Events (SAEs)",
+        "Number of Participants Who Discontinued From the Study Due to TEAEs",
+        "Number of Participants With Laboratory Test Abnormalities (Without Regard to Baseline Abnormality)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03915496",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03915496",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03915496",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03915496",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03915496",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451061",
+      "nctId": "NCT04903093",
+      "protocolNumber": "B7451061",
+      "title": "A PHASE 1, RANDOMIZED, CROSSOVER STUDY TO EVALUATE RELATIVE BIOAVAILABILITY OF ABROCITINIB ORAL SUSPENSION AND EFFECT OF AN ACID-REDUCING AGENT ON THE BIOAVAILABILITY OF ABROCITINIB COMMERCIAL TABLET AND TO ASSESS THE TASTE OF ABROCITINIB ORAL FORMULATIONS IN HEALTHY ADULT PARTICIPANTS AGED 18 TO 55 YEARS OF AGE.",
+      "briefTitle": "A Study Evaluating Relative Bioavailability of an Oral Suspension of Abrocitinib and Effect of an Acid Reducing Agent on the Bioavailability of Abrocitinib and Assessing the Taste of Abrocitinib Oral Formulations.",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Volunteers"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2021-06-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-10-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-10-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 19,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part A: Abrocitinib Tablet",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part A: Abrocitinib Suspension F1",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part A: Abrocitinib Tablet + Famotidine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F1",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F2",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F3",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F4",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F5",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F6",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F1 + Famotidine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F2 + Famotidine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F3 + Famotidine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F4 + Famotidine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F5 + Famotidine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Part B: Abrocitinib Suspension F6 + Famotidine",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "AUCinf of Abrocitinib Following the Administration of Abrocitinib Commercial Tablet, Abrocitinib Oral Suspension Formulation 1 or Famotidine Plus Abrocitinib Commerical Tablet",
+        "Cmax of Abrocitinib Following the Administration of Abrocitinib Commercial Tablet, Abrocitinib Oral Suspension Formulation 1 or Famotidine Plus Abrocitinib Commerical Tablet",
+        "Assessment of Overall Liking After Administering Each Abrocitinib Oral Suspension Formulation (Formulation [F]1-F6) in Part B",
+        "Assessment of Mouth Feel After Administering Each Abrocitinib Oral Suspension Formulation (F1-F6) in Part B",
+        "Assessment of Bitterness After Administering Each Abrocitinib Oral Suspension Formulation (F1-F6) in Part B",
+        "Assessment of Tongue/Mouth Burn After Administering Each Abrocitinib Oral Suspension Formulation (F1-F6) in Part B",
+        "Assessment of Salty Taste After Administering Each Abrocitinib Oral Suspension Formulation (F1-F6) in Part B",
+        "Assessment of Sour Taste After Administering Abrocitinib Oral Suspension Formulation (F1-F6) in Part B",
+        "Assessment of Sweet Taste After Administering Abrocitinib Oral Suspension Formulation (F1-F6) in Part B"
+      ],
+      "secondaryEndpoints": [
+        "AUCinf of Abrocitinib Metabolite (PF-06471658/M1) Following the Administration of Abrocitinib 1×200 mg Tablet With or Without Famotidine 40 mg in Part A",
+        "AUCinf of Abrocitinib Metabolite (PF-07055087/M2) Following the Administration of Abrocitinib 1×200 mg Tablet With or Without Famotidine 40 mg in Part A",
+        "AUCinf of Abrocitinib Metabolite (PF-07054874/M4) Following the Administration of Abrocitinib 1×200 mg Tablet With or Without Famotidine 40 mg in Part A",
+        "Cmax of Abrocitinib Metabolite (PF-06471658/M1) Following the Administration of Abrocitinib 1×200 mg Tablet With or Without Famotidine 40 mg in Part A",
+        "Cmax of Abrocitinib Metabolite (PF-07055087/M2) Following the Administration of Abrocitinib 1×200 mg Tablet With or Without Famotidine 40 mg in Part A",
+        "Cmax of Abrocitinib Metabolite (PF-07054874/M4) Following the Administration of Abrocitinib 1×200 mg Tablet With or Without Famotidine 40 mg in Part A",
+        "Number of Participants With Treatment-Emergent Adverse Event",
+        "Number of Participants With Laboratory Abnormalities (Without Regard to Baseline Abnormality)",
+        "Number of Participants With Clinically Significant Vital Sign Values",
+        "Number of Participants With Clinically Significant Abnormal Electrocardiogram (ECG) Values",
+        "Number of Participants With Nausea AEs"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04903093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04903093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04903093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04903093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04903093",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451092",
+      "nctId": "NCT05067439",
+      "protocolNumber": "B7451092",
+      "title": "A PHASE 1, OPEN-LABEL, FIXED-SEQUENCE, 2-PERIOD STUDY TO ESTIMATE THE EFFECT OF MULTIPLE DOSE ABROCITINIB ON THE PHARMACOKINETICS OF SINGLE DOSES OF CAFFEINE, EFAVIRENZ, AND OMEPRAZOLE IN HEALTHY PARTICIPANTS",
+      "briefTitle": "A Study to Estimate the Effect of Multiple Dose Abrocitinib on Caffeine, Efavirenz, and Omeprazole in Healthy Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Participants"
+      ],
+      "startDate": {
+        "value": "2021-10-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-02-26",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-02-26",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 26,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Period 1",
+          "type": "OTHER",
+          "description": "In Period 1, all the participants will receive single doses of the probe drugs, including caffeine 100 mg, efavirenz 50 mg and omeprazole 10 mg, together on Day 1."
+        },
+        {
+          "label": "Period 2",
+          "type": "OTHER",
+          "description": "In Period 2, participants will receive abrocitinib 200 mg once daily (QD) on Day 1-10, single dose of omeprazole on Day 2 and single dose of probe drugs together on Day 8."
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Plasma Concentration-Time Profile From Time 0 Extrapolated to Infinite Time (AUCinf) of Omeprazole",
+        "AUCinf Corrected for Residual Concentrations (AUCinfCR) of Caffeine",
+        "Area Under the Plasma Concentration-Time Profile From Time 0 to the Time of the Last Quantifiable Concentration Corrected for Residual Concentrations (AUClastCR) of Efavirenz"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With All-Causality Treatment-Emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs)",
+        "Number of Participants With Treatment-Related TEAEs and SAEs",
+        "Number of Participants With Laboratory Abnormalities Regardless of Baseline",
+        "Number of Participants With Clinically Significant Change in Vital Signs"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05067439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05067439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05067439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05067439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05067439",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451055",
+      "nctId": "NCT05387980",
+      "protocolNumber": "B7451055",
+      "title": "CIBINQO® TABLETS SPECIAL INVESTIGATION",
+      "briefTitle": "A Study to Learn About the Study Medicine (CIBINQO) in People With Atopic Dermatitis.",
+      "phase": "NA",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2022-04-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-11-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-11-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1128,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Patients receiving CIBINQO",
+          "description": "Patients receiving CIBINQO tablets by mouth for the treatment of Atopic Dermatitis."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants with adverse drug reactions",
+        "Number of Participants with Discontinuation of Treatment"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Score",
+        "Percentage of Participants with Change From Baseline in Eczema Area and Severity Index (EASI)",
+        "Percentage of Participants with Change From Baseline in Affected % Body Surface Area (BSA)",
+        "Percentage of Participants with Change From Baseline in Pruritus Assessment"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05387980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05387980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05387980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05387980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05387980",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451089",
+      "nctId": "NCT05250115",
+      "protocolNumber": "B7451089",
+      "title": "This is a Prospective, Single-arm, Multicenter, Observational Non-interventional Study (NIS) in Germany of Patient Characteristics, Usage, and Effectiveness of Abrocitinib in Patients With Moderate to Severe Atopic Dermatitis (AD)",
+      "briefTitle": "A Study to Learn About Abrocitinib in Adult Patients With Moderate to Severe Atopic Dermatitis",
+      "phase": "NA",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Dermatitis, Atopic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2022-05-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-07-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-07-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 112,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Evaluate the effectiveness, usage and patient characteristics of real-world use of Abrocitinib",
+          "description": "This is a 60-month, prospective, non-interventional, multicenter study to evaluate the effectiveness, usage and patient characteristics of abrocitinib in patients with moderate to severe AD in a real-world setting.\n\nEligible patients will be followed up from the date of first Abrocitinib prescription for 12 months. from the date of enrollment. Patients who are switched from the initial abrocitinib therapy to other therapies continue to be observed. Patient documentation is expected quarterly as per standard clinical practice."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Who Achieved Investigator's Global Assessment (IGA) Score of Clear (0) or Almost Clear (1) at Month 3",
+        "Percentage of Participants With 75% Reduction From Baseline in Eczema Area and Severity Index (EASI) at Month 3"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Who Achieved IGA Score of Clear (0) or Almost Clear (1) Until End of Study",
+        "Percentage of Participants With 75% Reduction From Baseline in EASI Score Until End of Study",
+        "Percentage of Participants With 90% Reduction From Baseline in EASI Score Until End of Study",
+        "Percentage of Participants Who Achieved IGA Score of Clear (0) or Almost Clear (1) and a Reduction of >= 2 Points From Baseline Until End of Study",
+        "Percentage Change From Baseline in IGA Total Score at Months 1, 3, 6, 9 and 12",
+        "Percentage Change From Baseline in Scoring Atopic Dermatitis (SCORAD) Total Score at Months 1, 3, 6, 9 and 12",
+        "Absolute EASI Total Score at Months 1, 3, 6, 9 and 12",
+        "Percentage Change From Baseline in EASI Total Score at Months 1, 3, 6, 9 and 12",
+        "Absolute Change From Baseline in IGA Total Score at Months 1, 3, 6, 9 and 12",
+        "Percentage of Participants Who Achieved at Least 4 Point Improvement on Pruritus Numerical Rating Scale (NRS) From Baseline Until End of Study",
+        "Percentage of Participants With Pruritus NRS Score Less Than or Equal to (<=1)",
+        "Percentage Change From Baseline in Peak-Pruritus (PP) NRS at Months 1, 3, 6, 9 and 12",
+        "Percentage Change From Baseline in Patient Oriented Eczema Measure (POEM) Score at Months 1, 3, 6, 9 and 12",
+        "Percentage Change From Baseline in Medical Outcomes Study Sleep (MOS) Scale at Months 1, 3, 6, 9 and 12",
+        "Percentage Change From Baseline in Dermatology Life Quality-Index (DLQI) Score at Months 1, 3, 6, 9 and 12",
+        "Percentage Change From Baseline in Hospital Anxiety and Depression Scale (HADS) Score at Months 1, 3, 6, 9 and 12",
+        "Percentage Change From Baseline in EuroQol Five-dimensional-five Level (EQ-5D-5L) Score at Months 1, 3, 6, 9 and 12",
+        "Treatment Satisfaction Measured by Patient Benefit Index (PBI) at Months 1, 3, 6, 9 and 12",
+        "Number of Participants With Treatment Expectation Measured by PBI at Baseline",
+        "Number of Days With Topical Treatment Use",
+        "Number of Days of Emollients Use"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05250115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05250115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05250115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05250115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05250115",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451094",
+      "nctId": "NCT05375929",
+      "protocolNumber": "B7451094",
+      "title": "A RANDOMIZED, OPEN-LABEL, PARALLEL-GROUP STUDY TO EVALUATE THE SAFETY AND EFFICACY OF ABROCITINIB 100 MG AND 200 MG TABLETS IN PARTICIPANTS AGED 12 YEARS AND OLDER WITH MODERATE TO SEVERE ATOPIC DERMATITIS IN INDIA",
+      "briefTitle": "A Study to Learn About Abrocitinib Tablets in People With Atopic Dermatitis in India",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2022-07-16",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-06-09",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-03-14",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 200,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Abrocitinib 100 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive abrocitinib 100 mg by mouth (QD)."
+        },
+        {
+          "label": "Abrocitinib 200 mg",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive abrocitinib 200 mg QD."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Adverse Events (AEs) and Serious AEs (SAEs): Main Study"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Who Achieved Investigator's Global Assessment (IGA) Score of Clear (0) or Almost Clear (1) and >= 2 Points Improvement From Baseline at Week 12: Main Study",
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) Response >= 75% Improvement From Baseline at Week 12: Main Study",
+        "Percentage of Participants Achieving Scoring Atopic Dermatitis (SCORAD) Response >= 75% Improvement From Baseline at Week 12: Main Study",
+        "Change From Baseline in Patient-Oriented Eczema Measure (POEM) Score at Weeks 2, 4, 8 and 12: Main Study",
+        "Change From Baseline in Atopic Dermatitis Control Tool (ADCT) Score at Weeks 2, 4, 8 and 12: Main Study",
+        "Percentage of Participants With Bone Safety Findings in Knee Magnetic Resonance Imaging (MRI) at 1 Year After Randomization: Substudy"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05375929",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05375929",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05375929",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05375929",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05375929",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451074",
+      "nctId": "NCT05391061",
+      "protocolNumber": "B7451074",
+      "title": "Post Marketing Surveillance (PMS) Study for Cibinqo Tablet (Abrocitinib) in Patients With Moderate to Severe Atopic Dermatitis (AD) in Korea",
+      "briefTitle": "A Study to Learn About the Study Medicine (Called Cibinqo) in People With Atopic Dermatitis",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Dermatitis, Atopic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2023-01-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-11-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-11-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1100,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "Number of participants with Adverse Events (AE's) according to frequency",
+        "Number of participants with Adverse Drug Reactions (ADR's) according to frequency",
+        "Number of participants with unexpected AE's according to frequency",
+        "Number of participants with unexpected ADR's according to frequency",
+        "Number of participants with Serious Adverse Events (SAE's) according to frequency",
+        "Number of participants with Serious Adverse Drug Reactions (SADR's) according to frequency",
+        "Number of participants with Adverse Events of Special Interest (AESI) according to frequency"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of participants achieving the Investigator's Global Assessment (IGA) score of clear (0) or almost clear (1) (on a 5-point scale) and a reduction from baseline of >=2 points",
+        "Proportion of Participants Achieving Eczema Area and Severity Index (EASI) Response of >=75 Percent (%) Improvement From Baseline",
+        "Proportion of Participants Achieving >=4 Points improvement in the severity of Pruritus Numerical Rating Scale (NRS) from baseline"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05391061",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05391061",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05391061",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05391061",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05391061",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "adair",
+      "nctId": "NCT05689151",
+      "protocolNumber": "B7451096",
+      "acronym": "ADAIR",
+      "title": "Treating Atopic Dermatitis With Abrocitinib and Its Impact in Real Life: An Observational Cohort Study To Describe the Effectiveness of Abrocitinib in Patients With Moderate-to-Severe Atopic Dermatitis.",
+      "briefTitle": "A Study to Learn About Abrocitinib in Adult Patients With Moderate to Severe Atopic Dermatitis.",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis",
+        "Eczema"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        },
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        }
+      ],
+      "startDate": {
+        "value": "2023-03-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 183,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "Proportion of patients with an Investigator's Global Assessment (IGA) score of clear (0) or almost clear (1) (on a 5- point scale) and a reduction from baseline of ≥2 points"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of patients with an Investigator's Global Assessment (IGA) score of clear (0) or almost clear (1) (on a 5- point scale) and a reduction from baseline of ≥2 points",
+        "Change in Eczema Area and Severity Index (EASI) score from baseline",
+        "Proportion of patients with an EASI75 and EASI90",
+        "Time to Peak Pruritis-Numerical Rate Scale (PP-NRS) response (improvement of ≥2 points from baseline)",
+        "PP-NRS (response improvement of ≥2 points or ≥4 points from baseline)",
+        "Absolute change from baseline in PP-NRS score",
+        "Absolute change from baseline Atopic Dermatitis Control Test (ADCT) score",
+        "Absolute changes from baseline score of Epworth sleepiness scale",
+        "Proportion of patients with ≤2 days per week of topical therapies applications, on average, in the last 4 weeks",
+        "Duration of Drug Therapy",
+        "Duration of each dosage",
+        "Proportion of patients with each regimen and changes over the treatment period",
+        "Proportion of patient with temporary treatment discontinuation",
+        "Proportion of patient with permanent treatment discontinuation with reason",
+        "Proportion of Participants Receiving Subsequent Treatment",
+        "Number of Participants With Any Changes in Dosing",
+        "Proportion of patient with temporary treatment discontinuation with reason",
+        "Proportion of responders by items of Treatment Physician Satisfaction Questionnaire score (5-points Likert scale)",
+        "Demographic Characteristic of Participants: Age",
+        "Demographical Characteristics of Participants:sex",
+        "Demographic Characteristic of Participants: Body Mass Index",
+        "Disease Characteristics of Participants: IGA score",
+        "Disease Characteristics of Participants: EASI score",
+        "Disease Characteristics of Participants: % of BSA involvement",
+        "Disease Characteristics of Participants: PRO data",
+        "Demographic Characteristics of Participants: history of treatment for atopic dermatitis",
+        "Disease Characteristics of Participants: history of the disease",
+        "Demographic Characteristic of Participants: Comorbidities",
+        "Hematological and lipid biological parameters",
+        "Proportion of patients with serious events",
+        "Proportion of patients with non-serious adverse events",
+        "Number of scratching episodes during the evening sleep period that occur pre treatment versus on treatment",
+        "Duration of time scratching during the evening sleep period that occur pre treatment versus on treatment",
+        "Compare change from pre-treatment to on-treatment measures of sleep quantity",
+        "Compare change from pre-treatment to on-treatment measures of Total sleep opportunity",
+        "Compare change from pre-treatment to on-treatment measures of Sleep efficiency",
+        "Compare change from pre-treatment to on-treatment measures of Total time asleep",
+        "Compare change from pre-treatment to on-treatment measures of Sleep onset latency",
+        "Compare change from pre-treatment to on-treatment measures of Wake after sleep onset and Number of wake bouts"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05689151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05689151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05689151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05689151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05689151",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451095",
+      "nctId": "NCT05721937",
+      "protocolNumber": "B7451095",
+      "title": "CIBINQO™ Pregnancy Registry: An Observational Study of the Safety of Abrocitinib Exposure in Pregnant Women and Their Offspring",
+      "briefTitle": "A Study of How Safe Abrocitinib (CIBINQO) is in Pregnant Women and Their Offspring",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2023-07-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 400,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "0 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Exposed to CIBINQO during pregnancy",
+          "description": "Received at least one dose of CIBINQO at any time during pregnancy or prior to pregnancy (within 1 day prior to the date of conception)."
+        },
+        {
+          "label": "Unexposed to CIBINQO during pregnancy",
+          "description": "Diagnosed with moderate-to-severe atopic dermatitis, but not exposed to CIBINQO during pregnancy."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percent of live birth children with major congenital malformations"
+      ],
+      "secondaryEndpoints": [
+        "Percent of participants with children with minor congenital malformations",
+        "Percent of participants with spontaneous abortion",
+        "Percent of participants with stillbirths",
+        "Percentage of participants with an elective termination",
+        "Percent of participants with preterm birth",
+        "Percent of participants with children born small for gestational age",
+        "Percentage of participants with children with postnatal growth deficiency",
+        "Percent of participants with infant developmental delay"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05721937",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05721937",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05721937",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05721937",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05721937",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "attract",
+      "nctId": "NCT06353087",
+      "protocolNumber": "B7451114",
+      "acronym": "ATTRACT",
+      "title": "THE REAL-WORLD TREATMENT PATTERNS AND CLINICAL OUTCOMES IN MODERATE-TO-SEVERE ATOPIC DERMATITIS (AD) PATIENTS RECEIVING ABROCITINIB",
+      "briefTitle": "Abrocitinib Taiwan Treatment Pattern and Real World Study in ATopiC Dermatitis (ATTRACT Registry)",
+      "phase": "NA",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Dermatitis, Atopic",
+        "Dermatitis",
+        "Eczema",
+        "Skin Diseases",
+        "Immune System Diseases",
+        "Janus Kinase Inhibitors"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ],
+      "startDate": {
+        "value": "2024-06-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-06-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-06-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 41,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving >= 75% Improvement From Baseline in Eczema Area and Severity Index (EASI-75) Response at Week 2, 12, 52",
+        "Percentage of Participants Achieving >= 90% Improvement From Baseline in Eczema Area and Severity Index (EASI-90) Response at Week 2, 12, 52",
+        "Percentage of Participants Achieving Investigator's Global Assessment (IGA) Response of Clear (0) or Almost Clear (1) and Greater Than or Equal to 2 Points Improvement From Baseline at Week 2, 12, 52"
+      ],
+      "secondaryEndpoints": [
+        "Duration of Abrocitinib Treatment: All Participants",
+        "Demographic and baseline characteristics",
+        "Percent Change From Baseline in Eczema Area and Severity Index (EASI) Total Score at Week 2, 4, 12, 16, 24, and 52",
+        "Change From Baseline in Investigator's Global Assessment (IGA) at Weeks 2, 4, 12, 16, 24, and 52",
+        "Change From Baseline in Percentage Body Surface Area at Week 2, 4, 12, 16, 24, and 52",
+        "Change From Baseline in Patient-Oriented Eczema Measure (POEM) at Week 2, 4, 12, and 52",
+        "Change from baseline of Atopic Dermatitis Control Tool (ADCT) score at Week 2, 4, 12, and 52",
+        "Change From Baseline in Dermatology Life Quality Index (DLQI) Total Score to Week 2, 4, 12, and 52",
+        "Change From Baseline in Patient Global Assessment (PtGA)",
+        "Percentage Change From Baseline in Peak Pruritus Numerical Rating Scale (PP-NRS) From Baseline at Weeks 2, 4, 12, 16, 24, and 52",
+        "Percentage of Participants Achieving >=4 Points Reduction in Peak Pruritus Numerical Rating Scale (PP-NRS) From Baseline at Week 2, 4, 12, 16, 24, and 52",
+        "Percentage of Participants Achieving 0 or 1 in Peak Pruritus Numerical Rating Scale (PP-NRS) From Baseline at Week 2, 4, 12, 16, 24, and 52"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06353087",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06353087",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06353087",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06353087",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06353087",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451023",
+      "nctId": "NCT06807268",
+      "protocolNumber": "B7451023",
+      "title": "A 16-WEEK, MULTICENTER, INTERVENTIONAL, PHASE 3, RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED, PARALLEL GROUP STUDY TO INVESTIGATE EFFICACY AND SAFETY OF ABROCITINIB IN CHILDREN 6 TO LESS THAN 12 YEARS OF AGE WITH MODERATE-TO-SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "A Study of the Medicine Called Abrocitinib in Children 6 to Less Than 12 Years of Age With Moderate-to-Severe Eczema",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Eczema"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        },
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        }
+      ],
+      "startDate": {
+        "value": "2025-07-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-05-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-05-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 150,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "maxAge": "11 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Abrocitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Abrocitinib administered as liquid oral suspension."
+        },
+        {
+          "label": "Matching Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo administered as liquid oral suspension."
+        }
+      ],
+      "primaryEndpoints": [
+        "Response based on achieving Validated Investigator's Global Assessment (vIGA) score of clear (0) or almost clear (1) (on a 5-point scale) and a reduction from baseline of ≥2 points at Week 12",
+        "Response based on achieving ≥75% improvement from baseline in the Eczema Area and Severity Index (EASI)-75 at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Change from Baseline (CFB) in the Worst Itch Numerical Rating Scale (WI-NRS) at Week 2",
+        "Response based on achieving at least a 4-point improvement from baseline in the WI-NRS at Week 12",
+        "Response based on achieving WI-NRS <2 at Week 12"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807268",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807268",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807268",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807268",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807268",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451031",
+      "nctId": "NCT06807281",
+      "protocolNumber": "B7451031",
+      "title": "A Phase 3, Multicenter, Long-Term, Open Label Study Evaluating the Safety and Efficacy of Abrocitinib, With or Without Topical Medications Administered to Pediatric Participants Aged 2 Years and Older With Moderate-to-Severe Atopic Dermatitis",
+      "briefTitle": "A Long-term Study of the Medicine Called Abrocitinib in Children Aged 2 Years and Older With Moderate to Severe Eczema",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2025-12-02",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-02-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2032-02-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 450,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "11 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Extension",
+          "type": "EXPERIMENTAL",
+          "description": "Patients who have completed other abrocitinib studies"
+        },
+        {
+          "label": "De novo",
+          "type": "EXPERIMENTAL",
+          "description": "Patients who have not participated other abrocitinib studies"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants with Treatment-Emergent Adverse Events (TEAEs), Serious Adverse Events (SAEs), and adverse events (AEs) that lead to study discontinuation"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Clinically Significant Laboratory Abnormalities",
+        "Response based on achieving Validated Investigator's Global Assessment (vIGA) score of clear (0) or almost clear (1) (on a 5-point scale) and a 2 -point reduction from baseline at all scheduled time points",
+        "Percentage of Response based on achieving a ≥4 point improvement from baseline in the Worst Itch Numerical Rating Scale (WI-NRS) at all scheduled time points in participants aged ≥2 to <6 years",
+        "Percentage of Response based on achieving a ≥4-point improvement from baseline in the WSI-NRS at all scheduled time points in participants aged ≥6 to 12 years",
+        "Percentage of Responders based on achieving Eczema Area and Severity Index (EASI)-50, EASI-90 and EASI-100 at all scheduled time points in participants with moderate-to-severe disease treated with abrocitinib",
+        "Percent Change from Baseline (CFB) in EASI total score at all scheduled time points.",
+        "Percentage of Participants with Flares",
+        "CFB in the percentage Body Surface Area (BSA) affected at all scheduled time points",
+        "CFB in Children's Dermatology Life Quality Index (CDLQI) at all scheduled time points.",
+        "CFB in in Infants' Dermatitis Quality of Life (IDQOL) Index at all scheduled time points",
+        "CFB in Patient-Oriented Eczema Measure (POEM) at all scheduled time points",
+        "CFB in Dermatitis Family Impact (DFI) at all scheduled time points",
+        "CFB in Patient Global Impression of Severity (PGIS) at all scheduled time points",
+        "CFB in Observer Reported Global Impression of Severity (OGIS) at all scheduled time points",
+        "CFB in the the EuroQol- 5 Dimension Youth (EQ-5D-Y)",
+        "Number of topical corticosteroid and /or topical calcineurin inhibitor free days",
+        "Percentage of Participants Achieving satisfactory response in Tdap/DTaP and/or pneumococcal antibody titers as appropriate in participants who receive Tdap/DTaP and/or pneumococcal vaccinations"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807281",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807281",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807281",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807281",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06807281",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451125",
+      "nctId": "NCT06899204",
+      "protocolNumber": "B7451125",
+      "title": "A Prospective, Multi-center Observational Study Characterizing Clinical Outcomes of Patients Receiving Abrocitinib for Moderate-to-severe Atopic Dermatitis Who Had an Inadequate Response (or Intolerance) to ≤2 Previous Biologic Therapies Approved for Moderate-to-severe Atopic Dermatitis",
+      "briefTitle": "Real World Efficiency of Abrocitinib Treatment at Patients With Moderate to Severe Atopic Dermatitis Who Had Inadequate Response to Previous Biologic Therapies.",
+      "phase": "NA",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis",
+        "Atopic Dermatitis, Unspecified",
+        "Dermatitis, Atopic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2026-04-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-02-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-02-15",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 150,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment",
+          "description": "Patients that are taking treatment with abrocitinib for moderate to severe atopic dermatitis."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of patients achieving EASI-75 improvement from baseline at Week 16 after index date",
+        "Percentage of patients achieving ≥ 4-point improvement in Peak Pruritus Numerical Rating Scale (PP-NRS) collected daily all through the study from baseline at Week 2 by e-diary assessment"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of patients achieving EASI-75, 90 and 100 from baseline at Week 4 and 16 after index date",
+        "Percentage of patients achieving v-IGA response of Clear (0) or Almost Clear (1) and ≥ 2 points improvement from baseline at Week 4 and 16 after index date",
+        "Change from baseline in total percentage of BSA at week 4 and 16",
+        "Percentage of patients achieving Peak Pruritus Numerical Rating Scale (PP-NRS) of 0 or 1 collected daily all through the study at Wk 4, 12 and 16",
+        "Percentage of patients achieving PP-NRS-4 at week 2, 4, 12 and 16 from baseline.",
+        "Absolute change from baseline in PP-NRS score at week 2",
+        "Proportion of patients overall \"Very Satisfied\" and \"Satisfied\" with abrocitinib at Wk 4, 12 and 16 with TSQM-9",
+        "Percentage of patients that report symptoms to be \"minimal\" or \"absent\" on the patient global impression of severity at week 4, 12 and 16",
+        "Change from baseline in Medical Outcomes Study - Sleep Scale (MOS-Sleep Scale) at Wk 4, 12 and 16",
+        "Percentage of Participants with an ADCT Total Score Reduction ≥ 5 from baseline at week 4, 12 and 16",
+        "Percentage of Participants Achieving Improvement (reduction) in DLQI/CDLQI of ≥ 4 points vs baseline at week 4, 12 and 16",
+        "Observational change in pigment alteration from baseline at week 4 and 16 by visual assessment of available photography",
+        "Cilinical Characteristics: Type of prior AD treatment at specific medication level and Route of Administration",
+        "Demographic charasteristics: Number/percentage of patients by age, sex, race, ethnicity, socioeconomic status, state of residence",
+        "Clinical Characteristics: Number/percentage of patients by smoking status, medical history",
+        "Clinical Characteristics: Duration of prior therapy/frequency",
+        "Clinical Characteristics: Total number of AD treatments used prior to abrocitinib initiation",
+        "Clinical characteristics : Reason for switching to abrocitinib from previous biologic",
+        "Outcome: Assessment of efficacy in patients who received a dose change after baseline visit (dose increase or decrease)",
+        "Assess early improvement in itch (within min/hrs) after first dose"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06899204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06899204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06899204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06899204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06899204",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451138",
+      "nctId": "NCT07887867",
+      "protocolNumber": "B7451138",
+      "title": "A REAL-WORLD RETRO-PROSPECTIVE SINGLE COHORT STUDY EVALUATING THE EFFECTIVENESS OF ABROCITINIB (100/200 MG) IN PATIENTS AFFECTED BY SEVERE ATOPIC DERMATITIS SWITCHED PER CLINICAL PRACTICE FROM OTHER ADVANCED THERAPIES, INCLUDING BIOLOGICS AND/OR OTHER JAK INHIBITORS - ABRO-SWITCH",
+      "briefTitle": "A Study to Learn About the Study Medicine Abrocitinib in People With Severe Atopic Dermatitis Who Have Switched From Other Therapies",
+      "phase": "NA",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Dermatitis, Atopic"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        },
+        {
+          "id": "D011537",
+          "term": "Pruritus"
+        }
+      ],
+      "startDate": {
+        "value": "2026-10-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-10-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-08-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 120,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Patients switched to abrocitinib",
+          "description": "Adult patients with severe atopic dermatitis who switched from previous advanced therapies (dupilumab, lebrikizumab, tralokinumab, baricitinib, upadacitinib) to abrocitinib according to routine clinical practice"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving Eczema Area and Severity Index (EASI) <7"
+      ],
+      "secondaryEndpoints": [
+        "EASI 90",
+        "Change from baseline in Eczema Area and Severity Index (EASI) Score",
+        "Change from baseline in Peak Pruritus-Numeric Rating Scale (PP-NRS) Score",
+        "Percentage of Participants Achieving PP-NRS <=1",
+        "Change from baseline in Investigator's Global Assessment (IGA) Score",
+        "Percentage of Participants Achieving IGA 0-1",
+        "Change from baseline in Dermatology Life Quality Index (DLQI) Score",
+        "Change From Baseline in Patient-Oriented Eczema Measure (POEM) Score",
+        "Change from baseline in Sleep Disturbance Numeric Rating Scale (SD-NRS) Score",
+        "Percentage of Participants Achieving Minimal Disease Activity (MDA)",
+        "Demographics Characteristics: Percentage of Participants by Age, Gender, Education, Occupation, Family Status",
+        "Number of Participants by Age-at-Onset Category for Atopic Dermatitis",
+        "Number of Participants by Atopic Dermatitis Phenotype",
+        "Number of Participants with Each Difficult-to-Treat Body Area",
+        "Clinical Characteristics: Duration of Previous Advanced Therapy Before Switching to Abrocitinib",
+        "Number of participants with Each Atopic Comorbidity",
+        "Number of Participants with Each Non-Atopic Comorbidity",
+        "Adherence to Abrocitinib",
+        "Persistence to Abrocitinib"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07887867",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07887867",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07887867",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07887867",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07887867",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451030",
+      "nctId": "NCT07823595",
+      "protocolNumber": "B7451030",
+      "title": "A 16-WEEK, MULTICENTER, INTERVENTIONAL, PHASE 3, RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED, PARALLEL GROUP STUDY TO INVESTIGATE EFFICACY AND SAFETY OF ABROCITINIB IN CHILDREN 2 TO LESS THAN 6 YEARS OF AGE WITH MODERATE-TO-SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "Abrocitinib Treatment of Atopic Dermatitis in Children 2 to Less Than 6 Years of Age",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2027-05-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-04-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-04-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 90,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "5 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Abrocitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive liquid oral suspension of Abrocitinib."
+        },
+        {
+          "label": "Matching Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will receive liquid oral suspension of matching placebo."
+        }
+      ],
+      "primaryEndpoints": [
+        "Response based on achieving validated Investigator's Global Assessment (vIGA) score of clear (0) or almost clear (1) (on a 5-point scale) and a reduction from baseline of ≥2 points at Week 12",
+        "Response based on achieving ≥75% improvement from baseline in Eczema and Severity Index (EASI) at Week 12"
+      ],
+      "secondaryEndpoints": [
+        "Change from baseline (CFB) in the Worst Scratch/Itch Numerical Rating Scale (WSI-NRS) at Week 2",
+        "Response based on achieving at least a 4-point improvement from baseline in the WSI-NRS at Week 12",
+        "Response based on achieving WSI-NRS <2 at Week 12"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07823595",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07823595",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07823595",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07823595",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07823595",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b745",
+      "nctId": "NCT05466578",
+      "protocolNumber": "B745",
+      "title": "Pre-approval Single-patient Expanded Access for Abrocitinib (PF-04965842)",
+      "briefTitle": "Pre-approval Single-patient Expanded Access for Abrocitinib (PF-04965842)",
+      "phase": "NA",
+      "roles": [],
+      "status": "AVAILABLE",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Severe Uncontrolled Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "design": {},
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05466578",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05466578",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05466578",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05466578",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05466578",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "b7451064",
+      "nctId": "NCT04564755",
+      "protocolNumber": "B7451064",
+      "title": "ABROCITINIB EXPANDED ACCESS PROTOCOL FOR THE TREATMENT OF ADOLESCENTS AND ADULTS WITH MODERATE TO SEVERE ATOPIC DERMATITIS",
+      "briefTitle": "Abrocitinib Expanded Access Protocol in Adolescents and Adults With Moderate to Severe Atopic Dermatitis",
+      "phase": "NA",
+      "roles": [],
+      "status": "NO_LONGER_AVAILABLE",
+      "sponsor": "Pfizer",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "design": {},
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04564755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04564755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04564755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04564755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04564755",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2022-01-14",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA213871%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-1",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2023-02-09",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA213871%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-4",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2023-12-14",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-4",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA213871%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-5",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2026-06-30",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-5",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA213871%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-3",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2026-09-02",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-3",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA213871%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 213871",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA213871%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (SUPPL-5)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/213871Orig1s005ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (SUPPL-5)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s005lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-2",
+      "label": "Letter (SUPPL-3)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/213871Orig1s003ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-3",
+      "label": "Label (SUPPL-3)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/213871s003lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-4",
+      "label": "Label (SUPPL-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213871s001lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-5",
+      "label": "Letter (SUPPL-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/213871Orig1s001ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-6",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/213871Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-7",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213871s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-8",
+      "label": "Label (SUPPL-4)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213871s004lblcorrected.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-9",
+      "label": "Letter (SUPPL-4)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/213871Orig1s004correctedltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-11-07T19:08:16.006Z"
+}
