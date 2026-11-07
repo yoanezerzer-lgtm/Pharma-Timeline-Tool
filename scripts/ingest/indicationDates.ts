@@ -46,6 +46,9 @@ const SAME_WORD: Record<string, string> = {
   cancers: 'cancer',
   tumors: 'tumor',
   esophagus: 'esophageal',
+  // Dupixent's label says "nasal polyps", its 2019 approval letter "nasal polyposis".
+  polyp: 'polyps',
+  polyposis: 'polyps',
 };
 
 function isSubset(a: Set<string>, b: Set<string>): boolean {
@@ -91,6 +94,26 @@ function snapshot(doc: LabelDoc, milestone: Milestone, previousCompleteSize: num
   // listing far fewer than the last complete one is a truncated extraction.
   const plausibleSize = previousCompleteSize === undefined || names.length >= previousCompleteSize - 1;
   return { doc, milestone, names, complete: names.length > 0 && !leaked && contiguous && plausibleSize, legacy: false };
+}
+
+/**
+ * Whether one label's own indication list includes this use: true or false
+ * when the label can be read, undefined when it can't (nothing to go on).
+ * Used to tell a use that was in the original approval from one a later
+ * supplement added (Nemluvio's atopic dermatitis came after its first label).
+ */
+export function labelListsIndication(name: string, doc: LabelDoc): boolean | undefined {
+  const target = keyWords(name);
+  if (target.size === 0) return undefined;
+  const entries = extractIndicationList(doc.text);
+  if (entries.length > 0) {
+    return entries.some((e) => {
+      const d = distance(keyWords(e.name), target);
+      return d !== undefined;
+    });
+  }
+  const legacy = legacyIndicationsText(doc.text);
+  return legacy ? isSubset(target, keyWords(legacy)) : undefined;
 }
 
 /**

@@ -7,6 +7,7 @@ import {
   classifyTrialRoles,
   extractTrialAliases,
   extractIndicationList,
+  extractLegacyIndicationList,
   normalizeSponsor,
   runByApplicant,
   extractLabelTrialNames,
@@ -807,5 +808,18 @@ describe('classifyTrialRoles — extension studies and trials with a shared name
     const janssen = { sponsor: 'Janssen Research & Development, LLC', studyType: 'INTERVENTIONAL' as const };
     expect(pivotalFor(trial({ nctId: 'NCT04487080', labelName: 'MARIPOSA', ...janssen }), ctx)).toBe(false);
     expect(pivotalFor(trial({ nctId: 'NCT04988295', labelName: 'MARIPOSA-2', ...janssen }), ctx)).toBe(true);
+  });
+});
+
+describe('extractLegacyIndicationList (Protopic)', () => {
+  it('reads the one-sentence indication of a pre-numbered label, joining a hyphen broken by a line end', () => {
+    const text =
+      'INDICATIONS AND USAGE PROTOPIC Ointment is indicated as second-line therapy for the short- term treatment of moderate to severe atopic dermatitis in adults. PROTOPIC Ointment is not indicated for children younger than 2 years. CONTRAINDICATIONS PROTOPIC is contraindicated in patients with a history of hypersensitivity.';
+    expect(extractLegacyIndicationList(text)).toEqual([
+      { number: 1, name: 'As second-line therapy for the short-term treatment of moderate to severe atopic dermatitis in adults' },
+    ]);
+  });
+  it('lists nothing for a numbered label', () => {
+    expect(extractLegacyIndicationList('1 INDICATIONS AND USAGE X is indicated for Y. 2 DOSAGE AND ADMINISTRATION')).toEqual([]);
   });
 });
