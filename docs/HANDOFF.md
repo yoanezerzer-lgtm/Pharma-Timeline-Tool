@@ -1,13 +1,13 @@
-# Handoff: where things stand (4 Nov 2026)
+# Handoff: where things stand (7 Nov 2026)
 
 Read `CLAUDE.md` first: it holds the owner's standing rules. `docs/PRD.md`
 holds the mission, the users and the goals, agreed 4 Nov. This note is
 the current state and the next steps. Update it when they change, and start
 a new session when a conversation gets long.
 
-## Product direction (owner, 29 Oct 2026)
-- **A free resource for scientists and students to learn from.** No
-  accounts, no paywall. Favour clear explanations, sources a reader can
+## Product direction (owner, 29 Oct 2026; changed 7 Nov, see below)
+- ~~A free resource with no accounts, no paywall.~~ Replaced on 7 Nov: a
+  paid site, published on Google this week (see "Owner decisions (7 Nov)"). Favour clear explanations, sources a reader can
   follow, and pages that teach (how a drug works, which trials led to which
   approval) over business features.
 - Only quote public-domain sources (FDA, ClinicalTrials.gov, MeSH,
@@ -153,6 +153,48 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
 - Weekly status: done. A free workflow posts to the "Weekly status" issue
   every Monday (`.github/workflows/weekly-status.yml`).
 
+## Owner decisions (7 Nov 2026)
+- **Paywall.** The site goes behind a paywall and is published (on Google)
+  this week; the owner's cousin advises on search and pricing. Agreed
+  default until the owner says otherwise: home, drug pages and "What it's
+  for" stay free so Google can read them; deeper parts (downloads,
+  Compare, full trial detail) go behind the paywall. Payments need
+  accounts and a host other than GitHub Pages.
+- **Hosting:** Cloudflare Pages recommended (free, own domain, can add a
+  login and Stripe later). Domain to buy: owner's call, not done.
+- **News links:** link only, never copy, and only pages not behind a
+  paywall: company websites and press releases, newswires, Fierce Pharma.
+  (Not STAT: mostly paywalled.)
+- **Copy on the site:** text explaining what a section is goes behind an
+  (i) icon; text meant for the owner is removed (done, #110).
+
+## Done 7 Nov
+- Words split in PDF text ("JA Ks", "fun ction") fixed at the source:
+  text pieces are joined the way they sit on the page (#109). All 52
+  drugs re-read (#111). Confirmed facts filed under the old, split wording
+  still match: wording is compared with spaces ignored (`src/lib/wording.ts`).
+  The cleaner text found two new pivotal links for the checker to confirm:
+  Rinvoq NCT03653026 and Skyrizi NCT03398135 (ulcerative colitis).
+- (i) icons for section explanations, owner-only text removed (#110).
+
+## Blocker (7 Nov): the site is not publishing
+The repository was made private on 7 Nov. Since 16:22 that day every
+deploy fails ("Ensure GitHub Pages has been enabled"): free GitHub accounts
+only publish Pages from public repositories. #109–#111 are merged but not
+live. Owner to choose: make the repo public again (Settings → General →
+Danger zone), or move hosting to Cloudflare Pages (works with a private
+repo; planned anyway for the paywall).
+
+## Next steps (in order, one chat each)
+1. Unblock publishing (above), then check the live Rinvoq page shows
+   "point of JAKs" and the (i) icons.
+2. Real page addresses: replace `#/drug/...` with `/drug/...`, each page
+   with its own title and description, plus a sitemap, so Google can list
+   every page (today it only sees the home page).
+3. Move atopic dermatitis under immunology (3 Nov decision).
+4. Hosting on Cloudflare Pages and the owner's domain.
+5. News links (sources above), then the paywall.
+
 ## Owner decisions (4 Nov 2026)
 - Mission, users and eight goals agreed: see `docs/PRD.md`.
 - Students come first; analyst features (milestones, Compare) wait.
@@ -168,7 +210,7 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   counter and real page addresses come first. This replaces "students come
   first" and "no new drugs until goals 1–3" above. See `docs/PRD.md` §2, §9.
 
-## Next steps
+## PRD goals (4 Nov)
 Work the PRD goals in order (§9). Active now: 1 (see who comes: counter
 and real page addresses), 2 (one area complete), 3 (precedent table in ten
 minutes), plus the standing goal (owner only approves). The Treadle board
