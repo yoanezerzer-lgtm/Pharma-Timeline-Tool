@@ -65,7 +65,6 @@ export function DrugIndex() {
   const groups = AREAS.map((a) => ({ ...a, drugs: matching.filter((d) => areasOfDrug(d).some((x) => x.id === a.id)) }));
   const unsorted = matching.filter((d) => areasOfDrug(d).length === 0);
   const shown = groups.filter((g) => (!area || g.id === area) && g.drugs.length > 0);
-  const empty = query ? [] : groups.filter((g) => (!area || g.id === area) && g.drugs.length === 0);
 
   return (
     <main className="index">
@@ -102,13 +101,7 @@ export function DrugIndex() {
           <Group key={g.id} title={g.name} drugs={g.drugs} />
         ))}
         {(!area || area === NOT_SORTED) && unsorted.length > 0 && <Group title="Being sorted" drugs={unsorted} />}
-        {shown.length === 0 && unsorted.length === 0 && (query || empty.length === 0) && <p className="index__none">No drugs match.</p>}
-        {empty.length > 0 && (
-          <p className="index__empty">
-            <span>No approvals on the site yet:</span> {empty.map((g) => g.name).join(', ')}
-            {empty.some((g) => g.rule) && <> (being added from official records)</>}
-          </p>
-        )}
+        {shown.length === 0 && unsorted.length === 0 && <p className="index__none">{query ? 'No drugs match.' : 'No drugs here yet.'}</p>}
       </div>
     </main>
   );

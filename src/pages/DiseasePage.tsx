@@ -1,3 +1,4 @@
+import { Info } from '../components/Info/Info.js';
 import { useState } from 'react';
 import { BackLink } from '../components/BackLink/BackLink.js';
 import type { DiseaseSummary, UseStep } from '../lib/diseases.js';
@@ -53,10 +54,14 @@ export function DiseasePage({ meshId }: { meshId: string }) {
 
       <section className="ind-timeline" aria-label="Approvals over time">
         <div className="disease__timeline-head">
-          <h2>Approvals over time</h2>
+          <h2>
+            Approvals over time
+            <Info label="How to read this">
+              One row per approved use. A filled dot is a new approval; an open dot is a change to an earlier one.
+            </Info>
+          </h2>
           <ExportButtons disease={disease} />
         </div>
-        <p className="about__note">One row per approved use. A filled dot is a new approval; an open dot is a change to an earlier one.</p>
         {times.length > 0 && (
           <div className="ind-timeline__axis" aria-hidden="true">
             <div />
@@ -107,11 +112,12 @@ export function DiseasePage({ meshId }: { meshId: string }) {
       </section>
 
       <section className="uses" aria-labelledby="wording-head">
-        <h2 id="wording-head">What each approval covers</h2>
-        <p className="about__note">
-          In the FDA’s words, from the approval letter (its opening formalities left out) or the label. Each date links to the
-          letter.
-        </p>
+        <h2 id="wording-head">
+          What each approval covers
+          <Info label="About this section">
+            In the FDA’s own words, from the approval letter or the label. Each date links to the letter.
+          </Info>
+        </h2>
         <ul className="uses__list">
           {disease.uses.map((u) => (
             <li key={`${u.drugSlug}-${u.indicationSlug}`} id={`use-${u.drugSlug}-${u.indicationSlug}`} className="disease__approval">

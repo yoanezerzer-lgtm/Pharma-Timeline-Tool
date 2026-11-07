@@ -1,3 +1,4 @@
+import { Info } from '../components/Info/Info.js';
 import { useMemo } from 'react';
 import {
   getIndication,
@@ -7,7 +8,7 @@ import {
   primaryCompletionToApprovalMonths,
 } from '../lib/drugs.js';
 import { IndicationTimeline } from '../components/IndicationTimeline/IndicationTimeline.js';
-import { compareHref, drugHref, navigate, indicationHref, indicationTrialHref, reviewDrugHref } from '../lib/router.js';
+import { compareHref, drugHref, navigate, indicationHref, indicationTrialHref } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
@@ -189,7 +190,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
 
       <p className="drug__status" role="status">
         <CheckBadge stats={checked} />
-        {checkSentence(checked)} <a href={reviewDrugHref(drug.slug)}>Review it</a>
+        <Info label="What checked means">{checkSentence(checked)}</Info>
       </p>
 
       {scopedTrials.length === 0 ? (
@@ -267,10 +268,10 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
 
       {drug.sources.length > 0 && (
         <section className="drug__sources">
-          <h2>Sources</h2>
-          <p className="drug__sources-note">
-            The FDA documents everything on this page was read from, so you can check them yourself.
-          </p>
+          <h2>
+            Sources
+            <Info label="About sources">The FDA documents everything on this page comes from, so you can check it yourself.</Info>
+          </h2>
           {ownSources && (
             <ul className="drug__sources-own">
               <SourceGroupRow group={ownSources} highlight />

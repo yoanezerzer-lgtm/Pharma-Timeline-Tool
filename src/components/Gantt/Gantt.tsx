@@ -1,3 +1,4 @@
+import { Info } from '../Info/Info.js';
 import { useMemo, useRef, useState, useEffect } from 'react';
 import type { Trial, Milestone, TrialRole } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
@@ -302,9 +303,9 @@ function GanttLegend() {
       <span className="gantt__legend-item">
         <span className="gantt__swatch-diamond" /> Regulatory milestone
       </span>
-      <span className="gantt__legend-item gantt__legend-note">
-        Faded bar ends mean the source gave only a month or year.
-      </span>
+      <Info label="How to read this chart">
+        A faded bar end means the source gave only a month or year.
+      </Info>
     </div>
   );
 }
