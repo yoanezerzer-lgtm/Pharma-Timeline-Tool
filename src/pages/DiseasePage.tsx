@@ -25,7 +25,10 @@ export function DiseasePage({ meshId }: { meshId: string }) {
 
 function DiseaseView({ disease }: { disease: DiseaseSummary }) {
   usePageMeta(diseaseMeta(disease));
-  const times = disease.uses.flatMap((u) => u.steps.filter((s) => s.date).map((s) => toTime(s.date!)));
+  const times = disease.uses.flatMap((u) => [
+    ...u.steps.filter((s) => s.date).map((s) => toTime(s.date!)),
+    ...u.trials.flatMap((t) => [toTime(t.start!), toTime(t.primaryCompletion!)]),
+  ]);
   const min = Math.min(...times) - 180 * DAY;
   const max = Math.max(...times) + 180 * DAY;
   const pct = (t: number) => ((t - min) / (max - min)) * 100;
@@ -51,7 +54,8 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
           <h2>
             Approvals over time
             <Info label="How to read this">
-              One row per approved use. A filled dot is a new approval; an open dot is a change to an earlier one.
+              One row per approved use. Bars are the pivotal trials, from start to primary completion. A filled dot is a
+              new approval; an open dot is a change to an earlier one.
             </Info>
           </h2>
           <ExportButtons disease={disease} />
@@ -84,9 +88,25 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
                   <span className="ind-timeline__name disease__row-name">
                     <strong>{u.brandName}</strong> <span className="disease__use">{u.indication}</span>
                   </span>
-                  <span className="ind-timeline__track" aria-hidden="true">
+                  <span
+                    className={`ind-timeline__track${u.trials.length ? ' disease__lane' : ''}`}
+                    style={u.trials.length ? { height: `${Math.max(14, u.trials.length * 6 + 4)}px` } : undefined}
+                    aria-hidden="true"
+                  >
                     {years.map((y) => (
                       <span key={y} className="ind-timeline__gridline" style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }} />
+                    ))}
+                    {u.trials.map((t, k) => (
+                      <span
+                        key={t.id}
+                        className={`disease__bar${t.phase === 'PHASE3' ? '' : ' disease__bar--early'}`}
+                        title={`${t.name}: ${formatDate(t.start!)} to ${formatDate(t.primaryCompletion!)}`}
+                        style={{
+                          left: `${pct(toTime(t.start!))}%`,
+                          width: `${Math.max(0.4, pct(toTime(t.primaryCompletion!)) - pct(toTime(t.start!)))}%`,
+                          top: `${2 + k * 6}px`,
+                        }}
+                      />
                     ))}
                     {u.steps.map((s, k) =>
                       s.date ? (
@@ -100,7 +120,7 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
                   </span>
                   <span className="ind-timeline__date">
                     {firstDate ? formatDate(firstDate) : DATE_UNCLEAR}
-                    {u.steps.length > 1 && <span className="disease__inn"> · {u.steps.length - 1} more</span>}
+                    {u.steps.length > 1 && <span className="disease__inn">+ {u.steps.length - 1} more</span>}
                   </span>
                 </a>
               </li>

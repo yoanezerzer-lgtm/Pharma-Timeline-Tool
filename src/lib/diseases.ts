@@ -1,6 +1,7 @@
 import type { Approval, DateValue, Drug } from '../schema/index.js';
 import { letterCore, naturalTerm, readableDefinition } from './plainText.js';
 import { shownCategories } from './areas.js';
+import { roleFor, trialShortName } from './drugs.js';
 
 /**
  * Every approval for one disease across drugs, computed at build time (see
@@ -41,6 +42,17 @@ export interface DiseaseUse {
   indication: string;
   /** Oldest first. */
   steps: UseStep[];
+  /** The pivotal trials behind the use, oldest start first, for the disease page's lanes. */
+  trials: LaneTrial[];
+}
+
+/** A pivotal trial drawn as a bar from its start to its primary completion. */
+export interface LaneTrial {
+  id: string;
+  name: string;
+  phase?: string;
+  start?: DateValue;
+  primaryCompletion?: DateValue;
 }
 
 export interface DiseaseSummary {
@@ -86,7 +98,7 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
         } else {
           entry.approvals.push({ ...base, date: i.approvalDate, submission: i.submissionNumber });
         }
-        entry.uses.push({ ...base, indication: i.displayName ?? i.name, steps: useSteps(drug, i) });
+        entry.uses.push({ ...base, indication: i.displayName ?? i.name, steps: useSteps(drug, i), trials: laneTrials(drug, i.name) });
       }
     }
   }
@@ -122,4 +134,12 @@ function useSteps(drug: Drug, i: Drug['indications'][number]): UseStep[] {
     steps.push({ date: a.date, submissions: [a.submission], kind: a.kind, text, sourceUrl: a.provenance.sourceUrl });
   }
   return steps;
+}
+
+/** The use's pivotal trials with both ends dated, oldest start first. */
+function laneTrials(drug: Drug, indicationName: string): LaneTrial[] {
+  return drug.trials
+    .filter((t) => roleFor(t, indicationName) === 'PIVOTAL' && t.startDate && t.primaryCompletionDate)
+    .map((t) => ({ id: t.id, name: trialShortName(t), phase: t.phase, start: t.startDate, primaryCompletion: t.primaryCompletionDate }))
+    .sort((a, b) => a.start!.value.localeCompare(b.start!.value));
 }
