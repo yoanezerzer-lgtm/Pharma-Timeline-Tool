@@ -1,3 +1,4 @@
+import { wordingKey } from './wording.js';
 import { useEffect, useState } from 'react';
 import { z } from 'zod';
 
@@ -35,14 +36,19 @@ function loadConfirmations(slug: string): Promise<Confirmation[]> {
   return pending;
 }
 
-/** Confirmed pivotal facts for a drug, keyed `${indication}|${trial}` (trial = NCT number, else id). */
+/** The key for a confirmed fact: the use's wording, spaces ignored (see wording.ts), and the trial. */
+export function confirmationKey(indication: string, trial: string): string {
+  return `${wordingKey(indication)}|${trial}`;
+}
+
+/** Confirmed pivotal facts for a drug, keyed by confirmationKey (trial = NCT number, else id). */
 export function useConfirmations(slug: string | undefined): Map<string, Confirmation> {
   const [map, setMap] = useState<Map<string, Confirmation>>(new Map());
   useEffect(() => {
     if (!slug) return;
     let cancelled = false;
     loadConfirmations(slug).then(
-      (list) => !cancelled && setMap(new Map(list.map((c) => [`${c.indication}|${c.trial}`, c]))),
+      (list) => !cancelled && setMap(new Map(list.map((c) => [confirmationKey(c.indication, c.trial), c]))),
       () => !cancelled && setMap(new Map())
     );
     return () => {

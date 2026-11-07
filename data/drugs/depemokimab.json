@@ -59,7 +59,7 @@
       {
         "number": "12.3",
         "title": "Pharmacokinetics",
-        "text": "The pharmacokinetics of depemokimab-ulaa were approximately dose-proportional in patients with asthma following SC administration over a dose range of 0.1-times the recommended dose to 3-times the recommended dose. After SC administration of 100 mg of EXDENSUR every 6 months in patients with severe asthma, the mean (SD) model-based estimated trough concentration of depemokimab-ulaa at Week 26 was approximately 1.30 (0.44) mcg/mL. The mean (SD) model-based estimated average steady-state plasma concentration over a single dosing interval was 6.16 (1.62) mcg/mL. Absorption Depemokimab-ulaa median T max was approximately 14 days. There was no accumulation following repeat SC administration once every 6 months. Distribution The estimated typical apparent volume of distribution is 6.3 L. Elimination The estimated mean (SD) elimination half-life was 48 (4.7) days following SC administration of EXDENSUR. The estimated typical apparent clearance was 0.092 L/day. Metabolism: Depemokimab-ulaa is a monoclonal antibody which is expected to be metabolized into small peptides and amino acids by catabolic pathways. Specific Populations No clinically significant differences in the pharmacokinetics of depemokimab-ulaa were observed based on age (12 to 93 years), sex, race (73% White, 7% Black, 19% Asian), body weight (34.6 to 161 kg), renal impairment (eGFR ≥ 90 mL/min/1.73 m 2 [normal, N = 548]; eGFR 60 to <90 mL/min/1.73 m 2 [mild, N = 380]; eGFR 30 to <60 mL/min/1.73 m 2 [moderate, N = 31], and eGFR ≤ 30 mL/min/1.73 m 2 [severe, N = 2]), or baseline hepatic function biomarkers (alanine aminotransferase [ALT; 5 to 153 IU/L], aspartate aminotransferase [AST; 9 to 115 IU/L], and bilirubin [1.7 to 42 micromol/L]). Pediatric Patients: There are limited pharmacokinetic data available in the pediatric population. The pharmacokinetics of depemokimab-ulaa in pediatric patients aged 12 to 17 years were consistent with adults. The pharmacokinetics of depemokimab-ulaa have not been studied in pediatric patients aged less than 12 years. Drug Interaction Studies No drug interaction studies have been conducted.",
+        "text": "The pharmacokinetics of depemokimab-ulaa were approximately dose-proportional in patients with asthma following SC administration over a dose range of 0.1-times the recommended dose to 3-times the recommended dose. After SC administration of 100 mg of EXDENSUR every 6 months in patients with severe asthma, the mean (SD) model-based estimated trough concentration of depemokimab-ulaa at Week 26 was approximately 1.30 (0.44) mcg/mL. The mean (SD) model-based estimated average steady-state plasma concentration over a single dosing interval was 6.16 (1.62) mcg/mL. Absorption Depemokimab-ulaa median Tmax was approximately 14 days. There was no accumulation following repeat SC administration once every 6 months. Distribution The estimated typical apparent volume of distribution is 6.3 L. Elimination The estimated mean (SD) elimination half-life was 48 (4.7) days following SC administration of EXDENSUR. The estimated typical apparent clearance was 0.092 L/day. Metabolism: Depemokimab-ulaa is a monoclonal antibody which is expected to be metabolized into small peptides and amino acids by catabolic pathways. Specific Populations No clinically significant differences in the pharmacokinetics of depemokimab-ulaa were observed based on age (12 to 93 years), sex, race (73% White, 7% Black, 19% Asian), body weight (34.6 to 161 kg), renal impairment (eGFR ≥90 mL/min/1.73 m 2 [normal, N = 548]; eGFR 60 to <90 mL/min/1.73 m 2 [mild, N = 380]; eGFR 30 to <60 mL/min/1.73 m 2 [moderate, N = 31], and eGFR ≤30 mL/min/1.73 m 2 [severe, N = 2]), or baseline hepatic function biomarkers (alanine aminotransferase [ALT; 5 to 153 IU/L], aspartate aminotransferase [AST; 9 to 115 IU/L], and bilirubin [1.7 to 42 micromol/L]). Pediatric Patients: There are limited pharmacokinetic data available in the pediatric population. The pharmacokinetics of depemokimab-ulaa in pediatric patients aged 12 to 17 years were consistent with adults. The pharmacokinetics of depemokimab-ulaa have not been studied in pediatric patients aged less than 12 years. Drug Interaction Studies No drug interaction studies have been conducted.",
         "provenance": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761458Orig1s000lbl.pdf",
           "sourceLabel": "Label (ORIG-1), section 12.3",
@@ -802,6 +802,10 @@
         "value": "2023-11-21",
         "precision": "day"
       },
+      "readoutDate": {
+        "value": "2024-05-21",
+        "precision": "day"
+      },
       "enrollment": {
         "count": 395,
         "type": "ACTUAL"
@@ -947,11 +951,7 @@
           "verified": false
         }
       },
-      "changeLog": [],
-      "readoutDate": {
-        "value": "2024-05-21",
-        "precision": "day"
-      }
+      "changeLog": []
     },
     {
       "id": "208021",
@@ -2594,5 +2594,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-31T20:18:37.383Z"
+  "lastIngestedAt": "2026-11-07T16:37:07.698Z"
 }

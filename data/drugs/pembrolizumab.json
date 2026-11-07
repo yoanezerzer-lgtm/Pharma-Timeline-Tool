@@ -7,11 +7,12 @@
   "mechanism": "Programmed death receptor-1 (PD-1) blocking antibody",
   "pharmacology": {
     "drugClass": {
-      "name": "Programmed Death Receptor-1 Blocking Antibody",
+      "name": "programmed death receptor-1 (PD-1)-blocking antibody",
       "provenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA125514%22&limit=1",
-        "sourceLabel": "openFDA: Established Pharmacologic Class",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s195lbl.pdf",
+        "sourceLabel": "Label (SUPPL-195), Highlights",
+        "quote": "KEYTRUDA is a programmed death receptor-1 (PD-1)-blocking antibody indicated",
+        "extractedBy": "regex",
         "verified": false
       }
     },
@@ -43,7 +44,7 @@
       {
         "number": "12.3",
         "title": "Pharmacokinetics",
-        "text": "The pharmacokinetics (PK) of pembrolizumab was characterized using a population PK analysis with concentration data collected from 2993 patients with various cancers who received pembrolizumab doses of 1 to 10 mg/kg every 2 weeks, 2 to 10 mg/kg every 3 weeks, or 200 mg every 3 weeks. Steady-state concentrations of pembrolizumab were reached by 16 weeks of repeated dosing with an every 3-week regimen and the systemic accumulation was 2.1-fold. The peak concentration (C max ), trough concentration (C min ), and area under the plasma concentration versus time curve at steady state (AUC ss ) of pembrolizumab increased dose proportionally in the dose range of 2 to 10 mg/kg every 3 weeks. Distribution The geometric mean value (CV%) for volume of distribution at steady state is 6.0 L (20%). Elimination Pembrolizumab clearance (CV%) is approximately 23% lower [geometric mean, 195 mL/day (40%)] at steady state than that after the first dose [252 mL/day (37%)]; this decrease in clearance with time is not considered clinically important. The terminal half-life (t 1/2 ) is 22 days (32%). Specific Populations The following factors had no clinically important effect on the CL of pembrolizumab: age (range: 15 to 94 years), sex, race (89% White), renal impairment (eGFR ≥15 mL/min/1.73 m 2 ), mild to moderate hepatic impairment (total bilirubin ≤3 times ULN and any AST), or tumor burden. The impact of severe hepatic impairment (total bilirubin >3 times ULN and any AST) on the pharmacokinetics of pembrolizumab is unknown. Pediatric Patients: Pembrolizumab concentrations with weight-based dosing at 2 mg/kg every 3 weeks in pediatric patients (10 months to 17 years) are comparable to those of adults at the same dose.",
+        "text": "The pharmacokinetics (PK) of pembrolizumab was characterized using a population PK analysis with concentration data collected from 2993 patients with various cancers who received pembrolizumab doses of 1 to 10 mg/kg every 2 weeks, 2 to 10 mg/kg every 3 weeks, or 200 mg every 3 weeks. Steady-state concentrations of pembrolizumab were reached by 16 weeks of repeated dosing with an every 3-week regimen and the systemic accumulation was 2.1-fold. The peak concentration (C max), trough concentration (C min ), and area under the plasma concentration versus time curve at steady state (AUCss) of pembrolizumab increased dose proportionally in the dose range of 2 to 10 mg/kg every 3 weeks. Distribution The geometric mean value (CV%) for volume of distribution at steady state is 6.0 L (20%). Elimination Pembrolizumab clearance (CV%) is approximately 23% lower [geometric mean, 195 mL/day (40%)] at steady state than that after the first dose [252 mL/day (37%)]; this decrease in clearance with time is not considered clinically important. The terminal half-life (t1/2) is 22 days (32%). Specific Populations The following factors had no clinically important effect on the CL of pembrolizumab: age (range: 15 to 94 years), sex, race (89% White), renal impairment (eGFR ≥15 mL/min/1.73 m 2 ), mild to moderate hepatic impairment (total bilirubin ≤3 times ULN and any AST), or tumor burden. The impact of severe hepatic impairment (total bilirubin >3 times ULN and any AST) on the pharmacokinetics of pembrolizumab is unknown. Pediatric Patients: Pembrolizumab concentrations with weight-based dosing at 2 mg/kg every 3 weeks in pediatric patients (10 months to 17 years) are comparable to those of adults at the same dose.",
         "provenance": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s195lbl.pdf",
           "sourceLabel": "Label (SUPPL-195), section 12.3",
@@ -1004,11 +1005,11 @@
             "precision": "day"
           },
           "kind": "new",
-          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with recurrent locally advanced or metastatic gastric or gastroesophageal junction adenocarcinoma whose tumors express PD-L1 [Combined Positive Score (CPS) ≥ 1] as determined by an FDA-approved test, with disease progression on or after two or more prior lines of therapy including fluoropyrimidine- and platinum-containing chemotherapy and if appropriate, HER2/neu targeted therapy.",
+          "statement": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with recurrent locally advanced or metastatic gastric or gastroesophageal junction adenocarcinoma whose tumors express PD-L1 [Combined Positive Score (CPS) ≥1] as determined by an FDA-approved test, with disease progression on or after two or more prior lines of therapy including fluoropyrimidine- and platinum-containing chemotherapy and if appropriate, HER2/neu targeted therapy.",
           "provenance": {
             "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/125514Orig1s024ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-24)",
-            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with recurrent locally advanced or metastatic gastric or gastroesophageal junction adenocarcinoma whose tumors express PD-L1 [Combined Positive Score (CPS) ≥ 1] as determined by an FDA-approved test, with disease progression on or after two or more prior lines of therapy including fluoropyrimidine- and platinum-containing chemotherapy and if appropriate, HER2/neu targeted therapy.",
+            "quote": "This Prior Approval supplemental biologics application adds a new indication for the treatment of patients with recurrent locally advanced or metastatic gastric or gastroesophageal junction adenocarcinoma whose tumors express PD-L1 [Combined Positive Score (CPS) ≥1] as determined by an FDA-approved test, with disease progression on or after two or more prior lines of therapy including fluoropyrimidine- and platinum-containing chemotherapy and if appropriate, HER2/neu targeted therapy.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -1036,11 +1037,11 @@
             "precision": "day"
           },
           "kind": "new",
-          "statement": "This Prior Approval supplemental biologics license application provides for a new indication for pembrolizumab in combination with fluoropyrimidine- and platinum- containing chemotherapy for the first-line treatment of adults with locally advanced unresectable or metastatic HER2 negative gastric or gastroesophageal junction adenocarcinoma .",
+          "statement": "This Prior Approval supplemental biologics license application provides for a new indication for pembrolizumab in combination with fluoropyrimidine- and platinum- containing chemotherapy for the first-line treatment of adults with locally advanced unresectable or metastatic HER2 negative gastric or gastroesophageal junction adenocarcinoma.",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/125514Orig1s143ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-143)",
-            "quote": "This Prior Approval supplemental biologics license application provides for a new indication for pembrolizumab in combination with fluoropyrimidine- and platinum- containing chemotherapy for the first-line treatment of adults with locally advanced unresectable or metastatic HER2 negative gastric or gastroesophageal junction adenocarcinoma .",
+            "quote": "This Prior Approval supplemental biologics license application provides for a new indication for pembrolizumab in combination with fluoropyrimidine- and platinum- containing chemotherapy for the first-line treatment of adults with locally advanced unresectable or metastatic HER2 negative gastric or gastroesophageal junction adenocarcinoma.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -1052,11 +1053,11 @@
             "precision": "day"
           },
           "kind": "revision",
-          "statement": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1) ] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by a…",
+          "statement": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1)] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by an…",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/125514Orig1s182ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-182)",
-            "quote": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1) ] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by a…",
+            "quote": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1)] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by an…",
             "extractedBy": "regex",
             "verified": false
           }
@@ -1134,11 +1135,11 @@
             "precision": "day"
           },
           "kind": "revision",
-          "statement": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1) ] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by a…",
+          "statement": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1)] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by an…",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/125514Orig1s182ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-182)",
-            "quote": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1) ] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by a…",
+            "quote": "This Prior Approval supplemental biologics license application updates the KEYTRUDA (pembrolizumab) Prescribing Information (PI) and Medication Guide (MG) revising the following indications to reflect the population [i.e., PD-L1 (CPS ≥1)] with a favorable risk- benefit assessment: • KEYTRUDA, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic HER2-negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors express PD-L1 (CPS ≥ 1) as determined by an…",
             "extractedBy": "regex",
             "verified": false
           }
@@ -1227,11 +1228,11 @@
             "precision": "day"
           },
           "kind": "expansion",
-          "statement": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA -approved test.",
+          "statement": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA-approved test.",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s121_s122ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-122)",
-            "quote": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA -approved test.",
+            "quote": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA-approved test.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -1243,11 +1244,11 @@
             "precision": "day"
           },
           "kind": "expansion",
-          "statement": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA -approved test.",
+          "statement": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA-approved test.",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/125514Orig1s121_s122ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-121)",
-            "quote": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA -approved test.",
+            "quote": "Prior Approval supplemental biologics application 121 (S-121) provides for the use of Keytruda, in combination with chemotherapy, with or without bevacizumab, for the treatment of patients with persistent, recurrent, or metastatic cervical cancer whose tumors express PD-L1 (CPS ≥1) as determined by an FDA-approved test.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -1604,11 +1605,11 @@
             "precision": "day"
           },
           "kind": "expansion",
-          "statement": "This Prior Approval supplemental new drug application provides for the following indication: KEYTRUDA ® , in combination with lenvatinib, is indicated for the treatment of patients with advanced endometrial carcinoma that is not microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR), who have disease progression following prior systemic therapy and are not candidates for curative surgery or radiation.",
+          "statement": "This Prior Approval supplemental new drug application provides for the following indication: KEYTRUDA®, in combination with lenvatinib, is indicated for the treatment of patients with advanced endometrial carcinoma that is not microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR), who have disease progression following prior systemic therapy and are not candidates for curative surgery or radiation.",
           "provenance": {
             "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/125514Orig1s065ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-65)",
-            "quote": "This Prior Approval supplemental new drug application provides for the following indication: KEYTRUDA ® , in combination with lenvatinib, is indicated for the treatment of patients with advanced endometrial carcinoma that is not microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR), who have disease progression following prior systemic therapy and are not candidates for curative surgery or radiation.",
+            "quote": "This Prior Approval supplemental new drug application provides for the following indication: KEYTRUDA®, in combination with lenvatinib, is indicated for the treatment of patients with advanced endometrial carcinoma that is not microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR), who have disease progression following prior systemic therapy and are not candidates for curative surgery or radiation.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -1923,11 +1924,11 @@
             "precision": "day"
           },
           "kind": "new",
-          "statement": "This Prior Approval sBLA provides for a new indication for KEYTRUDA, in combination with sacituzumab govitecan-hziy, for the first-line treatment of adult patients with unresectable locally advanced or metastatic TNBC whose tumors express PD-L1 (CPS ≥10) as determined by an FDA -authorized test.",
+          "statement": "This Prior Approval sBLA provides for a new indication for KEYTRUDA, in combination with sacituzumab govitecan-hziy, for the first-line treatment of adult patients with unresectable locally advanced or metastatic TNBC whose tumors express PD-L1 (CPS ≥10) as determined by an FDA-authorized test.",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s187ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-187)",
-            "quote": "This Prior Approval sBLA provides for a new indication for KEYTRUDA, in combination with sacituzumab govitecan-hziy, for the first-line treatment of adult patients with unresectable locally advanced or metastatic TNBC whose tumors express PD-L1 (CPS ≥10) as determined by an FDA -authorized test.",
+            "quote": "This Prior Approval sBLA provides for a new indication for KEYTRUDA, in combination with sacituzumab govitecan-hziy, for the first-line treatment of adult patients with unresectable locally advanced or metastatic TNBC whose tumors express PD-L1 (CPS ≥10) as determined by an FDA-authorized test.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -1994,11 +1995,11 @@
             "precision": "day"
           },
           "kind": "new",
-          "statement": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+          "statement": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-186)",
-            "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+            "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -2848,7 +2849,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 17,
+          "page": 16,
           "quote": "nrolled 912 patients with melanoma and 682 patients with NSCLC, and one single-arm trial (KEYNOTE-001), which enrolled 655 patients with melanoma and 550 patients with NSCLC. In addition to t",
           "extractedBy": "regex",
           "verified": false
@@ -2998,7 +2999,7 @@
             "provenance": {
               "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
               "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
-              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
               "extractedBy": "rule",
               "verified": false
             }
@@ -3110,7 +3111,58 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Ovarian Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
+                "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-186",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Ovarian Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-186",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T16:38:48.740Z"
+        }
+      ]
     },
     {
       "id": "pd-1",
@@ -3180,7 +3232,7 @@
             "provenance": {
               "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
               "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
-              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
               "extractedBy": "rule",
               "verified": false
             }
@@ -4063,7 +4115,146 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Non-Small Cell Lung Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
+                "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            },
+            {
+              "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer)",
+                "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            },
+            {
+              "indication": "Tumor Mutational Burden-High Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Tumor Mutational Burden-High Cancer)",
+                "quote": "Trial identifier appears within the Tumor Mutational Burden-High Cancer section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            },
+            {
+              "indication": "Triple-Negative Breast Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
+                "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            },
+            {
+              "indication": "Ovarian Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
+                "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-186",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Non-Small Cell Lung Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Non-Small Cell Lung Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Non-Small Cell Lung Cancer section 14 span, and the trial is sponsor-run and interventional."
+              }
+            },
+            {
+              "indication": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer section 14 span, and the trial is sponsor-run and interventional."
+              }
+            },
+            {
+              "indication": "Tumor Mutational Burden-High Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Tumor Mutational Burden-High Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Tumor Mutational Burden-High Cancer section 14 span, and the trial is sponsor-run and interventional."
+              }
+            },
+            {
+              "indication": "Triple-Negative Breast Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Triple-Negative Breast Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Triple-Negative Breast Cancer section 14 span, and the trial is sponsor-run and interventional."
+              }
+            },
+            {
+              "indication": "Ovarian Cancer",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-186",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T16:38:48.740Z"
+        }
+      ]
     },
     {
       "id": "p08719",
@@ -4460,7 +4651,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 17,
+          "page": 16,
           "quote": "single agent in 2799 patients in three randomized, open-label, active-controlled trials (KEYNOTE-002, KEYNOTE-006, and KEYNOTE-010), which enrolled 912 patients with melanoma and 682 patient",
           "extractedBy": "regex",
           "verified": false
@@ -5154,7 +5345,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 85,
-          "quote": "recurrent or metastatic HNSCC The efficacy of KEYTRUDA was investigated in KEYNOTE - 012 (NCT01848834) , a multicenter, non - randomized, open - label, multi - cohort study that enrolled 174",
+          "quote": "d recurrent or metastatic HNSCC The efficacy of KEYTRUDA was investigated in KEYNOTE-012 (NCT01848834), a multicenter, non- randomized, open-label, multi-cohort study that enrolled 174 patien",
           "extractedBy": "regex",
           "verified": false
         },
@@ -5658,7 +5849,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 17,
+          "page": 16,
           "quote": "in three randomized, open-label, active-controlled trials (KEYNOTE-002, KEYNOTE-006, and KEYNOTE-010), which enrolled 912 patients with melanoma and 682 patients with NSCLC, and one single-a",
           "extractedBy": "regex",
           "verified": false
@@ -6007,7 +6198,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 64,
-          "quote": "a Ipilimumab - Naive Melanoma The efficacy of KEYTRUDA was investigated in KEYNOTE - 006 (NCT01866319) , a randomized (1:1:1), open - label, multicenter, active - controlled trial in 834 pati",
+          "quote": "anoma Ipilimumab-Naive Melanoma The efficacy of KEYTRUDA was investigated in KEYNOTE-006 (NCT01866319), a randomized (1:1:1), open-label, multicenter, active-controlled trial in 834 patients.",
           "extractedBy": "regex",
           "verified": false
         },
@@ -6334,7 +6525,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 92,
-          "quote": "ent Population Number of Patients MSI - H/dMMR Testing Dosage Prior Therapy KEYNOTE - 016 NCT01876511 • prospective, investigator - initiated • 6 sites • patients with CRC and other tumors 28",
+          "quote": "Patient Population Number of Patients MSI-H/dMMR Testing Dosage Prior Therapy KEYNOTE-016 NCT01876511 • prospective, investigator- initiated • 6 sites • patients with CRC and other tumors 28",
           "extractedBy": "regex",
           "verified": false
         }
@@ -7024,7 +7215,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 92,
-          "quote": "egative breast cancer 6 central PCR 10 mg/kg every 2 weeks ≥1 prior regimen KEYNOTE - 028 NCT02054806 • retrospectively identified patients with PD - L1 - positive esophageal, biliary, breast",
+          "quote": "-negative breast cancer 6 central PCR 10 mg/kg every 2 weeks ≥1 prior regimen KEYNOTE-028 NCT02054806 • retrospectively identified patients with PD-L1- positive esophageal, biliary, breast, e",
           "extractedBy": "regex",
           "verified": false
         }
@@ -8482,7 +8673,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 75,
-          "quote": "motherapy: KEYNOTE - 024 The efficacy of KEYTRUDA was also investigated in KEYNOTE - 024 (NCT02142738), a randomized, multicenter, open - label, active - controlled trial in 305 previously un",
+          "quote": "Chemotherapy: KEYNOTE-024 The efficacy of KEYTRUDA was also investigated in KEYNOTE-024 (NCT02142738), a randomized, multicenter, open-label, active-controlled trial in 305 previously untrea",
           "extractedBy": "regex",
           "verified": false
         },
@@ -8952,7 +9143,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 89,
-          "quote": "Treated Urothelial Carcinoma The efficacy of KEYTRUDA was investigated in KEYNOTE - 045 (NCT02256436), a multicenter, rand omized (1:1), active - controlled trial in 542 patients with locall",
+          "quote": "ly Treated Urothelial Carcinoma The efficacy of KEYTRUDA was investigated in KEYNOTE-045 (NCT02256436), a multicenter, randomized (1:1), active-controlled trial in 542 patients with locally a",
           "extractedBy": "regex",
           "verified": false
         },
@@ -9400,8 +9591,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 73,
-          "quote": "a single agent KEYNOTE - 042 The efficacy of KEYTRUDA was investigated in KEYNOTE - 042 (NCT02220894), a randomized, multicenter, open - label, active - controlled trial conducted in 1274 pa",
+          "page": 24,
+          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
           "extractedBy": "regex",
           "verified": false
         },
@@ -9746,7 +9937,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 80,
-          "quote": ".................................................... 26 : Serious Adverse Events in Study CITN-09/KEYNOTE-017 and Reference Safety Database : Laboratory Abnormalities, Study CITN-09/KEYNO",
+          "quote": ".....................................................26 : Serious Adverse Events in Study CITN-09/KEYNOTE-017 and Reference Safety Database : Laboratory Abnormalities, Study CITN-09/KEYNO",
           "extractedBy": "regex",
           "verified": false
         },
@@ -10382,8 +10573,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 39,
-          "quote": "-Ineligible Patients with Urothelial Carcinoma The safety of KEYTRUDA was investigated in KEYNOTE-052, a single-arm trial that enrolled 370 patients with locally advanced or metastatic urothe",
+          "page": 36,
+          "quote": "Ineligible Patients with Urothelial Carcinoma The safety of KEYTRUDA was investigated in KEYNOTE-052, a single-arm trial that enrolled 370 patients with locally advanced or metastatic urothe",
           "extractedBy": "regex",
           "verified": false
         },
@@ -11204,8 +11395,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 17,
-          "quote": "KEYNOTE-055), and two randomized, open-label, active-controlled trials (KEYNOTE - 040 and KEYNOTE-048 single agent arms), which enrolled 909 patients with HNSCC; in two non- randomized, open-",
+          "page": 16,
+          "quote": "(KEYNOTE-055), and two randomized, open-label, active-controlled trials (KEYNOTE- 040 and KEYNOTE-048 single agent arms), which enrolled 909 patients with HNSCC; in two non- randomized, open-",
           "extractedBy": "regex",
           "verified": false
         },
@@ -12135,7 +12326,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 87,
-          "quote": "KEYNOTE - 204 KEYNOTE - 087 The efficacy of KEYTRUDA was investigated in KEYNOTE - 087 ( NCT02453594), a multicenter, non - randomized, open - label trial in 210 patients with relapsed or re",
+          "quote": "ival in KEYNOTE-204 KEYNOTE-087 The efficacy of KEYTRUDA was investigated in KEYNOTE-087 (NCT02453594), a multicenter, non- randomized, open-label trial in 210 patients with relapsed or refra",
           "extractedBy": "regex",
           "verified": false
         },
@@ -12428,7 +12619,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 372,
-          "quote": "concurrently and placebo X14 doses Q3W given as maintenance NCT02 \u001a 0 \u001a\u0018 88 6 Open-label Pembro-RT arm:RT+ Cetux+ RT Total: LRC Completed PembroRad randomized Phase II 3 doses pembro Q3W (",
+          "quote": "ance concurrently and placebo X14 doses Q3W given as maintenance NCT02\u001a0\u001a\u001888 6 Open-label Pembro-RT arm:RT+ Cetux+ RT Total: LRC Completed PembroRad randomized Phase II 3 doses pembro Q3W (",
           "extractedBy": "regex",
           "verified": false
         }
@@ -12660,7 +12851,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 20,
-          "quote": "IC melanoma were similar to those occurring in 1011 patients with Stage III melanoma from KEYNOTE-054 or the 2799 patients with melanoma or NSCLC treated with KEYTRUDA as a single agent. Adju",
+          "quote": "IC melanoma were similar to those occurring in 1011 patients with stage III melanoma from KEYNOTE-054 or the 2799 patients with melanoma or NSCLC treated with KEYTRUDA as a single agent. Adju",
           "extractedBy": "regex",
           "verified": false
         },
@@ -13303,8 +13494,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 44,
-          "quote": "TRUDA was investigated in 504 patients with MSI-H or dMMR cancer enrolled in KEYNOTE-158, KEYNOTE-164, and KEYNOTE-051 [see Clinical Studies (14.7)]. The median duration of exposure to KEYTRU",
+          "page": 92,
+          "quote": "l PCR or IHC 10 mg/kg every 2 weeks • CRC: ≥ 2 prior regimens • Non-CRC: ≥1 prior regimen KEYNOTE-164 NCT02460198 • prospective international multi-center • CRC 61 local PCR or IHC 200 mg eve",
           "extractedBy": "regex",
           "verified": false
         },
@@ -13937,8 +14128,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 2,
-          "quote": "6B We remind you of your postmarketing commitment: 4396-1 Complete EORTC/ETOP Study 1419 (KEYNOTE-091/PEARLS; NCT02504372) to further characterize the clinical benefit of pembrolizumab as adj",
+          "page": 12,
+          "quote": "77% had resolution. In a clinical study enrolling 580 adult patients with resected NSCLC (KEYNOTE-091) who received KEYTRUDA as a single agent for adjuvant treatment, pneumonitis occurred in",
           "extractedBy": "regex",
           "verified": false
         },
@@ -14312,7 +14503,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 44,
+          "page": 41,
           "quote": "air Deficient Colorectal Cancer Among the 153 patients with MSI-H or dMMR CRC enrolled in KEYNOTE-177 [see Clinical Studies (14.8)] treated with KEYTRUDA, the median duration of exposure to K",
           "extractedBy": "regex",
           "verified": false
@@ -14386,8 +14577,8 @@
             "submission": "SUPPL-56",
             "provenance": {
               "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s056.pdf",
-              "sourceLabel": "FDA review (SUPPL-56): names the trial 249 times, 6× as often as any other trial",
-              "quote": "The demonstrated improvement in OS is clinically meaningful an d supported by improvements in PFS and ORR over the active TPC comparator in KEYNOTE - 181 .",
+              "sourceLabel": "FDA review (SUPPL-56): names the trial 269 times, 6× as often as any other trial",
+              "quote": "The demonstrated improvement in OS is clinically meaningful and supported by improvements in PFS and ORR over the active TPC comparator in KEYNOTE-181.",
               "extractedBy": "rule",
               "verified": false
             }
@@ -14648,7 +14839,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 99,
-          "quote": "ophageal Cancer KEYNOTE - 181 The efficacy of KEYTRUDA was investigated in KEYNOTE - 181 (NCT02564263), a multicenter, randomized, open - label, active - controlled trial that enrolled 628 pa",
+          "quote": "c Esophageal Cancer KEYNOTE-181 The efficacy of KEYTRUDA was investigated in KEYNOTE-181 (NCT02564263), a multicenter, randomized, open-label, active-controlled trial that enrolled 628 patien",
           "extractedBy": "regex",
           "verified": false
         },
@@ -14673,11 +14864,21 @@
               "indication": "Esophageal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
                 "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-56",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s056.pdf",
+                  "sourceLabel": "FDA review (SUPPL-56): names the trial 249 times, 6× as often as any other trial",
+                  "quote": "The demonstrated improvement in OS is clinically meaningful an d supported by improvements in PFS and ORR over the active TPC comparator in KEYNOTE - 181 .",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
@@ -14696,15 +14897,15 @@
                 "submission": "SUPPL-56",
                 "provenance": {
                   "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s056.pdf",
-                  "sourceLabel": "FDA review (SUPPL-56): names the trial 249 times, 6× as often as any other trial",
-                  "quote": "The demonstrated improvement in OS is clinically meaningful an d supported by improvements in PFS and ORR over the active TPC comparator in KEYNOTE - 181 .",
+                  "sourceLabel": "FDA review (SUPPL-56): names the trial 269 times, 6× as often as any other trial",
+                  "quote": "The demonstrated improvement in OS is clinically meaningful and supported by improvements in PFS and ORR over the active TPC comparator in KEYNOTE-181.",
                   "extractedBy": "rule",
                   "verified": false
                 }
               }
             }
           ],
-          "detectedAt": "2026-10-29T05:36:27.832Z"
+          "detectedAt": "2026-11-07T16:38:48.740Z"
         }
       ]
     },
@@ -14874,7 +15075,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 35,
+          "page": 34,
           "quote": "Grades, 2.4% Grade 3-4). PMBCL Among the 53 patients with PMBCL who received KEYTRUDA in KEYNOTE-170 [see Clinical Studies (14.5)], the median duration of exposure to KEYTRUDA was 3.5 months",
           "extractedBy": "regex",
           "verified": false
@@ -14948,8 +15149,8 @@
             "submission": "SUPPL-55",
             "provenance": {
               "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s055.pdf",
-              "sourceLabel": "FDA review (SUPPL-55): names the trial 224 times, 5× as often as any other trial",
-              "quote": "This conclusion is based on the observation of highly durable response rate in this subpopulation of patient s receiving third and later line treatment in a single arm trial, KEYNOTE - 180 (submitted to this sBLA) , supported by the evidence of effectiveness observed in a n additional single , adequate and well - controlled , randomized trial , KEYNOTE - 181 (data submitted under sBLA 125514/S - 56).",
+              "sourceLabel": "FDA review (SUPPL-55): names the trial 248 times, 5× as often as any other trial",
+              "quote": "This conclusion is based on the observation of highly durable response rate in this subpopulation of patients receiving third and later line treatment in a single arm trial, KEYNOTE-180 (submitted to this sBLA), supported by the evidence of effectiveness observed in an additional single, adequate and well-controlled, randomized trial, KEYNOTE-181 (data submitted under sBLA 125514/S-56).",
               "extractedBy": "rule",
               "verified": false
             }
@@ -15086,7 +15287,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 101,
-          "quote": "TRUDA: Control: KEYNOTE - 180 The efficacy of KEYTRUDA was investigated in KEYNOTE - 180 (NCT02559687), a multicenter, non - randomized, open - label trial that enrolled 121 patients with loc",
+          "quote": "KEYTRUDA: Control: KEYNOTE-180 The efficacy of KEYTRUDA was investigated in KEYNOTE-180 (NCT02559687), a multicenter, non- randomized, open-label trial that enrolled 121 patients with locall",
           "extractedBy": "regex",
           "verified": false
         },
@@ -15111,11 +15312,21 @@
               "indication": "Esophageal Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Esophageal Cancer)",
                 "quote": "Trial identifier appears within the Esophageal Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-55",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s055.pdf",
+                  "sourceLabel": "FDA review (SUPPL-55): names the trial 224 times, 5× as often as any other trial",
+                  "quote": "This conclusion is based on the observation of highly durable response rate in this subpopulation of patient s receiving third and later line treatment in a single arm trial, KEYNOTE - 180 (submitted to this sBLA) , supported by the evidence of effectiveness observed in a n additional single , adequate and well - controlled , randomized trial , KEYNOTE - 181 (data submitted under sBLA 125514/S - 56).",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
@@ -15134,15 +15345,15 @@
                 "submission": "SUPPL-55",
                 "provenance": {
                   "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/125514Orig1s055.pdf",
-                  "sourceLabel": "FDA review (SUPPL-55): names the trial 224 times, 5× as often as any other trial",
-                  "quote": "This conclusion is based on the observation of highly durable response rate in this subpopulation of patient s receiving third and later line treatment in a single arm trial, KEYNOTE - 180 (submitted to this sBLA) , supported by the evidence of effectiveness observed in a n additional single , adequate and well - controlled , randomized trial , KEYNOTE - 181 (data submitted under sBLA 125514/S - 56).",
+                  "sourceLabel": "FDA review (SUPPL-55): names the trial 248 times, 5× as often as any other trial",
+                  "quote": "This conclusion is based on the observation of highly durable response rate in this subpopulation of patients receiving third and later line treatment in a single arm trial, KEYNOTE-180 (submitted to this sBLA), supported by the evidence of effectiveness observed in an additional single, adequate and well-controlled, randomized trial, KEYNOTE-181 (data submitted under sBLA 125514/S-56).",
                   "extractedBy": "rule",
                   "verified": false
                 }
               }
             }
           ],
-          "detectedAt": "2026-10-29T05:36:27.832Z"
+          "detectedAt": "2026-11-07T16:38:48.740Z"
         }
       ]
     },
@@ -15399,7 +15610,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 44,
-          "quote": "safety of KEYTRUDA was investigated in 504 patients with MSI-H or dMMR cancer enrolled in KEYNOTE-158, KEYNOTE-164, and KEYNOTE-051 [see Clinical Studies (14.7)]. The median duration of expos",
+          "quote": "static Cervical Cancer Among the 98 patients with cervical cancer enrolled in Cohort E of KEYNOTE-158 [see Clinical Studies (14.11)], the median duration of exposure to KEYTRUDA was 2.9 month",
           "extractedBy": "regex",
           "verified": false
         },
@@ -15935,7 +16146,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 69,
-          "quote": "combination with pemetrexed and platinum chemotherapy was investigated in KEYNOTE - 189 ( NCT02578680 ), a randomized, multicenter, double - blind, active - controlled trial conducted in 616",
+          "quote": "in combination with pemetrexed and platinum chemotherapy was investigated in KEYNOTE-189 (NCT02578680), a randomized, multicenter, double-blind, active- controlled trial conducted in 616 pati",
           "extractedBy": "regex",
           "verified": false
         },
@@ -16252,7 +16463,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 91,
-          "quote": "uscle Invasive Bladder Cancer The efficacy of KEYTRUDA was investigated in KEYNOTE - 057 (NCT02625961 ), a multicenter, open - label, single - arm trial in 96 patients with Bacillus Calmette",
+          "quote": "-Muscle Invasive Bladder Cancer The efficacy of KEYTRUDA was investigated in KEYNOTE-057 (NCT02625961), a multicenter, open- label, single-arm trial in 96 patients with Bacillus Calmette-Guer",
           "extractedBy": "regex",
           "verified": false
         },
@@ -17301,7 +17512,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 17,
+          "page": 16,
           "quote": "ls (KEYNOTE-013 and KEYNOTE-087) and one randomized, open-label, active-controlled trial (KEYNOTE-204), which enrolled 389 patients with cHL; in a randomized, open- label, active-controlled t",
           "extractedBy": "regex",
           "verified": false
@@ -17629,8 +17840,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 50,
-          "quote": "ll Grades; 1.3% Grades 3-4). HCC Among the 104 patients with HCC who received KEYTRUDA in KEYNOTE-224 [see Clinical Studies (14.12)] , the median duration of exposure to KEYTRUDA was 4.2 mont",
+          "page": 46,
+          "quote": "ll Grades; 1.3% Grades 3-4). HCC Among the 104 patients with HCC who received KEYTRUDA in KEYNOTE-224 [see Clinical Studies (14.12)], the median duration of exposure to KEYTRUDA was 4.2 month",
           "extractedBy": "regex",
           "verified": false
         }
@@ -17861,7 +18072,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 71,
-          "quote": "ice of either paclitaxel or paclitaxel protein - bound was investigated in KEYNOTE - 407 (NCT02775435), a randomized, multi - center, double - blind, placebo - controlled trial conducted in 5",
+          "quote": "choice of either paclitaxel or paclitaxel protein-bound was investigated in KEYNOTE-407 (NCT02775435), a randomized, multi- center, double-blind, placebo-controlled trial conducted in 559 pa",
           "extractedBy": "regex",
           "verified": false
         },
@@ -18666,7 +18877,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 63,
+          "page": 59,
           "quote": "paclitaxel, paclitaxel protein-bound, or gemcitabine and carboplatin was investigated in KEYNOTE-355, a multicenter, double-blind, randomized (2:1), placebo-controlled trial in patients with",
           "extractedBy": "regex",
           "verified": false
@@ -18829,14 +19040,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03850444",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 24,
-          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -19687,7 +19890,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 98,
+          "page": 89,
           "quote": "with locally advanced or metastatic urothelial carcinoma was investigated in KEYNOTE-361 (NCT02853305), a multicenter, randomized, open-label, active-controlled study in 1010 previously untre",
           "extractedBy": "regex",
           "verified": false
@@ -19966,8 +20169,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 17,
-          "quote": "tients with HNSCC; in combination with axitinib in a randomized, active-controlled trial (KEYNOTE-426), which enrolled 429 patients with RCC; and in post-marketing use. Across all trials, KEY",
+          "page": 46,
+          "quote": "emia (19%). RCC In combination with axitinib in the first-line treatment of advanced RCC (KEYNOTE-426) The safety of KEYTRUDA in combination with axitinib was investigated in KEYNOTE-426 [see",
           "extractedBy": "regex",
           "verified": false
         },
@@ -20361,7 +20564,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 53,
+          "page": 49,
           "quote": "patotoxicity. In combination with lenvatinib in the first-line treatment of advanced RCC (KEYNOTE-581) The safety of KEYTRUDA was evaluated in KEYNOTE-581 [see Clinical Studies (14.14)]. Pati",
           "extractedBy": "regex",
           "verified": false
@@ -20884,7 +21087,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 46,
+          "page": 43,
           "quote": "or Metastatic Esophageal Cancer Among the 314 patients with esophageal cancer enrolled in KEYNOTE-181 [see Clinical Studies (14.10)] treated with KEYTRUDA, the median duration of exposure to",
           "extractedBy": "regex",
           "verified": false
@@ -21753,7 +21956,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 61,
+          "page": 57,
           "quote": "gery and continued adjuvant treatment with KEYTRUDA as a single agent was investigated in KEYNOTE-522, a randomized (2:1), multicenter, double-blind, placebo-controlled trial in patients with",
           "extractedBy": "regex",
           "verified": false
@@ -23040,7 +23243,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 56,
+          "page": 52,
           "quote": "). Adjuvant treatment of RCC The safety of KEYTRUDA as a single agent was investigated in KEYNOTE-564, a randomized (1:1) double-blind placebo-controlled trial in which 984 patients who had u",
           "extractedBy": "regex",
           "verified": false
@@ -23839,7 +24042,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 106,
+          "page": 97,
           "quote": "eal Junction Cancer KEYNOTE-590 The efficacy of KEYTRUDA was investigated in KEYNOTE-590 (NCT03189719), a multicenter, randomized, placebo-controlled trial that enrolled 749 patients with met",
           "extractedBy": "regex",
           "verified": false
@@ -25106,8 +25309,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 61,
-          "quote": "ents with advanced cSCC (recurrent or metastatic or locally advanced disease) enrolled in KEYNOTE-629 [see Clinical Studies (14.17)] , the median duration of exposure to KEYTRUDA was 6.9 mont",
+          "page": 57,
+          "quote": "ents with advanced cSCC (recurrent or metastatic or locally advanced disease) enrolled in KEYNOTE-629 [see Clinical Studies (14.17)], the median duration of exposure to KEYTRUDA was 6.9 month",
           "extractedBy": "regex",
           "verified": false
         },
@@ -26135,230 +26338,6 @@
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03396445",
           "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "thor",
-      "nctId": "NCT03390504",
-      "protocolNumber": "CR108401",
-      "acronym": "THOR",
-      "title": "A Phase 3 Study of Erdafitinib Compared With Vinflunine or Docetaxel or Pembrolizumab in Subjects With Advanced Urothelial Cancer and Selected FGFR Gene Aberrations",
-      "briefTitle": "A Study of Erdafitinib Compared With Vinflunine or Docetaxel or Pembrolizumab in Participants With Advanced Urothelial Cancer and Selected Fibroblast Growth Factor Receptor (FGFR) Gene Aberrations",
-      "phase": "PHASE3",
-      "roles": [
-        {
-          "role": "SUPPORTIVE",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "ACTIVE_NOT_RECRUITING",
-      "sponsor": "Janssen Research & Development, LLC",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Urothelial Cancer"
-      ],
-      "startDate": {
-        "value": "2018-03-23",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2024-04-15",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2027-12-31",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 629,
-        "type": "ACTUAL"
-      },
-      "design": {
-        "allocation": "RANDOMIZED",
-        "masking": "NONE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Cohort 1 (Arm 1A): Erdafitinib",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will be screened based on Fibroblast Growth Factor Receptor Inhibitor Clinical Trial Assay (FGFRi CTA) to determine molecular eligibility and participants who meet molecular eligibility criteria will be eligible for full study screening. Participants enrolled in the study (treated with prior anti-programmed cell death protein PD-\\[L\\] 1 agent) will swallow erdafitinib tablets orally at a starting dose of 8 milligram (mg), once daily for 21 days in a 21-day cycle until disease progression, intolerable toxicity, withdrawal of consent or decision by the investigator to discontinue treatment. Dose adjustment are based on phosphate level and observed toxicity (adverse events \\[AEs\\]). Participants who enter in Long-term extension (LTE) phase will continue to receive the erdafitinib tablet as per investigator's decision."
-        },
-        {
-          "label": "Cohort 1 (Arm 1B): Vinflunine or Docetaxel",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will be screened based on FGFRi CTA to determine molecular eligibility and participants who meet molecular eligibility criteria will be eligible for full study screening. Participants enrolled in the study (treated with prior anti-PD-\\[L\\] 1 agent) will receive vinflunine 320 milligram per meter square (mg/m\\^2) as a 20-minute intravenous infusion once every 3 weeks or docetaxel 75 mg/m\\^2 as a 1 hour intravenous infusion every 3 weeks. Treatment with either agent (choice of investigator) will be administered until disease progression, intolerable toxicity, withdrawal of consent or decision by the investigator to discontinue treatment. Dose adjustments are based on observed toxicities. Participants who enter in LTE phase will continue to receive Vinflunine or Docetaxel until the participant can commercially receive chemotherapy within the local healthcare system."
-        },
-        {
-          "label": "Cohort 2 (Arm 2A): Erdafitinib",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will be screened based on FGFRi CTA to determine molecular eligibility and participants who meet molecular eligibility criteria will be eligible for full study screening. Participants enrolled in the study (no prior treatment with anti-PD-\\[L\\] 1 agent) will swallow erdafitinib tablets orally at a starting dose of 8 mg, once daily for 21 days in a 21-day cycle until disease progression, intolerable toxicity, withdrawal of consent or decision by the investigator to discontinue treatment. Dose adjustments are based on phosphate level and observed toxicity (AEs). Participants who enter in LTE phase will continue to receive the erdafitinib tablet as per investigator's decision."
-        },
-        {
-          "label": "Cohort 2 (Arm 2B): Pembrolizumab",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will be screened based on FGFRi CTA to determine molecular eligibility and participants who meet molecular eligibility criteria will be eligible for full study screening. Participants enrolled in the study (no prior treatment with anti-PD-\\[L\\] 1 agent) will receive pembrolizumab 200 mg as a 30-minute intravenous infusion once every 3 weeks, until disease progression, intolerable toxicity, withdrawal of consent or decision by the investigator to discontinue treatment. Dose adjustments are based on observed toxicities. Participants who enter in LTE phase will continue to receive the pembrolizumab until 2 years after the first dose of pembrolizumab (at start of study) or until the participant can commercially receive pembrolizumab within the local healthcare system, whichever comes first."
-        }
-      ],
-      "primaryEndpoints": [
-        "Overall Survival (OS)"
-      ],
-      "secondaryEndpoints": [
-        "Progression Free Survival (PFS) as Per Response Evaluation Criteria in Solid Tumors (RECIST) Version (v) 1.1",
-        "Objective Response Rate (ORR) Per RECIST Version 1.1",
-        "Change From Baseline in Physical Functioning Scales of the Functional Assessment of Cancer Therapy - Bladder Cancer (FACT-Bl)",
-        "Time Until Symptom Deterioration",
-        "Percentage of Participants With Shift From Baseline in Patient-Global Impression of Severity (PGIS)",
-        "Change From Baseline in Utility Scale of the European Quality of Life-5 Dimensions-5 Levels Questionnaire (EQ-5D-5L)",
-        "Change From Baseline in Visual Analog Scale (VAS) of the European Quality of Life-5 Dimensions-5 Levels Questionnaire (EQ-5D-5L)",
-        "Duration of Response (DOR) as Per RECIST Version 1.1",
-        "Number of Participants With Treatment Emergent Adverse Events (TEAEs)",
-        "Number of Participants With Shift From Baseline Grade Less Than or Equal to (<=) 2 to Grade Greater Than or Equal to (>=) 3 Post-Baseline in Laboratory Parameter: Hematology",
-        "Number of Participants With Shift From Baseline Grade <= 2 to Grade >=3 Post-Baseline in Laboratory Parameter: Chemistry",
-        "Number of Participants With Abnormalities in Electrocardiograms (ECG) Parameters",
-        "Change From Baseline in Vital Signs: Weight",
-        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Amsler Grid Test",
-        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Visual Acuity",
-        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Optical Coherence Tomography: Subretinal Fluid",
-        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Optical Coherence Tomography: Retinal Pigment Epithelium (RPE) Elevation",
-        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Slit Lamp Biomicroscopy: Retinal Assessment",
-        "Oral Clearance (CL/F) of Erdafitinib",
-        "Area Under the Plasma Concentration-Time Curve From Time Zero to Time 't' (AUC[0-t]) of Erdafitinib"
-      ],
-      "postedResults": [
-        {
-          "title": "Overall Survival (OS)",
-          "timeFrame": "From randomization (3 days prior to Cycle 1 Day 1) until death due to any cause (maximum up to 51.7 months)",
-          "paramType": "MEDIAN",
-          "unitOfMeasure": "Months",
-          "groups": [
-            {
-              "id": "OG000",
-              "title": "Cohort 1: Arm 1A: Erdafitinib 8 mg/9 mg"
-            },
-            {
-              "id": "OG001",
-              "title": "Cohort 1: Arm 1B: Chemotherapy (Vinflunine 320 mg/m^2 or Docetaxel 75 mg/m^2)"
-            },
-            {
-              "id": "OG002",
-              "title": "Cohort 2: Arm 2A: Erdafitinib 8 mg/ 9 mg"
-            },
-            {
-              "id": "OG003",
-              "title": "Cohort 2: Arm 2B: Pembrolizumab 200 mg"
-            }
-          ],
-          "measurements": [
-            {
-              "groupId": "OG000",
-              "value": "12.06",
-              "lowerLimit": "10.25",
-              "upperLimit": "16.36"
-            },
-            {
-              "groupId": "OG001",
-              "value": "8.74",
-              "lowerLimit": "6.67",
-              "upperLimit": "10.71"
-            },
-            {
-              "groupId": "OG002",
-              "value": "10.91",
-              "lowerLimit": "9.23",
-              "upperLimit": "12.58"
-            },
-            {
-              "groupId": "OG003",
-              "value": "11.07",
-              "lowerLimit": "9.72",
-              "upperLimit": "13.63"
-            }
-          ],
-          "analyses": [
-            {
-              "groupIds": [
-                "OG000",
-                "OG001"
-              ],
-              "pValue": "=0.0031",
-              "method": "Log Rank",
-              "paramType": "Hazard Ratio (HR)",
-              "paramValue": "0.65",
-              "ciPct": "95",
-              "ciLower": "0.48",
-              "ciUpper": "0.86"
-            },
-            {
-              "groupIds": [
-                "OG002",
-                "OG003"
-              ],
-              "pValue": "=0.2121",
-              "method": "Stratified log-rank test",
-              "paramType": "Hazard Ratio (HR)",
-              "paramValue": "1.16",
-              "ciPct": "95",
-              "ciLower": "0.92",
-              "ciUpper": "1.48"
-            }
-          ]
-        }
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "postedResults": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504?tab=results",
-          "sourceLabel": "ClinicalTrials.gov — posted results",
           "extractedBy": "api",
           "verified": false
         }
@@ -27843,7 +27822,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 123,
+          "page": 114,
           "quote": "The efficacy of KEYTRUDA in combination with lenvatinib was investigated in KEYNOTE-775 (NCT03517449), a multicenter, open-label, randomized, active-controlled trial that enrolled 827 patien",
           "extractedBy": "regex",
           "verified": false
@@ -28769,7 +28748,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 20,
-          "quote": "age IIB or IIC Melanoma Among the 969 patients with Stage IIB or IIC melanoma enrolled in KEYNOTE-716 [see Clinical Studies (14.1)] treated with KEYTRUDA, the median duration of exposure to K",
+          "quote": "age IIB or IIC Melanoma Among the 969 patients with stage IIB or IIC melanoma enrolled in KEYNOTE-716 [see Clinical Studies (14.1)] treated with KEYTRUDA, the median duration of exposure to K",
           "extractedBy": "regex",
           "verified": false
         },
@@ -29302,7 +29281,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 96,
-          "quote": "uzumab plus fluoropyrimidine and platinum chemotherapy was investigated in KEYNOTE - 811 (NCT03615326), a multicenter, randomized, double - blind, placebo - controlled trial that was designed",
+          "quote": "stuzumab plus fluoropyrimidine and platinum chemotherapy was investigated in KEYNOTE-811 (NCT03615326), a multicenter, randomized, double-blind, placebo-controlled trial that was designed to",
           "extractedBy": "regex",
           "verified": false
         },
@@ -30032,7 +30011,7 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 46,
+          "page": 43,
           "quote": "cisplatin or paclitaxel and carboplatin, with or without bevacizumab, was investigated in KEYNOTE-826, a multicenter, double-blind, randomized (1:1), placebo-controlled trial in patients with",
           "extractedBy": "regex",
           "verified": false
@@ -30471,8 +30450,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 1,
-          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
+          "page": 135,
+          "quote": "h fluoropyrimidine- and platinum-containing chemotherapy was investigated in KEYNOTE-859 (NCT03675737), a multicenter, randomized, double-blind, placebo-controlled trial that enrolled 1579 pa",
           "extractedBy": "regex",
           "verified": false
         },
@@ -30630,6 +30609,14 @@
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 1,
+          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": []
@@ -30785,7 +30772,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 3,
-          "quote": "analysis of overall response rate, duration of response, and safety from Cohort B of the KEYNOTE-555 trial titled, “ A Phase 1 Randomized Clinical Study of Pembrolizumab (MK-3475) to Evaluat",
+          "quote": "analysis of overall response rate, duration of response, and safety from Cohort B of the KEYNOTE-555 trial titled, “A Phase 1 Randomized Clinical Study of Pembrolizumab (MK-3475) to Evaluate",
           "extractedBy": "regex",
           "verified": false
         }
@@ -31128,7 +31115,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 111,
-          "quote": "Expressing PD-L1 (CPS ≥ 1) The efficacy of KEYTRUDA was investigated in KEYNOTE-689 (NCT NCT03765918), a randomized, multicenter, open-label, active-controlled trial conducted in 714 patient",
+          "quote": "s Expressing PD-L1 (CPS≥ 1) The efficacy of KEYTRUDA was investigated in KEYNOTE-689 (NCT NCT03765918), a randomized, multicenter, open-label, active-controlled trial conducted in 714 patient",
           "extractedBy": "regex",
           "verified": false
         }
@@ -31921,6 +31908,14 @@
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 41,
+          "quote": "safety of KEYTRUDA, in combination with cisplatin and FU chemotherapy was investigated in KEYNOTE-590, a multicenter, double-blind, randomized (1:1), placebo-controlled trial for the first-li",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": []
@@ -32549,7 +32544,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 50,
-          "quote": "hyperbilirubinemia (10%). MCC Among the 105 patients with MCC enrolled in KEYNOTE-017 and KEYNOTE-913 [see Clinical Studies (14.13)] , the median duration of exposure to KEYTRUDA was 6.3 mont",
+          "quote": "hyperbilirubinemia (10%). MCC Among the 105 patients with MCC enrolled in KEYNOTE-017 and KEYNOTE-913 [see Clinical Studies (14.13)], the median duration of exposure to KEYTRUDA was 6.3 month",
           "extractedBy": "regex",
           "verified": false
         },
@@ -35651,8 +35646,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 64,
-          "quote": "The safety of KEYTRUDA in combination with gemcitabine and cisplatin, was investigated in KEYNOTE-966, a multicenter, double-blind, randomized, placebo-controlled trial in patients with local",
+          "page": 153,
+          "quote": "combination with gemcitabine and cisplatin chemotherapy was investigated in KEYNOTE-966 (NCT04003636), a multicenter, randomized, double-blind, placebo- controlled trial that enrolled 1069 p",
           "extractedBy": "regex",
           "verified": false
         }
@@ -38254,7 +38249,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 58,
-          "quote": "adverse reactions and laboratory abnormalities, respectively, in patients on KEYTRUDA in KEYNOTE-A18. Table 41: Adverse Reactions Occurring in ≥10% of Patients with FIGO 2014 Stage III-IVA C",
+          "quote": "xternal beam radiation therapy [EBRT] followed by brachytherapy [BT]) was investigated in KEYNOTE-A18, a placebo-controlled, randomized (1:1), multicenter, double-blind trial including 597 pa",
           "extractedBy": "regex",
           "verified": false
         },
@@ -39410,6 +39405,14 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT04924062",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 64,
+          "quote": "The safety of KEYTRUDA in combination with gemcitabine and cisplatin, was investigated in KEYNOTE-966, a multicenter, double-blind, randomized, placebo-controlled trial in patients with local",
+          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -41157,8 +41160,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 1,
-          "quote": "scribing Information (Section 14.17). The updates include the negative trial results from KEYNOTE-B21, which show a lack of effectiveness of adjuvant pembrolizumab treatment in patients with",
+          "page": 176,
+          "quote": "mbination with carboplatin and paclitaxel, with or without radiation, was investigated in KEYNOTE-B21 (NCT04634877), a randomized, multicenter, double-blind, placebo- controlled trial in 1,09",
           "extractedBy": "regex",
           "verified": false
         },
@@ -41669,7 +41672,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
           "page": 161,
-          "quote": "The efficacy of KEYTRUDA in combination with lenvatinib was investigated in KEYNOTE-B61 (NCT04704219), a multicenter, single-arm trial that enrolled 160 patients with advanced or metastatic",
+          "quote": "Figure 36: Kaplan-Meier Curve for Updated Overall Survival in KEYNOTE-581 KEYNOTE-B61 The efficacy of KEYTRUDA in combination with lenvatinib was investigated in KEYNOTE-B61 (",
           "extractedBy": "regex",
           "verified": false
         }
@@ -45066,7 +45069,7 @@
             "provenance": {
               "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
               "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
-              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+              "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
               "extractedBy": "rule",
               "verified": false
             }
@@ -45316,7 +45319,7 @@
               "indication": "Ovarian Cancer",
               "role": "PIVOTAL",
               "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lbl.pdf",
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
                 "sourceLabel": "Approved label, section 14 (Clinical Studies — Ovarian Cancer)",
                 "quote": "Trial identifier appears within the Ovarian Cancer section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
@@ -45350,14 +45353,14 @@
                 "provenance": {
                   "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/125514Orig1s186ltr.pdf",
                   "sourceLabel": "Approval letter (SUPPL-186): the only approval of this indication",
-                  "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD- L1 (CPS≥1) as determined by an FDA -authorized test, and who have received one or two prior systemic treatment regimens.",
+                  "quote": "This Prior Approval supplemental biologics license application provides for a new indication for Keytruda (pembrolizumab), in combination with paclitaxel, with or without bevacizumab, for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens.",
                   "extractedBy": "rule",
                   "verified": false
                 }
               }
             }
           ],
-          "detectedAt": "2026-10-29T05:36:27.832Z"
+          "detectedAt": "2026-11-07T16:38:48.740Z"
         }
       ]
     },
@@ -49001,118 +49004,6 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT05692999",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "thor-nct05623319",
-      "nctId": "NCT05623319",
-      "protocolNumber": "IRST162.14",
-      "acronym": "THOR",
-      "title": "Phase 2 Trial of Translational Approach to First Line cHemoimmunotherapy Followed by Maintenance With pembrOlizumab and Olaparib in Extensive-Stage Small-Cell Lung CanceR.",
-      "briefTitle": "Pembrolizumab and Olaparib Treatment of Extensive Small Cell Lung Cancer (ES-SCLC)",
-      "phase": "PHASE2",
-      "roles": [
-        {
-          "role": "DOSE_FINDING",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "RECRUITING",
-      "sponsor": "Istituto Romagnolo per lo Studio dei Tumori Dino Amadori IRST S.r.l. IRCCS",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "SCLC,Extensive Stage"
-      ],
-      "startDate": {
-        "value": "2023-03-27",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2027-07-01",
-        "precision": "month"
-      },
-      "completionDate": {
-        "value": "2027-07-01",
-        "precision": "month"
-      },
-      "enrollment": {
-        "count": 60,
-        "type": "ESTIMATED"
-      },
-      "design": {
-        "allocation": "NA",
-        "masking": "NONE",
-        "model": "SINGLE_GROUP",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Pembrolizumab/Olaparib",
-          "type": "EXPERIMENTAL",
-          "description": "Patients will be treated with pembrolizumab plus chemotherapy during the Induction Phase. In case of responsive or stable disease, patients will enter the Maintenance Phase and will be treated with pembrolizumab plus olaparib until progression or up to a maximum of 35 cycles."
-        }
-      ],
-      "primaryEndpoints": [
-        "Progression free survival (PFS)"
-      ],
-      "secondaryEndpoints": [
-        "Objective response rate (ORR)",
-        "Immune-related Objective response rate (irORR).",
-        "Progression free survival (PFS) at 6, 12, and 24 months",
-        "Overall Survival (OS)",
-        "Number of participants experiencing Adverse Events (AEs).",
-        "PD-L1 analysis",
-        "DNA damage repair analysis",
-        "Tumor Mutational Burden analysis",
-        "MicroSatellite Instability analysis"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -54221,7 +54112,7 @@
         "precision": "day"
       },
       "completionDate": {
-        "value": "2034-12-31",
+        "value": "2031-03-16",
         "precision": "day"
       },
       "enrollment": {
@@ -54313,7 +54204,20 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2034-12-31",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2031-03-16",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-07T16:38:48.740Z"
+        }
+      ]
     },
     {
       "id": "3475-01e",
@@ -54976,7 +54880,7 @@
       "briefTitle": "A Study of Investigational Agents in Participants With Previously Treated Stage IV Nonsquamous Non-small Cell Lung Cancer (NSCLC) (MK-3475-01H/KEYMAKER-U01)",
       "phase": "PHASE2",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
@@ -55084,7 +54988,14 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-11-07T16:38:48.740Z"
+        }
+      ]
     },
     {
       "id": "trofuse-033",
@@ -57859,118 +57770,6 @@
       "changeLog": []
     },
     {
-      "id": "trofuse-055",
-      "nctId": "NCT07829783",
-      "protocolNumber": "2870-055",
-      "acronym": "TroFuse-055",
-      "title": "A Phase 3 Study Evaluating Sacituzumab Tirumotecan Plus Subcutaneous Pembrolizumab and Berahyaluronidase Alfa (MK-3475A) as Induction Therapy, Followed by Local Therapy With Chemoradiation and MK-3475A Consolidation Versus Local Therapy With Chemoradiation in Participants With MIBC Who Elect Bladder Preservation",
-      "briefTitle": "A Clinical Trial of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) and Pembrolizumab (MK-3475A) in Participants With Bladder Cancer (MK-2870-055)",
-      "phase": "PHASE3",
-      "roles": [],
-      "status": "NOT_YET_RECRUITING",
-      "sponsor": "Merck Sharp & Dohme LLC",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Bladder Cancer"
-      ],
-      "conditionMesh": [
-        {
-          "id": "D001749",
-          "term": "Urinary Bladder Neoplasms"
-        }
-      ],
-      "startDate": {
-        "value": "2026-10-20",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2031-11-17",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2036-09-25",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 400,
-        "type": "ESTIMATED"
-      },
-      "design": {
-        "allocation": "RANDOMIZED",
-        "masking": "NONE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Sac-TMT + Pembrolizumab and Berahyaluronidase alfa + Chemoradiotherapy",
-          "type": "EXPERIMENTAL",
-          "description": "Participants will receive sac-TMT 4 mg/kg by intravenous (IV) infusion every 2 weeks (q2w) for up to 6 doses plus pembrolizumab and berahyaluronidase alfa 790 mg SC every 6 weeks (q6w) for up to 2 doses.\n\nCRT (radiotherapy \\[RT\\] and concurrent chemotherapy) will then be administered to all participants as standard of care per treatment regimens chosen by the investigator. RT will include conventional radiation or hypofractionated radiation to the bladder for up to approximately 6.5 weeks. Concurrent chemotherapy will be administered with RT and will include cisplatin, or 5-fluorouracil (5-FU) + mitomycin C, or capecitabine + mitomycin C, or gemcitabine.\n\nPembrolizumab and berahyaluronidase alfa 790 mg SC will be administered q6w for up to additional 7 cycles as consolidation therapy. Each cycle is 42 days (up to approximately 42 weeks)."
-        },
-        {
-          "label": "Chemoradiotherapy",
-          "type": "EXPERIMENTAL",
-          "description": "CRT (radiotherapy \\[RT\\] and concurrent chemotherapy) will then be administered to all participants as standard of care per treatment regimens chosen by the investigator. RT will include conventional radiation or hypofractionated radiation to the bladder for up to approximately 6.5 weeks. Concurrent chemotherapy will be administered with RT and will include cisplatin, or 5-fluorouracil (5-FU) + mitomycin C, or capecitabine + mitomycin C, or gemcitabine."
-        }
-      ],
-      "primaryEndpoints": [
-        "Event-Free Survival (EFS)"
-      ],
-      "secondaryEndpoints": [
-        "Overall Survival (OS)",
-        "Distant Metastasis-Free Survival (DMFS)",
-        "Bladder Intact (BI)-EFS",
-        "Time to Occurrence of Non-Muscle-Invasive Bladder Cancer (NMIBC)",
-        "Disease-Specific Survival",
-        "Rate of Radical Cystectomy",
-        "Number of Participants Who Experience One or More Adverse Events (AEs)",
-        "Number of Participants Who Discontinue Study Intervention Due to an AE"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
       "id": "2010-002",
       "nctId": "NCT07793942",
       "protocolNumber": "2010-002",
@@ -57978,7 +57777,7 @@
       "briefTitle": "A Clinical Trial of MK-2010 Alone and With Other Treatments in Participants With Advanced Solid Tumors (MK-2010-002)",
       "phase": "PHASE2",
       "roles": [],
-      "status": "NOT_YET_RECRUITING",
+      "status": "RECRUITING",
       "sponsor": "Merck Sharp & Dohme LLC",
       "studyType": "INTERVENTIONAL",
       "conditions": [
@@ -57986,7 +57785,7 @@
         "Advanced Solid Tumors"
       ],
       "startDate": {
-        "value": "2026-10-27",
+        "value": "2026-10-21",
         "precision": "day"
       },
       "primaryCompletionDate": {
@@ -58100,7 +57899,157 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "NOT_YET_RECRUITING",
+          "newValue": "RECRUITING",
+          "detectedAt": "2026-11-07T16:38:48.740Z"
+        },
+        {
+          "field": "startDate",
+          "previousValue": {
+            "value": "2026-10-27",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-10-21",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-07T16:38:48.740Z"
+        }
+      ]
+    },
+    {
+      "id": "trofuse-055",
+      "nctId": "NCT07829783",
+      "protocolNumber": "2870-055",
+      "acronym": "TroFuse-055",
+      "title": "A Phase 3 Study Evaluating Sacituzumab Tirumotecan Plus Subcutaneous Pembrolizumab and Berahyaluronidase Alfa (MK-3475A) as Induction Therapy, Followed by Local Therapy With Chemoradiation and MK-3475A Consolidation Versus Local Therapy With Chemoradiation in Participants With MIBC Who Elect Bladder Preservation",
+      "briefTitle": "A Clinical Trial of Sacituzumab Tirumotecan (Sac-TMT, MK-2870) and Pembrolizumab (MK-3475A) in Participants With Bladder Cancer (MK-2870-055)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Bladder Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001749",
+          "term": "Urinary Bladder Neoplasms"
+        }
+      ],
+      "startDate": {
+        "value": "2026-10-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2031-11-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2036-09-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 400,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Sac-TMT + Pembrolizumab and Berahyaluronidase alfa + Chemoradiotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive sac-TMT 4 mg/kg by intravenous (IV) infusion every 2 weeks (q2w) for up to 6 doses plus pembrolizumab and berahyaluronidase alfa 790 mg SC every 6 weeks (q6w) for up to 2 doses.\n\nCRT (radiotherapy \\[RT\\] and concurrent chemotherapy) will then be administered to all participants as standard of care per treatment regimens chosen by the investigator. RT will include conventional radiation or hypofractionated radiation to the bladder for up to approximately 6.5 weeks. Concurrent chemotherapy will be administered with RT and will include cisplatin, or 5-fluorouracil (5-FU) + mitomycin C, or capecitabine + mitomycin C, or gemcitabine.\n\nPembrolizumab and berahyaluronidase alfa 790 mg SC will be administered q6w for up to additional 7 cycles as consolidation therapy. Each cycle is 42 days (up to approximately 42 weeks)."
+        },
+        {
+          "label": "Chemoradiotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "CRT (radiotherapy \\[RT\\] and concurrent chemotherapy) will then be administered to all participants as standard of care per treatment regimens chosen by the investigator. RT will include conventional radiation or hypofractionated radiation to the bladder for up to approximately 6.5 weeks. Concurrent chemotherapy will be administered with RT and will include cisplatin, or 5-fluorouracil (5-FU) + mitomycin C, or capecitabine + mitomycin C, or gemcitabine."
+        }
+      ],
+      "primaryEndpoints": [
+        "Event-Free Survival (EFS)"
+      ],
+      "secondaryEndpoints": [
+        "Overall Survival (OS)",
+        "Distant Metastasis-Free Survival (DMFS)",
+        "Bladder Intact (BI)-EFS",
+        "Time to Occurrence of Non-Muscle-Invasive Bladder Cancer (NMIBC)",
+        "Disease-Specific Survival",
+        "Rate of Radical Cystectomy",
+        "Number of Participants Who Experience One or More Adverse Events (AEs)",
+        "Number of Participants Who Discontinue Study Intervention Due to an AE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07829783",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "NOT_YET_RECRUITING",
+          "newValue": "RECRUITING",
+          "detectedAt": "2026-11-07T16:38:48.740Z"
+        },
+        {
+          "field": "startDate",
+          "previousValue": {
+            "value": "2026-10-20",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-10-23",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-07T16:38:48.740Z"
+        }
+      ]
     },
     {
       "id": "decrease",
@@ -58519,6 +58468,342 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT02083484",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "thor",
+      "nctId": "NCT03390504",
+      "protocolNumber": "CR108401",
+      "acronym": "THOR",
+      "title": "A Phase 3 Study of Erdafitinib Compared With Vinflunine or Docetaxel or Pembrolizumab in Subjects With Advanced Urothelial Cancer and Selected FGFR Gene Aberrations",
+      "briefTitle": "A Study of Erdafitinib Compared With Vinflunine or Docetaxel or Pembrolizumab in Participants With Advanced Urothelial Cancer and Selected Fibroblast Growth Factor Receptor (FGFR) Gene Aberrations",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Urothelial Cancer"
+      ],
+      "startDate": {
+        "value": "2018-03-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-04-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 629,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1 (Arm 1A): Erdafitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be screened based on Fibroblast Growth Factor Receptor Inhibitor Clinical Trial Assay (FGFRi CTA) to determine molecular eligibility and participants who meet molecular eligibility criteria will be eligible for full study screening. Participants enrolled in the study (treated with prior anti-programmed cell death protein PD-\\[L\\] 1 agent) will swallow erdafitinib tablets orally at a starting dose of 8 milligram (mg), once daily for 21 days in a 21-day cycle until disease progression, intolerable toxicity, withdrawal of consent or decision by the investigator to discontinue treatment. Dose adjustment are based on phosphate level and observed toxicity (adverse events \\[AEs\\]). Participants who enter in Long-term extension (LTE) phase will continue to receive the erdafitinib tablet as per investigator's decision."
+        },
+        {
+          "label": "Cohort 1 (Arm 1B): Vinflunine or Docetaxel",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be screened based on FGFRi CTA to determine molecular eligibility and participants who meet molecular eligibility criteria will be eligible for full study screening. Participants enrolled in the study (treated with prior anti-PD-\\[L\\] 1 agent) will receive vinflunine 320 milligram per meter square (mg/m\\^2) as a 20-minute intravenous infusion once every 3 weeks or docetaxel 75 mg/m\\^2 as a 1 hour intravenous infusion every 3 weeks. Treatment with either agent (choice of investigator) will be administered until disease progression, intolerable toxicity, withdrawal of consent or decision by the investigator to discontinue treatment. Dose adjustments are based on observed toxicities. Participants who enter in LTE phase will continue to receive Vinflunine or Docetaxel until the participant can commercially receive chemotherapy within the local healthcare system."
+        },
+        {
+          "label": "Cohort 2 (Arm 2A): Erdafitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be screened based on FGFRi CTA to determine molecular eligibility and participants who meet molecular eligibility criteria will be eligible for full study screening. Participants enrolled in the study (no prior treatment with anti-PD-\\[L\\] 1 agent) will swallow erdafitinib tablets orally at a starting dose of 8 mg, once daily for 21 days in a 21-day cycle until disease progression, intolerable toxicity, withdrawal of consent or decision by the investigator to discontinue treatment. Dose adjustments are based on phosphate level and observed toxicity (AEs). Participants who enter in LTE phase will continue to receive the erdafitinib tablet as per investigator's decision."
+        },
+        {
+          "label": "Cohort 2 (Arm 2B): Pembrolizumab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be screened based on FGFRi CTA to determine molecular eligibility and participants who meet molecular eligibility criteria will be eligible for full study screening. Participants enrolled in the study (no prior treatment with anti-PD-\\[L\\] 1 agent) will receive pembrolizumab 200 mg as a 30-minute intravenous infusion once every 3 weeks, until disease progression, intolerable toxicity, withdrawal of consent or decision by the investigator to discontinue treatment. Dose adjustments are based on observed toxicities. Participants who enter in LTE phase will continue to receive the pembrolizumab until 2 years after the first dose of pembrolizumab (at start of study) or until the participant can commercially receive pembrolizumab within the local healthcare system, whichever comes first."
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Survival (OS)"
+      ],
+      "secondaryEndpoints": [
+        "Progression Free Survival (PFS) as Per Response Evaluation Criteria in Solid Tumors (RECIST) Version (v) 1.1",
+        "Objective Response Rate (ORR) Per RECIST Version 1.1",
+        "Change From Baseline in Physical Functioning Scales of the Functional Assessment of Cancer Therapy - Bladder Cancer (FACT-Bl)",
+        "Time Until Symptom Deterioration",
+        "Percentage of Participants With Shift From Baseline in Patient-Global Impression of Severity (PGIS)",
+        "Change From Baseline in Utility Scale of the European Quality of Life-5 Dimensions-5 Levels Questionnaire (EQ-5D-5L)",
+        "Change From Baseline in Visual Analog Scale (VAS) of the European Quality of Life-5 Dimensions-5 Levels Questionnaire (EQ-5D-5L)",
+        "Duration of Response (DOR) as Per RECIST Version 1.1",
+        "Number of Participants With Treatment Emergent Adverse Events (TEAEs)",
+        "Number of Participants With Shift From Baseline Grade Less Than or Equal to (<=) 2 to Grade Greater Than or Equal to (>=) 3 Post-Baseline in Laboratory Parameter: Hematology",
+        "Number of Participants With Shift From Baseline Grade <= 2 to Grade >=3 Post-Baseline in Laboratory Parameter: Chemistry",
+        "Number of Participants With Abnormalities in Electrocardiograms (ECG) Parameters",
+        "Change From Baseline in Vital Signs: Weight",
+        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Amsler Grid Test",
+        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Visual Acuity",
+        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Optical Coherence Tomography: Subretinal Fluid",
+        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Optical Coherence Tomography: Retinal Pigment Epithelium (RPE) Elevation",
+        "Number of Participants With Shift From Baseline to Worst Post-baseline Ophthalmologic Examination: Slit Lamp Biomicroscopy: Retinal Assessment",
+        "Oral Clearance (CL/F) of Erdafitinib",
+        "Area Under the Plasma Concentration-Time Curve From Time Zero to Time 't' (AUC[0-t]) of Erdafitinib"
+      ],
+      "postedResults": [
+        {
+          "title": "Overall Survival (OS)",
+          "timeFrame": "From randomization (3 days prior to Cycle 1 Day 1) until death due to any cause (maximum up to 51.7 months)",
+          "paramType": "MEDIAN",
+          "unitOfMeasure": "Months",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort 1: Arm 1A: Erdafitinib 8 mg/9 mg"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort 1: Arm 1B: Chemotherapy (Vinflunine 320 mg/m^2 or Docetaxel 75 mg/m^2)"
+            },
+            {
+              "id": "OG002",
+              "title": "Cohort 2: Arm 2A: Erdafitinib 8 mg/ 9 mg"
+            },
+            {
+              "id": "OG003",
+              "title": "Cohort 2: Arm 2B: Pembrolizumab 200 mg"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "12.06",
+              "lowerLimit": "10.25",
+              "upperLimit": "16.36"
+            },
+            {
+              "groupId": "OG001",
+              "value": "8.74",
+              "lowerLimit": "6.67",
+              "upperLimit": "10.71"
+            },
+            {
+              "groupId": "OG002",
+              "value": "10.91",
+              "lowerLimit": "9.23",
+              "upperLimit": "12.58"
+            },
+            {
+              "groupId": "OG003",
+              "value": "11.07",
+              "lowerLimit": "9.72",
+              "upperLimit": "13.63"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "=0.0031",
+              "method": "Log Rank",
+              "paramType": "Hazard Ratio (HR)",
+              "paramValue": "0.65",
+              "ciPct": "95",
+              "ciLower": "0.48",
+              "ciUpper": "0.86"
+            },
+            {
+              "groupIds": [
+                "OG002",
+                "OG003"
+              ],
+              "pValue": "=0.2121",
+              "method": "Stratified log-rank test",
+              "paramType": "Hazard Ratio (HR)",
+              "paramValue": "1.16",
+              "ciPct": "95",
+              "ciLower": "0.92",
+              "ciUpper": "1.48"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03390504?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "thor-nct05623319",
+      "nctId": "NCT05623319",
+      "protocolNumber": "IRST162.14",
+      "acronym": "THOR",
+      "title": "Phase 2 Trial of Translational Approach to First Line cHemoimmunotherapy Followed by Maintenance With pembrOlizumab and Olaparib in Extensive-Stage Small-Cell Lung CanceR.",
+      "briefTitle": "Pembrolizumab and Olaparib Treatment of Extensive Small Cell Lung Cancer (ES-SCLC)",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "Istituto Romagnolo per lo Studio dei Tumori Dino Amadori IRST S.r.l. IRCCS",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "SCLC,Extensive Stage"
+      ],
+      "startDate": {
+        "value": "2023-03-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-07-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2027-07-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 60,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Pembrolizumab/Olaparib",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will be treated with pembrolizumab plus chemotherapy during the Induction Phase. In case of responsive or stable disease, patients will enter the Maintenance Phase and will be treated with pembrolizumab plus olaparib until progression or up to a maximum of 35 cycles."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression free survival (PFS)"
+      ],
+      "secondaryEndpoints": [
+        "Objective response rate (ORR)",
+        "Immune-related Objective response rate (irORR).",
+        "Progression free survival (PFS) at 6, 12, and 24 months",
+        "Overall Survival (OS)",
+        "Number of participants experiencing Adverse Events (AEs).",
+        "PD-L1 analysis",
+        "DNA damage repair analysis",
+        "Tumor Mutational Burden analysis",
+        "MicroSatellite Instability analysis"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05623319",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -62583,5 +62868,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-31T19:55:09.087Z"
+  "lastIngestedAt": "2026-11-07T16:38:48.740Z"
 }

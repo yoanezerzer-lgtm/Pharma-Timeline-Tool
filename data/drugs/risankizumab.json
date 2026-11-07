@@ -7,11 +7,12 @@
   "mechanism": "Interleukin-23 (p19 subunit) antagonist",
   "pharmacology": {
     "drugClass": {
-      "name": "Interleukin-23 Antagonist",
+      "name": "interleukin-23 antagonist",
       "provenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761105%22&limit=1",
-        "sourceLabel": "openFDA: Established Pharmacologic Class",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
+        "sourceLabel": "Label (SUPPL-53), Highlights",
+        "quote": "SKYRIZI is an interleukin-23 antagonist indicated",
+        "extractedBy": "regex",
         "verified": false
       }
     },
@@ -20,8 +21,8 @@
         "SKYRIZI is a prescription medicine used to treat:",
         "moderate to severe plaque psoriasis in adults and children 6 years of age and older who may benefit from taking injections or pills (systemic therapy) or treatment using ultraviolet or UV light (phototherapy).",
         "active psoriatic arthritis in adults and children 6 years of age and older.",
-        "moderate ly to severe ly active Crohn’s disease in adults.",
-        "moderate ly to severe ly active ulcerative colitis in adults."
+        "moderately to severely active Crohn’s disease in adults.",
+        "moderately to severely active ulcerative colitis in adults."
       ],
       "provenance": {
         "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
@@ -35,7 +36,7 @@
       {
         "number": "12.1",
         "title": "Mechanism of Action",
-        "text": "Risankizumab - rzaa is a humanized IgG1 monoclonal antibody that selectively binds to the p19 subunit of human IL - 23 cytokine and inhibits its interaction with the IL - 23 receptor. IL - 23 is a naturally occurring cytokine that is involved in inflammatory and immune responses. Risankizumab - rzaa inhibits the release of pro - inflammatory cytokines and chemokines.",
+        "text": "Risankizumab-rzaa is a humanized IgG1 monoclonal antibody that selectively binds to the p19 subunit of human IL-23 cytokine and inhibits its interaction with the IL-23 receptor. IL-23 is a naturally occurring cytokine that is involved in inflammatory and immune responses. Risankizumab-rzaa inhibits the release of pro-inflammatory cytokines and chemokines.",
         "provenance": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
           "sourceLabel": "Label (SUPPL-53), section 12.1",
@@ -47,7 +48,7 @@
       {
         "number": "12.2",
         "title": "Pharmacodynamics",
-        "text": "No formal pharmacodynamics studies have b een conducted with risankizumab - rzaa.",
+        "text": "No formal pharmacodynamics studies have been conducted with risankizumab-rzaa.",
         "provenance": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
           "sourceLabel": "Label (SUPPL-53), section 12.2",
@@ -59,7 +60,7 @@
       {
         "number": "12.3",
         "title": "Pharmacokinetics",
-        "text": "Risankizumab - rzaa concentrations, after single dose administration increased dose proportionally from 18 mg to 720 mg when administered subcutaneously (0.12 to 4.8 times the lowest recommended dos e and 0.025 to 1 times the highest recommended dose) and from 200 mg to 1,800 mg when administered as an up to 3 - hour intravenous infusion ( 0.33 to 3 times the lowest recommended dose and 0.16 to 1.5 times the highest recommended dose) in healthy subjects. In subjects with plaque psoriasis treated with 150 mg subcutaneously at Weeks 0, 4, and every 12 weeks thereafter, steady - state peak concentration (C max ) and trough concentration (C trough ) are estimated to be 12 mcg /mL and 2 mcg/mL, respectively. With the same subcutaneous dosing regimen, the pharmacokinetics of risankizumab - rzaa in subjects with psoriatic arthritis were similar to that in subjects with plaque psoriasis. In subjects with Crohn’s disease treated with 600 mg intravenous induction dose at Weeks 0, 4, and 8, followed by 180 mg or 360 mg subcutaneous maintenance dose at Week 12 and every 8 weeks thereafter, the median C max and C trough are estimated to be 156 mcg/mL and 38.8 mcg/mL, respectively, during We eks 8 - 12; and the steady state median C max and C trough are estimated to be 14 mcg/mL and 4.1 mcg/mL, respectively for 180 mg or 28 mcg/mL and 8.1 mcg/mL, respectively, for 360 mg, during Weeks 40 - 48. In subjects with Crohn’s disease treated with 720 mg su bcutaneous induction dose at Weeks 0, 2, 4, and 8, the median C max and C trough are estimated to be 103 mcg/mL and 50.9 mcg/mL during Weeks 8 - 12. The total systemic exposure (AUC) after the recommended induction dose regimen was similar following subcutaneo us or intravenous induction. In subjects with ulcerative colitis treated with 1,200 mg intravenous induction dose at Weeks 0, 4, and 8, followed by 180 mg or 360 mg subcutaneous maintenance dose at Week 12 and every 8 weeks thereafter, the median C max and C trough are estimated to be 350 and 87.7 mcg/mL, respectively, during the induction period (Weeks 8 - 12); and the steady state median C max and C trough are estimated to be 19.6 and 4.64 μg/mL, respectively, for 180 mg or 39.2 mcg/mL and 9.29 mcg/mL, re spectively, for 360 mg, during the maintenance period (Weeks 40 - 48). B ased on population pharmacokinetic analyses, t he pharmacokinetics of risankizumab - rzaa in subjects with ulcerative colitis was generally similar to that in subjects with Crohn’s disease. Absorption The absolute bioavailability of risankizumab - rzaa was estimated to be 74 to 89% following subcutaneous injection. In healthy subjects, following administration of a single subcutaneous dose, C max was reached by 3 to 14 days. Distribution The e stimated steady - state volume of distribution (inter - subject CV%) was 11.2 L (34%) in subjects with plaque psoriasis, and 7.68 L (64%) in subjects with Crohn’s disease. Elimination The estimated systemic clearance (inter - subject CV%) was 0.31 L/day (24%) a nd 0.30 L/day (34%) and terminal elimination half - life was approximately 28 days and 21 days in subjects with plaque psoriasis and Crohn’s disease, respectively. Metabolism The metabolic pathway of risankizumab - rzaa has not been characterized. As a humani zed IgG1 monoclonal antibody, risankizumab - rzaa is expected to be degraded into small peptides and amino acids via catabolic pathways in a manner similar to endogenous IgG. Specific Populations Pediatric Patients • Plaque Psoriasis : Risankizumab - rzaa exposures in pediatric subjects 6 years of age and older with plaque psoriasis receiving weight - based dos ing regimens were consistent with those in adults. At the recommended dosing regimens evaluated in these subjects , estimated median steady - state peak and trough plasma concentrations were 15.7 and 2.3 mcg/mL, respectively, in subjects weighing less than 40 kg, and 11.1 and 1.6 mcg/mL, respectively, in subjects weighing 40 kg or greater . • Psoriatic Arthritis : Risankizumab exposures in patients 6 years of age and older with active psoriatic arthritis at the recommended pediatric dosage are predicted to be comparable to those observed in adult patients with psoriatic arthritis based on population pharmacokinetic modeling simulation . Geriatric Pati ents Risankizumab - rzaa exposures (C trough ) in geriatric patients (≥65 years) are comparable to those in younger adult patients with in each indication . No studies have been conducted to determine the effect of renal or hepatic impairment on the pharmacokine tics of risankizumab - rzaa. Body Weight Risankizumab - rzaa clearance and volume of distribution increase and plasma concentrations decrease as body weight increases; however, no dose adjustment is recommended based on body weight in adult patients . Drug Int eraction Studies Cytochrome P450 Substrates No clinically significant changes in exposure of caffeine (CYP1A2 substrate), warfarin (CYP2C9 substrate), omeprazole (CYP2C19 substrate), metoprolol (CYP2D6 substrate), or midazolam (CYP3A substrate) were observ ed when used concomitantly with risankizumab - rzaa in subjects with plaque psoriasis (risankizumab - rzaa 150 mg administered subcutaneously at Weeks 0, 4, 8 , and 12) and subjects with Crohn’s disease or ulcerative colitis (risankizumab - rzaa 1,800 mg administ ered intravenously at Weeks 0, 4 , and 8, i.e., 3 times and 1.5 times the recommended dose for Crohn ’s disease and ulcerative colitis, respectively ).",
+        "text": "Risankizumab-rzaa concentrations, after single dose administration increased dose proportionally from 18 mg to 720 mg when administered subcutaneously (0.12 to 4.8 times the lowest recommended dose and 0.025 to 1 times the highest recommended dose) and from 200 mg to 1,800 mg when administered as an up to 3-hour intravenous infusion (0.33 to 3 times the lowest recommended dose and 0.16 to 1.5 times the highest recommended dose) in healthy subjects. In subjects with plaque psoriasis treated with 150 mg subcutaneously at Weeks 0, 4, and every 12 weeks thereafter, steady-state peak concentration (Cmax) and trough concentration (Ctrough) are estimated to be 12 mcg/mL and 2 mcg/mL, respectively. With the same subcutaneous dosing regimen, the pharmacokinetics of risankizumab-rzaa in subjects with psoriatic arthritis were similar to that in subjects with plaque psoriasis. In subjects with Crohn’s disease treated with 600 mg intravenous induction dose at Weeks 0, 4, and 8, followed by 180 mg or 360 mg subcutaneous maintenance dose at Week 12 and every 8 weeks thereafter, the median Cmax and Ctrough are estimated to be 156 mcg/mL and 38.8 mcg/mL, respectively, during Weeks 8-12; and the steady state median Cmax and Ctrough are estimated to be 14 mcg/mL and 4.1 mcg/mL, respectively for 180 mg or 28 mcg/mL and 8.1 mcg/mL, respectively, for 360 mg, during Weeks 40-48. In subjects with Crohn’s disease treated with 720 mg subcutaneous induction dose at Weeks 0, 2, 4, and 8, the median Cmax and Ctrough are estimated to be 103 mcg/mL and 50.9 mcg/mL during Weeks 8-12. The total systemic exposure (AUC) after the recommended induction dose regimen was similar following subcutaneous or intravenous induction. In subjects with ulcerative colitis treated with 1,200 mg intravenous induction dose at Weeks 0, 4, and 8, followed by 180 mg or 360 mg subcutaneous maintenance dose at Week 12 and every 8 weeks thereafter, the median Cmax and Ctrough are estimated to be 350 and 87.7 mcg/mL, respectively, during the induction period (Weeks 8-12); and the steady state median Cmax and Ctrough are estimated to be 19.6 and 4.64 μg/mL, respectively, for 180 mg or 39.2 mcg/mL and 9.29 mcg/mL, respectively, for 360 mg, during the maintenance period (Weeks 40-48). Based on population pharmacokinetic analyses, the pharmacokinetics of risankizumab-rzaa in subjects with ulcerative colitis was generally similar to that in subjects with Crohn’s disease. Absorption The absolute bioavailability of risankizumab-rzaa was estimated to be 74 to 89% following subcutaneous injection. In healthy subjects, following administration of a single subcutaneous dose, Cmax was reached by 3 to 14 days. Distribution The estimated steady-state volume of distribution (inter-subject CV%) was 11.2 L (34%) in subjects with plaque psoriasis, and 7.68 L (64%) in subjects with Crohn’s disease. Elimination The estimated systemic clearance (inter-subject CV%) was 0.31 L/day (24%) and 0.30 L/day (34%) and terminal elimination half-life was approximately 28 days and 21 days in subjects with plaque psoriasis and Crohn’s disease, respectively. Metabolism The metabolic pathway of risankizumab-rzaa has not been characterized. As a humanized IgG1 monoclonal antibody, risankizumab-rzaa is expected to be degraded into small peptides and amino acids via catabolic pathways in a manner similar to endogenous IgG. Specific Populations Pediatric Patients • Plaque Psoriasis: Risankizumab-rzaa exposures in pediatric subjects 6 years of age and older with plaque psoriasis receiving weight-based dosing regimens were consistent with those in adults. At the recommended dosing regimens evaluated in these subjects, estimated median steady-state peak and trough plasma concentrations were 15.7 and 2.3 mcg/mL, respectively, in subjects weighing less than 40 kg, and 11.1 and 1.6 mcg/mL, respectively, in subjects weighing 40 kg or greater. • Psoriatic Arthritis: Risankizumab exposures in patients 6 years of age and older with active psoriatic arthritis at the recommended pediatric dosage are predicted to be comparable to those observed in adult patients with psoriatic arthritis based on population pharmacokinetic modeling simulation. Geriatric Patients Risankizumab-rzaa exposures (Ctrough) in geriatric patients (≥65 years) are comparable to those in younger adult patients within each indication. No studies have been conducted to determine the effect of renal or hepatic impairment on the pharmacokinetics of risankizumab-rzaa. Body Weight Risankizumab-rzaa clearance and volume of distribution increase and plasma concentrations decrease as body weight increases; however, no dose adjustment is recommended based on body weight in adult patients. Drug Interaction Studies Cytochrome P450 Substrates No clinically significant changes in exposure of caffeine (CYP1A2 substrate), warfarin (CYP2C9 substrate), omeprazole (CYP2C19 substrate), metoprolol (CYP2D6 substrate), or midazolam (CYP3A substrate) were observed when used concomitantly with risankizumab-rzaa in subjects with plaque psoriasis (risankizumab-rzaa 150 mg administered subcutaneously at Weeks 0, 4, 8, and 12) and subjects with Crohn’s disease or ulcerative colitis (risankizumab-rzaa 1,800 mg administered intravenously at Weeks 0, 4, and 8, i.e., 3 times and 1.5 times the recommended dose for Crohn’s disease and ulcerative colitis, respectively).",
         "provenance": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
           "sourceLabel": "Label (SUPPL-53), section 12.3",
@@ -95,11 +96,11 @@
             "precision": "day"
           },
           "kind": "new",
-          "statement": "Skyrizi is indicated for the treatment of moderate - to - severe plaque psoriasis in adults who are candid ates for systemic therapy or phototherapy.",
+          "statement": "Skyrizi is indicated for the treatment of moderate-to-severe plaque psoriasis in adults who are candidates for systemic therapy or phototherapy.",
           "provenance": {
             "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/761105s000ltr.pdf",
             "sourceLabel": "Approval letter (ORIG-1)",
-            "quote": "Skyrizi is indicated for the treatment of moderate - to - severe plaque psoriasis in adults who are candid ates for systemic therapy or phototherapy.",
+            "quote": "Skyrizi is indicated for the treatment of moderate-to-severe plaque psoriasis in adults who are candidates for systemic therapy or phototherapy.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -279,11 +280,11 @@
             "precision": "day"
           },
           "kind": "new",
-          "statement": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+          "statement": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-16)",
-            "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+            "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -420,11 +421,11 @@
             "precision": "day"
           },
           "kind": "new",
-          "statement": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+          "statement": "These Prior Approval supplemental biologics license applications provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults.",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
             "sourceLabel": "Approval letter (SUPPL-29)",
-            "quote": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+            "quote": "These Prior Approval supplemental biologics license applications provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults.",
             "extractedBy": "regex",
             "verified": false
           }
@@ -472,7 +473,7 @@
           },
           "provenance": {
             "sourceUrl": "https://clinicaltrials.gov/study/NCT03398148",
-            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03398148)",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT03398148, NCT03398135)",
             "extractedBy": "rule",
             "verified": false
           }
@@ -3381,7 +3382,7 @@
             "provenance": {
               "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
               "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-              "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+              "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
               "extractedBy": "rule",
               "verified": false
             }
@@ -3849,6 +3850,16 @@
                 "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-16",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
@@ -3868,14 +3879,14 @@
                 "provenance": {
                   "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
                   "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
                   "extractedBy": "rule",
                   "verified": false
                 }
               }
             }
           ],
-          "detectedAt": "2026-10-31T18:55:08.012Z"
+          "detectedAt": "2026-11-07T16:39:15.079Z"
         }
       ]
     },
@@ -4315,7 +4326,7 @@
             "provenance": {
               "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
               "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-              "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+              "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
               "extractedBy": "rule",
               "verified": false
             }
@@ -4783,6 +4794,16 @@
                 "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-16",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
+                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
@@ -4802,14 +4823,14 @@
                 "provenance": {
                   "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
                   "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
                   "extractedBy": "rule",
                   "verified": false
                 }
               }
             }
           ],
-          "detectedAt": "2026-10-31T18:55:08.012Z"
+          "detectedAt": "2026-11-07T16:39:15.079Z"
         }
       ]
     },
@@ -4837,7 +4858,7 @@
             "provenance": {
               "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
               "sourceLabel": "Approval letter (SUPPL-29): the only approval of this indication",
-              "quote": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+              "quote": "These Prior Approval supplemental biologics license applications provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults.",
               "extractedBy": "rule",
               "verified": false
             }
@@ -5209,6 +5230,16 @@
                 "quote": "Trial identifier appears within the Ulcerative Colitis section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
+              },
+              "approval": {
+                "submission": "SUPPL-29",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-29): the only approval of this indication",
+                  "quote": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
               }
             }
           ],
@@ -5228,14 +5259,14 @@
                 "provenance": {
                   "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
                   "sourceLabel": "Approval letter (SUPPL-29): the only approval of this indication",
-                  "quote": "Th e s e Prior Approval supplemental biologics license application s provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults .",
+                  "quote": "These Prior Approval supplemental biologics license applications provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults.",
                   "extractedBy": "rule",
                   "verified": false
                 }
               }
             }
           ],
-          "detectedAt": "2026-10-31T18:55:08.012Z"
+          "detectedAt": "2026-11-07T16:39:15.079Z"
         }
       ]
     },
@@ -5721,10 +5752,33 @@
       "nctId": "NCT03398135",
       "protocolNumber": "M16-066",
       "acronym": "COMMAND",
+      "labelName": "UC-2",
       "title": "A Multicenter, Randomized, Double-Blind, Placebo Controlled 52-Week Maintenance and an Open-Label Extension Study of the Efficacy and Safety of Risankizumab in Subjects With Ulcerative Colitis",
       "briefTitle": "A Study to Assess the Efficacy and Safety of Risankizumab in Participants With Ulcerative Colitis",
       "phase": "PHASE3",
-      "roles": [],
+      "roles": [
+        {
+          "indication": "Ulcerative Colitis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Ulcerative Colitis)",
+            "quote": "Trial identifier appears within the Ulcerative Colitis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-29",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-29): the only approval of this indication",
+              "quote": "These Prior Approval supplemental biologics license applications provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
@@ -5870,12 +5924,53 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/761105Orig1s009,s010.pdf",
           "sourceLabel": "FDA approval package",
           "page": 37,
-          "quote": "to placebo at W eek 12 (67% vs 43%) . Maintenance Trial UC-2 The maintenance trial (UC-2; NCT03398135) evaluated 547 subjects who received one of three SKYRIZI induction regimens, including t",
+          "quote": "d to placebo at Week 12 (67% vs 43%). Maintenance Trial UC-2 The maintenance trial (UC-2; NCT03398135) evaluated 547 subjects who received one of three SKYRIZI induction regimens, including t",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "UC-2 (NCT03398135)",
           "extractedBy": "regex",
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "UC-2",
+          "detectedAt": "2026-11-07T16:39:15.079Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [],
+          "newValue": [
+            {
+              "indication": "Ulcerative Colitis",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Ulcerative Colitis)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Ulcerative Colitis section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "SUPPL-29",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761105Orig1s029;761262Orig1s007ltr.pdf",
+                  "sourceLabel": "Approval letter (SUPPL-29): the only approval of this indication",
+                  "quote": "These Prior Approval supplemental biologics license applications provide for the addition of an indication of the treatment of moderately to severely active ulcerative colitis in adults.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T16:39:15.079Z"
+        }
+      ]
     },
     {
       "id": "m16-813",
@@ -8129,7 +8224,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/761105Orig1s009,s010.pdf",
           "sourceLabel": "FDA approval package",
           "page": 25,
-          "quote": "e Psoriasis The safety and efficacy of SKYRIZI were assessed in a four-part trial [PsO-6 (NCT04435600)] [see Use in Specific Populations ( 8.4 )] . The trial included a randomized, efficacy a",
+          "quote": "e Psoriasis The safety and efficacy of SKYRIZI were assessed in a four-part trial [PsO-6 (NCT04435600)] [see Use in Specific Populations (8.4)]. The trial included a randomized, efficacy asse",
           "extractedBy": "regex",
           "verified": false
         }
@@ -10129,7 +10224,7 @@
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/761105Orig1s009,s010.pdf",
           "sourceLabel": "FDA approval package",
           "page": 33,
-          "quote": "rial (Study CD - 5) – Subcutaneous Administration In a 12 - week induction study (CD - 5; NCT06063967), subjects with moderately to severely active Crohn’s disease were randomized to receive",
+          "quote": "tion Trial (Study CD-5) – Subcutaneous Administration In a 12-week induction study (CD-5; NCT06063967), subjects with moderately to severely active Crohn’s disease were randomized to receive",
           "extractedBy": "regex",
           "verified": false
         }
@@ -13473,5 +13568,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-10-31T20:20:34.595Z"
+  "lastIngestedAt": "2026-11-07T16:39:15.079Z"
 }
