@@ -23,19 +23,25 @@ a new session when a conversation gets long.
   MeSH files under "Genetic Diseases, Inborn", C16.320); "Rare diseases" is
   meant to come from FDA orphan status (not built yet). Drugs with no area
   show under "Being sorted". No admin links, badges or extra views on the
-  home page; the add-drug page is still at `#/ingest`.
-- **Drug page** (`#/drug/<slug>`, `src/pages/DrugPage.tsx`): "What it's for"
+  home page; the add-drug page is still at `/ingest/`.
+- **Drug page** (`/drug/<slug>/`, `src/pages/DrugPage.tsx`): "What it's for"
   (the label's patient leaflet answer to "What is BRAND?", word for word,
   `patientSummary` in `scripts/ingest/pharmacology.ts`), approved uses, "How
   it works" (label sections 12.1–12.3), then "Sources and checks" (FDA
   application, review office, check status) at the bottom.
-- **Approved-use page** (`#/drug/<slug>/indication/<slug>`): trials timeline.
-- **Disease page** (`#/disease/<MeSH id>`, `src/pages/DiseasePage.tsx`):
+- **Approved-use page** (`/drug/<slug>/indication/<slug>/`): trials timeline.
+- **Disease page** (`/disease/<MeSH id>/`, `src/pages/DiseasePage.tsx`):
   everyday name, first and latest approval, plain-language summary, one
   timeline row per approved use (filled dot = new approval, open dot =
   change), what each approval covers (the approval letter's sentence
   without its opening paperwork, `src/lib/plainText.ts`), and MeSH's
   medical definition at the end. Excel and PowerPoint downloads.
+- **Page addresses** (7 Nov): every page has its own address, title and
+  description. The build writes one HTML file per page plus `404.html`,
+  `sitemap.xml` and `robots.txt` (`src/lib/sitePages.ts`, `pageMeta.ts`,
+  plugin in `vite.config.ts`). Old `#/drug/...` links still open the right
+  page. Set `SITE_ORIGIN` in the deploy when the site moves to its own
+  domain, so the sitemap and canonical links use it.
 - **Check status** on every drug: "Not yet checked", "Partly checked · N of
   M" or "Checked", counted from `data/reference/` at build time.
 
@@ -178,19 +184,16 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
 - (i) icons for section explanations, owner-only text removed (#110).
 
 ## Blocker (7 Nov): the site is not publishing
-The repository was made private on 7 Nov. Since 16:22 that day every
-deploy fails ("Ensure GitHub Pages has been enabled"): free GitHub accounts
-only publish Pages from public repositories. #109–#111 are merged but not
-live. Owner to choose: make the repo public again (Settings → General →
-Danger zone), or move hosting to Cloudflare Pages (works with a private
-repo; planned anyway for the paywall).
+The repository is public again (7 Nov evening), but GitHub switched Pages
+off while it was private: deploys still fail with "Ensure GitHub Pages has
+been enabled". Owner: Settings → Pages → Source: "GitHub Actions". Then
+re-run "Deploy to GitHub Pages" on main; its site check job confirms the
+live site. Then submit `sitemap.xml` in Google Search Console.
 
 ## Next steps (in order, one chat each)
-1. Unblock publishing (above), then check the live Rinvoq page shows
-   "point of JAKs" and the (i) icons.
-2. Real page addresses: replace `#/drug/...` with `/drug/...`, each page
-   with its own title and description, plus a sitemap, so Google can list
-   every page (today it only sees the home page).
+1. Unblock publishing (above, owner), then check the live Rinvoq page
+   shows "point of JAKs" and the (i) icons.
+2. Done 7 Nov: real page addresses, titles, descriptions, sitemap.
 3. Move atopic dermatitis under immunology (3 Nov decision).
 4. Hosting on Cloudflare Pages and the owner's domain.
 5. News links (sources above), then the paywall.

@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { diseaseIndex, drugIndex } from '../lib/catalog.js';
-import { compareHref, diseasesHref, drugHref } from '../lib/router.js';
+import { usePageMeta } from '../lib/usePageMeta.js';
+import { homeMeta } from '../lib/pageMeta.js';
+import { replaceQuery, compareHref, diseasesHref, drugHref } from '../lib/router.js';
 import { shortIndication } from '../lib/drugs.js';
 import { naturalTerm } from '../lib/plainText.js';
 import { AREAS, areasOfDrug } from '../lib/areas.js';
@@ -9,18 +11,13 @@ import './DrugIndex.css';
 
 const NOT_SORTED = 'not-sorted';
 
-/** Search and area live in the URL ("#/?area=oncology") so a filtered list can be shared. */
+/** Search and area live in the URL ("/?area=oncology") so a filtered list can be shared. */
 function readParams(): URLSearchParams {
-  const hash = window.location.hash;
-  const i = hash.indexOf('?');
-  return new URLSearchParams(i >= 0 ? hash.slice(i + 1) : '');
+  return new URLSearchParams(window.location.search);
 }
 
-function writeParams(params: Record<string, string>): void {
-  const qs = new URLSearchParams(Object.entries(params).filter(([, v]) => v !== '')).toString();
-  // replaceState, not a hash assignment: typing shouldn't add a history entry per keystroke.
-  window.history.replaceState(null, '', `#/${qs ? `?${qs}` : ''}`);
-}
+// Replaces the address rather than adding to history: typing shouldn't add an entry per keystroke.
+const writeParams = replaceQuery;
 
 /** Each disease's everyday name as its disease page shows it ("Breast Cancer"). */
 const diseaseName = new Map(diseaseIndex.map((d) => [d.meshId, d.name]));
@@ -38,6 +35,7 @@ function usesLabel(d: DrugSummary): { text: string; more: number } {
 }
 
 export function DrugIndex() {
+  usePageMeta(homeMeta());
   const [initial] = useState(readParams);
   const [query, setQuery] = useState(initial.get('q') ?? '');
   const [area, setArea] = useState(initial.get('area') ?? '');

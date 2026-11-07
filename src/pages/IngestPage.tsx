@@ -1,3 +1,4 @@
+import { homeHref } from '../lib/router.js';
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import {
   dispatchIngestWorkflow,
@@ -224,7 +225,7 @@ export function IngestPage() {
 
   return (
     <main className="ingest">
-      <BackLink href="#/" label="All drugs" />
+      <BackLink href={homeHref()} label="All drugs" />
 
       <header className="ingest__head">
         <h1>Add a drug</h1>

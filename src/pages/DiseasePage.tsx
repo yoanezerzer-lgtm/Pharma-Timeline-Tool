@@ -4,7 +4,9 @@ import { BackLink } from '../components/BackLink/BackLink.js';
 import type { DiseaseSummary, UseStep } from '../lib/diseases.js';
 import { diseaseIndex } from '../lib/catalog.js';
 import { formatDate, toTime } from '../lib/dates.js';
-import { diseaseHref, diseasesHref, drugHref, indicationHref } from '../lib/router.js';
+import { usePageMeta } from '../lib/usePageMeta.js';
+import { diseaseMeta, diseasesMeta, homeMeta } from '../lib/pageMeta.js';
+import { diseaseHref, diseasesHref, drugHref, indicationHref, homeHref } from '../lib/router.js';
 import '../components/IndicationTimeline/IndicationTimeline.css';
 import './IndicationPage.css';
 import './DrugPage.css';
@@ -21,6 +23,7 @@ const STEP_LABEL: Record<UseStep['kind'], string> = {
 
 export function DiseasePage({ meshId }: { meshId: string }) {
   const disease = diseaseIndex.find((d) => d.meshId === meshId);
+  usePageMeta(disease ? diseaseMeta(disease) : homeMeta());
   if (!disease) {
     return (
       <main className="drug">
@@ -166,6 +169,7 @@ export function DiseasePage({ meshId }: { meshId: string }) {
 }
 
 export function DiseasesPage() {
+  usePageMeta(diseasesMeta());
   const byArea = new Map<string, typeof diseaseIndex>();
   for (const d of diseaseIndex) {
     for (const a of d.areas.length > 0 ? d.areas : ['Other']) byArea.set(a, [...(byArea.get(a) ?? []), d]);
@@ -173,7 +177,7 @@ export function DiseasesPage() {
   const areas = [...byArea.keys()].sort((a, b) => Number(a === 'Other') - Number(b === 'Other') || a.localeCompare(b));
   return (
     <main className="drug">
-      <BackLink href="#/" label="All drugs" />
+      <BackLink href={homeHref()} label="All drugs" />
       <header className="disease__head">
         <h1>Diseases</h1>
         <p className="drug__mechanism">

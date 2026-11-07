@@ -1,4 +1,5 @@
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vitest/config';
 import type { Plugin } from 'vite';
@@ -6,9 +7,32 @@ import react from '@vitejs/plugin-react';
 import { Drug } from './src/schema/index.js';
 import { checkStats, mergeAreas, mergeCompanies, summarize } from './src/lib/summary.js';
 import { summarizeDiseases } from './src/lib/diseases.js';
+import { pageHtml, robotsTxt, sitemapXml, sitePages } from './src/lib/sitePages.js';
 
 const DRUGS_DIR = fileURLToPath(new URL('./data/drugs/', import.meta.url));
 const REFERENCE_DIR = fileURLToPath(new URL('./data/reference/', import.meta.url));
+
+/** Every committed drug record, validated; fails on a malformed file. */
+function readDrugs(watch?: (path: string) => void): Drug[] {
+  return readdirSync(DRUGS_DIR)
+    .filter((f) => f.endsWith('.json'))
+    .map((file) => {
+      const path = DRUGS_DIR + file;
+      watch?.(path);
+      const result = Drug.safeParse(JSON.parse(readFileSync(path, 'utf8')));
+      if (!result.success) {
+        throw new Error(
+          `Invalid drug record ${file}:\n` +
+            result.error.issues.map((i) => `  ${i.path.join('.')}: ${i.message}`).join('\n')
+        );
+      }
+      // catalog.ts finds a record's file by its slug.
+      if (`${result.data.slug}.json` !== file) {
+        throw new Error(`${file} has slug "${result.data.slug}" — the filename must match it.`);
+      }
+      return result.data;
+    });
+}
 
 /**
  * Serves `virtual:drug-index`: a summary of every committed drug record
@@ -24,24 +48,7 @@ function drugIndex(): Plugin {
     resolveId: (source) => (Object.values(ids).includes(source) ? `\0${source}` : undefined),
     load(loadId) {
       if (loadId !== `\0${ids.drugs}` && loadId !== `\0${ids.diseases}`) return;
-      const drugs = readdirSync(DRUGS_DIR)
-        .filter((f) => f.endsWith('.json'))
-        .map((file) => {
-          const path = DRUGS_DIR + file;
-          this.addWatchFile(path);
-          const result = Drug.safeParse(JSON.parse(readFileSync(path, 'utf8')));
-          if (!result.success) {
-            throw new Error(
-              `Invalid drug record ${file}:\n` +
-                result.error.issues.map((i) => `  ${i.path.join('.')}: ${i.message}`).join('\n')
-            );
-          }
-          // catalog.ts finds a record's file by its slug.
-          if (`${result.data.slug}.json` !== file) {
-            throw new Error(`${file} has slug "${result.data.slug}" — the filename must match it.`);
-          }
-          return result.data;
-        });
+      const drugs = readDrugs((path) => this.addWatchFile(path));
       if (loadId === `\0${ids.diseases}`) return `export default ${JSON.stringify(summarizeDiseases(drugs))};`;
 
       const summaries = drugs
@@ -60,11 +67,43 @@ function drugIndex(): Plugin {
   };
 }
 
+/**
+ * Writes one HTML file per page (drug/<slug>/index.html, ...) with the
+ * page's own title and description, plus 404.html (the app, for any other
+ * address), sitemap.xml and robots.txt. Static hosts serve each address
+ * from its file, so search engines can list every page.
+ */
+function staticPages(base: string): Plugin {
+  // Where the site lives. Set SITE_ORIGIN when it moves to its own domain.
+  const origin = (process.env.SITE_ORIGIN ?? 'https://yoanezerzer-lgtm.github.io').replace(/\/+$/, '');
+  return {
+    name: 'static-pages',
+    apply: 'build',
+    writeBundle(options) {
+      const dir = options.dir!;
+      const template = readFileSync(join(dir, 'index.html'), 'utf8');
+      const drugs = readDrugs();
+      const pages = sitePages(drugs, summarizeDiseases(drugs));
+      const url = (path: string) => `${origin}${base}${path}`;
+      for (const page of pages) {
+        mkdirSync(join(dir, page.path), { recursive: true });
+        writeFileSync(join(dir, page.path, 'index.html'), pageHtml(template, page.meta, url(page.path), page.listed));
+      }
+      writeFileSync(join(dir, '404.html'), pageHtml(template, pages[0].meta, null, false));
+      const today = new Date().toISOString().slice(0, 10);
+      writeFileSync(join(dir, 'sitemap.xml'), sitemapXml(pages.filter((p) => p.listed).map((p) => url(p.path)), today));
+      writeFileSync(join(dir, 'robots.txt'), robotsTxt(url('sitemap.xml')));
+    },
+  };
+}
+
 // `base` targets GitHub Pages project-site hosting (user.github.io/<repo>/).
 // Override with BASE_PATH=/ for local or root-domain deploys.
+const BASE = process.env.BASE_PATH ?? '/Pharma-Timeline-Tool/';
+
 export default defineConfig({
-  plugins: [react(), drugIndex()],
-  base: process.env.BASE_PATH ?? '/Pharma-Timeline-Tool/',
+  plugins: [react(), drugIndex(), staticPages(BASE)],
+  base: BASE,
   test: {
     globals: true,
     environment: 'node',

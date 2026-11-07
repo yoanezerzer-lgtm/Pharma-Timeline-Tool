@@ -20,7 +20,7 @@ import {
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel, ROLE_LABEL } from '../lib/drugs.js';
 import { confirmationKey, useConfirmations, type Confirmation } from '../lib/reference.js';
-import { indicationHref } from '../lib/router.js';
+import { indicationHref, homeHref, replaceQuery } from '../lib/router.js';
 import { BackLink } from '../components/BackLink/BackLink.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import './ComparePage.css';
@@ -50,9 +50,7 @@ const OPTIONS: ProgramOption[] = drugIndex
 const DEFAULTS = ['upadacitinib:rheumatoid-arthritis', 'risankizumab:psoriatic-arthritis'];
 
 function readParams(): URLSearchParams {
-  const hash = window.location.hash;
-  const i = hash.indexOf('?');
-  return new URLSearchParams(i >= 0 ? hash.slice(i + 1) : '');
+  return new URLSearchParams(window.location.search);
 }
 
 function initialRefs(): [ProgramRef, ProgramRef] {
@@ -68,8 +66,7 @@ export function ComparePage() {
   const [openTrial, setOpenTrial] = useState<{ program: string; trialId: string } | null>(null);
 
   useEffect(() => {
-    const qs = new URLSearchParams({ a: programRefString(refs[0]), b: programRefString(refs[1]) });
-    window.history.replaceState(null, '', `#/compare?${qs}`);
+    replaceQuery({ a: programRefString(refs[0]), b: programRefString(refs[1]) });
   }, [refs]);
 
   const states: [DrugState, DrugState] = [useDrug(refs[0].slug), useDrug(refs[1].slug)];
@@ -118,7 +115,7 @@ export function ComparePage() {
 
   return (
     <main className={`compare${selectedTrial ? ' has-drawer' : ''}`}>
-      <BackLink href="#/" label="All drugs" />
+      <BackLink href={homeHref()} label="All drugs" />
       <div className="compare__head">
         <h1>Compare two approvals</h1>
         <div className="compare__actions">
