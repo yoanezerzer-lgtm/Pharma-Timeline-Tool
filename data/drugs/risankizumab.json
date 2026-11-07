@@ -288,6 +288,22 @@
             "extractedBy": "regex",
             "verified": false
           }
+        },
+        {
+          "submission": "SUPPL-18",
+          "date": {
+            "value": "2022-09-23",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s018ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-18)",
+            "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
+            "extractedBy": "regex",
+            "verified": false
+          }
         }
       ],
       "diseases": [
@@ -3376,16 +3392,6 @@
             "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
-          },
-          "approval": {
-            "submission": "SUPPL-16",
-            "provenance": {
-              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
-              "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-              "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
-              "extractedBy": "rule",
-              "verified": false
-            }
           }
         }
       ],
@@ -3856,7 +3862,7 @@
                 "provenance": {
                   "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
                   "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
                   "extractedBy": "rule",
                   "verified": false
                 }
@@ -3873,20 +3879,10 @@
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional."
-              },
-              "approval": {
-                "submission": "SUPPL-16",
-                "provenance": {
-                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
-                  "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
-                  "extractedBy": "rule",
-                  "verified": false
-                }
               }
             }
           ],
-          "detectedAt": "2026-11-07T16:39:15.079Z"
+          "detectedAt": "2026-11-07T20:40:47.772Z"
         }
       ]
     },
@@ -4320,16 +4316,6 @@
             "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
-          },
-          "approval": {
-            "submission": "SUPPL-16",
-            "provenance": {
-              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
-              "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-              "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
-              "extractedBy": "rule",
-              "verified": false
-            }
           }
         }
       ],
@@ -4800,7 +4786,7 @@
                 "provenance": {
                   "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
                   "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults .",
+                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
                   "extractedBy": "rule",
                   "verified": false
                 }
@@ -4817,20 +4803,10 @@
                 "extractedBy": "rule",
                 "verified": false,
                 "quote": "Trial identifier appears within the Crohn’s Disease section 14 span, and the trial is sponsor-run and interventional."
-              },
-              "approval": {
-                "submission": "SUPPL-16",
-                "provenance": {
-                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf",
-                  "sourceLabel": "Approval letter (SUPPL-16): the only approval of this indication",
-                  "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.",
-                  "extractedBy": "rule",
-                  "verified": false
-                }
               }
             }
           ],
-          "detectedAt": "2026-11-07T16:39:15.079Z"
+          "detectedAt": "2026-11-07T20:40:47.772Z"
         }
       ]
     },
@@ -13568,5 +13544,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:39:15.079Z"
+  "lastIngestedAt": "2026-11-07T20:40:47.772Z"
 }

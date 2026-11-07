@@ -65,11 +65,30 @@
       },
       "submissionNumber": "ORIG-1",
       "approvalProvenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761530%22&limit=1",
-        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-06-26",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Lumvoa is indicated for treatment of thyroid eye disease.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Lumvoa is indicated for treatment of thyroid eye disease.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -122,6 +141,16 @@
             "quote": "Trial identifier appears within the Thyroid eye disease regardless of thyroid eye disease activity or duration section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Lumvoa is indicated for treatment of thyroid eye disease.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -289,7 +318,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Thyroid eye disease regardless of thyroid eye disease activity or duration",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Thyroid eye disease regardless of thyroid eye disease activity or duration)",
+                "quote": "Trial identifier appears within the Thyroid eye disease regardless of thyroid eye disease activity or duration section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Thyroid eye disease regardless of thyroid eye disease activity or duration",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Thyroid eye disease regardless of thyroid eye disease activity or duration)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Thyroid eye disease regardless of thyroid eye disease activity or duration section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Lumvoa is indicated for treatment of thyroid eye disease.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T20:41:43.850Z"
+        }
+      ]
     },
     {
       "id": "thrive-2",
@@ -309,6 +379,16 @@
             "quote": "Trial identifier appears within the Thyroid eye disease regardless of thyroid eye disease activity or duration section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Lumvoa is indicated for treatment of thyroid eye disease.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -475,7 +555,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Thyroid eye disease regardless of thyroid eye disease activity or duration",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Thyroid eye disease regardless of thyroid eye disease activity or duration)",
+                "quote": "Trial identifier appears within the Thyroid eye disease regardless of thyroid eye disease activity or duration section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Thyroid eye disease regardless of thyroid eye disease activity or duration",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761530Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Thyroid eye disease regardless of thyroid eye disease activity or duration)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Thyroid eye disease regardless of thyroid eye disease activity or duration section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761530Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Lumvoa is indicated for treatment of thyroid eye disease.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T20:41:43.850Z"
+        }
+      ]
     },
     {
       "id": "ole",
@@ -846,5 +967,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:40:16.111Z"
+  "lastIngestedAt": "2026-11-07T20:41:43.850Z"
 }

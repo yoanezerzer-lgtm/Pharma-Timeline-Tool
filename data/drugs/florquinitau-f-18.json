@@ -65,11 +65,30 @@
       },
       "submissionNumber": "ORIG-1",
       "approvalProvenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220496%22&limit=1",
-        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220496Orig1s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-08-13",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Positron emission tomography (PET) of the brain in adults with cognitive impairment who are being evaluated for Alzheimer’s disease to identify patients with tau neurofibrillary tangle (NFT) pathology",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220496Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1); wording from the label's section 1",
+            "quote": "Positron emission tomography (PET) of the brain in adults with cognitive impairment who are being evaluated for Alzheimer’s disease to identify patients with tau neurofibrillary tangle (NFT) pathology",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -135,5 +154,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:37:38.627Z"
+  "lastIngestedAt": "2026-11-07T20:38:58.728Z"
 }

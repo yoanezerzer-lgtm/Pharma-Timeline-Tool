@@ -99,11 +99,30 @@
       },
       "submissionNumber": "ORIG-1",
       "approvalProvenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220787%22&limit=1",
-        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220787Orig1s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-05-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Zaynich (cefepime and zidebactam) for injection for the treatment of adult patients with complicated urinary tract infections (cUTI) including pyelonephritis caused by designated susceptible microorganisms.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220787Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Zaynich (cefepime and zidebactam) for injection for the treatment of adult patients with complicated urinary tract infections (cUTI) including pyelonephritis caused by designated susceptible microorganisms.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -1309,5 +1328,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:36:40.263Z"
+  "lastIngestedAt": "2026-11-07T20:38:10.107Z"
 }

@@ -247,11 +247,30 @@
       },
       "submissionNumber": "ORIG-1",
       "approvalProvenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761433%22&limit=1",
-        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
-        "extractedBy": "api",
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
         "verified": false
       },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
       "diseases": [
         {
           "meshId": "D002289",
@@ -341,6 +360,16 @@
             "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -465,7 +494,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations)",
+                "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T20:37:37.196Z"
+        }
+      ]
     },
     {
       "id": "mariposa",
@@ -1312,5 +1382,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:36:11.439Z"
+  "lastIngestedAt": "2026-11-07T20:37:37.196Z"
 }

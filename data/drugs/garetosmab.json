@@ -77,11 +77,30 @@
       },
       "submissionNumber": "ORIG-1",
       "approvalProvenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761508%22&limit=1",
-        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761508Orig1s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
         "verified": false
       },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-08-19",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "To reduce formation of new heterotopic ossification (HO) lesions and clinician-assessed flare-ups in adults with fibrodysplasia ossificans progressiva (FOP)",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761508Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1); wording from the label's section 1",
+            "quote": "To reduce formation of new heterotopic ossification (HO) lesions and clinician-assessed flare-ups in adults with fibrodysplasia ossificans progressiva (FOP)",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
       "diseases": [
         {
           "meshId": "D009999",
@@ -1580,5 +1599,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:37:37.588Z"
+  "lastIngestedAt": "2026-11-07T20:39:14.686Z"
 }
