@@ -44,7 +44,6 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
           {disease.areas.length > 0 && <> · {disease.areas.join(', ')}</>}
         </p>
         <AtAGlance disease={disease} />
-        {disease.summary ? <PlainSummary summary={disease.summary} /> : <Definition disease={disease} />}
       </header>
 
       <section className="ind-timeline" aria-label="Approvals over time">
@@ -109,6 +108,9 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
           })}
         </ol>
       </section>
+
+      {/* Professionals come for the approvals; the plain-words summary follows them. */}
+      {disease.summary ? <PlainSummary summary={disease.summary} /> : <Definition disease={disease} />}
 
       <section className="uses" aria-labelledby="wording-head">
         <h2 id="wording-head">
@@ -220,10 +222,10 @@ export function DiseasesPage() {
   );
 }
 
-/** MedlinePlus's summary, opening on its first two paragraphs. */
+/** MedlinePlus's summary, word for word, opening on its first paragraph (after a lead question, if any). */
 function PlainSummary({ summary }: { summary: NonNullable<DiseaseSummary['summary']> }) {
   const [open, setOpen] = useState(false);
-  const opening = summary.paragraphs[0]?.endsWith('?') ? 3 : 2;
+  const opening = summary.paragraphs[0]?.endsWith('?') ? 2 : 1;
   const shown = open ? summary.paragraphs : summary.paragraphs.slice(0, opening);
   return (
     <section className="disease__plain" aria-label="In plain words">
@@ -243,8 +245,8 @@ function PlainSummary({ summary }: { summary: NonNullable<DiseaseSummary['summar
       )}
       <p className="disease__plain-foot">
         {summary.paragraphs.length > opening && (
-          <button type="button" className="disease__more" onClick={() => setOpen(!open)}>
-            {open ? 'Show less' : 'Read the whole summary'}
+          <button type="button" className="disease__more" aria-expanded={open} onClick={() => setOpen(!open)}>
+            {open ? 'Show less' : 'Read more'}
           </button>
         )}
         From{' '}

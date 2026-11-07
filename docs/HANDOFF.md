@@ -196,6 +196,15 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   screens. On phones the trials timeline gives the bars more room. "All
   drugs" back buttons removed (the top bar replaces them); the approved-use
   page keeps its link back to the drug.
+- Design follow-up (#design-2): a plain footer on every public page links
+  to a new **About the data** page (`/about/`, in the sitemap): the sources,
+  how facts are checked, what Checked / Partly checked / Not yet checked
+  mean, gaps left blank. Disease pages now open on "Approvals over time"
+  (timeline and downloads) right under the title; "In plain words" follows,
+  cut to its first paragraph with "Read more". The trials timeline has a
+  **Today** line, and dates after it are lightly shaded as planned.
+- **Desktop first** (owner, 7 Nov): design for desktop web; phones must
+  work (no sideways scroll) but come second.
 - Maintenance for any later chat: the workflows' GitHub actions warn
   "Node.js 20 is deprecated"; move them to their Node 24 versions.
 
@@ -207,7 +216,7 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 1. Done (#116). **Page copy.** Clean up the site's own wording on every page type
    (headings, (i) explanations, empty states, buttons). FDA and MeSH text
    stays word for word; plain-language labels for data are the owner's.
-2. Done (#117). **Design.** Tidy the look and layout of every page, desktop web first,
+2. Done (#117, follow-up design-2). **Design.** Tidy the look and layout of every page, desktop web first,
    then phone (owner, 7 Nov); check each page in a browser before and after.
 3. **Company sources and news.** Links only, never copied, only pages
    without a paywall: company sites and press releases, newswires, Fierce
@@ -215,7 +224,10 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 4. **New drugs.** Start with the missing moderate-to-severe atopic
    dermatitis drugs, so that area is complete first (PRD §9), through the
    `Add new drugs` workflow, a few at a time.
-5. Later this week: submit `sitemap.xml` to Google Search Console (owner),
+5. **Visual direction.** The owner picks one of the directions in the
+   design brainstorm (artifact shared 7 Nov); then a chat applies it.
+   Open owner question: show a public "last updated" date on the site?
+6. Later this week: submit `sitemap.xml` to Google Search Console (owner),
    then Cloudflare Pages and the owner's domain, then the paywall.
 
 ## Owner decisions (4 Nov 2026)

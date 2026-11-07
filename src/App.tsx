@@ -6,6 +6,8 @@ import { DrugPage } from './pages/DrugPage.js';
 import { DiseasePage, DiseasesPage } from './pages/DiseasePage.js';
 import { NotFoundPage } from './pages/NotFoundPage.js';
 import { SiteHeader } from './components/SiteHeader/SiteHeader.js';
+import { SiteFooter } from './components/SiteFooter/SiteFooter.js';
+import { AboutPage } from './pages/AboutPage.js';
 
 // Tooling pages most visitors never open — split out of the main bundle.
 const ReviewPage = lazy(() => import('./pages/ReviewPage.js').then((m) => ({ default: m.ReviewPage })));
@@ -18,10 +20,11 @@ export function App() {
   if (route.name === 'ingest' || route.name === 'review' || route.name === 'review-drug')
     return <Tooling route={route} />;
   return (
-    <>
+    <div className="site-shell">
       <SiteHeader route={route} />
       <Page route={route} />
-    </>
+      <SiteFooter />
+    </div>
   );
 }
 
@@ -37,6 +40,7 @@ function Page({ route }: { route: Route }) {
   // filters uses replaceState, which doesn't re-render App, so no remount then.
   if (route.name === 'index') return <DrugIndex key={window.location.search} />;
   if (route.name === 'not-found') return <NotFoundPage />;
+  if (route.name === 'about') return <AboutPage />;
   if (route.name === 'compare') {
     return (
       <Suspense fallback={null}>
