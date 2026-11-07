@@ -202,7 +202,11 @@ re-run "Deploy to GitHub Pages" on main; its site check job confirms the
 live site. Then submit `sitemap.xml` in Google Search Console.
 
 ## Owner's plan (7 Nov), one chat per step
-1. Done 7 Nov: clean up the page wording (above).
+1. Done 7 Nov: clean up the page wording (above), PR #116.
+   Auto-merge still can't be turned on for a PR: GitHub needs a branch
+   rule on `main` that requires CI to pass (owner: Settings → Branches →
+   add rule for `main`, tick "Require status checks"). Until then, merge
+   by hand once CI is green.
 
 ## Next steps (in order, one chat each)
 1. Unblock publishing (above, owner), then check the live Rinvoq page
