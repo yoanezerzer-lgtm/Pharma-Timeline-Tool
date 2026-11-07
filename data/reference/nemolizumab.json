@@ -1,0 +1,43 @@
+{
+  "slug": "nemolizumab",
+  "indications": [
+    {
+      "name": "Prurigo Nodularis",
+      "approvalDate": "2024-08-12",
+      "submission": "ORIG-1",
+      "status": "baseline"
+    },
+    {
+      "name": "Atopic Dermatitis",
+      "approvalDate": null,
+      "submission": null,
+      "status": "baseline"
+    }
+  ],
+  "pivotal": [
+    {
+      "indication": "Atopic Dermatitis",
+      "trial": "NCT03985943",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Atopic Dermatitis",
+      "trial": "NCT03989349",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Prurigo Nodularis",
+      "trial": "NCT04501679",
+      "pivotal": true,
+      "status": "baseline"
+    },
+    {
+      "indication": "Prurigo Nodularis",
+      "trial": "NCT04501666",
+      "pivotal": true,
+      "status": "baseline"
+    }
+  ]
+}
