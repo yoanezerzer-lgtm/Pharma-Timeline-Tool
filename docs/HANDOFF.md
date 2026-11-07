@@ -109,10 +109,9 @@ Rules for every session:
 1. **One chat per piece of work.** Start a fresh chat for each new step,
    and when a chat passes about 30 turns. End each chat by updating this
    note. The next chat reads `CLAUDE.md` and this note, nothing else.
-2. **Don't wait inside a chat.** Push, open the PR, check CI once a few
-   minutes later, merge. No repeated sleeps or polling. Ask the owner to
-   turn on auto-merge (Settings → General → Pull Requests) so PRs merge
-   themselves once checks pass.
+2. **Don't wait inside a chat.** Push, open the PR and turn on its
+   auto-merge (allowed in the repo since 7 Nov): it merges itself once
+   checks pass. No sleeps or polling.
 3. **Batch.** One PR per step with code, tests and docs together; one data
    PR per refresh. Not a PR per fix.
 4. **Look before parsing.** For any outside service (openFDA, ClinicalTrials.gov,
@@ -150,11 +149,9 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   wording.
 - Atopic dermatitis belongs under immunology, not "Genetic diseases"
   (done 7 Nov: `diseases` in `data/areas/areas.json`).
-- Morning brief moved to Sonnet (done). Job scout to once a day: the owner
-  must edit it (claude.ai/code/routines/trig_01RjhVp6w65gGm9krCvDUjnq);
-  it was not created by an agent, so an agent can't change it.
-- Auto-merge: wanted; a session can't change repo settings, so the owner
-  turns it on (Settings > General > Pull Requests).
+- Morning brief moved to Sonnet (done). Job scout is not this project:
+  leave it out of this project's to-do lists.
+- Auto-merge: on (owner, 7 Nov).
 - Old branches: the owner said an agent may delete them, but the delete
   was blocked in-session. 30 branches whose PR is merged are safe to
   delete; keep `diag/raw-text-*`, `claude/prd` and unmerged `data/*`.
@@ -184,40 +181,34 @@ Scheduled tasks on the owner's account (3 Nov) and what they cost:
   The cleaner text found two new pivotal links for the checker to confirm:
   Rinvoq NCT03653026 and Skyrizi NCT03398135 (ulcerative colitis).
 - (i) icons for section explanations, owner-only text removed (#110).
-- Page wording tidied on every page (owner's 7 Nov plan, step 1): one
-  wording for gaps ("Not yet matched", "Date unclear"), for approval kinds
-  (Approved, Widened, Wording changed, Converted to traditional approval)
-  and for trial roles ("Supportive"); shared words live in `src/lib/copy.ts`.
-  "Approved use" everywhere instead of a mix with "indication". A real
-  "Page not found" page for unknown addresses and missing drugs or
-  diseases (was: the home page). Home and Compare titles and descriptions
-  sharpened. Drugs with no area show under "Not yet sorted"; Pasatru and
-  Zycubo, the two there, are filed under Rare diseases by hand (owner,
-  7 Nov; `decisions` in `data/areas/areas.json`) until the orphan rule
-  exists.
+- Page wording tidied on every page (step 1, #116): one wording for gaps
+  ("Not yet matched", "Date unclear"), approval kinds (Approved, Widened,
+  Wording changed, Converted to traditional approval) and trial roles
+  ("Supportive"); shared words in `src/lib/copy.ts`. "Approved use"
+  everywhere. A real "Page not found" page. Pasatru and Zycubo filed under
+  Rare diseases by hand (owner, 7 Nov; `decisions` in
+  `data/areas/areas.json`) until the orphan-status rule exists.
+- Maintenance for any later chat: the workflows' GitHub actions warn
+  "Node.js 20 is deprecated"; move them to their Node 24 versions.
 
-## Was blocked (7 Nov): publishing. Owner set Pages to GitHub Actions on 7 Nov; check the next deploy is green
-The repository is public again (7 Nov evening), but GitHub switched Pages
-off while it was private: deploys still fail with "Ensure GitHub Pages has
-been enabled". Owner: Settings → Pages → Source: "GitHub Actions". Then
-re-run "Deploy to GitHub Pages" on main; its site check job confirms the
-live site. Then submit `sitemap.xml` in Google Search Console.
+## Next steps (owner's plan, 7 Nov; in order, one chat each)
+Done 7 Nov: Pages switched back on and auto-merge turned on (owner); real
+page addresses and sitemap; atopic dermatitis under immunology (#114).
+Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
 
-## Owner's plan (7 Nov), one chat per step
-1. Done 7 Nov: clean up the page wording (above), PR #116.
-   Owner, 7 Nov: branch rule on `main` added (CI "check" must pass), so
-   PRs can auto-merge; Pages source set to GitHub Actions (publishing
-   unblocked).
-
-## Next steps (in order, one chat each)
-1. Unblock publishing (above, owner), then check the live Rinvoq page
-   shows "point of JAKs" and the (i) icons.
-2. Done 7 Nov: real page addresses, titles, descriptions, sitemap.
-3. Done 7 Nov: atopic dermatitis under immunology. Rinvoq and Adquey left
-   "Genetic diseases" (now 4 drugs); the disease list no longer shows it
-   under MeSH's hereditary category.
-4. Hosting on Cloudflare Pages and the owner's domain.
-5. News links (sources above), then the paywall.
+1. Done (#116). **Page copy.** Clean up the site's own wording on every page type
+   (headings, (i) explanations, empty states, buttons). FDA and MeSH text
+   stays word for word; plain-language labels for data are the owner's.
+2. **Design.** Tidy the look and layout of every page, desktop web first,
+   then phone (owner, 7 Nov); check each page in a browser before and after.
+3. **Company sources and news.** Links only, never copied, only pages
+   without a paywall: company sites and press releases, newswires, Fierce
+   Pharma (owner decision, 7 Nov). Shown per drug, newest first.
+4. **New drugs.** Start with the missing moderate-to-severe atopic
+   dermatitis drugs, so that area is complete first (PRD §9), through the
+   `Add new drugs` workflow, a few at a time.
+5. Later this week: submit `sitemap.xml` to Google Search Console (owner),
+   then Cloudflare Pages and the owner's domain, then the paywall.
 
 ## Owner decisions (4 Nov 2026)
 - Mission, users and eight goals agreed: see `docs/PRD.md`.
