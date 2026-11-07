@@ -86,6 +86,11 @@ a new session when a conversation gets long.
   page is opened, and kept only if the page gives its own date and
   headline, and its headline or one-line summary names the brand or the
   ingredient. What was read is on the `diag/news` branch.
+- Each run stops starting new drugs after 40 minutes and publishes what
+  it found; drugs never searched, then searched longest ago, go first, so
+  all of them are covered over two or three runs. A site that doesn't
+  answer in 15 seconds is skipped for the rest of the run. (The first full
+  runs on 7 Nov passed 75 minutes without finishing and published nothing.)
 - Trial on 5 drugs (7 Nov): 11 links, all about the drug, none for
   Keytruda yet. Borderline case: a Lilly release whose summary calls Lilly
   "the maker of Foundayo" counts for Foundayo.

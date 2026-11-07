@@ -46,6 +46,8 @@ jobs:
       - run: npm ci
 
       - name: Find links
+        # The script stops starting new drugs after 40 minutes; this is a backstop.
+        timeout-minutes: 60
         env:
           ONLY: ${{ inputs.only }}
         run: |

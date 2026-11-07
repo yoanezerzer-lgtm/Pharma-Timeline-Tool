@@ -21,6 +21,13 @@ import { extractPublishedDate, fetchText, htmlToText, titleOf, type SourceContex
 import { latestFierce, searchFeeds, type FeedItem } from './feeds.js';
 
 const MAX_LINKS = 20;
+/** Pages opened per drug per run; the rest wait for next week. */
+const MAX_PAGES = 30;
+/**
+ * Minutes after which no new drug is started, so the run always finishes
+ * and publishes what it found; the drugs it didn't reach go first next time.
+ */
+const BUDGET_MINUTES = Number(process.env.NEWS_BUDGET_MINUTES ?? 40);
 const ROOT = process.cwd();
 const NEWS_DIR = join(ROOT, 'data', 'news');
 
@@ -57,9 +64,14 @@ export function cleanUrl(raw: string): string {
   return u.toString();
 }
 
-function load(slug: string): NewsLink[] {
+function loadFile(slug: string): NewsFile | undefined {
   const path = join(NEWS_DIR, `${slug}.json`);
-  return existsSync(path) ? NewsFile.parse(JSON.parse(readFileSync(path, 'utf8'))).links : [];
+  return existsSync(path) ? NewsFile.parse(JSON.parse(readFileSync(path, 'utf8'))) : undefined;
+}
+
+/** Never searched first, then the longest ago. */
+export function searchOrder(slugs: string[], searchedAt: (slug: string) => string | undefined): string[] {
+  return [...slugs].sort((a, b) => (searchedAt(a) ?? '').localeCompare(searchedAt(b) ?? '') || a.localeCompare(b));
 }
 
 async function main(): Promise<void> {
@@ -73,8 +85,16 @@ async function main(): Promise<void> {
   const now = new Date().toISOString();
   const fierce = await latestFierce({ cacheDir: join(ROOT, 'data', 'raw', '_news'), refresh, log });
 
+  const started = Date.now();
+  const ordered = only.length ? slugs : searchOrder(slugs, (slug) => loadFile(slug)?.searchedAt);
   let added = 0;
-  for (const slug of slugs) {
+  let searched = 0;
+  for (const slug of ordered) {
+    if (Date.now() - started > BUDGET_MINUTES * 60000) {
+      log(`\nTime budget of ${BUDGET_MINUTES} minutes used: ${ordered.length - searched} drug(s) wait for the next run.`);
+      break;
+    }
+    searched++;
     const drug = Drug.parse(JSON.parse(readFileSync(join(ROOT, 'data', 'drugs', `${slug}.json`), 'utf8')));
     const names = drugNames(drug.brandName, drug.inn);
     const companies = companiesOf(drug);
@@ -85,7 +105,9 @@ async function main(): Promise<void> {
       ...(await searchFeeds(names, ctx)),
       ...fierce.filter((i) => namesDrug({ title: i.title, summary: i.description }, names)),
     ];
-    const known = load(slug);
+    const previous = loadFile(slug);
+    const known = previous?.links ?? [];
+    let opened = 0;
     const seen = new Set(known.map((l) => l.url));
     const found: NewsLink[] = [];
     for (const item of items) {
@@ -99,6 +121,7 @@ async function main(): Promise<void> {
       seen.add(url);
       const source = allowedSource(url, companies);
       if (!source) continue;
+      if (++opened > MAX_PAGES) break;
       const html = await fetchText(url, ctx);
       if (!html) continue;
       const title = headlineOf(html);
@@ -117,13 +140,17 @@ async function main(): Promise<void> {
 
     const links = sortLinks([...known, ...found]).slice(0, MAX_LINKS);
     added += found.length;
-    // Nothing new: the file is left alone, so a quiet week makes no commit.
-    if (found.length === 0) continue;
     mkdirSync(NEWS_DIR, { recursive: true });
-    const file: NewsFile = { slug, updatedAt: now, links };
+    const file: NewsFile = {
+      slug,
+      updatedAt: found.length ? now : (previous?.updatedAt ?? now),
+      searchedAt: now,
+      links,
+    };
     writeFileSync(join(NEWS_DIR, `${slug}.json`), `${JSON.stringify(NewsFile.parse(file), null, 2)}\n`);
+    log(`  (${Math.round((Date.now() - started) / 60000)} min)`);
   }
-  log(`\n${added} new link(s) across ${slugs.length} drug(s).`);
+  log(`\n${added} new link(s) across ${searched} of ${ordered.length} drug(s).`);
 }
 
 if (process.argv[1]?.endsWith('cli.ts')) {

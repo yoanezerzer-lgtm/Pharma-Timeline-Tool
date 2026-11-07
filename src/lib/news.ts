@@ -24,7 +24,10 @@ export type NewsLink = z.infer<typeof NewsLink>;
 
 export const NewsFile = z.object({
   slug: z.string(),
+  /** When a link was last added. */
   updatedAt: z.string(),
+  /** When the drug was last searched, links found or not; the least recent go first. */
+  searchedAt: z.string().optional(),
   links: z.array(NewsLink),
 });
 export type NewsFile = z.infer<typeof NewsFile>;

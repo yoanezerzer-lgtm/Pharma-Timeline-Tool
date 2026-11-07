@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { allowedSource, drugNames, isCompanySite, namesDrug, sortLinks, type NewsLink } from '../src/lib/news.js';
 import { parseFeed, unwrapLink } from '../scripts/news/feeds.js';
-import { cleanUrl, headlineOf, summaryOf } from '../scripts/news/cli.js';
+import { cleanUrl, headlineOf, searchOrder, summaryOf } from '../scripts/news/cli.js';
 
 describe('allowed sites', () => {
   it('takes newswires and Fierce, not paywalled outlets', () => {
@@ -107,5 +107,12 @@ describe('pages', () => {
     const out = sortLinks([l('https://a', '2024-01-01'), l('https://b', '2025-06-01'), l('https://a', '2024-01-01', '2026-02-01')]);
     expect(out.map((x) => x.url)).toEqual(['https://b', 'https://a']);
     expect(out[1].checkedAt).toBe('2026-02-01');
+  });
+});
+
+describe('which drugs go first', () => {
+  it('never searched first, then the longest ago', () => {
+    const at: Record<string, string> = { a: '2026-11-08', b: '2026-11-01' };
+    expect(searchOrder(['a', 'b', 'c'], (s) => at[s])).toEqual(['c', 'b', 'a']);
   });
 });
