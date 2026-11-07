@@ -39,7 +39,6 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
   }
   return (
     <main className="drug">
-      <BackLink href={homeHref()} label="All drugs" />
       <p className="drug__missing">
         {state.status === 'loading' && 'Loading…'}
         {state.status === 'error' && 'Couldn’t load this page. Check your connection and reload.'}
@@ -65,7 +64,6 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
   if (!indication) {
     return (
       <main className="drug">
-        <BackLink href={homeHref()} label="All drugs" />
         <p className="drug__missing">
           {drug.brandName} has no approved use “{indicationSlug}” on this site.{' '}
           <a href={drug.indications[0] ? indicationHref(drug.slug, drug.indications[0].slug) : homeHref()}>

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { diseaseIndex, drugIndex } from '../lib/catalog.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { homeMeta } from '../lib/pageMeta.js';
-import { replaceQuery, compareHref, diseasesHref, drugHref } from '../lib/router.js';
+import { replaceQuery, drugHref } from '../lib/router.js';
 import { shortIndication } from '../lib/drugs.js';
 import { naturalTerm } from '../lib/plainText.js';
 import { AREAS, areasOfDrug } from '../lib/areas.js';
@@ -66,10 +66,6 @@ export function DrugIndex() {
 
   return (
     <main className="index">
-      <nav className="index__nav" aria-label="Site">
-        <a href={diseasesHref()}>Diseases</a>
-        <a href={compareHref()}>Compare</a>
-      </nav>
       <header className="index__head">
         <h1>Drug Development Timelines</h1>
         <p className="index__lede">The clinical trials behind each FDA approval.</p>

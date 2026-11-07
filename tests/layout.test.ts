@@ -38,6 +38,13 @@ describe('computeLayout', () => {
     expect(layout.groups[0].bars).toHaveLength(1);
   });
 
+  it('narrows the name column on a phone so the bars stay in view', () => {
+    const trials = [trial({ id: 'a', startDate: { value: '2018-06-01', precision: 'month' } })];
+    const wide = computeLayout(trials, [approval], 1000);
+    const phone = computeLayout(trials, [approval], 358);
+    expect(phone.plotLeft).toBeLessThan(wide.plotLeft);
+  });
+
   it('marks approval as a major milestone so it draws a full-height rule', () => {
     const layout = computeLayout([], [approval], 1000);
     expect(layout.milestones[0].isMajor).toBe(true);

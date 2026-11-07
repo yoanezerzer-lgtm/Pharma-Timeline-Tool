@@ -20,8 +20,7 @@ import {
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel, ROLE_LABEL } from '../lib/drugs.js';
 import { confirmationKey, useConfirmations, type Confirmation } from '../lib/reference.js';
-import { indicationHref, homeHref, replaceQuery } from '../lib/router.js';
-import { BackLink } from '../components/BackLink/BackLink.js';
+import { indicationHref, replaceQuery } from '../lib/router.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import { APPROVAL_KIND } from '../lib/copy.js';
 import './ComparePage.css';
@@ -116,7 +115,6 @@ export function ComparePage() {
 
   return (
     <main className={`compare${selectedTrial ? ' has-drawer' : ''}`}>
-      <BackLink href={homeHref()} label="All drugs" />
       <div className="compare__head">
         <h1>Compare two approvals</h1>
         <div className="compare__actions">

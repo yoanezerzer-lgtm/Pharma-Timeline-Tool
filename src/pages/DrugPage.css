@@ -4,6 +4,11 @@
   max-width: 78ch;
 }
 
+/* A table of rows reads better at the page's full width. */
+.drug .uses--wide {
+  max-width: none;
+}
+
 .about__class {
   display: flex;
   flex-wrap: wrap;
@@ -62,43 +67,91 @@
   font-size: 13.5px;
 }
 
-.uses__list {
+/* Approved uses: one row each. The whole row opens the use; the disease
+   link sits above that so it still goes to the disease page. */
+.uselist {
   list-style: none;
   margin: 0;
   padding: 0;
   border-top: 1px solid var(--border-subtle);
 }
 
-.uses__item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  padding: 0.6rem 0.25rem;
+.uselist__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr) 7.5rem 4.5rem;
+  gap: 0.25rem 1.25rem;
+  align-items: baseline;
+  padding: 0.7rem 0.5rem;
   border-bottom: 1px solid var(--border-subtle);
-  text-decoration: none;
 }
 
-.uses__item:hover {
-  background: var(--bg-elevated);
+.uselist__row:hover {
+  background: var(--row-hover);
 }
 
-.uses__name {
+.uselist__name {
   color: var(--text-1);
-  font-size: 14px;
+  font-size: 14.5px;
+  font-weight: 500;
   line-height: 1.45;
 }
 
-.uses__meta {
-  color: var(--text-3);
-  font-size: 12.5px;
+.uselist__name::after {
+  content: '';
+  position: absolute;
+  inset: 0;
 }
 
-.uses__diseases {
-  margin: -0.3rem 0 0;
-  padding: 0 0.25rem 0.6rem;
-  border-bottom: 1px solid var(--border-subtle);
-  font-size: 12.5px;
+.uselist__name:hover {
+  text-decoration: none;
+}
+
+.uselist__disease {
+  position: relative;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.uselist__label {
+  display: none;
   color: var(--text-3);
+}
+
+.uselist__date,
+.uselist__trials {
+  font-size: 13px;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.uselist__trials {
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .uselist__row {
+    grid-template-columns: auto 1fr;
+    column-gap: 0.35rem;
+    padding: 0.7rem 0.25rem;
+  }
+  .uselist__name {
+    grid-column: 1 / -1;
+  }
+  .uselist__disease {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+  .uselist__label {
+    display: inline;
+  }
+  .uselist__trials {
+    text-align: left;
+  }
+  .uselist__date::after {
+    content: ' ·';
+  }
 }
 
 .drug__plain {
@@ -142,3 +195,34 @@
 .drug__sources .drug__facts {
   margin: 0.5rem 0 0.75rem;
 }
+.uses__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.uses__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+  text-decoration: none;
+}
+
+.uses__item:hover {
+  background: var(--row-hover);
+}
+
+.uses__name {
+  color: var(--text-1);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.uses__meta {
+  color: var(--text-3);
+  font-size: 12.5px;
+}
+

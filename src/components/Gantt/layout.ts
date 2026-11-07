@@ -2,6 +2,9 @@ import type { Trial, Milestone, Phase } from '../../schema/index.js';
 import { toTime, toEndTime } from '../../lib/dates.js';
 
 const GUTTER_W = 236;
+/** On a phone the name column shrinks so the bars stay in view. */
+const NARROW_W = 600;
+const NARROW_GUTTER_W = 132;
 export const ROW_H = 28;
 export const BAR_H = 14;
 const GROUP_H = 30;
@@ -11,6 +14,7 @@ const BOTTOM_PAD = 16;
 const RIGHT_PAD = 28;
 /** Minimum horizontal pixels per year, so short programs stay readable. */
 const MIN_PX_PER_YEAR = 64;
+const NARROW_MIN_PX_PER_YEAR = 44;
 
 /** Display order and labels for the phase lanes. */
 const PHASE_ORDER: Phase[] = [
@@ -123,10 +127,12 @@ export function computeLayout(
   max = Date.UTC(maxYear + 1, 0, 1);
 
   const yearSpan = maxYear + 1 - minYear;
-  const plotLeft = GUTTER_W;
+  const narrow = availableWidth < NARROW_W;
+  const gutter = narrow ? NARROW_GUTTER_W : GUTTER_W;
+  const plotLeft = gutter;
   const naturalPlotWidth = Math.max(
-    availableWidth - GUTTER_W - RIGHT_PAD,
-    yearSpan * MIN_PX_PER_YEAR
+    availableWidth - gutter - RIGHT_PAD,
+    yearSpan * (narrow ? NARROW_MIN_PX_PER_YEAR : MIN_PX_PER_YEAR)
   );
   const plotRight = plotLeft + naturalPlotWidth;
   const width = plotRight + RIGHT_PAD;
