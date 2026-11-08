@@ -77,11 +77,30 @@
       },
       "submissionNumber": "ORIG-1",
       "approvalProvenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215960%22&limit=1",
-        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-06-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Utebzi (tebipenem pivoxil) tablets, for oral use, for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis, caused by designated susceptible microorganisms in adult patients who have limited or no alternative oral treatment options.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/215960Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Utebzi (tebipenem pivoxil) tablets, for oral use, for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis, caused by designated susceptible microorganisms in adult patients who have limited or no alternative oral treatment options.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -124,6 +143,16 @@
             "quote": "Trial identifier appears within the Usage to Reduce Development of Drug-Resistant Bacteria section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/215960Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Utebzi (tebipenem pivoxil) tablets, for oral use, for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis, caused by designated susceptible microorganisms in adult patients who have limited or no alternative oral treatment options.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -318,7 +347,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Usage to Reduce Development of Drug-Resistant Bacteria",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Usage to Reduce Development of Drug-Resistant Bacteria)",
+                "quote": "Trial identifier appears within the Usage to Reduce Development of Drug-Resistant Bacteria section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Usage to Reduce Development of Drug-Resistant Bacteria",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Usage to Reduce Development of Drug-Resistant Bacteria)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Usage to Reduce Development of Drug-Resistant Bacteria section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/215960Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Utebzi (tebipenem pivoxil) tablets, for oral use, for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis, caused by designated susceptible microorganisms in adult patients who have limited or no alternative oral treatment options.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-08T07:22:07.092Z"
+        }
+      ]
     }
   ],
   "milestones": [
@@ -362,5 +432,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:39:37.162Z"
+  "lastIngestedAt": "2026-11-08T07:22:07.092Z"
 }

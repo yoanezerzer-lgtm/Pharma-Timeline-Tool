@@ -77,11 +77,30 @@
       },
       "submissionNumber": "ORIG-1",
       "approvalProvenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA216964%22&limit=1",
-        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216964Orig1s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-04-20",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Idvynso (doravirine and islatravir) tablet as a complete regimen for the treatment of HIV-1 infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies per mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/216964Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Idvynso (doravirine and islatravir) tablet as a complete regimen for the treatment of HIV-1 infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies per mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -133,6 +152,16 @@
             "quote": "Trial identifier appears within the As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/216964Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Idvynso (doravirine and islatravir) tablet as a complete regimen for the treatment of HIV-1 infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies per mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -366,7 +395,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216964Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine)",
+                "quote": "Trial identifier appears within the As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216964Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/216964Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Idvynso (doravirine and islatravir) tablet as a complete regimen for the treatment of HIV-1 infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies per mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-08T07:19:34.875Z"
+        }
+      ]
     },
     {
       "id": "8591a-051",
@@ -385,6 +455,16 @@
             "quote": "Trial identifier appears within the As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/216964Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Idvynso (doravirine and islatravir) tablet as a complete regimen for the treatment of HIV-1 infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies per mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine.",
+              "extractedBy": "rule",
+              "verified": false
+            }
           }
         }
       ],
@@ -637,7 +717,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216964Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine)",
+                "quote": "Trial identifier appears within the As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/216964Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the As a complete two-drug regimen for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies/mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/216964Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Idvynso (doravirine and islatravir) tablet as a complete regimen for the treatment of HIV-1 infection in adults to replace the current antiretroviral regimen in those who are virologically-suppressed (HIV-1 RNA less than 50 copies per mL) on a stable antiretroviral regimen with no history of virologic treatment failure and no known substitutions associated with resistance to doravirine.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-08T07:19:34.875Z"
+        }
+      ]
     }
   ],
   "milestones": [
@@ -681,5 +802,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:37:08.570Z"
+  "lastIngestedAt": "2026-11-08T07:19:34.875Z"
 }
