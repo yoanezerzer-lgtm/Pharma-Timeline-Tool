@@ -221,3 +221,29 @@
   background: var(--accent);
   color: var(--accent-fg);
 }
+
+/* Lanes: each use's pivotal trials as thin bars under its approval dots. */
+.disease__lane::before {
+  display: none;
+}
+
+.disease__bar {
+  position: absolute;
+  height: 4px;
+  border-radius: 1px;
+  background: var(--phase-3);
+  opacity: 0.85;
+}
+
+.disease__bar--early {
+  background: var(--phase-2);
+}
+
+.disease__lane .ind-timeline__dot {
+  z-index: 1;
+}
+
+/* "· 1 more" goes under the date so it never runs past the row. */
+.ind-timeline__date .disease__inn {
+  display: block;
+}

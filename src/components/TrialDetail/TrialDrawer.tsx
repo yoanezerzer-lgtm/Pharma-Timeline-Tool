@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { PostedResults } from './PostedResults.js';
+import { SourceTrail } from './SourceTrail.js';
 import { registryText, maskingText } from '../../lib/registryText.js';
 import type { Trial, Provenance } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
@@ -139,6 +140,8 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
             </p>
           )}
         </section>
+
+        <SourceTrail trial={trial} indication={indication} />
 
         <section className="drawer__section">
           <h3>Timeline</h3>

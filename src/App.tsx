@@ -7,6 +7,7 @@ import { DiseasePage, DiseasesPage } from './pages/DiseasePage.js';
 import { NotFoundPage } from './pages/NotFoundPage.js';
 import { SiteHeader } from './components/SiteHeader/SiteHeader.js';
 import { SiteFooter } from './components/SiteFooter/SiteFooter.js';
+import { SidePanel } from './components/SidePanel/SidePanel.js';
 import { AboutPage } from './pages/AboutPage.js';
 
 // Tooling pages most visitors never open — split out of the main bundle.
@@ -21,9 +22,12 @@ export function App() {
     return <Tooling route={route} />;
   return (
     <div className="site-shell">
-      <SiteHeader route={route} />
-      <Page route={route} />
-      <SiteFooter />
+      <SidePanel route={route} />
+      <div className="site-main">
+        <SiteHeader route={route} />
+        <Page route={route} />
+        <SiteFooter />
+      </div>
     </div>
   );
 }

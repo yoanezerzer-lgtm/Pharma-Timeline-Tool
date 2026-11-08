@@ -318,3 +318,99 @@
     box-shadow: none;
   }
 }
+
+/* Source trail: the records that tie the trial to the approval, as linked cards. */
+.trail {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: grid;
+}
+
+.trail__step {
+  display: grid;
+}
+
+.trail__join {
+  position: relative;
+  margin-left: 1.1rem;
+  padding: 0.55rem 0 0.55rem 0.9rem;
+  border-left: 1.5px dashed var(--accent);
+  font-size: 11.5px;
+  color: var(--text-3);
+  font-family: var(--font-data);
+}
+
+.trail__card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-elevated);
+  font-size: 12.5px;
+}
+
+.trail__card header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.35rem 0.6rem;
+  font-weight: 600;
+  color: var(--accent-fg);
+}
+
+.trail__card header a {
+  color: inherit;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.trail__card--fda header {
+  background: var(--phase-4);
+}
+
+.trail__card--doc header {
+  background: var(--readout);
+}
+
+.trail__card--registry header {
+  background: var(--accent);
+}
+
+.trail__card dl {
+  margin: 0;
+}
+
+.trail__card dl div {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.trail__card dl div:nth-child(odd) {
+  background: var(--row-stripe);
+}
+
+.trail__card dt {
+  color: var(--text-3);
+}
+
+.trail__card dd {
+  margin: 0;
+  font-family: var(--font-data);
+  overflow-wrap: anywhere;
+}
+
+.trail__card blockquote {
+  margin: 0;
+  padding: 0.45rem 0.6rem;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-2);
+  font-style: italic;
+}
+
+#trail-head .prov {
+  margin-left: 0.5rem;
+  vertical-align: 1px;
+}
