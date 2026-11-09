@@ -1,0 +1,155 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D009134",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000208",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000401",
+      "http://id.nlm.nih.gov/mesh/Q000628",
+      "http://id.nlm.nih.gov/mesh/Q000097",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000191",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000652",
+      "http://id.nlm.nih.gov/mesh/Q000534",
+      "http://id.nlm.nih.gov/mesh/Q000150",
+      "http://id.nlm.nih.gov/mesh/Q000517",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000188",
+      "http://id.nlm.nih.gov/mesh/Q000178",
+      "http://id.nlm.nih.gov/mesh/Q000662",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000451",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000134",
+      "http://id.nlm.nih.gov/mesh/Q000175",
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000209",
+      "http://id.nlm.nih.gov/mesh/Q000151",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000139",
+      "http://id.nlm.nih.gov/mesh/Q000235",
+      "http://id.nlm.nih.gov/mesh/Q000453",
+      "http://id.nlm.nih.gov/mesh/Q000532"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "MUSCULAR ATROPHY, SPINAL, INFANTILE see SPINAL MUSCULAR ATROPHIES OF CHILDHOOD is also available"
+    },
+    "broaderDescriptor": [
+      "http://id.nlm.nih.gov/mesh/D016472",
+      "http://id.nlm.nih.gov/mesh/D013118"
+    ],
+    "concept": [
+      "http://id.nlm.nih.gov/mesh/M0014251",
+      "http://id.nlm.nih.gov/mesh/M0393323",
+      "http://id.nlm.nih.gov/mesh/M0335740",
+      "http://id.nlm.nih.gov/mesh/M0335732",
+      "http://id.nlm.nih.gov/mesh/M0335731",
+      "http://id.nlm.nih.gov/mesh/M0335730",
+      "http://id.nlm.nih.gov/mesh/M0583907",
+      "http://id.nlm.nih.gov/mesh/M0335741"
+    ],
+    "dateIntroduced": "1988-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "1988"
+    },
+    "identifier": "D009134",
+    "lastUpdated": "2015-06-23",
+    "nlmClassificationNumber": "WE 550",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0014250",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T027301",
+    "previousIndexing": [
+      {
+        "@language": "en",
+        "@value": "Spinal Cord Diseases (1966-1987)"
+      },
+      {
+        "@language": "en",
+        "@value": "Muscular Atrophy (1966-1987)"
+      }
+    ],
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "1988"
+    },
+    "treeNumber": [
+      "http://id.nlm.nih.gov/mesh/C10.574.562.500",
+      "http://id.nlm.nih.gov/mesh/C10.228.854.468",
+      "http://id.nlm.nih.gov/mesh/C10.668.467.500"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Muscular Atrophy, Spinal"
+    },
+    "@context": {
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "concept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#concept",
+        "@type": "@id"
+      },
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "previousIndexing": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#previousIndexing"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "nlmClassificationNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}
