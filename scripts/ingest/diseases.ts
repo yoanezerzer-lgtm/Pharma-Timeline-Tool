@@ -60,6 +60,124 @@ export interface MatchedTerm {
   id: string;
   term: string;
   trials: Trial[];
+  /** The FDA's own words that are one of MeSH's names for the term, when matched that way. */
+  phrase?: string;
+}
+
+// Words that never start or end a disease's name.
+const EDGE = new Set([
+  'a', 'an', 'and', 'or', 'of', 'the', 'in', 'with', 'for', 'to', 'who', 'whose', 'that', 'than', 'by', 'as', 'at',
+  'on', 'from', 'have', 'has', 'had', 'been', 'are', 'is', 'not', 'other', 'when', 'those', 'their', 'after', 'its',
+]);
+const LOWER = new Set(['of', 'the', 'and', 'or', 'in', 'with', 'to', 'for', 'a', 'an', 'by', 'on', 'at', 'as']);
+const title = (w: string) => w.replace(/(^|-)([a-z])/g, (_, p: string, c: string) => p + c.toUpperCase());
+
+/**
+ * Runs of up to five of the FDA's words, spelled the ways MeSH spells its
+ * names ("Atopic Dermatitis", "Atopic dermatitis"), each with where it sits in
+ * the wording. A run never crosses punctuation, starts or ends on a small
+ * word, or holds a number.
+ */
+export function candidatePhrases(
+  wording: string
+): { text: string; start: number; end: number; variants: string[]; tail?: boolean }[] {
+  const out: { text: string; start: number; end: number; variants: string[]; tail?: boolean }[] = [];
+  let offset = 0;
+  const parts = wording.split(/([,;:()[\]•.]+|\s[-–—]\s)/);
+  for (let s = 0; s < parts.length; s += 2) {
+    const segment = parts[s];
+    const afterBracket = s > 0 && parts[s - 1].includes(')') && /^\s*\S/.test(segment) && !/^\s{2,}/.test(segment);
+    const tokens = segment.split(/\s+/).map((t) => t.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '')).filter(Boolean);
+    for (let i = 0; i < tokens.length; i++) {
+      for (let n = 1; n <= 5 && i + n <= tokens.length; n++) {
+        const run = tokens.slice(i, i + n);
+        const [first, last] = [run[0].toLowerCase(), run[n - 1].toLowerCase()];
+        if (EDGE.has(first) || EDGE.has(last) || run.some((t) => /\d/.test(t)) || run.join('').length < 4) continue;
+        const lower = run.map((t) => (/^[A-Z0-9-]+$/.test(t) && t.length > 1 ? t : t.toLowerCase()));
+        const titled = lower.map((t, k) => (k > 0 && LOWER.has(t) ? t : title(t))).join(' ');
+        const sentence = lower.join(' ').replace(/^./, (c) => c.toUpperCase());
+        const variants = [titled, sentence];
+        // MeSH keeps a heading's inverted form ("Dermatitis, Atopic") and no longer lists the plain one as a name.
+        if (n > 1) {
+          const words = titled.split(' ');
+          variants.push(`${words[n - 1]}, ${words.slice(0, n - 1).join(' ')}`);
+        }
+        // MeSH files cancers as neoplasms or carcinomas ("Stomach Neoplasms", "Urothelial Carcinoma").
+        if (/ cancer$/i.test(titled)) variants.push(titled.replace(/Cancer$/, 'Carcinoma'), titled.replace(/Cancer$/, 'Neoplasms'));
+        // The end of a name the run doesn't hold: "disease" in "Alzheimer's disease", "infection" in "(HIV-1) infection".
+        const tail = i > 0 ? /['’]s$/i.test(tokens[i - 1]) : afterBracket;
+        out.push({ text: run.join(' '), start: offset + i, end: offset + i + n, variants: [...new Set(variants)], ...(tail ? { tail } : {}) });
+      }
+    }
+    offset += tokens.length + 1;
+  }
+  return out;
+}
+
+const sparqlString = (s: string) => `"${s.replace(/["\\]/g, '')}"@en`;
+
+/**
+ * The MeSH descriptors one of whose names (its heading or an entry term) is
+ * exactly a run of the FDA's words: "Hodgkin Lymphoma" is an entry term of
+ * "Hodgkin Disease", "Atopic Dermatitis" of "Dermatitis, Atopic". A run
+ * inside a longer matched run gives way to it ("Dermatitis" to "Atopic
+ * Dermatitis").
+ */
+/** The SPARQL requests that look a wording's runs up in MeSH, with the runs and spellings each covers. */
+export function meshWordingQueries(wording: string) {
+  const phrases = candidatePhrases(wording);
+  const byVariant = new Map<string, number[]>();
+  phrases.forEach((p, k) => p.variants.forEach((v) => byVariant.set(v, [...(byVariant.get(v) ?? []), k])));
+  const variants = [...byVariant.keys()];
+  const urls: string[] = [];
+  for (let i = 0; i < variants.length; i += 100) {
+    const chunk = variants.slice(i, i + 100);
+    const query =
+      // FROM: this year's MeSH only; the endpoint also holds every past year's edition.
+      `${SPARQL_PREFIX}SELECT DISTINCT ?name ?d ?term FROM <http://id.nlm.nih.gov/mesh> WHERE { VALUES ?name { ${chunk.map(sparqlString).join(' ')} } ` +
+      `?t meshv:prefLabel ?name . ?c meshv:preferredTerm|meshv:term ?t . ?d meshv:preferredConcept|meshv:concept ?c . ` +
+      `?d a meshv:TopicalDescriptor . ?d rdfs:label ?term }`;
+    urls.push(`${MESH}/sparql?query=${encodeURIComponent(query)}&format=JSON&inference=false`);
+  }
+  return { phrases, byVariant, urls };
+}
+
+export async function meshByWording(ctx: IngestContext, wording: string): Promise<{ id: string; term: string; phrase: string }[]> {
+  const { phrases, byVariant, urls } = meshWordingQueries(wording);
+  const hits: { k: number; id: string; term: string }[] = [];
+  for (const url of urls) {
+    const res = await fetchJson<{ results?: { bindings?: { name?: { value?: string }; d?: { value?: string }; term?: { value?: string } }[] } }>(url, { ctx, kind: 'mesh' });
+    for (const b of res?.results?.bindings ?? []) {
+      const [name, d, term] = [b.name?.value, b.d?.value, b.term?.value];
+      if (!name || !d || !term) continue;
+      for (const k of byVariant.get(name) ?? []) hits.push({ k, id: idOf(d), term });
+    }
+  }
+  const spans = hits.map((h) => phrases[h.k]);
+  const kept = hits.filter((h) => {
+    const p = phrases[h.k];
+    if (p.tail) return false;
+    return !spans.some((o) => o !== p && o.end - o.start > p.end - p.start && o.start <= p.start && o.end >= p.end);
+  });
+  const byId = new Map<string, { id: string; term: string; phrase: string }>();
+  for (const h of kept) if (!byId.has(h.id)) byId.set(h.id, { id: h.id, term: h.term, phrase: phrases[h.k].text });
+  return [...byId.values()];
+}
+
+/**
+ * When the trials' own terms don't name the use: MeSH's names for it in the
+ * FDA's words, kept only if the pivotal trials agree where they carry terms
+ * at all (Keytruda's "Classical Hodgkin Lymphoma" trials are filed under
+ * "Hodgkin Disease"). Trials registered before MeSH tagging (Protopic's)
+ * leave the wording alone to decide.
+ */
+export async function matchByWording(ctx: IngestContext, wording: string, pivotal: Trial[]): Promise<MatchedTerm[]> {
+  const tagged = new Set(pivotal.flatMap((t) => (t.conditionMesh ?? []).map((m) => m.id)));
+  const found = await meshByWording(ctx, wording);
+  return found
+    .filter((f) => tagged.size === 0 || tagged.has(f.id))
+    .map((f) => ({ ...f, trials: pivotal.filter((t) => (t.conditionMesh ?? []).some((m) => m.id === f.id)) }))
+    .sort((a, b) => a.term.localeCompare(b.term));
 }
 
 export function matchDiseases(wording: string, pivotal: Trial[]): MatchedTerm[] {
@@ -161,7 +279,15 @@ export async function indicationDiseases(
   const matched = new Map<string, MatchedTerm[]>();
   for (const i of indications) {
     const pivotal = trials.filter((t) => t.roles.some((r) => r.role === 'PIVOTAL' && r.indication === i.name));
-    matched.set(i.name, matchDiseases(i.name, pivotal));
+    let terms = matchDiseases(i.name, pivotal);
+    if (terms.length === 0) {
+      try {
+        terms = await matchByWording(ctx, i.name, pivotal);
+      } catch (err) {
+        console.warn(`MeSH wording lookup failed for ${i.name}: ${(err as Error).message}`);
+      }
+    }
+    matched.set(i.name, terms);
   }
   const info = new Map<string, MeshInfo>();
   for (const id of new Set([...matched.values()].flat().map((m) => m.id))) {
@@ -209,12 +335,23 @@ export async function indicationDiseases(
                 },
               }
             : {}),
-          provenance: {
-            sourceUrl: ctgovUrl(m.trials[0]),
-            sourceLabel: `MeSH term on the pivotal trials' ClinicalTrials.gov records (${m.trials.map((t) => t.nctId ?? t.id).join(', ')})`,
-            extractedBy: 'rule' as const,
-            verified: false,
-          },
+          provenance: m.phrase
+            ? {
+                sourceUrl: `https://meshb.nlm.nih.gov/record/ui?ui=${m.id}`,
+                sourceLabel:
+                  m.trials.length > 0
+                    ? `One of MeSH's names for the term, in the FDA's wording; also on the pivotal trials (${m.trials.map((t) => t.nctId ?? t.id).join(', ')})`
+                    : "One of MeSH's names for the term, in the FDA's wording",
+                quote: m.phrase,
+                extractedBy: 'rule' as const,
+                verified: false,
+              }
+            : {
+                sourceUrl: ctgovUrl(m.trials[0]),
+                sourceLabel: `MeSH term on the pivotal trials' ClinicalTrials.gov records (${m.trials.map((t) => t.nctId ?? t.id).join(', ')})`,
+                extractedBy: 'rule' as const,
+                verified: false,
+              },
         };
       })
     );

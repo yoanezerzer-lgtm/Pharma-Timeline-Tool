@@ -88,6 +88,72 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D002385",
+          "term": "Cataplexy",
+          "areas": [
+            "Nervous System Diseases",
+            "Mental Disorders"
+          ],
+          "definition": {
+            "text": "A condition characterized by transient weakness or paralysis of somatic musculature triggered by an emotional stimulus or physical exertion. Cataplexy is frequently associated with NARCOLEPSY. During a cataplectic attack, there is a marked reduction in muscle tone similar to the normal physiologic hypotonia that accompanies rapid eye movement sleep (SLEEP, REM). (From Adams et al., Principles of Neurology, 6th ed, p396)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002385",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002385",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "cataplexy",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        },
+        {
+          "meshId": "D009290",
+          "term": "Narcolepsy",
+          "areas": [
+            "Nervous System Diseases",
+            "Mental Disorders"
+          ],
+          "definition": {
+            "text": "A condition characterized by recurrent episodes of daytime somnolence and lapses in consciousness (microsomnias) that may be associated with automatic behaviors and AMNESIA. CATAPLEXY; SLEEP PARALYSIS, and hypnagogic HALLUCINATIONS frequently accompany narcolepsy. The pathophysiology of this disorder includes sleep-onset rapid eye movement (REM) sleep, which normally follows stage III or IV sleep. (From Neurology 1998 Feb;50(2 Suppl 1):S2-S7)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D009290",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Narcolepsy",
+            "paragraphs": [
+              "Narcolepsy is a chronic sleep disorder that disrupts the normal sleep-wake cycle. Although this condition can appear at any age, it most often begins in adolescence.",
+              "Narcolepsy is characterized by excessive daytime sleepiness. Affected individuals feel tired during the day, and several times a day they may experience an overwhelming urge to sleep. \"Sleep attacks\" can occur at unusual times, such as during a meal or in the middle of a conversation. They last from a few seconds to a few minutes and often lead to a longer nap, after which affected individuals wake up feeling refreshed.",
+              "Another common feature of narcolepsy is cataplexy, which is a sudden loss of muscle tone in response to strong emotion (such as laughing, surprise, or anger). These episodes of muscle weakness can cause an affected person to slump over or fall, which occasionally leads to injury. Episodes of cataplexy usually last just a few seconds, and they may occur from several times a day to a few times a year. Most people diagnosed with narcolepsy also have cataplexy. However, some do not, which has led researchers to distinguish two major forms of the condition: narcolepsy with cataplexy and narcolepsy without cataplexy.",
+              "Narcolepsy also affects nighttime sleep. Most affected individuals have trouble sleeping for more than a few hours at night. They often experience vivid hallucinations while falling asleep (hypnogogic hallucinations) or while waking up (hypnopompic hallucinations). Affected individuals often have realistic and distressing dreams, and they may act out their dreams by moving excessively or talking in their sleep. Many people with narcolepsy also experience sleep paralysis, which is an inability to move or speak for a short period while falling asleep or awakening. The combination of hallucinations, vivid dreams, and sleep paralysis is often frightening and unpleasant for affected individuals.",
+              "Some people with narcolepsy have all of the major features of the disorder, while others have only one or two. Most of the signs and symptoms persist throughout life, although episodes of cataplexy may become less frequent with age and treatment."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/genetics/condition/narcolepsy/",
+              "sourceLabel": "MedlinePlus Genetics, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D009290",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "Narcolepsy",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -1070,5 +1136,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:38:42.379Z"
+  "lastIngestedAt": "2026-11-09T20:09:58.710Z"
 }

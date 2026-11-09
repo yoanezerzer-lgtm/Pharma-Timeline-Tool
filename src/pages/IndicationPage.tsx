@@ -161,9 +161,9 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           <p className="drug__compare">
             <a href={compareHref(`${drug.slug}:${indication.slug}`)}>Compare with another approval →</a>
           </p>
-          {label !== indication.name && (
+          {(indication.wording || label !== indication.name) && (
             <p className="drug__label-wording">
-              <span>Label wording:</span> {indication.name}
+              <span>Label wording:</span> {indication.wording?.text ?? indication.name}
             </p>
           )}
           {(indication.pressReleaseUrl || indication.fdaAnnouncementUrl) && (

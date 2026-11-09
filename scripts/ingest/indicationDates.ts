@@ -1,5 +1,13 @@
 import type { DateValue, Milestone, Provenance } from '../../src/schema/index.js';
-import { extractIndicationList, legacyIndicationsText } from './roles.js';
+import {
+  cleanIndicationClause,
+  extractIndicationList,
+  extractUnnumberedIndication,
+  flexibleNamePattern,
+  legacyIndicationsText,
+  sectionOneWindows,
+} from './roles.js';
+import { stripPageMarkers } from './docs.js';
 
 export interface LabelDoc {
   submission: string;
@@ -269,4 +277,51 @@ export function dateIndications(
     });
   });
   return out;
+}
+
+// A page footer or header the PDF put inside a sentence: not the FDA's wording.
+const PAGE_FURNITURE = /Reference ID:|\bPage \d+ of \d+\b/i;
+
+/**
+ * The label's own sentence for one use, word for word after "is indicated"
+ * (and the stock "for the treatment of", as for single-use labels): Dupixent's
+ * "1.1 Atopic Dermatitis" reads "Adult and pediatric patients aged 6 months
+ * and older with moderate-to-severe atopic dermatitis (AD) whose disease…".
+ * Only when the subsection has exactly one "is indicated" sentence and it
+ * isn't a bulleted list (Keytruda's subsections hold several uses each);
+ * otherwise undefined, and the short heading stays.
+ */
+export function indicationWording(labelText: string, name: string): string | undefined {
+  const windows = sectionOneWindows(stripPageMarkers(labelText));
+  if (windows.length === 0) return undefined;
+  const heading = new RegExp(`\\b1\\.\\s*\\d+\\s+${flexibleNamePattern(name)}\\b`, 'i');
+  // The real section is the last copy; the table of contents only lists headings.
+  for (const w of [...windows].reverse()) {
+    const h = heading.exec(w);
+    if (!h) continue;
+    const rest = w.slice(h.index + h[0].length);
+    const next = /\b1\.\s*\d+\s+[A-Z]/.exec(rest);
+    const body = next ? rest.slice(0, next.index) : rest;
+    const found = sentence(body);
+    if (found !== null) return found;
+  }
+  // A label with one unnumbered use: its whole clause is already the wording (Dupixent's 2017 label).
+  if (extractIndicationList(labelText).length === 1 && !/\b1\.\s*1\s+[A-Z]/.test(windows[windows.length - 1])) {
+    const [only] = extractUnnumberedIndication(windows[windows.length - 1]);
+    const target = keyWords(name);
+    if (only && target.size > 0 && isSubset(target, keyWords(only.name)) && !PAGE_FURNITURE.test(only.name)) return only.name;
+  }
+  return undefined;
+}
+
+/** The one "is indicated" sentence in a subsection, cleaned; null when there isn't exactly one usable. */
+function sentence(body: string): string | undefined | null {
+  // "is not indicated" (a limitation of use) doesn't count.
+  if ((body.match(/\bis\s+indicated\b/gi) ?? []).length !== 1) return null;
+  const m = /\bis\s+indicated\s+([\s\S]*)/i.exec(body);
+  if (!m) return null;
+  const first = m[1].replace(/\s*\[see [^\]]*\]/gi, '').split(/\.(?!\d)/)[0];
+  if (/[•:]/.test(first) || PAGE_FURNITURE.test(first)) return null;
+  const clean = cleanIndicationClause(first);
+  return clean.length >= 10 ? clean : null;
 }

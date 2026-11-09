@@ -88,6 +88,43 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D005910",
+          "term": "Glioma",
+          "areas": [
+            "Neoplasms"
+          ],
+          "definition": {
+            "text": "Benign and malignant central nervous system neoplasms derived from glial cells (i.e., astrocytes, oligodendrocytes, and ependymocytes). Astrocytes may give rise to astrocytomas (ASTROCYTOMA) or glioblastoma multiforme (see GLIOBLASTOMA). Oligodendrocytes give rise to oligodendrogliomas (OLIGODENDROGLIOMA) and ependymocytes may undergo transformation to become EPENDYMOMA; CHOROID PLEXUS NEOPLASMS; or colloid cysts of the third ventricle. (From Escourolle et al., Manual of Basic Neuropathology, 2nd ed, p21)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D005910",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "glioma",
+            "paragraphs": [
+              "A group of tumors that form in glial cells in the brain and spinal cord. Glial cells support and protect the nerve cells in the central nervous system and help them work the way they should. Gliomas can form anywhere in the brain or spinal cord and may be benign (not cancer) or malignant (cancer). They can also be low grade or high grade, determined by how abnormal the tumor cells look under a microscope and how quickly the tumor is likely to grow, spread, and come back after treatment. The three main types of gliomas are astrocytomas, oligodendrogliomas, and ependymomas. They can occur in both adults and children. Also called glial tumor."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/glioma",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D005910",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "glioma",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -164,5 +201,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-10-29T18:37:13.864Z"
+  "lastIngestedAt": "2026-11-09T20:07:56.303Z"
 }

@@ -21,7 +21,8 @@ import {
   type IndicationSpan,
 } from './roles.js';
 import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
-import { dateIndications, labelListsIndication } from './indicationDates.js';
+import { dateIndications, indicationWording, labelListsIndication } from './indicationDates.js';
+import { siblingApprovals, type SiblingApproval } from './siblings.js';
 import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
 import { findReviews } from './reviews.js';
 import { labelCompany, reviewOffice } from './labelFacts.js';
@@ -126,6 +127,11 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     docs = await runDocsStage(ctx, [...fda.documentUrls, ...extra]);
     log(`        ${docs.length} documents parsed`);
   }
+  // A second application for the same product named in the letters (Nemluvio's BLA 761391).
+  const siblings = steps.has('docs')
+    ? await siblingApprovals(ctx, docs.filter((d) => /letter/i.test(d.type)), fda.applicationType, fda.applicationNumber, spec.brandName)
+    : [];
+  for (const s of siblings) log(`        sibling application ${s.applicationType} ${s.applicationNumber}, approved ${s.original.date.value}`);
 
   const reviewDoc = docs.find((d) => /review/i.test(d.type));
   const reviewText = docs
@@ -356,7 +362,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   );
 
   // --- merge ---------------------------------------------------------------
-  const incoming = buildDrugRecord(spec, fda, trials, docs, indicationList);
+  const incoming = buildDrugRecord(spec, fda, trials, docs, indicationList, siblings);
   const diseases = await indicationDiseases(ctx, incoming.indications, incoming.trials);
   incoming.indications = incoming.indications.map((i) => {
     const d = diseases.get(i.name) ?? [];
@@ -502,7 +508,8 @@ function buildDrugRecord(
   fda: FdaStageResult,
   trials: Trial[],
   docs: FetchedDoc[],
-  indicationList: IndicationListEntry[]
+  indicationList: IndicationListEntry[],
+  siblings: SiblingApproval[] = []
 ): DrugType {
   const original = fda.milestones.find((m) => m.type === 'FDA_APPROVAL');
 
@@ -514,7 +521,18 @@ function buildDrugRecord(
   const slugs = uniqueSlugs(indicationList.map((e) => slugifyIndication(e.name)));
   // Every approval within each indication, from the letters; see approvals.ts.
   const datedBy = new Map([...approvals].map(([name, a]) => [name, a.submission]));
-  const history = approvalsByIndication(indicationList.map((e) => e.name), letters, fda.milestones, datedBy);
+  const labelFor = new Map(labels.map((l) => [l.submission, l]));
+  // The label's full sentence for an approval whose letter doesn't restate the use (Dupixent's 2017 original).
+  const wordingAt = (name: string, submission: string) => {
+    const label = labelFor.get(submission);
+    return label ? indicationWording(label.text, name) : undefined;
+  };
+  const history = approvalsByIndication(indicationList.map((e) => e.name), letters, fda.milestones, datedBy, wordingAt);
+  // Newest label first: the current wording of each use.
+  const dateOf = new Map(fda.milestones.flatMap((m) => (m.submissionNumber ? [[m.submissionNumber, m.date.value]] : [])));
+  const newestFirst = labels
+    .filter((l) => dateOf.has(l.submission))
+    .sort((a, b) => dateOf.get(b.submission)!.localeCompare(dateOf.get(a.submission)!));
   // A drug never approved for a new use since its first approval has every
   // indication from that first approval.
   const onlyOriginal =
@@ -523,13 +541,45 @@ function buildDrugRecord(
   // later supplement added it, even one FDA files as labeling (Nemluvio's
   // atopic dermatitis came from a second application merged into its label).
   const originalLabel = labels.find((l) => l.submission === (original?.submissionNumber ?? 'ORIG-1'));
+  const wording = (name: string) => {
+    // The newest label that lists the use; an older one's sentence may be out of date (Keytruda's melanoma).
+    const l = newestFirst.find((x) => labelListsIndication(name, x) === true);
+    if (l) {
+      const text = indicationWording(l.text, name);
+      if (!text) return {};
+      // A single-use label's name is already its full sentence.
+      if (text === name) return {};
+      return { wording: { text, provenance: { sourceUrl: l.url, sourceLabel: `Approved label (${l.submission}), section 1`, quote: text, extractedBy: 'regex' as const, verified: false } } };
+    }
+    return {};
+  };
   const indications = indicationList.map((entry, k) => {
     const own = history.get(entry.name) ?? [];
     // A drug with one use has it from the original approval even if the label's wording changed since (Protopic).
     const inOriginal =
       indicationList.length === 1 || !originalLabel || labelListsIndication(entry.name, originalLabel) !== false;
+    // A use the first label lacks, listed in a sibling application's first label, dates from that approval.
+    const sibling = inOriginal
+      ? undefined
+      : siblings.find((s) => labelListsIndication(entry.name, s.label) === true);
     const approval =
       approvals.get(entry.name) ??
+      (sibling
+        ? {
+            date: sibling.original.date,
+            // Not one of this application's submissions; the source says which application.
+            submission: undefined,
+            provenance: {
+              sourceUrl: sibling.label.url,
+              sourceLabel: `Approved label (${sibling.applicationType} ${sibling.applicationNumber}, original approval)`,
+              quote:
+                `Listed in section 1 of the label approved with ${sibling.applicationType} ${sibling.applicationNumber} ` +
+                `on ${sibling.original.date.value}; absent from ${fda.applicationType} ${fda.applicationNumber}'s first label.`,
+              extractedBy: 'rule' as const,
+              verified: false,
+            },
+          }
+        : undefined) ??
       (onlyOriginal && inOriginal && original
         ? {
             date: original.date,
@@ -546,6 +596,7 @@ function buildDrugRecord(
       approvalDate: approval?.date ?? (entry.number === 1 && labels.length === 0 ? original?.date : undefined),
       submissionNumber: approval?.submission,
       approvalProvenance: approval?.provenance,
+      ...(wording(entry.name)),
       ...(own.length > 0 ? { approvals: own } : {}),
     };
   });

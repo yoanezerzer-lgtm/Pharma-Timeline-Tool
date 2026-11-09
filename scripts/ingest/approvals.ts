@@ -131,7 +131,9 @@ export function approvalsByIndication(
   letters: LabelDoc[],
   milestones: Milestone[],
   /** The submission each indication is already dated by (see dateIndications), always part of its history. */
-  datedBy: Map<string, string> = new Map()
+  datedBy: Map<string, string> = new Map(),
+  /** The label's full sentence for a use as approved with a submission, when it has one. */
+  wordingAt: (name: string, submission: string) => string | undefined = () => undefined
 ): Map<string, Approval[]> {
   const milestoneFor = new Map(milestones.flatMap((m) => (m.submissionNumber ? [[m.submissionNumber, m]] : [])));
   const parsed = letters
@@ -175,7 +177,7 @@ export function approvalsByIndication(
         })
         .map((p) => {
           // No purpose sentence (an original letter): the indication's name is the label's own wording for it.
-          const statement = p.purpose ? approvalStatement(p.purpose) : name;
+          const statement = p.purpose ? approvalStatement(p.purpose) : wordingAt(name, p.letter.submission) ?? name;
           return {
             submission: p.letter.submission,
             date: p.milestone.date,
