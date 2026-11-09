@@ -1,0 +1,117 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D001921",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000528",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000033",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000187",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000166",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000098",
+      "http://id.nlm.nih.gov/mesh/Q000502",
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000648",
+      "http://id.nlm.nih.gov/mesh/Q000002",
+      "http://id.nlm.nih.gov/mesh/Q000254",
+      "http://id.nlm.nih.gov/mesh/Q000382"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "general; /blood supply: consider also CEREBROVASCULAR CIRCULATION; CEREBRAL ARTERIES; CEREBRAL VEINS; CRANIAL SINUSES; /cytol: do not routinely convert to NEURONS; /surg: consider specific neurosurgical procedures in Category E4; inflammation = ENCEPHALITIS & its specifics; infarct = CEREBRAL INFARCTION; malacia = ENCEPHALOMALACIA; brain-isolated, encéphale isolé, cerveau isolé: index DECEREBRATE STATE"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D002490",
+    "considerAlso": {
+      "@language": "en",
+      "@value": "consider also terms at CEREBR- and ENCEPHAL-"
+    },
+    "dateIntroduced": "1960-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "/enzymology was BRAIN ENZYMOLOGY 1964-65; /physiology was BRAIN PHYSIOLOGY 1965; BRAIN ELECTROPHYSIOLOGY was heading 1964-65"
+    },
+    "identifier": "D001921",
+    "lastUpdated": "2024-11-06",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0002865",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T005476",
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "/enzymology was BRAIN ENZYMOLOGY 1964-65; /physiology was BRAIN PHYSIOLOGY 1965; BRAIN ELECTROPHYSIOLOGY was heading 1964-65"
+    },
+    "seeAlso": [
+      "http://id.nlm.nih.gov/mesh/D002541",
+      "http://id.nlm.nih.gov/mesh/D011612"
+    ],
+    "treeNumber": "http://id.nlm.nih.gov/mesh/A08.186.211",
+    "label": {
+      "@language": "en",
+      "@value": "Brain"
+    },
+    "@context": {
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "considerAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#considerAlso"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
