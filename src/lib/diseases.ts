@@ -200,7 +200,12 @@ const SEVERE = /\bmoderate(?:[\s-]+to[\s-]+|[\s-]*(?:or|and)[\s-]*)severe\b/i;
  * "not-stated", never a guess.
  */
 export function severityOf(u: Pick<DiseaseUse, 'indication' | 'steps'>): Severity {
-  for (const text of [...u.steps.map((s) => s.text).reverse(), u.indication]) {
+  return severityOfText([...u.steps.map((s) => s.text).reverse(), u.indication]);
+}
+
+/** The first severity the texts name, in order; "not-stated" when none does. */
+export function severityOfText(texts: string[]): Severity {
+  for (const text of texts) {
     if (MILD.test(text)) return 'mild-to-moderate';
     if (SEVERE.test(text)) return 'moderate-to-severe';
   }

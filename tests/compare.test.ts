@@ -109,6 +109,23 @@ describe('one approval per view', () => {
     expect(evidenceCsv(evidenceRows([v]), [v])).toContain(',2019-02-15,Letter SUPPL-40.,KEYNOTE-054,');
   });
 
+  it('shows the use as a whole when no trial is tied to the first letter', () => {
+    const steps = Drug.parse({
+      ...kt,
+      trials: [trial({ id: 'e1', acronym: 'ECZTRA 1', primaryCompletionDate: day('2018-08-07'), roles: pivotal('Melanoma') })],
+    });
+    const v = programView(steps, steps.indications[0]);
+    expect(v.whole).toBe(true);
+    expect(v.chosen).toBeUndefined();
+    expect(v.key).toBe('keytruda:melanoma@ALL');
+    expect(v.lanes.map((l) => l.name)).toEqual(['ECZTRA 1']);
+    expect(v.laterApprovals).toHaveLength(1);
+    expect(evidenceCsv(evidenceRows([v]), [v])).toContain(',2014-09-04; 2019-02-15,,ECZTRA 1,');
+    // One letter can still be picked; its trials are then unmatched.
+    expect(programView(steps, steps.indications[0], 'ORIG-1').unmatched.map((u) => u.name)).toEqual(['ECZTRA 1']);
+    expect(parseProgramRef('keytruda:melanoma@ALL')?.submission).toBe('ALL');
+  });
+
   it('reads and writes the approval in the URL', () => {
     expect(parseProgramRef('keytruda:melanoma@SUPPL-40')).toEqual({ slug: 'keytruda', indicationSlug: 'melanoma', submission: 'SUPPL-40' });
   });
@@ -160,6 +177,21 @@ describe('evidence table', () => {
     const d = drug('k', 'M', '2014-09-04', [trial({ id: 'a', roles: pivotal('M'), primaryCompletionDate: day('2017-10-02'), postedResults: [{ title: 'RFS', unitOfMeasure: 'Months', groups: [{ id: 'g', title: 'Pembrolizumab' }], measurements: [{ groupId: 'g', value: 'NA' }], analyses: [] }] })]);
     expect(programView(d, d.indications[0]).lanes[0].afterApproval).toBe(true);
     expect(resultSummary(d.trials[0])?.arms[0].value).toBe('NA');
+  });
+
+  it('keeps a long unit out of each arm and shows the posted effect estimate', () => {
+    const t = trial({
+      postedResults: [{
+        title: 'IGA 0/1 at Week 16', unitOfMeasure: 'Participants',
+        groups: [{ id: 'G0', title: 'Tralokinumab 300 mg Q2W' }, { id: 'G1', title: 'Placebo Q2W' }],
+        measurements: [{ groupId: 'G0', value: '95' }, { groupId: 'G1', value: '14' }],
+        analyses: [{ groupIds: ['G0', 'G1'], pValue: '0.002', paramType: 'Risk Difference (RD)', paramValue: '8.6', ciPct: '95', ciLower: '4.1', ciUpper: '13.1' }],
+      }],
+    });
+    const r = resultSummary(t, ['tralokinumab'])!;
+    expect(r.arms.map((a) => [a.shown, a.value])).toEqual([['95', '95 Participants'], ['14', '14 Participants']]);
+    expect(r.unitNote).toBe('Participants');
+    expect(r.effect).toBe('Risk Difference (RD) 8.6 (95% CI 4.1 to 13.1)');
   });
 
   it('flags rows that measure different endpoints', () => {

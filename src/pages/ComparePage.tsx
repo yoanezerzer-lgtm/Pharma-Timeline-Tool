@@ -12,14 +12,15 @@ import {
   programRefString,
   programView,
   readoutCards,
+  WHOLE_USE,
   type Axis,
   type EvidenceRow,
   type ProgramRef,
   type ProgramView,
 } from '../lib/compare.js';
 import { formatDate } from '../lib/dates.js';
-import { indicationLabel, ROLE_LABEL } from '../lib/drugs.js';
-import { confirmationKey, useConfirmations, type Confirmation } from '../lib/reference.js';
+import { indicationLabel, ROLE_LABEL, shortIndication } from '../lib/drugs.js';
+import { SEVERITY_LABEL, severityOfText, type Severity } from '../lib/diseases.js';
 import { indicationHref, replaceQuery } from '../lib/router.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import { approvalKindLabel } from '../lib/copy.js';
@@ -29,7 +30,10 @@ interface ProgramOption {
   ref: string;
   drug: string;
   inn: string;
+  /** The FDA's words, cut at a word for the picker; the full wording is the tooltip. */
   indication: string;
+  full: string;
+  severity: Severity;
   year?: string;
   trials: number;
 }
@@ -40,7 +44,9 @@ const OPTIONS: ProgramOption[] = drugIndex
       ref: programRefString({ slug: d.slug, indicationSlug: i.slug }),
       drug: d.brandName,
       inn: d.inn,
-      indication: indicationLabel(i),
+      indication: shortIndication(i, 56),
+      full: indicationLabel(i),
+      severity: severityOfText([i.name]),
       year: i.approvalDate?.value.slice(0, 4),
       trials: i.trialCount,
     }))
@@ -48,6 +54,15 @@ const OPTIONS: ProgramOption[] = drugIndex
   .sort((a, b) => a.drug.localeCompare(b.drug) || a.indication.localeCompare(b.indication));
 
 // Two moderate-to-severe atopic dermatitis approvals: the featured area, and a fair pair to set side by side.
+/** Severity the FDA's wording names for this approval: its letters, newest first, then the label. */
+function programSeverity(p: ProgramView): Severity {
+  const letters = (p.chosen ? [p.chosen] : [...p.approvals].reverse()).map((a) => a.statement);
+  return severityOfText([...letters, p.indication.name]);
+}
+
+/** Two severities that are both named and differ: never compared side by side (owner, 9 Nov). */
+const clash = (a?: Severity, b?: Severity) => !!a && !!b && a !== 'not-stated' && b !== 'not-stated' && a !== b;
+
 const DEFAULTS = ['lebrikizumab:moderate-to-severe-atopic-dermatitis-in-adults-and', 'tralokinumab:moderate-to-severe-atopic-dermatitis-in-adults-and'];
 
 function readParams(): URLSearchParams {
@@ -71,7 +86,6 @@ export function ComparePage() {
   }, [refs]);
 
   const states: [DrugState, DrugState] = [useDrug(refs[0].slug), useDrug(refs[1].slug)];
-  const confirmations = [useConfirmations(refs[0]?.slug), useConfirmations(refs[1]?.slug)];
 
   const programs = useMemo(
     () =>
@@ -86,7 +100,9 @@ export function ComparePage() {
   const axis = useMemo(() => buildAxis(ready), [ready.map((p) => p.key + p.lanes.length).join()]);
   const rows = useMemo(() => evidenceRows(ready), [ready]);
   const cards = useMemo(() => readoutCards(ready), [ready]);
-  const notFound = ready.flatMap((p) => p.lanes.filter((l) => l.readout === undefined).map((l) => `${l.name} (${p.drug.brandName})`));
+  const severities = programs.map((p) => (p ? programSeverity(p) : undefined));
+  const mismatch = clash(severities[0], severities[1]);
+  const anySupport = ready.some((p) => p.lanes.some((l) => l.role !== 'PIVOTAL'));
 
   const setRef = (i: 0 | 1, ref: string) => {
     const r = parseProgramRef(ref);
@@ -127,10 +143,20 @@ export function ComparePage() {
 
       <div className="compare__legend">
         <span><span className="swatch swatch--bar" aria-hidden="true" />Pivotal trial, start to primary completion</span>
-        <span><span className="swatch swatch--support" aria-hidden="true" />Supportive trial</span>
-        <span><span className="swatch swatch--readout" aria-hidden="true" />Results announced (select to read)</span>
+        {anySupport && <span><span className="swatch swatch--support" aria-hidden="true" />Supportive trial</span>}
+        {cards.length > 0 && <span><span className="swatch swatch--readout" aria-hidden="true" />Results announced</span>}
         <span><span className="swatch swatch--approval" aria-hidden="true" />FDA approval</span>
+        {ready.some((p) => p.whole) && (
+          <span><span className="swatch swatch--approval swatch--later-approval" aria-hidden="true" />Later approval of the same use</span>
+        )}
       </div>
+
+      {mismatch && (
+        <p className="compare__severity" role="alert">
+          {SEVERITY_LABEL[severities[0]!]} and {SEVERITY_LABEL[severities[1]!].toLowerCase()} approvals can’t be
+          compared side by side. Pick an approval of the same severity.
+        </p>
+      )}
 
       <div className="compare__panes">
         {([0, 1] as const).map((i) => (
@@ -141,6 +167,7 @@ export function ComparePage() {
             state={states[i]}
             program={programs[i]}
             axis={axis}
+            otherSeverity={severities[i === 0 ? 1 : 0]}
             onPick={(ref) => setRef(i, ref)}
             onPickApproval={(submission) => setApproval(i, submission)}
             onReadout={showReadout}
@@ -149,11 +176,13 @@ export function ComparePage() {
         ))}
       </div>
 
-      {rows.length > 0 && (
-        <EvidenceTable rows={rows} programs={ready} confirmations={confirmations} refs={refs} onTrial={showTrial} />
+      {rows.length > 0 && !mismatch && <EvidenceTable rows={rows} onTrial={showTrial} />}
+
+      {rows.length > 0 && !mismatch && cards.length === 0 && (
+        <p className="compare__note">No company announcement of these trials’ results found yet.</p>
       )}
 
-      {rows.length > 0 && (
+      {rows.length > 0 && !mismatch && cards.length > 0 && (
         <section className="compare__section" aria-labelledby="readouts">
           <h2 id="readouts">Readouts: when results were first announced</h2>
           <div className="readouts">
@@ -173,28 +202,8 @@ export function ComparePage() {
                   <Stat label="Primary completion → announced" months={c.completionToAnnouncement} />
                   <Stat label="Announced → approval" months={c.announcementToApproval} />
                 </div>
-                <div className="readout__foot">
-                  <span>{c.provenance.sourceLabel?.split(':')[0]}</span>
-                  {c.provenance.sourceUrl && (
-                    <a href={c.provenance.sourceUrl} target="_blank" rel="noreferrer">
-                      Read the release ↗
-                    </a>
-                  )}
-                </div>
               </article>
             ))}
-            {notFound.length > 0 && (
-              <div className="readout readout--empty">
-                <p className="readout__headline">
-                  Not yet found
-                  <Info label="About results announcements">
-                    We look for each company’s first press release reporting the trial’s main result. A release covering
-                    several trials shows once.
-                  </Info>
-                </p>
-                <p>{notFound.join(', ')}</p>
-              </div>
-            )}
           </div>
         </section>
       )}
@@ -219,17 +228,30 @@ function Stat({ label, months }: { label: string; months?: number }) {
   );
 }
 
-function ProgramPicker({ index, current, onPick }: { index: number; current: string; onPick: (ref: string) => void }) {
+function ProgramPicker({
+  index,
+  current,
+  otherSeverity,
+  onPick,
+}: {
+  index: number;
+  current: string;
+  otherSeverity?: Severity;
+  onPick: (ref: string) => void;
+}) {
   const currentOption = OPTIONS.find((o) => o.ref === current);
-  const shown = currentOption ? `${currentOption.drug} · ${currentOption.indication}` : '';
+  const blocked = (o: ProgramOption) => clash(o.severity, otherSeverity);
   const [query, setQuery] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
   const listId = useId();
   const needle = (query ?? '').trim().toLowerCase();
-  const matches = OPTIONS.filter((o) => !needle || `${o.drug} ${o.inn} ${o.indication}`.toLowerCase().includes(needle)).slice(0, 12);
+  const matches = OPTIONS.filter((o) => !needle || `${o.drug} ${o.inn} ${o.full}`.toLowerCase().includes(needle))
+    .sort((a, b) => Number(blocked(a)) - Number(blocked(b)))
+    .slice(0, 12);
 
   const choose = (o: ProgramOption) => {
+    if (blocked(o)) return;
     onPick(o.ref);
     setQuery(null);
     setOpen(false);
@@ -243,8 +265,8 @@ function ProgramPicker({ index, current, onPick }: { index: number; current: str
         aria-expanded={open}
         aria-controls={listId}
         aria-activedescendant={open && matches[active] ? `${listId}-${active}` : undefined}
-        value={query ?? shown}
-        placeholder="Drug or approved use"
+        value={query ?? ''}
+        placeholder={currentOption ? 'Switch drug or approved use…' : 'Drug or approved use'}
         onFocus={(e) => {
           e.currentTarget.select();
           setOpen(true);
@@ -282,12 +304,18 @@ function ProgramPicker({ index, current, onPick }: { index: number; current: str
               id={`${listId}-${k}`}
               role="option"
               aria-selected={o.ref === current}
-              className={k === active ? 'is-active' : undefined}
+              aria-disabled={blocked(o) || undefined}
+              title={o.full}
+              className={`${k === active ? 'is-active' : ''}${blocked(o) ? ' is-blocked' : ''}`.trim() || undefined}
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => choose(o)}
             >
               <span><strong>{o.drug}</strong> · {o.indication}</span>
-              <span className="picker__meta">{o.year ?? 'undated'} · {o.trials} trials</span>
+              <span className="picker__meta">
+                {blocked(o)
+                  ? `${SEVERITY_LABEL[o.severity]}: not comparable with ${SEVERITY_LABEL[otherSeverity!].toLowerCase()}`
+                  : `${o.year ?? 'undated'} · ${o.trials} trials`}
+              </span>
             </button>
           ))}
         </div>
@@ -304,6 +332,7 @@ function ProgramPane({
   state,
   program,
   axis,
+  otherSeverity,
   onPick,
   onPickApproval,
   onReadout,
@@ -314,6 +343,7 @@ function ProgramPane({
   state: DrugState;
   program?: ProgramView;
   axis: Axis;
+  otherSeverity?: Severity;
   onPick: (ref: string) => void;
   onPickApproval: (submission: string) => void;
   onReadout: (key: string) => void;
@@ -324,7 +354,7 @@ function ProgramPane({
   // Only pivotal trials completed before the approval count toward it.
   const lastCompletion = Math.max(...pivotal.filter((l) => !l.afterApproval).map((l) => l.primaryCompletion ?? -Infinity));
   const later = program?.lanes.filter((l) => l.afterApproval).length ?? 0;
-  const months = program && Number.isFinite(lastCompletion) && lastCompletion <= (program.approval ?? -Infinity)
+  const months = program && !program.whole && Number.isFinite(lastCompletion) && lastCompletion <= (program.approval ?? -Infinity)
     ? monthsBetween(lastCompletion, program.approval)
     : undefined;
   const at = (t: number | undefined) => (t === undefined ? undefined : axis.position(t));
@@ -333,7 +363,7 @@ function ProgramPane({
   return (
     <section className="pane" aria-label={program ? `${program.drug.brandName}, ${indicationLabel(program.indication)}` : `Approval ${index + 1}`}>
       <div className="pane__controls">
-        <ProgramPicker index={index} current={current} onPick={onPick} />
+        <ProgramPicker index={index} current={current} otherSeverity={otherSeverity} onPick={onPick} />
       </div>
 
       {state.status === 'loading' && <p className="pane__status">Loading…</p>}
@@ -345,35 +375,50 @@ function ProgramPane({
         <>
           <div className="pane__head">
             <div>
-              <p className="pane__title">
+              <p className="pane__title" title={indicationLabel(program.indication)}>
                 <a href={indicationHref(program.drug.slug, program.indication.slug)}>{program.drug.brandName}</a>{' '}
-                <span>· {indicationLabel(program.indication)}</span>
+                <span>· {shortIndication(program.indication, 50)}</span>
               </p>
               <p className="pane__sub">
-                {program.chosen
-                  ? `${kindLabel(program.chosen)} ${formatDate(program.chosen.date)}`
-                  : program.indication.approvalDate
-                    ? `Approved ${formatDate(program.indication.approvalDate)}`
-                    : 'Approval date unclear'}{' '}
+                {program.whole
+                  ? `Approved in ${program.approvals.length} steps, first ${formatDate(program.approvals[0].date)}`
+                  : program.chosen
+                    ? `${kindLabel(program.chosen)} ${formatDate(program.chosen.date)}`
+                    : program.indication.approvalDate
+                      ? `Approved ${formatDate(program.indication.approvalDate)}`
+                      : 'Approval date unclear'}{' '}
                 · {pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supportive` : ''}
               </p>
             </div>
-            <div className="pane__metric">
-              <p className="pane__metric-value">{months === undefined ? '—' : <>{months} <span>mo</span></>}</p>
-              <p className="pane__metric-label">
-                Primary completion to approval
-                <Info label="What this measures">
-                  From the date the last patient was assessed for the primary endpoint in the final pivotal trial
-                  (ClinicalTrials.gov) to this FDA approval.
-                </Info>
-              </p>
-            </div>
+            {program.whole ? (
+              <div className="pane__metric">
+                <p className="pane__metric-label">
+                  Trials not tied to one approval letter
+                  <Info label="Why there is no month count">
+                    This use was approved in steps and the records don’t say which letter each trial backs, so the time
+                    from primary completion to approval is left blank. Every trial the label cites for the use is shown.
+                  </Info>
+                </p>
+              </div>
+            ) : (
+              <div className="pane__metric">
+                <p className="pane__metric-value">{months === undefined ? '—' : <>{months} <span>mo</span></>}</p>
+                <p className="pane__metric-label">
+                  Primary completion to approval
+                  <Info label="What this measures">
+                    From the date the last patient was assessed for the primary endpoint in the final pivotal trial
+                    (ClinicalTrials.gov) to this FDA approval.
+                  </Info>
+                </p>
+              </div>
+            )}
           </div>
 
           {program.approvals.length > 1 && (
             <label className="pane__approval-pick">
               <span>Approval</span>
-              <select value={program.chosen?.submission} onChange={(e) => onPickApproval(e.target.value)}>
+              <select value={program.whole ? WHOLE_USE : program.chosen?.submission} onChange={(e) => onPickApproval(e.target.value)}>
+                <option value={WHOLE_USE}>All {program.approvals.length} approvals of this use</option>
                 {program.approvals.map((a) => (
                   <option key={a.submission} value={a.submission}>
                     {formatDate(a.date)} · {kindLabel(a)}
@@ -382,7 +427,16 @@ function ProgramPane({
               </select>
             </label>
           )}
-          {program.chosen && <ApprovalWording approval={program.chosen} />}
+          {program.chosen && (
+            <Wording text={program.chosen.statement} href={program.chosen.provenance.sourceUrl} title={program.chosen.provenance.sourceLabel} />
+          )}
+          {program.whole && (
+            <Wording
+              text={program.indication.wording?.text ?? program.indication.name}
+              href={program.indication.wording?.provenance.sourceUrl}
+              title="FDA label"
+            />
+          )}
 
           {program.lanes.length === 0 ? (
             <p className="pane__status">
@@ -445,6 +499,9 @@ function ProgramPane({
                           />
                         )}
                         {ap !== undefined && <span className="lane__approval" style={{ left: `${ap}%` }} aria-hidden="true" />}
+                        {program.laterApprovals.map((t) => (
+                          <span key={t} className="lane__approval lane__approval--later" style={{ left: `${axis.position(t)}%` }} aria-hidden="true" />
+                        ))}
                       </div>
                     </div>
                   );
@@ -455,7 +512,8 @@ function ProgramPane({
                   {program.lanes.length > VISIBLE_LANES && <>Scroll for all {program.lanes.length}. </>}
                   {later > 0 && (
                     <>
-                      <span className="swatch swatch--later" aria-hidden="true" /> {later} completed after this approval.
+                      <span className="swatch swatch--later" aria-hidden="true" /> {later} completed after
+                      {program.whole ? ' the first approval.' : ' this approval.'}
                     </>
                   )}
                 </p>
@@ -488,55 +546,35 @@ function ProgramPane({
 
 const kindLabel = (a: Pick<Approval, 'kind' | 'submission'>) => approvalKindLabel(a.kind, a.submission);
 
-/** The approval letter's own sentence, shortened until opened. */
-function ApprovalWording({ approval }: { approval: Approval }) {
+/** The FDA's own sentence, shortened until opened, with a light source link. */
+function Wording({ text, href, title }: { text: string; href?: string; title?: string }) {
   const [open, setOpen] = useState(false);
-  const long = approval.statement.length > 160;
+  const long = text.length > 160;
   return (
     <blockquote className="pane__wording">
-      “{open || !long ? approval.statement : `${approval.statement.slice(0, 157).trimEnd()}…`}”
+      “{open || !long ? text : `${text.slice(0, 157).trimEnd()}…`}”
       {long && (
         <button type="button" className="pane__wording-more" onClick={() => setOpen(!open)}>
           {open ? 'Less' : 'More'}
         </button>
       )}
-      {approval.provenance.sourceUrl && (
-        <a href={approval.provenance.sourceUrl} target="_blank" rel="noreferrer" title={approval.provenance.sourceLabel}>
-          FDA letter ↗
+      {href && (
+        <a className="source-link" href={href} target="_blank" rel="noreferrer" title={title}>
+          (source ↗)
         </a>
       )}
     </blockquote>
   );
 }
 
-function EvidenceTable({
-  rows,
-  programs,
-  confirmations,
-  refs,
-  onTrial,
-}: {
-  rows: EvidenceRow[];
-  programs: ProgramView[];
-  confirmations: Map<string, Confirmation>[];
-  refs: ProgramRef[];
-  onTrial: (program: string, trialId: string) => void;
-}) {
-  const [open, setOpen] = useState<string | null>(null);
-  const confirmationFor = (r: EvidenceRow): Confirmation | undefined => {
-    const p = programs.find((x) => x.key === r.program);
-    const i = refs.findIndex((x) => x.slug === p?.drug.slug && x.indicationSlug === p?.indication.slug);
-    if (i < 0 || !p) return undefined;
-    return confirmations[i].get(confirmationKey(p.indication.name, r.nctId ?? r.trialId));
-  };
-
+function EvidenceTable({ rows, onTrial }: { rows: EvidenceRow[]; onTrial: (program: string, trialId: string) => void }) {
   return (
     <section className="compare__section" aria-labelledby="evidence">
       <div className="compare__section-head">
-        <h2 id="evidence">The pivotal evidence, side by side</h2>
+        <h2 id="evidence">Pivotal evidence</h2>
         <Info label="About these results" align="left">
           Results as posted to ClinicalTrials.gov for each trial’s first primary outcome, every arm against the trial’s
-          own control. “FDA wording” opens the FDA sentence that names the trial for this use.
+          own control.
         </Info>
         {endpointsDiffer(rows) && (
           <span className="compare__caution">Endpoints, timepoints or controls differ: not a head-to-head comparison</span>
@@ -546,81 +584,58 @@ function EvidenceTable({
         <table className="evidence">
           <thead>
             <tr>
-              <th scope="col">Program</th>
+              <th scope="col">Drug</th>
               <th scope="col">Trial</th>
               <th scope="col" className="is-num">N</th>
               <th scope="col">Primary endpoint</th>
               <th scope="col">Result by arm</th>
-              <th scope="col">FDA wording</th>
             </tr>
           </thead>
           <tbody>
-            {rows.map((r) => {
-              const c = confirmationFor(r);
-              const key = `${r.program}|${r.trialId}`;
-              return (
-                <tr key={key} className={r.firstOfProgram ? 'is-first' : undefined}>
-                  <td>
-                    {r.firstOfProgram && (
-                      <>
-                        <strong>{r.drug}</strong>
-                        <div className="muted">{r.indication}</div>
-                      </>
-                    )}
-                  </td>
-                  <td>
-                    <button type="button" className="evidence__trial" onClick={() => onTrial(r.program, r.trialId)}>
-                      {r.trial}
-                    </button>
-                    {r.nctId && <div className="muted mono">{r.nctId}</div>}
-                  </td>
-                  <td className="is-num mono">{r.enrollment?.toLocaleString('en-US') ?? '—'}</td>
-                  <td className="evidence__endpoint" title={r.result?.endpoint}>
-                    {r.result ? <span className="clamp">{r.result.endpoint}</span> : <span className="muted">No results posted</span>}
-                  </td>
-                  <td>
-                    {r.result ? (
-                      <ul className="arms">
-                        {r.result.arms.map((a) => (
-                          <li key={a.label} className={a.isComparator ? 'is-control' : undefined}>
-                            <span className="arms__label">{a.label}</span>
-                            {a.percent !== undefined && (
-                              <span className="arms__bar" aria-hidden="true">
-                                <span style={{ width: `${a.percent}%` }} />
-                              </span>
-                            )}
-                            <span className="arms__value mono">{a.value}</span>
-                          </li>
-                        ))}
-                        {r.result.pValue && <li className="arms__p">p {r.result.pValue}</li>}
-                      </ul>
-                    ) : (
-                      <span className="muted">—</span>
-                    )}
-                  </td>
-                  <td className="evidence__check">
-                    {c ? (
-                      <>
-                        <button type="button" className="verified" aria-expanded={open === key} onClick={() => setOpen(open === key ? null : key)}>
-                          Show
-                        </button>
-                        {open === key && (
-                          <div role="note" className="verified__note">
-                            {c.evidence?.map((e) => (
-                              <p key={e.sourceUrl + e.quote}>
-                                “{e.quote}” <a href={e.sourceUrl} target="_blank" rel="noreferrer">source ↗</a>
-                              </p>
-                            ))}
-                          </div>
-                        )}
-                      </>
-                    ) : (
-                      <span className="unchecked">—</span>
-                    )}
-                  </td>
-                </tr>
-              );
-            })}
+            {rows.map((r) => (
+              <tr key={`${r.program}|${r.trialId}`} className={r.firstOfProgram ? 'is-first' : undefined}>
+                <td>{r.firstOfProgram && <strong>{r.drug}</strong>}</td>
+                <td>
+                  <button type="button" className="evidence__trial" onClick={() => onTrial(r.program, r.trialId)}>
+                    {r.trial}
+                  </button>
+                  {r.nctId && r.trial !== r.nctId && (
+                    <a className="muted mono evidence__nct" href={`https://clinicaltrials.gov/study/${r.nctId}`} target="_blank" rel="noreferrer">
+                      {r.nctId} ↗
+                    </a>
+                  )}
+                </td>
+                <td className="is-num mono">{r.enrollment?.toLocaleString('en-US') ?? '—'}</td>
+                <td className="evidence__endpoint" title={r.result?.endpoint}>
+                  {r.result ? <span className="clamp">{r.result.endpoint}</span> : <span className="muted">No results posted</span>}
+                </td>
+                <td>
+                  {r.result ? (
+                    <ul className="arms">
+                      {r.result.arms.map((a) => (
+                        <li key={a.label} className={a.isComparator ? 'is-control' : undefined}>
+                          <span className="arms__label" title={a.label}>{a.label}</span>
+                          {a.percent !== undefined && (
+                            <span className="arms__bar" aria-hidden="true">
+                              <span style={{ width: `${a.percent}%` }} />
+                            </span>
+                          )}
+                          <span className="arms__value mono">{a.shown}</span>
+                        </li>
+                      ))}
+                      {r.result.unitNote && <li className="arms__p">Unit: {r.result.unitNote}</li>}
+                      {(r.result.effect || r.result.pValue) && (
+                        <li className="arms__p">
+                          {[r.result.effect, r.result.pValue && `p ${r.result.pValue}`].filter(Boolean).join(', ')}
+                        </li>
+                      )}
+                    </ul>
+                  ) : (
+                    <span className="muted">—</span>
+                  )}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

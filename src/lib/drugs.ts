@@ -124,7 +124,17 @@ const baseName = (t: Named): string => t.acronym ?? t.labelName ?? t.protocolNum
  * share (Ebglyss has two "ADhere" records) gets its NCT number beside it.
  */
 export function trialShortName(t: Named, among?: readonly Named[]): string {
-  const name = baseName(t);
+  const name = ownName(t, among);
   if (!among || !t.nctId || name === t.nctId) return name;
-  return among.some((o) => o.id !== t.id && baseName(o) === name) ? `${name} (${t.nctId})` : name;
+  return among.some((o) => o.id !== t.id && ownName(o, among) === name) ? `${name} (${t.nctId})` : name;
+}
+
+/**
+ * A label name the registry gives to another of the drug's trials was paired
+ * wrongly (Ebglyss: "ADhere" on ADvocate 1's record): the NCT number is shown
+ * rather than the wrong name.
+ */
+function ownName(t: Named, among?: readonly Named[]): string {
+  const clash = !t.acronym && !!t.labelName && !!among?.some((o) => o.id !== t.id && o.acronym === t.labelName);
+  return clash ? t.nctId ?? t.protocolNumber ?? t.id : baseName(t);
 }

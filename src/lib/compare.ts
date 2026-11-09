@@ -10,13 +10,17 @@ import { roleFor, trialShortName, trialsForIndication } from './drugs.js';
 export interface ProgramRef {
   slug: string;
   indicationSlug: string;
-  /** One FDA approval within the indication ("SUPPL-40"); the indication's first when absent. */
+  /**
+   * One FDA approval within the indication ("SUPPL-40"), or "ALL" for the use
+   * as a whole. When absent: the first approval, or the whole use when no
+   * trial is tied to the first approval's letter.
+   */
   submission?: string;
 }
 
 /** "pembrolizumab:melanoma@SUPPL-40", as kept in the page's URL. */
 export function parseProgramRef(s: string | null): ProgramRef | undefined {
-  const m = s?.match(/^([a-z0-9-]+):([a-z0-9-]+)(?:@([A-Z]+-\d+))?$/);
+  const m = s?.match(/^([a-z0-9-]+):([a-z0-9-]+)(?:@(ALL|[A-Z]+-\d+))?$/);
   return m ? { slug: m[1], indicationSlug: m[2], ...(m[3] ? { submission: m[3] } : {}) } : undefined;
 }
 
@@ -53,9 +57,18 @@ export interface ProgramView {
   indication: Indication;
   /** Every FDA approval of this indication, oldest first; empty for records ingested before approvals were read. */
   approvals: Approval[];
-  /** The approval this view is about. */
+  /** The approval this view is about; unset for the use as a whole. */
   chosen?: Approval;
+  /** The chosen approval, or for the whole use its first approval. */
   approval?: number;
+  /**
+   * The use as a whole: every trial the label cites for it, against all of
+   * its approvals, because the records don't say which letter each trial
+   * backs (Dupixent's and Adbry's uses were approved in steps).
+   */
+  whole: boolean;
+  /** Later approvals of the use, for markers in the whole-use view. */
+  laterApprovals: number[];
   lanes: Lane[];
   /** Trials the label cites for the indication that aren't matched to any approval yet. */
   unmatched: UnmatchedTrial[];
@@ -68,15 +81,28 @@ export interface ProgramView {
  * each by start date. Records without an approval history show every
  * cited trial against the indication's first approval.
  */
+export const WHOLE_USE = 'ALL';
+
 export function programView(drug: Drug, indication: Indication, submission?: string): ProgramView {
+  const approvals = indication.approvals ?? [];
+  if (submission === undefined && approvals.length > 1) {
+    // Nothing tied to the first letter, but trials cited: show the use as a whole.
+    const first = buildView(drug, indication, approvals[0].submission);
+    return first.lanes.length === 0 && first.unmatched.length > 0 ? buildView(drug, indication, WHOLE_USE) : first;
+  }
+  return buildView(drug, indication, submission);
+}
+
+function buildView(drug: Drug, indication: Indication, submission?: string): ProgramView {
   const t = (d?: DateValue) => (d ? toTime(d) : undefined);
   const approvals = indication.approvals ?? [];
-  const chosen = approvals.find((a) => a.submission === submission) ?? approvals[0];
-  const approval = t(chosen?.date ?? indication.approvalDate);
+  const whole = submission === WHOLE_USE && approvals.length > 1;
+  const chosen = whole ? undefined : approvals.find((a) => a.submission === submission) ?? approvals[0];
+  const approval = t(chosen?.date ?? approvals[0]?.date ?? indication.approvalDate);
   const cited = trialsForIndication(drug, indication.name);
   const linkedTo = (tr: Trial) => tr.roles.find((r) => r.indication === indication.name && r.approval)?.approval?.submission;
   const belongs = (tr: Trial) =>
-    !chosen || linkedTo(tr) === chosen.submission || (approvals.length === 1 && roleFor(tr, indication.name) !== 'PIVOTAL');
+    whole || !chosen || linkedTo(tr) === chosen.submission || (approvals.length === 1 && roleFor(tr, indication.name) !== 'PIVOTAL');
   const lanes = cited
     .filter(belongs)
     .map((tr) => ({
@@ -93,8 +119,9 @@ export function programView(drug: Drug, indication: Indication, submission?: str
   const unmatched = cited
     .filter((tr) => !belongs(tr) && !linkedTo(tr))
     .map((tr) => ({ trialId: tr.id, name: trialShortName(tr, drug.trials), role: roleFor(tr, indication.name) ?? ('UNKNOWN' as const) }));
-  const key = programRefString({ slug: drug.slug, indicationSlug: indication.slug, submission: chosen?.submission });
-  return { key, drug, indication, approvals, chosen, approval, lanes, unmatched };
+  const key = programRefString({ slug: drug.slug, indicationSlug: indication.slug, submission: whole ? WHOLE_USE : chosen?.submission });
+  const laterApprovals = whole ? approvals.slice(1).map((a) => toTime(a.date)) : [];
+  return { key, drug, indication, approvals, chosen, approval, whole, laterApprovals, lanes, unmatched };
 }
 
 const DAY = 86400000;
@@ -105,6 +132,7 @@ const QUARTER = 3 * MONTH;
 function programSpan(p: ProgramView): [number, number] | undefined {
   const times = p.lanes.flatMap((l) => [l.start, l.primaryCompletion]).filter((x): x is number => x !== undefined);
   if (p.approval !== undefined) times.push(p.approval);
+  times.push(...p.laterApprovals);
   return times.length > 0 ? [Math.min(...times), Math.max(...times)] : undefined;
 }
 
@@ -152,7 +180,10 @@ const CONTROL = /\b(placebo|control|vehicle|sham|standard of care|best supportiv
 
 interface Arm {
   label: string;
+  /** As posted, with its unit ("95 Participants"); the CSV's value. */
   value: string;
+  /** For the table: the number with a short unit (%, mo) only; longer units go in `unitNote`. */
+  shown: string;
   /** 0–100 when the measure is a percentage of patients, for a bar. */
   percent?: number;
   /** Not the drug's own arm: placebo, standard care or an active comparator. */
@@ -164,6 +195,10 @@ export interface ResultSummary {
   unit: string;
   arms: Arm[];
   pValue?: string;
+  /** A unit too long to repeat on every arm ("Participants"), shown once. */
+  unitNote?: string;
+  /** The first analysis's estimate as posted: "Risk Difference (RD) 8.6 (95% CI 4.1 to 13.1)". */
+  effect?: string;
 }
 
 function unitSuffix(unit: string | undefined): string {
@@ -183,6 +218,7 @@ export function resultSummary(trial: Trial, drugNames: string[] = []): ResultSum
   if (!o || o.groups.length === 0) return undefined;
   const suffix = unitSuffix(o.unitOfMeasure);
   const isPercent = suffix === '%';
+  const short = suffix === '' || suffix === '%' || suffix === ' mo';
   const names = drugNames.map((d) => d.toLowerCase()).filter((d) => d.length >= 3);
   const arms = o.groups.flatMap((g) => {
     // A broken-down outcome lists one row per category; take the first.
@@ -196,13 +232,17 @@ export function resultSummary(trial: Trial, drugNames: string[] = []): ResultSum
     return [{
       label: g.title,
       value: numeric ? `${m.value}${suffix}` : m.value,
+      shown: numeric && short ? `${m.value}${suffix}` : m.value,
       percent: isPercent && numeric && n >= 0 && n <= 100 ? n : undefined,
       isComparator: rank > 0,
       rank,
     }];
   });
   arms.sort((a, b) => a.rank - b.rank);
-  return { endpoint: o.title, unit: o.unitOfMeasure ?? '', arms: arms.map(({ rank: _rank, ...a }) => a), pValue: o.analyses[0]?.pValue };
+  const an = o.analyses[0];
+  const ci = an?.ciLower && an?.ciUpper ? ` (${an.ciPct ? `${an.ciPct}% ` : ''}CI ${an.ciLower} to ${an.ciUpper})` : '';
+  const effect = an?.paramType && an.paramValue ? `${an.paramType} ${an.paramValue}${ci}` : undefined;
+  return { endpoint: o.title, unit: o.unitOfMeasure ?? '', arms: arms.map(({ rank: _rank, ...a }) => a), pValue: an?.pValue, ...(short ? {} : { unitNote: o.unitOfMeasure }), ...(effect ? { effect } : {}) };
 }
 
 export interface EvidenceRow {
@@ -293,20 +333,21 @@ function csvCell(v: string | number | undefined): string {
 
 /** The evidence table as CSV, each row with its source links, for a client file. */
 export function evidenceCsv(rows: EvidenceRow[], programs: ProgramView[]): string {
-  const header = ['Drug', 'Indication', 'Approval date', 'Approval (FDA wording)', 'Trial', 'NCT number', 'Enrollment', 'Primary endpoint', 'Results by arm', 'p-value', 'Results announced', 'Announcement source', 'Registry record'];
+  const header = ['Drug', 'Indication', 'Approval date', 'Approval (FDA wording)', 'Trial', 'NCT number', 'Enrollment', 'Primary endpoint', 'Results by arm', 'Effect estimate', 'p-value', 'Results announced', 'Announcement source', 'Registry record'];
   const lines = rows.map((r) => {
     const p = programs.find((x) => x.key === r.program)!;
     const t = p.drug.trials.find((x) => x.id === r.trialId)!;
     return [
       r.drug,
       r.indication,
-      (p.chosen?.date ?? p.indication.approvalDate)?.value,
+      p.whole ? p.approvals.map((a) => a.date.value).join('; ') : (p.chosen?.date ?? p.indication.approvalDate)?.value,
       p.chosen?.statement,
       r.trial,
       r.nctId,
       r.enrollment,
       r.result?.endpoint,
       r.result?.arms.map((a) => `${a.label}: ${a.value}`).join('; '),
+      r.result?.effect,
       r.result?.pValue,
       t.readoutDate?.value,
       t.provenance.readoutDate?.sourceUrl,
