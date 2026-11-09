@@ -149,7 +149,9 @@ waiting on CI in a chat and re-running all drugs to test a guess.
 - 8 Nov: dating rules, Nemluvio and Protopic, Dupixent's full history
   (#129); side panel, disease lanes, source trail (#130); nightly checks
   (#131).
-- 9 Nov: nightly checks (#132).
+- 9 Nov: nightly checks (#132); handoff (#133); design rounds: every
+  widening on the approved-use page (#134), precedent table, labelled
+  lanes, new titles (#135), checking wording moved to About the data (#136).
 - Owner plan steps 1 (copy), 2 (design), 3 (news) and 5 (look) done;
   step 4 (new drugs, atopic dermatitis) has the gaps above.
 
