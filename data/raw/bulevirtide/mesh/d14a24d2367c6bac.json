@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0029255",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0029255",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T058597",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "INFLAMMATION of the LIVER in humans caused by HEPATITIS DELTA VIRUS in conjunction with HEPATITIS B VIRUS and lasting six months or more."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T058599",
+      "http://id.nlm.nih.gov/mesh/T058598",
+      "http://id.nlm.nih.gov/mesh/T058596"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Hepatitis D, Chronic"
+    },
+    "@context": {
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
