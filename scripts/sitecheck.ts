@@ -64,7 +64,7 @@ async function main(): Promise<void> {
     await visit(page, `drug/${d.slug}/indication/${first.slug}/`, async (p) => {
       const body = await text(p);
       if (/Page not found|has no approved use|Couldn’t load/.test(body)) return 'approved-use page did not load';
-      return /regulatory milestones|trials supporting/i.test(body) ? undefined : 'approved-use page is empty';
+      return /trials behind this approval/i.test(body) ? undefined : 'approved-use page is empty';
     });
   }
 
@@ -76,7 +76,7 @@ async function main(): Promise<void> {
   for (const id of diseases) {
     await visit(page, `disease/${id}/`, async (p) => {
       const body = await text(p);
-      return /approvals over time/i.test(body) ? undefined : 'disease page is empty';
+      return /^every approval$/im.test(body) && /^timeline$/im.test(body) ? undefined : 'disease page is empty';
     });
   }
 
