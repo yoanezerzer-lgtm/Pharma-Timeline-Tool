@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T049073",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": {
+      "@language": "en",
+      "@value": "Diffuse Lymphocytic Lymphoma, Poorly Differentiated"
+    },
+    "dateCreated": "1990-05-31",
+    "entryVersion": {
+      "@language": "en",
+      "@value": "DIFFUSE LYMPHOCYTIC LYMPHOMA POORLY DIFFER"
+    },
+    "identifier": "T049073",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Diffuse Lymphocytic Lymphoma, Poorly-Differentiated"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (1991)"
+    },
+    "@context": {
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "entryVersion": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#entryVersion"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    }
+  }
+}
