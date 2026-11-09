@@ -100,6 +100,52 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D011565",
+          "term": "Psoriasis",
+          "areas": [
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "A common genetically determined, chronic, inflammatory skin disease characterized by rounded erythematous, dry, scaling patches. The lesions have a predilection for nails, scalp, genitalia, extensor surfaces, and the lumbosacral region. Accelerated epidermopoiesis is considered to be the fundamental pathologic feature in psoriasis.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011565",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Psoriasis",
+            "paragraphs": [
+              "Psoriasis is a skin disease that causes itchy or sore patches of thick, red skin with silvery scales. You usually get the patches on your elbows, knees, scalp, back, face, palms and feet, but they can show up on other parts of your body. Some people who have psoriasis also get a form of arthritis called psoriatic arthritis.",
+              "A problem with your immune system causes psoriasis. In a process called cell turnover, skin cells that grow deep in your skin rise to the surface. Normally, this takes a month. In psoriasis, it happens in just days because your cells rise too fast.",
+              "Psoriasis can be hard to diagnose because it can look like other skin diseases. Your doctor might need to look at a small skin sample under a microscope.",
+              "Psoriasis can last a long time, even a lifetime. Symptoms come and go. Things that make them worse include:",
+              "• Infections",
+              "• Stress",
+              "• Dry skin",
+              "• Certain medicines",
+              "Psoriasis usually occurs in adults. It sometimes runs in families. Treatments include creams, medicines, and light therapy.",
+              "NIH: National Institute of Arthritis and Musculoskeletal and Skin Diseases"
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/psoriasis.html",
+              "sourceLabel": "MedlinePlus, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011565",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "psoriasis",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -1854,5 +1900,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:38:04.675Z"
+  "lastIngestedAt": "2026-11-09T20:20:06.272Z"
 }
