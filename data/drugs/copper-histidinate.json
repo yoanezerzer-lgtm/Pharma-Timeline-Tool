@@ -88,6 +88,48 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D007706",
+          "term": "Menkes Kinky Hair Syndrome",
+          "areas": [
+            "Nervous System Diseases",
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Skin and Connective Tissue Diseases",
+            "Nutritional and Metabolic Diseases"
+          ],
+          "inherited": true,
+          "definition": {
+            "text": "An inherited disorder of copper metabolism transmitted as an X-linked trait and characterized by the infantile onset of HYPOTHERMIA, feeding difficulties, hypotonia, SEIZURES, bony deformities, pili torti (twisted hair), and severely impaired intellectual development. Defective copper transport across plasma and endoplasmic reticulum membranes results in copper being unavailable for the synthesis of several copper containing enzymes, including PROTEIN-LYSINE 6-OXIDASE; CERULOPLASMIN; and SUPEROXIDE DISMUTASE. Pathologic changes include defects in arterial elastin, neuronal loss, and gliosis. (From Menkes, Textbook of Child Neurology, 5th ed, p125)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D007706",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Menkes syndrome",
+            "paragraphs": [
+              "Menkes syndrome is a disorder that affects copper levels in the body. It is characterized by sparse, kinky hair; failure to gain weight and grow at the expected rate (failure to thrive); and deterioration of the nervous system. Additional signs and symptoms include weak muscle tone (hypotonia), sagging facial features, seizures, developmental delay, and intellectual disability. Children with Menkes syndrome typically begin to develop symptoms during infancy and often do not live past age 3. Early treatment with copper may improve the prognosis in some affected individuals. In rare cases, symptoms begin later in childhood.",
+              "Occipital horn syndrome (sometimes called X-linked cutis laxa) is a less severe form of Menkes syndrome that begins in early to middle childhood. It is characterized by wedge-shaped calcium deposits in a bone at the base of the skull (the occipital bone), coarse hair, and loose skin and joints."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/genetics/condition/menkes-syndrome/",
+              "sourceLabel": "MedlinePlus Genetics, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D007706",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording; also on the pivotal trials (NCT00811785)",
+            "quote": "Menkes disease",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -460,5 +502,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:37:14.225Z"
+  "lastIngestedAt": "2026-11-09T20:07:28.252Z"
 }

@@ -101,6 +101,31 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003865",
+          "term": "Major Depressive Disorder",
+          "areas": [
+            "Mental Disorders"
+          ],
+          "definition": {
+            "text": "Disorder in which five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure. Symptoms include: depressed mood most of the day, nearly every day; markedly diminished interest or pleasure in activities most of the day, nearly every day; significant weight loss when not dieting or weight gain; Insomnia or hypersomnia nearly every day; psychomotor agitation or retardation nearly every day; fatigue or loss of energy nearly every day; feelings of worthlessness or excessive or inappropriate guilt; diminished ability to think or concentrate, or indecisiveness, nearly every day; or recurrent thoughts of death, recurrent suicidal ideation without a specific plan, or a suicide attempt. (DSM-5)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003865",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003865",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "Major Depressive Disorder",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -148,6 +173,43 @@
             "sourceLabel": "Approval letter (SUPPL-55)",
             "quote": "This Prior Approval supplemental new drug application provides for the expansion of the indication for generalized anxiety disorder (GAD) to include patients 7 to 17 years of age and inclusion of corresponding study information to applicable sections of the Prescribing Information (PI).",
             "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D000098647",
+          "term": "Generalized Anxiety Disorder",
+          "areas": [
+            "Mental Disorders"
+          ],
+          "definition": {
+            "text": "Uncontrolled anxiety or excessive worry that exceeds the realistic scope of life situations and endures for at least a month or longer.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000098647",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "generalized anxiety disorder",
+            "paragraphs": [
+              "A condition marked by excessive worry and feelings of fear, dread, and uneasiness that last six months or longer. Other symptoms of generalized anxiety disorder include being restless, being tired or irritable, muscle tension, not being able to concentrate or sleep well, shortness of breath, fast heartbeat, sweating, and dizziness. Also called GAD."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/generalized-anxiety-disorder",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000098647",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "Generalized Anxiety Disorder",
+            "extractedBy": "rule",
             "verified": false
           }
         }
@@ -2641,5 +2703,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:37:32.056Z"
+  "lastIngestedAt": "2026-11-09T20:07:54.825Z"
 }

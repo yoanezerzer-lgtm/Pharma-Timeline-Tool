@@ -90,9 +90,10 @@ new session when a conversation gets long.
 
 ## Known gaps (shown as blanks, not guessed)
 `npm run -s status` lists them all. Main ones:
-- 22 drugs have an approved use with no disease matched (recent trials
-  not yet MeSH-tagged, uses with no pivotal trial, or FDA wording that
-  differs from MeSH, e.g. 8 Keytruda uses).
+- 14 drugs have an approved use with no disease matched (was 22 before
+  the MeSH-names step, #138): uses with no pivotal trial and no disease
+  name MeSH knows (imaging agents, "reduce drug-resistant bacteria"), or
+  trials whose MeSH terms disagree with the wording (4 Keytruda uses).
 - 18 facts **stuck** (unconfirmed 3 nights; need a person), listed by
   status. Includes Adquey's 3 trials (mild-to-moderate atopic dermatitis).
 - Missing label company for 8, drug class for 4, review office for 3.

@@ -935,6 +935,124 @@
       "changeLog": []
     },
     {
+      "id": "catch",
+      "nctId": "NCT07924059",
+      "protocolNumber": "ASND0053",
+      "acronym": "cAtCH",
+      "title": "A Phase 3, Randomized, Double-blind, Active Controlled, Multi-center Trial Investigating the Efficacy and Safety of Dual Therapy With Once-weekly Navepegritide and Once-weekly Lonapegsomatropin Compared to Navepegritide Monotherapy and Lonapegsomatropin Monotherapy in Children and Adolescents With Achondroplasia",
+      "briefTitle": "Phase 3 Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Ascendis Pharma A/S",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Achondroplasia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000130",
+          "term": "Achondroplasia"
+        }
+      ],
+      "startDate": {
+        "value": "2026-11-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2029-09-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 144,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Once weekly navepegritide SC and lonapegsomatropin SC",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Once weekly navepegritide SC and placebo for lonapegsomatropin SC",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Once weekly lonapegsomatropin SC and placebo for navepegritide SC",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Annualized Growth Velocity (AGV)"
+      ],
+      "secondaryEndpoints": [
+        "Annualized Growth Velocity (AGV)",
+        "Annualized Growth Velocity (AGV) change from baseline",
+        "ACH-specific height Z-score",
+        "CDC-based height Z-score",
+        "Treatment-emergent Adverse Events (AE)",
+        "Bone safety",
+        "Arm span Z-score",
+        "Upper to lower body segment ratio",
+        "Arm span",
+        "Interpedicular distance (IDP)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07924059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07924059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07924059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07924059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07924059",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "hch-upliftmono",
       "nctId": "NCT07917143",
       "protocolNumber": "ASND0051",
@@ -1084,5 +1202,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:38:43.458Z"
+  "lastIngestedAt": "2026-11-09T20:09:53.324Z"
 }
