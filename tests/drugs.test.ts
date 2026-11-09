@@ -72,4 +72,13 @@ describe('trialShortName', () => {
     expect(trialShortName({ id: 'x', labelName: 'KEYNOTE-006', protocolNumber: '3475-006' })).toBe('KEYNOTE-006');
     expect(trialShortName({ id: 'x', protocolNumber: '3475-006' })).toBe('3475-006');
   });
+
+  it("drops a label name the registry gives to another trial, and doesn't flag the real one as a duplicate", () => {
+    const among = [
+      { id: 'a', nctId: 'NCT04146363', labelName: 'ADhere', protocolNumber: '17801' },
+      { id: 'b', nctId: 'NCT04250337', acronym: 'ADhere' },
+    ];
+    expect(trialShortName(among[0], among)).toBe('NCT04146363');
+    expect(trialShortName(among[1], among)).toBe('ADhere');
+  });
 });

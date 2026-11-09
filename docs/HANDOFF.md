@@ -184,8 +184,9 @@ waiting on CI in a chat and re-running all drugs to test a guess.
 The owner wants a strong focus on **design** (9 Nov): every data chat
 should leave the pages it touches looking right, and design gets its own
 chats.
-1. **Design**: two rounds done 9 Nov (#134, #135); homepage makeover and
-   the trial page are next (see "Design review" below).
+1. **Design**: flow review page by page: drug, approved use, disease,
+   trial (#138, #140), Compare (#141) done. Next: Drugs and Diseases
+   lists, then About the data.
 2. ~~Finish atopic dermatitis data~~ (done 9 Nov, #139; leftovers in
    "open gaps" above).
 3. **Get ready to publish**: visitor counter (cookie-free), then Cloudflare
@@ -249,13 +250,29 @@ Owner walked the pages: too much on screen, some wrong words. Done:
   Sources | Identifiers side by side on the full page. "Not written yet"
   note removed. Dupixent refreshed after #138 for its full leaflet text.
 
+- Compare (#141): a use approved in steps (Dupixent, Adbry) now shows
+  as a whole ("All N approvals of this use"): every trial the label cites,
+  first approval filled, later ones hollow, and no month count (the records
+  don't say which letter each trial backs). Picker and headers show the
+  FDA wording cut at a word (full text on hover); the picker blocks a pair
+  of different named severities, and a pair forced by URL gets a warning
+  and no evidence table. Evidence table: Drug, Trial (NCT linked), N,
+  primary endpoint, results by arm plus the registry's effect estimate
+  (e.g. risk difference with CI); "FDA wording" column removed; long units
+  ("Participants") shown once. Readouts section only when one is found,
+  else one line. Sources as light "(source ↗)" links.
+- A label name the registry gives to another trial is not shown (Ebglyss
+  ADvocate 1 had been labelled "ADhere"); its NCT number shows instead.
+  **Pipeline still pairs label names wrongly** (`labelName` on
+  NCT04146363): fix the label-name pairing in a data chat and score it.
+
 Still open from the review:
 - Atopic dermatitis is to cover all severities (owner, 9 Nov): add
   Eucrisa, Opzelura, Zoryve, Elidel through the add-drugs pipeline; match
   Protopic. Nemluvio shows "Severity not stated" until its full FDA
   wording is read (data session).
-- Compare can't tie Dupixent's atopic dermatitis trials to one letter
-  (its use was approved in steps), so it shows "Not yet matched".
+- Compare: count results ("95 Participants") can't show a % without
+  each arm's size; store arm sizes from ClinicalTrials.gov in a data chat.
 - The Dupixent lane on the disease timeline still draws later trials on
   the first approval's line.
 

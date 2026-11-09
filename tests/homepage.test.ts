@@ -4,12 +4,13 @@ import { parsePath } from '../src/lib/router.js';
 
 describe('trialShortName', () => {
   const a = { id: 'adhere', acronym: 'ADhere', nctId: 'NCT04250337' };
-  const b = { id: '17801', labelName: 'ADhere', nctId: 'NCT04146363' };
+  // Two registry records with the same acronym (a sub-study, a regional arm).
+  const b = { id: 'adhere-j', acronym: 'ADhere', nctId: 'NCT04760314' };
   const c = { id: 'adore', acronym: 'ADore', nctId: 'NCT04250350' };
 
   it('adds the NCT number when two trials of a drug share a name', () => {
     expect(trialShortName(a, [a, b, c])).toBe('ADhere (NCT04250337)');
-    expect(trialShortName(b, [a, b, c])).toBe('ADhere (NCT04146363)');
+    expect(trialShortName(b, [a, b, c])).toBe('ADhere (NCT04760314)');
   });
 
   it('leaves a unique name alone', () => {

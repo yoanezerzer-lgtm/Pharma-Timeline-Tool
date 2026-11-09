@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { severityOf } from '../src/lib/diseases.js';
+import { severityOf, severityOfText } from '../src/lib/diseases.js';
 import { approvalKindLabel } from '../src/lib/copy.js';
 
 const use = (indication: string, ...texts: string[]) => ({
@@ -25,5 +25,13 @@ describe('approvalKindLabel', () => {
     expect(approvalKindLabel('new', 'SUPPL-4')).toBe('New indication');
     expect(approvalKindLabel('expansion', 'SUPPL-12')).toBe('Label expansion');
     expect(approvalKindLabel('revision', 'SUPPL-3')).toBe('Indication revised');
+  });
+});
+
+describe('severityOfText', () => {
+  it('reads the first severity the FDA wording names, else none', () => {
+    expect(severityOfText(['Moderate-to-severe atopic dermatitis in adults'])).toBe('moderate-to-severe');
+    expect(severityOfText(['Mild to moderate atopic dermatitis'])).toBe('mild-to-moderate');
+    expect(severityOfText(['Atopic dermatitis'])).toBe('not-stated');
   });
 });
