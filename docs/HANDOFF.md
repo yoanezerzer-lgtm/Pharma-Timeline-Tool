@@ -62,16 +62,16 @@ new session when a conversation gets long.
   (`src/lib/company.ts`). Review office: newest approval letter.
 - Disease of a use: a MeSH term on a pivotal trial's ClinicalTrials.gov
   record that the FDA wording names (`scripts/ingest/diseases.ts`). Failing
-  that (#138), one of MeSH's own names for a disease (heading or entry term,
+  that (#139), one of MeSH's own names for a disease (heading or entry term,
   e.g. "Hodgkin Lymphoma" → Hodgkin Disease) found in the FDA wording, kept
   only if the pivotal trials carry that term too, or carry no terms at all
   (Protopic). Looked up with one MeSH SPARQL query per use.
-- Full wording of a use (#138): the newest label's section 1 sentence for
+- Full wording of a use (#139): the newest label's section 1 sentence for
   it, when the name is only a heading; one sentence per subsection only
   (Keytruda's multi-use subsections keep their heading). A first approval
   whose letter doesn't restate the use takes the wording of the label
   approved with it (Dupixent 2017).
-- Sibling applications (#138): a second BLA/NDA for the same brand that the
+- Sibling applications (#139): a second BLA/NDA for the same brand that the
   letters name (Nemluvio's BLA 761391) dates a use its own first label
   lists and the main application's first label lacks.
   Therapeutic areas are MeSH top-level categories.
@@ -91,7 +91,7 @@ new session when a conversation gets long.
 ## Known gaps (shown as blanks, not guessed)
 `npm run -s status` lists them all. Main ones:
 - 14 drugs have an approved use with no disease matched (was 22 before
-  the MeSH-names step, #138): uses with no pivotal trial and no disease
+  the MeSH-names step, #139): uses with no pivotal trial and no disease
   name MeSH knows (imaging agents, "reduce drug-resistant bacteria"), or
   trials whose MeSH terms disagree with the wording (4 Keytruda uses).
 - 18 facts **stuck** (unconfirmed 3 nights; need a person), listed by
@@ -103,7 +103,7 @@ new session when a conversation gets long.
   company-site links.
 
 ### Atopic dermatitis area (plan step 4): open gaps
-Data step done 9 Nov (#138): Nemluvio's use dated 13 Dec 2024 (BLA
+Data step done 9 Nov (#139): Nemluvio's use dated 13 Dec 2024 (BLA
 761391), Protopic on the disease page, full FDA wording for Dupixent and
 Nemluvio. Still open:
 - **Protopic**: no company, class or 12.1–12.3 (old label); no pivotal
@@ -176,7 +176,7 @@ waiting on CI in a chat and re-running all drugs to test a guess.
   widening on the approved-use page (#134), precedent table, labelled
   lanes, new titles (#135), checking wording moved to About the data (#136);
   atopic dermatitis data: sibling applications, MeSH entry terms, full FDA
-  wording (#138).
+  wording (#139).
 - Owner plan steps 1 (copy), 2 (design), 3 (news) and 5 (look) done;
   step 4 (new drugs, atopic dermatitis) has the gaps above.
 
@@ -186,7 +186,7 @@ should leave the pages it touches looking right, and design gets its own
 chats.
 1. **Design**: two rounds done 9 Nov (#134, #135); homepage makeover and
    the trial page are next (see "Design review" below).
-2. ~~Finish atopic dermatitis data~~ (done 9 Nov, #138; leftovers in
+2. ~~Finish atopic dermatitis data~~ (done 9 Nov, #139; leftovers in
    "open gaps" above).
 3. **Get ready to publish**: visitor counter (cookie-free), then Cloudflare
    Pages and domain (owner), Search Console (owner), then the paywall.
