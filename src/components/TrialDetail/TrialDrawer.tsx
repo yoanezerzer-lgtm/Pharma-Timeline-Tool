@@ -33,7 +33,7 @@ const PHASE_TEXT: Record<Trial['phase'], string> = {
  */
 function ProvenanceBadge({ p }: { p: Provenance | undefined }) {
   if (!p) return null;
-  const label = p.verified ? 'verified' : `unverified · ${p.extractedBy}`;
+  const label = p.verified ? 'checked' : 'not yet checked';
   return (
     <span
       className={`prov ${p.verified ? 'is-verified' : 'is-unverified'}`}

@@ -93,7 +93,7 @@ function DrugView({ drug }: { drug: Drug }) {
             {drug.brandName} <span className="drug__inn">({drug.inn})</span>
           </h1>
           <p className="drug__mechanism">
-            {about?.drugClass?.name ?? drug.modality} · {listed?.company ?? drug.sponsor}
+            {listed?.company ?? drug.sponsor} · {indications.length} approved {indications.length === 1 ? 'use' : 'uses'}
             {listed?.firstApproval && <> · first approved {formatDate(listed.firstApproval)}</>}
           </p>
         </div>
@@ -115,7 +115,7 @@ function DrugView({ drug }: { drug: Drug }) {
       )}
 
       <section className="uses uses--wide" aria-labelledby="uses-head">
-        <h2 id="uses-head">Approved uses · {indications.length}</h2>
+        <h2 id="uses-head">Approved uses</h2>
         <ul className="uselist">
           {indications.map((i) => {
             const trials = trialsForIndication(drug, i.name).length;

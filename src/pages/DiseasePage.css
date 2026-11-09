@@ -310,3 +310,78 @@
     display: none;
   }
 }
+
+/* Lanes: each row names the drug and its company; approval marks run along
+   the top with a faint guide down through the trials; each trial is its own
+   labelled line and links to its details. */
+.disease__row {
+  align-items: start;
+}
+
+.disease__row:hover {
+  background: transparent;
+}
+
+.disease__row-name {
+  color: var(--text-1);
+}
+
+.disease__row-name:hover strong {
+  text-decoration: underline;
+}
+
+.disease__row-name .disease__use {
+  display: block;
+}
+
+.disease__lane {
+  position: relative;
+}
+
+.disease__lane .disease__dot {
+  top: 4px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.disease__guide {
+  position: absolute;
+  top: 9px;
+  bottom: 0;
+  border-left: 1px dashed var(--border);
+}
+
+.disease__trial {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 12px;
+  display: block;
+  text-decoration: none;
+}
+
+.disease__trial .disease__bar {
+  top: 4px;
+}
+
+.disease__bar-label {
+  position: absolute;
+  top: -1px;
+  font-size: 10.5px;
+  line-height: 12px;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.disease__trial:hover .disease__bar {
+  opacity: 1;
+  background: var(--accent);
+}
+
+.disease__trial:hover .disease__bar-label {
+  color: var(--accent);
+}
+
+.precedents {
+  margin-top: 2.5rem;
+}
