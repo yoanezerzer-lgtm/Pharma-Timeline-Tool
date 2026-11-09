@@ -72,6 +72,16 @@
   "indications": [
     {
       "name": "Prurigo Nodularis",
+      "wording": {
+        "text": "Adults with prurigo nodularis",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761390s002,761391s001lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-2), section 1",
+          "quote": "Adults with prurigo nodularis",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "prurigo-nodularis",
       "approvalDate": {
         "value": "2024-08-12",
@@ -130,7 +140,28 @@
     },
     {
       "name": "Atopic Dermatitis",
+      "wording": {
+        "text": "Adults and pediatric patients 12 years of age and older with moderate-to-severe atopic dermatitis in combination with topical corticosteroids and/or calcineurin inhibitors when the disease is not adequately controlled with topical prescription therapies",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761390s002,761391s001lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-2), section 1",
+          "quote": "Adults and pediatric patients 12 years of age and older with moderate-to-severe atopic dermatitis in combination with topical corticosteroids and/or calcineurin inhibitors when the disease is not adequately controlled with topical prescription therapies",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "atopic-dermatitis",
+      "approvalDate": {
+        "value": "2024-12-13",
+        "precision": "day"
+      },
+      "approvalProvenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2024/761391s000lbl.pdf",
+        "sourceLabel": "Approved label (BLA 761391, original approval)",
+        "quote": "Listed in section 1 of the label approved with BLA 761391 on 2024-12-13; absent from BLA 761390's first label.",
+        "extractedBy": "rule",
+        "verified": false
+      },
       "diseases": [
         {
           "meshId": "D003876",
@@ -3497,5 +3528,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T20:37:32.775Z"
+  "lastIngestedAt": "2026-11-09T19:57:48.063Z"
 }
