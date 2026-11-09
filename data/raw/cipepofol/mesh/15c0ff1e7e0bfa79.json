@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Adults"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000328"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Adult"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Anesthesia"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000758"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Anesthesia"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Anesthesia, General"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000768"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Anesthesia, General"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Surgery"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D013502"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "General Surgery"
+          }
+        }
+      ]
+    }
+  }
+}
