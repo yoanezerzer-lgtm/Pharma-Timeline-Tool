@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0531508",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0531508",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T741286",
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T741288",
+      "http://id.nlm.nih.gov/mesh/T741293",
+      "http://id.nlm.nih.gov/mesh/T802083",
+      "http://id.nlm.nih.gov/mesh/T741289",
+      "http://id.nlm.nih.gov/mesh/T802082",
+      "http://id.nlm.nih.gov/mesh/T802085",
+      "http://id.nlm.nih.gov/mesh/T741292",
+      "http://id.nlm.nih.gov/mesh/T840855",
+      "http://id.nlm.nih.gov/mesh/T756916",
+      "http://id.nlm.nih.gov/mesh/T840856",
+      "http://id.nlm.nih.gov/mesh/T802084"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Allan-Herndon-Dudley syndrome"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

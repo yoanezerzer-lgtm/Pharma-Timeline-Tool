@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/C537047",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#SCR_Disease",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "dateIntroduced": "2010-06-25",
+    "frequency": "84",
+    "identifier": "C537047",
+    "lastUpdated": "2026-01-01",
+    "note": {
+      "@language": "en",
+      "@value": "A rare, congenital X-linked dominant disorder characterized by INTELLECTUAL DISABILITY; COMMUNICATION DISORDERS; MUSCLE SPASTICITY; CONTRACTURES, hypotonia and loss of mobility. Various other anatomical and neurological abnormalities may also be present, as well as abnormal serum thyroid hormone levels. Mutations in the SLC16A2 gene have been identified. OMIM: 300523"
+    },
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0531508",
+    "preferredMappedTo": [
+      "http://id.nlm.nih.gov/mesh/D038901",
+      "http://id.nlm.nih.gov/mesh/D009123",
+      "http://id.nlm.nih.gov/mesh/D009133"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T741286",
+    "label": {
+      "@language": "en",
+      "@value": "Allan-Herndon-Dudley syndrome"
+    },
+    "@context": {
+      "preferredMappedTo": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredMappedTo",
+        "@type": "@id"
+      },
+      "frequency": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#frequency",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "note": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#note"
+      }
+    }
+  }
+}
