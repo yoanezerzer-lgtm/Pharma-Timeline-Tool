@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0001943",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "broaderConcept": "http://id.nlm.nih.gov/mesh/M0001945",
+    "identifier": "M0001943",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T003845",
+    "relatedConcept": "http://id.nlm.nih.gov/mesh/M0001944",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A behavior disorder originating in childhood in which the essential features are signs of developmentally inappropriate inattention, impulsivity, and hyperactivity. Although most individuals have symptoms of both inattention and hyperactivity-impulsivity, one or the other pattern may be predominant. The disorder is more frequent in males than females. Onset is in childhood. Symptoms often attenuate during late adolescence although a minority experience the full complement of symptoms into mid-adulthood. (From DSM-V)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T812538",
+      "http://id.nlm.nih.gov/mesh/T000874815",
+      "http://id.nlm.nih.gov/mesh/T003844",
+      "http://id.nlm.nih.gov/mesh/T003842",
+      "http://id.nlm.nih.gov/mesh/T003846",
+      "http://id.nlm.nih.gov/mesh/T003843",
+      "http://id.nlm.nih.gov/mesh/T001104909"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Attention Deficit Disorder with Hyperactivity"
+    },
+    "@context": {
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "broaderConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderConcept",
+        "@type": "@id"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
