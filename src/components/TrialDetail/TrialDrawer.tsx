@@ -13,6 +13,10 @@ interface Props {
   onClose: () => void;
   /** When set, the eyebrow shows this trial's role for one specific indication. */
   indication?: string;
+  /** Show as a full page (a trial address opened directly) instead of a panel over the chart. */
+  asPage?: boolean;
+  /** On the full page: links back to the drug and approved use, shown above the title. */
+  crumbs?: React.ReactNode;
 }
 
 const PHASE_TEXT: Record<Trial['phase'], string> = {
@@ -46,15 +50,16 @@ function Fact({
   );
 }
 
-export function TrialDrawer({ trial, onClose, indication }: Props) {
+export function TrialDrawer({ trial, onClose, indication, asPage = false, crumbs }: Props) {
   // Escape closes the drawer, matching the expectation for an overlay panel.
   useEffect(() => {
+    if (asPage) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  }, [onClose, asPage]);
 
   const p = trial.provenance;
   const registryUrl = trial.nctId
@@ -63,17 +68,18 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
   const role = indication ? roleFor(trial, indication) ?? 'NOT_IN_FILING' : summaryRole(trial);
   const otherIndications = trial.roles.filter((r) => r.indication && r.indication !== indication);
 
-  return (
+  const Title = asPage ? 'h1' : 'h2';
+  const body = (
     <>
-      <div className="drawer__scrim" onClick={onClose} aria-hidden="true" />
-      <aside className="drawer" role="dialog" aria-label={`Trial detail: ${trial.title}`}>
         <header className="drawer__head">
           <div>
+            {crumbs}
             <div className="drawer__eyebrow">
               {PHASE_TEXT[trial.phase]} · {ROLE_LABEL[role]}
-              {indication ? ` for ${indication}` : ''}
+              {/* On the full page the links above name the approved use. */}
+              {indication && !asPage ? ` for ${indication}` : ''}
             </div>
-            <h2 className="drawer__title">
+            <Title className="drawer__title">
               {trialShortName(trial)}
               {trial.nctId && registryUrl && (
                 <a
@@ -85,11 +91,13 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
                   ({trial.nctId})
                 </a>
               )}
-            </h2>
+            </Title>
           </div>
-          <button className="drawer__close" onClick={onClose} aria-label="Close">
-            ×
-          </button>
+          {!asPage && (
+            <button className="drawer__close" onClick={onClose} aria-label="Close">
+              ×
+            </button>
+          )}
         </header>
 
         <p className="drawer__full-title">{trial.title}</p>
@@ -268,12 +276,21 @@ export function TrialDrawer({ trial, onClose, indication }: Props) {
           </section>
         )}
 
-        {trial.takeaways.length === 0 && trial.limitations.length === 0 && (
+        {!asPage && trial.takeaways.length === 0 && trial.limitations.length === 0 && (
           <p className="drawer__empty">
             Takeaways and limitations for this trial have not been written yet. They are
             authored by hand — the pipeline does not infer them.
           </p>
         )}
+    </>
+  );
+
+  if (asPage) return <article className="drawer drawer--page">{body}</article>;
+  return (
+    <>
+      <div className="drawer__scrim" onClick={onClose} aria-hidden="true" />
+      <aside className="drawer" role="dialog" aria-label={`Trial detail: ${trial.title}`}>
+        {body}
       </aside>
     </>
   );

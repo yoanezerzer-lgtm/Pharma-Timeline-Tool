@@ -115,6 +115,16 @@ export function primaryCompletionToApprovalMonths(trials: Trial[], indicationNam
 }
 
 /** A trial's short name: the registry acronym, else what the label calls it, else its protocol number. */
-export function trialShortName(t: Pick<Trial, 'acronym' | 'labelName' | 'protocolNumber' | 'nctId' | 'id'>): string {
-  return t.acronym ?? t.labelName ?? t.protocolNumber ?? t.nctId ?? t.id;
+type Named = Pick<Trial, 'acronym' | 'labelName' | 'protocolNumber' | 'nctId' | 'id'>;
+
+const baseName = (t: Named): string => t.acronym ?? t.labelName ?? t.protocolNumber ?? t.nctId ?? t.id;
+
+/**
+ * A trial's short name. Given the drug's other trials, a name two of them
+ * share (Ebglyss has two "ADhere" records) gets its NCT number beside it.
+ */
+export function trialShortName(t: Named, among?: readonly Named[]): string {
+  const name = baseName(t);
+  if (!among || !t.nctId || name === t.nctId) return name;
+  return among.some((o) => o.id !== t.id && baseName(o) === name) ? `${name} (${t.nctId})` : name;
 }

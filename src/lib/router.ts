@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
  */
 export type Route =
   | { name: 'index' }
+  | { name: 'drugs' }
   | {
       name: 'indication';
       slug: string;
@@ -44,6 +45,7 @@ export function parsePath(path: string): Route {
     return { name: 'indication', slug, indicationSlug: sub1Value, trialId };
   }
   if (section === 'drug' && slug && !sub1) return { name: 'drug', slug };
+  if (section === 'drugs' && !slug) return { name: 'drugs' };
   if (section === 'diseases') return { name: 'diseases' };
   if (section === 'disease' && slug) return { name: 'disease', meshId: slug };
   if (section === 'compare') return { name: 'compare' };
@@ -72,11 +74,23 @@ function upgradeHashLink(): void {
   window.history.replaceState(null, '', href(`${trimmed}${trimmed ? '/' : ''}${query ? `?${query}` : ''}`));
 }
 
+/** The drug list used to be the home page: an old "/?area=x" or "/?q=x" link now opens the Drugs page. */
+function upgradeOldListLink(): void {
+  const { search } = window.location;
+  if (currentPath() !== '' || !/[?&](q|area)=/.test(search)) return;
+  window.history.replaceState(null, '', href(`drugs/${search}`));
+}
+
 const listeners = new Set<() => void>();
 
-/** Open another page of the site. `scroll: false` keeps the reader's place (opening a trial's details). */
-export function navigate(to: string, { scroll = true }: { scroll?: boolean } = {}): void {
-  window.history.pushState(null, '', to);
+/**
+ * Open another page of the site. `scroll: false` keeps the reader's place;
+ * `panel: true` marks a trial opened from its chart, so it shows in the side
+ * panel over the chart. A trial address opened any other way (a shared
+ * link, a table, a search engine) shows as a full page.
+ */
+export function navigate(to: string, { scroll = true, panel = false }: { scroll?: boolean; panel?: boolean } = {}): void {
+  window.history.pushState(panel ? { panel: true } : null, '', to);
   if (scroll) window.scrollTo(0, 0);
   listeners.forEach((l) => l());
 }
@@ -97,10 +111,14 @@ function onClick(e: MouseEvent): void {
 export function useRoute(): Route {
   const [route, setRoute] = useState<Route>(() => {
     upgradeHashLink();
+    upgradeOldListLink();
     return parsePath(currentPath());
   });
   useEffect(() => {
-    const onChange = () => setRoute(parsePath(currentPath()));
+    const onChange = () => {
+      upgradeOldListLink();
+      setRoute(parsePath(currentPath()));
+    };
     listeners.add(onChange);
     window.addEventListener('popstate', onChange);
     document.addEventListener('click', onClick);
@@ -113,6 +131,11 @@ export function useRoute(): Route {
   return route;
 }
 
+/** Whether the open address was reached by opening a trial from its chart (see navigate). */
+export function openedAsPanel(): boolean {
+  return (window.history.state as { panel?: boolean } | null)?.panel === true;
+}
+
 /** Replace the query string of the current page ("?area=oncology") without a new history entry. */
 export function replaceQuery(params: Record<string, string>): void {
   const qs = new URLSearchParams(Object.entries(params).filter(([, v]) => v !== '')).toString();
@@ -121,6 +144,11 @@ export function replaceQuery(params: Record<string, string>): void {
 
 export function homeHref(): string {
   return href('');
+}
+
+/** Every drug on the site, by therapeutic area ("/drugs/?area=oncology"). */
+export function drugsHref(area?: string): string {
+  return href(`drugs/${area ? `?area=${encodeURIComponent(area)}` : ''}`);
 }
 
 export function diseasesHref(): string {

@@ -1,6 +1,6 @@
-import type { Drug, Indication } from '../schema/index.js';
+import type { Drug, Indication, Trial } from '../schema/index.js';
 import type { DiseaseSummary } from './diseases.js';
-import { shortIndication } from './drugs.js';
+import { shortIndication, trialShortName } from './drugs.js';
 
 /**
  * Each page's title and description, as search engines and browser tabs
@@ -31,6 +31,13 @@ export function homeMeta(): PageMeta {
     title: SITE_NAME,
     description:
       'Each FDA drug approval traced to the clinical trials behind it: dates, the FDA’s own wording and a source for every fact.',
+  };
+}
+
+export function drugsMeta(): PageMeta {
+  return {
+    title: withSite('Drugs'),
+    description: 'Every drug on the site by therapeutic area, each with its FDA approvals and the clinical trials behind them.',
   };
 }
 
@@ -74,6 +81,21 @@ export function indicationMeta(drug: Pick<Drug, 'brandName' | 'inn'>, indication
   return {
     title: withSite(`${drug.brandName}, ${shortIndication(indication, 90)}: trials and FDA approval`),
     description: clip(`FDA-approved use of ${names(drug)}: ${sentence(indication.name)} The clinical trials behind this approval, with dates and sources.`),
+  };
+}
+
+/** A trial's own page: its short name, the drug and the approved use it backs. */
+export function trialMeta(
+  drug: Pick<Drug, 'brandName' | 'inn'>,
+  indication: Pick<Indication, 'name' | 'displayName'>,
+  trial: Trial,
+  siblings: readonly Trial[],
+): PageMeta {
+  const name = trialShortName(trial, siblings);
+  const nct = trial.nctId && !name.includes(trial.nctId) ? ` (${trial.nctId})` : '';
+  return {
+    title: withSite(`${name}${nct}: ${drug.brandName} trial, ${shortIndication(indication, 70)}`),
+    description: clip(`${sentence(trial.title)} A clinical trial of ${names(drug)}, with its dates, design and sources.`),
   };
 }
 

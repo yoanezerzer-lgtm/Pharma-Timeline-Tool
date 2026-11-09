@@ -152,7 +152,7 @@ function useSteps(drug: Drug, i: Drug['indications'][number]): UseStep[] {
 function pivotalTrials(drug: Drug, indicationName: string): PivotalTrial[] {
   return drug.trials
     .filter((t) => roleFor(t, indicationName) === 'PIVOTAL')
-    .map((t) => ({ id: t.id, name: trialShortName(t), nctId: t.nctId, primaryCompletion: t.primaryCompletionDate }))
+    .map((t) => ({ id: t.id, name: trialShortName(t, drug.trials), nctId: t.nctId, primaryCompletion: t.primaryCompletionDate }))
     .sort((a, b) => (a.primaryCompletion?.value ?? '9999').localeCompare(b.primaryCompletion?.value ?? '9999'));
 }
 
@@ -160,6 +160,6 @@ function pivotalTrials(drug: Drug, indicationName: string): PivotalTrial[] {
 function laneTrials(drug: Drug, indicationName: string): LaneTrial[] {
   return drug.trials
     .filter((t) => roleFor(t, indicationName) === 'PIVOTAL' && t.startDate && t.primaryCompletionDate)
-    .map((t) => ({ id: t.id, name: trialShortName(t), phase: t.phase, start: t.startDate, primaryCompletion: t.primaryCompletionDate }))
+    .map((t) => ({ id: t.id, name: trialShortName(t, drug.trials), phase: t.phase, start: t.startDate, primaryCompletion: t.primaryCompletionDate }))
     .sort((a, b) => a.start!.value.localeCompare(b.start!.value));
 }

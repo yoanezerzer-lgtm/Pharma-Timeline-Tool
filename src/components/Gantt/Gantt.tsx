@@ -38,8 +38,8 @@ interface HoverState {
 }
 
 /** Short label for a bar: acronym if there is one, else protocol number or NCT. */
-function barLabel(t: Trial): string {
-  return trialShortName(t);
+function barLabel(t: Trial, all: readonly Trial[]): string {
+  return trialShortName(t, all);
 }
 
 /** The label cut to fit the name column; the full name stays in the tooltip. */
@@ -180,7 +180,7 @@ export function Gantt({
                     onFocus={() => onSelectTrial(bar.trial.id)}
                     tabIndex={0}
                     role="button"
-                    aria-label={`${barLabel(bar.trial)}: ${bar.trial.title}`}
+                    aria-label={`${barLabel(bar.trial, trials)}: ${bar.trial.title}`}
                   >
                     {/* Full-width hit area so hovering anywhere on the row works */}
                     <rect
@@ -191,7 +191,7 @@ export function Gantt({
                       className="gantt__row-hit"
                     />
                     <text x={20} y={bar.y + ROW_H / 2 + 4} className="gantt__row-label">
-                      {fitLabel(barLabel(bar.trial), layout.plotLeft)}
+                      {fitLabel(barLabel(bar.trial, trials), layout.plotLeft)}
                     </text>
                     <rect
                       x={bar.x}
@@ -271,13 +271,13 @@ export function Gantt({
       </div>
 
       {hover && (
-        <BarTooltip bar={hover.bar} x={hover.clientX} y={hover.clientY} indication={indication} />
+        <BarTooltip bar={hover.bar} x={hover.clientX} y={hover.clientY} indication={indication} trials={trials} />
       )}
 
       {layout.undated.length > 0 && (
         <p className="gantt__undated">
           {layout.undated.length} trial{layout.undated.length === 1 ? '' : 's'} not shown —
-          no start date recorded: {layout.undated.map(barLabel).join(', ')}
+          no start date recorded: {layout.undated.map((t) => barLabel(t, trials)).join(', ')}
         </p>
       )}
 
@@ -291,16 +291,18 @@ function BarTooltip({
   x,
   y,
   indication,
+  trials,
 }: {
   bar: BarLayout;
   x: number;
   y: number;
   indication: string | undefined;
+  trials: readonly Trial[];
 }) {
   const t = bar.trial;
   return (
     <div className="gantt__tooltip" style={{ left: x + 14, top: y + 14 }} role="tooltip">
-      <div className="gantt__tooltip-title">{barLabel(t)}</div>
+      <div className="gantt__tooltip-title">{barLabel(t, trials)}</div>
       <div className="gantt__tooltip-sub">{t.title}</div>
       <dl className="gantt__tooltip-facts">
         <dt>Start</dt>

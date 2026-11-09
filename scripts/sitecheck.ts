@@ -1,6 +1,6 @@
 /**
  * Opens the site in a real browser and fails if a page is broken or empty:
- * the home list, every drug page, and every drug's first approved use.
+ * the home page, the drug list, every drug page, and every drug's first approved use.
  *
  *   npx tsx scripts/sitecheck.ts <site-url>
  *
@@ -46,9 +46,20 @@ async function main(): Promise<void> {
   const page = await browser.newPage();
 
   await visit(page, '', async (p) => {
-    const rows = await p.locator('.index__row').count();
-    return rows < drugs.length ? `home list shows ${rows} of ${drugs.length} drugs` : undefined;
+    const body = await text(p);
+    if (!/which clinical trials led to which FDA approval/i.test(body)) return 'home page lacks its heading';
+    return /what you can open/i.test(body) ? undefined : 'home page lacks its example pages';
   });
+
+  await visit(page, 'drugs/', async (p) => {
+    const rows = await p.locator('.index__row').count();
+    return rows < drugs.length ? `drug list shows ${rows} of ${drugs.length} drugs` : undefined;
+  });
+
+  // An old filtered list link ("/?area=x") now opens the Drugs page.
+  await visit(page, '?area=immunology', async (p) =>
+    new URL(p.url()).pathname.endsWith('/drugs/') ? undefined : `old list link was not moved to the Drugs page (${p.url()})`
+  );
 
   for (const d of drugs) {
     await visit(page, `drug/${d.slug}/`, async (p) => {

@@ -32,8 +32,17 @@ new session when a conversation gets long.
   sections, and therapeutic areas with counts; the open page's area lists
   its drugs or diseases. Narrower screens keep the top bar. Footer links to
   **About the data** (`/about/`).
-- **Home**: search, area menu, list by therapeutic area. Areas are the
+- **Home** (#137, 9 Nov): what the site answers, search, atopic
+  dermatitis featured (timeline and its latest first approvals), one
+  example of each page type (disease, drug, approved use, trial), recent
+  FDA approvals, where facts come from. A disabled "Log in" sits top
+  right ("Accounts open soon") as the place for accounts.
+- **Drugs page** (`/drugs/`): the old home list (search, area menu, list
+  by area). Old `/?area=` and `/?q=` links move there. Areas are the
   owner's (`data/areas/areas.json`): change only with the owner.
+- **Trial view**: a trial clicked on a chart opens in the side panel; a
+  trial address opened any other way (shared, table, Google) shows a full
+  page at the same address. Pivotal trials' pages are in the sitemap.
 - **Drug page**: "What it's for" (patient leaflet, word for word), approved
   uses one row each, "How it works" (label 12.1–12.3), Company news links,
   then "Sources and checks" with "Sources last read".
@@ -186,22 +195,13 @@ titles and subtitles rewritten. Later widenings show "Not yet matched" for
 trials: the records don't say which trial each later letter rests on.
 
 Still open, in order:
-- **Homepage makeover** (owner, 9 Nov: it repeats the side panel's list).
-  Plan: lead with what the site answers (which trials led to which FDA
-  approval), feature atopic dermatitis as the complete area (timeline and
-  a preview of its table), recent FDA approvals, then where facts come
-  from. The full drug list stays in the side panel and on a Drugs page.
-  **Paid site, so the homepage is also the front door** (owner, 9 Nov):
-  a log-in, and examples of each page type (disease, drug, approved use,
-  trial) a visitor can see before paying, not the full product. Build the
-  log-in and paywall only after the move to Cloudflare; until then design
-  the homepage with a place for them.
-- **Trial view: panel and page.** Keep the side panel when a trial is
-  opened from a chart; a trial link opened directly (shared, from the
-  table, from Google) shows a full page.
+- Homepage makeover, trial panel and page, duplicate trial names (NCT
+  number beside a shared name): done (#137). Log-in and paywall wait for
+  Cloudflare; the homepage's "Log in" button is the place for them. On
+  phones the disease timeline shows names and dates only (bars hidden),
+  as on the disease page.
 - Drug page: long "What it's for" and "How it works" come before the
   approved uses table. Empty "Company news" for Dupixent looks unfinished.
-- Duplicate trial short names (Ebglyss "ADhere" twice) need the NCT number.
 
 ## Open owner questions
 - Areas for Dupixent's other uses (asthma, COPD, nasal polyps, etc.).

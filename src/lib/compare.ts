@@ -81,7 +81,7 @@ export function programView(drug: Drug, indication: Indication, submission?: str
     .filter(belongs)
     .map((tr) => ({
       trialId: tr.id,
-      name: trialShortName(tr),
+      name: trialShortName(tr, drug.trials),
       role: roleFor(tr, indication.name) ?? ('UNKNOWN' as const),
       start: t(tr.startDate),
       primaryCompletion: t(tr.primaryCompletionDate),
@@ -92,7 +92,7 @@ export function programView(drug: Drug, indication: Indication, submission?: str
     .sort((a, b) => Number(b.role === 'PIVOTAL') - Number(a.role === 'PIVOTAL') || (a.start ?? Infinity) - (b.start ?? Infinity));
   const unmatched = cited
     .filter((tr) => !belongs(tr) && !linkedTo(tr))
-    .map((tr) => ({ trialId: tr.id, name: trialShortName(tr), role: roleFor(tr, indication.name) ?? ('UNKNOWN' as const) }));
+    .map((tr) => ({ trialId: tr.id, name: trialShortName(tr, drug.trials), role: roleFor(tr, indication.name) ?? ('UNKNOWN' as const) }));
   const key = programRefString({ slug: drug.slug, indicationSlug: indication.slug, submission: chosen?.submission });
   return { key, drug, indication, approvals, chosen, approval, lanes, unmatched };
 }

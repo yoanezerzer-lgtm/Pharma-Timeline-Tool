@@ -1,6 +1,7 @@
 import type { Drug } from '../schema/index.js';
 import type { DiseaseSummary } from './diseases.js';
-import { aboutMeta, diseaseMeta, diseasesMeta, drugMeta, homeMeta, indicationMeta, SITE_NAME, type PageMeta } from './pageMeta.js';
+import { roleFor, trialsForIndication } from './drugs.js';
+import { aboutMeta, diseaseMeta, diseasesMeta, drugMeta, drugsMeta, homeMeta, indicationMeta, trialMeta, SITE_NAME, type PageMeta } from './pageMeta.js';
 
 /**
  * Every page the build writes as its own HTML file, so each has a real
@@ -20,11 +21,21 @@ export function sitePages(drugs: Drug[], diseases: DiseaseSummary[]): SitePage[]
   const tool = (path: string, title: string): SitePage => ({ path, meta: { title: `${title} | ${SITE_NAME}`, description: homeMeta().description }, listed: false });
   return [
     { path: '', meta: homeMeta(), listed: true },
+    { path: 'drugs/', meta: drugsMeta(), listed: true },
     { path: 'diseases/', meta: diseasesMeta(), listed: true },
     { path: 'about/', meta: aboutMeta(), listed: true },
     ...drugs.flatMap((drug) => [
       { path: `drug/${drug.slug}/`, meta: drugMeta(drug), listed: true },
-      ...drug.indications.map((i) => ({ path: `drug/${drug.slug}/indication/${i.slug}/`, meta: indicationMeta(drug, i), listed: true })),
+      ...drug.indications.flatMap((i) => {
+        const trials = trialsForIndication(drug, i.name);
+        return [
+          { path: `drug/${drug.slug}/indication/${i.slug}/`, meta: indicationMeta(drug, i), listed: true },
+          // Each pivotal trial's own page, so a shared or searched-for trial link opens with its own title.
+          ...trials
+            .filter((t) => roleFor(t, i.name) === 'PIVOTAL')
+            .map((t) => ({ path: `drug/${drug.slug}/indication/${i.slug}/trial/${t.id}/`, meta: trialMeta(drug, i, t, trials), listed: true })),
+        ];
+      }),
     ]),
     ...diseases.map((d) => ({ path: `disease/${d.meshId}/`, meta: diseaseMeta(d), listed: true })),
     tool('compare/', 'Compare two approvals'),

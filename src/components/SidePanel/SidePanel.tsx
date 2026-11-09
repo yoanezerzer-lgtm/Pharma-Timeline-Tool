@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Route } from '../../lib/router.js';
-import { aboutHref, compareHref, diseaseHref, diseasesHref, drugHref, homeHref, navigate } from '../../lib/router.js';
+import { aboutHref, compareHref, diseaseHref, diseasesHref, drugHref, drugsHref, homeHref, navigate } from '../../lib/router.js';
 import { drugIndex, diseaseIndex } from '../../lib/catalog.js';
 import { AREAS, areasOfDrug } from '../../lib/areas.js';
 import './SidePanel.css';
@@ -45,7 +45,7 @@ export function SidePanel({ route }: { route: Route }) {
 
   const drugSlug = route.name === 'drug' || route.name === 'indication' ? route.slug : undefined;
   const meshId = route.name === 'disease' ? route.meshId : undefined;
-  const areaParam = route.name === 'index' ? new URLSearchParams(window.location.search).get('area') : null;
+  const areaParam = route.name === 'drugs' ? new URLSearchParams(window.location.search).get('area') : null;
   const openArea =
     (drugSlug && tree.find((a) => a.drugs.some((d) => d.slug === drugSlug))?.id) ||
     (meshId && tree.find((a) => a.diseases.some((d) => d.meshId === meshId))?.id) ||
@@ -53,7 +53,7 @@ export function SidePanel({ route }: { route: Route }) {
     undefined;
 
   const section =
-    route.name === 'index' || drugSlug ? 'drugs' : route.name === 'diseases' || meshId ? 'diseases' : route.name;
+    route.name === 'drugs' || drugSlug ? 'drugs' : route.name === 'diseases' || meshId ? 'diseases' : route.name;
   const item = (key: string, href: string, label: string) => (
     <li>
       <a href={href} aria-current={section === key ? 'page' : undefined}>
@@ -73,7 +73,7 @@ export function SidePanel({ route }: { route: Route }) {
         role="search"
         onSubmit={(e) => {
           e.preventDefault();
-          navigate(`${homeHref()}${query.trim() ? `?q=${encodeURIComponent(query.trim())}` : ''}`);
+          navigate(`${drugsHref()}${query.trim() ? `?q=${encodeURIComponent(query.trim())}` : ''}`);
         }}
       >
         <input
@@ -90,7 +90,8 @@ export function SidePanel({ route }: { route: Route }) {
 
       <nav aria-label="Sections">
         <ul className="side__list">
-          {item('drugs', homeHref(), 'Drugs')}
+          {item('index', homeHref(), 'Home')}
+          {item('drugs', drugsHref(), 'Drugs')}
           {item('diseases', diseasesHref(), 'Diseases')}
           {item('compare', compareHref(), 'Compare')}
           {item('about', aboutHref(), 'About the data')}
@@ -107,7 +108,7 @@ export function SidePanel({ route }: { route: Route }) {
               : a.drugs.map((d) => ({ key: d.slug, href: drugHref(d.slug), label: d.brandName, on: d.slug === drugSlug }));
             return (
               <li key={a.id}>
-                <a className={`side__area${open ? ' is-open' : ''}`} href={`${homeHref()}?area=${a.id}`}>
+                <a className={`side__area${open ? ' is-open' : ''}`} href={drugsHref(a.id)}>
                   <span>{a.name}</span>
                   <span className="side__count">{meshId ? a.diseases.length : a.drugs.length}</span>
                 </a>
