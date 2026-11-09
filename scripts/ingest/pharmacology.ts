@@ -146,8 +146,15 @@ const ANSWER_END =
 /** List markers as PDF text layers set them: bullets, and symbol-font characters in the private-use range. */
 const BULLETS = '•●▪‣⁃\\uf000-\\uf8ff';
 
-/** Longest answer kept; the leaflet's opening is the plain description. */
+/** Longest answer kept when nothing marks where it ends; the leaflet's opening is the plain description. */
 const MAX_ANSWER = 900;
+
+/**
+ * Longest answer kept when the next leaflet heading marks its end. A drug
+ * with many uses (Dupixent lists nine) has a long answer, and cutting it
+ * would drop uses.
+ */
+const MAX_FULL_ANSWER = 4000;
 
 /**
  * Whitespace the PDF text layer adds inside the label's own words ("non -
@@ -178,12 +185,13 @@ export function patientSummary(label: Doc, brandName: string): Pharmacology['pat
   const question = new RegExp(`What is\\s+${brand}(?:\\s+[A-Z][A-Za-z]+)?[®™]?(?:\\s*\\([^)]{1,60}\\))?\\s*\\?`, 'gi');
   for (const m of text.matchAll(question)) {
     const start = m.index + m[0].length;
-    const rest = text.slice(start, start + MAX_ANSWER * 3);
+    const rest = text.slice(start, start + MAX_FULL_ANSWER + 200);
     // The answer opens on the brand ("BAXFENDY is a prescription medicine…"), perhaps after a bullet.
     if (!new RegExp(`^[\\s${BULLETS}o-]*${brand}`, 'i').test(rest)) continue;
     const end = rest.search(ANSWER_END);
+    const limit = end > 0 ? MAX_FULL_ANSWER : MAX_ANSWER;
     let body = rest.slice(0, end > 0 ? end : MAX_ANSWER);
-    if (body.length > MAX_ANSWER) body = body.slice(0, MAX_ANSWER).replace(/[^.]*$/, '');
+    if (body.length > limit) body = body.slice(0, limit).replace(/[^.]*$/, '');
     const paragraphs = body
       .split(new RegExp(`\\s*[${BULLETS}]\\s*|\\s+o\\s+(?=[a-z(])`))
       .map(closeUp)

@@ -385,3 +385,15 @@
 .precedents {
   margin-top: 2.5rem;
 }
+
+/* A disease whose approvals name different severities: one group at a time. */
+.disease__severity {
+  margin: 1.25rem 0 0.5rem;
+}
+
+.disease__severity-note {
+  margin: 0.5rem 0 0;
+  max-width: 80ch;
+  font-size: 13px;
+  color: var(--text-3);
+}

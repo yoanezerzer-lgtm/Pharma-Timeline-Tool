@@ -22,7 +22,7 @@ import { indicationLabel, ROLE_LABEL } from '../lib/drugs.js';
 import { confirmationKey, useConfirmations, type Confirmation } from '../lib/reference.js';
 import { indicationHref, replaceQuery } from '../lib/router.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
-import { APPROVAL_KIND } from '../lib/copy.js';
+import { approvalKindLabel } from '../lib/copy.js';
 import './ComparePage.css';
 
 interface ProgramOption {
@@ -47,7 +47,8 @@ const OPTIONS: ProgramOption[] = drugIndex
   )
   .sort((a, b) => a.drug.localeCompare(b.drug) || a.indication.localeCompare(b.indication));
 
-const DEFAULTS = ['upadacitinib:rheumatoid-arthritis', 'risankizumab:psoriatic-arthritis'];
+// Two moderate-to-severe atopic dermatitis approvals: the featured area, and a fair pair to set side by side.
+const DEFAULTS = ['lebrikizumab:moderate-to-severe-atopic-dermatitis-in-adults-and', 'tralokinumab:moderate-to-severe-atopic-dermatitis-in-adults-and'];
 
 function readParams(): URLSearchParams {
   return new URLSearchParams(window.location.search);
@@ -162,8 +163,12 @@ export function ComparePage() {
                   <span><strong>{c.trials.join(' and ')}</strong> · {c.drug}, {c.indication}</span>
                   <span className="mono">{formatDate(c.date)}</span>
                 </div>
-                {c.provenance.sourceLabel && <p className="readout__headline">{c.provenance.sourceLabel.replace(/^[^:]+:\s*/, '')}</p>}
-                {c.provenance.quote && <blockquote className="readout__quote">“{c.provenance.quote}”</blockquote>}
+                {c.provenance.sourceLabel && c.provenance.sourceUrl && (
+                  <a className="readout__headline" href={c.provenance.sourceUrl} target="_blank" rel="noreferrer">
+                    {c.provenance.sourceLabel.replace(/^[^:]+:\s*/, '')} ↗
+                  </a>
+                )}
+                {/* Company releases are linked, never quoted (owner, 7 Nov). */}
                 <div className="readout__stats">
                   <Stat label="Primary completion → announced" months={c.completionToAnnouncement} />
                   <Stat label="Announced → approval" months={c.announcementToApproval} />
@@ -346,7 +351,7 @@ function ProgramPane({
               </p>
               <p className="pane__sub">
                 {program.chosen
-                  ? `${KIND_LABEL[program.chosen.kind]} ${formatDate(program.chosen.date)}`
+                  ? `${kindLabel(program.chosen)} ${formatDate(program.chosen.date)}`
                   : program.indication.approvalDate
                     ? `Approved ${formatDate(program.indication.approvalDate)}`
                     : 'Approval date unclear'}{' '}
@@ -371,7 +376,7 @@ function ProgramPane({
               <select value={program.chosen?.submission} onChange={(e) => onPickApproval(e.target.value)}>
                 {program.approvals.map((a) => (
                   <option key={a.submission} value={a.submission}>
-                    {formatDate(a.date)} · {KIND_LABEL[a.kind]}
+                    {formatDate(a.date)} · {kindLabel(a)}
                   </option>
                 ))}
               </select>
@@ -481,7 +486,7 @@ function ProgramPane({
   );
 }
 
-const KIND_LABEL: Record<Approval['kind'], string> = APPROVAL_KIND;
+const kindLabel = (a: Pick<Approval, 'kind' | 'submission'>) => approvalKindLabel(a.kind, a.submission);
 
 /** The approval letter's own sentence, shortened until opened. */
 function ApprovalWording({ approval }: { approval: Approval }) {
