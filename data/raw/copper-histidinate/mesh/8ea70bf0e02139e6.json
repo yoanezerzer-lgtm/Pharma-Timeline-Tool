@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T023133",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "dateCreated": "1977-05-02",
+    "identifier": "T023133",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "EPO"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Menkes Syndrome"
+    },
+    "thesaurusID": [
+      {
+        "@language": "en",
+        "@value": "ORD (2010)"
+      },
+      {
+        "@language": "en",
+        "@value": "UNK (19XX)"
+      },
+      {
+        "@language": "en",
+        "@value": "GHR (2014)"
+      }
+    ],
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      }
+    }
+  }
+}

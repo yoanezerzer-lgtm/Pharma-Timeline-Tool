@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0012055",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0012055",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T364748",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "An inherited disorder of copper metabolism transmitted as an X-linked trait and characterized by the infantile onset of HYPOTHERMIA, feeding difficulties, hypotonia, SEIZURES, bony deformities, pili torti (twisted hair), and severely impaired intellectual development. Defective copper transport across plasma and endoplasmic reticulum membranes results in copper being unavailable for the synthesis of several copper containing enzymes, including PROTEIN-LYSINE 6-OXIDASE; CERULOPLASMIN; and SUPEROXIDE DISMUTASE. Pathologic changes include defects in arterial elastin, neuronal loss, and gliosis. (From Menkes, Textbook of Child Neurology, 5th ed, p125)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T369449",
+      "http://id.nlm.nih.gov/mesh/T023133",
+      "http://id.nlm.nih.gov/mesh/T023134",
+      "http://id.nlm.nih.gov/mesh/T369451",
+      "http://id.nlm.nih.gov/mesh/T811681",
+      "http://id.nlm.nih.gov/mesh/T369450",
+      "http://id.nlm.nih.gov/mesh/T369453",
+      "http://id.nlm.nih.gov/mesh/T369454",
+      "http://id.nlm.nih.gov/mesh/T369452",
+      "http://id.nlm.nih.gov/mesh/T023132",
+      "http://id.nlm.nih.gov/mesh/T841995",
+      "http://id.nlm.nih.gov/mesh/T841996"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Menkes Kinky Hair Syndrome"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
