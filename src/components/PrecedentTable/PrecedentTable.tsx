@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import type { PrecedentRow } from '../../lib/precedent.js';
 import { formatDate } from '../../lib/dates.js';
 import { drugHref, indicationHref, indicationTrialHref } from '../../lib/router.js';
-import { APPROVAL_KIND, DATE_UNCLEAR, NOT_YET_MATCHED } from '../../lib/copy.js';
+import { approvalKindLabel, DATE_UNCLEAR, NOT_YET_MATCHED } from '../../lib/copy.js';
 import './PrecedentTable.css';
 
 type SortKey = 'date' | 'drug' | 'months';
@@ -70,7 +70,7 @@ export function PrecedentTable({ rows }: { rows: PrecedentRow[] }) {
           {shown.map((r) => (
             <tr key={r.key} className={r.kind === 'new' ? undefined : 'is-later'}>
               <td className="precedent__when" data-label="Approved">
-                <span className={`precedent__kind precedent__kind--${r.kind}`}>{APPROVAL_KIND[r.kind]}</span>
+                <span className={`precedent__kind precedent__kind--${r.kind}`}>{approvalKindLabel(r.kind, r.submissions)}</span>
                 {r.date ? (
                   r.letterUrl ? (
                     <a className="nums" href={r.letterUrl} target="_blank" rel="noopener noreferrer" title="FDA approval letter">

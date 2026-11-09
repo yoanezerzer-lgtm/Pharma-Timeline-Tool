@@ -202,8 +202,30 @@
   color: var(--text-1);
 }
 
-.drug__table tr.is-major td {
+.drug__table td {
+  vertical-align: top;
+}
+
+.drug__table tr.is-major td:nth-child(2) {
   font-weight: 600;
+  white-space: nowrap;
+}
+
+.drug__table-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.drug__table .drug__table-wording {
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .drug__table tr.is-major td:nth-child(2) {
+    white-space: normal;
+  }
 }
 
 .drug__table .nums {
@@ -320,4 +342,10 @@
     top: -1.15rem;
     transform: none;
   }
+}
+
+.drug__fact-note {
+  display: block;
+  font-size: 12px;
+  color: var(--text-3);
 }

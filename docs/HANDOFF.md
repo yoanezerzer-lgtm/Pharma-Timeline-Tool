@@ -216,6 +216,42 @@ Still open, in order:
 - Drug page: long "What it's for" and "How it works" come before the
   approved uses table. Empty "Company news" for Dupixent looks unfinished.
 
+## Flow review (9 Nov, #138)
+Owner walked the pages: too much on screen, some wrong words. Done:
+- Industry terms for approval types: Original approval (ORIG), New
+  indication (new use on a supplement), Label expansion (was "Widened"),
+  Indication revised (was "Wording changed"). One place: `src/lib/copy.ts`.
+- Drug page: the leaflet's description is the page's opening lines with a
+  light "(source)" link, no heading, first 3 lines then "Show all";
+  approved uses table has column headings; "How it works" is now
+  "Clinical pharmacology" at full width; drug class shown with a capital
+  and no source link; empty Company news is hidden; "Sources" (no "checks").
+- Leaflet text was cut at 900 characters (Dupixent showed 2 of 9 uses).
+  Now kept whole when the next leaflet heading marks its end; scored on all
+  63 saved labels: only Dupixent changes. **Needs a data refresh of
+  dupilumab** to show on the site.
+- Approved-use page: one header (facts row only), trials split into
+  "before the first approval / after", the repeated list of all uses
+  removed, approval history shows type and the FDA letter's words for each
+  change, each date linking to its letter.
+- Disease page: uses split by severity read from FDA wording
+  (moderate-to-severe / mild-to-moderate / not stated), shown one group at
+  a time, never mixed (owner, 9 Nov: they can't be compared). Home shows
+  the largest group. Generic: any disease whose approvals name two
+  severities.
+- Compare: opens on Ebglyss vs Adbry (atopic dermatitis); press releases
+  linked by headline, never quoted; endpoints show up to 5 lines.
+
+Still open from the review:
+- Atopic dermatitis is to cover all severities (owner, 9 Nov): add
+  Eucrisa, Opzelura, Zoryve, Elidel through the add-drugs pipeline; match
+  Protopic. Nemluvio shows "Severity not stated" until its full FDA
+  wording is read (data session).
+- Compare can't tie Dupixent's atopic dermatitis trials to one letter
+  (its use was approved in steps), so it shows "Not yet matched".
+- The Dupixent lane on the disease timeline still draws later trials on
+  the first approval's line.
+
 ## Open owner questions
 - Areas for Dupixent's other uses (asthma, COPD, nasal polyps, etc.).
 - Show a public "last updated" date on the site?

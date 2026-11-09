@@ -9,7 +9,7 @@ import {
   primaryCompletionToApprovalMonths,
   roleFor,
 } from '../lib/drugs.js';
-import { IndicationTimeline } from '../components/IndicationTimeline/IndicationTimeline.js';
+import { approvalWording } from '../lib/diseases.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { drugMeta, indicationMeta, trialMeta } from '../lib/pageMeta.js';
 import { aboutHref, compareHref, drugHref, navigate, indicationHref, indicationTrialHref, drugsHref, openedAsPanel } from '../lib/router.js';
@@ -18,7 +18,7 @@ import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import { drugIndex, useDrug } from '../lib/catalog.js';
 import type { Drug, Milestone, Source } from '../schema/index.js';
-import { APPROVAL_KIND, DATE_UNCLEAR } from '../lib/copy.js';
+import { approvalKindLabel, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
 import './IndicationPage.css';
 
@@ -126,13 +126,16 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
     .map((m) => {
       const a = useApprovals.get(m.submissionNumber ?? '');
       if (a && a.kind !== 'new') {
-        return { ...m, label: `${APPROVAL_KIND[a.kind]} — ${label}`, shortLabel: APPROVAL_KIND[a.kind] };
+        return { ...m, label: `${approvalKindLabel(a.kind, a.submission)} — ${label}`, shortLabel: approvalKindLabel(a.kind, a.submission) };
       }
       return m.type === 'FDA_SUPPLEMENT' && m.submissionNumber === ownSubmission
         ? { ...m, label: `FDA approval — ${label}`, shortLabel: 'Approved for this use' }
         : m;
     });
 
+  // Trials that reached primary completion after the first approval back a later label change, not the first approval.
+  const firstDate = indication.approvalDate?.value;
+  const laterTrials = firstDate ? scopedTrials.filter((t) => t.primaryCompletionDate && t.primaryCompletionDate.value > firstDate).length : 0;
   const labelUrl = newestLabelUrl(drug);
   const lagMonths = primaryCompletionToApprovalMonths(scopedTrials, indication.name, indication.approvalDate);
   const sourceGroups = groupSources(drug.sources, drug.milestones);
@@ -149,16 +152,10 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             · approved use
           </p>
           <h1>{label}</h1>
-          <p className="drug__mechanism">
-            {indication.approvalDate ? <>Approved {formatDate(indication.approvalDate)}</> : DATE_UNCLEAR}
-            {widenings > 0 && <> · widened {widenings === 1 ? 'once' : `${widenings} times`}</>} · {company}
-          </p>
           {drug.indications.length > 1 && (
             <p className="drug__other-indications">
               One of {drug.indications.length} approved uses ·{' '}
-              <a href="#approved-indications" onClick={scrollTo('approved-indications')}>
-                see all
-              </a>
+              <a href={drugHref(drug.slug)}>see all</a>
             </p>
           )}
           <p className="drug__compare">
@@ -222,17 +219,30 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
               )}
             </dd>
           </div>
+          {widenings > 0 && (
+            <div>
+              <dt>Later label changes</dt>
+              <dd>{widenings}</dd>
+            </div>
+          )}
           <div>
-            <dt>Trials behind it</dt>
-            <dd>{scopedTrials.length}</dd>
+            <dt>Trials</dt>
+            <dd>
+              {scopedTrials.length}
+              {laterTrials > 0 && (
+                <span className="drug__fact-note">
+                  {scopedTrials.length - laterTrials} before the first approval, {laterTrials} after
+                </span>
+              )}
+            </dd>
           </div>
           {lagMonths !== undefined && (
             <div>
               <dt>
-                Trials to approval
+                Primary completion to approval
                 <Info label="What this measures">
-                  From the date the last patient was assessed for the primary endpoint in the final pivotal trial
-                  (ClinicalTrials.gov) to this FDA approval.
+                  Months from the primary completion of the last pivotal trial (the date its last patient was assessed
+                  for the primary endpoint, per ClinicalTrials.gov) to the first FDA approval of this use.
                 </Info>
               </dt>
               <dd>
@@ -282,35 +292,38 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         </section>
       )}
 
-      {drug.indications.length > 1 && (
-        <div id="approved-indications">
-          <IndicationTimeline
-            indications={drug.indications}
-            currentSlug={indication.slug}
-            hrefFor={(slug) => indicationHref(drug.slug, slug)}
-          />
-        </div>
-      )}
-
       <section className="drug__milestones">
         <h2>Approval history</h2>
         <table className="drug__table">
           <thead>
             <tr>
               <th scope="col">Date</th>
-              <th scope="col">Event</th>
+              <th scope="col">Type</th>
+              <th scope="col">What the FDA approved</th>
             </tr>
           </thead>
           <tbody>
-            {scopedMilestones.map((m) => (
-              <tr
-                key={m.id}
-                className={m.type === 'FDA_APPROVAL' || m.submissionNumber === ownSubmission || useApprovals.has(m.submissionNumber ?? '') ? 'is-major' : undefined}
-              >
-                <td className="nums">{formatDate(m.date)}</td>
-                <td>{m.label}</td>
-              </tr>
-            ))}
+            {scopedMilestones.map((m) => {
+              const a = useApprovals.get(m.submissionNumber ?? '');
+              const major = m.type === 'FDA_APPROVAL' || m.submissionNumber === ownSubmission || !!a;
+              const letter = a?.provenance.sourceUrl ?? m.provenance?.sourceUrl;
+              return (
+                <tr key={m.id} className={major ? 'is-major' : undefined}>
+                  <td className="nums">
+                    {letter ? (
+                      <a href={letter} target="_blank" rel="noopener noreferrer" title="FDA letter">
+                        {formatDate(m.date)} ↗
+                      </a>
+                    ) : (
+                      formatDate(m.date)
+                    )}
+                    {m.submissionNumber && <span className="drug__table-sub">{m.submissionNumber}</span>}
+                  </td>
+                  <td>{a ? approvalKindLabel(a.kind, a.submission) : m.shortLabel ?? m.label}</td>
+                  <td className="drug__table-wording">{a ? approvalWording(drug, indication, a) : m.type === 'FDA_APPROVAL' || m.submissionNumber === ownSubmission ? indication.name : ''}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </section>
@@ -349,14 +362,6 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
       )}
     </main>
   );
-}
-
-// Smooth scrolling, and the address stays clean.
-function scrollTo(id: string) {
-  return (e: React.MouseEvent) => {
-    e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
 }
 
 interface SourceGroup {

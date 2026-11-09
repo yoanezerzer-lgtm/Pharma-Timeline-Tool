@@ -134,6 +134,18 @@ function applicationOf(drug: Drug, i: Drug['indications'][number]): string {
 }
 
 /**
+ * What one approval letter approved, in the FDA's words: the letter's own
+ * sentence cut to its core. A letter whose sentence is only the use's
+ * heading ("Melanoma") says no more than the label, and one approving several
+ * uses at once ("for the following indications: …") can't be cut to this
+ * one: both show the label's wording.
+ */
+export function approvalWording(drug: Pick<Drug, 'brandName' | 'inn'>, i: Pick<Drug['indications'][number], 'name'>, a: Pick<Approval, 'statement'>): string {
+  const names = [drug.brandName, drug.inn, drug.brandName.split(' ')[0]];
+  return a.statement.trim() === i.name.trim() || /\bfollowing indications\b/i.test(a.statement) ? i.name : letterCore(a.statement, names);
+}
+
+/**
  * A use's history from its approval letters. Letters approved the same day
  * with the same sentence (Keytruda's S-8 and S-12) are one step.
  */
@@ -141,18 +153,14 @@ function useSteps(drug: Drug, i: Drug['indications'][number]): UseStep[] {
   if (!i.approvals || i.approvals.length === 0) {
     return [{ date: i.approvalDate, submissions: i.submissionNumber ? [i.submissionNumber] : [], kind: 'new', text: i.wording?.text ?? i.name, sourceUrl: i.approvalProvenance?.sourceUrl }];
   }
-  const names = [drug.brandName, drug.inn, drug.brandName.split(' ')[0]];
   const steps: UseStep[] = [];
   for (const a of [...i.approvals].sort((x, y) => x.date.value.localeCompare(y.date.value))) {
-    const same = steps.find((s) => s.date?.value === a.date.value && s.kind === a.kind && s.text === letterCore(a.statement, names));
+    const same = steps.find((s) => s.date?.value === a.date.value && s.kind === a.kind && s.text === approvalWording(drug, i, a));
     if (same) {
       same.submissions.push(a.submission);
       continue;
     }
-    // A letter whose sentence is only the use's heading ("Melanoma") says no more than the label: show the label's wording.
-    // A letter approving several uses at once ("for the following indications: …") can't be cut to this one: show the label's wording.
-    const text =
-      a.statement.trim() === i.name.trim() || /\bfollowing indications\b/i.test(a.statement) ? i.name : letterCore(a.statement, names);
+    const text = approvalWording(drug, i, a);
     steps.push({ date: a.date, submissions: [a.submission], kind: a.kind, text, sourceUrl: a.provenance.sourceUrl });
   }
   return steps;
@@ -172,4 +180,48 @@ function laneTrials(drug: Drug, indicationName: string): LaneTrial[] {
     .filter((t) => roleFor(t, indicationName) === 'PIVOTAL' && t.startDate && t.primaryCompletionDate)
     .map((t) => ({ id: t.id, name: trialShortName(t, drug.trials), phase: t.phase, start: t.startDate, primaryCompletion: t.primaryCompletionDate }))
     .sort((a, b) => a.start!.value.localeCompare(b.start!.value));
+}
+
+/** Disease severity as the FDA's wording names it; uses of different severities aren't compared. */
+export type Severity = 'moderate-to-severe' | 'mild-to-moderate' | 'not-stated';
+
+export const SEVERITY_LABEL: Record<Severity, string> = {
+  'moderate-to-severe': 'Moderate-to-severe',
+  'mild-to-moderate': 'Mild-to-moderate',
+  'not-stated': 'Severity not stated',
+};
+
+const MILD = /\bmild(?:[\s-]+to[\s-]+|[\s-]*(?:or|and)[\s-]*)moderate\b/i;
+const SEVERE = /\bmoderate(?:[\s-]+to[\s-]+|[\s-]*(?:or|and)[\s-]*)severe\b/i;
+
+/**
+ * Which severity a use is approved for, read from the FDA's own wording: the
+ * newest letter that names one, else the label's wording. Nothing named:
+ * "not-stated", never a guess.
+ */
+export function severityOf(u: Pick<DiseaseUse, 'indication' | 'steps'>): Severity {
+  for (const text of [...u.steps.map((s) => s.text).reverse(), u.indication]) {
+    if (MILD.test(text)) return 'mild-to-moderate';
+    if (SEVERE.test(text)) return 'moderate-to-severe';
+  }
+  return 'not-stated';
+}
+
+/** A disease's uses split by severity, largest group first; one group when they all share one. */
+export function severityGroups(disease: DiseaseSummary): { severity: Severity; label: string; disease: DiseaseSummary }[] {
+  const by = new Map<Severity, DiseaseUse[]>();
+  for (const u of disease.uses) {
+    const s = severityOf(u);
+    by.set(s, [...(by.get(s) ?? []), u]);
+  }
+  const named = [...by.keys()].filter((s) => s !== 'not-stated');
+  // Only split a disease whose approvals name more than one severity.
+  if (named.length < 2) return [{ severity: named[0] ?? 'not-stated', label: '', disease }];
+  return [...by.entries()]
+    .sort(([a, x], [b, y]) => Number(a === 'not-stated') - Number(b === 'not-stated') || y.length - x.length)
+    .map(([severity, uses]) => ({
+      severity,
+      label: SEVERITY_LABEL[severity],
+      disease: { ...disease, uses, approvals: disease.approvals.filter((a) => uses.some((u) => u.drugSlug === a.drugSlug && u.indicationSlug === a.indicationSlug)) },
+    }));
 }

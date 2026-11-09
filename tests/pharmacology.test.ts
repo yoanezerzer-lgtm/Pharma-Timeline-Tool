@@ -38,3 +38,14 @@ describe('About this drug', () => {
     expect(labelDrugClass({ ...label, text: 'Awiqli is indicated as an adjunct to diet and exercise' }, 'Awiqli')).toBeUndefined();
   });
 });
+
+describe('patientSummary', () => {
+  it('keeps every use of a long answer that ends at the next heading', async () => {
+    const { patientSummary } = await import('../scripts/ingest/pharmacology.js');
+    const uses = Array.from({ length: 9 }, (_, k) => `• to treat adults with disease number ${k + 1} that is not well controlled with other medicines used before this one.`);
+    const text = `What is DRUGX? DRUGX is a prescription medicine used: ${uses.join(' ')} It is not known if DRUGX is safe in children.`;
+    const r = patientSummary({ url: 'x', submission: 'ORIG-1', text }, 'Drugx');
+    expect(r?.paragraphs).toHaveLength(10);
+    expect(r?.paragraphs[9]).toContain('disease number 9');
+  });
+});

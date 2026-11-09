@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Info } from '../components/Info/Info.js';
 import { diseaseIndex, drugIndex, useDrug, useNews } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
@@ -45,7 +46,8 @@ function SourceLink({ provenance, label }: { provenance: Provenance; label: stri
 /** Links to the company's own announcements and free news coverage, newest first. Never their text. */
 function NewsSection({ slug }: { slug: string }) {
   const links = useNews(slug);
-  if (!links) return null;
+  // No section at all rather than an empty one.
+  if (!links || links.length === 0) return null;
   return (
     <section className="news" aria-labelledby="news-head">
       <h2 id="news-head">
@@ -55,8 +57,7 @@ function NewsSection({ slug }: { slug: string }) {
           stories. Only free pages, newest first. Each link opens the original page; nothing is copied here.
         </Info>
       </h2>
-      {links.length > 0 ? (
-        <ul className="news__list">
+      <ul className="news__list">
           {links.map((l) => (
             <li key={l.url} className="news__item">
               <a href={l.url} target="_blank" rel="noopener noreferrer" className="news__title">
@@ -67,9 +68,42 @@ function NewsSection({ slug }: { slug: string }) {
               </span>
             </li>
           ))}
-        </ul>
-      ) : (
-        <p className="about__gap">No news links found yet.</p>
+      </ul>
+    </section>
+  );
+}
+
+/** Lines of the leaflet's answer shown before "Show all". */
+const SUMMARY_LINES = 3;
+
+/**
+ * The patient leaflet's own description of the medicine, word for word, as
+ * the page's opening lines, with a light link to the label it comes from.
+ */
+function PatientSummary({ summary }: { summary: NonNullable<NonNullable<Drug['pharmacology']>['patientSummary']> }) {
+  const [open, setOpen] = useState(false);
+  const all = summary.paragraphs;
+  const shown = open ? all : all.slice(0, SUMMARY_LINES);
+  const href = summary.provenance.page ? `${summary.provenance.sourceUrl}#page=${summary.provenance.page}` : summary.provenance.sourceUrl;
+  return (
+    <section className="drug__plain" aria-label="Description from the label">
+      {shown.map((p, k) => (
+        <p key={k} className={k > 0 && /^[a-z(]/.test(p) ? 'drug__plain-item' : undefined}>
+          {p}
+          {k === shown.length - 1 && href && (
+            <>
+              {' '}
+              <a className="drug__plain-source" href={href} target="_blank" rel="noopener noreferrer" title="Patient information in the FDA-approved label">
+                (source ↗)
+              </a>
+            </>
+          )}
+        </p>
+      ))}
+      {all.length > SUMMARY_LINES && (
+        <button type="button" className="disease__more" aria-expanded={open} onClick={() => setOpen(!open)}>
+          {open ? 'Show less' : `Show all ${all.length - 1} uses`}
+        </button>
       )}
     </section>
   );
@@ -97,24 +131,17 @@ function DrugView({ drug }: { drug: Drug }) {
         </div>
       </header>
 
-      {about?.patientSummary && (
-        <section className="drug__plain" aria-labelledby="plain-head">
-          <h2 id="plain-head">What it’s for</h2>
-          {about.patientSummary.paragraphs.map((p, k) => (
-            <p key={k} className={k > 0 && /^[a-z(]/.test(p) ? 'drug__plain-item' : undefined}>
-              {p}
-            </p>
-          ))}
-          <p className="drug__plain-source">
-            From the patient information in the FDA-approved label.{' '}
-            <SourceLink provenance={about.patientSummary.provenance} label="Read the label" />
-          </p>
-        </section>
-      )}
+      {about?.patientSummary && <PatientSummary summary={about.patientSummary} />}
 
       <section className="uses uses--wide" aria-labelledby="uses-head">
         <h2 id="uses-head">Approved uses</h2>
         <ul className="uselist">
+          <li className="uselist__row uselist__head" aria-hidden="true">
+            <span>Indication</span>
+            <span>Disease</span>
+            <span className="uselist__date">First approved</span>
+            <span className="uselist__trials">Trials</span>
+          </li>
           {indications.map((i) => {
             const trials = trialsForIndication(drug, i.name).length;
             const diseases = i.diseases ?? [];
@@ -147,23 +174,18 @@ function DrugView({ drug }: { drug: Drug }) {
       </section>
       <section className="about" aria-labelledby="about-head">
         <h2 id="about-head">
-          How it works
+          Clinical pharmacology
           <Info label="About this section">
-            Word for word from the FDA-approved label (sections 12.1 to 12.3). Each part links to the page of the label
-            it comes from.
+            Word for word from the FDA-approved label, sections 12.1 to 12.3; each part links to its page of the label.
+            The drug class is the FDA’s, from the label or the FDA’s list of drug classes.
           </Info>
         </h2>
         <dl className="about__class">
-          <dt>Drug class (FDA)</dt>
+          <dt>Drug class</dt>
           <dd>
             {about?.drugClass ? (
-              <>
-                {about.drugClass.name}{' '}
-                <SourceLink
-                  provenance={about.drugClass.provenance}
-                  label={about.drugClass.provenance.extractedBy === 'api' ? 'openFDA' : 'Label highlights'}
-                />
-              </>
+              // The label prints some classes in lower case ("hepcidin mimetic"); shown with a capital, words unchanged.
+              about.drugClass.name.charAt(0).toUpperCase() + about.drugClass.name.slice(1)
             ) : (
               <span className="about__gap">Not yet matched</span>
             )}
@@ -193,7 +215,7 @@ function DrugView({ drug }: { drug: Drug }) {
       <NewsSection slug={drug.slug} />
 
       <section className="drug__sources" aria-labelledby="sources-head">
-        <h2 id="sources-head">Sources and checks</h2>
+        <h2 id="sources-head">Sources</h2>
         <dl className="drug__facts">
           <div>
             <dt>FDA application</dt>

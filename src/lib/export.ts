@@ -1,7 +1,7 @@
 import type { DiseaseSummary } from './diseases.js';
 import { formatDate } from './dates.js';
 import { shortIndication } from './drugs.js';
-import { APPROVAL_KIND, DATE_UNCLEAR, NOT_YET_MATCHED } from './copy.js';
+import { approvalKindLabel, DATE_UNCLEAR, NOT_YET_MATCHED } from './copy.js';
 import { precedentRows } from './precedent.js';
 import { drugIndex } from './catalog.js';
 import { homeHref, indicationHref } from './router.js';
@@ -44,7 +44,7 @@ export async function exportExcel(d: DiseaseSummary): Promise<void> {
     ].map(bold),
     ...rows.map((r) => [
       r.date ? { value: new Date(`${r.date.value}T00:00:00Z`), type: Date, format: 'yyyy-mm-dd' } : { value: DATE_UNCLEAR },
-      { value: APPROVAL_KIND[r.kind] },
+      { value: approvalKindLabel(r.kind, r.submissions) },
       { value: r.brandName },
       { value: r.inn },
       { value: r.company },
