@@ -1,11 +1,11 @@
 import type { Route } from '../../lib/router.js';
-import { compareHref, diseasesHref, homeHref } from '../../lib/router.js';
+import { compareHref, diseasesHref, drugsHref, homeHref } from '../../lib/router.js';
 import './SiteHeader.css';
 
 type Section = 'drugs' | 'diseases' | 'compare' | undefined;
 
 function sectionOf(route: Route): Section {
-  if (route.name === 'index' || route.name === 'drug' || route.name === 'indication') return 'drugs';
+  if (route.name === 'drugs' || route.name === 'drug' || route.name === 'indication') return 'drugs';
   if (route.name === 'diseases' || route.name === 'disease') return 'diseases';
   if (route.name === 'compare') return 'compare';
   return undefined;
@@ -26,7 +26,7 @@ export function SiteHeader({ route }: { route: Route }) {
           Drug Development Timelines
         </a>
         <nav className="site__nav" aria-label="Site">
-          {link('drugs', homeHref(), 'Drugs')}
+          {link('drugs', drugsHref(), 'Drugs')}
           {link('diseases', diseasesHref(), 'Diseases')}
           {link('compare', compareHref(), 'Compare')}
         </nav>

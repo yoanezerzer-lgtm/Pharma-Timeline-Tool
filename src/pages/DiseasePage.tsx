@@ -6,7 +6,7 @@ import { areasOfDrug, type Area } from '../lib/areas.js';
 import { formatDate, toTime } from '../lib/dates.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { diseaseMeta, diseasesMeta } from '../lib/pageMeta.js';
-import { diseaseHref, homeHref, indicationHref, indicationTrialHref } from '../lib/router.js';
+import { diseaseHref, drugsHref, indicationHref, indicationTrialHref } from '../lib/router.js';
 import '../components/IndicationTimeline/IndicationTimeline.css';
 import { APPROVAL_KIND, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
@@ -31,16 +31,6 @@ export function DiseasePage({ meshId }: { meshId: string }) {
 
 function DiseaseView({ disease }: { disease: DiseaseSummary }) {
   usePageMeta(diseaseMeta(disease));
-  const times = disease.uses.flatMap((u) => [
-    ...u.steps.filter((s) => s.date).map((s) => toTime(s.date!)),
-    ...u.trials.flatMap((t) => [toTime(t.start!), toTime(t.primaryCompletion!)]),
-  ]);
-  const min = Math.min(...times) - 180 * DAY;
-  const max = Math.max(...times) + 180 * DAY;
-  const pct = (t: number) => ((t - min) / (max - min)) * 100;
-  const years: number[] = [];
-  for (let y = new Date(min).getUTCFullYear() + 1; y <= new Date(max).getUTCFullYear(); y++) years.push(y);
-  const step = Math.ceil(years.length / 8);
   const drugs = new Set(disease.uses.map((u) => u.drugSlug)).size;
   const areas = siteAreas(disease);
   const companyOf = (slug: string) => drugIndex.find((d) => d.slug === slug)?.company ?? '';
@@ -55,128 +45,14 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
           {areas.map((a) => (
             <span key={a.id}>
               {' · '}
-              <a href={`${homeHref()}?area=${a.id}`}>{a.name}</a>
+              <a href={drugsHref(a.id)}>{a.name}</a>
             </span>
           ))}
         </p>
         <AtAGlance disease={disease} />
       </header>
 
-      <section className="ind-timeline disease__lanes" aria-label="Approvals over time">
-        <div className="disease__timeline-head">
-          <h2>
-            Timeline
-            <Info label="How to read this">
-              One row per approved use. Bars are the pivotal trials, from start to primary completion; hover a bar for
-              its name and dates. A filled dot is a new approval; an open dot is a later change to it (a wider group of
-              patients, or new wording). “Mo after trials” counts the months from the last pivotal trial’s primary completion to
-              the first approval.
-            </Info>
-          </h2>
-        </div>
-        {times.length > 0 && (
-          <div className="ind-timeline__axis" aria-hidden="true">
-            <div />
-            <div className="ind-timeline__years">
-              {years.map((y, i) =>
-                i % step === 0 ? (
-                  <span key={y} style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }}>
-                    {y}
-                  </span>
-                ) : null,
-              )}
-            </div>
-            <div />
-          </div>
-        )}
-        <ol className="ind-timeline__rows">
-          {disease.uses.map((u) => {
-            const firstDate = u.steps.find((s) => s.date)?.date;
-            const months = lag(u);
-            const height = LANE_TOP + Math.max(1, u.trials.length) * LANE_PITCH;
-            return (
-              <li key={`${u.drugSlug}-${u.indicationSlug}`} className="ind-timeline__row disease__row">
-                <a className="ind-timeline__name disease__row-name" href={indicationHref(u.drugSlug, u.indicationSlug)}>
-                  <strong>{u.brandName}</strong>
-                  <span className="disease__use">{companyOf(u.drugSlug)}</span>
-                </a>
-                <span className="ind-timeline__track disease__lane" style={{ height: `${height}px` }}>
-                  {years.map((y) => (
-                    <span key={y} className="ind-timeline__gridline" style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }} />
-                  ))}
-                  {u.steps.map((s, k) =>
-                    s.date ? (
-                      <span key={`g${k}`} className="disease__guide" style={{ left: `${pct(toTime(s.date))}%` }} aria-hidden="true" />
-                    ) : null,
-                  )}
-                  {u.trials.map((t, k) => {
-                    const from = pct(toTime(t.start!));
-                    const to = pct(toTime(t.primaryCompletion!));
-                    const labelLeft = to < 72;
-                    return (
-                      <a
-                        key={t.id}
-                        className="disease__trial"
-                        href={indicationTrialHref(u.drugSlug, u.indicationSlug, t.id)}
-                        title={`${t.name}: ${formatDate(t.start!)} to ${formatDate(t.primaryCompletion!)}`}
-                        style={{ top: `${LANE_TOP + k * LANE_PITCH}px` }}
-                      >
-                        <span
-                          className={`disease__bar${t.phase === 'PHASE3' ? '' : ' disease__bar--early'}`}
-                          style={{ left: `${from}%`, width: `${Math.max(0.4, to - from)}%` }}
-                        />
-                        <span
-                          className="disease__bar-label"
-                          style={labelLeft ? { left: `calc(${to}% + 6px)` } : { right: `calc(${100 - from}% + 6px)` }}
-                        >
-                          {t.name}
-                        </span>
-                      </a>
-                    );
-                  })}
-                  {u.steps.map((s, k) =>
-                    s.date ? (
-                      <a
-                        key={k}
-                        className={`ind-timeline__dot disease__dot${s.kind === 'new' ? '' : ' disease__dot--later'}`}
-                        style={{ left: `${pct(toTime(s.date))}%` }}
-                        href={s.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title={`${STEP_LABEL[s.kind]} ${formatDate(s.date)}`}
-                        aria-label={`${u.brandName}: ${STEP_LABEL[s.kind]} ${formatDate(s.date)}, FDA letter`}
-                      />
-                    ) : null,
-                  )}
-                </span>
-                <span className="ind-timeline__date">
-                  {firstDate ? formatDate(firstDate) : DATE_UNCLEAR}
-                  {months !== undefined && <span className="disease__inn">{months} mo after trials</span>}
-                  {u.steps.length > 1 && (
-                    <span className="disease__inn">
-                      + {u.steps.length - 1} later {u.steps.length === 2 ? 'change' : 'changes'}
-                    </span>
-                  )}
-                </span>
-              </li>
-            );
-          })}
-        </ol>
-        <ul className="disease__legend" aria-label="Legend">
-          <li>
-            <span className="disease__key-bar" /> Pivotal trial, start to primary completion
-          </li>
-          <li>
-            <span className="disease__key-bar disease__key-bar--early" /> Earlier phase
-          </li>
-          <li>
-            <span className="disease__key-dot" /> {APPROVAL_KIND.new}
-          </li>
-          <li>
-            <span className="disease__key-dot disease__key-dot--later" /> Later change (widened or reworded)
-          </li>
-        </ul>
-      </section>
+      <DiseaseTimeline disease={disease} companyOf={companyOf} />
 
       <section className="precedents" aria-labelledby="precedents-head">
         <div className="disease__timeline-head">
@@ -204,6 +80,149 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
         </details>
       )}
     </main>
+  );
+}
+
+/**
+ * The disease's approvals over time: one lane per approved use, its pivotal
+ * trials as bars and each FDA letter as a dot. Also shown on the home page.
+ */
+export function DiseaseTimeline({
+  disease,
+  companyOf,
+  headingLevel = 2,
+}: {
+  disease: DiseaseSummary;
+  companyOf: (drugSlug: string) => string;
+  headingLevel?: 2 | 3;
+}) {
+  const times = disease.uses.flatMap((u) => [
+    ...u.steps.filter((s) => s.date).map((s) => toTime(s.date!)),
+    ...u.trials.flatMap((t) => [toTime(t.start!), toTime(t.primaryCompletion!)]),
+  ]);
+  const min = Math.min(...times) - 180 * DAY;
+  const max = Math.max(...times) + 180 * DAY;
+  const pct = (t: number) => ((t - min) / (max - min)) * 100;
+  const years: number[] = [];
+  for (let y = new Date(min).getUTCFullYear() + 1; y <= new Date(max).getUTCFullYear(); y++) years.push(y);
+  const step = Math.ceil(years.length / 8);
+  const Heading = headingLevel === 2 ? 'h2' : 'h3';
+  return (
+    <section className="ind-timeline disease__lanes" aria-label="Approvals over time">
+      <div className="disease__timeline-head">
+        <Heading>
+          Timeline
+          <Info label="How to read this">
+            One row per approved use. Bars are the pivotal trials, from start to primary completion; hover a bar for
+            its name and dates. A filled dot is a new approval; an open dot is a later change to it (a wider group of
+            patients, or new wording). “Mo after trials” counts the months from the last pivotal trial’s primary completion to
+            the first approval.
+          </Info>
+        </Heading>
+      </div>
+      {times.length > 0 && (
+        <div className="ind-timeline__axis" aria-hidden="true">
+          <div />
+          <div className="ind-timeline__years">
+            {years.map((y, i) =>
+              i % step === 0 ? (
+                <span key={y} style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }}>
+                  {y}
+                </span>
+              ) : null,
+            )}
+          </div>
+          <div />
+        </div>
+      )}
+      <ol className="ind-timeline__rows">
+        {disease.uses.map((u) => {
+          const firstDate = u.steps.find((s) => s.date)?.date;
+          const months = lag(u);
+          const height = LANE_TOP + Math.max(1, u.trials.length) * LANE_PITCH;
+          return (
+            <li key={`${u.drugSlug}-${u.indicationSlug}`} className="ind-timeline__row disease__row">
+              <a className="ind-timeline__name disease__row-name" href={indicationHref(u.drugSlug, u.indicationSlug)}>
+                <strong>{u.brandName}</strong>
+                <span className="disease__use">{companyOf(u.drugSlug)}</span>
+              </a>
+              <span className="ind-timeline__track disease__lane" style={{ height: `${height}px` }}>
+                {years.map((y) => (
+                  <span key={y} className="ind-timeline__gridline" style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }} />
+                ))}
+                {u.steps.map((s, k) =>
+                  s.date ? (
+                    <span key={`g${k}`} className="disease__guide" style={{ left: `${pct(toTime(s.date))}%` }} aria-hidden="true" />
+                  ) : null,
+                )}
+                {u.trials.map((t, k) => {
+                  const from = pct(toTime(t.start!));
+                  const to = pct(toTime(t.primaryCompletion!));
+                  const labelLeft = to < 72;
+                  return (
+                    <a
+                      key={t.id}
+                      className="disease__trial"
+                      href={indicationTrialHref(u.drugSlug, u.indicationSlug, t.id)}
+                      title={`${t.name}: ${formatDate(t.start!)} to ${formatDate(t.primaryCompletion!)}`}
+                      style={{ top: `${LANE_TOP + k * LANE_PITCH}px` }}
+                    >
+                      <span
+                        className={`disease__bar${t.phase === 'PHASE3' ? '' : ' disease__bar--early'}`}
+                        style={{ left: `${from}%`, width: `${Math.max(0.4, to - from)}%` }}
+                      />
+                      <span
+                        className="disease__bar-label"
+                        style={labelLeft ? { left: `calc(${to}% + 6px)` } : { right: `calc(${100 - from}% + 6px)` }}
+                      >
+                        {t.name}
+                      </span>
+                    </a>
+                  );
+                })}
+                {u.steps.map((s, k) =>
+                  s.date ? (
+                    <a
+                      key={k}
+                      className={`ind-timeline__dot disease__dot${s.kind === 'new' ? '' : ' disease__dot--later'}`}
+                      style={{ left: `${pct(toTime(s.date))}%` }}
+                      href={s.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={`${STEP_LABEL[s.kind]} ${formatDate(s.date)}`}
+                      aria-label={`${u.brandName}: ${STEP_LABEL[s.kind]} ${formatDate(s.date)}, FDA letter`}
+                    />
+                  ) : null,
+                )}
+              </span>
+              <span className="ind-timeline__date">
+                {firstDate ? formatDate(firstDate) : DATE_UNCLEAR}
+                {months !== undefined && <span className="disease__inn">{months} mo after trials</span>}
+                {u.steps.length > 1 && (
+                  <span className="disease__inn">
+                    + {u.steps.length - 1} later {u.steps.length === 2 ? 'change' : 'changes'}
+                  </span>
+                )}
+              </span>
+            </li>
+          );
+        })}
+      </ol>
+      <ul className="disease__legend" aria-label="Legend">
+        <li>
+          <span className="disease__key-bar" /> Pivotal trial, start to primary completion
+        </li>
+        <li>
+          <span className="disease__key-bar disease__key-bar--early" /> Earlier phase
+        </li>
+        <li>
+          <span className="disease__key-dot" /> {APPROVAL_KIND.new}
+        </li>
+        <li>
+          <span className="disease__key-dot disease__key-dot--later" /> Later change (widened or reworded)
+        </li>
+      </ul>
+    </section>
   );
 }
 

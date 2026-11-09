@@ -1,6 +1,6 @@
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { notFoundMeta } from '../lib/pageMeta.js';
-import { diseasesHref, homeHref } from '../lib/router.js';
+import { diseasesHref, drugsHref } from '../lib/router.js';
 import './IndicationPage.css';
 import './DrugPage.css';
 
@@ -11,7 +11,7 @@ export function NotFoundPage({ message = 'There is no page at this address.' }: 
     <main className="drug">
       <h1>Page not found</h1>
       <p>
-        {message} Start from <a href={homeHref()}>all drugs</a> or <a href={diseasesHref()}>all diseases</a>.
+        {message} Start from <a href={drugsHref()}>all drugs</a> or <a href={diseasesHref()}>all diseases</a>.
       </p>
     </main>
   );

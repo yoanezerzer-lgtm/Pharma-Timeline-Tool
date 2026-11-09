@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { diseaseIndex, drugIndex } from '../lib/catalog.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
-import { homeMeta } from '../lib/pageMeta.js';
+import { drugsMeta } from '../lib/pageMeta.js';
 import { replaceQuery, drugHref } from '../lib/router.js';
 import { shortIndication } from '../lib/drugs.js';
 import { naturalTerm } from '../lib/plainText.js';
@@ -11,7 +11,7 @@ import './DrugIndex.css';
 
 const NOT_SORTED = 'not-sorted';
 
-/** Search and area live in the URL ("/?area=oncology") so a filtered list can be shared. */
+/** Search and area live in the URL ("/drugs/?area=oncology") so a filtered list can be shared. */
 function readParams(): URLSearchParams {
   return new URLSearchParams(window.location.search);
 }
@@ -35,7 +35,7 @@ function usesLabel(d: DrugSummary): { text: string; more: number } {
 }
 
 export function DrugIndex() {
-  usePageMeta(homeMeta());
+  usePageMeta(drugsMeta());
   const [initial] = useState(readParams);
   const [query, setQuery] = useState(initial.get('q') ?? '');
   const [area, setArea] = useState(initial.get('area') ?? '');
@@ -67,8 +67,8 @@ export function DrugIndex() {
   return (
     <main className="index">
       <header className="index__head">
-        <h1>Drug Development Timelines</h1>
-        <p className="index__lede">The clinical trials behind each FDA approval.</p>
+        <h1>Drugs</h1>
+        <p className="index__lede">Every drug on the site, by therapeutic area, with the year of its first FDA approval.</p>
       </header>
 
       <div className="index__controls">

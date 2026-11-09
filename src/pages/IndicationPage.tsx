@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import {
   getIndication,
   indicationLabel,
+  shortIndication,
   trialsForIndication,
   isMeaningfulMilestone,
   primaryCompletionToApprovalMonths,
@@ -10,8 +11,8 @@ import {
 } from '../lib/drugs.js';
 import { IndicationTimeline } from '../components/IndicationTimeline/IndicationTimeline.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
-import { drugMeta, indicationMeta } from '../lib/pageMeta.js';
-import { aboutHref, compareHref, drugHref, navigate, indicationHref, indicationTrialHref, homeHref } from '../lib/router.js';
+import { drugMeta, indicationMeta, trialMeta } from '../lib/pageMeta.js';
+import { aboutHref, compareHref, drugHref, navigate, indicationHref, indicationTrialHref, drugsHref, openedAsPanel } from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
@@ -48,7 +49,6 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
 
 function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicationSlug: string; trialId: string | null }) {
   const indication = getIndication(drug, indicationSlug);
-  usePageMeta(indication ? indicationMeta(drug, indication) : drugMeta(drug));
 
   const scopedTrials = useMemo(
     () => (indication ? trialsForIndication(drug, indication.name) : []),
@@ -59,14 +59,50 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
     () => (trialId ? scopedTrials.find((t) => t.id === trialId) ?? null : null),
     [scopedTrials, trialId]
   );
+  // A trial opened from the chart shows in the side panel; its address opened any other way shows a full page.
+  const trialPage = selectedTrial && indication && !openedAsPanel() ? selectedTrial : null;
+  usePageMeta(
+    trialPage && indication
+      ? trialMeta(drug, indication, trialPage, scopedTrials)
+      : indication
+        ? indicationMeta(drug, indication)
+        : drugMeta(drug),
+  );
 
   if (!indication) {
     return (
       <main className="drug">
         <p className="drug__missing">
           {drug.brandName} has no approved use “{indicationSlug}” on this site.{' '}
-          <a href={drug.indications[0] ? indicationHref(drug.slug, drug.indications[0].slug) : homeHref()}>
+          <a href={drug.indications[0] ? indicationHref(drug.slug, drug.indications[0].slug) : drugsHref()}>
             {drug.indications[0] ? `See ${indicationLabel(drug.indications[0])} instead` : 'All drugs'}
+          </a>
+        </p>
+      </main>
+    );
+  }
+
+  if (trialPage) {
+    return (
+      <main className="drug">
+        <TrialDrawer
+          asPage
+          trial={trialPage}
+          indication={indication.name}
+          onClose={() => navigate(indicationHref(drug.slug, indication.slug))}
+          crumbs={
+            <p className="drawer__crumbs">
+              <a href={drugHref(drug.slug)}>{drug.brandName}</a>
+              <span aria-hidden="true">›</span>
+              <a href={indicationHref(drug.slug, indication.slug)} title={indication.name}>
+                {shortIndication(indication, 80)}
+              </a>
+            </p>
+          }
+        />
+        <p className="drawer__page-foot">
+          <a href={indicationHref(drug.slug, indication.slug)}>
+            See this trial on the approval’s timeline, with the other trials behind it →
           </a>
         </p>
       </main>
@@ -241,7 +277,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             selectedTrialId={trialId}
             indication={indication.name}
             majorSubmission={ownSubmission}
-            onSelectTrial={(id) => navigate(indicationTrialHref(drug.slug, indication.slug, id), { scroll: false })}
+            onSelectTrial={(id) => navigate(indicationTrialHref(drug.slug, indication.slug, id), { scroll: false, panel: true })}
           />
         </section>
       )}

@@ -352,3 +352,47 @@
   margin-left: 0.5rem;
   vertical-align: 1px;
 }
+
+/* A trial address opened directly: the same detail as a page in the content column. */
+.drawer.drawer--page {
+  position: static;
+  width: auto;
+  max-width: 760px;
+  overflow: visible;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  z-index: auto;
+}
+
+.drawer--page .drawer__title {
+  font-size: 1.75rem;
+  margin-top: 0.3rem;
+}
+
+.drawer--page .drawer__full-title {
+  font-size: 15px;
+  max-width: 62ch;
+}
+
+.drawer__crumbs {
+  margin: 0 0 0.5rem;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.drawer__crumbs a {
+  color: var(--text-2);
+}
+
+.drawer__crumbs span[aria-hidden] {
+  margin: 0 0.35rem;
+}
+
+.drawer__page-foot {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+}
