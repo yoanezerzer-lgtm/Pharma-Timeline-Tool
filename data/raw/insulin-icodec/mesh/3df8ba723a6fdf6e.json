@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0006155",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0006155",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T011751",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A subclass of DIABETES MELLITUS that is not INSULIN-responsive or dependent (NIDDM). It is characterized initially by INSULIN RESISTANCE and HYPERINSULINEMIA; and eventually by GLUCOSE INTOLERANCE; HYPERGLYCEMIA; and overt diabetes. Type II diabetes mellitus is no longer considered a disease exclusively found in adults. Patients seldom develop KETOSIS but often exhibit OBESITY."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T011747",
+      "http://id.nlm.nih.gov/mesh/T811497",
+      "http://id.nlm.nih.gov/mesh/T011746",
+      "http://id.nlm.nih.gov/mesh/T011754",
+      "http://id.nlm.nih.gov/mesh/T811496",
+      "http://id.nlm.nih.gov/mesh/T011749",
+      "http://id.nlm.nih.gov/mesh/T011753",
+      "http://id.nlm.nih.gov/mesh/T578604",
+      "http://id.nlm.nih.gov/mesh/T011756",
+      "http://id.nlm.nih.gov/mesh/T011750",
+      "http://id.nlm.nih.gov/mesh/T011752",
+      "http://id.nlm.nih.gov/mesh/T000896378",
+      "http://id.nlm.nih.gov/mesh/T001146126",
+      "http://id.nlm.nih.gov/mesh/T011755",
+      "http://id.nlm.nih.gov/mesh/T011758",
+      "http://id.nlm.nih.gov/mesh/T011748",
+      "http://id.nlm.nih.gov/mesh/T811495"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Diabetes Mellitus, Type 2"
+    },
+    "@context": {
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
