@@ -1,338 +1,180 @@
-# Handoff: where things stand (7 Nov 2026)
+# Handoff: where things stand (9 Nov 2026)
 
 Read `CLAUDE.md` first: it holds the owner's standing rules. `docs/PRD.md`
-holds the mission, the users and the goals, agreed 4 Nov. This note is
-the current state and the next steps. Update it when they change, and start
-a new session when a conversation gets long.
+holds the mission, the users and the goals (4 Nov). This note is the
+current state and the next steps. Update it when they change, and start a
+new session when a conversation gets long.
 
-## Product direction (owner, 29 Oct 2026; changed 7 Nov, see below)
-- ~~A free resource with no accounts, no paywall.~~ Replaced on 7 Nov: a
-  paid site, published on Google this week (see "Owner decisions (7 Nov)"). Favour clear explanations, sources a reader can
-  follow, and pages that teach (how a drug works, which trials led to which
-  approval) over business features.
+## Product direction
+- Professionals first (consultants, business-development and regulatory
+  analysts building precedent tables), students second. One disease area
+  made complete before any other; first area: **atopic dermatitis,
+  moderate to severe** (owner, 4 Nov; `docs/PRD.md` §2, §9).
+- **Paid site, published on Google** (owner, 7 Nov). Agreed default: home,
+  drug pages and "What it's for" stay free so Google can read them;
+  downloads, Compare and full trial detail go behind the paywall. Payments
+  need accounts and a host other than GitHub Pages: Cloudflare Pages
+  recommended. Don't build anything that rules accounts out.
 - Only quote public-domain sources (FDA, ClinicalTrials.gov, MeSH,
-  MedlinePlus). Only *link* to StatPearls: its licence bars derivatives.
+  MedlinePlus, NCI). Only *link* to StatPearls and company news.
+- **Desktop first**; phones must work (no sideways scroll). Light theme by
+  default (dark values kept for later). Look: "Ledger" (IBM Plex, deep
+  teal, square corners, striped tables; mock-up
+  https://claude.ai/artifact/6p1ctoK8mBFTXsWQSDoWVm). Name "Drug
+  Development Timelines" stays for now.
 
 ## The site (https://yoanezerzer-lgtm.github.io/Pharma-Timeline-Tool/)
-- **58 drugs** (52 + 6 atopic dermatitis drugs, 7 Nov). The 6 originals (Rinvoq, Skyrizi, Keytruda, Lexapro,
-  Foundayo, Mimrylo) plus 46 from FDA's list of new-medicine approvals.
-- **Home** (`src/pages/DrugIndex.tsx`): one search box, one area menu, a
-  plain list grouped by **therapeutic area**. The areas and each drug's
-  areas are the owner's (`data/areas/areas.json`, approved 31 Oct): change
-  them only with the owner. "Genetic diseases" is filled by rule (a disease
-  MeSH files under "Genetic Diseases, Inborn", C16.320), except diseases
-  the owner excluded in the file's `diseases` list; that list also files a
-  disease under an area for every drug approved for it (atopic dermatitis:
-  Immunology, not Genetic, 3 Nov decision, done 7 Nov). "Rare diseases" is
-  meant to come from FDA orphan status (not built yet). Drugs with no area
-  show under "Being sorted". No admin links, badges or extra views on the
-  home page; the add-drug page is still at `/ingest/`.
-- **Drug page** (`/drug/<slug>/`, `src/pages/DrugPage.tsx`): "What it's for"
-  (the label's patient leaflet answer to "What is BRAND?", word for word,
-  `patientSummary` in `scripts/ingest/pharmacology.ts`), approved uses, "How
-  it works" (label sections 12.1–12.3), then "Sources and checks" (FDA
-  application, review office, check status) at the bottom.
-- **Approved-use page** (`/drug/<slug>/indication/<slug>/`): trials timeline.
-- **Disease page** (`/disease/<MeSH id>/`, `src/pages/DiseasePage.tsx`):
-  everyday name, first and latest approval, plain-language summary, one
-  timeline row per approved use (filled dot = new approval, open dot =
-  change), what each approval covers (the approval letter's sentence
-  without its opening paperwork, `src/lib/plainText.ts`), and MeSH's
-  medical definition at the end. Excel and PowerPoint downloads.
-- **Page addresses** (7 Nov): every page has its own address, title and
-  description. The build writes one HTML file per page plus `404.html`,
-  `sitemap.xml` and `robots.txt` (`src/lib/sitePages.ts`, `pageMeta.ts`,
-  plugin in `vite.config.ts`). Old `#/drug/...` links still open the right
-  page. Set `SITE_ORIGIN` in the deploy when the site moves to its own
-  domain, so the sitemap and canonical links use it.
-- **Check status** on every drug: "Not yet checked", "Partly checked · N of
-  M" or "Checked", counted from `data/reference/` at build time.
+- **58 drugs**: the 6 originals, 46 from FDA's new-medicine list, and 6
+  atopic dermatitis drugs (Dupixent, Adbry, Cibinqo, Ebglyss, Nemluvio,
+  Protopic). Check status: 33 checked, 8 partly, 17 not yet (`npm run -s
+  status`).
+- **Layout** (#130, 8 Nov): on wide screens a side panel with search,
+  sections, and therapeutic areas with counts; the open page's area lists
+  its drugs or diseases. Narrower screens keep the top bar. Footer links to
+  **About the data** (`/about/`).
+- **Home**: search, area menu, list by therapeutic area. Areas are the
+  owner's (`data/areas/areas.json`): change only with the owner.
+- **Drug page**: "What it's for" (patient leaflet, word for word), approved
+  uses one row each, "How it works" (label 12.1–12.3), Company news links,
+  then "Sources and checks" with "Sources last read".
+- **Approved-use page**: trials timeline with a Today line. The trial
+  panel has a **source trail** (#130): approval letter → document naming
+  the trial → ClinicalTrials.gov record, each linked.
+- **Disease page**: approvals over time, now with each use's pivotal
+  trials as bars on a shared scale so drugs line up as **lanes** (#130);
+  then plain summary, what each approval covers, MeSH definition; Excel
+  and PowerPoint downloads.
+- Every page has its own address, title and description; the build writes
+  `sitemap.xml`, `robots.txt`, `404.html`. Set `SITE_ORIGIN` when the site
+  moves to its own domain.
 
-## Where facts come from (all read by code, never written by an AI)
-- **Company:** the name printed on the label ("Manufactured for: …") when
-  it is the FDA applicant; duplicates merged with `sameCompany()`
-  (`src/lib/company.ts`, `scripts/ingest/labelFacts.ts`).
-- **FDA review office:** signature of the newest approval letter (shown on
-  the drug page only).
-- **Disease of an approved use:** a MeSH term on one of its pivotal trials'
-  ClinicalTrials.gov records that the FDA wording names; most specific
-  wins; non-disease terms dropped (`scripts/ingest/diseases.ts`).
-  **Therapeutic areas** are MeSH's top-level disease categories.
-- **Plain-language disease summary** (`scripts/ingest/diseases.ts`,
-  `plainSources.ts`), first found of: a MedlinePlus health topic, a
-  MedlinePlus Genetics condition page, the NCI Dictionary of Cancer Terms.
-  A page counts only when its *title* is the disease: the MeSH term or one
-  of the names of its MeSH preferred concept. Never by a page's list of
-  other names (they include broader or different diseases: garetosmab's
-  heterotopic ossification once matched "Progressive osseous heteroplasia").
-  Raw answers are kept on the `diag/raw-text-<slug>` branches.
-- **Patient leaflet ("What it's for"):** from the newest label's Medication
-  Guide or Patient Information. 37 of 52 labels have one.
-
-## Company news links (7 Nov)
-- Drug page section "Company news": links only, headline, date and
-  publisher, newest first, up to 20 per drug. Nothing from the article is
-  copied. Files: `data/news/<slug>.json`, written only by
-  `npm run news` (`scripts/news/`); rules in `src/lib/news.ts`.
-- Allowed sites only: PR Newswire, Business Wire, GlobeNewswire, Fierce
-  Pharma, Fierce Biotech (same free publisher as Fierce Pharma; my call),
-  and the company's own site (its web name is the company's first
-  distinctive word, e.g. abbvie.com, lilly.com, or the whole name run
-  together, novonordisk.com). `npm run validate` fails on any other site.
-- Where addresses come from: Bing News search per drug (each name alone,
-  and both names limited to the allowed sites), plus the Fierce front-page
-  feeds. GlobeNewswire's own feed refuses bots (403) and Business Wire
-  pages time out, so those come only rarely. A feed only suggests: each
-  page is opened, and kept only if the page gives its own date and
-  headline, and its headline or one-line summary names the brand or the
-  ingredient. What was read is on the `diag/news` branch.
-- Each run stops starting new drugs after 40 minutes and publishes what
-  it found; drugs never searched, then searched longest ago, go first, so
-  all of them are covered over two or three runs. A site that doesn't
-  answer in 15 seconds is skipped for the rest of the run. (The first full
-  runs on 7 Nov passed 75 minutes without finishing and published nothing.)
-- Trial on 5 drugs (7 Nov): 11 links, all about the drug, none for
-  Keytruda yet. Borderline case: a Lilly release whose summary calls Lilly
-  "the maker of Foundayo" counts for Foundayo.
-- Known gaps: companies whose web name differs from their name (GSK as
-  "GlaxoSmithKline", Janssen at jnj.com) get no company-site links, only
-  newswires and Fierce. Feeds only show recent news, so older releases
-  appear only if a newswire search still lists them; the list grows weekly.
+## Where facts come from (read by code, never written by an AI)
+- Company: label's "Manufactured for" when it is the applicant
+  (`src/lib/company.ts`). Review office: newest approval letter.
+- Disease of a use: a MeSH term on a pivotal trial's ClinicalTrials.gov
+  record that the FDA wording names (`scripts/ingest/diseases.ts`).
+  Therapeutic areas are MeSH top-level categories.
+- Plain summary: MedlinePlus, MedlinePlus Genetics, or NCI, matched only
+  by page *title* (`plainSources.ts`).
+- Approval dating (#129, 8 Nov): a use the original label lacks is no
+  longer dated to the original approval; the letter that first lists a use
+  reads "Approved", not "Widened"; "provides for the treatment of" counts
+  as widened only when it names a wider group; old one-sentence labels
+  give their indication.
+- Company news: links only (headline, date, publisher), allowed sites only
+  (PR Newswire, Business Wire, GlobeNewswire, Fierce, company site);
+  `npm run validate` enforces it. Rules in `src/lib/news.ts`, job in
+  `scripts/news/`, raw reads on `diag/news`.
+- Raw source text for any drug: `diag/raw-text-<slug>` branches.
 
 ## Known gaps (shown as blanks, not guessed)
-- 59 of 90 approved uses have a disease. The others: recent trials not yet
-  MeSH-tagged on ClinicalTrials.gov (Icotyde, Orzeyful), uses with no
-  pivotal trial (Bysanti, Lexapro, imaging agents), or FDA wording that
-  differs from MeSH (8 Keytruda uses, e.g. "Classical Hodgkin Lymphoma").
-- About 45 of 51 diseases have a plain summary (peritoneal cancer and
-  heterotopic ossification have none yet).
-- Drug class missing for Awiqli and Xocova; Awiqli's label text is redacted.
-- No review office for Mimrylo, Tauklarify, Veppanu; no label company for 5.
+`npm run -s status` lists them all. Main ones:
+- 22 drugs have an approved use with no disease matched (recent trials
+  not yet MeSH-tagged, uses with no pivotal trial, or FDA wording that
+  differs from MeSH, e.g. 8 Keytruda uses).
+- 18 facts **stuck** (unconfirmed 3 nights; need a person), listed by
+  status. Includes Adquey's 3 trials (mild-to-moderate atopic dermatitis).
+- Missing label company for 8, drug class for 4, review office for 3.
 - Held back (no label in openFDA yet): zilurgisertib, iberdomide,
   daraxonrasib, pivekimab-sunirine.
-- `npm run -s status` lists all of these, plus facts stuck in checking.
+- News: companies whose web name differs (GSK, Janssen) get no
+  company-site links.
+
+### Atopic dermatitis area (plan step 4): open gaps
+- **Nemluvio** atopic dermatitis has no date: approved under a sibling
+  application, BLA 761391 (13 Dec 2024), merged into BLA 761390's label.
+  Needs the pipeline to read a sibling application named in the letter.
+- **Protopic** has no disease link (trials too old for MeSH terms), so it
+  is missing from the atopic dermatitis disease page. Fixed by the
+  FDA-wording-to-MeSH step below. Also no company, class or 12.1–12.3.
+- **Dupixent** and Nemluvio use names are the label's short headings, not
+  the FDA's full wording; Dupixent has a use with no disease and its
+  disease has no MedlinePlus summary.
+- Dupixent's checks (8–9 Nov): AD trials confirmed; 12 other-use trials
+  (asthma, COPD, CRSwNP, CSU, prurigo, AFRS) were rejected for want of a
+  second source and are retrying; SINUS-52 and DRI12544 confirmed 9 Nov.
+- Left out on purpose as mild-to-moderate or not specific: Opzelura,
+  Eucrisa, Zoryve, Elidel, Zonalon, corticosteroids.
+- Nightly checks #131 and #132 reported **no disagreements**. (The
+  SELECT-PsA 1 "contradicted" flag mentioned in the 9 Nov brief is not in
+  either report or in `data/reference/`; Rinvoq's PsA-I trial is confirmed.)
 
 ## Agents and automatic jobs
-- **Nightly fact checker** (scheduled task "Nightly data verification",
-  00:36 New York): starts a Sonnet session that follows
-  `docs/agents/nightly-verify.md`. It takes unchecked drugs first; a fact
-  unconfirmed 3 nights is "stuck" and waits for the owner.
-- **Weekly refresh** (`.github/workflows/refresh-all.yml`, Saturdays 21:13
-  New York, no AI): re-reads every drug. Routine changes publish themselves
-  after the full checks. Others (approved uses, trial roles, new trials)
-  wait on `data/refresh-<date>`: open a PR from it, check, merge. Run it by
-  hand after a pipeline change, with `only` to try a few drugs first.
-- **Site check** (`scripts/sitecheck.ts`, no AI): every page in a browser,
-  on each pull request and after each deploy.
-- **News links** (`.github/workflows/news.yml`, Sundays 09:47 New York,
-  no AI): finds new company and free news pages per drug and publishes
-  them after the full checks. Run it by hand with `only` for a few drugs.
-- **Weekly status** (`.github/workflows/weekly-status.yml`, Mondays, no
-  AI): comments on the "Weekly status" issue; GitHub emails the owner.
+- **Nightly fact checker** (scheduled task, 00:36 New York, Sonnet,
+  `docs/agents/nightly-verify.md`): unchecked drugs first; opens and
+  merges a `nightly/<date>-confirmations` PR. Move to weekly once fewer
+  than 5 drugs are unchecked (17 now).
+- **Weekly refresh** (`refresh-all.yml`, Saturdays, no AI): re-reads every
+  drug; routine changes publish themselves, others wait on
+  `data/refresh-<date>`. The next one re-reads all drugs with the 8 Nov
+  dating rules (some "Widened" become "Approved", e.g. Keytruda): review it.
+- **News links** (`news.yml`, Sundays, no AI, 40-minute budget).
+- **Site check** (`scripts/sitecheck.ts`): every page in a browser on each
+  PR and deploy. **Weekly status** issue every Monday (GitHub emails owner).
 
 ## How to work: token and process rules (audit, 3 Nov 2026)
+Every message re-reads the whole chat, so long chats get expensive; so does
+waiting on CI in a chat and re-running all drugs to test a guess.
+1. **One chat per piece of work**; a fresh chat past ~30 turns. End each
+   chat by updating this note. The next chat reads `CLAUDE.md` and this note.
+2. **Don't wait inside a chat.** Push, open the PR, turn on auto-merge. No
+   sleeps or polling.
+3. **Batch.** One PR per step (code, tests, docs together).
+4. **Look before parsing.** Capture a real response on
+   `diag/raw-text-<slug>` before writing a parser for an outside service.
+5. **Try a few, then all.** `Refresh all drugs` with `only` = 2–5 drugs and
+   `publish: false` first.
+6. **Cheap model for routine work** (nightly checker, data runs, small
+   fixes); the stronger one for design.
+7. **Read less.** `npm run -s status`, `git log --oneline`, `grep`/`sed -n`.
+   No whole big files or drug records; no screenshots of unchanged pages.
+8. **No AI where code will do.**
 
-**Where the owner's tokens went.** Every message in a chat re-reads the
-whole chat, so a chat gets more expensive with every turn. The 29 Oct chat
-ran for five days and over 90 pull requests; late in it, each short reply
-cost as much as an hour of fresh work. Waiting on CI inside a chat costs
-tokens too, and so does re-running all 52 drugs to try out a guess.
+## Owner decisions on record
+- 3 Nov: short use names may be cut automatically from FDA wording;
+  atopic dermatitis under Immunology (done); auto-merge on.
+- 4 Nov: PRD agreed; a free, cookie-free visitor counter is wanted.
+- 7 Nov: paywall and hosting as above; news is link-only, no paywalled
+  sites (not STAT); explanations go behind (i) icons; Pasatru and Zycubo
+  under Rare diseases by hand until the orphan-status rule exists.
+- Not possible: FDA Drug Trials Snapshots (fda.gov blocks bots).
 
-Rules for every session:
-1. **One chat per piece of work.** Start a fresh chat for each new step,
-   and when a chat passes about 30 turns. End each chat by updating this
-   note. The next chat reads `CLAUDE.md` and this note, nothing else.
-2. **Don't wait inside a chat.** Push, open the PR and turn on its
-   auto-merge (allowed in the repo since 7 Nov): it merges itself once
-   checks pass. No sleeps or polling.
-3. **Batch.** One PR per step with code, tests and docs together; one data
-   PR per refresh. Not a PR per fix.
-4. **Look before parsing.** For any outside service (openFDA, ClinicalTrials.gov,
-   MeSH, MedlinePlus, NCI), first capture a real response on the
-   `diag/raw-text-<slug>` branch (one-drug run), then write the parser
-   against it. Guessing the format cost three full re-runs for MedlinePlus.
-5. **Try a few, then all.** Run `Refresh all drugs` with `only` = 2–5 drugs
-   and `publish: false` before running all 52.
-6. **Cheap model for routine work.** Sonnet for the nightly checker, data
-   runs and small fixes. The stronger model only for design work.
-7. **Read less.** Use `npm run -s status`, `git log --oneline`, and
-   `grep`/`sed -n` on the needed lines. Don't read whole big files or whole
-   drug records, and don't screenshot pages that didn't change.
-8. **No AI where code will do.** Refresh, site check and status report are
-   plain GitHub jobs and cost no tokens. Keep new automation that way.
+## Done (one line each)
+- 7 Nov: page wording (#116), design and layout (#117), About page,
+  Ledger look (#125), company news (#126, #128), real page addresses and
+  sitemap, PDF split words fixed (#109, #111), Dupixent, Adbry, Cibinqo,
+  Ebglyss (#127).
+- 8 Nov: dating rules, Nemluvio and Protopic, Dupixent's full history
+  (#129); side panel, disease lanes, source trail (#130); nightly checks
+  (#131).
+- 9 Nov: nightly checks (#132).
+- Owner plan steps 1 (copy), 2 (design), 3 (news) and 5 (look) done;
+  step 4 (new drugs, atopic dermatitis) has the gaps above.
 
-Scheduled tasks on the owner's account (3 Nov) and what they cost:
-- *Nightly data verification* (Sonnet, every night, ~5 minutes): needed
-  until the catch-up is done (30 of 52 checked, 18 facts stuck). It also
-  adds one chat per night to the list. **Plan:** once fewer than 5 drugs are
-  unchecked, move it to once a week.
-- *Pharma Timeline weekly digest* (Sonnet, Mondays): **runs but can't send**,
-  because its Gmail connector was never attached. **Plan:** replace it with a
-  free GitHub job that posts the status report to a pinned GitHub issue each
-  week; GitHub emails the owner the update. No AI, no connector.
-- Not this project, but the biggest regular users on the account: *Morning
-  brief* runs on the stronger model every weekday, and *Job scout* runs
-  twice a day. Moving the brief to Sonnet and the scout to once a day would
-  save the most. Only the owner can decide that.
+## Next steps (in order, one chat each)
+The owner wants a strong focus on **design** (9 Nov): every data chat
+should leave the pages it touches looking right, and design gets its own
+chats.
+1. **Design pass on the atopic dermatitis pages** (the showcase area):
+   disease page lanes, drug pages, the side panel and source trail, desktop
+   first; check each page in a browser before and after.
+2. **Finish atopic dermatitis data** (step 4): read sibling applications so
+   Nemluvio's use gets its date; add the FDA-wording-to-MeSH step (from
+   MeSH entry terms, e.g. "Hodgkin Lymphoma" → "Hodgkin Disease") so
+   Protopic joins the disease page and Keytruda's 8 uses get diseases;
+   use the FDA's full wording for Dupixent and Nemluvio uses.
+3. **Get ready to publish**: visitor counter (cookie-free), then Cloudflare
+   Pages and domain (owner), Search Console (owner), then the paywall.
+4. **Precedent table** (PRD goal 3): a table an analyst can build in ten
+   minutes for the area.
+- Maintenance, any chat: move workflow actions off deprecated Node 20.
+- Later: "Rare diseases" from FDA orphan status; more areas once atopic
+  dermatitis is complete.
 
-## Owner decisions (3 Nov 2026)
-- Accounts: the site stays free with no sign-up, but keep the door open
-  for accounts later (don't build anything that rules them out).
-- Short names for uses: may be cut automatically from the FDA's own
-  wording.
-- Atopic dermatitis belongs under immunology, not "Genetic diseases"
-  (done 7 Nov: `diseases` in `data/areas/areas.json`).
-- Morning brief moved to Sonnet (done). Job scout is not this project:
-  leave it out of this project's to-do lists.
-- Auto-merge: on (owner, 7 Nov).
-- Old branches: the owner said an agent may delete them, but the delete
-  was blocked in-session. 30 branches whose PR is merged are safe to
-  delete; keep `diag/raw-text-*`, `claude/prd` and unmerged `data/*`.
-- Weekly status: done. A free workflow posts to the "Weekly status" issue
-  every Monday (`.github/workflows/weekly-status.yml`).
-
-## Owner decisions (7 Nov 2026)
-- **Paywall.** The site goes behind a paywall and is published (on Google)
-  this week; the owner's cousin advises on search and pricing. Agreed
-  default until the owner says otherwise: home, drug pages and "What it's
-  for" stay free so Google can read them; deeper parts (downloads,
-  Compare, full trial detail) go behind the paywall. Payments need
-  accounts and a host other than GitHub Pages.
-- **Hosting:** Cloudflare Pages recommended (free, own domain, can add a
-  login and Stripe later). Domain to buy: owner's call, not done.
-- **News links:** link only, never copy, and only pages not behind a
-  paywall: company websites and press releases, newswires, Fierce Pharma.
-  (Not STAT: mostly paywalled.)
-- **Copy on the site:** text explaining what a section is goes behind an
-  (i) icon; text meant for the owner is removed (done, #110).
-
-## Done 7 Nov
-- Words split in PDF text ("JA Ks", "fun ction") fixed at the source:
-  text pieces are joined the way they sit on the page (#109). All 52
-  drugs re-read (#111). Confirmed facts filed under the old, split wording
-  still match: wording is compared with spaces ignored (`src/lib/wording.ts`).
-  The cleaner text found two new pivotal links for the checker to confirm:
-  Rinvoq NCT03653026 and Skyrizi NCT03398135 (ulcerative colitis).
-- (i) icons for section explanations, owner-only text removed (#110).
-- Page wording tidied on every page (step 1, #116): one wording for gaps
-  ("Not yet matched", "Date unclear"), approval kinds (Approved, Widened,
-  Wording changed, Converted to traditional approval) and trial roles
-  ("Supportive"); shared words in `src/lib/copy.ts`. "Approved use"
-  everywhere. A real "Page not found" page. Pasatru and Zycubo filed under
-  Rare diseases by hand (owner, 7 Nov; `decisions` in
-  `data/areas/areas.json`) until the orphan-status rule exists.
-- Design tidied on every page (step 2): one bar at the top of every page
-  (site name; Drugs, Diseases, Compare, with the current one underlined),
-  one page width and side margin (`--page-width`, `--gutter` in
-  `src/styles.css`). Drug pages list approved uses as one row each (use,
-  disease, date, trials). The diseases list runs in two columns on wide
-  screens. On phones the trials timeline gives the bars more room. "All
-  drugs" back buttons removed (the top bar replaces them); the approved-use
-  page keeps its link back to the drug.
-- Design follow-up (#design-2): a plain footer on every public page links
-  to a new **About the data** page (`/about/`, in the sitemap): the sources,
-  how facts are checked, what Checked / Partly checked / Not yet checked
-  mean, gaps left blank. Disease pages now open on "Approvals over time"
-  (timeline and downloads) right under the title; "In plain words" follows,
-  cut to its first paragraph with "Read more". The trials timeline has a
-  **Today** line, and dates after it are lightly shaded as planned.
-- Ledger look applied: colours and fonts in `src/styles.css` (`--font-text`,
-  `--font-data`, `--radius`, `--row-stripe`); IBM Plex served with the site
-  (`@fontsource`, no outside font service). Light only; dark values sit
-  under `[data-theme='dark']` for a later switch. Drug pages show "Sources
-  last read"; the footer says sources are updated every week.
-- **Desktop first** (owner, 7 Nov): design for desktop web; phones must
-  work (no sideways scroll) but come second.
-- Maintenance for any later chat: the workflows' GitHub actions warn
-  "Node.js 20 is deprecated"; move them to their Node 24 versions.
-
-## Next steps (owner's plan, 7 Nov; in order, one chat each)
-Done 7 Nov: Pages switched back on and auto-merge turned on (owner); real
-page addresses and sitemap; atopic dermatitis under immunology (#114).
-Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
-
-1. Done (#116). **Page copy.** Clean up the site's own wording on every page type
-   (headings, (i) explanations, empty states, buttons). FDA and MeSH text
-   stays word for word; plain-language labels for data are the owner's.
-2. Done (#117, follow-up design-2). **Design.** Tidy the look and layout of every page, desktop web first,
-   then phone (owner, 7 Nov); check each page in a browser before and after.
-3. Done 7 Nov: **Company news** on each drug page (see "Company news
-   links" below).
-4. **New drugs.** In progress (7 Nov). Added through the `Ingest drug data`
-   workflow (the `Add new drugs` list only finds approvals since a date, so
-   older drugs go in one by one by application number): Dupixent (BLA 761055),
-   Adbry (BLA 761180), Cibinqo (NDA 213871), Ebglyss (BLA 761306); one data PR.
-   Found from openFDA labels with "moderate to severe" atopic dermatitis;
-   left out as mild to moderate: Opzelura, Eucrisa, Zoryve, Elidel; Zonalon
-   (itch only); corticosteroids (atopic dermatitis is one item in a long
-   allergic list). Added in the second PR (7 Nov, after the owner's go-ahead
-   to fix the dating rules): Nemluvio (BLA 761390) and Protopic (NDA 050777).
-   Rule fixes: a use the original label lacks is no longer dated to the
-   original approval; Dupixent's full history is now read (letters saying
-   "nasal polyposis", "a new patient population", "provides for the treatment
-   of ... aged 1 year and older"); the letter that first lists a use reads
-   "Approved", not "Widened"; a pre-numbered label with one indication
-   sentence gives its indication.
-   **Gaps left on purpose:**
-   - Nemluvio atopic dermatitis has no date: it was approved under a second
-     application, BLA 761391 (13 Dec 2024, Drugs@FDA), merged into this
-     label in June 2025. Dating it needs the pipeline to read a sibling
-     application named in the letter ("approval of BLAs 761390 and 761391").
-   - Protopic has no disease link, so it is on its drug page but not on the
-     atopic dermatitis disease page: its trials are too old to carry MeSH
-     terms. The FDA-wording-to-MeSH step (see "Ideas not yet started")
-     would fix this.
-   - Dupixent and Nemluvio use names are the label's short headings, not the
-     FDA's full wording. The next weekly refresh re-reads the other drugs with
-     the fixed rules (some "Widened" labels become "Approved", e.g. Keytruda).
-   Owner questions: in the 7 Nov reply (areas for Dupixent's other uses).
-5. Done (Ledger PR). **Visual direction.** Owner picked **A, Ledger** (7 Nov; may revisit):
-   IBM Plex Sans, IBM Plex Mono for dates and numbers, deep teal accent,
-   square corners, striped tables. Mock-up and colour values (light and
-   dark): https://claude.ai/artifact/6p1ctoK8mBFTXsWQSDoWVm. A fresh chat
-   applies it to `src/styles.css` and the page styles, desktop first.
-   **Light by default** (owner, 7 Nov): the site no longer follows the
-   device's dark setting; keep the dark values for a later switch.
-   The name "Drug Development Timelines" stays for now (owner, 7 Nov).
-   In the same chat (owner, 7 Nov): each drug page shows "Sources last
-   read: <date>" near "Sources and checks", from the record's
-   `lastIngestedAt` (set by the weekly refresh), and the footer says
-   "Sources are updated every week."
-   Open owner question: show a public "last updated" date on the site?
-6. Later this week: submit `sitemap.xml` to Google Search Console (owner),
-   then Cloudflare Pages and the owner's domain, then the paywall.
-
-## Owner decisions (4 Nov 2026)
-- Mission, users and eight goals agreed: see `docs/PRD.md`.
-- Students come first; analyst features (milestones, Compare) wait.
-- Polish the 52 drugs first; no new drugs until PRD goals 1–3 are done.
-- A free, cookie-free visitor counter is wanted (page counts only).
-- Treadle is the project manager: one board goal per PRD goal, set up as
-  in `docs/agents/treadle.md`. The old October goal on the board is Done.
-- **Revised the same day after an outside review (office hours):
-  professionals come first** (consultants, business-development and
-  regulatory analysts building precedent tables), students second. One
-  disease area made complete before any other; first area: atopic
-  dermatitis, moderate to severe (owner confirmed). The visitor
-  counter and real page addresses come first. This replaces "students come
-  first" and "no new drugs until goals 1–3" above. See `docs/PRD.md` §2, §9.
-
-## PRD goals (4 Nov)
-Work the PRD goals in order (§9). Active now: 1 (see who comes: counter
-and real page addresses), 2 (one area complete), 3 (precedent table in ten
-minutes), plus the standing goal (owner only approves). The Treadle board
-goals still follow the old numbering and need renaming to match.
-Earlier first tasks are listed in `docs/agents/treadle.md`.
-
-Not possible: the FDA's Drug Trials Snapshots. fda.gov doesn't serve those
-pages to the pipeline, and working around its bot protection is not allowed.
-
-Owner decisions on record: audience is professionals first, students
-second, one area at a time (4 Nov, revised); company material is linked, never copied; atopic dermatitis moves
-to immunology (3 Nov, PRD goal 3).
-
-## Ideas not yet started
-- More drugs once most are "Checked" (the `Add new drugs` workflow).
-- Fill disease gaps: an FDA-wording-to-MeSH synonym step from MeSH's own
-  entry terms (e.g. "Hodgkin Lymphoma" is an entry term of "Hodgkin Disease").
-- Optional cleanup: ~110 old branches on GitHub (owner, branches page).
+## Open owner questions
+- Areas for Dupixent's other uses (asthma, COPD, nasal polyps, etc.).
+- Show a public "last updated" date on the site?
+- Domain name; Cloudflare account; Google Search Console; pricing.
+- 18 stuck facts need a person to look (list in `npm run -s status`).
+- Optional: delete ~110 old branches (keep `diag/raw-text-*`, `claude/prd`,
+  unmerged `data/*`).
