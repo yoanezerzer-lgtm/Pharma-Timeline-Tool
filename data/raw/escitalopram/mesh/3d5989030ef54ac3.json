@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0006031",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0006031",
+    "narrowerConcept": "http://id.nlm.nih.gov/mesh/M0536747",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T011491",
+    "relatedConcept": [
+      "http://id.nlm.nih.gov/mesh/M0522397",
+      "http://id.nlm.nih.gov/mesh/M0522396"
+    ],
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Disorder in which five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure. Symptoms include: depressed mood most of the day, nearly every day; markedly diminished interest or pleasure in activities most of the day, nearly every day; significant weight loss when not dieting or weight gain; Insomnia or hypersomnia nearly every day; psychomotor agitation or retardation nearly every day; fatigue or loss of energy nearly every day; feelings of worthlessness or excessive or inappropriate guilt; diminished ability to think or concentrate, or indecisiveness, nearly every day; or recurrent thoughts of death, recurrent suicidal ideation without a specific plan, or a suicide attempt. (DSM-5)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T001150091",
+      "http://id.nlm.nih.gov/mesh/T001146570",
+      "http://id.nlm.nih.gov/mesh/T001144216"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Major Depressive Disorder"
+    },
+    "@context": {
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
