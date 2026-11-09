@@ -1,7 +1,11 @@
 .about,
 .uses {
   margin-top: 2rem;
-  max-width: 78ch;
+}
+
+/* Label text runs the full width of the page. */
+.about {
+  max-width: none;
 }
 
 /* A table of rows reads better at the page's full width. */
@@ -12,9 +16,10 @@
 .about__class {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 0.25rem 0.75rem;
   margin: 0 0 1rem;
-  font-size: 14px;
+  font-size: 14.5px;
 }
 
 .about__class dt {
@@ -132,6 +137,9 @@
 }
 
 @media (max-width: 700px) {
+  .uselist__head {
+    display: none !important;
+  }
   .uselist__row {
     grid-template-columns: auto 1fr;
     column-gap: 0.35rem;
@@ -156,8 +164,8 @@
 }
 
 .drug__plain {
-  margin: 1.5rem 0 0.5rem;
-  max-width: 72ch;
+  margin: 1.25rem 0 0.5rem;
+  max-width: 110ch;
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-1);
@@ -181,8 +189,30 @@
 }
 
 .drug__plain-source {
-  font-size: 12.5px;
+  font-size: 13px;
   color: var(--text-3);
+  white-space: nowrap;
+}
+
+.uselist__row.uselist__head {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  font-family: inherit;
+}
+
+.uselist__row.uselist__head:hover {
+  background: none;
+}
+
+.uselist__head .uselist__date,
+.uselist__head .uselist__trials {
+  font-family: inherit;
+  font-size: 11px;
 }
 
 .drug__sources {

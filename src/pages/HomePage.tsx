@@ -5,6 +5,7 @@ import { homeMeta } from '../lib/pageMeta.js';
 import { formatDate } from '../lib/dates.js';
 import { shortIndication } from '../lib/drugs.js';
 import { precedentRows } from '../lib/precedent.js';
+import { severityGroups } from '../lib/diseases.js';
 import {
   aboutHref,
   diseaseHref,
@@ -112,7 +113,10 @@ export function HomePage() {
 }
 
 /** The complete area: its timeline, a few rows of its approvals table, and one example of each kind of page. */
-function Featured({ disease }: { disease: (typeof diseaseIndex)[number] }) {
+function Featured({ disease: whole }: { disease: (typeof diseaseIndex)[number] }) {
+  // Approvals for different severities aren't compared: the home page shows the largest group.
+  const groups = severityGroups(whole);
+  const disease = groups[0].disease;
   const rows = precedentRows(disease, companyOf);
   const preview = rows
     .filter((r) => r.kind === 'new' && r.date)
@@ -129,9 +133,21 @@ function Featured({ disease }: { disease: (typeof diseaseIndex)[number] }) {
           <p className="home__eyebrow">Featured area</p>
           <h2 id="home-featured">
             <a href={diseaseHref(disease.meshId)}>{disease.name}</a>
+            {groups[0].label && <span className="home__severity"> · {groups[0].label}</span>}
           </h2>
           <p className="home__section-sub">
             {drugs} drugs · {rows.length} FDA approval letters, each with the trials behind it.
+            {groups.length > 1 && (
+              <>
+                {' '}
+                {groups.slice(1).map((g, k) => (
+                  <span key={g.severity}>
+                    {k > 0 && ' · '}
+                    <a href={`${diseaseHref(disease.meshId)}?severity=${g.severity}`}>{g.label} approvals →</a>
+                  </span>
+                ))}
+              </>
+            )}
           </p>
         </div>
         <DiseaseTimeline disease={disease} companyOf={companyOf} headingLevel={3} />

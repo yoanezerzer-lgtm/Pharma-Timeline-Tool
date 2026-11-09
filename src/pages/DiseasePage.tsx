@@ -1,14 +1,14 @@
 import { Info } from '../components/Info/Info.js';
 import { useState } from 'react';
-import type { DiseaseSummary, UseStep } from '../lib/diseases.js';
+import { severityGroups, type DiseaseSummary, type UseStep } from '../lib/diseases.js';
 import { diseaseIndex, drugIndex } from '../lib/catalog.js';
 import { areasOfDrug, type Area } from '../lib/areas.js';
 import { formatDate, toTime } from '../lib/dates.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { diseaseMeta, diseasesMeta } from '../lib/pageMeta.js';
-import { diseaseHref, drugsHref, indicationHref, indicationTrialHref } from '../lib/router.js';
+import { diseaseHref, drugsHref, indicationHref, indicationTrialHref, replaceQuery } from '../lib/router.js';
 import '../components/IndicationTimeline/IndicationTimeline.css';
-import { APPROVAL_KIND, DATE_UNCLEAR } from '../lib/copy.js';
+import { APPROVAL_KIND, approvalKindLabel, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
 import { PrecedentTable } from '../components/PrecedentTable/PrecedentTable.js';
 import { precedentRows } from '../lib/precedent.js';
@@ -21,7 +21,7 @@ const DAY = 86_400_000;
 const LANE_TOP = 18;
 const LANE_PITCH = 16;
 
-const STEP_LABEL: Record<UseStep['kind'], string> = APPROVAL_KIND;
+const stepLabel = (s: UseStep) => approvalKindLabel(s.kind, s.submissions);
 
 export function DiseasePage({ meshId }: { meshId: string }) {
   const disease = diseaseIndex.find((d) => d.meshId === meshId);
@@ -35,6 +35,18 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
   const areas = siteAreas(disease);
   const companyOf = (slug: string) => drugIndex.find((d) => d.slug === slug)?.company ?? '';
   const rows = precedentRows(disease, companyOf);
+  const groups = severityGroups(disease);
+  const [pick, setPick] = useState(() => {
+    const asked = new URLSearchParams(window.location.search).get('severity');
+    return Math.max(0, groups.findIndex((g) => g.severity === asked));
+  });
+  const group = groups[Math.min(pick, groups.length - 1)];
+  const shown = group.disease;
+  const shownRows = precedentRows(shown, companyOf);
+  const choose = (k: number) => {
+    setPick(k);
+    replaceQuery(k === 0 ? {} : { severity: groups[k].severity });
+  };
 
   return (
     <main className="drug">
@@ -52,7 +64,23 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
         <AtAGlance disease={disease} />
       </header>
 
-      <DiseaseTimeline disease={disease} companyOf={companyOf} />
+      {groups.length > 1 && (
+        <div className="disease__severity">
+          <div className="precedent__filter" role="group" aria-label="Severity">
+            {groups.map((g, k) => (
+              <button key={g.severity} type="button" aria-pressed={k === pick} onClick={() => choose(k)}>
+                {g.label} · {plural(new Set(g.disease.uses.map((u) => u.drugSlug)).size, 'drug')}
+              </button>
+            ))}
+          </div>
+          <p className="disease__severity-note">
+            The FDA approvals name different severities. Each is shown on its own: their trials enrolled different
+            patients, so they can’t be compared side by side.
+          </p>
+        </div>
+      )}
+
+      <DiseaseTimeline disease={shown} companyOf={companyOf} />
 
       <section className="precedents" aria-labelledby="precedents-head">
         <div className="disease__timeline-head">
@@ -65,9 +93,9 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
               completion to the approval. Each date links to the FDA letter.
             </Info>
           </h2>
-          <ExportButtons disease={disease} />
+          <ExportButtons disease={shown} />
         </div>
-        <PrecedentTable rows={rows} />
+        <PrecedentTable key={group.severity} rows={shownRows} />
       </section>
 
       {/* Professionals come for the approvals; the plain-words summary follows them. */}
@@ -189,8 +217,8 @@ export function DiseaseTimeline({
                       href={s.sourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title={`${STEP_LABEL[s.kind]} ${formatDate(s.date)}`}
-                      aria-label={`${u.brandName}: ${STEP_LABEL[s.kind]} ${formatDate(s.date)}, FDA letter`}
+                      title={`${stepLabel(s)} ${formatDate(s.date)}`}
+                      aria-label={`${u.brandName}: ${stepLabel(s)} ${formatDate(s.date)}, FDA letter`}
                     />
                   ) : null,
                 )}
@@ -216,10 +244,10 @@ export function DiseaseTimeline({
           <span className="disease__key-bar disease__key-bar--early" /> Earlier phase
         </li>
         <li>
-          <span className="disease__key-dot" /> {APPROVAL_KIND.new}
+          <span className="disease__key-dot" /> {APPROVAL_KIND.new} or new indication
         </li>
         <li>
-          <span className="disease__key-dot disease__key-dot--later" /> Later change (widened or reworded)
+          <span className="disease__key-dot disease__key-dot--later" /> Later label change (label expansion or revised indication)
         </li>
       </ul>
     </section>
@@ -404,3 +432,5 @@ function lag(u: DiseaseSummary['uses'][number]): number | undefined {
   const [ly, lm] = last.value.split('-').map(Number);
   return (ay - ly) * 12 + (am - lm);
 }
+
+const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
