@@ -1,5 +1,4 @@
 import { Info } from '../components/Info/Info.js';
-import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
 import { diseaseIndex, drugIndex, useDrug, useNews } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
 import { trialsForIndication } from '../lib/drugs.js';
@@ -79,7 +78,6 @@ function NewsSection({ slug }: { slug: string }) {
 function DrugView({ drug }: { drug: Drug }) {
   usePageMeta(drugMeta(drug));
   const listed = drugIndex.find((d) => d.slug === drug.slug);
-  const checked = listed?.checked ?? { confirmed: 0, total: 0 };
   const about = drug.pharmacology;
   const indications = [...drug.indications].sort((a, b) =>
     (a.approvalDate?.value ?? '9999').localeCompare(b.approvalDate?.value ?? '9999'),
@@ -217,10 +215,6 @@ function DrugView({ drug }: { drug: Drug }) {
             </div>
           )}
         </dl>
-        <p className="drug__status" role="status">
-          <CheckBadge stats={checked} />
-          <Info label="What checked means">{checkSentence(checked)}</Info>
-        </p>
       </section>
     </main>
   );

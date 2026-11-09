@@ -1,6 +1,6 @@
 import { Info } from '../components/Info/Info.js';
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
-import type { Approval, Drug, Trial } from '../schema/index.js';
+import type { Approval, Trial } from '../schema/index.js';
 import { drugIndex, useDrug, type DrugState } from '../lib/catalog.js';
 import {
   buildAxis,
@@ -524,7 +524,6 @@ function EvidenceTable({
     if (i < 0 || !p) return undefined;
     return confirmations[i].get(confirmationKey(p.indication.name, r.nctId ?? r.trialId));
   };
-  const drugOf = (r: EvidenceRow): Drug | undefined => programs.find((x) => x.key === r.program)?.drug;
 
   return (
     <section className="compare__section" aria-labelledby="evidence">
@@ -532,7 +531,7 @@ function EvidenceTable({
         <h2 id="evidence">The pivotal evidence, side by side</h2>
         <Info label="About these results" align="left">
           Results as posted to ClinicalTrials.gov for each trial’s first primary outcome, every arm against the trial’s
-          own control. ✓ Checked opens the FDA label sentence that names the trial for this indication.
+          own control. “FDA wording” opens the FDA sentence that names the trial for this use.
         </Info>
         {endpointsDiffer(rows) && (
           <span className="compare__caution">Endpoints, timepoints or controls differ: not a head-to-head comparison</span>
@@ -547,14 +546,13 @@ function EvidenceTable({
               <th scope="col" className="is-num">N</th>
               <th scope="col">Primary endpoint</th>
               <th scope="col">Result by arm</th>
-              <th scope="col">Checked</th>
+              <th scope="col">FDA wording</th>
             </tr>
           </thead>
           <tbody>
             {rows.map((r) => {
               const c = confirmationFor(r);
               const key = `${r.program}|${r.trialId}`;
-              const drug = drugOf(r);
               return (
                 <tr key={key} className={r.firstOfProgram ? 'is-first' : undefined}>
                   <td>
@@ -599,7 +597,7 @@ function EvidenceTable({
                     {c ? (
                       <>
                         <button type="button" className="verified" aria-expanded={open === key} onClick={() => setOpen(open === key ? null : key)}>
-                          ✓ Checked
+                          Show
                         </button>
                         {open === key && (
                           <div role="note" className="verified__note">
@@ -608,12 +606,11 @@ function EvidenceTable({
                                 “{e.quote}” <a href={e.sourceUrl} target="_blank" rel="noreferrer">source ↗</a>
                               </p>
                             ))}
-                            <p className="muted">{drug?.brandName} label, checked against the document.</p>
                           </div>
                         )}
                       </>
                     ) : (
-                      <span className="unchecked">Not yet checked</span>
+                      <span className="unchecked">—</span>
                     )}
                   </td>
                 </tr>

@@ -77,12 +77,10 @@ export function SourceTrail({ trial, indication }: { trial: Trial; indication?: 
     });
   }
 
-  const checked = [role.approval?.provenance, r].every((p) => !p || p.verified);
   return (
     <section className="drawer__section" aria-labelledby="trail-head">
       <h3 id="trail-head">
         Where this comes from
-        <span className={`prov ${checked ? 'is-verified' : 'is-unverified'}`}>{checked ? 'checked' : 'not yet checked'}</span>
       </h3>
       <dl className="trail">
         {cards.map(({ card }) => (

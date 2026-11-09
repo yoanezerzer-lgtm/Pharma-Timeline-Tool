@@ -134,6 +134,8 @@ waiting on CI in a chat and re-running all drugs to test a guess.
 - 3 Nov: short use names may be cut automatically from FDA wording;
   atopic dermatitis under Immunology (done); auto-merge on.
 - 4 Nov: PRD agreed; a free, cookie-free visitor counter is wanted.
+- 9 Nov: no "checked / not yet checked" wording next to medical content:
+  how facts are checked lives on the About the data page only (done).
 - 7 Nov: paywall and hosting as above; news is link-only, no paywalled
   sites (not STAT); explanations go behind (i) icons; Pasatru and Zycubo
   under Rare diseases by hand until the orphan-status rule exists.
@@ -147,7 +149,9 @@ waiting on CI in a chat and re-running all drugs to test a guess.
 - 8 Nov: dating rules, Nemluvio and Protopic, Dupixent's full history
   (#129); side panel, disease lanes, source trail (#130); nightly checks
   (#131).
-- 9 Nov: nightly checks (#132).
+- 9 Nov: nightly checks (#132); handoff (#133); design rounds: every
+  widening on the approved-use page (#134), precedent table, labelled
+  lanes, new titles (#135), checking wording moved to About the data (#136).
 - Owner plan steps 1 (copy), 2 (design), 3 (news) and 5 (look) done;
   step 4 (new drugs, atopic dermatitis) has the gaps above.
 
@@ -187,6 +191,11 @@ Still open, in order:
   approval), feature atopic dermatitis as the complete area (timeline and
   a preview of its table), recent FDA approvals, then where facts come
   from. The full drug list stays in the side panel and on a Drugs page.
+  **Paid site, so the homepage is also the front door** (owner, 9 Nov):
+  a log-in, and examples of each page type (disease, drug, approved use,
+  trial) a visitor can see before paying, not the full product. Build the
+  log-in and paywall only after the move to Cloudflare; until then design
+  the homepage with a place for them.
 - **Trial view: panel and page.** Keep the side panel when a trial is
   opened from a chart; a trial link opened directly (shared, from the
   table, from Google) shows a full page.

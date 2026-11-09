@@ -1,5 +1,6 @@
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { aboutMeta } from '../lib/pageMeta.js';
+import { drugIndex } from '../lib/catalog.js';
 import './IndicationPage.css';
 import './DrugPage.css';
 import './AboutPage.css';
@@ -9,6 +10,8 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' } as const;
 /** Where every fact on the site comes from, and how it is checked. */
 export function AboutPage() {
   usePageMeta(aboutMeta());
+  const confirmed = drugIndex.reduce((n, d) => n + d.checked.confirmed, 0);
+  const total = drugIndex.reduce((n, d) => n + d.checked.total, 0);
   return (
     <main className="drug about">
       <h1>About the data</h1>
@@ -69,18 +72,14 @@ export function AboutPage() {
       <section aria-labelledby="checks-head">
         <h2 id="checks-head">How facts are checked</h2>
         <p>
-          Code reads each fact from its source. A fact can then be checked against the source document, with the
-          passage that supports it quoted; code confirms the quote is really in the document. Each drug shows how far
-          this has gone:
+          Code reads each fact from its source. Each link between a trial and an approval is then checked against the
+          FDA documents, with the passage that supports it quoted; code confirms the quote is really in the document.
+          Facts not yet checked are shown all the same, read straight from the FDA and ClinicalTrials.gov.
         </p>
-        <dl className="about__states">
-          <dt>Checked</dt>
-          <dd>Every trial link on the drug’s page has been confirmed against the FDA documents.</dd>
-          <dt>Partly checked</dt>
-          <dd>Some trial links are confirmed (the page says how many); the rest are not yet checked.</dd>
-          <dt>Not yet checked</dt>
-          <dd>Read automatically from FDA documents and ClinicalTrials.gov, not yet checked against them.</dd>
-        </dl>
+        <p>
+          So far, <strong>{confirmed}</strong> of <strong>{total}</strong> trial links across the site have been
+          checked this way.
+        </p>
       </section>
 
       <section aria-labelledby="gaps-head">
