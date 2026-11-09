@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0025700",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0025700",
+    "narrowerConcept": "http://id.nlm.nih.gov/mesh/M0025699",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T050561",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Tumors or cancer of ENDOMETRIUM, the mucous lining of the UTERUS. These neoplasms can be benign or malignant. Their classification and grading are based on the various cell types and the percent of undifferentiated cells."
+    },
+    "term": "http://id.nlm.nih.gov/mesh/T363404",
+    "label": {
+      "@language": "en",
+      "@value": "Endometrial Neoplasms"
+    },
+    "@context": {
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

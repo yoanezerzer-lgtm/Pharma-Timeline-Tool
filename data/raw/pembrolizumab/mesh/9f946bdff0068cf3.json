@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0583085",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0583085",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T843356",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Breast neoplasms that do not express ESTROGEN RECEPTORS; PROGESTERONE RECEPTORS; and do not overexpress the NEU RECEPTOR/HER-2 PROTO-ONCOGENE PROTEIN."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T840364",
+      "http://id.nlm.nih.gov/mesh/T840442",
+      "http://id.nlm.nih.gov/mesh/T840443",
+      "http://id.nlm.nih.gov/mesh/T840363",
+      "http://id.nlm.nih.gov/mesh/T840362"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Triple Negative Breast Neoplasms"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

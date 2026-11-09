@@ -1,0 +1,98 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D053842",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000528",
+      "http://id.nlm.nih.gov/mesh/Q000187"
+    ],
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D042822",
+    "concept": "http://id.nlm.nih.gov/mesh/M0496891",
+    "dateIntroduced": "2007-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "2007"
+    },
+    "identifier": "D053842",
+    "lastUpdated": "2011-06-24",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0496890",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T671080",
+    "previousIndexing": {
+      "@language": "en",
+      "@value": "Microsatellite Repeats (1994-2006)"
+    },
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "2007"
+    },
+    "seeAlso": "http://id.nlm.nih.gov/mesh/D018895",
+    "treeNumber": [
+      "http://id.nlm.nih.gov/mesh/G05.365.590.335.590",
+      "http://id.nlm.nih.gov/mesh/C23.550.362.590",
+      "http://id.nlm.nih.gov/mesh/G05.370.590"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Microsatellite Instability"
+    },
+    "@context": {
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "previousIndexing": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#previousIndexing"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "concept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#concept",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      }
+    }
+  }
+}

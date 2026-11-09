@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M000731649",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M000731649",
+    "narrowerConcept": "http://id.nlm.nih.gov/mesh/M000731650",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T801624",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A type of mesothelioma with a tendency to metastasize. Most tumors originate from either the PLEURA or PERITONEUM, tumors may also originate in the PERICARDIUM or testicular tissue. It is associated with ASBESTOS exposure. Somatic mutations identified in WT1, BCL10, CDKN2A, NF2, and BAP1 genes are associated with the malignancy. OMIM: 156240."
+    },
+    "term": "http://id.nlm.nih.gov/mesh/T001078412",
+    "label": {
+      "@language": "en",
+      "@value": "Mesothelioma, Malignant"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

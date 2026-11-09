@@ -1,0 +1,64 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Cervical Neoplasms"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D002583"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Uterine Cervical Neoplasms"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Cervical Cancer"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D002583"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Uterine Cervical Neoplasms"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Cancer"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D009369"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Neoplasms"
+          }
+        }
+      ]
+    }
+  }
+}

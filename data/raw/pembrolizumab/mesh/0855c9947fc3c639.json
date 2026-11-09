@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Biliary Tract"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D001659"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Biliary Tract"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Biliary Tract Neoplasms"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D001661"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Biliary Tract Neoplasms"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Biliary Tract Cancer"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D001661"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Biliary Tract Neoplasms"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Cancer"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D009369"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Neoplasms"
+          }
+        }
+      ]
+    }
+  }
+}

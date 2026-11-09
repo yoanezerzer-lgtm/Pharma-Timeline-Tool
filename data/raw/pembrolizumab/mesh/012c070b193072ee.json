@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0023505",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0023505",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T044848",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A carcinoma arising from MERKEL CELLS located in the basal layer of the epidermis and occurring most commonly as a primary neuroendocrine carcinoma of the skin. Merkel cells are tactile cells of neuroectodermal origin and histologically show neurosecretory granules. The skin of the head and neck are a common site of Merkel cell carcinoma, occurring generally in elderly patients. (Holland et al., Cancer Medicine, 3d ed, p1245)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T781609",
+      "http://id.nlm.nih.gov/mesh/T044849",
+      "http://id.nlm.nih.gov/mesh/T769334",
+      "http://id.nlm.nih.gov/mesh/T769335"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Carcinoma, Merkel Cell"
+    },
+    "@context": {
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}

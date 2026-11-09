@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0003444",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0003444",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T006604",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A carcinoma derived from stratified SQUAMOUS EPITHELIAL CELLS. It may also occur in sites where glandular or columnar epithelium is normally present. (From Stedman, 25th ed)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T006603",
+      "http://id.nlm.nih.gov/mesh/T006605",
+      "http://id.nlm.nih.gov/mesh/T006606",
+      "http://id.nlm.nih.gov/mesh/T715508"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Carcinoma, Squamous Cell"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0496890",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0496890",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T671080",
+    "relatedConcept": "http://id.nlm.nih.gov/mesh/M0496891",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "The occurrence of highly polymorphic mono- and dinucleotide MICROSATELLITE REPEATS in somatic cells. It is a form of genome instability associated with defects in DNA MISMATCH REPAIR."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "Microsatellite Instability"
+    },
+    "@context": {
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}

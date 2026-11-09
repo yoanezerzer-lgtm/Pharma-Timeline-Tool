@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0010236",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0010236",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T019693",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A primary malignant neoplasm of epithelial liver cells. It ranges from a well-differentiated tumor with EPITHELIAL CELLS indistinguishable from normal HEPATOCYTES to a poorly differentiated neoplasm. The cells may be uniform or markedly pleomorphic, or form GIANT CELLS. Several classification schemes have been suggested."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T769771",
+      "http://id.nlm.nih.gov/mesh/T812691",
+      "http://id.nlm.nih.gov/mesh/T019694",
+      "http://id.nlm.nih.gov/mesh/T769772",
+      "http://id.nlm.nih.gov/mesh/T019692"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Carcinoma, Hepatocellular"
+    },
+    "@context": {
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}

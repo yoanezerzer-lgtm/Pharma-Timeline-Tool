@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T769771",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Adult Liver Cancer"
+      },
+      {
+        "@language": "en",
+        "@value": "Liver Cancers, Adult"
+      },
+      {
+        "@language": "en",
+        "@value": "Cancers, Adult Liver"
+      },
+      {
+        "@language": "en",
+        "@value": "Adult Liver Cancers"
+      },
+      {
+        "@language": "en",
+        "@value": "Cancer, Adult Liver"
+      }
+    ],
+    "dateCreated": "2010-04-19",
+    "identifier": "T769771",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Liver Cancer, Adult"
+    },
+    "thesaurusID": [
+      {
+        "@language": "en",
+        "@value": "ORD (2010)"
+      },
+      {
+        "@language": "en",
+        "@value": "NLM (2011)"
+      }
+    ],
+    "@context": {
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    }
+  }
+}

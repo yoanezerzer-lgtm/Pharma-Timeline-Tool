@@ -1,0 +1,64 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Mesothelioma"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D008654"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Mesothelioma"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Malignant Pleural Mesothelioma"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000086002"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Mesothelioma, Malignant"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Mesothelioma, Malignant Pleural"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000086002"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Mesothelioma, Malignant"
+          }
+        }
+      ]
+    }
+  }
+}

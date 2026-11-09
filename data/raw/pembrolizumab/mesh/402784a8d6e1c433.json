@@ -1,0 +1,82 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T006593",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Non-Small-Cell Lung Carcinomas"
+      },
+      {
+        "@language": "en",
+        "@value": "Carcinomas, Non-Small-Cell Lung"
+      },
+      {
+        "@language": "en",
+        "@value": "Carcinoma, Non Small Cell Lung"
+      },
+      {
+        "@language": "en",
+        "@value": "Lung Carcinoma, Non-Small-Cell"
+      },
+      {
+        "@language": "en",
+        "@value": "Lung Carcinomas, Non-Small-Cell"
+      }
+    ],
+    "dateCreated": "1999-01-01",
+    "entryVersion": {
+      "@language": "en",
+      "@value": "NSCLC"
+    },
+    "identifier": "T006593",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Carcinoma, Non-Small-Cell Lung"
+    },
+    "thesaurusID": [
+      {
+        "@language": "en",
+        "@value": "ORD (2010)"
+      },
+      {
+        "@language": "en",
+        "@value": "NLM (1987)"
+      }
+    ],
+    "@context": {
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "entryVersion": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#entryVersion"
+      }
+    }
+  }
+}

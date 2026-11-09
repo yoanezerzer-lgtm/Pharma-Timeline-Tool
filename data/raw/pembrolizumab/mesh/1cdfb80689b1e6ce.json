@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0010484",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0010484",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0551751",
+      "http://id.nlm.nih.gov/mesh/M0551752",
+      "http://id.nlm.nih.gov/mesh/M0551750",
+      "http://id.nlm.nih.gov/mesh/M0551753"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T020222",
+    "relatedConcept": "http://id.nlm.nih.gov/mesh/M0010485",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A malignant disease characterized by progressive enlargement of the lymph nodes, spleen, and general lymphoid tissue. In the classical variant, giant usually multinucleate Hodgkin's and REED-STERNBERG CELLS are present; in the nodular lymphocyte predominant variant, lymphocytic and histiocytic cells are seen."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T020225",
+      "http://id.nlm.nih.gov/mesh/T691988",
+      "http://id.nlm.nih.gov/mesh/T020220",
+      "http://id.nlm.nih.gov/mesh/T020226",
+      "http://id.nlm.nih.gov/mesh/T691989",
+      "http://id.nlm.nih.gov/mesh/T020221",
+      "http://id.nlm.nih.gov/mesh/T020227",
+      "http://id.nlm.nih.gov/mesh/T020223",
+      "http://id.nlm.nih.gov/mesh/T020224"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Hodgkin Disease"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      }
+    }
+  }
+}
