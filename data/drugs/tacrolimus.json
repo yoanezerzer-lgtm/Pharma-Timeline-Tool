@@ -19,7 +19,44 @@
         "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
         "extractedBy": "api",
         "verified": false
-      }
+      },
+      "diseases": [
+        {
+          "meshId": "D003872",
+          "term": "Dermatitis",
+          "areas": [
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "Any inflammation of the skin.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003872",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "dermatitis",
+            "paragraphs": [
+              "Inflammation of the skin."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/dermatitis",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003872",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "dermatitis",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -539,5 +576,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T20:37:37.581Z"
+  "lastIngestedAt": "2026-11-09T19:47:17.461Z"
 }
