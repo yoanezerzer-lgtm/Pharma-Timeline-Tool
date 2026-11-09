@@ -61,8 +61,19 @@
       "indication": "Asthma",
       "trial": "NCT01854047",
       "pivotal": true,
-      "status": "baseline",
-      "tries": 1
+      "status": "confirmed",
+      "tries": 1,
+      "checkedBy": "Overnight agent 2026-11-09: Confirmed by label section 14 and an FDA review or letter.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761055s082lbl.pdf",
+          "quote": "three randomized, double-blind, placebo-controlled, parallel-group, multicenter trials (DRI12544 (NCT01854047), QUEST (NCT02414854), and VENTURE (NCT02528214))"
+        },
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2020/761055Orig1s007.pdf",
+          "quote": "Clinical efficacy of the proposed 200 mg q2w and 300 mg q2w dosing regimens are demonstrated in studies DRI12544 and EFC13579"
+        }
+      ]
     },
     {
       "indication": "Atopic Dermatitis",
@@ -121,28 +132,39 @@
       "trial": "NCT02414854",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Asthma",
       "trial": "NCT02528214",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Chronic Rhinosinusitis with Nasal Polyps",
       "trial": "NCT02898454",
       "pivotal": true,
-      "status": "baseline",
-      "tries": 1
+      "status": "confirmed",
+      "tries": 1,
+      "checkedBy": "Overnight agent 2026-11-09: Confirmed by label section 14 and an FDA review or letter.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761055s082lbl.pdf",
+          "quote": "was evaluated in two randomized, double-blind, parallel-group, multicenter, placebo-controlled studies (SINUS-24 (NCT02912468) and SINUS-52 (NCT02898454))"
+        },
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/761055Orig1s014rev.pdf",
+          "quote": "The clinical studies included different dosing regimens of 300 mg every other week with no loading dose and SINUS-52 contained an additional arm of patients who were switched to every 4 weeks"
+        }
+      ]
     },
     {
       "indication": "Chronic Rhinosinusitis with Nasal Polyps",
       "trial": "NCT02912468",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Atopic Dermatitis",
@@ -166,7 +188,7 @@
       "trial": "NCT02948959",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Atopic Dermatitis",
@@ -212,35 +234,35 @@
       "trial": "NCT03930732",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Chronic Spontaneous Urticaria",
       "trial": "NCT04180488",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Prurigo Nodularis",
       "trial": "NCT04183335",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Prurigo Nodularis",
       "trial": "NCT04202679",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Chronic Obstructive Pulmonary Disease",
       "trial": "NCT04456673",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Eosinophilic Esophagitis",
@@ -273,7 +295,7 @@
       "trial": "NCT04684524",
       "pivotal": true,
       "status": "baseline",
-      "tries": 1
+      "tries": 2
     },
     {
       "indication": "Atopic Dermatitis",
