@@ -16,7 +16,6 @@ import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import { drugIndex, useDrug } from '../lib/catalog.js';
-import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
 import type { Drug, Milestone, Source } from '../schema/index.js';
 import { APPROVAL_KIND, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
@@ -75,7 +74,6 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
   }
 
   const listed = drugIndex.find((d) => d.slug === drug.slug);
-  const checked = listed?.checked ?? { confirmed: 0, total: 0 };
   const company = listed?.company ?? drug.sponsor;
   // The supplement that added this indication (dated from the labels at
   // ingest) is shown as this page's approval; other indications' efficacy
@@ -209,10 +207,6 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         </dl>
       </header>
 
-      <p className="drug__status" role="status">
-        <CheckBadge stats={checked} />
-        <Info label="What checked means">{checkSentence(checked)}</Info>
-      </p>
 
       {scopedTrials.length === 0 ? (
         <div className="drug__no-trials">
@@ -296,7 +290,6 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             date={indication.approvalDate}
             label={ownSources?.sources.find((x) => x.type === 'fda_label')?.url ?? labelUrl}
             pivotal={scopedTrials.filter((t) => roleFor(t, indication.name) === 'PIVOTAL')}
-            checked={checked}
           />
           <details className="drug__sources-all">
             <summary>
@@ -393,20 +386,18 @@ function newestLabelUrl(drug: Drug): string | undefined {
 /**
  * How this approval is backed up, as a chain a reader can follow: the FDA
  * letter, the label that names the pivotal trials, their registry records,
- * and how many of the drug's facts have been checked against the documents.
+ * and how the site reads them (the About the data page).
  */
 function ApprovalTrail({
   letter,
   date,
   label,
   pivotal,
-  checked,
 }: {
   letter?: string;
   date?: Milestone['date'];
   label?: string;
   pivotal: Drug['trials'];
-  checked: { confirmed: number; total: number };
 }) {
   const registered = pivotal.filter((t) => t.nctId);
   const step = (title: string, detail: string, href?: string) => (
@@ -431,7 +422,7 @@ function ApprovalTrail({
         `${registered.length} registry ${registered.length === 1 ? 'record' : 'records'}`,
         registered.length > 0 ? `https://clinicaltrials.gov/search?term=${registered.map((t) => t.nctId).join('%20OR%20')}` : undefined,
       )}
-      {step('Checked', checked.total > 0 ? `${checked.confirmed} of ${checked.total} facts for this drug` : 'not yet', aboutHref())}
+      {step('How we read them', 'methods and sources', aboutHref())}
     </ol>
   );
 }

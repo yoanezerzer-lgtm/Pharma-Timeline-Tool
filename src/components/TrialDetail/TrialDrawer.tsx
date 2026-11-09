@@ -26,32 +26,11 @@ const PHASE_TEXT: Record<Trial['phase'], string> = {
   NA: 'N/A',
 };
 
-/**
- * Shows whether a value was checked by a person or inferred by the pipeline.
- * Unverified is the default state for freshly ingested data, so it needs to be
- * visible rather than implied.
- */
-function ProvenanceBadge({ p }: { p: Provenance | undefined }) {
-  if (!p) return null;
-  const label = p.verified ? 'checked' : 'not yet checked';
-  return (
-    <span
-      className={`prov ${p.verified ? 'is-verified' : 'is-unverified'}`}
-      title={
-        [p.sourceLabel, p.page ? `p. ${p.page}` : null, p.quote ? `"${p.quote}"` : null]
-          .filter(Boolean)
-          .join(' — ') || undefined
-      }
-    >
-      {label}
-    </span>
-  );
-}
-
+// A fact's provenance is kept with the data for the builders' checks; readers
+// see only the value (how facts are checked is on the About the data page).
 function Fact({
   label,
   value,
-  provenance,
 }: {
   label: string;
   value: React.ReactNode;
@@ -61,7 +40,7 @@ function Fact({
     <>
       <dt>{label}</dt>
       <dd>
-        {value} <ProvenanceBadge p={provenance} />
+        {value}
       </dd>
     </>
   );
