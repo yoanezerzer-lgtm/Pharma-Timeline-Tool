@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0010227",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0010227",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0010228",
+      "http://id.nlm.nih.gov/mesh/M0010229",
+      "http://id.nlm.nih.gov/mesh/M0454313"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T019670",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "INFLAMMATION of the LIVER with ongoing hepatocellular injury for 6 months or more, characterized by NECROSIS of HEPATOCYTES and inflammatory cell (LEUKOCYTES) infiltration. Chronic hepatitis can be caused by viruses, medications, autoimmune diseases, and other unknown factors."
+    },
+    "term": "http://id.nlm.nih.gov/mesh/T019669",
+    "label": {
+      "@language": "en",
+      "@value": "Hepatitis, Chronic"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
