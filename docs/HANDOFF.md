@@ -229,7 +229,7 @@ Owner walked the pages: too much on screen, some wrong words. Done:
 - Compare: opens on Ebglyss vs Adbry (atopic dermatitis); press releases
   linked by headline, never quoted; endpoints show up to 5 lines.
 
-- Trial page and panel (#139): at a glance first (enrolled, design, age,
+- Trial page and panel (#140): at a glance first (enrolled, design, age,
   primary completion) and a line saying whether primary completion came
   before or after the use's first approval; then primary endpoint with
   posted results (% shown for percentage units); then Dates | Design and
