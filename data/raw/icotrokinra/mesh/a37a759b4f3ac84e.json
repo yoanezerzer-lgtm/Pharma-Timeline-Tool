@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0016762",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0016762",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M000759022",
+      "http://id.nlm.nih.gov/mesh/M000759021"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T031857",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Treatment of disease by exposure to light, especially by variously concentrated light rays or specific wavelengths."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T363931",
+      "http://id.nlm.nih.gov/mesh/T031855",
+      "http://id.nlm.nih.gov/mesh/T031856"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Phototherapy"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
