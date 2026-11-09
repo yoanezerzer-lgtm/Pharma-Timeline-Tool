@@ -92,6 +92,11 @@ export function candidatePhrases(wording: string): { text: string; start: number
         const titled = lower.map((t, k) => (k > 0 && LOWER.has(t) ? t : title(t))).join(' ');
         const sentence = lower.join(' ').replace(/^./, (c) => c.toUpperCase());
         const variants = [titled, sentence];
+        // MeSH keeps a heading's inverted form ("Dermatitis, Atopic") and no longer lists the plain one as a name.
+        if (n > 1) {
+          const words = titled.split(' ');
+          variants.push(`${words[n - 1]}, ${words.slice(0, n - 1).join(' ')}`);
+        }
         // MeSH files cancers as neoplasms or carcinomas ("Stomach Neoplasms", "Urothelial Carcinoma").
         if (/ cancer$/i.test(titled)) variants.push(titled.replace(/Cancer$/, 'Carcinoma'), titled.replace(/Cancer$/, 'Neoplasms'));
         out.push({ text: run.join(' '), start: offset + i, end: offset + i + n, variants: [...new Set(variants)] });
@@ -121,7 +126,8 @@ export function meshWordingQueries(wording: string) {
   for (let i = 0; i < variants.length; i += 100) {
     const chunk = variants.slice(i, i + 100);
     const query =
-      `${SPARQL_PREFIX}SELECT DISTINCT ?name ?d ?term WHERE { VALUES ?name { ${chunk.map(sparqlString).join(' ')} } ` +
+      // FROM: this year's MeSH only; the endpoint also holds every past year's edition.
+      `${SPARQL_PREFIX}SELECT DISTINCT ?name ?d ?term FROM <http://id.nlm.nih.gov/mesh> WHERE { VALUES ?name { ${chunk.map(sparqlString).join(' ')} } ` +
       `?t meshv:prefLabel ?name . ?c meshv:preferredTerm|meshv:term ?t . ?d meshv:preferredConcept|meshv:concept ?c . ` +
       `?d a meshv:TopicalDescriptor . ?d rdfs:label ?term }`;
     urls.push(`${MESH}/sparql?query=${encodeURIComponent(query)}&format=JSON&inference=false`);

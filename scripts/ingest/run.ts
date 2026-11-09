@@ -542,9 +542,11 @@ function buildDrugRecord(
   // atopic dermatitis came from a second application merged into its label).
   const originalLabel = labels.find((l) => l.submission === (original?.submissionNumber ?? 'ORIG-1'));
   const wording = (name: string) => {
-    for (const l of newestFirst) {
+    // The newest label that lists the use; an older one's sentence may be out of date (Keytruda's melanoma).
+    const l = newestFirst.find((x) => labelListsIndication(name, x) === true);
+    if (l) {
       const text = indicationWording(l.text, name);
-      if (!text) continue;
+      if (!text) return {};
       // A single-use label's name is already its full sentence.
       if (text === name) return {};
       return { wording: { text, provenance: { sourceUrl: l.url, sourceLabel: `Approved label (${l.submission}), section 1`, quote: text, extractedBy: 'regex' as const, verified: false } } };

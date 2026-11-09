@@ -19,7 +19,8 @@ function trial(nctId: string, mesh: [string, string][], indication: string): Tri
 
 // MeSH names (headings and entry terms) and the descriptor each belongs to.
 const NAMES: Record<string, [string, string]> = {
-  'Atopic Dermatitis': ['D003876', 'Dermatitis, Atopic'],
+  // As in MeSH today: the heading's inverted form, not "Atopic Dermatitis".
+  'Dermatitis, Atopic': ['D003876', 'Dermatitis, Atopic'],
   Dermatitis: ['D003872', 'Dermatitis'],
   'Hodgkin Lymphoma': ['D006689', 'Hodgkin Disease'],
   Lymphoma: ['D008223', 'Lymphoma'],
