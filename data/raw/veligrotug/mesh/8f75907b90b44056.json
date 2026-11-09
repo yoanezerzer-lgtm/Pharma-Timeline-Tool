@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0009625",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0009625",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0471765",
+      "http://id.nlm.nih.gov/mesh/M0471766"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T607229",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "An autoimmune disorder of the EYE, occurring in patients with Graves disease. Subtypes include congestive (inflammation of the orbital connective tissue), myopathic (swelling and dysfunction of the extraocular muscles), and mixed congestive-myopathic ophthalmopathy."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T018553",
+      "http://id.nlm.nih.gov/mesh/T018551",
+      "http://id.nlm.nih.gov/mesh/T607230",
+      "http://id.nlm.nih.gov/mesh/T001105215",
+      "http://id.nlm.nih.gov/mesh/T018552",
+      "http://id.nlm.nih.gov/mesh/T000939760",
+      "http://id.nlm.nih.gov/mesh/T018550",
+      "http://id.nlm.nih.gov/mesh/T001105216"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Graves Ophthalmopathy"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}
