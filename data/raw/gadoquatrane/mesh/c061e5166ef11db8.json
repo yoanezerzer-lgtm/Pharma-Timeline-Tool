@@ -1,0 +1,90 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D002490",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000033",
+      "http://id.nlm.nih.gov/mesh/Q000528",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000648",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000166",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000002",
+      "http://id.nlm.nih.gov/mesh/Q000098",
+      "http://id.nlm.nih.gov/mesh/Q000737",
+      "http://id.nlm.nih.gov/mesh/Q000293",
+      "http://id.nlm.nih.gov/mesh/Q000502",
+      "http://id.nlm.nih.gov/mesh/Q000187",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000254"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "prefer BRAIN or SPINAL CORD; \"CNS effects\" or \"central effects\" of drugs in texts usually means BRAIN /drug eff, not CNS /drug eff"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D009420",
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D002490",
+    "lastUpdated": "2018-02-28",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0003801",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T007262",
+    "treeNumber": "http://id.nlm.nih.gov/mesh/A08.186",
+    "label": {
+      "@language": "en",
+      "@value": "Central Nervous System"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

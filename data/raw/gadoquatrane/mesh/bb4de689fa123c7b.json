@@ -1,0 +1,128 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D013909",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000502",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000637",
+      "http://id.nlm.nih.gov/mesh/Q000098",
+      "http://id.nlm.nih.gov/mesh/Q000294",
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000528",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000254",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000002",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000166",
+      "http://id.nlm.nih.gov/mesh/Q000648",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000737",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000187",
+      "http://id.nlm.nih.gov/mesh/Q000033",
+      "http://id.nlm.nih.gov/mesh/Q000276"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "/surg = THORACIC SURGERY, the specialty (Cat G2) or THORACIC SURGICAL PROCEDURES (Cat E4); \"intrathoracic\" could be THORAX or HEART or LUNG or RIBS: check text; chest pain = CHEST PAIN"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D060726",
+    "dateIntroduced": "1960-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "/surgery was used for indexing 1966-79"
+    },
+    "identifier": "D013909",
+    "lastUpdated": "2018-06-29",
+    "nlmClassificationNumber": "WE 715",
+    "onlineNote": {
+      "@language": "en",
+      "@value": "search THORAX/SU under THORACIC SURGERY 1966-79"
+    },
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0021411",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T040792",
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "/surgery ( = THORACIC SURGERY as of 1980) was used for indexing 1966-79"
+    },
+    "seeAlso": [
+      "http://id.nlm.nih.gov/mesh/D013907",
+      "http://id.nlm.nih.gov/mesh/D013903",
+      "http://id.nlm.nih.gov/mesh/D008400",
+      "http://id.nlm.nih.gov/mesh/D013906",
+      "http://id.nlm.nih.gov/mesh/D013905",
+      "http://id.nlm.nih.gov/mesh/D013902",
+      "http://id.nlm.nih.gov/mesh/D013908"
+    ],
+    "treeNumber": "http://id.nlm.nih.gov/mesh/A01.923.761",
+    "label": {
+      "@language": "en",
+      "@value": "Thorax"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "onlineNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#onlineNote"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "nlmClassificationNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      }
+    }
+  }
+}

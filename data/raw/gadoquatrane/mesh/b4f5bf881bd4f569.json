@@ -1,0 +1,88 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D009141",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000166",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000098",
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000033",
+      "http://id.nlm.nih.gov/mesh/Q000294",
+      "http://id.nlm.nih.gov/mesh/Q000528",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000187",
+      "http://id.nlm.nih.gov/mesh/Q000648",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000293",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000737"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "general or unspecified; prefer specifics; must be both musculo + skeletal, otherwise prefer BONE AND BONES or MUSCLES"
+    },
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D009141",
+    "lastUpdated": "2018-02-28",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0014260",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T027313",
+    "seeAlso": "http://id.nlm.nih.gov/mesh/D041641",
+    "treeNumber": "http://id.nlm.nih.gov/mesh/A02",
+    "label": {
+      "@language": "en",
+      "@value": "Musculoskeletal System"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      }
+    }
+  }
+}

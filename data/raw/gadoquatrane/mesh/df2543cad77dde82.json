@@ -1,0 +1,98 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D009333",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000098",
+      "http://id.nlm.nih.gov/mesh/Q000033",
+      "http://id.nlm.nih.gov/mesh/Q000502",
+      "http://id.nlm.nih.gov/mesh/Q000002",
+      "http://id.nlm.nih.gov/mesh/Q000294",
+      "http://id.nlm.nih.gov/mesh/Q000528",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000254",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000821"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "as a region & for soft parts but note that NECK MUSCLES is also available; bones = CERVICAL VERTEBRAE; \"cervical lymph nodes\" = LYMPH NODES (IM) + NECK (NIM); \"neck dissection\" probably refers to dissection of lymph nodes in cancer: index LYMPH NODE EXCISION (IM) + NECK (NIM) for general or unspecified or RADICAL NECK DISSECTION if specified"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D001829",
+    "considerAlso": {
+      "@language": "en",
+      "@value": "consider also terms at CERVICAL and CERVICO-"
+    },
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D009333",
+    "lastUpdated": "2015-06-16",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0014541",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T027844",
+    "seeAlso": [
+      "http://id.nlm.nih.gov/mesh/D009334",
+      "http://id.nlm.nih.gov/mesh/D002574"
+    ],
+    "treeNumber": "http://id.nlm.nih.gov/mesh/A01.598",
+    "label": {
+      "@language": "en",
+      "@value": "Neck"
+    },
+    "@context": {
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "considerAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#considerAlso"
+      }
+    }
+  }
+}

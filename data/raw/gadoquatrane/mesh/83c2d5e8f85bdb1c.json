@@ -1,0 +1,83 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D000005",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000502",
+      "http://id.nlm.nih.gov/mesh/Q000528",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000254",
+      "http://id.nlm.nih.gov/mesh/Q000294",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000033",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000098",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000002",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000503"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "general or unspecified; prefer specifics; ABDOMINAL MUSCLES and specifics are available; abrupt disease requiring emergency surgery equals ABDOMEN, ACUTE"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D060726",
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D000005",
+    "lastUpdated": "2016-08-09",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0000005",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T000012",
+    "treeNumber": "http://id.nlm.nih.gov/mesh/A01.923.047",
+    "label": {
+      "@language": "en",
+      "@value": "Abdomen"
+    },
+    "@context": {
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    }
+  }
+}

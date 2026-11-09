@@ -1,0 +1,113 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D014024",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000166",
+      "http://id.nlm.nih.gov/mesh/Q000293",
+      "http://id.nlm.nih.gov/mesh/Q000098",
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000187",
+      "http://id.nlm.nih.gov/mesh/Q000254",
+      "http://id.nlm.nih.gov/mesh/Q000294",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000033",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000737",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000528",
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000502",
+      "http://id.nlm.nih.gov/mesh/Q000002",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000648",
+      "http://id.nlm.nih.gov/mesh/Q000378"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "used for searching; INDEXER: Do not use"
+    },
+    "dateIntroduced": "1998-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "98; use explode 1967-97"
+    },
+    "identifier": "D014024",
+    "lastUpdated": "2016-02-19",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0021595",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T041125",
+    "previousIndexing": [
+      {
+        "@language": "en",
+        "@value": "specific tissue/anatomy & histology (1967-1997)"
+      },
+      {
+        "@language": "en",
+        "@value": "specific organ/anatomy & histology (1967-1997)"
+      }
+    ],
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "98"
+    },
+    "treeNumber": "http://id.nlm.nih.gov/mesh/A10",
+    "label": {
+      "@language": "en",
+      "@value": "Tissues"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "previousIndexing": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#previousIndexing"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
