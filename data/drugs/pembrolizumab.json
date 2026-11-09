@@ -80,11 +80,11 @@
             "precision": "day"
           },
           "kind": "new",
-          "statement": "Melanoma",
+          "statement": "Patients with unresectable or metastatic melanoma and disease progression following ipilimumab and, if BRAF V600 mutation positive, a BRAF inhibitor",
           "provenance": {
             "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2014/125514Orig1s000ltr.pdf",
             "sourceLabel": "Approval letter (ORIG-1); wording from the label's section 1",
-            "quote": "Melanoma",
+            "quote": "Patients with unresectable or metastatic melanoma and disease progression following ipilimumab and, if BRAF V600 mutation positive, a BRAF inhibitor",
             "extractedBy": "regex",
             "verified": false
           }
@@ -385,6 +385,16 @@
     },
     {
       "name": "Malignant Pleural Mesothelioma",
+      "wording": {
+        "text": "The first-line treatment of adult patients with unresectable advanced or metastatic malignant pleural mesothelioma (MPM)",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "The first-line treatment of adult patients with unresectable advanced or metastatic malignant pleural mesothelioma (MPM)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "malignant-pleural-mesothelioma",
       "approvalDate": {
         "value": "2024-09-17",
@@ -412,6 +422,44 @@
             "sourceLabel": "Approval letter (SUPPL-161)",
             "quote": "This Prior Approval sBLA provides for a new indication for Keytruda (pembrolizumab), in combination with pemetrexed and platinum chemotherapy, as first-line treatment of adult patients with unresectable advanced or metastatic malignant pleural mesothelioma.",
             "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D000086002",
+          "term": "Mesothelioma, Malignant",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A type of mesothelioma with a tendency to metastasize. Most tumors originate from either the PLEURA or PERITONEUM, tumors may also originate in the PERICARDIUM or testicular tissue. It is associated with ASBESTOS exposure. Somatic mutations identified in WT1, BCL10, CDKN2A, NF2, and BAP1 genes are associated with the malignancy. OMIM: 156240.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000086002",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "malignant mesothelioma",
+            "paragraphs": [
+              "A rare type of cancer in which malignant cells are found in the lining of the chest or abdomen. Exposure to airborne asbestos particles increases one's risk of developing malignant mesothelioma."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/malignant-mesothelioma",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000086002",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "Malignant Pleural Mesothelioma",
+            "extractedBy": "rule",
             "verified": false
           }
         }
@@ -578,10 +626,103 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D006689",
+          "term": "Hodgkin Disease",
+          "areas": [
+            "Neoplasms",
+            "Hemic and Lymphatic Diseases",
+            "Immune System Diseases"
+          ],
+          "definition": {
+            "text": "A malignant disease characterized by progressive enlargement of the lymph nodes, spleen, and general lymphoid tissue. In the classical variant, giant usually multinucleate Hodgkin's and REED-STERNBERG CELLS are present; in the nodular lymphocyte predominant variant, lymphocytic and histiocytic cells are seen.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D006689",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Hodgkin Lymphoma",
+            "paragraphs": [
+              "What is Hodgkin lymphoma?",
+              "Hodgkin lymphoma, also called Hodgkin disease, is a type of cancer that develops in the lymph system. Your lymph system is part of your immune system. It helps protect your body from infection and disease.",
+              "The lymph system is made up of tissues and organs that produce, store, and carry white blood cells. It includes your:",
+              "• Bone marrow",
+              "• Lymph nodes",
+              "• Lymphatic vessels",
+              "• Spleen",
+              "• Thymus",
+              "• Tonsils",
+              "Hodgkin lymphoma is one of the main types of lymphoma. The other is non-Hodgkin lymphoma. Each type starts in different types of white blood cells.",
+              "What causes Hodgkin lymphoma?",
+              "The cause of Hodgkin lymphoma is unknown. But there are certain people who are at higher risk of developing it.",
+              "Who is more likely to develop Hodgkin lymphoma?",
+              "Certain factors can make you more likely to develop Hodgkin lymphoma:",
+              "• Age. Hodgkin lymphoma is most common in early adulthood (age 20-39 years) and in late adulthood (age 65 years and older).",
+              "• Being male. The risk of adult Hodgkin lymphoma is slightly higher in males than in females.",
+              "• Past Epstein-Barr virus (EBV) infection. Having an infection with EBV as a young child or teenager increases your risk of Hodgkin lymphoma.",
+              "• A family history of Hodgkin lymphoma. Having a parent or sibling with Hodgkin lymphoma increases your risk of developing it.",
+              "What are the symptoms of Hodgkin lymphoma?",
+              "The signs and symptoms of Hodgkin lymphoma may include:",
+              "• Painless, swollen lymph nodes in the neck, underarm, or groin",
+              "• Fever for no known reason",
+              "• Drenching night sweats (very heavy sweating during sleep)",
+              "• Weight loss for no known reason in the past 6 months",
+              "• Itchy skin, especially after bathing or drinking alcohol",
+              "• Fatigue",
+              "How is Hodgkin lymphoma diagnosed?",
+              "To find out if you have Hodgkin lymphoma, your provider:",
+              "• Will ask about your symptoms and medical history. This will include checking for signs of disease, such as lumps or anything else that seems unusual.",
+              "• May order some lab tests, such as:",
+              "• Complete blood count",
+              "• Blood chemistry studies",
+              "• Lactate dehydrogenase (LDH) test",
+              "• Erythrocyte sedimentation rate (ESR) test",
+              "• Blood tests to rule out other medical conditions",
+              "• May do imaging tests such as a CT and PET (positron emission tomography) scans",
+              "• May do a lymph node biopsy",
+              "What are the treatments for Hodgkin lymphoma?",
+              "Treatments for Hodgkin lymphoma include:",
+              "• Chemotherapy",
+              "• Radiation therapy",
+              "• Targeted therapy, which uses drugs or other substances that attack specific cancer cells with less harm to normal cells",
+              "• Cancer immunotherapy",
+              "Hodgkin lymphoma can usually be cured if it is found and treated early.",
+              "NIH: National Cancer Institute"
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/hodgkinlymphoma.html",
+              "sourceLabel": "MedlinePlus, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D006689",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording; also on the pivotal trials (NCT02453594, NCT02684292)",
+            "quote": "Hodgkin Lymphoma",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
       "name": "Primary Mediastinal Large B-Cell Lymphoma",
+      "wording": {
+        "text": "Adult and pediatric patients with refractory primary mediastinal large B-cell lymphoma (PMBCL), or who have relapsed after 2 or more prior lines of therapy",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Adult and pediatric patients with refractory primary mediastinal large B-cell lymphoma (PMBCL), or who have relapsed after 2 or more prior lines of therapy",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "primary-mediastinal-large-b-cell-lymphoma",
       "approvalDate": {
         "value": "2018-06-13",
@@ -730,6 +871,16 @@
     },
     {
       "name": "Microsatellite Instability-High or Mismatch Repair Deficient Cancer",
+      "wording": {
+        "text": "Adult and pediatric patients with unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) solid tumors, as determined by an FDA-authorized test, that have progressed following prior treatment and who have no satisfactory alternative treatment options",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Adult and pediatric patients with unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) solid tumors, as determined by an FDA-authorized test, that have progressed following prior treatment and who have no satisfactory alternative treatment options",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "microsatellite-instability-high-or-mismatch-repair",
       "approvalDate": {
         "value": "2017-05-23",
@@ -832,6 +983,16 @@
     },
     {
       "name": "Microsatellite Instability-High or Mismatch Repair Deficient Colorectal Cancer",
+      "wording": {
+        "text": "Patients with unresectable or metastatic MSI-H or dMMR colorectal cancer (CRC) as determined by an FDA-authorized test",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Patients with unresectable or metastatic MSI-H or dMMR colorectal cancer (CRC) as determined by an FDA-authorized test",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "microsatellite-instability-high-or-mismatch-repair-2",
       "approvalDate": {
         "value": "2020-06-29",
@@ -1062,6 +1223,53 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D013274",
+          "term": "Stomach Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Digestive System Diseases"
+          ],
+          "definition": {
+            "text": "Tumors or cancer of the STOMACH.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D013274",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Stomach Cancer",
+            "paragraphs": [
+              "The stomach is an organ between the esophagus and the small intestine. It mixes food with stomach acid and helps digest protein. Stomach cancer mostly affects older people - two-thirds of people who have it are over age 65. Your risk of getting it is also higher if you:",
+              "• Have had a Helicobacter pylori infection",
+              "• Have had stomach inflammation",
+              "• Are a man",
+              "• Eat lots of salted, smoked, or pickled foods",
+              "• Smoke cigarettes",
+              "• Have a family history of stomach cancer",
+              "It is hard to diagnose stomach cancer in its early stages. Indigestion and stomach discomfort can be symptoms of early cancer, but other problems can cause the same symptoms. In advanced cases, there may be blood in your stool, vomiting, unexplained weight loss, jaundice, or trouble swallowing. Doctors diagnose stomach cancer with a physical exam, blood and imaging tests, an endoscopy, and a biopsy.",
+              "Because it is often found late, it can be hard to treat stomach cancer. Treatment options include surgery, chemotherapy, radiation or a combination.",
+              "NIH: National Cancer Institute"
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/stomachcancer.html",
+              "sourceLabel": "MedlinePlus, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D013274",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording; also on the pivotal trials (NCT03615326, NCT03675737)",
+            "quote": "Gastric Cancer",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
@@ -1269,10 +1477,110 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D002583",
+          "term": "Uterine Cervical Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Urogenital Diseases"
+          ],
+          "definition": {
+            "text": "Tumors or cancer of the UTERINE CERVIX.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002583",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Cervical Cancer",
+            "paragraphs": [
+              "What is cervical cancer?",
+              "Cervical cancer is cancer that starts in the cells of the cervix. The cervix is part of the female reproductive system. It is the lower, narrow end of the uterus (womb), which opens into the vagina (birth canal).",
+              "Cervical cancer usually develops slowly. Before cervical cells become cancer, they start to look abnormal. These cells are called \"precancers.\" If they aren't destroyed or removed, they may become cancer cells that grow out of control and spread to other parts of your body.",
+              "Screening tests for cervical cancer can help find abnormal cells so you can get treatment to prevent cervical cancer. These tests can also find cervical cancer early when it's usually easier to treat.",
+              "What causes cervical cancer?",
+              "Almost all cervical cancers are caused by a long-lasting infection with a virus called human papillomavirus (HPV). There are many types of HPV. The types that cause cancer are called \"high-risk HPV.\" High-risk HPV is very common. It can be passed from one person to another through close skin-to-skin touching, usually during vaginal, anal, or oral sex. Most people who are infected have no symptoms and don't know they have it.",
+              "If you're infected with high-risk HPV, usually your immune system will get rid of it within a year or two. But if your immune system can't control the infection, it may last for many years. Over time, HPV can turn normal cervical cells into abnormal cells. Without treatment, these cells may keep changing until they become cervical cancer.",
+              "Who is more likely to develop cervical cancer?",
+              "Cervical cancer is most common in people over age 30. If you have a high-risk HPV infection in your cervix, you're more likely to develop cervical cancer if you:",
+              "• Have a weakened immune system because you:",
+              "• Have a disease that harms your immune system, such as HIV.",
+              "• Take medicine to control your immune system, such as certain medicines to treat cancer or autoimmune diseases",
+              "• Smoke tobacco or breathe secondhand smoke.",
+              "• Use birth control pills or have given birth to many children.",
+              "• Have obesity.",
+              "• Were exposed to a medicine called DES (diethylstilbestrol) before you were born. Between 1940-1971, DES was sometimes prescribed during pregnancy to prevent miscarriages. DES was later linked to health problems, including cervical cancer.",
+              "What are the symptoms of cervical cancer?",
+              "Cervical cancer usually doesn't cause symptoms when it first starts to grow. But when it does cause symptoms, they may include:",
+              "• Vaginal bleeding that's not normal for you, such as bleeding after sex or between menstrual periods",
+              "• Vaginal discharge (fluid) that's watery and has a strong odor or contains blood",
+              "• Pelvic pain or pain during sex",
+              "If cervical cancer spreads to other parts of your body, symptoms may include:",
+              "• Unusual vaginal bleeding or discharge",
+              "• Pelvic pain or pain during sex",
+              "• Difficult or painful bowel movements (poops) or bleeding from the rectum when having a bowel movement",
+              "• Difficult or painful urination (peeing) or blood in your urine (pee)",
+              "• Dull backache",
+              "• Swollen legs",
+              "• Abdominal (belly) pain",
+              "• Fatigue",
+              "How is cervical cancer diagnosed?",
+              "If you have symptoms or had an abnormal result on a screening test for cervical cancer, your health care provider will do more tests to find out if you have cervical cancer. They will:",
+              "• Ask about your medical history and your family health history",
+              "• Do a pelvic exam",
+              "• Suggest tests to diagnose or rule out cervical cancer, including:",
+              "• Colposcopy, a procedure using a device called a colposcope, which helps your provider examine your cervix for abnormal areas",
+              "• Cervical biopsy, a procedure to remove a tissue sample from your cervix so that it can be examined under a microscope to look for signs of cancer. Most biopsies can be done in your provider's office",
+              "What are the treatments for cervical cancer?",
+              "Different treatments are available for cervical cancer. The best treatment for you depends on your health, how much cancer you have, whether it has spread, and which treatment you prefer. You may have more than one treatment, including:",
+              "• Surgery to remove the cancer.",
+              "• Radiation therapy, which uses high-energy x-rays or other types of radiation to kill cancer cells or keep them from growing. The therapy may use radiation from a machine, or a radioactive substance may be placed in your body near the cancer.",
+              "• Chemotherapy (chemo), which uses special medicines to shrink or kill the cancer. The medicine may be pills, or it may be given through a vein (by IV). Sometimes, both types of chemo are used.",
+              "• Targeted therapy, which uses special medicines to block the growth and spread of cancer cells.",
+              "• Immunotherapy, which helps your immune system fight cancer cells.",
+              "Can cervical cancer be prevented?",
+              "Almost all cervical cancer can be prevented by:",
+              "• HPV vaccination. HPV vaccines provide the most protection if you get them before you're exposed to HPV. So, it's best to get vaccinated before you become sexually active. Medical experts recommend vaccinating children between ages 9 and 12.",
+              "• Routine cervical cancer screening. Two types of screening tests may be part of your routine health checkup. Both tests use a sample of cervical cells that your provider collects with a swab:",
+              "• A Pap smear checks for abnormal cells so they can be treated before they become cancer",
+              "• An HPV test checks for high-risk HPV infections that can cause cancer.",
+              "• Getting the right follow-up treatment if a screening test finds abnormal cells and/or high-risk HPV.",
+              "You can lower your risk for cervical cancer by not smoking. Using condoms correctly during sex lowers your risk of getting an HPV infection, but doesn't prevent it completely. Condom use has been linked to fewer cases of cervical cancer. If you or your partner is allergic to latex, you can use polyurethane condoms.",
+              "NIH: National Cancer Institute"
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/cervicalcancer.html",
+              "sourceLabel": "MedlinePlus, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002583",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording; also on the pivotal trials (NCT02628067, NCT03635567, NCT04221945)",
+            "quote": "Cervical Cancer",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     },
     {
       "name": "Hepatocellular Carcinoma",
+      "wording": {
+        "text": "Patients with hepatocellular carcinoma (HCC) secondary to hepatitis B who have received prior systemic therapy other than a PD-1/PD-L1-containing regimen",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Patients with hepatocellular carcinoma (HCC) secondary to hepatitis B who have received prior systemic therapy other than a PD-1/PD-L1-containing regimen",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "hepatocellular-carcinoma",
       "approvalDate": {
         "value": "2018-11-09",
@@ -1360,6 +1668,16 @@
     },
     {
       "name": "Biliary Tract Cancer",
+      "wording": {
+        "text": "Patients with locally advanced unresectable or metastatic biliary tract cancer (BTC)",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Patients with locally advanced unresectable or metastatic biliary tract cancer (BTC)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "biliary-tract-cancer",
       "approvalDate": {
         "value": "2023-10-31",
@@ -1394,6 +1712,16 @@
     },
     {
       "name": "Merkel Cell Carcinoma",
+      "wording": {
+        "text": "Adult and pediatric patients with recurrent locally advanced or metastatic Merkel cell carcinoma (MCC)",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Adult and pediatric patients with recurrent locally advanced or metastatic Merkel cell carcinoma (MCC)",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "merkel-cell-carcinoma",
       "approvalDate": {
         "value": "2018-12-19",
@@ -1703,6 +2031,16 @@
     },
     {
       "name": "Tumor Mutational Burden-High Cancer",
+      "wording": {
+        "text": "Adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [≥13 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-authorized test, that have progressed following prior treatment and who have no satisfactory alternative treatment options",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Adult and pediatric patients with unresectable or metastatic tumor mutational burden-high (TMB-H) [≥13 mutations/megabase (mut/Mb)] solid tumors, as determined by an FDA-authorized test, that have progressed following prior treatment and who have no satisfactory alternative treatment options",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "tumor-mutational-burden-high-cancer",
       "approvalDate": {
         "value": "2020-06-16",
@@ -1753,6 +2091,16 @@
     },
     {
       "name": "Cutaneous Squamous Cell Carcinoma",
+      "wording": {
+        "text": "Patients with recurrent or metastatic cutaneous squamous cell carcinoma (cSCC) or locally advanced cSCC that is not curable by surgery or radiation",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Patients with recurrent or metastatic cutaneous squamous cell carcinoma (cSCC) or locally advanced cSCC that is not curable by surgery or radiation",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "cutaneous-squamous-cell-carcinoma",
       "approvalDate": {
         "value": "2020-06-24",
@@ -1974,6 +2322,16 @@
     },
     {
       "name": "Ovarian Cancer",
+      "wording": {
+        "text": "Adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS ≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "sourceLabel": "Approved label (SUPPL-191), section 1",
+          "quote": "Adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1 (CPS ≥1) as determined by an FDA-authorized test, and who have received one or two prior systemic treatment regimens",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "ovarian-cancer",
       "approvalDate": {
         "value": "2026-02-10",
@@ -9591,8 +9949,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 24,
-          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
+          "page": 73,
+          "quote": "C as a single agent KEYNOTE-042 The efficacy of KEYTRUDA was investigated in KEYNOTE-042 (NCT02220894), a randomized, multicenter, open-label, active-controlled trial conducted in 1274 patien",
           "extractedBy": "regex",
           "verified": false
         },
@@ -14838,8 +15196,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 99,
-          "quote": "c Esophageal Cancer KEYNOTE-181 The efficacy of KEYTRUDA was investigated in KEYNOTE-181 (NCT02564263), a multicenter, randomized, open-label, active-controlled trial that enrolled 628 patien",
+          "page": 43,
+          "quote": "or Metastatic Esophageal Cancer Among the 314 patients with esophageal cancer enrolled in KEYNOTE-181 [see Clinical Studies (14.10)] treated with KEYTRUDA, the median duration of exposure to",
           "extractedBy": "regex",
           "verified": false
         },
@@ -19041,6 +19399,14 @@
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 24,
+          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": []
@@ -21082,14 +21448,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03933449",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 43,
-          "quote": "or Metastatic Esophageal Cancer Among the 314 patients with esophageal cancer enrolled in KEYNOTE-181 [see Clinical Studies (14.10)] treated with KEYTRUDA, the median duration of exposure to",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -30450,8 +30808,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 135,
-          "quote": "h fluoropyrimidine- and platinum-containing chemotherapy was investigated in KEYNOTE-859 (NCT03675737), a multicenter, randomized, double-blind, placebo-controlled trial that enrolled 1579 pa",
+          "page": 1,
+          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
           "extractedBy": "regex",
           "verified": false
         },
@@ -30608,14 +30966,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT04859582",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 1,
-          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -31907,14 +32257,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03881111",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 41,
-          "quote": "safety of KEYTRUDA, in combination with cisplatin and FU chemotherapy was investigated in KEYNOTE-590, a multicenter, double-blind, randomized (1:1), placebo-controlled trial for the first-li",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -35646,8 +35988,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 153,
-          "quote": "combination with gemcitabine and cisplatin chemotherapy was investigated in KEYNOTE-966 (NCT04003636), a multicenter, randomized, double-blind, placebo- controlled trial that enrolled 1069 p",
+          "page": 64,
+          "quote": "The safety of KEYTRUDA in combination with gemcitabine and cisplatin, was investigated in KEYNOTE-966, a multicenter, double-blind, randomized, placebo-controlled trial in patients with local",
           "extractedBy": "regex",
           "verified": false
         }
@@ -39405,14 +39747,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT04924062",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 64,
-          "quote": "The safety of KEYTRUDA in combination with gemcitabine and cisplatin, was investigated in KEYNOTE-966, a multicenter, double-blind, randomized, placebo-controlled trial in patients with local",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -62868,5 +63202,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T20:40:24.850Z"
+  "lastIngestedAt": "2026-11-09T19:57:50.371Z"
 }

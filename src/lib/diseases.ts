@@ -110,7 +110,7 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
         } else {
           entry.approvals.push({ ...base, date: i.approvalDate, submission: i.submissionNumber });
         }
-        entry.uses.push({ ...base, indication: i.displayName ?? i.name, steps: useSteps(drug, i), trials: laneTrials(drug, i.name), pivotal: pivotalTrials(drug, i.name), application: drug.regulatory?.us ? `${drug.regulatory.us.applicationType} ${drug.regulatory.us.applicationNumber}` : "" });
+        entry.uses.push({ ...base, indication: i.displayName ?? i.name, steps: useSteps(drug, i), trials: laneTrials(drug, i.name), pivotal: pivotalTrials(drug, i.name), application: applicationOf(drug, i) });
       }
     }
   }
@@ -121,6 +121,16 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
     d.uses.sort((a, b) => first(a).localeCompare(first(b)) || a.brandName.localeCompare(b.brandName));
   }
   return out.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/**
+ * The FDA application a use was approved under: the drug's own, unless the
+ * pipeline dated it from a sibling application (Nemluvio's BLA 761391).
+ */
+function applicationOf(drug: Drug, i: Drug['indications'][number]): string {
+  const sibling = !i.submissionNumber && /^Approved label \((BLA|NDA) (\d{6}),/.exec(i.approvalProvenance?.sourceLabel ?? '');
+  if (sibling) return `${sibling[1]} ${sibling[2]}`;
+  return drug.regulatory?.us ? `${drug.regulatory.us.applicationType} ${drug.regulatory.us.applicationNumber}` : '';
 }
 
 /**
