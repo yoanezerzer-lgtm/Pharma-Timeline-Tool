@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0025232",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0025232",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T049455",
+    "relatedConcept": "http://id.nlm.nih.gov/mesh/M0536361",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Systemic lysosomal storage disease marked by progressive physical deterioration and caused by a deficiency of L-sulfoiduronate sulfatase. This disease differs from MUCOPOLYSACCHARIDOSIS I by slower progression, lack of corneal clouding, and X-linked rather than autosomal recessive inheritance. The mild form produces near-normal intelligence and life span. The severe form usually causes death by age 15."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T049456",
+      "http://id.nlm.nih.gov/mesh/T752466",
+      "http://id.nlm.nih.gov/mesh/T443708",
+      "http://id.nlm.nih.gov/mesh/T443707",
+      "http://id.nlm.nih.gov/mesh/T844075",
+      "http://id.nlm.nih.gov/mesh/T049454",
+      "http://id.nlm.nih.gov/mesh/T844076"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Mucopolysaccharidosis II"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
