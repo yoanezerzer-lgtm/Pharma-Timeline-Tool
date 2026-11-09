@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D006664",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "annotation": {
+      "@language": "en",
+      "@value": "IM for the discipline or general articles on history; prefer /hist with specific subjects"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D006809",
+    "concept": "http://id.nlm.nih.gov/mesh/M0010436",
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D006664",
+    "lastUpdated": "2017-12-11",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0010437",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T020070",
+    "treeNumber": "http://id.nlm.nih.gov/mesh/K01.400",
+    "label": {
+      "@language": "en",
+      "@value": "History"
+    },
+    "@context": {
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "concept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#concept",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      }
+    }
+  }
+}

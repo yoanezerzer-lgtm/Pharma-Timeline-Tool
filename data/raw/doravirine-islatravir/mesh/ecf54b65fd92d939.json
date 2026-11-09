@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0021296",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0021296",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T040577",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Procedures concerned with the remedial treatment or prevention of diseases."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T848934",
+      "http://id.nlm.nih.gov/mesh/T040578"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Therapeutics"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}

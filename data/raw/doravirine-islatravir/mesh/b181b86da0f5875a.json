@@ -1,0 +1,114 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D006678",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000737",
+      "http://id.nlm.nih.gov/mesh/Q000472",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000648",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000187",
+      "http://id.nlm.nih.gov/mesh/Q000302",
+      "http://id.nlm.nih.gov/mesh/Q000502",
+      "http://id.nlm.nih.gov/mesh/Q000235",
+      "http://id.nlm.nih.gov/mesh/Q000254",
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000528"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "infection = HIV INFECTIONS but note specifics; do not confuse the old name HTLV-III with the Deltaretrovirus HTLV-3"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D017958",
+    "dateIntroduced": "1987-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "1988; use HTLV-III 1987; for AIDS VIRUS use HIV-1 1990-2004; for HUMAN T-CELL LEUKEMIA VIRUS TYPE III see HIV 1987-1991"
+    },
+    "identifier": "D006678",
+    "lastUpdated": "2020-08-13",
+    "nlmClassificationNumber": "QW 168.5.H6",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0010470",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T020151",
+    "previousIndexing": {
+      "@language": "en",
+      "@value": "Human T-Cell Leukemia Virus (1984-1986)"
+    },
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "1988; see HTLV-III 1987; for AIDS VIRUS see HIV-1 1990-2004; for HUMAN T-CELL LEUKEMIA VIRUS TYPE III see HIV 1987-1991"
+    },
+    "seeAlso": [
+      "http://id.nlm.nih.gov/mesh/D018894",
+      "http://id.nlm.nih.gov/mesh/D015728"
+    ],
+    "treeNumber": "http://id.nlm.nih.gov/mesh/B04.820.650.589.650.350",
+    "label": {
+      "@language": "en",
+      "@value": "HIV"
+    },
+    "@context": {
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "nlmClassificationNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "previousIndexing": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#previousIndexing"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0010470",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0010470",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T020151",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Human immunodeficiency virus. A non-taxonomic and historical term referring to any of two species, specifically HIV-1 and/or HIV-2. Prior to 1986, this was called human T-lymphotropic virus type III/lymphadenopathy-associated virus (HTLV-III/LAV). From 1986-1990, it was an official species called HIV. Since 1991, HIV was no longer considered an official species name; the two species were designated HIV-1 and HIV-2."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T045955",
+      "http://id.nlm.nih.gov/mesh/T020164",
+      "http://id.nlm.nih.gov/mesh/T020157",
+      "http://id.nlm.nih.gov/mesh/T020165",
+      "http://id.nlm.nih.gov/mesh/T568020",
+      "http://id.nlm.nih.gov/mesh/T020152",
+      "http://id.nlm.nih.gov/mesh/T020160",
+      "http://id.nlm.nih.gov/mesh/T020158",
+      "http://id.nlm.nih.gov/mesh/T020161",
+      "http://id.nlm.nih.gov/mesh/T568019",
+      "http://id.nlm.nih.gov/mesh/T020153",
+      "http://id.nlm.nih.gov/mesh/T020159",
+      "http://id.nlm.nih.gov/mesh/T020154",
+      "http://id.nlm.nih.gov/mesh/T020162",
+      "http://id.nlm.nih.gov/mesh/T020163",
+      "http://id.nlm.nih.gov/mesh/T020155",
+      "http://id.nlm.nih.gov/mesh/T020156"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "HIV"
+    },
+    "@context": {
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

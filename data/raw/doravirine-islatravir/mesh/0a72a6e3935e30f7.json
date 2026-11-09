@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0010437",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0010437",
+    "narrowerConcept": "http://id.nlm.nih.gov/mesh/M0010436",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T020070",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Record and study of past events."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "History"
+    },
+    "@context": {
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      }
+    }
+  }
+}
