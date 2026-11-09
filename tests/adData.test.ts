@@ -101,3 +101,12 @@ describe("the label's full wording for a use", () => {
     expect(indicationWording(label, 'Melanoma')).toBeUndefined();
   });
 });
+
+describe('the end of a longer name is not a disease on its own', () => {
+  it("skips \"disease\" in \"Alzheimer's disease\" and \"infection\" after \"(HIV-1)\"", () => {
+    const tails = (w: string) => candidatePhrases(w).filter((p) => p.tail).map((p) => p.text);
+    expect(tails("adults being evaluated for Alzheimer's disease")).toContain('disease');
+    expect(tails('human immunodeficiency virus type 1 (HIV-1) infection in adults')).toContain('infection');
+    expect(tails('moderate-to-severe plaque psoriasis in adults')).toEqual([]);
+  });
+});

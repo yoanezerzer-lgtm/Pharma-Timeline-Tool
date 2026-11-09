@@ -78,10 +78,15 @@ const title = (w: string) => w.replace(/(^|-)([a-z])/g, (_, p: string, c: string
  * the wording. A run never crosses punctuation, starts or ends on a small
  * word, or holds a number.
  */
-export function candidatePhrases(wording: string): { text: string; start: number; end: number; variants: string[] }[] {
-  const out: { text: string; start: number; end: number; variants: string[] }[] = [];
+export function candidatePhrases(
+  wording: string
+): { text: string; start: number; end: number; variants: string[]; tail?: boolean }[] {
+  const out: { text: string; start: number; end: number; variants: string[]; tail?: boolean }[] = [];
   let offset = 0;
-  for (const segment of wording.split(/[,;:()[\]•.]+|\s[-–—]\s/)) {
+  const parts = wording.split(/([,;:()[\]•.]+|\s[-–—]\s)/);
+  for (let s = 0; s < parts.length; s += 2) {
+    const segment = parts[s];
+    const afterBracket = s > 0 && parts[s - 1].includes(')') && /^\s*\S/.test(segment) && !/^\s{2,}/.test(segment);
     const tokens = segment.split(/\s+/).map((t) => t.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '')).filter(Boolean);
     for (let i = 0; i < tokens.length; i++) {
       for (let n = 1; n <= 5 && i + n <= tokens.length; n++) {
@@ -99,7 +104,9 @@ export function candidatePhrases(wording: string): { text: string; start: number
         }
         // MeSH files cancers as neoplasms or carcinomas ("Stomach Neoplasms", "Urothelial Carcinoma").
         if (/ cancer$/i.test(titled)) variants.push(titled.replace(/Cancer$/, 'Carcinoma'), titled.replace(/Cancer$/, 'Neoplasms'));
-        out.push({ text: run.join(' '), start: offset + i, end: offset + i + n, variants: [...new Set(variants)] });
+        // The end of a name the run doesn't hold: "disease" in "Alzheimer's disease", "infection" in "(HIV-1) infection".
+        const tail = i > 0 ? /['’]s$/i.test(tokens[i - 1]) : afterBracket;
+        out.push({ text: run.join(' '), start: offset + i, end: offset + i + n, variants: [...new Set(variants)], ...(tail ? { tail } : {}) });
       }
     }
     offset += tokens.length + 1;
@@ -149,6 +156,7 @@ export async function meshByWording(ctx: IngestContext, wording: string): Promis
   const spans = hits.map((h) => phrases[h.k]);
   const kept = hits.filter((h) => {
     const p = phrases[h.k];
+    if (p.tail) return false;
     return !spans.some((o) => o !== p && o.end - o.start > p.end - p.start && o.start <= p.start && o.end >= p.end);
   });
   const byId = new Map<string, { id: string; term: string; phrase: string }>();
