@@ -44,6 +44,18 @@ export interface DiseaseUse {
   steps: UseStep[];
   /** The pivotal trials behind the use, oldest start first, for the disease page's lanes. */
   trials: LaneTrial[];
+  /** Every pivotal trial of the use, dated or not, for the precedent table. */
+  pivotal: PivotalTrial[];
+  /** The FDA application ("BLA 761055"). */
+  application: string;
+}
+
+/** A pivotal trial as the precedent table lists it. */
+export interface PivotalTrial {
+  id: string;
+  name: string;
+  nctId?: string;
+  primaryCompletion?: DateValue;
 }
 
 /** A pivotal trial drawn as a bar from its start to its primary completion. */
@@ -98,7 +110,7 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
         } else {
           entry.approvals.push({ ...base, date: i.approvalDate, submission: i.submissionNumber });
         }
-        entry.uses.push({ ...base, indication: i.displayName ?? i.name, steps: useSteps(drug, i), trials: laneTrials(drug, i.name) });
+        entry.uses.push({ ...base, indication: i.displayName ?? i.name, steps: useSteps(drug, i), trials: laneTrials(drug, i.name), pivotal: pivotalTrials(drug, i.name), application: drug.regulatory?.us ? `${drug.regulatory.us.applicationType} ${drug.regulatory.us.applicationNumber}` : "" });
       }
     }
   }
@@ -134,6 +146,14 @@ function useSteps(drug: Drug, i: Drug['indications'][number]): UseStep[] {
     steps.push({ date: a.date, submissions: [a.submission], kind: a.kind, text, sourceUrl: a.provenance.sourceUrl });
   }
   return steps;
+}
+
+/** Every pivotal trial of the use, earliest primary completion first (undated last). */
+function pivotalTrials(drug: Drug, indicationName: string): PivotalTrial[] {
+  return drug.trials
+    .filter((t) => roleFor(t, indicationName) === 'PIVOTAL')
+    .map((t) => ({ id: t.id, name: trialShortName(t), nctId: t.nctId, primaryCompletion: t.primaryCompletionDate }))
+    .sort((a, b) => (a.primaryCompletion?.value ?? '9999').localeCompare(b.primaryCompletion?.value ?? '9999'));
 }
 
 /** The use's pivotal trials with both ends dated, oldest start first. */

@@ -9,6 +9,9 @@ import type { Approval } from '../schema/index.js';
 /** When the documents don't settle an approval date. */
 export const DATE_UNCLEAR = 'Date unclear';
 
+/** When the documents don't tie a fact (a trial, a disease) to what it belongs to. */
+export const NOT_YET_MATCHED = 'Not yet matched';
+
 /** What kind of FDA decision an approval was, as the disease and compare pages label it. */
 export const APPROVAL_KIND: Record<Approval['kind'], string> = {
   new: 'Approved',

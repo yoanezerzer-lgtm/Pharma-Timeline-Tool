@@ -173,3 +173,14 @@ a:hover {
 button {
   font-family: inherit;
 }
+
+/* A small line above a page title saying where the page sits ("Dupixent · approved use"). */
+.page-eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.page-eyebrow a {
+  font-weight: 600;
+}

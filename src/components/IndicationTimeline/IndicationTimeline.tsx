@@ -44,7 +44,7 @@ export function IndicationTimeline({
   return (
     <section className="ind-timeline" aria-label="All approved uses">
       <h2>
-        All approved uses <span className="ind-timeline__count">{indications.length}</span>
+        All approved uses of this drug <span className="ind-timeline__count">{indications.length}</span>
       </h2>
       {dated.length > 0 && (
         <div className="ind-timeline__axis" aria-hidden="true">

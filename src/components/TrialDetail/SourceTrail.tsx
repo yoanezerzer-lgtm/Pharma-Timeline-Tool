@@ -81,37 +81,34 @@ export function SourceTrail({ trial, indication }: { trial: Trial; indication?: 
   return (
     <section className="drawer__section" aria-labelledby="trail-head">
       <h3 id="trail-head">
-        Source trail
+        Where this comes from
         <span className={`prov ${checked ? 'is-verified' : 'is-unverified'}`}>{checked ? 'checked' : 'not yet checked'}</span>
       </h3>
-      <ol className="trail">
-        {cards.map(({ card, join }) => (
-          <li key={card.kind} className="trail__step">
-            {join && <span className="trail__join">{join}</span>}
-            <div className={`trail__card trail__card--${card.kind}`}>
-              <header>
-                <span>{card.source}</span>
-                {card.link && (
-                  <a href={card.link} target="_blank" rel="noopener noreferrer">
-                    {card.page ? `Open, page ${card.page}` : 'Open'} ↗
-                  </a>
-                )}
-              </header>
-              <dl>
-                {card.rows
-                  .filter(([, v]) => v)
-                  .map(([k, v]) => (
-                    <div key={k}>
-                      <dt>{k}</dt>
-                      <dd>{v}</dd>
-                    </div>
-                  ))}
-              </dl>
-              {card.quote && <blockquote>{card.quote}</blockquote>}
-            </div>
-          </li>
+      <dl className="trail">
+        {cards.map(({ card }) => (
+          <div key={card.kind} className="trail__row">
+            <dt>{TRAIL_ROW[card.kind]}</dt>
+            <dd>
+              {card.link ? (
+                <a href={card.link} target="_blank" rel="noopener noreferrer">
+                  {card.source}
+                  {card.page ? `, page ${card.page}` : ''} ↗
+                </a>
+              ) : (
+                card.source
+              )}
+              {card.quote && <q className="trail__quote">{card.quote}</q>}
+            </dd>
+          </div>
         ))}
-      </ol>
+      </dl>
     </section>
   );
 }
+
+/** What each source is to the trial, in a word or two. */
+const TRAIL_ROW: Record<Card['kind'], string> = {
+  fda: 'Approval',
+  doc: 'Named in',
+  registry: 'Registry record',
+};

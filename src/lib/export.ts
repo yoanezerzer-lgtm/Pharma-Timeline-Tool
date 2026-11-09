@@ -1,7 +1,9 @@
-import type { DiseaseApproval, DiseaseSummary } from './diseases.js';
+import type { DiseaseSummary } from './diseases.js';
 import { formatDate } from './dates.js';
 import { shortIndication } from './drugs.js';
-import { DATE_UNCLEAR } from './copy.js';
+import { APPROVAL_KIND, DATE_UNCLEAR, NOT_YET_MATCHED } from './copy.js';
+import { precedentRows } from './precedent.js';
+import { drugIndex } from './catalog.js';
 import { homeHref, indicationHref } from './router.js';
 
 /**
@@ -12,7 +14,6 @@ import { homeHref, indicationHref } from './router.js';
 
 // Addresses of the site the reader is on (it moves to its own domain later).
 const absolute = (path: string) => new URL(path, window.location.origin).href;
-const pageUrl = (a: DiseaseApproval) => absolute(indicationHref(a.drugSlug, a.indicationSlug));
 const fileName = (d: DiseaseSummary, ext: string) => `${d.name.replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '')}-FDA-approvals.${ext}`;
 const today = () => new Date().toISOString().slice(0, 10);
 
@@ -25,15 +26,35 @@ const SOURCES = [
 export async function exportExcel(d: DiseaseSummary): Promise<void> {
   const { default: writeExcelFile } = await import('write-excel-file/browser');
   const bold = (value: string) => ({ value, fontWeight: 'bold' as const });
+  const rows = precedentRows(d, (slug) => drugIndex.find((x) => x.slug === slug)?.company ?? '');
   const approvals = [
-    ['Approved', 'Drug', 'Generic name', 'Submission', 'What the FDA approved (FDA wording)', 'Page on this site'].map(bold),
-    ...d.approvals.map((a) => [
-      a.date ? { value: new Date(`${a.date.value}T00:00:00Z`), type: Date, format: 'yyyy-mm-dd' } : { value: DATE_UNCLEAR },
-      { value: a.brandName },
-      { value: a.inn },
-      { value: a.submission ?? '' },
-      { value: a.statement ?? a.indication, wrap: true },
-      { value: pageUrl(a) },
+    [
+      'Approved',
+      'Kind',
+      'Drug',
+      'Generic name',
+      'Company',
+      'Application',
+      'Submission',
+      'What the FDA approved (FDA wording)',
+      'Pivotal trials',
+      'Months after trials',
+      'FDA letter',
+      'Page on this site',
+    ].map(bold),
+    ...rows.map((r) => [
+      r.date ? { value: new Date(`${r.date.value}T00:00:00Z`), type: Date, format: 'yyyy-mm-dd' } : { value: DATE_UNCLEAR },
+      { value: APPROVAL_KIND[r.kind] },
+      { value: r.brandName },
+      { value: r.inn },
+      { value: r.company },
+      { value: r.application },
+      { value: r.submissions.join(', ') },
+      { value: r.covers, wrap: true },
+      { value: r.trials && r.trials.length > 0 ? r.trials.map((t) => (t.nctId ? `${t.name} (${t.nctId})` : t.name)).join('; ') : NOT_YET_MATCHED, wrap: true },
+      r.monthsAfterTrials !== undefined ? { value: r.monthsAfterTrials, type: Number } : { value: '' },
+      { value: r.letterUrl ?? '' },
+      { value: absolute(indicationHref(r.drugSlug, r.indicationSlug)) },
     ]),
   ];
   const about = [
@@ -46,7 +67,7 @@ export async function exportExcel(d: DiseaseSummary): Promise<void> {
     [{ value: `Exported ${today()} from ${absolute(homeHref())}` }],
   ];
   await writeExcelFile([
-    { data: approvals, sheet: 'Approvals', columns: [{ width: 13 }, { width: 18 }, { width: 22 }, { width: 12 }, { width: 80 }, { width: 50 }] },
+    { data: approvals, sheet: 'Approvals', columns: [{ width: 12 }, { width: 11 }, { width: 14 }, { width: 18 }, { width: 24 }, { width: 13 }, { width: 11 }, { width: 70 }, { width: 40 }, { width: 10 }, { width: 50 }, { width: 50 }] },
     { data: about, sheet: 'About', columns: [{ width: 120 }] },
   ]).toFile(fileName(d, 'xlsx'));
 }
