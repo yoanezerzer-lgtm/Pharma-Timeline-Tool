@@ -17,6 +17,7 @@ import {
   splitSection14ByIndication,
   runByApplicant,
   extractLabelTrialNames,
+  type LabelTrialName,
   type IndicationListEntry,
   type IndicationSpan,
 } from './roles.js';
@@ -325,11 +326,12 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   if (kept.length < rolesApplied.length) {
     log(`[trim]  dropped ${rolesApplied.length - kept.length} uncited trial(s) not run by the applicant`);
   }
-  const labelNames = labelSection14 ? extractLabelTrialNames(labelSection14) : new Map<string, string>();
+  const labelNames = labelSection14 ? extractLabelTrialNames(labelSection14) : new Map<string, LabelTrialName>();
   const trimmed = kept.map((t) => {
     const base = t.roles.length > 0 ? t : withoutPostedResults(t);
-    const labelName = base.nctId ? labelNames.get(base.nctId) : undefined;
-    if (!labelName || labelName === base.acronym) return base;
+    const fromLabel = base.nctId ? labelNames.get(base.nctId) : undefined;
+    if (!fromLabel || fromLabel.name === base.acronym) return base;
+    const labelName = fromLabel.name;
     return {
       ...base,
       labelName,
@@ -338,7 +340,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
         labelName: {
           sourceUrl: labelDoc?.url,
           sourceLabel: 'Approved label, section 14',
-          quote: `${labelName} (${base.nctId})`,
+          quote: fromLabel.quote,
           extractedBy: 'regex' as const,
           verified: false,
         },
