@@ -65,11 +65,67 @@
       },
       "submissionNumber": "ORIG-1",
       "approvalProvenance": {
-        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220496%22&limit=1",
-        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
-        "extractedBy": "api",
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220496Orig1s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
         "verified": false
-      }
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-08-13",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Positron emission tomography (PET) of the brain in adults with cognitive impairment who are being evaluated for Alzheimer’s disease to identify patients with tau neurofibrillary tangle (NFT) pathology",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220496Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1); wording from the label's section 1",
+            "quote": "Positron emission tomography (PET) of the brain in adults with cognitive impairment who are being evaluated for Alzheimer’s disease to identify patients with tau neurofibrillary tangle (NFT) pathology",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D004194",
+          "term": "Disease",
+          "areas": [
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "A definite pathologic process with a characteristic set of signs and symptoms. It may affect the whole body or any of its parts, and its etiology, pathology, and prognosis may be known or unknown.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D004194",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "disease",
+            "paragraphs": [
+              "An abnormal condition that affects the structure or function of part or all of the body and is usually associated with specific signs and symptoms."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/disease",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D004194",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "disease",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
     }
   ],
   "regulatory": {
@@ -135,5 +191,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:37:38.627Z"
+  "lastIngestedAt": "2026-11-09T20:08:17.919Z"
 }
