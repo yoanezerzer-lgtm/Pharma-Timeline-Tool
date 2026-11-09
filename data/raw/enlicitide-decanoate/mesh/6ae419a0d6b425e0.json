@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T000898788",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Cholesterol Levels, High"
+      },
+      {
+        "@language": "en",
+        "@value": "Levels, High Cholesterol"
+      },
+      {
+        "@language": "en",
+        "@value": "High Cholesterol Level"
+      },
+      {
+        "@language": "en",
+        "@value": "Cholesterol Level, High"
+      },
+      {
+        "@language": "en",
+        "@value": "Level, High Cholesterol"
+      }
+    ],
+    "dateCreated": "2016-04-12",
+    "identifier": "T000898788",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "High Cholesterol Levels"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (2017)"
+    },
+    "@context": {
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      }
+    }
+  }
+}
