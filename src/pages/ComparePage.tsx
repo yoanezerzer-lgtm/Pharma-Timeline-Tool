@@ -20,6 +20,7 @@ import {
 } from '../lib/compare.js';
 import { formatDate } from '../lib/dates.js';
 import { indicationLabel, ROLE_LABEL, shortIndication } from '../lib/drugs.js';
+import { areasOfDrug } from '../lib/areas.js';
 import { SEVERITY_LABEL, severityOfText, type Severity } from '../lib/diseases.js';
 import { indicationHref, replaceQuery } from '../lib/router.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
@@ -33,6 +34,8 @@ interface ProgramOption {
   /** The FDA's words, cut at a word for the picker; the full wording is the tooltip. */
   indication: string;
   full: string;
+  /** The therapeutic area the owner files this use under; unset when not clear for this use. */
+  area?: string;
   severity: Severity;
   year?: string;
   trials: number;
@@ -46,6 +49,7 @@ const OPTIONS: ProgramOption[] = drugIndex
       inn: d.inn,
       indication: shortIndication(i, 56),
       full: indicationLabel(i),
+      area: useArea(d, i),
       severity: severityOfText([i.name]),
       year: i.approvalDate?.value.slice(0, 4),
       trials: i.trialCount,
@@ -54,6 +58,21 @@ const OPTIONS: ProgramOption[] = drugIndex
   .sort((a, b) => a.drug.localeCompare(b.drug) || a.indication.localeCompare(b.indication));
 
 // Two moderate-to-severe atopic dermatitis approvals: the featured area, and a fair pair to set side by side.
+/**
+ * The area for one approved use: the area the owner files its disease under,
+ * else the drug's area when it has only one. Blank rather than a guess when a
+ * drug spans several areas (Dupixent's asthma isn't Immunology).
+ */
+function useArea(d: (typeof drugIndex)[number], i: (typeof drugIndex)[number]['indications'][number]): string | undefined {
+  const own = areasOfDrug({ slug: '', indications: [i] });
+  if (own.length > 0) return own.map((a) => a.name).join(', ');
+  const all = areasOfDrug(d);
+  return all.length === 1 ? all[0].name : undefined;
+}
+
+const AREA_BY_REF = new Map(OPTIONS.map((o) => [o.ref, o.area]));
+const areaOf = (slug: string, indicationSlug: string) => AREA_BY_REF.get(programRefString({ slug, indicationSlug }));
+
 /** Severity the FDA's wording names for this approval: its letters, newest first, then the label. */
 function programSeverity(p: ProgramView): Severity {
   const letters = (p.chosen ? [p.chosen] : [...p.approvals].reverse()).map((a) => a.statement);
@@ -310,7 +329,11 @@ function ProgramPicker({
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => choose(o)}
             >
-              <span><strong>{o.drug}</strong> · {o.indication}</span>
+              <span className="picker__name">
+                <strong>{o.drug}</strong>
+                {o.area && <> · {o.area}</>}
+                <span className="picker__use">{o.indication}</span>
+              </span>
               <span className="picker__meta">
                 {blocked(o)
                   ? `${SEVERITY_LABEL[o.severity]}: not comparable with ${SEVERITY_LABEL[otherSeverity!].toLowerCase()}`
@@ -374,44 +397,33 @@ function ProgramPane({
       {program && (
         <>
           <div className="pane__head">
-            <div>
-              <p className="pane__title" title={indicationLabel(program.indication)}>
-                <a href={indicationHref(program.drug.slug, program.indication.slug)}>{program.drug.brandName}</a>{' '}
-                <span>· {shortIndication(program.indication, 50)}</span>
-              </p>
-              <p className="pane__sub">
-                {program.whole
-                  ? `Approved in ${program.approvals.length} steps, first ${formatDate(program.approvals[0].date)}`
-                  : program.chosen
-                    ? `${kindLabel(program.chosen)} ${formatDate(program.chosen.date)}`
-                    : program.indication.approvalDate
-                      ? `Approved ${formatDate(program.indication.approvalDate)}`
-                      : 'Approval date unclear'}{' '}
-                · {pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supportive` : ''}
-              </p>
-            </div>
-            {program.whole ? (
-              <div className="pane__metric">
-                <p className="pane__metric-label">
-                  Trials not tied to one approval letter
-                  <Info label="Why there is no month count">
-                    This use was approved in steps and the records don’t say which letter each trial backs, so the time
-                    from primary completion to approval is left blank. Every trial the label cites for the use is shown.
-                  </Info>
-                </p>
-              </div>
-            ) : (
-              <div className="pane__metric">
-                <p className="pane__metric-value">{months === undefined ? '—' : <>{months} <span>mo</span></>}</p>
-                <p className="pane__metric-label">
-                  Primary completion to approval
-                  <Info label="What this measures">
-                    From the date the last patient was assessed for the primary endpoint in the final pivotal trial
-                    (ClinicalTrials.gov) to this FDA approval.
-                  </Info>
-                </p>
-              </div>
-            )}
+            <p className="pane__title">
+              <a href={indicationHref(program.drug.slug, program.indication.slug)}>{program.drug.brandName}</a>
+              {areaOf(program.drug.slug, program.indication.slug) && <span className="pane__area">{areaOf(program.drug.slug, program.indication.slug)}</span>}
+            </p>
+            <p className="pane__use" title={indicationLabel(program.indication)}>{shortIndication(program.indication, 90)}</p>
+            <p className="pane__sub">
+              {program.whole
+                ? `Approved in ${program.approvals.length} steps, first ${formatDate(program.approvals[0].date)}`
+                : program.chosen
+                  ? `${kindLabel(program.chosen)} ${formatDate(program.chosen.date)}`
+                  : program.indication.approvalDate
+                    ? `Approved ${formatDate(program.indication.approvalDate)}`
+                    : 'Approval date unclear'}
+              {' · '}{pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supportive` : ''}
+              {months !== undefined && <> · {months} mo from primary completion</>}
+              {program.whole ? (
+                <Info label="Why the trials aren't tied to one approval">
+                  This use was approved in steps and the records don’t say which letter each trial backs, so every trial
+                  the label cites for the use is shown and no month count is given. Pick one approval to see its own.
+                </Info>
+              ) : months !== undefined ? (
+                <Info label="What the month count measures">
+                  From the date the last patient was assessed for the primary endpoint in the final pivotal trial
+                  (ClinicalTrials.gov) to this FDA approval.
+                </Info>
+              ) : null}
+            </p>
           </div>
 
           {program.approvals.length > 1 && (
@@ -450,6 +462,10 @@ function ProgramPane({
                     <span className="chart__tick-label">{t.label}</span>
                   </span>
                 ))}
+                {program.approval !== undefined && <span className="chart__approval" style={{ left: `${axis.position(program.approval)}%` }} />}
+                {program.laterApprovals.map((t) => (
+                  <span key={t} className="chart__approval chart__approval--later" style={{ left: `${axis.position(t)}%` }} />
+                ))}
               </div>
               <div
                 className="chart__lanes"
@@ -484,9 +500,6 @@ function ProgramPane({
                             title={l.afterApproval ? 'Completed after this approval' : `${l.name}: open trial details`}
                             onClick={() => onTrial(program.key, l.trialId)}
                           />
-                        )}
-                        {pc !== undefined && ap !== undefined && ap > pc && (
-                          <span className="lane__gap" style={{ left: `${pc}%`, width: `${ap - pc}%` }} />
                         )}
                         {ro !== undefined && l.readoutKey && (
                           <button
