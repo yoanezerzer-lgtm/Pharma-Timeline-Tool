@@ -127,7 +127,7 @@ export interface IndicationListEntry {
  * table of contents and the real section. Which one parses best varies by
  * label (see extractIndicationList), so callers get all of them in order.
  */
-function sectionOneWindows(strippedText: string): string[] {
+export function sectionOneWindows(strippedText: string): string[] {
   const windows: string[] = [];
   for (const m of strippedText.matchAll(/\b1\s+INDICATIONS\s+AND\s+USAGE\b/gi)) {
     const afterStart = strippedText.slice(m.index);
@@ -216,7 +216,7 @@ export function extractIndicationList(labelText: string): IndicationListEntry[] 
  * in too. An indication statement is one sentence; the period is a better
  * boundary than the next heading, and simpler.
  */
-function extractUnnumberedIndication(window: string): IndicationListEntry[] {
+export function extractUnnumberedIndication(window: string): IndicationListEntry[] {
   const m = /\bis\s+indicated\s+([\s\S]*)/i.exec(window);
   if (!m) return [];
   const clause = m[1];
@@ -248,7 +248,7 @@ function extractUnnumberedIndication(window: string): IndicationListEntry[] {
   }).map((name, i) => ({ number: i + 1, name }));
 }
 
-function cleanIndicationClause(text: string): string {
+export function cleanIndicationClause(text: string): string {
   let name = text.replace(/\s+/g, ' ').trim();
   name = name.replace(/^for\s+/i, '');
   name = name.replace(
@@ -292,7 +292,7 @@ export interface IndicationSpan {
   text: string;
 }
 
-function flexibleNamePattern(name: string): string {
+export function flexibleNamePattern(name: string): string {
   return escapeRegExp(name).replace(/ /g, '\\s+').replace(/-/g, '\\s*-\\s*');
 }
 

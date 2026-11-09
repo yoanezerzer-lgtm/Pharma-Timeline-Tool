@@ -426,6 +426,12 @@ export const Indication = z.object({
    * preserved across re-runs like pressReleaseUrl.
    */
   displayName: z.string().optional(),
+  /**
+   * The label's full sentence for this use, when `name` is only its section 1
+   * heading ("Atopic Dermatitis"): the words after "is indicated for the
+   * treatment of", as the current label prints them.
+   */
+  wording: z.object({ text: z.string(), provenance: Provenance }).optional(),
   /** URL-safe id for routing, e.g. "rheumatoid-arthritis". Stable across re-ingestion. */
   slug: z.string().regex(/^[a-z0-9-]+$/),
   approvalDate: DateValue.optional(),

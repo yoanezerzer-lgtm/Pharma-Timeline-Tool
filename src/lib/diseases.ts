@@ -129,7 +129,7 @@ export function summarizeDiseases(drugs: Drug[]): DiseaseSummary[] {
  */
 function useSteps(drug: Drug, i: Drug['indications'][number]): UseStep[] {
   if (!i.approvals || i.approvals.length === 0) {
-    return [{ date: i.approvalDate, submissions: i.submissionNumber ? [i.submissionNumber] : [], kind: 'new', text: i.name, sourceUrl: i.approvalProvenance?.sourceUrl }];
+    return [{ date: i.approvalDate, submissions: i.submissionNumber ? [i.submissionNumber] : [], kind: 'new', text: i.wording?.text ?? i.name, sourceUrl: i.approvalProvenance?.sourceUrl }];
   }
   const names = [drug.brandName, drug.inn, drug.brandName.split(' ')[0]];
   const steps: UseStep[] = [];

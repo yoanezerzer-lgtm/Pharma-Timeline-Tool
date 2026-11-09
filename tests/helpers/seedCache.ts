@@ -4,6 +4,8 @@ import { cachePathFor, drugRawDir } from '../../scripts/ingest/http.js';
 import { drugsFdaUrl } from '../../scripts/ingest/fda.js';
 import { lookupByIdUrl, searchByInterventionUrl, type CtgovStudy } from '../../scripts/ingest/ctgov.js';
 import { extractCandidates } from '../../scripts/ingest/codes.js';
+import { meshWordingQueries } from '../../scripts/ingest/diseases.js';
+import { extractIndicationList } from '../../scripts/ingest/roles.js';
 import { STUDIES_BY_IDENTIFIER, ALL_REGISTERED } from '../fixtures/studies.js';
 
 /**
@@ -79,7 +81,12 @@ export function seedCache(opts: SeedOptions): void {
     });
   }
 
-  // 4. The intervention search.
+  // 4. MeSH's answer for each use's wording: none, so no use is matched by wording offline.
+  for (const name of new Set(allText.flatMap((t) => extractIndicationList(t).map((e) => e.name)))) {
+    for (const url of meshWordingQueries(name).urls) writeCacheEntry(slug, rawDir, 'mesh', url, { results: { bindings: [] } });
+  }
+
+  // 5. The intervention search.
   writeCacheEntry(slug, rawDir, 'ctgov-search', searchByInterventionUrl(opts.intervention), {
     studies: opts.registered ?? ALL_REGISTERED,
     totalCount: (opts.registered ?? ALL_REGISTERED).length,
