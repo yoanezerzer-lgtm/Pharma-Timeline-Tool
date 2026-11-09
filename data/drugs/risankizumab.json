@@ -75,6 +75,16 @@
   "indications": [
     {
       "name": "Plaque Psoriasis",
+      "wording": {
+        "text": "Moderate-to-severe plaque psoriasis in adults and pediatric patients 6 years of age and older who are candidates for systemic therapy or phototherapy",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-53), section 1",
+          "quote": "Moderate-to-severe plaque psoriasis in adults and pediatric patients 6 years of age and older who are candidates for systemic therapy or phototherapy",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "plaque-psoriasis",
       "approvalDate": {
         "value": "2019-04-23",
@@ -170,6 +180,16 @@
     },
     {
       "name": "Psoriatic Arthritis",
+      "wording": {
+        "text": "Active psoriatic arthritis in adults and pediatric patients 6 years of age and older",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-53), section 1",
+          "quote": "Active psoriatic arthritis in adults and pediatric patients 6 years of age and older",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "psoriatic-arthritis",
       "approvalDate": {
         "value": "2022-01-21",
@@ -259,6 +279,16 @@
     },
     {
       "name": "Crohn’s Disease",
+      "wording": {
+        "text": "Moderately to severely active Crohn's disease in adults",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-53), section 1",
+          "quote": "Moderately to severely active Crohn's disease in adults",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "crohn-s-disease",
       "approvalDate": {
         "value": "2022-06-16",
@@ -400,6 +430,16 @@
     },
     {
       "name": "Ulcerative Colitis",
+      "wording": {
+        "text": "Moderately to severely active ulcerative colitis in adults",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-53), section 1",
+          "quote": "Moderately to severely active ulcerative colitis in adults",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
       "slug": "ulcerative-colitis",
       "approvalDate": {
         "value": "2024-06-18",
@@ -11529,15 +11569,15 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2027-12-01",
+        "value": "2029-08-01",
         "precision": "month"
       },
       "completionDate": {
-        "value": "2028-01-01",
+        "value": "2029-08-01",
         "precision": "month"
       },
       "enrollment": {
-        "count": 120,
+        "count": 300,
         "type": "ESTIMATED"
       },
       "design": {
@@ -11554,19 +11594,49 @@
       },
       "arms": [
         {
-          "label": "Sub-Study 1: Risankizumab Monotherapy",
+          "label": "Substudy 1: Risankizumab Monotherapy",
           "type": "EXPERIMENTAL",
-          "description": "Participants will receive Risankizumab"
+          "description": "Participants will receive risankizumab"
         },
         {
-          "label": "Sub-Study 1: Lutikizumab Monotherapy",
+          "label": "Substudy 1: Lutikizumab Monotherapy",
           "type": "EXPERIMENTAL",
-          "description": "Participants will initially receive Lutikizumab Dose A followed by Lutikizumab Dose B every other week."
+          "description": "Participants will initially receive lutikizumab Dose A followed by Lutikizumab Dose B every other week."
         },
         {
-          "label": "SubStudy 1: Lutikizumab and Risankizumab Combination Therapy",
+          "label": "Substudy 1: Lutikizumab and Risankizumab Combination Therapy",
           "type": "EXPERIMENTAL",
-          "description": "Participants will be administered Lutikizumab and Risankizumab at the same time following the same dosing regimen as the monotherapy arms."
+          "description": "Participants will be administered lutikizumab and risankizumab at the same time following the same dosing regimen as the monotherapy arms."
+        },
+        {
+          "label": "Substudy 2: ABBV-701 Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will initially receive ABBV-701."
+        },
+        {
+          "label": "Substudy 2: Risankizumab Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive risankizumab."
+        },
+        {
+          "label": "Substudy 2: ABBV-701 and Risankizumab Combination Therapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be administered ABBV-701 and risankizumab at the same time following the same dosing regimen as the monotherapy arms."
+        },
+        {
+          "label": "Substudy 3: ABBV-547 Dose A",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive ABBV-547 Dose A."
+        },
+        {
+          "label": "Substudy 3: ABBV-547 Dose B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive ABBV-547 Dose B."
+        },
+        {
+          "label": "Substudy 3: ABBV-547 Dose C",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive ABBV-547 Dose C."
         }
       ],
       "primaryEndpoints": [
@@ -11615,7 +11685,112 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2027-12-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2029-08-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-11-09T20:10:30.257Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2028-01-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2029-08-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-11-09T20:10:30.257Z"
+        },
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 120,
+            "type": "ESTIMATED"
+          },
+          "newValue": {
+            "count": 300,
+            "type": "ESTIMATED"
+          },
+          "detectedAt": "2026-11-09T20:10:30.257Z"
+        },
+        {
+          "field": "arms",
+          "previousValue": [
+            {
+              "label": "Sub-Study 1: Risankizumab Monotherapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive Risankizumab"
+            },
+            {
+              "label": "Sub-Study 1: Lutikizumab Monotherapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will initially receive Lutikizumab Dose A followed by Lutikizumab Dose B every other week."
+            },
+            {
+              "label": "SubStudy 1: Lutikizumab and Risankizumab Combination Therapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will be administered Lutikizumab and Risankizumab at the same time following the same dosing regimen as the monotherapy arms."
+            }
+          ],
+          "newValue": [
+            {
+              "label": "Substudy 1: Risankizumab Monotherapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive risankizumab"
+            },
+            {
+              "label": "Substudy 1: Lutikizumab Monotherapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will initially receive lutikizumab Dose A followed by Lutikizumab Dose B every other week."
+            },
+            {
+              "label": "Substudy 1: Lutikizumab and Risankizumab Combination Therapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will be administered lutikizumab and risankizumab at the same time following the same dosing regimen as the monotherapy arms."
+            },
+            {
+              "label": "Substudy 2: ABBV-701 Monotherapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will initially receive ABBV-701."
+            },
+            {
+              "label": "Substudy 2: Risankizumab Monotherapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive risankizumab."
+            },
+            {
+              "label": "Substudy 2: ABBV-701 and Risankizumab Combination Therapy",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will be administered ABBV-701 and risankizumab at the same time following the same dosing regimen as the monotherapy arms."
+            },
+            {
+              "label": "Substudy 3: ABBV-547 Dose A",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive ABBV-547 Dose A."
+            },
+            {
+              "label": "Substudy 3: ABBV-547 Dose B",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive ABBV-547 Dose B."
+            },
+            {
+              "label": "Substudy 3: ABBV-547 Dose C",
+              "type": "EXPERIMENTAL",
+              "description": "Participants will receive ABBV-547 Dose C."
+            }
+          ],
+          "detectedAt": "2026-11-09T20:10:30.257Z"
+        }
+      ]
     },
     {
       "id": "m24-920",
@@ -13568,5 +13743,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:39:15.079Z"
+  "lastIngestedAt": "2026-11-09T20:10:30.257Z"
 }
