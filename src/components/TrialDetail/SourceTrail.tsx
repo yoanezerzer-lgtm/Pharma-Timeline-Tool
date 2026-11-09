@@ -80,7 +80,7 @@ export function SourceTrail({ trial, indication }: { trial: Trial; indication?: 
   return (
     <section className="drawer__section" aria-labelledby="trail-head">
       <h3 id="trail-head">
-        Where this comes from
+        Sources
       </h3>
       <dl className="trail">
         {cards.map(({ card }) => (

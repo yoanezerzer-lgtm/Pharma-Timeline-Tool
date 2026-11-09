@@ -1,9 +1,11 @@
 import type { PostedOutcome } from '../../schema/index.js';
 
-function formatValue(m: PostedOutcome['measurements'][number]): string {
-  if (m.lowerLimit !== undefined && m.upperLimit !== undefined) return `${m.value} (${m.lowerLimit} to ${m.upperLimit})`;
-  if (m.spread !== undefined) return `${m.value} ± ${m.spread}`;
-  return m.value;
+/** The value as posted; a percentage unit ("percentage of participants") gets its % sign. */
+function formatValue(m: PostedOutcome['measurements'][number], unit?: string): string {
+  const pct = unit && /^percent/i.test(unit.trim()) && /^-?[\d.]+$/.test(m.value.trim()) ? '%' : '';
+  if (m.lowerLimit !== undefined && m.upperLimit !== undefined) return `${m.value}${pct} (${m.lowerLimit} to ${m.upperLimit})`;
+  if (m.spread !== undefined) return `${m.value}${pct} ± ${m.spread}`;
+  return `${m.value}${pct}`;
 }
 
 function formatP(p: string): string {
@@ -30,7 +32,7 @@ export function PostedResults({ outcomes, sourceUrl }: { outcomes: PostedOutcome
                     <tr key={j}>
                       <th scope="row">{groupTitle.get(m.groupId) ?? m.groupId}</th>
                       {hasCategory && <td className="posted-results__category">{m.category}</td>}
-                      <td className="posted-results__value">{formatValue(m)}</td>
+                      <td className="posted-results__value">{formatValue(m, o.unitOfMeasure)}</td>
                     </tr>
                   ))}
                 </tbody>

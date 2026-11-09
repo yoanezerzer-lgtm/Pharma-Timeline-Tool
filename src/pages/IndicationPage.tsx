@@ -17,7 +17,7 @@ import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
 import { drugIndex, useDrug } from '../lib/catalog.js';
-import type { Drug, Milestone, Source } from '../schema/index.js';
+import type { Drug, Milestone, Source, Trial } from '../schema/index.js';
 import { approvalKindLabel, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
 import './IndicationPage.css';
@@ -89,6 +89,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           asPage
           trial={trialPage}
           indication={indication.name}
+          supports={supportsLine(trialPage, indication)}
           onClose={() => navigate(indicationHref(drug.slug, indication.slug))}
           crumbs={
             <p className="drawer__crumbs">
@@ -357,6 +358,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
         <TrialDrawer
           trial={selectedTrial}
           indication={indication.name}
+          supports={supportsLine(selectedTrial, indication)}
           onClose={() => navigate(indicationHref(drug.slug, indication.slug), { scroll: false })}
         />
       )}
@@ -466,4 +468,13 @@ function ApprovalTrail({
       {step('How we read them', 'methods and sources', aboutHref())}
     </ol>
   );
+}
+
+/** Where a trial sits against the use's first approval, from the two dates: a fact, not a guess at which letter it backed. */
+function supportsLine(trial: Trial, indication: Drug['indications'][number]): string | undefined {
+  const first = indication.approvalDate;
+  const pc = trial.primaryCompletionDate;
+  if (!first || !pc) return undefined;
+  const when = pc.value <= first.value ? 'before' : 'after';
+  return `Primary completion ${formatDate(pc)}, ${when} the first approval for this use (${formatDate(first)}).`;
 }

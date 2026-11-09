@@ -357,7 +357,7 @@
 .drawer.drawer--page {
   position: static;
   width: auto;
-  max-width: 760px;
+  max-width: none;
   overflow: visible;
   background: none;
   border: none;
@@ -395,4 +395,59 @@
   padding-top: 1rem;
   border-top: 1px solid var(--border);
   font-size: 14px;
+}
+
+.drawer__supports {
+  margin: -0.6rem 0 1rem;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+/* The trial at a glance: four facts in a strip. */
+.drawer__glance {
+  list-style: none;
+  margin: 0 0 1.4rem;
+  padding: 0.75rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.6rem 1.25rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-1);
+}
+
+.drawer__glance span {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+/* Side by side on the full page; stacked in the panel. */
+.drawer__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.drawer--page .drawer__cols {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 2.5rem;
+}
+
+.drawer--page .drawer__full-title {
+  max-width: 90ch;
+}
+
+@media (max-width: 760px) {
+  .drawer--page .drawer__cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* On the full page, keep each arm's value close to its name. */
+.drawer--page .posted-results__table {
+  max-width: 720px;
 }
