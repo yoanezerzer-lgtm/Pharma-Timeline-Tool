@@ -155,9 +155,8 @@ waiting on CI in a chat and re-running all drugs to test a guess.
 The owner wants a strong focus on **design** (9 Nov): every data chat
 should leave the pages it touches looking right, and design gets its own
 chats.
-1. **Design pass on the atopic dermatitis pages** (the showcase area):
-   disease page lanes, drug pages, the side panel and source trail, desktop
-   first; check each page in a browser before and after.
+1. **Design**: two rounds done 9 Nov (#134, #135); homepage makeover and
+   the trial page are next (see "Design review" below).
 2. **Finish atopic dermatitis data** (step 4): read sibling applications so
    Nemluvio's use gets its date; add the FDA-wording-to-MeSH step (from
    MeSH entry terms, e.g. "Hodgkin Lymphoma" → "Hodgkin Disease") so
@@ -170,6 +169,30 @@ chats.
 - Maintenance, any chat: move workflow actions off deprecated Node 20.
 - Later: "Rare diseases" from FDA orphan status; more areas once atopic
   dermatitis is complete.
+
+## Design review (9 Nov)
+Done: disease page "Every approval" table (one row per FDA letter: date,
+drug, company, the FDA's words, pivotal trials, months after trials;
+sortable; first approvals only; Excel has the same columns), labelled
+trial lanes with approval guides; approved-use page titled by the use,
+shows every widening, ends with a four-step "how this approval is backed
+up" chain; trial panel's source cards replaced by a plain "Where this
+comes from" list; letter paperwork and PDF page numbers cut from FDA text;
+titles and subtitles rewritten. Later widenings show "Not yet matched" for
+trials: the records don't say which trial each later letter rests on.
+
+Still open, in order:
+- **Homepage makeover** (owner, 9 Nov: it repeats the side panel's list).
+  Plan: lead with what the site answers (which trials led to which FDA
+  approval), feature atopic dermatitis as the complete area (timeline and
+  a preview of its table), recent FDA approvals, then where facts come
+  from. The full drug list stays in the side panel and on a Drugs page.
+- **Trial view: panel and page.** Keep the side panel when a trial is
+  opened from a chart; a trial link opened directly (shared, from the
+  table, from Google) shows a full page.
+- Drug page: long "What it's for" and "How it works" come before the
+  approved uses table. Empty "Company news" for Dupixent looks unfinished.
+- Duplicate trial short names (Ebglyss "ADhere" twice) need the NCT number.
 
 ## Open owner questions
 - Areas for Dupixent's other uses (asthma, COPD, nasal polyps, etc.).
