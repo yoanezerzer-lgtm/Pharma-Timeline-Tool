@@ -1,0 +1,131 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D000089183",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000453",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000134",
+      "http://id.nlm.nih.gov/mesh/Q000178",
+      "http://id.nlm.nih.gov/mesh/Q000209",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000139",
+      "http://id.nlm.nih.gov/mesh/Q000451",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000534",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000208",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000188",
+      "http://id.nlm.nih.gov/mesh/Q000151",
+      "http://id.nlm.nih.gov/mesh/Q000662",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000150",
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000175",
+      "http://id.nlm.nih.gov/mesh/Q000235",
+      "http://id.nlm.nih.gov/mesh/Q000517",
+      "http://id.nlm.nih.gov/mesh/Q000097",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000532",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000628",
+      "http://id.nlm.nih.gov/mesh/Q000652",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000401",
+      "http://id.nlm.nih.gov/mesh/Q000191",
+      "http://id.nlm.nih.gov/mesh/Q000276"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "general or unspecified; prefer specifics"
+    },
+    "broaderDescriptor": [
+      "http://id.nlm.nih.gov/mesh/D000844",
+      "http://id.nlm.nih.gov/mesh/D025242"
+    ],
+    "dateIntroduced": "2022-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "2022"
+    },
+    "identifier": "D000089183",
+    "lastUpdated": "2022-01-01",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M000743268",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T001095772",
+    "previousIndexing": {
+      "@language": "en",
+      "@value": "Spondylitis, Ankylosing (2006-2021)"
+    },
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "2022"
+    },
+    "treeNumber": [
+      "http://id.nlm.nih.gov/mesh/C05.550.069.340",
+      "http://id.nlm.nih.gov/mesh/C05.550.114.865.800.744",
+      "http://id.nlm.nih.gov/mesh/C05.116.900.853.625.800.744"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Axial Spondyloarthritis"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "previousIndexing": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#previousIndexing"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    }
+  }
+}

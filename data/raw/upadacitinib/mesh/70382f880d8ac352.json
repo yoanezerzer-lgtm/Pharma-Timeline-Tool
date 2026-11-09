@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0020377",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0020377",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T038692",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A chronic inflammatory condition affecting the axial joints, such as the SACROILIAC JOINT and other intervertebral or costovertebral joints. It occurs predominantly in young males and is characterized by pain and stiffness of joints (ANKYLOSIS) with inflammation at tendon insertions."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T840911",
+      "http://id.nlm.nih.gov/mesh/T038690",
+      "http://id.nlm.nih.gov/mesh/T840912",
+      "http://id.nlm.nih.gov/mesh/T751407",
+      "http://id.nlm.nih.gov/mesh/T751408",
+      "http://id.nlm.nih.gov/mesh/T038689",
+      "http://id.nlm.nih.gov/mesh/T684744",
+      "http://id.nlm.nih.gov/mesh/T038693",
+      "http://id.nlm.nih.gov/mesh/T038688",
+      "http://id.nlm.nih.gov/mesh/T038691"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Spondylitis, Ankylosing"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}

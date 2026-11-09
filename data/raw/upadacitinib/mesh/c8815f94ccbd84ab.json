@@ -1,0 +1,116 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D001172",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000191",
+      "http://id.nlm.nih.gov/mesh/Q000532",
+      "http://id.nlm.nih.gov/mesh/Q000451",
+      "http://id.nlm.nih.gov/mesh/Q000235",
+      "http://id.nlm.nih.gov/mesh/Q000208",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000401",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000517",
+      "http://id.nlm.nih.gov/mesh/Q000652",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000139",
+      "http://id.nlm.nih.gov/mesh/Q000534",
+      "http://id.nlm.nih.gov/mesh/Q000453",
+      "http://id.nlm.nih.gov/mesh/Q000097",
+      "http://id.nlm.nih.gov/mesh/Q000150",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000175",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000178",
+      "http://id.nlm.nih.gov/mesh/Q000188",
+      "http://id.nlm.nih.gov/mesh/Q000134",
+      "http://id.nlm.nih.gov/mesh/Q000151",
+      "http://id.nlm.nih.gov/mesh/Q000662",
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000209",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000628",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000382"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "in children = ARTHRITIS, JUVENILE RHEUMATOID; includes PCE: polyarthrite chronique evolutive; tends to be chronic so do not coord with CHRONIC DISEASE"
+    },
+    "broaderDescriptor": [
+      "http://id.nlm.nih.gov/mesh/D001327",
+      "http://id.nlm.nih.gov/mesh/D012216",
+      "http://id.nlm.nih.gov/mesh/D001168"
+    ],
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D001172",
+    "lastUpdated": "2024-11-05",
+    "nlmClassificationNumber": "WE 346",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0001750",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T003511",
+    "treeNumber": [
+      "http://id.nlm.nih.gov/mesh/C20.111.199",
+      "http://id.nlm.nih.gov/mesh/C05.799.114",
+      "http://id.nlm.nih.gov/mesh/C17.300.775.099",
+      "http://id.nlm.nih.gov/mesh/C05.550.114.154"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Arthritis, Rheumatoid"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "nlmClassificationNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    }
+  }
+}

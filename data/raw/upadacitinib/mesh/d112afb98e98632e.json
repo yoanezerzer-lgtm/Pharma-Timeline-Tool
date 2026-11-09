@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0021147",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0021147",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0502895",
+      "http://id.nlm.nih.gov/mesh/M0502896",
+      "http://id.nlm.nih.gov/mesh/M0335460",
+      "http://id.nlm.nih.gov/mesh/M0335459"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T040257",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A systemic autoimmune disorder that typically affects medium and large ARTERIES, usually leading to occlusive granulomatous vasculitis with transmural infiltrate containing multinucleated GIANT CELLS. The TEMPORAL ARTERY is commonly involved. This disorder appears primarily in people over the age of 50. Symptoms include FEVER; FATIGUE; HEADACHE; visual impairment; pain in the jaw and tongue; and aggravation of pain by cold temperatures. (From Adams et al., Principles of Neurology, 6th ed)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T368810",
+      "http://id.nlm.nih.gov/mesh/T372526",
+      "http://id.nlm.nih.gov/mesh/T368816",
+      "http://id.nlm.nih.gov/mesh/T368812",
+      "http://id.nlm.nih.gov/mesh/T368815",
+      "http://id.nlm.nih.gov/mesh/T368811",
+      "http://id.nlm.nih.gov/mesh/T368814"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Giant Cell Arteritis"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}

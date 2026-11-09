@@ -1,0 +1,71 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T040257",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Arteritis, Giant Cell"
+      },
+      {
+        "@language": "en",
+        "@value": "Giant Cell Arteritides"
+      },
+      {
+        "@language": "en",
+        "@value": "Arteritides, Giant Cell"
+      }
+    ],
+    "dateCreated": "1976-12-31",
+    "identifier": "T040257",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Giant Cell Arteritis"
+    },
+    "thesaurusID": [
+      {
+        "@language": "en",
+        "@value": "ORD (2010)"
+      },
+      {
+        "@language": "en",
+        "@value": "OMIM (2013)"
+      },
+      {
+        "@language": "en",
+        "@value": "UNK (19XX)"
+      }
+    ],
+    "@context": {
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      }
+    }
+  }
+}
