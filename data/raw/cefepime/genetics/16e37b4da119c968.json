@@ -1,0 +1,110 @@
+{
+  "ok": true,
+  "body": {
+    "_comment": "See https://medlineplus.gov/about/data-files-api",
+    "name": "Lyme disease",
+    "ghr_page": "https://medlineplus.gov/genetics/condition/lyme-disease",
+    "text-list": [
+      {
+        "text": {
+          "html": "<p>Lyme disease is an infectious disease caused by <i>Borrelia burgdorferi</i> bacteria. The bacteria are transferred to humans by tick bite, specifically by blacklegged ticks (commonly known as deer ticks). The condition is named for the location in which it was first described, the town of Lyme, Connecticut.</p><p>If not treated with antibiotics, Lyme disease follows three stages: early localized, early disseminated, and late disseminated infection. A small percentage of individuals have symptoms that persist months or years after treatment, which is called post-treatment Lyme disease syndrome.</p><p>A characteristic feature of Lyme disease, and the key feature of early localized infection, is a slowly expanding red rash on the skin (called erythema migrans) at the site of the tick bite; the rash is often bull's-eye shaped. Flu-like symptoms and enlarged lymph nodes (lymphadenopathy) are also early signs of infection. Most people who are treated at this stage never develop further symptoms.</p><p>The early disseminated stage of Lyme disease occurs as the bacteria is carried throughout the body in the bloodstream. This stage occurs a few weeks after the tick bite. Signs and symptoms can include additional rashes on other parts of the body, flu-like symptoms, and lymphadenopathy. Some affected individuals develop neurologic problems (referred to as neuroborreliosis), such as paralyzed muscles in the face (facial palsy); pain, numbness, or weakness in the hands or feet; difficulty concentrating; or memory problems. Rarely, the heart is affected (Lyme carditis), causing a sensation of fluttering or pounding in the chest (palpitations) or an irregular heartbeat.</p><p>The late disseminated stage of Lyme disease can occur months to years after the tick bite. The most common feature of this stage, Lyme arthritis, is characterized by episodes of joint pain and swelling, usually affecting the knees. In rare cases, the late disseminated stage also involves neurological problems.</p><p>Individuals with post-treatment Lyme disease syndrome report ongoing exhaustion (fatigue), muscle and joint achiness, headache, or difficulty concentrating even after treatment with antibiotics, when there is no evidence of the bacteria in the body. Very rarely, individuals have joint pain and swelling for months or years after successful antibiotic treatment. This complication is called antibiotic-refractory Lyme arthritis.</p>",
+          "text-role": "description"
+        }
+      }
+    ],
+    "inheritance-pattern-list": [
+      {
+        "inheritance-pattern": {
+          "code": "n",
+          "memo": "Not inherited"
+        }
+      },
+      {
+        "inheritance-pattern": {
+          "code": "u",
+          "memo": "Pattern unknown"
+        }
+      }
+    ],
+    "related-gene-list": [
+      {
+        "related-gene": {
+          "gene-symbol": "HLA-DRB1",
+          "ghr-page": "https://medlineplus.gov/genetics/gene/hla-drb1"
+        }
+      },
+      {
+        "related-gene": {
+          "gene-symbol": "TLR1",
+          "ghr-page": "https://www.ncbi.nlm.nih.gov/gene/7096"
+        }
+      }
+    ],
+    "synonym-list": [
+      {
+        "synonym": "B. burgdorferi infection"
+      },
+      {
+        "synonym": "Borrelia burgdorferi infection"
+      },
+      {
+        "synonym": "Borreliosis, Lyme"
+      },
+      {
+        "synonym": "Infection by Borrelia burgdorferi"
+      },
+      {
+        "synonym": "Infection due to Borrelia burgdorferi sensu lato"
+      },
+      {
+        "synonym": "Lyme borreliosis"
+      }
+    ],
+    "db-key-list": [
+      {
+        "db-key": {
+          "db": "ICD-10-CM",
+          "key": "A69.2"
+        }
+      },
+      {
+        "db-key": {
+          "db": "ICD-10-CM",
+          "key": "A69.20"
+        }
+      },
+      {
+        "db-key": {
+          "db": "ICD-10-CM",
+          "key": "A69.21"
+        }
+      },
+      {
+        "db-key": {
+          "db": "ICD-10-CM",
+          "key": "A69.22"
+        }
+      },
+      {
+        "db-key": {
+          "db": "ICD-10-CM",
+          "key": "A69.23"
+        }
+      },
+      {
+        "db-key": {
+          "db": "MeSH",
+          "key": "D008193"
+        }
+      },
+      {
+        "db-key": {
+          "db": "SNOMED CT",
+          "key": "23502006"
+        }
+      }
+    ],
+    "reviewed": "2018-06",
+    "published": "2023-11-08"
+  }
+}
