@@ -216,3 +216,29 @@ describe('matching trials to approvals from FDA reviews', () => {
     expect(approvalFromReview(late, nsclc, [s047], [late, t024, t010])).toBeUndefined();
   });
 });
+
+describe('approvalKind — wordings seen on Dupixent letters', () => {
+  it('reads a new patient population as a widened use', () => {
+    expect(
+      approvalKind('This Prior Approval supplemental biologics application proposes a new patient population: patients 12 to less than18 years of age with moderate-to-severe atopic dermatitis.')
+    ).toBe('expansion');
+  });
+  it('reads "provides for the treatment of" a wider group as a widened use', () => {
+    expect(
+      approvalKind('This Prior Approval supplemental biologics license application provides for the treatment of adult and pediatric patients aged 1 year and older, weighing at least 15 kg, with eosinophilic esophagitis.')
+    ).toBe('expansion');
+  });
+  it('does not read a labeling update about a disease as an approval', () => {
+    expect(
+      approvalKind('This Prior Approval supplemental biologics application provides for updates to the labeling to include long-term safety data for DUPIXENT in adult patients with atopic dermatitis.')
+    ).toBe('update');
+  });
+});
+
+describe('approvalKind — a repeat of the first approval is not a widened use', () => {
+  it('does not widen on "provides for the treatment of ... in adults" (Skyrizi Crohn’s, SUPPL-18)', () => {
+    expect(
+      approvalKind('This Prior Approval supplemental biologics license application provides for the treatment of moderately to severely active Crohn’s disease in adults.')
+    ).toBe('update');
+  });
+});

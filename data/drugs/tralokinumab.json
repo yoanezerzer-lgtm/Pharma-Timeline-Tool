@@ -99,6 +99,22 @@
             "extractedBy": "regex",
             "verified": false
           }
+        },
+        {
+          "submission": "SUPPL-1",
+          "date": {
+            "value": "2023-12-14",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval supplemental biologics license application provides for the treatment of moderate-to-severe atopic dermatitis in patients aged 12 years and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/761180Orig1s001ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-1)",
+            "quote": "This Prior Approval supplemental biologics license application provides for the treatment of moderate-to-severe atopic dermatitis in patients aged 12 years and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
+            "extractedBy": "regex",
+            "verified": false
+          }
         }
       ],
       "diseases": [
@@ -196,16 +212,6 @@
             "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
-          },
-          "approval": {
-            "submission": "ORIG-1",
-            "provenance": {
-              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761180Orig1s000ltr.pdf",
-              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
-              "quote": "Adbry is indicated for the treatment of moderate-to-severe atopic dermatitis in adult patients whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
-              "extractedBy": "rule",
-              "verified": false
-            }
           }
         }
       ],
@@ -447,7 +453,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761180s019lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable)",
+                "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761180Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Adbry is indicated for the treatment of moderate-to-severe atopic dermatitis in adult patients whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761180s019lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T20:41:32.711Z"
+        }
+      ]
     },
     {
       "id": "ecztra-2",
@@ -467,16 +514,6 @@
             "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
-          },
-          "approval": {
-            "submission": "ORIG-1",
-            "provenance": {
-              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761180Orig1s000ltr.pdf",
-              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
-              "quote": "Adbry is indicated for the treatment of moderate-to-severe atopic dermatitis in adult patients whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
-              "extractedBy": "rule",
-              "verified": false
-            }
           }
         }
       ],
@@ -713,7 +750,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761180s019lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable)",
+                "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761180Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Adbry is indicated for the treatment of moderate-to-severe atopic dermatitis in adult patients whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761180s019lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T20:41:32.711Z"
+        }
+      ]
     },
     {
       "id": "lp0162-1339",
@@ -732,16 +810,6 @@
             "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
-          },
-          "approval": {
-            "submission": "ORIG-1",
-            "provenance": {
-              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761180Orig1s000ltr.pdf",
-              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
-              "quote": "Adbry is indicated for the treatment of moderate-to-severe atopic dermatitis in adult patients whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
-              "extractedBy": "rule",
-              "verified": false
-            }
           }
         }
       ],
@@ -970,7 +1038,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761180s019lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable)",
+                "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761180Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Adbry is indicated for the treatment of moderate-to-severe atopic dermatitis in adult patients whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761180s019lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T20:41:32.711Z"
+        }
+      ]
     },
     {
       "id": "lp0162-1337",
@@ -1090,16 +1199,6 @@
             "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
-          },
-          "approval": {
-            "submission": "ORIG-1",
-            "provenance": {
-              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761180Orig1s000ltr.pdf",
-              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
-              "quote": "Adbry is indicated for the treatment of moderate-to-severe atopic dermatitis in adult patients whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
-              "extractedBy": "rule",
-              "verified": false
-            }
           }
         }
       ],
@@ -1386,7 +1485,48 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761180s019lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable)",
+                "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761180Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Adbry is indicated for the treatment of moderate-to-severe atopic dermatitis in adult patients whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761180s019lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older whose disease is not adequately controlled with topical prescription therapies or when those therapies are not advisable section 14 span, and the trial is sponsor-run and interventional."
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T20:41:32.711Z"
+        }
+      ]
     },
     {
       "id": "ecztra-5",
@@ -2714,5 +2854,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T19:08:14.418Z"
+  "lastIngestedAt": "2026-11-07T20:41:32.711Z"
 }

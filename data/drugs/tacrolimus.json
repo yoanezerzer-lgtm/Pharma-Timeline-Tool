@@ -1,0 +1,543 @@
+{
+  "slug": "tacrolimus",
+  "brandName": "Protopic",
+  "inn": "tacrolimus",
+  "modality": "Drug (NDA)",
+  "sponsor": "LEO PHARMA AS",
+  "summary": "",
+  "indications": [
+    {
+      "name": "As second-line therapy for the short-term and non-continuous chronic treatment of moderate to severe atopic dermatitis in non-immunocompromised adults and children who have failed to respond adequately to other topical prescription treatments for atopic dermatitis, or when those treatments are not advisable",
+      "slug": "as-second-line-therapy-for-the-short-term-and-non",
+      "approvalDate": {
+        "value": "2000-12-08",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "050777",
+      "applicationType": "NDA",
+      "sponsor": "LEO PHARMA AS",
+      "originalApprovalDate": {
+        "value": "2000-12-08",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Drug Evaluation III",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2011/050777s018ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-18), signature",
+          "quote": "Division of Dermatology and Dental Products Office of Drug Evaluation III Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "apples",
+      "nctId": "NCT00475605",
+      "protocolNumber": "F506-CL-5801",
+      "acronym": "APPLES",
+      "title": "APPLES: A Prospective Pediatric Longitudinal Evaluation to Assess the Long-Term Safety of Tacrolimus Ointment for the Treatment of Atopic Dermatitis",
+      "briefTitle": "A Pediatric Longitudinal Evaluation to Assess the Long-Term Safety of Protopic for the Treatment of Atopic Dermatitis",
+      "phase": "NA",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "LEO Pharma",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2005-05-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-01-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-01-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 8071,
+        "type": "ACTUAL"
+      },
+      "design": {},
+      "population": {
+        "maxAge": "16 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "1. Protopic Exposure",
+          "description": "Pediatric subjects whose ages are/were \\<16 years at the time of first tacrolimus ointment exposure"
+        }
+      ],
+      "primaryEndpoints": [
+        "Occurrence of systemic or cutaneous malignancy"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00475605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00475605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00475605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00475605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00475605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "lp0121-1388",
+      "nctId": "NCT03673527",
+      "protocolNumber": "LP0121-1388",
+      "title": "Open-label, Non-randomised, Single-centre, Multiple-dose, Phase 1, Pharmacokinetic Trial With a Topical Formulation of Tacrolimus in Healthy Subjects",
+      "briefTitle": "Tacrolimus Blood Levels After Topical Application of Tacrolimus on Healthy Skin",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "LEO Pharma",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
+      "startDate": {
+        "value": "2018-11-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-02-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-02-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "OTHER"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "60 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "topical formulation of tacrolimus",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Area Under the Plasma Concentration-Time Curve From Time Zero to Twelve Hours (AUC0-12) of tacrolimus on Days 1 and 14",
+        "Maximum Observed Drug Concentration (Cmax) of tacrolimus"
+      ],
+      "secondaryEndpoints": [
+        "Number of adverse events (AEs) up to Day 21",
+        "Number of subjects with AEs up to Day 21",
+        "Absolute values of systolic and diastolic blood pressure at Days 1, 2, 14, and 21 summarised by mean and standard deviation",
+        "Absolute values of pulse at Days 1, 2, 14, and 21 summarised by mean and standard deviation",
+        "Absolute values of body temperature at Days 1, 2, 14, and 21 summarised by mean and standard deviation",
+        "Changes in systolic and diastolic blood pressure from baseline to Day 21 summarised by mean and standard deviation",
+        "Changes in pulse from baseline to Day 21 summarised by mean and standard deviation",
+        "Changes in body temperature from baseline to Day 21 summarised by mean and standard deviation",
+        "Area Under the Plasma Concentration-Time Curve From Time Zero to Last Quantifiable Concentration (AUC0-t) of tacrolimus on Day 14",
+        "Apparent Terminal Half-life (t1/2) of tacrolimus on Day 14"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03673527",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03673527",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03673527",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03673527",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03673527",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2000-12-08",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 3 - New Dosage Form",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-1",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2001-06-26",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-2",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2002-06-13",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-2",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-3",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2002-11-22",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-3",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-4",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2003-04-18",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-4",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-6",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2003-12-23",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-6",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-10",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2005-07-14",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-10",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-12",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2006-01-19",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-12",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-14",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2008-12-31",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-14",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-18",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2011-11-04",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-18",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-21",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2019-02-25",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-21",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 050777",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA050777%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (SUPPL-18)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2011/050777s018lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (SUPPL-18)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2011/050777s018ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-2",
+      "label": "Letter (SUPPL-14)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2008/050777s014ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-3",
+      "label": "Label (SUPPL-12)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2006/050777s012lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-4",
+      "label": "Letter (SUPPL-12)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2006/05077s012ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-5",
+      "label": "Letter (SUPPL-10)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2005/050777s010ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-6",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2000/50777lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-7",
+      "label": "Letter (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2000/50777ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-8",
+      "label": "Label (SUPPL-6)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2003/50777scs006_protopic_lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-9",
+      "label": "Letter (SUPPL-6)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/50777scs006ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-10",
+      "label": "Label (SUPPL-21)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/050777s021lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-11",
+      "label": "Letter (SUPPL-4)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/50777scp004ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-12",
+      "label": "Label (SUPPL-4)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2003/50777scp004_protopic_lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-11-07T20:37:37.581Z"
+}

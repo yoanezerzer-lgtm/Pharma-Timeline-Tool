@@ -14,7 +14,7 @@ a new session when a conversation gets long.
   MedlinePlus). Only *link* to StatPearls: its licence bars derivatives.
 
 ## The site (https://yoanezerzer-lgtm.github.io/Pharma-Timeline-Tool/)
-- **56 drugs** (52 + 4 atopic dermatitis drugs, 7 Nov). The 6 originals (Rinvoq, Skyrizi, Keytruda, Lexapro,
+- **58 drugs** (52 + 6 atopic dermatitis drugs, 7 Nov). The 6 originals (Rinvoq, Skyrizi, Keytruda, Lexapro,
   Foundayo, Mimrylo) plus 46 from FDA's list of new-medicine approvals.
 - **Home** (`src/pages/DrugIndex.tsx`): one search box, one area menu, a
   plain list grouped by **therapeutic area**. The areas and each drug's
@@ -265,17 +265,26 @@ Sitemap submission and Cloudflare wait until the site is ready (owner, 7 Nov).
    Found from openFDA labels with "moderate to severe" atopic dermatitis;
    left out as mild to moderate: Opzelura, Eucrisa, Zoryve, Elidel; Zonalon
    (itch only); corticosteroids (atopic dermatitis is one item in a long
-   allergic list). **Not yet added:**
-   - Nemluvio (BLA 761390): the pipeline dates its atopic dermatitis use to
-     the original approval (12 Aug 2024, prurigo nodularis); atopic dermatitis
-     came later by a supplement that Drugs@FDA does not class as efficacy.
-     Fix the dating rule first, then ingest.
-   - Protopic (NDA 050777, "moderate to severe", second-line): the pipeline
-     read no approved use from its 2011 label. Needs an extraction fix.
-   - Known gaps in what was added: Dupixent chronic rhinosinusitis with nasal
-     polyps shows 12 Sep 2024 as its first approval found (a widening; the
-     2019 letter was not found). Dupixent use names are the label's short
-     headings, not full wording.
+   allergic list). Added in the second PR (7 Nov, after the owner's go-ahead
+   to fix the dating rules): Nemluvio (BLA 761390) and Protopic (NDA 050777).
+   Rule fixes: a use the original label lacks is no longer dated to the
+   original approval; Dupixent's full history is now read (letters saying
+   "nasal polyposis", "a new patient population", "provides for the treatment
+   of ... aged 1 year and older"); the letter that first lists a use reads
+   "Approved", not "Widened"; a pre-numbered label with one indication
+   sentence gives its indication.
+   **Gaps left on purpose:**
+   - Nemluvio atopic dermatitis has no date: it was approved under a second
+     application, BLA 761391 (13 Dec 2024, Drugs@FDA), merged into this
+     label in June 2025. Dating it needs the pipeline to read a sibling
+     application named in the letter ("approval of BLAs 761390 and 761391").
+   - Protopic has no disease link, so it is on its drug page but not on the
+     atopic dermatitis disease page: its trials are too old to carry MeSH
+     terms. The FDA-wording-to-MeSH step (see "Ideas not yet started")
+     would fix this.
+   - Dupixent and Nemluvio use names are the label's short headings, not the
+     FDA's full wording. The next weekly refresh re-reads the other drugs with
+     the fixed rules (some "Widened" labels become "Approved", e.g. Keytruda).
    Owner questions: in the 7 Nov reply (areas for Dupixent's other uses).
 5. Done (Ledger PR). **Visual direction.** Owner picked **A, Ledger** (7 Nov; may revisit):
    IBM Plex Sans, IBM Plex Mono for dates and numbers, deep teal accent,

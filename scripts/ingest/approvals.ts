@@ -47,7 +47,11 @@ export function approvalKind(purpose: string): Approval['kind'] | 'update' {
   if (/new indication|addition of (?:a |the |an )?(?:new )?indication|addition of (?:a )?new|adds? (?:a )?new/i.test(purpose)) return 'new';
   // A changed indication could be wider or narrower; the letter's wording alone doesn't say which.
   if (/\brevis\w* (?:the )?(?:following )?indications?\b|modif\w* (?:of|to) the (?:approved )?indication/i.test(purpose)) return 'revision';
-  if (/expan|extend|extension|provides for the use of|priority approval|is indicated/i.test(purpose)) {
+  if (/expan|extend|extension|provides for the use of|new patient population|priority approval|is indicated/i.test(purpose)) {
+    return 'expansion';
+  }
+  // "provides for the treatment of adult and pediatric patients aged 1 year and older": a wider group. A repeat of the first approval's wording ("in adults") isn't one.
+  if (/provides for the treatment of\b[^.]*\b(?:pediatric|aged?|ages|children|adolescents?|years?\b)/i.test(purpose)) {
     return 'expansion';
   }
   return 'update';
@@ -162,7 +166,9 @@ export function approvalsByIndication(
           // The letter that dates this indication approved it, whatever its
           // wording; for any other indication it must read as an approval of that use.
           const datesThis = datedBy.get(name) === p.letter.submission;
-          const kind: Approval['kind'] | 'update' = datesThis && p.kind === 'update' ? 'new' : p.kind;
+          // The letter that first lists a use in the label is that use's approval, however it words it.
+          const kind: Approval['kind'] | 'update' =
+            datesThis && (p.kind === 'update' || p.kind === 'expansion') ? 'new' : p.kind;
           if (kind === 'update') return [];
           if (!datesThis && !(p.purpose && purposeMatches(p.purpose, name))) return [];
           return [{ ...p, kind }];

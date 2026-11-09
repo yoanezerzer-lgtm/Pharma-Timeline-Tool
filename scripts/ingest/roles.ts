@@ -272,6 +272,21 @@ export function legacyIndicationsText(labelText: string): string | null {
   return m ? m[1] : null;
 }
 
+/**
+ * The indication of a label written before FDA's numbered format, when its
+ * Indications section is one "X is indicated ..." sentence (Protopic). Several
+ * indications in that format can't be told apart reliably, so none are listed.
+ */
+export function extractLegacyIndicationList(labelText: string): IndicationListEntry[] {
+  const legacy = legacyIndicationsText(labelText);
+  if (!legacy) return [];
+  const sentences = (legacy.match(/\bis\s+indicated\b/gi) ?? []).length;
+  // PDF line breaks leave "short- term"; the label reads "short-term".
+  return sentences === 1
+    ? extractUnnumberedIndication(legacy).map((e) => ({ ...e, name: e.name.replace(/(\w)- (\w)/g, '$1-$2') }))
+    : [];
+}
+
 export interface IndicationSpan {
   indication: string;
   text: string;

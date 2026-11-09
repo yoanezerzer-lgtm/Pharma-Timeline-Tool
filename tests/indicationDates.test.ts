@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { dateIndications, type LabelDoc } from '../scripts/ingest/indicationDates.js';
+import { dateIndications, keyWords, labelListsIndication, type LabelDoc } from '../scripts/ingest/indicationDates.js';
 import type { Milestone } from '../src/schema/index.js';
 
 function label(submission: string, ...names: string[]): LabelDoc {
@@ -171,5 +171,27 @@ describe('dateIndications — real-label quirks', () => {
     const labels = [label('ORIG-1', 'Rheumatoid Arthritis'), label('SUPPL-2', 'Rheumatoid Arthritis', 'Psoriatic Arthritis')];
     const r = dateIndications(['Psoriatic Arthritis'], labels, milestones, [letter('SUPPL-2', 'Approved for something else.')]);
     expect(r.has('Psoriatic Arthritis')).toBe(false);
+  });
+});
+
+describe('labelListsIndication', () => {
+  const orig: LabelDoc = {
+    submission: 'ORIG-1',
+    url: 'https://x/orig.pdf',
+    text: '1 INDICATIONS AND USAGE NEMLUVIO is indicated for the treatment of adults with prurigo nodularis. 2 DOSAGE AND ADMINISTRATION',
+  };
+  it('says a use the original label lacks was added later (Nemluvio atopic dermatitis)', () => {
+    expect(labelListsIndication('Prurigo Nodularis', orig)).toBe(true);
+    expect(labelListsIndication('Atopic Dermatitis', orig)).toBe(false);
+  });
+  it('has no answer for a label that cannot be read', () => {
+    expect(labelListsIndication('Atopic Dermatitis', { submission: 'ORIG-1', url: 'x', text: '!"#$%&' })).toBeUndefined();
+  });
+  it('treats "nasal polyposis" in a letter and "nasal polyps" in a label as the same use', () => {
+    expect(
+      [...keyWords('Chronic Rhinosinusitis with Nasal Polyps')].every((w) =>
+        keyWords('add-on maintenance treatment in adult patients with chronic rhinosinusitis with nasal polyposis').has(w)
+      )
+    ).toBe(true);
   });
 });

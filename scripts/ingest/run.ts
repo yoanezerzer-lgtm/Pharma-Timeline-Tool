@@ -13,6 +13,7 @@ import {
   diagnoseSection14,
   extractTrialAliases,
   extractIndicationList,
+  extractLegacyIndicationList,
   splitSection14ByIndication,
   runByApplicant,
   extractLabelTrialNames,
@@ -20,7 +21,7 @@ import {
   type IndicationSpan,
 } from './roles.js';
 import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
-import { dateIndications } from './indicationDates.js';
+import { dateIndications, labelListsIndication } from './indicationDates.js';
 import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
 import { findReviews } from './reviews.js';
 import { labelCompany, reviewOffice } from './labelFacts.js';
@@ -239,6 +240,18 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
       indicationSections = spans;
     }
     if (list.length > 0 && spans.length === list.length) break;
+  }
+
+  // A label in the pre-2006 format has no numbered sections and no section 14,
+  // but a one-sentence indication can still be read from it.
+  if (indicationList.length === 0) {
+    for (const candidate of labelDocsByRecency) {
+      const list = extractLegacyIndicationList(candidate.text);
+      if (list.length > 0) {
+        indicationList = list;
+        break;
+      }
+    }
   }
 
   if (labelDocsByRecency.length > 0 && !labelSection14) {
@@ -506,11 +519,18 @@ function buildDrugRecord(
   // indication from that first approval.
   const onlyOriginal =
     !!original && !fda.milestones.some((m) => m.type !== 'FDA_APPROVAL' && /efficacy/i.test(m.description ?? ''));
+  // The label approved first. When it can be read and doesn't list a use, a
+  // later supplement added it, even one FDA files as labeling (Nemluvio's
+  // atopic dermatitis came from a second application merged into its label).
+  const originalLabel = labels.find((l) => l.submission === (original?.submissionNumber ?? 'ORIG-1'));
   const indications = indicationList.map((entry, k) => {
     const own = history.get(entry.name) ?? [];
+    // A drug with one use has it from the original approval even if the label's wording changed since (Protopic).
+    const inOriginal =
+      indicationList.length === 1 || !originalLabel || labelListsIndication(entry.name, originalLabel) !== false;
     const approval =
       approvals.get(entry.name) ??
-      (onlyOriginal && original
+      (onlyOriginal && inOriginal && original
         ? {
             date: original.date,
             submission: original.submissionNumber ?? 'ORIG-1',
