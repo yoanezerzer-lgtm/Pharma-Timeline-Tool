@@ -261,6 +261,12 @@ Owner walked the pages: too much on screen, some wrong words. Done:
   (e.g. risk difference with CI); "FDA wording" column removed; long units
   ("Participants") shown once. Readouts section only when one is found,
   else one line. Sources as light "(source ↗)" links.
+  Owner follow-up (9 Nov): picker rows are "Drug · therapeutic area" with
+  the FDA wording small below (area left blank when a drug spans several
+  and the use's disease isn't filed); pane header is drug + area, wording
+  small; the month count is a small fact in the header line, not a big
+  number; approvals are vertical lines through the chart (later ones
+  dashed), no dashed gap lines; both charts start at the same height.
 - A label name the registry gives to another trial is not shown (Ebglyss
   ADvocate 1 had been labelled "ADhere"); its NCT number shows instead.
   **Pipeline still pairs label names wrongly** (`labelName` on
