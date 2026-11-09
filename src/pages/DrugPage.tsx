@@ -9,6 +9,7 @@ import { usePageMeta } from '../lib/usePageMeta.js';
 import { drugMeta } from '../lib/pageMeta.js';
 import { NotFoundPage } from './NotFoundPage.js';
 import { diseaseHref, indicationHref } from '../lib/router.js';
+import { withoutPageFooters } from '../lib/plainText.js';
 import type { Drug, Provenance } from '../schema/index.js';
 import './IndicationPage.css';
 import './DrugPage.css';
@@ -177,7 +178,7 @@ function DrugView({ drug }: { drug: Drug }) {
                 {s.number} {s.title}
               </summary>
               <p className="about__text">
-                {s.text}
+                {withoutPageFooters(s.text)}
                 {s.truncated && ' …'}
               </p>
               <p className="about__cite">

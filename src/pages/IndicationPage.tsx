@@ -18,7 +18,7 @@ import { BackLink } from '../components/BackLink/BackLink.js';
 import { drugIndex, useDrug } from '../lib/catalog.js';
 import { CheckBadge, checkSentence } from '../components/CheckBadge/CheckBadge.js';
 import type { Drug, Milestone, Source } from '../schema/index.js';
-import { DATE_UNCLEAR } from '../lib/copy.js';
+import { APPROVAL_KIND, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
 import './IndicationPage.css';
 
@@ -82,13 +82,21 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
   // supplements and administrative ones stay hidden.
   const ownSubmission = indication.submissionNumber;
   const label = indicationLabel(indication);
+  // Every letter in this use's history (first approval, then each widening
+  // or wording change) is shown, so trials that finished after the first
+  // approval line up with the approval they led to.
+  const useApprovals = new Map((indication.approvals ?? []).map((a) => [a.submission, a]));
   const scopedMilestones = drug.milestones
-    .filter((m) => isMeaningfulMilestone(m) || m.submissionNumber === ownSubmission)
-    .map((m) =>
-      m.type === 'FDA_SUPPLEMENT' && m.submissionNumber === ownSubmission
+    .filter((m) => isMeaningfulMilestone(m) || m.submissionNumber === ownSubmission || useApprovals.has(m.submissionNumber ?? ''))
+    .map((m) => {
+      const a = useApprovals.get(m.submissionNumber ?? '');
+      if (a && a.kind !== 'new') {
+        return { ...m, label: `${APPROVAL_KIND[a.kind]} — ${label}`, shortLabel: APPROVAL_KIND[a.kind] };
+      }
+      return m.type === 'FDA_SUPPLEMENT' && m.submissionNumber === ownSubmission
         ? { ...m, label: `FDA approval — ${label}`, shortLabel: 'Approved for this use' }
-        : m
-    );
+        : m;
+    });
 
   const labelUrl = newestLabelUrl(drug);
   const lagMonths = primaryCompletionToApprovalMonths(scopedTrials, indication.name, indication.approvalDate);
@@ -263,7 +271,7 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             {scopedMilestones.map((m) => (
               <tr
                 key={m.id}
-                className={m.type === 'FDA_APPROVAL' || m.submissionNumber === ownSubmission ? 'is-major' : undefined}
+                className={m.type === 'FDA_APPROVAL' || m.submissionNumber === ownSubmission || useApprovals.has(m.submissionNumber ?? '') ? 'is-major' : undefined}
               >
                 <td className="nums">{formatDate(m.date)}</td>
                 <td>{m.label}</td>

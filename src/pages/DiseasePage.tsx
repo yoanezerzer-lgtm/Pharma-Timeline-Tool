@@ -1,11 +1,12 @@
 import { Info } from '../components/Info/Info.js';
 import { useState } from 'react';
 import type { DiseaseSummary, UseStep } from '../lib/diseases.js';
-import { diseaseIndex } from '../lib/catalog.js';
+import { diseaseIndex, drugIndex } from '../lib/catalog.js';
+import { areasOfDrug, type Area } from '../lib/areas.js';
 import { formatDate, toTime } from '../lib/dates.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { diseaseMeta, diseasesMeta } from '../lib/pageMeta.js';
-import { diseaseHref, drugHref, indicationHref } from '../lib/router.js';
+import { diseaseHref, drugHref, homeHref, indicationHref } from '../lib/router.js';
 import '../components/IndicationTimeline/IndicationTimeline.css';
 import { APPROVAL_KIND, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
@@ -37,6 +38,7 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
   const step = Math.ceil(years.length / 8);
   const drugs = new Set(disease.uses.map((u) => u.drugSlug)).size;
   const uses = disease.uses.length;
+  const areas = siteAreas(disease);
 
   return (
     <main className="drug">
@@ -44,18 +46,25 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
         <h1>{disease.name}</h1>
         <p className="drug__mechanism">
           {uses} FDA-approved {uses === 1 ? 'use' : 'uses'} across {drugs} {drugs === 1 ? 'drug' : 'drugs'}
-          {disease.areas.length > 0 && <> · {disease.areas.join(', ')}</>}
+          {areas.map((a) => (
+            <span key={a.id}>
+              {' · '}
+              <a href={`${homeHref()}?area=${a.id}`}>{a.name}</a>
+            </span>
+          ))}
         </p>
         <AtAGlance disease={disease} />
       </header>
 
-      <section className="ind-timeline" aria-label="Approvals over time">
+      <section className="ind-timeline disease__lanes" aria-label="Approvals over time">
         <div className="disease__timeline-head">
           <h2>
             Approvals over time
             <Info label="How to read this">
-              One row per approved use. Bars are the pivotal trials, from start to primary completion. A filled dot is a
-              new approval; an open dot is a change to an earlier one.
+              One row per approved use. Bars are the pivotal trials, from start to primary completion; hover a bar for
+              its name and dates. A filled dot is a new approval; an open dot is a later change to it (a wider group of
+              patients, or new wording). “Mo after trials” counts the months from the last pivotal trial’s primary completion to
+              the first approval.
             </Info>
           </h2>
           <ExportButtons disease={disease} />
@@ -120,13 +129,32 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
                   </span>
                   <span className="ind-timeline__date">
                     {firstDate ? formatDate(firstDate) : DATE_UNCLEAR}
-                    {u.steps.length > 1 && <span className="disease__inn">+ {u.steps.length - 1} more</span>}
+                    {lag(u) !== undefined && <span className="disease__inn">{lag(u)} mo after trials</span>}
+                    {u.steps.length > 1 && (
+                      <span className="disease__inn">
+                        + {u.steps.length - 1} later {u.steps.length === 2 ? 'change' : 'changes'}
+                      </span>
+                    )}
                   </span>
                 </a>
               </li>
             );
           })}
         </ol>
+        <ul className="disease__legend" aria-label="Legend">
+          <li>
+            <span className="disease__key-bar" /> Pivotal trial, start to primary completion
+          </li>
+          <li>
+            <span className="disease__key-bar disease__key-bar--early" /> Earlier phase
+          </li>
+          <li>
+            <span className="disease__key-dot" /> {APPROVAL_KIND.new}
+          </li>
+          <li>
+            <span className="disease__key-dot disease__key-dot--later" /> Later change (widened or reworded)
+          </li>
+        </ul>
       </section>
 
       {/* Professionals come for the approvals; the plain-words summary follows them. */}
@@ -345,4 +373,31 @@ function Definition({ disease }: { disease: DiseaseSummary }) {
       </footer>
     </blockquote>
   );
+}
+
+/**
+ * The site's own areas for a disease (Immunology), not MeSH's categories:
+ * the owner's filing when there is one, else the areas every drug approved
+ * for it shares, else any of their areas.
+ */
+function siteAreas(disease: DiseaseSummary): Area[] {
+  const drugs = drugIndex.filter((d) => d.indications.some((i) => i.diseases.some((x) => x.meshId === disease.meshId)));
+  const lists = drugs.map((d) => areasOfDrug(d).filter((a) => a.id !== 'genetic' || drugs.length === 1));
+  if (lists.length === 0) return [];
+  const shared = lists[0].filter((a) => lists.every((l) => l.some((b) => b.id === a.id)));
+  if (shared.length > 0) return shared;
+  const all = new Map(lists.flat().map((a) => [a.id, a]));
+  return [...all.values()];
+}
+
+/** Whole months from the last pivotal primary completion before the first approval, to that approval. */
+function lag(u: DiseaseSummary['uses'][number]): number | undefined {
+  const first = u.steps.find((s) => s.date)?.date;
+  if (!first || first.precision === 'year') return undefined;
+  const ends = u.trials.map((t) => t.primaryCompletion).filter((d): d is NonNullable<typeof d> => !!d && d.precision !== 'year' && d.value <= first.value);
+  if (ends.length === 0) return undefined;
+  const last = ends.reduce((a, b) => (b.value > a.value ? b : a));
+  const [ay, am] = first.value.split('-').map(Number);
+  const [ly, lm] = last.value.split('-').map(Number);
+  return (ay - ly) * 12 + (am - lm);
 }
