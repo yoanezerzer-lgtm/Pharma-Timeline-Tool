@@ -247,3 +247,66 @@
 .ind-timeline__date .disease__inn {
   display: block;
 }
+
+/* A visible key under the lanes, so nobody has to open the (i) to read them. */
+.disease__legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.disease__legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.disease__key-bar {
+  display: inline-block;
+  width: 22px;
+  height: 4px;
+  border-radius: 1px;
+  background: var(--phase-3);
+  opacity: 0.85;
+}
+
+.disease__key-bar--early {
+  background: var(--phase-2);
+}
+
+.disease__key-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--phase-3);
+  box-sizing: border-box;
+}
+
+.disease__key-dot--later {
+  background: var(--bg-1);
+  border: 2px solid var(--phase-3);
+}
+
+/* The disease lanes carry two extra lines under the date ("8 mo after trials"). */
+.disease__lanes {
+  --ind-cols: minmax(140px, 260px) 1fr 8.5rem;
+}
+
+@media (max-width: 640px) {
+  .disease__lanes {
+    --ind-cols: 1fr 8rem;
+  }
+}
+
+/* Phones show the list without the lanes, so the key has nothing to explain. */
+@media (max-width: 640px) {
+  .disease__legend {
+    display: none;
+  }
+}

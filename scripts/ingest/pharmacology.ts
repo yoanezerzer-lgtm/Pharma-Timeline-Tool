@@ -1,5 +1,6 @@
 import type { NamedFact, Pharmacology } from '../../src/schema/index.js';
 import { pageForOffset } from './docs.js';
+import { withoutPageFooters } from '../../src/lib/plainText.js';
 
 /**
  * "About this drug": the label's own clinical pharmacology sections (12.1
@@ -68,11 +69,12 @@ export function pharmacologySections(label: Doc): Pharmacology['sections'] {
   for (const { number, title } of SECTIONS) {
     const found = section(label.text, number, title);
     if (!found) continue;
-    const truncated = found.text.length > MAX_SECTION;
+    const text = withoutPageFooters(found.text);
+    const truncated = text.length > MAX_SECTION;
     out.push({
       number,
       title,
-      text: truncated ? found.text.slice(0, MAX_SECTION).replace(/\s+\S*$/, '') : found.text,
+      text: truncated ? text.slice(0, MAX_SECTION).replace(/\s+\S*$/, '') : text,
       ...(truncated ? { truncated: true } : {}),
       provenance: {
         sourceUrl: label.url,

@@ -65,11 +65,19 @@ export function letterCore(statement: string, names: string[] = []): string {
     /^.*?\bprovides? for (?=(?:the )?treatment of\b)/i,
     // "... provides for modifications of the approved indication for the treatment of ..."
     /^.*?\bprovides? for modifications of the approved indication\s+(?=for\b)/i,
+    // "... application proposes a new patient population: patients 12 to less than 18 years ..."
+    /^.*?\b(?:proposes|provides? for) a new patient population\s*:\s*/i,
+    // "... provides for an extension of the age range for the atopic dermatitis indication to allow for the “treatment of ..."
+    /^.*?\bprovides? for an extension of the age range for .*?\bto allow for the\s+/i,
   ];
   for (const re of openings) {
     const m = s.match(re);
     if (!m || m[0].length >= s.length - 20) continue;
     let rest = s.slice(m[0].length).replace(/^[:,\s]+/, '');
+    // A quoted use ("“treatment of … advisable.”") loses its quote marks.
+    if (/^[“"]/.test(rest)) rest = rest.replace(/^[“"]/, '').replace(/[”"]\s*$/, '').replace(/[.,]?[”"]?\.?$/, '.');
+    // A postmarketing requirement listed after the use ("… 12 years. 3183-1 Conduct a randomized …") is not part of it.
+    rest = rest.replace(/(\.)\s+\d{3,5}-\d+\s+[A-Z].*$/, '$1');
     // "for KEYTRUDA, as a single agent, for …" / "for the use of pembrolizumab, in combination …": the drug is named above.
     rest = rest.replace(new RegExp(`^(?:for )?(?:the use of )?${name}(?:\\s*\\([^)]*\\))?,?\\s+(?=(?:as|in|for|followed)\\b)`, 'i'), '');
     // A revision restates the use, then the paperwork: "… approved on September 4, 2014, under the provisions of 21 CFR 601.70, to remove …".
@@ -81,4 +89,17 @@ export function letterCore(statement: string, names: string[] = []): string {
 
 function escapeRegExp(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * Label text without the PDF's page furniture that the text reader picks up
+ * mid-sentence ("Page 32 of 77", "Reference ID: 5841185"). Only those
+ * markers are removed; the label's own words are untouched.
+ */
+export function withoutPageFooters(text: string): string {
+  return text
+    .replace(/\s*\bReference ID:\s*\d+\s*/g, ' ')
+    .replace(/\s*\bPage \d+ of \d+\s*/g, ' ')
+    .replace(/ {2,}/g, ' ')
+    .trim();
 }
