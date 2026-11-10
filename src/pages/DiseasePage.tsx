@@ -13,6 +13,7 @@ import { NotFoundPage } from './NotFoundPage.js';
 import { PrecedentTable } from '../components/PrecedentTable/PrecedentTable.js';
 import { precedentRows } from '../lib/precedent.js';
 import { ReviewTime } from '../components/ReviewTime/ReviewTime.js';
+import { ApprovalMarkers, type MarkerEvent } from '../components/ApprovalMarkers/ApprovalMarkers.js';
 import './IndicationPage.css';
 import './DrugPage.css';
 import './DiseasePage.css';
@@ -138,6 +139,20 @@ export function DiseaseTimeline({
   for (let y = new Date(min).getUTCFullYear() + 1; y <= new Date(max).getUTCFullYear(); y++) years.push(y);
   const step = Math.ceil(years.length / 8);
   const Heading = headingLevel === 2 ? 'h2' : 'h3';
+  // A diamond above the axis at each use's first US approval for this disease.
+  const events: MarkerEvent[] = disease.uses.flatMap((u) => {
+    const first = u.steps.find((s) => s.date);
+    if (!first?.date) return [];
+    return [
+      {
+        id: `${u.drugSlug}-${u.indicationSlug}`,
+        label: u.brandName,
+        detail: `${stepLabel(first)} · ${formatDate(first.date)}`,
+        pct: pct(toTime(first.date)),
+        href: first.sourceUrl,
+      },
+    ];
+  });
   return (
     <section className="ind-timeline disease__lanes" aria-label="Approvals over time">
       <div className="disease__timeline-head">
@@ -151,6 +166,7 @@ export function DiseaseTimeline({
           </Info>
         </Heading>
       </div>
+      {events.length > 0 && <ApprovalMarkers events={events} caption="First US approvals" />}
       {times.length > 0 && (
         <div className="ind-timeline__axis" aria-hidden="true">
           <div />
@@ -241,6 +257,12 @@ export function DiseaseTimeline({
       </ol>
       <ul className="disease__legend" aria-label="Legend">
         <li>
+          <span className="markers__key-diamond" /> First US approval for this disease (links to the FDA letter)
+        </li>
+        <li>
+          <span className="markers__key-circle">2</span> Approvals too close to label apart: hover or click to list
+        </li>
+        <li>
           <span className="disease__key-bar" /> Pivotal trial, start to primary completion
         </li>
         <li>
@@ -253,7 +275,84 @@ export function DiseaseTimeline({
           <span className="disease__key-dot disease__key-dot--later" /> Later label change (label expansion or revised indication)
         </li>
       </ul>
+      <TimelineData disease={disease} companyOf={companyOf} />
     </section>
+  );
+}
+
+/** Every value the timeline plots, as a table, for readers who can't use the chart or want the numbers. */
+function TimelineData({ disease, companyOf }: { disease: DiseaseSummary; companyOf: (drugSlug: string) => string }) {
+  const approvals = disease.uses
+    .flatMap((u) => u.steps.map((s, k) => ({ u, s, k })))
+    .sort((a, b) => (a.s.date?.value ?? '9999').localeCompare(b.s.date?.value ?? '9999'));
+  const trials = disease.uses.flatMap((u) => u.trials.map((t) => ({ u, t })));
+  return (
+    <details className="disease__data">
+      <summary>Data table</summary>
+      <table className="precedent__table disease__data-table">
+        <caption>Approvals plotted</caption>
+        <thead>
+          <tr>
+            <th scope="col">Drug</th>
+            <th scope="col">Company</th>
+            <th scope="col">Event</th>
+            <th scope="col">Submission</th>
+            <th scope="col">Date</th>
+            <th scope="col">Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          {approvals.map(({ u, s, k }) => (
+            <tr key={`${u.drugSlug}-${u.indicationSlug}-${k}`}>
+              <td>{u.brandName}</td>
+              <td>{companyOf(u.drugSlug)}</td>
+              <td>
+                {stepLabel(s)}
+                {k === 0 && ' (◇ marker)'}
+              </td>
+              <td className="review-time__mono">{s.submissions.join(', ') || '—'}</td>
+              <td className="review-time__mono">{s.date ? formatDate(s.date) : DATE_UNCLEAR}</td>
+              <td>
+                {s.sourceUrl ? (
+                  <a href={s.sourceUrl} target="_blank" rel="noopener noreferrer">
+                    FDA letter ↗
+                  </a>
+                ) : (
+                  '—'
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {trials.length > 0 && (
+        <table className="precedent__table disease__data-table">
+          <caption>Pivotal trials plotted</caption>
+          <thead>
+            <tr>
+              <th scope="col">Drug</th>
+              <th scope="col">Trial</th>
+              <th scope="col">Phase</th>
+              <th scope="col">Start</th>
+              <th scope="col">Primary completion</th>
+            </tr>
+          </thead>
+          <tbody>
+            {trials.map(({ u, t }) => (
+              <tr key={`${u.drugSlug}-${u.indicationSlug}-${t.id}`}>
+                <td>{u.brandName}</td>
+                <td>
+                  <a href={indicationTrialHref(u.drugSlug, u.indicationSlug, t.id)}>{t.name}</a>
+                </td>
+                <td className="review-time__mono">{t.phase ?? '—'}</td>
+                <td className="review-time__mono">{formatDate(t.start!)}</td>
+                <td className="review-time__mono">{formatDate(t.primaryCompletion!)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+    </details>
   );
 }
 

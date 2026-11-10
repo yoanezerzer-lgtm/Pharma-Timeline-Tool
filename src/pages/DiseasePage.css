@@ -397,3 +397,28 @@
   font-size: 13px;
   color: var(--text-3);
 }
+
+/* "Data table" under the timeline: every plotted value. */
+.disease__data {
+  margin: 0.75rem 0 0;
+  font-size: 13px;
+}
+
+.disease__data > summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 12.5px;
+}
+
+.disease__data-table {
+  margin-top: 0.6rem;
+}
+
+.disease__data-table caption {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  padding: 0.3rem 0;
+}
