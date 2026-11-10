@@ -1,0 +1,72 @@
+{
+  "meshId": "D038261",
+  "term": "Alexander Disease",
+  "searched": [
+    "alexander disease"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Zanvastro",
+      "inn": "zilganersen",
+      "application": "NDA 220210",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "zilganersen",
+        "indicationSlug": "alexander-disease-in-pediatric-and-adult-patients"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-09-03",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220210",
+          "label": "openFDA Drugs@FDA, NDA 220210 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2026-01-22",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220210Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 220210 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA) received January 22, 2026"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220210",
+          "label": "openFDA Drugs@FDA, NDA 220210 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220210",
+          "label": "openFDA Drugs@FDA, NDA 220210 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220210",
+          "label": "openFDA Drugs@FDA, NDA 220210 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220210Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 220210 ORIG-1"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "meshId": "D001289",
+  "term": "Attention Deficit Disorder with Hyperactivity",
+  "searched": [
+    "attention deficit disorder with hyperactivity",
+    "attention deficit hyperactivity disorder"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Vyvanse",
+      "inn": "lisdexamfetamine dimesylate",
+      "application": "NDA 021977",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "originalOnly": true,
+      "severity": "not-stated",
+      "indication": {
+        "value": "1 INDICATIONS AND USAGE VYVANSE ® is indicated for the treatment of: Attention Deficit Hyperactivity Disorder (ADHD) in adults and pediatric patients 6 years and older [see Clinical Studies (14.1) ].",
+        "source": {
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=704e4378-ca83-445c-8b45-3cfa51c1ecad",
+          "label": "Current label, NDA 021977 (openFDA)",
+          "quote": "1 INDICATIONS AND USAGE VYVANSE ® is indicated for the treatment of: Attention Deficit Hyperactivity Disorder (ADHD) in adults and pediatric patients 6 years and older [see Clinical Studies (14.1) ]."
+        }
+      },
+      "approvalDate": {
+        "value": {
+          "value": "2007-02-23",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021977",
+          "label": "openFDA Drugs@FDA, NDA 021977 ORIG-1"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021977",
+          "label": "openFDA Drugs@FDA, NDA 021977 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021977",
+          "label": "openFDA Drugs@FDA, NDA 021977 ORIG-1"
+        }
+      }
+    },
+    {
+      "brandName": "Simtriyo",
+      "inn": "centanafadine",
+      "application": "NDA 218145",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "centanafadine",
+        "indicationSlug": "attention-deficit-hyperactivity-disorder-adhd-in-adults-and"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-07-24",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA218145",
+          "label": "openFDA Drugs@FDA, NDA 218145 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2025-11-24",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 218145 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA) received November 24, 2025"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA218145",
+          "label": "openFDA Drugs@FDA, NDA 218145 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA218145",
+          "label": "openFDA Drugs@FDA, NDA 218145 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218145Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 218145 ORIG-1"
+        }
+      }
+    }
+  ]
+}

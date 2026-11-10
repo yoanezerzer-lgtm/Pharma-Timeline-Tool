@@ -8,6 +8,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { Drug } from '../src/schema/index.js';
 import { allowedSource, companiesOf, NewsFile } from '../src/lib/news.js';
+import { PrecedentFile } from '../src/lib/reviewTime.js';
 
 const DRUGS_DIR = join(process.cwd(), 'data', 'drugs');
 
@@ -46,6 +47,7 @@ function main(): void {
   }
   console.log(`\nAll ${files.length} drug record(s) valid.`);
   validateNews(new Set(files.map((f) => f.replace(/\.json$/, ''))));
+  validatePrecedent();
 }
 
 /** News links: the right shape, for a drug we have, and only on sites with no paywall. */
@@ -76,6 +78,34 @@ function validateNews(slugs: Set<string>): void {
     process.exit(1);
   }
   console.log(`All ${files.length} news file(s) valid.`);
+}
+
+/**
+ * Review-time precedent files (npm run precedent): schema, file name, and
+ * every letter quote naming a date that it actually says.
+ */
+function validatePrecedent(): void {
+  const dir = join(process.cwd(), 'data', 'precedent');
+  if (!existsSync(dir)) return;
+  const problems: string[] = [];
+  const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
+  for (const file of files) {
+    const result = PrecedentFile.safeParse(JSON.parse(readFileSync(join(dir, file), 'utf8')));
+    if (!result.success) {
+      problems.push(`${file}: ${result.error.issues.map((i) => `${i.path.join('.')} ${i.message}`).join('; ')}`);
+      continue;
+    }
+    if (`${result.data.meshId}.json` !== file) problems.push(`${file}: meshId is ${result.data.meshId}`);
+    for (const p of result.data.products) {
+      const r = p.receiptDate;
+      if (r && !r.source.quote) problems.push(`${file}: ${p.brandName} receipt date has no quote`);
+    }
+  }
+  if (problems.length > 0) {
+    console.error(`\nPrecedent files with problems:\n  ${problems.join('\n  ')}`);
+    process.exit(1);
+  }
+  console.log(`All ${files.length} precedent file(s) valid.`);
 }
 
 main();

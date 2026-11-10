@@ -1,0 +1,72 @@
+{
+  "meshId": "D002312",
+  "term": "Cardiomyopathy, Hypertrophic",
+  "searched": [
+    "hypertrophic cardiomyopathy"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Myqorzo",
+      "inn": "aficamten",
+      "application": "NDA 219083",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "aficamten",
+        "indicationSlug": "adults-with-symptomatic-obstructive-hypertrophic"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2025-12-19",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219083",
+          "label": "openFDA Drugs@FDA, NDA 219083 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2024-09-26",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 219083 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA) received September 26, 2024"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219083",
+          "label": "openFDA Drugs@FDA, NDA 219083 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219083",
+          "label": "openFDA Drugs@FDA, NDA 219083 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219083",
+          "label": "openFDA Drugs@FDA, NDA 219083 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/219083Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 219083 ORIG-1"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "meshId": "D000092562",
+  "term": "Allergic Fungal Sinusitis",
+  "searched": [
+    "allergic fungal sinusitis"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Dupixent",
+      "inn": "dupilumab",
+      "application": "BLA 761055",
+      "applicationType": "BLA",
+      "submission": "SUPPL-75",
+      "site": {
+        "drugSlug": "dupilumab",
+        "indicationSlug": "allergic-fungal-rhinosinusitis"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-02-23",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-75"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2025-08-29",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761055Orig1s075ltr.pdf",
+          "label": "FDA approval letter, BLA 761055 SUPPL-75",
+          "quote": "Please refer to your supplemental biologics license application (sBLA) received August 29, 2025"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-75"
+        }
+      },
+      "submissionClass": {
+        "value": "Efficacy",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-75"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761055Orig1s075ltr.pdf",
+          "label": "FDA approval letter, BLA 761055 SUPPL-75"
+        }
+      }
+    }
+  ]
+}

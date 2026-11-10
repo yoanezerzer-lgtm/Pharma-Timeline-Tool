@@ -1,0 +1,73 @@
+{
+  "meshId": "D015266",
+  "term": "Carcinoma, Merkel Cell",
+  "searched": [
+    "merkel cell carcinoma"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Keytruda",
+      "inn": "pembrolizumab",
+      "application": "BLA 125514",
+      "applicationType": "BLA",
+      "submission": "SUPPL-45",
+      "site": {
+        "drugSlug": "pembrolizumab",
+        "indicationSlug": "merkel-cell-carcinoma"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2018-12-19",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA125514",
+          "label": "openFDA Drugs@FDA, BLA 125514 SUPPL-45"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2018-06-29",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/125514Orig1s045Ltr.pdf",
+          "label": "FDA approval letter, BLA 125514 SUPPL-45",
+          "quote": "Please refer to your Supplemental Biologics License Application (sBLA), dated June 29, 2018, received June 29, 2018"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA125514",
+          "label": "openFDA Drugs@FDA, BLA 125514 SUPPL-45"
+        }
+      },
+      "submissionClass": {
+        "value": "Efficacy",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA125514",
+          "label": "openFDA Drugs@FDA, BLA 125514 SUPPL-45"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA125514",
+          "label": "openFDA Drugs@FDA, BLA 125514 SUPPL-45"
+        }
+      },
+      "accelerated": {
+        "value": true,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/125514Orig1s045Ltr.pdf",
+          "label": "FDA approval letter, BLA 125514 SUPPL-45",
+          "quote": "DEPARTMENT OF HEALTH AND HUMAN SERVICES Food and Drug Administration Silver Spring MD 20993 BLA 125514/S-45 ACCELERATED APPROVAL Merck Sharp & Dohme Corp"
+        }
+      }
+    }
+  ]
+}

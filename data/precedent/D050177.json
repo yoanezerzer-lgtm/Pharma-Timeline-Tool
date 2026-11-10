@@ -1,0 +1,65 @@
+{
+  "meshId": "D050177",
+  "term": "Overweight",
+  "searched": [
+    "overweight"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Foundayo",
+      "inn": "orforglipron",
+      "application": "NDA 220934",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "orforglipron",
+        "indicationSlug": "in-combination-with-a-reduced-calorie-diet-and-increased"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-04-01",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220934",
+          "label": "openFDA Drugs@FDA, NDA 220934 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2026-01-20",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220934Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 220934 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA) received January 20, 2026"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220934",
+          "label": "openFDA Drugs@FDA, NDA 220934 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220934",
+          "label": "openFDA Drugs@FDA, NDA 220934 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220934Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 220934 ORIG-1"
+        }
+      }
+    }
+  ]
+}

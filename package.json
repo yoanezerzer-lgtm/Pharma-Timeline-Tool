@@ -17,7 +17,8 @@
     "readouts": "tsx scripts/readouts/cli.ts",
     "news": "tsx scripts/news/cli.ts",
     "novel": "tsx scripts/ingest/novel.ts",
-    "status": "tsx scripts/status.ts"
+    "status": "tsx scripts/status.ts",
+    "precedent": "tsx scripts/precedent/cli.ts"
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "5.1.1",

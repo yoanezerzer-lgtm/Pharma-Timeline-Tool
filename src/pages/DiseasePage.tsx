@@ -12,6 +12,7 @@ import { APPROVAL_KIND, approvalKindLabel, DATE_UNCLEAR } from '../lib/copy.js';
 import { NotFoundPage } from './NotFoundPage.js';
 import { PrecedentTable } from '../components/PrecedentTable/PrecedentTable.js';
 import { precedentRows } from '../lib/precedent.js';
+import { ReviewTime } from '../components/ReviewTime/ReviewTime.js';
 import './IndicationPage.css';
 import './DrugPage.css';
 import './DiseasePage.css';
@@ -97,6 +98,8 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
         </div>
         <PrecedentTable key={group.severity} rows={shownRows} />
       </section>
+
+      <ReviewTime meshId={disease.meshId} severity={group.severity} split={groups.length > 1} />
 
       {/* Professionals come for the approvals; the plain-words summary follows them. */}
       {disease.summary ? <PlainSummary summary={disease.summary} /> : <Definition disease={disease} />}

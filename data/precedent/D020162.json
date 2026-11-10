@@ -1,0 +1,73 @@
+{
+  "meshId": "D020162",
+  "term": "Hyperargininemia",
+  "searched": [
+    "hyperargininemia"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Loargys",
+      "inn": "pegzilarginase",
+      "application": "BLA 761211",
+      "applicationType": "BLA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "pegzilarginase",
+        "indicationSlug": "hyperargininemia-in-adult-and-pediatric-patients-2-years-of"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-02-23",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761211",
+          "label": "openFDA Drugs@FDA, BLA 761211 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2024-09-06",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+          "label": "FDA approval letter, BLA 761211 ORIG-1",
+          "quote": "Please refer to your biologics license application (BLA) dated and received September 6, 2024"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761211",
+          "label": "openFDA Drugs@FDA, BLA 761211 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761211",
+          "label": "openFDA Drugs@FDA, BLA 761211 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761211",
+          "label": "openFDA Drugs@FDA, BLA 761211 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": true,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761211Orig1s000ltr.pdf",
+          "label": "FDA approval letter, BLA 761211 ORIG-1",
+          "quote": "BLA 761211 BLA ACCELERATED APPROVAL Immedica Pharma AB Attention: Gregory Dombal U"
+        }
+      }
+    }
+  ]
+}
