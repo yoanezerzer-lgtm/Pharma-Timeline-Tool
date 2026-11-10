@@ -52,7 +52,7 @@ async function main(): Promise<void> {
   });
 
   await visit(page, 'drugs/', async (p) => {
-    const rows = await p.locator('.index__row').count();
+    const rows = await p.locator('.list-table tbody tr').count();
     return rows < drugs.length ? `drug list shows ${rows} of ${drugs.length} drugs` : undefined;
   });
 
@@ -80,8 +80,8 @@ async function main(): Promise<void> {
   }
 
   await visit(page, 'diseases/', async (p) => {
-    const body = await text(p);
-    return /\d+ diseases with FDA approvals/.test(body) ? undefined : 'disease list did not load';
+    const rows = await p.locator('.list-table tbody tr').count();
+    return rows > 0 ? undefined : 'disease list did not load';
   });
   const diseases = new Set(drugs.flatMap((d) => d.indications.flatMap((i) => (i.diseases ?? []).map((x) => x.meshId))));
   for (const id of diseases) {

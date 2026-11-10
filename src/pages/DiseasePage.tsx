@@ -1,8 +1,12 @@
 import { Info } from '../components/Info/Info.js';
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { severityGroups, type DiseaseSummary, type UseStep } from '../lib/diseases.js';
 import { diseaseIndex, drugIndex } from '../lib/catalog.js';
-import { areasOfDrug, type Area } from '../lib/areas.js';
+import { siteAreas } from '../lib/siteAreas.js';
+import { AREAS } from '../lib/areas.js';
+import { ListTable } from '../components/ListTable/ListTable.js';
+import { ListControls, Names } from '../components/ListTable/ListControls.js';
+import './DrugIndex.css';
 import { formatDate, toTime } from '../lib/dates.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { diseaseMeta, diseasesMeta } from '../lib/pageMeta.js';
@@ -362,49 +366,92 @@ function TimelineData({ disease, companyOf }: { disease: DiseaseSummary; company
 
 export function DiseasesPage() {
   usePageMeta(diseasesMeta());
-  const byArea = new Map<string, typeof diseaseIndex>();
-  for (const d of diseaseIndex) {
-    for (const a of d.areas.length > 0 ? d.areas : ['Other']) byArea.set(a, [...(byArea.get(a) ?? []), d]);
-  }
-  const areas = [...byArea.keys()].sort((a, b) => Number(a === 'Other') - Number(b === 'Other') || a.localeCompare(b));
+  const [initial] = useState(() => new URLSearchParams(window.location.search));
+  const [query, setQuery] = useState(initial.get('q') ?? '');
+  const [area, setArea] = useState(initial.get('area') ?? '');
+  useEffect(() => replaceQuery({ q: query, area }), [query, area]);
+
+  const rows = useMemo(() => diseaseIndex.map(diseaseRow), []);
+  const areasShown = AREAS.filter((a) => rows.some((r) => r.areas.some((x) => x.id === a.id)));
+  const q = query.trim().toLowerCase();
+  const shown = rows.filter(
+    (r) =>
+      (!area || r.areas.some((a) => a.id === area)) &&
+      (!q || [r.d.name, r.d.term, ...r.drugs, ...r.areas.map((a) => a.name)].join(' ').toLowerCase().includes(q)),
+  );
+
   return (
-    <main className="drug">
-      <header className="disease__head">
+    <main className="index">
+      <header className="index__head">
         <h1>Diseases</h1>
-        <p className="drug__mechanism">
-          {diseaseIndex.length} diseases with FDA approvals on this site, by therapeutic area.
+        <p className="index__lede">
+          {diseaseIndex.length} diseases with an FDA-approved drug on this site.
           <Info label="About this list">
-            Names and areas come from MeSH, the U.S. National Library of Medicine’s medical vocabulary. A disease can
-            sit in more than one area.
+            Disease names come from MeSH, the U.S. National Library of Medicine’s medical vocabulary, matched to each
+            approved use. Areas are the site’s therapeutic areas.
           </Info>
         </p>
       </header>
-      <div className="disease__areas">
-        {areas.map((area) => (
-          <section key={area} className="uses">
-            <h2>
-              {area} · {byArea.get(area)!.length}
-            </h2>
-            <ul className="uses__list">
-              {byArea.get(area)!.map((d) => {
-                const drugs = [...new Set(d.uses.map((u) => u.brandName))];
-                return (
-                  <li key={d.meshId}>
-                    <a href={diseaseHref(d.meshId)} className="uses__item">
-                      <span className="uses__name">{d.name}</span>
-                      <span className="uses__meta">
-                        {d.uses.length} approved {d.uses.length === 1 ? 'use' : 'uses'} · {drugs.join(', ')}
-                      </span>
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </section>
-        ))}
-      </div>
+      <ListControls
+        query={query}
+        onQuery={setQuery}
+        area={area}
+        onArea={setArea}
+        areas={areasShown}
+        placeholder="Search a disease or drug"
+        count={shown.length}
+        noun="disease"
+      />
+      {shown.length > 0 ? (
+        <ListTable
+          caption="Diseases with FDA approvals"
+          rows={shown}
+          rowKey={(r) => r.d.meshId}
+          initialSort={{ key: 'disease', up: true }}
+          columns={[
+            {
+              key: 'disease',
+              label: 'Disease',
+              sort: (r) => r.d.name,
+              render: (r) => (
+                <a className="index__name" href={diseaseHref(r.d.meshId)}>
+                  {r.d.name}
+                </a>
+              ),
+            },
+            { key: 'area', label: 'Area', sort: (r) => r.areas[0]?.name, render: (r) => <span className="list-table__sub">{r.areas.map((a) => a.name).join(', ') || '—'}</span> },
+            {
+              key: 'drugs',
+              label: 'Approved drugs',
+              sort: (r) => r.drugs.length,
+              descFirst: true,
+              phoneLabel: true,
+              render: (r) => <Names names={r.drugs} max={4} />,
+            },
+            { key: 'first', label: 'First approval', sort: (r) => r.first?.value, descFirst: true, className: 'is-date', phoneLabel: true, render: (r) => (r.first ? formatDate(r.first) : '—') },
+            { key: 'latest', label: 'Latest approval', sort: (r) => r.latest?.value, descFirst: true, className: 'is-date', phoneLabel: true, render: (r) => (r.latest ? formatDate(r.latest) : '—') },
+          ]}
+        />
+      ) : (
+        <p className="index__none">No diseases match your search.</p>
+      )}
     </main>
   );
+}
+
+/** One row of the diseases list: its drugs in order of first approval, and its first and latest FDA approval. */
+function diseaseRow(d: DiseaseSummary) {
+  const firstOf = (u: DiseaseSummary['uses'][number]) => u.steps.find((s) => s.date)?.date;
+  const uses = [...d.uses].sort((a, b) => (firstOf(a)?.value ?? '9999').localeCompare(firstOf(b)?.value ?? '9999'));
+  const dates = d.uses.flatMap((u) => u.steps.flatMap((s) => (s.date ? [s.date] : [])));
+  const by = (pick: (a: string, b: string) => boolean) => (dates.length ? dates.reduce((a, b) => (pick(b.value, a.value) ? b : a)) : undefined);
+  return {
+    d,
+    areas: siteAreas(d),
+    drugs: [...new Set(uses.map((u) => u.brandName))],
+    first: by((x, y) => x < y),
+    latest: by((x, y) => x > y),
+  };
 }
 
 /** MedlinePlus's summary, word for word, opening on its first paragraph (after a lead question, if any). */
@@ -512,21 +559,6 @@ function Definition({ disease }: { disease: DiseaseSummary }) {
       </footer>
     </blockquote>
   );
-}
-
-/**
- * The site's own areas for a disease (Immunology), not MeSH's categories:
- * the owner's filing when there is one, else the areas every drug approved
- * for it shares, else any of their areas.
- */
-function siteAreas(disease: DiseaseSummary): Area[] {
-  const drugs = drugIndex.filter((d) => d.indications.some((i) => i.diseases.some((x) => x.meshId === disease.meshId)));
-  const lists = drugs.map((d) => areasOfDrug(d).filter((a) => a.id !== 'genetic' || drugs.length === 1));
-  if (lists.length === 0) return [];
-  const shared = lists[0].filter((a) => lists.every((l) => l.some((b) => b.id === a.id)));
-  if (shared.length > 0) return shared;
-  const all = new Map(lists.flat().map((a) => [a.id, a]));
-  return [...all.values()];
 }
 
 /** Whole months from the last pivotal primary completion before the first approval, to that approval. */
