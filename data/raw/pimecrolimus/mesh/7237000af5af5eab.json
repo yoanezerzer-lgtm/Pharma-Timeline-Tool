@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D002648",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "annotation": {
+      "@language": "en",
+      "@value": "almost always check tag: NIM no qualifiers; see Manual Chapter 9"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D009273",
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D002648",
+    "lastUpdated": "2015-06-23",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0004045",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T007686",
+    "seeAlso": [
+      "http://id.nlm.nih.gov/mesh/D009863",
+      "http://id.nlm.nih.gov/mesh/D033242"
+    ],
+    "treeNumber": "http://id.nlm.nih.gov/mesh/M01.060.406",
+    "label": {
+      "@language": "en",
+      "@value": "Child"
+    },
+    "@context": {
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    }
+  }
+}
