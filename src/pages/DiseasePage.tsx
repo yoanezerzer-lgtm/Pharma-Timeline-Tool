@@ -167,7 +167,7 @@ export function DiseaseTimeline({
           Timeline
           <Info label="How to read this">
             One row per approved use. Bars are the pivotal trials, from start to primary completion; hover a bar for
-            its name and dates. A filled dot is a new approval; an open dot is a later change to it (a wider group of
+            its name and dates; a hollow bar finished after the use's first approval. A filled dot is a new approval; an open dot is a later change to it (a wider group of
             patients, or new wording). “Mo after trials” counts the months from the last pivotal trial’s primary completion to
             the first approval.
           </Info>
@@ -213,16 +213,18 @@ export function DiseaseTimeline({
                   const from = pct(toTime(t.start!));
                   const to = pct(toTime(t.primaryCompletion!));
                   const labelLeft = to < 72;
+                  // Finished after the use's first approval: it can't be what that approval rested on.
+                  const after = !!firstDate && t.primaryCompletion!.value > firstDate.value;
                   return (
                     <a
                       key={t.id}
                       className="disease__trial"
                       href={indicationTrialHref(u.drugSlug, u.indicationSlug, t.id)}
-                      title={`${t.name}: ${formatDate(t.start!)} to ${formatDate(t.primaryCompletion!)}`}
+                      title={`${t.name}: ${formatDate(t.start!)} to ${formatDate(t.primaryCompletion!)}${after ? ', after the first approval' : ''}`}
                       style={{ top: `${LANE_TOP + k * LANE_PITCH}px` }}
                     >
                       <span
-                        className={`disease__bar${t.phase === 'PHASE3' ? '' : ' disease__bar--early'}`}
+                        className={`disease__bar${t.phase === 'PHASE3' ? '' : ' disease__bar--early'}${after ? ' disease__bar--after' : ''}`}
                         style={{ left: `${from}%`, width: `${Math.max(0.4, to - from)}%` }}
                       />
                       <span
@@ -275,6 +277,9 @@ export function DiseaseTimeline({
         </li>
         <li>
           <span className="disease__key-bar disease__key-bar--early" /> Earlier phase
+        </li>
+        <li>
+          <span className="disease__key-bar disease__key-bar--after" /> Trial finished after the first approval
         </li>
         <li>
           <span className="disease__key-dot" /> {APPROVAL_KIND.new} or new indication
