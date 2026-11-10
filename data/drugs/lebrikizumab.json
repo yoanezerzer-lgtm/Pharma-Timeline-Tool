@@ -279,7 +279,7 @@
       "id": "17801",
       "nctId": "NCT04146363",
       "protocolNumber": "17801",
-      "labelName": "ADhere",
+      "labelName": "ADvocate 1",
       "title": "A Randomized, Double-blind, Placebo Controlled Trial to Evaluate the Efficacy and Safety of Lebrikizumab in Patients With Moderate to Severe Atopic Dermatitis",
       "briefTitle": "Evaluation of the Efficacy and Safety of Lebrikizumab (LY3650150) in Moderate to Severe Atopic Dermatitis (ADvocate1)",
       "phase": "PHASE3",
@@ -569,18 +569,26 @@
         "labelName": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761306s006lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "ADhere (NCT04146363)",
+          "quote": "ADvocate 1, ADvocate 2 and ADhere (NCT04146363, NCT04178967, NCT04250337)",
           "extractedBy": "regex",
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "previousValue": "ADhere",
+          "newValue": "ADvocate 1",
+          "detectedAt": "2026-11-09T20:44:52.177Z"
+        }
+      ]
     },
     {
       "id": "advocate2",
       "nctId": "NCT04178967",
       "protocolNumber": "17802",
       "acronym": "ADvocate2",
+      "labelName": "ADvocate 2",
       "title": "A Randomized, Double-blind, Placebo Controlled Trial to Evaluate the Efficacy and Safety of Lebrikizumab in Patients With Moderate to Severe Atopic Dermatitis.",
       "briefTitle": "Evaluation of the Efficacy and Safety of Lebrikizumab (LY3650150) in Moderate to Severe Atopic Dermatitis",
       "phase": "PHASE3",
@@ -866,9 +874,22 @@
           "quote": "double-blind, placebo-controlled trials, ADvocate 1, ADvocate 2 and ADhere (NCT04146363, NCT04178967, NCT04250337) enrolled a total of 1062 subjects 12 years of age and older with moderate-t",
           "extractedBy": "regex",
           "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761306s006lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "ADvocate 1, ADvocate 2 and ADhere (NCT04146363, NCT04178967, NCT04250337)",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "labelName",
+          "newValue": "ADvocate 2",
+          "detectedAt": "2026-11-09T20:44:52.177Z"
+        }
+      ]
     },
     {
       "id": "adhere",
@@ -3205,5 +3226,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T19:16:08.608Z"
+  "lastIngestedAt": "2026-11-09T20:44:52.177Z"
 }
