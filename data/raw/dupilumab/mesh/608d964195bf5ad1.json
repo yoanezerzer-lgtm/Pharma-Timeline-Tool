@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M000752331",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M000752331",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M000752333",
+      "http://id.nlm.nih.gov/mesh/M000752332",
+      "http://id.nlm.nih.gov/mesh/M000752334"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T001112675",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Fungal infection in the PARANASAL SINUSES characterized by common allergy respiratory symptoms, recurrent NASAL POLYPS and/or ASTHMA with buildup of allergic MUCIN."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "Allergic Fungal Sinusitis"
+    },
+    "@context": {
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}

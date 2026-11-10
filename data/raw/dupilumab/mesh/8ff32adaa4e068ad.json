@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T024362",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "dateCreated": "1983-05-31",
+    "identifier": "T024362",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "ABB"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "COPD"
+    },
+    "thesaurusID": [
+      {
+        "@language": "en",
+        "@value": "OMIM (2013)"
+      },
+      {
+        "@language": "en",
+        "@value": "UNK (19XX)"
+      }
+    ],
+    "@context": {
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    }
+  }
+}

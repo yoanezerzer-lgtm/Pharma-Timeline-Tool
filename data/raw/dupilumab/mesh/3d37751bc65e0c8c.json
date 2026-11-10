@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0384655",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0384655",
+    "narrowerConcept": "http://id.nlm.nih.gov/mesh/M0012747",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T024361",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A disease of chronic diffuse irreversible airflow obstruction. Subcategories of COPD include CHRONIC BRONCHITIS and PULMONARY EMPHYSEMA."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T024360",
+      "http://id.nlm.nih.gov/mesh/T000998449",
+      "http://id.nlm.nih.gov/mesh/T024362",
+      "http://id.nlm.nih.gov/mesh/T024364",
+      "http://id.nlm.nih.gov/mesh/T024365",
+      "http://id.nlm.nih.gov/mesh/T024359"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Pulmonary Disease, Chronic Obstructive"
+    },
+    "@context": {
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}

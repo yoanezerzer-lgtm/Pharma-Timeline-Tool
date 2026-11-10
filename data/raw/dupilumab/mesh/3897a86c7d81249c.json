@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T757815",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Eosinophilic Chronic Esophagitis"
+      },
+      {
+        "@language": "en",
+        "@value": "Eosinophilic Chronic Esophagitides"
+      },
+      {
+        "@language": "en",
+        "@value": "Esophagitis, Eosinophilic Chronic"
+      },
+      {
+        "@language": "en",
+        "@value": "Esophagitides, Eosinophilic Chronic"
+      },
+      {
+        "@language": "en",
+        "@value": "Chronic Esophagitides, Eosinophilic"
+      }
+    ],
+    "dateCreated": "2009-09-15",
+    "identifier": "T757815",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Chronic Esophagitis, Eosinophilic"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (2011)"
+    },
+    "@context": {
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      }
+    }
+  }
+}

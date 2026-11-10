@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M000646532",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M000646532",
+    "narrowerConcept": "http://id.nlm.nih.gov/mesh/M000646533",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T000950267",
+    "relatedConcept": [
+      "http://id.nlm.nih.gov/mesh/M000655665",
+      "http://id.nlm.nih.gov/mesh/M000655663"
+    ],
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Wheals (urticaria) and/or angioedema presented with daily symptoms lasting for more than 6 weeks. It may be classified into chronic spontaneous and chronic inducible urticaria depending on whether a specific trigger can be linked to the development of vascular reaction."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "Chronic Urticaria"
+    },
+    "@context": {
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
