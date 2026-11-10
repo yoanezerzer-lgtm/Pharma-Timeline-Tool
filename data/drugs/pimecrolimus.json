@@ -1,0 +1,570 @@
+{
+  "slug": "pimecrolimus",
+  "brandName": "Elidel",
+  "inn": "pimecrolimus",
+  "modality": "Drug (NDA)",
+  "sponsor": "BAUSCH",
+  "mechanism": "Calcineurin Inhibitor Immunosuppressant",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Calcineurin Inhibitor Immunosuppressant",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "The mechanism of action of pimecrolimus in atopic dermatitis is not known. While the following have been observed, the clinical significance of these observations in atopic dermatitis is not known. It has been demonstrated that pimecrolimus binds with high affinity to macrophilin-12 (FKBP-12) and inhibits the calcium- dependent phosphatase, calcineurin. As a consequence, it inhibits T cell activation by blocking the transcription of early cytokines. In particular, pimecrolimus inhibits at nanomolar concentrations Interleukin-2 and interferon This label may not be the latest approved by FDA. For current labeling information, please visit https://www.fda.gov/drugsatfda gamma (Th1-type) and Interleukin-4 and Interleukin-10 (Th2-type) cytokine synthesis in human T-cells. In addition, pimecrolimus prevents the release of inflammatory cytokines and mediators from mast cells in vitro after stimulation by antigen/IgE.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2014/021302s018lbl.pdf",
+          "sourceLabel": "Label (SUPPL-18), section 12.1",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption In adult subjects (n=52) being treated for atopic dermatitis [13%-62% Body Surface Area (BSA) involvement] for periods up to a year, a maximum pimecrolimus concentration of 1.4 ng/mL was observed among those subjects with detectable blood levels. In the majority of samples in adult (91%; 1,244/1,362) subjects, blood concentrations of pimecrolimus were below 0.5 ng/mL. Data on blood levels of pimecrolimus measured in pediatric subjects are described in Use in Specific Populations (8.4). Distribution Laboratory in vitro plasma protein binding studies using equilibrium gel filtration have shown that 99.5% of pimecrolimus in plasma is bound to proteins over the pimecrolimus concentration range of 2-100 ng/mL tested. The major fraction of pimecrolimus in plasma appears to be bound to various lipoproteins. As with other topical calcineurin inhibitors, it is not known whether pimecrolimus is absorbed into cutaneous lymphatic vessels or in regional lymph nodes. Metabolism Following the administration of a single oral radiolabeled dose of pimecrolimus numerous circulating O demethylation metabolites were seen. Studies with human liver microsomes indicate that pimecrolimus is metabolized in vitro by the CYP3A sub-family of metabolizing enzymes. No evidence of skin mediated drug metabolism was identified in vivo using the minipig or in vitro using stripped human skin. Elimination Based on the results of the aforementioned radiolabeled study, following a single oral dose of pimecrolimus ~81% of the administered radioactivity was recovered, primarily in the feces (78.4%) as metabolites. Less than 1% of the radioactivity found in the feces was due to unchanged pimecrolimus.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2014/021302s018lbl.pdf",
+          "sourceLabel": "Label (SUPPL-18), section 12.3",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "As second-line therapy for the short-term and non-continuous chronic treatment of mild to moderate atopic dermatitis in non-immunocompromised adults and children 2 years of age and older, who have failed to respond adequately to other topical prescription treatments, or when those treatments are not advisable",
+      "slug": "as-second-line-therapy-for-the-short-term-and-non",
+      "approvalDate": {
+        "value": "2001-12-13",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "Original approval: the drug has had no efficacy supplement since",
+        "extractedBy": "api",
+        "verified": false
+      },
+      "diseases": [
+        {
+          "meshId": "D003876",
+          "term": "Dermatitis, Atopic",
+          "areas": [
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "inherited": true,
+          "definition": {
+            "text": "A chronic inflammatory genetically determined disease of the skin marked by increased ability to form reagin (IgE), with increased susceptibility to allergic rhinitis and asthma, and hereditary disposition to a lowered threshold for pruritus. It is manifested by lichenification, excoriation, and crusting, mainly on the flexural surfaces of the elbow and knee. In infants it is known as infantile eczema.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Atopic dermatitis",
+            "paragraphs": [
+              "Atopic dermatitis (also known as atopic eczema) is a disorder characterized by inflammation of the skin (dermatitis). The condition usually begins in early infancy, and it often disappears before adolescence. However, in some affected individuals the condition continues into adulthood; in others, it does not begin until adulthood. Hallmarks of atopic dermatitis include dry, itchy skin and red rashes that come and go. The rashes can occur on any part of the body, although the pattern tends to be different at different ages. In affected infants, the rashes commonly occur on the face, scalp, hands, and feet. In children, the rashes are usually found in the bend of the elbows and knees and on the front of the neck. In adolescents and adults, the rashes typically occur on the wrists, ankles, and eyelids in addition to the bend of the elbows and knees. Scratching the itchy skin can lead to oozing and crusting of the rashes and thickening and hardening (lichenification) of the skin. The itchiness can be so severe as to disturb sleep and impair a person's quality of life.",
+              "The word \"atopic\" indicates an association with allergies. While atopic dermatitis is not always due to an allergic reaction, it is commonly associated with other allergic disorders: up to 60 percent of people with atopic dermatitis develop asthma or hay fever (allergic rhinitis) later in life, and up to 30 percent have food allergies. Atopic dermatitis is often the beginning of a series of allergic disorders, referred to as the \"atopic march.\" Development of these disorders typically follows a pattern, beginning with atopic dermatitis, followed by food allergies, then hay fever, and finally asthma. However, not all individuals with atopic dermatitis will progress through the atopic march, and not all individuals with one allergic disease will develop others.",
+              "Individuals with atopic dermatitis have an increased risk of developing other conditions related to inflammation, such as inflammatory bowel disease, rheumatoid arthritis, and hair loss caused by a malfunctioning immune reaction (alopecia areata). They also have an increased risk of having a behavioral or psychiatric disorder, such as attention-deficit/hyperactivity disorder (ADHD) or depression.",
+              "In a particular subset of individuals with atopic dermatitis, the immune system is unable to protect the body from foreign invaders such as bacteria and fungi (which is known as immunodeficiency). These individuals are prone to recurrent infections. Most also have other allergic disorders, such as asthma, hay fever, and food allergies.",
+              "Atopic dermatitis can also be a feature of separate disorders that have a number of signs and symptoms, which can include skin abnormalities and immunodeficiency. Some such disorders are Netherton syndrome; immune dysregulation, polyendocrinopathy, enteropathy, X-linked (IPEX) syndrome; and severe dermatitis, multiple allergies, metabolic wasting (SAM) syndrome."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/genetics/condition/atopic-dermatitis/",
+              "sourceLabel": "MedlinePlus Genetics, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "atopic dermatitis",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "021302",
+      "applicationType": "NDA",
+      "sponsor": "BAUSCH",
+      "originalApprovalDate": {
+        "value": "2001-12-13",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Drug Evaluation III",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2014/021302Orig1s018ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-18), signature",
+          "quote": "Division of Dermatology and Dental Products Office of Drug Evaluation III Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "peer",
+      "nctId": "NCT00568997",
+      "protocolNumber": "CASM981C2311",
+      "acronym": "PEER",
+      "title": "A Prospective 10 Year Observational Registry of Pediatric Subjects (Age Greater Than or Equal to Two Years to Age Less Than or Equal to 17 Years) With Atopic Dermatitis Who Have Used Elidel Cream 1% (Pimecrolimus)",
+      "briefTitle": "10 Year Registry of Children (Ages 2-17 Years) With Eczema That Have Used Pimecrolimus",
+      "phase": "NA",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Bausch Health Americas, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2005-06-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 8000,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "1",
+          "description": "Single-group Open Label Registry of patients exposed to Elidel/Pimecrolimus"
+        }
+      ],
+      "primaryEndpoints": [
+        "The incidence rate of systemic malignancies in pediatric subjects with atopic dermatitis who have been exposed to pimecrolimus 1% cream"
+      ],
+      "secondaryEndpoints": [
+        "The incidence rate of lymphoma in pediatric subjects with atopic dermatitis who have been exposed to pimecrolimus 1% cream",
+        "The incidence rate of thyroid cancer in pediatric subjects with atopic dermatitis who have been exposed to pimecrolimus 1% cream",
+        "The incidence rate of cutaneous malignancy in pediatric subjects with atopic dermatitis who have been exposed to pimecrolimus 1% cream"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00568997",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00568997",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00568997",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00568997",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT00568997",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2001-12-13",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-1",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2002-11-15",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-4",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2003-10-15",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-4",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-5",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2004-11-24",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-5",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-11",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2006-01-19",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-11",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-12",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2007-08-10",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-12",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-13",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2007-09-14",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-13",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-14",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2010-07-20",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-14",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-18",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2014-03-28",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-18",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-19",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2014-06-04",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-19",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-21",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2014-08-21",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-21",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-20",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2014-09-26",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-20",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-23",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2016-06-09",
+        "precision": "day"
+      },
+      "label": "Supplement approved — manufacturing (cmc)",
+      "shortLabel": "+Manufacturing (CMC)",
+      "description": "Manufacturing (CMC)",
+      "submissionNumber": "SUPPL-23",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 021302",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA021302%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (SUPPL-14)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2010/021302s014ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (SUPPL-14)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2010/021302s014lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-2",
+      "label": "Label (SUPPL-5)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2004/21302s005lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-3",
+      "label": "Letter (SUPPL-5)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2004/21302s005ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-4",
+      "label": "Letter (SUPPL-12)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2007/021302s012ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-5",
+      "label": "Label (SUPPL-12)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2007/021302s012lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-6",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2001/21302lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-7",
+      "label": "Letter (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2001/21-302_ELIDEL_Approv.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-8",
+      "label": "Letter (SUPPL-4)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/21302scp004ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-9",
+      "label": "Label (SUPPL-4)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2003/21302scp004_elidel_lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-10",
+      "label": "Label (SUPPL-11)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2006/021302s011lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-11",
+      "label": "Letter (SUPPL-11)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2006/021302s011ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-12",
+      "label": "Letter (SUPPL-18)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2014/021302Orig1s018ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-13",
+      "label": "Label (SUPPL-18)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2014/021302s018lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-11-10T19:56:55.102Z"
+}
