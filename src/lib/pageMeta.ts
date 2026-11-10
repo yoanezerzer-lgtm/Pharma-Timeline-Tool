@@ -37,7 +37,7 @@ export function homeMeta(): PageMeta {
 export function drugsMeta(): PageMeta {
   return {
     title: withSite('Drugs'),
-    description: 'Every drug on the site by therapeutic area, each with its FDA approvals and the clinical trials behind them.',
+    description: 'Every drug on the site in one sortable table: company, therapeutic area, what it is approved for and its first FDA approval.',
   };
 }
 
@@ -56,7 +56,7 @@ export function aboutMeta(): PageMeta {
 export function diseasesMeta(): PageMeta {
   return {
     title: withSite('Diseases'),
-    description: 'Every disease with an FDA-approved drug on this site, by therapeutic area, with each approval in the FDA’s own wording.',
+    description: 'Every disease with an FDA-approved drug on this site in one sortable table: therapeutic area, approved drugs, first and latest FDA approval.',
   };
 }
 

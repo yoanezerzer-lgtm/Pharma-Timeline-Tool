@@ -1,146 +1,89 @@
+/* The Drugs and Diseases lists: full-width sortable tables. */
 .index {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 1.5rem var(--gutter) 4rem;
+  max-width: var(--page-width);
+  padding: 2rem var(--gutter) 4rem;
 }
 
 .index__head {
-  margin: 2.5rem 0 1.75rem;
-  text-align: center;
+  margin: 0 0 1.25rem;
 }
 
 .index__head h1 {
-  margin: 0 0 0.5rem;
-  font-size: 2rem;
+  margin: 0 0 0.35rem;
+  font-size: 1.75rem;
   letter-spacing: -0.02em;
   color: var(--text-1);
 }
 
 .index__lede {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   margin: 0;
   color: var(--text-2);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .index__controls {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 0.5rem;
-  margin: 0 auto 2.25rem;
-  max-width: 640px;
+  margin: 0 0 1rem;
 }
 
 .index__search,
 .index__area {
-  height: 2.75rem;
-  padding: 0 0.85rem;
+  height: 2.5rem;
+  padding: 0 0.75rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg-elevated);
   color: var(--text-1);
   font: inherit;
-  font-size: 15px;
+  font-size: 14px;
   min-width: 0;
 }
 
 .index__search {
-  flex: 1;
+  flex: 0 1 26rem;
 }
 
 .index__area {
-  flex: 0 0 11rem;
+  flex: 0 0 13rem;
 }
 
 .index__search::placeholder {
   color: var(--text-3);
 }
 
-.index__group + .index__group {
-  margin-top: 2rem;
+.index__count {
+  margin-left: auto;
+  color: var(--text-3);
+  font-size: 13px;
 }
 
-.index__group-head {
-  margin: 0 0 0.4rem;
-  font-size: 13px;
+.index__name {
+  color: var(--text-1);
   font-weight: 600;
-  color: var(--text-1);
-}
-
-.index__group-count {
-  margin-left: 0.3rem;
-  color: var(--text-3);
-  font-weight: 500;
-}
-
-.index__rows {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.index__row {
-  display: grid;
-  grid-template-columns: minmax(12rem, 1fr) minmax(0, 1.6fr) 3rem;
-  align-items: baseline;
-  gap: 0.2rem 1rem;
-  padding: 0.6rem 0.5rem;
-  border-bottom: 1px solid var(--border-subtle);
-  color: var(--text-1);
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.index__row:hover {
-  background: var(--bg-elevated);
   text-decoration: none;
 }
 
-.index__row-inn,
-.index__row-year {
-  color: var(--text-3);
-  font-size: 13px;
-}
-
-.index__row-year {
-  text-align: right;
-}
-
-.index__row-use {
-  color: var(--text-2);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.index__row-more {
-  color: var(--text-3);
-  font-size: 12.5px;
+.index__name:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .index__none {
-  margin: 2.5rem 0 0;
-  font-size: 13px;
-  color: var(--text-3);
-  line-height: 1.6;
+  color: var(--text-2);
 }
 
 @media (max-width: 640px) {
-  .index__controls {
-    flex-direction: column;
-  }
   .index__search,
   .index__area {
-    flex: 0 0 auto;
+    flex: 1 1 100%;
   }
-  .index__row {
-    grid-template-columns: 1fr auto;
-  }
-  .index__row-use {
-    grid-column: 1 / -1;
-    white-space: normal;
-  }
-  .index__row-year {
-    grid-row: 1;
-    grid-column: 2;
+  .index__count {
+    margin-left: 0;
   }
 }

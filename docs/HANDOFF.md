@@ -196,8 +196,8 @@ The owner wants a strong focus on **design** (9 Nov): every data chat
 should leave the pages it touches looking right, and design gets its own
 chats.
 1. **Design**: flow review page by page: drug, approved use, disease,
-   trial (#138, #140), Compare (#141) done. Next: Drugs and Diseases
-   lists, then About the data.
+   trial (#138, #140), Compare (#141, #143), Drugs and Diseases lists
+   done. Next: About the data.
 2. ~~Finish atopic dermatitis data~~ (done 9 Nov, #139; leftovers in
    "open gaps" above).
 3. **Get ready to publish**: visitor counter (cookie-free), then Cloudflare
@@ -282,6 +282,14 @@ Owner walked the pages: too much on screen, some wrong words. Done:
   ADvocate 1 had been labelled "ADhere"); its NCT number shows instead.
   **Pipeline still pairs label names wrongly** (`labelName` on
   NCT04146363): fix the label-name pairing in a data chat and score it.
+
+- Drugs and Diseases lists (10 Nov): each is one full-width table you can
+  sort, with search, an area filter and a count (shared `ListTable`).
+  Drugs: drug (brand, INN), company, area, approved for (disease names,
+  oldest first), first FDA approval. Diseases: one row per disease (was
+  grouped by MeSH category, so diseases repeated up to 4 times), with
+  the site's own areas, approved drugs, first and latest approval. On
+  phones the rows stack into cards.
 
 Still open from the review:
 - Atopic dermatitis is to cover all severities (owner, 9 Nov): add
