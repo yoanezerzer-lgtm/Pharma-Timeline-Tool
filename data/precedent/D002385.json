@@ -1,0 +1,120 @@
+{
+  "meshId": "D002385",
+  "term": "Cataplexy",
+  "searched": [
+    "cataplexy"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Xyrem",
+      "inn": "sodium oxybate",
+      "application": "NDA 021196",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "originalOnly": true,
+      "severity": "not-stated",
+      "indication": {
+        "value": "1 INDICATIONS AND USAGE Xyrem is indicated for the treatment of cataplexy or excessive daytime sleepiness (EDS) in patients 7 years of age and older with narcolepsy.",
+        "source": {
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=926eb076-a4a8-45e4-91ef-411f0aa4f3ca",
+          "label": "Current label, NDA 021196 (openFDA)",
+          "quote": "1 INDICATIONS AND USAGE Xyrem is indicated for the treatment of cataplexy or excessive daytime sleepiness (EDS) in patients 7 years of age and older with narcolepsy."
+        }
+      },
+      "approvalDate": {
+        "value": {
+          "value": "2002-07-17",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021196",
+          "label": "openFDA Drugs@FDA, NDA 021196 ORIG-1"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021196",
+          "label": "openFDA Drugs@FDA, NDA 021196 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021196",
+          "label": "openFDA Drugs@FDA, NDA 021196 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021196",
+          "label": "openFDA Drugs@FDA, NDA 021196 ORIG-1"
+        }
+      }
+    },
+    {
+      "brandName": "Orzeyful",
+      "inn": "oveporexton",
+      "application": "NDA 220860",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "oveporexton",
+        "indicationSlug": "narcolepsy-type-1-narcolepsy-with-cataplexy-in-adult"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-08-05",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220860",
+          "label": "openFDA Drugs@FDA, NDA 220860 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2025-12-10",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 220860 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA) received December 10, 2025"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220860",
+          "label": "openFDA Drugs@FDA, NDA 220860 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220860",
+          "label": "openFDA Drugs@FDA, NDA 220860 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220860",
+          "label": "openFDA Drugs@FDA, NDA 220860 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220860Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 220860 ORIG-1"
+        }
+      }
+    }
+  ]
+}

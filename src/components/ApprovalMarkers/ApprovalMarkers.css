@@ -1,0 +1,221 @@
+/* Event markers above the year axis: diamond, name, dashed guide to the axis. */
+.markers__row {
+  padding-bottom: 0;
+  align-items: end;
+}
+
+.markers__caption {
+  font-size: 11px;
+  color: var(--text-3);
+  align-self: end;
+  padding-bottom: 2px;
+}
+
+.markers {
+  position: relative;
+  height: 40px;
+}
+
+.markers__item {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+}
+
+.markers__guide {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: -4px;
+  border-left: 1px dashed var(--text-3);
+  opacity: 0.6;
+}
+
+.markers__hit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 26px;
+  color: var(--text-1);
+  text-decoration: none;
+}
+
+.markers__hit:hover,
+.markers__hit:focus-visible {
+  text-decoration: none;
+}
+
+.markers__hit:focus-visible {
+  outline: none;
+}
+
+.markers__hit:focus-visible .markers__diamond {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.markers__label {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13px;
+  color: var(--text-2);
+  transform: translateX(-50%);
+}
+
+.markers__label--start {
+  transform: translateX(-6px);
+}
+
+.markers__label--end {
+  transform: translateX(calc(-100% + 6px));
+}
+
+.markers__hit:hover .markers__label,
+.markers__hit:focus-visible .markers__label {
+  color: var(--accent);
+}
+
+/* ◇: an open diamond in the accent colour. */
+.markers__diamond {
+  position: absolute;
+  top: 15px;
+  left: -4.5px;
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid var(--accent);
+  background: var(--bg-1);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+
+.markers__hit:hover .markers__diamond {
+  background: var(--accent);
+}
+
+.markers__diamond--small {
+  position: static;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 0.4rem;
+  vertical-align: 1px;
+}
+
+.markers__tip {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: max-content;
+  max-width: 260px;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.08);
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--text-2);
+}
+
+.markers__tip strong {
+  font-family: var(--font-text);
+  color: var(--text-1);
+}
+
+.markers__hit:hover .markers__tip,
+.markers__hit:focus-visible .markers__tip {
+  display: block;
+}
+
+/* A merged group: a numbered circle, ② */
+.markers__circle {
+  position: absolute;
+  top: 4px;
+  left: -11px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  color: var(--accent);
+  font: 600 12px/1 var(--font-data);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.markers__cluster.is-open .markers__circle,
+.markers__circle:hover {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+.markers__list {
+  position: absolute;
+  top: 30px;
+  z-index: 6;
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem 0;
+  min-width: 240px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
+  font-size: 12.5px;
+}
+
+.markers__list--start {
+  left: -14px;
+}
+
+.markers__list--end {
+  right: -14px;
+}
+
+.markers__list li {
+  padding: 0.25rem 0.7rem;
+  white-space: nowrap;
+}
+
+.markers__detail {
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+/* Key entries for the legend under the chart. */
+.markers__key-diamond {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid var(--accent);
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+
+.markers__key-circle {
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  font: 600 11px/1 var(--font-data);
+}
+
+@media (max-width: 640px) {
+  .markers__row {
+    display: none;
+  }
+}

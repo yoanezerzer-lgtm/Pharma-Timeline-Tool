@@ -1,0 +1,72 @@
+{
+  "meshId": "D057765",
+  "term": "Eosinophilic Esophagitis",
+  "searched": [
+    "eosinophilic esophagitis"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Dupixent",
+      "inn": "dupilumab",
+      "application": "BLA 761055",
+      "applicationType": "BLA",
+      "submission": "SUPPL-40",
+      "site": {
+        "drugSlug": "dupilumab",
+        "indicationSlug": "eosinophilic-esophagitis"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2022-05-20",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-40"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2022-02-03",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761055Orig1s040ltr.pdf",
+          "label": "FDA approval letter, BLA 761055 SUPPL-40",
+          "quote": "Please refer to your supplemental biologics license application (sBLA), dated and received February 3, 2022"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-40"
+        }
+      },
+      "submissionClass": {
+        "value": "Efficacy",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-40"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-40"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761055Orig1s040ltr.pdf",
+          "label": "FDA approval letter, BLA 761055 SUPPL-40"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "meshId": "D000086002",
+  "term": "Mesothelioma, Malignant",
+  "searched": [
+    "malignant mesothelioma"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Keytruda",
+      "inn": "pembrolizumab",
+      "application": "BLA 125514",
+      "applicationType": "BLA",
+      "submission": "SUPPL-161",
+      "site": {
+        "drugSlug": "pembrolizumab",
+        "indicationSlug": "malignant-pleural-mesothelioma"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2024-09-17",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA125514",
+          "label": "openFDA Drugs@FDA, BLA 125514 SUPPL-161"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2024-03-25",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/125514Orig1s161ltr.pdf",
+          "label": "FDA approval letter, BLA 125514 SUPPL-161",
+          "quote": "Please refer to your supplemental biologics license application (sBLA), dated and received March 25, 2024"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA125514",
+          "label": "openFDA Drugs@FDA, BLA 125514 SUPPL-161"
+        }
+      },
+      "submissionClass": {
+        "value": "Efficacy",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA125514",
+          "label": "openFDA Drugs@FDA, BLA 125514 SUPPL-161"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA125514",
+          "label": "openFDA Drugs@FDA, BLA 125514 SUPPL-161"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/125514Orig1s161ltr.pdf",
+          "label": "FDA approval letter, BLA 125514 SUPPL-161"
+        }
+      }
+    }
+  ]
+}

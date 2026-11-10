@@ -1,0 +1,61 @@
+{
+  "meshId": "D009999",
+  "term": "Ossification, Heterotopic",
+  "searched": [
+    "heterotopic ossification"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Pasatru",
+      "inn": "garetosmab",
+      "application": "BLA 761508",
+      "applicationType": "BLA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "garetosmab",
+        "indicationSlug": "to-reduce-formation-of-new-heterotopic-ossification-ho"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-08-19",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761508",
+          "label": "openFDA Drugs@FDA, BLA 761508 ORIG-1"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761508",
+          "label": "openFDA Drugs@FDA, BLA 761508 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761508",
+          "label": "openFDA Drugs@FDA, BLA 761508 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761508",
+          "label": "openFDA Drugs@FDA, BLA 761508 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761508Orig1s000ltr.pdf",
+          "label": "FDA approval letter, BLA 761508 ORIG-1"
+        }
+      }
+    }
+  ]
+}

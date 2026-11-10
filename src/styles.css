@@ -184,3 +184,30 @@ button {
 .page-eyebrow a {
   font-weight: 600;
 }
+
+/* A small source-and-date chip next to numbers: "openFDA · data of 6 Nov 2026". */
+.data-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+  font-family: var(--font-data);
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+/* Amber: a known gap in what the sources cover. */
+.data-chip--warn {
+  border-color: var(--warn-border);
+  background: var(--warn-bg);
+  color: var(--warn-fg);
+}
+
+.data-chip--warn::before {
+  content: '!';
+  margin-right: 0.35rem;
+  font-weight: 700;
+}

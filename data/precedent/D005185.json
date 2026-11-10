@@ -1,0 +1,65 @@
+{
+  "meshId": "D005185",
+  "term": "Fallopian Tube Neoplasms",
+  "searched": [
+    "fallopian tube cancer"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Lifyorli (copackaged)",
+      "inn": "relacorilant",
+      "application": "NDA 220641",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "relacorilant",
+        "indicationSlug": "in-combination-with-nab-paclitaxel-for-the-treatment-of"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-03-25",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220641",
+          "label": "openFDA Drugs@FDA, NDA 220641 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2025-07-11",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220641Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 220641 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA) received July 11, 2025"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220641",
+          "label": "openFDA Drugs@FDA, NDA 220641 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA220641",
+          "label": "openFDA Drugs@FDA, NDA 220641 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220641Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 220641 ORIG-1"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "meshId": "D000080223",
+  "term": "Chronic Urticaria",
+  "searched": [
+    "chronic urticaria"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Dupixent",
+      "inn": "dupilumab",
+      "application": "BLA 761055",
+      "applicationType": "BLA",
+      "submission": "SUPPL-51",
+      "site": {
+        "drugSlug": "dupilumab",
+        "indicationSlug": "chronic-spontaneous-urticaria"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2025-04-17",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-51"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2024-10-18",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761055Orig1s051correctedltr.pdf",
+          "label": "FDA approval letter, BLA 761055 SUPPL-51",
+          "quote": "Please refer to your supplemental biologics license application (sBLA) received October 18, 2024"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-51"
+        }
+      },
+      "submissionClass": {
+        "value": "Efficacy",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761055",
+          "label": "openFDA Drugs@FDA, BLA 761055 SUPPL-51"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761055Orig1s051correctedltr.pdf",
+          "label": "FDA approval letter, BLA 761055 SUPPL-51"
+        }
+      }
+    }
+  ]
+}

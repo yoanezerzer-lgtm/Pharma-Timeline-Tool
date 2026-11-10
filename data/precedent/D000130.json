@@ -1,0 +1,121 @@
+{
+  "meshId": "D000130",
+  "term": "Achondroplasia",
+  "searched": [
+    "achondroplasia"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "VOXZOGO 0.4mg",
+      "inn": "vosoritide",
+      "application": "NDA 214938",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "originalOnly": true,
+      "severity": "not-stated",
+      "indication": {
+        "value": "1 INDICATIONS AND USAGE VOXZOGO is indicated to increase linear growth in pediatric patients with achondroplasia with open epiphyses.",
+        "source": {
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=228e8560-04a4-4bb1-a81f-29531a9e4d27",
+          "label": "Current label, NDA 214938 (openFDA)",
+          "quote": "1 INDICATIONS AND USAGE VOXZOGO is indicated to increase linear growth in pediatric patients with achondroplasia with open epiphyses."
+        }
+      },
+      "approvalDate": {
+        "value": {
+          "value": "2021-11-19",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA214938",
+          "label": "openFDA Drugs@FDA, NDA 214938 ORIG-1"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA214938",
+          "label": "openFDA Drugs@FDA, NDA 214938 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA214938",
+          "label": "openFDA Drugs@FDA, NDA 214938 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA214938",
+          "label": "openFDA Drugs@FDA, NDA 214938 ORIG-1"
+        }
+      }
+    },
+    {
+      "brandName": "Yuviwel",
+      "inn": "navepegritide",
+      "application": "NDA 219164",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "navepegritide",
+        "indicationSlug": "to-increase-linear-growth-in-pediatric-patients-2-years-of"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-02-27",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219164",
+          "label": "openFDA Drugs@FDA, NDA 219164 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2025-03-31",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 219164 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA) dated and received March 31, 2025"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219164",
+          "label": "openFDA Drugs@FDA, NDA 219164 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219164",
+          "label": "openFDA Drugs@FDA, NDA 219164 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA219164",
+          "label": "openFDA Drugs@FDA, NDA 219164 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": true,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219164Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 219164 ORIG-1",
+          "quote": "NDA 219164 ACCELERATED APPROVAL Ascendis Pharma Growth Disorders (A/S) Attention: David Cho, MS Associate Director, Regulatory Affairs 1000 Page Mill R"
+        }
+      }
+    }
+  ]
+}

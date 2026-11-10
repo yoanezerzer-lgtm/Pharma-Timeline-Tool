@@ -1,0 +1,61 @@
+{
+  "meshId": "D001171",
+  "term": "Arthritis, Juvenile",
+  "searched": [
+    "juvenile arthritis"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Rinvoq",
+      "inn": "upadacitinib",
+      "application": "NDA 211675",
+      "applicationType": "NDA",
+      "submission": "SUPPL-22",
+      "site": {
+        "drugSlug": "upadacitinib",
+        "indicationSlug": "polyarticular-juvenile-idiopathic-arthritis"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2024-04-26",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA211675",
+          "label": "openFDA Drugs@FDA, NDA 211675 SUPPL-22"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA211675",
+          "label": "openFDA Drugs@FDA, NDA 211675 SUPPL-22"
+        }
+      },
+      "submissionClass": {
+        "value": "Efficacy",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA211675",
+          "label": "openFDA Drugs@FDA, NDA 211675 SUPPL-22"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA211675",
+          "label": "openFDA Drugs@FDA, NDA 211675 SUPPL-22"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/211675Orig1s021, s022ltr.pdf",
+          "label": "FDA approval letter, NDA 211675 SUPPL-22"
+        }
+      }
+    }
+  ]
+}

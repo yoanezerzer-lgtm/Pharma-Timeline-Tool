@@ -1,0 +1,95 @@
+{
+  "meshId": "D000098647",
+  "term": "Generalized Anxiety Disorder",
+  "searched": [
+    "generalized anxiety disorder"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Alprazolam",
+      "inn": "alprazolam",
+      "application": "NDA 018276",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "originalOnly": true,
+      "severity": "not-stated",
+      "indication": {
+        "value": "INDICATIONS AND USAGE Anxiety Disorders Alprazolam Tablets are indicated for the management of anxiety disorder (a condition corresponding most closely to the APA Diagnostic and Statistical Manual [DSM-III-R] diagnosis of generalized anxiety disorder) or the short-term relief of symptoms of anxiety.",
+        "source": {
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10de2b3b-3b3f-4a5a-a9e7-a8401f53b8cc",
+          "label": "Current label, NDA 018276 (openFDA)",
+          "quote": "INDICATIONS AND USAGE Anxiety Disorders Alprazolam Tablets are indicated for the management of anxiety disorder (a condition corresponding most closely to the APA Diagnostic and Statistical Manual [DSM-III-R] diagnosis of generalized anxiety disorder) or the short-term relief of symptoms of anxiety."
+        }
+      },
+      "approvalDate": {
+        "value": {
+          "value": "1981-10-16",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA018276",
+          "label": "openFDA Drugs@FDA, NDA 018276 ORIG-1"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA018276",
+          "label": "openFDA Drugs@FDA, NDA 018276 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA018276",
+          "label": "openFDA Drugs@FDA, NDA 018276 ORIG-1"
+        }
+      }
+    },
+    {
+      "brandName": "Lexapro",
+      "inn": "escitalopram",
+      "application": "NDA 021323",
+      "applicationType": "NDA",
+      "submission": "SUPPL-3",
+      "site": {
+        "drugSlug": "escitalopram",
+        "indicationSlug": "generalized-anxiety-disorder"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2003-12-18",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021323",
+          "label": "openFDA Drugs@FDA, NDA 021323 SUPPL-3"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021323",
+          "label": "openFDA Drugs@FDA, NDA 021323 SUPPL-3"
+        }
+      },
+      "submissionClass": {
+        "value": "Efficacy",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021323",
+          "label": "openFDA Drugs@FDA, NDA 021323 SUPPL-3"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/21323se1-003,se8-007,21365se8-001,se1-004ltr.pdf",
+          "label": "FDA approval letter, NDA 021323 SUPPL-3"
+        }
+      }
+    }
+  ]
+}

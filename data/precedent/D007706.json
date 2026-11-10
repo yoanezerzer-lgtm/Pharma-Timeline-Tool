@@ -1,0 +1,72 @@
+{
+  "meshId": "D007706",
+  "term": "Menkes Kinky Hair Syndrome",
+  "searched": [
+    "menkes kinky hair syndrome"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Zycubo",
+      "inn": "copper histidinate",
+      "application": "NDA 211241",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "copper-histidinate",
+        "indicationSlug": "menkes-disease-in-pediatric-patients"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-01-12",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA211241",
+          "label": "openFDA Drugs@FDA, NDA 211241 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2024-10-31",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/211241Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 211241 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA), dated and received October 31, 2024"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA211241",
+          "label": "openFDA Drugs@FDA, NDA 211241 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA211241",
+          "label": "openFDA Drugs@FDA, NDA 211241 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA211241",
+          "label": "openFDA Drugs@FDA, NDA 211241 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/211241Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 211241 ORIG-1"
+        }
+      }
+    }
+  ]
+}

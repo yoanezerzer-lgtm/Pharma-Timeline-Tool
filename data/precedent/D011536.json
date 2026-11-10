@@ -1,0 +1,65 @@
+{
+  "meshId": "D011536",
+  "term": "Prurigo",
+  "searched": [
+    "prurigo"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Nemluvio",
+      "inn": "nemolizumab",
+      "application": "BLA 761390",
+      "applicationType": "BLA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "nemolizumab",
+        "indicationSlug": "prurigo-nodularis"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2024-08-12",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761390",
+          "label": "openFDA Drugs@FDA, BLA 761390 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2023-12-12",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761390Orig1s000ltr.pdf",
+          "label": "FDA approval letter, BLA 761390 ORIG-1",
+          "quote": "Please refer to your biologics license application (BLA) dated and received December 12, 2023"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761390",
+          "label": "openFDA Drugs@FDA, BLA 761390 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:BLA761390",
+          "label": "openFDA Drugs@FDA, BLA 761390 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/761390Orig1s000ltr.pdf",
+          "label": "FDA approval letter, BLA 761390 ORIG-1"
+        }
+      }
+    }
+  ]
+}

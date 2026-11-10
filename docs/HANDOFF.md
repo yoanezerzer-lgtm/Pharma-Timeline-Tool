@@ -180,6 +180,17 @@ waiting on CI in a chat and re-running all drugs to test a guess.
 - Owner plan steps 1 (copy), 2 (design), 3 (news) and 5 (look) done;
   step 4 (new drugs, atopic dermatitis) has the gaps above.
 
+- 10 Nov (branch `claude/precedent-markers-citations`, no PR yet): from a
+  review of Drybench and Rhizome, on disease pages: **FDA review time**
+  (median with the five-product rule, % accelerated, % expedited; per
+  product NDA/BLA, priority, orphan, received and approved dates; job
+  `npm run precedent` writes `data/precedent/`), **approval markers** above
+  the timeline (merged circles, legend, "Data table"), **citation chips**
+  with a right-hand source panel. Gaps: breakthrough and fast track are not
+  in openFDA; receipt dates come only from letters the repo has text for
+  (214 of 264 read), so products found by label search have none until the
+  job runs where FDA documents download (GitHub Actions).
+
 ## Next steps (in order, one chat each)
 The owner wants a strong focus on **design** (9 Nov): every data chat
 should leave the pages it touches looking right, and design gets its own

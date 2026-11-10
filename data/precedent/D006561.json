@@ -1,0 +1,113 @@
+{
+  "meshId": "D006561",
+  "term": "Herpes Simplex",
+  "searched": [
+    "herpes simplex"
+  ],
+  "retrievedAt": "2026-11-10",
+  "openFdaUpdated": "2026-11-06",
+  "products": [
+    {
+      "brandName": "Tindamax",
+      "inn": "tinidazole",
+      "application": "NDA 021618",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "originalOnly": true,
+      "severity": "not-stated",
+      "indication": {
+        "value": "Other pathogens commonly associated with vulvovaginitis such as Trichomonas vaginalis, Chlamydia trachomatis, Neisseria gonorrhoeae, Candida albicans and Herpes simplex virus should be ruled out.",
+        "source": {
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=a0d01539-8413-4703-94cc-d221918630a1",
+          "label": "Current label, NDA 021618 (openFDA)",
+          "quote": "Other pathogens commonly associated with vulvovaginitis such as Trichomonas vaginalis, Chlamydia trachomatis, Neisseria gonorrhoeae, Candida albicans and Herpes simplex virus should be ruled out."
+        }
+      },
+      "approvalDate": {
+        "value": {
+          "value": "2004-05-17",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021618",
+          "label": "openFDA Drugs@FDA, NDA 021618 ORIG-1"
+        }
+      },
+      "reviewPriority": {
+        "value": "STANDARD",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021618",
+          "label": "openFDA Drugs@FDA, NDA 021618 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021618",
+          "label": "openFDA Drugs@FDA, NDA 021618 ORIG-1"
+        }
+      },
+      "orphan": {
+        "value": true,
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA021618",
+          "label": "openFDA Drugs@FDA, NDA 021618 ORIG-1"
+        }
+      }
+    },
+    {
+      "brandName": "Hovilpri",
+      "inn": "pritelivir",
+      "application": "NDA 221154",
+      "applicationType": "NDA",
+      "submission": "ORIG-1",
+      "site": {
+        "drugSlug": "pritelivir",
+        "indicationSlug": "in-immunocompromised-adults-for-the-treatment-of"
+      },
+      "severity": "not-stated",
+      "approvalDate": {
+        "value": {
+          "value": "2026-10-09",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA221154",
+          "label": "openFDA Drugs@FDA, NDA 221154 ORIG-1"
+        }
+      },
+      "receiptDate": {
+        "value": {
+          "value": "2026-02-13",
+          "precision": "day"
+        },
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221154Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 221154 ORIG-1",
+          "quote": "Please refer to your new drug application (NDA) received February 13, 2026"
+        }
+      },
+      "reviewPriority": {
+        "value": "PRIORITY",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA221154",
+          "label": "openFDA Drugs@FDA, NDA 221154 ORIG-1"
+        }
+      },
+      "submissionClass": {
+        "value": "Type 1 - New Molecular Entity",
+        "source": {
+          "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number:NDA221154",
+          "label": "openFDA Drugs@FDA, NDA 221154 ORIG-1"
+        }
+      },
+      "accelerated": {
+        "value": false,
+        "source": {
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/221154Orig1s000ltr.pdf",
+          "label": "FDA approval letter, NDA 221154 ORIG-1"
+        }
+      }
+    }
+  ]
+}
