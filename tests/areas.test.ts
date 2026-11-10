@@ -56,6 +56,13 @@ describe('how the owner files diseases (areas.json "diseases")', () => {
     for (const x of [asthma, copd, polyps]) expect(filedAreas(x.meshId)).toEqual(['respirology']);
   });
 
+  it("files Dupixent's other uses by their disease (owner, 10 Nov)", () => {
+    expect(filedAreas('D057765')).toEqual(['gastro-hepatology']);
+    expect(filedAreas('D000080223')).toEqual(['dermatology']);
+    expect(filedAreas('D010391')).toEqual(['dermatology']);
+    expect(filedAreas('D000092562')).toEqual(['respirology']);
+  });
+
   it('still files other inherited diseases under "Genetic diseases"', () => {
     const other = { meshId: 'D000000', term: 'Some Inherited Disease', inherited: true };
     expect(countsAsGenetic(other)).toBe(true);
