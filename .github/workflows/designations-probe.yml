@@ -33,6 +33,20 @@ jobs:
           get breakthrough.html 'https://www.fda.gov/drugs/nda-and-bla-approvals/breakthrough-therapy-approvals'
           get fast-track.html 'https://www.fda.gov/drugs/nda-and-bla-approvals/fast-track-approvals'
           get oopd-index.html 'https://www.accessdata.fda.gov/scripts/opdlisting/oopd/'
+          # The search form (OOPD_Results.cfm, POST) offers an Excel download of
+          # every designation, and a detailed list; try both on a small search first.
+          post() {
+            name="$1"; shift
+            code=$(curl -sS -L -A "$UA" -o "$name" -D "$name.headers" -w '%{http_code} %{content_type} %{size_download}' --max-time 300 \
+              -e 'https://www.accessdata.fda.gov/scripts/opdlisting/oopd/' \
+              'https://www.accessdata.fda.gov/scripts/opdlisting/oopd/OOPD_Results.cfm' "$@" || echo "curl-failed")
+            echo "$name  OOPD_Results.cfm POST  ->  $code" | tee -a status.txt
+          }
+          post oopd-dupilumab-detailed.html --data-urlencode 'Product_name=dupilumab' -d 'sponsor_name=&Designation=&Designation_Start_Date=&Designation_End_Date=&Search_param=DESDATE&Output_Format=Detailed&Sort_order=GENERIC_NAME&RecordsPerPage=25&newSearch=Run+Search'
+          post oopd-all.xls -d 'Product_name=&sponsor_name=&Designation=&Designation_Start_Date=01/01/1983&Designation_End_Date=12/31/2026&Search_param=DESDATE&Output_Format=Excel&Sort_order=GENERIC_NAME&RecordsPerPage=25&newSearch=Run+Search'
+          file oopd-all.xls | tee -a status.txt
+          # Keep the head only: enough to see the columns.
+          if [ -s oopd-all.xls ]; then head -c 20000 oopd-all.xls > oopd-all.head; wc -c < oopd-all.xls | sed 's/^/oopd-all.xls bytes: /' | tee -a status.txt; rm oopd-all.xls; fi
           get orange-book-page.html 'https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book'
           get orange-book-data-files.html 'https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files'
           get orange-book.zip 'https://www.fda.gov/media/76860/download'
