@@ -137,6 +137,8 @@ export function sectionOneWindows(strippedText: string): string[] {
   return windows;
 }
 
+const NOT_A_USE = /^(?:important\s+)?limitations?\s+of\s+use$/i;
+
 function numberedEntries(window: string): IndicationListEntry[] {
   const entries: IndicationListEntry[] = [];
   // A name ends at the next subsection number of any section, not just
@@ -146,7 +148,8 @@ function numberedEntries(window: string): IndicationListEntry[] {
   for (const m of window.matchAll(pattern)) {
     const number = Number(m[1]);
     const name = m[2].replace(/\s+/g, ' ').replace(/\s*-\s*/g, '-').trim();
-    if (name.length >= 3) entries.push({ number, name });
+    // "1.3 Limitations of Use" (Opzelura) is a numbered note on the uses above it, not a use.
+    if (name.length >= 3 && !NOT_A_USE.test(name)) entries.push({ number, name });
   }
   return entries;
 }

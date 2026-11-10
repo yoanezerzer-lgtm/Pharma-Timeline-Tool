@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { Drug, type Trial } from '../src/schema/index.js';
 import { Reference } from '../scripts/qc/reference.js';
-import { applyVerdicts, buildQueue, type DrugContext, type Verdict } from '../scripts/verify/claims.js';
+import { applyVerdicts, buildQueue, labelNamesSponsor, type DrugContext, type Verdict } from '../scripts/verify/claims.js';
 import { checkQuote, findPassages, normalize, type SourceDoc } from '../scripts/verify/sources.js';
 
 const FILLER = 'Patients were randomized and assessed at prespecified visits. '.repeat(6);
@@ -178,5 +178,50 @@ describe('overnight verification', () => {
     ctx.ref.pivotal[0] = { ...ctx.ref.pivotal[0], status: 'confirmed', checkedBy: 'a person' };
     const { queue, key } = buildQueue([ctx], '2026-10-27');
     expect(queue.some((c) => key[c.id] === 'real' && c.trial === 'NCT00000001')).toBe(false);
+  });
+});
+
+describe('trial sponsors the label names', () => {
+  const label = (text: string): SourceDoc[] => [{ url: LABEL_URL, kind: 'label', text }];
+  // Wording as printed on the Dupixent, Lynavoy and Zycubo labels.
+  const dupixent = label('Manufactured by: Regeneron Pharmaceuticals, Inc. Tarrytown, NY 10591 U.S. License No. 1760 Marketed by: sanofi-aventis U.S. LLC (Morristown, NJ 07960) and Regeneron Pharmaceuticals, Inc. (Tarrytown, NY 10591) For patent information: www.dupixent.com');
+  const lynavoy = label('Manufactured for: GlaxoSmithKline, Durham, NC 27701 ©2026 GSK group of companies or its licensor.');
+  const zycubo = label('Manufactured by: Zydus Lifesciences Ltd. Vadodara 391510 India Manufactured for: Sentynl Therapeutics, Inc');
+
+  it('counts a co-marketer or the company a drug is made for', () => {
+    expect(labelNamesSponsor('Sanofi', dupixent)).toBe(true);
+    expect(labelNamesSponsor('GlaxoSmithKline', lynavoy)).toBe(true);
+  });
+
+  it('does not count a company the label leaves out, or a contract plant', () => {
+    expect(labelNamesSponsor('Spero Therapeutics', lynavoy)).toBe(false);
+    expect(labelNamesSponsor('Cyprium Therapeutics, Inc.', zycubo)).toBe(false);
+    expect(labelNamesSponsor('Zydus Lifesciences', zycubo)).toBe(false);
+    expect(labelNamesSponsor('Sanofi', [{ ...dupixent[0], kind: 'letter' }])).toBe(false);
+    expect(labelNamesSponsor(undefined, dupixent)).toBe(false);
+  });
+
+  it('confirms a partner-run Phase 3 trial with a label quote and the registry', () => {
+    const ctx = context();
+    ctx.drug.trials = ctx.drug.trials.map((t) => (t.id === 'ra-i' ? { ...t, sponsor: 'Partnerco' } : t));
+    const withLine = [{ ...sources[0], text: sources[0].text + ' Marketed by: Partnerco LLC and Acme Inc.' }, sources[1]];
+    for (const [srcs, outcome] of [[sources, 'rejected'], [withLine, 'confirmed']] as const) {
+      const c = { ...ctx, sources: [...srcs] };
+      const { queue, key } = buildQueue([c], '2026-10-27');
+      const verdicts = queue.map((q) => (key[q.id] === 'decoy' || q.trial !== 'NCT00000001'
+        ? { claim: q.id, verdict: 'unclear' as const, evidence: [], reason: 'x' }
+        : { claim: q.id, verdict: 'supported' as const, evidence: [{ sourceUrl: LABEL_URL, quote: RA_QUOTE }], reason: '' }));
+      const r = applyVerdicts(queue, key, verdicts, [c], '2026-10-27');
+      expect(r.results.find((x) => x.claim.trial === 'NCT00000001' && key[x.claim.id] === 'real')?.outcome).toBe(outcome);
+    }
+  });
+
+  it('queues facts already stuck only when asked', () => {
+    const ctx = context();
+    for (const p of ctx.ref.pivotal) p.tries = 3;
+    const real = (q: ReturnType<typeof buildQueue>) => Object.values(q.key).filter((k) => k === 'real').length;
+    expect(real(buildQueue([ctx], '2026-10-27'))).toBe(0);
+    expect(real(buildQueue([ctx], '2026-10-27', 40, { retryStuck: true }))).toBe(2);
+    expect(real(buildQueue([ctx], '2026-10-27', 40, { retryStuck: true, drugs: ['other'] }))).toBe(0);
   });
 });

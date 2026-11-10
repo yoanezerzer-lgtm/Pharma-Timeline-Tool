@@ -198,6 +198,13 @@ describe('extractIndicationList', () => {
     ]);
   });
 
+  it('skips a numbered "Limitations of Use" note (Opzelura)', () => {
+    const label =
+      '1 INDICATIONS AND USAGE 1.1 Atopic Dermatitis 1.2 Nonsegmental Vitiligo 1.3 Limitations of Use ' +
+      '2 DOSAGE AND ADMINISTRATION 2.1 Recommended Dosage 3 DOSAGE FORMS AND STRENGTHS';
+    expect(extractIndicationList(label).map((e) => e.name)).toEqual(['Atopic Dermatitis', 'Nonsegmental Vitiligo']);
+  });
+
   it('tolerates OCR-inserted spaces around the period and hyphens', () => {
     // Real extracted Rinvoq label text: "1. 8 Polyarticular..." and
     // "Non - radiographic Axial Spondyloarthritis" (spaced hyphen).
