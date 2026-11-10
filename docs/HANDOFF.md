@@ -251,8 +251,9 @@ Still open, in order:
   Cloudflare; the homepage's "Log in" button is the place for them. On
   phones the disease timeline shows names and dates only (bars hidden),
   as on the disease page.
-- Drug page: long "What it's for" and "How it works" come before the
-  approved uses table. Empty "Company news" for Dupixent looks unfinished.
+- Drug page order and empty Company news: done (#138). 10 Nov: Clinical
+  pharmacology was indented and followed by a large gap because it shared
+  the About page's `.about` class; renamed `.pharm`.
 
 ## Flow review (9 Nov, #138)
 Owner walked the pages: too much on screen, some wrong words. Done:
@@ -331,8 +332,13 @@ Still open from the review:
   Protopic. (Nemluvio reads moderate-to-severe since #139.)
 - Compare: count results ("95 Participants") can't show a % without
   each arm's size; store arm sizes from ClinicalTrials.gov in a data chat.
-- The Dupixent lane on the disease timeline still draws later trials on
-  the first approval's line.
+- Disease timeline (10 Nov): a pivotal trial whose primary completion
+  is after the use's first approval is drawn hollow, with a legend line
+  (dates only; the records don't say which later letter it backs).
+- Site check (10 Nov) also opens one page of each kind and every disease
+  page at 375px and fails on sideways scrolling.
+- Dupixent's leaflet text still stops after 2 of its uses: re-ingest run
+  10 Nov; check its `ingest/dupilumab` branch.
 
 ## Open owner questions
 - Show a public "last updated" date on the site?

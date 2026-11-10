@@ -36,7 +36,7 @@ function SourceLink({ provenance, label }: { provenance: Provenance; label: stri
   if (!provenance.sourceUrl) return null;
   const href = provenance.page ? `${provenance.sourceUrl}#page=${provenance.page}` : provenance.sourceUrl;
   return (
-    <a className="about__source" href={href} target="_blank" rel="noopener noreferrer" title={provenance.quote}>
+    <a className="pharm__source" href={href} target="_blank" rel="noopener noreferrer" title={provenance.quote}>
       {label}
       {provenance.page ? `, page ${provenance.page}` : ''} ↗
     </a>
@@ -172,43 +172,43 @@ function DrugView({ drug }: { drug: Drug }) {
           })}
         </ul>
       </section>
-      <section className="about" aria-labelledby="about-head">
-        <h2 id="about-head">
+      <section className="pharm" aria-labelledby="pharm-head">
+        <h2 id="pharm-head">
           Clinical pharmacology
           <Info label="About this section">
             Word for word from the FDA-approved label, sections 12.1 to 12.3; each part links to its page of the label.
             The drug class is the FDA’s, from the label or the FDA’s list of drug classes.
           </Info>
         </h2>
-        <dl className="about__class">
+        <dl className="pharm__class">
           <dt>Drug class</dt>
           <dd>
             {about?.drugClass ? (
               // The label prints some classes in lower case ("hepcidin mimetic"); shown with a capital, words unchanged.
               about.drugClass.name.charAt(0).toUpperCase() + about.drugClass.name.slice(1)
             ) : (
-              <span className="about__gap">Not yet matched</span>
+              <span className="pharm__gap">Not yet matched</span>
             )}
           </dd>
         </dl>
         {about && about.sections.length > 0 ? (
           about.sections.map((s, i) => (
-            <details key={s.number} className="about__section" open={i === 0}>
+            <details key={s.number} className="pharm__section" open={i === 0}>
               <summary>
                 {s.number} {s.title}
               </summary>
-              <p className="about__text">
+              <p className="pharm__text">
                 {withoutPageFooters(s.text)}
                 {s.truncated && ' …'}
               </p>
-              <p className="about__cite">
+              <p className="pharm__cite">
                 {s.truncated && 'Continues on the label. '}
                 <SourceLink provenance={s.provenance} label={`Label section ${s.number}`} />
               </p>
             </details>
           ))
         ) : (
-          <p className="about__gap">Not yet read from the label.</p>
+          <p className="pharm__gap">Not yet read from the label.</p>
         )}
       </section>
 

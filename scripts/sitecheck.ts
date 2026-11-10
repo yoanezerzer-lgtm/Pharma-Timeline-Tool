@@ -1,6 +1,8 @@
 /**
  * Opens the site in a real browser and fails if a page is broken or empty:
  * the home page, the drug list, every drug page, and every drug's first approved use.
+ * Then, at phone width (375px), one page of each kind and every disease page
+ * must fit the screen: no sideways scrolling.
  *
  *   npx tsx scripts/sitecheck.ts <site-url>
  *
@@ -109,6 +111,21 @@ async function main(): Promise<void> {
     );
   }
 
+  // Phones must work without scrolling sideways (docs/HANDOFF.md: desktop first, phones must work).
+  const phone = await browser.newPage({ viewport: { width: 375, height: 800 } });
+  const sample = drugs.find((d) => d.indications.length > 0);
+  const phonePaths = [
+    '', 'drugs/', 'diseases/', 'compare/', 'about/',
+    ...(sample ? [`drug/${sample.slug}/`, `drug/${sample.slug}/indication/${sample.indications[0].slug}/`] : []),
+    ...[...diseases].map((id) => `disease/${id}/`),
+  ];
+  for (const path of phonePaths) {
+    await visit(phone, path, async (p) => {
+      const extra = await p.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+      return extra > 1 ? `at phone width the page scrolls sideways by ${extra}px` : undefined;
+    });
+  }
+
   await browser.close();
   const pages = 5 + drugs.length + drugs.filter((d) => d.indications.length > 0).length + diseases.size;
   if (problems.length > 0) {
@@ -116,7 +133,7 @@ async function main(): Promise<void> {
     for (const p of problems) console.error(`  - ${p}`);
     process.exit(1);
   }
-  console.log(`Site check: all ${pages} pages at ${base} load and show their content.`);
+  console.log(`Site check: all ${pages} pages at ${base} load and show their content; ${phonePaths.length} fit a phone screen.`);
 }
 
 main();

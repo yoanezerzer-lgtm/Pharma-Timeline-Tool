@@ -279,6 +279,18 @@
   background: var(--phase-2);
 }
 
+/* Hollow: the trial ended after the use's first approval. */
+.disease__bar--after,
+.disease__key-bar--after {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--phase-3);
+  opacity: 1;
+}
+
+.disease__bar--early.disease__bar--after {
+  box-shadow: inset 0 0 0 1px var(--phase-2);
+}
+
 .disease__key-dot {
   display: inline-block;
   width: 9px;
