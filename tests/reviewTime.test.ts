@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   acceleratedFromLetter,
+  letterIsFor,
   median,
   MIN_SAMPLE,
   parseLetterDate,
@@ -156,5 +157,20 @@ describe('median and the minimum-sample rule', () => {
     expect(s.expedited).toEqual({ yes: 2, total: 4 });
     expect(percent(1, 3)).toBe('33%');
     expect(percent(0, 0)).toBeUndefined();
+  });
+});
+
+describe('which submission a letter is for', () => {
+  const base = 'https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/';
+  it('matches the original and supplements by file name', () => {
+    expect(letterIsFor(`${base}761391Orig1s000ltr.pdf`, 'ORIG-1')).toBe(true);
+    expect(letterIsFor(`${base}761055Orig1s012ltr.pdf`, 'SUPPL-12')).toBe(true);
+    expect(letterIsFor(`${base}761055Orig1s015,s017ltr.pdf`, 'SUPPL-17')).toBe(true);
+  });
+  it('rejects a later supplement letter listed under the original', () => {
+    expect(letterIsFor(`${base}761391Orig1s001,761390Orig1s002ltr.pdf`, 'ORIG-1')).toBe(false);
+  });
+  it('accepts a name with no supplement number', () => {
+    expect(letterIsFor(`${base}21-302_ELIDEL_Approv.pdf`, 'ORIG-1')).toBe(true);
   });
 });

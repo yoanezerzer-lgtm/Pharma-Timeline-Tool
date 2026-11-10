@@ -24,6 +24,7 @@ import { naturalTerm } from '../../src/lib/plainText.js';
 import { toDateValue } from '../../src/lib/dates.js';
 import {
   acceleratedFromLetter,
+  letterIsFor,
   PrecedentFile,
   receiptFromLetter,
   type PrecedentProduct,
@@ -157,7 +158,7 @@ async function forDisease(d: DiseaseSummary, drugs: Drug[]): Promise<PrecedentFi
     const subs = approved(rec?.submissions);
     const sub = subs.find((s) => step.submissions.includes(label(s))) ?? subs.find((s) => step.date && fdaDate(s.submission_status_date)?.value === step.date.value);
     const drug = drugs.find((x) => x.slug === u.drugSlug)!;
-    const letterUrl = step.sourceUrl && /ltr\.pdf$/i.test(step.sourceUrl) ? step.sourceUrl : sub?.application_docs?.find((x) => x.type === 'Letter')?.url;
+    const letterUrl = step.sourceUrl && /ltr\.pdf$/i.test(step.sourceUrl) ? step.sourceUrl : sub?.application_docs?.find((x) => x.type === 'Letter' && letterIsFor(x.url, label(sub)))?.url;
     const facts = sub ? submissionFacts(u.application, sub) : {};
     const id = facts.submission ?? step.submissions[0] ?? '';
     products.push({
@@ -169,7 +170,7 @@ async function forDisease(d: DiseaseSummary, drugs: Drug[]): Promise<PrecedentFi
       site: { drugSlug: u.drugSlug, indicationSlug: u.indicationSlug },
       ...facts,
       submission: id,
-      ...(letterUrl ? fromLetter(await letterText(drug.slug, letterUrl), letterUrl, `FDA approval letter, ${u.application} ${id}`) : {}),
+      ...(letterUrl && letterIsFor(letterUrl, id) ? fromLetter(await letterText(drug.slug, letterUrl), letterUrl, `FDA approval letter, ${u.application} ${id}`) : {}),
     });
   }
 
@@ -190,8 +191,8 @@ async function forDisease(d: DiseaseSummary, drugs: Drug[]): Promise<PrecedentFi
     const text = (l?.indications_and_usage ?? []).join(' ').replace(/\s+/g, ' ');
     const sentence = text.split(/(?<=\.)\s+(?=[A-Z0-9])/).find((s) => phrases.some((p) => s.toLowerCase().includes(p)));
     if (!sentence) continue;
-    const letterUrl = orig.application_docs?.find((x) => x.type === 'Letter')?.url;
     const facts = submissionFacts(app, orig);
+    const letterUrl = orig.application_docs?.find((x) => x.type === 'Letter' && letterIsFor(x.url, facts.submission!))?.url;
     products.push({
       brandName: titleCase(l?.openfda?.brand_name?.[0] ?? rec.openfda?.brand_name?.[0] ?? rec.products?.[0]?.brand_name ?? app),
       inn: (l?.openfda?.generic_name?.[0] ?? rec.openfda?.generic_name?.[0])?.toLowerCase(),
@@ -213,6 +214,10 @@ async function forDisease(d: DiseaseSummary, drugs: Drug[]): Promise<PrecedentFi
     });
   }
 
+  // A receipt after the approval means the letter is about something else: leave a gap.
+  for (const p of products) {
+    if (p.receiptDate && p.approvalDate && p.receiptDate.value.value > p.approvalDate.value.value) delete p.receiptDate;
+  }
   products.sort((a, b) => (a.approvalDate?.value.value ?? '9999').localeCompare(b.approvalDate?.value.value ?? '9999'));
   return PrecedentFile.parse({
     meshId: d.meshId,

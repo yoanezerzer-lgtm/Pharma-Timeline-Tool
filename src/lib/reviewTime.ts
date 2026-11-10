@@ -126,6 +126,21 @@ export function acceleratedFromLetter(text: string): { value: boolean; quote?: s
   return m ? { value: true, quote: m[0].trim() } : { value: false };
 }
 
+/**
+ * Whether an FDA letter's file name is for this submission: "761391Orig1s000ltr.pdf"
+ * is ORIG-1, "…s012ltr.pdf" is SUPPL-12. A name listing other supplements only
+ * ("761391Orig1s001,761390Orig1s002ltr.pdf" for ORIG-1) is another letter. A
+ * name with no supplement number can't be told apart and is accepted.
+ */
+export function letterIsFor(url: string, submission: string): boolean {
+  const name = decodeURIComponent(url.split('/').pop() ?? '');
+  const nums = [...name.matchAll(/s(\d{3})/gi)].map((m) => Number(m[1]));
+  if (nums.length === 0) return true;
+  const m = /^(ORIG|SUPPL)-(\d+)$/.exec(submission);
+  if (!m) return false;
+  return nums.includes(m[1] === 'ORIG' ? 0 : Number(m[2]));
+}
+
 /** Days from receipt to approval; undefined unless both are known to the day and in order. */
 export function reviewDays(p: Pick<PrecedentProduct, 'receiptDate' | 'approvalDate'>): number | undefined {
   const a = p.receiptDate?.value;
