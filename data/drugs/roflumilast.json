@@ -1,0 +1,3258 @@
+{
+  "slug": "roflumilast",
+  "brandName": "Zoryve",
+  "inn": "roflumilast",
+  "modality": "Drug (NDA)",
+  "sponsor": "ARCUTIS",
+  "mechanism": "Phosphodiesterase 4 Inhibitor",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Phosphodiesterase 4 Inhibitor",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215985%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "patientSummary": {
+      "paragraphs": [
+        "ZORYVE cream 0.3% is a prescription medicine used on the skin (topical), including in areas with skin folds, to treat plaque psoriasis in adults and children 2 years of age and older."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+        "sourceLabel": "Label (SUPPL-15), patient information: \"What is Zoryve?\"",
+        "page": 19,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Roflumilast and its active metabolite (roflumilast N-oxide) are inhibitors of PDE4. Roflumilast and roflumilast N-oxide inhibition of PDE4 (a major cyclic 3′,5′-adenosine monophosphate [cyclic AMP] metabolizing enzyme) activity leads to accumulation of intracellular cyclic AMP. The specific mechanism(s) by which roflumilast exerts its therapeutic action is not well defined.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+          "sourceLabel": "Label (SUPPL-15), section 12.1",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Pharmacodynamics of ZORYVE cream in the treatment of plaque psoriasis and atopic dermatitis are unknown.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+          "sourceLabel": "Label (SUPPL-15), section 12.2",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption Following application of ZORYVE cream, the plasma concentration versus time profile was relatively flat, generally with a peak-to-trough ratio less than 2. Plaque Psoriasis The PK of ZORYVE cream, 0.3%, was assessed in 18 adult and 6 pediatric subjects 13 to 16 years of age with plaque psoriasis and a mean ± SD body surface area (BSA) involvement of 26.8 ± 6.80% and 13.0 ± 3.58% in adult and pediatric subjects, respectively. In this study, on average, subjects applied 3 to 6.5 g of ZORYVE cream, 0.3%, once daily for 15 days. Plasma concentrations of roflumilast and roflumilast N-oxide (see Metabolism) were quantifiable in all but two subjects at Day 15. In adults, the mean ± SD systemic exposure (AUC0-24) was 72.7 ± 53.1 and 628 ± 648 h∙ng/mL for roflumilast and the N-oxide metabolite, respectively. In pediatric subjects (13 to 16 years of age), the mean ± SD AUC0-24 was 25.1 ± 24.0 and 140 ± 179 h∙ng/mL for roflumilast and the N-oxide metabolite, respectively. The PK of ZORYVE cream, 0.3%, was assessed in 10 pediatric subjects (6 to 11 years of age) with at least mild plaque psoriasis and a mean ± SD BSA involvement of 10.9 ± 6.56%. The 14-day mean ± SD extrapolated AUC0-24 was 75.6 ± 87.3 and 693 ± 986 h∙ng/mL for roflumilast and the N-oxide metabolite, respectively. In another study, the PK of ZORYVE cream, 0.3%, was assessed in 9 pediatric subjects (2 to 5 years of age) with at least mild plaque psoriasis and a mean ± SD BSA involvement of 9.44 ± 5.57%. The 14-day mean ± SD extrapolated AUC0-24 was 51.6 ± 29.9 and 539 ± 372 h∙ng/mL for roflumilast and the N-oxide metabolite, respectively. Atopic Dermatitis The PK of ZORYVE cream, 0.15%, was assessed in 12 pediatric subjects 12 to 16 years of age and 13 pediatric subjects 6 to 11 years of age with atopic dermatitis and a mean ± SD BSA involvement of 33.7 ± 14.8% and 43.5 ± 10.5%, respectively. On average, subjects applied 8.2 to 10.5 g of ZORYVE cream, 0.15%, once daily. 9 In pediatric subjects 12 to 16 years of age, the Day 14 mean ± SD systemic exposure (AUC0-24) was 62.9 ± 53.0 and 336 ± 310 h∙ng/mL for roflumilast and the N-oxide metabolite, respectively. In pediatric subjects 6 to 11 years of age, the Day 14 mean ± SD AUC0-24 was 102 ± 96.5 and 743 ± 710 h∙ng/mL for roflumilast and the N-oxide metabolite, respectively. The PK of ZORYVE cream, 0.05%, was assessed in 9 pediatric subjects 2 to 5 years of age with atopic dermatitis and a mean ± SD BSA involvement of 42.4 ± 6.21%. On average, subjects applied 5.2 g of ZORYVE cream, 0.05%, once daily. In pediatric subjects 2 to 5 years of age, the Day 14 mean ± SD systemic exposure (AUC0-24) was 47.2 ± 27.4 and 338 ± 280 h∙ng/mL for roflumilast and the N-oxide metabolite, respectively. Distribution Plasma protein binding of roflumilast and its N-oxide metabolite is approximately 99% and 97%, respectively. Elimination The plasma clearance after short-term intravenous infusion of roflumilast is on average about 9.6 L/h. Following topical administration, the half-lives of roflumilast and the N-oxide metabolite were 4.0 and 4.6 days, respectively. Metabolism Roflumilast is extensively metabolized via Phase I (cytochrome P450) and Phase II (conjugation) reactions. The N-oxide metabolite is the only major metabolite observed in the plasma of humans. Following oral administration, roflumilast and roflumilast N-oxide account for the majority (87.5%) of total dose administered in plasma. Roflumilast was not detectable in urine, while roflumilast N-oxide was only a trace metabolite (less than 1%). Other conjugated metabolites such as roflumilast N-oxide glucuronide and 4-amino-3,5-dichloropyridine N-oxide were detected in urine. While roflumilast is 3 times more potent than roflumilast N-oxide at inhibition of the PDE4 enzyme in vitro, the plasma AUC of roflumilast N-oxide on average is approximately 8-fold greater than the plasma AUC of roflumilast following topical administration. A similar ratio was observed following intravenous administration, whereas following oral administration the N-oxide metabolite circulated on average about 10-fold higher than the parent drug. Specific Populations Following topical administration, no clinically significant differences in the pharmacokinetics of roflumilast and roflumilast N-oxide were observed based on sex, race, or ethnicity. Patients with Hepatic Impairment No studies were conducted with topical roflumilast in subjects with hepatic impairment; however, oral roflumilast 250 mcg once daily for 14 days was studied in subjects with mild to moderate hepatic impairment classified as Child-Pugh A and B (8 subjects in each group). The AUC of roflumilast and roflumilast N-oxide were increased by 51% and 24%, respectively, in Child-Pugh A subjects and by 92% and 41%, respectively, in Child-Pugh B subjects, as compared to age-, weight-, and gender-matched healthy subjects. The Cmax of roflumilast and roflumilast N-oxide were increased by 3% and 26%, respectively, in Child-Pugh A subjects and by 26% and 40%, respectively, in Child-Pugh B subjects, as compared to healthy subjects [see Contraindications (4)]. 10 Patients with Renal Impairment No studies were conducted with topical roflumilast in subjects with renal impairment. Following oral administration in 12 subjects with severe renal impairment, no clinically significant differences in the pharmacokinetics of roflumilast and roflumilast N-oxide were observed. Drug Interaction Studies Clinical Studies No formal drug-drug interaction studies were conducted with roflumilast cream. Since a major step in roflumilast metabolism is the N-oxidation of roflumilast to roflumilast N-oxide by CYP3A4 and CYP1A2, drug interaction studies were performed with oral roflumilast and systemic inhibitors of CYP3A4 and CYP1A2 [see Drug Interactions (7.1)]. Erythromycin: In an open-label crossover study in 16 healthy volunteers, the co-administration of CYP3A4 inhibitor erythromycin (500 mg 3 times daily for 13 days) with a single oral dose of 500 mcg roflumilast resulted in 40% and 70% increase in Cmax and AUC for roflumilast, respectively, and a 34% decrease and a 4% increase in Cmax and AUC for roflumilast N-oxide, respectively. Ketoconazole: In an open-label crossover study in 16 healthy volunteers, the co-administration of a strong CYP3A4 inhibitor ketoconazole (200 mg twice daily for 13 days) with a single oral dose of 500 mcg roflumilast resulted in 23% and 99% increase in Cmax and AUC for roflumilast, respectively, and a 38% reduction and 3% increase in Cmax and AUC for roflumilast N-oxide, respectively. Fluvoxamine: In an open-label crossover study in 16 healthy volunteers, the co-administration of dual CYP 3A4/1A2 inhibitor fluvoxamine (50 mg daily for 14 days) with a single oral dose of 500 mcg roflumilast showed a 12% and 156% increase in roflumilast Cmax and AUC along with a 210% decrease and 52% increase in roflumilast N-oxide Cmax and AUC, respectively. Enoxacin: In an open-label crossover study in 16 healthy volunteers, the co-administration of dual CYP 3A4/1A2 inhibitor enoxacin (400 mg twice daily for 12 days) with a single oral dose of 500 mcg roflumilast resulted in an increased Cmax and AUC of roflumilast by 20% and 56%, respectively. Roflumilast N-oxide Cmax was decreased by 14% while roflumilast N-oxide AUC was increased by 23%. Cimetidine: In an open-label crossover study in 16 healthy volunteers, the co-administration of a dual CYP 3A4/1A2 inhibitor cimetidine (400 mg twice daily for 7 days) with a single oral dose of 500 mcg roflumilast resulted in a 46% and 85% increase in roflumilast Cmax and AUC; and a 4% decrease in Cmax and 27% increase in AUC for roflumilast N-oxide, respectively. Oral Contraceptives Containing Gestodene and Ethinyl Estradiol: In an open-label crossover study in 20 healthy adult volunteers, co-administration of a single oral dose of roflumilast with repeated doses of a fixed combination oral contraceptive containing 0.075 mg gestodene and 0.03 mg ethinyl estradiol to steady state caused a 38% increase and 12% decrease in Cmax of roflumilast and roflumilast N-oxide, respectively. Roflumilast and roflumilast N-oxide AUCs were increased by 51% and 14%, respectively. In Vitro Studies Cytochrome P450 (CYP) Enzymes: In vitro studies suggest that the biotransformation of roflumilast to its N-oxide metabolite is mediated by CYP1A2 and 3A4. Based on further in vitro results in human liver microsomes, roflumilast and roflumilast N-oxide in therapeutic plasma concentrations do not inhibit CYP1A2, 2A6, 2B6, 2C8, 2C9, 2C19, 2D6, 2E1, 3A4/5, or 4A9/11; therefore, there is a low probability of relevant interactions with substances metabolized by these 11 P450 enzymes. In addition, in vitro studies demonstrated no induction of the CYP1A2, 2A6, 2C9, 2C19, or 3A4/5 and only a weak induction of CYP2B6 by roflumilast.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+          "sourceLabel": "Label (SUPPL-15), section 12.3",
+          "page": 9,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "Plaque Psoriasis",
+      "wording": {
+        "text": "Topical treatment of plaque psoriasis, including intertriginous areas, in adult and pediatric patients 2 years of age and older",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-15), section 1",
+          "quote": "Topical treatment of plaque psoriasis, including intertriginous areas, in adult and pediatric patients 2 years of age and older",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "slug": "plaque-psoriasis",
+      "approvalDate": {
+        "value": "2022-07-29",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/215985Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2022-07-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Zoryve (roflumilast) cream, 0.3% for topical treatment of plaque psoriasis, including treatment of psoriasis in the intertriginous areas, in patients 12 years of age and older.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/215985Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Zoryve (roflumilast) cream, 0.3% for topical treatment of plaque psoriasis, including treatment of psoriasis in the intertriginous areas, in patients 12 years of age and older.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-2",
+          "date": {
+            "value": "2023-10-05",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval supplemental new drug application provides the results of postmarketing study requirements (PMR 4314-1 and 4314-2) listed in the approval letter dated July 29, 2022.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-2)",
+            "quote": "This Prior Approval supplemental new drug application provides the results of postmarketing study requirements (PMR 4314-1 and 4314-2) listed in the approval letter dated July 29, 2022.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-15",
+          "date": {
+            "value": "2026-06-29",
+            "precision": "day"
+          },
+          "kind": "expansion",
+          "statement": "This Prior Approval supplemental new drug application provides the final study report of the postmarketing requirement (PMR 4314-3) listed in the approval letter dated July 29, 2022, and further provides for expanding the use of topical Zoryve (roflumilast) cream, 0.3% to adult and pediatric patients 2 years of age and older with plaque psoriasis.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/215985Orig1s015ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-15)",
+            "quote": "This Prior Approval supplemental new drug application provides the final study report of the postmarketing requirement (PMR 4314-3) listed in the approval letter dated July 29, 2022, and further provides for expanding the use of topical Zoryve (roflumilast) cream, 0.3% to adult and pediatric patients 2 years of age and older with plaque psoriasis.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D011565",
+          "term": "Psoriasis",
+          "areas": [
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "A common genetically determined, chronic, inflammatory skin disease characterized by rounded erythematous, dry, scaling patches. The lesions have a predilection for nails, scalp, genitalia, extensor surfaces, and the lumbosacral region. Accelerated epidermopoiesis is considered to be the fundamental pathologic feature in psoriasis.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011565",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Psoriasis",
+            "paragraphs": [
+              "Psoriasis is a skin disease that causes itchy or sore patches of thick, red skin with silvery scales. You usually get the patches on your elbows, knees, scalp, back, face, palms and feet, but they can show up on other parts of your body. Some people who have psoriasis also get a form of arthritis called psoriatic arthritis.",
+              "A problem with your immune system causes psoriasis. In a process called cell turnover, skin cells that grow deep in your skin rise to the surface. Normally, this takes a month. In psoriasis, it happens in just days because your cells rise too fast.",
+              "Psoriasis can be hard to diagnose because it can look like other skin diseases. Your doctor might need to look at a small skin sample under a microscope.",
+              "Psoriasis can last a long time, even a lifetime. Symptoms come and go. Things that make them worse include:",
+              "• Infections",
+              "• Stress",
+              "• Dry skin",
+              "• Certain medicines",
+              "Psoriasis usually occurs in adults. It sometimes runs in families. Treatments include creams, medicines, and light therapy.",
+              "NIH: National Institute of Arthritis and Musculoskeletal and Skin Diseases"
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/psoriasis.html",
+              "sourceLabel": "MedlinePlus, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011565",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "Psoriasis",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atopic Dermatitis",
+      "slug": "atopic-dermatitis",
+      "approvalDate": {
+        "value": "2024-07-09",
+        "precision": "day"
+      },
+      "submissionNumber": "SUPPL-7",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/215985Orig1s007ltr.pdf",
+        "sourceLabel": "Approval letter (SUPPL-7)",
+        "quote": "Named in the SUPPL-7 approval letter; first listed in the label on or before SUPPL-7, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-7",
+          "date": {
+            "value": "2024-07-09",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for a new drug concentration of Zoryve cream 0.15% to support a new indication - treatment of mild to moderate atopic dermatitis (AD) in patients 6 years of age and older.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/215985Orig1s007ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-7)",
+            "quote": "This Prior Approval supplemental new drug application provides for a new drug concentration of Zoryve cream 0.15% to support a new indication - treatment of mild to moderate atopic dermatitis (AD) in patients 6 years of age and older.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        },
+        {
+          "submission": "SUPPL-12",
+          "date": {
+            "value": "2025-10-04",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval supplemental new drug application provides for addition of a new strength of Zoryve cream, 0.05%, for the treatment of mild-to-moderate atopic dermatitis (AD) in patients 2 to 5 years of age.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/215985Orig1s012ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-12)",
+            "quote": "This Prior Approval supplemental new drug application provides for addition of a new strength of Zoryve cream, 0.05%, for the treatment of mild-to-moderate atopic dermatitis (AD) in patients 2 to 5 years of age.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003876",
+          "term": "Dermatitis, Atopic",
+          "areas": [
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "inherited": true,
+          "definition": {
+            "text": "A chronic inflammatory genetically determined disease of the skin marked by increased ability to form reagin (IgE), with increased susceptibility to allergic rhinitis and asthma, and hereditary disposition to a lowered threshold for pruritus. It is manifested by lichenification, excoriation, and crusting, mainly on the flexural surfaces of the elbow and knee. In infants it is known as infantile eczema.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Atopic dermatitis",
+            "paragraphs": [
+              "Atopic dermatitis (also known as atopic eczema) is a disorder characterized by inflammation of the skin (dermatitis). The condition usually begins in early infancy, and it often disappears before adolescence. However, in some affected individuals the condition continues into adulthood; in others, it does not begin until adulthood. Hallmarks of atopic dermatitis include dry, itchy skin and red rashes that come and go. The rashes can occur on any part of the body, although the pattern tends to be different at different ages. In affected infants, the rashes commonly occur on the face, scalp, hands, and feet. In children, the rashes are usually found in the bend of the elbows and knees and on the front of the neck. In adolescents and adults, the rashes typically occur on the wrists, ankles, and eyelids in addition to the bend of the elbows and knees. Scratching the itchy skin can lead to oozing and crusting of the rashes and thickening and hardening (lichenification) of the skin. The itchiness can be so severe as to disturb sleep and impair a person's quality of life.",
+              "The word \"atopic\" indicates an association with allergies. While atopic dermatitis is not always due to an allergic reaction, it is commonly associated with other allergic disorders: up to 60 percent of people with atopic dermatitis develop asthma or hay fever (allergic rhinitis) later in life, and up to 30 percent have food allergies. Atopic dermatitis is often the beginning of a series of allergic disorders, referred to as the \"atopic march.\" Development of these disorders typically follows a pattern, beginning with atopic dermatitis, followed by food allergies, then hay fever, and finally asthma. However, not all individuals with atopic dermatitis will progress through the atopic march, and not all individuals with one allergic disease will develop others.",
+              "Individuals with atopic dermatitis have an increased risk of developing other conditions related to inflammation, such as inflammatory bowel disease, rheumatoid arthritis, and hair loss caused by a malfunctioning immune reaction (alopecia areata). They also have an increased risk of having a behavioral or psychiatric disorder, such as attention-deficit/hyperactivity disorder (ADHD) or depression.",
+              "In a particular subset of individuals with atopic dermatitis, the immune system is unable to protect the body from foreign invaders such as bacteria and fungi (which is known as immunodeficiency). These individuals are prone to recurrent infections. Most also have other allergic disorders, such as asthma, hay fever, and food allergies.",
+              "Atopic dermatitis can also be a feature of separate disorders that have a number of signs and symptoms, which can include skin abnormalities and immunodeficiency. Some such disorders are Netherton syndrome; immune dysregulation, polyendocrinopathy, enteropathy, X-linked (IPEX) syndrome; and severe dermatitis, multiple allergies, metabolic wasting (SAM) syndrome."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/genetics/condition/atopic-dermatitis/",
+              "sourceLabel": "MedlinePlus Genetics, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "Atopic Dermatitis",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "215985",
+      "applicationType": "NDA",
+      "sponsor": "ARCUTIS",
+      "originalApprovalDate": {
+        "value": "2022-07-29",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Immunology and Inflammation",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/215985Orig1s015ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-15), signature",
+          "quote": "Division of Dermatology and Dentistry Office of Immunology and Inflammation Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Arcutis Biotherapeutics, Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+          "sourceLabel": "Label (SUPPL-15)",
+          "quote": "Marketed by: Arcutis Biotherapeutics, Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "arq-151-101",
+      "nctId": "NCT03392168",
+      "protocolNumber": "ARQ-151-101",
+      "title": "A Phase 1/2a Single Dose and 28-day Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety, Pharmacokinetics and Efficacy of ARQ-151 Cream 0.5% and 0.15% in Adults With Mild to Moderate Chronic Plaque Psoriasis",
+      "briefTitle": "Safety, Pharmacokinetics and Efficacy of ARQ-151 Cream in Adults With Mild to Moderate Chronic Plaque Psoriasis",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
+      "startDate": {
+        "value": "2017-12-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2018-05-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-05-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 91,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1 - ARQ-151 cream 0.5%",
+          "type": "EXPERIMENTAL",
+          "description": "Single-dose application of ARQ-151 cream 0.5% to 25 cm\\^2 of psoriatic plaque(s)"
+        },
+        {
+          "label": "Cohort 2 - ARQ-151 cream 0.5%",
+          "type": "EXPERIMENTAL",
+          "description": "ARQ-151 cream 0.5% applied daily for 28 days to all psoriatic plaques, not exceeding an application area of 5% BSA"
+        },
+        {
+          "label": "Cohort 2 - ARQ-151 cream 0.15%",
+          "type": "EXPERIMENTAL",
+          "description": "ARQ-151 cream 0.15% applied daily for 28 days to all psoriatic plaques, not exceeding an application area of 5% BSA"
+        },
+        {
+          "label": "Cohort 2 - ARQ-151 vehicle cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Vehicle cream applied daily for 28 days to all psoriatic plaques, not exceeding an application area of 5% BSA"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percent Change From Baseline in 4 Week Target Plaque Severity Score x Target Plaque Area in Cohort 2"
+      ],
+      "secondaryEndpoints": [
+        "Percent Change From Baseline in 1, 2, 3 Week Target Plaque Severity Score x Target Plaque Area in Cohort 2",
+        "Percent Change From Baseline in Total Plaque Severity Score in Cohort 2",
+        "Percent Change From Baseline in Target Plaque Area in Cohort 2"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03392168",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03392168",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03392168",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03392168",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03392168",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-201",
+      "nctId": "NCT03638258",
+      "protocolNumber": "ARQ-151-201",
+      "acronym": "ARQ-151-201",
+      "title": "A Phase 2b 12-Week Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety, Efficacy and Pharmacokinetics of ARQ-151 Cream 0.3% and ARQ-151 Cream 0.15% Administered Once Daily in Subjects With Chronic Plaque Psoriasis",
+      "briefTitle": "The Safety, Efficacy and Pharmacokinetics of ARQ-151 Cream in Subjects With Chronic Plaque Psoriasis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Plaque Psoriasis"
+      ],
+      "startDate": {
+        "value": "2018-09-21",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-05-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-05-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 331,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Roflumilast Cream 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "Roflumilast cream 0.3% topically applied QD for 12 weeks."
+        },
+        {
+          "label": "Roflumilast Cream 0.15%",
+          "type": "EXPERIMENTAL",
+          "description": "Roflumilast cream 0.15% topically applied QD for 12 weeks."
+        },
+        {
+          "label": "Vehicle Cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Vehicle cream matched to roflumilast cream (containing only excipients of active cream) applied QD for 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With an Investigator Global Assessment (IGA) Score of 'Clear' or 'Almost Clear' at Week 6"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With an Investigator Global Assessment (IGA) Score of 'Clear' or 'Almost Clear'",
+        "Change From Baseline in Modified Psoriasis Area Severity Index (mPASI) Score",
+        "Percent Change From Baseline in Body Surface Area (BSA) Affected",
+        "Percentage of Participants With an Investigator Global Assessment (IGA) Score of 'Clear' or 'Almost Clear' Plus a 2-Grade Improvement From Baseline",
+        "Percentage of Participants With an Intertriginous Area Investigator Global Assessment (I-IGA) Score of 'Clear' or 'Almost Clear' Who Had at Least Mild Lesions at Baseline",
+        "Change From Baseline in Worst Itch-Numeric Rating Scale (WI-NRS) Pruritus Score",
+        "Percentage of Participants With Baseline Worst Itch-Numeric Rating Scale (WI-NRS) Pruritus Score ≥6 Who Experienced a 4-point Reduction",
+        "Percentage of Participants Achieving a Modified Psoriasis Area Severity Index-75 (mPASI-75) Compared to Baseline",
+        "Percentage of Participants Achieving a Modified Psoriasis Area Severity Index-90 (mPASI-90) Compared to Baseline",
+        "Change From Baseline in Psoriasis Symptom Diary (PSD) Total Score",
+        "Change From Baseline in Itch-Related Sleep Loss Numeric Rating Scale (NRS) Score",
+        "Change From Baseline in Dermatology Life Quality Index (DLQI) Score",
+        "Responses to Individual Questions of the Psoriasis Symptom Diary (PSD)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03638258",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03638258",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03638258",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03638258",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03638258",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-202",
+      "nctId": "NCT03764475",
+      "protocolNumber": "ARQ-151-202",
+      "title": "A Phase 2, Multicenter, Open-Label Extension Study of the Long-Term Safety of ARQ-151 Cream 0.3% in Adult Subjects With Chronic Plaque Psoriasis Who Have Completed Preceding Study ARQ-151-201 Phase 2 Randomized Controlled Trial (Cohort 1) and Non-ARQ-151-201 Subjects (Cohort 2)",
+      "briefTitle": "Long-Term Safety of ARQ-151 Cream in Adult Subjects With Chronic Plaque Psoriasis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Plaque Psoriasis"
+      ],
+      "startDate": {
+        "value": "2018-12-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-10-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-10-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 332,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Long-term Safety of Roflumilast",
+          "type": "OTHER",
+          "description": "Participants applied roflumilast (ARQ-151) cream 0.3% once daily for 52 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Experiencing ≥1 Treatment-emergent Adverse Event (TEAE)",
+        "Number of Participants Experiencing ≥1 Serious Adverse Event (SAE)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With an Investigator Global Assessment (IGA) Score of 'Clear' or 'Almost Clear'",
+        "Duration of Response in Participants Achieving 'Clear' IGA Score",
+        "Number of Participants With Intertriginous Area Involvement Achieving an Intertriginous Area Investigator Global Assessment (I-IGA) Score of \"Clear' or 'Almost Clear'",
+        "Number of Participants Achieving a 75% Reduction From Baseline in Modified Psoriasis Severity Index (mPASI-75)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03764475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03764475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03764475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03764475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03764475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-212",
+      "nctId": "NCT03916081",
+      "protocolNumber": "ARQ-151-212",
+      "title": "A Phase 2, 4-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-151 Cream 0.05% and ARQ-151 Cream 0.15% Administered QD (Quaque Die) in Adolescent and Adult Subjects With Atopic Dermatitis",
+      "briefTitle": "Safety and Efficacy of ARQ-151 Cream in Adolescents and Adults With Atopic Dermatitis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2019-05-31",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-11-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-11-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 136,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Roflumilast Cream 0.05%",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants apply roflumilast cream 0.05% QD for 28 days."
+        },
+        {
+          "label": "Roflumilast Cream 0.15%",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants apply roflumilast cream 0.15% QD for 28 days."
+        },
+        {
+          "label": "Vehicle Cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants apply vehicle cream QD for 28 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Mean Change From Baseline in Eczema Area and Severity Index (EASI) Total Score at Week 4"
+      ],
+      "secondaryEndpoints": [
+        "Percentage Change From Baseline in EASI Total Score",
+        "Mean Change From Baseline in EASI Total Score at Weeks 1 and 2",
+        "Number of Participants Achieving a 50% Decrease From Baseline in EASI Score (EASI-50)",
+        "Number of Participants Achieving a 75% Decrease From Baseline in EASI Score (EASI-75)",
+        "Number of Participants Achieving a 90% Decrease From Baseline in EASI Score (EASI-90)",
+        "Number of Participants Achieving a 100% Decrease From Baseline in EASI Score (EASI-100)",
+        "Mean Change From Baseline in Body Surface Area (BSA) Involvement",
+        "Worse Itch Numerical Rating Score (WI-NRS) Score Change",
+        "Number of Participants Achieving ≥4-Point Improvement in WI-NRS Pruritus Score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03916081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03916081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03916081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03916081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03916081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-154-203",
+      "nctId": "NCT04091646",
+      "protocolNumber": "ARQ-154-203",
+      "title": "A Phase 2b, 8-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-154 Foam 0.3% Administered QD in Subjects With Seborrheic Dermatitis",
+      "briefTitle": "Safety and Efficacy of ARQ-154 Foam in Subjects With Seborrheic Dermatitis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Seborrheic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012628",
+          "term": "Dermatitis, Seborrheic"
+        }
+      ],
+      "startDate": {
+        "value": "2019-12-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-08-18",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-08-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 226,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Roflumilast Foam 0.3%",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants apply roflumilast foam 0.3% once daily (QD) to all areas of seborrheic dermatitis once daily for 8 weeks."
+        },
+        {
+          "label": "Vehicle Foam",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants apply inactive vehicle foam matched to roflumilast foam QD for 8 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Achievement of Investigator Global Assessment (IGA) Success at Week 8"
+      ],
+      "secondaryEndpoints": [
+        "Achievement of IGA Success at Weeks 2 and 4",
+        "Change From Baseline in Overall Assessment of Erythema Score",
+        "Achievement of Overall Assessment of Erythema Success",
+        "Change From Baseline in Overall Assessment of Scaling Score",
+        "Achievement of Overall Assessment of Scaling Success",
+        "Change From Baseline in Worst Itch Numeric Rating Scale (WI-NRS) Score",
+        "Achievement of WI-NRS Success"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04091646",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04091646",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04091646",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04091646",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04091646",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "dermis-2",
+      "nctId": "NCT04211389",
+      "protocolNumber": "ARQ-151-302",
+      "acronym": "DERMIS-2",
+      "title": "A Phase 3, 8-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-151 Cream 0.3% Administered QD in Subjects With Chronic Plaque Psoriasis",
+      "briefTitle": "Twin Trial of PDE4 Inhibition With Roflumilast for the Management of Plaque Psoriasis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Plaque Psoriasis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Plaque Psoriasis)",
+            "quote": "Trial identifier appears within the Plaque Psoriasis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Plaque Psoriasis"
+      ],
+      "startDate": {
+        "value": "2019-12-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-11-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-11-23",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 442,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-151 cream 0.3%",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Active comparator"
+        },
+        {
+          "label": "ARQ-151 cream vehicle",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo comparator"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Achieving Success on the Investigator Global Assessment (IGA) Scale"
+      ],
+      "secondaryEndpoints": [
+        "Time to Achieve Psoriasis Area Severity Index-50 (PASI-50)",
+        "Number of Participants Achieving Psoriasis Area Severity Index-75 (PASI-75)",
+        "Number of Participants Achieving Psoriasis Area Severity Index-90 (PASI-90)",
+        "Number of Participants Achieving Success in Intertriginous Investigator Global Assessment (I-IGA) Scale Assessment of Disease Severity at Week 8",
+        "Number of Participants Achieving I-IGA Score of 'Clear' at Week 8",
+        "Number of Participants Achieving Success in Worst Itch Numerical Rating Scale (WI-NRS) Pruritus Score",
+        "Change From Baseline in Psoriasis Symptoms Diary (PSD) Score"
+      ],
+      "postedResults": [
+        {
+          "title": "Number of Participants Achieving Success on the Investigator Global Assessment (IGA) Scale",
+          "timeFrame": "Week 8",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Roflumilast Cream 0.3%"
+            },
+            {
+              "id": "OG001",
+              "title": "Vehicle Cream"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "99"
+            },
+            {
+              "groupId": "OG001",
+              "value": "9"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "6.59",
+              "ciPct": "95",
+              "ciLower": "3.17",
+              "ciUpper": "13.70"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211389",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211389?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 9,
+          "quote": "randomized, double-blind, vehicle-controlled trials (DERMIS-1 [NCT04211363] and DERMIS-2 [NCT04211389]) enrolled a total of 881 adult and pediatric subjects with mild to severe plaque psorias",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "dermis-1",
+      "nctId": "NCT04211363",
+      "protocolNumber": "ARQ-151-301",
+      "acronym": "DERMIS-1",
+      "title": "A Phase 3, 8-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-151 Cream 0.3% Administered QD in Subjects With Chronic Plaque Psoriasis",
+      "briefTitle": "Trial of PDE4 Inhibition With Roflumilast for the Management of Plaque Psoriasis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Plaque Psoriasis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Plaque Psoriasis)",
+            "quote": "Trial identifier appears within the Plaque Psoriasis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Plaque Psoriasis"
+      ],
+      "startDate": {
+        "value": "2019-12-20",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-11-16",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-11-16",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 439,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Rofumilast Cream 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "Participants receive roflumilast cream 0.3% once daily for 8 weeks."
+        },
+        {
+          "label": "Vehicle cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants receive vehicle cream once daily for 8 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Achieving Success in Investigator Global Assessment (IGA) Scale Assessment of Disease Severity at Week 8"
+      ],
+      "secondaryEndpoints": [
+        "Time to Achieve Psoriasis Area Severity Index-50 (PASI-50)",
+        "Number of Participants Achieving Psoriasis Area Severity Index 75 (PASI-75)",
+        "Number of Participants Achieving Psoriasis Area Severity Index-90 (PASI-90)",
+        "Number of Participants Achieving Intertriginous IGA (I-IGA) Success at Week 8",
+        "Number of Participants Achieving Score of 'Clear' in I-IGA at Week 8",
+        "Number of Participants Achieving Worst Itch Numerical Rating Score (WI-NRS) Success",
+        "Change From Baseline in Psoriasis Symptoms Diary (PSD) Score"
+      ],
+      "postedResults": [
+        {
+          "title": "Number of Participants Achieving Success in Investigator Global Assessment (IGA) Scale Assessment of Disease Severity at Week 8",
+          "timeFrame": "Baseline (Day 1) and Week 8",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Rofumilast Cream 0.3%"
+            },
+            {
+              "id": "OG001",
+              "title": "Vehicle Cream"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "108"
+            },
+            {
+              "groupId": "OG001",
+              "value": "8"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "20.69",
+              "ciPct": "95",
+              "ciLower": "7.58",
+              "ciUpper": "56.48"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211363",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04211363?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 9,
+          "quote": "L STUDIES Two multicenter, randomized, double-blind, vehicle-controlled trials (DERMIS-1 [NCT04211363] and DERMIS-2 [NCT04211389]) enrolled a total of 881 adult and pediatric subjects with mi",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-105",
+      "nctId": "NCT04156191",
+      "protocolNumber": "ARQ-151-105",
+      "title": "An Open Label, Phase 1, Pharmacokinetics, Maximal Usage Pharmacokinetics, Safety, and Efficacy Study of ARQ-151 Cream 0.15% or ARQ-151 Cream 0.05% Administered QD in Adolescent and Pediatric Subjects With Mild to Moderate Atopic Dermatitis",
+      "briefTitle": "Pharmacokinetics (PK), Safety, Efficacy and Maximal Use PK of ARQ-151 in Adolescents/Children With Mild/Moderate Eczema",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis (Eczema)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2019-12-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-05-02",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-05-02",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 101,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "3 Months",
+        "maxAge": "17 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-151 cream 0.15% or 0.05%",
+          "type": "EXPERIMENTAL",
+          "description": "Open-label study of 0.15% or 0.05% active concentration"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Plasma Concentration (Cmax) of roflumilast and its N-oxide metabolite",
+        "Area under the plasma concentration-time curve within a dosing interval (AUC) for roflumilast and its N-oxide metabolite",
+        "Treatment Emergent Adverse Events (TEAE)"
+      ],
+      "secondaryEndpoints": [
+        "Eczema Area and Severity Index (EASI) Total Score Change and Percent Change in Total Score",
+        "Eczema Area and Severity Index Score 100%, 90%, 75%, and 50% Improvement (EASI100, EASI90, EASI75, and EASI50)",
+        "Achievement of a Validated Investigator Global Assessment scale for Atopic Dermatitis (vIGA-AD) score of 'clear' or 'almost clear' at each study visit, or 'clear' or 'almost clear' with a 2-point improvement from baseline at each study visit",
+        "Change from baseline in vIGA-AD score at each study visit",
+        "Body Surface Area (BSA) Involvement Change",
+        "Worse Itch Numerical Rating Score (WI-NRS) Pruritis Score Change",
+        "WI-NRS Pruritus Score Improvement"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04156191",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04156191",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04156191",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04156191",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04156191",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-154-204",
+      "nctId": "NCT04128007",
+      "protocolNumber": "ARQ-154-204",
+      "title": "A Phase 2b, 8-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-154 Foam 0.3% Administered QD in Adolescents and Adults With Scalp and Body Psoriasis",
+      "briefTitle": "Safety and Efficacy of ARQ-154 Foam in Adolescent and Adult Subjects With Scalp and Body Psoriasis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Plaque Psoriasis"
+      ],
+      "startDate": {
+        "value": "2020-01-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-09-23",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-09-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 304,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-154 foam 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "active"
+        },
+        {
+          "label": "ARQ foam VehicleRQ-154 foam Vehicle",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants Achieving Success in the Scalp Investigator Global Assessment (S-IGA) Scale"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants Achieving Body Investigator Global Assessment (B-IGA) Success at Week 8",
+        "Number of Participants Achieving Success in Scalp Itch Numerical Rating Scale (SI-NRS) Score",
+        "Change From Baseline in Psoriasis Symptoms Diary (PSD) Score",
+        "Time to Achieve a 50% Reduction From Baseline in Psoriasis Scalp Severity Index (PSSI-50) Score",
+        "Number of Participants Achieving Psoriasis Scalp Severity Index-75 (PSSI-75)",
+        "Number of Participants Achieving PSSI-90"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04128007",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04128007",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04128007",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04128007",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04128007",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "dermis-ole",
+      "nctId": "NCT04286607",
+      "protocolNumber": "ARQ-151-306",
+      "acronym": "DERMIS-OLE",
+      "title": "A Phase 3, Multicenter, Open-Label Extension Study of the Long-Term Safety of ARQ-151 Cream 0.3% in Subjects With Chronic Plaque Psoriasis",
+      "briefTitle": "Open-Label Extension Trial of PDE4 Inhibition With Roflumilast for the Management of Plaque Psoriasis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Plaque Psoriasis"
+      ],
+      "startDate": {
+        "value": "2020-02-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-01-22",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-01-22",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 337,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "11 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-151 Cream 0.3%",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With ≥1 Treatment-Emergent Adverse Events (TEAEs)",
+        "Percentage of Participants With ≥1 Serious Adverse Events (SAEs)"
+      ],
+      "secondaryEndpoints": [
+        "Achievement of an Investigator Global Assessment (IGA) Score of 'Clear' or 'Almost Clear' Over Time",
+        "Duration of Response (DOR) for Participants Achieving an IGA Score of 'Clear' or 'Almost Clear'",
+        "Return to IGA Score of ≥2 After Achieving an IGA Score of 'Clear' or 'Almost Clear'",
+        "Achievement of a 50% Reduction in Psoriasis Area Severity Index (PASI-50) Score Over Time",
+        "Achievement of a 75% Reduction in Psoriasis Area Severity Index (PASI-75) Score Over Time",
+        "Achievement of a 90% Reduction in Psoriasis Area Severity Index (PASI-90) Score Over Time",
+        "Achievement of a 100% Reduction in Psoriasis Area Severity Index (PASI-100) Score Over Time",
+        "Achievement of Success in Worst Itch Numeric Rating Scale (WI-NRS) Score Over Time"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04286607",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04286607",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04286607",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04286607",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04286607",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "cream 0.3% in subjects ( ≥ 2 years of age) with chronic plaque psoriasis (Study Protocol ARQ-151-306) Study Completion: October 2022 Final Report Submission: June 2025 Reports of these requi",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "muse",
+      "nctId": "NCT04279119",
+      "protocolNumber": "ARQ-151-107",
+      "acronym": "MUSE",
+      "title": "An Open Label, Phase 1, Maximal Usage Pharmacokinetics and Safety Study of ARQ-151 Cream 0.3% Administered QD in Adolescent and Adult Subjects With Chronic Plaque Psoriasis",
+      "briefTitle": "Maximal Usage Pharmacokinetics and Safety of ARQ-151 in Adolescents and Adults With Chronic Plaque Psoriasis",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Plaque Psoriasis"
+      ],
+      "startDate": {
+        "value": "2020-03-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2021-03-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2021-03-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 26,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-151 cream 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "Open label study of ARQ-151 cream 0.3% applied once daily for 2 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum concentration (Cmax) of roflumilast and its major N-oxide metabolite",
+        "Area under the plasma concentration-time curve until the last quantifiable timepoint (AUC) for roflumilast and its N-oxide metabolite",
+        "Time of maximum concentration (Tmax) of roflumilast and its major N-oxide metabolite"
+      ],
+      "secondaryEndpoints": [
+        "Subject incidence of adverse events",
+        "Incidence of application site reactions",
+        "Incidence of application site reactions",
+        "The incidence of suicide ideation as measured by the Columbia Suicide Severity Rating Scale (C-SSRS)",
+        "The incidence of changes from baseline in the Patient Health Questionnaire (PHQ-8) Depression Scale",
+        "The incidence of changes from baseline in the Patient Health Questionnaire for Adolescents (PHQ-A) Depression Scale"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-154-214",
+      "nctId": "NCT04445987",
+      "protocolNumber": "ARQ-154-214",
+      "title": "A Phase 2, Multicenter, Open-Label Study of the Long-Term Safety of ARQ-154 Foam 0.3% in Subjects With Seborrheic Dermatitis",
+      "briefTitle": "Long-Term Safety of ARQ-154 Foam in Subjects With Seborrheic Dermatitis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Seborrheic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012628",
+          "term": "Dermatitis, Seborrheic"
+        }
+      ],
+      "startDate": {
+        "value": "2020-06-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-11-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-11-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 408,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "9 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Long-term safety of ARQ-154",
+          "type": "EXPERIMENTAL",
+          "description": "Open-label, Long-term Safety of ARQ-154"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With ≥1 Adverse Event (AE)",
+        "Number of Participants With ≥1 Serious Adverse Event (SAE)"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With an Investigator Global Assessment (IGA) Score of Completely Clear or Almost Clear",
+        "Achievement of IGA Success",
+        "Duration of IGA Success",
+        "IGA Treatment-Free Interval"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04445987",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04445987",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04445987",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04445987",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04445987",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-215",
+      "nctId": "NCT04655313",
+      "protocolNumber": "ARQ-151-215",
+      "title": "An Open Label, 4-Week, Phase 2, Maximal Usage Pharmacokinetics and Safety Study of ARQ-151 Cream 0.3% Administered QD in Pediatric Subjects (Ages 6 to 11 Years Old) With Plaque Psoriasis",
+      "briefTitle": "Maximal Usage Pharmacokinetics and Safety of ARQ-151 in Children With Plaque Psoriasis (ARQ-151-215)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis",
+        "Plaque Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
+      "startDate": {
+        "value": "2020-11-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-01-12",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-01-12",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "maxAge": "11 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-151 cream 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "Open label study of ARQ-151 cream 0.3% applied once daily for 4 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Plasma Concentration of ARQ-151 Cream 0.3%",
+        "Plasma Concentration of the Roflumilast Major N-oxide Metabolite",
+        "Number of Participants With ≥1 Adverse Event (AE)",
+        "Number of Participants With Application Site Reactions"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04655313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04655313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04655313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04655313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04655313",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 2,
+          "quote": "D in 20 Pediatric Subjects (ages 6 to 11 years old) with Plaque Psoriasis (Study Protocol ARQ-151-215) 4314-2 An Open Label, 4-Week, Phase 2, Maximal Usage Pharmacokinetics and Safety Study o",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "integument-i",
+      "nctId": "NCT04773587",
+      "protocolNumber": "ARQ-151-311",
+      "acronym": "INTEGUMENT-I",
+      "labelName": "INTEGUMENT-1",
+      "title": "A Phase 3, 4-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-151 Cream 0.15% Administered QD in Subjects With Atopic Dermatitis",
+      "briefTitle": "Trial of PDE4 Inhibition With Roflumilast for the Management of Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Atopic Dermatitis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+            "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis Eczema"
+      ],
+      "startDate": {
+        "value": "2021-01-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-08-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-08-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 654,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Roflumilast Cream 0.15%",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with mild to moderate AD apply roflumilast cream 0.15% QD for 4 weeks."
+        },
+        {
+          "label": "Vehicle Cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants with mild to moderate AD applied vehicle cream QD for 4 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Achievement of Validated Investigator Global Assessment for Atopic Dermatitis (vIGA-AD) Success at Week 4"
+      ],
+      "secondaryEndpoints": [
+        "Achievement of vIGA-AD Success at Week 4 in Participants With \"Moderate\" Baseline Scores",
+        "Achievement of a 4-Point Reduction in the Average, Weekly Worst Itch Numeric Rating Scale (WI-NRS) at Week 4 in Participants ≥12 Years of Age With Baseline WI-NRS ≥ 4",
+        "Achievement of a 4-Point Reduction in the Average, Weekly WI-NRS at Week 2 in Participants ≥12 Years of Age With Baseline WI-NRS ≥ 4",
+        "Achievement of a 4-Point Reduction in the Average, Weekly WI-NRS at Week 1 in Participants ≥12 Years of Age With Baseline WI-NRS ≥ 4",
+        "Achievement of ≥ 75% Reduction in the Eczema Area and Severity Index (EASI-75) at Week 4",
+        "Achievement of vIGA-AD Score of 'Clear' or 'Almost Clear' at Week 4",
+        "Achievement of vIGA-AD Success at Week 2",
+        "Achievement of vIGA-AD Success at Week 1",
+        "Achievement of vIGA-AD Score of 'Clear' or 'Almost Clear' at Week 2",
+        "Achievement of vIGA-AD Score of 'Clear' or 'Almost Clear' at Week 1"
+      ],
+      "postedResults": [
+        {
+          "title": "Achievement of Validated Investigator Global Assessment for Atopic Dermatitis (vIGA-AD) Success at Week 4",
+          "timeFrame": "Week 4",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Roflumilast Cream 0.15%"
+            },
+            {
+              "id": "OG001",
+              "title": "Vehicle Cream"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "32.0",
+              "lowerLimit": "27.79",
+              "upperLimit": "36.63"
+            },
+            {
+              "groupId": "OG001",
+              "value": "15.2",
+              "lowerLimit": "11.06",
+              "upperLimit": "20.64"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "2.96",
+              "ciPct": "95",
+              "ciLower": "1.881",
+              "ciUpper": "4.647"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773587",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773587?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 14,
+          "quote": "Older Two multicenter, randomized, double-blind, vehicle-controlled trials (INTEGUMENT-1 [NCT04773587] and INTEGUMENT-2 [NCT04773600]) enrolled a total of 1337 adult and pediatric subjects 6",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "INTEGUMENT-1 [NCT04773587]",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-312",
+      "nctId": "NCT04773600",
+      "protocolNumber": "ARQ-151-312",
+      "labelName": "INTEGUMENT-2",
+      "title": "A Phase 3, 4-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-151 Cream 0.15% Administered QD in Subjects With Atopic Dermatitis",
+      "briefTitle": "Trial of PDE4 Inhibition With Roflumilast for the Management of Atopic Dermatitis (INTEGUMENT-II)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Atopic Dermatitis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+            "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis Eczema"
+      ],
+      "startDate": {
+        "value": "2021-02-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-09-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-09-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 683,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Roflumilast Cream 0.15%",
+          "type": "EXPERIMENTAL",
+          "description": "Participants apply roflumilast cream 0.15% once daily (qd) for 4 weeks."
+        },
+        {
+          "label": "Vehicle Cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants apply vehicle cream qd for 4 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Achievement of Validated Investigator Global Assessment for Atopic Dermatitis (vIGA-AD) Success at Week 4"
+      ],
+      "secondaryEndpoints": [
+        "Achievement of vIGA-AD Success at Week 4 in Participants With \"Moderate\" Baseline Scores",
+        "vIGA-AD Success at Week 2",
+        "vIGA-AD Success at Week 1",
+        "Achievement of a 4-point Reduction at Week 4 in the Average, Weekly Worst Itch Numeric Rating Scale (WI-NRS) in Participants With Baseline WI-NRS Score ≥4",
+        "Achievement of a 4-point Reduction at Week 2 in the WI-NRS in Participants With Baseline WI-NRS Score ≥4",
+        "Achievement of a 4-point Reduction at Week 1 in the WI-NRS in Participants With Baseline WI-NRS Score ≥4",
+        "Achievement of ≥75% Decrease From Baseline at Week 4 in the Eczema Area and Severity Index (EASI-75)",
+        "Achievement of vIGA-AD Score of 'Clear' or 'Almost Clear' at Week 4",
+        "Achievement of vIGA-AD Score of 'Clear' or 'Almost Clear' at Week 2",
+        "Achievement of vIGA-AD Score of 'Clear' or 'Almost Clear' at Week 1"
+      ],
+      "postedResults": [
+        {
+          "title": "Achievement of Validated Investigator Global Assessment for Atopic Dermatitis (vIGA-AD) Success at Week 4",
+          "timeFrame": "Week 4",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Roflumilast Cream 0.15%"
+            },
+            {
+              "id": "OG001",
+              "title": "Vehicle Cream"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "28.9"
+            },
+            {
+              "groupId": "OG001",
+              "value": "12.0"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "3.19",
+              "ciPct": "95",
+              "ciLower": "1.962",
+              "ciUpper": "5.183"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773600",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773600",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773600",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773600",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773600",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04773600?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 14,
+          "quote": "ed, double-blind, vehicle-controlled trials (INTEGUMENT-1 [NCT04773587] and INTEGUMENT-2 [NCT04773600]) enrolled a total of 1337 adult and pediatric subjects 6 years of age and older (615 sub",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "INTEGUMENT-2 [NCT04773600]",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "integument-ole",
+      "nctId": "NCT04804605",
+      "protocolNumber": "ARQ-151-313",
+      "acronym": "INTEGUMENT-OLE",
+      "title": "A Phase 3, Multicenter, Open-Label Extension Study of the Long-Term Safety of ARQ-151 Cream 0.15% and ARQ-151 Cream 0.05% in Subjects With Atopic Dermatitis",
+      "briefTitle": "Open Label Extension Trial of PDE4 Inhibition With Roflumilast for the Management of Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis Eczema"
+      ],
+      "startDate": {
+        "value": "2021-02-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-05-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-05-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1220,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-151 Cream 0.05%",
+          "type": "EXPERIMENTAL",
+          "description": "Participants applied ARQ-151 Cream 0.05% once daily (qd) for up to 52 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With ≥1 Treatment-emergent Adverse Event (TEAE)"
+      ],
+      "secondaryEndpoints": [
+        "Validated Investigator Global Assessment-Atopic Dermatitis (vIGA-AD) Score of 0 or 1 at Each Assessment",
+        "Percentage of Participants With vIGA-AD Success",
+        "Change From Baseline in Worst Itch-Numeric Rating Scale (WI-NRS) Score Over Time in Participants ≥12 Years of Age in Parent Study",
+        "Percent Change From Baseline in EASI Score"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04804605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04804605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04804605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04804605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04804605",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-216",
+      "nctId": "NCT04746911",
+      "protocolNumber": "ARQ-151-216",
+      "title": "An Open Label, 4-Week, Phase 2, Maximal Usage Pharmacokinetics and Safety Study of ARQ-151 Cream 0.3% Administered QD in Pediatric Subjects (Ages 2 to 5 Years Old) With Plaque Psoriasis",
+      "briefTitle": "Maximal Usage Pharmacokinetics and Safety of ARQ-151 in Children With Plaque Psoriasis (ARQ-151-216)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis",
+        "Plaque Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
+      "startDate": {
+        "value": "2021-03-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-05-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-05-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 10,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "5 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-151 cream 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "Open label study of ARQ-151 cream 0.3% applied once daily for 4 weeks"
+        }
+      ],
+      "primaryEndpoints": [
+        "Plasma Concentration of Roflumilast Following Daily Application of Roflumilast Cream 0.3%",
+        "Plasma Concentration of Major N-oxide Metabolite Following Daily Application of Roflumilast Cream 0.3%",
+        "Number of Participants With an Adverse Event (AE)",
+        "Number of Participants With Application Site Reactions"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04746911",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04746911",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04746911",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04746911",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04746911",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 2,
+          "quote": "QD in 10 Pediatric Subjects (ages 2 to 5 years old) with Plaque Psoriasis (Study Protocol ARQ-151-216) We have reviewed your submission and conclude that the above requirements were fulfilled",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-315",
+      "nctId": "NCT04845620",
+      "protocolNumber": "ARQ-151-315",
+      "labelName": "INTEGUMENT-PED",
+      "title": "A Phase 3, 4-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-151 Cream 0.05% Administered QD in Subjects With Atopic Dermatitis",
+      "briefTitle": "Trial of PDE4 Inhibition With Roflumilast for the Management of Atopic Dermatitis (Integument-PED)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Atopic Dermatitis",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Atopic Dermatitis)",
+            "quote": "Trial identifier appears within the Atopic Dermatitis section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis Eczema"
+      ],
+      "startDate": {
+        "value": "2021-04-07",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-06-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-06-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 652,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "5 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Roflumilast Cream 0.05%",
+          "type": "EXPERIMENTAL",
+          "description": "Participants applied roflumilast cream 0.05% qd for 4 weeks."
+        },
+        {
+          "label": "Vehicle Cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants applied vehicle cream qd for 4 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Achievement of Validated Investigator Global Assessment for Atopic Dermatitis (vIGA-AD) Success at Week 4"
+      ],
+      "secondaryEndpoints": [
+        "Achievement of vIGA-AD Success at Week 4 in Participants With 'Moderate' Baseline vIGA-AD",
+        "Achievement of 75% Reduction in the Eczema Area and Severity Index (EASI-75) at Week 4 In Participants With 'Moderate' Baseline vIGA",
+        "Achievement of vIGA-AD Score of 'Clear' or 'Almost Clear'",
+        "Achievement of vIGA-AD Success at Week 2",
+        "Achievement of vIGA-AD Success at Week 1",
+        "Achievement of vIGA-AD of 'Clear' or 'Almost Clear' at Week 2",
+        "Achievement of vIGA-AD of 'Clear' or 'Almost Clear' at Week 1"
+      ],
+      "postedResults": [
+        {
+          "title": "Achievement of Validated Investigator Global Assessment for Atopic Dermatitis (vIGA-AD) Success at Week 4",
+          "timeFrame": "Week 4",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "percentage of participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Roflumilast Cream 0.05%"
+            },
+            {
+              "id": "OG001",
+              "title": "Vehicle Cream"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "25.4",
+              "lowerLimit": "20.95",
+              "upperLimit": "30.34"
+            },
+            {
+              "groupId": "OG001",
+              "value": "10.7",
+              "lowerLimit": "6.77",
+              "upperLimit": "16.45"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Cochran-Mantel-Haenszel",
+              "paramType": "Odds Ratio (OR)",
+              "paramValue": "2.89",
+              "ciPct": "97.5",
+              "ciLower": "1.648",
+              "ciUpper": "5.064"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04845620",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04845620",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04845620",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04845620",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04845620",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04845620?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 16,
+          "quote": "of Age A multicenter, randomized, double-blind, vehicle-controlled trial (INTEGUMENT-PED [NCT04845620]) enrolled a total of 652 pediatric subjects 2 to 5 years of age with mild to moderate at",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "labelName": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+          "sourceLabel": "Approved label, section 14",
+          "quote": "INTEGUMENT-PED [NCT04845620]",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-154-304",
+      "nctId": "NCT04973228",
+      "protocolNumber": "ARQ-154-304",
+      "title": "A Phase 3, 8-Week, Parallel Group, Double Blind, Vehicle-Controlled Study of the Safety and Efficacy of ARQ-154 Foam 0.3% Administered QD in Subjects With Seborrheic Dermatitis",
+      "briefTitle": "Trial of PDE4 Inhibition With Roflumilast (ARQ-154) Foam 0.3% for the Management of Seborrheic Dermatitis (STRATUM)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Seborrheic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012628",
+          "term": "Dermatitis, Seborrheic"
+        }
+      ],
+      "startDate": {
+        "value": "2021-07-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-04-06",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-04-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 457,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "9 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Roflumilast Foam 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with seborrheic dermatitis apply roflumilast foam 0.3% once daily (QD) for 8 weeks."
+        },
+        {
+          "label": "Vehicle Foam",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants with seborrheic dermatitis apply vehicle foam QD for 8 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Achievement of Success on the Investigator Global Assessment (IGA) at Week 8"
+      ],
+      "secondaryEndpoints": [
+        "Achievement of Success in the Worst Itch Numeric Rating Scale (WI-NRS) at Week 8",
+        "Achievement of Success in the WI-NRS at Week 4",
+        "Achievement of Success in the WI-NRS at Week 2",
+        "Achievement of Success on the IGA at Week 2",
+        "Achievement of Success on the IGA at Week 4",
+        "Achievement of Overall Assessment of Scaling Score of 0 at Week 8",
+        "Achievement of Overall Assessment of Erythema Score of 0 at Week 8"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973228",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973228",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973228",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973228",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04973228",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arrector",
+      "nctId": "NCT05028582",
+      "protocolNumber": "ARQ-154-309",
+      "acronym": "ARRECTOR",
+      "title": "A Randomized tRial Employing topiCal roflumilasT Foam to Treat Scalp Psoriasis (ARRECTOR)",
+      "briefTitle": "Topical Roflumilast to Treat Scalp and Body Psoriasis (ARRECTOR)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Scalp Psoriasis"
+      ],
+      "startDate": {
+        "value": "2021-08-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-06-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-06-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 432,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Roflumilast Foam 0.3%",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants with plaque psoriasis of the scalp and body applied roflumilast foam 0.3% once daily (qd) for 8 weeks."
+        },
+        {
+          "label": "Vehicle Foam",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants with plaque psoriasis of the scalp and body applied vehicle foam qd for 8 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Achievement of Scalp Investigator Global Assessment (S-IGA) \"Success\" at Week 8",
+        "Achievement of Body Investigator Global Assessment (B-IGA) Success at Week 8"
+      ],
+      "secondaryEndpoints": [
+        "Achievement of Scalp Itch-Numeric Rating Score (SI-NRS ) Success at Week 2",
+        "Achievement of SI-NRS Success at Week 4",
+        "Achievement of SI-NRS Success at Week 8",
+        "Change From Baseline in SI-NRS Score at Day 1",
+        "Change From Baseline in SI-NRS Score at Day 3",
+        "Change From Baseline in SI-NRS Score at Week 1",
+        "Achievement of WI-NRS (Worst Itch-Numeric Rating Score) Success at Week 8",
+        "Achievement of a 75% Reduction From Baseline in Psoriasis Area and Severity Index (PASI-75)",
+        "Change From Baseline in Psoriasis Symptoms Diary (PSD) Aggregate Score of Itching, Pain, and Scaling (Questions 1, 9, and 11)",
+        "Percentage of Participants Achieving PSD Itching (Question 1) Score of 0 at Week 8",
+        "Percentage of Participants Achieving PSD Pain (Question 9) Score of 0 at Week 8",
+        "Percentage of Participants Achieving PSD Scaling (Question 11) Score of 0 at Week 8",
+        "Percentage of Participants Achieving PSD Total Score of 0 at Week 8",
+        "Achievement of a 75% Reduction From Baseline in Psoriasis Scalp Severity Index (PSSI) Score (PSSI-75)",
+        "Achievement of S-IGA Score of 'Clear' at Week 8",
+        "Achievement of S-IGA Success at Week 2",
+        "Achievement of S-IGA Success at Week 4",
+        "Change From Baseline in PASI Score at Week 2"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05028582",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05028582",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05028582",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05028582",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05028582",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-151-218",
+      "nctId": "NCT06998056",
+      "protocolNumber": "ARQ-151-218",
+      "title": "A Phase 2, Open Label, 4-Week, Safety Study of Roflumilast Cream 0.05% Administered Once Daily in Infants Aged 3 Months to Less Than 2 Years With Atopic Dermatitis",
+      "briefTitle": "Safety Study of Roflumilast Cream 0.05% in Infants Aged 3 Months to Less Than 2 Years With Atopic Dermatitis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis (Eczema)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        }
+      ],
+      "startDate": {
+        "value": "2025-06-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-12-04",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-12-04",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 101,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "3 Months",
+        "maxAge": "2 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-151 roflumilast cream 0.05% (open label)",
+          "type": "EXPERIMENTAL",
+          "description": "This single study arm is open label in which ARQ-151 cream 0.05% is applied daily for 4 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Subject incidence of adverse events",
+        "Subject incidence of serious adverse events",
+        "Incidence of application site reactions"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06998056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06998056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06998056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06998056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06998056",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "to moderate atopic dermatitis and at least 3% body surface area (BSA) involvement. (Study ARQ-151-218) Study Completion: 07/2026 Final Report Submission: 02/2027 Reports of this required pedi",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "arq-154-127",
+      "nctId": "NCT07340216",
+      "protocolNumber": "ARQ-154-127",
+      "title": "An Open Label, Phase 1, Maximal Usage Pharmacokinetics and Safety Study of ARQ-154 Foam 0.3% Administered QD in Pediatric Participants With Scalp and Body Psoriasis",
+      "briefTitle": "Maximal Usage Pharmacokinetics and Safety Study of ARQ-154 Foam 0.3% in Pediatric Participants With Scalp and Body Psoriasis",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
+      "startDate": {
+        "value": "2025-12-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-04-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-04-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 22,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ARQ-154 Foam 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "ARQ-154 foam 0.3% will be applied QD. Treatment duration will be up to 6 weeks, including 2 weeks under maximal usage conditions, followed by an optional 4 weeks under non-maximal usage conditions."
+        }
+      ],
+      "primaryEndpoints": [
+        "Concentration of Roflumilast and Roflumilast N-Oxide from plasma",
+        "Participant incidence of adverse events",
+        "Incidence of application site reactions",
+        "The incidence of changes from Baseline in the total Children's Depression Inventory 2 (CDI-2)score."
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07340216",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07340216",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07340216",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07340216",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07340216",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2022-07-29",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 3 - New Dosage Form",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215985%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-2",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2023-10-05",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-2",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215985%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-7",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2024-07-09",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-7",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215985%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-12",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2025-10-04",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-12",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215985%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-15",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2026-06-29",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-15",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215985%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 215985",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA215985%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (SUPPL-2)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/215985Orig1s002ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (SUPPL-2)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2023/215985s002lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-2",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/215985Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-3",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2022/215985s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-4",
+      "label": "Letter (SUPPL-12)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/215985Orig1s012ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-5",
+      "label": "Label (SUPPL-12)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985Orig1s012lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-6",
+      "label": "Letter (SUPPL-7)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/215985Orig1s007ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-7",
+      "label": "Label (SUPPL-7)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/215985Orig1s007lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-8",
+      "label": "Letter (SUPPL-15)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/215985Orig1s015ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-9",
+      "label": "Label (SUPPL-15)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215985s015sdn642lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-11-10T19:56:51.291Z"
+}
