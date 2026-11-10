@@ -27,6 +27,11 @@ interface DiseaseFiling {
 
 const byDisease = (areaFile as { diseases?: Record<string, DiseaseFiling> }).diseases ?? {};
 
+/** The areas the owner files a disease under (by MeSH id); empty when not filed. */
+export function filedAreas(meshId: string): string[] {
+  return byDisease[meshId]?.areas ?? [];
+}
+
 /** MeSH's category for inherited diseases, as shown on the disease list. */
 export const INHERITED_CATEGORY = 'Congenital, Hereditary, and Neonatal Diseases and Abnormalities';
 
