@@ -1,0 +1,393 @@
+{
+  "slug": "crisaborole",
+  "brandName": "Eucrisa",
+  "inn": "crisaborole",
+  "modality": "Drug (NDA)",
+  "sponsor": "ANACOR PHARMS INC",
+  "mechanism": "Phosphodiesterase 4 Inhibitor",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Phosphodiesterase 4 Inhibitor",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA207695%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "patientSummary": {
+      "paragraphs": [
+        "EUCRISA is a prescription medicine used on the skin (topical) to treat mild to moderate eczema (atopic dermatitis) in adults and children 3 months of age and older."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/207695s012lbl.pdf",
+        "sourceLabel": "Label (SUPPL-12), patient information: \"What is Eucrisa?\"",
+        "page": 10,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Crisaborole is a phosphodiesterase 4 (PDE-4) inhibitor. PDE-4 inhibition results in increased intracellular cyclic adenosine monophosphate (cAMP) levels. The specific mechanism(s) by which crisaborole exerts its therapeutic action for the treatment of atopic dermatitis is not well defined. O B OH O NC This label may not be the latest approved by FDA. For current labeling information, please visit https://www.fda.gov/drugsatfda",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/207695s012lbl.pdf",
+          "sourceLabel": "Label (SUPPL-12), section 12.1",
+          "page": 4,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Cardiac Electrophysiology At therapeutic doses, EUCRISA ointment is not expected to prolong QTc to any clinically relevant extent.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/207695s012lbl.pdf",
+          "sourceLabel": "Label (SUPPL-12), section 12.2",
+          "page": 5,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Absorption The PK of EUCRISA were investigated in 33 pediatric subjects 2 to 17 years of age with mild to moderate atopic dermatitis and a mean ± SD body surface area (BSA) involvement of 49 ± 20% (range 27% to 92%). In this study, subjects applied approximately 3 mg/cm 2 of EUCRISA ointment (dose range was approximately 6 g to 30 g per application) twice daily for 8 days. Plasma concentrations were quantifiable in all the subjects. The mean ± SD maximum plasma concentration (Cmax) and area under the concentration time curve from 0 to 12 hours post dose (AUC0-12) for crisaborole on Day 8 were 127 ± 196 ng/mL and 949 ± 1240 ng h/mL, respectively. Systemic concentrations of crisaborole were at steady state by Day 8. Based on the ratios of AUC0-12 between Day 8 and Day 1, the mean accumulation factor for crisaborole was 1.9. The PK of EUCRISA were investigated in 13 subjects 4 months to less than 24 months of age. The mean ± SD Cmax and AUC0-12 for crisaborole were 188 ± 100 ng/mL and 1164 ± 550 ng∙h/mL, respectively. Distribution Based on an in vitro study, crisaborole is 97% bound to human plasma proteins. Elimination Metabolism Crisaborole is substantially metabolized into inactive metabolites. The major metabolite 5-(4-cyanophenoxy)-2- hydroxyl benzylalcohol (metabolite 1), is formed via hydrolysis; this metabolite is further metabolized into downstream metabolites, among which 5-(4-cyanophenoxy)-2-hydroxyl benzoic acid (metabolite 2), formed via oxidation, is also a major metabolite. PK of metabolites 1 and 2 were assessed in the PK study described above and the systemic concentrations were at or near steady state by Day 8. Based on the ratios of AUC0-12 between Day 8 and Day 1, the mean accumulation factors for metabolites 1 and 2 were 1.7 and 6.3, respectively. Excretion Renal excretion of metabolites is the major route of elimination. Drug Interaction Studies In vitro studies using human liver microsomes indicated that under the conditions of clinical use, crisaborole and metabolite 1 are not expected to inhibit cytochrome P450 (CYP) 1A2, 2B6, 2C8, 2C9, 2C19, 2D6, and 3A4. In vitro human liver microsomes studies for metabolite 2 showed that it did not inhibit activities of CYP2C19, 2D6, and 3A4; was a weak inhibitor of CYP1A2 and 2B6; and a moderate inhibitor of CYP2C8 and 2C9. The most sensitive enzyme, CYP2C9, was further investigated in a clinical trial using warfarin as a CYP2C9 substrate. The results of this study showed no drug interaction potential. This label may not be the latest approved by FDA. For current labeling information, please visit https://www.fda.gov/drugsatfda In vitro studies in human hepatocytes showed that under the conditions of clinical use, crisaborole and metabolites 1 and 2 are not expected to induce CYP enzymes. In vitro studies showed that crisaborole and metabolite 1 did not inhibit the activities of uridine diphosphate (UDP)-glucuronosyltransferase (UGT) 1A1, 1A4, 1A6, 1A9, 2B7, and 2B15. Metabolite 2 did not inhibit UGT1A4, 1A6, 2B7, and 2B15. Metabolite 2 showed weak inhibition of UGT1A1, however, no clinically significant drug interactions are expected between crisaborole (and its metabolites) and UGT1A1 substrates at therapeutic concentrations. Metabolite 2 showed moderate inhibition of UGT1A9 and may result in a moderate increase of the concentrations of sensitive UGT1A9 substrates. In vitro studies indicate that under the condition of clinical use, crisaborole and metabolites 1 and 2 are not expected to cause clinically significant interactions with substrates of P-glycoprotein and organic anionic or cationic transporters. Crisaborole and metabolite 1 are not expected to inhibit breast cancer resistance protein (BCRP); metabolite 2 is expected to inhibit BCRP at therapeutic concentrations.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/207695s012lbl.pdf",
+          "sourceLabel": "Label (SUPPL-12), section 12.3",
+          "page": 5,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "Topical treatment of mild to moderate atopic dermatitis in adult and pediatric patients 3 months of age and older",
+      "slug": "topical-treatment-of-mild-to-moderate-atopic-dermatitis-in",
+      "approvalDate": {
+        "value": "2016-12-14",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2016/207695Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2016-12-14",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This new drug application provides for the use of Eucrisa (crisaborole) ointment, 2% for topical treatment of mild to moderate atopic dermatitis in patients 2 years of age and older.",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2016/207695Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This new drug application provides for the use of Eucrisa (crisaborole) ointment, 2% for topical treatment of mild to moderate atopic dermatitis in patients 2 years of age and older.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D003876",
+          "term": "Dermatitis, Atopic",
+          "areas": [
+            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+            "Skin and Connective Tissue Diseases",
+            "Immune System Diseases"
+          ],
+          "inherited": true,
+          "definition": {
+            "text": "A chronic inflammatory genetically determined disease of the skin marked by increased ability to form reagin (IgE), with increased susceptibility to allergic rhinitis and asthma, and hereditary disposition to a lowered threshold for pruritus. It is manifested by lichenification, excoriation, and crusting, mainly on the flexural surfaces of the elbow and knee. In infants it is known as infantile eczema.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Atopic dermatitis",
+            "paragraphs": [
+              "Atopic dermatitis (also known as atopic eczema) is a disorder characterized by inflammation of the skin (dermatitis). The condition usually begins in early infancy, and it often disappears before adolescence. However, in some affected individuals the condition continues into adulthood; in others, it does not begin until adulthood. Hallmarks of atopic dermatitis include dry, itchy skin and red rashes that come and go. The rashes can occur on any part of the body, although the pattern tends to be different at different ages. In affected infants, the rashes commonly occur on the face, scalp, hands, and feet. In children, the rashes are usually found in the bend of the elbows and knees and on the front of the neck. In adolescents and adults, the rashes typically occur on the wrists, ankles, and eyelids in addition to the bend of the elbows and knees. Scratching the itchy skin can lead to oozing and crusting of the rashes and thickening and hardening (lichenification) of the skin. The itchiness can be so severe as to disturb sleep and impair a person's quality of life.",
+              "The word \"atopic\" indicates an association with allergies. While atopic dermatitis is not always due to an allergic reaction, it is commonly associated with other allergic disorders: up to 60 percent of people with atopic dermatitis develop asthma or hay fever (allergic rhinitis) later in life, and up to 30 percent have food allergies. Atopic dermatitis is often the beginning of a series of allergic disorders, referred to as the \"atopic march.\" Development of these disorders typically follows a pattern, beginning with atopic dermatitis, followed by food allergies, then hay fever, and finally asthma. However, not all individuals with atopic dermatitis will progress through the atopic march, and not all individuals with one allergic disease will develop others.",
+              "Individuals with atopic dermatitis have an increased risk of developing other conditions related to inflammation, such as inflammatory bowel disease, rheumatoid arthritis, and hair loss caused by a malfunctioning immune reaction (alopecia areata). They also have an increased risk of having a behavioral or psychiatric disorder, such as attention-deficit/hyperactivity disorder (ADHD) or depression.",
+              "In a particular subset of individuals with atopic dermatitis, the immune system is unable to protect the body from foreign invaders such as bacteria and fungi (which is known as immunodeficiency). These individuals are prone to recurrent infections. Most also have other allergic disorders, such as asthma, hay fever, and food allergies.",
+              "Atopic dermatitis can also be a feature of separate disorders that have a number of signs and symptoms, which can include skin abnormalities and immunodeficiency. Some such disorders are Netherton syndrome; immune dysregulation, polyendocrinopathy, enteropathy, X-linked (IPEX) syndrome; and severe dermatitis, multiple allergies, metabolic wasting (SAM) syndrome."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/genetics/condition/atopic-dermatitis/",
+              "sourceLabel": "MedlinePlus Genetics, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "atopic dermatitis",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "207695",
+      "applicationType": "NDA",
+      "sponsor": "ANACOR PHARMS INC",
+      "originalApprovalDate": {
+        "value": "2016-12-14",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Immunology and Inflammation",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/207695Orig1s007, s009, s010ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-10), signature",
+          "quote": "Division of Dermatology and Dentistry Office of Immunology and Inflammation Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    }
+  },
+  "trials": [],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2016-12-14",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA207695%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-2",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2017-10-16",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-2",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA207695%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-9",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2020-03-23",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-9",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA207695%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-7",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2020-03-23",
+        "precision": "day"
+      },
+      "label": "Supplement approved — labeling",
+      "shortLabel": "+Labeling",
+      "description": "Labeling",
+      "submissionNumber": "SUPPL-7",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA207695%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-10",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2020-03-23",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-10",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA207695%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-12",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2023-04-03",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-12",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA207695%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 207695",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA207695%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (SUPPL-9)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2020/207695s007s009s010lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (SUPPL-9)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/207695Orig1s007, s009, s010ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-2",
+      "label": "Label (SUPPL-7)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2020/207695s007s009s010lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-3",
+      "label": "Letter (SUPPL-7)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/207695Orig1s007, s009, s010ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-4",
+      "label": "Letter (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2016/207695Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-5",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2016/207695s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-6",
+      "label": "Pediatric CDTL Review (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/49_207695 crisaborole CDTL clinical prea.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-7",
+      "label": "Pediatric Medical Review (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/50_207695 crisaborole clinical prea-EMV.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-8",
+      "label": "Pediatric Clinical Pharmacology Review (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/51_207695 crisaborole clinpharm prea.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-9",
+      "label": "Pediatric Statistical Review (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/52_207695 crisaborole statistical prea.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-10",
+      "label": "Letter (SUPPL-12)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/207695Orig1s012ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-11",
+      "label": "Label (SUPPL-12)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/207695s012lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-12",
+      "label": "Label (SUPPL-10)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2020/207695s007s009s010lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-13",
+      "label": "Letter (SUPPL-10)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/207695Orig1s007, s009, s010ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-14",
+      "label": "Letter (SUPPL-2)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/207695Orig1s002ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-15",
+      "label": "Label (SUPPL-2)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2017/207695s002lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-11-10T19:56:43.919Z"
+}
