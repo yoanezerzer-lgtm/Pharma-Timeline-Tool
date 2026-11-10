@@ -200,7 +200,7 @@ should leave the pages it touches looking right, and design gets its own
 chats.
 1. **Design**: flow review page by page: drug, approved use, disease,
    trial (#138, #140), Compare (#141, #143), Drugs and Diseases lists
-   done. Next: About the data.
+   (#146), About the data done. Every page has had one pass.
 2. ~~Finish atopic dermatitis data~~ (done 9 Nov, #139; leftovers in
    "open gaps" above).
 3. **Get ready to publish**: visitor counter (cookie-free), then Cloudflare
@@ -293,6 +293,13 @@ Owner walked the pages: too much on screen, some wrong words. Done:
   grouped by MeSH category, so diseases repeated up to 4 times), with
   the site's own areas, approved drugs, first and latest approval. On
   phones the rows stack into cards.
+
+- About the data (10 Nov): full width, two columns. Sources as a table
+  (what the site takes from each), a Definitions table for every term
+  the site uses (pivotal, supportive, primary completion, months to
+  approval, approval types, FDA review time, severity, results
+  announced), then how facts are checked and gaps. Fixed: it said
+  therapeutic areas come from MeSH; they are the editor's, by disease.
 
 Still open from the review:
 - Atopic dermatitis is to cover all severities (owner, 9 Nov): add

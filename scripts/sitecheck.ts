@@ -93,7 +93,7 @@ async function main(): Promise<void> {
 
   await visit(page, 'about/', async (p) => {
     const body = await text(p);
-    return /Where the facts come from/i.test(body) ? undefined : 'about page did not load';
+    return /Definitions/i.test(body) ? undefined : 'about page did not load';
   });
 
   // An address that isn't a page says so, rather than showing the home page.
