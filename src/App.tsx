@@ -10,6 +10,7 @@ import { SiteHeader } from './components/SiteHeader/SiteHeader.js';
 import { SiteFooter } from './components/SiteFooter/SiteFooter.js';
 import { SidePanel } from './components/SidePanel/SidePanel.js';
 import { AboutPage } from './pages/AboutPage.js';
+import { CitationProvider } from './components/Citations/Citations.js';
 
 // Tooling pages most visitors never open — split out of the main bundle.
 const ReviewPage = lazy(() => import('./pages/ReviewPage.js').then((m) => ({ default: m.ReviewPage })));
@@ -26,7 +27,10 @@ export function App() {
       <SidePanel route={route} />
       <div className="site-main">
         <SiteHeader route={route} />
-        <Page route={route} />
+        {/* Each page numbers its sources from [1]. */}
+        <CitationProvider key={window.location.pathname}>
+          <Page route={route} />
+        </CitationProvider>
         <SiteFooter />
       </div>
     </div>

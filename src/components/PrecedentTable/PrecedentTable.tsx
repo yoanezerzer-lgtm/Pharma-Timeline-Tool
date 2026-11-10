@@ -3,6 +3,8 @@ import type { PrecedentRow } from '../../lib/precedent.js';
 import { formatDate } from '../../lib/dates.js';
 import { drugHref, indicationHref, indicationTrialHref } from '../../lib/router.js';
 import { approvalKindLabel, DATE_UNCLEAR, NOT_YET_MATCHED } from '../../lib/copy.js';
+import { Cite } from '../Citations/Citations.js';
+import { letterSource, registrySource } from '../../lib/citations.js';
 import './PrecedentTable.css';
 
 type SortKey = 'date' | 'drug' | 'months';
@@ -82,6 +84,7 @@ export function PrecedentTable({ rows }: { rows: PrecedentRow[] }) {
                 ) : (
                   <span className="precedent__gap">{DATE_UNCLEAR}</span>
                 )}
+                <Cite sources={[rowLetter(r)]} />
                 <span className="precedent__sub">
                   {r.application}
                   {r.submissions.length > 0 && ` · ${r.submissions.join(', ')}`}
@@ -116,6 +119,16 @@ export function PrecedentTable({ rows }: { rows: PrecedentRow[] }) {
               </td>
               <td className="precedent__months nums" data-label="Months after trials">
                 {r.monthsAfterTrials ?? '—'}
+                {r.monthsAfterTrials !== undefined && (
+                  <Cite
+                    sources={[
+                      rowLetter(r),
+                      ...(r.trials ?? []).flatMap((t) =>
+                        t.nctId ? [registrySource(t.nctId, t.name, t.primaryCompletion ? [['Primary completion', formatDate(t.primaryCompletion)]] : [])] : [],
+                      ),
+                    ]}
+                  />
+                )}
               </td>
             </tr>
           ))}
@@ -124,3 +137,6 @@ export function PrecedentTable({ rows }: { rows: PrecedentRow[] }) {
     </div>
   );
 }
+
+const rowLetter = (r: PrecedentRow) =>
+  letterSource(r, { date: r.date, submissions: r.submissions, kind: r.kind, text: r.covers, sourceUrl: r.letterUrl });

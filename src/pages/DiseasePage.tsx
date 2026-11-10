@@ -14,6 +14,8 @@ import { PrecedentTable } from '../components/PrecedentTable/PrecedentTable.js';
 import { precedentRows } from '../lib/precedent.js';
 import { ReviewTime } from '../components/ReviewTime/ReviewTime.js';
 import { ApprovalMarkers, type MarkerEvent } from '../components/ApprovalMarkers/ApprovalMarkers.js';
+import { Cite } from '../components/Citations/Citations.js';
+import { letterSource } from '../lib/citations.js';
 import './IndicationPage.css';
 import './DrugPage.css';
 import './DiseasePage.css';
@@ -150,6 +152,7 @@ export function DiseaseTimeline({
         detail: `${stepLabel(first)} · ${formatDate(first.date)}`,
         pct: pct(toTime(first.date)),
         href: first.sourceUrl,
+        extra: <Cite sources={[letterSource(u, first)]} />,
       },
     ];
   });
@@ -244,6 +247,7 @@ export function DiseaseTimeline({
               </span>
               <span className="ind-timeline__date">
                 {firstDate ? formatDate(firstDate) : DATE_UNCLEAR}
+                <Cite sources={[letterSource(u, u.steps.find((s) => s.date) ?? u.steps[0])]} />
                 {months !== undefined && <span className="disease__inn">{months} mo after trials</span>}
                 {u.steps.length > 1 && (
                   <span className="disease__inn">
@@ -473,7 +477,7 @@ function ExportButtons({ disease }: { disease: DiseaseSummary }) {
 function AtAGlance({ disease }: { disease: DiseaseSummary }) {
   const steps = disease.uses
     .flatMap((u) =>
-      u.steps.filter((s) => s.date && s.kind === 'new').map((s) => ({ brand: u.brandName, date: s.date! })),
+      u.steps.filter((s) => s.date && s.kind === 'new').map((s) => ({ brand: u.brandName, date: s.date!, src: letterSource(u, s) })),
     )
     .sort((a, b) => a.date.value.localeCompare(b.date.value));
   if (steps.length === 0) return null;
@@ -481,11 +485,13 @@ function AtAGlance({ disease }: { disease: DiseaseSummary }) {
   const last = steps[steps.length - 1];
   return (
     <p className="disease__glance">
-      First approved <strong>{formatDate(first.date)}</strong> ({first.brand})
+      First approved <strong>{formatDate(first.date)}</strong>
+      <Cite sources={[first.src]} /> ({first.brand})
       {steps.length > 1 && last !== first && (
         <>
           {' '}
-          · latest <strong>{formatDate(last.date)}</strong> ({last.brand})
+          · latest <strong>{formatDate(last.date)}</strong>
+          <Cite sources={[last.src]} /> ({last.brand})
         </>
       )}
     </p>

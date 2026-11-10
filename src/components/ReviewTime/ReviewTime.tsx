@@ -4,6 +4,8 @@ import { indicationHref } from '../../lib/router.js';
 import { MIN_SAMPLE, PrecedentFile, percent, reviewDays, reviewStats, type PrecedentProduct, type ValueSource } from '../../lib/reviewTime.js';
 import type { Severity } from '../../lib/diseases.js';
 import { Info } from '../Info/Info.js';
+import { Cite } from '../Citations/Citations.js';
+import { productSources } from '../../lib/citations.js';
 import './ReviewTime.css';
 
 // One small file per disease, fetched only when its page opens.
@@ -89,7 +91,14 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
           <span className="review-time__tile-label">Median review time</span>
           {stats.median !== undefined ? (
             <>
-              <span className="review-time__tile-value">{stats.median} days</span>
+              <span className="review-time__tile-value">
+                {stats.median} days
+                <Cite
+                  sources={products
+                    .filter((p) => reviewDays(p) !== undefined)
+                    .map((p) => productSources(p, file.openFdaUpdated).letter)}
+                />
+              </span>
               <span className="review-time__tile-note">
                 n = {stats.days.length} of {stats.total} with both dates · ≈ {(stats.median / 30.44).toFixed(1)} months
               </span>
@@ -146,7 +155,7 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
           </thead>
           <tbody>
             {products.map((p) => (
-              <Row key={`${p.application}-${p.submission}`} p={p} />
+              <Row key={`${p.application}-${p.submission}`} p={p} dataOf={file.openFdaUpdated} />
             ))}
           </tbody>
         </table>
@@ -161,8 +170,9 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
   );
 }
 
-function Row({ p }: { p: PrecedentProduct }) {
+function Row({ p, dataOf }: { p: PrecedentProduct; dataOf?: string }) {
   const days = reviewDays(p);
+  const src = productSources(p, dataOf);
   return (
     <tr>
       <td data-label="Product">
@@ -176,12 +186,14 @@ function Row({ p }: { p: PrecedentProduct }) {
         {p.inn && <span className="precedent__sub">{p.inn}</span>}
         {p.originalOnly && p.indication && (
           <span className="precedent__sub">
-            <Linked source={p.indication.source}>Label names it ↗</Linked> · first approval
+            <Linked source={p.indication.source}>Label names it ↗</Linked>
+            <Cite sources={[src.label]} /> · first approval
           </span>
         )}
       </td>
       <td data-label="Pathway" className="review-time__mono">
         <Linked source={p.approvalDate?.source}>{p.application}</Linked>
+        <Cite sources={[src.record]} />
         <span className="precedent__sub">{p.submission}</span>
       </td>
       <td data-label="Review">
@@ -194,6 +206,7 @@ function Row({ p }: { p: PrecedentProduct }) {
         ) : (
           <span className="precedent__gap">Not recorded</span>
         )}
+        {p.reviewPriority && <Cite sources={[src.record]} />}
       </td>
       <td data-label="Expedited">
         <span className="review-time__flags">
@@ -208,20 +221,37 @@ function Row({ p }: { p: PrecedentProduct }) {
             </Linked>
           )}
           {!p.accelerated?.value && !p.orphan && <span className="precedent__gap">{p.accelerated ? 'None recorded' : 'Letter not read'}</span>}
+          <Cite sources={[p.accelerated ? src.letter : undefined, src.record]} />
         </span>
       </td>
       <td data-label="Received" className="review-time__num review-time__mono">
         {p.receiptDate ? (
-          <Linked source={p.receiptDate.source}>{formatDate(p.receiptDate.value)}</Linked>
+          <>
+            <Linked source={p.receiptDate.source}>{formatDate(p.receiptDate.value)}</Linked>
+            <Cite sources={[src.letter]} />
+          </>
         ) : (
           <span className="precedent__gap">{p.accelerated ? 'Not in letter' : 'Letter not read'}</span>
         )}
       </td>
       <td data-label="Approved" className="review-time__num review-time__mono">
-        {p.approvalDate ? <Linked source={p.approvalDate.source}>{formatDate(p.approvalDate.value)}</Linked> : <span className="precedent__gap">—</span>}
+        {p.approvalDate ? (
+          <>
+            <Linked source={p.approvalDate.source}>{formatDate(p.approvalDate.value)}</Linked>
+            <Cite sources={[src.record]} />
+          </>
+        ) : (
+          <span className="precedent__gap">—</span>
+        )}
       </td>
       <td data-label="Review time" className="review-time__num review-time__mono">
-        {days !== undefined ? `${days} d` : '—'}
+        {days !== undefined ? (
+          <>
+            {days} d<Cite sources={[src.letter, src.record]} />
+          </>
+        ) : (
+          '—'
+        )}
       </td>
     </tr>
   );
