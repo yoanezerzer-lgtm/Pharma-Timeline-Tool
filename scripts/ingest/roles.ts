@@ -381,24 +381,76 @@ export function extractTrialAliases(text: string): Map<string, string[]> {
 
 const GENERIC_NAMES = new Set(['trial', 'study', 'studies', 'trials', 'protocol']);
 
+/** A trial's name as section 14 gives it, and the label's own words that pair it with the NCT number. */
+export interface LabelTrialName {
+  name: string;
+  /** The passage, copied from the label, that pairs the name with the NCT number. */
+  quote: string;
+}
+
+// One trial name as labels write it: "KEYNOTE-006", "PsO - 1", "ADvocate 1", "ADhere".
+const LABEL_NAME = String.raw`[A-Z][A-Za-z0-9]*(?:\s*-\s*[A-Za-z0-9]+)*(?:\s+\d{1,2}[A-Za-z]?\b)?`;
+// "(NCT04146363, NCT04178967, NCT04250337)", "(NCT… and NCT…)", "(NCT…; NCT…)".
+const NCT_LIST = /\(\s*(NCT\d{8}(?:\s*(?:,\s*and|,|;|and)\s*NCT\d{8})+)\s*\)/g;
+// "ADvocate 1, ADvocate 2 and ADhere" written directly before such a list.
+const NAME_LIST = new RegExp(String.raw`\b(${LABEL_NAME}(?:\s*,\s*${LABEL_NAME})*\s*,?\s+and\s+${LABEL_NAME})\s*$`);
+
+function tidyLabelName(raw: string): string {
+  return raw.replace(/\s*-\s*/g, '-').replace(/\s+/g, ' ').trim();
+}
+
+function usableLabelName(name: string): boolean {
+  return name.length >= 3 && !GENERIC_NAMES.has(name.toLowerCase());
+}
+
 /**
  * The name the label itself gives each trial in section 14, read from the
  * name written directly before its NCT number: "KEYNOTE-006 (NCT01866319)",
  * "PsO - 1 (NCT02684370)", "CD - 1; NCT03105128". Merck and AbbVie leave the registry's acronym
  * blank for many trials, so without this the chart shows "3475-006" where
  * the label and every physician say KEYNOTE-006. First name per NCT wins.
+ *
+ * A label may instead list the names and then the NCT numbers in the same
+ * order: "ADvocate 1, ADvocate 2 and ADhere (NCT04146363, NCT04178967,
+ * NCT04250337)". Those are paired one to one, in order. When the number of
+ * names before such a list doesn't match the number of NCT numbers, no name
+ * is taken from it: the last name ("ADhere") is not the first trial's name.
  */
-export function extractLabelTrialNames(section14Text: string): Map<string, string> {
+export function extractLabelTrialNames(section14Text: string): Map<string, LabelTrialName> {
   const stripped = stripPageMarkers(section14Text);
+  const found: { at: number; nctId: string; name: string; quote: string }[] = [];
+  // Where a multi-NCT list opens: a single name right before it is not the first trial's name.
+  const listStarts = new Set<number>();
+
+  for (const m of stripped.matchAll(NCT_LIST)) {
+    listStarts.add(m.index);
+    const ids = m[1].match(/NCT\d{8}/g) ?? [];
+    const before = stripped.slice(Math.max(0, m.index - 300), m.index);
+    const names = NAME_LIST.exec(before);
+    if (!names) continue;
+    const list = names[1].split(/\s*,\s*and\s+|\s*,\s*|\s+and\s+/).map(tidyLabelName);
+    if (list.length !== ids.length || !list.every(usableLabelName)) continue;
+    const from = m.index - (before.length - names.index);
+    const quote = stripped.slice(from, m.index + m[0].length).replace(/\s+/g, ' ');
+    ids.forEach((nctId, i) => found.push({ at: m.index, nctId, name: list[i], quote }));
+  }
+
   // Separators seen on real labels: "KEYNOTE-006 (NCT…)", "PsA - 1 [NCT…]",
   // "(CD - 1; NCT…)" (Skyrizi uses all three).
-  const pattern = /\b([A-Z][A-Za-z0-9]*(?:\s*-\s*[A-Za-z0-9]+)*)\s*[([;]\s*(NCT\d{8})/g;
-  const names = new Map<string, string>();
-  for (const m of stripped.matchAll(pattern)) {
-    const name = m[1].replace(/\s*-\s*/g, '-');
-    const nctId = m[2];
-    if (names.has(nctId) || GENERIC_NAMES.has(name.toLowerCase()) || name.length < 3) continue;
-    names.set(nctId, name);
+  const single = /\b([A-Z][A-Za-z0-9]*(?:\s*-\s*[A-Za-z0-9]+)*)(\s*)([([;])\s*(NCT\d{8})/g;
+  for (const m of stripped.matchAll(single)) {
+    const bracketAt = m.index + m[1].length + m[2].length;
+    if (m[3] === '(' && listStarts.has(bracketAt)) continue;
+    const name = tidyLabelName(m[1]);
+    if (!usableLabelName(name)) continue;
+    const end = m.index + m[0].length;
+    const closed = /^[)\]]/.test(stripped.slice(end, end + 1)) ? 1 : 0;
+    found.push({ at: m.index, nctId: m[4], name, quote: stripped.slice(m.index, end + closed).replace(/\s+/g, ' ') });
+  }
+
+  const names = new Map<string, LabelTrialName>();
+  for (const f of found.sort((a, b) => a.at - b.at)) {
+    if (!names.has(f.nctId)) names.set(f.nctId, { name: f.name, quote: f.quote });
   }
   return names;
 }

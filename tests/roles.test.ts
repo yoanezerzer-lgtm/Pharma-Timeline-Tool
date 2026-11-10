@@ -734,7 +734,8 @@ describe('extractLabelTrialNames', () => {
     const text =
       '14 CLINICAL STUDIES KEYNOTE-006 (NCT01866319), a randomized trial. Four trials [PsO - 1 (NCT02684370), PsO - 2 (NCT02684357)]. ' +
       '964 in PsA - 1 [NCT03675308]. Induction trials (CD - 1; NCT03105128 and CD - 2; NCT03104413). Trial (NCT09999999) and Study (NCT08888888).';
-    expect(Object.fromEntries(extractLabelTrialNames(text))).toEqual({
+    const names = Object.fromEntries([...extractLabelTrialNames(text)].map(([id, n]) => [id, n.name]));
+    expect(names).toEqual({
       NCT01866319: 'KEYNOTE-006',
       NCT02684370: 'PsO-1',
       NCT02684357: 'PsO-2',
@@ -742,6 +743,46 @@ describe('extractLabelTrialNames', () => {
       NCT03105128: 'CD-1',
       NCT03104413: 'CD-2',
     });
+  });
+});
+
+describe('extractLabelTrialNames — names listed before their NCT numbers', () => {
+  // From the Ebglyss label (761306s006lbl.pdf), section 14.1: names first, then NCT numbers in the same order.
+  const ebglyss =
+    '14 CLINICAL STUDIES 14.1 Atopic Dermatitis Three multicenter, randomized, double-blind, placebo-controlled ' +
+    'trials, ADvocate 1, ADvocate 2 and ADhere (NCT04146363, NCT04178967, NCT04250337) enrolled a total of 1062 subjects';
+
+  it('pairs a list of names with a list of NCT numbers in order', () => {
+    const names = extractLabelTrialNames(ebglyss);
+    expect(Object.fromEntries([...names].map(([id, n]) => [id, n.name]))).toEqual({
+      NCT04146363: 'ADvocate 1',
+      NCT04178967: 'ADvocate 2',
+      NCT04250337: 'ADhere',
+    });
+  });
+
+  it('quotes the label word for word', () => {
+    const quote = extractLabelTrialNames(ebglyss).get('NCT04146363')?.quote;
+    expect(quote).toBe('ADvocate 1, ADvocate 2 and ADhere (NCT04146363, NCT04178967, NCT04250337)');
+    expect(ebglyss).toContain(quote);
+    expect(extractLabelTrialNames('was evaluated in PsO - 1 (NCT02684370).').get('NCT02684370')?.quote).toBe(
+      'PsO - 1 (NCT02684370)'
+    );
+  });
+
+  it('takes no name from a list whose names and NCT numbers do not line up', () => {
+    const text = 'Two trials, ALPHA and BETA (NCT01111111, NCT02222222, NCT03333333) enrolled. ' +
+      'The trial GAMMA (NCT04444444, NCT05555555) enrolled 300 patients. ' +
+      'Next, DELTA and EPSILON (NCT06666666, NCT07777777) enrolled 200.';
+    expect(extractLabelTrialNames(text).size).toBe(0);
+  });
+
+  it('keeps an earlier mention when the same trial is named again in a list', () => {
+    const text = 'ADhere (NCT04250337) was first. It was followed by trials ADvocate 1, ADvocate 2 and ADhere ' +
+      '(NCT04146363, NCT04178967, NCT04250337).';
+    const names = extractLabelTrialNames(text);
+    expect(names.get('NCT04250337')).toEqual({ name: 'ADhere', quote: 'ADhere (NCT04250337)' });
+    expect(names.get('NCT04146363')?.name).toBe('ADvocate 1');
   });
 });
 
