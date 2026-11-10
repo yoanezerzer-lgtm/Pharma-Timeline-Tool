@@ -1,7 +1,7 @@
 import { readdirSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import areaFile from '../data/areas/areas.json';
-import { areasOfDrug, countsAsGenetic, INHERITED_CATEGORY, shownCategories } from '../src/lib/areas.js';
+import { areasOfDrug, countsAsGenetic, filedAreas, INHERITED_CATEGORY, shownCategories } from '../src/lib/areas.js';
 
 describe('therapeutic areas (data/areas/areas.json)', () => {
   const ids = new Set(areaFile.areas.map((a) => a.id));
@@ -46,6 +46,14 @@ describe('how the owner files diseases (areas.json "diseases")', () => {
     expect(countsAsGenetic(ad)).toBe(false);
     const ids = areasOfDrug(drug('not-listed', [ad])).map((a) => a.id);
     expect(ids).toEqual(['immunology']);
+  });
+
+  it('lets one drug span areas: asthma, COPD and nasal polyps are Respirology (owner, 10 Nov)', () => {
+    const asthma = { meshId: 'D001249', term: 'Asthma' };
+    const copd = { meshId: 'D029424', term: 'Pulmonary Disease, Chronic Obstructive' };
+    const polyps = { meshId: 'D009298', term: 'Nasal Polyps' };
+    expect(areasOfDrug(drug('not-listed', [ad, asthma, copd, polyps])).map((a) => a.id)).toEqual(['immunology', 'respirology']);
+    for (const x of [asthma, copd, polyps]) expect(filedAreas(x.meshId)).toEqual(['respirology']);
   });
 
   it('still files other inherited diseases under "Genetic diseases"', () => {

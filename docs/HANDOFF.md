@@ -154,6 +154,9 @@ waiting on CI in a chat and re-running all drugs to test a guess.
 8. **No AI where code will do.**
 
 ## Owner decisions on record
+- 10 Nov: a drug's uses can sit in different therapeutic areas; asthma,
+  COPD and nasal polyps are Respirology (filed by disease in
+  `data/areas/areas.json`; a disease's own filing wins over its drugs').
 - 3 Nov: short use names may be cut automatically from FDA wording;
   atopic dermatitis under Immunology (done); auto-merge on.
 - 4 Nov: PRD agreed; a free, cookie-free visitor counter is wanted.
@@ -302,7 +305,9 @@ Still open from the review:
   the first approval's line.
 
 ## Open owner questions
-- Areas for Dupixent's other uses (asthma, COPD, nasal polyps, etc.).
+- Areas for Dupixent's remaining uses (eosinophilic esophagitis, urticaria,
+  bullous pemphigoid, allergic fungal sinusitis; asthma, COPD, nasal polyps
+  settled 10 Nov).
 - Show a public "last updated" date on the site?
 - Domain name; Cloudflare account; Google Search Console; pricing.
 - 18 stuck facts need a person to look (list in `npm run -s status`).
