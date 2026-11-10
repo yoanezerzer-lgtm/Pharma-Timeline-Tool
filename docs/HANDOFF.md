@@ -196,6 +196,27 @@ waiting on CI in a chat and re-running all drugs to test a guess.
   (214 of 264 read), so products found by label search have none until the
   job runs where FDA documents download (GitHub Actions).
 
+## 10 Nov data session
+- **Stuck facts 26 → 18.** The checker took a registry record as the
+  second source only when the trial's sponsor is the applicant; Dupixent's
+  trials are Sanofi's, the application Regeneron's. Now a sponsor the
+  drug's own label names ("Marketed by", "Distributed by", "Manufactured
+  for"; not "Manufactured by") counts too. Dupixent's 8 re-checked and
+  confirmed (`npm run verify -- queue --retry-stuck --drugs <slug>`).
+  Left with a person: Adquey (Otsuka trials, no FDA document names Otsuka),
+  Lynavoy (record cites no label), Phase 1 and 1/2 trials.
+- **All-severity atopic dermatitis**: Eucrisa, Opzelura, Zoryve and Elidel
+  ingested to `ingest/crisaborole`, `ingest/ruxolitinib`,
+  `ingest/roflumilast`, `ingest/pimecrolimus` (Actions can't open PRs:
+  repo setting). Opzelura listed "Limitations of Use" as a use: fixed in
+  the section 1 reader (only Opzelura among 259 labels); re-run its ingest.
+  Gaps: Eucrisa has no trials (code names not searched), Elidel (2001) no
+  approval history, no label company for either.
+- **New sources asked for (owner, 10 Nov)**: breakthrough therapy and
+  fast track approval lists, orphan designations (OOPD), Orange Book.
+  `designations-probe.yml` saves what each returns to `diag/designations`;
+  write readers against that, then add them to `npm run precedent`.
+
 ## Next steps (in order, one chat each)
 The owner wants a strong focus on **design** (9 Nov): every data chat
 should leave the pages it touches looking right, and design gets its own
@@ -285,8 +306,9 @@ Owner walked the pages: too much on screen, some wrong words. Done:
   dashed), no dashed gap lines; both charts start at the same height.
 - A label name the registry gives to another trial is not shown (Ebglyss
   ADvocate 1 had been labelled "ADhere"); its NCT number shows instead.
-  **Pipeline still pairs label names wrongly** (`labelName` on
-  NCT04146363): fix the label-name pairing in a data chat and score it.
+  Label-name pairing fixed (#144, re-ingested #145): NCT04146363 is
+  ADvocate 1; no label name in the data matches another trial's own name
+  (checked 10 Nov across all drugs).
 
 - Drugs and Diseases lists (10 Nov): each is one full-width table you can
   sort, with search, an area filter and a count (shared `ListTable`).
@@ -306,8 +328,7 @@ Owner walked the pages: too much on screen, some wrong words. Done:
 Still open from the review:
 - Atopic dermatitis is to cover all severities (owner, 9 Nov): add
   Eucrisa, Opzelura, Zoryve, Elidel through the add-drugs pipeline; match
-  Protopic. Nemluvio shows "Severity not stated" until its full FDA
-  wording is read (data session).
+  Protopic. (Nemluvio reads moderate-to-severe since #139.)
 - Compare: count results ("95 Participants") can't show a % without
   each arm's size; store arm sizes from ClinicalTrials.gov in a data chat.
 - The Dupixent lane on the disease timeline still draws later trials on

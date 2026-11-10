@@ -1,4 +1,5 @@
 import { sameWording } from '../../src/lib/wording.js';
+import { normalizeSponsor } from '../../src/lib/company.js';
 import { z } from 'zod';
 import type { Drug, Trial } from '../../src/schema/index.js';
 import { runByApplicant } from '../ingest/roles.js';
@@ -108,13 +109,20 @@ function claimFor(ctx: DrugContext, trial: Trial, indication: string, id: string
  * Both kinds must come back "not supported"; one that comes back supported
  * voids the whole night.
  */
-export function buildQueue(contexts: DrugContext[], date: string, limit = 40): { queue: Claim[]; key: AnswerKey } {
+export function buildQueue(
+  contexts: DrugContext[],
+  date: string,
+  limit = 40,
+  opts: { retryStuck?: boolean; drugs?: string[] } = {}
+): { queue: Claim[]; key: AnswerKey } {
   const rand = rng(date);
   const usable = contexts.filter((c) => c.sources.some((s) => s.kind === 'label'));
   const real: { ctx: DrugContext; trial: Trial; indication: string }[] = [];
   for (const ctx of usable) {
     for (const r of ctx.ref.pivotal) {
-      if (r.status !== 'baseline' || !r.pivotal || (r.tries ?? 0) >= STUCK_AFTER) continue;
+      if (r.status !== 'baseline' || !r.pivotal) continue;
+      if ((r.tries ?? 0) >= STUCK_AFTER && !opts.retryStuck) continue;
+      if (opts.drugs && !opts.drugs.includes(ctx.drug.slug)) continue;
       const trial = ctx.drug.trials.find((t) => trialKey(t) === r.trial);
       if (trial) real.push({ ctx, trial, indication: r.indication });
     }
@@ -152,12 +160,34 @@ export function buildQueue(contexts: DrugContext[], date: string, limit = 40): {
 
 const CONFIRMATORY_PHASES = new Set(['PHASE2', 'PHASE2_3', 'PHASE3']);
 
-/** The registry's own facts agree: a sponsor-run, interventional Phase 2/3 study. */
-function registryAgrees(trial: Trial, drug: Drug): boolean {
+// The company lines a label prints at its end. "Manufactured by" is left out:
+// it can name a contract plant rather than a partner in the drug.
+const LABEL_COMPANY_LINE = /\b(?:Marketed(?: and distributed)?|Distributed|Manufactured for)\s*(?:(?:by|for)\b)?\s*:?\s*(.{0,160}?)(?=Manufactured|Marketed|Distributed|Reference ID|For patent|$)/gi;
+const GENERIC_WORD = /^(pharms?|pharma|pharmaceuticals?|biotech|biotechnology|biopharma|biosciences?|therapeutics|labs?|laboratories|research|development|healthcare|holdings|international|operations|us|usa)$/;
+
+/**
+ * Whether one of the drug's FDA labels names the trial's sponsor as the
+ * company it is marketed, distributed or manufactured for ("Marketed by:
+ * sanofi-aventis U.S. LLC … and Regeneron"): the label itself then shows
+ * the sponsor is the applicant's partner in this drug.
+ */
+export function labelNamesSponsor(sponsor: string | undefined, sources: SourceDoc[]): boolean {
+  if (!sponsor) return false;
+  const word = normalizeSponsor(sponsor).split(/\s+/).find((w) => !GENERIC_WORD.test(w));
+  if (!word || word.length < 3) return false;
+  const named = new RegExp(`(^|[^a-z])${word.replace(/[^a-z0-9]/g, '')}([^a-z]|$)`);
+  return sources
+    .filter((s) => s.kind === 'label')
+    .some((s) => [...s.text.replace(/\s+/g, ' ').matchAll(LABEL_COMPANY_LINE)].some((m) => named.test(m[1].toLowerCase())));
+}
+
+/** The registry's own facts agree: an interventional Phase 2/3 study run by the applicant or a partner its label names. */
+function registryAgrees(trial: Trial, drug: Drug, sources: SourceDoc[]): boolean {
   return (
     CONFIRMATORY_PHASES.has(trial.phase) &&
     trial.studyType?.toUpperCase() !== 'OBSERVATIONAL' &&
-    runByApplicant(trial, drug.regulatory.us.sponsor ?? drug.sponsor, getSpec(drug.slug)?.knownTrialSponsors)
+    (runByApplicant(trial, drug.regulatory.us.sponsor ?? drug.sponsor, getSpec(drug.slug)?.knownTrialSponsors) ||
+      labelNamesSponsor(trial.sponsor, sources))
   );
 }
 
@@ -208,7 +238,7 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
     }
 
     const inSpan = valid.some((x) => x.check.kind === 'label' && x.check.inIndicationSpan);
-    const second = valid.some((x) => x.check.kind !== 'label') || registryAgrees(trial, ctx.drug);
+    const second = valid.some((x) => x.check.kind !== 'label') || registryAgrees(trial, ctx.drug, ctx.sources);
     if (inSpan && second) {
       const how = valid.some((x) => x.check.kind !== 'label') ? 'label section 14 and an FDA review or letter' : 'label section 14 and the registry record';
       return { claim, outcome: 'confirmed', detail: `Confirmed by ${how}.`, evidence };
@@ -216,7 +246,7 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
     const why = [
       ...failed,
       ...(inSpan ? [] : [`no verified quote from the label's section 14 under "${claim.indication}"`]),
-      ...(second ? [] : ['no second source: needs an FDA review or letter quote, or a sponsor-run Phase 2/3 registry record']),
+      ...(second ? [] : ['no second source: needs an FDA review or letter quote, or a Phase 2/3 registry record run by the applicant or a partner its label names']),
     ];
     return { claim, outcome: 'rejected', detail: why.join('; '), evidence };
   });

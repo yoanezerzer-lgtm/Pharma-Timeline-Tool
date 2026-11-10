@@ -1,10 +1,12 @@
 /**
  * Overnight verification of the reference set's unchecked entries.
  *
- *   npm run verify -- queue [--limit 40] [--date YYYY-MM-DD]
+ *   npm run verify -- queue [--limit 40] [--date YYYY-MM-DD] [--retry-stuck] [--drugs a,b]
  *       Writes .verify/queue.json (claims plus the passages that name each
  *       trial) for the agent to answer, and .verify/key.json, which the
- *       agent must not read.
+ *       agent must not read. --retry-stuck queues facts already tried three
+ *       nights again (after a rule change); --drugs limits the real claims
+ *       to those drugs.
  *   npm run verify -- apply [--date YYYY-MM-DD]
  *       Checks .verify/verdicts.json against the documents, records what
  *       passes in data/reference/, and writes .verify/report.md.
@@ -47,7 +49,10 @@ function main(): void {
 
   if (cmd === 'queue') {
     for (const c of ctxs) console.log(`  ${c.drug.slug}: ${c.sources.length} source documents loaded`);
-    const { queue, key } = buildQueue(ctxs, date, Number(arg('limit') ?? 40));
+    const { queue, key } = buildQueue(ctxs, date, Number(arg('limit') ?? 40), {
+      retryStuck: process.argv.includes('--retry-stuck'),
+      drugs: arg('drugs')?.split(','),
+    });
     writeFileSync(join(OUT, 'queue.json'), JSON.stringify(queue, null, 2) + '\n');
     writeFileSync(join(OUT, 'key.json'), JSON.stringify(key) + '\n');
     console.log(`Wrote ${queue.length} claims to .verify/queue.json.`);

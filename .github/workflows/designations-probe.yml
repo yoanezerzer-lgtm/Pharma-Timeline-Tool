@@ -1,0 +1,55 @@
+name: Fetch FDA designation sources (look first)
+
+# Saves what four FDA sources actually return, so readers for them are written
+# against real responses ("look before parsing", docs/HANDOFF.md):
+#   - CDER breakthrough therapy approvals list
+#   - CDER fast track approvals list
+#   - Orphan drug designations and approvals (OOPD search)
+#   - Orange Book data files
+# Nothing here changes site data. The raw responses go to diag/designations.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch each source and record what came back
+        run: |
+          set -u
+          mkdir -p data/raw/designations
+          cd data/raw/designations
+          UA='Mozilla/5.0 (compatible; drug-development-timelines; public-data research)'
+          get() {
+            name="$1"; url="$2"
+            code=$(curl -sS -L -A "$UA" -o "$name" -D "$name.headers" -w '%{http_code} %{content_type} %{size_download}' --max-time 120 "$url" || echo "curl-failed")
+            echo "$name  $url  ->  $code" | tee -a status.txt
+          }
+          get breakthrough.html 'https://www.fda.gov/drugs/nda-and-bla-approvals/breakthrough-therapy-approvals'
+          get fast-track.html 'https://www.fda.gov/drugs/nda-and-bla-approvals/fast-track-approvals'
+          get oopd-index.html 'https://www.accessdata.fda.gov/scripts/opdlisting/oopd/'
+          get orange-book-page.html 'https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book'
+          get orange-book-data-files.html 'https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files'
+          get orange-book.zip 'https://www.fda.gov/media/76860/download'
+          if unzip -l orange-book.zip > orange-book.zip.list 2>&1; then
+            mkdir -p orange-book && unzip -o -q orange-book.zip -d orange-book
+            # Keep the head of each file only: enough to see the columns.
+            for f in orange-book/*; do head -n 40 "$f" > "$f.head"; rm "$f"; done
+          fi
+          rm -f orange-book.zip
+          cat status.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Push the responses to a diagnostic branch
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B diag/designations
+          git add -f data/raw/designations
+          git commit -m "Diagnostic: raw FDA designation sources"
+          git push --force origin diag/designations
