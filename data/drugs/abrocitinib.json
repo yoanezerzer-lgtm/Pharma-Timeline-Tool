@@ -1107,9 +1107,20 @@
           "quote": "Trial-AD-2 (NCT03575871)",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_announces_positive_top_line_results_from_second_pivotal_phase_3_study_of_investigational_oral_jak1_candidate_abrocitinib_in_patients_aged_12_and_older_with_moderate_to_severe_atopic_dermatitis",
+          "sourceLabel": "pfizer.com: Pfizer Announces Positive Top-Line Results from Second Pivotal Phase 3 Study of Investigational Oral JAK1 Candidate, Abrocitinib, in Patients Aged 12 and Older with Moderate to Severe Atop",
+          "quote": "The co-primary study endpoints in JADE MONO-2 were the proportion of patients who achieved an Investigator Global Assessment (IGA) score of clear (0) or almost clear (1) skin and two-point or greater improvement; and the proportion of patients who achieved at least a 75% or greater change from baseline in their Eczema…",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2019-09-27",
+        "precision": "day"
+      }
     },
     {
       "id": "jade-compare",
@@ -1838,9 +1849,20 @@
           "quote": "Trial-AD-4 (NCT03796676)",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-announces-positive-top-line-results-jade-teen-trial",
+          "sourceLabel": "pfizer.com: Pfizer Announces Positive Top-Line Results from JADE TEEN Trial of Abrocitinib in Adolescents with Moderate-to-Severe Atopic Dermatitis | Pfizer",
+          "quote": "Pfizer Announces Positive Top-Line Results from JADE TEEN Trial of Abrocitinib in Adolescents with Moderate-to-Severe Atopic Dermatitis | Pfizer",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2020-06-10",
+        "precision": "day"
+      }
     },
     {
       "id": "b7451050",
