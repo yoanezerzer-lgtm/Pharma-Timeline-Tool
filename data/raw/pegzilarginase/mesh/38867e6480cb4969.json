@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0328331",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0328331",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T358331",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A rare autosomal recessive disorder of the urea cycle. It is caused by a deficiency of the hepatic enzyme ARGINASE. Arginine is elevated in the blood and cerebrospinal fluid, and periodic HYPERAMMONEMIA may occur. Disease onset is usually in infancy or early childhood. Clinical manifestations include seizures, microcephaly, progressive mental impairment, hypotonia, ataxia, spastic diplegia, and quadriparesis. (From Hum Genet 1993 Mar;91(1):1-5; Menkes, Textbook of Child Neurology, 5th ed, p51)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T734486",
+      "http://id.nlm.nih.gov/mesh/T368489",
+      "http://id.nlm.nih.gov/mesh/T368487",
+      "http://id.nlm.nih.gov/mesh/T368488",
+      "http://id.nlm.nih.gov/mesh/T734485"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Hyperargininemia"
+    },
+    "@context": {
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
