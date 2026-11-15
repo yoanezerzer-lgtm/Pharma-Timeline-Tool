@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0015963",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0015963",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T030420",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A progressive, degenerative neurologic disease characterized by a TREMOR that is maximal at rest, retropulsion (i.e. a tendency to fall backwards), rigidity, stooped posture, slowness of voluntary movements, and a masklike facial expression. Pathologic features include loss of melanin containing neurons in the substantia nigra and other pigmented nuclei of the brainstem. LEWY BODIES are present in the substantia nigra and locus coeruleus but may also be found in a related condition (LEWY BODY DISEASE, DIFFUSE) characterized by dementia in combination with varying degrees of parkinsonism. (Adams et al., Principles of Neurology, 6th ed, p1059, pp1067-75)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T364511",
+      "http://id.nlm.nih.gov/mesh/T364506",
+      "http://id.nlm.nih.gov/mesh/T364509",
+      "http://id.nlm.nih.gov/mesh/T030419",
+      "http://id.nlm.nih.gov/mesh/T364510",
+      "http://id.nlm.nih.gov/mesh/T364505",
+      "http://id.nlm.nih.gov/mesh/T364508",
+      "http://id.nlm.nih.gov/mesh/T030418",
+      "http://id.nlm.nih.gov/mesh/T364512",
+      "http://id.nlm.nih.gov/mesh/T364507"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Parkinson Disease"
+    },
+    "@context": {
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T030419",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "dateCreated": "1990-11-01",
+    "entryVersion": {
+      "@language": "en",
+      "@value": "PARKINSONS DIS"
+    },
+    "identifier": "T030419",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "EPO"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Parkinson's Disease"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (1992)"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "entryVersion": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#entryVersion"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
