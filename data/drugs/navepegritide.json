@@ -940,7 +940,7 @@
       "protocolNumber": "ASND0053",
       "acronym": "cAtCH",
       "title": "A Phase 3, Randomized, Double-blind, Active Controlled, Multi-center Trial Investigating the Efficacy and Safety of Dual Therapy With Once-weekly Navepegritide and Once-weekly Lonapegsomatropin Compared to Navepegritide Monotherapy and Lonapegsomatropin Monotherapy in Children and Adolescents With Achondroplasia",
-      "briefTitle": "Phase 3 Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
+      "briefTitle": "Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
       "phase": "PHASE3",
       "roles": [],
       "status": "NOT_YET_RECRUITING",
@@ -1050,7 +1050,14 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "briefTitle",
+          "previousValue": "Phase 3 Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
+          "newValue": "Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
+          "detectedAt": "2026-11-15T07:54:27.297Z"
+        }
+      ]
     },
     {
       "id": "hch-upliftmono",
@@ -1202,5 +1209,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:09:53.324Z"
+  "lastIngestedAt": "2026-11-15T07:54:27.297Z"
 }
