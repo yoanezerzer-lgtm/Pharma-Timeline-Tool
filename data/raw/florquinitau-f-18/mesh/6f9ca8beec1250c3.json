@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D014054",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000451",
+      "http://id.nlm.nih.gov/mesh/Q000379",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000592",
+      "http://id.nlm.nih.gov/mesh/Q000706",
+      "http://id.nlm.nih.gov/mesh/Q000191",
+      "http://id.nlm.nih.gov/mesh/Q000401",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000009",
+      "http://id.nlm.nih.gov/mesh/Q000941",
+      "http://id.nlm.nih.gov/mesh/Q000639",
+      "http://id.nlm.nih.gov/mesh/Q000295",
+      "http://id.nlm.nih.gov/mesh/Q000662"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "used for non-x-ray and non-radionuclide tomographies; echotomography seen in foreign literature is probably ULTRASONOGRAPHY and if so use \"ultrasonics\" or \"ultrasonic diagnosis\" or \"ultrasonography\" in translations and not \"echotomography\""
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D003952",
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D014054",
+    "lastUpdated": "2016-03-17",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0021645",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T041212",
+    "seeAlso": "http://id.nlm.nih.gov/mesh/D019412",
+    "treeNumber": "http://id.nlm.nih.gov/mesh/E01.370.350.825",
+    "label": {
+      "@language": "en",
+      "@value": "Tomography"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      }
+    }
+  }
+}
