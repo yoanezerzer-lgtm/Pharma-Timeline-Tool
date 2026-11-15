@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T003846",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": {
+      "@language": "en",
+      "@value": "Syndromes, Hyperkinetic"
+    },
+    "dateCreated": "1983-06-14",
+    "identifier": "T003846",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Hyperkinetic Syndrome"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "UNK (19XX)"
+    },
+    "@context": {
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
