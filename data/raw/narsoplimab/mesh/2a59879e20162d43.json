@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0016069",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "broaderConcept": "http://id.nlm.nih.gov/mesh/M0016067",
+    "identifier": "M0016069",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T030596",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Individuals participating in the health care system for the purpose of receiving therapeutic, diagnostic, or preventive procedures."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "Patients"
+    },
+    "@context": {
+      "broaderConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
