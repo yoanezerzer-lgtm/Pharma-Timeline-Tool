@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T027313",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Musculoskeletal Systems"
+      },
+      {
+        "@language": "en",
+        "@value": "System, Musculoskeletal"
+      },
+      {
+        "@language": "en",
+        "@value": "Systems, Musculoskeletal"
+      }
+    ],
+    "dateCreated": "1999-01-01",
+    "identifier": "T027313",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Musculoskeletal System"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (1966)"
+    },
+    "@context": {
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0021411",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0021411",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T040792",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "The upper part of the trunk between the NECK and the ABDOMEN. It contains the chief organs of the circulatory and respiratory systems. (From Stedman, 25th ed)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T040791",
+      "http://id.nlm.nih.gov/mesh/T040790"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Thorax"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}

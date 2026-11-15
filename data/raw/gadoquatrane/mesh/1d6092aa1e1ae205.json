@@ -1,0 +1,96 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Central Nervous System"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D002490"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Central Nervous System"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Nervous System"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D009420"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Nervous System"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Tissues"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D014024"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Tissues"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Brain"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D001921"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Brain"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Spine"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D013131"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Spine"
+          }
+        }
+      ]
+    }
+  }
+}
