@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D013812",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000401",
+      "http://id.nlm.nih.gov/mesh/Q000706",
+      "http://id.nlm.nih.gov/mesh/Q000639",
+      "http://id.nlm.nih.gov/mesh/Q000009",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000592",
+      "http://id.nlm.nih.gov/mesh/Q000941",
+      "http://id.nlm.nih.gov/mesh/Q000451",
+      "http://id.nlm.nih.gov/mesh/Q000379",
+      "http://id.nlm.nih.gov/mesh/Q000662",
+      "http://id.nlm.nih.gov/mesh/Q000295",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000191"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "avoid: too general: prefer /ther with diseases"
+    },
+    "dateIntroduced": "1966-01-01",
+    "identifier": "D013812",
+    "lastUpdated": "2015-06-29",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0021296",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T040577",
+    "treeNumber": "http://id.nlm.nih.gov/mesh/E02",
+    "label": {
+      "@language": "en",
+      "@value": "Therapeutics"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
