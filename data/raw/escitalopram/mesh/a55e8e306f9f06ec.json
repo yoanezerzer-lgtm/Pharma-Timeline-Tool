@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T001143797",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Generalized Anxieties"
+      },
+      {
+        "@language": "en",
+        "@value": "Anxieties, Generalized"
+      },
+      {
+        "@language": "en",
+        "@value": "Anxiety, Generalized"
+      }
+    ],
+    "dateCreated": "2024-04-17",
+    "identifier": "T001143797",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Generalized Anxiety"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (2025)"
+    },
+    "@context": {
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

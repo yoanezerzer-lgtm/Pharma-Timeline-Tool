@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T001144216",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": {
+      "@language": "en",
+      "@value": "Depressions, Clinical"
+    },
+    "dateCreated": "2024-05-14",
+    "identifier": "T001144216",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Clinical Depression"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (2024)"
+    },
+    "@context": {
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    }
+  }
+}
