@@ -998,7 +998,7 @@
       "briefTitle": "A Study to Test if Trevogrumab or Trevogrumab With Garetosmab When Taken With Semaglutide is Safe and How Well They Work in Adult Patients With Obesity for Weight Loss, Fat Loss, and Lean Mass Preservation",
       "phase": "PHASE2",
       "roles": [],
-      "status": "ACTIVE_NOT_RECRUITING",
+      "status": "COMPLETED",
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
@@ -1176,7 +1176,14 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "ACTIVE_NOT_RECRUITING",
+          "newValue": "COMPLETED",
+          "detectedAt": "2026-11-15T07:53:12.249Z"
+        }
+      ]
     },
     {
       "id": "r2477-ob-2470",
@@ -1599,5 +1606,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:08:23.523Z"
+  "lastIngestedAt": "2026-11-15T07:53:12.249Z"
 }

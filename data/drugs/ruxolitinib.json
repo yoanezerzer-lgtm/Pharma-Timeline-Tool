@@ -1725,6 +1725,113 @@
       "changeLog": []
     },
     {
+      "id": "recap",
+      "nctId": "NCT01423604",
+      "protocolNumber": "18424-262",
+      "acronym": "RECAP",
+      "title": "A Randomized Phase 2 Study of Ruxolitinib Efficacy and Safety in Combination With Capecitabine for Subjects With Recurrent or Treatment Refractory Metastatic Pancreatic Cancer (The RECAP Trial)",
+      "briefTitle": "Study of Ruxolitinib in Pancreatic Cancer Patients",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pancreatic Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010190",
+          "term": "Pancreatic Neoplasms"
+        }
+      ],
+      "startDate": {
+        "value": "2011-07-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2013-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-11-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 136,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Capecitabine and ruxolitinib",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Capecitabine and placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Survival"
+      ],
+      "secondaryEndpoints": [
+        "Progression-Free Survival (PFS)",
+        "Objective Response Rate",
+        "Durable Response Rate",
+        "Summary of Clinical Benefit"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01423604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01423604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01423604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01423604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01423604",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "18424-261",
       "nctId": "NCT01445769",
       "protocolNumber": "18424-261",
@@ -1831,6 +1938,882 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT01445769",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "18424-357",
+      "nctId": "NCT01632904",
+      "protocolNumber": "18424-357",
+      "title": "Polycythemia Vera Symptom Study Evaluating Ruxolitinib Versus Hydroxyurea in a Randomized, Multicenter, Double-Blind, Double-Dummy, Phase 3 Efficacy and Safety Study of Patient Reported Outcomes",
+      "briefTitle": "Randomized Switch Study From Hydroxyurea to Ruxolitinib for RELIEF of Polycythemia Vera Symptoms: The Relief Study",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
+      "startDate": {
+        "value": "2012-06-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2014-03-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-05-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 110,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "ruxolitinib and hydroxyurea (HU)-placebo",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "HU and ruxolitinib-placebo",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Subjects Achieving a ≥ 50% Improvement From Baseline in Total Symptom Score-Cytokine (TSS-C) at Week 16, as Measured by the Modified Myeloproliferative Neoplasm Symptom Assessment Form (MPN-SAF) Diary"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Subjects Achieving ≥ 50% Improvement From Baseline in the Individual Symptom Scores for TSS-C at Week 16",
+        "Proportion of Subjects Randomized to Ruxolitinib Who Achieved ≥ 50% Improvement From Baseline in Total Symptom Score-Cytokine and the Individual Symptom Scores at Week 16 That Were Maintained at Week 48"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01632904",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01632904",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01632904",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01632904",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01632904",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-18424-144",
+      "nctId": "NCT01822756",
+      "protocolNumber": "INCB 18424-144",
+      "title": "A Phase 1b Study of the Safety and Tolerability of Ruxolitinib in Combination With Gemcitabine With or Without Nab-Paclitaxel in Subjects With Advanced Solid Tumors",
+      "briefTitle": "An Open-Label Study of Ruxolitinib Given With Chemotherapy in Patients With Advanced Solid Tumors",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Solid Tumors",
+        "Pancreatic Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010190",
+          "term": "Pancreatic Neoplasms"
+        }
+      ],
+      "startDate": {
+        "value": "2013-04-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-09-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 42,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Regimen A -ruxolitinib, gemcitabine",
+          "type": "EXPERIMENTAL",
+          "description": "Ruxolitinib (RUX) was self-administered by the subject orally in the morning and evening, approximately 12 hours apart, without regard to food. The morning dose of RUX was to be taken before the chemotherapy infusion, Gemcitabine IV, on days when they were given together (Days 1, 8, and 15 of each cycle)."
+        },
+        {
+          "label": "Regimen B-ruxolitinib, gemcitabine, nab-paclitaxel, filgrastim",
+          "type": "EXPERIMENTAL",
+          "description": "Ruxolitinib (RUX) was self-administered by the subject orally in the morning and evening, approximately 12 hours apart, without regard to food.\n\nGemcitabine was provided as open-label, commercial product and was administered intravenously (IV) over 30 minutes on Days 1, 8, and 15 of each 28-day cycle. Reduced doses of gemcitabine administered IV over 30 minutes on Days 1, 8, and 15 of each 28-day cycle could also be explored.\n\nnab-Paclitaxel, as open-label, commercial product, was administered IV over 30 minutes on Days 1, 8, and 15 of each 28-day cycle."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants With Adverse Events That Are Defined as Dose Limiting Toxicities (DLTs)"
+      ],
+      "secondaryEndpoints": [
+        "Plasma Concentrations Will be Used to Estimate Peak Plasma Concentration (Cmax) and Area Under the Plasma Concentration Curve (AUC).",
+        "Plasma Concentration of Tumor Specific Biomarkers and Cytokines Before and During Treatment.",
+        "Clinical Activity as Measured by the Greatest Decrease in Tumor Burden Compared to Baseline.",
+        "Percentage of Participants With a Best Response by RECIST Criteria",
+        "Percentage of Responders",
+        "Duration of Response"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01822756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01822756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01822756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01822756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01822756",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "jak2",
+      "nctId": "NCT01965119",
+      "protocolNumber": "SMC 2013-06-039",
+      "acronym": "JAK2",
+      "title": "Pilot Study of Ruxolitinib in Relapsed or Refractory Hodgkin Lymphoma and Primary Mediastinal Large B-cell Lymphoma",
+      "briefTitle": "Pilot Study of Ruxolitinib in Relapsed or Refractory Hodgkin Lymphoma and Primary Mediastinal Large B-cell Lymphoma",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/215309Orig1s001.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Samsung Medical Center",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Relapsed or Refractory Hodgkin Lymphoma",
+        "Primary Mediastinal Large B-cell Lymphoma"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012008",
+          "term": "Recurrence"
+        },
+        {
+          "id": "D006689",
+          "term": "Hodgkin Disease"
+        }
+      ],
+      "startDate": {
+        "value": "2013-11-15",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2017-06-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2018-09-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "19 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib",
+          "type": "EXPERIMENTAL",
+          "description": "20 mg orally twice a day for 4 weeks (One cycle) Treatment continued until documented disease progression or unacceptable toxicity."
+        }
+      ],
+      "primaryEndpoints": [
+        "To assess the efficacy of disease control including complete response (CR), partial response (PR) and stable disease (SD)"
+      ],
+      "secondaryEndpoints": [
+        "Toxicity profile",
+        "Overal Survival"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01965119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01965119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01965119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01965119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT01965119",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-18424-266",
+      "nctId": "NCT02119650",
+      "protocolNumber": "INCB 18424-266",
+      "title": "A Randomized, Double-Blind Phase 2 Study of Ruxolitinib or Placebo in Combination With Pemetrexed/Cisplatin and Pemetrexed Maintenance for Initial Treatment of Subjects With Nonsquamous Non-Small Cell Lung Cancer That Is Stage IIIB, Stage IV, or Recurrent",
+      "briefTitle": "Ruxolitinib in Combination With Pemetrexed/Cisplatin in Non Small Cell Lung Cancer",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "NSCLC (Non-small Cell Lung Carcinoma)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
+      "startDate": {
+        "value": "2014-02-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-02-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2016-06-21",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 76,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib plus Pemetrexed/Cisplatin",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo plus Pemetrexed/Cisplatin",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Survival (OS)"
+      ],
+      "secondaryEndpoints": [
+        "Progression-free Survival (PFS)",
+        "Objective Response Rate (ORR)",
+        "Duration of Response",
+        "Participants With Treatment-emergent Adverse Events (TEAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119650",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119650",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119650",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119650",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119650",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-18424-362",
+      "nctId": "NCT02117479",
+      "protocolNumber": "INCB 18424-362",
+      "title": "A Randomized, Double-Blind, Phase 3 Study of the JAK1/2 Inhibitor, Ruxolitinib or Placebo in Combination With Capecitabine in Subjects With Advanced or Metastatic Adenocarcinoma of the Pancreas Who Have Failed or Are Intolerant to First-Line Chemotherapy (The JANUS 1 Study)",
+      "briefTitle": "Study of Ruxolitinib in Pancreatic Cancer Patients (Janus 1)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pancreatic Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010190",
+          "term": "Pancreatic Neoplasms"
+        }
+      ],
+      "startDate": {
+        "value": "2014-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 321,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib plus capecitabine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo plus capecitabine",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Survival (OS)"
+      ],
+      "secondaryEndpoints": [
+        "Progression-free Survival (PFS)",
+        "Percentage of Participants Achieving Progression Free Survival (PFS)",
+        "Objective Response Rate (ORR)",
+        "Duration of Response",
+        "Participants With Treatment-Emergent Adverse Events (TEAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02117479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02117479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02117479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02117479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02117479",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb18424-267",
+      "nctId": "NCT02119676",
+      "protocolNumber": "INCB18424-267",
+      "title": "A Randomized, Double-Blind Study of Ruxolitinib or Placebo in Combination With Regorafenib in Subjects With Relapsed or Refractory Metastatic Colorectal Cancer",
+      "briefTitle": "Study of Ruxolitinib in Colorectal Cancer Patients",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "CRC (Colorectal Cancer)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D015179",
+          "term": "Colorectal Neoplasms"
+        },
+        {
+          "id": "D003110",
+          "term": "Colonic Neoplasms"
+        },
+        {
+          "id": "D000230",
+          "term": "Adenocarcinoma"
+        }
+      ],
+      "startDate": {
+        "value": "2014-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 396,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib plus regorafenib",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo plus regorafenib",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Survival (OS)"
+      ],
+      "secondaryEndpoints": [
+        "Progression Free Survival (PFS)",
+        "Overall Response Rate (ORR)",
+        "Duration of Response",
+        "Percentage of Participants Achieving Disease Control",
+        "Percentage of Participants With Treatment-emergent Adverse Events (TEAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119676",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-18424-268",
+      "nctId": "NCT02120417",
+      "protocolNumber": "INCB 18424-268",
+      "title": "A Randomized, Double-Blind, Phase 2 Study of Ruxolitinib or Placebo in Combination With Capecitabine in Subjects With Advanced or Metastatic HER2-Negative Breast Cancer",
+      "briefTitle": "A Study of Ruxolitinib in Combination With Capecitabine in Subjects With Advanced or Metastatic HER2-negative Breast Cancer",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        }
+      ],
+      "startDate": {
+        "value": "2014-05-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2017-01-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 149,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment A - Capecitabine and ruxolitinib",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Treatment B - Capecitabine and placebo",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Survival (OS)",
+        "Median Survival",
+        "Percentage of Participants Achieving Overall Survival"
+      ],
+      "secondaryEndpoints": [
+        "Progression-free Survival (PFS)",
+        "Percentage of Participants Achieving Objective Response Rate",
+        "Duration of Response (DOR)",
+        "Percentage of Participants Achieving Clinical Benefit Rate"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02120417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02120417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02120417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02120417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02120417",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-18424-363",
+      "nctId": "NCT02119663",
+      "protocolNumber": "INCB 18424-363",
+      "title": "A Randomized, Double-Blind, Phase 3 Study of the JAK 1/2 Inhibitor Ruxolitinib or Placebo in Combination With Capecitabine in Subjects With Advanced or Metastatic Adenocarcinoma of the Pancreas Who Have Failed or Are Intolerant to First-Line Chemotherapy (The JANUS 2 Study)",
+      "briefTitle": "A Study of Ruxolitinib in Pancreatic Cancer Patients",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pancreatic Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D010190",
+          "term": "Pancreatic Neoplasms"
+        }
+      ],
+      "startDate": {
+        "value": "2014-06-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-02-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-10-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 86,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib plus capecitabine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Placebo plus capecitabine",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Survival (OS)"
+      ],
+      "secondaryEndpoints": [
+        "Progression Free Survival (PFS)",
+        "Percentage of Participants Achieving Progression Free Survival (PFS)",
+        "Objective Response Rate (ORR)",
+        "Duration of Response",
+        "Participants With Treatment-Emergent Adverse Events (TEAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119663",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119663",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119663",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119663",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02119663",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -2191,6 +3174,196 @@
       "changeLog": []
     },
     {
+      "id": "incb-53914-101",
+      "nctId": "NCT02587598",
+      "protocolNumber": "INCB 53914-101",
+      "title": "A Phase 1/2 Study of INCB053914 in Subjects With Advanced Malignancies",
+      "briefTitle": "Study of INCB053914 in Subjects With Advanced Malignancies",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Solid Tumors"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D007938",
+          "term": "Leukemia"
+        },
+        {
+          "id": "D009190",
+          "term": "Myelodysplastic Syndromes"
+        },
+        {
+          "id": "D009196",
+          "term": "Myeloproliferative Disorders"
+        },
+        {
+          "id": "D055728",
+          "term": "Primary Myelofibrosis"
+        },
+        {
+          "id": "D008232",
+          "term": "Lymphoproliferative Disorders"
+        },
+        {
+          "id": "D015470",
+          "term": "Leukemia, Myeloid, Acute"
+        },
+        {
+          "id": "D008223",
+          "term": "Lymphoma"
+        },
+        {
+          "id": "D009101",
+          "term": "Multiple Myeloma"
+        }
+      ],
+      "startDate": {
+        "value": "2015-12-29",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2020-08-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2020-08-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 97,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Parts 1 and 2: INCB053914 100 mg QD",
+          "type": "EXPERIMENTAL",
+          "description": "INCB053914 will be self-administered orally once a day in as a 100mg immediate release tablet as a monotherapy."
+        },
+        {
+          "label": "Parts 3 and 4: INCB053914 + Azacitidine",
+          "type": "EXPERIMENTAL",
+          "description": "Azacitidine will be administered at a dose of 75 mg/m2 subcutaneously or via IV per day, as a combination therapy with INCB053914."
+        },
+        {
+          "label": "Parts 3 and 4: INCB053914 + I-DAC (Intermediate dose cytarabine)",
+          "type": "EXPERIMENTAL",
+          "description": "I-DAC (intermediate dose cytarabine) will be administered at a dose of 1 g/m2 per day as an infusion as a combination therapy with INCB053914."
+        },
+        {
+          "label": "Parts 3 and 4: INCB053914 + Ruxolitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Ruxolitinib will be administered as an oral dose between 5 mg to 25 mg twice per day, as a combination therapy with INCB053914."
+        },
+        {
+          "label": "Parts 1 and 2: INCB053914 50 mg",
+          "type": "EXPERIMENTAL",
+          "description": "INCB053914 will be self-administered orally twice day in as a 50mg immediate release tablet as a monotherapy."
+        },
+        {
+          "label": "Parts 1 and 2: INB053914 65 mg",
+          "type": "EXPERIMENTAL",
+          "description": "INCB053914 will be self-administered orally twice day in as a 65mg immediate release tablet as a monotherapy."
+        },
+        {
+          "label": "Parts 1 and 2: INB053914 80 mg",
+          "type": "EXPERIMENTAL",
+          "description": "INCB053914 will be self-administered orally twice day in as a 80mg immediate release tablet as a monotherapy."
+        },
+        {
+          "label": "Parts 1 and 2: INB053914 100 mg BID",
+          "type": "EXPERIMENTAL",
+          "description": "INCB053914 will be self-administered orally twice day in as a 100mg immediate release tablet as a monotherapy."
+        },
+        {
+          "label": "Parts 1 and 2: INB053914 115 mg",
+          "type": "EXPERIMENTAL",
+          "description": "INCB053914 will be self-administered orally twice day in as a 115mg immediate release tablet as a monotherapy."
+        }
+      ],
+      "primaryEndpoints": [
+        "Determination of the Safety and Tolerability of INCB053914 as Measured by the Number of Participants With Adverse Events",
+        "Part 4 Only : Determination of the Efficacy of INCB053914 in Combination With the Intermediate-dose Cytarabine (I DAC) in Subjects With Relapsed or Refractory Acute Myeloid Leukemia (AML) Based on Objective Remission Rate (ORR)",
+        "Part 4 Only : Determination of the Efficacy of INCB053914 in Combination With Azacitidine in Subjects With Newly Diagnosed AML Who Are 65 Years or Older and Unfit for Intensive Chemotherapy Based on ORR"
+      ],
+      "secondaryEndpoints": [
+        "Evaluation of Phosphorylated BCL--2 Associated Death Promoter Protein (pBAD)",
+        "Pharmacokinetics: Tmax of Combination Treatment Group A INCB053914 50 mg + Cytarabine",
+        "Pharmacokinetics: AUCtau of Combination Treatment Group A INCB053914 50 mg + Cytarabine",
+        "Pharmacokinetics: Cl/F of Combination Treatment Group A INCB053914 50 mg + Cytarabine",
+        "Pharmacokinetics: Cmax of Combination Treatment Group A INCB053914 50 mg + Cytarabine",
+        "Pharmacokinetics: Cmin of Combination Treatment Group A INCB053914 50 mg + Cytarabine",
+        "Pharmacokinetics: Tmax of Combination Group B INCB053914 80 mg + Azatcitidine",
+        "Pharmacokinetics: AUCtau of Combination Group B INCB053914 80 mg + Azatcitidine",
+        "Pharmacokinetics: Cl/F of Combination Group B INCB053914 80 mg + Azatcitidine",
+        "Pharmacokinetics: Cmax of Combination Group B INCB053914 80 mg + Azatcitidine",
+        "Pharmacokinetics: Cmin of Combination Group B INCB053914 80 mg + Azatcitidine",
+        "Pharmacokinetics: Tmax of Combination Treatment Group C INCB053914 80 mg + Ruxolitinib",
+        "Pharmacokinetics: AUCtau of Combination Treatment Group C INCB053914 80 mg + Ruxolitinib",
+        "Pharmacokinetics: Cl/F of Combination Treatment Group C INCB053914 80 mg + Ruxolitinib",
+        "Pharmacokinetics: Cmax of Combination Treatment Group C INCB053914 80 mg + Ruxolitinib",
+        "Pharmacokinetics: Cmin of Combination Treatment Group C INCB053914 80 mg + Ruxolitinib",
+        "Pharmacokinetics: Tmax of INCB053914 Monotherapy",
+        "Pharmacokinetics: AUCtau of INCB053914 Monotherapy",
+        "Pharmacokinetics: CL/F of INCB053914 Monotherapy",
+        "Pharmacokinetics: Cmax of INCB053914 Monotherapy",
+        "Pharmacokinetics: Ctau of INCB053914 Monotherapy"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02587598",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02587598",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02587598",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02587598",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02587598",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "39110-107",
       "nctId": "NCT02646748",
       "protocolNumber": "39110-107",
@@ -2327,6 +3500,235 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT02646748",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-57643-101",
+      "nctId": "NCT02711137",
+      "protocolNumber": "INCB 57643-101",
+      "title": "A Phase 1/2, Open-Label, Dose-Escalation/Dose-Expansion, Safety and Tolerability Study of INCB057643 in Subjects With Advanced Malignancies",
+      "briefTitle": "Open-Label Safety and Tolerability Study of INCB057643 in Subjects With Advanced Malignancies",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "TERMINATED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Solid Tumors"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D008223",
+          "term": "Lymphoma"
+        },
+        {
+          "id": "D007938",
+          "term": "Leukemia"
+        },
+        {
+          "id": "D009190",
+          "term": "Myelodysplastic Syndromes"
+        },
+        {
+          "id": "D009101",
+          "term": "Multiple Myeloma"
+        },
+        {
+          "id": "D009196",
+          "term": "Myeloproliferative Disorders"
+        },
+        {
+          "id": "D055728",
+          "term": "Primary Myelofibrosis"
+        },
+        {
+          "id": "D010190",
+          "term": "Pancreatic Neoplasms"
+        },
+        {
+          "id": "D015179",
+          "term": "Colorectal Neoplasms"
+        },
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        },
+        {
+          "id": "D011471",
+          "term": "Prostatic Neoplasms"
+        },
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D010051",
+          "term": "Ovarian Neoplasms"
+        },
+        {
+          "id": "D005909",
+          "term": "Glioblastoma"
+        },
+        {
+          "id": "D008228",
+          "term": "Lymphoma, Non-Hodgkin"
+        },
+        {
+          "id": "D016403",
+          "term": "Lymphoma, Large B-Cell, Diffuse"
+        }
+      ],
+      "startDate": {
+        "value": "2016-05-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2019-02-13",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2019-02-13",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 137,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part1/Treatment Group A : 8mg QD INCB057643",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB057643 monotherapy at the protocol specified starting dose in the TGA.\n\nTreatment Group A included solid tumors and lymphoma"
+        },
+        {
+          "label": "Part1/Treatment Group A : 12mg QD INCB057643",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB057643 monotherapy at the protocol specified starting dose in the TGA.\n\nTreatment Group A included solid tumors and lymphoma"
+        },
+        {
+          "label": "Part1/Treatment Group A : 16mg QD INCB057643",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB057643 monotherapy at the protocol specified starting dose in the TGA.\n\nTreatment Group A included solid tumors and lymphoma"
+        },
+        {
+          "label": "Part1/Treatment Group B : 8mg QD INCB057643",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy at the protocol-specified cohort escalation treatment group B (TGB), based on protocol-specific criteria. Treatment Group B included any acute leukemia, HRMDS, MDS/MPN, or MF"
+        },
+        {
+          "label": "Part1/Treatment Group B : 12mg QD INCB057643",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy at the protocol-specified cohort escalation treatment group B (TGB), based on protocol-specific criteria. Treatment Group B included any acute leukemia, HRMDS, MDS/MPN, or MF."
+        },
+        {
+          "label": "Part1/Treatment Group C : 8mg QD INCB057643",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy at the protocol-specified cohort escalation treatment group C (TGC), based on protocol-specific criteria. Treatment Group C includes subjects with MM"
+        },
+        {
+          "label": "Part2/Treatment Group A : 12 mg INCB057643 Expansion Cohort",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy at the specified RP2D dose selected in Part 1 cohort escalation treatment group A (TGA), based on protocol-specific criteria. Part 2 Treatment Group A expansion included pancreatic adenocarcinoma, castration-resistant prostrate cancer, breast cancer, high grade serious ovarian cancer, glioblastoma multiform, non-hodgkin's lymphoma, ewing's sarcoma, and solid tumor or lymphoma."
+        },
+        {
+          "label": "Part2/Treatment Group B : 12 mg INCB057643 Expansion Cohort",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB057463 monotherapy at the specified RP2D dose selected in Part 1 cohort escalation treatment group B (TGB), based on protocol-specific criteria. Part 2 Treatment Group B expansion included pancreatic adenocarcinoma, castration-resistant prostrate cancer, breast cancer, high grade serious ovarian cancer, glioblastoma multiform, non-hodgkin's lymphoma, ewing's sarcoma, and solid tumor or lymphoma."
+        },
+        {
+          "label": "Part3/Treatment Group A : 8 mg INCB057643 + Gemcitabine 1000mg",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB057643 monotherapy based on protocol-specific criteria. Part 3 will determine the MTD and/or a tolerated dose of the combination of INCB057643 and one of the SOC agents (Gemcitabine) in relapsed or refractory advanced or metastatic solid tumors and hematologic malignancies where Gemcitabine is relevant"
+        },
+        {
+          "label": "Part3/Treatment Group B : 8 mg INCB057643 + Paclitaxel 80mg",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy based on protocol-specific criteria. Part 3 will determine the MTD and/or a tolerated dose of the combination of INCB057643 and one of the SOC agents (Paclitaxel) in relapsed or refractory advanced or metastatic solid tumors and hematologic malignancies."
+        },
+        {
+          "label": "Part3/Treatment Group C : 8 mg INCB057643 + Rucaparib 600mg",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy based on protocol-specific criteria. Part 3 will determine the MTD and/or a tolerated dose of the combination of INCB057643 and one of the SOC agents (Rucaparib) in relapsed or refractory advanced or metastatic solid tumors and hematologic malignancies."
+        },
+        {
+          "label": "Part3/Treatment Group D : 8 mg INCB057643 + Abir +Predni",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy based on protocol-specific criteria. Part 3 will determine the MTD and/or a tolerated dose of the combination of INCB057643 and one of the SOC agents (Abiraterone + Prednisone) in Castration Resistant Prostrate Cancer"
+        },
+        {
+          "label": "Part3/Treatment Group E : 8 mg INCB057643 + Ruxolitinib 20mg",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy based on protocol-specific criteria. Part 3 will determine the MTD and/or a tolerated dose of the combination of INCB057643 and one of the SOC agents (Ruxolitinib) in Myelofibrosis."
+        },
+        {
+          "label": "Part3/Treatment Group F : 8 mg INCB057643 + Azacitidine 75mg",
+          "type": "EXPERIMENTAL",
+          "description": "Initial cohort dose of INCB054763 monotherapy based on protocol-specific criteria. Part 3 will determine the MTD and/or a tolerated dose of the combination of INCB057643 and one of the SOC agents (Azacitidine) in Acute Myeloid Leukemia and Myelodysplastic Syndrome"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Treatment Emergent Adverse Events (TEAE's)."
+      ],
+      "secondaryEndpoints": [
+        "Percent Inhibition of Total Cellular Myc Protein Concentrations Before and After Administration of INCB057643 When Administered as Monotherapy in an Ex-vivo Assay",
+        "Objective Response Rate (ORR) With INCB057643 in Solid Tumors",
+        "Cmax: Maximum Observed Plasma Concentration of INCB057643.",
+        "Tmax: Time to Maximum Plasma Concentration of INCB057643",
+        "AUC0-t: Area Under the Single-dose Plasma Concentration-time Curve of INCB057643",
+        "AUC0-24: Area Under the Steady-state Plasma Concentration-time Curve of INCB057643 Administered as Monotherapy",
+        "Part 2 - Cmax: Maximum Observed Plasma Concentration of INCB057643.",
+        "Part 2-Tmax: Time to Maximum Plasma Concentration of INCB057643",
+        "AUC0-24: Area Under the Steady-state Plasma Concentration-time Curve of INCB057643 Administered as Monotherapy"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02711137",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02711137",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02711137",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02711137",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02711137",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -6917,6 +8319,277 @@
       "changeLog": []
     },
     {
+      "id": "limber",
+      "nctId": "NCT04279847",
+      "protocolNumber": "INCB 57643-103",
+      "acronym": "LIMBER",
+      "title": "A Phase 1, Open-Label, Safety and Tolerability Study of INCB057643 in Participants With Myelofibrosis and Other Advanced Myeloid Neoplasms",
+      "briefTitle": "Safety and Tolerability Study of INCB057643 in Participants With Myelofibrosis and Other Advanced Myeloid Neoplasms",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Myelofibrosis",
+        "Myelodysplastic Syndrome",
+        "Myelodysplastic/Myeloproliferative Neoplasm Overlap Syndrome",
+        "Myeloproliferative Neoplasm",
+        "Relapsed or Refractory Primary Myelofibrosis",
+        "Secondary Myelofibrosis (Post-Polycythemia Vera Myelofibrosis, Post-Essential Thrombocythemia Myelofibrosis)",
+        "ET (Essential Thrombocythemia)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D055728",
+          "term": "Primary Myelofibrosis"
+        },
+        {
+          "id": "D009190",
+          "term": "Myelodysplastic Syndromes"
+        },
+        {
+          "id": "D009196",
+          "term": "Myeloproliferative Disorders"
+        },
+        {
+          "id": "D012008",
+          "term": "Recurrence"
+        },
+        {
+          "id": "D013920",
+          "term": "Thrombocythemia, Essential"
+        }
+      ],
+      "startDate": {
+        "value": "2021-02-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-04-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-04-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 140,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1 : INCB057643 Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "INCB057643 dose escalation and dose expansion"
+        },
+        {
+          "label": "Part 2 : INCB057643 Combination with Ruxolitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Combination arm in dose escalation and dose expansion"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of treatment-emergent adverse events"
+      ],
+      "secondaryEndpoints": [
+        "Spleen Volume Response",
+        "Duration of a Spleen Volume Response from baseline (MF only)",
+        "Symptom Response Rate (MF or ET)",
+        "Anemia Response (MF only)",
+        "Duration of Anemia Response (MF only)",
+        "Changes in hemoglobin value from baseline (MF only)",
+        "Red Blood Cell (RBC) Transfusion Burden (MF only)",
+        "Overall response (ET only)",
+        "Duration of platelet count reduction or White Blood Cell (WBC) count reduction (ET only)",
+        "Bone Marrow (BM) Blast Complete Remission (MF, myelodysplastic syndrome (MDS), and MDS/myeloproliferative neoplasm (MPN))",
+        "BM Blast Partial Remission (MF, MDS, and MDS/MPN)",
+        "Peripheral Blast Complete Remission (MF, MDS, and MDS/MPN)",
+        "Peripheral Blast Partial Remission (MF, MDS, and MDS/MPN)",
+        "Durable Blast Complete or Partial remission (MF, MDS, and MDS/MPN)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279847",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279847",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279847",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279847",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04279847",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-00928-104",
+      "nctId": "NCT04455841",
+      "protocolNumber": "INCB 00928-104",
+      "title": "A Phase 1/2 Open-Label, Multicenter Study of INCB000928 Administered as a Monotherapy or in Combination With Ruxolitinib in Participants With Anemia Due to Myeloproliferative Disorders",
+      "briefTitle": "INCB000928 Administered as a Monotherapy or in Combination With Ruxolitinib in Participants With Anemia Due to Myeloproliferative Disorders",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Anemia",
+        "Post-essential Thrombocythemia Myelofibrosis",
+        "Post-polycythemia Vera Myelofibrosis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000740",
+          "term": "Anemia"
+        }
+      ],
+      "startDate": {
+        "value": "2021-03-19",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-04-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-09-08",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 84,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment Group A (TGA)",
+          "type": "EXPERIMENTAL",
+          "description": "INCB000928 will be administered once daily (QD)."
+        },
+        {
+          "label": "Treatment Group B (TGB)",
+          "type": "EXPERIMENTAL",
+          "description": "INCB000928 will be administered in combination with ruxolitinib."
+        },
+        {
+          "label": "Treatment Group C (TGC)",
+          "type": "EXPERIMENTAL",
+          "description": "INCB000928 will be administered in combination with ruxolitinib."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants With Any Treatment-emergent Adverse Event (TEAE) and Any Treatment-emergent Serious Adverse Event (SAE)",
+        "Number of Participants With Any ≥Grade 3 TEAE and Any Treatment-emergent SAE",
+        "Number of Participants With Dose-limiting Toxicities (DLTs)",
+        "Maximum Tolerated Dose (MTD)",
+        "Recommended Dose for Expansion (RDE)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants With Anemia Response",
+        "Duration of Anemia Response",
+        "Mean Change From Baseline in the Hgb Value Over 12-week Treatment Periods",
+        "Rate of Red Blood Cell (RBC) Transfusion From Week 24 Through Week 48",
+        "Splenic Volume Response Rate at Week 24",
+        "Spleen Length Response",
+        "Overall Response Rate (ORR)",
+        "Progression-free Survival (PFS)",
+        "Leukemia-free Survival (LFS)",
+        "Cmax of Zilurgisertib Alone",
+        "Tmax of Zilurgisertib",
+        "AUC0-t of Zilurgisertib",
+        "Percentage Change in Hepcidin From Cycle 1 Day 15 to Cycle 7 Day 1",
+        "Change From Baseline in Ferritin",
+        "Change From Baseline in Hemoglobin at the End of Treatment"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04455841",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04455841",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04455841",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04455841",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04455841",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "incb-50465-108",
       "nctId": "NCT04831944",
       "protocolNumber": "INCB 50465-108",
@@ -7510,6 +9183,131 @@
       "changeLog": []
     },
     {
+      "id": "incb-39110-213-limber-213",
+      "nctId": "NCT04629508",
+      "protocolNumber": "INCB 39110-213/LIMBER-213",
+      "title": "A 2-Part, Phase 2, Open-Label Study of the Safety, Tolerability, and Efficacy of Itacitinib Immediate Release in Participants With Primary Myelofibrosis or Secondary Myelofibrosis (Post-Polycythemia Vera Myelofibrosis or Post-Essential Thrombocythemia Myelofibrosis) Who Have Received Prior Ruxolitinib and/or Fedratinib Monotherapy",
+      "briefTitle": "To Assess the Safety, Tolerability and Efficacy of Itacitinib Immediate Release Tablets in Participants With Primary or Secondary Myelofibrosis Who Have Received Prior Ruxolitinib and/or Fedratinib Monotherapy (LIMBER-213)",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Myelofibrosis",
+        "Polycythemia Vera",
+        "Thrombocythemia"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D055728",
+          "term": "Primary Myelofibrosis"
+        },
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        },
+        {
+          "id": "D013922",
+          "term": "Thrombocytosis"
+        },
+        {
+          "id": "D009196",
+          "term": "Myeloproliferative Disorders"
+        }
+      ],
+      "startDate": {
+        "value": "2021-07-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-08-24",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-08-24",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 4,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1 : Dose Escalation of itacitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be dosed at different dose levels with a maximum of up to 9 participants per dose level."
+        },
+        {
+          "label": "Part 2 : Dose Expansion of itacitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be dosed at the recommended Phase 2 dose (RP2D) identified in Part 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1: Number of Participants With Any Treatment-emergent Adverse Event (TEAE)",
+        "Part 1: Number of Participants With Any Grade 3 or Higher TEAE",
+        "Part 2: Splenic Response Rate (SRR) at Week 24"
+      ],
+      "secondaryEndpoints": [
+        "Part 2: Number of Participants With Any TEAE",
+        "Part 2: Number of Participants With Any Grade 3 or Higher TEAE",
+        "Part 2: Total Symptom Score (TSS) Response Rate at Week 24",
+        "Part 2: Mean Change (From Day 1 Versus Week 12 and Week 24) in the 5 Multi-item Functional Scale Scores and the Multi-item Global Health Status Scale Score (EORTC QLQ-C30)",
+        "Part 2: Percentage of Participants Categorized as Improved on the Week 24 Patient Global Impression of Change (PGIC)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04629508",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04629508",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04629508",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04629508",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04629508",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "incb-18424-305",
       "nctId": "NCT04921969",
       "protocolNumber": "INCB 18424-305",
@@ -7872,6 +9670,117 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT04839380",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-18424-215",
+      "nctId": "NCT05127421",
+      "protocolNumber": "INCB 18424-215",
+      "title": "A Phase 2, Efficacy and Safety Study of Ruxolitinib Cream in Participants With Facial and/or Neck Atopic Dermatitis Involvement",
+      "briefTitle": "Ruxolitinib Cream in Participants With Facial and/or Neck Atopic Dermatitis Involvement",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        }
+      ],
+      "startDate": {
+        "value": "2021-11-10",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-08-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-09-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 77,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Double-blind Period: vehicle cream or Ruxolitinib cream 1.5% BID",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will be treated with ruxolitinib cream 1.5% or vehicle cream twice a day (BID) in a double-blind fashion."
+        },
+        {
+          "label": "Open Label Extension: Ruxolitiib cream 1.5%",
+          "type": "EXPERIMENTAL",
+          "description": "Patients will be treated with Ruxoltinib cream 1.5% twice per day (BID) during the open label extension period. Participants who complete the double-blind period will continue into this open-label extension period for an additional 4 weeks of treatment."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Who Achieve a ≥75% Improvement in the Eczema Area and Severity Index Score (EASI75) of the Head and Neck Region at Week 4"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Who Achieve an EASI75 of the Head and Neck Region at Weeks 2 and 8",
+        "Percentage of Participants Who Achieve an Overall EASI75 at Weeks 2, 4, and 8",
+        "Double-Blind Period: Number of Participants With Any Treatment-emergent Adverse Event (TEAE)",
+        "Open-Label Period: Number of Participants With Any TEAE",
+        "Double-Blind Period: Number of Participants With Any Grade 3 or Higher TEAE",
+        "Open-Label Period: Number of Participants With Any Grade 3 or Higher TEAE"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05127421",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05127421",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05127421",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05127421",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05127421",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -8248,6 +10157,139 @@
         "postedResults": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT05073458?tab=results",
           "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb-18424-217",
+      "nctId": "NCT05247489",
+      "protocolNumber": "INCB 18424-217",
+      "title": "A Safety and Efficacy Study of Ruxolitinib Cream Combined With Narrow-Band Ultraviolet B Phototherapy in Participants With Vitiligo",
+      "briefTitle": "A Study to Evaluate the Safety and Efficacy of Ruxolitinib Cream With Phototherapy in Participants With Vitiligo",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Vitiligo"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D014820",
+          "term": "Vitiligo"
+        },
+        {
+          "id": "D017496",
+          "term": "Hypopigmentation"
+        },
+        {
+          "id": "D010859",
+          "term": "Pigmentation Disorders"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        }
+      ],
+      "startDate": {
+        "value": "2022-05-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-12-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2023-12-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 55,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "99 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group A: Ruxolitinib + Narrow-Band Ultraviolet B Phototherapy (NB-UVB)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will initially apply ruxolitinib 1.5%mg cream as a monotherapy. At week 12, those who have \\< 25% improvement in total body Vitiligo Area Scoring Index (T-VASI25) will have NB-UVB phototherapy added to their ruxolitinib 1.5% cream BID regimen. NB-UVB will be given 3 times per week starting at Week 12 through Week 48 (36 weeks). For participants who receive combination therapy, NB-UVB machines will be supplied by the sponsor for at home use during the study."
+        },
+        {
+          "label": "Group B: Ruxolitinib Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will apply ruxolitinib 1.5% cream BID as monotherapy. Participants who have ≥ T-VASI25 at Week 12 will continue on ruxolitinib 1.5% cream BID alone."
+        }
+      ],
+      "primaryEndpoints": [
+        "Change From Baseline in Total Body Vitiligo Area Scoring Index (T-VASI) at Week 48"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Any Treatment-emergent Adverse Event (TEAE)",
+        "Percentage of Participants Achieving a ≥50% Improvement From Baseline in the Face Vitiligo Area Scoring Index (F-VASI50) Score at Each Post-Baseline Visit",
+        "Percentage of Participants Achieving a ≥75% Improvement From Baseline in the Face Vitiligo Area Scoring Index (F-VASI75) Score at Each Post-Baseline Visit",
+        "Percentage of Participants Achieving a ≥90% Improvement From Baseline in the Face Vitiligo Area Scoring Index (F-VASI90) Score at Each Post-Baseline Visit",
+        "Percentage of Participants Achieving a ≥50% Improvement From Baseline in the Total Body Vitiligo Area Scoring Index (T-VASI50) Score at Each Post-Baseline Visit",
+        "Percentage of Participants Achieving a ≥75% Improvement From Baseline in the Total Body Vitiligo Area Scoring Index (T-VASI75) Score at Each Post-Baseline Visit",
+        "Percentage of Participants Achieving a ≥90% Improvement From Baseline in the Total Body Vitiligo Area Scoring Index (T-VASI90) Score at Each Post-Baseline Visit",
+        "Change From Baseline in F-VASI at Each Post-Baseline Visit",
+        "Percentage Change From Baseline in F-VASI at Each Post-Baseline Visit",
+        "Change From Baseline in T-VASI at Each Post-Baseline Visit",
+        "Percentage Change From Baseline in T-VASI at Each Post-Baseline Visit",
+        "Change From Baseline in Facial Body Surface Area (F-BSA) at Each Post-Baseline Visit",
+        "Percentage Change From Baseline in F-BSA at Each Post-Baseline Visit",
+        "Change From Baseline in Total Body Surface Area (T-BSA) at Each Post-Baseline Visit",
+        "Percentage Change From Baseline in T-BSA at Each Post-Baseline Visit",
+        "Plasma Concentration of Ruxolitinib at Weeks 4, 12, and 16"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05247489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05247489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05247489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05247489",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05247489",
+          "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
         }
@@ -9139,6 +11181,104 @@
       "changeLog": []
     },
     {
+      "id": "myelofibrosis",
+      "nctId": "NCT05762874",
+      "protocolNumber": "myelofibrosis",
+      "title": "Safety and Effectiveness of Ruxolitinib in Patients With Myelofibrosis",
+      "briefTitle": "Ruxolitinib in Patients With Myelofibrosis",
+      "phase": "NA",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/215309Orig1s001.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "UNKNOWN",
+      "sponsor": "Assiut University",
+      "sponsorClass": "OTHER",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Myelofibrosis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D055728",
+          "term": "Primary Myelofibrosis"
+        }
+      ],
+      "startDate": {
+        "value": "2023-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-03-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2025-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 51,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "decrease of spleen size",
+        "symptoms burden"
+      ],
+      "secondaryEndpoints": [
+        "adverse events of Ruxolitinib on myleofibrosis patients according to WHO criteria of drug toxicity"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05762874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05762874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05762874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05762874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05762874",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "true-pn1",
       "nctId": "NCT05755438",
       "protocolNumber": "INCB 18424-319",
@@ -9739,6 +11879,136 @@
       "changeLog": []
     },
     {
+      "id": "pv",
+      "nctId": "NCT05870475",
+      "protocolNumber": "IIT2023018",
+      "acronym": "PV",
+      "title": "A Randomized Controlled Study Evaluating the Efficacy and Safety of Pegylated Interferon α-2b in Combination With Ruxolitinib vs. Pegylated Interferon α-2b Monotherapy for Treating Hydroxyurea-resistant/Intolerant Polycythemia Vera",
+      "briefTitle": "Pegylated Interferon α-2b in Combination With Ruxolitinib for Treating Hydroxyurea-resistant/Intolerant PV",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/215309Orig1s001.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "Institute of Hematology & Blood Diseases Hospital, China",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
+      "startDate": {
+        "value": "2023-06-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-03-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-05-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 94,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "pegylated interferon α-2b in combination with ruxolitinib group",
+          "type": "EXPERIMENTAL",
+          "description": "Pegylated interferon α-2b in combination with ruxolitinib group: Pegylated interferon α-2b at a starting dose of 180ug, subcutaneous injection once a week; ruxolitinib at a starting dose of 10mg, orally administered twice daily."
+        },
+        {
+          "label": "Pegylated interferon α-2b group",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Pegylated interferon α-2b group: Starting dose of 180ug, subcutaneous injection once a week.\n\nIf complete hematological remission is not achieved after 12 weeks of treatment with pegylated interferon α-2b alone, cross-over to the pegylated interferon α-2b plus ruxolitinib group is allowed; if ruxolitinib is not tolerated, cross-over to the pegylated interferon α-2b alone group is allowed."
+        }
+      ],
+      "primaryEndpoints": [
+        "The cumulative complete hematologic response (CHR) rate"
+      ],
+      "secondaryEndpoints": [
+        "Cumulative CHR rates at Week 36.",
+        "Cumulative CHR rates at Week 52.",
+        "Time to CHR",
+        "The CHR rates after crossover",
+        "The rate of reduction in JAK2V617F, CALR, or MPL gene mutation burden.",
+        "Impact of therapy on non-driver mutations",
+        "Change of splenomegaly",
+        "Change of bone marrow pathology",
+        "The incidence of major thrombotic events",
+        "The incidence of major bleeding events",
+        "The incidence of progressing to acute leukemia",
+        "Change in Myeloproliferative Neoplasm Symptom Assessment Form total symptom score",
+        "Change of quality of life using QLQ-C30 V3.0 questionnaire.",
+        "Change of microcirculation disturbance",
+        "Specific pre-defined toxicity"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05870475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05870475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05870475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05870475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05870475",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "incb-18424-226",
       "nctId": "NCT05906628",
       "protocolNumber": "INCB 18424-226",
@@ -9872,6 +12142,121 @@
       "changeLog": []
     },
     {
+      "id": "prevent",
+      "nctId": "NCT05872477",
+      "protocolNumber": "22-PP-16",
+      "acronym": "PREVENT",
+      "title": "Promoting Repigmentation After Epidermal Cell Suspension Grafting and preVENTing the Loss of Melanocytes Using Topical Ruxolitinib for Vitiligo in Resistant Areas. Prospective Monocentric Interventional Study With Blinded Evaluation",
+      "briefTitle": "Promoting Repigmentation After Epidermal Cell Suspension Grafting and preVENTing the Loss of Melanocytes Using Topical Ruxolitinib for Vitiligo in Resistant Areas",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/215309Orig1s001.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Centre Hospitalier Universitaire de Nice",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Vitiligo"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D014820",
+          "term": "Vitiligo"
+        }
+      ],
+      "startDate": {
+        "value": "2023-09-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-02-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-01-10",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 20,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Group treatment",
+          "type": "EXPERIMENTAL",
+          "description": "There will be 2 arms with intra individual comparison. After 7 days the dressing will be removed. Each grafted side of the body will be randomly assigned to receive twice daily application of topical 1.5% ruxolitinib cream After 3 months, both sides will be treated by twice daily applications of topical ruxolitinib for 3 additional months."
+        },
+        {
+          "label": "group placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Each grafted side of the body will be randomly assigned to receive twice daily application of placebo cream (Group B).\n\nAfter 3 months, both sides will be treated by twice daily applications of topical ruxolitinib for 3 additional months."
+        }
+      ],
+      "primaryEndpoints": [
+        "Repigmentation of the target area"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05872477",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05872477",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05872477",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05872477",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05872477",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "opera-1",
       "nctId": "NCT06259669",
       "protocolNumber": "INCB18424-MA-IAI-402",
@@ -9984,6 +12369,409 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT06259669",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "inca-33989-101",
+      "nctId": "NCT05936359",
+      "protocolNumber": "INCA 33989-101",
+      "title": "A Phase 1, Open-Label, Multicenter Study of INCA033989 Administered as a Monotherapy or in Combination With Ruxolitinib in Participants With Myeloproliferative Neoplasms",
+      "briefTitle": "A Study to Evaluate INCA033989 Administered as a Monotherapy or in Combination With Ruxolitinib in Participants With Myeloproliferative Neoplasms",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Myeloproliferative Neoplasms"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009196",
+          "term": "Myeloproliferative Disorders"
+        },
+        {
+          "id": "D055728",
+          "term": "Primary Myelofibrosis"
+        },
+        {
+          "id": "D013920",
+          "term": "Thrombocythemia, Essential"
+        }
+      ],
+      "startDate": {
+        "value": "2023-09-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-02-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-02-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 160,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1a Dose Escalation Cohort Disease Group A - with MF",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered at a protocol defined starting regimen in 28-day cycles as monotherapy to identify the maximum tolerated dose (MTD) and/or recommended dose for expansion (RDE\\[s\\]). Participants with myelofibrosis (MF) will enroll in this group."
+        },
+        {
+          "label": "Part 1a Dose Escalation Cohort Disease Group A - with ET",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered at a protocol defined starting regimen in 28-day cycles as monotherapy to identify the maximum tolerated dose (MTD) and/or recommended dose for expansion (RDE\\[s\\]). Participants with with essential thrombocythemia (ET) will enroll in this group."
+        },
+        {
+          "label": "Part 1a: Dose Escalation Cohort Disease Group B - with TGB-MF SubOpt R",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered at a protocol defined starting regimen in 28- day cycles and will allow for the evaluation of INCA033989 in combination with ruxolitinib to identify the maximum tolerated dose (MTD) and/or recommended dose for expansion (RDE\\[s\\]). Participants with myelofibrosis (MF) exhibiting suboptimal response (SubOpt R) will enroll in this group."
+        },
+        {
+          "label": "Part 1b: Dose Expansion - with MF",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered as monotherapy at the RDE(s) identified during Part 1a. Participants with treatment group A (TGA) myelofibrosis MF will enroll in this group."
+        },
+        {
+          "label": "Part 1b: Dose Expansion - with TGB-MF SubOpt R",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered as an add-on therapy in combination with ruxolitinibat at the RDE(s) identified during Part 1a. Participants with treatment Group B (TGB) MF SubOpt R will enroll in this group."
+        },
+        {
+          "label": "Part 1b: Dose Expansion - with ET",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered as monotherapy at the RDE(s) identified during Part 1a. Participants with treatment group A (TGA) essential thrombocythemia (ET) will enroll in this group."
+        },
+        {
+          "label": "Part 1c: Dose Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered at the dose level found to exhibit an overall positive benefit/risk as monotherapy or as combination therapy with Ruxolitinib. Participants with myelofibrosis (MF) will enroll in this group. The participants enrolled in the monotherapy arm will be offered the option to crossover to combination therapy with ruxolitinib if a suboptimal response to monotherapy is observed after 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with Dose Limiting Toxicities (DLTs)",
+        "Number of participants with Treatment-emergent Adverse Events (TEAEs)",
+        "Number of participants with TEAEs leading to dose modification or discontinuation"
+      ],
+      "secondaryEndpoints": [
+        "Participants with MF: Response using the revised IWG-MRT and ELN response criteria for MF",
+        "Participants With MF: Percentage of participants achieving spleen volume reduction as defined in the protocol",
+        "Participants with MF with symptomatic anemia: Anemia Response",
+        "Participants With ET: Response Rate",
+        "Participants With ET: Mean change from baseline of total symptom score (TSS)",
+        "Mean change in disease-related allele burden",
+        "Pharmacokinetics Parameter: Cmax of INCA33989",
+        "Pharmacokinetics Parameter: Tmax of INCA033989",
+        "Pharmacokinetics Parameter: Cmin of INCA33989",
+        "Pharmacokinetics Parameter: AUC(0-t) of INCA33989",
+        "Pharmacokinetics Parameter: AUC 0-∞ of INCA33989",
+        "Pharmacokinetics Parameter: CL/F of INCA33989",
+        "Pharmacokinetics Parameter: Vz/F of INCA33989",
+        "Pharmacokinetics Parameter: t1/2 of INCA33989"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05936359",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05936359",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05936359",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05936359",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05936359",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "inca33989-102",
+      "nctId": "NCT06034002",
+      "protocolNumber": "INCA33989-102",
+      "title": "A Phase 1, Open-Label, Multicenter Study of INCA033989 Administered as a Monotherapy or in Combination With Ruxolitinib in Participants With Myeloproliferative Neoplasms",
+      "briefTitle": "A Study to Evaluate INCA033989 Administered as a Monotherapy or in Combination With Ruxolitinib in Participants With Myeloproliferative Neoplasms",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Myeloproliferative Neoplasms"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D009196",
+          "term": "Myeloproliferative Disorders"
+        },
+        {
+          "id": "D055728",
+          "term": "Primary Myelofibrosis"
+        },
+        {
+          "id": "D013920",
+          "term": "Thrombocythemia, Essential"
+        }
+      ],
+      "startDate": {
+        "value": "2023-12-04",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-10-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-10-29",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 290,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "SEQUENTIAL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1a Dose Escalation Cohort Disease Group A - with MF",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered at a protocol defined starting regimen in 28-day cycles to identify the maximum tolerated dose (MTD) and/or recommended dose for expansion (RDE\\[s\\]). Participants with myelofibrosis (MF) will enroll in this group."
+        },
+        {
+          "label": "Part 1a Dose Escalation Cohort Disease Group A - with ET",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered at a protocol defined starting regimen in 28-day cycles to identify the maximum tolerated dose (MTD) and/or recommended dose for expansion (RDE\\[s\\]). Participants with essential thrombocythemia (ET) will enroll in this group."
+        },
+        {
+          "label": "Part 1a: Dose Escalation Cohort Disease Group B - with TGB-MF SubOpt R",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered at a protocol defined starting regimen in 28- day cycles and will allow for the evaluation of INCA033989 in combination with ruxolitinib to identify the maximum tolerated dose (MTD) and/or recommended dose for expansion (RDE\\[s\\]). Participants with myelofibrosis (MF) exhibiting suboptimal response (SubOpt R) will enroll in this group."
+        },
+        {
+          "label": "Part 1b: Dose Expansion - with MF",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered as monotherapy at the RDE(s) identified during Part 1a. Participants with treatment group A (TGA) myelofibrosis MF will enroll in this group."
+        },
+        {
+          "label": "Part 1b: Dose Expansion - with TGB-MF SubOpt R",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered as an add-on therapy in combination with ruxolitinibat at the RDE(s) identified during Part 1a. Participants with treatment Group B (TGB) MF SubOpt R will enroll in this group."
+        },
+        {
+          "label": "Part 1b: Dose Expansion - with ET",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered as monotherapy at the RDE(s) identified during Part 1a. Participants with treatment group A (TGA) essential thrombocythemia (ET) will enroll in this group."
+        },
+        {
+          "label": "Part 1c: Dose Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "INCA033989 will be administered at the dose level found to exhibit an overall positive benefit/risk as monotherapy or as combination therapy with Ruxolitinib. Participants with myelofibrosis (MF) will enroll in this group. The participants enrolled in the monotherapy arm will be offered the option to crossover to combination therapy with ruxolitinib if a suboptimal response to monotherapy is observed after 12 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with Dose Limiting Toxicities (DLTs)",
+        "Number of participants with Treatment-emergent Adverse Events (TEAEs)"
+      ],
+      "secondaryEndpoints": [
+        "Participants with MF: Response using the revised IWG-MRT and ELN response criteria for MF",
+        "Participants With MF: Percentage of participants achieving spleen volume reduction as defined in the protocol",
+        "Participants with symptomatic anemia: Anemia Response as defined in the protocol",
+        "Participants with ET: Response using the revised IWG-MRT and ELN response criteria for ET",
+        "Incidence of AEs, ECGs, vital signs, and clinical laboratory evaluation",
+        "Percentage of participants achieving ≥ 50% reduction from baseline in total symptom score (TSS)",
+        "Mean change from baseline in TSS",
+        "Mean change in disease-related allele burden",
+        "Pharmacokinetics Parameter: Cmax of INCA033989 alone or for the combination of INCA033989 with ruxolitinib",
+        "Pharmacokinetics Parameter: Tmax of INCA033989 alone or for the combination of INCA033989 with ruxolitinib",
+        "Pharmacokinetics Parameter: Cmin of INCA033989 alone or for the combination of INCA033989 with ruxolitinib",
+        "Pharmacokinetics Parameter: AUC(0-t) of INCA033989 alone or for the combination of INCA033989 with ruxolitinib",
+        "Pharmacokinetics Parameter: AUC 0-∞ of INCA033989 alone or for the combination of INCA033989 with ruxolitinib",
+        "Pharmacokinetics Parameter: CL/F of INCA033989 alone or for the combination of INCA033989 with ruxolitinib",
+        "Pharmacokinetics Parameter: Vz/F of INCA033989 alone or for the combination of INCA033989 with ruxolitinib",
+        "Pharmacokinetics Parameter: t1/2 of INCA033989 alone or for the combination of INCA033989 with ruxolitinib"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06034002",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb18424-110",
+      "nctId": "NCT06213831",
+      "protocolNumber": "INCB18424-110",
+      "title": "A Maximal Use Trial of Ruxolitinib Cream in Adult Participants With Prurigo Nodularis",
+      "briefTitle": "A Study to Evaluate the Safety and Tolerability of Maximal Use Ruxolitinib Cream",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Prurigo Nodularis"
+      ],
+      "startDate": {
+        "value": "2024-02-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-07-17",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-07-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 23,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Maximal Use Ruxolitinib 1.5%",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will apply ruxolitinib 1.5% cream BID through Week 4 to all pruriginous lesions. At Week 4, participants who have completed 4 weeks of treatment with no safety concerns may enter the optional 4-week treatment extension period, during which all participants will apply ruxolitinib 1.5% cream BID to existing pruriginous lesions."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with Treatment-emergent Adverse Events (TEAEs)",
+        "Number of participants with TEAEs leading to dose interruption or discontinuation"
+      ],
+      "secondaryEndpoints": [
+        "Ruxolitinib pharmacokinetic (PK) parameters in plasma"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06213831",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06213831",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06213831",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06213831",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06213831",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -10283,6 +13071,103 @@
       "changeLog": []
     },
     {
+      "id": "review",
+      "nctId": "NCT06251102",
+      "protocolNumber": "MPN0224",
+      "acronym": "REVIEW",
+      "title": "Real-world Ruxolitinib Experience in Polycythemia Vera: REVIEW Study",
+      "briefTitle": "Real-world Ruxolitinib Experience in PV",
+      "phase": "NA",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/215309Orig1s001.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "UNKNOWN",
+      "sponsor": "Gruppo Italiano Malattie EMatologiche dell'Adulto",
+      "sponsorClass": "OTHER",
+      "studyType": "OBSERVATIONAL",
+      "conditions": [
+        "Polycythemia Vera"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011087",
+          "term": "Polycythemia Vera"
+        }
+      ],
+      "startDate": {
+        "value": "2024-07-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-07-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2025-07-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 153,
+        "type": "ESTIMATED"
+      },
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [
+        "effectiveness of ruxolitinib"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06251102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06251102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06251102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06251102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06251102",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "incb018424-154",
       "nctId": "NCT06555081",
       "protocolNumber": "INCB018424-154",
@@ -10386,6 +13271,125 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT06555081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "inca34176-254",
+      "nctId": "NCT06388564",
+      "protocolNumber": "INCA34176-254",
+      "title": "A Phase 2, Open-Label, Randomized, Multicenter Study to Evaluate the Safety and Efficacy of Axatilimab in Combination With Ruxolitinib in Participants With Newly Diagnosed Chronic Graft-Versus-Host Disease",
+      "briefTitle": "A Study to Evaluate the Safety and Efficacy of Axatilimab in Combination With Ruxolitinib in Participants With Newly Diagnosed Chronic Graft-Versus-Host Disease",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Chronic Graft-versus-host-disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000092122",
+          "term": "Bronchiolitis Obliterans Syndrome"
+        }
+      ],
+      "startDate": {
+        "value": "2024-10-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-10-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-03-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 130,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment Group A",
+          "type": "EXPERIMENTAL",
+          "description": "Axatilimab will be administered at a protocol defined starting dose plus ruxolitinib at a protocol defined starting dose."
+        },
+        {
+          "label": "Treatment Group B",
+          "type": "EXPERIMENTAL",
+          "description": "Ruxolitinib will be administered at a protocol defined starting dose."
+        },
+        {
+          "label": "Treatment Group C",
+          "type": "EXPERIMENTAL",
+          "description": "Corticosteroids alone will be administered at a protocol defined starting dose."
+        }
+      ],
+      "primaryEndpoints": [
+        "Objective Response Rate"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants with Treatment-emergent Adverse Events (TEAEs)",
+        "Duration of Response",
+        "Proportion of participants with a ≥ 7-point improvement in modified Lee symptom scale (mLSS) score",
+        "Best overall response in the first 6 months",
+        "OR at 12 months, defined as CR or PR at 12 months (C14D1) in the absence of new systemic therapy for cGVHD.",
+        "Proportion of participants who remain corticosteroid-free",
+        "Organ-specific response in the first 6 cycles and on study, based on the 2014 NIH Consensus Development Project on Criteria for Clinical Trials in cGVHD.",
+        "Failure-free Survival (FFS)",
+        "Axatilimab pharmacokinetic (PK) in Plasma",
+        "Ruxolitinib PK in Plasma"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06388564",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06388564",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06388564",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06388564",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06388564",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -10645,6 +13649,149 @@
       "changeLog": []
     },
     {
+      "id": "incb018424-325",
+      "nctId": "NCT06958211",
+      "protocolNumber": "INCB018424-325",
+      "title": "A Phase 3, Double-Blind, Randomized, Vehicle-Controlled, Efficacy and Safety Study of Ruxolitinib Cream in Participants With Hidradenitis Suppurativa",
+      "briefTitle": "Study to Evaluate the Efficacy and Safety of Ruxolitinib Cream in Participants With Hidradenitis Suppurativa (TRuE-HS2)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hidradenitis Suppurativa"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D017497",
+          "term": "Hidradenitis Suppurativa"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        }
+      ],
+      "startDate": {
+        "value": "2025-06-12",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-10-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-07-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 573,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib 1.5 % Cream",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received ruxolitinib 1.5% cream, applied topically to the affected area as defined in the protocol."
+        },
+        {
+          "label": "Vehicle Cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received vehicle cream, applied topically to the affected area as defined by the protocol."
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of participants who achieve Hidradenitis Suppurativa (HS) Clinical Response 75 (HiSCR75) from baseline"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of participants with ≥ 1 flare",
+        "Proportion of participants who achieve HiSCR50",
+        "Proportion of participants who achieve Skin Pain Numeric Rating Scale (NRS)3 among participants with baseline Skin Pain NRS score ≥ 3",
+        "Treatment-IR Population: Proportion of participants who achieve Hidradenitis Suppurativa Clinical Response 75 (HiSCR75) from baseline",
+        "Treatment-IR Population: Proportion of participants with ≥ 1 HS flare",
+        "Treatment-IR Population: Proportion of participants who achieve Skin Pain Numeric Rating Scale (NRS)3 among participants with baseline Skin Pain NRS score ≥ 3",
+        "Proportion of participants who achieve HiSCR50/75/90/100 at each postbaseline visit",
+        "Extension Period: Proportion of participants with ≥ 1 HS flare",
+        "Proportion of participants who achieve abscess and/or inflammatory nodule (AN)75 at each postbaseline visit",
+        "Mean change from baseline in total AN count at each postbaseline visit",
+        "Percentage change from baseline in total AN count at each postbaseline visit",
+        "Mean change from baseline in abscess count at each postbaseline visit",
+        "Percentage change from baseline in abscess count at each postbaseline visit",
+        "Mean change from baseline in inflammatory nodule count at each postbaseline visit",
+        "Percentage change from baseline in inflammatory nodule count at each postbaseline visit",
+        "Proportion of participants with presence of draining tunnels at each postbaseline visit",
+        "Proportion of participants who achieve Skin Pain Numeric Rating Scale (NRS)3 among participants with baseline Skin Pain NRS score ≥ 3 at each postbaseline visit",
+        "Proportion of participants who achieve Itch Numeric Rating Scale (NRS)30 among participants with baseline Itch NRS score ≥ 3 at each postbaseline visit",
+        "Proportion of participants who achieve Patient Global Impression of Change (PGIC) at each postbaseline visit",
+        "Proportion of participants who achieve PGIC score 1 or 2 at each postbaseline visit",
+        "Patient Global Impression of Severity (PGIS) score at each postbaseline visit",
+        "Change from baseline in PGIS Score at each postbaseline visit",
+        "Proportion of participants who achieve status of Dermatology Life Quality Index (DLQ1)4 at each postbaseline visit",
+        "Proportion of participants who achieve status of Children's Dermatology Life Quality Index (CDLQ1)6 at each postbaseline visit",
+        "Change from baseline in Hidradenitis Suppurativa Quality of Life (HiSQoL) score at each postbaseline visit",
+        "Percent change from baseline in Hidradenitis Suppurativa Quality of Life (HiSQoL) score at each postbaseline visit",
+        "Change from baseline in Hidradenitis Suppurativa Quality of Life - Adolescent (HiSQoL-AA) at each postbaseline visit",
+        "Percent change from baseline in Hidradenitis Suppurativa Quality of Life - Adolescent (HiSQoL-AA) at each postbaseline visit",
+        "Change from baseline in EuroQol 5-dimension 5-level scale (EQ-5D-5L) score at each postbaseline visit",
+        "Treatment-IR Population: Change from baseline in total abscess count at each postbaseline visit",
+        "Treatment-IR Population: Percent change from baseline in total abscess count at each postbaseline visit",
+        "Treatment-IR Population: Change from baseline in total inflammatory nodule count at each postbaseline visit",
+        "Treatment-IR Population: Percent change from baseline in total inflammatory nodule count at each postbaseline visit",
+        "Treatment-IR Population: Proportion of participants with presence of draining tunnels at each postbaseline visit",
+        "Number of Treatment Emergent Adverse Events (TEAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06958211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06958211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06958211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06958211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06958211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "true-ad5",
       "nctId": "NCT06832618",
       "protocolNumber": "INCB018424-316",
@@ -10787,6 +13934,383 @@
       "changeLog": []
     },
     {
+      "id": "incb018424-324",
+      "nctId": "NCT06959225",
+      "protocolNumber": "INCB018424-324",
+      "title": "A Phase 3, Double-Blind, Randomized, Vehicle-Controlled, Efficacy and Safety Study of Ruxolitinib Cream in Participants With Hidradenitis Suppurativa",
+      "briefTitle": "Study to Evaluate the Efficacy and Safety of Ruxolitinib Cream in Participants With Hidradenitis Suppurativa (TRuE-HS1)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hidradenitis Suppurativa"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D017497",
+          "term": "Hidradenitis Suppurativa"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        }
+      ],
+      "startDate": {
+        "value": "2025-06-23",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-10-29",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-07-11",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 580,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib 1.5 % Cream",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received ruxolitinib 1.5% cream, applied topically to the affected area as defined in the protocol."
+        },
+        {
+          "label": "Vehicle Cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants received vehicle cream, applied topically to the affected area as defined by the protocol."
+        }
+      ],
+      "primaryEndpoints": [
+        "Proportion of participants who achieve Hidradenitis Suppurativa (HS) Clinical Response 75 (HiSCR75) from baseline"
+      ],
+      "secondaryEndpoints": [
+        "Proportion of participants with ≥ 1 flare",
+        "Proportion of participants who achieve HiSCR50",
+        "Proportion of participants who achieve Skin Pain Numeric Rating Scale (NRS)3 among participants with baseline Skin Pain NRS score ≥ 3",
+        "Treatment-IR Population: Proportion of participants who achieve Hidradenitis Suppurativa Clinical Response 75 (HiSCR75) from baseline",
+        "Treatment-IR Population: Proportion of participants with ≥ 1 HS flare",
+        "Treatment-IR Population: Proportion of participants who achieve Skin Pain Numeric Rating Scale (NRS)3 among participants with baseline Skin Pain NRS score ≥ 3",
+        "Proportion of participants who achieve HiSCR50/75/90/100 at each postbaseline visit",
+        "Extension Period: Proportion of participants with ≥ 1 HS flare",
+        "Proportion of participants who achieve abscess and/or inflammatory nodule (AN)75 at each postbaseline visit",
+        "Mean change from baseline in total AN count at each postbaseline visit",
+        "Percentage change from baseline in total AN count at each postbaseline visit",
+        "Mean change from baseline in abscess count at each postbaseline visit",
+        "Percentage change from baseline in abscess count at each postbaseline visit",
+        "Mean change from baseline in inflammatory nodule count at each postbaseline visit",
+        "Percentage change from baseline in inflammatory nodule count at each postbaseline visit",
+        "Proportion of participants with presence of draining tunnels at each postbaseline visit",
+        "Proportion of participants who achieve Skin Pain Numeric Rating Scale (NRS)3 among participants with baseline Skin Pain NRS score ≥ 3 at each postbaseline visit",
+        "Proportion of participants who achieve Itch Numeric Rating Scale (NRS)30 among participants with baseline Itch NRS score ≥ 3 at each postbaseline visit",
+        "Proportion of participants who achieve Patient Global Impression of Change (PGIC) at each postbaseline visit",
+        "Proportion of participants who achieve PGIC score 1 or 2 at each postbaseline visit",
+        "Patient Global Impression of Severity (PGIS) score at each postbaseline visit",
+        "Change from baseline in PGIS Score at each postbaseline visit",
+        "Proportion of participants who achieve status of Dermatology Life Quality Index (DLQ1)4 at each postbaseline visit",
+        "Proportion of participants who achieve status of Children's Dermatology Life Quality Index (CDLQ1)6 at each postbaseline visit",
+        "Change from baseline in Hidradenitis Suppurativa Quality of Life (HiSQoL) score at each postbaseline visit",
+        "Percent change from baseline in Hidradenitis Suppurativa Quality of Life (HiSQoL) score at each postbaseline visit",
+        "Change from baseline in Hidradenitis Suppurativa Quality of Life - Adolescent (HiSQoL-AA) at each postbaseline visit",
+        "Percent change from baseline in Hidradenitis Suppurativa Quality of Life - Adolescent (HiSQoL-AA) at each postbaseline visit",
+        "Change from baseline in EuroQol 5-dimension 5-level scale (EQ-5D-5L) score at each postbaseline visit",
+        "Treatment-IR Population: Change from baseline in total abscess count at each postbaseline visit",
+        "Treatment-IR Population: Percent change from baseline in total abscess count at each postbaseline visit",
+        "Treatment-IR Population: Change from baseline in total inflammatory nodule count at each postbaseline visit",
+        "Treatment-IR Population: Percent change from baseline in total inflammatory nodule count at each postbaseline visit",
+        "Treatment-IR Population: Proportion of participants with presence of draining tunnels at each postbaseline visit",
+        "Number of Treatment Emergent Adverse Events (TEAEs)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06959225",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "rescue",
+      "nctId": "NCT07184853",
+      "protocolNumber": "Rux-Eta-SR-aGVHD",
+      "acronym": "RESCUE",
+      "title": "Prospective Multicenter Randomized Study of Ruxolitinib Plus Etanercept vs Ruxolitinib Alone for Corticosteroid-Refractory Severe Acute GVHD After Allogeneic HSCT",
+      "briefTitle": "Ruxolitinib Plus Etanercept vs Ruxolitinib for Steroid-Refractory Severe Acute GVHD",
+      "phase": "NA",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/215309Orig1s001.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "First Affiliated Hospital of Zhejiang University",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Graft vs Host Disease"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D006086",
+          "term": "Graft vs Host Disease"
+        }
+      ],
+      "startDate": {
+        "value": "2025-09-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-09-25",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-09-25",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 122,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "70 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib Monotherapy",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive ruxolitinib (10 mg orally twice daily, approximately every 12 hours, with or without food). Treatment will continue for up to 24 weeks. Dose reductions or discontinuation may occur according to protocol-defined safety and response criteria. Corticosteroid tapering will follow study guidelines."
+        },
+        {
+          "label": "Ruxolitinib Plus Etanercept",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive ruxolitinib (10 mg orally twice daily, approximately every 12 hours, with or without food) combined with etanercept (25 mg subcutaneous injection, twice weekly for 4 weeks, total 8 doses). Etanercept may be extended for an additional 2-4 weeks at investigator's discretion for patients with partial response. Treatment with ruxolitinib may continue for up to 24 weeks, with dose tapering per study protocol. Corticosteroid tapering will follow study guidelines."
+        }
+      ],
+      "primaryEndpoints": [
+        "Overall Response Rate (ORR) at Day 28"
+      ],
+      "secondaryEndpoints": [
+        "Durable Overall Response at Day 56",
+        "Duration of Response (DOR)",
+        "Best Overall Response (BOR)",
+        "Failure-Free Survival (FFS)",
+        "Overall Survival (OS)",
+        "Non-Relapse Mortality (NRM)",
+        "Cumulative Incidence of Relapse (CIR)",
+        "Corticosteroid Use",
+        "Incidence of Chronic GVHD",
+        "Safety and Tolerability"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07184853",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07184853",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07184853",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07184853",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07184853",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb018424-112",
+      "nctId": "NCT07049575",
+      "protocolNumber": "INCB018424-112",
+      "title": "A Maximal Use Trial of Ruxolitinib Cream in Adult and Adolescent Participants With Hidradenitis Suppurativa",
+      "briefTitle": "Study to Evaluate the Maximal Use of Ruxolitinib Cream in Adult and Adolescent Participants With Hidradenitis Suppurativa",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Hidradenitis Suppurativa"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D017497",
+          "term": "Hidradenitis Suppurativa"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        }
+      ],
+      "startDate": {
+        "value": "2025-11-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-12-09",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-12-09",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "12 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ruxolitinib 1.5 % Cream",
+          "type": "EXPERIMENTAL",
+          "description": "Participants received ruxolitinib 1.5% cream, applied topically to the affected area as defined in the protocol."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with Treatment-emergent Adverse Events (TEAEs)",
+        "Number of participants with TEAEs leading to treatment interruption, discontinuation"
+      ],
+      "secondaryEndpoints": [
+        "Pharmacokinetics Parameter (PK): Cmax of INCB018424",
+        "Pharmacokinetics Parameter: Tmax of INCB018424",
+        "Pharmacokinetics Parameter: AUC 0-12 of INCB018424"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049575",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049575",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049575",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049575",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07049575",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "incb18424-309",
       "nctId": "NCT06804811",
       "protocolNumber": "INCB18424-309",
@@ -10897,6 +14421,142 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT06804811",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "incb054707-113",
+      "nctId": "NCT07588139",
+      "protocolNumber": "INCB054707-113",
+      "title": "An Open-Label, Dermal Open-Flow Microperfusion and Plasma Pharmacokinetic Study of Multiple Doses of Oral Povorcitinib or Topical Ruxolitinib Cream in Healthy Adult Participants",
+      "briefTitle": "A Study to Evaluate Dermal Open-Flow Microperfusion and Plasma Pharmacokinetic Study of Multiple Doses of Oral Povorcitinib or Topical Ruxolitinib Cream in Healthy Adult Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Incyte Corporation",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Participants"
+      ],
+      "startDate": {
+        "value": "2026-05-18",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-09-08",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-10-05",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "65 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1: Ruxolitinib 1.5 % Cream",
+          "type": "EXPERIMENTAL",
+          "description": "Ruxolitinib cream applied topically twice daily."
+        },
+        {
+          "label": "Cohort 2: Povorcitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Povorcitinib will be administered at the protocol defined dose."
+        },
+        {
+          "label": "Cohort 3: Povorcitinib",
+          "type": "EXPERIMENTAL",
+          "description": "Povorcitinib will be administered at the protocol defined dose."
+        }
+      ],
+      "primaryEndpoints": [
+        "Pharmacokinetics Parameter (PK): Cmax of dermal interstitial fluid (dISF) ruxolitinib",
+        "Pharmacokinetics Parameter: AUClast of dISF ruxolitinib",
+        "Pharmacokinetics Parameter: AUC∞ of dISF ruxolitinib",
+        "Pharmacokinetics Parameter: Cmax of dISF povorcitinib",
+        "Pharmacokinetics Parameter: AUClast of dISF povorcitinib",
+        "Pharmacokinetics Parameter: AUC∞ of dISF povorcitinib",
+        "Pharmacokinetics Parameter: Cmax of plasma ruxolitinib",
+        "Pharmacokinetics Parameter: AUClast of plasma ruxolitinib",
+        "Pharmacokinetics Parameter: AUC∞ of plasma ruxolitinib",
+        "Pharmacokinetics Parameter: Cmax of plasma povorcitinib",
+        "Pharmacokinetics Parameter: AUClast of plasma povorcitinib",
+        "Pharmacokinetics Parameter: AUC∞ of plasma povorcitinib"
+      ],
+      "secondaryEndpoints": [
+        "Number of participants with Treatment-emergent Adverse Events (TEAEs)",
+        "Pharmacokinetics Parameter: tmax of dISF ruxolitinib",
+        "Pharmacokinetics Parameter: t½ of dISF ruxolitinib",
+        "Pharmacokinetics Parameter: CL/F of dISF ruxolitinib",
+        "Pharmacokinetics Parameter: Vz/F of dISF ruxolitinib",
+        "Pharmacokinetics Parameter: λz of dISF ruxolitinib",
+        "Pharmacokinetics Parameter: tmax of dISF povorcitinib",
+        "Pharmacokinetics Parameter: t½ of dISF povorcitinib",
+        "Pharmacokinetics Parameter: CL/F of dISF povorcitinib",
+        "Pharmacokinetics Parameter: Vz/F of dISF povorcitinib",
+        "Pharmacokinetics Parameter: λz of dISF povorcitinib",
+        "Pharmacokinetics Parameter: tmax of plasma ruxolitinib",
+        "Pharmacokinetics Parameter: t½ of plasma ruxolitinib",
+        "Pharmacokinetics Parameter: CL/F of plasma ruxolitinib",
+        "Pharmacokinetics Parameter: Vz/F of plasma ruxolitinib",
+        "Pharmacokinetics Parameter: λz of plasma ruxolitinib",
+        "Pharmacokinetics Parameter: tmax of plasma povorcitinib",
+        "Pharmacokinetics Parameter: t½ of plasma povorcitinib",
+        "Pharmacokinetics Parameter: CL/F of plasma povorcitinib",
+        "Pharmacokinetics Parameter: Vz/F of plasma povorcitinib",
+        "Pharmacokinetics Parameter: λz of plasma povorcitinib"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07588139",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07588139",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07588139",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07588139",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07588139",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -11283,5 +14943,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-10T20:19:08.209Z"
+  "lastIngestedAt": "2026-11-15T07:55:30.438Z"
 }
