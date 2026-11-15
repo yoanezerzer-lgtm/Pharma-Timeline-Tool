@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0003627",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0003627",
+    "narrowerConcept": "http://id.nlm.nih.gov/mesh/M0334765",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T006912",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A condition characterized by transient weakness or paralysis of somatic musculature triggered by an emotional stimulus or physical exertion. Cataplexy is frequently associated with NARCOLEPSY. During a cataplectic attack, there is a marked reduction in muscle tone similar to the normal physiologic hypotonia that accompanies rapid eye movement sleep (SLEEP, REM). (From Adams et al., Principles of Neurology, 6th ed, p396)"
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T367334",
+      "http://id.nlm.nih.gov/mesh/T367333",
+      "http://id.nlm.nih.gov/mesh/T764029"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Cataplexy"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Patients"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D010361"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Patients"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Adult"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000328"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Adult"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Cataplexy"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D002385"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Cataplexy"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Narcolepsy"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D009290"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Narcolepsy"
+          }
+        }
+      ]
+    }
+  }
+}
