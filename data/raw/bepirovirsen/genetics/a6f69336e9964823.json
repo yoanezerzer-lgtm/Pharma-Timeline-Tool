@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "body": {
+    "_comment": "See https://medlineplus.gov/about/data-files-api",
+    "name": "Cryptogenic cirrhosis",
+    "ghr_page": "https://medlineplus.gov/genetics/condition/cryptogenic-cirrhosis",
+    "text-list": [
+      {
+        "text": {
+          "html": "<p>Cryptogenic cirrhosis is a condition that impairs liver function. People with this condition develop irreversible liver disease caused by scarring of the liver (cirrhosis), typically in mid- to late adulthood.</p><p>The liver is a part of the digestive system that helps break down food, store energy, and remove waste products, including toxins. Minor damage to the liver can be repaired by the body. However, severe or long-term damage can lead to the replacement of normal liver tissue with scar tissue.</p><p>In the early stages of cryptogenic cirrhosis, people often have no symptoms because the liver has enough normal tissue to function. Signs and symptoms become apparent as more of the liver is replaced by scar tissue. Affected individuals can experience fatigue, weakness, loss of appetite, weight loss, nausea, swelling (edema), enlarged blood vessels, and yellowing of the skin and whites of the eyes (jaundice).</p><p>People with cryptogenic cirrhosis may develop high blood pressure in the vein that supplies blood to the liver (portal hypertension). Cryptogenic cirrhosis can lead to type 2 diabetes, although the mechanism is unclear. Some people with cryptogenic cirrhosis develop cancer of the liver (hepatocellular cancer).</p>",
+          "text-role": "description"
+        }
+      }
+    ],
+    "inheritance-pattern-list": [
+      {
+        "inheritance-pattern": {
+          "code": "ad",
+          "memo": "Autosomal dominant"
+        }
+      },
+      {
+        "inheritance-pattern": {
+          "code": "n",
+          "memo": "Not inherited"
+        }
+      },
+      {
+        "inheritance-pattern": {
+          "code": "u",
+          "memo": "Pattern unknown"
+        }
+      }
+    ],
+    "related-gene-list": [
+      {
+        "related-gene": {
+          "gene-symbol": "KRT8",
+          "ghr-page": "https://www.ncbi.nlm.nih.gov/gene/3856"
+        }
+      },
+      {
+        "related-gene": {
+          "gene-symbol": "KRT18",
+          "ghr-page": "https://www.ncbi.nlm.nih.gov/gene/3875"
+        }
+      }
+    ],
+    "synonym-list": [
+      {
+        "synonym": "Cirrhosis, cryptogenic"
+      }
+    ],
+    "db-key-list": [
+      {
+        "db-key": {
+          "db": "GTR",
+          "key": "C0267809"
+        }
+      },
+      {
+        "db-key": {
+          "db": "ICD-10-CM",
+          "key": "K74.69"
+        }
+      },
+      {
+        "db-key": {
+          "db": "MeSH",
+          "key": "D008103"
+        }
+      },
+      {
+        "db-key": {
+          "db": "OMIM",
+          "key": "215600"
+        }
+      },
+      {
+        "db-key": {
+          "db": "SNOMED CT",
+          "key": "89580002"
+        }
+      }
+    ],
+    "reviewed": "2016-03",
+    "published": "2023-03-21"
+  }
+}
