@@ -1,0 +1,64 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Vomiting"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D014839"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Vomiting"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Motion"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D009038"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Motion"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Adults"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000328"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Adult"
+          }
+        }
+      ]
+    }
+  }
+}
