@@ -1,0 +1,128 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D010789",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000379",
+      "http://id.nlm.nih.gov/mesh/Q000191",
+      "http://id.nlm.nih.gov/mesh/Q000009",
+      "http://id.nlm.nih.gov/mesh/Q000662",
+      "http://id.nlm.nih.gov/mesh/Q000639",
+      "http://id.nlm.nih.gov/mesh/Q000706",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000401",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000295",
+      "http://id.nlm.nih.gov/mesh/Q000451",
+      "http://id.nlm.nih.gov/mesh/Q000941",
+      "http://id.nlm.nih.gov/mesh/Q000592"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "coord disease with /ther, not /radiother; PHOTOCHEMOTHERAPY; COLOR THERAPY; & ULTRAVIOLET THERAPY are also available"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D013812",
+    "concept": [
+      "http://id.nlm.nih.gov/mesh/M000759021",
+      "http://id.nlm.nih.gov/mesh/M000759022"
+    ],
+    "dateIntroduced": "1981-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "81; was LIGHT/therapeutic use 1966-80"
+    },
+    "identifier": "D010789",
+    "lastUpdated": "2023-03-16",
+    "nlmClassificationNumber": "WB 480",
+    "onlineNote": {
+      "@language": "en",
+      "@value": "to search LIGHT/TU use PHOTOTHERAPY 1966-80 (with no qualif)"
+    },
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0016762",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T031857",
+    "previousIndexing": [
+      {
+        "@language": "en",
+        "@value": "Jaundice, Neonatal/therapy (1966-1980)"
+      },
+      {
+        "@language": "en",
+        "@value": "Light/therapeutic use (1967-1980)"
+      }
+    ],
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "81; was LIGHT/therapeutic use 1966-80; HELIOTHERAPY was see under PHYSICAL THERAPY 1975-85 & SUNLIGHT 1963-74"
+    },
+    "treeNumber": "http://id.nlm.nih.gov/mesh/E02.774",
+    "label": {
+      "@language": "en",
+      "@value": "Phototherapy"
+    },
+    "@context": {
+      "previousIndexing": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#previousIndexing"
+      },
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "onlineNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#onlineNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "concept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#concept",
+        "@type": "@id"
+      },
+      "nlmClassificationNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      }
+    }
+  }
+}
