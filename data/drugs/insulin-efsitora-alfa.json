@@ -770,9 +770,20 @@
           "quote": "ly Treated with Once- or Twice-Daily Basal Insulin and Mealtime Insulin Trial 4 (QWINT-4, NCT05462756) was a 26-week, randomized, open-label, active-controlled, treat-to-target, multinational",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.prnewswire.com/news-releases/with-once-a-week-dosing-insulin-efsitora-alfa-delivers-a1c-reduction-and-safety-profile-consistent-with-daily-insulin-302147034.html",
+          "sourceLabel": "PR Newswire: With Once-a-Week Dosing, Insulin Efsitora Alfa Delivers A1C Reduction and Safety Profile Consistent with Daily Insulin",
+          "quote": "Efsitora met the primary endpoint in both QWINT-2 and QWINT-4 with once-a-week dosing regimen for people living with type 2 diabetes",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2024-05-16",
+        "precision": "day"
+      }
     },
     {
       "id": "qwint-5",
@@ -1096,9 +1107,20 @@
           "quote": "sulin-Naïve Adults with Type 2 Diabetes Mellitus Fixed-Dosage Titration Trial 1 (QWINT-1, NCT05662332) was a 52-week, randomized, open-label, active-controlled, treat-to-target, multinational",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.prnewswire.com/news-releases/in-a-first-of-its-kind-fixed-dose-study-once-weekly-insulin-efsitora-alfa-leads-to-a1c-reduction-similar-to-daily-insulin-302238497.html",
+          "sourceLabel": "PR Newswire: In a first-of-its-kind fixed dose study, once weekly insulin efsitora alfa leads to A1C reduction similar to daily insulin",
+          "quote": "INDIANAPOLIS , Sept. 5, 2024 /PRNewswire/ -- Eli Lilly and Company (NYSE: LLY ) today announced positive topline results from the QWINT-1 and QWINT-3 phase 3 clinical trials evaluating once weekly insulin efsitora alfa (efsitora) in adults with type 2 diabetes using basal insulin for the first time (insulin naïve) and…",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2024-09-05",
+        "precision": "day"
+      }
     }
   ],
   "milestones": [
