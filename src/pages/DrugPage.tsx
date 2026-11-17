@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Info } from '../components/Info/Info.js';
 import { diseaseIndex, drugIndex, useDrug, useNews } from '../lib/catalog.js';
 import { formatDate } from '../lib/dates.js';
-import { trialsForIndication } from '../lib/drugs.js';
+import { roleFor, trialsForIndication } from '../lib/drugs.js';
+import { siteAreas } from '../lib/siteAreas.js';
 import { naturalTerm } from '../lib/plainText.js';
 import { DATE_UNCLEAR } from '../lib/copy.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
@@ -73,55 +74,34 @@ function NewsSection({ slug }: { slug: string }) {
   );
 }
 
-/** Lines of the leaflet's answer shown before "Show all". */
-const SUMMARY_LINES = 2;
-
-/**
- * The patient leaflet's own description of the medicine, word for word, as
- * the page's opening lines, with a light link to the label it comes from.
- */
-function PatientSummary({ summary }: { summary: NonNullable<NonNullable<Drug['pharmacology']>['patientSummary']> }) {
-  const [open, setOpen] = useState(false);
-  const all = summary.paragraphs;
-  const shown = open ? all : all.slice(0, SUMMARY_LINES);
-  const href = summary.provenance.page ? `${summary.provenance.sourceUrl}#page=${summary.provenance.page}` : summary.provenance.sourceUrl;
-  return (
-    <section className="drug__plain" aria-label="Description from the label">
-      {shown.map((p, k) => (
-        <p key={k} className={k > 0 && /^[a-z(]/.test(p) ? 'drug__plain-item' : undefined}>
-          {p}
-          {k === shown.length - 1 && href && (
-            <>
-              {' '}
-              <a className="drug__plain-source" href={href} target="_blank" rel="noopener noreferrer" title="Patient information in the FDA-approved label">
-                (source ↗)
-              </a>
-            </>
-          )}
-        </p>
-      ))}
-      {all.length > SUMMARY_LINES && (
-        <button type="button" className="disease__more" aria-expanded={open} onClick={() => setOpen(!open)}>
-          {open ? 'Show less' : `Show all ${all.length - 1} uses`}
-        </button>
-      )}
-    </section>
-  );
-}
-
 /** A date as a year with a fraction ("2017-03-28" → 2017.24), for placing it on the strip. */
 function yearPosition(value: string): number {
   const [y, m = 1, d = 1] = value.split('-').map(Number);
   return y + ((m - 1) * 30.4 + (d - 1)) / 365;
 }
 
-type DatedUse = { n: number; slug: string; name: string; date: NonNullable<Drug['indications'][number]['approvalDate']> };
+type Use = Drug['indications'][number];
+
+/** What a use is for, as names: its matched diseases, or the FDA's short name when none is matched yet. */
+function useNames(use: Use): { name: string; meshId?: string }[] {
+  const diseases = use.diseases ?? [];
+  if (diseases.length > 0) return diseases.map((d) => ({ name: diseaseName.get(d.meshId) ?? naturalTerm(d.term), meshId: d.meshId }));
+  return [{ name: use.displayName ?? use.name }];
+}
+
+/** The pivotal trials the FDA documents name for one use. */
+function pivotalCount(drug: Drug, use: Use): number {
+  return trialsForIndication(drug, use.name).filter((t) => roleFor(t, use.name) === 'PIVOTAL').length;
+}
+
+type DatedUse = { use: Use; date: NonNullable<Use['approvalDate']> };
 
 /**
- * Every approved use as a numbered dot on one line of years, so the label's
- * growth reads at a glance. Dots too close to share a line stack upward.
+ * Every approval as a marker on one line of years, so the label's growth
+ * reads at a glance. Hovering (or focusing) a marker shows what it was for.
+ * Markers too close to share a height stand taller.
  */
-function UsesTimeline({ slug, uses, undated }: { slug: string; uses: DatedUse[]; undated: number }) {
+function ApprovalsTimeline({ drug, uses, undated }: { drug: Drug; uses: DatedUse[]; undated: number }) {
   const track = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(900);
   useEffect(() => {
@@ -136,51 +116,58 @@ function UsesTimeline({ slug, uses, undated }: { slug: string; uses: DatedUse[];
   const last = Math.max(new Date().getFullYear(), Math.floor(yearPosition(uses[uses.length - 1].date.value))) + 1;
   const span = last - first;
   const at = (v: string) => ((yearPosition(v) - first) / span) * 100;
-  // Stack dots that would overlap: each takes the lowest line whose last dot is far enough left.
-  // The gap is one dot's width (about 26px) as a share of the strip, so it holds at any screen width.
-  const MIN_GAP = (28 / Math.max(width, 1)) * 100;
-  const lineEnds: number[] = [];
+  // Each marker takes the lowest height whose last marker is at least one marker's width to the left.
+  const MIN_GAP = (18 / Math.max(width, 1)) * 100;
+  const levelEnds: number[] = [];
   const placed = uses.map((u) => {
     const x = at(u.date.value);
-    let line = lineEnds.findIndex((end) => x - end >= MIN_GAP);
-    if (line === -1) line = lineEnds.length;
-    lineEnds[line] = x;
-    return { ...u, x, line };
+    let level = levelEnds.findIndex((end) => x - end >= MIN_GAP);
+    if (level === -1) level = levelEnds.length;
+    levelEnds[level] = x;
+    return { ...u, x, level };
   });
   const step = span > 24 ? 5 : span > 12 ? 2 : 1;
   const years: number[] = [];
   for (let y = first; y <= last; y += step) years.push(y);
 
   return (
-    <figure className="dp__timeline" aria-label="Approved uses over time">
+    <figure className="dp__timeline" aria-label="Approvals over time">
       <figcaption>
-        Approved uses over time
-        {undated > 0 && (
-          <span className="dp__timeline-note">
-            {' '}
-            · {undated} with an unclear date not shown
-          </span>
-        )}
+        Approvals over time
+        {undated > 0 && <span className="dp__timeline-note"> · {undated} with an unclear date not shown</span>}
       </figcaption>
-      <div ref={track} className="dp__track" style={{ ['--lines' as string]: lineEnds.length }}>
+      <div ref={track} className="dp__track" style={{ ['--levels' as string]: levelEnds.length }}>
         <div className="dp__axis" />
         {years.map((y, k) => (
           <span key={y} className={`dp__year nums${k % 2 ? ' dp__year--minor' : ''}`} style={{ left: `${((y - first) / span) * 100}%` }}>
             {y}
           </span>
         ))}
-        {placed.map((u) => (
-          <a
-            key={u.slug}
-            className="dp__dot nums"
-            href={indicationHref(slug, u.slug)}
-            style={{ left: `${u.x}%`, ['--line' as string]: u.line }}
-            title={`${u.n}. ${u.name}, ${formatDate(u.date)}`}
-            aria-label={`${u.n}. ${u.name}, approved ${formatDate(u.date)}`}
-          >
-            {u.n}
-          </a>
-        ))}
+        {placed.map(({ use, date, x, level }) => {
+          const names = useNames(use);
+          const areas = [...new Set(names.flatMap((n) => (n.meshId ? siteAreas({ meshId: n.meshId }).map((a) => a.name) : [])))];
+          const pivotal = pivotalCount(drug, use);
+          const label = names.map((n) => n.name).join(', ');
+          return (
+            <a
+              key={use.slug}
+              className={`dp__marker${x > 65 ? ' dp__marker--end' : ''}`}
+              href={indicationHref(drug.slug, use.slug)}
+              style={{ left: `${x}%`, ['--level' as string]: level }}
+              aria-label={`${label}, approved ${formatDate(date)}`}
+            >
+              <span className="dp__stem" aria-hidden="true" />
+              <span className="dp__diamond" aria-hidden="true" />
+              <span className="dp__tip" aria-hidden="true">
+                <span className="dp__tip-name">{label}</span>
+                {areas.length > 0 && <span className="dp__tip-area">{areas.join(' · ')}</span>}
+                <span className="dp__tip-meta nums">
+                  {formatDate(date)} · {pivotal} pivotal {pivotal === 1 ? 'trial' : 'trials'}
+                </span>
+              </span>
+            </a>
+          );
+        })}
       </div>
     </figure>
   );
@@ -193,32 +180,30 @@ function DrugView({ drug }: { drug: Drug }) {
   const indications = [...drug.indications].sort((a, b) =>
     (a.approvalDate?.value ?? '9999').localeCompare(b.approvalDate?.value ?? '9999'),
   );
-  const dated: DatedUse[] = indications.flatMap((i, k) =>
-    i.approvalDate ? [{ n: k + 1, slug: i.slug, name: i.displayName ?? i.name, date: i.approvalDate }] : [],
-  );
+  const dated: DatedUse[] = indications.flatMap((use) => (use.approvalDate ? [{ use, date: use.approvalDate }] : []));
+  // The diseases it is approved for, oldest approval first, each once.
+  const approvedFor = [...new Map(indications.flatMap(useNames).map((n) => [n.meshId ?? n.name, n])).values()];
   const app = drug.regulatory.us;
 
   return (
     <main className="drug dp">
       <header className="dp__head">
-        <p className="dp__eyebrow nums">
-          <span className="dp__eyebrow-mark" aria-hidden="true" />
-          Drug · {app.applicationType} {app.applicationNumber}
-        </p>
         <h1>
-          {drug.brandName}
-          <span className="dp__dot-mark">.</span> <span className="drug__inn">{drug.inn}</span>
+          {drug.brandName} <span className="drug__inn">({drug.inn})</span>
         </h1>
+        <p className="dp__app nums">
+          {app.applicationType} {app.applicationNumber}
+        </p>
       </header>
 
       <div className="dp__intro">
         <section className="dp__for" aria-labelledby="for-head">
-          <h2 id="for-head">What it’s for</h2>
-          {about?.patientSummary ? (
-            <PatientSummary summary={about.patientSummary} />
-          ) : (
-            <p className="pharm__gap">Not yet read from the label’s patient information.</p>
-          )}
+          <h2 id="for-head">Approved for</h2>
+          <ul className="dp__chips">
+            {approvedFor.map((n) => (
+              <li key={n.meshId ?? n.name}>{n.meshId ? <a href={diseaseHref(n.meshId)}>{n.name}</a> : <span>{n.name}</span>}</li>
+            ))}
+          </ul>
         </section>
 
         <dl className="dp__facts">
@@ -238,58 +223,46 @@ function DrugView({ drug }: { drug: Drug }) {
             </dd>
           </div>
           <div>
-            <dt>First approved</dt>
+            <dt>First approval</dt>
             <dd className="nums">{listed?.firstApproval ? formatDate(listed.firstApproval) : DATE_UNCLEAR}</dd>
           </div>
           <div>
-            <dt>Approved uses</dt>
+            <dt>Approvals</dt>
             <dd className="nums">{indications.length}</dd>
           </div>
         </dl>
       </div>
 
       <section className="uses uses--wide dp__uses" aria-labelledby="uses-head">
-        <h2 id="uses-head">Approved uses</h2>
+        <h2 id="uses-head">Approvals</h2>
         <p className="dp__sub">
           In the FDA’s words, oldest first. Each opens the trials behind the approval and every later change to it.
         </p>
-        <UsesTimeline slug={drug.slug} uses={dated} undated={indications.length - dated.length} />
+        <ApprovalsTimeline drug={drug} uses={dated} undated={indications.length - dated.length} />
         <ul className="uselist">
           <li className="uselist__row uselist__head" aria-hidden="true">
-            <span />
             <span>Indication</span>
-            <span>Disease</span>
-            <span className="uselist__date">First approved</span>
-            <span className="uselist__trials">Trials</span>
+            <span className="uselist__date">First approval</span>
+            <span className="uselist__trials">Pivotal trials</span>
             <span />
           </li>
-          {indications.map((i, k) => {
-            const trials = trialsForIndication(drug, i.name).length;
-            const diseases = i.diseases ?? [];
+          {indications.map((i) => {
+            const pivotal = pivotalCount(drug, i);
             return (
               <li key={i.slug} className="uselist__row">
-                <span className="uselist__n nums">{k + 1}</span>
                 <a href={indicationHref(drug.slug, i.slug)} className="uselist__name">
                   {i.displayName ?? i.name}
                 </a>
-                <span className="uselist__disease">
-                  <span className="uselist__label">Disease: </span>
-                  {diseases.length > 0 ? (
-                    <>
-                      {diseases.map((d, j) => (
-                        <span key={d.meshId}>
-                          {j > 0 && ', '}
-                          <a href={diseaseHref(d.meshId)}>{diseaseName.get(d.meshId) ?? naturalTerm(d.term)}</a>
-                        </span>
-                      ))}
-                    </>
-                  ) : (
-                    <span className="uselist__none">Not yet matched</span>
-                  )}
-                </span>
                 <span className="uselist__date">{i.approvalDate ? formatDate(i.approvalDate) : DATE_UNCLEAR}</span>
                 <span className="uselist__trials">
-                  {trials} {trials === 1 ? 'trial' : 'trials'}
+                  {pivotal > 0 ? (
+                    <>
+                      {pivotal}
+                      <span className="uselist__label"> pivotal {pivotal === 1 ? 'trial' : 'trials'}</span>
+                    </>
+                  ) : (
+                    <span className="uselist__none">None on record</span>
+                  )}
                 </span>
                 <span className="uselist__open" aria-hidden="true">
                   Open →
@@ -304,24 +277,20 @@ function DrugView({ drug }: { drug: Drug }) {
         <h2 id="pharm-head">
           How it works
           <Info label="About this section">
-            Word for word from the FDA-approved label, sections 12.1 to 12.3; each part links to its page of the label.
-            The drug class is the FDA’s, from the label or the FDA’s list of drug classes.
+            Word for word from the FDA-approved label; each part links to its page of the label.
           </Info>
         </h2>
-        <p className="dp__sub">Clinical pharmacology, word for word from the FDA label.</p>
         {about && about.sections.length > 0 ? (
           about.sections.map((s, i) => (
             <details key={s.number} className="pharm__section" open={i === 0}>
-              <summary>
-                {s.number} {s.title}
-              </summary>
+              <summary>{s.title}</summary>
               <p className="pharm__text">
                 {withoutPageFooters(s.text)}
                 {s.truncated && ' …'}
               </p>
               <p className="pharm__cite">
                 {s.truncated && 'Continues on the label. '}
-                <SourceLink provenance={s.provenance} label={`Label section ${s.number}`} />
+                <SourceLink provenance={s.provenance} label="FDA label" />
               </p>
             </details>
           ))

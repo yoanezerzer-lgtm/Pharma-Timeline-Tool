@@ -75,9 +75,13 @@ not all be on screen at once. This week is design and shorter copy.
 - **Trial view**: a trial clicked on a chart opens in the side panel; a
   trial address opened any other way (shared, table, Google) shows a full
   page at the same address. Pivotal trials' pages are in the sitemap.
-- **Drug page**: "What it's for" (patient leaflet, word for word), approved
-  uses one row each, "How it works" (label 12.1–12.3), Company news links,
-  then "Sources and checks" with "Sources last read".
+- **Drug page** (#168, 17 Nov): name (generic) and application number;
+  "Approved for" (disease tags; the patient leaflet is no longer shown, owner's
+  call) beside key facts (company, class, first approval, approvals);
+  "Approvals" as a timeline (hover a marker for disease, area, date, pivotal
+  trials) and a list with pivotal-trial counts; "How it works" (label
+  12.1–12.3, shown by title only); Company news; Sources. Company logos
+  not added (owner considering; see #168).
 - **Approved-use page**: trials timeline with a Today line. The trial
   panel has a **source trail** (#130): approval letter → document naming
   the trial → ClinicalTrials.gov record, each linked.
