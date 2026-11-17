@@ -9,7 +9,10 @@ function formatValue(m: PostedOutcome['measurements'][number], unit?: string): s
 }
 
 function formatP(p: string): string {
-  return /^[<>≤≥]/.test(p.trim()) ? `p ${p.trim()}` : `p = ${p.trim()}`;
+  const v = p.trim();
+  // The registry sometimes stores the sign with the number ("<0.0001", "=0.0001").
+  if (/^[<>≤≥]/.test(v)) return `p ${v}`;
+  return `p = ${v.replace(/^=\s*/, '')}`;
 }
 
 /** Posted primary-outcome results, shown exactly as the sponsor reported them. */

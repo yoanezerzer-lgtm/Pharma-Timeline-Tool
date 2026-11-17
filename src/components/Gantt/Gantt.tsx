@@ -281,7 +281,7 @@ export function Gantt({
         </p>
       )}
 
-      <GanttLegend today={layout.todayX !== null} />
+      <GanttLegend today={layout.todayX !== null} roles={new Set(trials.map((t) => displayRole(t, indication)))} />
     </div>
   );
 }
@@ -326,23 +326,24 @@ function BarTooltip({
   );
 }
 
-function GanttLegend({ today }: { today: boolean }) {
+/** The key names only what is drawn: the roles of the bars on screen, the completion tick, and today's line. */
+function GanttLegend({ today, roles }: { today: boolean; roles: Set<TrialRole> }) {
+  const shown: { role: TrialRole; cls: string }[] = [
+    { role: 'PIVOTAL', cls: 'role-pivotal' },
+    { role: 'SUPPORTIVE', cls: 'role-supportive' },
+    { role: 'NOT_IN_FILING', cls: 'role-not_in_filing' },
+  ];
   return (
     <div className="gantt__legend">
-      <span className="gantt__legend-item">
-        <span className="gantt__swatch role-pivotal" /> Pivotal
-      </span>
-      <span className="gantt__legend-item">
-        <span className="gantt__swatch role-supportive" /> Supportive
-      </span>
-      <span className="gantt__legend-item">
-        <span className="gantt__swatch role-not_in_filing" /> Not in original filing
-      </span>
+      {shown
+        .filter((r) => roles.has(r.role))
+        .map((r) => (
+          <span key={r.role} className="gantt__legend-item">
+            <span className={`gantt__swatch ${r.cls}`} /> {r.role === 'NOT_IN_FILING' ? 'Not in original filing' : ROLE_LABEL[r.role]}
+          </span>
+        ))}
       <span className="gantt__legend-item">
         <span className="gantt__swatch-tick" /> Primary completion
-      </span>
-      <span className="gantt__legend-item">
-        <span className="gantt__swatch-diamond" /> Regulatory milestone
       </span>
       {today && (
         <span className="gantt__legend-item">
@@ -350,7 +351,7 @@ function GanttLegend({ today }: { today: boolean }) {
         </span>
       )}
       <Info label="How to read this chart">
-        A faded bar end means the source gave only a month or year.
+        A faded bar end means the source gave only a month or year. Diamonds are the FDA’s letters for this use.
       </Info>
     </div>
   );

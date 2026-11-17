@@ -1,5 +1,5 @@
 import { Info } from '../components/Info/Info.js';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import {
   getIndication,
   indicationLabel,
@@ -8,14 +8,25 @@ import {
   isMeaningfulMilestone,
   primaryCompletionToApprovalMonths,
   roleFor,
+  trialShortName,
 } from '../lib/drugs.js';
 import { approvalWording } from '../lib/diseases.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 import { drugMeta, indicationMeta, trialMeta } from '../lib/pageMeta.js';
-import { aboutHref, compareHref, drugHref, navigate, indicationHref, indicationTrialHref, drugsHref, openedAsPanel } from '../lib/router.js';
+import {
+  aboutHref,
+  compareHref,
+  drugHref,
+  navigate,
+  indicationHref,
+  indicationTrialHref,
+  drugsHref,
+  openedAsPanel,
+} from '../lib/router.js';
 import { formatDate } from '../lib/dates.js';
 import { Gantt } from '../components/Gantt/Gantt.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
+import { PostedResults } from '../components/TrialDetail/PostedResults.js';
 import { drugIndex, useDrug } from '../lib/catalog.js';
 import type { Drug, Milestone, Source, Trial } from '../schema/index.js';
 import { approvalKindLabel, DATE_UNCLEAR } from '../lib/copy.js';
@@ -50,15 +61,12 @@ export function IndicationPage({ slug, indicationSlug, trialId }: Props) {
 function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicationSlug: string; trialId: string | null }) {
   const indication = getIndication(drug, indicationSlug);
 
-  const scopedTrials = useMemo(
-    () => (indication ? trialsForIndication(drug, indication.name) : []),
-    [drug, indication]
-  );
+  const scopedTrials = useMemo(() => (indication ? trialsForIndication(drug, indication.name) : []), [drug, indication]);
 
-  const selectedTrial = useMemo(
-    () => (trialId ? scopedTrials.find((t) => t.id === trialId) ?? null : null),
-    [scopedTrials, trialId]
-  );
+  // The trials behind the first approval show by default; those that finished after it are one switch away.
+  const [withLater, setWithLater] = useState(false);
+
+  const selectedTrial = useMemo(() => (trialId ? (scopedTrials.find((t) => t.id === trialId) ?? null) : null), [scopedTrials, trialId]);
   // A trial opened from the chart shows in the side panel; its address opened any other way shows a full page.
   const trialPage = selectedTrial && indication && !openedAsPanel() ? selectedTrial : null;
   usePageMeta(
@@ -127,148 +135,145 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
     .map((m) => {
       const a = useApprovals.get(m.submissionNumber ?? '');
       if (a && a.kind !== 'new') {
-        return { ...m, label: `${approvalKindLabel(a.kind, a.submission)} — ${label}`, shortLabel: approvalKindLabel(a.kind, a.submission) };
+        return {
+          ...m,
+          label: `${approvalKindLabel(a.kind, a.submission)} — ${label}`,
+          shortLabel: approvalKindLabel(a.kind, a.submission),
+        };
       }
       return m.type === 'FDA_SUPPLEMENT' && m.submissionNumber === ownSubmission
-        ? { ...m, label: `FDA approval — ${label}`, shortLabel: 'Approved for this use' }
+        ? {
+            ...m,
+            label: `FDA approval — ${label}`,
+            shortLabel: 'Approved for this use',
+          }
         : m;
     });
 
-  // Trials that reached primary completion after the first approval back a later label change, not the first approval.
   const firstDate = indication.approvalDate?.value;
-  const laterTrials = firstDate ? scopedTrials.filter((t) => t.primaryCompletionDate && t.primaryCompletionDate.value > firstDate).length : 0;
   const labelUrl = newestLabelUrl(drug);
   const lagMonths = primaryCompletionToApprovalMonths(scopedTrials, indication.name, indication.approvalDate);
   const sourceGroups = groupSources(drug.sources, drug.milestones);
   const ownSources = sourceGroups.find((g) => g.submission === ownSubmission);
 
+  // Trials whose primary completion came after the first approval back a later label change, not this approval.
+  const isLater = (t: Trial) => !!firstDate && !!t.primaryCompletionDate && t.primaryCompletionDate.value > firstDate;
+  const behindFirst = scopedTrials.filter((t) => !isLater(t));
+  const after = scopedTrials.filter(isLater);
+  // Called by what they are: pivotal trials for the later label expansions, or otherwise simply "later trials".
+  const afterAllPivotal = after.every((t) => roleFor(t, indication.name) === 'PIVOTAL');
+  const afterLabel = afterAllPivotal ? 'trials behind later label expansions' : 'trials that finished after this approval';
+  const shownTrials = withLater || behindFirst.length === 0 ? scopedTrials : behindFirst;
+  const pivotalShown = shownTrials.filter((t) => roleFor(t, indication.name) === 'PIVOTAL');
+  const pivotalFirst = behindFirst.filter((t) => roleFor(t, indication.name) === 'PIVOTAL');
+  const letterUrl = indication.approvalProvenance?.sourceUrl;
+
   return (
-    <main className={`drug${selectedTrial ? ' has-drawer' : ''}`}>
-      <header className="drug__head">
-        <div>
-          <p className="page-eyebrow">
-            <a href={drugHref(drug.slug)}>
-              {drug.brandName} <span className="drug__inn">({drug.inn})</span>
-            </a>{' '}
-            · approved use
-          </p>
-          <h1>{label}</h1>
+    <main className={`drug up${selectedTrial ? ' has-drawer' : ''}`}>
+      <header className="up__head">
+        <p className="up__crumb">
+          <a href={drugHref(drug.slug)}>
+            {drug.brandName} <span className="drug__inn">({drug.inn})</span>
+          </a>
           {drug.indications.length > 1 && (
-            <p className="drug__other-indications">
-              One of {drug.indications.length} approved uses ·{' '}
-              <a href={drugHref(drug.slug)}>see all</a>
-            </p>
+            <>
+              {' · '}
+              <a href={drugHref(drug.slug)}>all {drug.indications.length} approvals</a>
+            </>
           )}
-          <p className="drug__compare">
-            <a href={compareHref(`${drug.slug}:${indication.slug}`)}>Compare with another approval →</a>
-          </p>
-          {(indication.wording || label !== indication.name) && (
-            <p className="drug__label-wording">
-              <span>Label wording:</span> {indication.wording?.text ?? indication.name}
-            </p>
-          )}
-          {(indication.pressReleaseUrl || indication.fdaAnnouncementUrl) && (
-            <div className="drug__announcements">
-              {indication.pressReleaseUrl && (
-                <a
-                  className="drug__press-release"
-                  href={indication.pressReleaseUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Company’s announcement ↗
-                </a>
+        </p>
+        <h1>{label}</h1>
+        <p className="up__meta nums">
+          {drug.regulatory.us.applicationType} {drug.regulatory.us.applicationNumber} · {company}
+        </p>
+        {(indication.wording?.text ?? indication.name) !== label && (
+          <blockquote className="up__wording">
+            <p>{indication.wording?.text ?? indication.name}</p>
+            <footer>
+              {indication.wording ? (
+                <>
+                  The FDA’s wording on the current label ·{' '}
+                  <a
+                    href={indication.wording.provenance.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={indication.wording.provenance.quote}
+                  >
+                    {indication.wording.provenance.sourceLabel ?? 'FDA label'} ↗
+                  </a>
+                </>
+              ) : (
+                'The FDA’s wording'
               )}
-              {indication.fdaAnnouncementUrl && (
-                <a
-                  className="drug__press-release"
-                  href={indication.fdaAnnouncementUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  FDA’s announcement ↗
-                </a>
-              )}
-            </div>
+            </footer>
+          </blockquote>
+        )}
+        <p className="up__links">
+          {indication.pressReleaseUrl && (
+            <a href={indication.pressReleaseUrl} target="_blank" rel="noopener noreferrer">
+              Company’s announcement ↗
+            </a>
           )}
-        </div>
-        <dl className="drug__facts">
-          <div>
-            <dt>FDA application</dt>
-            <dd>
-              {drug.regulatory.us.applicationType} {drug.regulatory.us.applicationNumber}
-            </dd>
-          </div>
-          <div>
-            <dt>Company</dt>
-            <dd>{company}</dd>
-          </div>
-          <div>
-            <dt>First approved</dt>
-            <dd>
-              {indication.approvalDate ? formatDate(indication.approvalDate) : DATE_UNCLEAR}
-              {indication.approvalProvenance?.sourceUrl && (
-                <a
-                  className="drug__fact-source"
-                  href={indication.approvalProvenance.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title={indication.approvalProvenance.quote}
-                >
-                  {indication.submissionNumber ?? 'label'} ↗
-                </a>
-              )}
-            </dd>
-          </div>
-          {widenings > 0 && (
-            <div>
-              <dt>Later label changes</dt>
-              <dd>{widenings}</dd>
-            </div>
+          {indication.fdaAnnouncementUrl && (
+            <a href={indication.fdaAnnouncementUrl} target="_blank" rel="noopener noreferrer">
+              FDA’s announcement ↗
+            </a>
           )}
-          <div>
-            <dt>Trials</dt>
-            <dd>
-              {scopedTrials.length}
-              {laterTrials > 0 && (
-                <span className="drug__fact-note">
-                  {scopedTrials.length - laterTrials} before the first approval, {laterTrials} after
-                </span>
-              )}
-            </dd>
-          </div>
-          {lagMonths !== undefined && (
-            <div>
-              <dt>
-                Primary completion to approval
-                <Info label="What this measures">
-                  Months from the primary completion of the last pivotal trial (the date its last patient was assessed
-                  for the primary endpoint, per ClinicalTrials.gov) to the first FDA approval of this use.
-                </Info>
-              </dt>
-              <dd>
-                {lagMonths} month{lagMonths === 1 ? '' : 's'}
-              </dd>
-            </div>
-          )}
-        </dl>
+          <a href={compareHref(`${drug.slug}:${indication.slug}`)}>Compare with another approval →</a>
+        </p>
       </header>
 
+      <dl className="up__numbers">
+        <div>
+          <dt>Approved</dt>
+          <dd className="nums">{indication.approvalDate ? formatDate(indication.approvalDate) : DATE_UNCLEAR}</dd>
+          <span className="up__numbers-sub">
+            {letterUrl && (
+              <a href={letterUrl} target="_blank" rel="noopener noreferrer" title={indication.approvalProvenance?.quote}>
+                Approval letter
+                {indication.submissionNumber ? ` (${indication.submissionNumber})` : ''} ↗
+              </a>
+            )}
+            {letterUrl && widenings > 0 && ' · '}
+            {widenings > 0 && `then ${widenings} label ${widenings === 1 ? 'expansion' : 'expansions'}`}
+          </span>
+        </div>
+        <div>
+          <dt>
+            Trials to approval
+            <Info label="What this measures">
+              Months from the primary completion of the last pivotal trial (the date its last patient was assessed for the primary endpoint,
+              per ClinicalTrials.gov) to the first FDA approval of this use.
+            </Info>
+          </dt>
+          <dd className="nums">{lagMonths !== undefined ? `${lagMonths} month${lagMonths === 1 ? '' : 's'}` : '—'}</dd>
+          <span className="up__numbers-sub">
+            {lagMonths !== undefined ? 'from the last pivotal trial’s primary completion' : 'Not known: no dated pivotal trial before it'}
+          </span>
+        </div>
+        <div>
+          <dt>Pivotal trials</dt>
+          <dd className="nums">{pivotalFirst.length}</dd>
+          {after.length > 0 && (
+            <span className="up__numbers-sub">
+              + {after.length} {afterLabel}
+            </span>
+          )}
+        </div>
+      </dl>
 
       {scopedTrials.length === 0 ? (
         <div className="drug__no-trials">
           <h2>Trials behind this approval</h2>
           {indication.approvalDate && indication.approvalDate.value < REGISTRATION_REQUIRED ? (
             <p>
-              No registered trial is linked to this approval. It was approved in{' '}
-              {indication.approvalDate.value.slice(0, 4)}, before trials had to be registered on
-              ClinicalTrials.gov (2007), so its trials usually have no registry record.
+              No registered trial is linked to this approval. It was approved in {indication.approvalDate.value.slice(0, 4)}, before trials
+              had to be registered on ClinicalTrials.gov (2007), so its trials usually have no registry record.
             </p>
           ) : (
             <p>
-              Not yet matched to a registered trial. The label may describe the trials without
-              their ClinicalTrials.gov numbers, or they were run by an organization other than{' '}
-              {company}, such as a cooperative research group.
+              Not yet matched to a registered trial. The label may describe the trials without their ClinicalTrials.gov numbers, or they
+              were run by an organization other than {company}, such as a cooperative research group.
             </p>
           )}
           {labelUrl && (
@@ -280,17 +285,55 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           )}
         </div>
       ) : (
-        <section className="drug__chart-section">
-          <h2>Trials behind this approval</h2>
-          <Gantt
-            trials={scopedTrials}
-            milestones={scopedMilestones}
-            selectedTrialId={trialId}
-            indication={indication.name}
-            majorSubmission={ownSubmission}
-            onSelectTrial={(id) => navigate(indicationTrialHref(drug.slug, indication.slug, id), { scroll: false, panel: true })}
-          />
-        </section>
+        <>
+          <section className="drug__chart-section">
+            <div className="up__section-head">
+              <h2>
+                {shownTrials.length > behindFirst.length && afterAllPivotal
+                  ? 'Trials behind this approval and its label expansions'
+                  : 'Trials behind this approval'}
+              </h2>
+              {after.length > 0 && behindFirst.length > 0 && (
+                <label className="up__switch">
+                  <input type="checkbox" checked={withLater} onChange={(e) => setWithLater(e.target.checked)} />
+                  <span className="up__switch-track" aria-hidden="true" />
+                  Show {afterLabel} ({after.length})
+                </label>
+              )}
+            </div>
+            <Gantt
+              trials={shownTrials}
+              milestones={scopedMilestones}
+              selectedTrialId={trialId}
+              indication={indication.name}
+              majorSubmission={ownSubmission}
+              onSelectTrial={(id) =>
+                navigate(indicationTrialHref(drug.slug, indication.slug, id), {
+                  scroll: false,
+                  panel: true,
+                })
+              }
+            />
+          </section>
+
+          {pivotalShown.length > 0 && (
+            <section className="up__results" aria-labelledby="results-head">
+              <h2 id="results-head">What the pivotal trials showed</h2>
+              <p className="up__sub">The main result of each trial, as posted to ClinicalTrials.gov.</p>
+              <ul className="up__cards">
+                {pivotalShown.map((t) => (
+                  <ResultCard
+                    key={t.id}
+                    trial={t}
+                    name={trialShortName(t, scopedTrials)}
+                    href={indicationTrialHref(drug.slug, indication.slug, t.id)}
+                    onOpen={() => navigate(indicationTrialHref(drug.slug, indication.slug, t.id), { scroll: false, panel: true })}
+                  />
+                ))}
+              </ul>
+            </section>
+          )}
+        </>
       )}
 
       <section className="drug__milestones">
@@ -320,8 +363,14 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
                     )}
                     {m.submissionNumber && <span className="drug__table-sub">{m.submissionNumber}</span>}
                   </td>
-                  <td>{a ? approvalKindLabel(a.kind, a.submission) : m.shortLabel ?? m.label}</td>
-                  <td className="drug__table-wording">{a ? approvalWording(drug, indication, a) : m.type === 'FDA_APPROVAL' || m.submissionNumber === ownSubmission ? indication.name : ''}</td>
+                  <td>{a ? approvalKindLabel(a.kind, a.submission) : (m.shortLabel ?? m.label)}</td>
+                  <td className="drug__table-wording">
+                    {a
+                      ? approvalWording(drug, indication, a)
+                      : m.type === 'FDA_APPROVAL' || m.submissionNumber === ownSubmission
+                        ? indication.name
+                        : ''}
+                  </td>
                 </tr>
               );
             })}
@@ -336,15 +385,16 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
             <Info label="About sources">The FDA documents everything on this page comes from, so you can check it yourself.</Info>
           </h2>
           <ApprovalTrail
-            letter={ownSources?.sources.find((x) => x.type === 'fda_letter' || x.label.startsWith('Letter'))?.url ?? indication.approvalProvenance?.sourceUrl}
+            letter={
+              ownSources?.sources.find((x) => x.type === 'fda_letter' || x.label.startsWith('Letter'))?.url ??
+              indication.approvalProvenance?.sourceUrl
+            }
             date={indication.approvalDate}
             label={ownSources?.sources.find((x) => x.type === 'fda_label')?.url ?? labelUrl}
             pivotal={scopedTrials.filter((t) => roleFor(t, indication.name) === 'PIVOTAL')}
           />
           <details className="drug__sources-all">
-            <summary>
-              All {drug.sources.length} source documents, by submission
-            </summary>
+            <summary>All {drug.sources.length} source documents, by submission</summary>
             <ul>
               {sourceGroups.map((g) => (
                 <SourceGroupRow key={g.submission ?? 'other'} group={g} />
@@ -359,7 +409,11 @@ function IndicationView({ drug, indicationSlug, trialId }: { drug: Drug; indicat
           trial={selectedTrial}
           indication={indication.name}
           supports={supportsLine(selectedTrial, indication)}
-          onClose={() => navigate(indicationHref(drug.slug, indication.slug), { scroll: false })}
+          onClose={() =>
+            navigate(indicationHref(drug.slug, indication.slug), {
+              scroll: false,
+            })
+          }
         />
       )}
     </main>
@@ -398,7 +452,7 @@ function SourceGroupRow({ group, highlight }: { group: SourceGroup; highlight?: 
   return (
     <li className={`drug__source-group${highlight ? ' is-own' : ''}`}>
       <span className="drug__source-sub">
-        {highlight ? 'This approval' : group.submission ?? 'Other'}
+        {highlight ? 'This approval' : (group.submission ?? 'Other')}
         {group.date && <span className="nums"> · {formatDate(group.date)}</span>}
       </span>
       <span>
@@ -421,9 +475,7 @@ function newestLabelUrl(drug: Drug): string | undefined {
     const sub = /\(([A-Z]+-\d+)\)$/.exec(label)?.[1];
     return drug.milestones.find((m) => m.submissionNumber === sub)?.date.value ?? '';
   };
-  return drug.sources
-    .filter((src) => src.type === 'fda_label')
-    .sort((a, b) => dateOf(b.label).localeCompare(dateOf(a.label)))[0]?.url;
+  return drug.sources.filter((src) => src.type === 'fda_label').sort((a, b) => dateOf(b.label).localeCompare(dateOf(a.label)))[0]?.url;
 }
 
 /**
@@ -477,4 +529,55 @@ function supportsLine(trial: Trial, indication: Drug['indications'][number]): st
   if (!first || !pc) return undefined;
   const when = pc.value <= first.value ? 'before' : 'after';
   return `Primary completion ${formatDate(pc)}, ${when} the first approval for this use (${formatDate(first)}).`;
+}
+
+/**
+ * One pivotal trial's main result: its first primary outcome as posted to
+ * ClinicalTrials.gov, word for word, or a plain note when nothing is posted.
+ */
+function ResultCard({ trial, name, href, onOpen }: { trial: Trial; name: string; href: string; onOpen: () => void }) {
+  const first = trial.postedResults?.[0];
+  const more = (trial.postedResults?.length ?? 0) - 1;
+  return (
+    <li className="up__card">
+      <div className="up__card-head">
+        <a
+          className="up__card-name"
+          href={href}
+          onClick={(e) => {
+            e.preventDefault();
+            onOpen();
+          }}
+        >
+          {name}
+        </a>
+        {trial.metPrimaryEndpoint !== null && trial.metPrimaryEndpoint !== undefined && (
+          <span className={`drawer__met ${trial.metPrimaryEndpoint ? 'is-met' : 'is-not-met'}`}>
+            {trial.metPrimaryEndpoint ? 'Met primary endpoint' : 'Did not meet primary endpoint'}
+          </span>
+        )}
+      </div>
+      <p className="up__card-meta nums">
+        {[trial.nctId, trial.enrollment && `${trial.enrollment.count.toLocaleString()} patients`].filter(Boolean).join(' · ')}
+      </p>
+      {first ? (
+        <PostedResults outcomes={[first]} sourceUrl={trial.provenance.postedResults?.sourceUrl} />
+      ) : (
+        <>
+          {trial.primaryEndpoints[0] && <p className="up__card-endpoint">{trial.primaryEndpoints[0]}</p>}
+          <p className="pharm__gap">No results posted to ClinicalTrials.gov.</p>
+        </>
+      )}
+      <a
+        className="up__card-more"
+        href={href}
+        onClick={(e) => {
+          e.preventDefault();
+          onOpen();
+        }}
+      >
+        {more > 0 ? `${more} more ${more === 1 ? 'outcome' : 'outcomes'} and the full trial →` : 'The full trial →'}
+      </a>
+    </li>
+  );
 }
