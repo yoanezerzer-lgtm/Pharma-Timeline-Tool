@@ -4260,10 +4260,6 @@
         "value": "2016-02-01",
         "precision": "month"
       },
-      "readoutDate": {
-        "value": "2016-04-01",
-        "precision": "day"
-      },
       "enrollment": {
         "count": 671,
         "type": "ACTUAL"
@@ -4443,7 +4439,11 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2016-04-01",
+        "precision": "day"
+      }
     },
     {
       "id": "pkm14161",
@@ -4610,10 +4610,6 @@
       },
       "completionDate": {
         "value": "2016-01-31",
-        "precision": "day"
-      },
-      "readoutDate": {
-        "value": "2016-04-01",
         "precision": "day"
       },
       "enrollment": {
@@ -4795,7 +4791,11 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [],
+      "readoutDate": {
+        "value": "2016-04-01",
+        "precision": "day"
+      }
     },
     {
       "id": "pkm14271",
@@ -7020,13 +7020,6 @@
           "quote": "ndomized, placebo-controlled, multicenter trials of 24 to 52 weeks duration (SINUS-24 and SINUS-52). The safety pool consisted of data from the first 24 weeks of treatment from both studie",
           "extractedBy": "regex",
           "verified": false
-        },
-        "readoutDate": {
-          "sourceUrl": "https://www.prnewswire.com/news-releases/dupixent-dupilumab-showed-positive-topline-results-in-two-phase-3-trials-of-patients-with-chronic-rhinosinusitis-with-nasal-polyps-300731373.html",
-          "sourceLabel": "PR Newswire: Dupixent® (dupilumab) Showed Positive Topline Results in Two Phase 3 Trials of Patients with Chronic Rhinosinusitis with Nasal Polyps",
-          "quote": "The pivotal Phase 3 trials, known as SINUS-24 (n=276) and SINUS-52 (n=448), had the same co-primary endpoints, which were change from baseline in nasal congestion/ obstruction severity based on the patient's daily morning assessment, and change from baseline in nasal polyposis score (a measure of polyp size) after 24 …",
-          "extractedBy": "regex",
-          "verified": false
         }
       },
       "changeLog": [
@@ -7070,11 +7063,7 @@
           ],
           "detectedAt": "2026-11-07T20:38:48.423Z"
         }
-      ],
-      "readoutDate": {
-        "value": "2018-10-16",
-        "precision": "day"
-      }
+      ]
     },
     {
       "id": "sinus-24",
@@ -7327,13 +7316,6 @@
           "quote": "uated in 2 randomized, placebo-controlled, multicenter trials of 24 to 52 weeks duration (SINUS-24 and SINUS-52). The safety pool consisted of data from the first 24 weeks of treatment fro",
           "extractedBy": "regex",
           "verified": false
-        },
-        "readoutDate": {
-          "sourceUrl": "https://www.prnewswire.com/news-releases/dupixent-dupilumab-showed-positive-topline-results-in-two-phase-3-trials-of-patients-with-chronic-rhinosinusitis-with-nasal-polyps-300731373.html",
-          "sourceLabel": "PR Newswire: Dupixent® (dupilumab) Showed Positive Topline Results in Two Phase 3 Trials of Patients with Chronic Rhinosinusitis with Nasal Polyps",
-          "quote": "The pivotal Phase 3 trials, known as SINUS-24 (n=276) and SINUS-52 (n=448), had the same co-primary endpoints, which were change from baseline in nasal congestion/ obstruction severity based on the patient's daily morning assessment, and change from baseline in nasal polyposis score (a measure of polyp size) after 24 …",
-          "extractedBy": "regex",
-          "verified": false
         }
       },
       "changeLog": [
@@ -7377,11 +7359,7 @@
           ],
           "detectedAt": "2026-11-07T20:38:48.423Z"
         }
-      ],
-      "readoutDate": {
-        "value": "2018-10-16",
-        "precision": "day"
-      }
+      ]
     },
     {
       "id": "r668-ad-1607",

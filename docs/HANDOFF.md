@@ -1,9 +1,41 @@
-# Handoff: where things stand (9 Nov 2026)
+# Handoff: where things stand (17 Nov 2026)
 
 Read `CLAUDE.md` first: it holds the owner's standing rules. `docs/PRD.md`
 holds the mission, the users and the goals (4 Nov). This note is the
 current state and the next steps. Update it when they change, and start a
 new session when a conversation gets long.
+
+## This week (17 Nov): less text on every page
+Owner, 17 Nov: the biggest problem now, after adding drugs, is that the
+pages are **too dense**. Most of the information has to stay, but it should
+not all be on screen at once. This week is design and shorter copy.
+- Rule for these chats: keep the facts, cut the words. Show the answer
+  first and put the detail one click away (show more, (i) icons, tabs,
+  the side panel). Fewer headings, shorter labels, no sentence that
+  repeats a table. The FDA's own wording stays word for word where it is
+  shown; only the site's own copy gets shorter (`src/lib/copy.ts`).
+- One page per chat, in order of traffic: home, drug, approved use,
+  disease, trial, Compare. Check each at desktop width and at 375px.
+- Domain and Cloudflare: the owner decides by the end of this week.
+
+### State on 17 Nov
+- Pull requests: none open. #164 (Dupixent SINUS-24/52 readout dates) was
+  merged by mistake and undone the same day; #161 (Cibinqo JADE TEEN,
+  MONO-2) closed. Both quotes failed the readout rule (the quote must
+  state the primary result: #164 only described the endpoints, #161 was
+  the page title). The links stay in `data/readouts/candidates/`.
+  #102 and #107 closed as stale (their links are already on main).
+- **Readout reader**: it saves quotes that do not state a result, so the
+  nightly agent keeps holding them. Fix in a data chat: make the reader
+  pick a sentence with a result in it, or record no readout.
+- **Nightly fact checker**: runs every night, but no
+  `nightly/<date>-confirmations` branch since 11 Nov, only readouts.
+  Find out why in a data chat (read the latest overnight summary first).
+- **Weekly refresh of 15 Nov** waits on `data/refresh-2026-11-15`
+  (22 drugs, includes the 8 Nov dating rules). Review it before Saturday's.
+- **FDA review time and approval markers** (`claude/precedent-markers-citations`,
+  10 Nov) still have no pull request. Bring up to date with main and merge
+  once the design chats have made room for them.
 
 ## Product direction
 - Professionals first (consultants, business-development and regulatory
@@ -218,21 +250,18 @@ waiting on CI in a chat and re-running all drugs to test a guess.
   write readers against that, then add them to `npm run precedent`.
 
 ## Next steps (in order, one chat each)
-The owner wants a strong focus on **design** (9 Nov): every data chat
-should leave the pages it touches looking right, and design gets its own
-chats.
-1. **Design**: flow review page by page: drug, approved use, disease,
-   trial (#138, #140), Compare (#141, #143), Drugs and Diseases lists
-   (#146), About the data done. Every page has had one pass.
-2. ~~Finish atopic dermatitis data~~ (done 9 Nov, #139; leftovers in
-   "open gaps" above).
-3. **Get ready to publish**: visitor counter (cookie-free), then Cloudflare
-   Pages and domain (owner), Search Console (owner), then the paywall.
-4. **Precedent table** (PRD goal 3): a table an analyst can build in ten
-   minutes for the area.
-- Maintenance, any chat: move workflow actions off deprecated Node 20.
-- Later: "Rare diseases" from FDA orphan status; more areas once atopic
-  dermatitis is complete.
+1. **Design: less text** (this week, several chats; see the top section).
+2. **Data, one chat**: review the 15 Nov refresh; find why the nightly
+   confirmations stopped; fix the readout reader's quotes.
+3. **Precedent table** (PRD goal 3): merge the FDA review time work, then
+   the table an analyst can build in ten minutes.
+4. **Get ready to publish** (after the owner's domain and Cloudflare
+   decision): cookie-free visitor counter, Cloudflare Pages, Search
+   Console, then the paywall.
+5. More drugs and areas once atopic dermatitis is complete.
+- Later: readers for breakthrough, fast track, orphan and Orange Book
+  (`diag/designations`); "Rare diseases" from orphan status; move
+  workflow actions off Node 20.
 
 ## Design review (9 Nov)
 Done: disease page "Every approval" table (one row per FDA letter: date,
@@ -342,7 +371,7 @@ Still open from the review:
 
 ## Open owner questions
 - Show a public "last updated" date on the site?
-- Domain name; Cloudflare account; Google Search Console; pricing.
+- Domain name and Cloudflare account (owner: by the end of the week of 16 Nov); Google Search Console; pricing.
 - 18 stuck facts need a person to look (list in `npm run -s status`).
 - Optional: delete ~110 old branches (keep `diag/raw-text-*`, `claude/prd`,
   unmerged `data/*`).
