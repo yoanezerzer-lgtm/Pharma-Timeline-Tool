@@ -80,8 +80,9 @@ not all be on screen at once. This week is design and shorter copy.
   call) beside key facts (company, class, first approval, approvals);
   "Approvals" as a timeline (hover a marker for disease, area, date, pivotal
   trials) and a list with pivotal-trial counts; "How it works" (label
-  12.1–12.3, shown by title only); Company news; Sources. Company logos
-  not added (owner considering; see #168).
+  12.1–12.3, shown by title only); Company news; Sources. No company
+  logos (owner, 17 Nov: endorsement look on a paid site, not from public
+  sources, paid logo services).
 - **Approved-use page**: trials timeline with a Today line. The trial
   panel has a **source trail** (#130): approval letter → document naming
   the trial → ClinicalTrials.gov record, each linked.
