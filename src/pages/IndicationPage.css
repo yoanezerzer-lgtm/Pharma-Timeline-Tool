@@ -349,3 +349,259 @@
   font-size: 12px;
   color: var(--text-3);
 }
+
+/* ---- Approved use page: the FDA's wording and three numbers first ---- */
+
+.up__crumb {
+  margin: 0 0 0.4rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.up__crumb .drug__inn {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.up__head h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+}
+
+.up__meta {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-data);
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+/* What the FDA approved, word for word: the answer to "approved for what?". */
+.up__wording {
+  max-width: 78ch;
+  margin: 1.25rem 0 0;
+  padding: 0.9rem 1.2rem;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-elevated);
+}
+
+.up__wording p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--text-1);
+}
+
+.up__wording footer {
+  margin-top: 0.5rem;
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.up__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin: 0.9rem 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Three numbers: when, how long, how many trials. */
+.up__numbers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.up__numbers > div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.up__numbers dt {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.up__numbers dd {
+  margin: 0.35rem 0 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-1);
+}
+
+.up__numbers-sub {
+  margin-top: 0.25rem;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.up h2 {
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--text-1);
+}
+
+.up__section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.up__sub {
+  margin: -0.25rem 0 1rem;
+  font-size: 14.5px;
+  color: var(--text-2);
+}
+
+/* "Show trials behind later label expansions": a small on/off switch. */
+.up__switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.up__switch input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.up__switch-track {
+  position: relative;
+  flex: none;
+  width: 34px;
+  height: 20px;
+  border-radius: 10px;
+  background: var(--border);
+  transition: background 0.15s ease;
+}
+
+.up__switch-track::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  transition: transform 0.15s ease;
+}
+
+.up__switch input:checked + .up__switch-track {
+  background: var(--accent);
+}
+
+.up__switch input:checked + .up__switch-track::after {
+  transform: translateX(14px);
+}
+
+.up__switch input:focus-visible + .up__switch-track {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* One card per pivotal trial: its main posted result. */
+.up__results {
+  margin-top: 2.5rem;
+}
+
+.up__cards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.up__card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.up__card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 0.75rem;
+}
+
+.up__card-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.up__card-meta {
+  margin: 0.2rem 0 0.75rem;
+  font-family: var(--font-data);
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.up__card-endpoint {
+  margin: 0 0 0.4rem;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-1);
+}
+
+.up__card .posted-results {
+  flex: 1;
+}
+
+.up__card-more {
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .up__numbers {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .up__head h1 {
+    font-size: 2rem;
+  }
+}
