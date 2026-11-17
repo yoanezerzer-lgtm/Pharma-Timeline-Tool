@@ -65,8 +65,8 @@ npm run verify -- queue --date "$DATE"
 ```
 
 This writes `.verify/queue.json`. It takes drugs with nothing confirmed yet
-first, a whole drug at a time, so the site's "Not yet checked" labels clear
-drug by drug. Each claim asks whether one trial was part
+first, a whole drug at a time, so drugs become fully checked one by one
+(`npm run -s status`). Each claim asks whether one trial was part
 of the evidence for one approved indication. It comes with the trial's
 registry facts and the passages where the FDA documents name the trial.
 `inIndicationSpan: true` marks a passage inside the label's section 14
@@ -81,8 +81,10 @@ For every claim in `.verify/queue.json`, decide one of:
   (NCT…) was a … trial in … patients with [the indication]" followed by its
   results. Give the exact sentence as evidence. Add a second quote from an
   FDA review or approval letter when one names the trial for that use.
-  Code accepts the registry record as the second source for a sponsor-run
-  Phase 2/3 trial, but not for a Phase 1 or Phase 4 one.
+  Code accepts the registry record as the second source for a Phase 2/3
+  trial run by the applicant or by a company the label names ("Marketed
+  by", "Distributed by", "Manufactured for"), but not for a Phase 1 or
+  Phase 4 one.
 - **`contradicted`**: the documents show the trial is not part of that
   indication's evidence. For example, it is described under a different
   indication, appears only in pooled safety data, or is an open-label
@@ -167,9 +169,11 @@ the release page; your job is only to find the page.
    candidate that produced no readout is listed with `"candidates": 0`
    (unreadable page or no date) or simply no readout (no sentence naming
    the trial with a result in it). Mention those in the summary.
-7. Open a pull request for each `readouts/*` branch into `main`. Check that
-   each readout's quote really reports the trial's primary result, and
-   merge once CI passes.
+7. Open a pull request for each `readouts/*` branch into `main`. Merge it
+   once CI passes only if every readout's quote states the trial's primary
+   result. A page title or a description of the endpoints is not enough:
+   leave that pull request open, say why in its description, and list it
+   in the summary.
 
 ## 7. Fix what the checks found
 

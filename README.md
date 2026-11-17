@@ -149,9 +149,9 @@ reported.
 
 ## Current status
 
-Six drugs are ingested (Rinvoq, Skyrizi, Keytruda, Lexapro, Foundayo, rusfertide). The
-site shows each drug's timeline, each indication's trials and approvals, and a page
-comparing two approvals side by side.
+See `docs/HANDOFF.md` for the current state and next steps, and run
+`npm run -s status` for the drug count and what is checked. The product
+and its goals are in `docs/PRD.md`; the working rules in `CLAUDE.md`.
 
 Checks that run on every change and overnight:
 
@@ -171,8 +171,8 @@ Not yet built:
 - **OCR.** Approval packages older than roughly 2002 are scanned images with no text
   layer. The pipeline warns when it finds one instead of silently producing zero trials.
 - **Pre-2005 trials** frequently have no ClinicalTrials.gov record at all, so the join
-  misses and dates have to come from the review text by hand. This affects older drugs
-  (Gardasil 4, for instance); it does not affect Rinvoq.
+  misses and those trials show no dates: a gap, never a hand-entered value. This affects
+  older drugs (Protopic, for instance).
 
 ## Sources
 
