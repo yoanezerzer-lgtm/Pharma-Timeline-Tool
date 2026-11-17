@@ -1,7 +1,7 @@
 .home {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 1.25rem var(--gutter) 5rem;
+  padding: 1.25rem var(--gutter) 4rem;
 }
 
 /* Where log-in will sit once accounts exist. */
@@ -35,30 +35,61 @@
   opacity: 0.7;
 }
 
+/* ---- First screen: what the site is, and where to go ---- */
+
 .home__hero {
-  max-width: 760px;
-  margin: 1.5rem 0 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+  margin: 1.5rem 0 2.5rem;
 }
 
-.home__hero h1 {
-  margin: 0 0 0.75rem;
-  font-size: 2.4rem;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+.home__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1.1rem;
+  font-family: var(--font-data);
+  font-size: 12.5px;
+  color: var(--accent);
+}
+
+.home__eyebrow-mark {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+}
+
+.home__intro h1 {
+  margin: 0;
+  font-size: 2.75rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   color: var(--text-1);
 }
 
+.home__tagline {
+  margin: 0.6rem 0 1rem;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+}
+
 .home__lede {
+  max-width: 34rem;
   margin: 0 0 1.5rem;
   font-size: 17px;
-  line-height: 1.55;
+  line-height: 1.6;
   color: var(--text-2);
 }
 
 .home__search {
   display: flex;
   gap: 0.5rem;
-  max-width: 600px;
+  max-width: 34rem;
 }
 
 .home__search input {
@@ -87,71 +118,127 @@
   cursor: pointer;
 }
 
-.home__counts {
-  margin: 0.85rem 0 0;
-  font-size: 14px;
-  color: var(--text-3);
+/* The task list: one row per thing people come to do. */
+.home__tasks {
+  padding: 1.5rem 1.6rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
 }
 
-.home__featured,
-.home__kinds,
-.home__recent,
-.home__sources {
-  margin-top: 3rem;
-  padding-top: 1.75rem;
-  border-top: 1px solid var(--border);
+.home__tasks h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  color: var(--text-1);
 }
 
-.home__featured {
-  margin-top: 0;
+.home__tasks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.home__eyebrow {
-  margin: 0 0 0.25rem;
-  font-size: 12px;
+.home__tasks li + li {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.home__task {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 0.35rem;
+  color: var(--text-1);
   font-weight: 600;
+  text-decoration: none;
+}
+
+.home__task:hover {
+  background: var(--row-hover);
+}
+
+.home__task-text {
+  flex: 1;
+}
+
+.home__icon,
+.home__card-icon {
+  display: inline-flex;
+  color: var(--accent);
+}
+
+.home__arrow {
+  color: var(--accent);
+  transition: transform 0.15s ease;
+}
+
+.home__task:hover .home__arrow {
+  transform: translateX(3px);
+}
+
+.home__tasks-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0.75rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* The complete area, in one line. */
+.home__featured {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.85rem;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  font-size: 15px;
+  color: var(--text-2);
+}
+
+.home__featured a {
+  font-weight: 600;
+}
+
+.home__featured-label {
+  font-family: var(--font-data);
+  font-size: 11.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
-.home__section-head h2,
-.home__kinds h2,
-.home__recent h2,
-.home__sources h2 {
-  margin: 0 0 0.35rem;
-  font-size: 1.5rem;
+/* ---- The four kinds of page ---- */
+
+.home__kinds {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.home__kinds h2 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
   color: var(--text-1);
 }
 
-.home__section-head h2 a {
-  color: inherit;
-}
-
-.home__section-sub {
-  margin: 0 0 1rem;
+.home__kinds-sub {
+  max-width: 46rem;
+  margin: 0 0 1.75rem;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--text-2);
-}
-
-.home__preview {
-  margin-top: 2rem;
-}
-
-.home__preview h3 {
-  margin: 0 0 0.6rem;
-  font-size: 1.05rem;
-  color: var(--text-1);
-}
-
-.home__more {
-  margin: 0.85rem 0 0;
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .home__cards {
   list-style: none;
-  margin: 1rem 0 0;
+  margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -161,114 +248,133 @@
 .home__card {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  height: 100%;
-  padding: 1rem 1.1rem 1.15rem;
+  padding: 1.25rem 1.25rem 1.1rem;
   border: 1px solid var(--border);
   border-top: 3px solid var(--accent);
   border-radius: var(--radius);
   background: var(--bg-elevated);
-  color: var(--text-2);
-  text-decoration: none;
-  box-sizing: border-box;
 }
 
-.home__card:hover {
-  background: var(--row-hover);
+.home__card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
 }
 
-.home__card-kind {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-3);
+.home__card-icon {
+  justify-content: center;
+  align-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--accent-soft);
 }
 
-.home__card-title {
-  font-size: 1.05rem;
-  font-weight: 600;
+.home__card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  color: var(--text-1);
+}
+
+.home__dot {
   color: var(--accent);
+}
+
+.home__card-question {
+  margin: 0.85rem 0 0.75rem;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.home__card-points {
+  list-style: none;
+  margin: 0 0 1.1rem;
+  padding: 0;
+  flex: 1;
+}
+
+.home__card-points li {
+  margin: 0.4rem 0;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-1);
+}
+
+.home__card-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.home__open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-width: 6.5rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.home__open:hover {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+.home__card-foot > a:not(.home__open) {
+  color: var(--text-2);
+}
+
+.home__card-example {
+  margin: 0.55rem 0 0;
+  font-size: 12.5px;
+  color: var(--text-3);
   overflow-wrap: anywhere;
 }
 
-.home__card-text {
-  font-size: 14px;
-  line-height: 1.5;
+.home__card-example::before {
+  content: 'Opens: ';
 }
 
-.home__recent-list {
-  list-style: none;
-  margin: 0.75rem 0 0;
-  padding: 0;
-}
-
-.home__recent-list li {
-  display: grid;
-  grid-template-columns: 9rem 14rem minmax(0, 1fr);
-  gap: 1rem;
-  padding: 0.6rem 0.5rem;
-  border-bottom: 1px solid var(--border-subtle);
-  align-items: baseline;
-}
-
-.home__recent-list li:nth-child(odd) {
-  background: var(--row-stripe);
-}
-
-.home__recent-date {
-  font-size: 13px;
-  color: var(--text-2);
-}
-
-.home__recent-drug span {
-  font-size: 13px;
-  color: var(--text-3);
-}
-
-.home__recent-use {
-  color: var(--text-1);
-  font-size: 14px;
-  line-height: 1.45;
-}
-
-.home__sources ul {
-  margin: 0.75rem 0 1rem;
-  padding-left: 1.2rem;
-  color: var(--text-2);
-  line-height: 1.6;
-}
-
-.home__sources p {
-  margin: 0;
-  max-width: 70ch;
-  color: var(--text-2);
-  line-height: 1.6;
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+  .home__hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
   .home__cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
-  .home__hero h1 {
-    font-size: 1.75rem;
+  .home__intro h1 {
+    font-size: 1.9rem;
+  }
+  .home__tagline {
+    font-size: 1.15rem;
+  }
+  .home__kinds h2 {
+    font-size: 1.5rem;
   }
   .home__cards {
     grid-template-columns: 1fr;
   }
-  .home__recent-list li {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
+  .home__tasks {
+    padding: 1.1rem 1rem 1rem;
   }
   .home__account-note {
     display: none;
   }
-}
-
-.home__severity {
-  font-weight: 400;
-  color: var(--text-2);
 }

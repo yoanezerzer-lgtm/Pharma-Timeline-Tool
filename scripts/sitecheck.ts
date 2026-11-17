@@ -50,7 +50,7 @@ async function main(): Promise<void> {
   await visit(page, '', async (p) => {
     const body = await text(p);
     if (!/which clinical trials led to which FDA approval/i.test(body)) return 'home page lacks its heading';
-    return /what you can open/i.test(body) ? undefined : 'home page lacks its example pages';
+    return /choose where to start/i.test(body) && /what are you working on/i.test(body) ? undefined : 'home page lacks its entry points';
   });
 
   await visit(page, 'drugs/', async (p) => {
