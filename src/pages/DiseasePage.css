@@ -434,3 +434,310 @@
   color: var(--text-2);
   padding: 0.3rem 0;
 }
+
+/* ---- Disease page layout: name and summary beside key facts ---- */
+
+.dz__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  gap: 2.5rem;
+  align-items: start;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dz__head h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+}
+
+.dz__lede {
+  max-width: 62ch;
+  margin: 1rem 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+/* The summary's opening, word for word, cut to three lines. */
+.dz__lede-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dz__lede-more {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dz__lede-source {
+  margin-left: 0.75rem;
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.dz__lede-source::before {
+  content: 'From ';
+}
+
+.dz__facts {
+  margin: 0;
+  padding: 0.35rem 1.25rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.dz__facts > div {
+  padding: 0.7rem 0;
+}
+
+.dz__facts > div + div {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.dz__facts dt {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.dz__facts dd {
+  margin: 0.25rem 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-1);
+}
+
+.dz__facts-sub {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-2);
+}
+
+.dz h2 {
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--text-1);
+}
+
+.dz .disease__lanes {
+  margin-top: 2.25rem;
+}
+
+.dz__sub {
+  margin: -0.25rem 0 1rem;
+  font-size: 14.5px;
+  color: var(--text-2);
+}
+
+/* "Show pivotal trials": a small on/off switch. */
+.dz__switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.dz__switch input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.dz__switch-track {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  border-radius: 10px;
+  background: var(--border);
+  transition: background 0.15s ease;
+}
+
+.dz__switch-track::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  transition: transform 0.15s ease;
+}
+
+.dz__switch input:checked + .dz__switch-track {
+  background: var(--accent);
+}
+
+.dz__switch input:checked + .dz__switch-track::after {
+  transform: translateX(14px);
+}
+
+.dz__switch input:focus-visible + .dz__switch-track {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Rows without trials are short: just the markers. */
+.dz__compact .disease__row {
+  align-items: center;
+}
+
+/* An approval: a diamond, filled for a new approval, open for a later change. */
+.dz__marker {
+  position: absolute;
+  top: 13px;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+}
+
+.dz__marker::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: var(--accent);
+  box-shadow: 0 0 0 2px var(--bg-1);
+  transform: rotate(45deg);
+  transition: transform 0.12s ease;
+}
+
+.dz__marker--later::before {
+  background: var(--bg-1);
+  border: 2px solid var(--accent);
+  box-sizing: border-box;
+}
+
+.dz__marker:hover::before,
+.dz__marker:focus-visible::before {
+  transform: rotate(45deg) scale(1.3);
+}
+
+.dz__marker:hover,
+.dz__marker:focus-visible {
+  z-index: 5;
+}
+
+.dz__tip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: -0.4rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: max-content;
+  max-width: 16rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  box-shadow: 0 6px 20px rgba(16, 25, 27, 0.12);
+  text-align: left;
+  white-space: normal;
+}
+
+.dz__marker--end .dz__tip {
+  left: auto;
+  right: -0.4rem;
+}
+
+.dz__marker:hover .dz__tip,
+.dz__marker:focus-visible .dz__tip {
+  display: flex;
+}
+
+.dz__tip-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.dz__tip-kind {
+  font-size: 12.5px;
+  color: var(--accent);
+}
+
+.dz__tip-meta {
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.dz__tip-hint {
+  margin-top: 0.2rem;
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.dz__key {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 0.35rem 0 0.15rem;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+
+.dz__key--later {
+  background: transparent;
+  border: 2px solid var(--accent);
+  box-sizing: border-box;
+}
+
+/* Sources stay one click away on every value, but fade back until the row is hovered or focused. */
+@media (hover: hover) {
+  .dz .precedent__table .cite,
+  .dz .review-time .cite {
+    border-color: transparent;
+    background: transparent;
+    color: var(--text-3);
+    opacity: 0.55;
+    transition: opacity 0.12s ease;
+  }
+  .dz .precedent__table tr:hover .cite,
+  .dz .review-time tr:hover .cite,
+  .dz .review-time__tile:hover .cite,
+  .dz .cite:focus-visible {
+    border-color: var(--accent);
+    color: var(--accent);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .dz__intro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .dz__head h1 {
+    font-size: 2rem;
+  }
+  /* Phones show the list without the lanes, so there are no trial bars to switch on. */
+  .dz__switch {
+    display: none;
+  }
+}

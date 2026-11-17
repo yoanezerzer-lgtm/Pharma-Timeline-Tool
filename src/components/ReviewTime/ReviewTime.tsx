@@ -27,11 +27,6 @@ export function usePrecedent(meshId: string): PrecedentFile | null | undefined {
 
 const isoDay = (iso?: string) => (iso ? formatDate(toDateValue(iso)) : undefined);
 
-/** A small mono chip naming where numbers come from and how fresh they are. */
-export function DataChip({ children, warn }: { children: ReactNode; warn?: boolean }) {
-  return <span className={warn ? 'data-chip data-chip--warn' : 'data-chip'}>{children}</span>;
-}
-
 /** A value linking to its record, with the source in its tooltip. */
 function Linked({ source, children }: { source?: ValueSource; children: ReactNode }) {
   if (!source) return <>{children}</>;
@@ -78,13 +73,11 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
       <p className="review-time__lede">
         How long past reviews took. Not a forecast: it does not say when a future review will end.
       </p>
-
-      <div className="review-time__chips">
-        {dataOf && <DataChip>openFDA · data of {dataOf}</DataChip>}
-        {read && <DataChip>FDA letters · read {read}</DataChip>}
-        <DataChip warn>openFDA only: breakthrough and fast track designations are not recorded</DataChip>
-        <DataChip warn>Other products found by label wording only: approvals whose label words it differently are missing</DataChip>
-      </div>
+      <p className="review-time__basis">
+        From openFDA{dataOf && ` (data of ${dataOf})`} and the FDA’s approval letters{read && ` (read ${read})`}. openFDA
+        doesn’t record breakthrough or fast track designations, and other products are found by their label’s wording,
+        so one worded differently can be missing.
+      </p>
 
       <div className="review-time__tiles">
         <div className="review-time__tile">
@@ -134,6 +127,10 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
         </div>
       </div>
 
+      <details className="review-time__each">
+        <summary>
+          Each product ({products.length})
+        </summary>
       <div className="review-time__scroll">
         <table className="precedent__table review-time__table">
           <thead>
@@ -160,6 +157,7 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
           </tbody>
         </table>
       </div>
+      </details>
       {left > 0 && (
         <p className="review-time__note">
           {left} {left === 1 ? 'product is' : 'products are'} left out: {left === 1 ? 'its' : 'their'} FDA wording

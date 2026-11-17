@@ -1,5 +1,5 @@
 import { Info } from '../components/Info/Info.js';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { severityGroups, type DiseaseSummary, type UseStep } from '../lib/diseases.js';
 import { diseaseIndex, drugIndex } from '../lib/catalog.js';
 import { siteAreas } from '../lib/siteAreas.js';
@@ -17,7 +17,6 @@ import { NotFoundPage } from './NotFoundPage.js';
 import { PrecedentTable } from '../components/PrecedentTable/PrecedentTable.js';
 import { precedentRows } from '../lib/precedent.js';
 import { ReviewTime } from '../components/ReviewTime/ReviewTime.js';
-import { ApprovalMarkers, type MarkerEvent } from '../components/ApprovalMarkers/ApprovalMarkers.js';
 import { Cite } from '../components/Citations/Citations.js';
 import { letterSource } from '../lib/citations.js';
 import './IndicationPage.css';
@@ -28,6 +27,8 @@ const DAY = 86_400_000;
 /** Lane layout: approval marks along the top, one trial per line below. */
 const LANE_TOP = 18;
 const LANE_PITCH = 16;
+/** A row with its trials hidden: room for the markers only. */
+const COMPACT_LANE = 26;
 
 const stepLabel = (s: UseStep) => approvalKindLabel(s.kind, s.submissions);
 
@@ -57,38 +58,36 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
   };
 
   return (
-    <main className="drug">
-      <header className="disease__head">
-        <h1>{disease.name}</h1>
-        <p className="drug__mechanism">
-          {drugs} {drugs === 1 ? 'drug' : 'drugs'} · {rows.length} FDA {rows.length === 1 ? 'approval' : 'approvals'}
-          {areas.map((a) => (
-            <span key={a.id}>
-              {' · '}
-              <a href={drugsHref(a.id)}>{a.name}</a>
-            </span>
-          ))}
-        </p>
-        <AtAGlance disease={disease} />
-      </header>
+    <main className="drug dz">
+      <div className="dz__intro">
+        <header className="dz__head">
+          <h1>{disease.name}</h1>
+          {disease.summary && <Lede summary={disease.summary} />}
+        </header>
+        <KeyFacts disease={disease} drugs={drugs} approvals={rows.length} areas={areas} />
+      </div>
 
-      {groups.length > 1 && (
-        <div className="disease__severity">
-          <div className="precedent__filter" role="group" aria-label="Severity">
-            {groups.map((g, k) => (
-              <button key={g.severity} type="button" aria-pressed={k === pick} onClick={() => choose(k)}>
-                {g.label} · {plural(new Set(g.disease.uses.map((u) => u.drugSlug)).size, 'drug')}
-              </button>
-            ))}
-          </div>
-          <p className="disease__severity-note">
-            The FDA approvals name different severities. Each is shown on its own: their trials enrolled different
-            patients, so they can’t be compared side by side.
-          </p>
-        </div>
-      )}
-
-      <DiseaseTimeline disease={shown} companyOf={companyOf} />
+      <DiseaseTimeline
+        disease={shown}
+        companyOf={companyOf}
+        severity={
+          groups.length > 1 && (
+            <div className="disease__severity">
+              <div className="precedent__filter" role="group" aria-label="Severity">
+                {groups.map((g, k) => (
+                  <button key={g.severity} type="button" aria-pressed={k === pick} onClick={() => choose(k)}>
+                    {g.label} · {plural(new Set(g.disease.uses.map((u) => u.drugSlug)).size, 'drug')}
+                  </button>
+                ))}
+              </div>
+              <p className="disease__severity-note">
+                The FDA approvals name different severities. Each is shown on its own: their trials enrolled different
+                patients, so they can’t be compared side by side.
+              </p>
+            </div>
+          )
+        }
+      />
 
       <section className="precedents" aria-labelledby="precedents-head">
         <div className="disease__timeline-head">
@@ -103,13 +102,15 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
           </h2>
           <ExportButtons disease={shown} />
         </div>
+        <p className="dz__sub">One row per FDA letter, in the FDA’s words. Every value links to its source.</p>
         <PrecedentTable key={group.severity} rows={shownRows} />
       </section>
 
       <ReviewTime meshId={disease.meshId} severity={group.severity} split={groups.length > 1} />
 
-      {/* Professionals come for the approvals; the plain-words summary follows them. */}
-      {disease.summary ? <PlainSummary summary={disease.summary} /> : <Definition disease={disease} />}
+      <div id="about">
+        {disease.summary ? <PlainSummary summary={disease.summary} /> : <Definition disease={disease} />}
+      </div>
 
       {disease.summary && disease.definition && (
         <details className="disease__details">
@@ -121,6 +122,87 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
   );
 }
 
+/** The opening of MedlinePlus's summary, word for word, cut to two lines, with a jump to the whole of it. */
+function Lede({ summary }: { summary: NonNullable<DiseaseSummary['summary']> }) {
+  const opening = summary.paragraphs.find((p) => !p.endsWith('?') && !p.startsWith('• '));
+  if (!opening) return null;
+  return (
+    <p className="dz__lede">
+      <span className="dz__lede-text">{opening}</span>{' '}
+      <a href="#about" className="dz__lede-more">
+        Read more ↓
+      </a>
+      <span className="dz__lede-source">{summary.sourceLabel.split(', ')[0]}</span>
+    </p>
+  );
+}
+
+/** Drugs, approvals, first and latest approval, and the disease's areas, each first/latest with its FDA letter. */
+function KeyFacts({
+  disease,
+  drugs,
+  approvals,
+  areas,
+}: {
+  disease: DiseaseSummary;
+  drugs: number;
+  approvals: number;
+  areas: { id: string; name: string }[];
+}) {
+  const steps = disease.uses
+    .flatMap((u) =>
+      u.steps.filter((s) => s.date && s.kind === 'new').map((s) => ({ brand: u.brandName, date: s.date!, src: letterSource(u, s) })),
+    )
+    .sort((a, b) => a.date.value.localeCompare(b.date.value));
+  const first = steps[0];
+  const last = steps[steps.length - 1];
+  return (
+    <dl className="dz__facts">
+      <div>
+        <dt>Drugs</dt>
+        <dd className="nums">{drugs}</dd>
+      </div>
+      <div>
+        <dt>FDA approvals</dt>
+        <dd className="nums">{approvals}</dd>
+      </div>
+      {first && (
+        <div>
+          <dt>First approval</dt>
+          <dd>
+            <span className="nums">{formatDate(first.date)}</span>
+            <Cite sources={[first.src]} />
+            <span className="dz__facts-sub">{first.brand}</span>
+          </dd>
+        </div>
+      )}
+      {last && last !== first && (
+        <div>
+          <dt>Latest approval</dt>
+          <dd>
+            <span className="nums">{formatDate(last.date)}</span>
+            <Cite sources={[last.src]} />
+            <span className="dz__facts-sub">{last.brand}</span>
+          </dd>
+        </div>
+      )}
+      {areas.length > 0 && (
+        <div>
+          <dt>Area</dt>
+          <dd>
+            {areas.map((a, k) => (
+              <span key={a.id}>
+                {k > 0 && ', '}
+                <a href={drugsHref(a.id)}>{a.name}</a>
+              </span>
+            ))}
+          </dd>
+        </div>
+      )}
+    </dl>
+  );
+}
+
 /**
  * The disease's approvals over time: one lane per approved use, its pivotal
  * trials as bars and each FDA letter as a dot. Also shown on the home page.
@@ -129,11 +211,19 @@ export function DiseaseTimeline({
   disease,
   companyOf,
   headingLevel = 2,
+  severity,
 }: {
   disease: DiseaseSummary;
   companyOf: (drugSlug: string) => string;
   headingLevel?: 2 | 3;
+  /** The severity switch, shown at the top of the section. */
+  severity?: ReactNode;
 }) {
+  // Approvals first; the pivotal trials are one click away.
+  const [withTrials, setWithTrials] = useState(false);
+  const hasTrials = disease.uses.some((u) => u.trials.length > 0);
+  const showTrials = withTrials && hasTrials;
+  // The scale covers the trials either way, so switching them on doesn't move the approvals.
   const times = disease.uses.flatMap((u) => [
     ...u.steps.filter((s) => s.date).map((s) => toTime(s.date!)),
     ...u.trials.flatMap((t) => [toTime(t.start!), toTime(t.primaryCompletion!)]),
@@ -145,35 +235,28 @@ export function DiseaseTimeline({
   for (let y = new Date(min).getUTCFullYear() + 1; y <= new Date(max).getUTCFullYear(); y++) years.push(y);
   const step = Math.ceil(years.length / 8);
   const Heading = headingLevel === 2 ? 'h2' : 'h3';
-  // A diamond above the axis at each use's first US approval for this disease.
-  const events: MarkerEvent[] = disease.uses.flatMap((u) => {
-    const first = u.steps.find((s) => s.date);
-    if (!first?.date) return [];
-    return [
-      {
-        id: `${u.drugSlug}-${u.indicationSlug}`,
-        label: u.brandName,
-        detail: `${stepLabel(first)} · ${formatDate(first.date)}`,
-        pct: pct(toTime(first.date)),
-        href: first.sourceUrl,
-        extra: <Cite sources={[letterSource(u, first)]} />,
-      },
-    ];
-  });
   return (
-    <section className="ind-timeline disease__lanes" aria-label="Approvals over time">
+    <section className={`ind-timeline disease__lanes${showTrials ? '' : ' dz__compact'}`} aria-label="Approvals over time">
       <div className="disease__timeline-head">
         <Heading>
-          Timeline
+          Approvals over time
           <Info label="How to read this">
-            One row per approved use. Bars are the pivotal trials, from start to primary completion; hover a bar for
-            its name and dates; a hollow bar finished after the use's first approval. A filled dot is a new approval; an open dot is a later change to it (a wider group of
-            patients, or new wording). “Mo after trials” counts the months from the last pivotal trial’s primary completion to
-            the first approval.
+            One row per approved use. A filled diamond is a new approval; an open one is a later change to it (a wider
+            group of patients, or new wording). Hover a diamond for what it was; click it for the FDA letter. With
+            trials shown, bars are the pivotal trials, from start to primary completion; a hollow bar finished after
+            the use’s first approval. “Mo after trials” counts the months from the last pivotal trial’s primary
+            completion to the first approval.
           </Info>
         </Heading>
+        {hasTrials && (
+          <label className="dz__switch">
+            <input type="checkbox" checked={withTrials} onChange={(e) => setWithTrials(e.target.checked)} />
+            <span className="dz__switch-track" aria-hidden="true" />
+            Show pivotal trials
+          </label>
+        )}
       </div>
-      {events.length > 0 && <ApprovalMarkers events={events} caption="First US approvals" />}
+      {severity}
       {times.length > 0 && (
         <div className="ind-timeline__axis" aria-hidden="true">
           <div />
@@ -193,7 +276,7 @@ export function DiseaseTimeline({
         {disease.uses.map((u) => {
           const firstDate = u.steps.find((s) => s.date)?.date;
           const months = lag(u);
-          const height = LANE_TOP + Math.max(1, u.trials.length) * LANE_PITCH;
+          const height = showTrials ? LANE_TOP + Math.max(1, u.trials.length) * LANE_PITCH : COMPACT_LANE;
           return (
             <li key={`${u.drugSlug}-${u.indicationSlug}`} className="ind-timeline__row disease__row">
               <a className="ind-timeline__name disease__row-name" href={indicationHref(u.drugSlug, u.indicationSlug)}>
@@ -204,12 +287,12 @@ export function DiseaseTimeline({
                 {years.map((y) => (
                   <span key={y} className="ind-timeline__gridline" style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }} />
                 ))}
-                {u.steps.map((s, k) =>
+                {showTrials && u.steps.map((s, k) =>
                   s.date ? (
                     <span key={`g${k}`} className="disease__guide" style={{ left: `${pct(toTime(s.date))}%` }} aria-hidden="true" />
                   ) : null,
                 )}
-                {u.trials.map((t, k) => {
+                {showTrials && u.trials.map((t, k) => {
                   const from = pct(toTime(t.start!));
                   const to = pct(toTime(t.primaryCompletion!));
                   const labelLeft = to < 72;
@@ -240,14 +323,23 @@ export function DiseaseTimeline({
                   s.date ? (
                     <a
                       key={k}
-                      className={`ind-timeline__dot disease__dot${s.kind === 'new' ? '' : ' disease__dot--later'}`}
+                      className={`dz__marker${s.kind === 'new' ? '' : ' dz__marker--later'}${pct(toTime(s.date)) > 65 ? ' dz__marker--end' : ''}`}
                       style={{ left: `${pct(toTime(s.date))}%` }}
                       href={s.sourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title={`${stepLabel(s)} ${formatDate(s.date)}`}
                       aria-label={`${u.brandName}: ${stepLabel(s)} ${formatDate(s.date)}, FDA letter`}
-                    />
+                    >
+                      <span className="dz__tip" aria-hidden="true">
+                        <span className="dz__tip-name">{u.brandName}</span>
+                        <span className="dz__tip-kind">{stepLabel(s)}</span>
+                        <span className="dz__tip-meta nums">
+                          {formatDate(s.date)}
+                          {k === 0 && months !== undefined && ` · ${months} mo after trials`}
+                        </span>
+                        <span className="dz__tip-hint">Opens the FDA letter ↗</span>
+                      </span>
+                    </a>
                   ) : null,
                 )}
               </span>
@@ -267,26 +359,24 @@ export function DiseaseTimeline({
       </ol>
       <ul className="disease__legend" aria-label="Legend">
         <li>
-          <span className="markers__key-diamond" /> First US approval for this disease (links to the FDA letter)
+          <span className="dz__key" /> {APPROVAL_KIND.new} or new indication
         </li>
         <li>
-          <span className="markers__key-circle">2</span> Approvals too close to label apart: hover or click to list
+          <span className="dz__key dz__key--later" /> Later label change (label expansion or revised indication)
         </li>
-        <li>
-          <span className="disease__key-bar" /> Pivotal trial, start to primary completion
-        </li>
-        <li>
-          <span className="disease__key-bar disease__key-bar--early" /> Earlier phase
-        </li>
-        <li>
-          <span className="disease__key-bar disease__key-bar--after" /> Trial finished after the first approval
-        </li>
-        <li>
-          <span className="disease__key-dot" /> {APPROVAL_KIND.new} or new indication
-        </li>
-        <li>
-          <span className="disease__key-dot disease__key-dot--later" /> Later label change (label expansion or revised indication)
-        </li>
+        {showTrials && (
+          <>
+            <li>
+              <span className="disease__key-bar" /> Pivotal trial, start to primary completion
+            </li>
+            <li>
+              <span className="disease__key-bar disease__key-bar--early" /> Earlier phase
+            </li>
+            <li>
+              <span className="disease__key-bar disease__key-bar--after" /> Trial finished after the first approval
+            </li>
+          </>
+        )}
       </ul>
       <TimelineData disease={disease} companyOf={companyOf} />
     </section>
@@ -465,8 +555,8 @@ function PlainSummary({ summary }: { summary: NonNullable<DiseaseSummary['summar
   const opening = summary.paragraphs[0]?.endsWith('?') ? 2 : 1;
   const shown = open ? summary.paragraphs : summary.paragraphs.slice(0, opening);
   return (
-    <section className="disease__plain" aria-label="About the disease">
-      <h2>About the disease</h2>
+    <section className="disease__plain" aria-labelledby="about-head">
+      <h2 id="about-head">About the disease</h2>
       {shown.map((p, k) =>
         p.startsWith('• ') ? (
           <p key={k} className="disease__bullet">
@@ -522,31 +612,6 @@ function ExportButtons({ disease }: { disease: DiseaseSummary }) {
       </button>
       {failed && <span className="disease__export-error">Couldn’t make the file. Try again.</span>}
     </div>
-  );
-}
-
-/** The first and the latest approval, so a reader sees the history at a glance. */
-function AtAGlance({ disease }: { disease: DiseaseSummary }) {
-  const steps = disease.uses
-    .flatMap((u) =>
-      u.steps.filter((s) => s.date && s.kind === 'new').map((s) => ({ brand: u.brandName, date: s.date!, src: letterSource(u, s) })),
-    )
-    .sort((a, b) => a.date.value.localeCompare(b.date.value));
-  if (steps.length === 0) return null;
-  const first = steps[0];
-  const last = steps[steps.length - 1];
-  return (
-    <p className="disease__glance">
-      First approved <strong>{formatDate(first.date)}</strong>
-      <Cite sources={[first.src]} /> ({first.brand})
-      {steps.length > 1 && last !== first && (
-        <>
-          {' '}
-          · latest <strong>{formatDate(last.date)}</strong>
-          <Cite sources={[last.src]} /> ({last.brand})
-        </>
-      )}
-    </p>
   );
 }
 
