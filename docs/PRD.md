@@ -1,21 +1,20 @@
 # Product requirements: Drug Development Timelines
 
-**Status:** agreed with the owner, 4 Nov 2026; revised the same day after
-an outside review: professionals first, one disease area at a time
-(owner). Every session and every
-Treadle agent reads this before planning. Change it only with the owner.
-`CLAUDE.md` holds the working rules; `docs/HANDOFF.md` holds the current
-state.
+**Status:** agreed with the owner, 4 Nov 2026; brought in line with the
+owner's later decisions on 17 Nov (§11 lists them, dated). Every session
+and every Treadle agent reads this before planning. Change it only with the
+owner. `CLAUDE.md` holds the working rules; `docs/HANDOFF.md` holds the
+current state.
 
 ## 1. Mission
 
 > For one disease area at a time, show every FDA approval in it: what it
 > covers, the trials behind it, and how long it took, with every fact
-> traceable to the FDA's own documents. Free, for people who research drug
+> traceable to the FDA's own documents. For people who research drug
 > approvals for work, and for anyone learning about them.
 
-What sets it apart: it's free (the industry databases cost a lot), it's
-sourced word for word, so any fact can go in a client slide with its
+What sets it apart: the core pages are free to read and the working tools
+cost far less than the industry databases (§11); it's sourced word for word, so any fact can go in a client slide with its
 footnote, and within an area it's complete: a precedent list with a drug
 missing is wrong, so an area isn't shown as complete until it is.
 
@@ -62,10 +61,9 @@ Each page answers one question. The first screen must answer it on its own.
 
 ### Home
 - **Answers:** "Where do I start?"
-- **Shows:** title, one line on what the site is, the complete area(s)
-  first, each with what it covers in one line, then one search box, one area
-  menu, the list of drugs grouped by therapeutic area (drug, what it's for in
-  a few words, year approved).
+- **Shows:** one line on what the site is, search, the complete area(s)
+  first (timeline and latest approvals), one example of each page type,
+  recent FDA approvals. The full drug list is on its own page (`/drugs/`).
 - **Does not show:** check badges, admin links, application numbers,
   multiple view styles.
 
@@ -74,9 +72,8 @@ Each page answers one question. The first screen must answer it on its own.
 - **First screen:** name, drug class, company, first approval; "What it's
   for" (the label's patient leaflet, word for word); the approved uses as
   short names, each linking to its approval page.
-- **Lower down:** how it works (label section 12.1 open, 12.2–12.3 behind a
-  click); further reading links (company press release, drug website: link
-  only); sources and checks.
+- **Lower down:** clinical pharmacology (label 12.1–12.3); company news
+  (links only); sources.
 
 ### Approval page (one approved use)
 - **Answers:** "Which trials got this approved, what did they show, and how
@@ -93,7 +90,8 @@ Each page answers one question. The first screen must answer it on its own.
 - **First screen:** everyday name; first and latest approval; **what the
   list covers**: "every FDA approval for [scope], checked on [date]" for a
   complete area, "drugs on this site" otherwise, so it never reads as
-  complete when it isn't; one timeline row per approved use.
+  complete when it isn't; one timeline row per approved use. Uses of
+  different stated severities are shown one group at a time, never mixed.
 - **Then:** the precedent table, one row per approval: drug, the use in the
   FDA's words, approval date, main trials, what they showed (label section
   14), time from trial completion to approval, regulatory path; a source on
@@ -101,9 +99,10 @@ Each page answers one question. The first screen must answer it on its own.
 - **Lower down:** short plain explanation and medical definition (MeSH);
   downloads (Excel, PowerPoint) that keep the sources.
 
-### Compare (later)
+### Compare
 - **Answers:** "How do two development programmes compare?"
-- Same tiles, type and colours as the rest of the site.
+- Same tiles, type and colours as the rest of the site. Only uses of the
+  same severity can be compared. Behind the paywall (§11).
 
 ### On every page
 - A "report a mistake" link.
@@ -111,11 +110,18 @@ Each page answers one question. The first screen must answer it on its own.
 
 ## 5. Look and wording
 
+- **Answer first, detail one click away** (owner, 17 Nov). Most of the
+  information has to stay, but not all on screen at once. Show the answer,
+  then let the reader open more (show more, (i) icons, tabs, the side
+  panel). Fewer headings, shorter labels, no sentence that repeats a table.
 - **One design for the whole site:** one card or tile style, one heading
   style, one spacing scale, one way to show a source link. A new page reuses
   them; it does not invent its own.
 - **Short copy:** page titles of a few words; one-sentence descriptions;
   no jargon in headings ("What it's for", not "Indications and usage").
+  The site's own words live in one place (`src/lib/copy.ts`).
+- **No checking wording next to medical content** (owner, 9 Nov): how facts
+  are checked is explained on the About the data page only.
 - **Source wording stays exact:** FDA, label and MedlinePlus text is quoted
   as written. Only spacing the PDF adds may be closed up. Short names for
   approved uses may be cut automatically from the FDA's own wording (owner,
@@ -145,8 +151,8 @@ StatPearls: link only.
 - Non-US approvals (EU, Japan).
 - Prices, sales and market data.
 - Drugs not yet approved (pipeline, upcoming FDA decision dates).
-- Accounts and sign-up for now; nothing built may rule them out later
-  (owner, 3 Nov).
+- Accounts and sign-up until the site moves to Cloudflare; they come with
+  the paywall (§11). Nothing built may rule them out.
 
 ## 8. Risks we plan around
 
@@ -156,8 +162,9 @@ StatPearls: link only.
    (goals 2 and 4).
 2. **No idea who uses it.** A free, cookie-free visitor counter, page
    counts only, comes first (goal 1; owner agreed 4 Nov).
-3. **Can't be found.** People start from Google, which barely indexes
-   `#/…` page addresses (goals 1 and 7).
+3. **Can't be found.** People start from Google. Every page has its own
+   address, title and site-map entry; free pages stay readable by Google
+   (goals 1 and 7).
 4. **A wrong fact.** Every fact is checked, and readers can report a
    mistake (goal 4).
 5. **Paid databases do more.** We don't compete on breadth. We win on free,
@@ -172,17 +179,17 @@ StatPearls: link only.
 ## 9. Goals, in order
 
 These are the goals on the Treadle board. Each is an outcome for a user, not
-a piece of work. Goals 1, 2 and 3 are active, with the standing goal below;
-the rest wait.
+a piece of work. Active: 1, 2, 3, and 6 (the owner's design focus, 17
+Nov), with the standing goal below; the rest wait. Goal 7 starts once the
+site has its own domain.
 
 1. **We can see whether anyone comes.** Real page addresses, a title and
    description per page, a site map, the free visitor counter. *Done when*
    the counter shows which pages people open.
 2. **One area is complete.** Every FDA approval in one area, older drugs
    included, each checked, with the area's scope written in one line.
-   First area: atopic dermatitis, moderate to severe (owner, 4 Nov; about
-   six medicines, all approved since 2017, with trials on
-   ClinicalTrials.gov). *Done when* the list matches the FDA's own records for
+   First area: atopic dermatitis, all severities (owner, 9 Nov; was
+   moderate to severe on 4 Nov), each severity shown as its own group. *Done when* the list matches the FDA's own records for
    that scope and a professional in the field finds nothing missing.
 3. **A professional builds a precedent table in ten minutes.** The disease
    page's precedent table and downloads (Excel, PowerPoint) with a source on
@@ -193,9 +200,9 @@ the rest wait.
    mistake" link, a "not medical advice" line; outside complete areas, every
    list says what it covers; uses linked to diseases (MeSH's own synonyms);
    areas right (atopic dermatitis under immunology, Rare diseases, "Being
-   sorted" empty). *Done when* every drug shows "Checked", a reported mistake
-   reaches the owner's list, and no page reads as "all the approved drugs"
-   unless it's true.
+   sorted" empty). *Done when* every drug is checked (`npm run status`; no
+   badge on the page, §5), a reported mistake reaches the owner's list, and
+   no page reads as "all the approved drugs" unless it's true.
 5. **The regulatory path of every approval.** Accelerated approval,
    priority review, breakthrough therapy, orphan status and later label
    changes, from FDA documents the pipeline can read; gaps shown, not
@@ -242,3 +249,32 @@ before each release:
 1. Home → search a drug → drug page → an approved use → its trials.
 2. Home → an area → a disease → its approvals.
 3. A disease page → a drug → back.
+
+## 11. Owner decisions on record
+
+Newest first. When one of these and older text disagree, this wins.
+
+- **17 Nov.** Pages are too dense: answer first, detail one click away
+  (§5). Domain and Cloudflare decided by the end of that week.
+- **10 Nov.** A drug's uses can sit in different therapeutic areas.
+  Areas are the owner's, filed by disease in `data/areas/areas.json` (a
+  disease's own filing wins over its drugs'); change only with the owner.
+  Asthma, COPD, nasal polyps and allergic fungal sinusitis: Respirology;
+  eosinophilic esophagitis: Gastroenterology; chronic urticaria and
+  bullous pemphigoid: Dermatology. New sources wanted: breakthrough and
+  fast track lists, orphan designations, Orange Book.
+- **9 Nov.** Atopic dermatitis covers all severities; severities are never
+  mixed on one view (§4). No "checked / not yet checked" wording next to
+  medical content (§5). Strong focus on design.
+- **7 Nov.** Paid site, published on Google. Home, drug pages and "What
+  it's for" stay free so Google can read them; downloads, Compare and full
+  trial detail go behind the paywall. Payments need accounts and a host
+  other than GitHub Pages (Cloudflare Pages). Company news is links only,
+  never paywalled sites. Explanations go behind (i) icons. Pasatru and
+  Zycubo filed under Rare diseases by hand until the orphan-status rule
+  exists. Desktop first; phones must work with no sideways scroll. Light
+  theme. Look: "Ledger" (IBM Plex, deep teal, square corners, striped
+  tables). Name "Drug Development Timelines" for now.
+- **4 Nov.** This PRD; a free, cookie-free visitor counter.
+- **3 Nov.** Short use names may be cut automatically from FDA wording;
+  atopic dermatitis under Immunology; auto-merge on.

@@ -27,9 +27,8 @@ Not a fit: new data, anything that needs a fresh document from a source.
 ## Goals on the board
 
 The board's goals are the eight in `docs/PRD.md` §9, one Treadle goal each,
-with this folder as the project. Goals 1, 2, 3 and 7 are active; the others
-are paused until an earlier one is done. The Planner breaks each goal into
-tasks and labels each one:
+with this folder as the project. Which are active is set there, not here.
+The Planner breaks each goal into tasks and labels each one:
 
 - **Treadle agent:** code, layout, wording, tests (Builder; Eye for pages).
 - **Normal session:** anything that needs the internet, plus checks, push
@@ -37,17 +36,4 @@ tasks and labels each one:
 - **Owner:** approvals and decisions, gathered into one short list.
 
 Every task description starts with "Read CLAUDE.md, docs/PRD.md and
-docs/HANDOFF.md first." Keep the owner's areas list
-(`data/areas/areas.json`) unchanged unless the goal says otherwise.
-
-Known first tasks (written for the PRD's first goal order; old goals 1, 3
-and 5 are now goals 6, 4 and "later"):
-- Goal 1: one tile/card component on every page, Compare included
-  (Planner lists them, Builder merges, Eye reviews); shorter titles and
-  descriptions as a list for the owner, then applied.
-- Goal 3: atopic dermatitis under immunology: exclude it from the MeSH
-  genetic-diseases rule (C16.320, `scripts/ingest/diseases.ts`), with a
-  test (Builder).
-- Goal 3: "Rare diseases" from FDA orphan status (normal session: needs the
-  internet).
-- Goal 5: "Further reading" links (normal session: needs the internet).
+docs/HANDOFF.md first." The next tasks are the ones in `docs/HANDOFF.md`.
