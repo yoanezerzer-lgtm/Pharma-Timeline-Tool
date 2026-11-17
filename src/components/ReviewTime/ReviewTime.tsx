@@ -51,7 +51,6 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
   const stats = reviewStats(products);
   const dataOf = isoDay(file.openFdaUpdated);
   const read = isoDay(file.retrievedAt);
-  const lettersRead = products.filter((p) => p.accelerated !== undefined).length;
   const acc = percent(stats.accelerated.yes, stats.accelerated.known);
   const exp = percent(stats.expedited.yes, stats.expedited.total);
 
@@ -66,41 +65,28 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
             approval, which may have been for another use). Receipt dates are read from the FDA’s approval letters;
             the rest comes from openFDA’s Drugs@FDA records. The count runs from the first receipt, so it includes any
             resubmission after the FDA turned an application down (a complete response letter). A median is shown only when at least {MIN_SAMPLE} products
-            have both dates.
+            have both dates. openFDA doesn’t record breakthrough or fast track designations, and other products are
+            found by their label’s wording, so one worded differently can be missing.
+            {dataOf && ` openFDA data of ${dataOf}.`}
+            {read && ` FDA letters read ${read}.`}
           </Info>
         </h2>
       </div>
-      <p className="review-time__lede">
-        How long past reviews took. Not a forecast: it does not say when a future review will end.
-      </p>
-      <p className="review-time__basis">
-        From openFDA{dataOf && ` (data of ${dataOf})`} and the FDA’s approval letters{read && ` (read ${read})`}. openFDA
-        doesn’t record breakthrough or fast track designations, and other products are found by their label’s wording,
-        so one worded differently can be missing.
-      </p>
+      <p className="review-time__lede">How long past FDA reviews took for this disease. Not a forecast.</p>
 
       <div className="review-time__tiles">
         <div className="review-time__tile">
           <span className="review-time__tile-label">Median review time</span>
           {stats.median !== undefined ? (
             <>
-              <span className="review-time__tile-value">
-                {stats.median} days
-                <Cite
-                  sources={products
-                    .filter((p) => reviewDays(p) !== undefined)
-                    .map((p) => productSources(p, file.openFdaUpdated).letter)}
-                />
-              </span>
+              <span className="review-time__tile-value">{stats.median} days</span>
               <span className="review-time__tile-note">
-                n = {stats.days.length} of {stats.total} with both dates · ≈ {(stats.median / 30.44).toFixed(1)} months
+                ≈ {Math.round(stats.median / 30.44)} months · {stats.days.length} drugs
               </span>
             </>
           ) : (
             <>
-              <span className="review-time__tile-gap">
-                Not computed: fewer than five products have both dates (n = {stats.days.length})
-              </span>
+              <span className="review-time__tile-gap">Too few drugs to say ({stats.days.length})</span>
               {stats.days.length > 0 && (
                 <span className="review-time__tile-note">
                   {stats.days.map((d) => `${d.brandName} ${d.days} days`).join(' · ')}
@@ -113,23 +99,21 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
           <span className="review-time__tile-label">Accelerated approval</span>
           <span className="review-time__tile-value">{acc ?? '—'}</span>
           <span className="review-time__tile-note">
-            {stats.accelerated.yes} of {stats.accelerated.known} approval letters say so
-            {lettersRead < stats.total && ` · ${stats.total - lettersRead} not available`}
+            {stats.accelerated.yes} of {stats.accelerated.known} drugs
           </span>
         </div>
         <div className="review-time__tile">
-          <span className="review-time__tile-label">With an expedited designation</span>
-          <span className="review-time__tile-value">{exp ? `≥ ${exp}` : '—'}</span>
+          <span className="review-time__tile-label">Accelerated or orphan</span>
+          <span className="review-time__tile-value">{exp ?? '—'}</span>
           <span className="review-time__tile-note">
-            {stats.expedited.yes} of {stats.expedited.total}: accelerated approval or orphan. Breakthrough and fast
-            track not in openFDA, so this is a floor.
+            {stats.expedited.yes} of {stats.expedited.total} drugs
           </span>
         </div>
       </div>
 
       <details className="review-time__each">
         <summary>
-          Each product ({products.length})
+          Each drug ({products.length})
         </summary>
       <div className="review-time__scroll">
         <table className="precedent__table review-time__table">
@@ -160,8 +144,7 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
       </details>
       {left > 0 && (
         <p className="review-time__note">
-          {left} {left === 1 ? 'product is' : 'products are'} left out: {left === 1 ? 'its' : 'their'} FDA wording
-          names another severity, or none.
+          {left} more {left === 1 ? 'drug is' : 'drugs are'} under another severity, or none.
         </p>
       )}
     </section>

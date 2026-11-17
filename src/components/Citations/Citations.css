@@ -1,22 +1,22 @@
 /* Boxed citation numbers on a claim: [3][7]. */
 .cite-group {
   display: inline-flex;
-  gap: 2px;
-  margin-left: 3px;
-  vertical-align: 1px;
+  gap: 1px;
+  margin-left: 2px;
+  vertical-align: 0.45em;
 }
 
 .cite {
   display: inline-grid;
   place-items: center;
-  min-width: 15px;
-  height: 15px;
-  padding: 0 3px;
-  border: 1px solid var(--accent);
+  min-width: 11px;
+  height: 11px;
+  padding: 0 2px;
+  border: 1px solid var(--border);
   border-radius: 2px;
-  background: var(--bg-elevated);
+  background: transparent;
   color: var(--accent);
-  font: 500 10px/1 var(--font-data);
+  font: 500 8px/1 var(--font-data);
   cursor: pointer;
 }
 
@@ -28,6 +28,15 @@ button.cite:focus-visible {
 
 .cite--static {
   cursor: default;
+}
+
+/* In the source panel itself the number is a label, so it stays readable. */
+.sources .cite {
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  border-color: var(--accent);
+  font-size: 10px;
 }
 
 /* The source panel: a split view down the right on wide screens, a sheet over the page on narrow ones. */

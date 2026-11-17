@@ -520,11 +520,17 @@
   color: var(--text-1);
 }
 
+.dz__facts-drug {
+  display: block;
+  font-size: 17px;
+}
+
 .dz__facts-sub {
   display: block;
-  font-size: 13px;
+  font-family: var(--font-data);
+  font-size: 12.5px;
   font-weight: 400;
-  color: var(--text-2);
+  color: var(--text-3);
 }
 
 .dz h2 {

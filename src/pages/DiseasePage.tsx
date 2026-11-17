@@ -80,10 +80,7 @@ function DiseaseView({ disease }: { disease: DiseaseSummary }) {
                   </button>
                 ))}
               </div>
-              <p className="disease__severity-note">
-                The FDA approvals name different severities. Each is shown on its own: their trials enrolled different
-                patients, so they can’t be compared side by side.
-              </p>
+              <p className="disease__severity-note">Shown separately: their trials enrolled different patients.</p>
             </div>
           )
         }
@@ -137,7 +134,7 @@ function Lede({ summary }: { summary: NonNullable<DiseaseSummary['summary']> }) 
   );
 }
 
-/** Drugs, approvals, first and latest approval, and the disease's areas, each first/latest with its FDA letter. */
+/** Drugs, approvals, the latest approval with its FDA letter, and the disease's therapeutic areas. */
 function KeyFacts({
   disease,
   drugs,
@@ -154,7 +151,7 @@ function KeyFacts({
       u.steps.filter((s) => s.date && s.kind === 'new').map((s) => ({ brand: u.brandName, date: s.date!, src: letterSource(u, s) })),
     )
     .sort((a, b) => a.date.value.localeCompare(b.date.value));
-  const first = steps[0];
+  // Only the latest: the site doesn't hold every drug ever approved, so "first" could be wrong.
   const last = steps[steps.length - 1];
   return (
     <dl className="dz__facts">
@@ -166,29 +163,21 @@ function KeyFacts({
         <dt>FDA approvals</dt>
         <dd className="nums">{approvals}</dd>
       </div>
-      {first && (
-        <div>
-          <dt>First approval</dt>
-          <dd>
-            <span className="nums">{formatDate(first.date)}</span>
-            <Cite sources={[first.src]} />
-            <span className="dz__facts-sub">{first.brand}</span>
-          </dd>
-        </div>
-      )}
-      {last && last !== first && (
+      {last && (
         <div>
           <dt>Latest approval</dt>
           <dd>
-            <span className="nums">{formatDate(last.date)}</span>
-            <Cite sources={[last.src]} />
-            <span className="dz__facts-sub">{last.brand}</span>
+            <span className="dz__facts-drug">{last.brand}</span>
+            <span className="dz__facts-sub nums">
+              {formatDate(last.date)}
+              <Cite sources={[last.src]} />
+            </span>
           </dd>
         </div>
       )}
       {areas.length > 0 && (
         <div>
-          <dt>Area</dt>
+          <dt>Therapeutic area</dt>
           <dd>
             {areas.map((a, k) => (
               <span key={a.id}>
@@ -235,17 +224,19 @@ export function DiseaseTimeline({
   for (let y = new Date(min).getUTCFullYear() + 1; y <= new Date(max).getUTCFullYear(); y++) years.push(y);
   const step = Math.ceil(years.length / 8);
   const Heading = headingLevel === 2 ? 'h2' : 'h3';
+  // The legend names only what is on screen, in the FDA's terms.
+  const firsts = disease.uses.flatMap((u) => u.steps.filter((s) => s.date).slice(0, 1));
+  const later = disease.uses.flatMap((u) => u.steps.filter((s) => s.date).slice(1));
+  const firstKey = firsts.some((s) => stepLabel(s) !== APPROVAL_KIND.new) ? 'Original approval or new indication' : APPROVAL_KIND.new;
+  const laterKey = later.every((s) => s.kind === 'expansion') ? APPROVAL_KIND.expansion : `${APPROVAL_KIND.expansion} or other change`;
   return (
     <section className={`ind-timeline disease__lanes${showTrials ? '' : ' dz__compact'}`} aria-label="Approvals over time">
       <div className="disease__timeline-head">
         <Heading>
           Approvals over time
           <Info label="How to read this">
-            One row per approved use. A filled diamond is a new approval; an open one is a later change to it (a wider
-            group of patients, or new wording). Hover a diamond for what it was; click it for the FDA letter. With
-            trials shown, bars are the pivotal trials, from start to primary completion; a hollow bar finished after
-            the use’s first approval. “Mo after trials” counts the months from the last pivotal trial’s primary
-            completion to the first approval.
+            One row per drug. Hover a diamond for what the FDA approved and when; click it for the FDA letter. With
+            trials shown, bars run from each pivotal trial’s start to its primary completion.
           </Info>
         </Heading>
         {hasTrials && (
@@ -281,12 +272,13 @@ export function DiseaseTimeline({
             <li key={`${u.drugSlug}-${u.indicationSlug}`} className="ind-timeline__row disease__row">
               <a className="ind-timeline__name disease__row-name" href={indicationHref(u.drugSlug, u.indicationSlug)}>
                 <strong>{u.brandName}</strong>
-                <span className="disease__use">{companyOf(u.drugSlug)}</span>
               </a>
               <span className="ind-timeline__track disease__lane" style={{ height: `${height}px` }}>
-                {years.map((y) => (
-                  <span key={y} className="ind-timeline__gridline" style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }} />
-                ))}
+                {years.map((y, i) =>
+                  i % step === 0 ? (
+                    <span key={y} className="ind-timeline__gridline" style={{ left: `${pct(Date.UTC(y, 0, 1))}%` }} />
+                  ) : null,
+                )}
                 {showTrials && u.steps.map((s, k) =>
                   s.date ? (
                     <span key={`g${k}`} className="disease__guide" style={{ left: `${pct(toTime(s.date))}%` }} aria-hidden="true" />
@@ -343,37 +335,30 @@ export function DiseaseTimeline({
                   ) : null,
                 )}
               </span>
-              <span className="ind-timeline__date">
-                {firstDate ? formatDate(firstDate) : DATE_UNCLEAR}
-                <Cite sources={[letterSource(u, u.steps.find((s) => s.date) ?? u.steps[0])]} />
-                {months !== undefined && <span className="disease__inn">{months} mo after trials</span>}
-                {u.steps.length > 1 && (
-                  <span className="disease__inn">
-                    + {u.steps.length - 1} later {u.steps.length === 2 ? 'change' : 'changes'}
-                  </span>
-                )}
-              </span>
+              <span className="ind-timeline__date">{firstDate ? formatDate(firstDate) : DATE_UNCLEAR}</span>
             </li>
           );
         })}
       </ol>
       <ul className="disease__legend" aria-label="Legend">
         <li>
-          <span className="dz__key" /> {APPROVAL_KIND.new} or new indication
+          <span className="dz__key" /> {firstKey}
         </li>
-        <li>
-          <span className="dz__key dz__key--later" /> Later label change (label expansion or revised indication)
-        </li>
+        {later.length > 0 && (
+          <li>
+            <span className="dz__key dz__key--later" /> {laterKey}
+          </li>
+        )}
         {showTrials && (
           <>
             <li>
-              <span className="disease__key-bar" /> Pivotal trial, start to primary completion
+              <span className="disease__key-bar" /> Pivotal trial
             </li>
             <li>
               <span className="disease__key-bar disease__key-bar--early" /> Earlier phase
             </li>
             <li>
-              <span className="disease__key-bar disease__key-bar--after" /> Trial finished after the first approval
+              <span className="disease__key-bar disease__key-bar--after" /> Finished after approval
             </li>
           </>
         )}
@@ -483,7 +468,7 @@ export function DiseasesPage() {
           {diseaseIndex.length} diseases with an FDA-approved drug on this site.
           <Info label="About this list">
             Disease names come from MeSH, the U.S. National Library of Medicine’s medical vocabulary, matched to each
-            approved use. Areas are the site’s therapeutic areas.
+            approved use. Therapeutic areas are the site’s own grouping.
           </Info>
         </p>
       </header>
@@ -514,7 +499,7 @@ export function DiseasesPage() {
                 </a>
               ),
             },
-            { key: 'area', label: 'Area', sort: (r) => r.areas[0]?.name, render: (r) => <span className="list-table__sub">{r.areas.map((a) => a.name).join(', ') || '—'}</span> },
+            { key: 'area', label: 'Therapeutic area', sort: (r) => r.areas[0]?.name, render: (r) => <span className="list-table__sub">{r.areas.map((a) => a.name).join(', ') || '—'}</span> },
             {
               key: 'drugs',
               label: 'Approved drugs',

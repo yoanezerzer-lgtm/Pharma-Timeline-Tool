@@ -99,7 +99,7 @@ export function SidePanel({ route }: { route: Route }) {
       </nav>
 
       <nav aria-label="Therapeutic areas">
-        <h2 className="side__label">Areas</h2>
+        <h2 className="side__label">Therapeutic areas</h2>
         <ul className="side__list">
           {tree.map((a) => {
             const open = a.id === openArea;
