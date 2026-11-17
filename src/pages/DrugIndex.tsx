@@ -101,7 +101,7 @@ export function DrugIndex() {
               ),
             },
             { key: 'company', label: 'Company', sort: (r) => r.d.company.toLowerCase() || undefined, render: (r) => r.d.company || '—' },
-            { key: 'area', label: 'Area', sort: (r) => r.areas[0]?.name, render: (r) => <span className="list-table__sub">{r.areas.map((a) => a.name).join(', ') || 'Not yet sorted'}</span> },
+            { key: 'area', label: 'Therapeutic area', sort: (r) => r.areas[0]?.name, render: (r) => <span className="list-table__sub">{r.areas.map((a) => a.name).join(', ') || 'Not yet sorted'}</span> },
             { key: 'uses', label: 'Approved for', sort: (r) => r.uses.length, descFirst: true, phoneLabel: true, render: (r) => <Names names={r.uses} max={2} /> },
             {
               key: 'first',

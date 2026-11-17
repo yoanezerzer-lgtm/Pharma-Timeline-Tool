@@ -36,6 +36,9 @@ Cloudflare: owner, by the end of the week.
    place for them).
 5. **Required on every page, not built yet** (PRD §4): a "report a
    mistake" link and a "not medical advice" line.
+- Later: a separate page for regulatory measures across diseases (FDA
+  review time and the like, compared side by side; owner, 17 Nov). Until
+  then review time stays on each disease page.
 - Later: readers for the designation sources saved on
   `diag/designations` (then add them to `npm run precedent`); "Rare
   diseases" from orphan status; Compare percentages for count results

@@ -24,7 +24,7 @@ export function ListControls({
     <div className="index__controls">
       <input className="index__search" type="search" aria-label={placeholder} placeholder={placeholder} value={query} onChange={(e) => onQuery(e.target.value)} />
       <select className="index__area" aria-label="Therapeutic area" value={area} onChange={(e) => onArea(e.target.value)}>
-        <option value="">All areas</option>
+        <option value="">All therapeutic areas</option>
         {areas.map((a) => (
           <option key={a.id} value={a.id}>
             {a.name}

@@ -89,7 +89,7 @@ async function main(): Promise<void> {
   for (const id of diseases) {
     await visit(page, `disease/${id}/`, async (p) => {
       const body = await text(p);
-      return /^every approval$/im.test(body) && /^timeline$/im.test(body) ? undefined : 'disease page is empty';
+      return /^every approval$/im.test(body) && /^approvals over time$/im.test(body) ? undefined : 'disease page is empty';
     });
   }
 

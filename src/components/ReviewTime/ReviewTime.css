@@ -7,13 +7,6 @@
   color: var(--text-2);
 }
 
-.review-time__chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 0 0 1rem;
-}
-
 .review-time__tiles {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -116,4 +109,28 @@
   margin: 0.5rem 0 0;
   font-size: 12.5px;
   color: var(--text-3);
+}
+
+/* Where the numbers come from, in one plain sentence. */
+.review-time__basis {
+  max-width: 78ch;
+  margin: -0.25rem 0 1rem;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-3);
+}
+
+.review-time__each {
+  margin-top: 1rem;
+}
+
+.review-time__each > summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.review-time__each[open] > summary {
+  margin-bottom: 0.75rem;
 }
