@@ -69,11 +69,14 @@ Each page answers one question. The first screen must answer it on its own.
 
 ### Drug page
 - **Answers:** "What is this drug for, and how does it work?"
-- **First screen:** name, drug class, company, first approval; "What it's
-  for" (the label's patient leaflet, word for word); the approved uses as
-  short names, each linking to its approval page.
-- **Lower down:** clinical pharmacology (label 12.1–12.3); company news
-  (links only); sources.
+- **First screen:** name (generic in brackets), application number, drug
+  class, company, first approval; "Approved for": the diseases it is
+  approved for, each linking to its disease page (owner, 17 Nov: replaces
+  the patient leaflet); then the approvals, a timeline and a list in the
+  FDA's words, each linking to its approval page. No company logos
+  (owner, 17 Nov).
+- **Lower down:** how it works (label 12.1–12.3, shown by title only);
+  company news (links only); sources.
 
 ### Approval page (one approved use)
 - **Answers:** "Which trials got this approved, what did they show, and how

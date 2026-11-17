@@ -84,7 +84,7 @@
 .uselist__row {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr) 7.5rem 4.5rem;
+  grid-template-columns: minmax(0, 1fr) 8rem 7rem 4rem;
   gap: 0.25rem 1.25rem;
   align-items: baseline;
   padding: 0.7rem 0.5rem;
@@ -141,25 +141,21 @@
     display: none !important;
   }
   .uselist__row {
-    grid-template-columns: auto 1fr;
-    column-gap: 0.35rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.2rem 0.5rem;
     padding: 0.7rem 0.25rem;
   }
   .uselist__name {
     grid-column: 1 / -1;
   }
-  .uselist__disease {
-    grid-column: 1 / -1;
-    grid-row: 3;
-  }
   .uselist__label {
     display: inline;
   }
   .uselist__trials {
-    text-align: left;
+    text-align: right;
   }
-  .uselist__date::after {
-    content: ' ·';
+  .uselist__open {
+    display: none;
   }
 }
 
@@ -286,4 +282,302 @@
 .news__meta {
   font-size: 12.5px;
   color: var(--text-3);
+}
+
+/* ---- Drug page layout: name, what it's approved for beside the key facts, then the approvals ---- */
+
+.dp__head h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+}
+
+.dp__head .drug__inn {
+  font-size: 1.35rem;
+  letter-spacing: 0;
+}
+
+.dp__app {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-data);
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.dp__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 1.75rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dp h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--text-1);
+}
+
+/* The diseases it is approved for, one tag each. */
+.dp__chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.dp__chips a,
+.dp__chips span {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--text-1);
+}
+
+.dp__chips a {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.dp__chips a:hover {
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.dp__facts {
+  margin: 0;
+  padding: 0.35rem 1.25rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.dp__facts > div {
+  padding: 0.75rem 0;
+}
+
+.dp__facts > div + div {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.dp__facts dt {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.dp__facts dd {
+  margin: 0.25rem 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-1);
+}
+
+.dp__sub {
+  max-width: 70ch;
+  margin: 0 0 1.25rem;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-2);
+}
+
+.dp__uses {
+  margin-top: 2.25rem;
+}
+
+/* The approvals on one line of years: a diamond on a stem for each. */
+.dp__timeline {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.25rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.dp__timeline figcaption {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.dp__timeline-note {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.dp__track {
+  --step: 1.1rem;
+  --base: 1.6rem;
+  position: relative;
+  height: calc(var(--base) + 1.4rem + var(--levels) * var(--step));
+  margin: 0.75rem 0.6rem 0;
+}
+
+.dp__axis {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: var(--base);
+  border-top: 2px solid var(--border);
+}
+
+.dp__year {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.dp__year::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 1.25rem;
+  height: 0.4rem;
+  border-left: 1px solid var(--border);
+}
+
+.dp__marker {
+  position: absolute;
+  bottom: var(--base);
+  width: 18px;
+  height: calc(1rem + var(--level) * var(--step));
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+.dp__stem {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 100%;
+  border-left: 1px solid var(--accent);
+  opacity: 0.45;
+}
+
+.dp__diamond {
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  background: var(--accent);
+  transform: translateX(-50%) rotate(45deg);
+  transition: transform 0.12s ease;
+}
+
+.dp__marker:hover .dp__diamond,
+.dp__marker:focus-visible .dp__diamond {
+  transform: translateX(-50%) rotate(45deg) scale(1.35);
+}
+
+.dp__marker:hover .dp__stem,
+.dp__marker:focus-visible .dp__stem {
+  opacity: 1;
+}
+
+/* What an approval was for, shown on hover or keyboard focus. */
+.dp__tip {
+  position: absolute;
+  z-index: 2;
+  bottom: calc(100% + 12px);
+  left: -0.6rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.15rem;
+  width: max-content;
+  max-width: 17rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  box-shadow: 0 6px 20px rgba(16, 25, 27, 0.12);
+  text-align: left;
+}
+
+.dp__marker--end .dp__tip {
+  left: auto;
+  right: -0.6rem;
+}
+
+.dp__marker:hover .dp__tip,
+.dp__marker:focus-visible .dp__tip {
+  display: flex;
+}
+
+.dp__tip-name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-1);
+}
+
+.dp__tip-area {
+  font-size: 12.5px;
+  color: var(--accent);
+}
+
+.dp__tip-meta {
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.uselist__none {
+  color: var(--text-3);
+  font-style: italic;
+  font-family: var(--font-text);
+}
+
+.uselist__open {
+  justify-self: end;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.uselist__row:hover .uselist__open {
+  text-decoration: underline;
+}
+
+.dp .pharm {
+  margin-top: 2.75rem;
+}
+
+@media (max-width: 900px) {
+  .dp__intro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .dp__head h1 {
+    font-size: 2rem;
+  }
+  .dp__year--minor {
+    display: none;
+  }
 }

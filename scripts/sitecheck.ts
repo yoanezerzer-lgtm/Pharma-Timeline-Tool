@@ -69,7 +69,7 @@ async function main(): Promise<void> {
       if (!(await p.title()).includes(d.brandName)) return `page title lacks the name ${d.brandName}`;
       if (/Page not found|Couldn’t load/.test(body)) return 'drug page did not load';
       if (!body.toLowerCase().includes(d.brandName.toLowerCase())) return `drug page lacks the name ${d.brandName}`;
-      if (!/approved uses/i.test(body)) return 'drug page lacks its approved uses';
+      if (!/^approved for$/im.test(body) || !/^approvals$/im.test(body)) return 'drug page lacks its approvals';
       return undefined;
     });
     const first = d.indications[0];
