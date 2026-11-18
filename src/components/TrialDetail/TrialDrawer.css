@@ -451,3 +451,373 @@
 .drawer--page .posted-results__table {
   max-width: 720px;
 }
+
+/* ---- Trial page: three numbers, the result card, the timeline ---- */
+.tr__numbers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.1rem 0 1.4rem;
+}
+
+.tr__numbers > div {
+  padding: 0.75rem 0.95rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.tr__numbers dt {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.tr__numbers dd {
+  margin: 0.3rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--text-1);
+}
+
+.tr__numbers dd.tr__text {
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.tr__unit {
+  margin-left: 0.35rem;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--text-2);
+}
+
+.tr__card {
+  margin-bottom: 1.6rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.tr__card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.tr__card-head h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-1);
+}
+
+.tr__card-head .drawer__met {
+  margin-left: 0;
+}
+
+.drawer--page .tr__card-head h3 {
+  font-size: 1.25rem;
+}
+
+/* Bars beside each arm's posted value. */
+.posted-results__table--bars .posted-results__bar-cell {
+  width: 45%;
+  vertical-align: middle;
+}
+
+.posted-results__bar {
+  display: block;
+  height: 10px;
+  min-width: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.posted-results__bar.is-placebo {
+  background: var(--border);
+}
+
+.posted-results__table--bars .posted-results__value {
+  width: 1%;
+  font-weight: 600;
+}
+
+.tr__more {
+  margin-bottom: 1.4rem;
+  font-size: 13px;
+}
+
+.tr__more summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.tr__full-title {
+  margin: 0.6rem 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+/* The trial on a line of years, with the approvals beside it. */
+.tt {
+  margin: 0.4rem 0 0;
+}
+
+.tt__track {
+  position: relative;
+  height: 4.6rem;
+  margin: 0 0.6rem;
+}
+
+.tt__axis {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.6rem;
+  border-top: 2px solid var(--border);
+}
+
+.tt__year {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.tt__year::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 1.25rem;
+  height: 0.4rem;
+  border-left: 1px solid var(--border);
+}
+
+.tt__bar {
+  position: absolute;
+  bottom: calc(1.6rem - 4px);
+  height: 10px;
+  border-radius: 5px;
+  background: var(--accent);
+  opacity: 0.3;
+}
+
+.tt__dot {
+  position: absolute;
+  bottom: calc(1.6rem - 5px);
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--bg-elevated);
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translateX(-50%);
+}
+
+.tt__dot--readout {
+  background: var(--text-2);
+}
+
+.tt__marker {
+  position: absolute;
+  bottom: calc(1.6rem + 8px);
+  width: 18px;
+  height: 1.7rem;
+  transform: translateX(-50%);
+  outline: none;
+}
+
+.tt__stem {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 100%;
+  border-left: 1px solid var(--accent);
+  opacity: 0.45;
+}
+
+.tt__diamond {
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  background: var(--accent);
+  transform: translateX(-50%) rotate(45deg);
+  transition: transform 0.12s ease;
+}
+
+.tt__marker:not(.tt__marker--new) .tt__diamond {
+  background: var(--bg-elevated);
+  border: 2px solid var(--accent);
+}
+
+.tt__marker:hover .tt__diamond,
+.tt__marker:focus-visible .tt__diamond {
+  transform: translateX(-50%) rotate(45deg) scale(1.35);
+}
+
+.tt__marker:hover .tt__stem,
+.tt__marker:focus-visible .tt__stem {
+  opacity: 1;
+}
+
+.tt__tip {
+  position: absolute;
+  z-index: 2;
+  bottom: calc(100% + 12px);
+  left: -0.6rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.15rem;
+  width: max-content;
+  max-width: 15rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  box-shadow: 0 6px 20px rgba(16, 25, 27, 0.12);
+}
+
+.tt__marker--end .tt__tip {
+  left: auto;
+  right: -0.6rem;
+}
+
+.tt__marker:hover .tt__tip,
+.tt__marker:focus-visible .tt__tip {
+  display: flex;
+}
+
+.tt__tip-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.tt__tip-meta {
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.tt__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.tt__legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tt__key {
+  display: inline-block;
+}
+
+.tt__key--bar {
+  width: 16px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--accent);
+  opacity: 0.3;
+}
+
+.tt__key--dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.tt__key--readout {
+  background: var(--text-2);
+}
+
+.tt__key--diamond {
+  width: 9px;
+  height: 9px;
+  margin: 0 1px;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+
+.tt__key--diamond:not(.tt__key--new) {
+  background: none;
+  border: 2px solid var(--accent);
+}
+
+.tt__dates {
+  margin: 0.45rem 0 0;
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+@media (max-width: 560px) {
+  .tr__numbers {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .tr__numbers > div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.6rem 0.85rem;
+  }
+  .tr__numbers dd {
+    margin: 0;
+    font-size: 1.3rem;
+    text-align: right;
+  }
+  .tr__numbers dd.tr__text {
+    font-size: 0.95rem;
+  }
+  .posted-results__table--bars .posted-results__bar-cell {
+    width: 30%;
+  }
+}
+
+/* In the side panel, the three numbers stay on one row. */
+@media (min-width: 561px) {
+  aside.drawer .tr__numbers {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+  aside.drawer .tr__numbers > div {
+    padding: 0.6rem 0.75rem;
+  }
+  aside.drawer .tr__numbers dd {
+    font-size: 1.35rem;
+  }
+  aside.drawer .tr__numbers dd.tr__text {
+    font-size: 0.9rem;
+  }
+  aside.drawer .tr__unit {
+    display: block;
+    margin: 0.1rem 0 0;
+    font-size: 12px;
+  }
+}

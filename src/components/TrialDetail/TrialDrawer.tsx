@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { PostedResults } from './PostedResults.js';
 import { SourceTrail } from './SourceTrail.js';
+import { TrialTimeline, type TimelineApproval } from './TrialTimeline.js';
 import { registryText, maskingText } from '../../lib/registryText.js';
-import type { Trial, Provenance } from '../../schema/index.js';
+import type { Trial } from '../../schema/index.js';
 import { formatDate } from '../../lib/dates.js';
 import { roleFor, summaryRole, ROLE_LABEL, trialShortName } from '../../lib/drugs.js';
 import './TrialDrawer.css';
@@ -16,8 +17,8 @@ interface Props {
   asPage?: boolean;
   /** On the full page: links back to the drug and approved use, shown above the title. */
   crumbs?: React.ReactNode;
-  /** Which approval the trial stands behind, in a sentence ("Primary completion Nov 2015, before …"). */
-  supports?: string;
+  /** This use's approvals, oldest first; the first and the one the trial's document belongs to are marked on its timeline. */
+  approvals?: TimelineApproval[];
 }
 
 const PHASE_TEXT: Record<Trial['phase'], string> = {
@@ -31,27 +32,7 @@ const PHASE_TEXT: Record<Trial['phase'], string> = {
   NA: 'N/A',
 };
 
-// A fact's provenance is kept with the data for the builders' checks; readers
-// see only the value (how facts are checked is on the About the data page).
-function Fact({
-  label,
-  value,
-}: {
-  label: string;
-  value: React.ReactNode;
-  provenance?: Provenance;
-}) {
-  return (
-    <>
-      <dt>{label}</dt>
-      <dd>
-        {value}
-      </dd>
-    </>
-  );
-}
-
-export function TrialDrawer({ trial, onClose, indication, asPage = false, crumbs, supports }: Props) {
+export function TrialDrawer({ trial, onClose, indication, asPage = false, crumbs, approvals = [] }: Props) {
   // Escape closes the drawer, matching the expectation for an overlay panel.
   useEffect(() => {
     if (asPage) return;
@@ -62,7 +43,6 @@ export function TrialDrawer({ trial, onClose, indication, asPage = false, crumbs
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose, asPage]);
 
-  const p = trial.provenance;
   const registryUrl = trial.nctId
     ? `https://clinicaltrials.gov/study/${trial.nctId}`
     : null;
@@ -79,21 +59,30 @@ export function TrialDrawer({ trial, onClose, indication, asPage = false, crumbs
     ? `${trial.population.minAge}${trial.population.maxAge ? ` – ${trial.population.maxAge}` : ' and older'}`
     : undefined;
 
+  const roleEntry = indication ? trial.roles.find((r) => r.indication === indication) : undefined;
+  // The first approval for this use, and the one the trial's document belongs to when it is a later one.
+  const shown = approvals.filter(
+    (a, i) => i === 0 || (roleEntry?.approval?.submission && a.submission === roleEntry.approval.submission),
+  );
+  const hasResults = Boolean(trial.postedResults?.length);
+  const showResults = trial.primaryEndpoints.length > 0 || hasResults;
+  const about = Boolean(trial.population?.summary || trial.population?.keyCriteria.length);
+
   const body = (
     <>
         <header className="drawer__head">
           <div>
             {crumbs}
             <div className="drawer__eyebrow">
-              {PHASE_TEXT[trial.phase]} · {ROLE_LABEL[role]}
+              {[PHASE_TEXT[trial.phase], ROLE_LABEL[role], trial.status && registryText(trial.status)].filter(Boolean).join(' · ')}
               {/* On the full page the links above name the approved use. */}
-              {indication && !asPage ? ` for ${indication}` : ''}
+              {indication && !asPage ? ` · ${indication}` : ''}
             </div>
             <Title className="drawer__title">
               {trialShortName(trial)}
               {trial.nctId && registryUrl && (
                 <a className="drawer__title-nct" href={registryUrl} target="_blank" rel="noopener noreferrer">
-                  ({trial.nctId})
+                  {trial.nctId}
                 </a>
               )}
             </Title>
@@ -105,48 +94,43 @@ export function TrialDrawer({ trial, onClose, indication, asPage = false, crumbs
           )}
         </header>
 
-        <p className="drawer__full-title">{trial.title}</p>
-        {supports && <p className="drawer__supports">{supports}</p>}
-
-        {/* The trial at a glance: what an analyst reads first. */}
-        <ul className="drawer__glance">
+        {/* Three numbers: how many, how it was run, who. */}
+        <dl className="tr__numbers">
           {trial.enrollment && (
-            <li>
-              <span>Enrolled</span>
-              {trial.enrollment.count.toLocaleString()}
-              {trial.enrollment.type === 'ESTIMATED' ? ' (estimated)' : ''}
-            </li>
+            <div>
+              <dt>Enrolled</dt>
+              <dd className="nums">
+                {trial.enrollment.count.toLocaleString()}
+                <span className="tr__unit">{trial.enrollment.type === 'ESTIMATED' ? 'patients (estimated)' : 'patients'}</span>
+              </dd>
+            </div>
           )}
           {design.length > 0 && (
-            <li>
-              <span>Design</span>
-              {design.join(', ')}
-            </li>
+            <div>
+              <dt>Design</dt>
+              <dd className="tr__text">{design.join(', ')}</dd>
+            </div>
           )}
           {age && (
-            <li>
-              <span>Age</span>
-              {age}
-            </li>
+            <div>
+              <dt>Age</dt>
+              <dd className="tr__text">{age}</dd>
+            </div>
           )}
-          <li>
-            <span>Primary completion</span>
-            {formatDate(trial.primaryCompletionDate)}
-          </li>
-        </ul>
+        </dl>
 
-        {(trial.primaryEndpoints.length > 0 || trial.postedResults?.length || trial.metPrimaryEndpoint !== null) && (
-          <section className="drawer__section">
-            <h3>
-              Primary endpoint{trial.primaryEndpoints.length > 1 ? 's' : ''} and results
+        {showResults && (
+          <section className="tr__card" aria-labelledby="tr-results">
+            <div className="tr__card-head">
+              <h3 id="tr-results">What the trial showed</h3>
               {trial.metPrimaryEndpoint !== null && (
                 <span className={`drawer__met ${trial.metPrimaryEndpoint ? 'is-met' : 'is-not-met'}`}>
                   {trial.metPrimaryEndpoint ? 'Met primary endpoint' : 'Did not meet primary endpoint'}
                 </span>
               )}
-            </h3>
-            {trial.postedResults?.length ? (
-              <PostedResults outcomes={trial.postedResults} sourceUrl={trial.provenance.postedResults?.sourceUrl} />
+            </div>
+            {hasResults ? (
+              <PostedResults bars outcomes={trial.postedResults!} sourceUrl={trial.provenance.postedResults?.sourceUrl} />
             ) : (
               <>
                 <ul className="drawer__list">
@@ -161,43 +145,14 @@ export function TrialDrawer({ trial, onClose, indication, asPage = false, crumbs
           </section>
         )}
 
-        <div className="drawer__cols">
-          <section className="drawer__section">
-            <h3>Dates</h3>
-            <dl className="drawer__facts">
-              <Fact label="Start" value={formatDate(trial.startDate)} provenance={p.startDate} />
-              <Fact label="Primary completion" value={formatDate(trial.primaryCompletionDate)} provenance={p.primaryCompletionDate} />
-              {trial.readoutDate && <Fact label="Results announced" value={formatDate(trial.readoutDate)} provenance={p.readoutDate} />}
-              <Fact label="Study completion" value={formatDate(trial.completionDate)} />
-              {trial.status && <Fact label="Status" value={registryText(trial.status)} />}
-            </dl>
-          </section>
-
-          <section className="drawer__section">
-            <h3>Design</h3>
-            <dl className="drawer__facts">
-              {trial.enrollment && (
-                <Fact
-                  label="Enrollment"
-                  value={`${trial.enrollment.count.toLocaleString()} participants${trial.enrollment.type === 'ESTIMATED' ? ' (estimated)' : ''}`}
-                  provenance={p.enrollment}
-                />
-              )}
-              {trial.population?.summary && <Fact label="Population" value={trial.population.summary} />}
-              {age && <Fact label="Age" value={age} />}
-              {trial.design?.allocation && <Fact label="Allocation" value={registryText(trial.design.allocation)} />}
-              {trial.design?.masking && <Fact label="Masking" value={maskingText(trial.design.masking)} />}
-              {trial.design?.model && <Fact label="Model" value={registryText(trial.design.model)} />}
-            </dl>
-            {trial.population?.keyCriteria.length ? (
-              <ul className="drawer__list">
-                {trial.population.keyCriteria.map((c, i) => (
-                  <li key={i}>{c}</li>
-                ))}
-              </ul>
-            ) : null}
-          </section>
-        </div>
+        <section className="drawer__section" aria-labelledby="tr-when">
+          <h3 id="tr-when">When it ran</h3>
+          {trial.startDate ? (
+            <TrialTimeline trial={trial} approvals={shown} />
+          ) : (
+            <p className="drawer__note">Start date not posted. Primary completion {formatDate(trial.primaryCompletionDate)}.</p>
+          )}
+        </section>
 
         {/* Narrative sections are written by a person and stay hidden until written. */}
         {trial.takeaways.length > 0 && (
@@ -242,29 +197,40 @@ export function TrialDrawer({ trial, onClose, indication, asPage = false, crumbs
           </section>
         )}
 
-        <div className="drawer__cols">
-          <SourceTrail trial={trial} indication={indication} />
-          <section className="drawer__section">
-            <h3>Identifiers</h3>
-            <dl className="drawer__facts">
-              {trial.nctId && (
-                <Fact
-                  label="Registry"
-                  value={
-                    <a href={registryUrl!} target="_blank" rel="noopener noreferrer">
-                      {trial.nctId}
-                    </a>
-                  }
-                />
-              )}
-              {trial.protocolNumber && <Fact label="Protocol" value={trial.protocolNumber} />}
-              {trial.sponsor && <Fact label="Sponsor" value={trial.sponsor} />}
-            </dl>
-            {otherIndications.length > 0 && (
-              <p className="drawer__note">Also cited for {otherIndications.map((r) => r.indication).join(', ')}.</p>
-            )}
-          </section>
-        </div>
+        {/* The registry's own title and entry rules, one switch away. */}
+        <details className="tr__more">
+          <summary>{about ? 'Full title and who could enrol' : 'Full title'}</summary>
+          <p className="tr__full-title">{trial.title}</p>
+          {trial.population?.summary && <p className="drawer__prose">{trial.population.summary}</p>}
+          {trial.population?.keyCriteria.length ? (
+            <ul className="drawer__list">
+              {trial.population.keyCriteria.map((c, i) => (
+                <li key={i}>{c}</li>
+              ))}
+            </ul>
+          ) : null}
+        </details>
+
+        <SourceTrail trial={trial} indication={indication}>
+          {trial.protocolNumber && (
+            <div className="trail__row">
+              <dt>Protocol</dt>
+              <dd className="nums">{trial.protocolNumber}</dd>
+            </div>
+          )}
+          {trial.sponsor && (
+            <div className="trail__row">
+              <dt>Sponsor</dt>
+              <dd>{trial.sponsor}</dd>
+            </div>
+          )}
+          {otherIndications.length > 0 && (
+            <div className="trail__row">
+              <dt>Also cited for</dt>
+              <dd>{otherIndications.map((r) => r.indication).join(', ')}</dd>
+            </div>
+          )}
+        </SourceTrail>
     </>
   );
 

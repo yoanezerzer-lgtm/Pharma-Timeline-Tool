@@ -16,12 +16,17 @@ function formatP(p: string): string {
 }
 
 /** Posted primary-outcome results, shown exactly as the sponsor reported them. */
-export function PostedResults({ outcomes, sourceUrl }: { outcomes: PostedOutcome[]; sourceUrl?: string }) {
+export function PostedResults({ outcomes, sourceUrl, bars = false }: { outcomes: PostedOutcome[]; sourceUrl?: string; bars?: boolean }) {
   return (
     <div className="posted-results">
       {outcomes.map((o, i) => {
         const groupTitle = new Map(o.groups.map((g) => [g.id, g.title]));
         const hasCategory = o.measurements.some((m) => m.category);
+        // Bars only when every value is a plain number with one row per group;
+        // the bar's length is drawn from the posted value, the number shown is the posted text.
+        const plain = o.measurements.every((m) => /^-?\d+(\.\d+)?$/.test(m.value.trim()));
+        const max = Math.max(...o.measurements.map((m) => Math.abs(Number(m.value))));
+        const drawBars = bars && plain && !hasCategory && o.measurements.length > 1 && max > 0;
         return (
           <div key={i} className="posted-results__outcome">
             <p className="posted-results__title">{o.title}</p>
@@ -29,12 +34,20 @@ export function PostedResults({ outcomes, sourceUrl }: { outcomes: PostedOutcome
               <p className="posted-results__meta">{[o.unitOfMeasure, o.timeFrame].filter(Boolean).join(' · ')}</p>
             )}
             {o.measurements.length > 0 && (
-              <table className="posted-results__table">
+              <table className={`posted-results__table${drawBars ? ' posted-results__table--bars' : ''}`}>
                 <tbody>
                   {o.measurements.map((m, j) => (
                     <tr key={j}>
                       <th scope="row">{groupTitle.get(m.groupId) ?? m.groupId}</th>
                       {hasCategory && <td className="posted-results__category">{m.category}</td>}
+                      {drawBars && (
+                        <td className="posted-results__bar-cell" aria-hidden="true">
+                          <span
+                            className={`posted-results__bar${/placebo/i.test(groupTitle.get(m.groupId) ?? '') ? ' is-placebo' : ''}`}
+                            style={{ width: `${(Math.abs(Number(m.value)) / max) * 100}%` }}
+                          />
+                        </td>
+                      )}
                       <td className="posted-results__value">{formatValue(m, o.unitOfMeasure)}</td>
                     </tr>
                   ))}

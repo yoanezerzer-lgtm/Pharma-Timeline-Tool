@@ -26,7 +26,7 @@ interface Card {
  * record. Each line between them says how the two were joined. Built only
  * from stored provenance; a card with nothing stored is left out.
  */
-export function SourceTrail({ trial, indication }: { trial: Trial; indication?: string }) {
+export function SourceTrail({ trial, indication, children }: { trial: Trial; indication?: string; children?: React.ReactNode }) {
   const role = indication
     ? trial.roles.find((r) => r.indication === indication)
     : trial.roles.find((r) => r.approval) ?? trial.roles[0];
@@ -65,7 +65,7 @@ export function SourceTrail({ trial, indication }: { trial: Trial; indication?: 
     cards.push({
       card: {
         kind: 'registry',
-        source: 'ClinicalTrials.gov',
+        source: `ClinicalTrials.gov, ${trial.nctId}`,
         rows: [
           ['Registry ID', trial.nctId],
           ['Sponsor’s ID', trial.protocolNumber],
@@ -99,6 +99,7 @@ export function SourceTrail({ trial, indication }: { trial: Trial; indication?: 
             </dd>
           </div>
         ))}
+        {children}
       </dl>
     </section>
   );
