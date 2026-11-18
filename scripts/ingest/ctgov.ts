@@ -127,9 +127,19 @@ export function studyIdentifiers(study: CtgovStudy): string[] {
   return ids.filter((s): s is string => !!s);
 }
 
+/**
+ * True when one of `texts` names the drug. A combination is written
+ * "cefepime + zidebactam" and needs every ingredient named, so a trial of
+ * one ingredient alone (doravirine's own programme) isn't taken for it.
+ */
+function names(needle: string, texts: string[]): boolean {
+  const parts = needle.split(/\s+\+\s+/);
+  return parts.every((p) => texts.some((t) => t.includes(p)));
+}
+
 /** True when the study's interventions mention the drug, by INN or brand. */
-export function studyMatchesDrug(study: CtgovStudy, names: string[]): boolean {
-  const needles = names.map((n) => n.toLowerCase()).filter(Boolean);
+export function studyMatchesDrug(study: CtgovStudy, names_: string[]): boolean {
+  const needles = names_.map((n) => n.toLowerCase()).filter(Boolean);
   if (needles.length === 0) return false;
   const interventions = study.protocolSection?.armsInterventionsModule?.interventions ?? [];
   const haystack = interventions
@@ -139,7 +149,7 @@ export function studyMatchesDrug(study: CtgovStudy, names: string[]): boolean {
   // Fall back to titles: some records name the drug only in the title.
   const idm = study.protocolSection?.identificationModule;
   haystack.push((idm?.briefTitle ?? '').toLowerCase(), (idm?.officialTitle ?? '').toLowerCase());
-  return needles.some((n) => haystack.some((h) => h.includes(n)));
+  return needles.some((n) => names(n, haystack));
 }
 
 function slugifyId(study: CtgovStudy): string {
@@ -353,13 +363,14 @@ const CODE_NAME = /^[A-Z]{2,6}[- ]?\d{3,7}[A-Z]?$/;
  * code alone, so searching by the INN misses them.
  */
 export function codeNamesFrom(studies: CtgovStudy[], inn: string): string[] {
+  // A combination ("cefepime + zidebactam") takes only codes from an intervention naming every ingredient.
   const want = inn.toLowerCase();
   const out = new Set<string>();
   for (const s of studies) {
     for (const i of s.protocolSection?.armsInterventionsModule?.interventions ?? []) {
-      const names = [i.name, ...(i.otherNames ?? [])].filter((x): x is string => !!x).map((x) => x.trim());
-      if (!names.some((n) => n.toLowerCase().includes(want))) continue;
-      for (const n of names) if (CODE_NAME.test(n)) out.add(n);
+      const listed = [i.name, ...(i.otherNames ?? [])].filter((x): x is string => !!x).map((x) => x.trim());
+      if (!names(want, listed.map((n) => n.toLowerCase()))) continue;
+      for (const n of listed) if (CODE_NAME.test(n)) out.add(n);
     }
   }
   return [...out];

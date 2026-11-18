@@ -131,13 +131,15 @@ function specFromRecord(slug: string, dir = join(process.cwd(), 'data', 'drugs')
   return {
     slug: drug.slug,
     brandName: drug.brandName,
-    inn: drug.inn,
+    // Left blank so each refresh reads it again from the FDA record: a
+    // generic name cut short by an older rule doesn't outlive the fix.
+    inn: '',
     modality: drug.modality,
     sponsor: drug.sponsor,
     mechanism: drug.mechanism,
     applicationNumber: drug.regulatory.us.applicationNumber,
     applicationType: drug.regulatory.us.applicationType,
-    interventionNames: [drug.inn, drug.brandName],
+    interventionNames: [],
   };
 }
 

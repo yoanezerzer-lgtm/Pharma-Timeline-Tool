@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { Drug, type Drug as DrugType, type Trial, type Milestone } from '../../src/schema/index.js';
 import { makeContext, type IngestContext } from './context.js';
 import type { DrugSpec } from './registry.js';
-import { identityFromApplication, runFdaStage, type FdaStageResult } from './fda.js';
+import { identityFromApplication, registrySearchTerm, runFdaStage, trialMatchName, type FdaStageResult } from './fda.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
 import { extractCandidates, resolveCandidates, type ResolveReport } from './codes.js';
 import { codeNamesFrom, studyToTrial, searchByIntervention, ctgovStudyUrl, studyMatchesDrug } from './ctgov.js';
@@ -107,8 +107,8 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   // A drug added by name or application number alone takes the rest of its identity from the FDA record.
   const identified = { ...given, ...identityFromApplication(given, fda.application, fda.applicationType) };
   // Its development codes come from the registry, so trials registered under a code are found too.
-  const registered = steps.has('codes') || steps.has('ctgov') ? await searchByIntervention(ctx, identified.inn) : [];
-  const codes = codeNamesFrom(registered, identified.inn).filter(
+  const registered = steps.has('codes') || steps.has('ctgov') ? await searchByIntervention(ctx, registrySearchTerm(identified.inn)) : [];
+  const codes = codeNamesFrom(registered, trialMatchName(identified.inn)).filter(
     (c) => !identified.interventionNames.some((n) => n.toLowerCase() === c.toLowerCase())
   );
   if (codes.length > 0) log(`        development codes from the registry: ${codes.join(', ')}`);

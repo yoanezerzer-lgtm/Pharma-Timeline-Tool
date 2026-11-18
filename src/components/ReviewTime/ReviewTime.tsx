@@ -6,6 +6,7 @@ import type { Severity } from '../../lib/diseases.js';
 import { Info } from '../Info/Info.js';
 import { Cite } from '../Citations/Citations.js';
 import { productSources } from '../../lib/citations.js';
+import { drugIndex } from '../../lib/catalog.js';
 import './ReviewTime.css';
 
 // One small file per disease, fetched only when its page opens.
@@ -154,6 +155,8 @@ export function ReviewTime({ meshId, severity, split }: { meshId: string; severi
 function Row({ p, dataOf }: { p: PrecedentProduct; dataOf?: string }) {
   const days = reviewDays(p);
   const src = productSources(p, dataOf);
+  // A drug on the site shows its current generic name, not the copy saved with the review times.
+  const inn = (p.site && drugIndex.find((d) => d.slug === p.site!.drugSlug)?.inn) || p.inn;
   return (
     <tr>
       <td data-label="Product">
@@ -164,7 +167,7 @@ function Row({ p, dataOf }: { p: PrecedentProduct; dataOf?: string }) {
         ) : (
           <strong>{p.brandName}</strong>
         )}
-        {p.inn && <span className="precedent__sub">{p.inn}</span>}
+        {inn && <span className="precedent__sub">{inn}</span>}
         {p.originalOnly && p.indication && (
           <span className="precedent__sub">
             <Linked source={p.indication.source}>Label names it ↗</Linked>

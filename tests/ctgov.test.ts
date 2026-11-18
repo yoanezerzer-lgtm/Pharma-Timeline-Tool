@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { codeNamesFrom, postedPrimaryResults, studyToTrial, type CtgovStudy } from '../scripts/ingest/ctgov.js';
+import { codeNamesFrom, postedPrimaryResults, studyMatchesDrug, studyToTrial, type CtgovStudy } from '../scripts/ingest/ctgov.js';
 import { withoutPostedResults } from '../scripts/ingest/run.js';
 
 const study: CtgovStudy = {
@@ -106,5 +106,26 @@ describe('codeNamesFrom', () => {
 
   it("ignores codes of other drugs in the same trial", () => {
     expect(codeNamesFrom([study([{ name: 'Letrozole', otherNames: ['CGS-20267'] }])], 'camizestrant')).toEqual([]);
+  });
+
+  it("takes a combination's code only from an intervention naming every ingredient", () => {
+    const studies = [
+      study([{ name: 'Doravirine/Islatravir', otherNames: ['MK-8591A'] }]),
+      study([{ name: 'Doravirine', otherNames: ['MK-1439'] }, { name: 'Islatravir', otherNames: ['MK-8591'] }]),
+    ];
+    expect(codeNamesFrom(studies, 'doravirine + islatravir')).toEqual(['MK-8591A']);
+  });
+});
+
+describe('studyMatchesDrug', () => {
+  const study = (interventions: string[], briefTitle = ''): CtgovStudy => ({
+    protocolSection: { identificationModule: { briefTitle }, armsInterventionsModule: { interventions: interventions.map((name) => ({ name })) } },
+  }) as CtgovStudy;
+
+  it('needs every ingredient of a combination', () => {
+    expect(studyMatchesDrug(study(['Cefepime-Zidebactam']), ['cefepime + zidebactam'])).toBe(true);
+    expect(studyMatchesDrug(study(['Cefepime-Tazobactam']), ['cefepime + zidebactam'])).toBe(false);
+    expect(studyMatchesDrug(study(['Doravirine', 'Lamivudine']), ['doravirine + islatravir'])).toBe(false);
+    expect(studyMatchesDrug(study(['Dupilumab']), ['dupilumab'])).toBe(true);
   });
 });

@@ -225,6 +225,49 @@ export function innOf(fdaName: string): string {
   return fdaName.toLowerCase().replace(/-[a-z]{4}$/, '').replace(SALT, '').trim();
 }
 
+/**
+ * A combination's ingredients, one by one ("cefepime and zidebactam" →
+ * cefepime, zidebactam): registries name a combination many ways
+ * ("Cefepime-Zidebactam", "WCK 5222"), so trials are matched on all of
+ * them together. A single-ingredient name gives nothing back.
+ */
+export function ingredientsOf(inn: string): string[] {
+  const parts = inn.split(/,\s*|\s+and\s+/).filter(Boolean);
+  return parts.length > 1 ? parts : [];
+}
+
+/** The name trials are matched on: a combination as "cefepime + zidebactam", every ingredient required (see ctgov.ts). */
+export function trialMatchName(inn: string): string {
+  const parts = ingredientsOf(inn);
+  return parts.length > 0 ? parts.join(' + ') : inn;
+}
+
+/** The ClinicalTrials.gov search for a drug: every ingredient of a combination must appear ("cefepime AND zidebactam"). */
+export function registrySearchTerm(inn: string): string {
+  const parts = ingredientsOf(inn);
+  return parts.length > 0 ? parts.join(' AND ') : inn;
+}
+
+/** "a", "a and b", "a, b and c": how FDA labels list a product's active ingredients. */
+function listed(names: string[]): string {
+  return names.length <= 2 ? names.join(' and ') : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
+}
+
+/**
+ * The generic name of the approved product, every active ingredient
+ * included: "ZAYNICH (cefepime and zidebactam)", not "cefepime". Each
+ * ingredient FDA lists for the product is cut to its INN on its own (salts
+ * and suffixes off, see innOf), so a salt word in the first ingredient no
+ * longer drops the rest. Falls back to openFDA's generic_name, split on
+ * "and" or commas ("DORAVIRINE, ISLATRAVIR"), when the product lists none.
+ */
+export function genericNameOf(application: DrugsFdaResult): string {
+  const ingredients = (application.products?.[0]?.active_ingredients ?? []).map((a) => a.name ?? '').filter(Boolean);
+  const raw = ingredients.length > 0 ? ingredients : application.openfda?.generic_name?.slice(0, 1) ?? [];
+  const parts = raw.flatMap((n) => n.split(/\s*,\s*|\s+and\s+|\s*\+\s*/i)).map(innOf).filter(Boolean);
+  return listed([...new Set(parts)]);
+}
+
 /** "KEYTRUDA" → "Keytruda"; a name already in mixed case is kept as written. */
 function brandCase(name: string): string {
   return name === name.toUpperCase() ? name.charAt(0) + name.slice(1).toLowerCase() : name;
@@ -243,9 +286,8 @@ export function identityFromApplication(
   applicationType: 'NDA' | 'BLA' | 'ANDA'
 ): typeof spec {
   const product = application.products?.[0];
-  const ingredient = application.openfda?.generic_name?.[0] ?? product?.active_ingredients?.[0]?.name;
   const brandName = spec.brandName || (product?.brand_name ? brandCase(product.brand_name) : '');
-  const inn = spec.inn || innOf(ingredient ?? '');
+  const inn = spec.inn || genericNameOf(application);
   const epc = application.openfda?.pharm_class_epc?.[0]?.replace(/\s*\[EPC\]$/, '');
   return {
     ...spec,
@@ -254,6 +296,7 @@ export function identityFromApplication(
     sponsor: spec.sponsor || application.sponsor_name || '',
     modality: spec.modality || (applicationType === 'BLA' ? 'Biologic (BLA)' : 'Drug (NDA)'),
     mechanism: spec.mechanism ?? epc,
-    interventionNames: spec.interventionNames.filter(Boolean).length > 0 ? spec.interventionNames : [inn, brandName].filter(Boolean),
+    interventionNames:
+      spec.interventionNames.filter(Boolean).length > 0 ? spec.interventionNames : [trialMatchName(inn), brandName].filter(Boolean),
   };
 }
