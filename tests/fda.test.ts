@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { cachePathFor } from '../scripts/ingest/http.js';
-import { drugsFdaUrl, drugsFdaUrlByBrand, identityFromApplication, innOf, runFdaStage } from '../scripts/ingest/fda.js';
+import { drugsFdaUrl, drugsFdaUrlByBrand, genericNameOf, identityFromApplication, ingredientsOf, innOf, registrySearchTerm, runFdaStage, trialMatchName } from '../scripts/ingest/fda.js';
 import { makeContext } from '../scripts/ingest/context.js';
 
 function seedOpenFda(rawDir: string, slug: string, url: string, body: unknown): void {
@@ -130,5 +130,46 @@ describe('innOf', () => {
     expect(innOf('RISANKIZUMAB-RZAA')).toBe('risankizumab');
     expect(innOf('INSULIN EFSITORA ALFA-GOBE')).toBe('insulin efsitora alfa');
     expect(innOf('CAMIZESTRANT')).toBe('camizestrant');
+  });
+});
+
+describe('genericNameOf', () => {
+  it('names every active ingredient of a combination, as the label does', () => {
+    // Zaynich: openFDA's generic_name starts with a salt word, which once cut the name to one ingredient.
+    expect(
+      genericNameOf({
+        openfda: { generic_name: ['ZIDEBACTAM DIHYDRATE AND CEFEPIME HYDROCHLORIDE'] },
+        products: [{ active_ingredients: [{ name: 'CEFEPIME HYDROCHLORIDE' }, { name: 'ZIDEBACTAM' }] }],
+      })
+    ).toBe('cefepime and zidebactam');
+    expect(
+      genericNameOf({ products: [{ active_ingredients: [{ name: 'AMIVANTAMAB AND HYALURONIDASE-LPUJ' }] }] })
+    ).toBe('amivantamab and hyaluronidase');
+    expect(genericNameOf({ openfda: { generic_name: ['DORAVIRINE, ISLATRAVIR'] } })).toBe('doravirine and islatravir');
+    expect(genericNameOf({ products: [{ active_ingredients: [{ name: 'A' }, { name: 'B' }, { name: 'C' }] }] })).toBe('a, b and c');
+  });
+
+  it("prefers the product's ingredient to openFDA's generic_name, which can be wrong", () => {
+    expect(
+      genericNameOf({ openfda: { generic_name: ['LIPFENDRA'] }, products: [{ active_ingredients: [{ name: 'ENLICITIDE DECANOATE' }] }] })
+    ).toBe('enlicitide decanoate');
+    expect(genericNameOf({ products: [{ active_ingredients: [{ name: 'ESCITALOPRAM OXALATE' }] }] })).toBe('escitalopram');
+  });
+});
+
+describe('combination search terms', () => {
+  it('needs every ingredient of a combination, in the search and in matching', () => {
+    expect(ingredientsOf('cefepime and zidebactam')).toEqual(['cefepime', 'zidebactam']);
+    expect(ingredientsOf('dupilumab')).toEqual([]);
+    expect(registrySearchTerm('cefepime and zidebactam')).toBe('cefepime AND zidebactam');
+    expect(registrySearchTerm('dupilumab')).toBe('dupilumab');
+    expect(trialMatchName('doravirine and islatravir')).toBe('doravirine + islatravir');
+    expect(trialMatchName('dupilumab')).toBe('dupilumab');
+  });
+
+  it('matches trials on the whole combination', () => {
+    const app = { products: [{ brand_name: 'ZAYNICH', active_ingredients: [{ name: 'CEFEPIME HYDROCHLORIDE' }, { name: 'ZIDEBACTAM' }] }] };
+    const blank = { brandName: '', inn: '', sponsor: '', modality: '', interventionNames: [] as string[] };
+    expect(identityFromApplication(blank, app, 'NDA').interventionNames).toEqual(['cefepime + zidebactam', 'Zaynich']);
   });
 });

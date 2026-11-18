@@ -1,7 +1,7 @@
 {
   "slug": "cefepime",
   "brandName": "Zaynich",
-  "inn": "cefepime",
+  "inn": "cefepime and zidebactam",
   "modality": "Drug (NDA)",
   "sponsor": "WOCKHARDT BIO AG",
   "pharmacology": {
@@ -228,216 +228,6 @@
     }
   },
   "trials": [
-    {
-      "id": "w-5107-101",
-      "nctId": "NCT02532140",
-      "protocolNumber": "W-5107-101",
-      "title": "Phase I Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of WCK 5107 Alone and in Combination With Cefepime Administered as Single IV Doses in Healthy Human Volunteers",
-      "briefTitle": "Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of WCK 5107 Alone and in Combination With Cefepime",
-      "phase": "PHASE1",
-      "roles": [],
-      "status": "COMPLETED",
-      "sponsor": "Wockhardt",
-      "sponsorClass": "INDUSTRY",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Healthy"
-      ],
-      "startDate": {
-        "value": "2015-08-01",
-        "precision": "month"
-      },
-      "primaryCompletionDate": {
-        "value": "2015-11-01",
-        "precision": "month"
-      },
-      "completionDate": {
-        "value": "2015-12-01",
-        "precision": "month"
-      },
-      "enrollment": {
-        "count": 88,
-        "type": "ACTUAL"
-      },
-      "design": {
-        "allocation": "RANDOMIZED",
-        "masking": "QUADRUPLE",
-        "model": "CROSSOVER",
-        "primaryPurpose": "BASIC_SCIENCE"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "maxAge": "55 Years",
-        "sex": "ALL",
-        "healthyVolunteers": true,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "WCK 5107",
-          "type": "EXPERIMENTAL",
-          "description": "A single administration of the investigational product will be administered intravenously in 7 SAD cohorts at different dose level . The SAD cohorts will enroll 10 subjects ( 8 on active drug and 2 on placebo)"
-        },
-        {
-          "label": "WCK 5107 1000 mg and Cefepime 2000 mg",
-          "type": "EXPERIMENTAL",
-          "description": "In the crossover cohorts (WCK 5107 and cefepime, both alone and in combination), 9 subjects will receive all 3 treatments."
-        },
-        {
-          "label": "WCK 5107 2000 mg and Cefepime 2000 mg",
-          "type": "EXPERIMENTAL",
-          "description": "In the crossover cohorts (WCK 5107 and cefepime, both alone and in combination), 9 subjects will receive all 3 treatments."
-        }
-      ],
-      "primaryEndpoints": [
-        "Safety - number of adverse events .",
-        "Tolerability-measure of laboratory parameters"
-      ],
-      "secondaryEndpoints": [
-        "PK- Cmax",
-        "PK-AUC",
-        "PK-time to Cmax"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "w-4282-104",
-      "nctId": "NCT02709382",
-      "protocolNumber": "W-4282-104",
-      "title": "A Single-dose Study to Investigate the Pharmacokinetics of Intravenous FEP-TAZ in Patients With Renal Impairment",
-      "briefTitle": "A Single-dose Study to Investigate the Pharmacokinetics of Intravenous FEP-TAZ in Patients With Renal Impairment",
-      "phase": "PHASE1",
-      "roles": [],
-      "status": "COMPLETED",
-      "sponsor": "Wockhardt",
-      "sponsorClass": "INDUSTRY",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Renal Impairment"
-      ],
-      "conditionMesh": [
-        {
-          "id": "D051437",
-          "term": "Renal Insufficiency"
-        }
-      ],
-      "startDate": {
-        "value": "2016-03-01",
-        "precision": "month"
-      },
-      "primaryCompletionDate": {
-        "value": "2016-08-01",
-        "precision": "month"
-      },
-      "completionDate": {
-        "value": "2016-08-01",
-        "precision": "month"
-      },
-      "enrollment": {
-        "count": 48,
-        "type": "ACTUAL"
-      },
-      "design": {
-        "allocation": "NA",
-        "masking": "NONE",
-        "model": "SINGLE_GROUP"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "maxAge": "80 Years",
-        "sex": "ALL",
-        "healthyVolunteers": true,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "FEP-TAZ",
-          "type": "EXPERIMENTAL",
-          "description": "Cefepime and Tazobactam combination; IV infusion over a period of 90 minutes Healthy subjects, Mild and Moderate RI: 4 g (2 g FEP and 2 g TAZ) Severe RI and patients on HD: 2 g (1 g FEP and 1 g TAZ)"
-        }
-      ],
-      "primaryEndpoints": [
-        "plasma concentrations (Cmax)",
-        "Tmax The elimination half-life (t1/2),"
-      ],
-      "secondaryEndpoints": [
-        "Number of Participants With Abnormal Laboratory Values",
-        "Number of Participants With Adverse Events"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
     {
       "id": "w-5222-101",
       "nctId": "NCT02707107",
@@ -1053,106 +843,6 @@
       "changeLog": []
     },
     {
-      "id": "w-4282-301",
-      "nctId": "NCT03630081",
-      "protocolNumber": "W-4282-301",
-      "title": "A Phase III, Randomized, Double-Blind, Multicenter, Comparative Study to Determine the Efficacy and Safety of Cefepime-Tazobactam vs. Meropenem Followed by Optional Oral Therapy in the Treatment of Complicated Urinary Tract Infection or Acute Pyelonephritis in Adults",
-      "briefTitle": "Study of Cefepime-tazobactam (FEP-TAZ) in Complicated Urinary Tract Infection (cUTI) or Acute Pyelonephritis (AP)",
-      "phase": "PHASE3",
-      "roles": [],
-      "status": "UNKNOWN",
-      "sponsor": "Wockhardt",
-      "sponsorClass": "INDUSTRY",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Complicated Urinary Tract Infection",
-        "Acute Pyelonephritis"
-      ],
-      "startDate": {
-        "value": "2024-01-01",
-        "precision": "month"
-      },
-      "primaryCompletionDate": {
-        "value": "2026-01-01",
-        "precision": "month"
-      },
-      "completionDate": {
-        "value": "2026-02-01",
-        "precision": "month"
-      },
-      "enrollment": {
-        "count": 1004,
-        "type": "ESTIMATED"
-      },
-      "design": {
-        "allocation": "RANDOMIZED",
-        "masking": "QUADRUPLE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "WCK 4282 (FEP-TAZ) 4 g",
-          "type": "EXPERIMENTAL",
-          "description": "WCK 4282 (FEP-TAZ) Pharmaceutical dosage form: Intravenous infusion Dosage: 4 g (2 g FEP and 2 g TAZ) IV q8h, infused over 90 min"
-        },
-        {
-          "label": "Meropenem",
-          "type": "ACTIVE_COMPARATOR",
-          "description": "Meropenem Pharmaceutical dosage form: Intravenous infusion Dosage: 1 g IV q8h, infused over 45 min"
-        }
-      ],
-      "primaryEndpoints": [
-        "Percentage of subjects with overall success at Day 5",
-        "Percentage of subjects with overall success at Test-of-Cure",
-        "Percentage of subjects with Treatment-Emergent Adverse Events (TEAE)"
-      ],
-      "secondaryEndpoints": [],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
       "id": "w-5222-106",
       "nctId": "NCT06806995",
       "protocolNumber": "W-5222-106",
@@ -1356,6 +1046,316 @@
         }
       },
       "changeLog": []
+    },
+    {
+      "id": "w-5107-101",
+      "nctId": "NCT02532140",
+      "protocolNumber": "W-5107-101",
+      "title": "Phase I Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of WCK 5107 Alone and in Combination With Cefepime Administered as Single IV Doses in Healthy Human Volunteers",
+      "briefTitle": "Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of WCK 5107 Alone and in Combination With Cefepime",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy"
+      ],
+      "startDate": {
+        "value": "2015-08-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2015-11-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2015-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 88,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "CROSSOVER",
+        "primaryPurpose": "BASIC_SCIENCE"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "55 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "WCK 5107",
+          "type": "EXPERIMENTAL",
+          "description": "A single administration of the investigational product will be administered intravenously in 7 SAD cohorts at different dose level . The SAD cohorts will enroll 10 subjects ( 8 on active drug and 2 on placebo)"
+        },
+        {
+          "label": "WCK 5107 1000 mg and Cefepime 2000 mg",
+          "type": "EXPERIMENTAL",
+          "description": "In the crossover cohorts (WCK 5107 and cefepime, both alone and in combination), 9 subjects will receive all 3 treatments."
+        },
+        {
+          "label": "WCK 5107 2000 mg and Cefepime 2000 mg",
+          "type": "EXPERIMENTAL",
+          "description": "In the crossover cohorts (WCK 5107 and cefepime, both alone and in combination), 9 subjects will receive all 3 treatments."
+        }
+      ],
+      "primaryEndpoints": [
+        "Safety - number of adverse events .",
+        "Tolerability-measure of laboratory parameters"
+      ],
+      "secondaryEndpoints": [
+        "PK- Cmax",
+        "PK-AUC",
+        "PK-time to Cmax"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02532140",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-4282-104",
+      "nctId": "NCT02709382",
+      "protocolNumber": "W-4282-104",
+      "title": "A Single-dose Study to Investigate the Pharmacokinetics of Intravenous FEP-TAZ in Patients With Renal Impairment",
+      "briefTitle": "A Single-dose Study to Investigate the Pharmacokinetics of Intravenous FEP-TAZ in Patients With Renal Impairment",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Renal Impairment"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D051437",
+          "term": "Renal Insufficiency"
+        }
+      ],
+      "startDate": {
+        "value": "2016-03-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2016-08-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2016-08-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 48,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "FEP-TAZ",
+          "type": "EXPERIMENTAL",
+          "description": "Cefepime and Tazobactam combination; IV infusion over a period of 90 minutes Healthy subjects, Mild and Moderate RI: 4 g (2 g FEP and 2 g TAZ) Severe RI and patients on HD: 2 g (1 g FEP and 1 g TAZ)"
+        }
+      ],
+      "primaryEndpoints": [
+        "plasma concentrations (Cmax)",
+        "Tmax The elimination half-life (t1/2),"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Abnormal Laboratory Values",
+        "Number of Participants With Adverse Events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02709382",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "w-4282-301",
+      "nctId": "NCT03630081",
+      "protocolNumber": "W-4282-301",
+      "title": "A Phase III, Randomized, Double-Blind, Multicenter, Comparative Study to Determine the Efficacy and Safety of Cefepime-Tazobactam vs. Meropenem Followed by Optional Oral Therapy in the Treatment of Complicated Urinary Tract Infection or Acute Pyelonephritis in Adults",
+      "briefTitle": "Study of Cefepime-tazobactam (FEP-TAZ) in Complicated Urinary Tract Infection (cUTI) or Acute Pyelonephritis (AP)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "UNKNOWN",
+      "sponsor": "Wockhardt",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Complicated Urinary Tract Infection",
+        "Acute Pyelonephritis"
+      ],
+      "startDate": {
+        "value": "2024-01-01",
+        "precision": "month"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-01-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2026-02-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 1004,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "WCK 4282 (FEP-TAZ) 4 g",
+          "type": "EXPERIMENTAL",
+          "description": "WCK 4282 (FEP-TAZ) Pharmaceutical dosage form: Intravenous infusion Dosage: 4 g (2 g FEP and 2 g TAZ) IV q8h, infused over 90 min"
+        },
+        {
+          "label": "Meropenem",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Meropenem Pharmaceutical dosage form: Intravenous infusion Dosage: 1 g IV q8h, infused over 45 min"
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of subjects with overall success at Day 5",
+        "Percentage of subjects with overall success at Test-of-Cure",
+        "Percentage of subjects with Treatment-Emergent Adverse Events (TEAE)"
+      ],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT03630081",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
     }
   ],
   "milestones": [
@@ -1399,5 +1399,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:20:05.968Z"
+  "lastIngestedAt": "2026-11-18T19:35:57.556Z"
 }

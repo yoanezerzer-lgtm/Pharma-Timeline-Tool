@@ -16,6 +16,14 @@ Cloudflare: owner, by the end of the week.
 ## Next steps (in order, one chat each)
 1. **Design: less text** (several chats, above).
 2. **Data, one chat:**
+   - Names (found 18 Nov, not fixed): Zaynich keeps three trials of other
+     Wockhardt products (cefepime-tazobactam W-4282, zidebactam alone
+     W-5107), held by the merge step from older runs; brand names are
+     cased word by word wrong ("Rybrevant faspro", "Awiqli flextouch") and
+     one keeps FDA's "(copackaged)" tag ("Lifyorli (copackaged)").
+     Rybrevant Faspro's generic tidies to "amivantamab and hyaluronidase"
+     on its next refresh, which also brings a new use and three dates that
+     drop out: review those with the refresh.
    - Review the 15 Nov refresh on `data/refresh-2026-11-15` (22 drugs,
      first run with the 8 Nov dating rules) before Saturday's run.
    - Find why the nightly checker has opened no
