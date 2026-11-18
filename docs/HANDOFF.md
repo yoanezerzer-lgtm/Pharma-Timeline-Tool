@@ -9,7 +9,8 @@ in git and pull requests, not here.
 The owner's biggest problem now, after adding drugs, is that pages are too
 dense (PRD §5, "Answer first, detail one click away"). This week is design
 and shorter copy, one page per chat, in this order: home, drug, approved
-use, disease, trial, Compare. The FDA's wording stays word for word; only
+use, disease, trial, Compare. Done up to the trial page (results card
+with bars, a small timeline beside the approvals); Compare is next. The FDA's wording stays word for word; only
 the site's own copy (`src/lib/copy.ts`) gets shorter. Domain and
 Cloudflare: owner, by the end of the week.
 

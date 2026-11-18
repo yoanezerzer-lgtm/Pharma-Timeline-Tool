@@ -24,6 +24,7 @@ import { areasOfDrug } from '../lib/areas.js';
 import { SEVERITY_LABEL, severityOfText, type Severity } from '../lib/diseases.js';
 import { indicationHref, replaceQuery } from '../lib/router.js';
 import { TrialDrawer } from '../components/TrialDetail/TrialDrawer.js';
+import { timelineApprovals } from '../components/TrialDetail/TrialTimeline.js';
 import { approvalKindLabel } from '../lib/copy.js';
 import './ComparePage.css';
 
@@ -228,7 +229,12 @@ export function ComparePage() {
       )}
 
       {selectedTrial && openProgram && (
-        <TrialDrawer trial={selectedTrial} indication={openProgram.indication.name} onClose={() => setOpenTrial(null)} />
+        <TrialDrawer
+          trial={selectedTrial}
+          indication={openProgram.indication.name}
+          approvals={timelineApprovals(openProgram.indication)}
+          onClose={() => setOpenTrial(null)}
+        />
       )}
     </main>
   );
