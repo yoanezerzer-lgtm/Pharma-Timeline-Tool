@@ -1,58 +1,69 @@
-# Handoff: where things stand (17 Nov 2026)
+# Handoff: where things stand (19 Nov 2026)
 
 The current state and the next steps, nothing else. Rules are in
 `CLAUDE.md`; the product, the goals and the owner's decisions are in
 `docs/PRD.md`. Update this note at the end of every chat; history belongs
 in git and pull requests, not here.
 
-## This week: less text on every page
-The owner's biggest problem now, after adding drugs, is that pages are too
-dense (PRD §5, "Answer first, detail one click away"). This week is design
-and shorter copy, one page per chat, in this order: home, drug, approved
-use, disease, trial, Compare. Done up to the trial page (results card
-with bars, a small timeline beside the approvals); Compare is next. The FDA's wording stays word for word; only
-the site's own copy (`src/lib/copy.ts`) gets shorter. Domain and
-Cloudflare: owner, by the end of the week.
+## The order of work (owner, 19 Nov)
+Three phases. Monetization and go-to-market wait until a few real
+professionals have used the site: the ten-minute test (PRD §10) answers
+most of those questions for free.
 
-## Next steps (in order, one chat each)
-1. **Design: less text** (several chats, above).
-2. **Data, one chat:**
-   - Names (found 18 Nov, not fixed): Zaynich keeps three trials of other
-     Wockhardt products (cefepime-tazobactam W-4282, zidebactam alone
-     W-5107), held by the merge step from older runs; brand names are
-     cased word by word wrong ("Rybrevant faspro", "Awiqli flextouch") and
-     one keeps FDA's "(copackaged)" tag ("Lifyorli (copackaged)").
-     Rybrevant Faspro's generic tidies to "amivantamab and hyaluronidase"
-     on its next refresh, which also brings a new use and three dates that
-     drop out: review those with the refresh.
-   - Review the 15 Nov refresh on `data/refresh-2026-11-15` (22 drugs,
-     first run with the 8 Nov dating rules) before Saturday's run.
-   - Find why the nightly checker has opened no
-     `nightly/<date>-confirmations` pull request since 11 Nov (it runs,
-     but only readouts come out). Read its latest summary first.
+**Phase 1: make it worth showing (now)**
+1. **Accuracy, one or two chats** (PRD goal 4):
    - Readout reader (`readouts.yml`): it saves quotes that don't state a
      result (a page title, an endpoint description), so every readout is
      held. Make it pick a sentence with a result in it, or record nothing.
      Held so far: Dupixent SINUS-24/52, Cibinqo JADE TEEN and MONO-2
      (links kept in `data/readouts/candidates/`).
-3. **Precedent table** (PRD goal 3): bring
+   - Find why the nightly checker has opened no
+     `nightly/<date>-confirmations` pull request since 11 Nov (it runs,
+     but only readouts come out). Read its latest summary first.
+   - Names (found 18 Nov): Zaynich keeps three trials of other Wockhardt
+     products (cefepime-tazobactam W-4282, zidebactam alone W-5107), held
+     by the merge step from older runs; brand names are cased word by word
+     wrong ("Rybrevant faspro", "Awiqli flextouch") and one keeps FDA's
+     "(copackaged)" tag ("Lifyorli (copackaged)"). Rybrevant Faspro's
+     generic tidies to "amivantamab and hyaluronidase" on its next
+     refresh, which also brings a new use and three dates that drop out:
+     review those with the refresh.
+   - Review the 15 Nov refresh on `data/refresh-2026-11-15` (22 drugs,
+     first run with the 8 Nov dating rules).
+2. **New drugs: atopic dermatitis only** (PRD goal 2), until its list
+   matches the FDA's own records. No other areas until then.
+3. **Design and legibility: finish, then stop.** Home, drug, approved
+   use, disease and trial pages are done; Compare is the last one. The
+   FDA's wording stays word for word; only the site's own copy
+   (`src/lib/copy.ts`) gets shorter.
+
+**Phase 2: put it in front of people**
+4. **Precedent table** (PRD goal 3): bring
    `claude/precedent-markers-citations` (FDA review time, approval
    markers, citation chips; 10 Nov, no pull request) up to date with main
    and merge it, then the table itself.
-4. **Get ready to publish** (after the owner's decision): cookie-free
-   visitor counter, Cloudflare Pages, `SITE_ORIGIN`, Search Console, then
-   accounts and the paywall (the home page's disabled "Log in" is the
-   place for them).
 5. **Required on every page, not built yet** (PRD §4): a "report a
    mistake" link and a "not medical advice" line.
-- Later: a separate page for regulatory measures across diseases (FDA
-  review time and the like, compared side by side; owner, 17 Nov). Until
-  then review time stays on each disease page.
-- Later: readers for the designation sources saved on
-  `diag/designations` (then add them to `npm run precedent`); "Rare
-  diseases" from orphan status; Compare percentages for count results
-  (needs each arm's size from ClinicalTrials.gov); move workflow actions
-  off Node 20; more areas once atopic dermatitis is complete.
+6. **Publish** (after the owner's domain and Cloudflare decision, now due
+   26 Nov): cookie-free visitor counter, Cloudflare Pages, `SITE_ORIGIN`,
+   Search Console.
+7. **Go-to-market, first step:** the ten-minute test with three
+   consultants or BD/regulatory analysts on atopic dermatitis. Their
+   answers (would they use it at work, what's missing, would they pay) go
+   on the owner's list.
+
+**Phase 3: charge and keep them (after the test)**
+8. **Monetization:** accounts and the paywall (7 Nov plan; the home
+   page's disabled "Log in" is the place for them), priced from the test.
+9. **Stickiness:** "tell me when something new is approved in my area",
+   an email digest built on the weekly refresh.
+
+**Deferred:** new therapeutic areas; a page for regulatory measures across
+diseases (owner, 17 Nov; until then review time stays on each disease
+page); readers for the designation sources saved on `diag/designations`
+(then add them to `npm run precedent`); "Rare diseases" from orphan
+status; Compare percentages for count results (needs each arm's size from
+ClinicalTrials.gov); move workflow actions off Node 20.
 
 ## The site
 https://yoanezerzer-lgtm.github.io/Pharma-Timeline-Tool/ (GitHub Pages
