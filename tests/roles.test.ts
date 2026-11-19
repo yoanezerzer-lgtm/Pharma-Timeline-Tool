@@ -303,6 +303,22 @@ describe('extractIndicationList', () => {
 });
 
 describe('splitSection14ByIndication', () => {
+  it('finds a heading that spells out the abbreviation, and never runs into the next subsection (Rybrevant Faspro)', () => {
+    const section14 =
+      '14.4 Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations – Intravenous Amivantamab as a Single Agent CHRYSALIS (NCT02609776) ' +
+      '14.5 Previously Treated Head and Neck Squamous Cell Carcinoma The efficacy of RYBREVANT FASPRO was evaluated in OrigAMI-4 (NCT06385080).';
+    const spans = splitSection14ByIndication(section14, [
+      { number: 4, name: 'Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations' },
+      { number: 5, name: 'Previously Treated HNSCC' },
+    ]);
+    expect(spans.map((x) => x.indication)).toEqual(['Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations', 'Previously Treated HNSCC']);
+    expect(spans[0].text).not.toContain('OrigAMI-4');
+    expect(spans[1].text).toContain('OrigAMI-4');
+    // A subsection the list doesn't name still ends the span before it.
+    const unnamed = splitSection14ByIndication(section14, [{ number: 4, name: 'Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations' }, { number: 9, name: 'Something Else' }]);
+    expect(unnamed[0].text).not.toContain('OrigAMI-4');
+  });
+
   it('attributes the whole section to the one indication when there is only one', () => {
     // A fresh, single-indication label's section 14 has no "14.N" numbering
     // at all (see extractIndicationList's doc comment) — the split must not

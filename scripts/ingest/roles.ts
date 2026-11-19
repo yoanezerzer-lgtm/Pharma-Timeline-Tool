@@ -324,16 +324,39 @@ export function splitSection14ByIndication(
 
   const boundaries: { index: number; indication: string }[] = [];
   for (const { number, name } of indicationList) {
-    const pattern = new RegExp(`\\b14\\.\\s*${number}\\s+${flexibleNamePattern(name)}`, 'i');
+    const pattern = new RegExp(`\\b14\\.\\s*${number}\\s+(?:${flexibleNamePattern(name)}|${spelledOutPattern(name)})`, 'i');
     const m = pattern.exec(section14Text);
     if (m) boundaries.push({ index: m.index, indication: name });
   }
   boundaries.sort((a, b) => a.index - b.index);
 
+  // Any later "14.N Heading" ends a span, matched or not: a subsection whose
+  // heading the list words differently must not run into the one before it
+  // (Rybrevant Faspro's head and neck trial read as lung cancer evidence).
+  const heading = /\b14\.\s*\d+\s+[A-Z]/g;
+  const nextHeading = (from: number): number => {
+    heading.lastIndex = from + 4;
+    return heading.exec(section14Text)?.index ?? section14Text.length;
+  };
   return boundaries.map((b, i) => ({
     indication: b.indication,
-    text: section14Text.slice(b.index, boundaries[i + 1]?.index ?? section14Text.length),
+    text: section14Text.slice(b.index, Math.min(boundaries[i + 1]?.index ?? section14Text.length, nextHeading(b.index))),
   }));
+}
+
+/**
+ * The name with its abbreviation spelled out as section 14 may head it:
+ * "Previously Treated HNSCC" as "Previously Treated Head and Neck Squamous
+ * Cell Carcinoma". Matches nothing when the name has no abbreviation.
+ */
+function spelledOutPattern(name: string): string {
+  const abbr = /\b[A-Z]{3,6}\b/.exec(name);
+  if (!abbr) return '(?!)';
+  const spelled = abbr[0]
+    .split('')
+    .map((c) => `${c}[a-z]*`)
+    .join('(?:\\s+(?:and|of|the))?\\s+');
+  return flexibleNamePattern(name.slice(0, abbr.index)) + spelled + flexibleNamePattern(name.slice(abbr.index + abbr[0].length));
 }
 
 export interface RoleContext {
