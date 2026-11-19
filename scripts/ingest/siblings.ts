@@ -1,7 +1,7 @@
 import type { Milestone } from '../../src/schema/index.js';
 import type { IngestContext } from './context.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
-import { runFdaStage } from './fda.js';
+import { brandCase, runFdaStage } from './fda.js';
 
 /**
  * A second FDA application for the same product, approved on its own and
@@ -56,7 +56,7 @@ export async function siblingApprovals(
     } catch {
       continue;
     }
-    const brands = (fda.application.products ?? []).map((p) => p.brand_name?.toLowerCase());
+    const brands = (fda.application.products ?? []).map((p) => (p.brand_name ? brandCase(p.brand_name).toLowerCase() : undefined));
     if (!brands.includes(brandName.toLowerCase())) continue;
     const original = fda.milestones.find((m) => m.type === 'FDA_APPROVAL');
     if (!original) continue;

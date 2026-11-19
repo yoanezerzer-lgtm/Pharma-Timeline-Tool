@@ -269,8 +269,16 @@ export function genericNameOf(application: DrugsFdaResult): string {
 }
 
 /** "KEYTRUDA" → "Keytruda"; a name already in mixed case is kept as written. */
-function brandCase(name: string): string {
-  return name === name.toUpperCase() ? name.charAt(0) + name.slice(1).toLowerCase() : name;
+/**
+ * The brand as the label writes it: openFDA's capitals cased word by word
+ * ("RYBREVANT FASPRO" → "Rybrevant Faspro"), without the FDA's trailing
+ * product tag ("LIFYORLI (COPACKAGED)" → "Lifyorli"). A name already in mixed
+ * case is kept as given.
+ */
+export function brandCase(name: string): string {
+  const bare = name.replace(/\s*\([^()]*\)\s*$/, '').trim() || name.trim();
+  if (bare !== bare.toUpperCase()) return bare;
+  return bare.toLowerCase().replace(/(^|[\s\-/])(\p{L})/gu, (_, sep: string, c: string) => sep + c.toUpperCase());
 }
 
 /**

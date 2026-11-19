@@ -60,6 +60,7 @@ interface IngestResult {
   addedTrials: string[];
   updatedTrials: string[];
   droppedTrials: string[];
+  removedTrials: string[];
   warnings: string[];
 }
 
@@ -394,7 +395,8 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
 
   log(
     `[merge] ${merged.addedTrials.length} added, ${merged.updatedTrials.length} updated, ` +
-      `${merged.droppedTrials.length} kept from previous run`
+      `${merged.droppedTrials.length} kept from previous run, ${merged.removedTrials.length} no longer found removed` +
+      (merged.removedTrials.length > 0 ? ` (${merged.removedTrials.join(', ')})` : '')
   );
 
   let outPath: string | null = null;
@@ -419,6 +421,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     addedTrials: merged.addedTrials,
     updatedTrials: merged.updatedTrials,
     droppedTrials: merged.droppedTrials,
+    removedTrials: merged.removedTrials,
     warnings,
   };
 }

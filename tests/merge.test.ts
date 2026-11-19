@@ -111,6 +111,18 @@ describe('mergeDrug', () => {
     expect(result.droppedTrials).toEqual(['hand-added']);
   });
 
+  it('removes a plain registry match the new run no longer returns (another product of the same sponsor)', () => {
+    const existing = drug([
+      trial(),
+      trial({ id: 'w-4282-301', nctId: 'NCT03630081' }),
+      trial({ id: 'checked', nctId: 'NCT00000009', provenance: { phase: { extractedBy: 'regex', verified: true } } }),
+    ]);
+    const result = mergeDrug(existing, drug([trial()]));
+    expect(result.drug.trials.map((t) => t.id)).toEqual(['select-compare', 'checked']);
+    expect(result.removedTrials).toEqual(['w-4282-301']);
+    expect(result.droppedTrials).toEqual(['checked']);
+  });
+
   it('matches trials across runs by identifier, not array position', () => {
     const existing = drug([
       trial({ id: 'old-slug', provenance: { phase: { extractedBy: 'human', verified: true } }, phase: 'PHASE2' }),
