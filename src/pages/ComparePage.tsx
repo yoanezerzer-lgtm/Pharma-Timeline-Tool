@@ -1,8 +1,9 @@
 import { Info } from '../components/Info/Info.js';
-import { useEffect, useId, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useState } from 'react';
 import type { Approval, Trial } from '../schema/index.js';
 import { drugIndex, useDrug, type DrugState } from '../lib/catalog.js';
 import {
+  buildAlignedAxis,
   buildAxis,
   endpointsDiffer,
   evidenceCsv,
@@ -71,8 +72,6 @@ function useArea(d: (typeof drugIndex)[number], i: (typeof drugIndex)[number]['i
   return all.length === 1 ? all[0].name : undefined;
 }
 
-const AREA_BY_REF = new Map(OPTIONS.map((o) => [o.ref, o.area]));
-const areaOf = (slug: string, indicationSlug: string) => AREA_BY_REF.get(programRefString({ slug, indicationSlug }));
 
 /** Severity the FDA's wording names for this approval: its letters, newest first, then the label. */
 function programSeverity(p: ProgramView): Severity {
@@ -100,6 +99,8 @@ export function ComparePage() {
   const [refs, setRefs] = useState<[ProgramRef, ProgramRef]>(initialRefs);
   const [focusedReadout, setFocusedReadout] = useState<string | null>(null);
   const [openTrial, setOpenTrial] = useState<{ program: string; trialId: string } | null>(null);
+  const [calendar, setCalendar] = useState(false);
+  const [withOthers, setWithOthers] = useState(false);
 
   useEffect(() => {
     replaceQuery({ a: programRefString(refs[0]), b: programRefString(refs[1]) });
@@ -117,12 +118,21 @@ export function ComparePage() {
     [states[0], states[1], refs]
   );
   const ready = programs.filter((p): p is ProgramView => !!p);
-  const axis = useMemo(() => buildAxis(ready), [ready.map((p) => p.key + p.lanes.length).join()]);
+  // Only the pivotal trials show until the switch asks for the rest.
+  const shown = useMemo(
+    () => ready.map((p) => (withOthers ? p : { ...p, lanes: p.lanes.filter((l) => l.role === 'PIVOTAL') })),
+    [ready, withOthers]
+  );
+  const others = ready.reduce((n, p) => n + p.lanes.filter((l) => l.role !== 'PIVOTAL').length, 0);
+  const dep = shown.map((p) => p.key + p.lanes.length).join();
+  const calendarAxis = useMemo(() => buildAxis(shown), [dep]);
+  const alignedAxis = useMemo(() => buildAlignedAxis(shown), [dep]);
+  const aligned = !calendar && alignedAxis !== undefined;
   const rows = useMemo(() => evidenceRows(ready), [ready]);
+  const shownRows = useMemo(() => evidenceRows(shown), [shown]);
   const cards = useMemo(() => readoutCards(ready), [ready]);
   const severities = programs.map((p) => (p ? programSeverity(p) : undefined));
   const mismatch = clash(severities[0], severities[1]);
-  const anySupport = ready.some((p) => p.lanes.some((l) => l.role !== 'PIVOTAL'));
 
   const setRef = (i: 0 | 1, ref: string) => {
     const r = parseProgramRef(ref);
@@ -150,25 +160,19 @@ export function ComparePage() {
     URL.revokeObjectURL(url);
   };
 
+  const names = programs.map((p, i) => p?.drug.brandName ?? `Approval ${i + 1}`);
+
   return (
     <main className={`compare${selectedTrial ? ' has-drawer' : ''}`}>
       <div className="compare__head">
-        <h1>Compare two approvals</h1>
+        <h1>
+          {names[0]} <span className="compare__vs">vs</span> {names[1]}
+        </h1>
         <div className="compare__actions">
           <button type="button" className="compare__button" onClick={exportCsv} disabled={rows.length === 0}>
             Download CSV
           </button>
         </div>
-      </div>
-
-      <div className="compare__legend">
-        <span><span className="swatch swatch--bar" aria-hidden="true" />Pivotal trial, start to primary completion</span>
-        {anySupport && <span><span className="swatch swatch--support" aria-hidden="true" />Supportive trial</span>}
-        {cards.length > 0 && <span><span className="swatch swatch--readout" aria-hidden="true" />Results announced</span>}
-        <span><span className="swatch swatch--approval" aria-hidden="true" />FDA approval</span>
-        {ready.some((p) => p.whole) && (
-          <span><span className="swatch swatch--approval swatch--later-approval" aria-hidden="true" />Later approval of the same use</span>
-        )}
       </div>
 
       {mismatch && (
@@ -180,31 +184,61 @@ export function ComparePage() {
 
       <div className="compare__panes">
         {([0, 1] as const).map((i) => (
-          <ProgramPane
+          <ProgramCard
             key={i}
             index={i}
             current={programRefString({ slug: refs[i].slug, indicationSlug: refs[i].indicationSlug })}
             state={states[i]}
             program={programs[i]}
-            axis={axis}
             otherSeverity={severities[i === 0 ? 1 : 0]}
             onPick={(ref) => setRef(i, ref)}
             onPickApproval={(submission) => setApproval(i, submission)}
-            onReadout={showReadout}
             onTrial={showTrial}
           />
         ))}
       </div>
 
-      {rows.length > 0 && !mismatch && <EvidenceTable rows={rows} onTrial={showTrial} />}
+      {shown.length > 0 && !mismatch && (
+        <section className="compare__section" aria-labelledby="road">
+          <div className="compare__section-head">
+            <h2 id="road">Road to approval</h2>
+            <div className="compare__switches">
+              {alignedAxis && (
+                <div className="seg" role="group" aria-label="Line up the timelines">
+                  <button type="button" aria-pressed={!calendar} onClick={() => setCalendar(false)}>
+                    Lined up on approval
+                  </button>
+                  <button type="button" aria-pressed={calendar} onClick={() => setCalendar(true)}>
+                    Calendar years
+                  </button>
+                </div>
+              )}
+              {others > 0 && (
+                <label className="compare__toggle">
+                  <input type="checkbox" checked={withOthers} onChange={(e) => setWithOthers(e.target.checked)} />
+                  Show {others} supportive and other {others === 1 ? 'trial' : 'trials'}
+                </label>
+              )}
+            </div>
+          </div>
+          <RoadChart
+            programs={shown}
+            axis={aligned ? alignedAxis! : calendarAxis}
+            aligned={aligned}
+            onTrial={showTrial}
+            onReadout={showReadout}
+            hasReadouts={cards.length > 0}
+          />
+        </section>
+      )}
 
-      {rows.length > 0 && !mismatch && cards.length === 0 && (
-        <p className="compare__note">No company announcement of these trials’ results found yet.</p>
+      {shownRows.length > 0 && !mismatch && (
+        <EvidenceCards programs={shown} rows={shownRows} differ={endpointsDiffer(shownRows)} onTrial={showTrial} />
       )}
 
       {rows.length > 0 && !mismatch && cards.length > 0 && (
         <section className="compare__section" aria-labelledby="readouts">
-          <h2 id="readouts">Readouts: when results were first announced</h2>
+          <h2 id="readouts">When results were first announced</h2>
           <div className="readouts">
             {cards.map((c) => (
               <article key={c.key} id={readoutAnchor(c.key)} className={`readout${focusedReadout === c.key ? ' is-focused' : ''}`}>
@@ -258,11 +292,13 @@ function ProgramPicker({
   current,
   otherSeverity,
   onPick,
+  autoFocus = false,
 }: {
   index: number;
   current: string;
   otherSeverity?: Severity;
   onPick: (ref: string) => void;
+  autoFocus?: boolean;
 }) {
   const currentOption = OPTIONS.find((o) => o.ref === current);
   const blocked = (o: ProgramOption) => clash(o.severity, otherSeverity);
@@ -286,6 +322,7 @@ function ProgramPicker({
     <div className="picker" onBlur={(e) => !e.currentTarget.contains(e.relatedTarget) && (setOpen(false), setQuery(null))}>
       <input
         role="combobox"
+        autoFocus={autoFocus}
         aria-label={`Approval ${index + 1}: search a drug or approved use`}
         aria-expanded={open}
         aria-controls={listId}
@@ -353,85 +390,80 @@ function ProgramPicker({
   );
 }
 
-const VISIBLE_LANES = 4;
+/** Months from the last pivotal trial's primary completion to this approval; unset when the records can't say. */
+function monthsToApproval(program: ProgramView): number | undefined {
+  const pivotal = program.lanes.filter((l) => l.role === 'PIVOTAL' && !l.afterApproval);
+  const last = Math.max(...pivotal.map((l) => l.primaryCompletion ?? -Infinity));
+  return !program.whole && Number.isFinite(last) && last <= (program.approval ?? -Infinity)
+    ? monthsBetween(last, program.approval)
+    : undefined;
+}
 
-function ProgramPane({
+function ProgramCard({
   index,
   current,
   state,
   program,
-  axis,
   otherSeverity,
   onPick,
   onPickApproval,
-  onReadout,
   onTrial,
 }: {
   index: 0 | 1;
   current: string;
   state: DrugState;
   program?: ProgramView;
-  axis: Axis;
   otherSeverity?: Severity;
   onPick: (ref: string) => void;
   onPickApproval: (submission: string) => void;
-  onReadout: (key: string) => void;
   onTrial: (program: string, trialId: string) => void;
 }) {
-  const pivotal = program?.lanes.filter((l) => l.role === 'PIVOTAL') ?? [];
-  const supporting = (program?.lanes.length ?? 0) - pivotal.length;
-  // Only pivotal trials completed before the approval count toward it.
-  const lastCompletion = Math.max(...pivotal.filter((l) => !l.afterApproval).map((l) => l.primaryCompletion ?? -Infinity));
-  const later = program?.lanes.filter((l) => l.afterApproval).length ?? 0;
-  const months = program && !program.whole && Number.isFinite(lastCompletion) && lastCompletion <= (program.approval ?? -Infinity)
-    ? monthsBetween(lastCompletion, program.approval)
+  const [changing, setChanging] = useState(false);
+  const pivotal = program?.lanes.filter((l) => l.role === 'PIVOTAL').length ?? 0;
+  const months = program ? monthsToApproval(program) : undefined;
+  const approvedOn = program
+    ? program.whole
+      ? program.approvals[0].date
+      : program.chosen?.date ?? program.indication.approvalDate
     : undefined;
-  const at = (t: number | undefined) => (t === undefined ? undefined : axis.position(t));
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
     <section className="pane" aria-label={program ? `${program.drug.brandName}, ${indicationLabel(program.indication)}` : `Approval ${index + 1}`}>
-      <div className="pane__controls">
-        <ProgramPicker index={index} current={current} otherSeverity={otherSeverity} onPick={onPick} />
+      <div className="pane__top">
+        {program ? (
+          <p className="pane__title">
+            <a href={indicationHref(program.drug.slug, program.indication.slug)}>{program.drug.brandName}</a>
+            <span className="pane__inn">{program.drug.inn}</span>
+          </p>
+        ) : (
+          <p className="pane__title">Approval {index + 1}</p>
+        )}
+        <button type="button" className="pane__change" aria-expanded={changing} onClick={() => setChanging(!changing)}>
+          {changing ? 'Cancel' : 'Change'}
+        </button>
       </div>
+      {(changing || !program) && (
+        <div className="pane__controls">
+          <ProgramPicker
+            index={index}
+            current={current}
+            otherSeverity={otherSeverity}
+            autoFocus={changing}
+            onPick={(ref) => {
+              setChanging(false);
+              onPick(ref);
+            }}
+          />
+        </div>
+      )}
 
       {state.status === 'loading' && <p className="pane__status">Loading…</p>}
       {(state.status === 'missing' || state.status === 'error' || (state.status === 'ready' && !program)) && (
-        <p className="pane__status">Couldn’t load this approval. Pick another above.</p>
+        <p className="pane__status">Couldn’t load this approval. Pick another with Change.</p>
       )}
 
       {program && (
         <>
-          <div className="pane__head">
-            <p className="pane__title">
-              <a href={indicationHref(program.drug.slug, program.indication.slug)}>{program.drug.brandName}</a>
-              {areaOf(program.drug.slug, program.indication.slug) && <span className="pane__area">{areaOf(program.drug.slug, program.indication.slug)}</span>}
-            </p>
-            <p className="pane__use" title={indicationLabel(program.indication)}>{shortIndication(program.indication, 90)}</p>
-            <p className="pane__sub">
-              {program.whole
-                ? `Approved in ${program.approvals.length} steps, first ${formatDate(program.approvals[0].date)}`
-                : program.chosen
-                  ? `${kindLabel(program.chosen)} ${formatDate(program.chosen.date)}`
-                  : program.indication.approvalDate
-                    ? `Approved ${formatDate(program.indication.approvalDate)}`
-                    : 'Approval date unclear'}
-              {' · '}{pivotal.length} pivotal{supporting > 0 ? ` · ${supporting} supportive` : ''}
-              {months !== undefined && <> · {months} mo from primary completion</>}
-              {program.whole ? (
-                <Info label="Why the trials aren't tied to one approval">
-                  This use was approved in steps and the records don’t say which letter each trial backs, so every trial
-                  the label cites for the use is shown and no month count is given. Pick one approval to see its own.
-                </Info>
-              ) : months !== undefined ? (
-                <Info label="What the month count measures">
-                  From the date the last patient was assessed for the primary endpoint in the final pivotal trial
-                  (ClinicalTrials.gov) to this FDA approval.
-                </Info>
-              ) : null}
-            </p>
-          </div>
-
           {program.approvals.length > 1 && (
             <label className="pane__approval-pick">
               <span>Approval</span>
@@ -448,7 +480,7 @@ function ProgramPane({
           {program.chosen && (
             <Wording text={program.chosen.statement} href={program.chosen.provenance.sourceUrl} title={program.chosen.provenance.sourceLabel} />
           )}
-          {program.whole && (
+          {(program.whole || (!program.chosen && program.approvals.length === 0)) && (
             <Wording
               text={program.indication.wording?.text ?? program.indication.name}
               href={program.indication.wording?.provenance.sourceUrl}
@@ -456,89 +488,43 @@ function ProgramPane({
             />
           )}
 
-          {program.lanes.length === 0 ? (
-            <p className="pane__status">
-              Not yet matched to a trial.
-            </p>
-          ) : (
-            <div className="chart">
-              <div className="chart__axis" aria-hidden="true">
-                {axis.ticks.map((t, k) => (
-                  <span key={k} className={`chart__tick${t.major ? ' is-major' : ''}`} style={{ left: `${t.at}%` }}>
-                    <span className="chart__tick-label">{t.label}</span>
-                  </span>
-                ))}
-                {program.approval !== undefined && <span className="chart__approval" style={{ left: `${axis.position(program.approval)}%` }} />}
-                {program.laterApprovals.map((t) => (
-                  <span key={t} className="chart__approval chart__approval--later" style={{ left: `${axis.position(t)}%` }} />
-                ))}
-              </div>
-              <div
-                className="chart__lanes"
-                ref={scrollRef}
-                tabIndex={program.lanes.length > VISIBLE_LANES ? 0 : -1}
-                aria-label={`${program.drug.brandName} trials`}
-                style={{ maxHeight: `${VISIBLE_LANES * 44 + 2}px` }}
-              >
-                {program.lanes.map((l) => {
-                  const s = at(l.start);
-                  const pc = at(l.primaryCompletion);
-                  const ap = at(program.approval);
-                  const ro = at(l.readout);
-                  return (
-                    <div key={l.trialId} className="lane">
-                      <button
-                        type="button"
-                        className="lane__name"
-                        title={`${l.name}: ${ROLE_LABEL[l.role]}. Open trial details`}
-                        onClick={() => onTrial(program.key, l.trialId)}
-                      >
-                        {l.name}
-                      </button>
-                      <div className="lane__track">
-                        {s !== undefined && pc !== undefined && (
-                          <button
-                            type="button"
-                            tabIndex={-1}
-                            aria-hidden="true"
-                            className={`lane__bar${l.role !== 'PIVOTAL' ? ' lane__bar--support' : ''}${l.afterApproval ? ' lane__bar--later' : ''}`}
-                            style={{ left: `${s}%`, width: `${Math.max(pc - s, 0.5)}%` }}
-                            title={l.afterApproval ? 'Completed after this approval' : `${l.name}: open trial details`}
-                            onClick={() => onTrial(program.key, l.trialId)}
-                          />
-                        )}
-                        {ro !== undefined && l.readoutKey && (
-                          <button
-                            type="button"
-                            className="lane__readout"
-                            style={{ left: `${ro}%` }}
-                            aria-label={`${l.name}: results announced. Read the release summary`}
-                            title="Results announced: select to read"
-                            onClick={() => onReadout(`${program.key}|${l.readoutKey}`)}
-                          />
-                        )}
-                        {ap !== undefined && <span className="lane__approval" style={{ left: `${ap}%` }} aria-hidden="true" />}
-                        {program.laterApprovals.map((t) => (
-                          <span key={t} className="lane__approval lane__approval--later" style={{ left: `${axis.position(t)}%` }} aria-hidden="true" />
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-              {(program.lanes.length > VISIBLE_LANES || later > 0) && (
-                <p className="chart__more">
-                  {program.lanes.length > VISIBLE_LANES && <>Scroll for all {program.lanes.length}. </>}
-                  {later > 0 && (
-                    <>
-                      <span className="swatch swatch--later" aria-hidden="true" /> {later} completed after
-                      {program.whole ? ' the first approval.' : ' this approval.'}
-                    </>
-                  )}
-                </p>
-              )}
+          <dl className="pane__numbers">
+            <div>
+              <dt>{program.whole ? 'First approval' : program.chosen ? kindLabel(program.chosen) : 'Approval'}</dt>
+              <dd className="nums">{approvedOn ? formatDate(approvedOn) : 'Unclear'}</dd>
             </div>
-          )}
+            <div>
+              <dt>Pivotal trials</dt>
+              <dd className="nums">{pivotal}</dd>
+            </div>
+            <div>
+              <dt>
+                To approval
+                {program.whole ? (
+                  <Info label="Why there is no month count" align="right">
+                    This use was approved in steps and the records don’t say which letter each trial backs. Pick one
+                    approval to see its own count.
+                  </Info>
+                ) : (
+                  <Info label="What the month count measures" align="right">
+                    From the last pivotal trial’s primary completion (ClinicalTrials.gov) to this FDA approval.
+                  </Info>
+                )}
+              </dt>
+              <dd className="nums">
+                {months !== undefined ? (
+                  <>
+                    {months}
+                    <span className="pane__unit">months</span>
+                  </>
+                ) : (
+                  '—'
+                )}
+              </dd>
+            </div>
+          </dl>
+
+          {program.lanes.length === 0 && <p className="pane__status">Not yet matched to a trial.</p>}
           {program.unmatched.length > 0 && (
             <p className="pane__unmatched">
               Not yet matched to one approval:{' '}
@@ -560,6 +546,156 @@ function ProgramPane({
         </>
       )}
     </section>
+  );
+}
+
+const MONTH_MS = 30.4375 * 86400000;
+
+/** "2 yr 3 mo before approval", for a hover card. */
+function offsetText(ms: number): string {
+  const months = Math.round(Math.abs(ms) / MONTH_MS);
+  if (months === 0) return 'at approval';
+  const y = Math.floor(months / 12);
+  const m = months % 12;
+  const parts = [y > 0 && `${y} yr`, m > 0 && `${m} mo`].filter(Boolean).join(' ');
+  return `${parts} ${ms < 0 ? 'before' : 'after'} approval`;
+}
+
+/**
+ * Both programs' trials on one chart. Lined up on approval, every program's
+ * approval sits at the same place, so the stretch before it can be compared
+ * directly; in calendar years, each sits on its own date.
+ */
+function RoadChart({
+  programs,
+  axis,
+  aligned,
+  onTrial,
+  onReadout,
+  hasReadouts,
+}: {
+  programs: ProgramView[];
+  axis: Axis;
+  aligned: boolean;
+  onTrial: (program: string, trialId: string) => void;
+  onReadout: (key: string) => void;
+  hasReadouts: boolean;
+}) {
+  const anyOther = programs.some((p) => p.lanes.some((l) => l.role !== 'PIVOTAL'));
+  const anyLater = programs.some((p) => p.lanes.some((l) => l.afterApproval));
+  const anyLaterApproval = programs.some((p) => p.laterApprovals.length > 0);
+  const anyReadout = hasReadouts && programs.some((p) => p.lanes.some((l) => l.readout !== undefined && l.readoutKey));
+  return (
+    <div className="chart">
+      <div className="chart__axis" aria-hidden="true">
+        {axis.ticks.map((t, k) => {
+          // On a phone only every other year is labelled, in a short form ("−2 yr").
+          const n = /^(\d+) yr (before|after)$/.exec(t.label);
+          const short = n ? `${n[2] === 'before' ? '−' : '+'}${n[1]} yr` : t.label;
+          const odd = n ? Number(n[1]) % 2 === 1 : /^\d{4}$/.test(t.label) && Number(t.label) % 2 === 1;
+          return (
+            <span key={k} className={`chart__tick${t.major ? ' is-major' : ''}${t.label === 'Approval' ? ' is-zero' : ''}${odd ? ' is-odd' : ''}`} style={{ left: `${t.at}%` }}>
+              <span className="chart__tick-label">
+                <span className="chart__tick-long">{t.label}</span>
+                <span className="chart__tick-short">{short}</span>
+              </span>
+            </span>
+          );
+        })}
+      </div>
+      {programs.map((program) => {
+        const place = (t: number | undefined) =>
+          t === undefined ? undefined : aligned ? axis.position(t - program.approval!) : axis.position(t);
+        const ap = place(program.approval);
+        const approvalDate = program.chosen?.date ?? program.approvals[0]?.date ?? program.indication.approvalDate;
+        const approvalName = program.chosen ? kindLabel(program.chosen) : program.approvals[0] ? kindLabel(program.approvals[0]) : 'FDA approval';
+        return (
+          <div key={program.key} className="chart__group">
+            <div className="lane lane--head">
+              <span className="lane__name lane__name--drug">{program.drug.brandName}</span>
+              <div className="lane__track">
+                {ap !== undefined && (
+                  <span className={`chart__marker${ap > 65 ? ' chart__marker--end' : ''}`} style={{ left: `${ap}%` }} tabIndex={0} aria-label={`${program.drug.brandName}: ${approvalName}${approvalDate ? `, ${formatDate(approvalDate)}` : ''}`}>
+                    <span className="chart__diamond" aria-hidden="true" />
+                    <span className="chart__tip" aria-hidden="true">
+                      <span className="chart__tip-name">{program.drug.brandName}</span>
+                      <span className="chart__tip-meta">
+                        {approvalName}
+                        {approvalDate ? ` · ${formatDate(approvalDate)}` : ''}
+                      </span>
+                    </span>
+                  </span>
+                )}
+                {program.laterApprovals.map((t) => (
+                  <span key={t} className="chart__marker chart__marker--later" style={{ left: `${place(t)}%` }} aria-hidden="true">
+                    <span className="chart__diamond" />
+                  </span>
+                ))}
+                {ap !== undefined && <span className="lane__approval lane__approval--head" style={{ left: `${ap}%` }} aria-hidden="true" />}
+              </div>
+            </div>
+            {program.lanes.map((l) => {
+              const s = place(l.start);
+              const pc = place(l.primaryCompletion);
+              const ro = place(l.readout);
+              const when =
+                l.start !== undefined && l.primaryCompletion !== undefined
+                  ? aligned
+                    ? `${offsetText(l.start - program.approval!)} to ${offsetText(l.primaryCompletion - program.approval!)}`
+                    : `${formatDate({ value: new Date(l.start).toISOString().slice(0, 10), precision: 'month' })} to ${formatDate({ value: new Date(l.primaryCompletion).toISOString().slice(0, 10), precision: 'month' })}`
+                  : '';
+              return (
+                <div key={l.trialId} className="lane">
+                  <button
+                    type="button"
+                    className="lane__name"
+                    title={`${l.name}: ${ROLE_LABEL[l.role]}. Open trial details`}
+                    onClick={() => onTrial(program.key, l.trialId)}
+                  >
+                    {l.name}
+                  </button>
+                  <div className="lane__track">
+                    {s !== undefined && pc !== undefined && (
+                      <button
+                        type="button"
+                        tabIndex={-1}
+                        aria-hidden="true"
+                        className={`lane__bar${l.role !== 'PIVOTAL' ? ' lane__bar--support' : ''}${l.afterApproval ? ' lane__bar--later' : ''}`}
+                        style={{ left: `${s}%`, width: `${Math.max(pc - s, 0.5)}%` }}
+                        title={`${l.name}: start to primary completion, ${when}`}
+                        onClick={() => onTrial(program.key, l.trialId)}
+                      />
+                    )}
+                    {ro !== undefined && l.readoutKey && hasReadouts && (
+                      <button
+                        type="button"
+                        className="lane__readout"
+                        style={{ left: `${ro}%` }}
+                        aria-label={`${l.name}: results announced. Read the release summary`}
+                        title="Results announced: select to read"
+                        onClick={() => onReadout(`${program.key}|${l.readoutKey}`)}
+                      />
+                    )}
+                    {ap !== undefined && <span className="lane__approval" style={{ left: `${ap}%` }} aria-hidden="true" />}
+                    {program.laterApprovals.map((t) => (
+                      <span key={t} className="lane__approval lane__approval--later" style={{ left: `${place(t)}%` }} aria-hidden="true" />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+      <ul className="compare__legend" aria-label="Legend">
+        <li><span className="swatch swatch--bar" aria-hidden="true" />Pivotal trial, start to primary completion</li>
+        {anyOther && <li><span className="swatch swatch--support" aria-hidden="true" />Supportive or other trial</li>}
+        {anyLater && <li><span className="swatch swatch--later" aria-hidden="true" />Completed after the approval</li>}
+        {anyReadout && <li><span className="swatch swatch--readout" aria-hidden="true" />Results announced</li>}
+        <li><span className="swatch swatch--approval" aria-hidden="true" />{programs.some((p) => p.whole) ? 'First approval' : 'Approval'}</li>
+        {anyLaterApproval && <li><span className="swatch swatch--approval swatch--later-approval" aria-hidden="true" />Label expansion</li>}
+      </ul>
+    </div>
   );
 }
 
@@ -586,77 +722,81 @@ function Wording({ text, href, title }: { text: string; href?: string; title?: s
   );
 }
 
-function EvidenceTable({ rows, onTrial }: { rows: EvidenceRow[]; onTrial: (program: string, trialId: string) => void }) {
+/** Each program's trials as result cards, the two programs side by side. */
+function EvidenceCards({
+  programs,
+  rows,
+  differ,
+  onTrial,
+}: {
+  programs: ProgramView[];
+  rows: EvidenceRow[];
+  differ: boolean;
+  onTrial: (program: string, trialId: string) => void;
+}) {
   return (
     <section className="compare__section" aria-labelledby="evidence">
       <div className="compare__section-head">
-        <h2 id="evidence">Pivotal evidence</h2>
+        <h2 id="evidence">What the pivotal trials showed</h2>
         <Info label="About these results" align="left">
           Results as posted to ClinicalTrials.gov for each trial’s first primary outcome, every arm against the trial’s
           own control.
         </Info>
-        {endpointsDiffer(rows) && (
-          <span className="compare__caution">Endpoints, timepoints or controls differ: not a head-to-head comparison</span>
-        )}
+        {differ && <span className="compare__caution">Not a head-to-head comparison</span>}
       </div>
-      <div className="table-wrap">
-        <table className="evidence">
-          <thead>
-            <tr>
-              <th scope="col">Drug</th>
-              <th scope="col">Trial</th>
-              <th scope="col" className="is-num">N</th>
-              <th scope="col">Primary endpoint</th>
-              <th scope="col">Result by arm</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => (
-              <tr key={`${r.program}|${r.trialId}`} className={r.firstOfProgram ? 'is-first' : undefined}>
-                <td>{r.firstOfProgram && <strong>{r.drug}</strong>}</td>
-                <td>
-                  <button type="button" className="evidence__trial" onClick={() => onTrial(r.program, r.trialId)}>
-                    {r.trial}
-                  </button>
-                  {r.nctId && r.trial !== r.nctId && (
-                    <a className="muted mono evidence__nct" href={`https://clinicaltrials.gov/study/${r.nctId}`} target="_blank" rel="noreferrer">
-                      {r.nctId} ↗
-                    </a>
-                  )}
-                </td>
-                <td className="is-num mono">{r.enrollment?.toLocaleString('en-US') ?? '—'}</td>
-                <td className="evidence__endpoint" title={r.result?.endpoint}>
-                  {r.result ? <span className="clamp">{r.result.endpoint}</span> : <span className="muted">No results posted</span>}
-                </td>
-                <td>
-                  {r.result ? (
-                    <ul className="arms">
-                      {r.result.arms.map((a) => (
-                        <li key={a.label} className={a.isComparator ? 'is-control' : undefined}>
-                          <span className="arms__label" title={a.label}>{a.label}</span>
-                          {a.percent !== undefined && (
-                            <span className="arms__bar" aria-hidden="true">
-                              <span style={{ width: `${a.percent}%` }} />
-                            </span>
+      <div className="evcols">
+        {programs.map((p) => (
+          <div key={p.key} className="evcol">
+            <h3 className="evcol__drug">{p.drug.brandName}</h3>
+            <ul className="evcol__list">
+              {rows
+                .filter((r) => r.program === p.key)
+                .map((r) => (
+                  <li key={r.trialId} className="evcard">
+                    <div className="evcard__head">
+                      <button type="button" className="evidence__trial" onClick={() => onTrial(r.program, r.trialId)}>
+                        {r.trial}
+                      </button>
+                      <span className="evcard__meta mono">
+                        {[r.nctId && r.trial !== r.nctId ? r.nctId : undefined, r.enrollment !== undefined ? `${r.enrollment.toLocaleString('en-US')} patients` : undefined]
+                          .filter(Boolean)
+                          .join(' · ')}
+                      </span>
+                    </div>
+                    {r.result ? (
+                      <>
+                        <ul className="arms">
+                          {r.result.arms.map((a) => (
+                            <li key={a.label} className={a.isComparator ? 'is-control' : undefined}>
+                              <span className="arms__label" title={a.label}>{a.label}</span>
+                              {a.percent !== undefined && (
+                                <span className="arms__bar" aria-hidden="true">
+                                  <span style={{ width: `${a.percent}%` }} />
+                                </span>
+                              )}
+                              <span className="arms__value mono">{a.shown}</span>
+                            </li>
+                          ))}
+                          {r.result.unitNote && <li className="arms__p">Unit: {r.result.unitNote}</li>}
+                          {(r.result.effect || r.result.pValue) && (
+                            <li className="arms__p">
+                              {[r.result.effect, r.result.pValue && `p ${r.result.pValue}`].filter(Boolean).join(', ')}
+                            </li>
                           )}
-                          <span className="arms__value mono">{a.shown}</span>
-                        </li>
-                      ))}
-                      {r.result.unitNote && <li className="arms__p">Unit: {r.result.unitNote}</li>}
-                      {(r.result.effect || r.result.pValue) && (
-                        <li className="arms__p">
-                          {[r.result.effect, r.result.pValue && `p ${r.result.pValue}`].filter(Boolean).join(', ')}
-                        </li>
-                      )}
-                    </ul>
-                  ) : (
-                    <span className="muted">—</span>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                        </ul>
+                        <details className="evcard__endpoint">
+                          <summary>Primary endpoint</summary>
+                          <p>{r.result.endpoint}</p>
+                        </details>
+                      </>
+                    ) : (
+                      <p className="muted evcard__none">No results posted</p>
+                    )}
+                  </li>
+                ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );

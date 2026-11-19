@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { Drug, type Trial } from '../src/schema/index.js';
 import {
+  buildAlignedAxis,
   buildAxis,
   endpointsDiffer,
   evidenceCsv,
@@ -149,6 +150,25 @@ describe('buildAxis', () => {
     const labelled = axis.ticks.filter((t) => t.label);
     expect(labelled.length).toBeLessThanOrEqual(12);
     expect(axis.ticks.some((t) => !t.major)).toBe(false);
+  });
+});
+
+describe('buildAlignedAxis', () => {
+  const a = programView(ra, ra.indications[0]);
+  const b = programView(psa, psa.indications[0]);
+
+  it('lines both programs up on their own approval day', () => {
+    const axis = buildAlignedAxis([a, b])!;
+    expect(axis.ticks.find((t) => t.label === 'Approval')).toBeDefined();
+    expect(axis.ticks.some((t) => /yr before$/.test(t.label))).toBe(true);
+    // Each program's own approval sits at the same place.
+    expect(axis.position(0)).toBeGreaterThan(axis.position(a.lanes[0].start! - a.approval!));
+    expect(axis.position(a.approval! - a.approval!)).toBe(axis.position(b.approval! - b.approval!));
+  });
+
+  it('gives up when a program has no approval date', () => {
+    const none = programView(drug('x', 'Y', undefined, []), drug('x', 'Y', undefined, []).indications[0]);
+    expect(buildAlignedAxis([a, none])).toBeUndefined();
   });
 });
 

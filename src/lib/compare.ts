@@ -171,6 +171,33 @@ export function buildAxis(programs: ProgramView[]): Axis {
   return { position: pos, ticks };
 }
 
+/**
+ * One axis for both programs lined up on their approval day: each time is
+ * placed by its distance from its own program's approval (0 = approval).
+ * Years before and after are marked; programs without an approval date
+ * can't be lined up, so the caller falls back to the calendar axis.
+ */
+export function buildAlignedAxis(programs: ProgramView[]): Axis | undefined {
+  if (programs.length === 0 || programs.some((p) => p.approval === undefined)) return undefined;
+  const offsets = programs.flatMap((p) => {
+    const s = programSpan(p)!;
+    return [s[0] - p.approval!, s[1] - p.approval!];
+  });
+  const YEAR = 12 * MONTH;
+  const from = Math.min(0, ...offsets) - QUARTER;
+  const to = Math.max(0, ...offsets) + QUARTER;
+  const pos = (offset: number) => ((offset - from) / (to - from)) * 100;
+  const years = (to - from) / YEAR;
+  const labelEvery = years > 24 ? 5 : years > 12 ? 2 : 1;
+  const ticks: Tick[] = [];
+  for (let y = Math.ceil(from / YEAR); y <= Math.floor(to / YEAR); y++) {
+    const major = y % labelEvery === 0;
+    const label = !major ? '' : y === 0 ? 'Approval' : y < 0 ? `${-y} yr before` : `${y} yr after`;
+    ticks.push({ at: pos(y * YEAR), label, major });
+  }
+  return { position: pos, ticks };
+}
+
 /** Whole months from one time to another, or undefined when either is missing. */
 export function monthsBetween(from: number | undefined, to: number | undefined): number | undefined {
   return from === undefined || to === undefined ? undefined : Math.round((to - from) / MONTH);
