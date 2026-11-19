@@ -14343,10 +14343,10 @@
         "DFS in Programmed Death Ligand-1 (PDL-1) Strong Positive Participants With Tumor Proportion Score (TPS) ≥50%"
       ],
       "secondaryEndpoints": [
-        "DFS in PDL-1 Strong Positive Participants With TPS ≥1%",
+        "DFS in PDL-1 Positive Participants With TPS ≥1%",
         "Overall Survival (OS)",
         "OS in PDL-1 Strong Positive Participants With TPS ≥50%",
-        "OS in PDL-1 Strong Positive Participants With TPS ≥1%",
+        "OS in PDL-1 Positive Participants With TPS ≥1%",
         "Lung Cancer Specific Survival (LCSS)",
         "Number of Participants Who Experienced an Adverse Event (AE)",
         "Number of Participants Who Discontinued Study Treatment Due to an AE"
@@ -14533,6 +14533,28 @@
             }
           ],
           "detectedAt": "2026-10-29T05:36:27.832Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "DFS in PDL-1 Strong Positive Participants With TPS ≥1%",
+            "Overall Survival (OS)",
+            "OS in PDL-1 Strong Positive Participants With TPS ≥50%",
+            "OS in PDL-1 Strong Positive Participants With TPS ≥1%",
+            "Lung Cancer Specific Survival (LCSS)",
+            "Number of Participants Who Experienced an Adverse Event (AE)",
+            "Number of Participants Who Discontinued Study Treatment Due to an AE"
+          ],
+          "newValue": [
+            "DFS in PDL-1 Positive Participants With TPS ≥1%",
+            "Overall Survival (OS)",
+            "OS in PDL-1 Strong Positive Participants With TPS ≥50%",
+            "OS in PDL-1 Positive Participants With TPS ≥1%",
+            "Lung Cancer Specific Survival (LCSS)",
+            "Number of Participants Who Experienced an Adverse Event (AE)",
+            "Number of Participants Who Discontinued Study Treatment Due to an AE"
+          ],
+          "detectedAt": "2026-11-19T22:38:02.733Z"
         }
       ]
     },
@@ -15195,8 +15217,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 43,
-          "quote": "or Metastatic Esophageal Cancer Among the 314 patients with esophageal cancer enrolled in KEYNOTE-181 [see Clinical Studies (14.10)] treated with KEYTRUDA, the median duration of exposure to",
+          "page": 99,
+          "quote": "c Esophageal Cancer KEYNOTE-181 The efficacy of KEYTRUDA was investigated in KEYNOTE-181 (NCT02564263), a multicenter, randomized, open-label, active-controlled trial that enrolled 628 patien",
           "extractedBy": "regex",
           "verified": false
         },
@@ -21895,6 +21917,14 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03933449",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 43,
+          "quote": "or Metastatic Esophageal Cancer Among the 314 patients with esophageal cancer enrolled in KEYNOTE-181 [see Clinical Studies (14.10)] treated with KEYTRUDA, the median duration of exposure to",
+          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -29952,7 +29982,7 @@
       "postedResults": [
         {
           "title": "Progression Free Survival (PFS) Per RECIST 1.1 Assessed by BICR",
-          "timeFrame": "Up to 46 months",
+          "timeFrame": "Up to approximately 46 months",
           "paramType": "MEDIAN",
           "unitOfMeasure": "Months",
           "groups": [
@@ -29962,7 +29992,7 @@
             },
             {
               "id": "OG001",
-              "title": "Global Standard of Care"
+              "title": "Global Standard of Care First Course"
             }
           ],
           "measurements": [
@@ -29997,7 +30027,7 @@
         },
         {
           "title": "Overall Survival (OS)",
-          "timeFrame": "Up to 63 months",
+          "timeFrame": "Up to approximately 63 months",
           "paramType": "MEDIAN",
           "unitOfMeasure": "Months",
           "groups": [
@@ -30143,6 +30173,194 @@
             }
           ],
           "detectedAt": "2026-10-29T05:36:27.832Z"
+        },
+        {
+          "field": "postedResults",
+          "previousValue": [
+            {
+              "title": "Progression Free Survival (PFS) Per RECIST 1.1 Assessed by BICR",
+              "timeFrame": "Up to 46 months",
+              "paramType": "MEDIAN",
+              "unitOfMeasure": "Months",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Global Pembrolizumab + Standard of Care First Course"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Global Standard of Care"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "10.0",
+                  "lowerLimit": "8.6",
+                  "upperLimit": "12.2"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "8.1",
+                  "lowerLimit": "7.0",
+                  "upperLimit": "8.5"
+                }
+              ],
+              "analyses": [
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG001"
+                  ],
+                  "pValue": "0.0002",
+                  "method": "Log Rank",
+                  "paramType": "Hazard Ratio (HR)",
+                  "paramValue": "0.73",
+                  "ciPct": "95",
+                  "ciLower": "0.61",
+                  "ciUpper": "0.87"
+                }
+              ]
+            },
+            {
+              "title": "Overall Survival (OS)",
+              "timeFrame": "Up to 63 months",
+              "paramType": "MEDIAN",
+              "unitOfMeasure": "Months",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Global Pembrolizumab + Standard of Care First Course"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Global Standard of Care First Course"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "20.0",
+                  "lowerLimit": "17.8",
+                  "upperLimit": "22.1"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "16.8",
+                  "lowerLimit": "14.9",
+                  "upperLimit": "18.7"
+                }
+              ],
+              "analyses": [
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG001"
+                  ],
+                  "pValue": "0.0040",
+                  "method": "Log Rank",
+                  "paramType": "Hazard Ratio (HR)",
+                  "paramValue": "0.80",
+                  "ciPct": "95",
+                  "ciLower": "0.67",
+                  "ciUpper": "0.94"
+                }
+              ]
+            }
+          ],
+          "newValue": [
+            {
+              "title": "Progression Free Survival (PFS) Per RECIST 1.1 Assessed by BICR",
+              "timeFrame": "Up to approximately 46 months",
+              "paramType": "MEDIAN",
+              "unitOfMeasure": "Months",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Global Pembrolizumab + Standard of Care First Course"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Global Standard of Care First Course"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "10.0",
+                  "lowerLimit": "8.6",
+                  "upperLimit": "12.2"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "8.1",
+                  "lowerLimit": "7.0",
+                  "upperLimit": "8.5"
+                }
+              ],
+              "analyses": [
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG001"
+                  ],
+                  "pValue": "0.0002",
+                  "method": "Log Rank",
+                  "paramType": "Hazard Ratio (HR)",
+                  "paramValue": "0.73",
+                  "ciPct": "95",
+                  "ciLower": "0.61",
+                  "ciUpper": "0.87"
+                }
+              ]
+            },
+            {
+              "title": "Overall Survival (OS)",
+              "timeFrame": "Up to approximately 63 months",
+              "paramType": "MEDIAN",
+              "unitOfMeasure": "Months",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Global Pembrolizumab + Standard of Care First Course"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Global Standard of Care First Course"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "20.0",
+                  "lowerLimit": "17.8",
+                  "upperLimit": "22.1"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "16.8",
+                  "lowerLimit": "14.9",
+                  "upperLimit": "18.7"
+                }
+              ],
+              "analyses": [
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG001"
+                  ],
+                  "pValue": "0.0040",
+                  "method": "Log Rank",
+                  "paramType": "Hazard Ratio (HR)",
+                  "paramValue": "0.80",
+                  "ciPct": "95",
+                  "ciLower": "0.67",
+                  "ciUpper": "0.94"
+                }
+              ]
+            }
+          ],
+          "detectedAt": "2026-11-19T22:38:02.733Z"
         }
       ]
     },
@@ -31255,8 +31473,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 135,
-          "quote": "h fluoropyrimidine- and platinum-containing chemotherapy was investigated in KEYNOTE-859 (NCT03675737), a multicenter, randomized, double-blind, placebo-controlled trial that enrolled 1579 pa",
+          "page": 1,
+          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
           "extractedBy": "regex",
           "verified": false
         },
@@ -31413,14 +31631,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT04859582",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 1,
-          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -32712,14 +32922,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03881111",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 41,
-          "quote": "safety of KEYTRUDA, in combination with cisplatin and FU chemotherapy was investigated in KEYNOTE-590, a multicenter, double-blind, randomized (1:1), placebo-controlled trial for the first-li",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -40462,7 +40664,7 @@
       "briefTitle": "Lenvatinib (E7080/MK-7902) in Combination With Pembrolizumab (MK-3475) vs. Standard Chemotherapy and Lenvatinib Monotherapy in Participants With Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma That Progressed After Platinum Therapy and Immunotherapy (MK-7902-009/E7080-G000-228/LEAP-009)",
       "phase": "PHASE2",
       "roles": [],
-      "status": "COMPLETED",
+      "status": "TERMINATED",
       "sponsor": "Merck Sharp & Dohme LLC",
       "studyType": "INTERVENTIONAL",
       "conditions": [
@@ -40569,7 +40771,14 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "COMPLETED",
+          "newValue": "TERMINATED",
+          "detectedAt": "2026-11-19T22:38:02.733Z"
+        }
+      ]
     },
     {
       "id": "3475-921-china-extension",
@@ -63868,5 +64077,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-15T07:54:58.385Z"
+  "lastIngestedAt": "2026-11-19T22:38:02.733Z"
 }
