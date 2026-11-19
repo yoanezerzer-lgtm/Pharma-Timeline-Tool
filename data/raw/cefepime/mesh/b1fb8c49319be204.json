@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Infections"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D007239"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Infections"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Urinary Tract"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D014551"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Urinary Tract"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Urinary Tract Infections"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D014552"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Urinary Tract Infections"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Pyelonephritis"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D011704"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Pyelonephritis"
+          }
+        }
+      ]
+    }
+  }
+}
