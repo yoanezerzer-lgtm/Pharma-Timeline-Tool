@@ -11,25 +11,32 @@ professionals have used the site: the ten-minute test (PRD §10) answers
 most of those questions for free.
 
 **Phase 1: make it worth showing (now)**
-1. **Accuracy, one or two chats** (PRD goal 4):
-   - Readout reader (`readouts.yml`): it saves quotes that don't state a
-     result (a page title, an endpoint description), so every readout is
-     held. Make it pick a sentence with a result in it, or record nothing.
-     Held so far: Dupixent SINUS-24/52, Cibinqo JADE TEEN and MONO-2
-     (links kept in `data/readouts/candidates/`).
-   - Find why the nightly checker has opened no
-     `nightly/<date>-confirmations` pull request since 11 Nov (it runs,
-     but only readouts come out). Read its latest summary first.
-   - Names (found 18 Nov): Zaynich keeps three trials of other Wockhardt
-     products (cefepime-tazobactam W-4282, zidebactam alone W-5107), held
-     by the merge step from older runs; brand names are cased word by word
-     wrong ("Rybrevant faspro", "Awiqli flextouch") and one keeps FDA's
-     "(copackaged)" tag ("Lifyorli (copackaged)"). Rybrevant Faspro's
-     generic tidies to "amivantamab and hyaluronidase" on its next
-     refresh, which also brings a new use and three dates that drop out:
-     review those with the refresh.
-   - Review the 15 Nov refresh on `data/refresh-2026-11-15` (22 drugs,
-     first run with the 8 Nov dating rules).
+1. **Accuracy** (PRD goal 4). Done 19 Nov: the readout reader quotes only
+   a sentence stating the primary result (#175); the nightly checker
+   queues every pivotal trial the site shows (#176: it had run out of
+   facts it could see, while 21 pairings had no reference entry); brands
+   are cased word by word, lose FDA's "(copackaged)" tag, and trials no
+   run returns any more are removed unless curated (#177, tried on 4
+   drugs); the clean part of the 15 Nov refresh is published (#178).
+   Left, one chat:
+   - **Opzelura picks up other products' trials**: the 15 Nov refresh adds
+     29 trials of oral ruxolitinib (Jakafi: myelofibrosis, polycythemia
+     vera) and of other Incyte molecules (INCB053914, INCB057643,
+     itacitinib, INCA033989), some with roles. Fix the search or matching
+     so a cream gets only its own trials, then refresh `ruxolitinib`.
+     Don't merge its file from `data/refresh-2026-11-15`.
+   - **Rybrevant Faspro**: ORIGAMI-4 (a head and neck trial) gets a
+     pivotal role under "Previously Treated NSCLC with EGFR Exon 20
+     Insertion" (the section 14 span runs past its section), and three
+     NSCLC uses lose their 17 Dec 2025 date while the new HNSCC use takes
+     it. Check against the documents on `diag/raw-text-amivantamab-…`
+     before its next refresh is published.
+   - **Re-run readouts** (`readouts.yml`) for `dupilumab` and
+     `abrocitinib` with the new reader; scored on the saved text, SINUS-24,
+     SINUS-52, JADE TEEN and JADE MONO-2 now get result sentences. JADE
+     MONO-1's release names it only as B7451012, so it stays blank.
+   - The first nightly run after #176 opens a confirmations pull request
+     with the new unchecked entries; check it went through.
 2. **New drugs: atopic dermatitis only** (PRD goal 2), until its list
    matches the FDA's own records. No other areas until then.
 3. **Design and legibility: finish, then stop.** Home, drug, approved

@@ -5557,7 +5557,7 @@
         "labelName": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "UC-1 (NCT02819635)",
+          "quote": "UC-1; NCT02819635",
           "extractedBy": "regex",
           "verified": false
         }
@@ -10184,7 +10184,7 @@
         "labelName": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "AD-3 (NCT03569293)",
+          "quote": "AD-3; NCT03569293",
           "extractedBy": "regex",
           "verified": false
         }
@@ -10870,7 +10870,7 @@
         "labelName": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218347Orig1s008,211675Orig1s034lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "UC-2 (NCT03653026)",
+          "quote": "UC-2; NCT03653026)",
           "extractedBy": "regex",
           "verified": false
         }
@@ -16094,11 +16094,11 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2028-03-01",
+        "value": "2028-08-01",
         "precision": "month"
       },
       "completionDate": {
-        "value": "2028-09-01",
+        "value": "2028-08-01",
         "precision": "month"
       },
       "enrollment": {
@@ -16172,11 +16172,10 @@
         "Change from Baseline in Draining Fistula Count",
         "Percentage of Participants Achieving Hidradenitis Suppurative Clinical Response (HiSCR) 75",
         "Percentage of Participants Achieving Numeric Rating Scale 30 (NRS30) at Week 4 Among Participants with NRS ≥ 3 at Baseline",
+        "Percentage of Participants Achieving NRS3 at Week 4 Among Participants with NRS ≥ 3 at Baseline",
         "Change from Baseline in Hidradenitis Suppurativa Symptom Assessment (HSSA)",
         "Change from Baseline in Hidradenitis Suppurativa Impact Assessment (HSIA)",
         "Change from Baseline in Dermatology Life Quality Index (DLQI) for Adult Participants and Adolescent Participants Age ≥16 Years Old and Older",
-        "Change from Baseline in Hidradenitis Suppurativa (HS)-Related Odor, Based on Hidradenitis Suppurativa Symptom Assessment (HSSA) Question 8",
-        "Change from Baseline in the Patient's Global Assessment of Hidradenitis Suppurativa (HS)-Related Skin Pain NRS",
         "Occurrence of Hidradenitis Suppurativa (HS) Flare During Period 1"
       ],
       "metPrimaryEndpoint": null,
@@ -16215,7 +16214,57 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2028-03-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2028-08-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-11-15T07:56:24.130Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2028-09-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2028-08-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-11-15T07:56:24.130Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "Change from Baseline in Draining Fistula Count",
+            "Percentage of Participants Achieving Hidradenitis Suppurative Clinical Response (HiSCR) 75",
+            "Percentage of Participants Achieving Numeric Rating Scale 30 (NRS30) at Week 4 Among Participants with NRS ≥ 3 at Baseline",
+            "Change from Baseline in Hidradenitis Suppurativa Symptom Assessment (HSSA)",
+            "Change from Baseline in Hidradenitis Suppurativa Impact Assessment (HSIA)",
+            "Change from Baseline in Dermatology Life Quality Index (DLQI) for Adult Participants and Adolescent Participants Age ≥16 Years Old and Older",
+            "Change from Baseline in Hidradenitis Suppurativa (HS)-Related Odor, Based on Hidradenitis Suppurativa Symptom Assessment (HSSA) Question 8",
+            "Change from Baseline in the Patient's Global Assessment of Hidradenitis Suppurativa (HS)-Related Skin Pain NRS",
+            "Occurrence of Hidradenitis Suppurativa (HS) Flare During Period 1"
+          ],
+          "newValue": [
+            "Change from Baseline in Draining Fistula Count",
+            "Percentage of Participants Achieving Hidradenitis Suppurative Clinical Response (HiSCR) 75",
+            "Percentage of Participants Achieving Numeric Rating Scale 30 (NRS30) at Week 4 Among Participants with NRS ≥ 3 at Baseline",
+            "Percentage of Participants Achieving NRS3 at Week 4 Among Participants with NRS ≥ 3 at Baseline",
+            "Change from Baseline in Hidradenitis Suppurativa Symptom Assessment (HSSA)",
+            "Change from Baseline in Hidradenitis Suppurativa Impact Assessment (HSIA)",
+            "Change from Baseline in Dermatology Life Quality Index (DLQI) for Adult Participants and Adolescent Participants Age ≥16 Years Old and Older",
+            "Occurrence of Hidradenitis Suppurativa (HS) Flare During Period 1"
+          ],
+          "detectedAt": "2026-11-15T07:56:24.130Z"
+        }
+      ]
     },
     {
       "id": "select-sle",
@@ -16390,7 +16439,7 @@
       "briefTitle": "An Observational Study to Assess Change in Disease Activity and Adverse Events in Adolescent and Adult Participants With Moderate to Severe Active Crohn's Disease (CD) in Japan",
       "phase": "NA",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "COMPLETED",
       "sponsor": "AbbVie",
       "studyType": "OBSERVATIONAL",
       "conditions": [
@@ -16407,16 +16456,16 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2026-11-01",
-        "precision": "month"
+        "value": "2026-09-11",
+        "precision": "day"
       },
       "completionDate": {
-        "value": "2027-05-01",
-        "precision": "month"
+        "value": "2026-09-11",
+        "precision": "day"
       },
       "enrollment": {
-        "count": 240,
-        "type": "ESTIMATED"
+        "count": 253,
+        "type": "ACTUAL"
       },
       "design": {},
       "population": {
@@ -16471,7 +16520,50 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "COMPLETED",
+          "detectedAt": "2026-11-15T07:56:24.130Z"
+        },
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2026-11-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-09-11",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-15T07:56:24.130Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2027-05-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-09-11",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-15T07:56:24.130Z"
+        },
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 240,
+            "type": "ESTIMATED"
+          },
+          "newValue": {
+            "count": 253,
+            "type": "ACTUAL"
+          },
+          "detectedAt": "2026-11-15T07:56:24.130Z"
+        }
+      ]
     },
     {
       "id": "p21-702",
@@ -19788,6 +19880,135 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT07904754",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "m25-153",
+      "nctId": "NCT07933211",
+      "protocolNumber": "M25-153",
+      "title": "A Phase 2b/3 Multicenter, Randomized, Double-blind, Placebo-controlled Study to Evaluate the Efficacy and Safety of ABBV-2294 (Combination of ABBV-722 and Upadacitinib) in Adult Patients With Systemic Sclerosis",
+      "briefTitle": "A Study to Evaluate the Safety and Efficacy (How Well the Study Treatment Works) of ABBV-2294 in Adult Participants With Systemic Sclerosis That Are Currently Receiving Local Standard of Care Treatment, and to Determine the Best Dose of ABBV-2294 to be Evaluated Further.",
+      "phase": "PHASE2_3",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "AbbVie",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Systemic Sclerosis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D012595",
+          "term": "Scleroderma, Systemic"
+        }
+      ],
+      "startDate": {
+        "value": "2026-12-11",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2035-06-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2035-06-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 580,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1: Double Blind Placebo Controlled Arm 1",
+          "type": "EXPERIMENTAL",
+          "description": "Participants are randomized to receive Dose 1: ABBV-2294 (combination of ABBV-722 and upadacitinib)"
+        },
+        {
+          "label": "Part 1: Double Blind Placebo Controlled Arm 2",
+          "type": "EXPERIMENTAL",
+          "description": "Participants are randomized to receive Dose 2: ABBV-2294 (combination of ABBV-722 and upadacitinib)"
+        },
+        {
+          "label": "Part 1: Double Blind Placebo Controlled Arm 3",
+          "type": "EXPERIMENTAL",
+          "description": "Participants are randomized to receive ABBV-722"
+        },
+        {
+          "label": "Part 1: Double Blind Placebo Controlled Arm 4",
+          "type": "EXPERIMENTAL",
+          "description": "Participants are randomized to receive upadacitinib"
+        },
+        {
+          "label": "Part 1: Double Blind Placebo Controlled Arm 5",
+          "type": "EXPERIMENTAL",
+          "description": "Participants are randomized to receive placebo"
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1 & Part 2: Achievement of Revised Composite Response Index in Systemic Sclerosis (rCRISS)-25",
+        "Part 1 & Part 2: Number of Participants Experiencing Adverse Events"
+      ],
+      "secondaryEndpoints": [
+        "Part 1 & Part 2: Change from Baseline in Forced Vital Capacity (FVC) (mLs) in participants with interstitial lung disease (ILD) at Baseline",
+        "Part 1 & Part 2: Absolute change from Baseline in percent-predicted FVC in subjects with ILD at Baseline",
+        "Part 1 & Part 2: Change from Baseline in modified Rodnan skin score (mRSS) in all participants with mRSS score of > 10 at Baseline",
+        "Part 1 & Part 2: Improvement from Baseline in each of the following 3 components of the rCRISS-25 evaluated separately: FVC , mRSS and Health Assessment Questionnaire Disability Index (HAQ-DI)",
+        "Part 1 & Part 2: Change from Baseline in joint pain as assessed by the SSc Daily Diary",
+        "Part 1 & Part 2: Change from Baseline in the Scleroderma Skin Patient Reported Outcome (SSPRO) physical effects domain",
+        "Part 1 & Part 2: Change from Baseline in Health Assessment Questionnaire Disability Index (HAQ-DI)",
+        "Part 1 & Part 2: Improvement from Baseline in each of the following 2 components of the rCRISS-25 evaluated separately: PGA and CGA",
+        "Part 1 & Part 2: Absolute change from Baseline in percent-predicted Diffusing Capacity of the Lungs for Carbon Monoxide (DLCO) (corrected for hemoglobin [Hb]) in participants with interstitial lung disease (ILD) at Baseline"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933211",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933211",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -27201,5 +27422,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:11:29.572Z"
+  "lastIngestedAt": "2026-11-15T07:56:24.130Z"
 }

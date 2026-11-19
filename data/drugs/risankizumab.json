@@ -7,12 +7,11 @@
   "mechanism": "Interleukin-23 (p19 subunit) antagonist",
   "pharmacology": {
     "drugClass": {
-      "name": "interleukin-23 antagonist",
+      "name": "Interleukin-23 Antagonist",
       "provenance": {
-        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s053lbl.pdf",
-        "sourceLabel": "Label (SUPPL-53), Highlights",
-        "quote": "SKYRIZI is an interleukin-23 antagonist indicated",
-        "extractedBy": "regex",
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761105%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
         "verified": false
       }
     },
@@ -3867,7 +3866,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "CD-1 (NCT03105128)",
+          "quote": "CD-1; NCT03105128",
           "extractedBy": "regex",
           "verified": false
         }
@@ -4811,7 +4810,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "CD-2 (NCT03104413)",
+          "quote": "CD-2; NCT03104413)",
           "extractedBy": "regex",
           "verified": false
         }
@@ -5247,7 +5246,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "UC-1 (NCT03398148)",
+          "quote": "UC-1; NCT03398148)",
           "extractedBy": "regex",
           "verified": false
         }
@@ -5971,7 +5970,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "UC-2 (NCT03398135)",
+          "quote": "UC-2; NCT03398135)",
           "extractedBy": "regex",
           "verified": false
         }
@@ -6353,7 +6352,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "PsA-2 (NCT03671148)",
+          "quote": "PsA-2 [NCT03671148]",
           "extractedBy": "regex",
           "verified": false
         }
@@ -6625,7 +6624,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761105s047lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "PsA-1 (NCT03675308)",
+          "quote": "PsA-1 [NCT03675308]",
           "extractedBy": "regex",
           "verified": false
         }
@@ -13127,6 +13126,115 @@
       "changeLog": []
     },
     {
+      "id": "m26-507",
+      "nctId": "NCT07933536",
+      "protocolNumber": "M26-507",
+      "title": "A Phase 2 Multicenter Platform Trial of Targeted Therapies for Treatment of Adult Subjects With Moderate to Severe Psoriasis",
+      "briefTitle": "A Study to Assess Targeted Therapies for Treatment of Adults With Moderate to Severe Psoriasis",
+      "phase": "PHASE2",
+      "roles": [],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "AbbVie",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Moderate to Severe Psoriasis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ],
+      "startDate": {
+        "value": "2026-12-03",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-12-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2028-12-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 105,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "75 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Risankizumab and ABBV-295 Combination Therapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive risankizumab in combinations with ABBV-295 for up to 52 weeks."
+        },
+        {
+          "label": "Risankizumab and ABBV-295 Matching Placebo",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive risankizumab with ABBV-295 matching placebo for up to 52 weeks."
+        }
+      ],
+      "primaryEndpoints": [
+        "Percentage of Participants Achieving at least a 90% reduction from Baseline in Psoriasis Area and Severity Index (PASI 90)",
+        "Number of Participants with Adverse Events (AEs)"
+      ],
+      "secondaryEndpoints": [
+        "Percentage of Participants Achieving 100% Reduction from Baseline in PASI 100",
+        "Percentage of Participants Achieving ≥10% Body Weight Reduction from Baseline",
+        "Percent Change from Baseline in Body Weight"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933536",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933536",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933536",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933536",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07933536",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
       "id": "c19-882",
       "nctId": "NCT03914261",
       "protocolNumber": "C19-882",
@@ -13743,5 +13851,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:10:30.257Z"
+  "lastIngestedAt": "2026-11-15T07:55:12.988Z"
 }

@@ -3087,6 +3087,127 @@
         }
       },
       "changeLog": []
+    },
+    {
+      "id": "integument-3",
+      "nctId": "NCT07916480",
+      "protocolNumber": "ARQ-151-323",
+      "acronym": "INTEGUMENT 3",
+      "title": "A Phase 3, 52-Week Study of Once-Daily Roflumilast Cream 0.3% in Participants With Moderate to Severe Atopic Dermatitis, Including a 4-Week Double-Blind, Vehicle-Controlled Phase Followed by a 48-Week Open-Label Extension",
+      "briefTitle": "Roflumilast Cream 0.3% for Moderate to Severe Atopic Dermatitis",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Arcutis Biotherapeutics, Inc.",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis",
+        "Atopic Dermatitis (AD)",
+        "Atopic Dermatitis (Eczema)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D004485",
+          "term": "Eczema"
+        },
+        {
+          "id": "D011537",
+          "term": "Pruritus"
+        },
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        }
+      ],
+      "startDate": {
+        "value": "2026-10-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-04-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2029-03-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 415,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "6 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Vehicle Cream",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants will apply matching vehicle cream once daily during the 4-week double-blind treatment period."
+        },
+        {
+          "label": "Roflumilast Cream 0.3%",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will apply roflumilast cream 0.3% once daily during the 4-week double-blind treatment period."
+        }
+      ],
+      "primaryEndpoints": [
+        "Achievement of vIGA-AD Success at Week 4"
+      ],
+      "secondaryEndpoints": [
+        "Achievement of at least a 75% reduction in the Eczema Area and Severity Index (EASI-75)",
+        "In participants ≥12 years old with Baseline Itch-NRS ≥ 4, achievement of at least a 4-point reduction on the Itch-NRS"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07916480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07916480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07916480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07916480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07916480",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
     }
   ],
   "milestones": [
@@ -3254,5 +3375,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-10T19:56:51.291Z"
+  "lastIngestedAt": "2026-11-15T07:55:19.321Z"
 }

@@ -168,7 +168,129 @@
       }
     }
   },
-  "trials": [],
+  "trials": [
+    {
+      "id": "eczema",
+      "nctId": "NCT07519174",
+      "protocolNumber": "FUMCRCT6",
+      "acronym": "eczema",
+      "title": "A Randomized Controlled Trial Comparing the Effectiveness and Safety of Topical Tacrolimus 0.03% Versus Crisaborole 2% in Patients With Mild to Moderate Atopic Dermatitis Over 8 Weeks",
+      "briefTitle": "A Randomized Controlled Trial Comparing the Effectiveness and Safety of Topical Tacrolimus 0.03% Versus Crisaborole 2% in Patients With Mild to Moderate Atopic Dermatitis Over 8 Weeks",
+      "phase": "NA",
+      "roles": [
+        {
+          "role": "SUPPORTIVE",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/pediatric/49_207695 crisaborole CDTL clinical prea.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "NOT_YET_RECRUITING",
+      "sponsor": "Foundation University Islamabad",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Atopic Dermatitis"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D003876",
+          "term": "Dermatitis, Atopic"
+        },
+        {
+          "id": "D003872",
+          "term": "Dermatitis"
+        }
+      ],
+      "startDate": {
+        "value": "2026-06-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-11-01",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-01-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 72,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "SINGLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "2 Years",
+        "maxAge": "20 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Tacrolimus 0.03% Ointment",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will apply tacrolimus 0.03% ointment twice daily to affected areas for 8 weeks. Tacrolimus is a topical calcineurin inhibitor that reduces T-cell activation and inflammatory cytokine release, improving eczema severity. Outcomes-including EASI score, pruritus VAS, and adverse effects-will be assessed at baseline, Week 4, and Week 8.\n\nDescribe the intervention(s) to be administered. For drugs use generic name and include dosage form, dosage, frequency and duration."
+        },
+        {
+          "label": "Crisaborole 2% Ointment",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will apply crisaborole 2% ointment twice daily to affected areas for 8 weeks. Crisaborole is a topical phosphodiesterase-4 inhibitor that modulates inflammatory pathways and restores skin homeostasis. Outcomes-including EASI score, pruritus VAS, and adverse effects-will be assessed at baseline, Week 4, and Week 8."
+        }
+      ],
+      "primaryEndpoints": [
+        "mean reduction In EASI score."
+      ],
+      "secondaryEndpoints": [
+        "Safety / Tolerability"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07519174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07519174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07519174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07519174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07519174",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
   "milestones": [
     {
       "id": "fda-orig-1",
@@ -389,5 +511,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-10T19:56:43.919Z"
+  "lastIngestedAt": "2026-11-15T07:52:16.931Z"
 }
