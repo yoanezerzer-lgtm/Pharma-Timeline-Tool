@@ -68,6 +68,8 @@ Every message re-reads the whole chat.
 - Try new extraction or matching rules on the real documents (the
   `diag/raw-text-<slug>` branches) and score them against `data/reference/`,
   not just hand-picked cases.
+- Before merging a pipeline change, read its "Pipeline rule comparison"
+  comment (what it does to each drug; `npm run compare-rules` locally).
 - After a change to the site, look at it in a browser, at desktop width and
   at 375px, before calling it done.
 - Work goes through pull requests; merge once CI passes. Exception: the

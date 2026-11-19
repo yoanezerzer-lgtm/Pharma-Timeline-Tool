@@ -231,8 +231,15 @@ right:
    fix the rule.
 3. Run `npm run typecheck && npm test && npm run validate && npm run qc && npm run build`.
    All must pass.
-4. Push and open a pull request explaining the problem, the evidence and the
-   fix. **Don't merge it.** For now the owner merges pipeline changes.
+4. See what the fix does to every drug: `bash scripts/compare-rules/fetch-raw.sh`
+   once, then `npm run compare-rules` (add `-- --only <slug>,<slug>` to look
+   at a few). It re-derives each use's approval date and each trial's roles
+   from the saved text with `main`'s rules and with yours. Every change it
+   lists must be one the fix means to make; if others appear, narrow the fix
+   or say why in the pull request.
+5. Push and open a pull request explaining the problem, the evidence and the
+   fix. The "Compare pipeline rules" check posts the same comparison as a
+   comment on it. **Don't merge it.** For now the owner merges pipeline changes.
 
 Anything bigger, or anything you're not sure about, goes in the summary
 instead.

@@ -23,7 +23,20 @@ most of those questions for free.
    (#180); Rybrevant Faspro's five uses get the documents' dates and
    ORIGAMI-4 counts for head and neck, not lung cancer (#183): both reach
    the site on Saturday's refresh. Readouts for Dupixent SINUS-24/52 and
-   Cibinqo JADE TEEN/MONO-2 are in (#181, #182). Left:
+   Cibinqo JADE TEEN/MONO-2 are in (#181, #182).
+   **Rule changes now show their effect before merging** (19 Nov): a pull
+   request touching `scripts/ingest/` gets a "Pipeline rule comparison"
+   comment listing, per drug, each use whose approval date changes and each
+   trial role gained or lost, from the saved text on `diag/raw-text-*`.
+   Locally: `bash scripts/compare-rules/fetch-raw.sh` once, then
+   `npm run compare-rules [-- --base <ref> --head <ref> --only a,b]`. Not
+   covered yet: the ClinicalTrials.gov search and topical filter (network),
+   and `run.ts` wiring. Run on #180 it also shows 47 Keytruda review-only
+   roles dropped (investigator studies like PEMBRO-RT, KELLY); check them
+   when Keytruda's next refresh is reviewed. Next: QC cross-checks (a pivotal
+   trial's disease vs its use, oral trials on topical products, uses dated
+   to a label lacking them), then the nightly checker confirming dates.
+   Left:
    - **Saturday's refresh (22 Nov) drops many old trials**: since #177 a
      trial no run returns is removed unless it has a pivotal or checked
      role. Expect about 69 on Rinvoq, 50 on Opzelura, 6 on Dupixent,

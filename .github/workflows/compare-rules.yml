@@ -1,0 +1,66 @@
+name: Compare pipeline rules
+
+# On a pull request that changes the pipeline's rules, shows what the change
+# does to the site's data, drug by drug, before it merges: the date of each
+# approved use and each trial's roles, re-derived from the saved FDA text
+# with the old rules and the new. Written to the job summary and to one
+# comment on the pull request, updated in place on each push.
+on:
+  pull_request:
+    paths:
+      - 'scripts/ingest/**'
+      - 'scripts/compare-rules/**'
+      - 'src/schema/**'
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: compare-rules-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      # The merge of the pull request into its base; its first parent is the base.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch the saved FDA text (diag/raw-text-* branches)
+        run: bash scripts/compare-rules/fetch-raw.sh
+
+      - name: Compare old and new rules
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          npx tsx scripts/compare-rules/cli.ts --base "$BASE_SHA" --out report.md > /dev/null
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Comment on the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          id=$(gh api "repos/${REPO}/issues/${PR}/comments" --paginate \
+            --jq '.[] | select(.body | startswith("<!-- compare-rules -->")) | .id' | head -n1)
+          if [ -n "$id" ]; then
+            gh api -X PATCH "repos/${REPO}/issues/comments/${id}" -F body=@report.md > /dev/null
+            echo "Updated comment ${id}."
+          else
+            gh api -X POST "repos/${REPO}/issues/${PR}/comments" -F body=@report.md > /dev/null
+            echo "Posted a comment."
+          fi

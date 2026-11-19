@@ -18,7 +18,8 @@
     "news": "tsx scripts/news/cli.ts",
     "novel": "tsx scripts/ingest/novel.ts",
     "status": "tsx scripts/status.ts",
-    "precedent": "tsx scripts/precedent/cli.ts"
+    "precedent": "tsx scripts/precedent/cli.ts",
+    "compare-rules": "tsx scripts/compare-rules/cli.ts"
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "5.1.1",
