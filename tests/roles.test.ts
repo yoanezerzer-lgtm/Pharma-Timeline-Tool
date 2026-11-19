@@ -447,6 +447,14 @@ describe('classifyTrialRoles — review citations', () => {
     expect(classifyTrialRoles(t, ctx).roles).toEqual([]);
   });
 
+  it("counts the applicant's one-word capitals acronym only when the review writes it in capitals (PATHWAY)", () => {
+    const pathway = trial({ nctId: 'NCT05073458', acronym: 'PATHWAY', sponsor: 'Incyte Corporation', phase: 'PHASE3' });
+    const prose = ctxFor(null, { sponsorName: 'Incyte Corporation', reviewText: 'JAK inhibition blocks the signaling pathway.' });
+    expect(classifyTrialRoles(pathway, prose).roles).toEqual([]);
+    const named = ctxFor(null, { sponsorName: 'Incyte Corporation', reviewText: 'Study PATHWAY enrolled 50 patients.' });
+    expect(classifyTrialRoles(pathway, named).roles.map((r) => r.role)).toEqual(['SUPPORTIVE']);
+  });
+
   it("still counts the applicant's trial, and anyone's trial named by its NCT number", () => {
     const own = trial({ nctId: 'NCT09999999', acronym: 'REVIEW', sponsor: 'Incyte Corporation', phase: 'PHASE3' });
     expect(classifyTrialRoles(own, ctx).roles.map((r) => r.role)).toEqual(['SUPPORTIVE']);

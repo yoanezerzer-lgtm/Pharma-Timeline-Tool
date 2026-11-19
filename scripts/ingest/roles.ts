@@ -689,7 +689,12 @@ export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignme
   const reviewIds = looksLikeSponsorTrial(trial, ctx.sponsorName, ctx.knownTrialSponsors)
     ? ids
     : ids.filter((id) => id !== trial.acronym);
-  const inReview = reviewIds.length > 0 && mentions(ctx.reviewText, reviewIds);
+  // A one-word capitals acronym ("PATHWAY", "QUEST") counts only in capitals:
+  // in lower case it is the review's own prose.
+  const capitalsWord = (id: string) => id === trial.acronym && /^[A-Z]{3,}$/.test(id);
+  const inReview =
+    mentions(ctx.reviewText, reviewIds.filter((id) => !capitalsWord(id))) ||
+    reviewIds.filter(capitalsWord).some((id) => new RegExp(`\\b${escapeRegExp(id)}\\b`).test(ctx.reviewText));
   if (inReview) {
     const byPhase: Partial<Record<Trial['phase'], TrialRole>> = {
       EARLY_PHASE1: 'PK',

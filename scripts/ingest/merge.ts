@@ -172,14 +172,16 @@ function mergeTrial(
 }
 
 /**
- * Work on a trial that a run can't simply recreate: a role in an approval,
+ * Work on a trial that a run can't simply recreate: a pivotal role,
  * a readout, a person's notes or checks, or a trial added by hand (no NCT
  * number, so no registry search returns it).
  */
 function curated(t: Trial): boolean {
   return (
     !t.nctId ||
-    t.roles.length > 0 ||
+    // A pivotal role is kept even if a registry search misses the trial once;
+    // a lesser role is recomputed by every run, so it alone doesn't hold one.
+    t.roles.some((r) => r.role === 'PIVOTAL' || r.provenance.verified || r.provenance.extractedBy === 'human') ||
     !!t.readoutDate ||
     t.takeaways.length > 0 ||
     t.limitations.length > 0 ||
