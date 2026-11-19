@@ -33,6 +33,15 @@ most of those questions for free.
      B7451012. The overnight agent should look for another release.
    - The first nightly run after #176 opens a confirmations pull request
      with the new unchecked entries; check it went through.
+   - The nightly checker now also confirms each use's approval date: the
+     submission's letter must name the use, its label must add it, and the
+     date must be that submission's. Tried on the real documents: Rybrevant
+     Faspro's four lung uses (ORIG-1) and head and neck (SUPPL-2) and all
+     nine Dupixent uses pass; head and neck dated to ORIG-1 can't. Its
+     first run also replaces stale unchecked dates with the site's (e.g.
+     Dupixent's nasal polyps: SUPPL-66, 2024, becomes SUPPL-14, 2019).
+     Still on pivotal trials only: the site's "checked" badge and
+     `npm run -s status`'s checked count.
 2. **New drugs: atopic dermatitis only** (PRD goal 2), until its list
    matches the FDA's own records. No other areas until then.
 3. **Design and legibility: finish, then stop.** Home, drug, approved

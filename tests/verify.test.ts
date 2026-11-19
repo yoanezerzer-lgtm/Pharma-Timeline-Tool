@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest';
 import { Drug, type Trial } from '../src/schema/index.js';
 import { Reference, syncPivotal } from '../scripts/qc/reference.js';
-import { applyVerdicts, buildQueue, labelNamesSponsor, type DrugContext, type Verdict } from '../scripts/verify/claims.js';
+import { applyVerdicts, buildQueue, labelNamesSponsor, type Claim, type DrugContext, type Verdict } from '../scripts/verify/claims.js';
 import { checkQuote, findPassages, normalize, type SourceDoc } from '../scripts/verify/sources.js';
 
+const trialOf = (c: Claim) => (c.kind === 'date' ? '' : c.trial);
 const FILLER = 'Patients were randomized and assessed at prespecified visits. '.repeat(6);
 const LABEL_URL = 'https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/000001s010lbl.pdf';
 const LETTER_URL = 'https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/000001s010ltr.pdf';
@@ -107,7 +108,7 @@ describe('overnight verification', () => {
   function run(answer: (id: string, decoy: boolean, trial: string) => Verdict) {
     const ctx = context();
     const { queue, key } = buildQueue([ctx], '2026-10-27');
-    const verdicts = queue.map((c) => answer(c.id, key[c.id] === 'decoy', c.trial));
+    const verdicts = queue.map((c) => answer(c.id, key[c.id] === 'decoy', trialOf(c)));
     return applyVerdicts(queue, key, verdicts, [ctx], '2026-10-27');
   }
   const honest = (id: string, decoy: boolean, t: string): Verdict =>
@@ -123,7 +124,7 @@ describe('overnight verification', () => {
     expect(r.voided).toBe(false);
     expect(ref.pivotal.find((p) => p.trial === 'NCT00000001')).toMatchObject({ status: 'confirmed', evidence: [{ sourceUrl: LABEL_URL, quote: RA_QUOTE }] });
     expect(ref.pivotal.find((p) => p.trial === 'NCT00000002')?.status).toBe('baseline');
-    expect(r.results.find((x) => x.claim.trial === 'NCT00000002' && !x.outcome.startsWith('decoy'))?.outcome).toBe('rejected');
+    expect(r.results.find((x) => trialOf(x.claim) === 'NCT00000002' && !x.outcome.startsWith('decoy'))?.outcome).toBe('rejected');
     expect(r.spotCheck).toHaveLength(1);
   });
 
@@ -152,7 +153,7 @@ describe('overnight verification', () => {
         ? { claim: id, verdict: 'contradicted', evidence: [{ sourceUrl: LABEL_URL, quote: RA_QUOTE }], reason: 'Supportive only.' }
         : honest(id, decoy, t)
     );
-    expect(r.results.find((x) => x.claim.trial === 'NCT00000001' && !x.outcome.startsWith('decoy'))?.outcome).toBe('disagreement');
+    expect(r.results.find((x) => trialOf(x.claim) === 'NCT00000001' && !x.outcome.startsWith('decoy'))?.outcome).toBe('disagreement');
     expect(r.refs.get('testdrug')!.pivotal.find((p) => p.trial === 'NCT00000001')?.status).toBe('baseline');
   });
 
@@ -162,22 +163,22 @@ describe('overnight verification', () => {
     const ctx = context();
     for (const [night, date] of ['2026-10-27', '2026-10-28', '2026-10-29'].entries()) {
       const { queue, key } = buildQueue([ctx], date);
-      expect(queue.some((c) => key[c.id] === 'real' && c.trial === 'NCT00000001')).toBe(true);
-      const r = applyVerdicts(queue, key, queue.map((c) => unclear(c.id, key[c.id] === 'decoy', c.trial)), [ctx], date);
+      expect(queue.some((c) => key[c.id] === 'real' && trialOf(c) === 'NCT00000001')).toBe(true);
+      const r = applyVerdicts(queue, key, queue.map((c) => unclear(c.id, key[c.id] === 'decoy', trialOf(c))), [ctx], date);
       ctx.ref = r.refs.get('testdrug')!;
       expect(ctx.ref.pivotal.find((p) => p.trial === 'NCT00000001')?.tries).toBe(night + 1);
       // PsA-I is a Phase 1 trial with no second source, so it is rejected every night too.
-      expect(r.stuck.map((x) => x.claim.trial).sort()).toEqual(night === 2 ? ['NCT00000001', 'NCT00000002'] : []);
+      expect(r.stuck.map((x) => trialOf(x.claim)).sort()).toEqual(night === 2 ? ['NCT00000001', 'NCT00000002'] : []);
     }
     const { queue, key } = buildQueue([ctx], '2026-10-30');
-    expect(queue.some((c) => key[c.id] === 'real' && c.trial === 'NCT00000001')).toBe(false);
+    expect(queue.some((c) => key[c.id] === 'real' && trialOf(c) === 'NCT00000001')).toBe(false);
   });
 
   it('never changes an entry that is already confirmed', () => {
     const ctx = context();
     ctx.ref.pivotal[0] = { ...ctx.ref.pivotal[0], status: 'confirmed', checkedBy: 'a person' };
     const { queue, key } = buildQueue([ctx], '2026-10-27');
-    expect(queue.some((c) => key[c.id] === 'real' && c.trial === 'NCT00000001')).toBe(false);
+    expect(queue.some((c) => key[c.id] === 'real' && trialOf(c) === 'NCT00000001')).toBe(false);
   });
 });
 
@@ -208,11 +209,11 @@ describe('trial sponsors the label names', () => {
     for (const [srcs, outcome] of [[sources, 'rejected'], [withLine, 'confirmed']] as const) {
       const c = { ...ctx, sources: [...srcs] };
       const { queue, key } = buildQueue([c], '2026-10-27');
-      const verdicts = queue.map((q) => (key[q.id] === 'decoy' || q.trial !== 'NCT00000001'
+      const verdicts = queue.map((q) => (key[q.id] === 'decoy' || trialOf(q) !== 'NCT00000001'
         ? { claim: q.id, verdict: 'unclear' as const, evidence: [], reason: 'x' }
         : { claim: q.id, verdict: 'supported' as const, evidence: [{ sourceUrl: LABEL_URL, quote: RA_QUOTE }], reason: '' }));
       const r = applyVerdicts(queue, key, verdicts, [c], '2026-10-27');
-      expect(r.results.find((x) => x.claim.trial === 'NCT00000001' && key[x.claim.id] === 'real')?.outcome).toBe(outcome);
+      expect(r.results.find((x) => trialOf(x.claim) === 'NCT00000001' && key[x.claim.id] === 'real')?.outcome).toBe(outcome);
     }
   });
 
@@ -236,7 +237,7 @@ describe('syncPivotal', () => {
       { indication: 'Psoriatic Arthritis', trial: 'NCT00000002', pivotal: true, status: 'baseline' },
     ]);
     const { queue, key } = buildQueue([{ ...ctx, ref: synced }], '2026-11-20');
-    expect(queue.filter((c) => key[c.id] === 'real').map((c) => c.trial).sort()).toEqual(['NCT00000001', 'NCT00000002']);
+    expect(queue.filter((c) => key[c.id] === 'real').map((c) => trialOf(c)).sort()).toEqual(['NCT00000001', 'NCT00000002']);
   });
 
   it('drops unchecked pairings the site no longer shows, keeps confirmed ones, and matches wording with spaces ignored', () => {
