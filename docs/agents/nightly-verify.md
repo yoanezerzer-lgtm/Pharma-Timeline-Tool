@@ -64,21 +64,34 @@ Note every **error** for step 7. Warnings go in the summary as they are.
 npm run verify -- queue --date "$DATE"
 ```
 
-This writes `.verify/queue.json`. Before queueing, it adds an unchecked
-entry for every pivotal trial the site shows that `data/reference/` lacks
-(a new use or trial since the drug was first added, or tidied wording), and
-drops unchecked entries for pairings the site no longer shows; `apply` saves
-those changes with the night's results. It takes drugs with nothing confirmed yet
-first, a whole drug at a time, so drugs become fully checked one by one
-(`npm run -s status`). Each claim asks whether one trial was part
-of the evidence for one approved indication. It comes with the trial's
-registry facts and the passages where the FDA documents name the trial.
-`inIndicationSpan: true` marks a passage inside the label's section 14
-(Clinical Studies) under that indication.
+This writes `.verify/queue.json`. Before queueing, it brings
+`data/reference/` in line with what the site shows: an unchecked entry for
+every pivotal trial and every approved use the file lacks (a new use or
+trial since the drug was first added, or tidied wording), an unchecked
+date replaced when the site now dates the use differently, and unchecked
+entries the site no longer shows dropped; `apply` saves those changes with
+the night's results. Confirmed entries are never touched. It takes drugs
+with nothing confirmed yet first, a whole drug at a time, so drugs become
+fully checked one by one (`npm run -s status`).
+
+There are two kinds of claim (`kind`):
+
+- **`pivotal`**: whether one trial was part of the evidence for one
+  approved indication. It comes with the trial's registry facts and the
+  passages where the FDA documents name the trial. `inIndicationSpan: true`
+  marks a passage inside the label's section 14 (Clinical Studies) under
+  that indication.
+- **`date`**: whether a use was first approved by one submission on one
+  date ("Was Rybrevant Faspro first approved for "Previously Treated HNSCC"
+  by SUPPL-2, approved on 2026-11-05?"). It comes with the label's own
+  sentence for the use (`wording`, when there is one) and, as passages
+  (`about` says which is which): that submission's approval letter where it
+  says what it approves, section 1 of the label approved with it, and
+  section 1 of the label before it. A use with no date isn't queued.
 
 ## 5. Answer each claim
 
-For every claim in `.verify/queue.json`, decide one of:
+For every **`pivotal`** claim in `.verify/queue.json`, decide one of:
 
 - **`supported`**: the label's section 14, under that indication, presents
   the trial as a study the indication's efficacy rests on, typically "Trial X
@@ -98,8 +111,34 @@ For every claim in `.verify/queue.json`, decide one of:
 
 You may read the full text files in `data/raw/<slug>/docs/` to find a better
 passage. Every quote must be copied exactly from the document, at least 40
-characters long, and must name the trial (its NCT number, acronym or label
-name). Quotes are checked word for word; a paraphrase is rejected.
+characters long, and, for a pivotal claim, must name the trial (its NCT
+number, acronym or label name). Quotes are checked word for word; a
+paraphrase is rejected.
+
+For every **`date`** claim, decide one of:
+
+- **`supported`**: that submission's approval letter approves this use: it
+  "provides for" it, or lists it after "is indicated for". Give the
+  letter's exact sentence (or bullet) that names the use as evidence. The
+  quote must say enough to tell this use from the drug's others: Rybrevant
+  Faspro's four lung uses differ only in "first-line", the exon and "whose
+  disease has progressed"; quote the whole bullet. When a bullet runs over
+  a page, keep the page footer in the quote as the text shows it
+  ("… as detected by an Reference ID: 5713869 BLA 761433 Page 2 FDA approved
+  test, …"). Code adds the second source itself: the submission's label must
+  list the use in section 1 and the label before it must not (for the
+  original approval, its own label must list it), and the date must be the
+  submission's approval date.
+- **`contradicted`**: the letter approves something else (a new dose, a
+  new age group, a different use), or the label before it already lists the
+  use, so it was approved earlier. Give the sentence that shows it, from
+  any of the drug's documents.
+- **`unclear`**: the letter isn't there, is garbled, or you'd be guessing.
+
+Some claims of both kinds are planted false ones (a use paired with
+another submission's letter, a trial with a use it has no part in). They
+must come back `contradicted` or `unclear`; one answered `supported` voids
+the whole night.
 
 Write all answers to `.verify/verdicts.json`:
 
@@ -126,8 +165,8 @@ night was **voided** (a planted false claim came back supported), nothing was
 recorded. Re-read the claims you marked supported, write the summary, and
 stop. Don't retry.
 
-A fact that comes back unconfirmed (unclear, rejected, unanswered or a
-disagreement) has a night added to its `tries`; after 3 it stops being
+A fact of either kind that comes back unconfirmed (unclear, rejected,
+unanswered or a disagreement) has a night added to its `tries`; after 3 it stops being
 queued and the report lists it under "Stuck" for the owner.
 
 If anything in `data/reference/` changed (confirmations or tries):

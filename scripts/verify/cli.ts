@@ -1,5 +1,6 @@
 /**
- * Overnight verification of the reference set's unchecked entries.
+ * Overnight verification of the reference set's unchecked entries: which
+ * trials each approved use rests on, and the date each use was approved.
  *
  *   npm run verify -- queue [--limit 40] [--date YYYY-MM-DD] [--retry-stuck] [--drugs a,b]
  *       Writes .verify/queue.json (claims plus the passages that name each
@@ -20,6 +21,7 @@ import { z } from 'zod';
 import { Drug } from '../../src/schema/index.js';
 import { Reference, syncPivotal } from '../qc/reference.js';
 import { applyVerdicts, buildQueue, reportMarkdown, Verdict, type AnswerKey, type Claim, type DrugContext } from './claims.js';
+import { syncIndications } from './dates.js';
 import { loadSources } from './sources.js';
 
 const ROOT = process.cwd();
@@ -36,8 +38,8 @@ function contexts(): DrugContext[] {
     .map((f) => {
       const slug = f.replace(/\.json$/, '');
       const drug = Drug.parse(JSON.parse(readFileSync(join(ROOT, 'data', 'drugs', f), 'utf8')));
-      // Pivotal pairings added since the drug was first snapshotted are queued too.
-      const ref = syncPivotal(drug, Reference.parse(JSON.parse(readFileSync(join(ROOT, 'data', 'reference', f), 'utf8'))));
+      // Pivotal pairings and uses added since the drug was first snapshotted are queued too.
+      const ref = syncIndications(drug, syncPivotal(drug, Reference.parse(JSON.parse(readFileSync(join(ROOT, 'data', 'reference', f), 'utf8')))));
       return { drug, ref, sources: loadSources(drug, join(ROOT, 'data', 'raw', slug, 'docs')) };
     });
 }
