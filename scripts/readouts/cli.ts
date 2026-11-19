@@ -124,7 +124,7 @@ async function main(): Promise<void> {
       writeFileSync(join(rawDir, 'texts', `${name}.txt`), `${r.url}\n${r.source} · ${r.date} · ${r.title}\n\n${r.text}\n`);
     }
 
-    const readout = pickReadout(t, releases, { approvalDate: end });
+    const readout = pickReadout(t, releases, { approvalDate: end }, drug.trials.filter((o) => o !== t));
     if (readout) {
       t.readoutDate = readout.date;
       t.provenance.readoutDate = readout.provenance;
