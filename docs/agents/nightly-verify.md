@@ -167,8 +167,9 @@ the release page; your job is only to find the page.
 6. Each run updates the `readouts/<slug>` branch when it recorded a
    readout, and the `diag/readouts-<slug>` branch with what it read. Read `data/raw/<slug>/readouts/summary.json` on the diag branch: a
    candidate that produced no readout is listed with `"candidates": 0`
-   (unreadable page or no date) or simply no readout (no sentence naming
-   the trial with a result in it). Mention those in the summary.
+   (unreadable page or no date) or simply no readout (no sentence stating
+   the trial's primary result: a title or an endpoint description no longer
+   counts). Mention those in the summary.
 7. Open a pull request for each `readouts/*` branch into `main`. Merge it
    once CI passes only if every readout's quote states the trial's primary
    result. A page title or a description of the endpoints is not enough:
