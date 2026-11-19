@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0022818",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0022818",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T043337",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A disorder consisting of areas of macular depigmentation, commonly on extensor aspects of extremities, on the face or neck, and in skin folds. Age of onset is often in young adulthood and the condition tends to progress gradually with lesions enlarging and extending until a quiescent state is reached."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "Vitiligo"
+    },
+    "@context": {
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
