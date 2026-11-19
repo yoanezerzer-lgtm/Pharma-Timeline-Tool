@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Hodgkin Lymphoma"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D006689"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Hodgkin Disease"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Lymphoma"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D008223"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Lymphoma"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "B-Cell Lymphoma"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D016393"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Lymphoma, B-Cell"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Lymphoma, B-Cell"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D016393"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Lymphoma, B-Cell"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Lymphoma"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D008223"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Lymphoma"
+          }
+        }
+      ]
+    }
+  }
+}
