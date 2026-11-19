@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0014487",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0014487",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T027738",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Focal accumulations of EDEMA fluid in the NASAL MUCOSA accompanied by HYPERPLASIA of the associated submucosal connective tissue. Polyps may be NEOPLASMS, foci of INFLAMMATION, degenerative lesions, or malformations."
+    },
+    "label": {
+      "@language": "en",
+      "@value": "Nasal Polyps"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

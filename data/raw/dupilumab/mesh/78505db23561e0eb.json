@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0016111",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0016111",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T030660",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A chronic and relatively benign subepidermal blistering disease usually of the elderly and without histopathologic acantholysis."
+    },
+    "term": "http://id.nlm.nih.gov/mesh/T030659",
+    "label": {
+      "@language": "en",
+      "@value": "Pemphigoid, Bullous"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      }
+    }
+  }
+}

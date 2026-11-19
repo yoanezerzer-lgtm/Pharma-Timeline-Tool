@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0538966",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0538966",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T757514",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Chronic ESOPHAGITIS characterized by esophageal mucosal EOSINOPHILIA. It is diagnosed when an increase in EOSINOPHILS are present over the entire esophagus. The reflux symptoms fail to respond to PROTON PUMP INHIBITORS treatment, unlike in GASTROESOPHAGEAL REFLUX DISEASE. The symptoms are associated with IgE-mediated hypersensitivity to food or inhalant allergens."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T757815",
+      "http://id.nlm.nih.gov/mesh/T817199"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Eosinophilic Esophagitis"
+    },
+    "@context": {
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      }
+    }
+  }
+}

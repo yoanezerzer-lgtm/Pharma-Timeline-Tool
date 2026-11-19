@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T001112675",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Sinusitis, Allergic Fungal"
+      },
+      {
+        "@language": "en",
+        "@value": "Fungal Sinusitis, Allergic"
+      },
+      {
+        "@language": "en",
+        "@value": "Allergic Fungal Sinusitides"
+      },
+      {
+        "@language": "en",
+        "@value": "Sinusitides, Allergic Fungal"
+      }
+    ],
+    "dateCreated": "2021-10-01",
+    "identifier": "T001112675",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Allergic Fungal Sinusitis"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (2023)"
+    },
+    "@context": {
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      }
+    }
+  }
+}
