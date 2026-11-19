@@ -29,10 +29,12 @@ const drugs = readdirSync(join(ROOT, 'data', 'drugs'))
 
 const states = drugs.map(({ drug, ref }) => ({ drug, state: checkState(checkStats(ref)) }));
 const count = (s: string) => states.filter((x) => x.state === s).length;
+// "Not yet checked" includes drugs with no pivotal trial at all: nothing for the checker to do.
+const nothingToCheck = drugs.filter(({ drug }) => !drug.trials.some((t) => t.roles.some((r) => r.role === 'PIVOTAL'))).length;
 const lines = [
   `# Data status`,
   '',
-  `${drugs.length} drugs: ${count('checked')} checked, ${count('partial')} partly checked, ${count('unchecked')} not yet checked.`,
+  `${drugs.length} drugs: ${count('checked')} checked, ${count('partial')} partly checked, ${count('unchecked')} not yet checked${nothingToCheck ? ` (${nothingToCheck} of them have no pivotal trial to check)` : ''}.`,
   '',
 ];
 

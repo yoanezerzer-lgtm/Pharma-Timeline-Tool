@@ -120,3 +120,29 @@ export function snapshotReference(drug: Drug, existing?: Reference): Reference {
   ];
   return ref;
 }
+
+/**
+ * Brings a reference file's pivotal entries in line with what the site shows
+ * now, so the overnight checker sees every pivotal trial: a pairing the
+ * pipeline added after the drug was first snapshotted (a new use, a new
+ * trial, tidied wording) gets an unchecked entry, and an unchecked entry
+ * whose pairing the site no longer shows is dropped, with its tries. A
+ * confirmed entry is never touched, and an unchecked one that still matches
+ * keeps its tries. Returns the same object when nothing changed.
+ */
+export function syncPivotal(drug: Drug, ref: Reference): Reference {
+  const key = (indication: string, trial: string) => `${wordingKey(indication)}\u0000${trial}`;
+  const current = new Map<string, { indication: string; trial: string }>();
+  for (const t of drug.trials) {
+    for (const r of t.roles) {
+      if (r.role === 'PIVOTAL' && r.indication) current.set(key(r.indication, trialKey(t)), { indication: r.indication, trial: trialKey(t) });
+    }
+  }
+  const kept = ref.pivotal.filter((r) => r.status === 'confirmed' || !r.pivotal || current.has(key(r.indication, r.trial)));
+  const known = new Set(kept.map((r) => key(r.indication, r.trial)));
+  const added = [...current.entries()]
+    .filter(([k]) => !known.has(k))
+    .map(([, x]) => ({ ...x, pivotal: true, status: 'baseline' as const }));
+  if (added.length === 0 && kept.length === ref.pivotal.length) return ref;
+  return { ...ref, pivotal: [...kept, ...added] };
+}

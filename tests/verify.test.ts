@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { Drug, type Trial } from '../src/schema/index.js';
-import { Reference } from '../scripts/qc/reference.js';
+import { Reference, syncPivotal } from '../scripts/qc/reference.js';
 import { applyVerdicts, buildQueue, labelNamesSponsor, type DrugContext, type Verdict } from '../scripts/verify/claims.js';
 import { checkQuote, findPassages, normalize, type SourceDoc } from '../scripts/verify/sources.js';
 
@@ -223,5 +223,39 @@ describe('trial sponsors the label names', () => {
     expect(real(buildQueue([ctx], '2026-10-27'))).toBe(0);
     expect(real(buildQueue([ctx], '2026-10-27', 40, { retryStuck: true }))).toBe(2);
     expect(real(buildQueue([ctx], '2026-10-27', 40, { retryStuck: true, drugs: ['other'] }))).toBe(0);
+  });
+});
+
+describe('syncPivotal', () => {
+  it('adds pivotal pairings the reference file lacks, so they are queued', () => {
+    const ctx = context();
+    const ref = Reference.parse({ slug: 'testdrug', pivotal: [{ indication: 'Rheumatoid Arthritis', trial: 'NCT00000001', pivotal: true, status: 'baseline', tries: 1 }] });
+    const synced = syncPivotal(ctx.drug, ref);
+    expect(synced.pivotal).toEqual([
+      { indication: 'Rheumatoid Arthritis', trial: 'NCT00000001', pivotal: true, status: 'baseline', tries: 1 },
+      { indication: 'Psoriatic Arthritis', trial: 'NCT00000002', pivotal: true, status: 'baseline' },
+    ]);
+    const { queue, key } = buildQueue([{ ...ctx, ref: synced }], '2026-11-20');
+    expect(queue.filter((c) => key[c.id] === 'real').map((c) => c.trial).sort()).toEqual(['NCT00000001', 'NCT00000002']);
+  });
+
+  it('drops unchecked pairings the site no longer shows, keeps confirmed ones, and matches wording with spaces ignored', () => {
+    const ctx = context();
+    const confirmed = { indication: 'Old use', trial: 'NCT00000001', pivotal: true, status: 'confirmed' as const, checkedBy: 'owner' };
+    const ref = Reference.parse({
+      slug: 'testdrug',
+      pivotal: [
+        confirmed,
+        { indication: 'Old use', trial: 'NCT00000002', pivotal: true, status: 'baseline', tries: 3 },
+        { indication: 'Rheumatoid  Arth ritis', trial: 'NCT00000001', pivotal: true, status: 'confirmed' },
+        { indication: 'Psoriatic Arthritis', trial: 'NCT00000002', pivotal: true, status: 'baseline', tries: 2 },
+      ],
+    });
+    expect(syncPivotal(ctx.drug, ref).pivotal).toEqual([ref.pivotal[0], ref.pivotal[2], ref.pivotal[3]]);
+  });
+
+  it('returns the file unchanged when it already matches', () => {
+    const ctx = context();
+    expect(syncPivotal(ctx.drug, ctx.ref)).toBe(ctx.ref);
   });
 });

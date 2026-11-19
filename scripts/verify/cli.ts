@@ -18,7 +18,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join } from 'node:path';
 import { z } from 'zod';
 import { Drug } from '../../src/schema/index.js';
-import { Reference } from '../qc/reference.js';
+import { Reference, syncPivotal } from '../qc/reference.js';
 import { applyVerdicts, buildQueue, reportMarkdown, Verdict, type AnswerKey, type Claim, type DrugContext } from './claims.js';
 import { loadSources } from './sources.js';
 
@@ -36,7 +36,8 @@ function contexts(): DrugContext[] {
     .map((f) => {
       const slug = f.replace(/\.json$/, '');
       const drug = Drug.parse(JSON.parse(readFileSync(join(ROOT, 'data', 'drugs', f), 'utf8')));
-      const ref = Reference.parse(JSON.parse(readFileSync(join(ROOT, 'data', 'reference', f), 'utf8')));
+      // Pivotal pairings added since the drug was first snapshotted are queued too.
+      const ref = syncPivotal(drug, Reference.parse(JSON.parse(readFileSync(join(ROOT, 'data', 'reference', f), 'utf8'))));
       return { drug, ref, sources: loadSources(drug, join(ROOT, 'data', 'raw', slug, 'docs')) };
     });
 }
