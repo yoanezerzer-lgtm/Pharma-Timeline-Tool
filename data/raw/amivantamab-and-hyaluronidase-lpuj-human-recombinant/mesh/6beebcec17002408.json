@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0530036",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0530036",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M000677163",
+      "http://id.nlm.nih.gov/mesh/M000677164",
+      "http://id.nlm.nih.gov/mesh/M000677165",
+      "http://id.nlm.nih.gov/mesh/M000677166",
+      "http://id.nlm.nih.gov/mesh/M000677168"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T000939018",
+    "relatedConcept": "http://id.nlm.nih.gov/mesh/M000677167",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "The most common type of head and neck carcinoma that originates from cells on the surface of the NASAL CAVITY; MOUTH; PARANASAL SINUSES, SALIVARY GLANDS, and LARYNX. Mutations in TNFRSF10B, PTEN, and ING1 genes are associated with this cancer."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T802353",
+      "http://id.nlm.nih.gov/mesh/T000999114",
+      "http://id.nlm.nih.gov/mesh/T000937428",
+      "http://id.nlm.nih.gov/mesh/T000938314",
+      "http://id.nlm.nih.gov/mesh/T000999115",
+      "http://id.nlm.nih.gov/mesh/T000937429"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Squamous Cell Carcinoma of Head and Neck"
+    },
+    "@context": {
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}
