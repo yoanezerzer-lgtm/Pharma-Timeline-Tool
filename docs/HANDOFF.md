@@ -18,23 +18,19 @@ most of those questions for free.
    are cased word by word, lose FDA's "(copackaged)" tag, and trials no
    run returns any more are removed unless curated (#177, tried on 4
    drugs); the clean part of the 15 Nov refresh is published (#178).
-   Left, one chat:
-   - **Opzelura picks up other products' trials**: the 15 Nov refresh adds
-     29 trials of oral ruxolitinib (Jakafi: myelofibrosis, polycythemia
-     vera) and of other Incyte molecules (INCB053914, INCB057643,
-     itacitinib, INCA033989), some with roles. Fix the search or matching
-     so a cream gets only its own trials, then refresh `ruxolitinib`.
-     Don't merge its file from `data/refresh-2026-11-15`.
-   - **Rybrevant Faspro**: ORIGAMI-4 (a head and neck trial) gets a
-     pivotal role under "Previously Treated NSCLC with EGFR Exon 20
-     Insertion" (the section 14 span runs past its section), and three
-     NSCLC uses lose their 17 Dec 2025 date while the new HNSCC use takes
-     it. Check against the documents on `diag/raw-text-amivantamab-…`
-     before its next refresh is published.
-   - **Re-run readouts** (`readouts.yml`) for `dupilumab` and
-     `abrocitinib` with the new reader; scored on the saved text, SINUS-24,
-     SINUS-52, JADE TEEN and JADE MONO-2 now get result sentences. JADE
-     MONO-1's release names it only as B7451012, so it stays blank.
+   Then (19–20 Nov): Opzelura keeps only its own cream trials and
+   word-like acronyms ("PATHWAY", "SEQUENCE") no longer earn review roles
+   (#180); Rybrevant Faspro's five uses get the documents' dates and
+   ORIGAMI-4 counts for head and neck, not lung cancer (#183): both reach
+   the site on Saturday's refresh. Readouts for Dupixent SINUS-24/52 and
+   Cibinqo JADE TEEN/MONO-2 are in (#181, #182). Left:
+   - **Saturday's refresh (22 Nov) drops many old trials**: since #177 a
+     trial no run returns is removed unless it has a pivotal or checked
+     role. Expect about 69 on Rinvoq, 50 on Opzelura, 6 on Dupixent,
+     waiting on `data/refresh-2026-11-22` as "needs a look". Merge them
+     unless a pivotal trial is among them.
+   - Cibinqo JADE MONO-1 has no readout: its release names it only as
+     B7451012. The overnight agent should look for another release.
    - The first nightly run after #176 opens a confirmations pull request
      with the new unchecked entries; check it went through.
 2. **New drugs: atopic dermatitis only** (PRD goal 2), until its list

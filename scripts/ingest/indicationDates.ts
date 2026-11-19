@@ -74,8 +74,11 @@ function distance(a: Set<string>, b: Set<string>): number | undefined {
 }
 
 // A heading or prose that leaked into a name when the PDF text was garbled:
-// "Cervical Cancer KEYTRUDA is", "Endometrial Carcinoma 5 WARNINGS".
-const LEAK = /\s+(?:[A-Z]{4,}\b|\d+\s+[A-Z]{3,}).*$/;
+// "Cervical Cancer KEYTRUDA is", "Endometrial Carcinoma 5 WARNINGS". A
+// capitals word inside a real name is an abbreviation ("Previously Treated
+// NSCLC with EGFR Exon 20…", "Previously Treated HNSCC"), so it counts as a
+// leak only when the label's prose follows it.
+const LEAK = /\s+(?:[A-Z]{4,}®?,?\s+(?:is|are|was|in combination|as|for|,)\b|\d+\s+[A-Z]{3,}\b).*$/;
 
 interface Snapshot {
   doc: LabelDoc;
@@ -199,7 +202,13 @@ export function dateIndications(
     }
   });
 
-  const letterWords = new Map(letters.map((l) => [l.submission, keyWords(l.text)]));
+  // Abbreviations in parentheses stay in a letter's words: "head and neck
+  // squamous cell carcinoma (HNSCC)" is how a letter names "Previously
+  // Treated HNSCC".
+  const letterWords = new Map(letters.map((l) => [l.submission, keyWords(l.text.replace(/[()]/g, ' '))]));
+  // The words of a use that no other use of the drug has ("hnscc"): a letter
+  // naming them names that use, however it words the rest.
+  const ownWords = targetWords.map((t, i) => new Set([...t].filter((w) => !targetWords.some((o, j) => j !== i && o.has(w)))));
   const addsIndications = (m: Milestone) => m.type === 'FDA_APPROVAL' || /efficacy/i.test(m.description ?? '');
 
   const out = new Map<string, IndicationApproval>();
@@ -232,7 +241,7 @@ export function dateIndications(
         .filter((m) => m.submissionNumber && m.date.value >= from && m.date.value <= to && addsIndications(m))
         .filter((m) => {
           const lw = letterWords.get(m.submissionNumber!);
-          return lw !== undefined && words.size > 0 && isSubset(words, lw);
+          return lw !== undefined && words.size > 0 && (isSubset(words, lw) || (ownWords[n].size > 0 && isSubset(ownWords[n], lw)));
         })
         .sort((a, b) => a.date.value.localeCompare(b.date.value));
       const pick = confirmed[0];

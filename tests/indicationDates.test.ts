@@ -174,6 +174,27 @@ describe('dateIndications — real-label quirks', () => {
   });
 });
 
+describe('dateIndications — abbreviations (Rybrevant Faspro, real wording)', () => {
+  const nsclc = [
+    'First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations',
+    'Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations',
+    'First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations',
+    'Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations',
+  ];
+  const hnscc = 'Previously Treated HNSCC';
+  const ms = [milestone('ORIG-1', '2025-12-17', ''), milestone('SUPPL-2', '2026-11-05', 'Efficacy')];
+  const letters = [
+    letter('ORIG-1', 'Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations.'),
+    letter('SUPPL-2', 'This Prior Approval sBLA provides for Rybrevant Faspro as a single agent for the treatment of adult patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) whose disease has progressed on or after platinum-based chemotherapy.'),
+  ];
+
+  it('reads a name with abbreviations in capitals as a name, not leaked text', () => {
+    const out = dateIndications([...nsclc, hnscc], [label('ORIG-1', ...nsclc), label('SUPPL-2', ...nsclc, hnscc)], ms, letters);
+    for (const n of nsclc) expect(out.get(n)?.submission).toBe('ORIG-1');
+    expect(out.get(hnscc)).toMatchObject({ submission: 'SUPPL-2', date: { value: '2026-11-05' } });
+  });
+});
+
 describe('labelListsIndication', () => {
   const orig: LabelDoc = {
     submission: 'ORIG-1',
