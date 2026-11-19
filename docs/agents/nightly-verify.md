@@ -64,7 +64,11 @@ Note every **error** for step 7. Warnings go in the summary as they are.
 npm run verify -- queue --date "$DATE"
 ```
 
-This writes `.verify/queue.json`. It takes drugs with nothing confirmed yet
+This writes `.verify/queue.json`. Before queueing, it adds an unchecked
+entry for every pivotal trial the site shows that `data/reference/` lacks
+(a new use or trial since the drug was first added, or tidied wording), and
+drops unchecked entries for pairings the site no longer shows; `apply` saves
+those changes with the night's results. It takes drugs with nothing confirmed yet
 first, a whole drug at a time, so drugs become fully checked one by one
 (`npm run -s status`). Each claim asks whether one trial was part
 of the evidence for one approved indication. It comes with the trial's
