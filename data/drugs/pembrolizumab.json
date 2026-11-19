@@ -7,12 +7,11 @@
   "mechanism": "Programmed death receptor-1 (PD-1) blocking antibody",
   "pharmacology": {
     "drugClass": {
-      "name": "programmed death receptor-1 (PD-1)-blocking antibody",
+      "name": "Programmed Death Receptor-1 Blocking Antibody",
       "provenance": {
-        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s195lbl.pdf",
-        "sourceLabel": "Label (SUPPL-195), Highlights",
-        "quote": "KEYTRUDA is a programmed death receptor-1 (PD-1)-blocking antibody indicated",
-        "extractedBy": "regex",
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA125514%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
         "verified": false
       }
     },
@@ -9949,8 +9948,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 73,
-          "quote": "C as a single agent KEYNOTE-042 The efficacy of KEYTRUDA was investigated in KEYNOTE-042 (NCT02220894), a randomized, multicenter, open-label, active-controlled trial conducted in 1274 patien",
+          "page": 24,
+          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
           "extractedBy": "regex",
           "verified": false
         },
@@ -16756,31 +16755,220 @@
       },
       "arms": [
         {
-          "label": "Pembrolizumab",
+          "label": "Cohort A: Pembrolizumab",
           "type": "EXPERIMENTAL",
-          "description": "Participants with carcinoma-in-situ (CIS) with or without papillary tumors (Cohort A) and participants with papillary tumors only, without CIS (Cohort B) will receive pembrolizumab, 200 mg, intravenously, every 3 weeks (Q3W) for up to 24 months."
+          "description": "Participants with carcinoma-in-situ (CIS) with or without papillary tumors will receive pembrolizumab, 200 mg, intravenously, every 3 weeks (Q3W) for up to 24 months."
         },
         {
-          "label": "Pembrolizumab coformulation",
+          "label": "Cohort B: Pembrolizumab",
           "type": "EXPERIMENTAL",
-          "description": "Participants with CIS with or without papillary tumors (Cohort C) will receive either pembrolizumab/vibostolimab or favezelimab/pembrolizumab coformulation intravenously Q3W for up to 24 months"
+          "description": "Participants with papillary tumors only, without CIS will receive pembrolizumab, 200 mg, intravenously, Q3W for up to 24 months."
+        },
+        {
+          "label": "Cohort C: Pembrolizumab/Vibostolimab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with CIS with or without papillary tumors will receive pembrolizumab/vibostolimab coformulation intravenously Q3W for up to 24 months."
+        },
+        {
+          "label": "Cohort C: Favezelimab/Pembrolizumab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants with CIS with or without papillary tumors will receive favezelimab/pembrolizumab coformulation intravenously Q3W for up to 24 months."
         }
       ],
       "primaryEndpoints": [
         "Cohort A: Complete Response (CR) Rate of High-Risk Non-Muscle Invasive Bladder Cancer (NMIBC)",
         "Cohort B: 12-month Disease-Free Survival (DFS) Rate of High-Risk NMIBC",
-        "Cohort A and B: Number of Participants Who Experience an Adverse Event (AE)",
-        "Cohort A and B: Number of Participants Who Discontinue Study Treatment Due to an AE"
+        "Cohort A and B: Number of Participants Who Experienced an Adverse Event (AE)",
+        "Cohort A and B: Number of Participants Who Discontinued Study Treatment Due to an AE"
       ],
       "secondaryEndpoints": [
         "Cohort A: CR Rate of Any Disease",
-        "Cohort A: CR Rate of High-Risk NMIBC in Programmed Cell Death 1 (PDL-1) Positive Participants",
-        "Cohort A: Duration of Response (DOR)",
-        "Cohort A and B: Progression-Free Survival (PFS)",
+        "Cohort A: CR Rate of High-Risk NMIBC in Programmed Cell Death 1 (PDL-1) Combined Positive Score (CPS) <10 Participants",
+        "Cohort A: CR Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+        "Cohort A: CR Rate of Any Disease in PDL-1 CPS <10 Participants",
+        "Cohort A: CR Rate of Any Disease in PDL-1 CPS ≥10 Participants",
+        "Cohort A: Duration of Response (DOR) of High-Risk NMIBC",
+        "Cohort A: DOR of Any Disease",
+        "Cohort A: DOR of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+        "Cohort A: DOR of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+        "Cohort A: DOR of Any Disease in PDL-1 CPS <10 Participants",
+        "Cohort A: DOR of Any Disease in PDL-1 CPS ≥10 Participants",
+        "Cohort A: DOR Rate of High-Risk NMIBC",
+        "Cohort A: DOR Rate of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+        "Cohort A: DOR Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+        "Cohort A: DOR Rate of Any Disease",
+        "Cohort A: DOR Rate of Any Disease in PDL-1 CPS <10 Participants",
+        "Cohort A: DOR Rate of Any Disease in PDL-1 CPS ≥10 Participants",
+        "Cohort A and B: Progression-Free Survival (PFS) to Worsening of Grade or Stage to Death",
+        "Cohort A and B: PFS to Worsening of Grade or Stage to Death in PDL-1 CPS <10 Participants",
+        "Cohort A and B: PFS to Worsening of Grade or Stage to Death in PDL-1 CPS ≥10 Participants",
+        "Cohort A and B: PFS to Muscle-Invasive or Metastatic Disease or Death",
+        "Cohort A and B: PFS to Muscle-Invasive or Metastatic Disease or Death in PDL-1 CPS <10 Participants",
+        "Cohort A and B: PFS to Muscle-Invasive or Metastatic Disease or Death in PDL-1 CPS ≥10 Participants",
         "Cohort A and B: Overall Survival (OS)",
-        "Cohort B: DFS Rate of Any Disease",
+        "Cohort A and B: OS in PD-L1 CPS <10 Participants",
+        "Cohort A and B: OS in PD-L1 CPS ≥10 Participants",
         "Cohort B: 12-month DFS Rate of Any Disease",
-        "Cohort B: 12-month DFS Rate of High-Risk NMIBC in PDL-1 Positive Participants"
+        "Cohort B: 12-month DFS Rate of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+        "Cohort B: 12-month DFS Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+        "Cohort B: 12-month DFS Rate of Any Disease in PDL-1 CPS <10 Participants",
+        "Cohort B: 12-month DFS Rate of Any Disease in PDL-1 CPS ≥10 Participants",
+        "Cohort B: Overall DFS of High-Risk NMIBC",
+        "Cohort B: Overall DFS of Any Disease",
+        "Cohort B: Overall DFS of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+        "Cohort B: Overall DFS of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+        "Cohort B: Overall DFS of Any Disease in PDL-1 CPS <10 Participants",
+        "Cohort B: Overall DFS of Any Disease in PDL-1 CPS ≥10 Participants",
+        "Cohort B: 3 Month DFS Rate of High-Risk NMIBC",
+        "Cohort B: 3 Month DFS Rate of Any Disease",
+        "Cohort B: 3 Month DFS Rate of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+        "Cohort B: 3 Month DFS Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+        "Cohort B: 3 Month DFS Rate of Any Disease in PDL-1 CPS <10 Participants",
+        "Cohort B: 3 Month DFS Rate of Any Disease in PDL-1 CPS ≥10 Participants",
+        "Cohort B: 6 Month DFS Rate of High-Risk NMIBC",
+        "Cohort B: 6 Month DFS Rate of Any Disease",
+        "Cohort B: 6 Month DFS Rate of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+        "Cohort B: 6 Month DFS Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+        "Cohort B: 6 Month DFS Rate of Any Disease in PDL-1 CPS <10 Participants",
+        "Cohort B: 6 Month DFS Rate of Any Disease in PDL-1 CPS ≥10 Participants"
+      ],
+      "postedResults": [
+        {
+          "title": "Cohort A: Complete Response (CR) Rate of High-Risk Non-Muscle Invasive Bladder Cancer (NMIBC)",
+          "timeFrame": "Up to approximately 84 months",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort A: Pembrolizumab"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort B: Pembrolizumab"
+            },
+            {
+              "id": "OG002",
+              "title": "Cohort C: Pembrolizumab/Vibostolimab"
+            },
+            {
+              "id": "OG003",
+              "title": "Cohort C: Favezelimab/Pembrolizumab"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "36.7",
+              "lowerLimit": "28.7",
+              "upperLimit": "45.3"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Cohort B: 12-month Disease-Free Survival (DFS) Rate of High-Risk NMIBC",
+          "timeFrame": "Up to approximately 12 months",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Percentage of Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort A: Pembrolizumab"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort B: Pembrolizumab"
+            },
+            {
+              "id": "OG002",
+              "title": "Cohort C: Pembrolizumab/Vibostolimab"
+            },
+            {
+              "id": "OG003",
+              "title": "Cohort C: Favezelimab/Pembrolizumab"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG001",
+              "value": "43.5",
+              "lowerLimit": "34.9",
+              "upperLimit": "51.9"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Cohort A and B: Number of Participants Who Experienced an Adverse Event (AE)",
+          "timeFrame": "Up to approximately 113 months",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort A: Pembrolizumab"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort B: Pembrolizumab"
+            },
+            {
+              "id": "OG002",
+              "title": "Cohort C: Pembrolizumab/Vibostolimab"
+            },
+            {
+              "id": "OG003",
+              "title": "Cohort C: Favezelimab/Pembrolizumab"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "134"
+            },
+            {
+              "groupId": "OG001",
+              "value": "125"
+            }
+          ],
+          "analyses": []
+        },
+        {
+          "title": "Cohort A and B: Number of Participants Who Discontinued Study Treatment Due to an AE",
+          "timeFrame": "Up to approximately 27 months",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Cohort A: Pembrolizumab"
+            },
+            {
+              "id": "OG001",
+              "title": "Cohort B: Pembrolizumab"
+            },
+            {
+              "id": "OG002",
+              "title": "Cohort C: Pembrolizumab/Vibostolimab"
+            },
+            {
+              "id": "OG003",
+              "title": "Cohort C: Favezelimab/Pembrolizumab"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "16"
+            },
+            {
+              "groupId": "OG001",
+              "value": "20"
+            }
+          ],
+          "analyses": []
+        }
       ],
       "metPrimaryEndpoint": null,
       "takeaways": [],
@@ -16817,11 +17005,17 @@
           "extractedBy": "api",
           "verified": false
         },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02625961?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 91,
-          "quote": "-Muscle Invasive Bladder Cancer The efficacy of KEYTRUDA was investigated in KEYNOTE-057 (NCT02625961), a multicenter, open- label, single-arm trial in 96 patients with Bacillus Calmette-Guer",
+          "page": 39,
+          "quote": "CI CTCAE v4.0 BCG-unresponsive High-risk NMIBC The safety of KEYTRUDA was investigated in KEYNOTE-057, a multicenter, open-label, single-arm trial that enrolled 148 patients with high-risk no",
           "extractedBy": "regex",
           "verified": false
         },
@@ -16868,6 +17062,267 @@
             }
           ],
           "detectedAt": "2026-10-29T05:36:27.832Z"
+        },
+        {
+          "field": "arms",
+          "previousValue": [
+            {
+              "label": "Pembrolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "Participants with carcinoma-in-situ (CIS) with or without papillary tumors (Cohort A) and participants with papillary tumors only, without CIS (Cohort B) will receive pembrolizumab, 200 mg, intravenously, every 3 weeks (Q3W) for up to 24 months."
+            },
+            {
+              "label": "Pembrolizumab coformulation",
+              "type": "EXPERIMENTAL",
+              "description": "Participants with CIS with or without papillary tumors (Cohort C) will receive either pembrolizumab/vibostolimab or favezelimab/pembrolizumab coformulation intravenously Q3W for up to 24 months"
+            }
+          ],
+          "newValue": [
+            {
+              "label": "Cohort A: Pembrolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "Participants with carcinoma-in-situ (CIS) with or without papillary tumors will receive pembrolizumab, 200 mg, intravenously, every 3 weeks (Q3W) for up to 24 months."
+            },
+            {
+              "label": "Cohort B: Pembrolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "Participants with papillary tumors only, without CIS will receive pembrolizumab, 200 mg, intravenously, Q3W for up to 24 months."
+            },
+            {
+              "label": "Cohort C: Pembrolizumab/Vibostolimab",
+              "type": "EXPERIMENTAL",
+              "description": "Participants with CIS with or without papillary tumors will receive pembrolizumab/vibostolimab coformulation intravenously Q3W for up to 24 months."
+            },
+            {
+              "label": "Cohort C: Favezelimab/Pembrolizumab",
+              "type": "EXPERIMENTAL",
+              "description": "Participants with CIS with or without papillary tumors will receive favezelimab/pembrolizumab coformulation intravenously Q3W for up to 24 months."
+            }
+          ],
+          "detectedAt": "2026-11-15T07:54:58.385Z"
+        },
+        {
+          "field": "primaryEndpoints",
+          "previousValue": [
+            "Cohort A: Complete Response (CR) Rate of High-Risk Non-Muscle Invasive Bladder Cancer (NMIBC)",
+            "Cohort B: 12-month Disease-Free Survival (DFS) Rate of High-Risk NMIBC",
+            "Cohort A and B: Number of Participants Who Experience an Adverse Event (AE)",
+            "Cohort A and B: Number of Participants Who Discontinue Study Treatment Due to an AE"
+          ],
+          "newValue": [
+            "Cohort A: Complete Response (CR) Rate of High-Risk Non-Muscle Invasive Bladder Cancer (NMIBC)",
+            "Cohort B: 12-month Disease-Free Survival (DFS) Rate of High-Risk NMIBC",
+            "Cohort A and B: Number of Participants Who Experienced an Adverse Event (AE)",
+            "Cohort A and B: Number of Participants Who Discontinued Study Treatment Due to an AE"
+          ],
+          "detectedAt": "2026-11-15T07:54:58.385Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "Cohort A: CR Rate of Any Disease",
+            "Cohort A: CR Rate of High-Risk NMIBC in Programmed Cell Death 1 (PDL-1) Positive Participants",
+            "Cohort A: Duration of Response (DOR)",
+            "Cohort A and B: Progression-Free Survival (PFS)",
+            "Cohort A and B: Overall Survival (OS)",
+            "Cohort B: DFS Rate of Any Disease",
+            "Cohort B: 12-month DFS Rate of Any Disease",
+            "Cohort B: 12-month DFS Rate of High-Risk NMIBC in PDL-1 Positive Participants"
+          ],
+          "newValue": [
+            "Cohort A: CR Rate of Any Disease",
+            "Cohort A: CR Rate of High-Risk NMIBC in Programmed Cell Death 1 (PDL-1) Combined Positive Score (CPS) <10 Participants",
+            "Cohort A: CR Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+            "Cohort A: CR Rate of Any Disease in PDL-1 CPS <10 Participants",
+            "Cohort A: CR Rate of Any Disease in PDL-1 CPS ≥10 Participants",
+            "Cohort A: Duration of Response (DOR) of High-Risk NMIBC",
+            "Cohort A: DOR of Any Disease",
+            "Cohort A: DOR of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+            "Cohort A: DOR of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+            "Cohort A: DOR of Any Disease in PDL-1 CPS <10 Participants",
+            "Cohort A: DOR of Any Disease in PDL-1 CPS ≥10 Participants",
+            "Cohort A: DOR Rate of High-Risk NMIBC",
+            "Cohort A: DOR Rate of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+            "Cohort A: DOR Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+            "Cohort A: DOR Rate of Any Disease",
+            "Cohort A: DOR Rate of Any Disease in PDL-1 CPS <10 Participants",
+            "Cohort A: DOR Rate of Any Disease in PDL-1 CPS ≥10 Participants",
+            "Cohort A and B: Progression-Free Survival (PFS) to Worsening of Grade or Stage to Death",
+            "Cohort A and B: PFS to Worsening of Grade or Stage to Death in PDL-1 CPS <10 Participants",
+            "Cohort A and B: PFS to Worsening of Grade or Stage to Death in PDL-1 CPS ≥10 Participants",
+            "Cohort A and B: PFS to Muscle-Invasive or Metastatic Disease or Death",
+            "Cohort A and B: PFS to Muscle-Invasive or Metastatic Disease or Death in PDL-1 CPS <10 Participants",
+            "Cohort A and B: PFS to Muscle-Invasive or Metastatic Disease or Death in PDL-1 CPS ≥10 Participants",
+            "Cohort A and B: Overall Survival (OS)",
+            "Cohort A and B: OS in PD-L1 CPS <10 Participants",
+            "Cohort A and B: OS in PD-L1 CPS ≥10 Participants",
+            "Cohort B: 12-month DFS Rate of Any Disease",
+            "Cohort B: 12-month DFS Rate of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+            "Cohort B: 12-month DFS Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+            "Cohort B: 12-month DFS Rate of Any Disease in PDL-1 CPS <10 Participants",
+            "Cohort B: 12-month DFS Rate of Any Disease in PDL-1 CPS ≥10 Participants",
+            "Cohort B: Overall DFS of High-Risk NMIBC",
+            "Cohort B: Overall DFS of Any Disease",
+            "Cohort B: Overall DFS of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+            "Cohort B: Overall DFS of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+            "Cohort B: Overall DFS of Any Disease in PDL-1 CPS <10 Participants",
+            "Cohort B: Overall DFS of Any Disease in PDL-1 CPS ≥10 Participants",
+            "Cohort B: 3 Month DFS Rate of High-Risk NMIBC",
+            "Cohort B: 3 Month DFS Rate of Any Disease",
+            "Cohort B: 3 Month DFS Rate of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+            "Cohort B: 3 Month DFS Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+            "Cohort B: 3 Month DFS Rate of Any Disease in PDL-1 CPS <10 Participants",
+            "Cohort B: 3 Month DFS Rate of Any Disease in PDL-1 CPS ≥10 Participants",
+            "Cohort B: 6 Month DFS Rate of High-Risk NMIBC",
+            "Cohort B: 6 Month DFS Rate of Any Disease",
+            "Cohort B: 6 Month DFS Rate of High-Risk NMIBC in PDL-1 CPS <10 Participants",
+            "Cohort B: 6 Month DFS Rate of High-Risk NMIBC in PDL-1 CPS ≥10 Participants",
+            "Cohort B: 6 Month DFS Rate of Any Disease in PDL-1 CPS <10 Participants",
+            "Cohort B: 6 Month DFS Rate of Any Disease in PDL-1 CPS ≥10 Participants"
+          ],
+          "detectedAt": "2026-11-15T07:54:58.385Z"
+        },
+        {
+          "field": "postedResults",
+          "newValue": [
+            {
+              "title": "Cohort A: Complete Response (CR) Rate of High-Risk Non-Muscle Invasive Bladder Cancer (NMIBC)",
+              "timeFrame": "Up to approximately 84 months",
+              "paramType": "NUMBER",
+              "unitOfMeasure": "Percentage of Participants",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Cohort A: Pembrolizumab"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Cohort B: Pembrolizumab"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Cohort C: Pembrolizumab/Vibostolimab"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Cohort C: Favezelimab/Pembrolizumab"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "36.7",
+                  "lowerLimit": "28.7",
+                  "upperLimit": "45.3"
+                }
+              ],
+              "analyses": []
+            },
+            {
+              "title": "Cohort B: 12-month Disease-Free Survival (DFS) Rate of High-Risk NMIBC",
+              "timeFrame": "Up to approximately 12 months",
+              "paramType": "NUMBER",
+              "unitOfMeasure": "Percentage of Participants",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Cohort A: Pembrolizumab"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Cohort B: Pembrolizumab"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Cohort C: Pembrolizumab/Vibostolimab"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Cohort C: Favezelimab/Pembrolizumab"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG001",
+                  "value": "43.5",
+                  "lowerLimit": "34.9",
+                  "upperLimit": "51.9"
+                }
+              ],
+              "analyses": []
+            },
+            {
+              "title": "Cohort A and B: Number of Participants Who Experienced an Adverse Event (AE)",
+              "timeFrame": "Up to approximately 113 months",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Cohort A: Pembrolizumab"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Cohort B: Pembrolizumab"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Cohort C: Pembrolizumab/Vibostolimab"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Cohort C: Favezelimab/Pembrolizumab"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "134"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "125"
+                }
+              ],
+              "analyses": []
+            },
+            {
+              "title": "Cohort A and B: Number of Participants Who Discontinued Study Treatment Due to an AE",
+              "timeFrame": "Up to approximately 27 months",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Cohort A: Pembrolizumab"
+                },
+                {
+                  "id": "OG001",
+                  "title": "Cohort B: Pembrolizumab"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Cohort C: Pembrolizumab/Vibostolimab"
+                },
+                {
+                  "id": "OG003",
+                  "title": "Cohort C: Favezelimab/Pembrolizumab"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "16"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "20"
+                }
+              ],
+              "analyses": []
+            }
+          ],
+          "detectedAt": "2026-11-15T07:54:58.385Z"
         }
       ]
     },
@@ -19398,14 +19853,6 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03850444",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
-          "verified": false
-        },
-        "citedIn": {
-          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-          "sourceLabel": "FDA approval package",
-          "page": 24,
-          "quote": "tfda Previously Untreated NSCLC The safety of KEYTRUDA was investigated in KEYNOTE-042, a multicenter, open-label, randomized (1:1), active-controlled trial in 1251 patients wi",
-          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -30808,8 +31255,8 @@
         "citedIn": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
           "sourceLabel": "FDA approval package",
-          "page": 1,
-          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
+          "page": 135,
+          "quote": "h fluoropyrimidine- and platinum-containing chemotherapy was investigated in KEYNOTE-859 (NCT03675737), a multicenter, randomized, double-blind, placebo-controlled trial that enrolled 1579 pa",
           "extractedBy": "regex",
           "verified": false
         },
@@ -30966,6 +31413,14 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT04859582",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 1,
+          "quote": "on of specific companion diagnostic assays used in clinical trials for gastric cancer (in KEYNOTE-859 and KEYNOTE-811) and cervical cancer (in KEYNOTE-826) in Sections 14.10 and 14.12, respec",
+          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -32257,6 +32712,14 @@
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03881111",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 41,
+          "quote": "safety of KEYTRUDA, in combination with cisplatin and FU chemotherapy was investigated in KEYNOTE-590, a multicenter, double-blind, randomized (1:1), placebo-controlled trial for the first-li",
+          "extractedBy": "regex",
           "verified": false
         }
       },
@@ -43600,7 +44063,7 @@
       "briefTitle": "Evaluation of Co-formulated Pembrolizumab/Quavonlimab (MK-1308A) Versus Other Treatments in Participants With Microsatellite Instability-High (MSI-H) or Mismatch Repair Deficient (dMMR) Stage IV Colorectal Cancer (CRC) (MK-1308A-008/KEYSTEP-008).",
       "phase": "PHASE2",
       "roles": [],
-      "status": "ACTIVE_NOT_RECRUITING",
+      "status": "COMPLETED",
       "sponsor": "Merck Sharp & Dohme LLC",
       "studyType": "INTERVENTIONAL",
       "conditions": [
@@ -43625,7 +44088,7 @@
         "precision": "day"
       },
       "completionDate": {
-        "value": "2026-08-06",
+        "value": "2026-08-07",
         "precision": "day"
       },
       "enrollment": {
@@ -43730,7 +44193,26 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "ACTIVE_NOT_RECRUITING",
+          "newValue": "COMPLETED",
+          "detectedAt": "2026-11-15T07:54:58.385Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2026-08-06",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-08-07",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-15T07:54:58.385Z"
+        }
+      ]
     },
     {
       "id": "3475-b99",
@@ -48555,7 +49037,7 @@
       "briefTitle": "A Substudy of Investigational Agents in Programmed Cell Death-1/Ligand 1 (PD-1/L1) Refractory Locally Advanced or Metastatic Urothelial Carcinoma (mUC) (MK-3475-04A)",
       "phase": "PHASE1_2",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Merck Sharp & Dohme LLC",
       "studyType": "INTERVENTIONAL",
       "conditions": [
@@ -48653,7 +49135,14 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-11-15T07:54:58.385Z"
+        }
+      ]
     },
     {
       "id": "6598-001",
@@ -55630,7 +56119,7 @@
           "description": "Participants receive 5.6 mg/kg of R-DXD, every 3 weeks (Q3W) (Day 1 of every 21-day cycle) via intravenous (IV) infusion until progressive disease (PD) or discontinuation."
         },
         {
-          "label": "Arm 2: Infinatamab deruxtecan (I-DXD) High Dose",
+          "label": "Arm 2: Ifinatamab deruxtecan (I-DXD) High Dose",
           "type": "EXPERIMENTAL",
           "description": "Participants receive 12 mg/kg of I-DXD, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
         },
@@ -55691,7 +56180,56 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "arms",
+          "previousValue": [
+            {
+              "label": "Arm 1: Raludotatug deruxtecan (R-DXD)",
+              "type": "EXPERIMENTAL",
+              "description": "Participants receive 5.6 mg/kg of R-DXD, every 3 weeks (Q3W) (Day 1 of every 21-day cycle) via intravenous (IV) infusion until progressive disease (PD) or discontinuation."
+            },
+            {
+              "label": "Arm 2: Infinatamab deruxtecan (I-DXD) High Dose",
+              "type": "EXPERIMENTAL",
+              "description": "Participants receive 12 mg/kg of I-DXD, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+            },
+            {
+              "label": "Arm 3: I-DXD Low Dose",
+              "type": "EXPERIMENTAL",
+              "description": "Participants receive 8 mg/kg of I-DXD, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+            },
+            {
+              "label": "Arm 4: Docetaxel",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants receive 75 mg/m\\^2 of Docetaxel, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+            }
+          ],
+          "newValue": [
+            {
+              "label": "Arm 1: Raludotatug deruxtecan (R-DXD)",
+              "type": "EXPERIMENTAL",
+              "description": "Participants receive 5.6 mg/kg of R-DXD, every 3 weeks (Q3W) (Day 1 of every 21-day cycle) via intravenous (IV) infusion until progressive disease (PD) or discontinuation."
+            },
+            {
+              "label": "Arm 2: Ifinatamab deruxtecan (I-DXD) High Dose",
+              "type": "EXPERIMENTAL",
+              "description": "Participants receive 12 mg/kg of I-DXD, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+            },
+            {
+              "label": "Arm 3: I-DXD Low Dose",
+              "type": "EXPERIMENTAL",
+              "description": "Participants receive 8 mg/kg of I-DXD, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+            },
+            {
+              "label": "Arm 4: Docetaxel",
+              "type": "ACTIVE_COMPARATOR",
+              "description": "Participants receive 75 mg/m\\^2 of Docetaxel, Q3W (Day 1 of every 21-day cycle) via IV infusion until PD or discontinuation."
+            }
+          ],
+          "detectedAt": "2026-11-15T07:54:58.385Z"
+        }
+      ]
     },
     {
       "id": "v940-012",
@@ -55701,7 +56239,7 @@
       "briefTitle": "A Clinical Study of Intismeran Autogene (V940) and Pembrolizumab (MK-3475) in People With Melanoma (V940-012/INTerpath-012)",
       "phase": "PHASE2",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Merck Sharp & Dohme LLC",
       "studyType": "INTERVENTIONAL",
       "conditions": [
@@ -55803,7 +56341,14 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-11-15T07:54:58.385Z"
+        }
+      ]
     },
     {
       "id": "prefer",
@@ -56497,6 +57042,127 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT06780111",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "laser",
+      "nctId": "NCT07928167",
+      "protocolNumber": "LASER",
+      "title": "A Randomized Phase 2 Trial of Lenvatinib Plus Pembrolizumab With or Without Stereotactic Radiation Therapy in Patients With Clear-cell Metastatic Renal Cell Carcinoma, Low Tumor Burden, and Stable Disease.",
+      "briefTitle": "Lenvatinib And Stereotactic radiothErapy With pembRolizumab in Metastatic Kidney Cancer Patients",
+      "phase": "PHASE2",
+      "roles": [
+        {
+          "role": "DOSE_FINDING",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
+            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "Kidney Cancer Research Bureau",
+      "sponsorClass": "OTHER",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Metastatic Renal Cell Carcinoma ( mRCC)"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002292",
+          "term": "Carcinoma, Renal Cell"
+        },
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        }
+      ],
+      "startDate": {
+        "value": "2025-08-25",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2027-01-15",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-01-01",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 150,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Lenvatinib + Pembrolizumab + SBRT",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "label": "Lenvatinib + Pembrolizumab",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants with Response of unirradiated lesions according to RECIST v1.1"
+      ],
+      "secondaryEndpoints": [
+        "Median progression-free survival",
+        "Median overall survival",
+        "Median duration of response",
+        "Rate of local control of irradiated lesions",
+        "Number of Participants with Treatment-Related Adverse Events as Assessed by CTCAE v5.0"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07928167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07928167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07928167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07928167",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT07928167",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -63202,5 +63868,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:10:12.888Z"
+  "lastIngestedAt": "2026-11-15T07:54:58.385Z"
 }
