@@ -439,6 +439,22 @@ describe('classifyTrialRoles', () => {
  * observational studies, or run by an academic sponsor rather than the
  * applicant. Both signals are already on the registry record.
  */
+describe('classifyTrialRoles — review citations', () => {
+  const ctx = ctxFor(null, { sponsorName: 'Incyte Corporation', reviewText: 'Reviewer comment: we reviewed the PREVENT and REVIEW sections. Study INCB 18424-303 (NCT03745638) was reviewed.' });
+
+  it("doesn't count an outside investigator study's word-like acronym found in the review (Opzelura)", () => {
+    const t = trial({ nctId: 'NCT04947709', acronym: 'PREVENT', sponsor: 'Centre Hospitalier Universitaire de Nice', sponsorClass: 'OTHER', phase: 'PHASE2' });
+    expect(classifyTrialRoles(t, ctx).roles).toEqual([]);
+  });
+
+  it("still counts the applicant's trial, and anyone's trial named by its NCT number", () => {
+    const own = trial({ nctId: 'NCT09999999', acronym: 'REVIEW', sponsor: 'Incyte Corporation', phase: 'PHASE3' });
+    expect(classifyTrialRoles(own, ctx).roles.map((r) => r.role)).toEqual(['SUPPORTIVE']);
+    const outside = trial({ nctId: 'NCT03745638', acronym: 'PREVENT', sponsor: 'Some University', sponsorClass: 'OTHER', phase: 'PHASE2' });
+    expect(classifyTrialRoles(outside, ctx).roles.map((r) => r.role)).toEqual(['DOSE_FINDING']);
+  });
+});
+
 describe('classifyTrialRoles — sponsor and study-type guard', () => {
   // A span that names a real trial (with a citation) and also happens to
   // mention two others with no citation at all — an academic one and an

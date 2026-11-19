@@ -683,7 +683,13 @@ export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignme
   // Not named in any indication's section 14 span. Cited in the review
   // without a specific indication attributed — supporting evidence, not
   // (yet) tied to one approval.
-  const inReview = ids.length > 0 && mentions(ctx.reviewText, ids);
+  // A trial run by someone else counts only by an identifier no prose shares
+  // (its NCT or protocol number): an investigator study acronymed "REVIEW",
+  // "PREVENT" or "JAK2" matches words every review uses.
+  const reviewIds = looksLikeSponsorTrial(trial, ctx.sponsorName, ctx.knownTrialSponsors)
+    ? ids
+    : ids.filter((id) => id !== trial.acronym);
+  const inReview = reviewIds.length > 0 && mentions(ctx.reviewText, reviewIds);
   if (inReview) {
     const byPhase: Partial<Record<Trial['phase'], TrialRole>> = {
       EARLY_PHASE1: 'PK',

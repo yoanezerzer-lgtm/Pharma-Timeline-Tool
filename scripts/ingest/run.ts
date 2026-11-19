@@ -6,7 +6,7 @@ import type { DrugSpec } from './registry.js';
 import { identityFromApplication, registrySearchTerm, runFdaStage, trialMatchName, type FdaStageResult } from './fda.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
 import { extractCandidates, resolveCandidates, type ResolveReport } from './codes.js';
-import { codeNamesFrom, studyToTrial, searchByIntervention, ctgovStudyUrl, studyMatchesDrug } from './ctgov.js';
+import { codeNamesFrom, studyToTrial, searchByIntervention, ctgovStudyUrl, studyIsTopical, studyMatchesDrug } from './ctgov.js';
 import {
   applyRoles,
   extractLabelSection14,
@@ -200,7 +200,12 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     log('[ctgov] searching the registry for every trial of this drug');
     const byCode = await Promise.all(codes.map((c) => searchByIntervention(ctx, c)));
     const all = [...new Map([registered, ...byCode].flat().map((s) => [s.protocolSection?.identificationModule?.nctId, s])).values()];
-    const forDrug = all.filter((s) => studyMatchesDrug(s, spec.interventionNames));
+    // A topical product keeps only its topical trials: the same ingredient
+    // taken by mouth is another product (Opzelura's ruxolitinib is Jakafi's
+    // too). Trials the FDA documents cite were found above and stay.
+    const topical = (fda.application.products ?? []).some((p) => /topical/i.test(p.route ?? ''));
+    const forDrug = all.filter((s) => studyMatchesDrug(s, spec.interventionNames) && (!topical || studyIsTopical(s)));
+    if (topical) log(`        topical product: ${all.filter((s) => studyMatchesDrug(s, spec.interventionNames) && !studyIsTopical(s)).length} registry trials of other forms left out`);
     registeredTrialCount = forDrug.length;
     let added = 0;
     for (const study of forDrug) {

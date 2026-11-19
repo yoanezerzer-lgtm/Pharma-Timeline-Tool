@@ -40,7 +40,7 @@ export interface CtgovStudy {
       };
     };
     armsInterventionsModule?: {
-      interventions?: { name?: string; type?: string; otherNames?: string[] }[];
+      interventions?: { name?: string; type?: string; description?: string; otherNames?: string[] }[];
       armGroups?: { label?: string; type?: string; description?: string }[];
     };
     eligibilityModule?: {
@@ -353,6 +353,28 @@ export function ctgovStudyUrl(nctId: string): string {
   return `https://clinicaltrials.gov/study/${nctId}`;
 }
 
+/** An intervention naming several drugs: "parsaclisib + ruxolitinib", "A and B", "A plus B". */
+const COMBINATION = /\+|\s(?:and|plus)\s/i;
+
+/**
+ * Words that say a registry study gives the drug on the skin. A topical
+ * product (Opzelura, ruxolitinib cream) shares its ingredient with an oral
+ * one (Jakafi) from the same company; only the cream's trials are its own.
+ */
+const TOPICAL_FORM = /\b(?:creams?|ointments?|gels?|foams?|lotions?|topical(?:ly)?|dermal|cutaneous|transdermal|emulsion)\b/i;
+
+/** Whether the study gives the drug in a topical form, by its interventions or titles. */
+export function studyIsTopical(study: CtgovStudy): boolean {
+  const interventions = study.protocolSection?.armsInterventionsModule?.interventions ?? [];
+  const idm = study.protocolSection?.identificationModule;
+  const texts = [
+    ...interventions.flatMap((i) => [i.name, i.description, ...(i.otherNames ?? [])]),
+    idm?.briefTitle,
+    idm?.officialTitle,
+  ];
+  return texts.some((t) => !!t && TOPICAL_FORM.test(t));
+}
+
 /** A development code as registries write one: "AZD9833", "ABT-494", "MK-3475". */
 const CODE_NAME = /^[A-Z]{2,6}[- ]?\d{3,7}[A-Z]?$/;
 
@@ -370,6 +392,8 @@ export function codeNamesFrom(studies: CtgovStudy[], inn: string): string[] {
     for (const i of s.protocolSection?.armsInterventionsModule?.interventions ?? []) {
       const listed = [i.name, ...(i.otherNames ?? [])].filter((x): x is string => !!x).map((x) => x.trim());
       if (!names(want, listed.map((n) => n.toLowerCase()))) continue;
+      // "parsaclisib + ruxolitinib" lists both drugs' codes: none of them is safely this drug's.
+      if (!want.includes('+') && COMBINATION.test(i.name ?? '')) continue;
       for (const n of listed) if (CODE_NAME.test(n)) out.add(n);
     }
   }
