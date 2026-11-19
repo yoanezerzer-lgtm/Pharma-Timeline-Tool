@@ -4260,6 +4260,10 @@
         "value": "2016-02-01",
         "precision": "month"
       },
+      "readoutDate": {
+        "value": "2016-04-01",
+        "precision": "day"
+      },
       "enrollment": {
         "count": 671,
         "type": "ACTUAL"
@@ -4434,16 +4438,12 @@
         "readoutDate": {
           "sourceUrl": "https://www.prnewswire.com/news-releases/regeneron-and-sanofi-announce-positive-dupilumab-topline-results-from-two-phase-3-trials-in-inadequately-controlled-moderate-to-severe-atopic-dermatitis-patients-300244487.html",
           "sourceLabel": "PR Newswire: Regeneron and Sanofi Announce Positive Dupilumab Topline Results from Two Phase 3 Trials in Inadequately Controlled Moderate-to-Severe Atopic Dermatitis Patients",
-          "quote": "For SOLO 1 and SOLO 2, respectively, 37 and 36 percent of patients who received dupilumab 300 mg weekly, and 38 and 36 percent of patients who received dupilumab 300 mg every two weeks, achieved clearing or near-clearing of skin lesions (IGA 0 or 1), compared to 10 and 8.5 percent with placebo (p less than 0.0001).",
+          "quote": "TARRYTOWN, N.Y and PARIS , April 1, 2016 /PRNewswire/ -- Regeneron Pharmaceuticals, Inc. (NASDAQ: REGN ) and Sanofi today announced that two placebo-controlled Phase 3 studies evaluating investigational dupilumab in adult patients with inadequately controlled moderate-to-severe atopic dermatitis (AD) met their primary…",
           "extractedBy": "regex",
           "verified": false
         }
       },
-      "changeLog": [],
-      "readoutDate": {
-        "value": "2016-04-01",
-        "precision": "day"
-      }
+      "changeLog": []
     },
     {
       "id": "pkm14161",
@@ -4610,6 +4610,10 @@
       },
       "completionDate": {
         "value": "2016-01-31",
+        "precision": "day"
+      },
+      "readoutDate": {
+        "value": "2016-04-01",
         "precision": "day"
       },
       "enrollment": {
@@ -4786,16 +4790,12 @@
         "readoutDate": {
           "sourceUrl": "https://www.prnewswire.com/news-releases/regeneron-and-sanofi-announce-positive-dupilumab-topline-results-from-two-phase-3-trials-in-inadequately-controlled-moderate-to-severe-atopic-dermatitis-patients-300244487.html",
           "sourceLabel": "PR Newswire: Regeneron and Sanofi Announce Positive Dupilumab Topline Results from Two Phase 3 Trials in Inadequately Controlled Moderate-to-Severe Atopic Dermatitis Patients",
-          "quote": "For SOLO 1 and SOLO 2, respectively, 37 and 36 percent of patients who received dupilumab 300 mg weekly, and 38 and 36 percent of patients who received dupilumab 300 mg every two weeks, achieved clearing or near-clearing of skin lesions (IGA 0 or 1), compared to 10 and 8.5 percent with placebo (p less than 0.0001).",
+          "quote": "TARRYTOWN, N.Y and PARIS , April 1, 2016 /PRNewswire/ -- Regeneron Pharmaceuticals, Inc. (NASDAQ: REGN ) and Sanofi today announced that two placebo-controlled Phase 3 studies evaluating investigational dupilumab in adult patients with inadequately controlled moderate-to-severe atopic dermatitis (AD) met their primary…",
           "extractedBy": "regex",
           "verified": false
         }
       },
-      "changeLog": [],
-      "readoutDate": {
-        "value": "2016-04-01",
-        "precision": "day"
-      }
+      "changeLog": []
     },
     {
       "id": "pkm14271",
@@ -7020,6 +7020,13 @@
           "quote": "ndomized, placebo-controlled, multicenter trials of 24 to 52 weeks duration (SINUS-24 and SINUS-52). The safety pool consisted of data from the first 24 weeks of treatment from both studie",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.prnewswire.com/news-releases/dupixent-dupilumab-showed-positive-topline-results-in-two-phase-3-trials-of-patients-with-chronic-rhinosinusitis-with-nasal-polyps-300731373.html",
+          "sourceLabel": "PR Newswire: Dupixent® (dupilumab) Showed Positive Topline Results in Two Phase 3 Trials of Patients with Chronic Rhinosinusitis with Nasal Polyps",
+          "quote": "Regeneron Pharmaceuticals, Inc. (NASDAQ: REGN ) and Sanofi today announced that both pivotal Phase 3 placebo-controlled trials evaluating Dupixent ® (dupilumab) in adults with inadequately-controlled chronic rhinosinusitis with nasal polyps (\"CRSwNP\"), met all their primary and secondary endpoints.",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -7063,7 +7070,11 @@
           ],
           "detectedAt": "2026-11-07T20:38:48.423Z"
         }
-      ]
+      ],
+      "readoutDate": {
+        "value": "2018-10-16",
+        "precision": "day"
+      }
     },
     {
       "id": "sinus-24",
@@ -7316,6 +7327,13 @@
           "quote": "uated in 2 randomized, placebo-controlled, multicenter trials of 24 to 52 weeks duration (SINUS-24 and SINUS-52). The safety pool consisted of data from the first 24 weeks of treatment fro",
           "extractedBy": "regex",
           "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.prnewswire.com/news-releases/dupixent-dupilumab-showed-positive-topline-results-in-two-phase-3-trials-of-patients-with-chronic-rhinosinusitis-with-nasal-polyps-300731373.html",
+          "sourceLabel": "PR Newswire: Dupixent® (dupilumab) Showed Positive Topline Results in Two Phase 3 Trials of Patients with Chronic Rhinosinusitis with Nasal Polyps",
+          "quote": "Regeneron Pharmaceuticals, Inc. (NASDAQ: REGN ) and Sanofi today announced that both pivotal Phase 3 placebo-controlled trials evaluating Dupixent ® (dupilumab) in adults with inadequately-controlled chronic rhinosinusitis with nasal polyps (\"CRSwNP\"), met all their primary and secondary endpoints.",
+          "extractedBy": "regex",
+          "verified": false
         }
       },
       "changeLog": [
@@ -7359,7 +7377,11 @@
           ],
           "detectedAt": "2026-11-07T20:38:48.423Z"
         }
-      ]
+      ],
+      "readoutDate": {
+        "value": "2018-10-16",
+        "precision": "day"
+      }
     },
     {
       "id": "r668-ad-1607",
