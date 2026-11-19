@@ -18,6 +18,20 @@ cost far less than the industry databases (§11); it's sourced word for word, so
 footnote, and within an area it's complete: a precedent list with a drug
 missing is wrong, so an area isn't shown as complete until it is.
 
+**In one line** (owner, 19 Nov): *the FDA approval record for a disease:
+every approval, its trials, its results and its timeline, complete and
+sourced, in ten minutes.* A page or feature that doesn't serve this line
+is cut or moved down.
+
+The approved use is the unit, not the drug. Broad drug databases
+(DrugBank, Cortellis, Citeline) centre on the molecule and sell platforms
+to companies; they also claim traceable facts, so a source on every fact
+is not enough on its own. We go deeper on regulatory history (letters,
+labels over time, review time), promise completeness within an area, and
+sell a finished deliverable to one professional. Worth taking from them:
+alerts on new approvals, data downloads and, later, access for AI
+assistants. Not worth taking: targets, pathways, mechanisms, workspaces.
+
 ## 2. Who it is for
 
 **Professionals come first** (owner, 4 Nov, after an outside review): the
@@ -171,7 +185,10 @@ StatPearls: link only.
 4. **A wrong fact.** Every fact is checked, and readers can report a
    mistake (goal 4).
 5. **Paid databases do more.** We don't compete on breadth. We win on free,
-   a source on every fact, and complete within our areas.
+   a source on every fact, and complete within our areas. If one of them
+   adds an approval-history view, our defence is depth on regulatory
+   history, completeness, and getting to the people who do this work
+   first (§1).
 6. **Going stale.** The weekly refresh keeps labels current; the weekly
    status issue shows if it stops. A complete area must also pick up new
    approvals in it.
@@ -241,6 +258,12 @@ and a source for each. Then they say whether anything is missing and
 whether they would use it at work instead of what they use now. Their
 answers go on the owner's list.
 
+Also ask each of them:
+- What do you use today for this, and what does it cost you or your firm?
+- Have you used DrugBank, Cortellis, Citeline or Evaluate for it? What
+  does this do better or worse?
+- What would make you switch, and would you pay for it yourself?
+
 ### The two-minute test (goal 6)
 
 Someone new to a drug opens its page and, within two minutes and without
@@ -257,6 +280,10 @@ before each release:
 
 Newest first. When one of these and older text disagree, this wins.
 
+- **19 Nov.** Positioning in one line (§1): the FDA approval record for a
+  disease, complete and sourced, in ten minutes; the approved use is the
+  unit, not the drug. The ten-minute test asks about competing databases
+  (§10).
 - **19 Nov.** Work in three phases: accuracy, atopic dermatitis complete
   and design finished first; then the precedent table, publishing and the
   ten-minute test with three professionals; monetization and stickiness
