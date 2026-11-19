@@ -51,7 +51,10 @@ interface MergeResult {
   addedTrials: string[];
   updatedTrials: string[];
   /** Trials in the existing record that the new run did not find. */
+  /** Curated trials the run did not return, kept. */
   droppedTrials: string[];
+  /** Uncurated trials the run did not return, removed. */
+  removedTrials: string[];
 }
 
 /** Fields on a Trial that ingestion may write, and that provenance can protect. */
@@ -168,6 +171,22 @@ function mergeTrial(
   return { trial: merged, conflicts, changed };
 }
 
+/**
+ * Work on a trial that a run can't simply recreate: a role in an approval,
+ * a readout, a person's notes or checks, or a trial added by hand (no NCT
+ * number, so no registry search returns it).
+ */
+function curated(t: Trial): boolean {
+  return (
+    !t.nctId ||
+    t.roles.length > 0 ||
+    !!t.readoutDate ||
+    t.takeaways.length > 0 ||
+    t.limitations.length > 0 ||
+    Object.values(t.provenance).some((p) => p?.verified || p?.extractedBy === 'human')
+  );
+}
+
 /** Matches trials across runs by any stable identifier, falling back to id. */
 function trialKey(t: Trial): string {
   return (t.nctId ?? t.protocolNumber ?? t.acronym ?? t.id).toLowerCase();
@@ -203,6 +222,7 @@ export function mergeDrug(existing: Drug | null, incoming: Drug, now: Date = new
       addedTrials: incoming.trials.map((t) => t.id),
       updatedTrials: [],
       droppedTrials: [],
+      removedTrials: [],
     };
   }
 
@@ -226,9 +246,12 @@ export function mergeDrug(existing: Drug | null, incoming: Drug, now: Date = new
     return trial;
   });
 
-  // Keep trials the new run did not return. A registry query that misses a
-  // study should not delete curated work; the run reports them instead.
-  const dropped = existing.trials.filter((t) => !matchedKeys.has(trialKey(t)));
+  // Keep trials the new run did not return when they hold curated work: a
+  // registry query that misses a study should not delete it. A plain
+  // registry match no run returns any more (a sponsor's other product that an
+  // older search rule took in) goes.
+  const unreturned = existing.trials.filter((t) => !matchedKeys.has(trialKey(t)));
+  const dropped = unreturned.filter(curated);
   trials.push(...dropped);
 
   return {
@@ -243,5 +266,6 @@ export function mergeDrug(existing: Drug | null, incoming: Drug, now: Date = new
     addedTrials,
     updatedTrials,
     droppedTrials: dropped.map((t) => t.id),
+    removedTrials: unreturned.filter((t) => !curated(t)).map((t) => t.id),
   };
 }

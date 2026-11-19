@@ -3,7 +3,7 @@ import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { cachePathFor } from '../scripts/ingest/http.js';
-import { drugsFdaUrl, drugsFdaUrlByBrand, genericNameOf, identityFromApplication, ingredientsOf, innOf, registrySearchTerm, runFdaStage, trialMatchName } from '../scripts/ingest/fda.js';
+import { brandCase, drugsFdaUrl, drugsFdaUrlByBrand, genericNameOf, identityFromApplication, ingredientsOf, innOf, registrySearchTerm, runFdaStage, trialMatchName } from '../scripts/ingest/fda.js';
 import { makeContext } from '../scripts/ingest/context.js';
 
 function seedOpenFda(rawDir: string, slug: string, url: string, body: unknown): void {
@@ -119,6 +119,19 @@ describe('identityFromApplication', () => {
   it('keeps every field already given', () => {
     const given = { brandName: 'Skyrizi', inn: 'risankizumab', sponsor: 'AbbVie Inc.', modality: 'mAb', mechanism: 'IL-23 p19', interventionNames: ['risankizumab', 'ABBV-066'] };
     expect(identityFromApplication(given, app, 'BLA')).toEqual(given);
+  });
+});
+
+describe('brandCase', () => {
+  it('cases each word of a capitals brand and drops the FDA product tag', () => {
+    expect(brandCase('RYBREVANT FASPRO')).toBe('Rybrevant Faspro');
+    expect(brandCase('AWIQLI FLEXTOUCH')).toBe('Awiqli Flextouch');
+    expect(brandCase('LIFYORLI (COPACKAGED)')).toBe('Lifyorli');
+    expect(brandCase('SKYRIZI')).toBe('Skyrizi');
+  });
+
+  it('keeps a brand already in mixed case', () => {
+    expect(brandCase('pHisoHex')).toBe('pHisoHex');
   });
 });
 

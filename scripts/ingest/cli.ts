@@ -130,9 +130,9 @@ function specFromRecord(slug: string, dir = join(process.cwd(), 'data', 'drugs')
   const drug = Drug.parse(JSON.parse(readFileSync(path, 'utf8')));
   return {
     slug: drug.slug,
-    brandName: drug.brandName,
-    // Left blank so each refresh reads it again from the FDA record: a
-    // generic name cut short by an older rule doesn't outlive the fix.
+    // Both left blank so each refresh reads them again from the FDA record:
+    // a name cased or cut short by an older rule doesn't outlive the fix.
+    brandName: '',
     inn: '',
     modality: drug.modality,
     sponsor: drug.sponsor,
