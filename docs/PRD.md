@@ -257,6 +257,10 @@ before each release:
 
 Newest first. When one of these and older text disagree, this wins.
 
+- **19 Nov.** Work in three phases: accuracy, atopic dermatitis complete
+  and design finished first; then the precedent table, publishing and the
+  ten-minute test with three professionals; monetization and stickiness
+  only after that test. Domain and Cloudflare decision moved to 26 Nov.
 - **17 Nov.** Pages are too dense: answer first, detail one click away
   (§5). Domain and Cloudflare decided by the end of that week.
 - **10 Nov.** A drug's uses can sit in different therapeutic areas.
