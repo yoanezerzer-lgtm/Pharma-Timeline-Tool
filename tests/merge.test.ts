@@ -116,10 +116,11 @@ describe('mergeDrug', () => {
       trial(),
       trial({ id: 'w-4282-301', nctId: 'NCT03630081' }),
       trial({ id: 'checked', nctId: 'NCT00000009', provenance: { phase: { extractedBy: 'regex', verified: true } } }),
+      trial({ id: 'pathway', nctId: 'NCT05073458', roles: [{ role: 'SUPPORTIVE', provenance: { extractedBy: 'rule', verified: false } }] }),
     ]);
     const result = mergeDrug(existing, drug([trial()]));
     expect(result.drug.trials.map((t) => t.id)).toEqual(['select-compare', 'checked']);
-    expect(result.removedTrials).toEqual(['w-4282-301']);
+    expect(result.removedTrials).toEqual(['w-4282-301', 'pathway']);
     expect(result.droppedTrials).toEqual(['checked']);
   });
 

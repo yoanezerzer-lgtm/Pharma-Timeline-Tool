@@ -29,6 +29,7 @@ export interface DrugsFdaResult {
   products?: {
     brand_name?: string;
     dosage_form?: string;
+    route?: string;
     marketing_status?: string;
     active_ingredients?: { name?: string; strength?: string }[];
   }[];

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { codeNamesFrom, postedPrimaryResults, studyMatchesDrug, studyToTrial, type CtgovStudy } from '../scripts/ingest/ctgov.js';
+import { codeNamesFrom, postedPrimaryResults, studyIsTopical, studyMatchesDrug, studyToTrial, type CtgovStudy } from '../scripts/ingest/ctgov.js';
 import { withoutPostedResults } from '../scripts/ingest/run.js';
 
 const study: CtgovStudy = {
@@ -114,6 +114,30 @@ describe('codeNamesFrom', () => {
       study([{ name: 'Doravirine', otherNames: ['MK-1439'] }, { name: 'Islatravir', otherNames: ['MK-8591'] }]),
     ];
     expect(codeNamesFrom(studies, 'doravirine + islatravir')).toEqual(['MK-8591A']);
+  });
+
+  it("skips a combination entry that lists another drug's code too (Incyte NCT04509700)", () => {
+    const studies = [
+      study([
+        { name: 'Parsaclisib', otherNames: ['INCB050465'] },
+        { name: 'parsaclisib + ruxolitinib', otherNames: ['INCB050465', 'INCB018424'] },
+      ]),
+      study([{ name: 'ruxolitinib cream', otherNames: ['INCB018424'] }]),
+    ];
+    expect(codeNamesFrom(studies, 'ruxolitinib')).toEqual(['INCB018424']);
+  });
+});
+
+describe('studyIsTopical', () => {
+  const study = (title: string, interventions: { name: string; description?: string }[]): CtgovStudy => ({
+    protocolSection: { identificationModule: { briefTitle: title }, armsInterventionsModule: { interventions } },
+  }) as CtgovStudy;
+
+  it('tells a cream study from an oral one of the same ingredient (real Incyte records)', () => {
+    expect(studyIsTopical(study('TRuE AD2 - An Efficacy and Safety Study of Ruxolitinib Cream in Adolescents and Adults With Atopic Dermatitis', [{ name: 'Ruxolitinib cream' }]))).toBe(true);
+    expect(studyIsTopical(study('A Study of INCB018424 Phosphate Cream in Subjects With Vitiligo', [{ name: 'INCB018424' }]))).toBe(true);
+    expect(studyIsTopical(study('Study of Ruxolitinib in Pancreatic Cancer Patients (Janus 1)', [{ name: 'Ruxolitinib', description: 'Ruxolitinib tablets taken by mouth' }]))).toBe(false);
+    expect(studyIsTopical(study('COntrolled MyeloFibrosis Study With ORal JAK Inhibitor Treatment: The COMFORT-I Trial', [{ name: 'Ruxolitinib' }]))).toBe(false);
   });
 });
 
