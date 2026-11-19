@@ -787,3 +787,391 @@
 .pane .chart {
   margin-top: auto;
 }
+
+/* ---- Redesign: two cards, one chart lined up on approval, result cards ---- */
+.compare__vs {
+  font-weight: 400;
+  color: var(--text-3);
+  font-size: 0.8em;
+}
+
+.pane {
+  border-top: 3px solid var(--accent);
+}
+
+.pane__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.pane__top .pane__title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.pane__inn {
+  margin-left: 0.45rem;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-3);
+}
+
+.pane__change {
+  flex: none;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pane__top + .pane__controls {
+  margin-top: 0.75rem;
+}
+
+.pane .pane__approval-pick {
+  margin-top: 0.75rem;
+}
+
+.pane__numbers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 0.25rem;
+}
+
+.pane__numbers > div {
+  min-width: 0;
+}
+
+.pane__numbers dt {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.pane__numbers dt .info {
+  margin-left: 0.25rem;
+}
+
+.pane__numbers dd {
+  margin: 0.3rem 0 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-1);
+}
+
+.pane__unit {
+  margin-left: 0.3rem;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--text-2);
+}
+
+/* One chart for both programs. */
+.compare__switches {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin-left: auto;
+}
+
+.seg {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.seg button {
+  padding: 0.35rem 0.7rem;
+  border: none;
+  background: var(--bg-elevated);
+  color: var(--text-2);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.seg button + button {
+  border-left: 1px solid var(--border);
+}
+
+.seg button[aria-pressed='true'] {
+  background: var(--accent);
+  color: var(--bg-elevated);
+  font-weight: 600;
+}
+
+.compare__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 13px;
+  color: var(--text-2);
+  cursor: pointer;
+}
+
+.compare__section > .chart {
+  margin-top: 0.9rem;
+  padding: 0.9rem 1.1rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.chart__tick.is-zero .chart__tick-label {
+  color: var(--accent);
+}
+
+.chart__group + .chart__group {
+  margin-top: 0.4rem;
+}
+
+.lane--head {
+  height: 34px;
+  border-bottom: 1px solid var(--border);
+}
+
+.lane--head .lane__track {
+  height: 34px;
+}
+
+.lane__name--drug {
+  font-size: 14px;
+  cursor: default;
+}
+
+.lane__approval--head {
+  top: 20px;
+}
+
+.chart__marker {
+  position: absolute;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  outline: none;
+}
+
+.chart__diamond {
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  width: 11px;
+  height: 11px;
+  background: var(--accent);
+  transform: translateX(-50%) rotate(45deg);
+  transition: transform 0.12s ease;
+}
+
+.chart__marker--later .chart__diamond {
+  box-sizing: border-box;
+  border: 2px solid var(--accent);
+  background: var(--bg-elevated);
+}
+
+.chart__marker:hover .chart__diamond,
+.chart__marker:focus-visible .chart__diamond {
+  transform: translateX(-50%) rotate(45deg) scale(1.35);
+}
+
+.chart__tip {
+  position: absolute;
+  z-index: 3;
+  bottom: calc(100% + 8px);
+  left: -0.6rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.15rem;
+  width: max-content;
+  max-width: 16rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  box-shadow: 0 6px 20px rgba(16, 25, 27, 0.12);
+}
+
+.chart__marker--end .chart__tip {
+  left: auto;
+  right: -0.6rem;
+}
+
+.chart__marker:hover .chart__tip,
+.chart__marker:focus-visible .chart__tip {
+  display: flex;
+}
+
+.chart__tip-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.chart__tip-meta {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.lane__approval {
+  border-left-color: var(--accent);
+}
+
+.swatch--approval {
+  background: var(--accent);
+}
+
+.swatch--later-approval {
+  border-color: var(--accent);
+}
+
+ul.compare__legend {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+ul.compare__legend > li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Result cards, one column per drug. */
+.evcols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  gap: 1.25rem;
+  margin-top: 0.9rem;
+}
+
+.evcol {
+  min-width: 0;
+}
+
+.evcol__drug {
+  margin: 0 0 0.5rem;
+  font-size: 15px;
+}
+
+.evcol__list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.evcard {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.evcard__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.evcard__head .evidence__trial {
+  font-size: 15px;
+}
+
+.evcard__meta {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.evcard__endpoint {
+  margin-top: 0.6rem;
+  font-size: 12.5px;
+}
+
+.evcard__endpoint summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.evcard__endpoint p {
+  margin: 0.35rem 0 0;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+.evcard__none {
+  margin: 0;
+  font-size: 13px;
+}
+
+@media (max-width: 560px) {
+  .pane__numbers dd {
+    font-size: 1.1rem;
+  }
+  .seg button {
+    padding: 0.35rem 0.55rem;
+  }
+}
+
+.swatch--approval.swatch--later-approval {
+  background: transparent;
+}
+
+.compare__panes {
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+}
+
+@media (max-width: 900px) {
+  .compare__panes .pane__numbers dd {
+    font-size: 1.15rem;
+  }
+}
+
+/* Both cards' numbers sit on the same line whatever the quote's length. */
+.pane > .pane__numbers {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.chart__tick-short {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .chart__tick-long {
+    display: none;
+  }
+  .chart__tick-short {
+    display: inline;
+  }
+  .chart__tick.is-odd .chart__tick-label {
+    visibility: hidden;
+  }
+  .compare__section > .chart {
+    padding: 0.75rem 0.6rem 0.6rem;
+  }
+}
