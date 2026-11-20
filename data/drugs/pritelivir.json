@@ -163,7 +163,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "ORAL"
+      ]
     }
   },
   "trials": [
@@ -369,118 +372,6 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT01658826",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "lipp1",
-      "nctId": "NCT02871492",
-      "protocolNumber": "AIC316-02-II-01",
-      "acronym": "LipP1",
-      "title": "A Randomized, Double-blind, Multi-center, Three Arm (Pritelivir, Placebo and Zovirax®) Parallel Group, Comparative Trial to Assess the Efficacy and Safety of Pritelivir 5% w/w Ointment for the Treatment of Recurrent Herpes Labialis in Adults - LipP1",
-      "briefTitle": "Trial on Efficacy and Safety of Pritelivir Ointment for Treatment of Labial Herpes",
-      "phase": "PHASE2",
-      "roles": [],
-      "status": "COMPLETED",
-      "sponsor": "AiCuris Anti-infective Cures AG",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Herpes Labialis"
-      ],
-      "conditionMesh": [
-        {
-          "id": "D006560",
-          "term": "Herpes Labialis"
-        },
-        {
-          "id": "D006561",
-          "term": "Herpes Simplex"
-        }
-      ],
-      "startDate": {
-        "value": "2016-11-29",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2017-09-29",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2017-10-16",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 362,
-        "type": "ACTUAL"
-      },
-      "design": {
-        "allocation": "RANDOMIZED",
-        "masking": "QUADRUPLE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Pritelivir 5% w/w ointment",
-          "type": "EXPERIMENTAL",
-          "description": "Topical treatment (20 applications), 5 times daily for 4 days"
-        },
-        {
-          "label": "Pritelivir ointment matching placebo",
-          "type": "PLACEBO_COMPARATOR",
-          "description": "Topical treatment (20 applications), 5 times daily for 4 days"
-        },
-        {
-          "label": "Zovirax® cream",
-          "type": "ACTIVE_COMPARATOR",
-          "description": "Topical treatment (20 applications), 5 times daily for 4 days"
-        }
-      ],
-      "primaryEndpoints": [
-        "Efficacy Measured by Percentage of Subjects With Non-ulcerative Lesions Based on Principal Investigator's Assessment"
-      ],
-      "secondaryEndpoints": [],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT02871492",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -964,5 +855,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:38:57.251Z"
+  "lastIngestedAt": "2026-11-20T01:21:01.992Z"
 }

@@ -137,7 +137,10 @@ export function sectionOneWindows(strippedText: string): string[] {
   return windows;
 }
 
-const NOT_A_USE = /^(?:important\s+)?limitations?\s+of\s+use$/i;
+// Notes in section 1 that aren't uses: "Limitations of Use", and the
+// antibacterial labels' "Usage to Reduce Development of Drug-Resistant
+// Bacteria" ("To reduce the development of drug-resistant bacteria…").
+const NOT_A_USE = /^(?:(?:important\s+)?limitations?\s+of\s+use|usage\b.*\bdrug[\s-]*resistant\s+bacteria)$/i;
 
 function numberedEntries(window: string): IndicationListEntry[] {
   const entries: IndicationListEntry[] = [];
@@ -488,12 +491,53 @@ export function extractLabelTrialNames(section14Text: string): Map<string, Label
   return names;
 }
 
-function identifiersOf(trial: Trial, aliases: Map<string, string[]> | undefined): string[] {
-  const base = [trial.nctId, trial.protocolNumber, trial.acronym].filter(
+function identifiersOf(trial: Trial, aliases: Map<string, string[]> | undefined, ctx?: Pick<RoleContext, 'drugNames' | 'indicationSections'>): string[] {
+  const acronym = trial.acronym && !acronymIsAName(trial.acronym, trial, ctx) ? trial.acronym : undefined;
+  const base = [trial.nctId, trial.protocolNumber, acronym].filter(
     (s): s is string => !!s && usableIdentifier(s)
   );
   const extra = trial.nctId ? aliases?.get(trial.nctId) ?? [] : [];
   return [...base, ...extra];
+}
+
+const initialsOf = (name: string) =>
+  name
+    .replace(/\([^)]*\)/g, ' ')
+    .split(/[^A-Za-z]+/)
+    .filter((w) => w.length > 0 && !/^(?:and|of|the|in)$/i.test(w))
+    .map((w) => (/^(?:with|w)$/i.test(w) ? 'w' : w[0]))
+    .join('')
+    .toLowerCase();
+
+const isSubsequence = (short: string, long: string) => {
+  let i = 0;
+  for (const ch of long) if (ch === short[i]) i++;
+  return i === short.length;
+};
+
+/**
+ * Whether a trial's acronym is really the name of its drug or its disease,
+ * which the documents use for the drug or the disease, not the trial: the
+ * drug's own name or the start of it ("DUPILUMAB", "Escitalopram",
+ * "Pembro"), a word of the trial's condition ("ACUTE" for "Ulcerative
+ * Colitis Acute") or its initials ("CRSwNP", "MDD", "CD", "NSCLC").
+ */
+export function acronymIsAName(acronym: string, trial: Trial, ctx?: Pick<RoleContext, 'drugNames' | 'indicationSections'>): boolean {
+  if (!/^[A-Za-z]{2,}$/.test(acronym)) return false;
+  const a = acronym.toLowerCase();
+  const drugs = (ctx?.drugNames ?? []).flatMap((n) => [n, ...n.split(/[\s-]+/)]).map((n) => n.toLowerCase());
+  if (drugs.some((n) => n === a || (a.length >= 4 && n.length > a.length && n.startsWith(a)))) return true;
+  const diseases = [
+    ...(trial.conditions ?? []),
+    ...(trial.conditionMesh ?? []).map((m) => m.term),
+    ...(ctx?.indicationSections ?? []).map((s) => s.indication),
+  ];
+  return diseases.some((d) => {
+    if ((d.match(/\b[A-Z][A-Za-z]*[A-Z]\b/g) ?? []).some((x) => x.toLowerCase() === a)) return true;
+    if (a.length >= 4 && d.toLowerCase().split(/[^a-z]+/).includes(a)) return true;
+    const init = initialsOf(d);
+    return init.length >= 2 && a.length <= init.length + 2 && a[0] === init[0] && isSubsequence(init, a) && isSubsequence(a, d.toLowerCase().replace(/[^a-z]/g, ''));
+  });
 }
 
 /**
@@ -672,7 +716,7 @@ interface RoleAssignment {
  */
 export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignment {
   const knownAliases = trial.nctId ? ctx.trialAliases?.get(trial.nctId) ?? [] : [];
-  const ids = identifiersOf(trial, ctx.trialAliases);
+  const ids = identifiersOf(trial, ctx.trialAliases, ctx);
   const phaseWarnings: string[] = [];
   const roles: IndicationRole[] = [];
   // Someone else's trial of another drug, sharing only an identifier with

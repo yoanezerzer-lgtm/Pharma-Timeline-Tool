@@ -12,6 +12,7 @@ import {
   runByApplicant,
   extractLabelTrialNames,
   splitSection14ByIndication,
+  acronymIsAName,
   type RoleContext,
 } from '../scripts/ingest/roles.js';
 import { mapPhase } from '../scripts/ingest/ctgov.js';
@@ -949,5 +950,35 @@ describe('identifiers that name nothing', () => {
     // A partner's trial naming the drug only by its code keeps its role.
     const sanofi = industry({ nctId: 'NCT01537640', protocolNumber: 'PKM12350', sponsor: 'Sanofi', title: 'Comparison of the Pharmacokinetics and Safety of Two SAR231893 (REGN668) Drug Products in Healthy Subjects' });
     expect(classifyTrialRoles(sanofi, { ...span('Atopic Dermatitis', 'Study PKM12350 compared two drug products.'), drugNames: ['dupilumab', 'Dupixent'], sponsorName: 'REGENERON' }).roles).not.toEqual([]);
+  });
+});
+
+describe('acronyms that are the name of the drug or the disease', () => {
+  const review = (reviewText: string, drugNames: string[], sponsorName: string): RoleContext => ({ indicationSections: [], reviewText, drugNames, sponsorName });
+
+  it('knows a drug or disease name from a trial name', () => {
+    const ctx = { drugNames: ['pembrolizumab', 'Keytruda'], indicationSections: [] };
+    expect(acronymIsAName('Pembro', trial({}), ctx)).toBe(true);
+    expect(acronymIsAName('DUPILUMAB', trial({}), { drugNames: ['dupilumab', 'Dupixent'], indicationSections: [] })).toBe(true);
+    expect(acronymIsAName('CRSwNP', trial({ conditions: ['Chronic Rhinosinusitis With Nasal Polyps'] }))).toBe(true);
+    expect(acronymIsAName('MDD', trial({ conditions: ['Major Depressive Disorder'] }))).toBe(true);
+    expect(acronymIsAName('ACUTE', trial({ conditions: ['Ulcerative Colitis Acute'] }))).toBe(true);
+    expect(acronymIsAName('KEYNOTE', trial({ conditions: ['Melanoma'] }), ctx)).toBe(false);
+    expect(acronymIsAName('ADVANCE', trial({ conditions: ['Atopic Dermatitis'] }))).toBe(false);
+  });
+
+  it("gives no review role for a review's abbreviation list (Keytruda: \"Pembro=pembrolizumab\")", () => {
+    const pembro = trial({ nctId: 'NCT03879174', acronym: 'Pembro', protocolNumber: 'AN.MCME.CR.12', sponsor: 'Mediclinic Middle East', sponsorClass: 'INDUSTRY', phase: 'PHASE2' });
+    const text = 'ORR=Objective response rate or Overall response rate; Pembro=pembrolizumab; PFS=progression-free survival';
+    expect(classifyTrialRoles(pembro, review(text, ['pembrolizumab', 'Keytruda'], 'MERCK SHARP DOHME')).roles).toEqual([]);
+  });
+});
+
+describe("section 1 notes that aren't uses", () => {
+  it("skips the antibacterial 'Usage' note (Utebzi, Zaynich)", () => {
+    // Utebzi's label (2026), contents of section 1.
+    const label = '1 INDICATIONS AND USAGE 1.1 Complicated Urinary Tract Infection (cUTI), Including Pyelonephritis 1.2 Usage to Reduce Development of Drug-Resistant Bacteria 2 DOSAGE AND ADMINISTRATION 2.1 Recommended Dosage';
+    expect(extractIndicationList(label).map((e) => e.name)).not.toContain('Usage to Reduce Development of Drug-Resistant Bacteria');
+    expect(extractIndicationList('1 INDICATIONS AND USAGE 1.1 Pneumonia 1.2 Usage to Reduce Development of Drug-Resistant Bacteria 2 DOSAGE AND ADMINISTRATION').map((e) => e.name)).toEqual(['Pneumonia']);
   });
 });

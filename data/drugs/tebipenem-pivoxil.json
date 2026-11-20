@@ -69,8 +69,8 @@
   "summary": "",
   "indications": [
     {
-      "name": "Usage to Reduce Development of Drug-Resistant Bacteria",
-      "slug": "usage-to-reduce-development-of-drug-resistant-bacteria",
+      "name": "Complicated urinary tract infections (cUTI), including pyelonephritis, caused by the following susceptible microorganisms: Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae species complex, Klebsiella oxytoca, and Enterococcus faecalis in adult patients who have limited or no alternative oral treatment options",
+      "slug": "complicated-urinary-tract-infections-cuti-including",
       "approvalDate": {
         "value": "2026-06-17",
         "precision": "day"
@@ -100,6 +100,53 @@
             "verified": false
           }
         }
+      ],
+      "diseases": [
+        {
+          "meshId": "D014552",
+          "term": "Urinary Tract Infections",
+          "areas": [
+            "Infections",
+            "Urogenital Diseases"
+          ],
+          "definition": {
+            "text": "Inflammatory responses of the epithelium of the URINARY TRACT to microbial invasions. They are often bacterial infections with associated BACTERIURIA and PYURIA.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D014552",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Urinary Tract Infections",
+            "paragraphs": [
+              "The urinary system is the body's drainage system for removing wastes and extra water. It includes two kidneys, two ureters, a bladder, and a urethra. Urinary tract infections (UTIs) are the second most common type of infection in the body.",
+              "You may have a UTI if you notice:",
+              "• Pain or burning when you urinate",
+              "• Fever, tiredness, or shakiness",
+              "• An urge to urinate often",
+              "• Pressure in your lower belly",
+              "• Urine that smells bad or looks cloudy or reddish",
+              "• Pain in your back or side below the ribs",
+              "People of any age or sex can get UTIs. But about four times as many women get UTIs as men. You're also at higher risk if you have diabetes, need a tube to drain your bladder, or have a spinal cord injury.",
+              "If you think you have a UTI it is important to see your doctor. Your doctor can tell if you have a UTI with a urine test. Treatment is with antibiotics.",
+              "NIH: National Institute of Diabetes and Digestive and Kidney Diseases"
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/urinarytractinfections.html",
+              "sourceLabel": "MedlinePlus, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT06059846",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT06059846)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
       ]
     }
   ],
@@ -121,7 +168,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "ORAL"
+      ]
     }
   },
   "trials": [
@@ -135,12 +185,12 @@
       "phase": "PHASE3",
       "roles": [
         {
-          "indication": "Usage to Reduce Development of Drug-Resistant Bacteria",
+          "indication": "Complicated urinary tract infections (cUTI), including pyelonephritis, caused by the following susceptible microorganisms: Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae species complex, Klebsiella oxytoca, and Enterococcus faecalis in adult patients who have limited or no alternative oral treatment options",
           "role": "PIVOTAL",
           "provenance": {
             "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
-            "sourceLabel": "Approved label, section 14 (Clinical Studies — Usage to Reduce Development of Drug-Resistant Bacteria)",
-            "quote": "Trial identifier appears within the Usage to Reduce Development of Drug-Resistant Bacteria section 14 span, and the trial is sponsor-run and interventional.",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Complicated urinary tract infections (cUTI), including pyelonephritis, caused by the following susceptible microorganisms: Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae species complex, Klebsiella oxytoca, and Enterococcus faecalis in adult patients who have limited or no alternative oral treatment options)",
+            "quote": "Trial identifier appears within the Complicated urinary tract infections (cUTI), including pyelonephritis, caused by the following susceptible microorganisms: Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae species complex, Klebsiella oxytoca, and Enterococcus faecalis in adult patients who have limited or no alternative oral treatment options section 14 span, and the trial is sponsor-run and interventional.",
             "extractedBy": "rule",
             "verified": false
           },
@@ -360,19 +410,6 @@
                 "quote": "Trial identifier appears within the Usage to Reduce Development of Drug-Resistant Bacteria section 14 span, and the trial is sponsor-run and interventional.",
                 "extractedBy": "rule",
                 "verified": false
-              }
-            }
-          ],
-          "newValue": [
-            {
-              "indication": "Usage to Reduce Development of Drug-Resistant Bacteria",
-              "role": "PIVOTAL",
-              "provenance": {
-                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
-                "sourceLabel": "Approved label, section 14 (Clinical Studies — Usage to Reduce Development of Drug-Resistant Bacteria)",
-                "extractedBy": "rule",
-                "verified": false,
-                "quote": "Trial identifier appears within the Usage to Reduce Development of Drug-Resistant Bacteria section 14 span, and the trial is sponsor-run and interventional."
               },
               "approval": {
                 "submission": "ORIG-1",
@@ -386,7 +423,30 @@
               }
             }
           ],
-          "detectedAt": "2026-11-09T20:10:57.385Z"
+          "newValue": [
+            {
+              "indication": "Complicated urinary tract infections (cUTI), including pyelonephritis, caused by the following susceptible microorganisms: Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae species complex, Klebsiella oxytoca, and Enterococcus faecalis in adult patients who have limited or no alternative oral treatment options",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215960Origs000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Complicated urinary tract infections (cUTI), including pyelonephritis, caused by the following susceptible microorganisms: Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae species complex, Klebsiella oxytoca, and Enterococcus faecalis in adult patients who have limited or no alternative oral treatment options)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Complicated urinary tract infections (cUTI), including pyelonephritis, caused by the following susceptible microorganisms: Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae species complex, Klebsiella oxytoca, and Enterococcus faecalis in adult patients who have limited or no alternative oral treatment options section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/215960Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Utebzi (tebipenem pivoxil) tablets, for oral use, for the treatment of complicated urinary tract infections (cUTI), including pyelonephritis, caused by designated susceptible microorganisms in adult patients who have limited or no alternative oral treatment options.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-20T01:13:04.925Z"
         }
       ]
     }
@@ -432,5 +492,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:10:57.385Z"
+  "lastIngestedAt": "2026-11-20T01:13:04.925Z"
 }

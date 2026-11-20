@@ -1,6 +1,6 @@
 {
   "slug": "relacorilant",
-  "brandName": "Lifyorli (copackaged)",
+  "brandName": "Lifyorli",
   "inn": "relacorilant",
   "modality": "Drug (NDA)",
   "sponsor": "CORCEPT THERAP",
@@ -276,7 +276,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "ORAL"
+      ]
     }
   },
   "trials": [
@@ -3052,11 +3055,11 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2026-08-01",
+        "value": "2027-12-01",
         "precision": "month"
       },
       "completionDate": {
-        "value": "2026-12-01",
+        "value": "2028-08-01",
         "precision": "month"
       },
       "enrollment": {
@@ -3142,7 +3145,32 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2026-08-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2027-12-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-11-20T01:12:44.677Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2026-12-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2028-08-01",
+            "precision": "month"
+          },
+          "detectedAt": "2026-11-20T01:12:44.677Z"
+        }
+      ]
     },
     {
       "id": "cort125134-558",
@@ -3306,5 +3334,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:39:10.587Z"
+  "lastIngestedAt": "2026-11-20T01:12:44.677Z"
 }
