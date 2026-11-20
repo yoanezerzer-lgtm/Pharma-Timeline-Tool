@@ -55,20 +55,19 @@ most of those questions for free.
      Dupixent's nasal polyps: SUPPL-66, 2024, becomes SUPPL-14, 2019).
      Still on pivotal trials only: the site's "checked" badge and
      `npm run -s status`'s checked count.
+   - **Keytruda's wrong pivotal roles are fixed** (20 Nov): bare-number
+     protocol ids, capitals words in lower case ("clear cell") and phrases
+     ("Solid Tumors") no longer name a trial; another company's trial of
+     another drug ("PD-1", a nivolumab study) gets no role; and a re-run no
+     longer keeps an old pivotal role for a trial it found and gave none.
+     Keytruda refreshed: 13 wrong pivotal roles and 42 outside trials with
+     word-matched review roles gone, every date unchanged.
    - **Errors the new QC cross-checks found on the site** (20 Nov; listed
      in `scripts/qc/known-errors.json`, reported by `npm run qc` but not
      blocking; take each out once a pipeline fix and refresh clear it):
-     - Keytruda: pivotal roles on trials matched by a bare protocol number
-       or a word: two Theravance constipation trials ("0067" → head and
-       neck, "0083" → ovarian), a Carisma CAR-macrophage trial ("101" → lung,
-       liver, kidney), "PD-1" (KEYNOTE-001) under lung, colorectal, breast
-       and ovarian uses, CLEAR (a kidney trial) under endometrial ("clear
-       cell"), and a Chinese company's N-3C01 trial (acronym "Solid
-       Tumors") under melanoma and TMB-H. Section 14 matching should not
-       accept these ids.
      - Supporting roles from the FDA review by a drug or disease name:
        Dupixent (DUPILUMAB, CRSwNP), Lexapro (Escitalopram, MDD), Keytruda
-       (Pembro, MCC, NSCLC), Rinvoq (ACUTE, CD). The #180 rule (outside
+       (Pembro), Rinvoq (ACUTE, CD). The #180 rule (outside
        trials only by NCT number) should clear them on the next refresh.
      - Brands: "Rybrevant faspro", "Awiqli flextouch", "Lifyorli
        (copackaged)"; #177 should fix them on the next refresh.

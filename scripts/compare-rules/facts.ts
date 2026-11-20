@@ -47,6 +47,8 @@ export interface DrugInput {
   slug: string;
   name: string;
   sponsor?: string;
+  /** Ingredient, brand and development codes, for the check that a trial gives this drug. */
+  drugNames?: string[];
   trials: Trial[];
   milestones: Milestone[];
   docs: SourceDoc[];
@@ -113,6 +115,7 @@ export function deriveFacts(m: RuleModules, drug: DrugInput): Facts {
     sponsorName: drug.sponsor,
     knownTrialSponsors: m.knownTrialSponsors(drug.slug),
     trialAliases: m.roles.extractTrialAliases(drug.docs.map((d) => d.text).join('\n')),
+    drugNames: drug.drugNames,
   };
   const roles: Record<string, string[]> = {};
   const names2 = trialNames(drug.trials);

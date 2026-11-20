@@ -176,12 +176,15 @@ function mergeTrial(
  * a readout, a person's notes or checks, or a trial added by hand (no NCT
  * number, so no registry search returns it).
  */
-function curated(t: Trial): boolean {
+function curated(t: Trial, judged?: Set<string>): boolean {
+  // A pivotal role is kept even if a registry search misses the trial once;
+  // a lesser role is recomputed by every run, so it alone doesn't hold one.
+  // But when this run found the trial and gave it no role (Keytruda's
+  // "PD-1", a nivolumab study), the old role was the error: it goes.
+  const heldPivotal = !judged?.has(trialKey(t));
   return (
     !t.nctId ||
-    // A pivotal role is kept even if a registry search misses the trial once;
-    // a lesser role is recomputed by every run, so it alone doesn't hold one.
-    t.roles.some((r) => r.role === 'PIVOTAL' || r.provenance.verified || r.provenance.extractedBy === 'human') ||
+    t.roles.some((r) => (heldPivotal && r.role === 'PIVOTAL') || r.provenance.verified || r.provenance.extractedBy === 'human') ||
     !!t.readoutDate ||
     t.takeaways.length > 0 ||
     t.limitations.length > 0 ||
@@ -190,7 +193,7 @@ function curated(t: Trial): boolean {
 }
 
 /** Matches trials across runs by any stable identifier, falling back to id. */
-function trialKey(t: Trial): string {
+export function trialKey(t: Trial): string {
   return (t.nctId ?? t.protocolNumber ?? t.acronym ?? t.id).toLowerCase();
 }
 
@@ -216,7 +219,11 @@ function mergeIndications(existing: Indication[], incoming: Indication[]): Indic
   });
 }
 
-export function mergeDrug(existing: Drug | null, incoming: Drug, now: Date = new Date()): MergeResult {
+/**
+ * `judged`: the trials this run found and classified, by `trialKey`, before
+ * dropping those with no role. A pivotal role the run took away is not held.
+ */
+export function mergeDrug(existing: Drug | null, incoming: Drug, now: Date = new Date(), judged?: Set<string>): MergeResult {
   if (!existing) {
     return {
       drug: incoming,
@@ -253,7 +260,7 @@ export function mergeDrug(existing: Drug | null, incoming: Drug, now: Date = new
   // registry match no run returns any more (a sponsor's other product that an
   // older search rule took in) goes.
   const unreturned = existing.trials.filter((t) => !matchedKeys.has(trialKey(t)));
-  const dropped = unreturned.filter(curated);
+  const dropped = unreturned.filter((t) => curated(t, judged));
   trials.push(...dropped);
 
   return {
@@ -268,6 +275,6 @@ export function mergeDrug(existing: Drug | null, incoming: Drug, now: Date = new
     addedTrials,
     updatedTrials,
     droppedTrials: dropped.map((t) => t.id),
-    removedTrials: unreturned.filter((t) => !curated(t)).map((t) => t.id),
+    removedTrials: unreturned.filter((t) => !curated(t, judged)).map((t) => t.id),
   };
 }

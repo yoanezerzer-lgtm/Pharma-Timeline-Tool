@@ -13,6 +13,10 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { basename, join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import type { Trial } from '../../src/schema/index.js';
+import { getSpec } from '../ingest/registry.js';
+
+/** The drug's names its registry entry lists (ingredient, brand, codes), when it has one. */
+const registryNames = (slug: string) => getSpec(slug)?.interventionNames;
 import { deriveFacts, diffFacts, formatReport, type DrugInput, type DrugResult, type RuleModules, type SourceDoc } from './facts.js';
 
 const root = resolve(import.meta.dirname, '../..');
@@ -77,6 +81,7 @@ export function readDrug(slug: string, rawDir: string): DrugInput | undefined {
     slug,
     name: record.brandName ?? slug,
     sponsor: record.regulatory?.us?.sponsor ?? record.sponsor,
+    drugNames: [record.inn, record.brandName, ...(registryNames(slug) ?? [])].filter(Boolean),
     // Every trial either record has: the site's, and any the run newly found.
     trials: mergeTrials(published.trials ?? [], record === published ? [] : record.trials ?? []),
     milestones: record.milestones ?? [],

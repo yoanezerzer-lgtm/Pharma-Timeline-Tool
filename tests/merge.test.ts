@@ -124,6 +124,19 @@ describe('mergeDrug', () => {
     expect(result.droppedTrials).toEqual(['checked']);
   });
 
+  it("drops an old pivotal role when this run found the trial and gave it none (Keytruda's 'PD-1')", () => {
+    const pivotal = { role: 'PIVOTAL' as const, indication: 'Non-Small Cell Lung Cancer', provenance: { extractedBy: 'rule' as const, verified: false } };
+    const existing = drug([
+      trial(),
+      trial({ id: 'pd-1', nctId: 'NCT01621490', roles: [pivotal] }),
+      trial({ id: 'missed', nctId: 'NCT00000010', roles: [pivotal] }),
+    ]);
+    // The run classified PD-1 (no role, then trimmed) but never saw the other.
+    const result = mergeDrug(existing, drug([trial()]), new Date(), new Set(['nct01621490']));
+    expect(result.removedTrials).toEqual(['pd-1']);
+    expect(result.droppedTrials).toEqual(['missed']);
+  });
+
   it('matches trials across runs by identifier, not array position', () => {
     const existing = drug([
       trial({ id: 'old-slug', provenance: { phase: { extractedBy: 'human', verified: true } }, phase: 'PHASE2' }),
