@@ -13,6 +13,7 @@
     "ingest": "tsx scripts/ingest/cli.ts",
     "validate": "tsx scripts/validate.ts",
     "qc": "tsx scripts/qc/cli.ts",
+    "qc:fetch-raw": "bash scripts/qc/fetch-raw.sh",
     "verify": "tsx scripts/verify/cli.ts",
     "readouts": "tsx scripts/readouts/cli.ts",
     "news": "tsx scripts/news/cli.ts",

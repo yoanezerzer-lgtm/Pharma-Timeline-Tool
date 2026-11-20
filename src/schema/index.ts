@@ -361,6 +361,8 @@ export const USRegulatory = z.object({
   reviewOffice: NamedFact.optional(),
   /** The applicant as the newest label prints it ("Merck Sharp & Dohme LLC"). */
   labelCompany: NamedFact.optional(),
+  /** How the approved products are given, as Drugs@FDA lists their routes ("TOPICAL", "ORAL", "SUBCUTANEOUS"). */
+  routes: z.array(z.string()).optional(),
 });
 
 /** Defined but unpopulated. EMA ingestion is deliberately deferred. */

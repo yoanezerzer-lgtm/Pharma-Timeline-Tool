@@ -1,6 +1,7 @@
 import type { DateValue, Drug, Provenance, Trial } from '../../src/schema/index.js';
 import { runByApplicant } from '../ingest/roles.js';
 import { getSpec } from '../ingest/registry.js';
+import { crossCheckDrug } from './crossChecks.js';
 
 /**
  * Rule-based quality checks on one drug record. Each finding names the value
@@ -156,5 +157,6 @@ export function checkDrug(drug: Drug): Finding[] {
     });
   }
 
+  out.push(...crossCheckDrug(drug));
   return out;
 }
