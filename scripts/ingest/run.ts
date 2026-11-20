@@ -21,7 +21,7 @@ import {
   type IndicationListEntry,
   type IndicationSpan,
 } from './roles.js';
-import { mergeDrug, canonicalJson, type Conflict } from './merge.js';
+import { mergeDrug, canonicalJson, trialKey, type Conflict } from './merge.js';
 import { dateIndications, indicationWording, labelListsIndication } from './indicationDates.js';
 import { siblingApprovals, type SiblingApproval } from './siblings.js';
 import { approvalsByIndication, historyComplete, linkRolesToApprovals } from './approvals.js';
@@ -317,6 +317,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     sponsorName: fda.application.sponsor_name ?? spec.sponsor,
     knownTrialSponsors: spec.knownTrialSponsors,
     trialAliases,
+    drugNames: [spec.inn, spec.brandName, ...spec.interventionNames, ...codes],
   });
   phaseWarnings.forEach(warn);
 
@@ -378,7 +379,7 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
   });
   log(`[diseases] ${incoming.indications.filter((i) => i.diseases).length} of ${incoming.indications.length} approved use(s) matched to a MeSH disease`);
   const existing = loadExisting(drugsDir, spec.slug);
-  const merged = mergeDrug(existing, incoming, now);
+  const merged = mergeDrug(existing, incoming, now, new Set(rolesApplied.map(trialKey)));
   merged.drug.trials = dedupeTrialIds(merged.drug.trials);
 
   // Only advance the ingest timestamp when something else actually changed.

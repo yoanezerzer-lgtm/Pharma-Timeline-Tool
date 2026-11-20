@@ -376,6 +376,13 @@ export interface RoleContext {
   knownTrialSponsors?: string[];
   /** NCT ID -> generic names the label uses for it. See extractTrialAliases(). */
   trialAliases?: Map<string, string[]>;
+  /**
+   * The drug's own names (ingredient, brand, development codes). Another
+   * company's trial whose registry title and arms name a different drug and
+   * none of these gets no role, whatever identifier the documents share
+   * with it (a nivolumab study acronymed "PD-1" on Keytruda).
+   */
+  drugNames?: string[];
 }
 
 /**
@@ -483,10 +490,53 @@ export function extractLabelTrialNames(section14Text: string): Map<string, Label
 
 function identifiersOf(trial: Trial, aliases: Map<string, string[]> | undefined): string[] {
   const base = [trial.nctId, trial.protocolNumber, trial.acronym].filter(
-    (s): s is string => !!s
+    (s): s is string => !!s && usableIdentifier(s)
   );
   const extra = trial.nctId ? aliases?.get(trial.nctId) ?? [] : [];
   return [...base, ...extra];
+}
+
+/**
+ * Whether a registry identifier can name a trial in an FDA document. Not a
+ * bare number ("0067", "101": a label prints those as counts, doses and page
+ * numbers), and not a phrase of ordinary words ("Solid Tumors", which the
+ * label uses for the disease).
+ */
+export function usableIdentifier(id: string): boolean {
+  if (/^\d+$/.test(id)) return false;
+  if (/\s/.test(id) && id.split(/\s+/).every((w) => /^[A-Z]?[a-z]+$/.test(w))) return false;
+  return true;
+}
+
+// Generic-name endings the naming councils give whole drug classes
+// ("-mab" antibodies, "-tinib" kinase inhibitors, "-vir" antivirals): a word
+// with one is a drug's name.
+const INN_STEM = /\b[a-z]{3,}(?:mab|tinib|rafenib|ciclib|lisib|parib|zomib|degib|stat|pril|sartan|olol|vir|gliptin|gliflozin|glutide|cept|platin|taxel|rubicin|mustine|tide|dronate|oxetine|pramine|azepam|prazole)\b/gi;
+
+/**
+ * Whether the trial tests another drug: its registry titles or arms name a
+ * drug by its generic name ("Nivolumab and Ipilimumab") and never this one,
+ * by ingredient, brand or code. A trial naming no drug at all, or this one
+ * only by a code the documents don't list ("SAR231893"), isn't.
+ */
+export function trialTestsAnotherDrug(trial: Trial, drugNames: string[] | undefined): boolean {
+  const names = (drugNames ?? []).filter((n) => n.length >= 3);
+  if (names.length === 0) return false;
+  const text = [trial.title, trial.briefTitle, ...trial.arms.flatMap((a) => [a.label, a.description])]
+    .filter((x): x is string => !!x)
+    .join(' \n ');
+  const ours = names.some((n) => new RegExp(`\\b${escapeRegExp(n).replace(/[- ]/g, '[- ]?')}\\b`, 'i').test(text));
+  if (ours) return false;
+  const own = new Set(names.map((n) => n.toLowerCase()));
+  return [...text.matchAll(INN_STEM)].some((m) => !own.has(m[0].toLowerCase()));
+}
+
+/** A one-word capitals acronym ("PATHWAY", "CLEAR") counts only in capitals: in lower case it is prose ("clear cell"). */
+function mentionsId(haystack: string, id: string, trial: Trial): boolean {
+  if (id === trial.acronym && /^[A-Z]{3,}$/.test(id)) {
+    return new RegExp(`\\b${escapeRegExp(id)}\\b(?!\\s*-\\s*\\d)`).test(haystack);
+  }
+  return mentions(haystack, [id]);
 }
 
 function escapeRegExp(s: string): string {
@@ -625,11 +675,16 @@ export function classifyTrialRoles(trial: Trial, ctx: RoleContext): RoleAssignme
   const ids = identifiersOf(trial, ctx.trialAliases);
   const phaseWarnings: string[] = [];
   const roles: IndicationRole[] = [];
+  // Someone else's trial of another drug, sharing only an identifier with
+  // the documents. The applicant's own trials may name the drug only by a code.
+  if (!runByApplicant(trial, ctx.sponsorName, ctx.knownTrialSponsors) && trialTestsAnotherDrug(trial, ctx.drugNames)) {
+    return { roles, phaseWarnings };
+  }
 
   for (const span of ctx.indicationSections) {
     if (ids.length === 0) continue;
     const matchedAlias = knownAliases.find((a) => mentions(span.text, [a]));
-    const namedHere = mentions(span.text, ids);
+    const namedHere = ids.some((id) => mentionsId(span.text, id, trial));
     if (!namedHere) continue;
     if (reportedAsLackOfEffectiveness(span.text, ids)) continue;
     if (reportedAsExtension(span.text, ids)) continue;

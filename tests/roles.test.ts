@@ -911,3 +911,43 @@ describe('extractLegacyIndicationList (Protopic)', () => {
     expect(extractLegacyIndicationList('1 INDICATIONS AND USAGE X is indicated for Y. 2 DOSAGE AND ADMINISTRATION')).toEqual([]);
   });
 });
+
+// Keytruda's label (125514s128lbl, sections 14.x), where other companies'
+// trials picked up pivotal roles before 20 Nov 2026.
+describe('identifiers that name nothing', () => {
+  const span = (indication: string, text: string): RoleContext => ({
+    indicationSections: [{ indication, text }],
+    reviewText: '',
+    sponsorName: 'MERCK SHARP DOHME',
+    drugNames: ['pembrolizumab', 'Keytruda', 'MK-3475'],
+  });
+  const industry = (o: Partial<Trial>) => trial({ sponsorClass: 'INDUSTRY', studyType: 'INTERVENTIONAL', ...o });
+
+  it('ignores a bare-number protocol: "0067" is a p-value, "101" a group size', () => {
+    const ctx = span('Ovarian Cancer', 'Hazard ratio † (95% CI) 0.77 (0.63, 0.93) p-Value ‡ 0.0067 PFS Number of patients with event (%) 244 (87%)');
+    const theravance = industry({ nctId: 'NCT01655771', protocolNumber: '0067', sponsor: 'Glycyx Therapeutics', title: 'TD-1211 Single-Dose Study in Elderly and Young Healthy Subjects' });
+    expect(pivotalFor(theravance, ctx)).toBe(false);
+    const carisma = industry({ nctId: 'NCT04660929', protocolNumber: '101', sponsor: 'Carisma Therapeutics Inc', title: 'CAR-macrophages for the Treatment of HER2 Overexpressing Solid Tumors' });
+    expect(pivotalFor(carisma, span('Renal Cell Carcinoma', 'KEYTRUDA and chemotherapy (n=101) or placebo and chemotherapy (n=102)'))).toBe(false);
+  });
+
+  it('reads a one-word capitals acronym only in capitals: "clear cell carcinoma" is not CLEAR', () => {
+    const clear = industry({ nctId: 'NCT02811861', acronym: 'CLEAR', protocolNumber: 'E7080-G000-307', sponsor: 'Eisai Inc.', title: 'Lenvatinib/Everolimus or Lenvatinib/Pembrolizumab Versus Sunitinib Alone as Treatment of Advanced Renal Cell Carcinoma' });
+    const endometrial = 'The histologic subtypes were endometrioid carcinoma (55%), serous (30%), clear cell carcinoma (7%), mixed (4%), and other (3%).';
+    expect(pivotalFor(clear, span('Endometrial Carcinoma', endometrial))).toBe(false);
+    expect(pivotalFor(clear, span('Renal Cell Carcinoma', 'in CLEAR (Study 307/KEYNOTE-581), a multicenter, open-label, randomized trial'))).toBe(true);
+  });
+
+  it('ignores an acronym made of ordinary words ("Solid Tumors")', () => {
+    const n3c01 = industry({ nctId: 'NCT07639450', acronym: 'Solid Tumors', protocolNumber: 'YF-N01-002', sponsor: 'Hefei Xinzhu Biological Technology Co., Ltd.', title: 'N-3C01 Monotherapy and Combination With PD-(L)1 Inhibitors in Advanced Solid Tumors', arms: [{ label: 'N-3C01 plus pembrolizumab' }] });
+    expect(pivotalFor(n3c01, span('Tumor Mutational Burden-High Cancer', 'patients with unresectable or metastatic tumor mutational burden-high (TMB-H) Solid Tumors'))).toBe(false);
+  });
+
+  it("gives no role to another company's trial of another drug ('PD-1', a nivolumab study)", () => {
+    const pd1 = industry({ nctId: 'NCT01621490', acronym: 'PD-1', protocolNumber: 'CA209-038', sponsor: 'Bristol-Myers Squibb', title: 'PH 1 Biomarker Study of Nivolumab and Ipilimumab and Nivolumab in Combination With Ipilimumab in Advanced Melanoma' });
+    expect(classifyTrialRoles(pd1, span('Non-Small Cell Lung Cancer', 'KEYTRUDA is a programmed death receptor-1 (PD-1)-blocking antibody')).roles).toEqual([]);
+    // A partner's trial naming the drug only by its code keeps its role.
+    const sanofi = industry({ nctId: 'NCT01537640', protocolNumber: 'PKM12350', sponsor: 'Sanofi', title: 'Comparison of the Pharmacokinetics and Safety of Two SAR231893 (REGN668) Drug Products in Healthy Subjects' });
+    expect(classifyTrialRoles(sanofi, { ...span('Atopic Dermatitis', 'Study PKM12350 compared two drug products.'), drugNames: ['dupilumab', 'Dupixent'], sponsorName: 'REGENERON' }).roles).not.toEqual([]);
+  });
+});
