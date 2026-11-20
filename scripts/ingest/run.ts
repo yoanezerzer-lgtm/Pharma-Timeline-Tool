@@ -618,6 +618,7 @@ function buildDrugRecord(
   const applicant = fda.application.sponsor_name ?? spec.sponsor;
   const office = reviewOffice(letters);
   const company = labelCompany(labels, applicant);
+  const routes = [...new Set((fda.application.products ?? []).flatMap((p) => (p.route ? p.route.split(/\s*,\s*/) : [])))].sort();
   const about = pharmacology(labels, spec.brandName, fda.application.openfda?.pharm_class_epc?.[0], fda.queryUrl);
 
   return {
@@ -638,6 +639,7 @@ function buildDrugRecord(
         originalApprovalDate: original?.date,
         ...(office ? { reviewOffice: office } : {}),
         ...(company ? { labelCompany: company } : {}),
+        ...(routes.length > 0 ? { routes } : {}),
       },
     },
     trials,

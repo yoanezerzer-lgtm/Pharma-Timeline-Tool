@@ -44,6 +44,10 @@ jobs:
           ALLOW_REFERENCE_CORRECTION: ${{ contains(github.event.pull_request.labels.*.name, 'correct-reference') }}
         run: npx tsx scripts/qc/guard.ts "origin/${{ github.base_ref }}"
 
+      # The saved FDA text, so the checks can read each use's label.
+      - name: Fetch the saved FDA text (diag/raw-text-* branches)
+        run: npm run -s qc:fetch-raw
+
       - name: Data quality checks
         run: |
           set -o pipefail

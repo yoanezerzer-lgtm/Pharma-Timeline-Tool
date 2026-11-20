@@ -55,6 +55,35 @@ most of those questions for free.
      Dupixent's nasal polyps: SUPPL-66, 2024, becomes SUPPL-14, 2019).
      Still on pivotal trials only: the site's "checked" badge and
      `npm run -s status`'s checked count.
+   - **Errors the new QC cross-checks found on the site** (20 Nov; listed
+     in `scripts/qc/known-errors.json`, reported by `npm run qc` but not
+     blocking; take each out once a pipeline fix and refresh clear it):
+     - Keytruda: pivotal roles on trials matched by a bare protocol number
+       or a word: two Theravance constipation trials ("0067" → head and
+       neck, "0083" → ovarian), a Carisma CAR-macrophage trial ("101" → lung,
+       liver, kidney), "PD-1" (KEYNOTE-001) under lung, colorectal, breast
+       and ovarian uses, CLEAR (a kidney trial) under endometrial ("clear
+       cell"), and a Chinese company's N-3C01 trial (acronym "Solid
+       Tumors") under melanoma and TMB-H. Section 14 matching should not
+       accept these ids.
+     - Supporting roles from the FDA review by a drug or disease name:
+       Dupixent (DUPILUMAB, CRSwNP), Lexapro (Escitalopram, MDD), Keytruda
+       (Pembro, MCC, NSCLC), Rinvoq (ACUTE, CD). The #180 rule (outside
+       trials only by NCT number) should clear them on the next refresh.
+     - Brands: "Rybrevant faspro", "Awiqli flextouch", "Lifyorli
+       (copackaged)"; #177 should fix them on the next refresh.
+     - Cefepime and tebipenem list "Usage to Reduce Development of
+       Drug-Resistant Bacteria" as a use; skip it like "Limitations of Use".
+     - Opzelura: 19 oral ruxolitinib trials (Jakafi's) still in the record.
+       Shown once the next refresh stores products' routes; #180 should
+       drop them. Same then for Hovilpri (pritelivir tablets): LipP1, a
+       pritelivir ointment trial.
+   - **Label check**: `npm run qc` checks each dated use against its
+     approval's label wherever the saved text is present: pull request CI
+     fetches it (`npm run qc:fetch-raw`), the weekly refresh has it from its
+     own run. Clean on all 62 drugs; catches Rybrevant Faspro's head and
+     neck dating on the 15 Nov refresh, and caught 42 of 42 uses re-dated
+     to their drug's first approval on purpose.
 2. **New drugs: atopic dermatitis only** (PRD goal 2), until its list
    matches the FDA's own records. No other areas until then.
 3. **Design and legibility: finish, then stop.** Home, drug, approved
