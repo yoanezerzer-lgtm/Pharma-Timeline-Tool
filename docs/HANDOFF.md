@@ -37,11 +37,10 @@ most of those questions for free.
    trial's disease vs its use, oral trials on topical products, uses dated
    to a label lacking them), then the nightly checker confirming dates.
    Left:
-   - **Saturday's refresh (22 Nov) drops many old trials**: since #177 a
-     trial no run returns is removed unless it has a pivotal or checked
-     role. Expect about 69 on Rinvoq, 50 on Opzelura, 6 on Dupixent,
-     waiting on `data/refresh-2026-11-22` as "needs a look". Merge them
-     unless a pivotal trial is among them.
+   - Saturday's refresh (22 Nov): the old-trial drops expected on Rinvoq,
+     Opzelura and Dupixent are already published (20 Nov refreshes). If it
+     holds other drugs for "needs a look", merge them unless a pivotal
+     trial is among the drops.
    - Cibinqo JADE MONO-1 has no readout: its release names it only as
      B7451012. The overnight agent should look for another release.
    - The first nightly run after #176 opens a confirmations pull request
@@ -62,21 +61,15 @@ most of those questions for free.
      longer keeps an old pivotal role for a trial it found and gave none.
      Keytruda refreshed: 13 wrong pivotal roles and 42 outside trials with
      word-matched review roles gone, every date unchanged.
-   - **Errors the new QC cross-checks found on the site** (20 Nov; listed
-     in `scripts/qc/known-errors.json`, reported by `npm run qc` but not
-     blocking; take each out once a pipeline fix and refresh clear it):
-     - Supporting roles from the FDA review by a drug or disease name:
-       Dupixent (DUPILUMAB, CRSwNP), Lexapro (Escitalopram, MDD), Keytruda
-       (Pembro), Rinvoq (ACUTE, CD). The #180 rule (outside
-       trials only by NCT number) should clear them on the next refresh.
-     - Brands: "Rybrevant faspro", "Awiqli flextouch", "Lifyorli
-       (copackaged)"; #177 should fix them on the next refresh.
-     - Cefepime and tebipenem list "Usage to Reduce Development of
-       Drug-Resistant Bacteria" as a use; skip it like "Limitations of Use".
-     - Opzelura: 19 oral ruxolitinib trials (Jakafi's) still in the record.
-       Shown once the next refresh stores products' routes; #180 should
-       drop them. Same then for Hovilpri (pritelivir tablets): LipP1, a
-       pritelivir ointment trial.
+   - **Every error the QC cross-checks found is fixed** (20 Nov):
+     `scripts/qc/known-errors.json` is empty, so any new one fails CI.
+     An acronym that is the drug's or disease's name (Pembro, DUPILUMAB,
+     CRSwNP, MDD) no longer names a trial; the antibacterial "Usage" note
+     is not a use (Utebzi gains its real cUTI use); a tablet or injection
+     no longer takes a registry trial of a cream of its drug (pritelivir's
+     LipP1). Refreshed: Rybrevant Faspro, Awiqli, Lifyorli, Zaynich,
+     Utebzi, Dupixent, Lexapro, Rinvoq, Keytruda, Opzelura (Jakafi's oral
+     trials gone), Hovilpri.
    - **Label check**: `npm run qc` checks each dated use against its
      approval's label wherever the saved text is present: pull request CI
      fetches it (`npm run qc:fetch-raw`), the weekly refresh has it from its

@@ -1039,7 +1039,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "INJECTION"
+      ]
     }
   },
   "trials": [
@@ -6804,6 +6807,10 @@
         "value": "2018-11-16",
         "precision": "day"
       },
+      "readoutDate": {
+        "value": "2018-10-16",
+        "precision": "day"
+      },
       "enrollment": {
         "count": 448,
         "type": "ACTUAL"
@@ -7070,11 +7077,7 @@
           ],
           "detectedAt": "2026-11-07T20:38:48.423Z"
         }
-      ],
-      "readoutDate": {
-        "value": "2018-10-16",
-        "precision": "day"
-      }
+      ]
     },
     {
       "id": "sinus-24",
@@ -7120,6 +7123,10 @@
       },
       "completionDate": {
         "value": "2018-07-05",
+        "precision": "day"
+      },
+      "readoutDate": {
+        "value": "2018-10-16",
         "precision": "day"
       },
       "enrollment": {
@@ -7377,11 +7384,7 @@
           ],
           "detectedAt": "2026-11-07T20:38:48.423Z"
         }
-      ],
-      "readoutDate": {
-        "value": "2018-10-16",
-        "precision": "day"
-      }
+      ]
     },
     {
       "id": "r668-ad-1607",
@@ -8291,114 +8294,6 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT03112577",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "drs",
-      "nctId": "NCT03411837",
-      "protocolNumber": "STU00088226",
-      "acronym": "DRS",
-      "title": "Dupilumab Registry Study",
-      "briefTitle": "Dupilumab Phase 4 Study",
-      "phase": "NA",
-      "roles": [
-        {
-          "role": "SUPPORTIVE",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/761055Orig1s017.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "TERMINATED",
-      "sponsor": "Northwestern University",
-      "sponsorClass": "OTHER",
-      "studyType": "OBSERVATIONAL",
-      "conditions": [
-        "Atopic Dermatitis"
-      ],
-      "conditionMesh": [
-        {
-          "id": "D003876",
-          "term": "Dermatitis, Atopic"
-        }
-      ],
-      "startDate": {
-        "value": "2017-10-16",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2019-08-31",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2019-08-31",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 46,
-        "type": "ACTUAL"
-      },
-      "design": {},
-      "population": {
-        "minAge": "12 Years",
-        "sex": "ALL",
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Dupilumab",
-          "description": "Patients with moderated-to-severe atopic dermatitis who are receiving dupilumab as a standard of care"
-        }
-      ],
-      "primaryEndpoints": [
-        "Quantified Itch Survey",
-        "Quantified Sleep Survey",
-        "Quantified Quality of Life Survey"
-      ],
-      "secondaryEndpoints": [
-        "Occurrence of any AEs by 24 months",
-        "Occurrence of any infections by 24 months",
-        "Occurrence of any SAEs by 24 months"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03411837",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03411837",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03411837",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03411837",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03411837",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -11775,17 +11670,7 @@
       "title": "Registry of Asthma Patients Initiating DUPIXENT® (RAPID)",
       "briefTitle": "Registry of Asthma Patients Initiating DUPIXENT®",
       "phase": "NA",
-      "roles": [
-        {
-          "role": "SUPPORTIVE",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/761055Orig1s017.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
+      "roles": [],
       "status": "COMPLETED",
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
@@ -11879,7 +11764,24 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "role": "SUPPORTIVE",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/761055Orig1s017.pdf",
+                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [],
+          "detectedAt": "2026-11-20T01:13:11.866Z"
+        }
+      ]
     },
     {
       "id": "notus",
@@ -12875,123 +12777,6 @@
       "changeLog": []
     },
     {
-      "id": "reveal",
-      "nctId": "NCT04550962",
-      "protocolNumber": "OBS16688",
-      "acronym": "REVEAL",
-      "title": "PRospEctiVe charactErization of Asthma Patients Treated With DupilumAb in reaL World Setting",
-      "briefTitle": "Description of Characteristics, Such as Age, Previous and Concurrent Treatments, Associated Diseases, of Patients With Asthma Treated With Dupilumab (DUPIXENT)",
-      "phase": "NA",
-      "roles": [
-        {
-          "role": "SUPPORTIVE",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/761055Orig1s017.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "COMPLETED",
-      "sponsor": "Sanofi",
-      "sponsorClass": "INDUSTRY",
-      "studyType": "OBSERVATIONAL",
-      "conditions": [
-        "Asthma"
-      ],
-      "conditionMesh": [
-        {
-          "id": "D001249",
-          "term": "Asthma"
-        }
-      ],
-      "startDate": {
-        "value": "2020-11-02",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2026-06-18",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2026-06-18",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 376,
-        "type": "ACTUAL"
-      },
-      "design": {},
-      "population": {
-        "minAge": "12 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Participants with asthma",
-          "description": "Eligible participants are initiating treatment with Dupixent for asthma according to the prescribing information in effect in each country"
-        }
-      ],
-      "primaryEndpoints": [
-        "Baseline Characteristics: Socio-demographics",
-        "Baseline Characteristics: Medical history",
-        "Baseline Characteristics: Disease characteristics",
-        "Baseline Characteristics: Biomarkers",
-        "Baseline Characteristics: Concomitant treatments for asthma"
-      ],
-      "secondaryEndpoints": [
-        "Dupixent and other asthma treatment use patterns",
-        "Lung function",
-        "Annualized exacerbation rate",
-        "Patient reported outcomes: Asthma Control Questionnaire (6-item) (ACQ-6)",
-        "Patient reported outcomes: Patient Oriented Eczema Measure (POEM) among participants with atopic dermatitis",
-        "Patient reported outcomes: Allergic Rhinitis Visual Analogue Scale (AR-VAS) among participants with allergic rhinitis",
-        "Patient reported outcomes: Sino-nasal Outcome Test (SNOT-22)",
-        "Healthcare Resource Utilization",
-        "Number of participants with adverse events (AE) and serious adverse events (SAE)"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04550962",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04550962",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04550962",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04550962",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04550962",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
       "id": "aims",
       "nctId": "NCT04684524",
       "protocolNumber": "EFC16724",
@@ -13731,483 +13516,6 @@
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT05203380",
           "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "crswnp",
-      "nctId": "NCT05246267",
-      "protocolNumber": "2021-13161",
-      "acronym": "CRSwNP",
-      "title": "Dupilumab Treatment Effects in an Ethnically Diverse Population With Chronic Rhinosinusitis With Nasal Polyposis (CRSwNP) Effect of 16-week Dupilumab Treatment on Sinonasal Respiratory Symptoms and Sense of Smell in Ethnically Diverse Patients With Chronic Rhinosinusitis and Nasal Polyposis (CRSwNP)",
-      "briefTitle": "Dupilumab Treatment Effects in an Ethnically Diverse Population With Chronic Rhinosinusitis With Nasal Polyposis",
-      "phase": "NA",
-      "roles": [
-        {
-          "role": "SUPPORTIVE",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/761055Orig1s017.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "ACTIVE_NOT_RECRUITING",
-      "sponsor": "Montefiore Medical Center",
-      "sponsorClass": "OTHER",
-      "studyType": "OBSERVATIONAL",
-      "conditions": [
-        "Chronic Rhinosinusitis With Nasal Polyps"
-      ],
-      "startDate": {
-        "value": "2022-02-15",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2027-08-01",
-        "precision": "month"
-      },
-      "completionDate": {
-        "value": "2027-08-01",
-        "precision": "month"
-      },
-      "enrollment": {
-        "count": 60,
-        "type": "ACTUAL"
-      },
-      "design": {},
-      "population": {
-        "minAge": "18 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "CRSwNP participants receiving dupilumab",
-          "description": "Patients with physician-diagnosed CRSwNP, with or without comorbid asthma that meet indication criteria for FDA-approved use of Dupilumab."
-        },
-        {
-          "label": "Non-CRSwNP surgical controls",
-          "description": "Patients undergoing sinonasal surgery for septal deviation, facial trauma with sinus fracture, cerebrospinal fluid (CSF) rhinorrhea, or sinonasal tumor. Single tissue collection at the time of surgery. No dupilumab administered. No subsequent study visits."
-        }
-      ],
-      "primaryEndpoints": [
-        "Change from baseline in Sino-Nasal outcome test (SNOT-22) score",
-        "Change from baseline in Smell Function",
-        "Change from baseline in Nasal Peak Flow (NPF)"
-      ],
-      "secondaryEndpoints": [
-        "Change from baseline in urinary Leukotriene E4 (uLTE₄) levels",
-        "Change from Baseline in Absolute Peripheral Blood Eosinophil Count",
-        "Change from Baseline in Serum Total Immunoglobulin E (IgE) Levels"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05246267",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05246267",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05246267",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05246267",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05246267",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "via",
-      "nctId": "NCT04380038",
-      "protocolNumber": "HSR200039",
-      "acronym": "VIA",
-      "title": "Viral Infection in Asthma (VIA) Study",
-      "briefTitle": "Viral Infection in Asthma (VIA) Study",
-      "phase": "PHASE4",
-      "roles": [
-        {
-          "role": "POST_MARKETING",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/761055Orig1s017.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "RECRUITING",
-      "sponsor": "University of Virginia",
-      "sponsorClass": "OTHER",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Asthma"
-      ],
-      "conditionMesh": [
-        {
-          "id": "D001249",
-          "term": "Asthma"
-        }
-      ],
-      "startDate": {
-        "value": "2022-05-01",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2026-06-30",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2026-12-31",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 60,
-        "type": "ESTIMATED"
-      },
-      "design": {
-        "allocation": "RANDOMIZED",
-        "masking": "QUADRUPLE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "maxAge": "40 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Dupilumab",
-          "type": "ACTIVE_COMPARATOR",
-          "description": "The dupilumab dose regimen selected for this study (300 mg q2w after an initial loading dose of 600 mg)"
-        },
-        {
-          "label": "Placebo",
-          "type": "PLACEBO_COMPARATOR",
-          "description": "A harmless substance that looks like the study drug, but which should have no effect. The placebo formulation used in this study contains all the ingredients present in the active drug, except the active ingredient (IL-4α antibody). Therefore, the risk related to this formulation should be no greater than the risk associated to the active drug."
-        }
-      ],
-      "primaryEndpoints": [
-        "Change in interleukin-25 transcript expression post-rhinovirus inoculation"
-      ],
-      "secondaryEndpoints": [
-        "Change in transcriptome in nasal brushing samples post-rhinovirus inoculation",
-        "Change in the proteome in nasal wash samples post-rhinovirus inoculation",
-        "Change in allergen-specific Th2 effector lymphocytes post-rhinovirus inoculation",
-        "Change in symptoms post-rhinovirus inoculation"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04380038",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04380038",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04380038",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04380038",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT04380038",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "leads",
-      "nctId": "NCT05436535",
-      "protocolNumber": "DAIT ADRN-12",
-      "acronym": "LEADS",
-      "title": "Longitudinal Endotyping Of Atopic Dermatitis Through Transcriptomic Skin Analysis (ADRN-12)",
-      "briefTitle": "Longitudinal Endotyping Of Atopic Dermatitis Through Transcriptomic Skin Analysis",
-      "phase": "PHASE4",
-      "roles": [
-        {
-          "role": "POST_MARKETING",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/761055Orig1s017.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "COMPLETED",
-      "sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
-      "sponsorClass": "NIH",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Atopic Dermatitis"
-      ],
-      "conditionMesh": [
-        {
-          "id": "D003876",
-          "term": "Dermatitis, Atopic"
-        }
-      ],
-      "startDate": {
-        "value": "2022-11-21",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2025-04-07",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2025-10-24",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 433,
-        "type": "ACTUAL"
-      },
-      "design": {
-        "allocation": "NON_RANDOMIZED",
-        "masking": "NONE",
-        "model": "PARALLEL",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "6 Years",
-        "sex": "ALL",
-        "healthyVolunteers": true,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Dupilumab-naïve atopic dermatitis participants",
-          "type": "EXPERIMENTAL",
-          "description": "On Day 7, approximately 390 dupilumab-naïve AD participants (including approximately 130 children and 260 adults) will begin applying topical corticosteroids twice daily to their specified target area, as well as to active lesions on non-target skin.\n\nDupilumab-naïve AD participants will return for a Steroid Assessment Visit at Day 35, when response to topical corticosteroids will be evaluated at the target site by TAA and targeted EASI scoring, and overall management of AD body-wide by topical steroid/moisturizer treatment will be evaluated by EASI score.\n\nParticipants who are responsive to topical corticosteroids will continue to use them body-wide through Day 140. Participants who are non-responsive to topical corticosteroids at any time before Day 91 will begin use of dupilumab through their penultimate scheduled visit (Day 140-Day 196) and may continue use of topical corticosteroids outside of their specified target area as needed."
-        },
-        {
-          "label": "Experienced Dupilumab atopic dermatitis participants",
-          "type": "EXPERIMENTAL",
-          "description": "Approximately 60 AD participants already on dupilumab for \\>= 4 months prior to study entry (including approximately 20 children and 40 adults) at the start of the study will continue treatment with dupilumab as prescribed by their physician outside of the study. They may also continue treatment with other prescribed topical AD medications outside of the specified target skin area throughout the study; they may continue treatment with other prescribed topical AD medications within the specified target area from Day 7 through Day 140.\n\nLong-term dupilumab participants will apply Vanicream™ beginning at Day 0 through Day 7. Long-term dupilumab participants will return for assessment visits at Day 63 and 140. At Day 140, participants will resume application of Vanicream™ through the End of Study Assessment (Day 168)."
-        },
-        {
-          "label": "Non-atopic dermatitis participants",
-          "type": "ACTIVE_COMPARATOR",
-          "description": "Approximately 150 will be non-AD controls (including approximately 50 children and 100 adults) Non-AD control participants will apply Vanicream™ beginning at Day 0 through Day 7. Non-AD control participants will return for assessment visits at Day 35, 91, and 140. At Day 140, participants will resume application of Vanicream™ through the End of Study Assessment (Day 168)."
-        }
-      ],
-      "primaryEndpoints": [
-        "Number of Dupilumab-naïve AD Participants With Mild (EASI ≤ 7) vs. Moderate-to-severe (EASI > 7) AD Severity Between Type 2-high vs. Type 2-low Endotype From Non-lesional Skin Transcriptome."
-      ],
-      "secondaryEndpoints": [
-        "Normalized Gene Counts Expressed in Non-lesional Skin Transcriptome Between Non-AD vs. Mild Dupilumab-naïve AD Adults and Children.",
-        "Normalized Gene Counts Expressed in Non-lesional Skin Transcriptome Between Non-AD vs. Moderate-to-severe Dupilumab-naïve AD Adults and Children.",
-        "Change in Normalized Gene Counts Expressed in Non-lesional Skin Transcriptome From Day 7 to Day 168-224 Among Non-AD, Topical Steroid Responders, Dupilumab Responders, Dupilumab Non-Responders, and Long-term Dupilumab AD Adults and Children."
-      ],
-      "postedResults": [
-        {
-          "title": "Number of Dupilumab-naïve AD Participants With Mild (EASI ≤ 7) vs. Moderate-to-severe (EASI > 7) AD Severity Between Type 2-high vs. Type 2-low Endotype From Non-lesional Skin Transcriptome.",
-          "timeFrame": "Day 7",
-          "paramType": "COUNT_OF_PARTICIPANTS",
-          "unitOfMeasure": "Participants",
-          "groups": [
-            {
-              "id": "OG000",
-              "title": "Type 2-high Endotype"
-            },
-            {
-              "id": "OG001",
-              "title": "Type 2-low Endotype"
-            }
-          ],
-          "measurements": [
-            {
-              "groupId": "OG000",
-              "category": "Dupilumab-naïve adults (18 years old or older) — Mild (EASI ≤ 7) AD severity",
-              "value": "20"
-            },
-            {
-              "groupId": "OG001",
-              "category": "Dupilumab-naïve adults (18 years old or older) — Mild (EASI ≤ 7) AD severity",
-              "value": "43"
-            },
-            {
-              "groupId": "OG000",
-              "category": "Dupilumab-naïve adults (18 years old or older) — Moderate-to-severe (EASI > 7) AD severity",
-              "value": "34"
-            },
-            {
-              "groupId": "OG001",
-              "category": "Dupilumab-naïve adults (18 years old or older) — Moderate-to-severe (EASI > 7) AD severity",
-              "value": "44"
-            },
-            {
-              "groupId": "OG000",
-              "category": "Dupilumab-naïve children (6-17 years old) — Mild (EASI ≤ 7) AD severity",
-              "value": "16"
-            },
-            {
-              "groupId": "OG001",
-              "category": "Dupilumab-naïve children (6-17 years old) — Mild (EASI ≤ 7) AD severity",
-              "value": "18"
-            },
-            {
-              "groupId": "OG000",
-              "category": "Dupilumab-naïve children (6-17 years old) — Moderate-to-severe (EASI > 7) AD severity",
-              "value": "31"
-            },
-            {
-              "groupId": "OG001",
-              "category": "Dupilumab-naïve children (6-17 years old) — Moderate-to-severe (EASI > 7) AD severity",
-              "value": "14"
-            },
-            {
-              "groupId": "OG000",
-              "category": "Dupilumab-naïve participants of all ages — Mild (EASI ≤ 7) AD severity",
-              "value": "36"
-            },
-            {
-              "groupId": "OG001",
-              "category": "Dupilumab-naïve participants of all ages — Mild (EASI ≤ 7) AD severity",
-              "value": "61"
-            },
-            {
-              "groupId": "OG000",
-              "category": "Dupilumab-naïve participants of all ages — Moderate-to-severe (EASI > 7) AD severity",
-              "value": "65"
-            },
-            {
-              "groupId": "OG001",
-              "category": "Dupilumab-naïve participants of all ages — Moderate-to-severe (EASI > 7) AD severity",
-              "value": "58"
-            }
-          ],
-          "analyses": [
-            {
-              "groupIds": [
-                "OG000",
-                "OG001"
-              ],
-              "pValue": "0.1488",
-              "method": "Regression, Logistic",
-              "paramType": "Odds Ratio (OR)",
-              "paramValue": "1.661",
-              "ciPct": "95",
-              "ciLower": "0.835",
-              "ciUpper": "3.361"
-            },
-            {
-              "groupIds": [
-                "OG000",
-                "OG001"
-              ],
-              "pValue": "0.0501",
-              "method": "Regression, Logistic",
-              "paramType": "Odds Ratio (OR)",
-              "paramValue": "2.491",
-              "ciPct": "95",
-              "ciLower": "0.999",
-              "ciUpper": "6.387"
-            },
-            {
-              "groupIds": [
-                "OG000",
-                "OG001"
-              ],
-              "pValue": "0.0197",
-              "method": "Regression, Logistic",
-              "paramType": "Odds Ratio (OR)",
-              "paramValue": "1.927",
-              "ciPct": "95",
-              "ciLower": "1.110",
-              "ciUpper": "3.380"
-            }
-          ]
-        }
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05436535",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05436535",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05436535",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05436535",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05436535",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "postedResults": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT05436535?tab=results",
-          "sourceLabel": "ClinicalTrials.gov — posted results",
           "extractedBy": "api",
           "verified": false
         }
@@ -14965,103 +14273,6 @@
         },
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT06693531",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
-      "id": "dupilumab",
-      "nctId": "NCT07637292",
-      "protocolNumber": "69HCL24_0491",
-      "acronym": "DUPILUMAB",
-      "title": "Use of Dupilumab in Asthma in Real-world Setting: Analysis of the SNDS Database",
-      "briefTitle": "Use of Dupilumab in Asthma in Real-world Setting",
-      "phase": "NA",
-      "roles": [
-        {
-          "role": "SUPPORTIVE",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2026/761055Orig1s017.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "ACTIVE_NOT_RECRUITING",
-      "sponsor": "Hospices Civils de Lyon",
-      "sponsorClass": "OTHER",
-      "studyType": "OBSERVATIONAL",
-      "conditions": [
-        "Asthma Acute"
-      ],
-      "startDate": {
-        "value": "2025-01-02",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2026-09-01",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2026-12-31",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 35000,
-        "type": "ESTIMATED"
-      },
-      "design": {},
-      "population": {
-        "minAge": "12 Years",
-        "sex": "ALL",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Study cohort",
-          "description": "\\* Patients will be included in the study if they meet the following inclusion criteria:\n\n* At least one reimbursement of dupilumab during the inclusion period from November 10, 2020 to December 31, 2023 AND\n* Be 12 years or older at dupilumab initiation. AND\n* At least one of the following asthma markers:\n\n  * At least one reimbursement of inhaled corticosteroids (ICS and fixed-dose combination ICS/LABA inhalers) in a 3-month time-window before and after one of the reimbursement of dupilumab\n  * A Long-Term Disease (LTD) for asthma in the 12 months before dupilumab initiation or over follow-up.\n  * An hospital admission for asthma in the 12 months before dupilumab initiation or over follow-up.\n\nTwo subgroups: 12 to 18 y.o. subgroup vs. 18 and+ y.o. subgroup"
-        }
-      ],
-      "primaryEndpoints": [
-        "Patient's characteristics"
-      ],
-      "secondaryEndpoints": [],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07637292",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07637292",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07637292",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07637292",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT07637292",
           "sourceLabel": "ClinicalTrials.gov",
           "extractedBy": "api",
           "verified": false
@@ -16727,5 +15938,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-10T20:09:50.714Z"
+  "lastIngestedAt": "2026-11-20T01:13:11.866Z"
 }

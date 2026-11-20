@@ -6,7 +6,7 @@ import type { DrugSpec } from './registry.js';
 import { identityFromApplication, registrySearchTerm, runFdaStage, trialMatchName, type FdaStageResult } from './fda.js';
 import { runDocsStage, type FetchedDoc } from './docs.js';
 import { extractCandidates, resolveCandidates, type ResolveReport } from './codes.js';
-import { codeNamesFrom, studyToTrial, searchByIntervention, ctgovStudyUrl, studyIsTopical, studyMatchesDrug } from './ctgov.js';
+import { codeNamesFrom, studyToTrial, searchByIntervention, ctgovStudyUrl, studyIsTopical, studyMatchesDrug, studyPutsDrugOnSkin, type CtgovStudy } from './ctgov.js';
 import {
   applyRoles,
   extractLabelSection14,
@@ -204,8 +204,12 @@ export async function runIngest(options: IngestOptions): Promise<IngestResult> {
     // taken by mouth is another product (Opzelura's ruxolitinib is Jakafi's
     // too). Trials the FDA documents cite were found above and stay.
     const topical = (fda.application.products ?? []).some((p) => /topical/i.test(p.route ?? ''));
-    const forDrug = all.filter((s) => studyMatchesDrug(s, spec.interventionNames) && (!topical || studyIsTopical(s)));
-    if (topical) log(`        topical product: ${all.filter((s) => studyMatchesDrug(s, spec.interventionNames) && !studyIsTopical(s)).length} registry trials of other forms left out`);
+    // The other way round, a tablet or an injection doesn't take a study of a
+    // cream or ointment of the same drug (pritelivir's LipP1, for cold sores).
+    const ownForm = (s: CtgovStudy) => (topical ? studyIsTopical(s) : !studyPutsDrugOnSkin(s, spec.interventionNames));
+    const forDrug = all.filter((s) => studyMatchesDrug(s, spec.interventionNames) && ownForm(s));
+    const otherForms = all.filter((s) => studyMatchesDrug(s, spec.interventionNames) && !ownForm(s)).length;
+    if (otherForms > 0) log(`        ${topical ? 'topical' : 'systemic'} product: ${otherForms} registry trials of other forms left out`);
     registeredTrialCount = forDrug.length;
     let added = 0;
     for (const study of forDrug) {

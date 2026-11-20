@@ -375,6 +375,24 @@ export function studyIsTopical(study: CtgovStudy): boolean {
   return texts.some((t) => !!t && TOPICAL_FORM.test(t));
 }
 
+const SKIN_FORM = /\b(?:creams?|ointments?|gels?|foams?|lotions?|topical(?:ly)?)\b/i;
+
+/**
+ * Whether the study puts this drug itself on the skin: an intervention named
+ * for the drug that is a cream, ointment, gel, foam or lotion ("Pritelivir
+ * 5% w/w ointment"). A tablet or an injection is another product then.
+ * Steroid creams given alongside are their own interventions and don't count.
+ */
+export function studyPutsDrugOnSkin(study: CtgovStudy, names_: string[]): boolean {
+  const needles = names_.map((n) => n.toLowerCase()).filter(Boolean);
+  const interventions = study.protocolSection?.armsInterventionsModule?.interventions ?? [];
+  return interventions.some((i) => {
+    const ownNames = [i.name, ...(i.otherNames ?? [])].filter((x): x is string => !!x).map((x) => x.toLowerCase());
+    if (!needles.some((n) => names(n, ownNames))) return false;
+    return [i.name, i.description].some((t) => !!t && SKIN_FORM.test(t));
+  });
+}
+
 /** A development code as registries write one: "AZD9833", "ABT-494", "MK-3475". */
 const CODE_NAME = /^[A-Z]{2,6}[- ]?\d{3,7}[A-Z]?$/;
 

@@ -32547,111 +32547,6 @@
       "changeLog": []
     },
     {
-      "id": "pembro",
-      "nctId": "NCT03879174",
-      "protocolNumber": "AN.MCME.CR.12",
-      "acronym": "Pembro",
-      "title": "A Phase II Study of Pembrolizumab And Tamoxifen Among Women With Advanced Hormone Receptor Positive Breast Cancer And Esr1 Mutation",
-      "briefTitle": "Pembrolizumab And Tamoxifen Among Women With Advanced Hormone Receptor Positive Breast Cancer And Esr1 Mutation",
-      "phase": "PHASE2",
-      "roles": [
-        {
-          "role": "DOSE_FINDING",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/125514s59-64,69,76-83SumR.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
-      "status": "UNKNOWN",
-      "sponsor": "Mediclinic Middle East",
-      "studyType": "INTERVENTIONAL",
-      "conditions": [
-        "Breast Cancer Female"
-      ],
-      "startDate": {
-        "value": "2019-08-01",
-        "precision": "day"
-      },
-      "primaryCompletionDate": {
-        "value": "2022-08-01",
-        "precision": "day"
-      },
-      "completionDate": {
-        "value": "2022-08-01",
-        "precision": "day"
-      },
-      "enrollment": {
-        "count": 25,
-        "type": "ESTIMATED"
-      },
-      "design": {
-        "allocation": "NA",
-        "masking": "NONE",
-        "model": "SINGLE_GROUP",
-        "primaryPurpose": "TREATMENT"
-      },
-      "population": {
-        "minAge": "18 Years",
-        "sex": "FEMALE",
-        "healthyVolunteers": false,
-        "keyCriteria": []
-      },
-      "arms": [
-        {
-          "label": "Pembrolizumab + Tamoxifen",
-          "type": "EXPERIMENTAL",
-          "description": "Pembrolizumab (200mg IV every three weeks) + Tamoxifen (20 mg OD)"
-        }
-      ],
-      "primaryEndpoints": [
-        "Progression Free Survival",
-        "Overall Response Rate (ORR)"
-      ],
-      "secondaryEndpoints": [
-        "Overall Survival"
-      ],
-      "metPrimaryEndpoint": null,
-      "takeaways": [],
-      "limitations": [],
-      "publications": [],
-      "provenance": {
-        "phase": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03879174",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "startDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03879174",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "primaryCompletionDate": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03879174",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "enrollment": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03879174",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        },
-        "design": {
-          "sourceUrl": "https://clinicaltrials.gov/study/NCT03879174",
-          "sourceLabel": "ClinicalTrials.gov",
-          "extractedBy": "api",
-          "verified": false
-        }
-      },
-      "changeLog": []
-    },
-    {
       "id": "keynote-966",
       "nctId": "NCT04003636",
       "protocolNumber": "3475-966",
@@ -55768,5 +55663,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-20T00:59:01.734Z"
+  "lastIngestedAt": "2026-11-20T01:16:25.288Z"
 }

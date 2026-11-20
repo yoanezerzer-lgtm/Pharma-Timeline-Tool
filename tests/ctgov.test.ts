@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { codeNamesFrom, postedPrimaryResults, studyIsTopical, studyMatchesDrug, studyToTrial, type CtgovStudy } from '../scripts/ingest/ctgov.js';
+import { codeNamesFrom, postedPrimaryResults, studyIsTopical, studyMatchesDrug, studyPutsDrugOnSkin, studyToTrial, type CtgovStudy } from '../scripts/ingest/ctgov.js';
 import { withoutPostedResults } from '../scripts/ingest/run.js';
 
 const study: CtgovStudy = {
@@ -138,6 +138,20 @@ describe('studyIsTopical', () => {
     expect(studyIsTopical(study('A Study of INCB018424 Phosphate Cream in Subjects With Vitiligo', [{ name: 'INCB018424' }]))).toBe(true);
     expect(studyIsTopical(study('Study of Ruxolitinib in Pancreatic Cancer Patients (Janus 1)', [{ name: 'Ruxolitinib', description: 'Ruxolitinib tablets taken by mouth' }]))).toBe(false);
     expect(studyIsTopical(study('COntrolled MyeloFibrosis Study With ORal JAK Inhibitor Treatment: The COMFORT-I Trial', [{ name: 'Ruxolitinib' }]))).toBe(false);
+  });
+
+  it("finds a cream of a tablet's drug, not the steroid cream given alongside an injection", () => {
+    // Pritelivir (Hovilpri, tablets): LipP1 tested an ointment for cold sores.
+    const lipP1 = study('Pritelivir Ointment for the Treatment of Recurrent Herpes Labialis in Adults - LipP1', [
+      { name: 'Pritelivir 5% w/w ointment', description: 'Topical treatment (20 applications), 5 times daily for 4 days' },
+      { name: 'Zovirax® cream' },
+    ]);
+    expect(studyPutsDrugOnSkin(lipP1, ['pritelivir', 'Hovilpri'])).toBe(true);
+    const dupixent = study('Dupilumab With Topical Corticosteroids in Atopic Dermatitis', [
+      { name: 'Dupilumab', description: 'Subcutaneous injection every 2 weeks' },
+      { name: 'Topical corticosteroids', description: 'Medium-potency TCS cream' },
+    ]);
+    expect(studyPutsDrugOnSkin(dupixent, ['dupilumab', 'Dupixent'])).toBe(false);
   });
 });
 
