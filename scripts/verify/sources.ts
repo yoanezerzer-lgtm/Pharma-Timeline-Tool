@@ -15,6 +15,12 @@ export interface SourceDoc {
   url: string;
   kind: SourceKind;
   text: string;
+  /**
+   * The submissions the record files this document under ("ORIG-1",
+   * "SUPPL-2"), from its source list ("Letter (SUPPL-2)"). One letter can
+   * cover several supplements.
+   */
+  submissions?: string[];
 }
 
 function kindOf(url: string): SourceKind {
@@ -40,11 +46,25 @@ function citedUrls(drug: Drug): Set<string> {
   return urls;
 }
 
+/** Which submissions each document is filed under, by file name: "Label (SUPPL-128)" → SUPPL-128. */
+function submissionsByFile(drug: Drug): Map<string, string[]> {
+  const out = new Map<string, string[]>();
+  for (const s of drug.sources) {
+    const m = /\(((?:ORIG|SUPPL)-\d+)\)\s*$/.exec(s.label);
+    if (!m || !s.url || !/accessdata\.fda\.gov/.test(s.url)) continue;
+    const file = basename(new URL(s.url).pathname);
+    out.set(file, [...new Set([...(out.get(file) ?? []), m[1]])]);
+  }
+  return out;
+}
+
 export function loadSources(drug: Drug, docsDir: string): SourceDoc[] {
   const out: SourceDoc[] = [];
+  const filed = submissionsByFile(drug);
   for (const url of citedUrls(drug)) {
-    const path = join(docsDir, `${basename(new URL(url).pathname)}.txt`);
-    if (existsSync(path)) out.push({ url, kind: kindOf(url), text: readFileSync(path, 'utf8') });
+    const file = basename(new URL(url).pathname);
+    const path = join(docsDir, `${file}.txt`);
+    if (existsSync(path)) out.push({ url, kind: kindOf(url), text: readFileSync(path, 'utf8'), submissions: filed.get(file) ?? [] });
   }
   return out;
 }
@@ -97,6 +117,8 @@ export interface Passage {
   page?: number;
   /** Whether it sits inside the label's section 14 span for the claim's indication. */
   inIndicationSpan: boolean;
+  /** What the passage is, for date claims ("Approval letter (SUPPL-2)"). */
+  about?: string;
   text: string;
 }
 

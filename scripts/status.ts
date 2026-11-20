@@ -42,6 +42,11 @@ const stuck = drugs.flatMap(({ drug, ref }) =>
   (ref?.pivotal ?? [])
     .filter((p) => p.status === 'baseline' && (p.tries ?? 0) >= STUCK_AFTER)
     .map((p) => `- ${drug.brandName}: ${p.trial} for "${p.indication}"`)
+    .concat(
+      (ref?.indications ?? [])
+        .filter((i) => i.status === 'baseline' && (i.tries ?? 0) >= STUCK_AFTER)
+        .map((i) => `- ${drug.brandName}: "${i.name}" first approved by ${i.submission} on ${i.approvalDate}`)
+    )
 );
 lines.push(`## Stuck facts (tried ${STUCK_AFTER} nights, need a person): ${stuck.length}`, '', ...stuck, '');
 

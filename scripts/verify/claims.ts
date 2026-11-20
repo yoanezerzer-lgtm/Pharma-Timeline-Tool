@@ -6,6 +6,7 @@ import { runByApplicant } from '../ingest/roles.js';
 import { getSpec } from '../ingest/registry.js';
 import type { Reference } from '../qc/reference.js';
 import { checkQuote, findPassages, type Passage, type SourceDoc } from './sources.js';
+import { dateClaimFor, dateDecoyCandidates, gradeDate, undatedCount, type DateClaim } from './dates.js';
 
 /**
  * One night's verification work. Code decides what to check and finds the
@@ -19,7 +20,10 @@ export interface DrugContext {
   sources: SourceDoc[];
 }
 
-export interface Claim {
+/** Whether one trial was part of the evidence for one approved use. */
+export interface PivotalClaim {
+  /** Absent in queues written before date claims existed. */
+  kind?: 'pivotal';
   id: string;
   drug: string;
   indication: string;
@@ -30,6 +34,9 @@ export interface Claim {
   registry: { phase: string; studyType?: string; sponsor?: string; applicant: string };
   passages: Passage[];
 }
+
+/** A pivotal-trial claim or an approval-date claim (dates.ts). */
+export type Claim = PivotalClaim | DateClaim;
 
 /** Which claims are planted false ones. Written apart from the queue; the agent never reads it. */
 export type AnswerKey = Record<string, 'real' | 'decoy'>;
@@ -77,14 +84,16 @@ function shuffle<T>(items: T[], rand: () => number): T[] {
 function byDrugPriority<T extends { ctx: DrugContext }>(items: T[], rand: () => number): T[] {
   const groups = new Map<DrugContext, T[]>();
   for (const x of shuffle(items, rand)) groups.set(x.ctx, [...(groups.get(x.ctx) ?? []), x]);
-  const confirmed = (ctx: DrugContext) => ctx.ref.pivotal.some((r) => r.status === 'confirmed');
+  const confirmed = (ctx: DrugContext) =>
+    ctx.ref.pivotal.some((r) => r.status === 'confirmed') || ctx.ref.indications.some((r) => r.status === 'confirmed');
   return [...groups.entries()]
     .sort(([a, xs], [b, ys]) => Number(confirmed(a)) - Number(confirmed(b)) || xs.length - ys.length)
     .flatMap(([, xs]) => xs);
 }
 
-function claimFor(ctx: DrugContext, trial: Trial, indication: string, id: string): Claim {
+function claimFor(ctx: DrugContext, trial: Trial, indication: string, id: string): PivotalClaim {
   return {
+    kind: 'pivotal',
     id,
     drug: ctx.drug.slug,
     indication,
@@ -101,13 +110,19 @@ function claimFor(ctx: DrugContext, trial: Trial, indication: string, id: string
   };
 }
 
+type Item =
+  | { kind: 'pivotal'; ctx: DrugContext; trial: Trial; indication: string }
+  | { kind: 'date'; ctx: DrugContext; indication: string; submission: string; date: string };
+
 /**
- * Up to `limit` unchecked pivotal entries, drugs with nothing confirmed yet
- * first (see byDrugPriority), plus planted false claims (about
- * one in ten, at least two): a drug's real pivotal trial paired with another
- * of its indications it has no part in, or another drug's pivotal trial.
- * Both kinds must come back "not supported"; one that comes back supported
- * voids the whole night.
+ * Up to `limit` unchecked facts, drugs with nothing confirmed yet first (see
+ * byDrugPriority): pivotal pairings, and approval dates of uses that have
+ * one (an undated use has nothing to confirm). Plus planted false claims
+ * (about one in ten, at least two), shared between the two kinds by their
+ * share of the night: a drug's real pivotal trial paired with another of
+ * its indications it has no part in, or another drug's pivotal trial; a real
+ * use paired with another of the drug's approvals and its date. All must
+ * come back "not supported"; one that comes back supported voids the night.
  */
 export function buildQueue(
   contexts: DrugContext[],
@@ -117,20 +132,39 @@ export function buildQueue(
 ): { queue: Claim[]; key: AnswerKey } {
   const rand = rng(date);
   const usable = contexts.filter((c) => c.sources.some((s) => s.kind === 'label'));
-  const real: { ctx: DrugContext; trial: Trial; indication: string }[] = [];
+  const real: Item[] = [];
+  const due = (ctx: DrugContext, r: { status: string; tries?: number }) =>
+    r.status === 'baseline' &&
+    ((r.tries ?? 0) < STUCK_AFTER || !!opts.retryStuck) &&
+    (!opts.drugs || opts.drugs.includes(ctx.drug.slug));
   for (const ctx of usable) {
     for (const r of ctx.ref.pivotal) {
-      if (r.status !== 'baseline' || !r.pivotal) continue;
-      if ((r.tries ?? 0) >= STUCK_AFTER && !opts.retryStuck) continue;
-      if (opts.drugs && !opts.drugs.includes(ctx.drug.slug)) continue;
+      if (!r.pivotal || !due(ctx, r)) continue;
       const trial = ctx.drug.trials.find((t) => trialKey(t) === r.trial);
-      if (trial) real.push({ ctx, trial, indication: r.indication });
+      if (trial) real.push({ kind: 'pivotal', ctx, trial, indication: r.indication });
+    }
+    for (const r of ctx.ref.indications) {
+      if (!r.approvalDate || !r.submission || !due(ctx, r)) continue;
+      real.push({ kind: 'date', ctx, indication: r.name, submission: r.submission, date: r.approvalDate });
     }
   }
   const picked = byDrugPriority(real, rand).slice(0, limit);
 
-  const decoys: typeof picked = [];
+  const decoys: Item[] = [];
   const wanted = Math.max(2, Math.ceil(picked.length / 10));
+  const dateCandidates = usable.flatMap((ctx) => dateDecoyCandidates(ctx.drug, ctx.sources).map((x) => ({ ctx, ...x })));
+  const pickedDates = picked.filter((x) => x.kind === 'date').length;
+  const wantedDates =
+    pickedDates === 0 || dateCandidates.length === 0
+      ? 0
+      : pickedDates === picked.length
+        ? wanted
+        : Math.min(wanted - 1, Math.max(1, Math.round((wanted * pickedDates) / picked.length)));
+  for (const c of shuffle(dateCandidates, rand)) {
+    if (decoys.length >= wantedDates) break;
+    if (decoys.some((d) => d.kind === 'date' && d.ctx === c.ctx && d.indication === c.indication)) continue;
+    decoys.push({ kind: 'date', ...c });
+  }
   const pivotalTrials = usable.flatMap((ctx) =>
     ctx.drug.trials.filter((t) => t.roles.some((r) => r.role === 'PIVOTAL')).map((trial) => ({ ctx, trial }))
   );
@@ -142,18 +176,18 @@ export function buildQueue(
     const choices = target.drug.indications.filter((i) => !trial.roles.some((r) => r.indication === i.name));
     if (choices.length === 0) continue;
     const indication = choices[Math.floor(rand() * choices.length)].name;
-    if (decoys.some((d) => d.trial === trial && d.indication === indication)) continue;
+    if (decoys.some((d) => d.kind === 'pivotal' && d.trial === trial && d.indication === indication)) continue;
     // Only plant it if the documents don't name the trial in that indication's section 14 at all.
     if (findPassages(trial, indication, target.sources).some((p) => p.inIndicationSpan)) continue;
-    decoys.push({ ctx: target, trial, indication });
+    decoys.push({ kind: 'pivotal', ctx: target, trial, indication });
   }
 
-  const all = shuffle([...picked.map((x) => ({ ...x, decoy: false })), ...decoys.map((x) => ({ ...x, decoy: true }))], rand);
+  const all = shuffle([...picked.map((x) => ({ x, decoy: false })), ...decoys.map((x) => ({ x, decoy: true }))], rand);
   const key: AnswerKey = {};
-  const queue = all.map((x, i) => {
+  const queue = all.map(({ x, decoy }, i) => {
     const id = `c${String(i + 1).padStart(3, '0')}-${Math.floor(rand() * 1e6).toString(36)}`;
-    key[id] = x.decoy ? 'decoy' : 'real';
-    return claimFor(x.ctx, x.trial, x.indication, id);
+    key[id] = decoy ? 'decoy' : 'real';
+    return x.kind === 'date' ? dateClaimFor(x.ctx.drug, x.ctx.sources, x, id) : claimFor(x.ctx, x.trial, x.indication, id);
   });
   return { queue, key };
 }
@@ -209,6 +243,8 @@ interface ApplyResult {
   spotCheck: ClaimResult[];
   /** Facts tried for the STUCK_AFTER-th night tonight: no longer queued, a person decides. */
   stuck: ClaimResult[];
+  /** Unchecked uses with no approval date: nothing to confirm. */
+  undated: number;
 }
 
 export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[], contexts: DrugContext[], date: string): ApplyResult {
@@ -216,7 +252,6 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
   const results: ClaimResult[] = queue.map((claim) => {
     const v = verdicts.find((x) => x.claim === claim.id);
     const ctx = byDrug.get(claim.drug)!;
-    const trial = ctx.drug.trials.find((t) => trialKey(t) === claim.trial)!;
     if (!v) return { claim, outcome: 'unanswered', detail: 'No verdict given.', evidence: [] };
 
     if (key[claim.id] === 'decoy') {
@@ -225,7 +260,9 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
         : { claim, outcome: 'decoy-caught', detail: `Planted false claim, answered "${v.verdict}".`, evidence: v.evidence };
     }
     if (v.verdict === 'unclear') return { claim, outcome: 'unclear', detail: v.reason || 'The agent could not tell.', evidence: v.evidence };
+    if (claim.kind === 'date') return { claim, ...gradeDate(claim, v.verdict, v.evidence, v.reason, ctx.drug, ctx.sources) };
 
+    const trial = ctx.drug.trials.find((t) => trialKey(t) === claim.trial)!;
     const checks = v.evidence.map((e) => ({ e, c: checkQuote(e.quote, e.sourceUrl, trial, claim.indication, ctx.sources) }));
     const failed = checks.filter((x) => !x.c.ok).map((x) => (x.c.ok ? '' : x.c.reason));
     const valid = checks.flatMap((x) => (x.c.ok ? [{ ...x.e, check: x.c }] : []));
@@ -256,7 +293,7 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
   const confirmed = results.filter((r) => r.outcome === 'confirmed');
   if (!voided) {
     for (const r of confirmed) {
-      const entry = refs.get(r.claim.drug)!.pivotal.find((p) => sameWording(p.indication, r.claim.indication) && p.trial === r.claim.trial);
+      const entry = entryFor(refs.get(r.claim.drug)!, r.claim);
       // Only ever upgrades a baseline entry; a confirmed one is never touched.
       if (!entry || entry.status !== 'baseline') continue;
       entry.status = 'confirmed';
@@ -270,7 +307,7 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
   if (!voided) {
     for (const r of results) {
       if (!['unclear', 'rejected', 'unanswered', 'disagreement'].includes(r.outcome)) continue;
-      const entry = refs.get(r.claim.drug)!.pivotal.find((p) => sameWording(p.indication, r.claim.indication) && p.trial === r.claim.trial);
+      const entry = entryFor(refs.get(r.claim.drug)!, r.claim);
       if (!entry || entry.status !== 'baseline') continue;
       entry.tries = (entry.tries ?? 0) + 1;
       if (entry.tries === STUCK_AFTER) stuck.push(r);
@@ -279,7 +316,25 @@ export function applyVerdicts(queue: Claim[], key: AnswerKey, verdicts: Verdict[
 
   const rand = rng(`${date}-spot`);
   const spotCheck = voided ? [] : shuffle(confirmed, rand).slice(0, Math.ceil(confirmed.length / 10));
-  return { results, voided, refs, spotCheck, stuck };
+  const undated = contexts.reduce((n, c) => n + undatedCount(c.ref), 0);
+  return { results, voided, refs, spotCheck, stuck, undated };
+}
+
+/** The reference entry a claim is about: a pivotal pairing, or a use's date with the same date and submission. */
+function entryFor(ref: Reference, claim: Claim) {
+  if (claim.kind === 'date') {
+    return ref.indications.find(
+      (r) => sameWording(r.name, claim.indication) && r.approvalDate === claim.date && r.submission === claim.submission
+    );
+  }
+  return ref.pivotal.find((p) => sameWording(p.indication, claim.indication) && p.trial === claim.trial);
+}
+
+/** One line naming the fact a claim is about. */
+function factLine(c: Claim): string {
+  return c.kind === 'date'
+    ? `**${c.drug}** · ${c.indication} · first approved by ${c.submission} on ${c.date}`
+    : `**${c.drug}** · ${c.indication} · ${c.trialName} (${c.trial})`;
 }
 
 export function reportMarkdown(r: ApplyResult, date: string): string {
@@ -290,19 +345,20 @@ export function reportMarkdown(r: ApplyResult, date: string): string {
     lines.push('**Voided:** a planted false claim came back "supported", so nothing from tonight was recorded.', '');
   }
   lines.push(
-    `- Checked: ${real.length} facts`,
+    `- Checked: ${real.length} facts (${real.filter((x) => x.claim.kind === 'date').length} approval dates)`,
     `- Confirmed: ${count('confirmed')}${r.voided ? ' (discarded)' : ''}`,
     `- Disagreements: ${count('disagreement')}`,
     `- Couldn't tell: ${count('unclear')}`,
     `- Rejected by the quote checks: ${count('rejected')}`,
     `- Planted false claims caught: ${count('decoy-caught')} of ${count('decoy-caught') + count('decoy-missed')}`,
+    `- Approved uses with no date (nothing to confirm): ${r.undated}`,
     ''
   );
   const section = (title: string, items: ClaimResult[]) => {
     if (items.length === 0) return;
     lines.push(`## ${title}`, '');
     for (const x of items) {
-      lines.push(`- **${x.claim.drug}** · ${x.claim.indication} · ${x.claim.trialName} (${x.claim.trial}): ${x.detail}`);
+      lines.push(`- ${factLine(x.claim)}: ${x.detail}`);
       for (const e of x.evidence) lines.push(`  > "${e.quote}" ([source](${e.sourceUrl}))`);
     }
     lines.push('');

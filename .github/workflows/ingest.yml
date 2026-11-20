@@ -151,6 +151,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -B "$BRANCH"
           git add -f data/raw/*/docs/*.txt
+          # This run's record, which matches the text (a new label brings
+          # approvals the published record lacks); npm run compare-rules reads it.
+          if [ -f "data/drugs/${DRUG}.json" ] && [ -d "data/raw/${DRUG}" ]; then
+            cp "data/drugs/${DRUG}.json" "data/raw/${DRUG}/record.json"
+            git add -f "data/raw/${DRUG}/record.json"
+          fi
           # Answers from services only this workflow can reach (MedlinePlus, MedlinePlus Genetics, the NCI
           # dictionary, MeSH); kept so their format and matches can be checked.
           for kind in medlineplus genetics nci mesh; do
