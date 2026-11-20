@@ -24,6 +24,12 @@
       "approvalDate": "2025-12-17",
       "submission": "ORIG-1",
       "status": "baseline"
+    },
+    {
+      "name": "Previously Treated HNSCC",
+      "approvalDate": "2026-11-05",
+      "submission": "SUPPL-2",
+      "status": "baseline"
     }
   ],
   "pivotal": [
@@ -46,13 +52,6 @@
           "quote": "The efficacy of intravenous amivantamab, in combination with lazertinib , was evaluated in MARIPOSA (NCT04487080), a randomized, active-controlled, multicenter trial."
         }
       ]
-    },
-    {
-      "indication": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
-      "trial": "NCT04487080",
-      "pivotal": true,
-      "status": "baseline",
-      "tries": 3
     },
     {
       "indication": "First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations",
@@ -79,6 +78,12 @@
           "quote": "The efficacy of intravenous amivantamab in combination with carboplatin and pemetrexed was evaluated in MARIPOSA-2 (NCT04988295), a randomized, open-label, multicenter trial."
         }
       ]
+    },
+    {
+      "indication": "Previously Treated HNSCC",
+      "trial": "NCT06385080",
+      "pivotal": true,
+      "status": "baseline"
     }
   ]
 }
