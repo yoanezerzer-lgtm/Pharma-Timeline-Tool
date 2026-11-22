@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M000732426",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M000732426",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T001007884",
+    "relatedConcept": "http://id.nlm.nih.gov/mesh/M000733961",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A viral disorder generally characterized by high FEVER; COUGH; DYSPNEA; CHILLS; PERSISTENT TREMOR; MUSCLE PAIN; HEADACHE; SORE THROAT; a new loss of taste and/or smell (see AGEUSIA and ANOSMIA) and other symptoms of a VIRAL PNEUMONIA. A coronavirus, SARS-CoV-2 VIRUS, in the genus BETACORONAVIRUS is the causative agent."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T001079529",
+      "http://id.nlm.nih.gov/mesh/T001079528",
+      "http://id.nlm.nih.gov/mesh/T001079532",
+      "http://id.nlm.nih.gov/mesh/T001079527",
+      "http://id.nlm.nih.gov/mesh/T001079531",
+      "http://id.nlm.nih.gov/mesh/T001079547",
+      "http://id.nlm.nih.gov/mesh/T001007916",
+      "http://id.nlm.nih.gov/mesh/T001079546",
+      "http://id.nlm.nih.gov/mesh/T001079545",
+      "http://id.nlm.nih.gov/mesh/T001082223",
+      "http://id.nlm.nih.gov/mesh/T001102616",
+      "http://id.nlm.nih.gov/mesh/T001079544"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "COVID-19"
+    },
+    "@context": {
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}

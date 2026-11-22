@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T001079531",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Disease, COVID-19 Virus"
+      },
+      {
+        "@language": "en",
+        "@value": "COVID 19 Virus Disease"
+      },
+      {
+        "@language": "en",
+        "@value": "Virus Disease, COVID-19"
+      },
+      {
+        "@language": "en",
+        "@value": "COVID-19 Virus Diseases"
+      }
+    ],
+    "dateCreated": "2020-04-30",
+    "identifier": "T001079531",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "ACX"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "COVID-19 Virus Disease"
+    },
+    "thesaurusID": {
+      "@language": "en",
+      "@value": "NLM (2021)"
+    },
+    "@context": {
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      },
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      }
+    }
+  }
+}

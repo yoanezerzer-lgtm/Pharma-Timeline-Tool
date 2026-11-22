@@ -1,0 +1,129 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D000086382",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000209",
+      "http://id.nlm.nih.gov/mesh/Q000451",
+      "http://id.nlm.nih.gov/mesh/Q000532",
+      "http://id.nlm.nih.gov/mesh/Q000276",
+      "http://id.nlm.nih.gov/mesh/Q000378",
+      "http://id.nlm.nih.gov/mesh/Q000178",
+      "http://id.nlm.nih.gov/mesh/Q000503",
+      "http://id.nlm.nih.gov/mesh/Q000628",
+      "http://id.nlm.nih.gov/mesh/Q000821",
+      "http://id.nlm.nih.gov/mesh/Q000201",
+      "http://id.nlm.nih.gov/mesh/Q000139",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000382",
+      "http://id.nlm.nih.gov/mesh/Q000191",
+      "http://id.nlm.nih.gov/mesh/Q000453",
+      "http://id.nlm.nih.gov/mesh/Q000534",
+      "http://id.nlm.nih.gov/mesh/Q000652",
+      "http://id.nlm.nih.gov/mesh/Q000175",
+      "http://id.nlm.nih.gov/mesh/Q000196",
+      "http://id.nlm.nih.gov/mesh/Q000151",
+      "http://id.nlm.nih.gov/mesh/Q000000981",
+      "http://id.nlm.nih.gov/mesh/Q000097",
+      "http://id.nlm.nih.gov/mesh/Q000208",
+      "http://id.nlm.nih.gov/mesh/Q000150",
+      "http://id.nlm.nih.gov/mesh/Q000469",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000473",
+      "http://id.nlm.nih.gov/mesh/Q000517",
+      "http://id.nlm.nih.gov/mesh/Q000601",
+      "http://id.nlm.nih.gov/mesh/Q000662",
+      "http://id.nlm.nih.gov/mesh/Q000134",
+      "http://id.nlm.nih.gov/mesh/Q000635",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000401",
+      "http://id.nlm.nih.gov/mesh/Q000235"
+    ],
+    "broaderDescriptor": [
+      "http://id.nlm.nih.gov/mesh/D018352",
+      "http://id.nlm.nih.gov/mesh/D011024"
+    ],
+    "concept": "http://id.nlm.nih.gov/mesh/M000733961",
+    "dateIntroduced": "2021-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "2021(2020)"
+    },
+    "identifier": "D000086382",
+    "lastUpdated": "2024-08-09",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M000732426",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T001007884",
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "2021; for COVID-19 see PNEUMONIA, VIRAL; CORONAVIRUS INFECTIONS; and PANDEMICS 2020"
+    },
+    "seeAlso": "http://id.nlm.nih.gov/mesh/D000086402",
+    "treeNumber": [
+      "http://id.nlm.nih.gov/mesh/C08.730.610.763.500",
+      "http://id.nlm.nih.gov/mesh/C01.925.705.500",
+      "http://id.nlm.nih.gov/mesh/C01.748.610.763.500",
+      "http://id.nlm.nih.gov/mesh/C08.381.677.807.500",
+      "http://id.nlm.nih.gov/mesh/C01.925.782.600.550.200.163"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "COVID-19"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "concept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#concept",
+        "@type": "@id"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}

@@ -1,0 +1,547 @@
+{
+  "slug": "ensitrelvir",
+  "brandName": "Xocova",
+  "inn": "ensitrelvir",
+  "modality": "Drug (NDA)",
+  "sponsor": "SHIONOGI",
+  "pharmacology": {
+    "patientSummary": {
+      "paragraphs": [
+        "XOCOVA is a prescription medicine that is used to help prevent coronavirus disease 2019 (COVID-19) in adults and children 12 years of age and older following contact with a person who has COVID-19 (post-exposure prophylaxis)."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), patient information: \"What is Xocova?\"",
+        "page": 21,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Ensitrelvir is a severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) antiviral drug [see Microbiology (12.4)].",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Exposure-Response Within the ensitrelvir arm of SCORPIO-PEP, there was no association between plasma ensitrelvir concentration and the primary endpoint (COVID-19 symptoms and RT-PCR-positive), consistent with the determination that dose adjustments are not needed based on age, sex, race/ethnicity, or body weight. Cardiac Electrophysiology No QT prolongation was observed based on concentration-QTc analysis after a single dose of ensitrelvir ranging from 20 mg to 2000 mg. A single dose of ensitrelvir 2,000 mg resulted in C max that was approximately 3.4-fold higher than the mean C max observed on Day 5 at the recommended dose.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 10,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Table 2 Pharmacokinetic Properties of Ensitrelvir Parameter Ensitrelvir General Information Exposure a Day 1 Day 5 Day 10 e Cmax (mcg/mL) 18.1 (22.6) 18.2 (40.5) N/A C min (mcg/mL) 13.2 (31.3) 13.0 (59.4) N/A AUC 0-tau (mcg*hr/mL) 345.9 (28.4) 380.8 (47.0) N/A C day10 (mcg/mL) N/A N/A 1.48 (374.8) Dose Proportionality C max and AUC 0-inf exposures increase in an almost dose-proportional manner across the single dose range of 20 to 2000 mg in healthy adult individuals. Absorption Median Tmax (hours) (range) b Day 1: 2.50 (1.50, 8.00) hours Day 5: 2.00 (1.00, 8.00) hours Effect of Food c No clinically significant differences in ensitrelvir pharmacokinetics were observed following administration of a high-fat, high-calorie meal. Distribution Apparent (Oral) Volume of Distribution in Central Compartment d 16.7 (22.9) L Human Serum Protein Binding 97.7% to 98.7% (in vitro) Blood to Plasma Ratio 0.538 Elimination Major Route of Elimination Primarily eliminated via the biliary route Terminal Half-Life (hours) 42.2 to 48.1 hours f Apparent (Oral) Clearance d 0.316 (52.6) L/hour Metabolism Unchanged ensitrelvir (≥90%) was the primary drug component detected in plasma. Primary Responsible Metabolic Enzyme CYP3A Excretion Feces 64.8% of dose (50.7% unchanged) Urine 25.8% of dose (19.0% unchanged) N/A, not applicable. a Represents data at the recommended clinical dose in Trial SCORPIO-PEP predicted by population PK analysis. Data represents geometric mean (coefficient of variation, CV%). b Ensitrelvir 375 mg on Day 1 followed by 125 mg on Days 2 to 5; tau is dosing interval of 24 hours. c High-fat, high-calorie meal. Total calories were 863 kcal (27.2% carbohydrates, 17.3% proteins, and 55.4% fat). d Data from population pharmacokinetic analysis. e The primary endpoint was assessed at Day 10. f Following a single-dose administration of ensitrelvir 20 to 2000 mg. Specific Populations There were no clinically significant differences in the pharmacokinetics of ensitrelvir based on age (12-91 years), sex, body weight (32-190 kg), race/ethnicity (77% Asian, 20% White, 2% Black, 1% Other). No clinically significant differences in the pharmacokinetics of ensitrelvir was observed in mild (estimated glomerular filtration rate [eGFR] 60 to <90 mL/min as determined by MDRD equation), moderate (eGFR 30- <60 mL/min), or severe (eGFR 15-<30 mL/min) renal impairment, or mild (Child-Pugh Class A) or moderate (Child-Pugh Class B) hepatic impairment. The pharmacokinetics and safety of ensitrelvir have not been studied in patients with severe hepatic impairment (Child-Pugh Class C) or patients with kidney failure receiving dialysis. Pediatric Patients The pharmacokinetics of ensitrelvir in children under 12 years of age has not been established. Drug Interaction Studies Clinical Drug Interaction Studies Effect of CYP3A4 Inducers on the Pharmacokinetics of Ensitrelvir Strong CYP3A4 Inducers: Coadministration with the strong CYP3A inducer carbamazepine (titrated from 100 mg twice daily to 300 mg twice daily over 1 week and then maintained at 300 mg twice daily dose for 11 days with some subjects requiring dose reduction) decreased the AUC of ensitrelvir by approximately 40-45% [see Contraindications (4) and Drug Interactions (7.2)]. Moderate CYP3A4 Inducers: Ensitrelvir AUC is predicted to decrease by approximately 28% following concomitant administration with efavirenz (moderate CYP3A4 inducer) and 10% with bosentan (moderate CYP3A4 inducer) [see Drug Interactions (7.2)]. Effect of Ensitrelvir on Pharmacokinetics of Other Drugs CYP3A Substrates: Concomitant administration of midazolam (2-mg single oral dose) with ensitrelvir at the clinical dose (375 mg on Day 1 and 125 mg on Days 2-5) on Day 5 resulted in an approximately 2.80-fold increase in C max and a 6.77-fold increase in AUC 0-inf of midazolam compared to midazolam administered alone [see Contraindications (4) and Drug Interactions (7.1)]. Concomitant administration of dexamethasone (1-mg single dose) with ensitrelvir (750 mg on Day 1 and 250 mg on Days 2-5, two fold of the recommended dose) on Day 5 and administered alone on Day 9 (5 days after the last ensitrelvir dose) and Day 14 (10 days after the last ensitrelvir dose) resulted in an approximately 1.47-fold increase in C max and a 3.47-fold increase in AUC 0-inf of dexamethasone on Day 5, a 1.24-fold increase in C max and 2.38-fold increase in AUC 0-inf on Day 9, and a 1.17-fold increase in C max and a 1.58-fold increase in AUC 0-inf on Day 14, compared to dexamethasone administered alone [see Drug Interactions (7.1)]. P-gp Substrates: Concomitant administration of ensitrelvir (500-mg single dose, not a recommended dosage of ensitrelvir) with a single oral dose of a transporter cocktail containing 0.25 mg digoxin resulted in a 2.17-fold increase in C max and 1.31-fold increase in AUC 0-inf of digoxin [see Drug Interactions (7.1)]. BCRP substrate: Concomitant administration of ensitrelvir (500-mg single dose, not a recommended dosage of ensitrelvir) with a single oral dose of a transporter cocktail containing 2.5 mg rosuvastatin resulted in a 1.97-fold increase in C max and 1.65-fold increase in AUC 0-inf of rosuvastatin [see Drug Interactions (7.1)]. Other Drugs No clinically significant differences in the pharmacokinetics of the following drugs were observed following concomitant use with ensitrelvir: prednisolone (CYP3A4 substrate), combined oral contraceptives containing ethinyl estradiol and drospirenone (CYP3A4 substrates), itraconazole (a strong CYP3A inhibitor and P-gp inhibitor), metformin (OCT1 and MATE1 substrate), and coproporphyrin I (an endogenous OATP1B substrate). In Vitro Drug Interaction Studies Transporter Systems: Ensitrelvir is a substrate of P-gp and BCRP, but not a substrate of OATP1B1, OATP1B3, OCT1, OCT2, OAT1, OAT3, MATE1, or MATE2-K. Ensitrelvir inhibited P-gp, BCRP, OATP1B1, OATP1B3, OCT1, OCT2, OAT1, OAT3, and MATE1, but no clinically significant interactions are expected between ensitrelvir and OCT2, OAT1, OAT3, and MATE1. Cytochrome P450 Enzymes: Ensitrelvir exhibits a time-dependent inhibitory effect on CYP3A. Ensitrelvir inhibits CYP2C8, but is not expected to cause clinically significant interactions. Ensitrelvir does not inhibit CYP1A2, CYP2B6, CYP2C9, CYP2C19, and CYP2D6. Ensitrelvir induces CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, and CYP3A4, but is not expected to cause clinically significant interactions. Uridine diphosphate-glucuronosyl transferase (UGT) enzymes: Ensitrelvir does not inhibit UGT1A1, UGT1A3, UGT1A4, UGT1A6, UGT1A9, UGT2B7, and UGT2B15.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 11,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19",
+      "slug": "post-exposure-prophylaxis-of-coronavirus-disease-2019-covid",
+      "approvalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-05-29",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Xocova (ensitrelvir) tablets for post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Xocova (ensitrelvir) tablets for post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D000086382",
+          "term": "COVID-19",
+          "areas": [
+            "Infections",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A viral disorder generally characterized by high FEVER; COUGH; DYSPNEA; CHILLS; PERSISTENT TREMOR; MUSCLE PAIN; HEADACHE; SORE THROAT; a new loss of taste and/or smell (see AGEUSIA and ANOSMIA) and other symptoms of a VIRAL PNEUMONIA. A coronavirus, SARS-CoV-2 VIRUS, in the genus BETACORONAVIRUS is the causative agent.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000086382",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "COVID-19",
+            "paragraphs": [
+              "A highly contagious respiratory disease caused by the SARS-CoV-2 virus. SARS-CoV-2 is thought to spread from person to person through droplets released when an infected person coughs, sneezes, or talks. It may also be spread by touching a surface with the virus on it and then touching one’s mouth, nose, or eyes, but this is less common. The most common signs and symptoms of COVID-19 are fever, cough, and trouble breathing. Fatigue, muscle pain, chills, headache, sore throat, runny nose, nausea or vomiting, diarrhea, and a loss of taste or smell may also occur. The signs and symptoms may be mild or severe and usually appear 2 to 14 days after exposure to the SARS-CoV-2 virus. Some people may not have any symptoms but are still able to spread the virus. Most people with COVID-19 recover without needing special treatment. But other people are at higher risk of serious illness. Those at higher risk include older adults and people with serious medical problems, such as heart, lung, or kidney disease, diabetes, cancer, or a weak immune system. Serious illness may include life-threatening pneumonia and organ failure. Research is being done to treat COVID-19 and to prevent infection with SARS-CoV-2. Also called coronavirus disease 19."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/covid-19",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05897541)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220442",
+      "applicationType": "NDA",
+      "sponsor": "SHIONOGI",
+      "originalApprovalDate": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Infectious Diseases",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Infectious Diseases Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Shionogi Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured for Shionogi Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "routes": [
+        "ORAL"
+      ]
+    }
+  },
+  "trials": [
+    {
+      "id": "scorpio-pep",
+      "nctId": "NCT05897541",
+      "protocolNumber": "2206T1331",
+      "acronym": "SCORPIO-PEP",
+      "title": "A Phase 3 Randomized, Double-blind, Placebo-controlled Study to Evaluate the Efficacy and Safety of S-217622 in the Prevention of Symptomatic SARS-CoV-2 Infection in Household Contacts of an Individual With Symptomatic COVID-19",
+      "briefTitle": "Phase 3 Study of S-217622 in Prevention of Symptomatic SARS-CoV-2 Infection",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19)",
+            "quote": "Trial identifier appears within the Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19 section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Xocova (ensitrelvir) tablets for post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "Shionogi",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "SARS-CoV-2 Infection"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000086382",
+          "term": "COVID-19"
+        }
+      ],
+      "startDate": {
+        "value": "2023-06-09",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-08-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-09-18",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 3701,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "sex": "ALL",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "S-217622",
+          "type": "EXPERIMENTAL",
+          "description": "S-217622 will be administered orally for 5 days."
+        },
+        {
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Placebo matching to S-217622 will be administered orally for 5 days."
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of Participants in mITT Population Who Were Infected With SARS-CoV-2 and Had Coronavirus Disease 2019 (COVID-19) Symptoms Onset"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants in ITT Population With a Negative Screening SARS-CoV-2 Infection Who Were Infected With SARS-CoV-2 and Had COVID-19 Symptoms Onset",
+        "Number of Participants Infected With SARS-CoV-2 Regardless of Occurrence of COVID-19 Symptoms",
+        "Time to the First Central Laboratory Confirmed-Positive Reverse Transcription Polymerase Chain Reaction Result",
+        "Number of Participants With a Central Laboratory Confirmed-Positive Reverse Transcription Polymerase Chain Reaction Results",
+        "Number of Participants Infected With SARS-CoV-2 With no COVID-19 Symptoms at Day 10",
+        "Number of Participants Infected With SARS-CoV-2 and Had no COVID-19 Symptoms Onset Through Day 10",
+        "Number of Participants With Sustained Symptom Resolution of Each COVID-19 Symptoms",
+        "Change From Baseline in Total Symptom Score of COVID-19 Symptoms at Day 10",
+        "Time From First Central Laboratory Confirmed SARS-CoV-2 Until at Least 1 COVID-19 Symptom",
+        "Time From First Central Laboratory Confirmed SARS-CoV-2 Until COVID-19 Symptoms Onset",
+        "Number of Participants Experiencing Hospitalization or Death From Any Cause",
+        "Trough Concentration (Ctrough) of S-217622",
+        "Number of Participants With Treatment-emergent Adverse Events (TEAEs)"
+      ],
+      "postedResults": [
+        {
+          "title": "Number of Participants in mITT Population Who Were Infected With SARS-CoV-2 and Had Coronavirus Disease 2019 (COVID-19) Symptoms Onset",
+          "timeFrame": "Day 1 up to Day 10",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "S-217622"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "30"
+            },
+            {
+              "groupId": "OG001",
+              "value": "91"
+            }
+          ],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05897541?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 3,
+          "quote": "sed to the recommended dosage and duration of XOCOVA in controlled clinical trials. Trial SCORPIO-PEP was a randomized, double-blind, placebo-controlled trial in which 1,190 subjects received",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19)",
+                "quote": "Trial identifier appears within the Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19 section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Xocova (ensitrelvir) tablets for post-exposure prophylaxis of coronavirus disease 2019 (COVID - 19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19 section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Xocova (ensitrelvir) tablets for post-exposure prophylaxis of coronavirus disease 2019 (COVID-19) in adults and adolescents 12 years of age and older following contact with an individual who has COVID-19.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T16:37:37.962Z"
+        }
+      ]
+    },
+    {
+      "id": "2403t1219",
+      "nctId": "NCT06775730",
+      "protocolNumber": "2403T1219",
+      "title": "A Phase 1 Drug-Drug Interaction Study of S-217622 With Combined Oral Contraceptives in Healthy Adult Female Participants",
+      "briefTitle": "A Drug-Drug Interaction Study of S-217622 With Combined Oral Contraceptives in Healthy Adult Female Participants",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Shionogi",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Healthy Adult Female Participants"
+      ],
+      "startDate": {
+        "value": "2024-12-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2025-04-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2025-04-03",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NA",
+        "masking": "NONE",
+        "model": "SINGLE_GROUP",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "35 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": true,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Ensitrelvir",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive multiple oral doses of a combined oral contraceptive (COC) (EE and DRSP) once daily for 24 days (Days 1 to 24) (in the fasted state on Days 18 to 24) in the morning. Participants will also receive ensitrelvir high dose on Day 20 and multiple oral doses of ensitrelvir low dose once daily on Days 21 to 24 in the fasted state."
+        }
+      ],
+      "primaryEndpoints": [
+        "Maximum Plasma Concentration (Cmax) of Ethinyl Estradiol (EE)",
+        "Cmax of Drospirenone (DRSP)",
+        "Time to Reach Cmax (Tmax) of EE",
+        "Tmax of DRSP",
+        "Area Under the Plasma Concentration-time Curve Over the Dosing Interval (AUC0-τ) of EE",
+        "AUC0-τ of DRSP"
+      ],
+      "secondaryEndpoints": [
+        "Number of Participants With Adverse Events (AEs)",
+        "Cmax of Ensitrelvir",
+        "Tmax of Ensitrelvir",
+        "AUC0-τ of Ensitrelvir"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06775730",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-05-29",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220442%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220442",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220442%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220442Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220442Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-11-22T08:00:40.579Z"
+}
