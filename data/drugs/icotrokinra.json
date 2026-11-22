@@ -177,7 +177,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "ORAL"
+      ]
     }
   },
   "trials": [
@@ -446,7 +449,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "PSO-3 (NCT06095115)",
+          "quote": "PSO-3 [NCT06095115]",
           "extractedBy": "regex",
           "verified": false
         },
@@ -674,7 +677,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "PSO-4 (NCT06095102)",
+          "quote": "PSO-4 [NCT06095102]",
           "extractedBy": "regex",
           "verified": false
         },
@@ -947,7 +950,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "PSO-1 (NCT06143878)",
+          "quote": "PSO-1 [NCT06143878]",
           "extractedBy": "regex",
           "verified": false
         }
@@ -1213,7 +1216,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220149Orig1s000lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "PSO-2 (NCT06220604)",
+          "quote": "PSO-2 [NCT06220604]",
           "extractedBy": "regex",
           "verified": false
         }
@@ -1900,5 +1903,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:20:06.272Z"
+  "lastIngestedAt": "2026-11-22T08:01:46.037Z"
 }
