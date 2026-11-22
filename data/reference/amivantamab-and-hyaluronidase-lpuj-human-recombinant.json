@@ -5,31 +5,66 @@
       "name": "First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
       "approvalDate": "2025-12-17",
       "submission": "ORIG-1",
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-11-22: Confirmed by the ORIG-1 approval letter; the original label (ORIG-1) lists it.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "quote": "In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test."
+        }
+      ]
     },
     {
       "name": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
       "approvalDate": "2025-12-17",
       "submission": "ORIG-1",
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-11-22: Confirmed by the ORIG-1 approval letter; the original label (ORIG-1) lists it.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "quote": "In combination with carboplatin and pemetrexed for the treatment of adult patients with locally advanced or metastatic NSCLC with EGFR exon 19 deletions or exon 21 L858R substitution mutations, whose disease has progressed on or after treatment with an EGFR tyrosine kinase inhibitor."
+        }
+      ]
     },
     {
       "name": "First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations",
       "approvalDate": "2025-12-17",
       "submission": "ORIG-1",
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-11-22: Confirmed by the ORIG-1 approval letter; the original label (ORIG-1) lists it.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "quote": "In combination with carboplatin and pemetrexed for the first-line treatment of adult patients with locally advanced or metastatic NSCLC with EGFR exon 20 insertion mutations, as detected by an FDA-approved test."
+        }
+      ]
     },
     {
       "name": "Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations",
       "approvalDate": "2025-12-17",
       "submission": "ORIG-1",
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-11-22: Confirmed by the ORIG-1 approval letter; the original label (ORIG-1) lists it.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "quote": "As a single agent for the treatment of adult patients with locally advanced or metastatic NSCLC with EGFR exon 20 insertion mutations, as detected by an Reference ID: 5713869 BLA 761433 Page 2 FDA approved test, whose disease has progressed on or after platinum-based chemotherapy."
+        }
+      ]
     },
     {
       "name": "Previously Treated HNSCC",
       "approvalDate": "2026-11-05",
       "submission": "SUPPL-2",
-      "status": "baseline"
+      "status": "confirmed",
+      "checkedBy": "Overnight agent 2026-11-22: Confirmed by the SUPPL-2 approval letter; the SUPPL-2 label lists it and the ORIG-1 label before it does not.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761433Orig1s002ltr.pdf",
+          "quote": "This Prior Approval sBLA provides for Rybrevant Faspro as a single agent for the treatment of adult patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) whose disease has progressed on or after platinum-based chemotherapy and an anti-PD-(L)1 antibody."
+        }
+      ]
     }
   ],
   "pivotal": [
@@ -83,7 +118,8 @@
       "indication": "Previously Treated HNSCC",
       "trial": "NCT06385080",
       "pivotal": true,
-      "status": "baseline"
+      "status": "baseline",
+      "tries": 1
     }
   ]
 }
