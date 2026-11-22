@@ -172,7 +172,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "ORAL"
+      ]
     }
   },
   "trials": [
@@ -352,7 +355,7 @@
         "labelName": {
           "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220425Orig1s000lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "RLY-4008-101 (NCT04526106)",
+          "quote": "RLY-4008-101; NCT04526106)",
           "extractedBy": "regex",
           "verified": false
         }
@@ -517,5 +520,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:38:18.794Z"
+  "lastIngestedAt": "2026-11-22T08:02:20.661Z"
 }
