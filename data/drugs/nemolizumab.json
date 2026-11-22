@@ -117,18 +117,7 @@
         {
           "meshId": "D011536",
           "term": "Prurigo",
-          "areas": [
-            "Skin and Connective Tissue Diseases"
-          ],
-          "definition": {
-            "text": "A name applied to several itchy skin eruptions of unknown cause. The characteristic course is the formation of a dome-shaped papule with a small transient vesicle on top, followed by crusting over or lichenification. (From Dorland, 27th ed)",
-            "provenance": {
-              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011536",
-              "sourceLabel": "MeSH, U.S. National Library of Medicine",
-              "extractedBy": "api",
-              "verified": false
-            }
-          },
+          "areas": [],
           "provenance": {
             "sourceUrl": "https://clinicaltrials.gov/study/NCT04501679",
             "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04501679, NCT04501666)",
@@ -166,21 +155,7 @@
         {
           "meshId": "D003876",
           "term": "Dermatitis, Atopic",
-          "areas": [
-            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
-            "Skin and Connective Tissue Diseases",
-            "Immune System Diseases"
-          ],
-          "inherited": true,
-          "definition": {
-            "text": "A chronic inflammatory genetically determined disease of the skin marked by increased ability to form reagin (IgE), with increased susceptibility to allergic rhinitis and asthma, and hereditary disposition to a lowered threshold for pruritus. It is manifested by lichenification, excoriation, and crusting, mainly on the flexural surfaces of the elbow and knee. In infants it is known as infantile eczema.",
-            "provenance": {
-              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D003876",
-              "sourceLabel": "MeSH, U.S. National Library of Medicine",
-              "extractedBy": "api",
-              "verified": false
-            }
-          },
+          "areas": [],
           "summary": {
             "title": "Atopic dermatitis",
             "paragraphs": [
@@ -235,7 +210,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "INJECTION"
+      ]
     }
   },
   "trials": [
@@ -3528,5 +3506,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:09:50.130Z"
+  "lastIngestedAt": "2026-11-22T08:02:49.465Z"
 }
