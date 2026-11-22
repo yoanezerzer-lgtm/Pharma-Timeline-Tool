@@ -4,7 +4,17 @@
   "inn": "lebrikizumab",
   "modality": "Biologic (BLA)",
   "sponsor": "ELI LILLY AND CO",
+  "mechanism": "Interleukin-13 Antagonist",
   "pharmacology": {
+    "drugClass": {
+      "name": "Interleukin-13 Antagonist",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761306%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
     "sections": [
       {
         "number": "12.1",
@@ -142,7 +152,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "INJECTION"
+      ]
     }
   },
   "trials": [
@@ -3226,5 +3239,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:44:52.177Z"
+  "lastIngestedAt": "2026-11-22T08:02:02.322Z"
 }

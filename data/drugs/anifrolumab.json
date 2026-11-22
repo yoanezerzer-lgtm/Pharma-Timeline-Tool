@@ -4,14 +4,14 @@
   "inn": "anifrolumab",
   "modality": "Biologic (BLA)",
   "sponsor": "ASTRAZENECA AB",
+  "mechanism": "Type I Interferon Receptor Antagonist",
   "pharmacology": {
     "drugClass": {
-      "name": "type I interferon (IFN) receptor antagonist",
+      "name": "Type I Interferon Receptor Antagonist",
       "provenance": {
-        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761451Orig1s000lbl.pdf",
-        "sourceLabel": "Label (ORIG-1), Highlights",
-        "quote": "SAPHNELO is a type I interferon (IFN) receptor antagonist indicated",
-        "extractedBy": "regex",
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761451%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
         "verified": false
       }
     },
@@ -172,7 +172,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "SINGLE-USE"
+      ]
     }
   },
   "trials": [
@@ -4832,5 +4835,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:36:11.733Z"
+  "lastIngestedAt": "2026-11-22T07:59:10.805Z"
 }

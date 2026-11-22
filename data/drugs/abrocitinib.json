@@ -164,7 +164,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "ORAL"
+      ]
     }
   },
   "trials": [
@@ -861,6 +864,10 @@
         "value": "2019-08-13",
         "precision": "day"
       },
+      "readoutDate": {
+        "value": "2019-09-27",
+        "precision": "day"
+      },
       "enrollment": {
         "count": 391,
         "type": "ACTUAL"
@@ -1116,11 +1123,7 @@
           "verified": false
         }
       },
-      "changeLog": [],
-      "readoutDate": {
-        "value": "2019-09-27",
-        "precision": "day"
-      }
+      "changeLog": []
     },
     {
       "id": "jade-compare",
@@ -1576,6 +1579,10 @@
         "value": "2020-04-08",
         "precision": "day"
       },
+      "readoutDate": {
+        "value": "2020-06-10",
+        "precision": "day"
+      },
       "enrollment": {
         "count": 287,
         "type": "ACTUAL"
@@ -1858,11 +1865,7 @@
           "verified": false
         }
       },
-      "changeLog": [],
-      "readoutDate": {
-        "value": "2020-06-10",
-        "precision": "day"
-      }
+      "changeLog": []
     },
     {
       "id": "b7451050",
@@ -3193,7 +3196,7 @@
       "briefTitle": "A Study of the Medicine Called Abrocitinib in Children 6 to Less Than 12 Years of Age With Moderate-to-Severe Eczema",
       "phase": "PHASE3",
       "roles": [],
-      "status": "RECRUITING",
+      "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "Pfizer",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
@@ -3223,8 +3226,8 @@
         "precision": "day"
       },
       "enrollment": {
-        "count": 150,
-        "type": "ESTIMATED"
+        "count": 151,
+        "type": "ACTUAL"
       },
       "design": {
         "allocation": "RANDOMIZED",
@@ -3296,7 +3299,26 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "RECRUITING",
+          "newValue": "ACTIVE_NOT_RECRUITING",
+          "detectedAt": "2026-11-22T07:59:04.686Z"
+        },
+        {
+          "field": "enrollment",
+          "previousValue": {
+            "count": 150,
+            "type": "ESTIMATED"
+          },
+          "newValue": {
+            "count": 151,
+            "type": "ACTUAL"
+          },
+          "detectedAt": "2026-11-22T07:59:04.686Z"
+        }
+      ]
     },
     {
       "id": "b7451031",
@@ -4080,5 +4102,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-07T19:08:16.006Z"
+  "lastIngestedAt": "2026-11-22T07:59:04.686Z"
 }

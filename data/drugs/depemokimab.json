@@ -1436,7 +1436,7 @@
       "briefTitle": "Efficacy and Safety of Depemokimab Compared With Mepolizumab in Adults With Relapsing or Refractory Eosinophilic Granulomatosis With Polyangiitis (EGPA)",
       "phase": "PHASE3",
       "roles": [],
-      "status": "ACTIVE_NOT_RECRUITING",
+      "status": "COMPLETED",
       "sponsor": "GlaxoSmithKline",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
@@ -1454,7 +1454,7 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2026-09-29",
+        "value": "2026-10-06",
         "precision": "day"
       },
       "completionDate": {
@@ -1537,7 +1537,26 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "ACTIVE_NOT_RECRUITING",
+          "newValue": "COMPLETED",
+          "detectedAt": "2026-11-22T08:00:09.133Z"
+        },
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2026-09-29",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-10-06",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-22T08:00:09.133Z"
+        }
+      ]
     },
     {
       "id": "destiny",
@@ -2120,11 +2139,11 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2029-04-30",
+        "value": "2029-04-02",
         "precision": "day"
       },
       "completionDate": {
-        "value": "2029-06-08",
+        "value": "2029-06-04",
         "precision": "day"
       },
       "enrollment": {
@@ -2200,7 +2219,32 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2029-04-30",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2029-04-02",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-22T08:00:09.133Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2029-06-08",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2029-06-04",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-22T08:00:09.133Z"
+        }
+      ]
     },
     {
       "id": "modify",
@@ -2594,5 +2638,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:37:07.698Z"
+  "lastIngestedAt": "2026-11-22T08:00:09.133Z"
 }

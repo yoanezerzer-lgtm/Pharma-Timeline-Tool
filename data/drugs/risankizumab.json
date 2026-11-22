@@ -548,7 +548,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "INJECTION"
+      ]
     }
   },
   "trials": [
@@ -8702,17 +8705,7 @@
       "title": "A Phase 3, Multicenter, Randomized, Efficacy Assessor-Blinded Study of Risankizumab Compared to Ustekinumab for the Treatment of Adult Subjects With Moderate to Severe Crohn's Disease Who Have Failed Anti-TNF Therapy",
       "briefTitle": "Study Comparing Intravenous (IV)/Subcutaneous (SC) Risankizumab to IV/SC Ustekinumab to Assess Change in Crohn's Disease Activity Index (CDAI) in Adult Participants With Moderate to Severe Crohn's Disease (CD)",
       "phase": "PHASE3",
-      "roles": [
-        {
-          "role": "SUPPORTIVE",
-          "provenance": {
-            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/761105Orig1s009,s010.pdf",
-            "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
-            "extractedBy": "rule",
-            "verified": false
-          }
-        }
-      ],
+      "roles": [],
       "status": "ACTIVE_NOT_RECRUITING",
       "sponsor": "AbbVie",
       "studyType": "INTERVENTIONAL",
@@ -8814,7 +8807,24 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "role": "SUPPORTIVE",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2022/761105Orig1s009,s010.pdf",
+                "sourceLabel": "FDA review (cited, not in a label section 14 indication span)",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [],
+          "detectedAt": "2026-11-22T08:03:43.088Z"
+        }
+      ]
     },
     {
       "id": "immprint",
@@ -13851,5 +13861,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-15T07:55:12.988Z"
+  "lastIngestedAt": "2026-11-22T08:03:43.088Z"
 }

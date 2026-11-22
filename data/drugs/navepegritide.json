@@ -93,20 +93,7 @@
         {
           "meshId": "D000130",
           "term": "Achondroplasia",
-          "areas": [
-            "Musculoskeletal Diseases",
-            "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
-          ],
-          "inherited": true,
-          "definition": {
-            "text": "An autosomal dominant disorder that is the most frequent form of short-limb dwarfism. Affected individuals exhibit short stature caused by rhizomelic shortening of the limbs, characteristic facies with frontal bossing and mid-face hypoplasia, exaggerated lumbar lordosis, limitation of elbow extension, GENU VARUM, and trident hand. (Online Mendelian Inheritance in Man, http://www.ncbi.nlm.nih.gov/Omim, MIM#100800, April 20, 2001)",
-            "provenance": {
-              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000130",
-              "sourceLabel": "MeSH, U.S. National Library of Medicine",
-              "extractedBy": "api",
-              "verified": false
-            }
-          },
+          "areas": [],
           "summary": {
             "title": "Achondroplasia",
             "paragraphs": [
@@ -160,7 +147,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "SUBCUTANEOUS"
+      ]
     }
   },
   "trials": [
@@ -940,7 +930,7 @@
       "protocolNumber": "ASND0053",
       "acronym": "cAtCH",
       "title": "A Phase 3, Randomized, Double-blind, Active Controlled, Multi-center Trial Investigating the Efficacy and Safety of Dual Therapy With Once-weekly Navepegritide and Once-weekly Lonapegsomatropin Compared to Navepegritide Monotherapy and Lonapegsomatropin Monotherapy in Children and Adolescents With Achondroplasia",
-      "briefTitle": "Phase 3 Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
+      "briefTitle": "Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
       "phase": "PHASE3",
       "roles": [],
       "status": "NOT_YET_RECRUITING",
@@ -1050,7 +1040,14 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "briefTitle",
+          "previousValue": "Phase 3 Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
+          "newValue": "Clinical Trial Evaluating the Efficacy and Safety of Navepegritide and Lonapegsomatropin in Achondroplasia",
+          "detectedAt": "2026-11-22T08:02:36.264Z"
+        }
+      ]
     },
     {
       "id": "hch-upliftmono",
@@ -1202,5 +1199,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:09:53.324Z"
+  "lastIngestedAt": "2026-11-22T08:02:36.264Z"
 }

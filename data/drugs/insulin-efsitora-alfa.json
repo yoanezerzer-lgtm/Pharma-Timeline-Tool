@@ -169,7 +169,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "SUBCUTANEOUS"
+      ]
     }
   },
   "trials": [
@@ -631,6 +634,10 @@
         "value": "2024-02-27",
         "precision": "day"
       },
+      "readoutDate": {
+        "value": "2024-05-16",
+        "precision": "day"
+      },
       "enrollment": {
         "count": 730,
         "type": "ACTUAL"
@@ -779,11 +786,7 @@
           "verified": false
         }
       },
-      "changeLog": [],
-      "readoutDate": {
-        "value": "2024-05-16",
-        "precision": "day"
-      }
+      "changeLog": []
     },
     {
       "id": "qwint-5",
@@ -969,6 +972,10 @@
         "value": "2024-07-19",
         "precision": "day"
       },
+      "readoutDate": {
+        "value": "2024-09-05",
+        "precision": "day"
+      },
       "enrollment": {
         "count": 795,
         "type": "ACTUAL"
@@ -1116,11 +1123,7 @@
           "verified": false
         }
       },
-      "changeLog": [],
-      "readoutDate": {
-        "value": "2024-09-05",
-        "precision": "day"
-      }
+      "changeLog": []
     }
   ],
   "milestones": [
@@ -1164,5 +1167,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:38:07.252Z"
+  "lastIngestedAt": "2026-11-22T08:01:48.816Z"
 }

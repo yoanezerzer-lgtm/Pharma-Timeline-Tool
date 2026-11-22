@@ -157,7 +157,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "ORAL"
+      ]
     }
   },
   "trials": [
@@ -3571,7 +3574,7 @@
       "briefTitle": "A Clinical Study of Enlicitide in Participants With High Cholesterol (MK-0616-037)",
       "phase": "PHASE3",
       "roles": [],
-      "status": "ACTIVE_NOT_RECRUITING",
+      "status": "COMPLETED",
       "sponsor": "Merck Sharp & Dohme LLC",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
@@ -3593,7 +3596,7 @@
         "precision": "day"
       },
       "completionDate": {
-        "value": "2026-11-05",
+        "value": "2026-10-27",
         "precision": "day"
       },
       "enrollment": {
@@ -3685,7 +3688,26 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "ACTIVE_NOT_RECRUITING",
+          "newValue": "COMPLETED",
+          "detectedAt": "2026-11-22T08:00:41.787Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2026-11-05",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2026-10-27",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-22T08:00:41.787Z"
+        }
+      ]
     },
     {
       "id": "0616a-039",
@@ -4447,5 +4469,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:37:08.549Z"
+  "lastIngestedAt": "2026-11-22T08:00:41.787Z"
 }

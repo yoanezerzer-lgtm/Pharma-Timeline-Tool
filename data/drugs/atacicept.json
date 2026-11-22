@@ -131,7 +131,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "SUBCUTANEOUS"
+      ]
     }
   },
   "trials": [
@@ -551,8 +554,8 @@
         "precision": "day"
       },
       "primaryCompletionDate": {
-        "value": "2026-09-01",
-        "precision": "month"
+        "value": "2026-09-22",
+        "precision": "day"
       },
       "completionDate": {
         "value": "2027-09-01",
@@ -647,7 +650,20 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "primaryCompletionDate",
+          "previousValue": {
+            "value": "2026-09-01",
+            "precision": "month"
+          },
+          "newValue": {
+            "value": "2026-09-22",
+            "precision": "day"
+          },
+          "detectedAt": "2026-11-22T07:59:04.120Z"
+        }
+      ]
     },
     {
       "id": "vt-001-0060",
@@ -835,5 +851,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-07T16:36:09.530Z"
+  "lastIngestedAt": "2026-11-22T07:59:04.120Z"
 }

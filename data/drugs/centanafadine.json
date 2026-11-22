@@ -201,7 +201,7 @@
     "us": {
       "applicationNumber": "218145",
       "applicationType": "NDA",
-      "sponsor": "OTSUKA PHARMACEUTICAL CO LTD",
+      "sponsor": "OTSUKA",
       "originalApprovalDate": {
         "value": "2026-07-24",
         "precision": "day"
@@ -225,7 +225,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "ORAL"
+      ]
     }
   },
   "trials": [
@@ -3702,5 +3705,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:07:26.064Z"
+  "lastIngestedAt": "2026-11-22T08:00:04.360Z"
 }
