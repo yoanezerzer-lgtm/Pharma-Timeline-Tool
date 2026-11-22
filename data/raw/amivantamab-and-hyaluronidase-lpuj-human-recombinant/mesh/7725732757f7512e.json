@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "HNSCC"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000077195"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Squamous Cell Carcinoma of Head and Neck"
+          }
+        }
+      ]
+    }
+  }
+}

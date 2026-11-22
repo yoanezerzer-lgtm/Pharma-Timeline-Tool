@@ -1,0 +1,1962 @@
+{
+  "slug": "amivantamab-and-hyaluronidase-lpuj-human-recombinant",
+  "brandName": "Rybrevant Faspro",
+  "inn": "amivantamab and hyaluronidase",
+  "modality": "Biologic (BLA)",
+  "sponsor": "JANSSEN BIOTECH",
+  "mechanism": "Endoglycosidase",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Endoglycosidase",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761433%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "patientSummary": {
+      "paragraphs": [
+        "RYBREVANT FASPRO is a prescription medicine used to treat adults with:",
+        "non-small cell lung cancer (NSCLC) that has spread to other parts of the body (metastatic) or cannot be removed by surgery, and has certain abnormal epidermal growth factor receptor (EGFR) gene(s):",
+        "in combination with lazertinib as a first-line treatment for NSCLC",
+        "in combination with carboplatin and pemetrexed for NSCLC in people whose disease has worsened on or after treatment with an EGFR tyrosine kinase inhibitor (TKI)",
+        "in combination with carboplatin and pemetrexed as a first-line treatment for NSCLC",
+        "alone for the treatment of NSCLC in people whose disease has worsened on or after platinum- based chemotherapy. Your healthcare provider will perform a test to make sure that RYBREVANT FASPRO is right for you.",
+        "head and neck squamous cell carcinoma (HNSCC) that has spread to other parts of the body (metastatic) or has come back:",
+        "alone for the treatment of HNSCC in people whose disease has worsened on or after platinum- based chemotherapy and an anti-PD-(L)1 immunotherapy. RYBREVANT FASPRO is not for use to treat people with oropharyngeal squamous cell carcinoma (OPSCC) that is human papillomavirus (HPV)-associated."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+        "sourceLabel": "Label (SUPPL-2), patient information: \"What is Rybrevant?\"",
+        "page": 61,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Amivantamab is a bispecific antibody that binds to the extracellular domains of EGFR and MET. In in vitro and in vivo studies, amivantamab was able to disrupt EGFR and MET signaling functions through blocking ligand binding and, in exon 19 deletions, exon 21 L858R substitutions, and exon 20 insertion mutation models, degradation of EGFR and MET. The presence of EGFR 43 and MET on the surface of tumor cells also allows for targeting of these cells for destruction by immune effector cells, such as natural killer cells and macrophages, through antibody-dependent cellular cytotoxicity (ADCC) and trogocytosis mechanisms, respectively. Hyaluronan is a polysaccharide found in the extracellular matrix of the subcutaneous tissue. It is depolymerized by the naturally occurring enzyme hyaluronidase. Unlike the stable structural components of the interstitial matrix, hyaluronan has a half-life of approximately 0.5 days. Hyaluronidase increases permeability of the subcutaneous tissue by depolymerizing hyaluronan. In the doses administered, hyaluronidase in RYBREVANT FASPRO acts transiently and locally. The effects of hyaluronidase are reversible and permeability of the subcutaneous tissue is restored within 24 to 48 hours.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Label (SUPPL-2), section 12.1",
+          "page": 42,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The exposure-response relationship and time-course of pharmacodynamic response of amivantamab have not been fully characterized in patients with NSCLC with EGFR mutations and HNSCC.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Label (SUPPL-2), section 12.2",
+          "page": 43,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Amivantamab pharmacokinetics were observed at the approved recommended dosage and are presented as mean (SD), unless otherwise specified. Amivantamab exposure and accumulation are provided in Table 23. Amivantamab Cmax and AUC increase in a dose-proportional manner across the recommended dosing regimens. Amivantamab maximum trough concentration is typically observed at the end of the weekly dosing (Cycle 2 Day 1). Amivantamab steady-state concentration is reached by approximately Week 13. Table 23: Amivantamab Exposure and Accumulation Dose Frequency Ctrough,max (%CV) Ctrough,steady-state (%CV) AUC1week Accumulation 1,600 mg amivantamab / 20,000 units hyaluronidase to 2,240 mg amivantamab / 28,000 units hyaluronidase every 2-week 335 μg/mL (33%) 206 μg/mL (39%) Increase 3.5-fold 2,400 mg amivantamab / 30,000 units hyaluronidase to 3,360 mg amivantamab / 42,000 units hyaluronidase every 3-week 464 μg/mL (24%) 218 μg/mL (42%) Increase 4.5-fold 3,520 mg amivantamab / 44,000 units hyaluronidase to 4,640 mg amivantamab / 58,000 units hyaluronidase every 4-week 350 μg/mL (31%) 129 μg/mL (52%) Increase 4.8-fold Adult patients with NSCLC were randomized (1:1) to RYBREVANT FASPRO or intravenous amivantamab in combination with lazertinib in PALOMA-3, an open-label, randomized trial. The primary outcome measure was amivantamab steady-state Ctrough (Cycle 4 Day 1) and Cycle 2 AUCDay 1-15 of RYBREVANT FASPRO as compared to intravenous amivantamab. Additional descriptive efficacy outcome measures were overall response rate (ORR), progression-free 44 survival (PFS), and overall survival (OS). Amivantamab steady-state Ctrough and Cycle 2 AUCDay 1-15 following administration of RYBREVANT FASPRO and intravenous amivantamab were comparable. • At the recommended every 2-week dosage, the observed geometric mean ratios (GMRs) (90% CI) for Cycle 2 AUCDay 1-15 was 1.03 (0.98, 1.09) and for steady-state Ctrough (Cycle 4 Day 1) was 1.43 (1.27, 1.61). • At the recommended every 3-week dosage, the simulated GMRs (90% CI) for average concentration of Cycle 2 Day 1 to Day 21 was 1.20 (1.15, 1.26) and steady-state Ctrough was 1.32 (1.23, 1.42). • At the recommended every 4-week dosage, the simulated GMRs (90% CI) for average concentration of Cycle 2 Day 1 to Day 28 was 1.20 (1.15, 1.26) and steady-state Ctrough was 1.01 (0.93, 1.09). Comparable amivantamab exposures have been observed in patients with HNSCC and in patients with NSCLC. Absorption Amivantamab bioavailability is 67% (15%) with a median time to reach maximum concentration of 3 days following administration of RYBREVANT FASPRO. Distribution Amivantamab apparent volume of distribution is 5.7 L (24%). Elimination Amivantamab is cleared by parallel linear and nonlinear saturable target mediated clearances after subcutaneous administration. Amivantamab estimated terminal half-life is 19 days (34%) with an associated linear apparent clearance of 0.22 L/day (26%). Specific Populations No clinically significant differences in the pharmacokinetics of amivantamab were observed based on age (range: 28-85 years), baseline albumin level (range: 26-51 g/L), sex, race, ethnicity, creatinine clearance [CLCr] 29 to < 90 mL/min (estimated by Cockcroft Gault equation), mild hepatic impairment [(total bilirubin ≤ ULN and AST > ULN) or (ULN < total bilirubin ≤ 1.5 times ULN)], Eastern Cooperative Oncology Group (ECOG) performance status, history of brain metastases, and EGFR primary mutation type. The effect of CLCr 15 to 29 mL/min or moderate (total bilirubin 1.5 to 3 times ULN) to severe (total bilirubin > 3 times ULN) hepatic impairment on amivantamab pharmacokinetics has not been studied. Increases in body weight increased the volume of distribution and clearance of amivantamab. With the recommended dosages, exposures of amivantamab were comparable between patients who weighed < 80 kg and received 1,600 mg amivantamab and 20,000 units hyaluronidase (every 2-week dosing)/2,400 mg amivantamab and 30,000 units hyaluronidase (every 3-week 45 dosing)/3,520 mg amivantamab and 44,000 units hyaluronidase (every 4-week dosing) and patients who weighed ≥ 80 kg and received 2,240 mg amivantamab and 28,000 units hyaluronidase (every 2-week dosing)/3,360 mg amivantamab and 42,000 units hyaluronidase (every 3-week dosing)/4,640 mg amivantamab and 58,000 units hyaluronidase (every 4-week dosing).",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Label (SUPPL-2), section 12.3",
+          "page": 43,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+      "wording": {
+        "text": "The first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-2), section 1",
+          "quote": "The first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "slug": "first-line-treatment-of-nsclc-with-egfr-exon-19-deletions",
+      "approvalDate": {
+        "value": "2025-12-17",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002289",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "non-small cell lung cancer",
+            "paragraphs": [
+              "A group of lung cancers named for the kinds of cells found in the cancer and how the cells look under a microscope. The three main types of non-small cell lung cancer are adenocarcinoma (most common), squamous cell carcinoma, and large cell carcinoma. Non-small cell lung cancer is the most common of the two main types of lung cancer (non-small cell lung cancer and small cell lung cancer)."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/non-small-cell-lung-cancer",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04487080)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+      "wording": {
+        "text": "Adult patients with locally advanced or metastatic NSCLC with EGFR exon 19 deletions or exon 21 L858R substitution mutations, whose disease has progressed on or after treatment with an EGFR tyrosine kinase inhibitor",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-2), section 1",
+          "quote": "Adult patients with locally advanced or metastatic NSCLC with EGFR exon 19 deletions or exon 21 L858R substitution mutations, whose disease has progressed on or after treatment with an EGFR tyrosine kinase inhibitor",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "slug": "previously-treated-nsclc-with-egfr-exon-19-deletions-or",
+      "approvalDate": {
+        "value": "2025-12-17",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002289",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "non-small cell lung cancer",
+            "paragraphs": [
+              "A group of lung cancers named for the kinds of cells found in the cancer and how the cells look under a microscope. The three main types of non-small cell lung cancer are adenocarcinoma (most common), squamous cell carcinoma, and large cell carcinoma. Non-small cell lung cancer is the most common of the two main types of lung cancer (non-small cell lung cancer and small cell lung cancer)."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/non-small-cell-lung-cancer",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04988295",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04988295)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations",
+      "wording": {
+        "text": "The first-line treatment of adult patients with locally advanced or metastatic NSCLC with EGFR exon 20 insertion mutations, as detected by an FDA-approved test",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-2), section 1",
+          "quote": "The first-line treatment of adult patients with locally advanced or metastatic NSCLC with EGFR exon 20 insertion mutations, as detected by an FDA-approved test",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "slug": "first-line-treatment-of-nsclc-with-egfr-exon-20-insertion",
+      "approvalDate": {
+        "value": "2025-12-17",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002289",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "non-small cell lung cancer",
+            "paragraphs": [
+              "A group of lung cancers named for the kinds of cells found in the cancer and how the cells look under a microscope. The three main types of non-small cell lung cancer are adenocarcinoma (most common), squamous cell carcinoma, and large cell carcinoma. Non-small cell lung cancer is the most common of the two main types of lung cancer (non-small cell lung cancer and small cell lung cancer)."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/non-small-cell-lung-cancer",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04538664",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04538664)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations",
+      "wording": {
+        "text": "As a single agent for the treatment of adult patients with locally advanced or metastatic NSCLC with EGFR exon 20 insertion mutations, as detected by an FDA-approved test, whose disease has progressed on or after platinum-based chemotherapy",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-2), section 1",
+          "quote": "As a single agent for the treatment of adult patients with locally advanced or metastatic NSCLC with EGFR exon 20 insertion mutations, as detected by an FDA-approved test, whose disease has progressed on or after platinum-based chemotherapy",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "slug": "previously-treated-nsclc-with-egfr-exon-20-insertion",
+      "approvalDate": {
+        "value": "2025-12-17",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+        "sourceLabel": "Approved label (ORIG-1)",
+        "quote": "First listed in section 1 of the label approved with ORIG-1.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2025-12-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung",
+          "areas": [
+            "Neoplasms",
+            "Respiratory Tract Diseases"
+          ],
+          "definition": {
+            "text": "A heterogeneous aggregate of at least three distinct histological types of lung cancer, including SQUAMOUS CELL CARCINOMA; ADENOCARCINOMA; and LARGE CELL CARCINOMA. They are dealt with collectively because of their shared treatment strategy.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D002289",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "non-small cell lung cancer",
+            "paragraphs": [
+              "A group of lung cancers named for the kinds of cells found in the cancer and how the cells look under a microscope. The three main types of non-small cell lung cancer are adenocarcinoma (most common), squamous cell carcinoma, and large cell carcinoma. Non-small cell lung cancer is the most common of the two main types of lung cancer (non-small cell lung cancer and small cell lung cancer)."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/non-small-cell-lung-cancer",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT02609776",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT02609776)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Previously Treated HNSCC",
+      "wording": {
+        "text": "As a single agent for the treatment of adult patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) whose disease has progressed on or after platinum-based chemotherapy and an anti-PD-(L)1 antibody",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Approved label (SUPPL-2), section 1",
+          "quote": "As a single agent for the treatment of adult patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) whose disease has progressed on or after platinum-based chemotherapy and an anti-PD-(L)1 antibody",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "slug": "previously-treated-hnscc",
+      "approvalDate": {
+        "value": "2026-11-05",
+        "precision": "day"
+      },
+      "submissionNumber": "SUPPL-2",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761433Orig1s002ltr.pdf",
+        "sourceLabel": "Approval letter (SUPPL-2)",
+        "quote": "Named in the SUPPL-2 approval letter; first listed in the label on or before SUPPL-2, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "SUPPL-2",
+          "date": {
+            "value": "2026-11-05",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This Prior Approval sBLA provides for Rybrevant Faspro as a single agent for the treatment of adult patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) whose disease has progressed on or after platinum-based chemotherapy and an anti-PD-(L)1 antibody.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761433Orig1s002ltr.pdf",
+            "sourceLabel": "Approval letter (SUPPL-2)",
+            "quote": "This Prior Approval sBLA provides for Rybrevant Faspro as a single agent for the treatment of adult patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) whose disease has progressed on or after platinum-based chemotherapy and an anti-PD-(L)1 antibody.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D000077195",
+          "term": "Squamous Cell Carcinoma of Head and Neck",
+          "areas": [
+            "Neoplasms"
+          ],
+          "definition": {
+            "text": "The most common type of head and neck carcinoma that originates from cells on the surface of the NASAL CAVITY; MOUTH; PARANASAL SINUSES, SALIVARY GLANDS, and LARYNX. Mutations in TNFRSF10B, PTEN, and ING1 genes are associated with this cancer.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000077195",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Head and neck squamous cell carcinoma",
+            "paragraphs": [
+              "Squamous cell carcinoma is a cancer that arises from particular cells called squamous cells. Squamous cells are found in the outer layer of skin and in the mucous membranes, which are the moist tissues that line body cavities such as the airways and intestines. Head and neck squamous cell carcinoma (HNSCC) develops in the mucous membranes of the mouth, nose, and throat.",
+              "HNSCC is classified by its location: it can occur in the mouth (oral cavity), the middle part of the throat near the mouth (oropharynx), the space behind the nose (nasal cavity and paranasal sinuses), the upper part of the throat near the nasal cavity (nasopharynx), the voicebox (larynx), or the lower part of the throat near the larynx (hypopharynx). Depending on the location, the cancer can cause abnormal patches or open sores (ulcers) in the mouth and throat, unusual bleeding or pain in the mouth, sinus congestion that does not clear, sore throat, earache, pain when swallowing or difficulty swallowing, a hoarse voice, difficulty breathing, or enlarged lymph nodes.",
+              "HNSCC can spread (metastasize) to other parts of the body, such as the lymph nodes or lungs. If it spreads, the cancer has a worse prognosis and can be fatal. About half of affected individuals survive more than five years after diagnosis."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/genetics/condition/head-and-neck-squamous-cell-carcinoma/",
+              "sourceLabel": "MedlinePlus Genetics, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D000077195",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording; also on the pivotal trials (NCT06385080)",
+            "quote": "HNSCC",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "761433",
+      "applicationType": "BLA",
+      "sponsor": "JANSSEN BIOTECH",
+      "originalApprovalDate": {
+        "value": "2025-12-17",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Oncologic Diseases",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761433Orig1s002ltr.pdf",
+          "sourceLabel": "Approval letter (SUPPL-2), signature",
+          "quote": "Office of Oncologic Diseases Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Janssen Biotech, Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+          "sourceLabel": "Label (SUPPL-2)",
+          "quote": "Manufactured by: Janssen Biotech, Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    }
+  },
+  "trials": [
+    {
+      "id": "chrysalis",
+      "nctId": "NCT02609776",
+      "protocolNumber": "CR108064",
+      "acronym": "CHRYSALIS",
+      "title": "A Phase 1, First-in-Human, Open-Label, Dose Escalation Study of JNJ-61186372, a Human Bispecific EGFR and cMet Antibody, in Subjects With Advanced Non-Small Cell Lung Cancer",
+      "briefTitle": "Study of Amivantamab, a Human Bispecific EGFR and cMet Antibody, in Participants With Advanced Non-Small Cell Lung Cancer",
+      "phase": "PHASE1",
+      "roles": [
+        {
+          "indication": "Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations)",
+            "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Non-Small-Cell Lung Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
+      "startDate": {
+        "value": "2016-05-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-12-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 751,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part 1:Amivantamab Monotherapy+Combination Dose Escalations",
+          "type": "EXPERIMENTAL",
+          "description": "The first cohort of participants will receive intravenous (IV) infusions of Amivantamab 140 milligram (mg) as monotherapy. Each subsequent cohort will receive IV infusions of Amivantamab at increased dose level. Dose escalation will continue until maximum tolerated dose is reached or all planned doses are administered. Participants will receive IV infusion of Amivantamab once weekly during cycle 1 and once every 2 weeks during subsequent cycles (duration of each treatment cycle is 28 days). Participants will receive lazertinib and Amivantamab on Cycle 1 Day 1 (C1D1) prior to initiation of Amivantamab (C1D1) at predefined dose levels, based upon observed safety and protocol defined criteria. Lazertinib will be administered daily thereafter, on 28-day Amivantamab treatment cycle. In Chemotherapy Combination Cohort, participants will receive Amivantamab, administered on a 21-day cycle, in combination with standard of care carboplatin and pemetrexed."
+        },
+        {
+          "label": "Part 2:Amivantamab Monotherapy+Combination Dose Expansion",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive IV infusion of Amivantamab as monotherapy at Phase 2 dose (RP2D) regimen or in combination lazertinib at the recommended Phase 2 combination dose (RP2CD) regimen as determined in Part 1. The purpose of dose expansion is to further evaluate safety, tolerability, pharmacokinetic, and to assess preliminary efficacy in monotherapy and combination therapy cohorts."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part 1: Number of Participants With Dose Limiting Toxicity (DLT)",
+        "Part 2: Number of Participants With Adverse Events (AEs) and Serious AEs",
+        "Part 2: Overall Response Rate (ORR)",
+        "Part 2: Duration of Response (DOR)",
+        "Part 2: Percentage of Participants With Clinical Benefit",
+        "Trough Serum Concentration (Ctrough) of Amivantamab",
+        "Area Under the Curve From Time Zero to End of Dosing Interval (AUCtau) of Amivantamab"
+      ],
+      "secondaryEndpoints": [
+        "Maximum Serum Concentration (Cmax) of Amivantamab",
+        "Time to Reach Maximum Observed Serum Concentration (Tmax) of Amivantamab",
+        "Area Under the Serum Concentration-Time Curve From t1 to t2 Time (AUC[t1-t2]) of Amivantamab",
+        "Area Under the Curve From Time Zero to End of Dosing Interval (AUCtau) of Amivantamab",
+        "Trough Serum Concentration (Ctrough) of Amivantamab",
+        "Maximum Serum Concentration (Cmax) of Lazertinib",
+        "Time to Reach Maximum Observed Serum Concentration (Tmax) of Lazertinib",
+        "Trough Serum Concentration (Ctrough) of Lazertinib",
+        "Accumulation ratio (R) of Amivantamab",
+        "Number of Participants With Anti-Drug Antibodies (ADA)",
+        "Progression-Free Survival (PFS)",
+        "Time to Treatment Failure (TTF)",
+        "Overall Survival (OS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02609776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02609776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02609776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02609776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02609776",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 46,
+          "quote": "nsertion mutations in a multicenter, open-label, multi- cohort clinical trial (CHRYSALIS, NCT02609776). The study included patients with locally advanced or metastatic NSCLC with EGFR exon 20",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations)",
+                "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-20T01:12:10.493Z"
+        }
+      ]
+    },
+    {
+      "id": "mariposa",
+      "nctId": "NCT04487080",
+      "protocolNumber": "CR108856",
+      "acronym": "MARIPOSA",
+      "title": "A Phase 3, Randomized Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib Versus Lazertinib as First-Line Treatment in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer.",
+      "briefTitle": "A Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib in Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+            "quote": "Trial identifier appears within the First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
+      "startDate": {
+        "value": "2020-09-30",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-08-11",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-02-16",
+        "precision": "day"
+      },
+      "readoutDate": {
+        "value": "2023-09-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1074,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "TRIPLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Treatment Arm A (Open-label): Amivantamab and Lazertinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive amivantamab 1050 milligram (mg) intravenously (IV) for body weight less than (\\<) 80 kilogram (kg) and 1400 mg for body weight greater than or equal to (\\>=) 80 kg in 28-day cycles: once weekly in Cycle 1 (with a split dose on Days 1-2), and then every 2 weeks in subsequent cycles. Lazertinib will be administered 240 mg (80\\*3) orally once daily."
+        },
+        {
+          "label": "Treatment Arm B (Double-blind): Osimertinib+Placebo Lazertinib",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive osimertinib 80 mg orally once daily plus matching placebo of lazertinib 240 mg (80\\*3) orally once daily."
+        },
+        {
+          "label": "Treatment Arm C (Double-blind): Lazertinib+Placebo Osimertinib",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive lazertinib 240 mg (80\\*3) orally once daily plus matching placebo of osimertinib 80 mg orally once daily."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-Free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by Blinded Independent Central Review (BICR)"
+      ],
+      "secondaryEndpoints": [
+        "Overall Survival (OS)",
+        "Objective Response Rate (ORR)",
+        "Duration of Response (DOR)",
+        "Progression-Free Survival After First Subsequent Therapy (PFS2)",
+        "Time to Symptomatic Progression (TTSP)",
+        "Intracranial PFS",
+        "Incidence and Severity of Adverse Events (AEs)",
+        "Number of Participants With Clinical Laboratory Abnormalities",
+        "Number of Participants With Vital Signs Abnormalities",
+        "Number of Participants With Physical Examination Abnormalities",
+        "Serum Concentration of Amivantamab",
+        "Plasma Concentration of Lazertinib",
+        "Number of Participants With Anti-Amivantamab Antibodies",
+        "Change From Baseline in Non-Small Cell Lung Cancer - Symptom Assessment Questionnaire (NCSLC-SAQ)",
+        "Change From Baseline in European Organization of Research and Treatment of Cancer Quality of Life Questionnaire Core 30 (EORTC-QLQ-C30)"
+      ],
+      "postedResults": [
+        {
+          "title": "Progression-Free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by Blinded Independent Central Review (BICR)",
+          "timeFrame": "From randomization to either disease progression or death whichever occurs first (up to 32.8 months)",
+          "paramType": "MEDIAN",
+          "unitOfMeasure": "Months",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Experimental: Arm A (Open-label): Amivantamab + Lazertinib"
+            },
+            {
+              "id": "OG001",
+              "title": "Active Comparator: Arm B (Double-blind): Osimertinib+Placebo Matching Lazertinib"
+            },
+            {
+              "id": "OG002",
+              "title": "Experimental: Arm C (Double-blind): Lazertinib+Placebo Matching Osimertinib"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "23.72",
+              "lowerLimit": "19.12",
+              "upperLimit": "27.66"
+            },
+            {
+              "groupId": "OG001",
+              "value": "16.59",
+              "lowerLimit": "14.78",
+              "upperLimit": "18.46"
+            },
+            {
+              "groupId": "OG002",
+              "value": "18.46",
+              "lowerLimit": "14.75",
+              "upperLimit": "20.11"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.0002",
+              "method": "Log Rank",
+              "paramType": "Hazard Ratio (HR)",
+              "paramValue": "0.70",
+              "ciPct": "95",
+              "ciLower": "0.58",
+              "ciUpper": "0.85"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04487080?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 37,
+          "quote": "cy of intravenous amivantamab, in combination with lazertinib, was evaluated in MARIPOSA (NCT04487080), a randomized, active-controlled, multicenter trial. Eligible patients Reference ID: 571",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.jnj.com/media-center/press-releases/landmark-phase-3-mariposa-study-meets-primary-endpoint-resulting-in-statistically-significant-and-clinically-meaningful-improvement-in-progression-free-survival-for-rybrevant-amivantamab-vmjw-plus-lazertinib-versus-osimertinib-in-patients-with-egfr-mutated-non-small-cell-lung-cancer",
+          "sourceLabel": "jnj.com: Landmark Phase 3 MARIPOSA Study Meets Primary Endpoint Resulting in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival for RYBREVANT® (amivantamab-vm",
+          "quote": "Landmark Phase 3 MARIPOSA Study Meets Primary Endpoint Resulting in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival for RYBREVANT® (amivantamab-vmjw) plus ",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+                "quote": "Trial identifier appears within the First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the First-Line Treatment of NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-20T01:12:10.493Z"
+        }
+      ]
+    },
+    {
+      "id": "papillon",
+      "nctId": "NCT04538664",
+      "protocolNumber": "CR108850",
+      "acronym": "PAPILLON",
+      "title": "61186372NSC3001: A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+      "briefTitle": "A Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Participants With Advanced or Metastatic Non-Small Cell Lung Cancer Characterized by Epidermal Growth Factor Receptor (EGFR) Exon 20 Insertions",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations)",
+            "quote": "Trial identifier appears within the First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
+      "startDate": {
+        "value": "2020-10-13",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-05-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-12-31",
+        "precision": "day"
+      },
+      "readoutDate": {
+        "value": "2023-07-17",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 308,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Amivantamab + Chemotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive pemetrexed 500 milligram per meter square (mg/m\\^2) intravenous (IV) infusion (with vitamin supplementation) on Day 1 of each 21-day cycle, in combination with carboplatin for up to 4 cycles, and then as maintenance monotherapy until disease progression. Carboplatin area under the concentration-time curve 5 milligram per milliliter (mg/mL) per minute (AUC 5) will be administered as IV infusion on Day 1 of each 21 day cycle, for up to 4 cycles. Participants will receive amivantamab 1400 mg (1750 mg if body weight is \\>=80 kilogram \\[kg\\]) by IV infusion once weekly up to Cycle 2 Day 1, then 1750 mg (2100 mg if body weight is \\>=80 kg) on Day 1 of each 21-day cycle, starting with Cycle 3. Following the primary analysis for efficacy, the study will transition to an OLE phase and participants will continue to receive the amivantamab plus chemotherapy in OLE phase. Participants who completed OLE period will enter LTE period and continue to receive same treatment."
+        },
+        {
+          "label": "Arm B: Chemotherapy Alone",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive pemetrexed 500 mg/m\\^2 IV infusion (with vitamin supplementation) on Day 1 of each 21-day cycle, in combination with carboplatin for up to 4 cycles, and then as maintenance monotherapy until disease progression. Carboplatin AUC 5 IV infusion will be administered on Day 1 of each 21-day cycle for up to 4 cycles. Following the primary analysis for efficacy, the study will transition to an OLE phase and participants will either continue to receive the chemotherapy or cross over to amivantamab in OLE phase. Participants who completed OLE period will enter LTE period and continue to receive same treatment."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression-Free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by Blinded Independent Central Review (BICR)"
+      ],
+      "secondaryEndpoints": [
+        "Objective Response Rate (ORR)",
+        "Duration of Response (DoR)",
+        "Overall Survival (OS)",
+        "Time to Subsequent Therapy (TST)",
+        "Progression-Free Survival After First Subsequent Therapy (PFS2)",
+        "Time to Symptomatic Progression (TTSP)",
+        "Number of Participants Treatment-emergent Adverse Events (TEAEs)",
+        "Number of Participants TEAEs With Severity",
+        "Number of Participants With Clinical Laboratory Abnormalities",
+        "Number of Participants With Vital Signs Abnormalities",
+        "Number of Participants With Physical Examination Abnormalities",
+        "Serum Concentration of Amivantamab",
+        "Number of Participants With Anti-Amivantamab Antibodies",
+        "Change From Baseline in European Organization of Research and Treatment of Cancer Quality of Life Questionnaire Core 30 (EORTC-QLQ-C30)",
+        "Change From Baseline in Patient Reported Outcomes Measurement Information System-Physical Function (PROMIS-PF)"
+      ],
+      "postedResults": [
+        {
+          "title": "Progression-Free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by Blinded Independent Central Review (BICR)",
+          "timeFrame": "From randomization to either disease progression or death whichever occurs first (up to 29 months)",
+          "paramType": "MEDIAN",
+          "unitOfMeasure": "Months",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Arm B: Chemotherapy Alone"
+            },
+            {
+              "id": "OG001",
+              "title": "Arm A: Amivantamab + Chemotherapy"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "6.70",
+              "lowerLimit": "5.59",
+              "upperLimit": "7.33"
+            },
+            {
+              "groupId": "OG001",
+              "value": "11.37",
+              "lowerLimit": "9.79",
+              "upperLimit": "13.70"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Log Rank",
+              "paramType": "Hazard Ratio (HR)",
+              "paramValue": "0.395",
+              "ciPct": "95",
+              "ciLower": "0.296",
+              "ciUpper": "0.528"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04538664",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04538664",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04538664",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04538664",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04538664",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04538664?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 44,
+          "quote": "nd Pemetrexed PAPILLON The efficacy of intravenous amivantamab was evaluated in PAPILLON (NCT04538664), in a randomized, open-label, multicenter study. Eligible patients were required to have",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.jnj.com/media-center/press-releases/treatment-with-rybrevant-amivantamab-vmjw-plus-chemotherapy-resulted-in-statistically-significant-and-clinically-meaningful-improvement-in-progression-free-survival-in-patients-with-newly-diagnosed-egfr-exon-20-insertion-mutation-positive-non-small-cell-lung-cancer",
+          "sourceLabel": "jnj.com: Treatment with RYBREVANT® (amivantamab-vmjw) Plus Chemotherapy Resulted in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival in Patients with Newly ",
+          "quote": "RARITAN, New Jersey, July 17, 2023 – The Janssen Pharmaceutical Companies of Johnson & Johnson today announced positive topline results from the Phase 3 PAPILLON study evaluating RYBREVANT ® (amivantamab-vmjw) in combination with chemotherapy (carboplatin-pemetrexed) in patients with newly diagnosed advanced or metast…",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "title",
+          "previousValue": "A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+          "newValue": "61186372NSC3001: A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+          "detectedAt": "2026-10-29T17:59:18.631Z"
+        },
+        {
+          "field": "completionDate",
+          "previousValue": {
+            "value": "2027-08-02",
+            "precision": "day"
+          },
+          "newValue": {
+            "value": "2027-12-31",
+            "precision": "day"
+          },
+          "detectedAt": "2026-10-29T17:59:18.631Z"
+        },
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations)",
+                "quote": "Trial identifier appears within the First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the First-Line Treatment of NSCLC with EGFR Exon 20 Insertion Mutations section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-20T01:12:10.493Z"
+        }
+      ]
+    },
+    {
+      "id": "mariposa-2",
+      "nctId": "NCT04988295",
+      "protocolNumber": "CR109061",
+      "acronym": "MARIPOSA-2",
+      "title": "A Phase 3, Open-Label, Randomized Study of Amivantamab and Lazertinib in Combination With Platinum-Based Chemotherapy Compared With Platinum-Based Chemotherapy in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer After Osimertinib Failure",
+      "briefTitle": "A Study of Amivantamab and Lazertinib in Combination With Platinum-Based Chemotherapy Compared With Platinum-Based Chemotherapy in Patients With Epidermal Growth Factor Receptor (EGFR)-Mutated Locally Advanced or Metastatic Non- Small Cell Lung Cancer After Osimertinib Failure",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+            "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
+      "startDate": {
+        "value": "2021-11-17",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2023-07-10",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2028-07-03",
+        "precision": "day"
+      },
+      "readoutDate": {
+        "value": "2023-09-06",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 776,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: LACP/ACP-L",
+          "type": "EXPERIMENTAL",
+          "description": "LACP dosing (study start until 6 November 2022): Participants will receive Lazertinib orally along with Amivantamab, Pemetrexed, and Carboplatin as IV infusion starting on Cycle 1 Day 1 for 4 cycles (each cycle consists of 21 days). After 4 cycles, participants will receive Amivantamab, Pemetrexed and Lazertinib as maintenance until disease progression. ACP-L dosing (from 7 November 2022 until study completion): Participants will receive Amivantamab, Pemetrexed, and Carboplatin starting on Cycle 1 Day 1 for 4 cycles. Lazertinib in ACP-L will start on Cycle 5 Day 1 or sooner if carboplatin is discontinued before cycle 4 (each cycle consists of 21 days). Beginning with Cycle 5 Day 1, participants will receive Amivantamab, Pemetrexed and Lazertinib as maintenance until disease progression."
+        },
+        {
+          "label": "Arm B: CP (Carboplatin and Pemetrexed)",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Participants will receive Pemetrexed in combination with Carboplatin as IV infusion for up to 4 cycles (each cycle consists of 21 days). After 4 cycles, participants will receive Pemetrexed as maintenance until disease progression."
+        },
+        {
+          "label": "Arm C: ACP (Amivantamab, Carboplatin and Pemetrexed)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Amivantamab, Pemetrexed, and Carboplatin as IV infusion for up to 4 cycles (each cycle consists of 21 days). After 4 cycles, participants will receive Amivantamab and Pemetrexed as maintenance until disease progression."
+        },
+        {
+          "label": "Arm A2 (Extension Cohort): ACP-L",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Amivantamab, Pemetrexed and Carboplatin as IV infusion for up to 4 cycles (each cycle consists of 21 days), Lazertinib will start on C5D1 or sooner if carboplatin is discontinued earlier). After 4 cycles, participants will receive Pemetrexed, Amivantamab, Lazertinib as maintenance until disease progression."
+        },
+        {
+          "label": "Arm C2 (Extension Cohort): ACP",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive Amivantamab, Pemetrexed, and Carboplatin as IV infusion for up to 4 cycles (each cycle consists of 21 days). After 4 cycles, participants will receive Amivantamab and Pemetrexed as maintenance until disease progression."
+        }
+      ],
+      "primaryEndpoints": [
+        "Main Study: Progression-free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by Blinded Independent Central Review (BICR)",
+        "Main Study + Extension Cohort: Number of Participants With Treatment-emergent Adverse Events (TEAEs) and Treatment-emergent Serious Adverse Events (TESAEs)",
+        "Main Study + Extension Cohort: Progression-free Survival (PFS) as Assessed by Blinded Independent Central Review"
+      ],
+      "secondaryEndpoints": [
+        "Main Study+ Extension Cohort: Objective Response Rate as Assessed by Blinded Independent Central Review",
+        "Main Study+ Extension Cohort: Overall Survival",
+        "Main Study+ Extension Cohort: Duration of Response as Assessed by Blinded Independent Central Review",
+        "Main Study+ Extension Cohort: Time to Subsequent Therapy",
+        "Main Study+ Extension Cohort: Progression-free Survival (PFS) After First Subsequent Therapy (PFS2)",
+        "Main Study+ Extension Cohort: Time to Symptomatic Progression",
+        "Main Study+ Extension Cohort: Intracranial Progression-free Survival (PFS) as Assessed by Blinded Independent Central Review",
+        "Main Study: Number of Participants With Adverse Events (AEs)",
+        "Main Study+ Extension Cohort: Number of Participants With Adverse Events (AEs) by Severity",
+        "Main Study+ Extension Cohort: Number of Participants With Clinical Laboratory Abnormalities",
+        "Main Study+ Extension Cohort: Serum Concentration of Amivantamab",
+        "Main Study+ Extension Cohort: Plasma Concentration of Lazertinib",
+        "Main Study + Extension Cohort: Number of Participants With Serum Anti-amivantamab Antibodies",
+        "Main Study+ Extension Cohort: Change From Baseline With Non-Small Cell Lung Cancer - Symptom Assessment Questionnaire (NSCLC-SAQ)",
+        "Main Study+ Extension Cohort: Change From Baseline With European Organization for the Research and Treatment of Cancer Quality of Life Questionnaire Core 30 (EORTC-QLQ-C30)",
+        "Main Study+ Extension Cohort: Change From Baseline With Patient-Reported Outcomes Measurement Information System -Physical Function (PROMIS-PF)"
+      ],
+      "postedResults": [
+        {
+          "title": "Main Study: Progression-free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by Blinded Independent Central Review (BICR)",
+          "timeFrame": "From randomization to either disease progression or death, whichever occurred first (up to 1 year 7 months)",
+          "paramType": "MEDIAN",
+          "unitOfMeasure": "months",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Main Study: Arm A: Lazertinib + Amivantamab + Carboplatin + Pemetrexed (LACP/ACP-L)"
+            },
+            {
+              "id": "OG001",
+              "title": "Main Study: Arm B: Carboplatin + Pemetrexed (CP)"
+            },
+            {
+              "id": "OG002",
+              "title": "Main Study: Arm C: Amivantamab + Carboplatin + Pemetrexed (ACP)"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "8.31",
+              "lowerLimit": "6.77",
+              "upperLimit": "9.10"
+            },
+            {
+              "groupId": "OG001",
+              "value": "4.17",
+              "lowerLimit": "4.04",
+              "upperLimit": "4.44"
+            },
+            {
+              "groupId": "OG002",
+              "value": "6.28",
+              "lowerLimit": "5.55",
+              "upperLimit": "8.41"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "<0.0001",
+              "method": "Log Rank",
+              "paramType": "Hazard Ratio (HR)",
+              "paramValue": "0.44",
+              "ciPct": "95",
+              "ciLower": "0.35",
+              "ciUpper": "0.56"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "<0.0001",
+              "method": "Log Rank",
+              "paramType": "Hazard Ratio (HR)",
+              "paramValue": "0.48",
+              "ciPct": "95",
+              "ciLower": "0.36",
+              "ciUpper": "0.64"
+            }
+          ]
+        },
+        {
+          "title": "Main Study + Extension Cohort: Number of Participants With Treatment-emergent Adverse Events (TEAEs) and Treatment-emergent Serious Adverse Events (TESAEs)",
+          "timeFrame": "up to 4 years 10 months",
+          "groups": [],
+          "measurements": [],
+          "analyses": []
+        },
+        {
+          "title": "Main Study + Extension Cohort: Progression-free Survival (PFS) as Assessed by Blinded Independent Central Review",
+          "timeFrame": "Up to 4 years 10 months",
+          "groups": [],
+          "measurements": [],
+          "analyses": []
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04988295",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04988295",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04988295",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04988295",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04988295",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04988295?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 42,
+          "quote": "s amivantamab in combination with carboplatin and pemetrexed was evaluated in MARIPOSA-2 (NCT04988295), a randomized, open-label, multicenter trial. Eligible patients were required to have lo",
+          "extractedBy": "regex",
+          "verified": false
+        },
+        "readoutDate": {
+          "sourceUrl": "https://www.prnewswire.com/news-releases/phase-3-mariposa-2-study-meets-dual-primary-endpoint-resulting-in-statistically-significant-and-clinically-meaningful-improvement-in-progression-free-survival-for-rybrevant-amivantamab-vmjw-plus-chemotherapy-with-and-without-la-301919084.html",
+          "sourceLabel": "PR Newswire: Phase 3 MARIPOSA-2 Study Meets Dual Primary Endpoint Resulting in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival for RYBREVANT® (amivantamab-",
+          "quote": "Phase 3 MARIPOSA-2 Study Meets Dual Primary Endpoint Resulting in Statistically Significant and Clinically Meaningful Improvement in Progression-Free Survival for RYBREVANT® (amivantamab-vmjw) Plus Ch",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+                "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the Previously Treated NSCLC with EGFR Exon 19 Deletions or Exon 21 L858R Substitution Mutations section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "Rybrevant Faspro is indicated for the following indications: • In combination with lazertinib for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-20T01:12:10.493Z"
+        }
+      ]
+    },
+    {
+      "id": "paloma-3",
+      "nctId": "NCT05388669",
+      "protocolNumber": "CR109211",
+      "acronym": "PALOMA-3",
+      "title": "A Phase 3, Open-label, Randomized Study of Lazertinib With Subcutaneous Amivantamab Compared With Intravenous Amivantamab in Patients With EGFR-mutated Advanced or Metastatic Non-small Cell Lung Cancer After Progression on Osimertinib and Chemotherapy",
+      "briefTitle": "A Study of Lazertinib With Subcutaneous Amivantamab Compared With Intravenous Amivantamab in Participants With Epidermal Growth Factor Receptor (EGFR)-Mutated Advanced or Metastatic Non-small Cell Lung Cancer",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Advanced or Metastatic Non-small Cell Lung Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ],
+      "startDate": {
+        "value": "2022-08-05",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-01-03",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2027-06-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 418,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Lazertinib with Amivantamab SC-CF",
+          "type": "EXPERIMENTAL",
+          "description": "Lazertinib 240 milligrams (mg) will be administered orally once daily. Participants will receive amivantamab subcutaneous and co-formulated with recombinant human hyaluronidase (SC-CF), 1600 mg/ 2240 mg depending on the body weight by manual injection. Participants benefiting from study treatment after primary analysis may continue to receive access to study treatment within the study by transferring to the long-term extension (LTE) Phase."
+        },
+        {
+          "label": "Arm B: Lazertinib with Amivantamab Intravenous (IV) Infusion",
+          "type": "EXPERIMENTAL",
+          "description": "Lazertinib 240 mg will be administered orally once. Participants will receive amivantamab, 1050 mg or 1400 mg depending on the body weight as an IV infusion. Participants benefiting from study treatment after primary analysis may continue to receive access to study treatment within the study by transferring to the LTE Phase."
+        }
+      ],
+      "primaryEndpoints": [
+        "For All Regions Other Than the European Union (EU) and Others Accepting Cycle 2 Day 1: Observed Serum Concentration (Ctrough) of Amivantamab at Steady State",
+        "For EU and Any Applicable Region: Observed Serum Concentration (Ctrough) of Amivantamab",
+        "Area Under the Concentration (AUC) Time Curve of Amivantamab From Day 1 to Day 15 (AUC [Day 1-15]) of Cycle 2"
+      ],
+      "secondaryEndpoints": [
+        "Objective Response Rate (ORR)",
+        "Progression-Free Survival (PFS)",
+        "Duration of Response (DOR)",
+        "Time to Response (TTR)",
+        "Number of Participants With Adverse Events (AEs)",
+        "Number of Participants With AEs by Severity",
+        "Number of Participants With Clinical Laboratory Abnormalities",
+        "Number of Participants With Clinical Laboratory Abnormalities by Severity",
+        "Number of Participants With Infusion Related Reactions (IRRs)",
+        "Number of Participants With IRRs by Severity",
+        "For All Regions Other Than the EU and Others Accepting Cycle 2 Day 1: Observed Serum Concentration (Ctrough) of Amivantamab at Pre-dose on Cycle 2 Day 1",
+        "For EU and Any Applicable Region: Observed Serum Concentration (Ctrough) of Amivantamab at Steady State on Cycle 4 Day 1",
+        "Model-Predicted Area Under the Concentration Time Curve of Amivantamab at Steady State From Day 1 to Day 15 (AUC [Day 1-15]) of Cycle 4",
+        "Percentage of Participants With Presence of Anti-amivantamab Antibodies and Anti-rHuPH20 Antibodies",
+        "Percentage of Participants With Cancer Therapy Satisfaction as Assessed by Therapy Administration Satisfaction Questionnaire (TASQ)",
+        "Change From Baseline in Therapy Administration Satisfaction Questionnaire (TASQ) as Assessed Over Time",
+        "Participant Chair Time",
+        "Participant Chair Time in Treatment Room",
+        "Duration of Treatment Administration",
+        "Active Health Care Professional (HCP) Time For Drug Preparation, Treatment Administration and Post-treatment Monitoring"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05388669",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05388669",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05388669",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05388669",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05388669",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "origami-4",
+      "nctId": "NCT06385080",
+      "protocolNumber": "61186372HNC2002",
+      "acronym": "OrigAMI-4",
+      "title": "A Phase 1b/2, Open-label Study of Amivantamab Monotherapy and Amivantamab in Addition to Other Therapeutic Agents in Participants With Head and Neck Squamous Cell Carcinoma",
+      "briefTitle": "A Study of Amivantamab Alone or in Addition to Other Treatment Agents in Participants With Head and Neck Cancer",
+      "phase": "PHASE1_2",
+      "roles": [
+        {
+          "indication": "Previously Treated HNSCC",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Previously Treated HNSCC)",
+            "quote": "Trial identifier appears within the Previously Treated HNSCC section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "SUPPL-2",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761433Orig1s002ltr.pdf",
+              "sourceLabel": "Approval letter (SUPPL-2): the only approval of this indication",
+              "quote": "This Prior Approval sBLA provides for Rybrevant Faspro as a single agent for the treatment of adult patients with recurrent or metastatic head and neck squamous cell carcinoma (HNSCC) whose disease has progressed on or after platinum-based chemotherapy and an anti-PD-(L)1 antibody.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "RECRUITING",
+      "sponsor": "Janssen Research & Development, LLC",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Squamous Cell Carcinoma of Head and Neck"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D000077195",
+          "term": "Squamous Cell Carcinoma of Head and Neck"
+        }
+      ],
+      "startDate": {
+        "value": "2024-04-22",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2032-12-27",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2033-07-28",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 287,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Cohort 1: Amivantamab Monotherapy (Dose Expansion)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous injection of amivantamab monotherapy 1600 milligrams (mg) (2240 mg, if body weight \\>=80 kilograms \\[kg\\]) on Cycle 1 Day 1 and 2400 mg (3360 mg, if body weight \\>=80 kg) once every week (q1w) for the remainder of Cycle 1 (Days 8 and 15), and every 3 weeks (q3w) from Cycle 2 onwards."
+        },
+        {
+          "label": "Cohort 2: Amivantamab + Pembrolizumab (Dose Expansion Including Safety Run-in)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous injection of amivantamab 1600 mg (2240 mg, if body weight \\>=80 kg) on Cycle 1 Day 1 and 2400 mg (3360 mg, if body weight \\>=80 kg) q1w for the remainder of Cycle 1 (Days 8 and 15), and q3w from Cycle 2 onwards, along with intravenous (IV) injection of pembrolizumab 200 mg q3w (on Day 1 of each 21-day cycle)."
+        },
+        {
+          "label": "Cohort 3A (Dose Confirmation): Amivantamab + Paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous injection of amivantamab 1600 mg (2240 mg, if body weight \\>=80 kg) on Cycle 1 Day 1 and 2400 mg (3360 mg, if body weight \\>=80 kg) q1w for the remainder of Cycle 1 (Days 8 and 15), and q3w from Cycle 2 onwards, along with intravenous injection of paclitaxel 175 mg/m\\^2 q3w (on Day 1 of each 21-day cycle) in dose confirmation Cohort 3A. The recommended Phase 2 combination dose (RP2CD) of amivantamab will be determined in conjunction with study evaluation team (SET) in this dose confirmation Cohort 3A."
+        },
+        {
+          "label": "Cohort 3B (Dose Expansion): Amivantamab + Paclitaxel",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous injection of amivantamab at the determined RP2CD in addition to intravenous injection of paclitaxel 175 mg/m\\^2 q3w (on Day 1 of each 21-day cycle) as confirmed by SET in Cohort 3A."
+        },
+        {
+          "label": "Cohort 4: Amivantamab Monotherapy",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous injection of amivantamab monotherapy 1600 mg (2240 mg, if body weight \\>=80 kg) on Cycle 1 Day 1 and 2400 mg (3360 mg, if body weight \\>=80 kg) q1w for the remainder of Cycle 1 (Days 8 and 15), and q3w from Cycle 2 onwards."
+        },
+        {
+          "label": "Cohort 5: Pembrolizumab + Amivantamab + Carboplatin (Dose Expansion)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous injection of amivantamab 1600 mg (2240 mg, if body weight \\>=80 kg) on Cycle 1 Day 1 and 2400 mg (3360 mg, if body weight \\>=80 kg) q1w for the remainder of Cycle 1 (Days 8 and 15), and q3w from Cycle 2 onwards in addition to intravenous injection of pembrolizumab 200 mg on Day 1 of each cycle, and carboplatin (area under the concentration-time curve \\[AUC\\] 5 milligram per milliliter \\[mg/ml\\]\\*min) q3w on Day 1 of Cycles 1-6."
+        },
+        {
+          "label": "Cohort 6: Amivantamab + Pembrolizumab",
+          "type": "EXPERIMENTAL",
+          "description": "Participants will receive subcutaneous injection of amivantamab 1600 mg (2240 mg, if body weight \\>=80 kg) on Cycle 1 Day 1 and 2400 mg (3360 mg, if body weight \\>=80 kg) q1w for the remainder of Cycle 1 (Days 8 and 15), and q3w from Cycle 2, along with intravenous injection of pembrolizumab 200 mg q3w (on Day 1 of each 21-day cycle) (Neoadjuvant Phase). In the adjuvant phase, pembrolizumab IV (200 mg) will be administered q3w from Adjuvant Cycle 1 Day 1 to Adjuvant Cycle 15 Day 1 and amivantamab SC 2,400 mg (3,360 mg for \\>80 kg) will be administered q3w from Adjuvant Cycle 4 Day 1 to Adjuvant Cycle 15 Day 1."
+        }
+      ],
+      "primaryEndpoints": [
+        "Cohorts 1, 2, 3B, 4 and 5: Objective Response Rate",
+        "Cohort 3A: Number of Participants With Dose-limiting Toxicities (DLT)",
+        "Cohort 3A: Number of Participants With Treatment-emergent Adverse Events (TEAEs) as a Measure of Severity",
+        "Cohort 6: Major Pathologic Response (MPR)"
+      ],
+      "secondaryEndpoints": [
+        "Cohorts 1, 2, 3B, 4 and 5: Duration of Response (DoR)",
+        "Cohorts 1, 2, 3B, 4 and 5: Clinical Benefit Rate (CBR)",
+        "Cohorts 1, 2, 3B, 4 and 5: Progression-free Survival (PFS)",
+        "Cohorts 1, 2, 3B, 4, 5 and 6: Overall Survival (OS)",
+        "Cohorts 1, 2, 3B, 4, 5 and 6: Number of Participants With Treatment-emergent Adverse Events (TEAEs) as a Measure of Severity",
+        "Cohort 1 and 4: Maximum Observed Serum Concentration (Cmax) of Amivantamab",
+        "Cohort 1 and 4: Time to Maximum Observed Serum Concentration (Tmax) of Amivantamab",
+        "Cohort 1 and 4: Area Under the Serum Concentration Curve Verses Time Curve From Time t1 to t2 (AUC[t1-t2]) of Amivantamab",
+        "Cohort 1 and 4: Area Under the Curve From Time Zero to tau (AUC[0-tau]) of Amivantamab",
+        "Cohort 1 and 4: Trough Serum Concentration (Ctrough) of Amivantamab",
+        "Cohort 1 and 4: Accumulation Ratio (R) of Amivantamab",
+        "Cohort 6: Event-Free Survival (EFS)"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06385080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06385080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06385080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06385080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06385080",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 57,
+          "quote": "Carcinoma The efficacy of RYBREVANT FASPRO as a single agent was evaluated in OrigAMI-4 (NCT06385080), a multicenter, open-label, multi-cohort clinical trial. The primary efficacy population",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2025-12-17",
+        "precision": "day"
+      },
+      "label": "FDA approval — original BLA",
+      "shortLabel": "FDA approval",
+      "description": "Type 5 - New Formulation or New Manufacturer",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761433%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    {
+      "id": "fda-suppl-2",
+      "type": "FDA_SUPPLEMENT",
+      "region": "US",
+      "date": {
+        "value": "2026-11-05",
+        "precision": "day"
+      },
+      "label": "Supplement approved — efficacy",
+      "shortLabel": "+Efficacy",
+      "description": "Efficacy",
+      "submissionNumber": "SUPPL-2",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761433%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — BLA 761433",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22BLA761433%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761433Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761433s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-2",
+      "label": "Label (SUPPL-2)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761433s002lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-3",
+      "label": "Letter (SUPPL-2)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761433Orig1s002ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-11-20T01:12:10.493Z"
+}
