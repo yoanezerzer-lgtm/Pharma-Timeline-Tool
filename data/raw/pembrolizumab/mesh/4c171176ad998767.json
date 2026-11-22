@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0003442",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0003442",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0483487",
+      "http://id.nlm.nih.gov/mesh/M0484518",
+      "http://id.nlm.nih.gov/mesh/M0483486",
+      "http://id.nlm.nih.gov/mesh/M0483485",
+      "http://id.nlm.nih.gov/mesh/M0483488"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T006596",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A heterogeneous group of sporadic or hereditary carcinoma derived from cells of the KIDNEYS. There are several subtypes including the clear cells, the papillary, the chromophobe, the collecting duct, the spindle cells (sarcomatoid), or mixed cell-type carcinoma."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T000999236",
+      "http://id.nlm.nih.gov/mesh/T811436",
+      "http://id.nlm.nih.gov/mesh/T811437",
+      "http://id.nlm.nih.gov/mesh/T006600",
+      "http://id.nlm.nih.gov/mesh/T637040",
+      "http://id.nlm.nih.gov/mesh/T006599",
+      "http://id.nlm.nih.gov/mesh/T769900"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Carcinoma, Renal Cell"
+    },
+    "@context": {
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      }
+    }
+  }
+}

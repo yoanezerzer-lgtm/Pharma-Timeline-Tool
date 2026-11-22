@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0020544",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0020544",
+    "narrowerConcept": [
+      "http://id.nlm.nih.gov/mesh/M0574764",
+      "http://id.nlm.nih.gov/mesh/M0333444"
+    ],
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T039001",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "Tumors or cancer of the STOMACH."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T365265",
+      "http://id.nlm.nih.gov/mesh/T373572",
+      "http://id.nlm.nih.gov/mesh/T365266"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Stomach Neoplasms"
+    },
+    "@context": {
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "narrowerConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#narrowerConcept",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      }
+    }
+  }
+}
