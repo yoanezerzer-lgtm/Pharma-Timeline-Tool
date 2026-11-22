@@ -1,0 +1,102 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D013502",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000592",
+      "http://id.nlm.nih.gov/mesh/Q000458",
+      "http://id.nlm.nih.gov/mesh/Q000266",
+      "http://id.nlm.nih.gov/mesh/Q000639",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000706",
+      "http://id.nlm.nih.gov/mesh/Q000193",
+      "http://id.nlm.nih.gov/mesh/Q000941",
+      "http://id.nlm.nih.gov/mesh/Q000331",
+      "http://id.nlm.nih.gov/mesh/Q000379",
+      "http://id.nlm.nih.gov/mesh/Q000191",
+      "http://id.nlm.nih.gov/mesh/Q000295"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "use for the specialty only; prefer /surg with organs and diseases; use SURGICAL PROCEDURES, OPERATIVE or specifics for the surgery patient or surgical procedures"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D013043",
+    "dateIntroduced": "1966-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "2009 (1974)"
+    },
+    "identifier": "D013502",
+    "lastUpdated": "2015-06-23",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0020860",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T717006",
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "2009; see SURGERY 1974-2008"
+    },
+    "seeAlso": [
+      "http://id.nlm.nih.gov/mesh/D019024",
+      "http://id.nlm.nih.gov/mesh/D013514"
+    ],
+    "treeNumber": "http://id.nlm.nih.gov/mesh/H02.403.810.300",
+    "label": {
+      "@language": "en",
+      "@value": "General Surgery"
+    },
+    "@context": {
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      }
+    }
+  }
+}
