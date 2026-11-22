@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0016106",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0016106",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T030649",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "The space or compartment surrounded by the pelvic girdle (bony pelvis). It is subdivided into the greater pelvis and LESSER PELVIS. The pelvic girdle is formed by the PELVIC BONES and SACRUM."
+    },
+    "term": "http://id.nlm.nih.gov/mesh/T473404",
+    "label": {
+      "@language": "en",
+      "@value": "Pelvis"
+    },
+    "@context": {
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
