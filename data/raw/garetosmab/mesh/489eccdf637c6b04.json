@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0015505",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0015505",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T029595",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "The development of bony substance in normally soft structures."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T029594",
+      "http://id.nlm.nih.gov/mesh/T029596",
+      "http://id.nlm.nih.gov/mesh/T029592",
+      "http://id.nlm.nih.gov/mesh/T844675",
+      "http://id.nlm.nih.gov/mesh/T029593",
+      "http://id.nlm.nih.gov/mesh/T844674"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Ossification, Heterotopic"
+    },
+    "@context": {
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    }
+  }
+}
