@@ -157,7 +157,11 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "FOR SOLUTION",
+        "POWDER"
+      ]
     }
   },
   "trials": [
@@ -378,7 +382,7 @@
         "labelName": {
           "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761468Orig1s000lbl.pdf",
           "sourceLabel": "Approved label, section 14",
-          "quote": "MYR301 (NCT03852719)",
+          "quote": "MYR301(NCT03852719)",
           "extractedBy": "regex",
           "verified": false
         }
@@ -1200,5 +1204,5 @@
       "type": "fda_label"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:07:03.816Z"
+  "lastIngestedAt": "2026-11-22T07:59:38.314Z"
 }
