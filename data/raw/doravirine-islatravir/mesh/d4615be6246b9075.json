@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D017211",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "annotation": {
+      "@language": "en",
+      "@value": "coordinate with disease /ther, as \"analysis of treatment failure in AIDS\" or with specific therapy or intervention"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D016896",
+    "dateIntroduced": "1993-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "93"
+    },
+    "identifier": "D017211",
+    "lastUpdated": "1998-06-11",
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0026121",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T051313",
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "93"
+    },
+    "treeNumber": [
+      "http://id.nlm.nih.gov/mesh/N05.715.360.575.575.800.760",
+      "http://id.nlm.nih.gov/mesh/N04.761.559.590.800.760",
+      "http://id.nlm.nih.gov/mesh/E01.789.800.760"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Treatment Failure"
+    },
+    "@context": {
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    }
+  }
+}
