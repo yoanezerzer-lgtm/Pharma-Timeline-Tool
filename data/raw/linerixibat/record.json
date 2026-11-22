@@ -1,0 +1,457 @@
+{
+  "slug": "linerixibat",
+  "brandName": "Lynavoy",
+  "inn": "linerixibat",
+  "modality": "Drug (NDA)",
+  "sponsor": "INTERCEPT",
+  "mechanism": "Ileal Bile Acid Transporter Inhibitor",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Ileal Bile Acid Transporter Inhibitor",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220295%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "patientSummary": {
+      "paragraphs": [
+        "LYNAVOY is a prescription medicine used to treat itching (pruritus) in adults with primary biliary cholangitis (PBC).",
+        "LYNAVOY is not for use in people with severe liver disease (decompensated cirrhosis), or people who have or have had certain liver-related problems including bleeding of enlarged blood vessels in the stomach-area (variceal hemorrhage), fluid in the stomach-area (ascites), or nervous system problems (such as confusion, slurred speech, sluggish movements) caused by severe liver disease (hepatic encephalopathy)."
+      ],
+      "provenance": {
+        "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220295Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), patient information: \"What is Lynavoy?\"",
+        "page": 15,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Linerixibat is a reversible inhibitor of the ileal bile acid transporter (IBAT). It decreases the reabsorption of bile acids in the terminal ileum leading to their increased fecal elimination. Cholestatic pruritus is a common symptom in patients with PBC, and the pathophysiology of pruritus in patients with PBC is not completely understood. Although the complete mechanism by which linerixibat improves pruritus in PBC patients is unknown, it may involve inhibition of the IBAT as observed by a decrease in mediators of pruritus including serum bile acids [see Clinical Pharmacology (12.2)].",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220295Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Linerixibat reduces total serum bile acids in healthy volunteers and PBC patients with cholestatic pruritus. In healthy volunteers, serum bile acids were reduced within 1 day of LYNAVOY treatment compared to placebo treatment. In Study 1, total serum bile acids were reduced from baseline over the 24-week treatment period in the LYNAVOY group when compared to the placebo group.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220295Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Due to the low systemic absorption of linerixibat, pharmacokinetic parameters cannot be reliably calculated at the recommended doses. Following a single dose administration of 40 mg of linerixibat, concentrations of linerixibat in healthy volunteers were below the limit of quantification (10 pg/mL) in the majority of plasma samples. Following multiple doses of linerixibat ranging from 3 mg (0.08 times the approved recommended dose) twice daily to 90 mg (2.25 times the approved recommended dose) twice daily in healthy volunteers, the majority of plasma samples were below the limit of quantification (1,000 pg/mL). Absorption Linerixibat is minimally absorbed following oral administration and the absolute oral bioavailability of linerixibat is 0.05%. Following a single oral administration of linerixibat 40 mg in healthy adults under fasted conditions, median Tmax was 4.5 hours and mean linerixibat (%CV) C max and AUC 0-t were 31.1 pg/mL (173) and 105 h·pg/mL (419), respectively. Following multiple doses of LYNAVOY 40 mg twice daily in PBC patients with cholestatic pruritus, the mean linerixibat C max (95% CI) was 922 pg/mL (347, 1,500). Effect of Food Concomitant administration of a high-fat meal with a single dose of linerixibat 40 mg oral tablets delayed median Tmax from 4.5 hours to 8.0 hours and resulted in decreases of 21.9% and 33.7% in AUC 0-t and C max , respectively, compared to administration under fasted conditions in healthy adults. Pharmacokinetic parameters in the food effect study were highly variable. The effect of food on the changes of systemic exposures to linerixibat is not clinically significant. Despite the lack of clinically important pharmacokinetic effects with food, LYNAVOY should be administered at least 30 minutes prior to food or beverage (other than water) to allow linerixibat to enter the gastrointestinal lumen prior to release of bile acids upon eating [see Dosage and Administration (2.1)]. Distribution The in vitro plasma protein binding range of linerixibat was 71.0-76.4%. Elimination Following a single oral dose of linerixibat 90 mg (2.25 times the approved recommended dose) in healthy adults, the mean half-life (t 1/2 ) was 6.76 hours. Metabolism: Following administration of oral radiolabeled linerixibat, no linerixibat metabolites were detected in plasma. Three minor oxidative metabolites were detected in feces, and each accounted for negligible radioactivity (<1%), demonstrating that linerixibat is minimally metabolized in humans. Excretion: Following administration of oral radiolabeled linerixibat, approximately 97% of the dose was excreted in feces; approximately 0.04% of the dose was excreted in urine. More than 99% of fecal radioactivity was determined to be unchanged and unabsorbed linerixibat. Following intravenous administration of radiolabeled linerixibat, systemic linerixibat elimination was approximately 20% renal and 80% fecal. Specific Populations No clinically significant differences in changes of total serum bile acid concentrations were observed with linerixibat based on body weight, age, sex, or race (White, Black, or Asian). Patients with Hepatic Impairment: Of 238 patients enrolled in Study 1, 25 (11%) patients were diagnosed with cirrhosis (F4, Child-Pugh A), out of which 13 (5%) patients received linerixibat treatment. A general trend of higher exposure of linerixibat was observed in patients with cirrhosis compared to patients without cirrhosis, although the number of patients was very small. In a pharmacokinetic study in patients with moderate hepatic impairment (Child-Pugh B), the mean AUC (0-∞) and C max values were approximately 13-fold and 9.4-fold higher than matched healthy patients. The clinical significance of this increase is unknown. Pharmacokinetics of linerixibat have not been evaluated in patients with severe hepatic impairment (Child-Pugh C). Drug Interaction Studies Effect of Bile Acid Binding Resins on Linerixibat: Approximately 78% to 95% of linerixibat was bound to cholestyramine and colesevelam in in vitro studies. Cholestyramine and colesevelam can potentially inhibit the effects of linerixibat on IBAT [see Drug Interactions (7.1)]. Effect of Linerixibat on Ursodeoxycholic Acid (UDCA): In a dose-ranging study, adult PBC patients received placebo or linerixibat dosages ranging from 20 mg once a day (0.25 times the recommended dosage) to 90 mg twice a day (2.25 times the recommended dosage) for 12 weeks. In this clinical trial, concomitant administration of UDCA and linerixibat had no effect on UDCA plasma concentrations but reduced concentrations of UDCA conjugates, glyco-UDCA and tauro-UDCA, at 12 weeks of therapy. The concentrations of UDCA conjugates, glyco-UDCA and tauro-UDCA, were reduced by 69% and 90%, respectively, in patients receiving concomitant administration of UDCA with linerixibat versus with placebo. However, concomitant administration of UDCA with linerixibat resulted in no clinically significant increases in ALP over 12 weeks of treatment. In in vitro studies, linerixibat did not inhibit cytochrome P450 (CYP)s 1A2, 2A6, 2B6, 2C8, 2C9, 2C19, 2D6, and 2E1, but was an inhibitor of CYP3A4. Due to the low fraction absorbed, an interaction is not likely. Linerixibat did not induce CYPs 1A2, 2B6, and 3A4. In in vitro studies, linerixibat did not inhibit the transporters, P-glycoprotein (P-gp), breast cancer resistance protein (BCRP), organic anion transporters (OAT) 1 and 3, organic cation transporter (OCT) 2, and multidrug and toxin extrusion protein (MATE) 1 and 2K. In vitro studies suggest that there is a potential for linerixibat to inhibit organic anion transporter polypeptide 1B1 and 1B3 (OATP1B1 and OATP1B3). However, due to the low fraction absorbed, an interaction is not likely.",
+        "provenance": {
+          "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220295Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 8,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "Cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients",
+      "slug": "cholestatic-pruritus-associated-with-primary-biliary",
+      "approvalDate": {
+        "value": "2026-03-17",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-03-17",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Lynavoy (linerixibat) tablets for the treatment of cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Lynavoy (linerixibat) tablets for the treatment of cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D011537",
+          "term": "Pruritus",
+          "areas": [
+            "Skin and Connective Tissue Diseases",
+            "Pathological Conditions, Signs and Symptoms"
+          ],
+          "definition": {
+            "text": "An intense itching sensation that produces the urge to rub or scratch the skin to obtain relief.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D011537",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Itching",
+            "paragraphs": [
+              "What is itching?",
+              "Itching is an irritating sensation that makes you want to scratch your skin. Sometimes it can feel like pain, but it is different. Often, you feel itchy in one area in your body, but sometimes you may feel itching all over. Along with the itching, you may also have a rash or hives.",
+              "What causes itching?",
+              "Itching is a symptom of many health conditions. Some common causes are:",
+              "• Allergic reactions to food, insect bites, pollen, and medicines",
+              "• Skin conditions such as eczema, psoriasis, and dry skin",
+              "• Irritating chemicals, cosmetics, and other substances",
+              "• Parasites such as pinworms, scabies, head and body lice",
+              "• Pregnancy",
+              "• Liver, kidney, or thyroid diseases",
+              "• Certain cancers or cancer treatments",
+              "• Diseases that can affect the nervous system, such as diabetes and shingles",
+              "What are the treatments for itching?",
+              "Most itching is not serious. To feel better, you could try:",
+              "• Applying cold compresses",
+              "• Using moisturizing lotions",
+              "• Taking lukewarm or oatmeal baths",
+              "• Using over-the-counter hydrocortisone cream or antihistamines",
+              "• Avoiding scratching, wearing irritating fabrics, and exposure to high heat and humidity",
+              "Contact your health care provider if your itching is severe, does not go away after a few weeks, or does not have an apparent cause. You may need other treatments, such as medicines or light therapy. If you have an underlying disease that is causing the itching, treating that disease may help."
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/itching.html",
+              "sourceLabel": "MedlinePlus, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT04950127)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "220295",
+      "applicationType": "NDA",
+      "sponsor": "INTERCEPT",
+      "originalApprovalDate": {
+        "value": "2026-03-17",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Immunology and Inflammation",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Immunology and Inflammation Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "routes": [
+        "ORAL"
+      ]
+    }
+  },
+  "trials": [
+    {
+      "id": "212620",
+      "nctId": "NCT04950127",
+      "protocolNumber": "212620",
+      "title": "A Two-part, Randomized, Placebo Controlled, Double Blind, Multicenter, Phase 3 Study to Evaluate the Efficacy and Safety of Linerixibat for the Treatment of Cholestatic Pruritus in Participants With Primary Biliary Cholangitis (PBC)",
+      "briefTitle": "Global Linerixibat Itch Study of Efficacy and Safety in Primary Biliary Cholangitis (PBC) (GLISTEN)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "Cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220295Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — Cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients)",
+            "quote": "Trial identifier appears within the Cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Lynavoy (linerixibat) tablets for the treatment of cholestatic pruritus associated with primary biliary cholangitis (PBC) in adult patients.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "COMPLETED",
+      "sponsor": "GlaxoSmithKline",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Pruritus"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D011537",
+          "term": "Pruritus"
+        },
+        {
+          "id": "D002779",
+          "term": "Cholestasis"
+        },
+        {
+          "id": "D008105",
+          "term": "Liver Cirrhosis, Biliary"
+        }
+      ],
+      "startDate": {
+        "value": "2021-08-27",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2024-10-28",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2024-12-20",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 238,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "DOUBLE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "maxAge": "80 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Part A: Linerixibat 40 milligrams (mg)",
+          "type": "EXPERIMENTAL",
+          "description": "Participants were randomized to receive linerixibat 40 mg tablet orally twice a day (BID) in Part A (up to Week 24)."
+        },
+        {
+          "label": "Part A: Placebo",
+          "type": "EXPERIMENTAL",
+          "description": "Participants were randomized to receive Placebo orally twice a day (BID) in Part A (up to Week 24)."
+        },
+        {
+          "label": "Part B: Placebo in Part A and Part B",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants who were randomized to receive Placebo (up to Week 24) orally twice a day (BID) in Part A, continued to receive Placebo (from Week 24 to Week 32) orally twice a day (BID) in Part B."
+        },
+        {
+          "label": "Part B: Placebo in Part A and Linerixibat 40 mg in Part B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were randomized to receive Placebo (up to Week 24) orally twice a day (BID) in Part A, switched to receive linerixibat 40 mg tablet orally twice a day (BID) (from Week 24 to Week 32) in Part B."
+        },
+        {
+          "label": "Part B: Linerixibat 40 mg in Part A and Placebo in Part B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were randomized to receive linerixibat 40 mg tablet orally BID (up to Week 24) in Part A, switched to receive Placebo (from Week 24 to Week 32) orally twice a day (BID) in Part B."
+        },
+        {
+          "label": "Part B: Linerixibat 40 mg in Part A and Part B",
+          "type": "EXPERIMENTAL",
+          "description": "Participants who were randomized to receive linerixibat 40 mg tablet orally twice a day (BID) (up to Week 24) in Part A, continued to receive linerixibat 40 mg twice a day (BID) (from Week 24 to Week 32) in Part B."
+        }
+      ],
+      "primaryEndpoints": [
+        "Part A: Mean Change From Baseline in Monthly Itch Scores Over 24 Weeks Using Numerical Rating Scale (NRS)"
+      ],
+      "secondaryEndpoints": [
+        "Part A: Mean Change From Baseline in Weekly Itch Score at Week 2 Using NRS",
+        "Part A: Mean Change From Baseline in Monthly Sleep Score Over 24 Weeks Using NRS",
+        "Part A: Percentage of Responders Defined as Achieving More Than or Equal to (>=) 2-point Reduction From Baseline in the Monthly Itch Score at Week 24",
+        "Part A: Percentage of Responders Achieving >=3-point Reduction From Baseline in the Monthly Itch Score at Week 24",
+        "Part A: Percentage of Responders as Achieving a >=4-point Reduction From Baseline in the Monthly Itch Score at Week 24",
+        "Part A: Mean Change From Baseline in Primary Biliary Cholangitis-40 (PBC-40) Domain Scores at Week 24",
+        "Part A: Mean Change From Baseline in Patient's Global Impression of Severity (PGI-S) Over 24 Weeks",
+        "Part A: Patient's Global Impression of Change (PGI-C) Scores Over 24 Weeks",
+        "Part A: Mean Change From Baseline in Alkaline Phosphatase (ALP) at Week 24",
+        "Part A: Mean Change From Baseline in Bilirubin at Week 24"
+      ],
+      "postedResults": [
+        {
+          "title": "Part A: Mean Change From Baseline in Monthly Itch Scores Over 24 Weeks Using Numerical Rating Scale (NRS)",
+          "timeFrame": "Baseline and up to Week 24",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "unitOfMeasure": "Scores on a scale",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Part A: Linerixibat 40 Milligrams (mg)"
+            },
+            {
+              "id": "OG001",
+              "title": "Part A: Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "-2.86",
+              "lowerLimit": "-3.23",
+              "upperLimit": "-2.50"
+            },
+            {
+              "groupId": "OG001",
+              "value": "-2.15",
+              "lowerLimit": "-2.51",
+              "upperLimit": "-1.78"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "pValue": "0.001",
+              "method": "Mixed Models Analysis",
+              "paramType": "Mean Difference (Net)",
+              "paramValue": "-0.72",
+              "ciPct": "95",
+              "ciLower": "-1.15",
+              "ciUpper": "-0.28"
+            }
+          ]
+        }
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT04950127?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 10,
+          "quote": "mg/kg/day. 14 CLINICAL STUDIES The efficacy of LYNAVOY was evaluated in Study 1 (GLISTEN, NCT04950127), a 24-week, randomized, double-blind, placebo-controlled trial. The study included 238 a",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-03-17",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220295%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 220295",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA220295%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/220295Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220295Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-11-22T08:02:23.560Z"
+}
