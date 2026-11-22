@@ -155,7 +155,10 @@
           "extractedBy": "regex",
           "verified": false
         }
-      }
+      },
+      "routes": [
+        "INTRAVENOUS"
+      ]
     }
   },
   "trials": [
@@ -891,26 +894,210 @@
         }
       ],
       "primaryEndpoints": [
-        "Number of new HO lesions",
-        "Incidence and severity of treatment-emergent adverse events of special interest (AESIs)"
+        "Number of New Heterotopic Ossification (HO) Lesions",
+        "Number of Participants With Treatment-emergent (TE) Adverse Events of Special Interest (AESIs)"
       ],
       "secondaryEndpoints": [
-        "Number of clinician-assessed flare-ups",
-        "Occurrence of new HO lesions",
-        "Total volume of new HO lesions",
-        "Occurrence of patient-reported flare-ups",
-        "Number of new HO lesions",
-        "Occurrence of clinician-assessed flare-ups",
-        "Number of patient-reported flare-ups",
-        "Change in joint function assessment by physician using cumulative analog joint involvement scale (CAJIS)",
-        "Change in pulmonary function as assessed by spirometry",
-        "Change in disease severity as assessed by the Patient Global Impression of Severity (PGIS)",
-        "Change in disease severity as assessed by the Patient's Global Impression of Change (PGIC)",
-        "Change in disease severity as assessed by the Clinician's Global Impression of Change (CGIC)",
-        "Concentration of total activin A in serum over time",
-        "Concentration of garetosmab in serum over time",
-        "Incidence of anti-drug antibodies (ADA) to garetosmab over time",
-        "Titer of ADA to garetosmab over time"
+        "Number of Clinician-assessed Flare-ups",
+        "Number of Participants With New HO Lesions at Weeks 28 and 56",
+        "Total Volume of New HO Lesions",
+        "Percentage of Participants With Participant-reported Flare-ups",
+        "Number of New HO Lesions",
+        "Percentage of Participants With Clinician-assessed Flare-ups",
+        "Number of Participant-reported Flare-ups",
+        "Change From Baseline in Joint Function Assessment by Physician Using Cumulative Analog Joint Involvement Scale (CAJIS)",
+        "Change in Pulmonary Function (Forced Expiratory Volume in 1 Second [FEV1]) as Assessed by Spirometry",
+        "Change From Baseline in Disease Severity as Assessed by the Patient Global Impression of Severity (PGIS)",
+        "Patient's Global Impression of Change (PGIC) Scale Score",
+        "Clinician's Global Impression of Change (CGIC) Scale Score",
+        "Concentration of Total Activin A in Serum Over Time",
+        "Concentration of Garetosmab in Serum Over Time",
+        "Number of Participants With Anti-drug Antibodies (ADA) to Garetosmab Over Time",
+        "Number of Participants With Titer Values of ADA to Garetosmab Over Time Through Week 56",
+        "Number of Clinician-assessed Flare-ups at Week 84",
+        "Percentage of Participants With New HO Lesions at Week 84",
+        "Total Volume of New HO Lesions",
+        "Number of New HO Lesions",
+        "Percentage of Participants With Clinician-assessed Flare-ups",
+        "Change in Pulmonary Function (Forced Vital Capacity (FVC)) as Assessed by Spirometry",
+        "Change in Pulmonary Function (FEV1/FVC) as Assessed by Spirometry"
+      ],
+      "postedResults": [
+        {
+          "title": "Number of New Heterotopic Ossification (HO) Lesions",
+          "timeFrame": "Week 56",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "Lesions",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Low Dose Garetosmab"
+            },
+            {
+              "id": "OG001",
+              "title": "High Dose Garetosmab"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "value": "1"
+            },
+            {
+              "groupId": "OG001",
+              "value": "2"
+            },
+            {
+              "groupId": "OG002",
+              "value": "19"
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "pValue": "0.0274",
+              "method": "Negative Binomial Regression model",
+              "paramType": "Exponential of estimates from model",
+              "paramValue": "0.06",
+              "ciPct": "95",
+              "ciLower": "0.00",
+              "ciUpper": "0.73"
+            },
+            {
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "pValue": "0.0260",
+              "method": "Negative Binomial Regression model",
+              "paramType": "Exponential of estimates from model",
+              "paramValue": "0.10",
+              "ciPct": "95",
+              "ciLower": "0.01",
+              "ciUpper": "0.76"
+            }
+          ]
+        },
+        {
+          "title": "Number of Participants With Treatment-emergent (TE) Adverse Events of Special Interest (AESIs)",
+          "timeFrame": "Baseline up to Week 56 [to include participants who discontinued earlier]",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Low Dose Garetosmab"
+            },
+            {
+              "id": "OG001",
+              "title": "High Dose Garetosmab"
+            },
+            {
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "measurements": [
+            {
+              "groupId": "OG000",
+              "category": "TE-AESI",
+              "value": "0"
+            },
+            {
+              "groupId": "OG001",
+              "category": "TE-AESI",
+              "value": "4"
+            },
+            {
+              "groupId": "OG002",
+              "category": "TE-AESI",
+              "value": "1"
+            },
+            {
+              "groupId": "OG000",
+              "category": "Severe TE-AESI",
+              "value": "0"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Severe TE-AESI",
+              "value": "0"
+            },
+            {
+              "groupId": "OG002",
+              "category": "Severe TE-AESI",
+              "value": "0"
+            },
+            {
+              "groupId": "OG000",
+              "category": "TE serious AESI",
+              "value": "0"
+            },
+            {
+              "groupId": "OG001",
+              "category": "TE serious AESI",
+              "value": "1"
+            },
+            {
+              "groupId": "OG002",
+              "category": "TE serious AESI",
+              "value": "0"
+            },
+            {
+              "groupId": "OG000",
+              "category": "Treatment-related TE-AESI",
+              "value": "0"
+            },
+            {
+              "groupId": "OG001",
+              "category": "Treatment-related TE-AESI",
+              "value": "4"
+            },
+            {
+              "groupId": "OG002",
+              "category": "Treatment-related TE-AESI",
+              "value": "1"
+            },
+            {
+              "groupId": "OG000",
+              "category": "TE-AESI leading to study treatment discontinuation",
+              "value": "0"
+            },
+            {
+              "groupId": "OG001",
+              "category": "TE-AESI leading to study treatment discontinuation",
+              "value": "0"
+            },
+            {
+              "groupId": "OG002",
+              "category": "TE-AESI leading to study treatment discontinuation",
+              "value": "0"
+            },
+            {
+              "groupId": "OG000",
+              "category": "TE-AESI leading to death",
+              "value": "0"
+            },
+            {
+              "groupId": "OG001",
+              "category": "TE-AESI leading to death",
+              "value": "0"
+            },
+            {
+              "groupId": "OG002",
+              "category": "TE-AESI leading to death",
+              "value": "0"
+            }
+          ],
+          "analyses": []
+        }
       ],
       "metPrimaryEndpoint": null,
       "takeaways": [],
@@ -944,6 +1131,12 @@
         "design": {
           "sourceUrl": "https://clinicaltrials.gov/study/NCT05394116",
           "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "postedResults": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05394116?tab=results",
+          "sourceLabel": "ClinicalTrials.gov — posted results",
           "extractedBy": "api",
           "verified": false
         },
@@ -986,6 +1179,246 @@
             }
           ],
           "detectedAt": "2026-11-07T16:37:37.588Z"
+        },
+        {
+          "field": "primaryEndpoints",
+          "previousValue": [
+            "Number of new HO lesions",
+            "Incidence and severity of treatment-emergent adverse events of special interest (AESIs)"
+          ],
+          "newValue": [
+            "Number of New Heterotopic Ossification (HO) Lesions",
+            "Number of Participants With Treatment-emergent (TE) Adverse Events of Special Interest (AESIs)"
+          ],
+          "detectedAt": "2026-11-22T08:01:26.867Z"
+        },
+        {
+          "field": "secondaryEndpoints",
+          "previousValue": [
+            "Number of clinician-assessed flare-ups",
+            "Occurrence of new HO lesions",
+            "Total volume of new HO lesions",
+            "Occurrence of patient-reported flare-ups",
+            "Number of new HO lesions",
+            "Occurrence of clinician-assessed flare-ups",
+            "Number of patient-reported flare-ups",
+            "Change in joint function assessment by physician using cumulative analog joint involvement scale (CAJIS)",
+            "Change in pulmonary function as assessed by spirometry",
+            "Change in disease severity as assessed by the Patient Global Impression of Severity (PGIS)",
+            "Change in disease severity as assessed by the Patient's Global Impression of Change (PGIC)",
+            "Change in disease severity as assessed by the Clinician's Global Impression of Change (CGIC)",
+            "Concentration of total activin A in serum over time",
+            "Concentration of garetosmab in serum over time",
+            "Incidence of anti-drug antibodies (ADA) to garetosmab over time",
+            "Titer of ADA to garetosmab over time"
+          ],
+          "newValue": [
+            "Number of Clinician-assessed Flare-ups",
+            "Number of Participants With New HO Lesions at Weeks 28 and 56",
+            "Total Volume of New HO Lesions",
+            "Percentage of Participants With Participant-reported Flare-ups",
+            "Number of New HO Lesions",
+            "Percentage of Participants With Clinician-assessed Flare-ups",
+            "Number of Participant-reported Flare-ups",
+            "Change From Baseline in Joint Function Assessment by Physician Using Cumulative Analog Joint Involvement Scale (CAJIS)",
+            "Change in Pulmonary Function (Forced Expiratory Volume in 1 Second [FEV1]) as Assessed by Spirometry",
+            "Change From Baseline in Disease Severity as Assessed by the Patient Global Impression of Severity (PGIS)",
+            "Patient's Global Impression of Change (PGIC) Scale Score",
+            "Clinician's Global Impression of Change (CGIC) Scale Score",
+            "Concentration of Total Activin A in Serum Over Time",
+            "Concentration of Garetosmab in Serum Over Time",
+            "Number of Participants With Anti-drug Antibodies (ADA) to Garetosmab Over Time",
+            "Number of Participants With Titer Values of ADA to Garetosmab Over Time Through Week 56",
+            "Number of Clinician-assessed Flare-ups at Week 84",
+            "Percentage of Participants With New HO Lesions at Week 84",
+            "Total Volume of New HO Lesions",
+            "Number of New HO Lesions",
+            "Percentage of Participants With Clinician-assessed Flare-ups",
+            "Change in Pulmonary Function (Forced Vital Capacity (FVC)) as Assessed by Spirometry",
+            "Change in Pulmonary Function (FEV1/FVC) as Assessed by Spirometry"
+          ],
+          "detectedAt": "2026-11-22T08:01:26.867Z"
+        },
+        {
+          "field": "postedResults",
+          "newValue": [
+            {
+              "title": "Number of New Heterotopic Ossification (HO) Lesions",
+              "timeFrame": "Week 56",
+              "paramType": "NUMBER",
+              "unitOfMeasure": "Lesions",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Low Dose Garetosmab"
+                },
+                {
+                  "id": "OG001",
+                  "title": "High Dose Garetosmab"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Placebo"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "value": "1"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "2"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "19"
+                }
+              ],
+              "analyses": [
+                {
+                  "groupIds": [
+                    "OG000",
+                    "OG002"
+                  ],
+                  "pValue": "0.0274",
+                  "method": "Negative Binomial Regression model",
+                  "paramType": "Exponential of estimates from model",
+                  "paramValue": "0.06",
+                  "ciPct": "95",
+                  "ciLower": "0.00",
+                  "ciUpper": "0.73"
+                },
+                {
+                  "groupIds": [
+                    "OG001",
+                    "OG002"
+                  ],
+                  "pValue": "0.0260",
+                  "method": "Negative Binomial Regression model",
+                  "paramType": "Exponential of estimates from model",
+                  "paramValue": "0.10",
+                  "ciPct": "95",
+                  "ciLower": "0.01",
+                  "ciUpper": "0.76"
+                }
+              ]
+            },
+            {
+              "title": "Number of Participants With Treatment-emergent (TE) Adverse Events of Special Interest (AESIs)",
+              "timeFrame": "Baseline up to Week 56 [to include participants who discontinued earlier]",
+              "paramType": "COUNT_OF_PARTICIPANTS",
+              "unitOfMeasure": "Participants",
+              "groups": [
+                {
+                  "id": "OG000",
+                  "title": "Low Dose Garetosmab"
+                },
+                {
+                  "id": "OG001",
+                  "title": "High Dose Garetosmab"
+                },
+                {
+                  "id": "OG002",
+                  "title": "Placebo"
+                }
+              ],
+              "measurements": [
+                {
+                  "groupId": "OG000",
+                  "category": "TE-AESI",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG001",
+                  "category": "TE-AESI",
+                  "value": "4"
+                },
+                {
+                  "groupId": "OG002",
+                  "category": "TE-AESI",
+                  "value": "1"
+                },
+                {
+                  "groupId": "OG000",
+                  "category": "Severe TE-AESI",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG001",
+                  "category": "Severe TE-AESI",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG002",
+                  "category": "Severe TE-AESI",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG000",
+                  "category": "TE serious AESI",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG001",
+                  "category": "TE serious AESI",
+                  "value": "1"
+                },
+                {
+                  "groupId": "OG002",
+                  "category": "TE serious AESI",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG000",
+                  "category": "Treatment-related TE-AESI",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG001",
+                  "category": "Treatment-related TE-AESI",
+                  "value": "4"
+                },
+                {
+                  "groupId": "OG002",
+                  "category": "Treatment-related TE-AESI",
+                  "value": "1"
+                },
+                {
+                  "groupId": "OG000",
+                  "category": "TE-AESI leading to study treatment discontinuation",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG001",
+                  "category": "TE-AESI leading to study treatment discontinuation",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG002",
+                  "category": "TE-AESI leading to study treatment discontinuation",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG000",
+                  "category": "TE-AESI leading to death",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG001",
+                  "category": "TE-AESI leading to death",
+                  "value": "0"
+                },
+                {
+                  "groupId": "OG002",
+                  "category": "TE-AESI leading to death",
+                  "value": "0"
+                }
+              ],
+              "analyses": []
+            }
+          ],
+          "detectedAt": "2026-11-22T08:01:26.867Z"
         }
       ]
     },
@@ -998,7 +1431,7 @@
       "briefTitle": "A Study to Test if Trevogrumab or Trevogrumab With Garetosmab When Taken With Semaglutide is Safe and How Well They Work in Adult Patients With Obesity for Weight Loss, Fat Loss, and Lean Mass Preservation",
       "phase": "PHASE2",
       "roles": [],
-      "status": "ACTIVE_NOT_RECRUITING",
+      "status": "COMPLETED",
       "sponsor": "Regeneron Pharmaceuticals",
       "sponsorClass": "INDUSTRY",
       "studyType": "INTERVENTIONAL",
@@ -1176,7 +1609,14 @@
           "verified": false
         }
       },
-      "changeLog": []
+      "changeLog": [
+        {
+          "field": "status",
+          "previousValue": "ACTIVE_NOT_RECRUITING",
+          "newValue": "COMPLETED",
+          "detectedAt": "2026-11-22T08:01:26.867Z"
+        }
+      ]
     },
     {
       "id": "r2477-ob-2470",
@@ -1599,5 +2039,5 @@
       "type": "fda_review"
     }
   ],
-  "lastIngestedAt": "2026-11-09T20:08:23.523Z"
+  "lastIngestedAt": "2026-11-22T08:01:26.867Z"
 }
