@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/D010361",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "allowableQualifier": [
+      "http://id.nlm.nih.gov/mesh/Q000331",
+      "http://id.nlm.nih.gov/mesh/Q000523",
+      "http://id.nlm.nih.gov/mesh/Q000145",
+      "http://id.nlm.nih.gov/mesh/Q000706",
+      "http://id.nlm.nih.gov/mesh/Q000266"
+    ],
+    "annotation": {
+      "@language": "en",
+      "@value": "general only, irrespective of disease; patients as people or as a social, sociological, psychological, etc., group; do not confuse the patient with the disease: the \"tuberculotic patient\" equals TUBERCULOSIS and not also PATIENTS"
+    },
+    "broaderDescriptor": "http://id.nlm.nih.gov/mesh/D009272",
+    "concept": "http://id.nlm.nih.gov/mesh/M0016067",
+    "dateIntroduced": "1960-01-01",
+    "historyNote": {
+      "@language": "en",
+      "@value": "/education was used for indexing 1966-79; was in Cat G & M 1963-67"
+    },
+    "identifier": "D010361",
+    "lastUpdated": "2007-07-11",
+    "onlineNote": {
+      "@language": "en",
+      "@value": "search PATIENTS/ED under PATIENT EDUCATION 1966-79"
+    },
+    "preferredConcept": "http://id.nlm.nih.gov/mesh/M0016069",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T030596",
+    "publicMeSHNote": {
+      "@language": "en",
+      "@value": "/education ( = PATIENT EDUCATION as of 1980) was used for indexing 1966-79; OUTPATIENTS was see AMBULATORY CARE 1978-79"
+    },
+    "seeAlso": [
+      "http://id.nlm.nih.gov/mesh/D010045",
+      "http://id.nlm.nih.gov/mesh/D007297"
+    ],
+    "treeNumber": "http://id.nlm.nih.gov/mesh/M01.643",
+    "label": {
+      "@language": "en",
+      "@value": "Patients"
+    },
+    "@context": {
+      "allowableQualifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#allowableQualifier",
+        "@type": "@id"
+      },
+      "seeAlso": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#seeAlso",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "concept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#concept",
+        "@type": "@id"
+      },
+      "publicMeSHNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote"
+      },
+      "historyNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#historyNote"
+      },
+      "lastUpdated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lastUpdated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "annotation": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#annotation"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "preferredConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredConcept",
+        "@type": "@id"
+      },
+      "dateIntroduced": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateIntroduced",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "onlineNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#onlineNote"
+      },
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "treeNumber": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#treeNumber",
+        "@type": "@id"
+      },
+      "broaderDescriptor": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor",
+        "@type": "@id"
+      }
+    }
+  }
+}
