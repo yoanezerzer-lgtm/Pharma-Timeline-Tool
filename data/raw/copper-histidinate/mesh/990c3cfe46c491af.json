@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/T811681",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Term",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "altLabel": [
+      {
+        "@language": "en",
+        "@value": "Menkea Syndromes"
+      },
+      {
+        "@language": "en",
+        "@value": "Syndrome, Menkea"
+      },
+      {
+        "@language": "en",
+        "@value": "Syndromes, Menkea"
+      }
+    ],
+    "dateCreated": "2011-11-15",
+    "identifier": "T811681",
+    "lexicalTag": {
+      "@language": "en",
+      "@value": "NON"
+    },
+    "prefLabel": {
+      "@language": "en",
+      "@value": "Menkea Syndrome"
+    },
+    "thesaurusID": [
+      {
+        "@language": "en",
+        "@value": "GHR (2014)"
+      },
+      {
+        "@language": "en",
+        "@value": "OMIM (2013)"
+      }
+    ],
+    "@context": {
+      "altLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#altLabel"
+      },
+      "lexicalTag": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#lexicalTag"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "dateCreated": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#dateCreated",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "thesaurusID": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#thesaurusID"
+      },
+      "prefLabel": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#prefLabel"
+      }
+    }
+  }
+}
