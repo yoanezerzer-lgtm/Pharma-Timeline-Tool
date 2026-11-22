@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0328571",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0328571",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T358571",
+    "relatedConcept": "http://id.nlm.nih.gov/mesh/M0332014",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "A form of non-Hodgkin lymphoma having a usually diffuse pattern with both small and medium lymphocytes and small cleaved cells. It accounts for about 5% of adult non-Hodgkin lymphomas in the United States and Europe. The majority of mantle-cell lymphomas are associated with a t(11;14) translocation resulting in overexpression of the CYCLIN D1 gene (GENES, BCL-1)."
+    },
+    "term": [
+      "http://id.nlm.nih.gov/mesh/T049078",
+      "http://id.nlm.nih.gov/mesh/T049079",
+      "http://id.nlm.nih.gov/mesh/T372756",
+      "http://id.nlm.nih.gov/mesh/T362502",
+      "http://id.nlm.nih.gov/mesh/T049075",
+      "http://id.nlm.nih.gov/mesh/T362503",
+      "http://id.nlm.nih.gov/mesh/T049076",
+      "http://id.nlm.nih.gov/mesh/T049073",
+      "http://id.nlm.nih.gov/mesh/T049074"
+    ],
+    "label": {
+      "@language": "en",
+      "@value": "Lymphoma, Mantle-Cell"
+    },
+    "@context": {
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "relatedConcept": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#relatedConcept",
+        "@type": "@id"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      }
+    }
+  }
+}
