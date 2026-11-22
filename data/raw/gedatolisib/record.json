@@ -1,0 +1,968 @@
+{
+  "slug": "gedatolisib",
+  "brandName": "Revtorpyk",
+  "inn": "gedatolisib",
+  "modality": "Drug (NDA)",
+  "sponsor": "CELCUITY",
+  "mechanism": "Kinase Inhibitor",
+  "pharmacology": {
+    "drugClass": {
+      "name": "Kinase Inhibitor",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219908%22&limit=1",
+        "sourceLabel": "openFDA: Established Pharmacologic Class",
+        "extractedBy": "api",
+        "verified": false
+      }
+    },
+    "patientSummary": {
+      "paragraphs": [
+        "REVTORPYK is a prescription medicine used in combination with the medicine fulvestrant, with or without the medicine palbociclib to treat adults who have hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative breast cancer that:",
+        "has spread to nearby tissue or lymph nodes (locally advanced) or that has spread to other parts of the body (metastatic), without an abnormal “PIK3CA” gene and",
+        "whose cancer has come back and has spread to other parts of the body on or after at least 1 treatment with hormone (endocrine) therapy for metastatic disease. Your healthcare provider will test your cancer for an abnormal “PIK3CA” gene to make sure that REVTORPYK is right for you."
+      ],
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), patient information: \"What is Revtorpyk?\"",
+        "page": 18,
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Gedatolisib is a kinase inhibitor of class I PI3K isoforms (α, β, δ, γ) and mTOR complexes mTORC1 and mTORC2, resulting in downstream inhibition of multiple effectors, including AKT. In estrogen receptor (ER)- positive breast cancer cell lines and xenograft models harboring wild-type or mutant PIK3CA, gedatolisib induced apoptosis and anti-proliferative effects in vitro and reduced tumor cell growth in vivo. In a human ER- positive breast cancer xenograft model harboring a PIK3CA mutation, the combination of gedatolisib with palbociclib and fulvestrant increased tumor growth inhibition compared to each treatment alone or the doublet combinations.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "Exposure-Response Relationships The exposure-response relationship and time course of pharmacodynamic response for the effectiveness of gedatolisib have not been fully characterized. An increased incidence of stomatitis or mucositis (Grade 3 and 4), nausea, vomiting, hyperglycemia, and adverse reaction leading to dosage modification or discontinuation was observed with higher gedatolisib exposure at the dose range of 10 mg to 319 mg (0.06 to 1.8 times the approved recommended dose). Cardiac Electrophysiology At weekly doses up to 319 mg (1.8 times the recommended dose), clinically significant QTc interval prolongation was not observed.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Gedatolisib pharmacokinetic parameters were observed at the approved recommended dosage in patients with breast cancer and are presented as mean (% coefficient of variation [%CV]), unless otherwise specified. Gedatolisib maximum plasma concentration (C max ) is 13,700 (29%) ng/mL and area under the curve (AUC) is 21,400 (21%) ng·h/mL. Gedatolisib C max and AUC values increase dose proportionally in the dose range 10 mg to 319 mg (0.06 to 1.8 times the recommended dose). No accumulation of gedatolisib is observed after once- weekly administration. Distribution Gedatolisib plasma protein binding is 98%, and is not concentration dependent, in vitro. Gedatolisib blood-to- plasma ratio is 0.87, in vitro. Gedatolisib volume of distribution is 393 L. Elimination Gedatolisib elimination half-life (t 1/2 ) is 36 hours with an estimated clearance of 8 (23%) L/hour. Excretion After a single dose of radiolabeled gedatolisib 89 mg to healthy subjects, approximately 67.4% of the dose was recovered in feces (67% unchanged) and 12.2% in urine (11.6% unchanged). Specific Populations No clinically significant effects on the pharmacokinetics of gedatolisib were observed based on age (21 to 84 years), sex, race (White [78%], Asian [9.1%], Black or African American [4.1%]) body weight (35 to 168 kg), mild hepatic impairment (total bilirubin ≤1.5 × ULN and any AST) or estimated glomerular filtration rate (eGFR) ≥ 45 mL/min/1.73 m 2 (MDRD equation). The effect of moderate (total bilirubin >1.5 to 3 times ULN with any AST) or severe (total bilirubin >3 x ULN with any AST) hepatic impairment, eGFR <45 mL/min/1.73 m 2, or dialysis on gedatolisib pharmacokinetics is unknown. Drug Interactions Clinical Studies and Model-Informed Approaches No clinically significant differences in the pharmacokinetics of the following drugs were observed when used concomitantly with gedatolisib: metformin (MATE1, MATE2-K, and OCT1 substrate), rosuvastatin (BCRP substrate), or repaglinide (CYP2C8 sensitive substrate). In Vitro Studies CYP450 Enzymes: Gedatolisib is not an inhibitor of CYP1A2, CYP2A6, or CYP2B6. The ability of gedatolisib to induce CYP450 enzymes is unknown given the results of the vitro studies were inconclusive due to decreased viability of hepatocytes. Transporter Systems: Gedatolisib is a substrate of P-gp and BCRP and is not a substrate for OATP1B1, OATP1B3, OCT1, NTCP, MRP2, or MRP3. Gedatolisib did not inhibit P-gp, OATP1B1, OATP1B3, OAT1, OAT3, OCT2, and BSEP.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)- negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting",
+      "slug": "in-combination-with-fulvestrant-with-or-without-palbociclib",
+      "approvalDate": {
+        "value": "2026-07-14",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219908Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-07-14",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Revtorpyk (gedatolisib) Injection in combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer without a detectable PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219908Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Revtorpyk (gedatolisib) Injection in combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer without a detectable PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D001943",
+          "term": "Breast Neoplasms",
+          "areas": [
+            "Neoplasms",
+            "Skin and Connective Tissue Diseases"
+          ],
+          "definition": {
+            "text": "Tumors or cancer of the human BREAST.",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D001943",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "Breast Cancer",
+            "paragraphs": [
+              "What is breast cancer?",
+              "Breast cancer is a cancer that starts in breast tissue. It happens when cells in the breast change and grow out of control. New cells grow even when you don't need them, and old cells don't die when they should. These extra cells can form a mass called a tumor.",
+              "Sometimes the cancer does not spread any further. This is called \"in situ.\" If the cancer spreads outside the breast, the cancer is called \"invasive.\" It may just spread to nearby tissues and lymph nodes. Or the cancer may metastasize (spread to other parts of the body) through the lymph system or the blood.",
+              "Breast cancer is the second most common type of cancer in women in the United States. Rarely, it can also affect men.",
+              "What are the types of breast cancer?",
+              "There are different types of breast cancer. The types are based on which breast cells turn into cancer. The types include:",
+              "• Ductal carcinoma, which begins in the cells of the ducts. This is the most common type.",
+              "• Lobular carcinoma, which begins in the lobules. It is more often found in both breasts than other types of breast cancer.",
+              "• Inflammatory breast cancer, in which cancer cells block lymph vessels in the skin of the breast. The breast becomes warm, red, and swollen. This is a rare type.",
+              "• Paget's disease of the breast, which is a cancer involving the skin of the nipple. It usually also affects the darker skin around the nipple. It is also rare.",
+              "What causes breast cancer?",
+              "Breast cancer happens when there are changes in the genetic material (DNA). Often, the exact cause of these genetic changes is unknown.",
+              "But sometimes these genetic changes are inherited, meaning that you are born with them. Breast cancer that is caused by inherited genetic changes is called hereditary breast cancer.",
+              "There are also certain genetic changes that can raise your risk of breast cancer, including changes in the BRCA1 and BRCA2 genes. These two changes also raise your risk of ovarian and other cancers.",
+              "Besides genetics, your lifestyle and the environment can affect your risk of breast cancer.",
+              "Who is at risk for breast cancer?",
+              "The factors that raise your risk of breast cancer include:",
+              "• Older age",
+              "• History of breast cancer or benign (noncancer) breast disease",
+              "• Inherited risk of breast cancer, including having BRCA1 and BRCA2 gene changes",
+              "• Dense breast tissue",
+              "• A reproductive history that leads to more exposure to the estrogen hormone, including:",
+              "• Menstruating at an early age",
+              "• Being at an older age when you first gave birth or never having given birth",
+              "• Starting menopause at a later age",
+              "• Taking hormone therapy for menopause",
+              "• Radiation therapy to the breast or chest",
+              "• Obesity",
+              "• Drinking alcohol",
+              "What are the signs and symptoms of breast cancer?",
+              "The signs and symptoms of breast cancer include:",
+              "• A new lump or thickening in or near the breast or in the armpit.",
+              "• A change in the size or shape of the breast.",
+              "• A dimple or puckering in the skin of the breast. It may look like the skin of an orange.",
+              "• A nipple turned inward into the breast.",
+              "• Nipple discharge other than breast milk. The discharge might happen suddenly, be bloody, or happen in only one breast.",
+              "• Scaly, red, or swollen skin in the nipple area or the breast.",
+              "• Pain in any area of the breast.",
+              "How is breast cancer diagnosed?",
+              "Your health care provider may use many tools to diagnose breast cancer and figure out which type you have:",
+              "• A physical exam, including a clinical breast exam (CBE). This involves checking for any lumps or anything else that seems unusual with the breasts and armpits.",
+              "• A medical history.",
+              "• Imaging tests, such as a mammogram, an ultrasound, or an MRI.",
+              "• Breast biopsy.",
+              "• Blood chemistry tests, which measure different substances in the blood, including electrolytes, fats, proteins, glucose (sugar), and enzymes. Some of the specific blood chemistry tests include a basic metabolic panel (BMP), a comprehensive metabolic panel (CMP), and an electrolyte panel.",
+              "If these tests show that you have breast cancer, you will have tests that study the cancer cells. These tests help your provider decide which treatment would be best for you. The tests may include:",
+              "• Genetic tests for genetic changes such as in the BRCA and TP53 genes.",
+              "• HER2 test. HER2 is a protein involved with cell growth. It is on the outside of all breast cells. If your breast cancer cells have more HER2 than normal, they can grow more quickly and spread to other parts of the body.",
+              "• An estrogen and progesterone receptor test. This test measures the amount of estrogen and progesterone (hormones) receptors in cancer tissue. If there are more receptors than normal, the cancer is called estrogen and/or progesterone receptor positive. This type of breast cancer may grow more quickly.",
+              "Another step is staging the cancer. Staging involves doing tests to find out whether the cancer has spread within the breast or to other parts of the body. The tests may include other diagnostic imaging tests and a sentinel lymph node biopsy. This biopsy is done to see whether the cancer has spread to the lymph nodes.",
+              "What are the treatments for breast cancer?",
+              "Treatments for breast cancer include:",
+              "• Surgery such as",
+              "• A mastectomy, which removes the whole breast",
+              "• A lumpectomy to remove the cancer and some normal tissue around it, but not the breast itself",
+              "• Radiation therapy",
+              "• Chemotherapy",
+              "• Hormone therapy, which blocks cancer cells from getting the hormones they need to grow",
+              "• Targeted therapy, which uses drugs or other substances that attack specific cancer cells with less harm to normal cells",
+              "• Immunotherapy",
+              "Can breast cancer be prevented?",
+              "You may be able to help prevent breast cancer by making healthy lifestyle changes such as:",
+              "• Staying at a healthy weight",
+              "• Limiting alcohol use",
+              "• Getting enough exercise",
+              "• Limiting your exposure to estrogen by",
+              "• Breastfeeding your babies if you can",
+              "• Limiting hormone therapy",
+              "If you are at high risk, your provider may suggest that you take certain medicines to lower the risk. Some women at very high risk may decide to get a mastectomy (of their healthy breasts) to prevent breast cancer.",
+              "It's also important to get regular mammograms. They may be able to identify breast cancer in the early stages, when it is easier to treat.",
+              "NIH: National Cancer Institute"
+            ],
+            "provenance": {
+              "sourceUrl": "https://medlineplus.gov/breastcancer.html",
+              "sourceLabel": "MedlinePlus, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://clinicaltrials.gov/study/NCT05501886",
+            "sourceLabel": "MeSH term on the pivotal trials' ClinicalTrials.gov records (NCT05501886)",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "219908",
+      "applicationType": "NDA",
+      "sponsor": "CELCUITY",
+      "originalApprovalDate": {
+        "value": "2026-07-14",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Oncologic Diseases",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219908Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Oncologic Diseases Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Celcuity Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured for: Celcuity Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "routes": [
+        "INTRAVENOUS"
+      ]
+    }
+  },
+  "trials": [
+    {
+      "id": "b2151009",
+      "nctId": "NCT02684032",
+      "protocolNumber": "B2151009",
+      "title": "PHASE 1B STUDY TO ASSESS THE SAFETY, TOLERABILITY, AND CLINICAL ACTIVITY OF GEDATOLISIB IN COMBINATION WITH PALBOCICLIB AND EITHER LETROZOLE OR FULVESTRANT IN WOMEN WITH METASTATIC OR LOCALLY ADVANCED/RECURRENT BREAST CANCER (MBC)",
+      "briefTitle": "A Study To Assess The Tolerability And Clinical Activity Of Gedatolisib In Combination With Palbociclib/Letrozole Or Palbociclib/Fulvestrant In Women With Metastatic Breast Cancer",
+      "phase": "PHASE1",
+      "roles": [],
+      "status": "COMPLETED",
+      "sponsor": "Celcuity Inc",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009477",
+          "term": "Hereditary Sensory and Autonomic Neuropathies"
+        }
+      ],
+      "startDate": {
+        "value": "2016-06-14",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2022-01-19",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2022-01-19",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 141,
+        "type": "ACTUAL"
+      },
+      "design": {
+        "allocation": "NON_RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "FEMALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Letrozole Cohort",
+          "type": "EXPERIMENTAL",
+          "description": "Letrozole combination cohort in dose escalation"
+        },
+        {
+          "label": "Fulvestrant cohort",
+          "type": "EXPERIMENTAL",
+          "description": "Fulvestrant combination cohort in dose escalation"
+        },
+        {
+          "label": "ARM A",
+          "type": "EXPERIMENTAL",
+          "description": "Gedatolisib + palbociclib + letrozole in dose expansion"
+        },
+        {
+          "label": "ARM B",
+          "type": "EXPERIMENTAL",
+          "description": "Gedatolisib + palbociclib + fulvestrant in dose expansion"
+        },
+        {
+          "label": "ARM C",
+          "type": "EXPERIMENTAL",
+          "description": "Gedatolisib + palbociclib + fulvestrant in dose expansion"
+        },
+        {
+          "label": "Arm D",
+          "type": "EXPERIMENTAL",
+          "description": "Gedatolisib (3:1) + palbociclib + fulvestrant in dose expansion"
+        }
+      ],
+      "primaryEndpoints": [
+        "Number of participants with dose limiting toxicities",
+        "Objective response rate observed in patients in the dose expansion portion",
+        "Objective response rate observed in patients in the dose expansion portion"
+      ],
+      "secondaryEndpoints": [
+        "Tumor response observed in patients in the dose escalation portion",
+        "Duration of response",
+        "QTc interval (corrected QT interval)",
+        "Maximum observed plasma concentration",
+        "Progression free survival"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02684032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02684032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02684032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02684032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT02684032",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "viktoria-1",
+      "nctId": "NCT05501886",
+      "protocolNumber": "CELC-G-301",
+      "acronym": "VIKTORIA-1",
+      "title": "Phase 3, Open-Label, Randomized, Study Comparing Gedatolisib Combined With Fulvestrant & With or Without Palbociclib to Standard-of-Care Therapies in Patients With HR-Positive, HER2-Negative Advanced Breast Cancer Previously Treated With a CDK4/6 Inhibitor in Combination w/Non-Steroidal Aromatase Inhibitor Therapy",
+      "briefTitle": "Gedatolisib Plus Fulvestrant With or Without Palbociclib vs Standard-of-Care for the Treatment of Patients With Advanced or Metastatic HR+/HER2- Breast Cancer (VIKTORIA-1)",
+      "phase": "PHASE3",
+      "roles": [
+        {
+          "indication": "In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)- negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting",
+          "role": "PIVOTAL",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+            "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)- negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting)",
+            "quote": "Trial identifier appears within the In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)- negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting section 14 span, and the trial is sponsor-run and interventional.",
+            "extractedBy": "rule",
+            "verified": false
+          },
+          "approval": {
+            "submission": "ORIG-1",
+            "provenance": {
+              "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219908Orig1s000ltr.pdf",
+              "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+              "quote": "This NDA provides for the use of Revtorpyk (gedatolisib) Injection in combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer without a detectable PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting.",
+              "extractedBy": "rule",
+              "verified": false
+            }
+          }
+        }
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "sponsor": "Celcuity Inc",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        }
+      ],
+      "startDate": {
+        "value": "2022-12-08",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2026-06-30",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2026-12-31",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 701,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A - Patients Lacking PIK3CA Mutations (WT)",
+          "type": "EXPERIMENTAL",
+          "description": "Gedatolisib + Palbociclib + Fulvestrant"
+        },
+        {
+          "label": "Arm B - Patients Lacking PIK3CA Mutations (WT)",
+          "type": "EXPERIMENTAL",
+          "description": "Gedatolisib + Fulvestrant"
+        },
+        {
+          "label": "Arm C - Patients Lacking PIK3CA Mutations (WT)",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Fulvestrant"
+        },
+        {
+          "label": "Arm D - Patients with PIK3CA Mutation (MT)",
+          "type": "EXPERIMENTAL",
+          "description": "Gedatolisib + Palbociclib + Fulvestrant"
+        },
+        {
+          "label": "Arm E - Patients with PIK3CA Mutation (MT)",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Alpelisib + Fulvestrant"
+        },
+        {
+          "label": "Arm F - Patients with PIK3CA Mutation (MT)",
+          "type": "EXPERIMENTAL",
+          "description": "Gedatolisib + Fulvestrant"
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression Free Survival (PFS) in Patients with PIK3CA WT and PIK3CA MT Breast Cancer"
+      ],
+      "secondaryEndpoints": [
+        "Overall Survival (OS) in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "Overall Response Rate (ORR) in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "Duration of Response (DOR) in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "Time to Response (TTR) in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "Clinical Benefit Rate (CBR) in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "Quality of Life (QOL)Functional Assessment of Cancer Therapy - Breast Trial Outcome Index (FACT-B TOI) Questions in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "Quality of Life (QOL) NCCN-FACT Breast Symptom Index -16 (NFBSI-16) in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "Patient-Reported Outcomes in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "EuroQol 5 in Patients with PIK3CA WT and PIK3CA MT Breast Cancer",
+        "Adverse Events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05501886",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05501886",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05501886",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05501886",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05501886",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "citedIn": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219908Orig1s000ltr.pdf",
+          "sourceLabel": "FDA approval package",
+          "page": 14,
+          "quote": "on with fulvestrant, with or without palbociclib, was evaluated in Study 1 of VIKTORIA-1 (NCT05501886), an open label, randomized, multicenter clinical trial that enrolled 392 adult patients",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "changeLog": [
+        {
+          "field": "roles",
+          "previousValue": [
+            {
+              "indication": "In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2) - negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2) - negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting)",
+                "quote": "Trial identifier appears within the In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2) - negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting section 14 span, and the trial is sponsor-run and interventional.",
+                "extractedBy": "rule",
+                "verified": false
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219908Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Revtorpyk (gedatolisib) Injection in combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer without a detectable PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "newValue": [
+            {
+              "indication": "In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)- negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting",
+              "role": "PIVOTAL",
+              "provenance": {
+                "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+                "sourceLabel": "Approved label, section 14 (Clinical Studies — In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)- negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting)",
+                "extractedBy": "rule",
+                "verified": false,
+                "quote": "Trial identifier appears within the In combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)- negative locally advanced or metastatic breast cancer without a PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting section 14 span, and the trial is sponsor-run and interventional."
+              },
+              "approval": {
+                "submission": "ORIG-1",
+                "provenance": {
+                  "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219908Orig1s000ltr.pdf",
+                  "sourceLabel": "Approval letter (ORIG-1): the only approval of this indication",
+                  "quote": "This NDA provides for the use of Revtorpyk (gedatolisib) Injection in combination with fulvestrant, with or without palbociclib, for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative locally advanced or metastatic breast cancer without a detectable PIK3CA mutation detected following progression on or after treatment with at least one line of endocrine therapy in the metastatic setting.",
+                  "extractedBy": "rule",
+                  "verified": false
+                }
+              }
+            }
+          ],
+          "detectedAt": "2026-11-07T16:37:52.992Z"
+        }
+      ]
+    },
+    {
+      "id": "celc-g-201",
+      "nctId": "NCT06190899",
+      "protocolNumber": "CELC-G-201",
+      "title": "A Phase 1/2, Open-Label, Randomized, Dose Finding and Dose Expansion Study of Gedatolisib in Combination With Darolutamide in Metastatic Castration-Resistant Prostate Cancer (mCRPC)",
+      "briefTitle": "Gedatolisib in Combination With Darolutamide in Metastatic Castration-Resistant Prostate Cancer",
+      "phase": "PHASE1_2",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Celcuity Inc",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "mCRPC (Metastatic Castration-resistant Prostate Cancer)",
+        "Genital Diseases, Male",
+        "Urogenital Diseases, Male",
+        "Prostatic Disease",
+        "Prostatic Neoplasms, Castration-Resistant",
+        "Prostate Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D005832",
+          "term": "Genital Diseases, Male"
+        },
+        {
+          "id": "D052801",
+          "term": "Male Urogenital Diseases"
+        },
+        {
+          "id": "D011469",
+          "term": "Prostatic Diseases"
+        },
+        {
+          "id": "D064129",
+          "term": "Prostatic Neoplasms, Castration-Resistant"
+        },
+        {
+          "id": "D011471",
+          "term": "Prostatic Neoplasms"
+        }
+      ],
+      "startDate": {
+        "value": "2024-01-01",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2028-01-01",
+        "precision": "month"
+      },
+      "completionDate": {
+        "value": "2030-01-01",
+        "precision": "month"
+      },
+      "enrollment": {
+        "count": 54,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "MALE",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Phase 1 Arm 1",
+          "type": "EXPERIMENTAL",
+          "description": "Arm 1 - 120 mg of gedatolisib (administered once weekly for 3 weeks on/1 week off) in combination with darolutamide 600 mg (two 300 mg tablets) orally administered twice daily (equivalent to a total daily dose of 1200 mg on Days 1-28 of each cycle)"
+        },
+        {
+          "label": "Phase 1 Arm 2",
+          "type": "EXPERIMENTAL",
+          "description": "Arm 2 - 180 mg of gedatolisib (administered once weekly for 3 weeks on/1 week off) in combination with darolutamide 600 mg (two 300 mg tablets) orally administered twice daily (equivalent to a total daily dose of 1200 mg on Days 1-28 of each cycle)"
+        },
+        {
+          "label": "Phase 2",
+          "type": "EXPERIMENTAL",
+          "description": "The recommended Phase 2 dose (RP2D) of gedatolisib (administered once weekly for 3 weeks on/1 week off) in combination with darolutamide 600 mg (two 300 mg tablets) orally administered twice daily (equivalent to a total daily dose of 1200 mg on Days 1-28 of each cycle)"
+        }
+      ],
+      "primaryEndpoints": [
+        "Phase 1: Assessment of the safety and tolerability of gedatolisib in combination with darolutamide in metastatic castration-resistant prostate cancer (mCRPC)",
+        "Phase 1: Identification of the recommended Phase 2 dose (RP2D) of gedatolisib in combination with darolutamide in mCRPC",
+        "Phase 2: Assessment of the antitumor activity of gedatolisib in combination with darolutamide in each arm as demonstrated by radiographic progression-free survival (rPFS) by arm"
+      ],
+      "secondaryEndpoints": [
+        "Assessment of the preliminary efficacy of gedatolisib in combination with darolutamide by arm"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06190899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06190899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06190899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06190899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06190899",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "celc-g-302",
+      "nctId": "NCT06757634",
+      "protocolNumber": "CELC-G-302",
+      "title": "VIKTORIA-2: A Randomized, Open-Label, Phase 3 Study Evaluating Efficacy and Safety of Gedatolisib With Endocrine Therapy and Palbociclib vs Endocrine Therapy and Ribociclib as First-Line Treatment in Patients With HR-Positive and HER2-Negative Advanced Breast Cancer",
+      "briefTitle": "Phase 3 Study of Gedatolisib as First-Line Treatment for Patients With HR-Positive, HER2-Negative Advanced Breast Cancer (VIKTORIA-2)",
+      "phase": "PHASE3",
+      "roles": [],
+      "status": "RECRUITING",
+      "sponsor": "Celcuity Inc",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "INTERVENTIONAL",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "conditionMesh": [
+        {
+          "id": "D001943",
+          "term": "Breast Neoplasms"
+        },
+        {
+          "id": "D009362",
+          "term": "Neoplasm Metastasis"
+        }
+      ],
+      "startDate": {
+        "value": "2025-07-24",
+        "precision": "day"
+      },
+      "primaryCompletionDate": {
+        "value": "2029-03-31",
+        "precision": "day"
+      },
+      "completionDate": {
+        "value": "2033-07-30",
+        "precision": "day"
+      },
+      "enrollment": {
+        "count": 1180,
+        "type": "ESTIMATED"
+      },
+      "design": {
+        "allocation": "RANDOMIZED",
+        "masking": "NONE",
+        "model": "PARALLEL",
+        "primaryPurpose": "TREATMENT"
+      },
+      "population": {
+        "minAge": "18 Years",
+        "sex": "ALL",
+        "healthyVolunteers": false,
+        "keyCriteria": []
+      },
+      "arms": [
+        {
+          "label": "Arm A: Gedatolisib + Palbociclib + Fulvestrant",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects with treatment-naïve endocrine-resistant ABC."
+        },
+        {
+          "label": "Arm B: Ribociclib + Fulvestrant",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Subjects with treatment-naïve endocrine-resistant ABC."
+        },
+        {
+          "label": "Arm C: Gedatolisib + Palbociclib + Letrozole",
+          "type": "EXPERIMENTAL",
+          "description": "Subjects with treatment-naïve endocrine-sensitive ABC."
+        },
+        {
+          "label": "Arm D: Ribociclib + Letrozole",
+          "type": "ACTIVE_COMPARATOR",
+          "description": "Subjects with treatment-naïve endocrine-sensitive ABC."
+        }
+      ],
+      "primaryEndpoints": [
+        "Progression Free Survival (PFS)"
+      ],
+      "secondaryEndpoints": [
+        "Overall Survival (OS)",
+        "Overall Response Rate (ORR)",
+        "Duration of Response (DOR)",
+        "Time to Response (TTR)",
+        "Clinical Benefit Rate (CBR)",
+        "Quality of Life (QOL) Functional Assessment of Cancer Therapy - Breast Trial Outcome Index (FACT-B TOI)",
+        "Adverse Events"
+      ],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06757634",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06757634",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06757634",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06757634",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT06757634",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    },
+    {
+      "id": "celc-g-001",
+      "nctId": "NCT05134922",
+      "protocolNumber": "CELC-G-001",
+      "title": "Expanded Access Protocol for Subjects Previously Treated With Gedatolisib in a Celcuity-Sponsored Clinical Study (B2151009)",
+      "briefTitle": "Expanded Access Protocol for Subjects Previously Treated With Gedatolisib in B2151009",
+      "phase": "NA",
+      "roles": [],
+      "status": "AVAILABLE",
+      "sponsor": "Celcuity Inc",
+      "sponsorClass": "INDUSTRY",
+      "studyType": "EXPANDED_ACCESS",
+      "conditions": [
+        "Breast Neoplasm Malignant Female"
+      ],
+      "design": {},
+      "population": {
+        "minAge": "18 Years",
+        "sex": "FEMALE",
+        "keyCriteria": []
+      },
+      "arms": [],
+      "primaryEndpoints": [],
+      "secondaryEndpoints": [],
+      "metPrimaryEndpoint": null,
+      "takeaways": [],
+      "limitations": [],
+      "publications": [],
+      "provenance": {
+        "phase": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05134922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "startDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05134922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "primaryCompletionDate": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05134922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "enrollment": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05134922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        },
+        "design": {
+          "sourceUrl": "https://clinicaltrials.gov/study/NCT05134922",
+          "sourceLabel": "ClinicalTrials.gov",
+          "extractedBy": "api",
+          "verified": false
+        }
+      },
+      "changeLog": []
+    }
+  ],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-07-14",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219908%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 219908",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA219908%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/219908Orig1s000ltr.pdf",
+      "type": "fda_review"
+    },
+    {
+      "id": "doc-1",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/219908Orig1s000lbl.pdf",
+      "type": "fda_label"
+    }
+  ],
+  "lastIngestedAt": "2026-11-22T08:01:38.974Z"
+}
