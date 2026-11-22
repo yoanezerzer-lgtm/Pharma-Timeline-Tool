@@ -1,0 +1,208 @@
+{
+  "slug": "floretyrosine-f-18",
+  "brandName": "Pixclara",
+  "inn": "floretyrosine f-18",
+  "modality": "Drug (NDA)",
+  "sponsor": "TELIX",
+  "pharmacology": {
+    "drugClass": {
+      "name": "radioactive diagnostic drug",
+      "provenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+        "sourceLabel": "Label (ORIG-1), Highlights",
+        "quote": "PIXCLARA is a radioactive diagnostic drug indicated",
+        "extractedBy": "regex",
+        "verified": false
+      }
+    },
+    "sections": [
+      {
+        "number": "12.1",
+        "title": "Mechanism of Action",
+        "text": "Floretyrosine F 18 is a radiolabeled derivative of tyrosine and a substrate for the Large Neutral Amino Acid Transporter 1 and 2 (LAT). LAT is a sodium-independent exchanger protein that transports large neutral amino acids (e.g., tyrosine, phenylalanine) across cell membranes, and it is highly expressed in the blood-brain barrier and glioma tumor tissue. Consequently, floretyrosine F 18 accumulates in cells that express LAT on their surface. Fluorine-18 is a β+ emitting radionuclide that enables positron emission tomography.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.1",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.2",
+        "title": "Pharmacodynamics",
+        "text": "The relationship between floretyrosine F 18 plasma concentrations and image interpretation has not been characterized.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.2",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      {
+        "number": "12.3",
+        "title": "Pharmacokinetics",
+        "text": "Distribution Following intravenous administration, floretyrosine F 18 distributes (% of injected activity) to skeletal muscles (39.2%), liver (3.1%), lungs (2.3%), bone marrow (2.2%), and brain (1.9%). Elimination Metabolism The majority of floretyrosine F 18 remains intact in plasma. At 60 minutes and 120 minutes post-injection, 91 ± 5% and 87% ± 13% of the total radioactivity in the plasma was intact floretyrosine F 18, respectively. Excretion Elimination is by urinary excretion. Approximately 22% of administered activity was excreted by 5 hours. Drug Interaction Studies In Vitro • Effect of Transporters on Floretyrosine: Floretyrosine is not a substrate for P-glycoprotein (P-gp), breast cancer resistance protein (BCRP), or bile salt export pump (BSEP). • Effect of Floretyrosine on CYP Enzymes: Floretyrosine does not inhibit or induce CYP1A2, CYP2B6, or CYP3A4. • Effect of Floretyrosine on Transporter Systems: Floretyrosine does not inhibit P-gp, BCRP, or BSEP.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1), section 12.3",
+          "page": 12,
+          "extractedBy": "regex",
+          "verified": false
+        }
+      }
+    ]
+  },
+  "summary": "",
+  "indications": [
+    {
+      "name": "Use with positron emission tomography (PET) to differentiate recurrent or progressive glioma from treatment-related change, in conjunction with other diagnostic evaluations, in adults and pediatric patients 1 month of age and older",
+      "slug": "use-with-positron-emission-tomography-pet-to-differentiate",
+      "approvalDate": {
+        "value": "2026-09-11",
+        "precision": "day"
+      },
+      "submissionNumber": "ORIG-1",
+      "approvalProvenance": {
+        "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218592Orig1s000ltr.pdf",
+        "sourceLabel": "Approval letter (ORIG-1)",
+        "quote": "Named in the ORIG-1 approval letter; first listed in the label on or before ORIG-1, absent from the last complete label before it.",
+        "extractedBy": "rule",
+        "verified": false
+      },
+      "approvals": [
+        {
+          "submission": "ORIG-1",
+          "date": {
+            "value": "2026-09-11",
+            "precision": "day"
+          },
+          "kind": "new",
+          "statement": "This NDA provides for the use of Pixclara (floretyrosine F 18) injection for use with positron emission tomography (PET) to differentiate recurrent or progressive glioma from treatment-related change, in conjunction with other diagnostic evaluations, in adults and pediatric patients 1 month of age and older.",
+          "provenance": {
+            "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218592Orig1s000ltr.pdf",
+            "sourceLabel": "Approval letter (ORIG-1)",
+            "quote": "This NDA provides for the use of Pixclara (floretyrosine F 18) injection for use with positron emission tomography (PET) to differentiate recurrent or progressive glioma from treatment-related change, in conjunction with other diagnostic evaluations, in adults and pediatric patients 1 month of age and older.",
+            "extractedBy": "regex",
+            "verified": false
+          }
+        }
+      ],
+      "diseases": [
+        {
+          "meshId": "D005910",
+          "term": "Glioma",
+          "areas": [
+            "Neoplasms"
+          ],
+          "definition": {
+            "text": "Benign and malignant central nervous system neoplasms derived from glial cells (i.e., astrocytes, oligodendrocytes, and ependymocytes). Astrocytes may give rise to astrocytomas (ASTROCYTOMA) or glioblastoma multiforme (see GLIOBLASTOMA). Oligodendrocytes give rise to oligodendrogliomas (OLIGODENDROGLIOMA) and ependymocytes may undergo transformation to become EPENDYMOMA; CHOROID PLEXUS NEOPLASMS; or colloid cysts of the third ventricle. (From Escourolle et al., Manual of Basic Neuropathology, 2nd ed, p21)",
+            "provenance": {
+              "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D005910",
+              "sourceLabel": "MeSH, U.S. National Library of Medicine",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "summary": {
+            "title": "glioma",
+            "paragraphs": [
+              "A group of tumors that form in glial cells in the brain and spinal cord. Glial cells support and protect the nerve cells in the central nervous system and help them work the way they should. Gliomas can form anywhere in the brain or spinal cord and may be benign (not cancer) or malignant (cancer). They can also be low grade or high grade, determined by how abnormal the tumor cells look under a microscope and how quickly the tumor is likely to grow, spread, and come back after treatment. The three main types of gliomas are astrocytomas, oligodendrogliomas, and ependymomas. They can occur in both adults and children. Also called glial tumor."
+            ],
+            "provenance": {
+              "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/glioma",
+              "sourceLabel": "NCI Dictionary of Cancer Terms, National Cancer Institute",
+              "extractedBy": "api",
+              "verified": false
+            }
+          },
+          "provenance": {
+            "sourceUrl": "https://meshb.nlm.nih.gov/record/ui?ui=D005910",
+            "sourceLabel": "One of MeSH's names for the term, in the FDA's wording",
+            "quote": "glioma",
+            "extractedBy": "rule",
+            "verified": false
+          }
+        }
+      ]
+    }
+  ],
+  "regulatory": {
+    "us": {
+      "applicationNumber": "218592",
+      "applicationType": "NDA",
+      "sponsor": "TELIX",
+      "originalApprovalDate": {
+        "value": "2026-09-11",
+        "precision": "day"
+      },
+      "reviewOffice": {
+        "name": "Office of Specialty Medicine",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218592Orig1s000ltr.pdf",
+          "sourceLabel": "Approval letter (ORIG-1), signature",
+          "quote": "Office of Specialty Medicine Office of New Drugs Center for Drug Evaluation and Research",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "labelCompany": {
+        "name": "Telix Pharmaceuticals US, Inc.",
+        "provenance": {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+          "sourceLabel": "Label (ORIG-1)",
+          "quote": "Manufactured for: Telix Pharmaceuticals US, Inc.",
+          "extractedBy": "regex",
+          "verified": false
+        }
+      },
+      "routes": [
+        "INTRAVENOUS"
+      ]
+    }
+  },
+  "trials": [],
+  "milestones": [
+    {
+      "id": "fda-orig-1",
+      "type": "FDA_APPROVAL",
+      "region": "US",
+      "date": {
+        "value": "2026-09-11",
+        "precision": "day"
+      },
+      "label": "FDA approval — original NDA",
+      "shortLabel": "FDA approval",
+      "description": "Type 1 - New Molecular Entity",
+      "submissionNumber": "ORIG-1",
+      "provenance": {
+        "sourceUrl": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA218592%22&limit=1",
+        "sourceLabel": "openFDA Drugs@FDA",
+        "extractedBy": "api",
+        "verified": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "openfda",
+      "label": "openFDA Drugs@FDA — NDA 218592",
+      "url": "https://api.fda.gov/drug/drugsfda.json?search=application_number%3A%22NDA218592%22&limit=1",
+      "type": "other"
+    },
+    {
+      "id": "doc-0",
+      "label": "Label (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/218592Orig1s000lbl.pdf",
+      "type": "fda_label"
+    },
+    {
+      "id": "doc-1",
+      "label": "Letter (ORIG-1)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/218592Orig1s000ltr.pdf",
+      "type": "fda_review"
+    }
+  ],
+  "lastIngestedAt": "2026-11-22T08:01:12.953Z"
+}

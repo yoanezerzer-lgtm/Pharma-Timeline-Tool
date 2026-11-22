@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "body": {
+    "head": {
+      "vars": [
+        "name",
+        "d",
+        "term"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Patients"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D010361"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Patients"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Adults"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D000328"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Adult"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Glioma"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D005910"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Glioma"
+          }
+        },
+        {
+          "name": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Tomography"
+          },
+          "d": {
+            "type": "uri",
+            "value": "http://id.nlm.nih.gov/mesh/D014054"
+          },
+          "term": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Tomography"
+          }
+        }
+      ]
+    }
+  }
+}
