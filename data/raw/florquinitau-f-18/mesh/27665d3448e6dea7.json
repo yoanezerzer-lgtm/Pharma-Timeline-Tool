@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "body": {
+    "@id": "http://id.nlm.nih.gov/mesh/M0002865",
+    "@type": "http://id.nlm.nih.gov/mesh/vocab#Concept",
+    "http://id.nlm.nih.gov/mesh/vocab#active": true,
+    "identifier": "M0002865",
+    "preferredTerm": "http://id.nlm.nih.gov/mesh/T005476",
+    "scopeNote": {
+      "@language": "en",
+      "@value": "The part of CENTRAL NERVOUS SYSTEM that is contained within the skull (CRANIUM). Arising from the NEURAL TUBE, the embryonic brain is comprised of three major parts including PROSENCEPHALON (the forebrain); MESENCEPHALON (the midbrain); and RHOMBENCEPHALON (the hindbrain). The developed brain consists of CEREBRUM; CEREBELLUM; and other structures in the BRAIN STEM."
+    },
+    "term": "http://id.nlm.nih.gov/mesh/T400923",
+    "label": {
+      "@language": "en",
+      "@value": "Brain"
+    },
+    "@context": {
+      "preferredTerm": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#preferredTerm",
+        "@type": "@id"
+      },
+      "identifier": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#identifier"
+      },
+      "term": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#term",
+        "@type": "@id"
+      },
+      "label": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "active": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#active",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "scopeNote": {
+        "@id": "http://id.nlm.nih.gov/mesh/vocab#scopeNote"
+      }
+    }
+  }
+}
