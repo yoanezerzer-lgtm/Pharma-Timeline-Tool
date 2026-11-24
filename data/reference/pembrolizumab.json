@@ -777,8 +777,19 @@
       "indication": "Renal Cell Carcinoma",
       "trial": "NCT02811861",
       "pivotal": true,
-      "status": "baseline",
-      "tries": 2
+      "status": "confirmed",
+      "tries": 2,
+      "checkedBy": "Overnight agent 2026-11-24: Confirmed by label section 14 and an FDA review or letter.",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s195lbl.pdf",
+          "quote": "The efficacy of KEYTRUDA in combination with lenvatinib was investigated in KEYNOTE-581 (NCT02811861), a multicenter, open-label, randomized trial conducted in 1069 patients with advanced RCC in the first-line setting."
+        },
+        {
+          "sourceUrl": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s191lblCorrected.pdf",
+          "quote": "Tables 53 and 54 summarize the adverse reactions and laboratory abnormalities, respectively, that occurred in ≥20% of patients treated with KEYTRUDA and lenvatinib in KEYNOTE-581."
+        }
+      ]
     },
     {
       "indication": "Urothelial Cancer",
